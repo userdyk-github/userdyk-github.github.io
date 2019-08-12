@@ -45,5 +45,3 @@ exclude:
   - optional
   - vendor
 
-# Theme
-theme: "ed."
