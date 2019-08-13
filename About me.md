@@ -13,7 +13,6 @@ Mobile : +82-10-7327-0678 <br>
 Email(sending&reception) : userdyk@gmail.com <br>
 Email(sending only) : userdyk@naver.com <br><br>
 
- : Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning. -*Albert Einstein*- 
 <hr>
 
 ## GitHub | [URL](https://github.com/aglipthhau/)
