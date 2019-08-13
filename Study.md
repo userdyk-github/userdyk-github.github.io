@@ -23,19 +23,19 @@ title: Study
 
 ---
 
-## AI03 : Tensorflow deep learning
+## AI03 : Deep learning with tensorflow
 
 
 
 ---
 
-## AI04 : Keras deep learning
+## AI04 : Deep learning with keras
 
 
 
 ---
 
-## AI05 : Pytorch deep learning
+## AI05 : Deep learning with pytorch
 
 
 
