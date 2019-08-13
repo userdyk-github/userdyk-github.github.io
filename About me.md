@@ -3,14 +3,15 @@ layout: page
 title: About me
 ---
 <hr>
-<h2>GitHub</h2>
+## GitHub
 : https://github.com/aglipthhau/
 <hr>
-<h2>LinkedIn</h2>
+## LinkedIn
+: https://www.linkedin.com/in/userdyk/
+<hr>
+## Google Scholar
 :
 <hr>
-<h2>Google Scholar</h2>
+## Resume
 :
-<hr>
-<h2>Resume</h2>
 <hr>
