@@ -30,7 +30,7 @@ title: Study
 ## AI02 : Basic machine learning
 
 <div class="toc">
-  <ul class="posts">
+  <ul class="posts.AI02">
   {% for item in site.posts.AI02 %}
     <li class="text-title">
       <a href="{{ site.baseurl }}{{ item.url }}">
