@@ -3,9 +3,9 @@ layout: page
 title: Research
 ---
 <div>
-## Projects
+Projects
 </div>
 
 <div>
-## Publications
+Publications
 </div>
