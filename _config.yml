@@ -17,8 +17,7 @@ author:
 color-scheme:
 
 # Permalinks
-permalink: pretty
-permalink: /:title/
+permalink: none
 
 # Set encoding to UTF-8
 encoding: utf-8
