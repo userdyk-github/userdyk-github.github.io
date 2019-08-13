@@ -96,7 +96,7 @@ title: Lecture URL
 ### Reingforcement learning
 
 - <a href='https://www.youtube.com/playlist?list=PLlMkM4tgfjnKsCWav-Z2F-MMFRx-2gMGG'>Reinforcement learning 1</a>, <a href='https://www.youtube.com/playlist?list=PLXziV1DL41ognSWZBuRNigZWdezlisyic'>Reinforment learning 2</a>, <a href='https://www.youtube.com/playlist?list=PLpRS2w0xWHTcTZyyX8LMmtbcMXpd3s4TU'>Reinforment learning 3</a>, <a href='https://www.youtube.com/playlist?list=PLpRS2w0xWHTcxz2Oj8yVOKrJJBiPCpl-a'>Deep reinforce learning</a>
-- <a href='https://www.youtube.com/playlist?list=PLCsGBQ3i2iIWOssGekIwgic0DxmDA9-ya'>Autoencoder</a></li>
+- <a href='https://www.youtube.com/playlist?list=PLCsGBQ3i2iIWOssGekIwgic0DxmDA9-ya'>Autoencoder</a>
 
 ### Seminar
 
