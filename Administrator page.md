@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Administrator
+title: Administrator page
 ---
 
 ## Posting address
