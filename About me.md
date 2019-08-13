@@ -2,7 +2,7 @@
 layout: page
 title: About me
 ---
-![userdyk](https://user-images.githubusercontent.com/52376448/62933373-03d24c00-bdfd-11e9-8377-ed1fc5bf44e7.jpg)
+![userdyk](https://user-images.githubusercontent.com/52376448/62933516-5449a980-bdfd-11e9-8137-1c0d8bed74eb.jpg)
 <hr>
 
 ## GitHub | [URL](https://github.com/aglipthhau/)
