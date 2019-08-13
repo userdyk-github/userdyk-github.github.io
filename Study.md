@@ -31,7 +31,7 @@ title: Study
 
 <div class="toc">
   <ul class="posts">
-  {% for item in site.posts %}
+  {% for item in site.posts.AI01 %}
     <li class="text-title">
       <a href="{{ site.baseurl }}{{ item.url }}">
         {{ item.title }}
