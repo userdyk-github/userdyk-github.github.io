@@ -2,17 +2,6 @@
 layout: page
 title: Lecture URL
 ---
-<form id="site_search">
-<div>In case you don't want to use the search box provided by your browser:</div>
-<br>
-<input id="search" type="text"/></form>
-
-<div id="results"></div>
-<ul id="search_results"></ul>
-<script src="{{site.baseurl}}/assets/js/elasticlunr.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="{{site.baseurl}}/assets/js/search.js"></script>
----
 
 ## Contents
 {:.no_toc}
