@@ -14,8 +14,8 @@ title: Study
 ## AI01 : Data science analysis
 
 <div class="toc">
-  <ul class="AI01">
-  {% for item in site.AI01 %}
+  <ul class="texts">
+  {% for item in site.texts %}
     <li class="text-title">
       <a href="{{ site.baseurl }}{{ item.url }}">
         {{ item.title }}
