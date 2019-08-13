@@ -18,6 +18,13 @@ URL : [https://www.linkedin.com/in/userdyk/](https://www.linkedin.com/in/userdyk
 
 
 
+## ResearchGate
+
+URL : [https://www.researchgate.net/profile/Dongmyeong_Lee2](https://www.researchgate.net/profile/Dongmyeong_Lee2)
+<hr>
+
+
+
 ## Google Scholar
 
 URL : []()
