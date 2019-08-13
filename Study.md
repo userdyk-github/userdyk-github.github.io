@@ -3,6 +3,14 @@ layout: page
 title: Study
 ---
 
+## Contents
+{:.no_toc}
+
+* ToC
+{:toc}
+
+---
+
 ## AI01 : Data science analysis
 
 
