@@ -6,26 +6,25 @@ title: About me
 
 ## GitHub
 
-[URL](https://github.com/aglipthhau/)
+URL : [https://github.com/aglipthhau/](https://github.com/aglipthhau/)
 <hr>
 
 
 
 ## LinkedIn
 
-[URL](https://www.linkedin.com/in/userdyk/)
+URL : [https://www.linkedin.com/in/userdyk/](https://www.linkedin.com/in/userdyk/)
 <hr>
 
 
 
 ## Google Scholar
 
-[URL]()
+URL : []()
 <hr>
 
 
 
 ## Resume
 
-[URL]()
 <hr>
