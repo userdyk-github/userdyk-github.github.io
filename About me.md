@@ -6,13 +6,16 @@ title: About me
 
 Dongmyeong Lee <br>
 
-Ms candiate ~ present<br> 
+Ms candiate, <br> 
 Human ICT Convergence, <br>
 College of Information and Communication Engineering(CICE), <br>
 Sungkyunkwan University(SKKU), Suwon, 440-746, Korea <br>
 
-Sungkyunkwan University Graduated - Feb 2019 <br>
-Bachelor of science (major : physics) <br>
+Bachelor of science, <br>
+Physics, <br>
+College of Science(CS), <br>
+Sungkyunkwan University(SKKU), Suwon, 440-746, Korea <br>
+
 
 Mobile : +82-10-7327-0678 <br>
 Email(sending&reception) : userdyk@gmail.com <br>
