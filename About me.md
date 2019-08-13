@@ -20,12 +20,12 @@ title: About me
 
 ## Google Scholar
 
-:
+[URL]
 <hr>
 
 
 
 ## Resume
 
-:
+[URL]
 <hr>
