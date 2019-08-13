@@ -2,7 +2,7 @@
 layout: page
 title: About me
 ---
-<img data-action="zoom" src='{{ "https://userdyk-github.github.io/About%20me/assets/img/userdyk.jpg" | relative_url }}' alt='absolute'>
+![Image Alt 텍스트](https://userdyk-github.github.io/About%20me/assets/img/userdyk.jpg)
 <hr>
 
 ## GitHub | [URL](https://github.com/aglipthhau/)
