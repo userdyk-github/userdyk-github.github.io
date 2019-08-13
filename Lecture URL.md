@@ -2,11 +2,14 @@
 layout: page
 title: Lecture URL
 ---
-Contents
-- Pysics
-- Computer science
-- Artificial intelligence
-<hr>
+
+## Contents
+{:.no_toc}
+
+* ToC
+{:toc}
+
+---
 
 
 
@@ -19,9 +22,10 @@ Contents
 - <a href='https://www.youtube.com/playlist?list=PLSN_PltQeOygYMgaiszAPg-_W783IDYqc'>Electromagnetism 1</a>, <a href='https://www.youtube.com/playlist?list=PLSN_PltQeOyhmU0BxXcav7zxfTSB3VcB_'>Electromagnetism 2</a>
 - <a href='https://www.youtube.com/playlist?list=PLSN_PltQeOyj8D9X90HncuOrjyNdqp4wD'>Quamtum mechanics 1</a>, <a href='https://www.youtube.com/playlist?list=PLSN_PltQeOyhV9W-c7VvhwkTx9LuYqy9l'>Quamtum mechanics 2</a>, <a href='https://www.youtube.com/playlist?list=PLSN_PltQeOyj47rUKiSLjpQ_mVrhWAhJ9'>Quamtum field theory</a>
 - <a href='https://www.youtube.com/playlist?list=PLx9iooiAr6WHa8sHIV1ORPJSj4JFWoF2X'>Theory of relaticity</a>
-<hr>
 
 
+
+---
 
 ## Computer Science
 
@@ -53,9 +57,10 @@ Contents
 ### Etc
 - <a href='https://www.youtube.com/playlist?list=PLRx0vPvlEmdB6sCgj_jubp8KPb1ni0VOC'>Android studio1</a>, <a href='https://www.youtube.com/playlist?list=PLRx0vPvlEmdD862e43ADbvDeGPUZKDuqL'>Android studio2</a>, <a href='https://www.youtube.com/playlist?list=PLRx0vPvlEmdAfwnKLSdcKUCwZHWcv1aVc'>Unity</a>
 - <a href='https://www.youtube.com/playlist?list=PLf8roV9OYDiHCOrnXIlbrzbeQ0pJsaH8v'>Arduino, Raspberrypi, BeagleBoard</a>
-<hr>
 
 
+
+---
 
 ## Artificial Intelligence
 
