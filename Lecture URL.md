@@ -19,23 +19,32 @@ title: Lecture URL
 
 ## Computer Science
 
-  <h4>Basic</h4>
+### Basic
+
 - <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMBT57a9dvEtd6OuWpugF9SH'>Linux</a>
 - <a href='https://www.youtube.com/playlist?list=PLRx0vPvlEmdDNHeulKC6JM25MmZVS_3nT'>C</a>, <a href='https://www.youtube.com/playlist?list=PLRx0vPvlEmdBjfCADjCc41aD4G0bmdl4R'>Java</a>, <a href='https://www.youtube.com/playlist?list=PLGPF8gvWLYyontH0PECIUFFUdvATXWQEL'>Python</a>, <a href=''>C++</a>, <a href=''>C#</a>
 - <a href='https://www.youtube.com/playlist?list=PLU53e7oUT8pEbDM9pq_KiIjWwH0Y_-h4W'>Mathematica</a>, <a href=''>Matlab</a>, <a href='https://www.youtube.com/playlist?list=PLSEvxm6HLvZnH71B0UEWwEuUjKcAahYaz'>R</a>
 - <a href='https://www.youtube.com/playlist?list=PLRx0vPvlEmdDHxCvAQS1_6XV4deOwfVrz'>Algorithm</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMDsWOOn_P0EmAWB8DArS3Fk'>Data structure</a>
-  <h4>Git</h4>
+
+### Git
+
 - <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMCNJESahrVV-uYGMNYK_vMf'>Git</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMCejd1l8C8oyZSYQDtkMRAg'>Version control - source tree</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMAJNEeZuqT0equeiO19Rnb8'>Version control - TortoiseGit</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMATJK16UJ9Fjay0ozrSZKiI'>Version control - CLI</a>
 - <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMCWlMygyYg9XjCIjESUbW4b'>Branch conflict - source tree</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMDGeVxPyzqs3_Gl-PY8hZu_'>Branch conflict - TortoiseGit</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMDU5eAzOz2dZ9KXJF6dkNg3'>Branch conflict - CLI</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMDjSIM2YwqKB2NLX2DF98CZ'>Back-up - source tree</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMA-hn2E3T7_WVC5iEQ-wotv'>Back-up - TortoiseGit</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMBJr3eVXGvYHDvGNcogEy7v'>Back-up - CLI</a>
 - <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMCeAdpRidv18VRVS8mqzFdS'>Cooperation - source tree</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMD5s1GzHB2FlZKLOUS5TeRp'>Cooperation - TortoiseGit</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMA4LgLoH07e7uEbRbi92Dd2'>Cooperation - CLI</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMAvTJlPGzizAkyqXfZ9IyY8'>Reset & revert</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMAb_nOiego7BqfKTRcXsUrB'>Cherry-pick & rebase</a>
-  <h4>Web</h4>
+
+### Web
+
 - <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMDZP7FJ_ZsUrdCGH68ppvPb'>HTML & Internet</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMBd-v_DjNm61EBaDpYZSV1Z'>HTTP</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMCI75J-rC8yZSVGZq3gYsFp'>Domain Name System</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMAnWgUYiAW2cTzSBywFO75B'>CSS</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMBB348PWRN0fREzYcYgFybf'>Java Script</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMA9QQX5wqj6ThK7t2tsGxjm'>Node.js<a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMAMMNByX8Bf1BkVrShBhj1I'>PHP</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMDMxfZEpLbzHPZUEwObEaZq'>Python</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMA4guyznDlykFJh28_R08Q-'>OAuth</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMA52uRBmSwqcvtI5IMoFclJ'>Home Server</a>
 - <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMAM6VAWEKtaUnvzePCxnUVo'>HTTP Cache</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMDIS9KwExvFLTJDGKRDb77R'>Google Login with Javascript</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMDCFBNG3boPfI_g_9tleMvA'>Facebook Login with Javascript</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMDo8561VLWTZox8Zs3K7K_m'>Node.js - Cookie & Auth</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMAGOQu8CBDO9hn-FXFmm4Wp'>Express</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMA9-1PvblBehoGg7Pu1lg6q'>Ajax</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMA5836CvWfieEQy0T0ov6Jh'>PHP & MySQL</a>
-  <h4>DataBase</h4>
+  
+### DataBase
+
 - <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMBe0848t2_ZUgFNJdanOA_I'>Basic DB</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMCgrP_9HL3dAcvdt8qOZxjW'>MySQL</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMBy7UdMzqj-YsyaM1Gc7SQT'>lowdb</a>
-  <h4>AWS</h4>
+
+### AWS
 - <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMDNWIEgnXjaZ3jgbIo5zQGi'>AWS</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMC5AYnBg8ffg5utOLwEj4fZ'>EC2</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMCas8a4f0uIg5X4uERoG6gb'>Route53</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMAp9YSO2J5VBWLJewTPn_0_'>Educate</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMBtHZf9Nt1SSlANoRi5cbOw'>RDS</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMCFHj64mNZxlbeNWOYUpua4'>S3</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMDMQ1my6bVT-BPoo0LvnQMa'>Cloud Front</a>
-  <h4>Etc</h4>
+
+### Etc
 - <a href='https://www.youtube.com/playlist?list=PLRx0vPvlEmdB6sCgj_jubp8KPb1ni0VOC'>Android studio1</a>, <a href='https://www.youtube.com/playlist?list=PLRx0vPvlEmdD862e43ADbvDeGPUZKDuqL'>Android studio2</a>, <a href='https://www.youtube.com/playlist?list=PLRx0vPvlEmdAfwnKLSdcKUCwZHWcv1aVc'>Unity</a>
 - <a href='https://www.youtube.com/playlist?list=PLf8roV9OYDiHCOrnXIlbrzbeQ0pJsaH8v'>Arduino, Raspberrypi, BeagleBoard</a>
 <hr>
