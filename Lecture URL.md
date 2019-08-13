@@ -15,13 +15,30 @@ title: Lecture URL
 
 ## Physics
 
+### General physics
+
 - <a href='https://www.youtube.com/channel/UCmgRYMK5d65PbjN8qkjAUBA/playlists'>Basics physics</a>, <a href='https://www.youtube.com/playlist?list=PL9A47564559299240&feature=plcp'>Principle of physical phenomenon</a>
 - <a href='https://www.youtube.com/playlist?list=PL64B5F3F1CE0810A7&feature=plcp'>General physics 1</a>, <a href='https://www.youtube.com/playlist?list=PL4D242F3BA8DD1153&feature=plcp'>General physics 2</a>
+
+### Mathematical methods
+
 - <a href='https://www.youtube.com/playlist?list=PLF2319B301C23A64D&feature=plpp'>Mathematical methods 1</a>, <a href='https://www.youtube.com/playlist?list=PLSN_PltQeOyhynRBr2oYjq7Ts4c2C3LMH'>Mathematical methods 2</a>, <a href='https://www.youtube.com/playlist?list=PLFD724D6F9BC133E6&feature=plcp'>Mathematical methods 3</a>
+
+### Classical mechanics
+
 - <a href='https://www.youtube.com/playlist?list=PL64B5F3F1CE0810A7&feature=plcp'>Classical mechanics 1</a>, <a href='https://www.youtube.com/playlist?list=PL4D242F3BA8DD1153&feature=plcp'>Classical mechanics 2</a>
+
+### Electromagnetism
+
 - <a href='https://www.youtube.com/playlist?list=PLSN_PltQeOygYMgaiszAPg-_W783IDYqc'>Electromagnetism 1</a>, <a href='https://www.youtube.com/playlist?list=PLSN_PltQeOyhmU0BxXcav7zxfTSB3VcB_'>Electromagnetism 2</a>
-- <a href='https://www.youtube.com/playlist?list=PLSN_PltQeOyj8D9X90HncuOrjyNdqp4wD'>Quamtum mechanics 1</a>, <a href='https://www.youtube.com/playlist?list=PLSN_PltQeOyhV9W-c7VvhwkTx9LuYqy9l'>Quamtum mechanics 2</a>, <a href='https://www.youtube.com/playlist?list=PLSN_PltQeOyj47rUKiSLjpQ_mVrhWAhJ9'>Quamtum field theory</a>
-- <a href='https://www.youtube.com/playlist?list=PLx9iooiAr6WHa8sHIV1ORPJSj4JFWoF2X'>Theory of relaticity</a>
+
+### Quantum Theory
+
+- <a href='https://www.youtube.com/playlist?list=PLSN_PltQeOyj8D9X90HncuOrjyNdqp4wD'>Quantum mechanics 1</a>, <a href='https://www.youtube.com/playlist?list=PLSN_PltQeOyhV9W-c7VvhwkTx9LuYqy9l'>Quantum mechanics 2</a>, <a href='https://www.youtube.com/playlist?list=PLSN_PltQeOyj47rUKiSLjpQ_mVrhWAhJ9'>Quantum field theory</a>
+
+### Theory of relativity
+
+- <a href='https://www.youtube.com/playlist?list=PLx9iooiAr6WHa8sHIV1ORPJSj4JFWoF2X'>Theory of relativity</a>
 
 
 
