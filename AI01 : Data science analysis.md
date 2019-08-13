@@ -1,1 +1,4 @@
-AI01 : Data science analysis
+---
+layout: page
+title: Data science analysis
+---
