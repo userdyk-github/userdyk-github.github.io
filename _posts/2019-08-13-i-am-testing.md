@@ -1,7 +1,7 @@
 ---
 layout : post
 title : 1q2
-category: AI01
+categories: [AI01]
 comments : true
 tags : [1,2,3,4]
 ---
