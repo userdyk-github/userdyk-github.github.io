@@ -14,11 +14,13 @@ title: Study
 ## AI01 : Data science analysis
 
 <div>
-  <ol>
-    <li><a href='https://userdyk-github.github.io/'>a</li>
-    <li><a href='https://userdyk-github.github.io/'>b</li>
-    <li><a href='https://userdyk-github.github.io/'>c</li>
-  </ol>
+  <p>
+    <ol>
+      <li><a href='https://userdyk-github.github.io/'>a</li>
+      <li><a href='https://userdyk-github.github.io/'>b</li>
+      <li><a href='https://userdyk-github.github.io/'>c</li>
+    </ol>
+  </p>
 </div>
 
 ---
@@ -26,11 +28,13 @@ title: Study
 ## AI02 : Machine learning
 
 <div>
-  <ol>
-    <li><a href='https://userdyk-github.github.io/'>a</li>
-    <li><a href='https://userdyk-github.github.io/'>b</li>
-    <li><a href='https://userdyk-github.github.io/'>c</li>
-  </ol>
+  <p>
+    <ol>
+      <li><a href='https://userdyk-github.github.io/'>a</li>
+      <li><a href='https://userdyk-github.github.io/'>b</li>
+      <li><a href='https://userdyk-github.github.io/'>c</li>
+    </ol>
+  </p>
 </div>
 
 
@@ -39,11 +43,13 @@ title: Study
 ## AI03 : Deep learning
 
 <div>
-  <ol>
-    <li><a href='https://userdyk-github.github.io/'>a</li>
-    <li><a href='https://userdyk-github.github.io/'>b</li>
-    <li><a href='https://userdyk-github.github.io/'>c</li>
-  </ol>
+  <p>
+    <ol>
+      <li><a href='https://userdyk-github.github.io/'>a</li>
+      <li><a href='https://userdyk-github.github.io/'>b</li>
+      <li><a href='https://userdyk-github.github.io/'>c</li>
+    </ol>
+  </p>
 </div>
 
 ---
