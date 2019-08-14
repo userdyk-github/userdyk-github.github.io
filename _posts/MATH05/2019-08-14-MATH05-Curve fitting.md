@@ -22,7 +22,7 @@ List of posts to read before reading this article
 ---
 
 ## Expoential model fitting
-`Code`
+`**Code**`
 ```python
 # Importing modules
 import numpy as np
