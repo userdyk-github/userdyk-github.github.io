@@ -27,7 +27,6 @@ List of posts to read before reading this article
 
 I will introduce data fitting techniques. The goal is to answer which mathematical graph are best suited to data given to you, as shown in the figure on the left. ***As an answer to this question, if you run the below following main code, you can get the above graph on the right.*** 
 
-
 <dl>
 <dt class='frame1'>Main code</dt>
 </dl>
@@ -67,8 +66,8 @@ plt.show()
 <br><br><br>
 
 
-To be more specific, the mathematical graph will be confined to models that can be mathematically represented in the form of $$ a e^{-bx} + c $$ rather than in any form. In other word, the below following code 
 
+To be more specific, the mathematical graph you are going to fit on will be confined to models that can be mathematically represented in the form of $$ a e^{-bx} + c $$ rather than in any form. In other word, it is the following sub-code [1] below that descrbe this as a programming code.
 
 <dl>
 <dt class='frame2'>Sub-code [1]</dt>
