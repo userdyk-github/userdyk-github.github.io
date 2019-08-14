@@ -132,7 +132,6 @@ $$ pcov =
 # [3] : Input target function
 popt, pcov = curve_fit(func, xdata, ydata)
 plt.plot(xdata, func(xdata, *popt), 'r-', label='better fit: a=%5.3f, b=%5.3f, c=%5.3f' % tuple(popt))
-
 ```
 
 ![Figure_1](https://user-images.githubusercontent.com/52376448/63059979-d46e2d00-bf2b-11e9-91e5-6d82858fb574.png)
