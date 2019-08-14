@@ -1,6 +1,6 @@
 ---
 layout : post
-title : MATH05
+title : MATH05, Distribution
 categories: [MATH05]
 comments : true
 tags : [MATH05]
