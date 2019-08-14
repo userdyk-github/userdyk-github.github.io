@@ -87,7 +87,7 @@ def func(x, a, b, c):
 
 Before you find the values of a, b, and c defined above, let's look at the data. In reality, actual data is used. However, for convenience here, random data will be generated through sub-code [2] and used as input data.
 
-![fig](https://user-images.githubusercontent.com/52376448/63051109-7c2d3000-bf17-11e9-84ae-612bb7646240.png)
+
 
 <dl>
 <dt class='frame2'>Sub-code [2] : Input Data</dt>
@@ -101,8 +101,10 @@ y = func(xdata, 2.5, 1.3, 0.5)
 ydata = y + 0.2 * np.random.normal(size=xdata.size)
 plt.scatter(xdata, ydata, marker='.', label='data')
 ```
-
 The data generated in this way will be as follows. <br>
+
+![fig](https://user-images.githubusercontent.com/52376448/63051109-7c2d3000-bf17-11e9-84ae-612bb7646240.png)
+
 <div style="color:black; font-size: 80%; text-align: center;">
 $$ xdata = [0.00000000 \quad 0.08163265 \quad 0.16326531 \quad ... \quad 4.00000000] $$ 
 $$ ydata = [2.86253211 \quad 2.58408736 \quad 2.85238869 \quad ... \quad 0.55991963] $$ 
@@ -132,6 +134,9 @@ popt, pcov = curve_fit(func, xdata, ydata)
 plt.plot(xdata, func(xdata, *popt), 'r-', label='better fit: a=%5.3f, b=%5.3f, c=%5.3f' % tuple(popt))
 
 ```
+
+![Figure_1](https://user-images.githubusercontent.com/52376448/63059724-2793b000-bf2b-11e9-8e00-44302d98e761.png)
+
 <div style="color:black; font-size: 80%; text-align: center;">
 $$ popt = \begin{pmatrix} 2.55423706 & 1.35190947 & 0.47450618 \end{pmatrix} $$
 $$ pcov =
