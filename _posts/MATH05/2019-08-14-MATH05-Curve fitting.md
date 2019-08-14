@@ -25,7 +25,7 @@ List of posts to read before reading this article
 
 ![fig](https://user-images.githubusercontent.com/52376448/63042334-b80aca00-bf04-11e9-8ca9-4c2923b720df.png)
 
-I will introduce data fitting techniques. The goal is to answer which mathematical graph are best suited to data given to you, as shown in the figure on the left. ***As an answer to this question, if you run the below following main code, you can get the above graph on the right.*** <br>
+I will introduce data fitting techniques. The goal is to answer which mathematical graph are best suited to data given to you, as shown in the figure on the left. ***As an answer to this question, if you run the below following main code, you can get the above graph on the right.*** 
 
 <dl>
 <dt class='frame1'>Main code</dt>
@@ -83,7 +83,7 @@ def func(x, a, b, c):
 
 
 
-![fig](https://user-images.githubusercontent.com/52376448/63050333-cf05e800-bf15-11e9-98eb-6e2acf408fce.png)
+![fig](https://user-images.githubusercontent.com/52376448/63051109-7c2d3000-bf17-11e9-84ae-612bb7646240.png)
 
 
 
