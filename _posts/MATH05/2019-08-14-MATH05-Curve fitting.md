@@ -69,6 +69,12 @@ plt.plot(xdata, func(xdata, *popt), 'g--', label='best fit: a=%5.3f, b=%5.3f, c=
 print('\n')
 print('popt2 : 주어진 func 모델에서 가장 최고의 fit values \n',popt)
 print('pcov2 : 대각성분들은 각 parameter들의 variances \n',pcov)    
+
+
+plt.xlabel('x')
+plt.ylabel('y')
+plt.legend()
+plt.show()
 ```
 
  popt : Optimal values for the parameters so that the sum of the squared residuals of f(xdata, *popt) - ydata is minimized
