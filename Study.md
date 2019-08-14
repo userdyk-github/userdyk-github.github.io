@@ -29,7 +29,7 @@ title: Study
 
 ---
 
-## AI04 : Advanced deep learning
+## AI04 : Reinforcement learning
 
 
 
