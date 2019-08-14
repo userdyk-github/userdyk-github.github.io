@@ -23,6 +23,52 @@ List of posts to read before reading this article
 
 ## title1
 
+```
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.optimize import curve_fit
+
+def func(x, a, b, c):
+    return a * np.exp(-b * x) + c
+    
+
+# popt : Optimal values for the parameters so that the sum of the squared residuals of f(xdata, *popt) - ydata is minimized
+# pcov : The estimated covariance of popt. The diagonals provide the variance of the parameter estimate. To compute one standard deviation errors on the parameters use perr = np.sqrt(np.diag(pcov)). How the sigma parameter affects the estimated covariance depends on absolute_sigma argument, as described above. If the Jacobian matrix at the solution doesn’t have a full rank, then ‘lm’ method returns a matrix filled with np.inf, on the other hand ‘trf’ and ‘dogbox’ methods use Moore-Penrose pseudoinverse to compute the covariance matrix.
+
+# step1 >>>>> dataset
+# Define the data to be fit with some noise:
+np.random.seed(1729)
+
+# setting x-axis(index) : fit-data
+xdata = np.linspace(0, 4, 50)
+# setting fit-model
+y = func(xdata, 2.5, 1.3, 0.5)
+# setting y-axis(label) : fit-data
+ydata = y + 0.2 * np.random.normal(size=xdata.size)
+#plt.plot(xdata, ydata, 'b-', label='data')
+plt.scatter(xdata, ydata, marker='.', label='data')
+
+
+# step2 >>>>> roughly tuning
+# Fit for the parameters a, b, c of the function func:
+popt, pcov = curve_fit(func, xdata, ydata)
+np.array([ 2.55423706,  1.35190947,  0.47450618])
+plt.plot(xdata, func(xdata, *popt), 'r-', label='better fit: a=%5.3f, b=%5.3f, c=%5.3f' % tuple(popt))
+print('popt1 : 주어진 func 모델에서 가장 최고의 fit values \n',popt)
+print('pcov1 : 대각성분들은 각 parameter들의 variances \n',pcov)
+
+
+# step3 >>>>> fine tuning through above pcov
+# Constrain the optimization to the region of 0 <= a <= 3, 0 <= b <= 1 and 0 <= c <= 0.5:
+popt, pcov = curve_fit(func, xdata, ydata, bounds=(0, [3., 1., 0.5]))
+popt
+np.array([ 2.43708906,  1.        ,  0.35015434])
+plt.plot(xdata, func(xdata, *popt), 'g--', label='best fit: a=%5.3f, b=%5.3f, c=%5.3f' % tuple(popt))
+print('\n')
+print('popt2 : 주어진 func 모델에서 가장 최고의 fit values \n',popt)
+print('pcov2 : 대각성분들은 각 parameter들의 variances \n',pcov)    
+```
+
 ---
 
 ## title2
