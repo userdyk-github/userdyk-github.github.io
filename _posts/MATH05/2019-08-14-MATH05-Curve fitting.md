@@ -25,7 +25,7 @@ List of posts to read before reading this article
 
 ![fig](https://user-images.githubusercontent.com/52376448/63042334-b80aca00-bf04-11e9-8ca9-4c2923b720df.png)
 
-I will introduce data fitting techniques. The goal is to answer which mathematical graph are best suited to this data when given, as shown in the figure on the left. ***As a result, if you run the below following main code, you can get the above graph on the right.*** To be more specific, the mathematical graph will be confined to models that can be mathematically represented in the form of '$$ a e^{-bx} + c $$' rather than in any form.
+I will introduce data fitting techniques. The goal is to answer which mathematical graph are best suited to this data when given, as shown in the figure on the left. ***As a result, if you run the below following main code, you can get the above graph on the right.*** To be more specific, the mathematical graph will be confined to models that can be mathematically represented in the form of $$ a e^{-bx} + c $$ rather than in any form.
 
 <dl>
 <dt class='frame1'>Main code</dt>
