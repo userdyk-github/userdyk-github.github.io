@@ -23,6 +23,8 @@ List of posts to read before reading this article
 
 ## Expoential model fitting
 
+![fig1](https://user-images.githubusercontent.com/52376448/63040816-4b420080-bf01-11e9-902d-d0575db8606a.png)
+
 <dl>
 <dt class='frame1'>Main code</dt>
 </dl>
