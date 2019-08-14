@@ -161,6 +161,9 @@ popt, pcov = curve_fit(func, xdata, ydata, bounds=(0, [3., 1., 0.5]))
 plt.plot(xdata, func(xdata, *popt), 'g--', label='best fit: a=%5.3f, b=%5.3f, c=%5.3f' % tuple(popt))
 ```
 
+![Figure_1](https://user-images.githubusercontent.com/52376448/63060885-6aa35280-bf2e-11e9-88ee-fd20844eee4f.png){: width="500" height="500"){: .center}
+
+
 <br><br><br>
 
 <dl>
