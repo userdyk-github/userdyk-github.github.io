@@ -178,6 +178,8 @@ plt.legend()
 plt.show()
 ```
 
+![Figure_1](https://user-images.githubusercontent.com/52376448/63060980-b81fbf80-bf2e-11e9-90bf-0558652e9e8f.png){: width="500" height="500"){: .center}
+
 <br><br><br>
 
  
