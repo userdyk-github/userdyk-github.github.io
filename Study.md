@@ -17,47 +17,27 @@ title: Study
 
 ---
 
-## AI02 : Basic machine learning
+## AI02 : Machine learning
 
 
 
 ---
 
-## AI03 : Deep learning with tensorflow
+## AI03 : Deep learning
 
 
 
 ---
 
-## AI04 : Deep learning with keras
-
-
-
-
----
-
-## AI05 : Deep learning with pytorch
-
+## AI04 : Advanced deep learning
 
 
 
 ---
 
-## AI06 : Advanced deep learning
+## AI05 : Computer vision
 
 
-
-
----
-
-## AI07 : Opencv image processing
-
-
-
-
----
-
-## AI08 : Computer vision deep learning
 
 
 ---
