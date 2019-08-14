@@ -83,6 +83,9 @@ def func(x, a, b, c):
 
 
 
+![fig](https://user-images.githubusercontent.com/52376448/63050333-cf05e800-bf15-11e9-98eb-6e2acf408fce.png)
+
+
 
 <dl>
 <dt class='frame2'>Sub-code [2] : Input</dt>
