@@ -33,33 +33,73 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 
-# [1] : Goal
+# [1] : 
 def func(x, a, b, c):
     return a * np.exp(-b * x) + c
 
 # [2] : Input
-xdata = np.linspace(0, 4, 50)
-
-# [3] : 
 np.random.seed(1729)
+xdata = np.linspace(0, 4, 50)
 y = func(xdata, 2.5, 1.3, 0.5)
 ydata = y + 0.2 * np.random.normal(size=xdata.size)
 plt.scatter(xdata, ydata, marker='.', label='data')
 
-# [4] : 
+# [3] : 
 popt, pcov = curve_fit(func, xdata, ydata)
 plt.plot(xdata, func(xdata, *popt), 'r-', label='better fit: a=%5.3f, b=%5.3f, c=%5.3f' % tuple(popt))
 
-# [5] : 
+# [4] : 
 popt, pcov = curve_fit(func, xdata, ydata, bounds=(0, [3., 1., 0.5]))
 plt.plot(xdata, func(xdata, *popt), 'g--', label='best fit: a=%5.3f, b=%5.3f, c=%5.3f' % tuple(popt))
 
-# [6] : Output
+# [5] : Output
 plt.xlabel('x')
 plt.ylabel('y')
 plt.legend()
 plt.show()
 ```
+
+
+
+```python
+# [1] : Target
+def func(x, a, b, c):
+    return a * np.exp(-b * x) + c
+```
+
+```python
+# [2] : Input
+np.random.seed(1729)
+xdata = np.linspace(0, 4, 50)
+y = func(xdata, 2.5, 1.3, 0.5)
+ydata = y + 0.2 * np.random.normal(size=xdata.size)
+plt.scatter(xdata, ydata, marker='.', label='data')
+```
+
+
+```python
+# [3] : 
+popt, pcov = curve_fit(func, xdata, ydata)
+plt.plot(xdata, func(xdata, *popt), 'r-', label='better fit: a=%5.3f, b=%5.3f, c=%5.3f' % tuple(popt))
+
+```
+
+
+```python
+# [4] : 
+popt, pcov = curve_fit(func, xdata, ydata, bounds=(0, [3., 1., 0.5]))
+plt.plot(xdata, func(xdata, *popt), 'g--', label='best fit: a=%5.3f, b=%5.3f, c=%5.3f' % tuple(popt))
+```
+
+
+```python
+# [5] : Output
+plt.xlabel('x')
+plt.ylabel('y')
+plt.legend()
+plt.show()
+```
+
 
  popt : Optimal values for the parameters so that the sum of the squared residuals of f(xdata, *popt) - ydata is minimized
  pcov : The estimated covariance of popt. The diagonals provide the variance of the parameter estimate. To compute one standard deviation errors on the parameters use perr = np.sqrt(np.diag(pcov)). How the sigma parameter affects the estimated covariance depends on absolute_sigma argument, as described above. If the Jacobian matrix at the solution doesn’t have a full rank, then ‘lm’ method returns a matrix filled with np.inf, on the other hand ‘trf’ and ‘dogbox’ methods use Moore-Penrose pseudoinverse to compute the covariance matrix.
