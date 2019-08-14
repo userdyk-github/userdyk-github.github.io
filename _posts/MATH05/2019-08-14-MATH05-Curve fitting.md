@@ -23,6 +23,17 @@ List of posts to read before reading this article
 
 ## Expoential model fitting
 
+<dl>
+<dt>Name</dt>
+<dd>Godzilla</dd>
+<dt>Born</dt>
+<dd>1952</dd>
+<dt>Birthplace</dt>
+<dd>Japan</dd>
+<dt>Color</dt>
+<dd>Green</dd>
+</dl>
+
 ```python
 # Importing modules
 import numpy as np
