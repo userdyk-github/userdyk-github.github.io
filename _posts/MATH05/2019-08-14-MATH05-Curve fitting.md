@@ -28,33 +28,33 @@ List of posts to read before reading this article
 </dl>
 
 ```python
-# [1] : Importing modules
+# [0] : Importing modules
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 
-# [2] : Goal
+# [1] : Goal
 def func(x, a, b, c):
     return a * np.exp(-b * x) + c
 
-# [3] : Input
+# [2] : Input
 xdata = np.linspace(0, 4, 50)
 
-# [4] : 
+# [3] : 
 np.random.seed(1729)
 y = func(xdata, 2.5, 1.3, 0.5)
 ydata = y + 0.2 * np.random.normal(size=xdata.size)
 plt.scatter(xdata, ydata, marker='.', label='data')
 
-# [5] : 
+# [4] : 
 popt, pcov = curve_fit(func, xdata, ydata)
 plt.plot(xdata, func(xdata, *popt), 'r-', label='better fit: a=%5.3f, b=%5.3f, c=%5.3f' % tuple(popt))
 
-# [6] : 
+# [5] : 
 popt, pcov = curve_fit(func, xdata, ydata, bounds=(0, [3., 1., 0.5]))
 plt.plot(xdata, func(xdata, *popt), 'g--', label='best fit: a=%5.3f, b=%5.3f, c=%5.3f' % tuple(popt))
 
-# [7] : Output
+# [6] : Output
 plt.xlabel('x')
 plt.ylabel('y')
 plt.legend()
