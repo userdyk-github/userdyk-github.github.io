@@ -114,7 +114,7 @@ $$ ydata = [2.86253211 \quad 2.58408736 \quad 2.85238869 \quad ... \quad 0.55991
 
 
 $$ popt = \begin{pmatrix} a & b & c \end{pmatrix} $$ <br>
-Optimal values for the parameters so that the sum of the squared residuals of f(xdata, *popt) - ydata is minimized <br>
+Optimal values for the parameters so that the sum of the squared residuals of f(xdata, *popt) - ydata is minimized <br><br>
 $$ pcov =
 \begin{pmatrix}
 \sigma_{x_{a}y_{a}} & \sigma_{x_{a}y_{b}} & \sigma_{x_{a}y_{c}}\\
