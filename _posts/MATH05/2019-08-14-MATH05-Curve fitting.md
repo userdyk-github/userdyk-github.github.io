@@ -103,7 +103,7 @@ plt.scatter(xdata, ydata, marker='.', label='data')
 ```
 The data generated in this way will be as follows. <br>
 
-![fig](https://user-images.githubusercontent.com/52376448/63051109-7c2d3000-bf17-11e9-84ae-612bb7646240.png){: width="300" height="300"){: .center}
+![fig](https://user-images.githubusercontent.com/52376448/63051109-7c2d3000-bf17-11e9-84ae-612bb7646240.png){: width="400" height="400"){: .center}
 
 <div style="color:black; font-size: 80%; text-align: center;">
 $$ xdata = [0.00000000 \quad 0.08163265 \quad 0.16326531 \quad ... \quad 4.00000000] $$ 
@@ -134,7 +134,7 @@ popt, pcov = curve_fit(func, xdata, ydata)
 plt.plot(xdata, func(xdata, *popt), 'r-', label='better fit: a=%5.3f, b=%5.3f, c=%5.3f' % tuple(popt))
 ```
 
-![Figure_1](https://user-images.githubusercontent.com/52376448/63059979-d46e2d00-bf2b-11e9-91e5-6d82858fb574.png){: width="300" height="300"){: .center}
+![Figure_1](https://user-images.githubusercontent.com/52376448/63059979-d46e2d00-bf2b-11e9-91e5-6d82858fb574.png){: width="400" height="400"){: .center}
 
 <div style="color:black; font-size: 80%; text-align: center;">
 $$ popt = \begin{pmatrix} 2.554 & 1.352 & 0.475 \end{pmatrix} $$
