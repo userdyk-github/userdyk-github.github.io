@@ -156,6 +156,13 @@ List of posts followed by this article
 
 ---
 
+Reference
+- [post1](https://userdyk-github.github.io/)
+- <a href='https://userdyk-github.github.io/'>post2</a>
+- <a href='https://userdyk-github.github.io/'>post3</a>
+
+---
+
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
 
 [Link to another page](another-page).
