@@ -48,15 +48,15 @@ y = func(xdata, 2.5, 1.3, 0.5)
 ydata = y + 0.2 * np.random.normal(size=xdata.size)
 plt.scatter(xdata, ydata, marker='.', label='data')
 
-# [3] : Input target function
+# [3] : Output through input target function(1)
 popt, pcov = curve_fit(func, xdata, ydata)
 plt.plot(xdata, func(xdata, *popt), 'r-', label='better fit: a=%5.3f, b=%5.3f, c=%5.3f' % tuple(popt))
 
-# [4] : 
+# [4] : Output through input target function(2)
 popt, pcov = curve_fit(func, xdata, ydata, bounds=(0, [3., 1., 0.5]))
 plt.plot(xdata, func(xdata, *popt), 'g--', label='best fit: a=%5.3f, b=%5.3f, c=%5.3f' % tuple(popt))
 
-# [5] : Output
+# [5] : Visualization
 plt.xlabel('x')
 plt.ylabel('y')
 plt.legend()
@@ -125,11 +125,11 @@ $$ pcov =
 </div>
 
 <dl>
-<dt class='frame2'>Sub-code [3] : Input target function</dt>
+<dt class='frame2'>Sub-code [3] : Output through input target function(1)</dt>
 </dl>
 
 ```python
-# [3] : Input target function
+# [3] : Output through input target function(1)
 popt, pcov = curve_fit(func, xdata, ydata)
 plt.plot(xdata, func(xdata, *popt), 'r-', label='better fit: a=%5.3f, b=%5.3f, c=%5.3f' % tuple(popt))
 ```
@@ -152,11 +152,11 @@ $$ pcov =
 
 
 <dl>
-<dt class='frame2'>Sub-code [4]</dt>
+<dt class='frame2'>Sub-code [4] : Output through input target function(2)</dt>
 </dl>
 
 ```python
-# [4] : 
+# [4] : Output through input target function(2)
 popt, pcov = curve_fit(func, xdata, ydata, bounds=(0, [3., 1., 0.5]))
 plt.plot(xdata, func(xdata, *popt), 'g--', label='best fit: a=%5.3f, b=%5.3f, c=%5.3f' % tuple(popt))
 ```
@@ -168,7 +168,7 @@ plt.plot(xdata, func(xdata, *popt), 'g--', label='best fit: a=%5.3f, b=%5.3f, c=
 </dl>
 
 ```python
-# [5] : Output
+# [5] : Visualization
 plt.xlabel('x')
 plt.ylabel('y')
 plt.legend()
