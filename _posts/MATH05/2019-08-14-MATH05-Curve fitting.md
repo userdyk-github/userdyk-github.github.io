@@ -72,6 +72,10 @@ def func(x, a, b, c):
     return a * np.exp(-b * x) + c
 ```
 
+<dl>
+<dt class='frame2'>Sub code</dt>
+</dl>
+
 ```python
 # [2] : Input
 np.random.seed(1729)
@@ -81,6 +85,9 @@ ydata = y + 0.2 * np.random.normal(size=xdata.size)
 plt.scatter(xdata, ydata, marker='.', label='data')
 ```
 
+<dl>
+<dt class='frame2'>Sub code</dt>
+</dl>
 
 ```python
 # [3] : 
@@ -89,6 +96,9 @@ plt.plot(xdata, func(xdata, *popt), 'r-', label='better fit: a=%5.3f, b=%5.3f, c
 
 ```
 
+<dl>
+<dt class='frame2'>Sub code</dt>
+</dl>
 
 ```python
 # [4] : 
@@ -96,6 +106,9 @@ popt, pcov = curve_fit(func, xdata, ydata, bounds=(0, [3., 1., 0.5]))
 plt.plot(xdata, func(xdata, *popt), 'g--', label='best fit: a=%5.3f, b=%5.3f, c=%5.3f' % tuple(popt))
 ```
 
+<dl>
+<dt class='frame2'>Sub code</dt>
+</dl>
 
 ```python
 # [5] : Output
