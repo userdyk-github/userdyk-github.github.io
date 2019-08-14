@@ -56,8 +56,6 @@ plt.scatter(xdata, ydata, marker='.', label='data')
 popt, pcov = curve_fit(func, xdata, ydata)
 np.array([ 2.55423706,  1.35190947,  0.47450618])
 plt.plot(xdata, func(xdata, *popt), 'r-', label='better fit: a=%5.3f, b=%5.3f, c=%5.3f' % tuple(popt))
-print('popt1 : 주어진 func 모델에서 가장 최고의 fit values \n',popt)
-print('pcov1 : 대각성분들은 각 parameter들의 variances \n',pcov)
 
 
 # [] Step3> Fine tuning through above pcov
