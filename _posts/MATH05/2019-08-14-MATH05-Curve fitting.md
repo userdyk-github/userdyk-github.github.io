@@ -65,6 +65,7 @@ plt.show()
 <dl>
 <dt class='frame2'>Sub code</dt>
 </dl>
+
 ```python
 # [1] : Target
 def func(x, a, b, c):
