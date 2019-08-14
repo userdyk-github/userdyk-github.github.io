@@ -27,9 +27,9 @@ title: Study
 
 <div>
   <ol>
-    <li><a href=''></li>
-    <li><a href=''></li>
-    <li><a href=''></li>
+    <li><a href='https://userdyk-github.github.io/'>a</li>
+    <li><a href='https://userdyk-github.github.io/'>b</li>
+    <li><a href='https://userdyk-github.github.io/'>c</li>
   </ol>
 </div>
 
@@ -40,12 +40,11 @@ title: Study
 
 <div>
   <ol>
-    <li><a href=''></li>
-    <li><a href=''></li>
-    <li><a href=''></li>
+    <li><a href='https://userdyk-github.github.io/'>a</li>
+    <li><a href='https://userdyk-github.github.io/'>b</li>
+    <li><a href='https://userdyk-github.github.io/'>c</li>
   </ol>
 </div>
-
 
 ---
 
