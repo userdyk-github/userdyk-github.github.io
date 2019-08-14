@@ -24,6 +24,7 @@ List of posts to read before reading this article
 ## Expoential model fitting
 
 ```python
+# Importing modules
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
