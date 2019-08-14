@@ -135,7 +135,7 @@ plt.plot(xdata, func(xdata, *popt), 'r-', label='better fit: a=%5.3f, b=%5.3f, c
 
 ```
 
-![Figure_1](https://user-images.githubusercontent.com/52376448/63059894-907b2800-bf2b-11e9-8c8a-3c1778d48b6f.png)
+![Figure_1](https://user-images.githubusercontent.com/52376448/63059979-d46e2d00-bf2b-11e9-91e5-6d82858fb574.png)
 
 <div style="color:black; font-size: 80%; text-align: center;">
 $$ popt = \begin{pmatrix} 2.55423706 & 1.35190947 & 0.47450618 \end{pmatrix} $$
