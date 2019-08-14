@@ -113,15 +113,15 @@ $$ ydata = [2.86253211 \quad 2.58408736 \quad 2.85238869 \quad ... \quad 0.55991
 
 
 
-$$ popt = [a \quad b \quad c] $$ <br>
-: Optimal values for the parameters so that the sum of the squared residuals of f(xdata, *popt) - ydata is minimized <br>
+$$ popt = \begin{pmatrix} a & b & c \end{pmatrix} $$ <br>
+Optimal values for the parameters so that the sum of the squared residuals of f(xdata, *popt) - ydata is minimized <br>
 $$ pcov =
 \begin{pmatrix}
 \sigma_{x_{a}y_{a}} & \sigma_{x_{a}y_{b}} & \sigma_{x_{a}y_{c}}\\
 \sigma_{x_{b}y_{a}} & \sigma_{x_{b}y_{b}} & \sigma_{x_{b}y_{c}}\\
 \sigma_{x_{c}y_{a}} & \sigma_{x_{c}y_{b}} & \sigma_{x_{c}y_{c}}
 \end{pmatrix} $$ <br>
-: The estimated covariance of popt. The diagonals provide the variance of the parameter estimate. To compute one standard deviation errors on the parameters use perr = np.sqrt(np.diag(pcov)). How the sigma parameter affects the estimated covariance depends on absolute_sigma argument, as described above. If the Jacobian matrix at the solution doesn’t have a full rank, then ‘lm’ method returns a matrix filled with np.inf, on the other hand ‘trf’ and ‘dogbox’ methods use Moore-Penrose pseudoinverse to compute the covariance matrix. <br>
+The estimated covariance of popt. The diagonals provide the variance of the parameter estimate. To compute one standard deviation errors on the parameters use perr = np.sqrt(np.diag(pcov)). How the sigma parameter affects the estimated covariance depends on absolute_sigma argument, as described above. If the Jacobian matrix at the solution doesn’t have a full rank, then ‘lm’ method returns a matrix filled with np.inf, on the other hand ‘trf’ and ‘dogbox’ methods use Moore-Penrose pseudoinverse to compute the covariance matrix. <br>
 
 <dl>
 <dt class='frame2'>Sub-code [3] : Input target function</dt>
@@ -133,7 +133,7 @@ popt, pcov = curve_fit(func, xdata, ydata)
 plt.plot(xdata, func(xdata, *popt), 'r-', label='better fit: a=%5.3f, b=%5.3f, c=%5.3f' % tuple(popt))
 
 ```
-$$ popt = [2.55423706 \quad 1.35190947 \quad 0.47450618] $$ <br>
+$$ popt = \begin{pmatrix} 2.55423706 & 1.35190947 & 0.47450618 \end{pmatrix} $$ <br>
 $$ pcov =
 \begin{pmatrix}
 0.0158905 & 0.00681778 & -0.0007614\\
