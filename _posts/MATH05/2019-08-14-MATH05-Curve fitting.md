@@ -25,7 +25,7 @@ List of posts to read before reading this article
 
 ![fig](https://user-images.githubusercontent.com/52376448/63042334-b80aca00-bf04-11e9-8ca9-4c2923b720df.png)
 
-I will introduce data fitting techniques. The goal is to answer which mathematical graph are best suited to this data when given, as shown in the figure on the left. ***As a result, if you run the below following main code, you can get the above graph on the right.*** To be more specific, the mathematical graph will be confined to models that can be mathematically represented in the form of $$ a e^{-bx} + c $$ rather than in any form.<br><br><br>
+I will introduce data fitting techniques. The goal is to answer which mathematical graph are best suited to this data when given, as shown in the figure on the left. ***As a result, if you run the below following main code, you can get the above graph on the right.*** 
 
 
 <dl>
@@ -64,11 +64,14 @@ plt.legend()
 plt.show()
 ```
 
+<br><br><br>
 
+
+To be more specific, the mathematical graph will be confined to models that can be mathematically represented in the form of $$ a e^{-bx} + c $$ rather than in any form. In other word, the below following code 
 
 
 <dl>
-<dt class='frame2'>Sub code [1]</dt>
+<dt class='frame2'>Sub-code [1]</dt>
 </dl>
 
 ```python
@@ -77,8 +80,11 @@ def func(x, a, b, c):
     return a * np.exp(-b * x) + c
 ```
 
+<br><br><br>
+
+
 <dl>
-<dt class='frame2'>Sub code [2]</dt>
+<dt class='frame2'>Sub-code [2]</dt>
 </dl>
 
 ```python
@@ -91,7 +97,7 @@ plt.scatter(xdata, ydata, marker='.', label='data')
 ```
 
 <dl>
-<dt class='frame2'>Sub code [3]</dt>
+<dt class='frame2'>Sub-code [3]</dt>
 </dl>
 
 ```python
@@ -102,7 +108,7 @@ plt.plot(xdata, func(xdata, *popt), 'r-', label='better fit: a=%5.3f, b=%5.3f, c
 ```
 
 <dl>
-<dt class='frame2'>Sub code [4]</dt>
+<dt class='frame2'>Sub-code [4]</dt>
 </dl>
 
 ```python
@@ -112,7 +118,7 @@ plt.plot(xdata, func(xdata, *popt), 'g--', label='best fit: a=%5.3f, b=%5.3f, c=
 ```
 
 <dl>
-<dt class='frame2'>Sub code [5]</dt>
+<dt class='frame2'>Sub-code [5]</dt>
 </dl>
 
 ```python
