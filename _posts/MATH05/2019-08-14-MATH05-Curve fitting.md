@@ -41,7 +41,7 @@ from scipy.optimize import curve_fit
 def func(x, a, b, c):
     return a * np.exp(-b * x) + c
 
-# [2] : Input
+# [2] : Input Data
 np.random.seed(1729)
 xdata = np.linspace(0, 4, 50)
 y = func(xdata, 2.5, 1.3, 0.5)
@@ -88,11 +88,11 @@ def func(x, a, b, c):
 
 
 <dl>
-<dt class='frame2'>Sub-code [2] : Input</dt>
+<dt class='frame2'>Sub-code [2] : Input Data</dt>
 </dl>
 
 ```python
-# [2] : Input
+# [2] : Input Data
 np.random.seed(1729)
 xdata = np.linspace(0, 4, 50)
 y = func(xdata, 2.5, 1.3, 0.5)
