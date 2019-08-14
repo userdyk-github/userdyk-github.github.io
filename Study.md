@@ -203,3 +203,14 @@ title: Study
 
 
 ---
+
+## MATH06 : Optimization
+
+- <a href='https://userdyk-github.github.io/'>1</a>
+- <a href='https://userdyk-github.github.io/'>2</a>
+- <a href='https://userdyk-github.github.io/'>3</a>
+- <a href='https://userdyk-github.github.io/'>4</a>
+- <a href='https://userdyk-github.github.io/'>5</a>
+
+
+---
