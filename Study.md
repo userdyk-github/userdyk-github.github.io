@@ -23,7 +23,7 @@ title: Study
   </p>
 </div>
 
----
+<hr>
 
 ## AI02 : Machine learning
 
@@ -38,7 +38,7 @@ title: Study
 </div>
 
 
----
+<hr>
 
 ## AI03 : Deep learning
 
