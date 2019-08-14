@@ -125,12 +125,13 @@ popt, pcov = curve_fit(func, xdata, ydata)
 plt.plot(xdata, func(xdata, *popt), 'r-', label='better fit: a=%5.3f, b=%5.3f, c=%5.3f' % tuple(popt))
 
 ```
+$$ popt = [2.55423706 \quad 1.35190947 \quad 0.47450618] $$ <br>
 $$ pcov =
 \begin{pmatrix}
 0.0158905 & 0.00681778 & -0.0007614\\
 0.00681778 & 0.02019919 & 0.00541905\\
 -0.0007614 & 0.00541905 & 0.00282595
-\end{pmatrix} $$
+\end{pmatrix} $$ <br>
 
 <br><br><br>
 
