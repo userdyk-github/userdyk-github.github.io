@@ -21,7 +21,7 @@ List of posts to read before reading this article
 
 ---
 
-## title1
+## Expoential model fitting
 
 ```python
 import numpy as np
@@ -71,11 +71,16 @@ print('pcov2 : 대각성분들은 각 parameter들의 variances \n',pcov)
 
 ---
 
-## title2
+## Gaussian model fitting
 
 ---
 
-## title3
+## Two gaussian model fitting
+
+
+---
+
+## Curve fit with seaborn based on specific distribution
 
 ---
 
