@@ -103,7 +103,7 @@ plt.scatter(xdata, ydata, marker='.', label='data')
 ```
 
 The data generated in this way will be as follows. <br>
-<div style="font-size: 50%; text-align: center;">
+<div style="color:gray; font-size: 80%; text-align: center;">
 $$ xdata = [0.00000000 \quad 0.08163265 \quad 0.16326531 \quad ... \quad 4.00000000] $$ 
 $$ ydata = [2.86253211 \quad 2.58408736 \quad 2.85238869 \quad ... \quad 0.55991963] $$ 
 </div>
@@ -111,15 +111,16 @@ $$ ydata = [2.86253211 \quad 2.58408736 \quad 2.85238869 \quad ... \quad 0.55991
 
 
 Now, most of the process from now on will be a series of steps to find the values of $$ a, b, c $$. It should not be forgotten that finding a value of $$ a,b,c $$ is equivalent to obtaining a fitting curve. Estimated optimal values for the parameters so that the sum of the squared residuals of $$ func(xdata, *popt) - ydata $$ is minimized. <br>
-<div style="font-size: 100%; text-align: center;">$$ popt = \begin{pmatrix} \hat{a} & \hat{b} & \hat{c} \end{pmatrix} $$</div> <br><br>
+<div style="font-size: 100%; text-align: center;">$$ popt = \begin{pmatrix} \hat{a} & \hat{b} & \hat{c} \end{pmatrix} $$</div>
 The estimated covariance of popt. The diagonals provide the variance of the parameter estimate. To compute one standard deviation errors on the parameters use perr = np.sqrt(np.diag(pcov)). How the sigma parameter affects the estimated covariance depends on absolute_sigma argument, as described above. If the Jacobian matrix at the solution doesn’t have a full rank, then ‘lm’ method returns a matrix filled with np.inf, on the other hand ‘trf’ and ‘dogbox’ methods use Moore-Penrose pseudoinverse to compute the covariance matrix. <br>
+<div style="color:gray; font-size: 80%; text-align: center;">
 $$ pcov =
 \begin{pmatrix}
 \sigma_{x_{a}y_{a}} & \sigma_{x_{a}y_{b}} & \sigma_{x_{a}y_{c}}\\
 \sigma_{x_{b}y_{a}} & \sigma_{x_{b}y_{b}} & \sigma_{x_{b}y_{c}}\\
 \sigma_{x_{c}y_{a}} & \sigma_{x_{c}y_{b}} & \sigma_{x_{c}y_{c}}
 \end{pmatrix} $$ <br>
-<br>
+</div>
 
 <dl>
 <dt class='frame2'>Sub-code [3] : Input target function</dt>
