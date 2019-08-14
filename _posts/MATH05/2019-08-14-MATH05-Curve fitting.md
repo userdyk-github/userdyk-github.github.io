@@ -67,7 +67,7 @@ plt.show()
 
 
 
-To be more specific, the mathematical graph you are going to fit on will be confined to models that can be mathematically represented in the form of $$ a e^{-bx} + c $$ rather than in any form. In other word, it is the following sub-code [1] below that descrbe this as a programming code.
+To be more specific, the mathematical graph you are going to fit on will be confined to models that can be mathematically represented in the form of $$ a e^{-bx} + c $$ rather than in any form. In other word, the following sub-code [1] below is the description of this as a programming code.
 
 <dl>
 <dt class='frame2'>Sub-code [1]</dt>
