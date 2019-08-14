@@ -164,6 +164,15 @@ plt.plot(xdata, func(xdata, *popt), 'g--', label='best fit: a=%5.3f, b=%5.3f, c=
 ![Figure_1](https://user-images.githubusercontent.com/52376448/63060885-6aa35280-bf2e-11e9-88ee-fd20844eee4f.png){: width="500" height="500"){: .center}
 
 
+<div style="color:black; font-size: 80%; text-align: center;">
+$$ popt = \begin{pmatrix} 2.43708905 & 1. & 0.35015434 \end{pmatrix} $$
+$$ pcov =
+\begin{pmatrix}
+0.01521864 & 0.00291009 & -0.00223465\\
+0.00291009 & 0.01677755 & 0.00839441\\
+-0.00223465 & 0.00839441 & 0.00615306
+\end{pmatrix} $$ 
+</div>
 <br><br><br>
 
 <dl>
