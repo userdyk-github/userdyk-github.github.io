@@ -6,3 +6,19 @@ comments : true
 tags : [MATH05]
 ---
 
+## Contents
+{:.no_toc}
+
+* ToC
+{:toc}
+
+---
+
+## Discrete distribution
+
+---
+
+## Continous distribution
+
+---
+
