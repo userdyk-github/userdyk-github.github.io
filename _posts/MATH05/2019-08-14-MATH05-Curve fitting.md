@@ -85,7 +85,7 @@ def func(x, a, b, c):
 
 ![fig](https://user-images.githubusercontent.com/52376448/63051109-7c2d3000-bf17-11e9-84ae-612bb7646240.png)
 
-
+In reality, actual data is used. However, for convenience here, random data will be generated and used as input data.
 
 <dl>
 <dt class='frame2'>Sub-code [2] : Input Data</dt>
