@@ -57,11 +57,13 @@ title: Study
 ## AI04 : Reinforcement learning
 
 <div>
-  <ol>
-    <li><a href=''></li>
-    <li><a href=''></li>
-    <li><a href=''></li>
-  </ol>
+  <p>
+    <ol>
+      <li><a href='https://userdyk-github.github.io/'>a</li>
+      <li><a href='https://userdyk-github.github.io/'>b</li>
+      <li><a href='https://userdyk-github.github.io/'>c</li>
+    </ol>
+  </p>
 </div>
 
 
@@ -70,11 +72,13 @@ title: Study
 ## AI05 : Computer vision
 
 <div>
-  <ol>
-    <li><a href=''></li>
-    <li><a href=''></li>
-    <li><a href=''></li>
-  </ol>
+  <p>
+    <ol>
+      <li><a href='https://userdyk-github.github.io/'>a</li>
+      <li><a href='https://userdyk-github.github.io/'>b</li>
+      <li><a href='https://userdyk-github.github.io/'>c</li>
+    </ol>
+  </p>
 </div>
 
 
@@ -84,11 +88,13 @@ title: Study
 ## EE01 : Integrated circuits
 
 <div>
-  <ol>
-    <li><a href=''></li>
-    <li><a href=''></li>
-    <li><a href=''></li>
-  </ol>
+  <p>
+    <ol>
+      <li><a href='https://userdyk-github.github.io/'>a</li>
+      <li><a href='https://userdyk-github.github.io/'>b</li>
+      <li><a href='https://userdyk-github.github.io/'>c</li>
+    </ol>
+  </p>
 </div>
 
 
@@ -97,11 +103,13 @@ title: Study
 ## EE02 : Semiconductor devices
 
 <div>
-  <ol>
-    <li><a href=''></li>
-    <li><a href=''></li>
-    <li><a href=''></li>
-  </ol>
+  <p>
+    <ol>
+      <li><a href='https://userdyk-github.github.io/'>a</li>
+      <li><a href='https://userdyk-github.github.io/'>b</li>
+      <li><a href='https://userdyk-github.github.io/'>c</li>
+    </ol>
+  </p>
 </div>
 
 
@@ -110,11 +118,13 @@ title: Study
 ## EE03 : Signal processing
 
 <div>
-  <ol>
-    <li><a href=''></li>
-    <li><a href=''></li>
-    <li><a href=''></li>
-  </ol>
+  <p>
+    <ol>
+      <li><a href='https://userdyk-github.github.io/'>a</li>
+      <li><a href='https://userdyk-github.github.io/'>b</li>
+      <li><a href='https://userdyk-github.github.io/'>c</li>
+    </ol>
+  </p>
 </div>
 
 
@@ -123,11 +133,13 @@ title: Study
 ## MATH01 : Linear algebra
 
 <div>
-  <ol>
-    <li><a href=''></li>
-    <li><a href=''></li>
-    <li><a href=''></li>
-  </ol>
+  <p>
+    <ol>
+      <li><a href='https://userdyk-github.github.io/'>a</li>
+      <li><a href='https://userdyk-github.github.io/'>b</li>
+      <li><a href='https://userdyk-github.github.io/'>c</li>
+    </ol>
+  </p>
 </div>
 
 
@@ -136,11 +148,13 @@ title: Study
 ## MATH02 : Calulus
 
 <div>
-  <ol>
-    <li><a href=''></li>
-    <li><a href=''></li>
-    <li><a href=''></li>
-  </ol>
+  <p>
+    <ol>
+      <li><a href='https://userdyk-github.github.io/'>a</li>
+      <li><a href='https://userdyk-github.github.io/'>b</li>
+      <li><a href='https://userdyk-github.github.io/'>c</li>
+    </ol>
+  </p>
 </div>
 
 
@@ -149,11 +163,13 @@ title: Study
 ## MATH03 : Complex analysis
 
 <div>
-  <ol>
-    <li><a href=''></li>
-    <li><a href=''></li>
-    <li><a href=''></li>
-  </ol>
+  <p>
+    <ol>
+      <li><a href='https://userdyk-github.github.io/'>a</li>
+      <li><a href='https://userdyk-github.github.io/'>b</li>
+      <li><a href='https://userdyk-github.github.io/'>c</li>
+    </ol>
+  </p>
 </div>
 
 ---
@@ -161,11 +177,13 @@ title: Study
 ## MATH04 : Differential equation
 
 <div>
-  <ol>
-    <li><a href=''></li>
-    <li><a href=''></li>
-    <li><a href=''></li>
-  </ol>
+  <p>
+    <ol>
+      <li><a href='https://userdyk-github.github.io/'>a</li>
+      <li><a href='https://userdyk-github.github.io/'>b</li>
+      <li><a href='https://userdyk-github.github.io/'>c</li>
+    </ol>
+  </p>
 </div>
 
 
@@ -174,20 +192,15 @@ title: Study
 ## MATH05 : Statistics
 
 <div>
-  <ol>
-    <li><a href=''></li>
-    <li><a href=''></li>
-    <li><a href=''></li>
-  </ol>
+  <p>
+    <ol>
+      <li><a href='https://userdyk-github.github.io/'>a</li>
+      <li><a href='https://userdyk-github.github.io/'>b</li>
+      <li><a href='https://userdyk-github.github.io/'>c</li>
+    </ol>
+  </p>
 </div>
 
----
-
-<ol>
-  <li><a href=''></li>
-  <li><a href=''></li>
-  <li><a href=''></li>
-</ol>
 
 
 ---
