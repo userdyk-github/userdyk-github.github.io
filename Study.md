@@ -122,7 +122,7 @@ title: Study
 
 ---
 
-## PHY04 : Quantum Theory
+## PHY04 : Quantum theory
 
 - <a href='https://userdyk-github.github.io/'>1</a>
 - <a href='https://userdyk-github.github.io/'>2</a>
