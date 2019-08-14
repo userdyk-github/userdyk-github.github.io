@@ -69,10 +69,10 @@ plt.show()
 
 
 
-It can be difficult to understand the meaning by looking at only the above code. To simplify the problem, the mathematical graph you are going to fit on will be confined to models that can be mathematically represented in the form of $$ a e^{-bx} + c $$ rather than in any form. In other word, the following sub-code [1] below is the description of this as a programming language. Instead of thinking about the complex number of cases, you should approach simple thing first. ***And then in order to finally obtain the graph you want to fit, you must find the value of the constant $$ a, b, c $$.***
+It can be difficult to understand the meaning by looking at only the above code. To simplify the problem, the mathematical graph you are going to fit on will be confined to models that can be mathematically represented in the form of $$ a e^{-bx} + c $$ rather than in any form. In other word, the following sub-code [1] below is the description of this as a programming language. Instead of thinking about the complex number of cases, you should approach simple thing first. ***And then in order to finally obtain the curve you want to fit, you must find the value of the constant $$ a, b, c $$.***
 
 <dl>
-<dt class='frame2'>Sub-code [1] : Mathematical representation of the graph you want to fit</dt>
+<dt class='frame2'>Sub-code [1] : Mathematical representation of the curve you want to fit</dt>
 </dl>
 
 ```python
@@ -85,10 +85,9 @@ def func(x, a, b, c):
 
 
 
-
+Before you find the values of a, b, and c defined above, let's look at the data. In reality, actual data is used. However, for convenience here, random data will be generated through sub-code [2] and used as input data.
 
 ![fig](https://user-images.githubusercontent.com/52376448/63051109-7c2d3000-bf17-11e9-84ae-612bb7646240.png)
-Before you find the values of a, b, and c defined above, let's look at the data. In reality, actual data is used. However, for convenience here, random data will be generated through sub-code [2] and used as input data.
 
 <dl>
 <dt class='frame2'>Sub-code [2] : Input Data</dt>
@@ -111,8 +110,10 @@ $$ ydata = [2.86253211 \quad 2.58408736 \quad 2.85238869 \quad ... \quad 0.55991
 <br><br><br>
 
 
+Now, most of the process from now on will be a series of steps to find the values of a, b, c. It should not be forgotten that finding a value of a,b,c is equivalent to obtaining a fitting curve. 
 
-$$ popt = \begin{pmatrix} a & b & c \end{pmatrix} $$ <br>
+
+$$ popt = \begin{pmatrix} \hat{a} & \hat{b} & \hat{c} \end{pmatrix} $$ <br>
 Optimal values for the parameters so that the sum of the squared residuals of $$ f(xdata, *popt) - ydata $$ is minimized <br><br>
 $$ pcov =
 \begin{pmatrix}
