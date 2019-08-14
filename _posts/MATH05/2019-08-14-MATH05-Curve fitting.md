@@ -23,7 +23,7 @@ List of posts to read before reading this article
 
 ## Expoential model fitting
 
-<dl><dt> Code </dt></dl>
+<dt> Code </dt>
 ```python
 # Importing modules
 import numpy as np
