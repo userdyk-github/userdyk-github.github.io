@@ -28,31 +28,31 @@ List of posts to read before reading this article
 </dl>
 
 ```python
-# Importing modules
+# [] Importing modules
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 
-# Defining a exponential function
+# [] Defining a exponential function
 def func(x, a, b, c):
     return a * np.exp(-b * x) + c
 
-# step1> dataset
-# Define the data to be fit with some noise:
-np.random.seed(1729)
 
-# setting x-axis(index) : fit-data
+# [] Step1> Dataset
+# [] Defining the data to be fit with some noise:
+np.random.seed(1729)
+# [] Setting x-axis(index) : fit-data
 xdata = np.linspace(0, 4, 50)
-# setting fit-model
+# [] Setting fit-model
 y = func(xdata, 2.5, 1.3, 0.5)
-# setting y-axis(label) : fit-data
+# [] Setting y-axis(label) : fit-data
 ydata = y + 0.2 * np.random.normal(size=xdata.size)
-#plt.plot(xdata, ydata, 'b-', label='data')
+# [] Plot data
 plt.scatter(xdata, ydata, marker='.', label='data')
 
 
-# step2> roughly tuning
-# Fit for the parameters a, b, c of the function func:
+# [] Step2> Roughly tuning
+# [] Fit for the parameters a, b, c of the function func:
 popt, pcov = curve_fit(func, xdata, ydata)
 np.array([ 2.55423706,  1.35190947,  0.47450618])
 plt.plot(xdata, func(xdata, *popt), 'r-', label='better fit: a=%5.3f, b=%5.3f, c=%5.3f' % tuple(popt))
@@ -60,15 +60,10 @@ print('popt1 : 주어진 func 모델에서 가장 최고의 fit values \n',popt)
 print('pcov1 : 대각성분들은 각 parameter들의 variances \n',pcov)
 
 
-# step3> fine tuning through above pcov
-# Constrain the optimization to the region of 0 <= a <= 3, 0 <= b <= 1 and 0 <= c <= 0.5:
+# [] Step3> Fine tuning through above pcov
+# [] Constrain the optimization to the region of 0 <= a <= 3, 0 <= b <= 1 and 0 <= c <= 0.5:
 popt, pcov = curve_fit(func, xdata, ydata, bounds=(0, [3., 1., 0.5]))
-popt
-np.array([ 2.43708906,  1.        ,  0.35015434])
 plt.plot(xdata, func(xdata, *popt), 'g--', label='best fit: a=%5.3f, b=%5.3f, c=%5.3f' % tuple(popt))
-print('\n')
-print('popt2 : 주어진 func 모델에서 가장 최고의 fit values \n',popt)
-print('pcov2 : 대각성분들은 각 parameter들의 variances \n',pcov)    
 
 
 plt.xlabel('x')
