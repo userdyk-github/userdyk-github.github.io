@@ -28,42 +28,31 @@ List of posts to read before reading this article
 </dl>
 
 ```python
-# [] Importing modules
+# [1] : 
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 
-# [] Defining a exponential function
+# [2] : 
 def func(x, a, b, c):
     return a * np.exp(-b * x) + c
 
-
-# [] Step1> Dataset
-# [] Defining the data to be fit with some noise:
+# [3] : 
 np.random.seed(1729)
-# [] Setting x-axis(index) : fit-data
 xdata = np.linspace(0, 4, 50)
-# [] Setting fit-model
 y = func(xdata, 2.5, 1.3, 0.5)
-# [] Setting y-axis(label) : fit-data
 ydata = y + 0.2 * np.random.normal(size=xdata.size)
-# [] Plot data
 plt.scatter(xdata, ydata, marker='.', label='data')
 
-
-# [] Step2> Roughly tuning
-# [] Fit for the parameters a, b, c of the function func:
+# [4] : 
 popt, pcov = curve_fit(func, xdata, ydata)
-np.array([ 2.55423706,  1.35190947,  0.47450618])
 plt.plot(xdata, func(xdata, *popt), 'r-', label='better fit: a=%5.3f, b=%5.3f, c=%5.3f' % tuple(popt))
 
-
-# [] Step3> Fine tuning through above pcov
-# [] Constrain the optimization to the region of 0 <= a <= 3, 0 <= b <= 1 and 0 <= c <= 0.5:
+# [5] : 
 popt, pcov = curve_fit(func, xdata, ydata, bounds=(0, [3., 1., 0.5]))
 plt.plot(xdata, func(xdata, *popt), 'g--', label='best fit: a=%5.3f, b=%5.3f, c=%5.3f' % tuple(popt))
 
-
+# [6] :
 plt.xlabel('x')
 plt.ylabel('y')
 plt.legend()
