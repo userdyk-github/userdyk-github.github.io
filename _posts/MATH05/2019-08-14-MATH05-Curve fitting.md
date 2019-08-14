@@ -82,8 +82,9 @@ def func(x, a, b, c):
 <br><br><br>
 
 
+
 <dl>
-<dt class='frame2'>Sub-code [2]</dt>
+<dt class='frame2'>Sub-code [2] Input</dt>
 </dl>
 
 ```python
