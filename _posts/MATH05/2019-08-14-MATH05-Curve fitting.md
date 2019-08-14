@@ -37,7 +37,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 
-# [1] : 
+# [1] : Mathematical representation of the graph you want to fit
 def func(x, a, b, c):
     return a * np.exp(-b * x) + c
 
@@ -74,7 +74,7 @@ You might find it difficult to understand only the above code. To simplify the p
 </dl>
 
 ```python
-# [1] : Target
+# [1] : Mathematical representation of the graph you want to fit
 def func(x, a, b, c):
     return a * np.exp(-b * x) + c
 ```
