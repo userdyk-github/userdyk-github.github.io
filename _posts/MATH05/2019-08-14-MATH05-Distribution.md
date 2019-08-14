@@ -23,7 +23,7 @@ List of posts to read before reading this article
 
 ## Discrete distribution
 
-> This is a blockquote following a header.
+> Objective : 
 >
 > When something is important enough, you do it even if the odds are not in your favor.
 
@@ -32,7 +32,7 @@ List of posts to read before reading this article
 
 ## Continous distribution
 
-> This is a blockquote following a header.
+> Objective : 
 >
 > When something is important enough, you do it even if the odds are not in your favor.
 
