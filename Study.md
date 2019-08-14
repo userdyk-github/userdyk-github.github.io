@@ -63,3 +63,32 @@ title: Study
 
 
 ---
+
+## MATH01 : Linear algebra
+
+
+
+---
+
+## MATH02 : Calulus
+
+
+
+---
+
+## MATH03 : Complex analysis
+
+
+---
+
+## MATH04 : Differential equation
+
+
+
+---
+
+## MATH05 : Statistics
+
+
+
+---
