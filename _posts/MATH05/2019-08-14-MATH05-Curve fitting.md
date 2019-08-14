@@ -63,7 +63,7 @@ plt.show()
 
 
 <dl>
-<dt class='frame2'>Sub code</dt>
+<dt class='frame2'>Sub code [1]</dt>
 </dl>
 
 ```python
@@ -73,7 +73,7 @@ def func(x, a, b, c):
 ```
 
 <dl>
-<dt class='frame2'>Sub code</dt>
+<dt class='frame2'>Sub code [2]</dt>
 </dl>
 
 ```python
@@ -86,7 +86,7 @@ plt.scatter(xdata, ydata, marker='.', label='data')
 ```
 
 <dl>
-<dt class='frame2'>Sub code</dt>
+<dt class='frame2'>Sub code [3]</dt>
 </dl>
 
 ```python
@@ -97,7 +97,7 @@ plt.plot(xdata, func(xdata, *popt), 'r-', label='better fit: a=%5.3f, b=%5.3f, c
 ```
 
 <dl>
-<dt class='frame2'>Sub code</dt>
+<dt class='frame2'>Sub code [4]</dt>
 </dl>
 
 ```python
@@ -107,7 +107,7 @@ plt.plot(xdata, func(xdata, *popt), 'g--', label='best fit: a=%5.3f, b=%5.3f, c=
 ```
 
 <dl>
-<dt class='frame2'>Sub code</dt>
+<dt class='frame2'>Sub code [5]</dt>
 </dl>
 
 ```python
