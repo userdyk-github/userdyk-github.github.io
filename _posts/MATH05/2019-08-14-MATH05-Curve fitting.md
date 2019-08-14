@@ -26,16 +26,13 @@ List of posts to read before reading this article
 <dl>
 <dt class='frame1'>Main code</dt>
 </dl>
+
 ```python
 # [0] : Importing modules
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 
-
-<dl>
-<dt class='frame2'>Sub code</dt>
-</dl>
 # [1] : 
 def func(x, a, b, c):
     return a * np.exp(-b * x) + c
@@ -64,6 +61,10 @@ plt.show()
 
 
 
+
+<dl>
+<dt class='frame2'>Sub code</dt>
+</dl>
 ```python
 # [1] : Target
 def func(x, a, b, c):
