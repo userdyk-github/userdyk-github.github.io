@@ -21,7 +21,7 @@ List of posts to read before reading this article
 
 ---
 
-## Expoential model fitting
+## **Expoential model fitting**
 
 ![fig](https://user-images.githubusercontent.com/52376448/63042334-b80aca00-bf04-11e9-8ca9-4c2923b720df.png)
 
