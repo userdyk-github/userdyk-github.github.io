@@ -38,6 +38,31 @@ $$f(x; a, b) = \frac{\Gamma(a+b) x^{a-1} (1-x)^{b-1}}{\Gamma(a) \Gamma(b)}\qquad
 >
 > When something is important enough, you do it even if the odds are not in your favor.
 
+### Beta
+
+### ChiSquared
+
+### Exponential
+
+### FDistribution
+
+### FisherZ
+
+### Gamma
+
+### Laplace
+
+### Logistic
+
+### LogNormal
+
+### Normal
+
+### StudentT
+
+### Uniform
+
+### Weibull
 
 ---
 
