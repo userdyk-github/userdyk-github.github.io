@@ -92,6 +92,66 @@ title: Study
 
 ---
 
+## PHY01 : Classical mechanics
+
+- <a href='https://userdyk-github.github.io/'>1</a>
+- <a href='https://userdyk-github.github.io/'>2</a>
+- <a href='https://userdyk-github.github.io/'>3</a>
+- <a href='https://userdyk-github.github.io/'>4</a>
+- <a href='https://userdyk-github.github.io/'>5</a>
+
+---
+
+## PHY02 : Electromagnetism
+
+- <a href='https://userdyk-github.github.io/'>1</a>
+- <a href='https://userdyk-github.github.io/'>2</a>
+- <a href='https://userdyk-github.github.io/'>3</a>
+- <a href='https://userdyk-github.github.io/'>4</a>
+- <a href='https://userdyk-github.github.io/'>5</a>
+
+---
+
+## PHY03 : Thermodynamic and statistical mechanics
+
+- <a href='https://userdyk-github.github.io/'>1</a>
+- <a href='https://userdyk-github.github.io/'>2</a>
+- <a href='https://userdyk-github.github.io/'>3</a>
+- <a href='https://userdyk-github.github.io/'>4</a>
+- <a href='https://userdyk-github.github.io/'>5</a>
+
+---
+
+## PHY04 : Quantum Theory
+
+- <a href='https://userdyk-github.github.io/'>1</a>
+- <a href='https://userdyk-github.github.io/'>2</a>
+- <a href='https://userdyk-github.github.io/'>3</a>
+- <a href='https://userdyk-github.github.io/'>4</a>
+- <a href='https://userdyk-github.github.io/'>5</a>
+
+---
+
+## PHY05 : Solid state physics
+
+- <a href='https://userdyk-github.github.io/'>1</a>
+- <a href='https://userdyk-github.github.io/'>2</a>
+- <a href='https://userdyk-github.github.io/'>3</a>
+- <a href='https://userdyk-github.github.io/'>4</a>
+- <a href='https://userdyk-github.github.io/'>5</a>
+
+---
+
+## PHY06 : Theory of relativity
+
+- <a href='https://userdyk-github.github.io/'>1</a>
+- <a href='https://userdyk-github.github.io/'>2</a>
+- <a href='https://userdyk-github.github.io/'>3</a>
+- <a href='https://userdyk-github.github.io/'>4</a>
+- <a href='https://userdyk-github.github.io/'>5</a>
+
+---
+
 ## MATH01 : Linear algebra
 
 - <a href='https://userdyk-github.github.io/'>1</a>
