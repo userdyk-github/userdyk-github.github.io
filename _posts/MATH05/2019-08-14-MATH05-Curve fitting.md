@@ -67,7 +67,7 @@ plt.show()
 
 
 
-You might find it difficult to understand only the above code. To simplify the problem, the mathematical graph you are going to fit on will be confined to models that can be mathematically represented in ***the form of $$ a e^{-bx} + c $$*** rather than in any form. In other word, the following sub-code [1] below is the description of this as a programming language. Instead of thinking about the complex number of cases, you should approach simple thing first. In order to finally obtain the graph you want to fit, you must find the value of the constant $$ a, b, c $$.
+You might find it difficult to understand only the above code. To simplify the problem, the mathematical graph you are going to fit on will be confined to models that can be mathematically represented in the form of $$ a e^{-bx} + c $$ rather than in any form. In other word, the following sub-code [1] below is the description of this as a programming language. Instead of thinking about the complex number of cases, you should approach simple thing first. ***In order to finally obtain the graph you want to fit, you must find the value of the constant $$ a, b, c $$.***
 
 <dl>
 <dt class='frame2'>Sub-code [1]</dt>
