@@ -24,7 +24,7 @@ List of posts to read before reading this article
 ## Expoential model fitting
 
 <dl>
-<dt class='frame'>Code</dt>
+<dt class='frame'>Main code</dt>
 </dl>
 
 ```python
