@@ -88,8 +88,7 @@ def func(x, a, b, c):
 
 
 ![fig](https://user-images.githubusercontent.com/52376448/63051109-7c2d3000-bf17-11e9-84ae-612bb7646240.png)
-
-In reality, actual data is used. However, for convenience here, random data will be generated through sub-code [2] and used as input data.
+Before you find the values of a, b, and c defined above, let's look at the data. In reality, actual data is used. However, for convenience here, random data will be generated through sub-code [2] and used as input data.
 
 <dl>
 <dt class='frame2'>Sub-code [2] : Input Data</dt>
