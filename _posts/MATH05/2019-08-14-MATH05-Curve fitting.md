@@ -129,16 +129,16 @@ plt.show()
 
 ---
 
-## Gaussian model fitting
+## **Gaussian model fitting**
 
 ---
 
-## Two gaussian model fitting
+## **Two gaussian model fitting**
 
 
 ---
 
-## Curve fit with seaborn based on specific distribution
+## **Curve fit with seaborn based on specific distribution**
 
 ---
 
