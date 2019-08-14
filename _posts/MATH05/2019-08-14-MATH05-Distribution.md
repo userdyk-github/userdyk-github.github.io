@@ -21,15 +21,21 @@ List of posts to read before reading this article
 
 ---
 
-## title1
+## Discrete distribution
+
+> This is a blockquote following a header.
+>
+> When something is important enough, you do it even if the odds are not in your favor.
+
 
 ---
 
-## title2
+## Continous distribution
 
----
+> This is a blockquote following a header.
+>
+> When something is important enough, you do it even if the odds are not in your favor.
 
-## title3
 
 ---
 
@@ -107,4 +113,3 @@ end
 
 ![](https://assets-cdn.github.com/images/icons/emoji/octocat.png)
 ![](https://guides.github.com/activities/hello-world/branching.png)
-
