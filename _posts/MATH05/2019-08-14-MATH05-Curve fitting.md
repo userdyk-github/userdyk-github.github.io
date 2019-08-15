@@ -63,9 +63,8 @@ plt.legend()
 plt.show()
 ```
 
-> $$ \begin{tikzcd} $$
-> 
-> 
+$$ A\xrightarrow ^{ f }B $$
+
 
 
 <br><br><br>
