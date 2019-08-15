@@ -84,7 +84,7 @@ fig,ax = plt.subplots(3,1,figsize=(10, 8))
 
 sns.distplot(X.rvs(100), fit=stats.beta, kde=False, ax=ax[0])
 sns.distplot(X.rvs(100),ax=ax[1])  
-ax[2].plot(x, stats.beta(a=5,b=0.1,loc=1, scale=1).pdf(x))
+ax[2].plot(x, X.pdf(x))
 
 ax[0].set_title("model fitting")
 ax[1].set_title("data fitting")
@@ -131,7 +131,7 @@ fig,ax = plt.subplots(3,1, figsize=(10, 8))
 
 sns.distplot(X.rvs(100), fit=stats.chi2, kde=False,ax=ax[0])
 sns.distplot(X.rvs(100),ax=ax[1])  
-ax[2].plot(x, stats.chi2(df=1,loc=1, scale=1).pdf(x))
+ax[2].plot(x, X.pdf(x))
 
 ax[0].set_title("model fitting")
 ax[1].set_title("data fitting")
@@ -178,7 +178,7 @@ fig, ax = plt.subplots(3,1, figsize=(10, 8))
 
 sns.distplot(X.rvs(100), fit=stats.expon, kde=False, ax=ax[0])
 sns.distplot(X.rvs(100),ax=ax[1])  
-ax[2].plot(x, stats.expon(scale=1).pdf(x))
+ax[2].plot(x, X.pdf(x))
 
 ax[0].set_title("model fitting")
 ax[1].set_title("data fitting")
@@ -223,7 +223,7 @@ fig,ax = plt.subplots(3,1,figsize=(10, 8))
 
 sns.distplot(X.rvs(100), fit=stats.f, kde=False,ax=ax[0])
 sns.distplot(X.rvs(100),ax=ax[1])  
-ax[2].plot(x, stats.f(dfn=1,dfd=1).pdf(x))
+ax[2].plot(x, X.pdf(x))
 
 ax[0].set_title("model fitting")
 ax[1].set_title("data fitting")
@@ -272,7 +272,7 @@ fig,ax = plt.subplots(3,1, figsize=(10, 8))
 
 sns.distplot(X.rvs(100), fit=stats.gamma, kde=False,ax=ax[0])
 sns.distplot(X.rvs(100),ax=ax[1])  
-ax[2].plot(x, stats.gamma(a=1,loc=1, scale=1).pdf(x))
+ax[2].plot(x, X.pdf(x))
 
 ax[0].set_title("model fitting")
 ax[1].set_title("data fitting")
@@ -316,7 +316,7 @@ fig,ax = plt.subplots(3,1, figsize=(10, 8))
 
 sns.distplot(X.rvs(100), fit=stats.laplace, kde=False,ax=ax[0])
 sns.distplot(X.rvs(100),ax=ax[1])  
-ax[2].plot(x, stats.laplace().pdf(x))
+ax[2].plot(x, X.pdf(x))
 
 ax[0].set_title("model fitting")
 ax[1].set_title("data fitting")
@@ -363,7 +363,7 @@ fig,ax = plt.subplots(3,1, figsize=(10, 8))
 
 sns.distplot(X.rvs(100), fit=stats.logistic, kde=False,ax=ax[0])
 sns.distplot(X.rvs(100),ax=ax[1])  
-ax[2].plot(x, stats.logistic(loc=1, scale=1).pdf(x))
+ax[2].plot(x, X.pdf(x))
 
 ax[0].set_title("model fitting")
 ax[1].set_title("data fitting")
@@ -408,7 +408,7 @@ fig,ax = plt.subplots(3,1, figsize=(10, 8))
 
 sns.distplot(X.rvs(100), fit=stats.lognorm, kde=False,ax=ax[0])
 sns.distplot(X.rvs(100),ax=ax[1])  
-ax[2].plot(x, stats.lognorm(s=1, loc=1, scale=1).pdf(x))
+ax[2].plot(x, X.pdf(x))
 
 ax[0].set_title("model fitting")
 ax[1].set_title("data fitting")
@@ -453,7 +453,7 @@ fig,ax = plt.subplots(3,1,figsize=(10, 8))
 
 sns.distplot(X.rvs(100), fit=stats.norm, kde=False,ax=ax[0])
 sns.distplot(X.rvs(100),ax=ax[1])  
-ax[2].plot(x, stats.norm(loc=100, scale=10).pdf(x))
+ax[2].plot(x, X.pdf(x))
 
 ax[0].set_title("model fitting")
 ax[1].set_title("data fitting")
@@ -499,7 +499,7 @@ fig,ax= plt.subplots(3,1,figsize=(10, 8))
 
 sns.distplot(X.rvs(100), fit=stats.t, kde=False,ax=ax[0])
 sns.distplot(X.rvs(100),ax=ax[1])  
-ax[2].plot(x, stats.t(df=4,loc=1, scale=1).pdf(x))
+ax[2].plot(x, X.pdf(x))
 
 ax[0].set_title("model fitting")
 ax[1].set_title("data fitting")
@@ -544,7 +544,7 @@ fig, ax = plt.subplots(3,1,figsize=(10, 8))
 
 sns.distplot(X.rvs(100), fit=stats.uniform, kde=False,ax=ax[0])
 sns.distplot(X.rvs(100),ax=ax[1])  
-ax[2].plot(x, stats.uniform(loc=2, scale=10).pdf(x))
+ax[2].plot(x, X.pdf(x))
 
 ax[0].set_title("model fitting")
 ax[1].set_title("data fitting")
@@ -589,7 +589,7 @@ fig, ax = plt.subplots(3,1,figsize=(10, 8))
 
 sns.distplot(X.rvs(100), fit=stats.weibull_min, kde=False,ax=ax[0])
 sns.distplot(X.rvs(100),ax=ax[1])  
-ax[2].plot(x, stats.weibull_min(c=1,loc=1, scale=1).pdf(x))
+ax[2].plot(x, X.pdf(x))
 
 ax[0].set_title("model fitting")
 ax[1].set_title("data fitting")
@@ -632,7 +632,7 @@ fig, ax = plt.subplots(3,1,figsize=(10, 8))
 
 sns.distplot(X.rvs(100), fit=stats.weibull_max, kde=False,ax=ax[0])
 sns.distplot(X.rvs(100),ax=ax[1])  
-ax[2].plot(x, stats.weibull_max(c=1,loc=1, scale=1).pdf(x))
+ax[2].plot(x, X.pdf(x))
 
 ax[0].set_title("model fitting")
 ax[1].set_title("data fitting")
@@ -675,7 +675,7 @@ fig, ax = plt.subplots(3,1,figsize=(10, 8))
 
 sns.distplot(X.rvs(100), fit=stats.dweibull, kde=False,ax=ax[0])
 sns.distplot(X.rvs(100),ax=ax[1])  
-ax[2].plot(x, stats.dweibull(c=1,loc=1, scale=1).pdf(x))
+ax[2].plot(x, X.pdf(x))
 
 ax[0].set_title("model fitting")
 ax[1].set_title("data fitting")
