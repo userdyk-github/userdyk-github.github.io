@@ -64,12 +64,13 @@ plt.show()
 ```
 
 
-> <div style="color:black; font-size: 80%; text-align: center;">
->   $$ data \xrightarrow{curve\ fitting} y = a e^{-bx}+c $$
->   <div class='frame2'> </div>
->   $$ func,\ xdata,\ ydata \xrightarrow{curve\ fit} popt(= a,\ b,\ c),\ pcov $$
->   $$ xdata,\ func(xdata, *popt) \xrightarrow{plt.plot} visuallization\ for\ y = a e^{-bx}+c $$
-> </div>
+<div style="color:black; font-size: 80%; text-align: center;">
+$$ data \xrightarrow{curve\ fitting} y = a e^{-bx}+c $$ </div>
+<div class='frame2'> </div>
+<span class='jb-medium'>
+$$ func,\ xdata,\ ydata \xrightarrow{curve\ fit} popt(= a,\ b,\ c),\ pcov $$
+$$ xdata,\ func(xdata, *popt) \xrightarrow{plt.plot} visuallization\ for\ y = a e^{-bx}+c $$
+</span>
 
 
 <br><br><br>
