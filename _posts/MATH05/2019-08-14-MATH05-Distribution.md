@@ -103,7 +103,7 @@ plt.show()
 </div>
 
 <div>
-  $$ sdf $$
+  $$ \begin{flushleft} sdf \end{flushleft} $$
 </div>
 
 <div>
