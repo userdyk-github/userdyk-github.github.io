@@ -94,8 +94,10 @@ plt.tight_layout()
 plt.show()
 ```
 
-$$ <div>hello</div> $$
-
+<span style="color:black; font-size: 80%;>
+  $$ hello $$
+</span>
+  
 <div align="left" style="color:black; font-size: 80%;">
 $$ random\ variable\ X \xrightarrow{function} distribution $$
 <div class='frame2'> </div>
