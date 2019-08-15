@@ -64,8 +64,9 @@ plt.show()
 ```
 
 
-> <div style="color:black; font-size: 80%; text-align: center;"> 
+> <div style="color:black; font-size: 80%; text-align: center;">
 >   $$ data \xrightarrow{curve\ fitting} y = a e^{-bx}+c $$
+>   <div class='frame2'> </div>
 >   $$ func,\ xdata,\ ydata \xrightarrow{curve\ fit} popt(= a,\ b,\ c),\ pcov $$
 >   $$ xdata,\ func(xdata, *popt) \xrightarrow{plt.plot} visuallization/ for/ y = a e^{-bx}+c $$
 > </div>
@@ -109,6 +110,7 @@ y = func(xdata, 2.5, 1.3, 0.5)
 ydata = y + 0.2 * np.random.normal(size=xdata.size)
 plt.scatter(xdata, ydata, marker='.', label='data')
 ```
+
 The data generated in this way will be as follows. <br>
 
 ![fig](https://user-images.githubusercontent.com/52376448/63051109-7c2d3000-bf17-11e9-84ae-612bb7646240.png){: width="500" height="500"){: .center}
