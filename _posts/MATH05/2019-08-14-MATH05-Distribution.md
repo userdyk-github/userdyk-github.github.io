@@ -94,6 +94,8 @@ plt.tight_layout()
 plt.show()
 ```
 
+<br><br><br>
+
 ### ChiSquared
 
 <div style="color:black; font-size: 80%; text-align: center;">
@@ -127,6 +129,8 @@ ax[2].set_title("PDF")
 plt.tight_layout()
 plt.show()
 ```
+
+<br><br><br>
 
 ### Exponential
 
@@ -163,6 +167,8 @@ plt.tight_layout()
 plt.show()
 ```
 
+<br><br><br>
+
 ### FDistribution
 
 <div style="color:black; font-size: 80%; text-align: center;">
@@ -197,7 +203,11 @@ plt.tight_layout()
 plt.show()
 ```
 
+<br><br><br>
+
 ### FisherZ
+
+<br><br><br>
 
 ### Gamma
 
@@ -233,6 +243,8 @@ plt.tight_layout()
 plt.show()
 ```
 
+<br><br><br>
+
 ### Laplace
 
 <div style="color:black; font-size: 80%; text-align: center;">
@@ -266,6 +278,8 @@ ax[2].set_title("PDF")
 plt.tight_layout()
 plt.show()
 ```
+
+<br><br><br>
 
 ### Logistic
 
@@ -301,6 +315,8 @@ plt.tight_layout()
 plt.show()
 ```
 
+<br><br><br>
+
 ### LogNormal
 
 <div style="color:black; font-size: 80%; text-align: center;">
@@ -335,6 +351,8 @@ plt.tight_layout()
 plt.show()
 ```
 
+<br><br><br>
+
 ### Normal
 
 <div style="color:black; font-size: 80%; text-align: center;">
@@ -368,6 +386,8 @@ ax[2].set_title("PDF")
 plt.tight_layout()
 plt.show()
 ```
+
+<br><br><br>
 
 ### StudentT
 
@@ -404,6 +424,8 @@ plt.tight_layout()
 plt.show()
 ```
 
+<br><br><br>
+
 ### Uniform
 
 <div style="color:black; font-size: 80%; text-align: center;">
@@ -437,6 +459,8 @@ ax[2].set_title("PDF")
 plt.tight_layout()
 plt.show()
 ```
+
+<br><br><br>
 
 ### Weibull
 
@@ -472,6 +496,8 @@ plt.tight_layout()
 plt.show()
 ```
 
+<br><br><br>
+
 <div style="color:black; font-size: 80%; text-align: center;">
   $$Weibull\ max\ :\ f(x; c) = c (-x)^{c-1} \exp(-(-x)^c)\qquad for\ x<0,\ c>0$$
 </div>
@@ -504,6 +530,8 @@ plt.tight_layout()
 plt.show()
 ```
 
+<br><br><br>
+
 <div style="color:black; font-size: 80%; text-align: center;">
   $$Weibull\ double\ :\ f(x; c) = c / 2 |x|^{c-1} \exp(-|x|^c)\qquad for\ a\ real\ numbers,\ x\ and\ c>0$$
 </div>
@@ -535,6 +563,8 @@ ax[2].set_title("PDF")
 plt.tight_layout()
 plt.show()
 ```
+
+<br><br><br>
 
 ---
 
