@@ -63,9 +63,9 @@ plt.legend()
 plt.show()
 ```
 
-> $$ \begin{tikzcd}
-> A \arrow[r, "\phi" near start, "\psi"', "\eta" near end] & B
-> \end{tikzcd} $$
+$$ \begin{tikzcd}
+A \arrow[r, "\phi" near start, "\psi"', "\eta" near end] & B
+\end{tikzcd} $$
 
 
 <br><br><br>
