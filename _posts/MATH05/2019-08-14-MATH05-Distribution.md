@@ -94,9 +94,15 @@ plt.tight_layout()
 plt.show()
 ```
 
-> 
-> <div class'frame2'> </div>
-> 
+
+> <div style="color:black; font-size: 80%; text-align: center;">
+>   $$ random\ variable X \xrightarrow{function} distribution $$
+>   <div class='frame2'> </div>
+>   $$ parameters\ :\ a,\ b,\ loc,\ scale\ \xrightarrow{stats.beta} random\ variable\ :\ X $$
+>   $$ x-axis\ range : x \xrightarrow{X.pdf} distribution\ function $$
+>   $$ sample\ :\ X.rvs(#),\ fit=stats.chi2 \xrightarrow{sns.displot} visuallization $$
+> </div>
+
 
 
 <br><br><br>
