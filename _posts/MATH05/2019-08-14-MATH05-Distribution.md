@@ -585,6 +585,7 @@ plt.show()
 ---
 
 <div class='frame1'>Sub-code</div>
+
 ```python
 # Random variables
 print(X.rvs(size=10, random_state=None))
