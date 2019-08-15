@@ -63,9 +63,10 @@ plt.legend()
 plt.show()
 ```
 
-> dd
-> dd
-> ddd
+> \begin{tikzcd}
+> A \arrow[r, "\phi" near start, "\psi"', "\eta" near end] & B
+> \end{tikzcd}
+
 
 <br><br><br>
 
