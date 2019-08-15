@@ -97,54 +97,88 @@ plt.show()
 <div class='frame1'>Sub-code</div>
 ```python
 X.rvs(size=10, random_state=None)
+```
 
+```python
 # Probability density function
 x = np.linspace(*X.interval(0.999), num=5) 
 X.pdf(x)
+```
 
+```python
 # Cumulative distribution function.
 X.cdf(x)
+```
 
+```python
 # Log of the cumulative distribution function.
 X.logcdf(x)
+```
 
+```python
 # Survival function (also defined as 1 - cdf, but sf is sometimes more accurate).
 X.sf(x)
+```
 
+```python
 # Log of the survival function.
 X.logsf(x)
+```
 
+```python
 # Percent point function (inverse of cdf — percentiles).
 q = np.linspace(0.01,0.99, num=5) 
 X.ppf(q)
+```
 
+```python
 # Inverse survival function (inverse of sf).
 X.isf(q)
+```
 
+```python
 # Non-central moment of order n
 for n in [1,2]:
     print(X.moment(n))
-    
+```
+
+```python
 # Mean(‘m’), variance(‘v’), skew(‘s’), and/or kurtosis(‘k’).
 X.stats(moments='mvsk')
+```
 
+```python
 # (Differential) entropy of the RV.
 X.entropy()
+```
 
+```python
 # Parameter estimates for generic data.
 data = X.rvs(size=10, random_state=None)
+```
 
+```python
 # loc : mean, scale : standard deviation
 stats.beta.fit(data, 1, 2, loc=0, scale=1)
+```
 
+```python
 X.median()
+```
 
+```python
 X.mean()
+```
 
+```python
 X.var()
+```
 
+```python
 X.std()
+```
 
+```python
 X.interval(0.05)
 ```
 
