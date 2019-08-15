@@ -101,8 +101,8 @@ $$ random\ variable\ X \xrightarrow{function} distribution $$ </div>
 <span class='jb-medium'>
   $$ a,\ b,\ loc,\ scale\ \xrightarrow{stats.beta} X $$ <br>
   $$ x \xrightarrow{X.pdf} X.pdf(x) $$ <br>
-  $$ x,\ X.pdf(x) \xrightarrow{ax.plot} ax.plot(x,X.pdf(x)) $$ <br>
-  $$ X.rvs(the\ number),\ fit=stats.beta \xrightarrow{sns.distplot} sns.plot(X.rvs(the\ number),fit=stats.beta) $$ <br>
+  $$ x,\ X.pdf(x) \xrightarrow{ax.plot} graph\ :\ X.pdf(x) $$ <br>
+  $$ X.rvs(the\ number),\ fit=stats.beta \xrightarrow{sns.distplot} graph : fitting $$ <br>
 </span>
 
 
