@@ -69,10 +69,10 @@ plt.show()
 
 
 
-It might be difficult to understand the meaning by looking at only the above code. To simplify the problem, the mathematical graph you are going to fit on will be confined to models that can be mathematically represented in the form of $$ a e^{-bx} + c $$ rather than in any form. In other word, the following sub-code [1] below is the description of this as a programming language. Instead of thinking about the complex number of cases, you should approach simple thing first. ***And then in order to finally obtain the curve you want to fit, you must find the value of the constant $$ a, b, c $$.***
+It might be difficult to understand the meaning by looking at only the above code. To simplify the problem, the mathematical graph you are going to fit on will be confined to models that can be mathematically represented in the form of $$ a e^{-bx} + c $$ rather than in any form. In other word, the following details-code [1] below is the description of this as a programming language. Instead of thinking about the complex number of cases, you should approach simple thing first. ***And then in order to finally obtain the curve you want to fit, you must find the value of the constant $$ a, b, c $$.***
 
 <dl>
-<dt class='frame2'>Sub-code [1] : Mathematical representation of the curve you want to fit</dt>
+<dt class='frame2'>Details-code [1] : Mathematical representation of the curve you want to fit</dt>
 </dl>
 
 ```python
@@ -85,12 +85,12 @@ def func(x, a, b, c):
 
 
 
-Before you find the values of a, b, and c defined above, let's look at the data. In reality, actual data is used. However, for convenience here, random data will be generated through sub-code [2] and used as input data.
+Before you find the values of a, b, and c defined above, let's look at the data. In reality, actual data is used. However, for convenience here, random data will be generated through details-code [2] and used as input data.
 
 
 
 <dl>
-<dt class='frame2'>Sub-code [2] : Input Data</dt>
+<dt class='frame2'>Details-code [2] : Input Data</dt>
 </dl>
 
 ```python
@@ -125,7 +125,7 @@ $$ pcov =
 </div>
 
 <dl>
-<dt class='frame2'>Sub-code [3] : Output through input target function(1)</dt>
+<dt class='frame2'>Details-code [3] : Output through input target function(1)</dt>
 </dl>
 
 ```python
@@ -152,7 +152,7 @@ $$ pcov =
 
 
 <dl>
-<dt class='frame2'>Sub-code [4] : Output through input target function(2)</dt>
+<dt class='frame2'>Details-code [4] : Output through input target function(2)</dt>
 </dl>
 
 ```python
@@ -176,7 +176,7 @@ $$ pcov =
 <br><br><br>
 
 <dl>
-<dt class='frame2'>Sub-code [5]</dt>
+<dt class='frame2'>Details-code [5]</dt>
 </dl>
 
 ```python
