@@ -104,7 +104,7 @@ $$ random\ variable\ X \xrightarrow{function} distribution $$ </div>
 | 1  | a, b, loc, scale      | $$\xrightarrow{stats.beta}$$   | X                |
 | 2  | x                     | $$\xrightarrow{X.pdf}$$        | X.pdf(x)         |
 | 3  | x, X.pdf(x)           | $$\xrightarrow{ax.plot}$$      | graph : X.pdf(x) |
-| 4  | X.rvs(the number)     | $$\xrightarrow{sns.distplot}$$ | graph : fitting  |
+| 4  | X.rvs(#)              | $$\xrightarrow{sns.distplot}$$ | graph : fitting  |
 
 
 
