@@ -96,7 +96,7 @@ plt.show()
 
   
 <div align="left" style="color:black; font-size: 80%;">
-$$ random\ variable\ X \xrightarrow{function} distribution $$ </div>
+$$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </div>
 <div class='frame2'> </div>
 
 |STEP| INPUT                 | FUNCTION                       | OUTPUT           |
