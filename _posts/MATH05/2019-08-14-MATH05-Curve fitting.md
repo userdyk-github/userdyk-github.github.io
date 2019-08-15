@@ -63,8 +63,8 @@ plt.legend()
 plt.show()
 ```
 
-> $$ xdata,\quad ydata \xrightarrow{curve fitting} y = a e^{-bx}+c $$
->> $$  $$
+> $$ xdata,\ ydata \xrightarrow{curve fitting} y = a e^{-bx}+c $$
+> $$ xdata,\ ydata \xrightarrow{curve fitting} y = a e^{-bx}+c $$
 
 
 <br><br><br>
