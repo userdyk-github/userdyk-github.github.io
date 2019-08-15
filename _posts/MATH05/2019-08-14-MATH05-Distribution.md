@@ -96,6 +96,7 @@ plt.show()
 
 <div class='frame1'>Sub-code</div>
 ```python
+# Random variables
 print(X.rvs(size=10, random_state=None))
 ```
 
@@ -161,22 +162,27 @@ print(stats.beta.fit(data, 1, 2, loc=0, scale=1))
 ```
 
 ```python
+# Median
 print(X.median())
 ```
 
 ```python
+# Mean
 print(X.mean())
 ```
 
 ```python
+# Variance
 print(X.var())
 ```
 
 ```python
+# Standard deviation
 print(X.std())
 ```
 
 ```python
+# Interval
 print(X.interval(0.05))
 ```
 
