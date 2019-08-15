@@ -22,7 +22,9 @@ List of posts to read before reading this article
 ---
 
 <div style="color:black; font-size: 80%; text-align: center;">
-$$Parameters(loc,\ scale)\ :\ y=\frac{x-loc}{scale}$<br>$Parameter(df)\ :\ a\ shape\ parameter$$
+  $$Parameters(loc,\ scale)\ :\ y=\frac{x-loc}{scale}$$
+  $$Parameter(df)\ :\ a\ shape\ parameter$$
+</div>
 
 ---
 
