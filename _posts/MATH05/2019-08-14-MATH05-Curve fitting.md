@@ -64,8 +64,9 @@ plt.show()
 ```
 
 
-> <div> $$ xdata,\ ydata \xrightarrow{curve fitting} y = a e^{-bx}+c $$
-> $$ xdata,\ ydata \xrightarrow{curve fitting} y = a e^{-bx}+c $$
+> <div style="color:black; font-size: 80%; text-align: center;"> 
+>   $$ xdata,\ ydata \xrightarrow{curve fitting} y = a e^{-bx}+c $$
+>   $$ xdata,\ ydata \xrightarrow{curve fitting} y = a e^{-bx}+c $$
 > </div>
 
 
