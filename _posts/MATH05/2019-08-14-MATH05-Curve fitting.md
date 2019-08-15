@@ -63,7 +63,7 @@ plt.legend()
 plt.show()
 ```
 
-$$ A^{ f }B $$
+$$ B \xrightarrow{n\pm i-1} C $$
 
 
 
