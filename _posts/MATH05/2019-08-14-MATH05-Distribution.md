@@ -98,13 +98,6 @@ plt.show()
 <div align="left" style="color:black; font-size: 80%;">
 $$ random\ variable\ X \xrightarrow{function} distribution $$ </div>
 <div class='frame2'> </div>
-<span class='jb-medium'>
-  step1> $$ a,\ b,\ loc,\ scale\ \xrightarrow{stats.beta} X $$ <br>
-  step2> $$ x \xrightarrow{X.pdf} X.pdf(x) $$ <br>
-  step3> $$ x,\ X.pdf(x) \xrightarrow{ax.plot} graph\ :\ X.pdf(x) $$ <br>
-  step4> $$ X.rvs(the\ number),\ fit=stats.beta \xrightarrow{sns.distplot} graph : fitting $$ <br>
-</span>
-
 
 |STEP| INPUT                 | FUNCTION                       | OUTPUT           |
 |:---|:----------------------|:-------------------------------|:-----------------|
