@@ -94,6 +94,60 @@ plt.tight_layout()
 plt.show()
 ```
 
+<div class='frame1'>Sub-code</div>
+```python
+X.rvs(size=10, random_state=None)
+
+# Probability density function
+x = np.linspace(*X.interval(0.999), num=5) 
+X.pdf(x)
+
+# Cumulative distribution function.
+X.cdf(x)
+
+# Log of the cumulative distribution function.
+X.logcdf(x)
+
+# Survival function (also defined as 1 - cdf, but sf is sometimes more accurate).
+X.sf(x)
+
+# Log of the survival function.
+X.logsf(x)
+
+# Percent point function (inverse of cdf — percentiles).
+q = np.linspace(0.01,0.99, num=5) 
+X.ppf(q)
+
+# Inverse survival function (inverse of sf).
+X.isf(q)
+
+# Non-central moment of order n
+for n in [1,2]:
+    print(X.moment(n))
+    
+# Mean(‘m’), variance(‘v’), skew(‘s’), and/or kurtosis(‘k’).
+X.stats(moments='mvsk')
+
+# (Differential) entropy of the RV.
+X.entropy()
+
+# Parameter estimates for generic data.
+data = X.rvs(size=10, random_state=None)
+
+# loc : mean, scale : standard deviation
+stats.beta.fit(data, 1, 2, loc=0, scale=1)
+
+X.median()
+
+X.mean()
+
+X.var()
+
+X.std()
+
+X.interval(0.05)
+```
+
 <br><br><br>
 
 ### ChiSquared
@@ -128,6 +182,11 @@ ax[2].set_title("PDF")
 
 plt.tight_layout()
 plt.show()
+```
+
+<div class='frame1'>Sub-code</div>
+```python
+
 ```
 
 <br><br><br>
@@ -167,6 +226,11 @@ plt.tight_layout()
 plt.show()
 ```
 
+<div class='frame1'>Sub-code</div>
+```python
+
+```
+
 <br><br><br>
 
 ### FDistribution
@@ -201,6 +265,11 @@ ax[2].set_title("PDF")
 
 plt.tight_layout()
 plt.show()
+```
+
+<div class='frame1'>Sub-code</div>
+```python
+
 ```
 
 <br><br><br>
@@ -243,6 +312,11 @@ plt.tight_layout()
 plt.show()
 ```
 
+<div class='frame1'>Sub-code</div>
+```python
+
+```
+
 <br><br><br>
 
 ### Laplace
@@ -277,6 +351,11 @@ ax[2].set_title("PDF")
 
 plt.tight_layout()
 plt.show()
+```
+
+<div class='frame1'>Sub-code</div>
+```python
+
 ```
 
 <br><br><br>
@@ -315,6 +394,11 @@ plt.tight_layout()
 plt.show()
 ```
 
+<div class='frame1'>Sub-code</div>
+```python
+
+```
+
 <br><br><br>
 
 ### LogNormal
@@ -351,6 +435,11 @@ plt.tight_layout()
 plt.show()
 ```
 
+<div class='frame1'>Sub-code</div>
+```python
+
+```
+
 <br><br><br>
 
 ### Normal
@@ -385,6 +474,11 @@ ax[2].set_title("PDF")
 
 plt.tight_layout()
 plt.show()
+```
+
+<div class='frame1'>Sub-code</div>
+```python
+
 ```
 
 <br><br><br>
@@ -424,6 +518,11 @@ plt.tight_layout()
 plt.show()
 ```
 
+<div class='frame1'>Sub-code</div>
+```python
+
+```
+
 <br><br><br>
 
 ### Uniform
@@ -458,6 +557,11 @@ ax[2].set_title("PDF")
 
 plt.tight_layout()
 plt.show()
+```
+
+<div class='frame1'>Sub-code</div>
+```python
+
 ```
 
 <br><br><br>
@@ -496,6 +600,11 @@ plt.tight_layout()
 plt.show()
 ```
 
+<div class='frame1'>Sub-code</div>
+```python
+
+```
+
 <br><br><br>
 
 <div style="color:black; font-size: 80%; text-align: center;">
@@ -530,6 +639,11 @@ plt.tight_layout()
 plt.show()
 ```
 
+<div class='frame1'>Sub-code</div>
+```python
+
+```
+
 <br><br><br>
 
 <div style="color:black; font-size: 80%; text-align: center;">
@@ -562,6 +676,11 @@ ax[2].set_title("PDF")
 
 plt.tight_layout()
 plt.show()
+```
+
+<div class='frame1'>Sub-code</div>
+```python
+
 ```
 
 <br><br><br>
