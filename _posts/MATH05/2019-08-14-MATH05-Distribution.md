@@ -144,14 +144,16 @@ plt.show()
 > <div style="color:black; font-size: 80%; text-align: center;">
 >   $$ random\ variable\ X \xrightarrow{function} distribution $$
 >   <div class='frame2'> </div>
->   $$ parameters\ :\ a,\ b,\ loc,\ scale\ \xrightarrow{stats.beta} random\ variable\ :\ X $$
+>   $$ parameters\ :\ df,\ loc,\ scale\ \xrightarrow{stats.chi2} random\ variable\ :\ X $$
 >   $$ x\ axis\ range : x \xrightarrow{X.pdf} distribution\ function $$
 >   $$ sample\ :\ X.rvs\ stats.beta \xrightarrow{sns.distplot} visuallization $$
 > </div>
 
 <br><br><br>
 
+
 ### Exponential
+
 
 <div style="color:black; font-size: 80%; text-align: center;">
   $$f(x) = \lambda*\exp(-\lambda*x)\qquad for\ x\ge0$$
