@@ -63,7 +63,7 @@ plt.legend()
 plt.show()
 ```
 
-$$ B \xrightarrow{n\pm i-1} C $$
+$$ xdata,\quad ydata \xrightarrow{curve fitting} a e^{-bx}+c $$
 
 
 
