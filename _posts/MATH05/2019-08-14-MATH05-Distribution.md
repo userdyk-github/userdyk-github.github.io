@@ -150,7 +150,7 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
 
 |STEP| INPUT                 | FUNCTION                       | OUTPUT           |
 |:---|:----------------------|:-------------------------------|:-----------------|
-| 1  | a, b, loc, scale      | $$\xrightarrow{stats.beta}$$   | X                |
+| 1  | df, loc, scale        | $$\xrightarrow{stats.chi2}$$   | X                |
 | 2  | x                     | $$\xrightarrow{X.pdf}$$        | X.pdf(x)         |
 | 3  | x, X.pdf(x)           | $$\xrightarrow{ax.plot}$$      | graph : X.pdf(x) |
 | 4  | X.rvs(#)              | $$\xrightarrow{sns.distplot}$$ | graph : fitting  |
@@ -201,7 +201,7 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
 
 |STEP| INPUT                 | FUNCTION                       | OUTPUT           |
 |:---|:----------------------|:-------------------------------|:-----------------|
-| 1  | a, b, loc, scale      | $$\xrightarrow{stats.beta}$$   | X                |
+| 1  | scale                 | $$\xrightarrow{stats.expon}$$  | X                |
 | 2  | x                     | $$\xrightarrow{X.pdf}$$        | X.pdf(x)         |
 | 3  | x, X.pdf(x)           | $$\xrightarrow{ax.plot}$$      | graph : X.pdf(x) |
 | 4  | X.rvs(#)              | $$\xrightarrow{sns.distplot}$$ | graph : fitting  |
@@ -250,7 +250,7 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
 
 |STEP| INPUT                 | FUNCTION                       | OUTPUT           |
 |:---|:----------------------|:-------------------------------|:-----------------|
-| 1  | a, b, loc, scale      | $$\xrightarrow{stats.beta}$$   | X                |
+| 1  | dfn, dfd              | $$\xrightarrow{stats.f}$$      | X                |
 | 2  | x                     | $$\xrightarrow{X.pdf}$$        | X.pdf(x)         |
 | 3  | x, X.pdf(x)           | $$\xrightarrow{ax.plot}$$      | graph : X.pdf(x) |
 | 4  | X.rvs(#)              | $$\xrightarrow{sns.distplot}$$ | graph : fitting  |
@@ -304,7 +304,7 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
 
 |STEP| INPUT                 | FUNCTION                       | OUTPUT           |
 |:---|:----------------------|:-------------------------------|:-----------------|
-| 1  | a, b, loc, scale      | $$\xrightarrow{stats.beta}$$   | X                |
+| 1  | a, loc, scale         | $$\xrightarrow{stats.gamma}$$  | X                |
 | 2  | x                     | $$\xrightarrow{X.pdf}$$        | X.pdf(x)         |
 | 3  | x, X.pdf(x)           | $$\xrightarrow{ax.plot}$$      | graph : X.pdf(x) |
 | 4  | X.rvs(#)              | $$\xrightarrow{sns.distplot}$$ | graph : fitting  |
@@ -350,12 +350,12 @@ plt.show()
 $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </div>
 <div class='frame2'> </div>
 
-|STEP| INPUT                 | FUNCTION                       | OUTPUT           |
-|:---|:----------------------|:-------------------------------|:-----------------|
-| 1  | a, b, loc, scale      | $$\xrightarrow{stats.beta}$$   | X                |
-| 2  | x                     | $$\xrightarrow{X.pdf}$$        | X.pdf(x)         |
-| 3  | x, X.pdf(x)           | $$\xrightarrow{ax.plot}$$      | graph : X.pdf(x) |
-| 4  | X.rvs(#)              | $$\xrightarrow{sns.distplot}$$ | graph : fitting  |
+|STEP| INPUT                 | FUNCTION                        | OUTPUT           |
+|:---|:----------------------|:--------------------------------|:-----------------|
+| 1  |                       | $$\xrightarrow{stats.laplace}$$ | X                |
+| 2  | x                     | $$\xrightarrow{X.pdf}$$         | X.pdf(x)         |
+| 3  | x, X.pdf(x)           | $$\xrightarrow{ax.plot}$$       | graph : X.pdf(x) |
+| 4  | X.rvs(#)              | $$\xrightarrow{sns.distplot}$$  | graph : fitting  |
 
 
 
@@ -401,12 +401,12 @@ plt.show()
 $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </div>
 <div class='frame2'> </div>
 
-|STEP| INPUT                 | FUNCTION                       | OUTPUT           |
-|:---|:----------------------|:-------------------------------|:-----------------|
-| 1  | a, b, loc, scale      | $$\xrightarrow{stats.beta}$$   | X                |
-| 2  | x                     | $$\xrightarrow{X.pdf}$$        | X.pdf(x)         |
-| 3  | x, X.pdf(x)           | $$\xrightarrow{ax.plot}$$      | graph : X.pdf(x) |
-| 4  | X.rvs(#)              | $$\xrightarrow{sns.distplot}$$ | graph : fitting  |
+|STEP| INPUT                 | FUNCTION                           | OUTPUT           |
+|:---|:----------------------|:-----------------------------------|:-----------------|
+| 1  | loc, scale            | $$\xrightarrow{stats.logistic}$$   | X                |
+| 2  | x                     | $$\xrightarrow{X.pdf}$$            | X.pdf(x)         |
+| 3  | x, X.pdf(x)           | $$\xrightarrow{ax.plot}$$          | graph : X.pdf(x) |
+| 4  | X.rvs(#)              | $$\xrightarrow{sns.distplot}$$     | graph : fitting  |
 
 
 
@@ -450,12 +450,12 @@ plt.show()
 $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </div>
 <div class='frame2'> </div>
 
-|STEP| INPUT                 | FUNCTION                       | OUTPUT           |
-|:---|:----------------------|:-------------------------------|:-----------------|
-| 1  | a, b, loc, scale      | $$\xrightarrow{stats.beta}$$   | X                |
-| 2  | x                     | $$\xrightarrow{X.pdf}$$        | X.pdf(x)         |
-| 3  | x, X.pdf(x)           | $$\xrightarrow{ax.plot}$$      | graph : X.pdf(x) |
-| 4  | X.rvs(#)              | $$\xrightarrow{sns.distplot}$$ | graph : fitting  |
+|STEP| INPUT                 | FUNCTION                          | OUTPUT           |
+|:---|:----------------------|:----------------------------------|:-----------------|
+| 1  | s, loc, scale         | $$\xrightarrow{stats.lognorm}$$   | X                |
+| 2  | x                     | $$\xrightarrow{X.pdf}$$           | X.pdf(x)         |
+| 3  | x, X.pdf(x)           | $$\xrightarrow{ax.plot}$$         | graph : X.pdf(x) |
+| 4  | X.rvs(#)              | $$\xrightarrow{sns.distplot}$$    | graph : fitting  |
 
 
 
@@ -502,7 +502,7 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
 
 |STEP| INPUT                 | FUNCTION                       | OUTPUT           |
 |:---|:----------------------|:-------------------------------|:-----------------|
-| 1  | a, b, loc, scale      | $$\xrightarrow{stats.beta}$$   | X                |
+| 1  | loc, scale            | $$\xrightarrow{stats.norm}$$   | X                |
 | 2  | x                     | $$\xrightarrow{X.pdf}$$        | X.pdf(x)         |
 | 3  | x, X.pdf(x)           | $$\xrightarrow{ax.plot}$$      | graph : X.pdf(x) |
 | 4  | X.rvs(#)              | $$\xrightarrow{sns.distplot}$$ | graph : fitting  |
@@ -553,7 +553,7 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
 
 |STEP| INPUT                 | FUNCTION                       | OUTPUT           |
 |:---|:----------------------|:-------------------------------|:-----------------|
-| 1  | a, b, loc, scale      | $$\xrightarrow{stats.beta}$$   | X                |
+| 1  | df, loc, scale        | $$\xrightarrow{stats.t}$$      | X                |
 | 2  | x                     | $$\xrightarrow{X.pdf}$$        | X.pdf(x)         |
 | 3  | x, X.pdf(x)           | $$\xrightarrow{ax.plot}$$      | graph : X.pdf(x) |
 | 4  | X.rvs(#)              | $$\xrightarrow{sns.distplot}$$ | graph : fitting  |
@@ -600,12 +600,12 @@ plt.show()
 $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </div>
 <div class='frame2'> </div>
 
-|STEP| INPUT                 | FUNCTION                       | OUTPUT           |
-|:---|:----------------------|:-------------------------------|:-----------------|
-| 1  | a, b, loc, scale      | $$\xrightarrow{stats.beta}$$   | X                |
-| 2  | x                     | $$\xrightarrow{X.pdf}$$        | X.pdf(x)         |
-| 3  | x, X.pdf(x)           | $$\xrightarrow{ax.plot}$$      | graph : X.pdf(x) |
-| 4  | X.rvs(#)              | $$\xrightarrow{sns.distplot}$$ | graph : fitting  |
+|STEP| INPUT                 | FUNCTION                          | OUTPUT           |
+|:---|:----------------------|:----------------------------------|:-----------------|
+| 1  | loc, scale            | $$\xrightarrow{stats.uniform}$$   | X                |
+| 2  | x                     | $$\xrightarrow{X.pdf}$$           | X.pdf(x)         |
+| 3  | x, X.pdf(x)           | $$\xrightarrow{ax.plot}$$         | graph : X.pdf(x) |
+| 4  | X.rvs(#)              | $$\xrightarrow{sns.distplot}$$    | graph : fitting  |
 
 
 
@@ -650,12 +650,12 @@ plt.show()
 $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </div>
 <div class='frame2'> </div>
 
-|STEP| INPUT                 | FUNCTION                       | OUTPUT           |
-|:---|:----------------------|:-------------------------------|:-----------------|
-| 1  | a, b, loc, scale      | $$\xrightarrow{stats.beta}$$   | X                |
-| 2  | x                     | $$\xrightarrow{X.pdf}$$        | X.pdf(x)         |
-| 3  | x, X.pdf(x)           | $$\xrightarrow{ax.plot}$$      | graph : X.pdf(x) |
-| 4  | X.rvs(#)              | $$\xrightarrow{sns.distplot}$$ | graph : fitting  |
+|STEP| INPUT                 | FUNCTION                               | OUTPUT           |
+|:---|:----------------------|:---------------------------------------|:-----------------|
+| 1  | c, loc, scale         | $$\xrightarrow{stats.weibull\_min}$$   | X                |
+| 2  | x                     | $$\xrightarrow{X.pdf}$$                | X.pdf(x)         |
+| 3  | x, X.pdf(x)           | $$\xrightarrow{ax.plot}$$              | graph : X.pdf(x) |
+| 4  | X.rvs(#)              | $$\xrightarrow{sns.distplot}$$         | graph : fitting  |
 
 
 
@@ -698,12 +698,12 @@ plt.show()
 $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </div>
 <div class='frame2'> </div>
 
-|STEP| INPUT                 | FUNCTION                       | OUTPUT           |
-|:---|:----------------------|:-------------------------------|:-----------------|
-| 1  | a, b, loc, scale      | $$\xrightarrow{stats.beta}$$   | X                |
-| 2  | x                     | $$\xrightarrow{X.pdf}$$        | X.pdf(x)         |
-| 3  | x, X.pdf(x)           | $$\xrightarrow{ax.plot}$$      | graph : X.pdf(x) |
-| 4  | X.rvs(#)              | $$\xrightarrow{sns.distplot}$$ | graph : fitting  |
+|STEP| INPUT                 | FUNCTION                               | OUTPUT           |
+|:---|:----------------------|:---------------------------------------|:-----------------|
+| 1  | c, loc, scale         | $$\xrightarrow{stats.weibull\_max}$$   | X                |
+| 2  | x                     | $$\xrightarrow{X.pdf}$$                | X.pdf(x)         |
+| 3  | x, X.pdf(x)           | $$\xrightarrow{ax.plot}$$              | graph : X.pdf(x) |
+| 4  | X.rvs(#)              | $$\xrightarrow{sns.distplot}$$         | graph : fitting  |
 
 
 
@@ -746,12 +746,12 @@ plt.show()
 $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </div>
 <div class='frame2'> </div>
 
-|STEP| INPUT                 | FUNCTION                       | OUTPUT           |
-|:---|:----------------------|:-------------------------------|:-----------------|
-| 1  | a, b, loc, scale      | $$\xrightarrow{stats.beta}$$   | X                |
-| 2  | x                     | $$\xrightarrow{X.pdf}$$        | X.pdf(x)         |
-| 3  | x, X.pdf(x)           | $$\xrightarrow{ax.plot}$$      | graph : X.pdf(x) |
-| 4  | X.rvs(#)              | $$\xrightarrow{sns.distplot}$$ | graph : fitting  |
+|STEP| INPUT                 | FUNCTION                           | OUTPUT           |
+|:---|:----------------------|:-----------------------------------|:-----------------|
+| 1  | c, loc, scale         | $$\xrightarrow{stats.dweibull}$$   | X                |
+| 2  | x                     | $$\xrightarrow{X.pdf}$$            | X.pdf(x)         |
+| 3  | x, X.pdf(x)           | $$\xrightarrow{ax.plot}$$          | graph : X.pdf(x) |
+| 4  | X.rvs(#)              | $$\xrightarrow{sns.distplot}$$     | graph : fitting  |
 
 
 
