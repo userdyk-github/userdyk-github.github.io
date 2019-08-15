@@ -21,11 +21,28 @@ List of posts to read before reading this article
 
 ---
 
+$$Parameters(loc,\ scale)\ :\ y=\frac{x-loc}{scale}$<br>$Parameter(df)\ :\ a\ shape\ parameter$$
+
+---
+
 ## Discrete distribution
 
 > Objective : 
 >
 > When something is important enough, you do it even if the odds are not in your favor.
+
+### Geometric
+
+### Poisson
+
+### Logarithmic
+
+### NegativeBinomial
+
+### YuleSimon
+
+### Zeta
+
 
 $$f(x; a, b) = \frac{\Gamma(a+b) x^{a-1} (1-x)^{b-1}}{\Gamma(a) \Gamma(b)}\qquad for\ 0\le x \le 1,\ \ \ \ a>0,\ b>0$$
 
