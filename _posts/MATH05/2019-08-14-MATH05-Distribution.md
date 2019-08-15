@@ -96,7 +96,7 @@ plt.show()
 
 
 > <div style="color:black; font-size: 80%; text-align: center;">
->   $$ random\ variable X \xrightarrow{function} distribution $$
+>   $$ random\ variable\ X \xrightarrow{function} distribution $$
 >   <div class='frame2'> </div>
 >   $$ parameters\ :\ a,\ b,\ loc,\ scale\ \xrightarrow{stats.beta} random\ variable\ :\ X $$
 >   $$ x-axis\ range : x \xrightarrow{X.pdf} distribution\ function $$
