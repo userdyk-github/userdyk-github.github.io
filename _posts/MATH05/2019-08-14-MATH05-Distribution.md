@@ -28,7 +28,7 @@ List of posts to read before reading this article
 
 ---
 
-## Discrete distribution
+## **Discrete distribution**
 
 > Objective : 
 >
@@ -51,7 +51,7 @@ List of posts to read before reading this article
 
 ---
 
-## Continous distribution
+## **Continous distribution**
 
 > Objective : 
 >
