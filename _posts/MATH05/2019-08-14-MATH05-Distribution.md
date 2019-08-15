@@ -99,6 +99,24 @@ plt.show()
 </div>
 
 <div>
+  sdfsdf $$ sdf $$
+</div>
+
+<div>
+  $$ sdf $$
+</div>
+
+<div>
+  $$sdf$$
+</div>
+
+
+<div>
+  $$ X \xrightarrow{function} Y $$
+</div>
+
+
+<div>
   $$ random\ variable\ X \xrightarrow{function} distribution $$
 </div>
 
