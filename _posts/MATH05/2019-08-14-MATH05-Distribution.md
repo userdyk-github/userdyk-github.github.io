@@ -398,8 +398,6 @@ plt.show()
 
 <div style="color:black; font-size: 80%;">
   $$Weibull\ min\ :\ f(x; c) = c x^{c-1} \exp(-x^c)\qquad for\ x\ge0,\ c>0$$
-  $$Weibull\ max\ :\ f(x; c) = c (-x)^{c-1} \exp(-(-x)^c)\qquad for\ x<0,\ c>0$$
-  $$Weibull\ double\ :\ f(x; c) = c / 2 |x|^{c-1} \exp(-|x|^c)\qquad for\ a\ real\ numbers,\ x\ and\ c>0$$
 </div>
 
 ```python
@@ -426,6 +424,10 @@ plt.tight_layout()
 plt.show()
 ```
 
+<div style="color:black; font-size: 80%;">
+  $$Weibull\ max\ :\ f(x; c) = c (-x)^{c-1} \exp(-(-x)^c)\qquad for\ x<0,\ c>0$$
+</div>
+
 ```python
 from scipy import stats
 import matplotlib.pyplot as plt
@@ -449,6 +451,10 @@ ax[2].set_title("PDF")
 plt.tight_layout()
 plt.show()
 ```
+
+<div style="color:black; font-size: 80%;">
+  $$Weibull\ double\ :\ f(x; c) = c / 2 |x|^{c-1} \exp(-|x|^c)\qquad for\ a\ real\ numbers,\ x\ and\ c>0$$
+</div>
 
 ```python
 from scipy import stats
