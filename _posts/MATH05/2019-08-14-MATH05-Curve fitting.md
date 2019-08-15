@@ -68,7 +68,7 @@ plt.show()
 >   $$ data \xrightarrow{curve\ fitting} y = a e^{-bx}+c $$
 >   <div class='frame2'> </div>
 >   $$ func,\ xdata,\ ydata \xrightarrow{curve\ fit} popt(= a,\ b,\ c),\ pcov $$
->   $$ xdata,\ func(xdata, *popt) \xrightarrow{plt.plot} visuallization/ for/ y = a e^{-bx}+c $$
+>   $$ xdata,\ func(xdata, *popt) \xrightarrow{plt.plot} visuallization\ for\ y = a e^{-bx}+c $$
 > </div>
 
 
