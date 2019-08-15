@@ -100,7 +100,7 @@ plt.show()
 >   <div class='frame2'> </div>
 >   $$ parameters\ :\ a,\ b,\ loc,\ scale\ \xrightarrow{stats.beta} random\ variable\ :\ X $$
 >   $$ x\ axis\ range : x \xrightarrow{X.pdf} distribution\ function $$
->   $$ sampel\ X.rvs\ stats.beta \xrightarrow{sns.distplot} visuallization $$
+>   $$ sample\ :\ X.rvs\ stats.beta \xrightarrow{sns.distplot} visuallization $$
 > </div>
 
 
@@ -141,6 +141,13 @@ plt.tight_layout()
 plt.show()
 ```
 
+> <div style="color:black; font-size: 80%; text-align: center;">
+>   $$ random\ variable\ X \xrightarrow{function} distribution $$
+>   <div class='frame2'> </div>
+>   $$ parameters\ :\ a,\ b,\ loc,\ scale\ \xrightarrow{stats.beta} random\ variable\ :\ X $$
+>   $$ x\ axis\ range : x \xrightarrow{X.pdf} distribution\ function $$
+>   $$ sample\ :\ X.rvs\ stats.beta \xrightarrow{sns.distplot} visuallization $$
+> </div>
 
 <br><br><br>
 
@@ -179,6 +186,13 @@ plt.tight_layout()
 plt.show()
 ```
 
+> <div style="color:black; font-size: 80%; text-align: center;">
+>   $$ random\ variable\ X \xrightarrow{function} distribution $$
+>   <div class='frame2'> </div>
+>   $$ parameters\ :\ a,\ b,\ loc,\ scale\ \xrightarrow{stats.beta} random\ variable\ :\ X $$
+>   $$ x\ axis\ range : x \xrightarrow{X.pdf} distribution\ function $$
+>   $$ sample\ :\ X.rvs\ stats.beta \xrightarrow{sns.distplot} visuallization $$
+> </div>
 
 
 <br><br><br>
@@ -217,6 +231,13 @@ plt.tight_layout()
 plt.show()
 ```
 
+> <div style="color:black; font-size: 80%; text-align: center;">
+>   $$ random\ variable\ X \xrightarrow{function} distribution $$
+>   <div class='frame2'> </div>
+>   $$ parameters\ :\ a,\ b,\ loc,\ scale\ \xrightarrow{stats.beta} random\ variable\ :\ X $$
+>   $$ x\ axis\ range : x \xrightarrow{X.pdf} distribution\ function $$
+>   $$ sample\ :\ X.rvs\ stats.beta \xrightarrow{sns.distplot} visuallization $$
+> </div>
 
 
 <br><br><br>
@@ -259,6 +280,13 @@ plt.tight_layout()
 plt.show()
 ```
 
+> <div style="color:black; font-size: 80%; text-align: center;">
+>   $$ random\ variable\ X \xrightarrow{function} distribution $$
+>   <div class='frame2'> </div>
+>   $$ parameters\ :\ a,\ b,\ loc,\ scale\ \xrightarrow{stats.beta} random\ variable\ :\ X $$
+>   $$ x\ axis\ range : x \xrightarrow{X.pdf} distribution\ function $$
+>   $$ sample\ :\ X.rvs\ stats.beta \xrightarrow{sns.distplot} visuallization $$
+> </div>
 
 <br><br><br>
 
@@ -295,6 +323,14 @@ ax[2].set_title("PDF")
 plt.tight_layout()
 plt.show()
 ```
+
+> <div style="color:black; font-size: 80%; text-align: center;">
+>   $$ random\ variable\ X \xrightarrow{function} distribution $$
+>   <div class='frame2'> </div>
+>   $$ parameters\ :\ a,\ b,\ loc,\ scale\ \xrightarrow{stats.beta} random\ variable\ :\ X $$
+>   $$ x\ axis\ range : x \xrightarrow{X.pdf} distribution\ function $$
+>   $$ sample\ :\ X.rvs\ stats.beta \xrightarrow{sns.distplot} visuallization $$
+> </div>
 
 
 
@@ -335,6 +371,13 @@ plt.tight_layout()
 plt.show()
 ```
 
+> <div style="color:black; font-size: 80%; text-align: center;">
+>   $$ random\ variable\ X \xrightarrow{function} distribution $$
+>   <div class='frame2'> </div>
+>   $$ parameters\ :\ a,\ b,\ loc,\ scale\ \xrightarrow{stats.beta} random\ variable\ :\ X $$
+>   $$ x\ axis\ range : x \xrightarrow{X.pdf} distribution\ function $$
+>   $$ sample\ :\ X.rvs\ stats.beta \xrightarrow{sns.distplot} visuallization $$
+> </div>
 
 
 <br><br><br>
@@ -373,6 +416,13 @@ plt.tight_layout()
 plt.show()
 ```
 
+> <div style="color:black; font-size: 80%; text-align: center;">
+>   $$ random\ variable\ X \xrightarrow{function} distribution $$
+>   <div class='frame2'> </div>
+>   $$ parameters\ :\ a,\ b,\ loc,\ scale\ \xrightarrow{stats.beta} random\ variable\ :\ X $$
+>   $$ x\ axis\ range : x \xrightarrow{X.pdf} distribution\ function $$
+>   $$ sample\ :\ X.rvs\ stats.beta \xrightarrow{sns.distplot} visuallization $$
+> </div>
 
 
 <br><br><br>
