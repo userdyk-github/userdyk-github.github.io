@@ -396,7 +396,7 @@ plt.show()
 
 ### Weibull
 
-<div style="color:black; font-size: 80%;">
+<div style="color:black; font-size: 80%; text-align: center;">
   $$Weibull\ min\ :\ f(x; c) = c x^{c-1} \exp(-x^c)\qquad for\ x\ge0,\ c>0$$
 </div>
 
@@ -424,7 +424,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-<div style="color:black; font-size: 80%;">
+<div style="color:black; font-size: 80%; text-align: center;">
   $$Weibull\ max\ :\ f(x; c) = c (-x)^{c-1} \exp(-(-x)^c)\qquad for\ x<0,\ c>0$$
 </div>
 
@@ -452,7 +452,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-<div style="color:black; font-size: 80%;">
+<div style="color:black; font-size: 80%; text-align: center;">
   $$Weibull\ double\ :\ f(x; c) = c / 2 |x|^{c-1} \exp(-|x|^c)\qquad for\ a\ real\ numbers,\ x\ and\ c>0$$
 </div>
 
