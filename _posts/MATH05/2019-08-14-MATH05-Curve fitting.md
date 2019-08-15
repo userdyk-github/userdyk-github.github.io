@@ -72,6 +72,12 @@ step1> $$ func,\ xdata,\ ydata \xrightarrow{curve\ fit} popt(= a,\ b,\ c),\ pcov
 step2> $$ xdata,\ func(xdata, *popt) \xrightarrow{plt.plot} graph\ :\ y = a e^{-bx}+c $$ <br>
 </span>
 
+|STEP| INPUT                      | FUNCTION                       | OUTPUT           |
+|:---|:---------------------------|:-------------------------------|:-----------------|
+| 1  | func, xdata, ydata         | $$\xrightarrow{curve\_fit}$$   | popt, pcov          |
+| 2  | xdata, func(xdata, *popt)  | $$\xrightarrow{X.pdf}$$        | graph : $$ y = a e^{-bx}+c $$ |
+
+
 
 <br><br><br>
 
