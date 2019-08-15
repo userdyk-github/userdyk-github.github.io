@@ -95,7 +95,7 @@ plt.show()
 ```
 
 
-<div align="left" style="color:black; font-size: 80%;">
+<div>
   $$ random\ variable\ X \xrightarrow{function} distribution $$ </div>
   <div class='frame2'> </div>
 <div align="left" style="color:black; font-size: 80%;">
