@@ -63,7 +63,7 @@ plt.legend()
 plt.show()
 ```
 
-$$ A\xrightarrow ^{ f }B $$
+$$ A^{ f }B $$
 
 
 
