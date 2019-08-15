@@ -63,6 +63,10 @@ List of posts to read before reading this article
   $$f(x; a, b) = \frac{\Gamma(a+b) x^{a-1} (1-x)^{b-1}}{\Gamma(a) \Gamma(b)}\qquad for\ 0\le x \le 1,\ \ \ \ a>0,\ b>0$$
 </div>
 
+<div class='frame1'>
+  Main code
+</div>
+
 ```python
 # [] : 
 from scipy import stats
