@@ -64,7 +64,7 @@ plt.show()
 ```
 
 
-<div style="color:black; font-size: 80%; text-align: center;">
+<div>
 $$ data \xrightarrow{curve\ fitting} y = a e^{-bx}+c $$ </div>
 <div class='frame2'> </div>
 
