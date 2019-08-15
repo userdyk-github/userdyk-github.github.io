@@ -94,97 +94,6 @@ plt.tight_layout()
 plt.show()
 ```
 
-<div class='frame1'>Sub-code</div>
-```python
-# Random variables
-print(X.rvs(size=10, random_state=None))
-```
-
-```python
-# Probability density function
-x = np.linspace(*X.interval(0.999), num=5) 
-print(X.pdf(x))
-```
-
-```python
-# Cumulative distribution function.
-print(X.cdf(x))
-```
-
-```python
-# Log of the cumulative distribution function.
-print(X.logcdf(x))
-```
-
-```python
-# Survival function (also defined as 1 - cdf, but sf is sometimes more accurate).
-print(X.sf(x))
-```
-
-```python
-# Log of the survival function.
-print(X.logsf(x))
-```
-
-```python
-# Percent point function (inverse of cdf — percentiles).
-q = np.linspace(0.01,0.99, num=5) 
-print(X.ppf(q))
-```
-
-```python
-# Inverse survival function (inverse of sf).
-print(X.isf(q))
-```
-
-```python
-# Non-central moment of order n
-for n in [1,2]:
-    print(X.moment(n))    
-```
-
-```python
-# Mean(‘m’), variance(‘v’), skew(‘s’), and/or kurtosis(‘k’).
-print(X.stats(moments='mvsk'))
-```
-
-```python
-# (Differential) entropy of the RV.
-print(X.entropy())
-```
-
-```python
-# Parameter estimates for generic data.
-data = X.rvs(size=10, random_state=None)
-
-# loc : mean, scale : standard deviation
-print(stats.beta.fit(data, 1, 2, loc=0, scale=1))
-```
-
-```python
-# Median
-print(X.median())
-```
-
-```python
-# Mean
-print(X.mean())
-```
-
-```python
-# Variance
-print(X.var())
-```
-
-```python
-# Standard deviation
-print(X.std())
-```
-
-```python
-# Interval
-print(X.interval(0.05))
-```
 
 <br><br><br>
 
@@ -222,78 +131,6 @@ plt.tight_layout()
 plt.show()
 ```
 
-<div class='frame1'>Sub-code</div>
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
 
 <br><br><br>
 
@@ -332,78 +169,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-<div class='frame1'>Sub-code</div>
-```python
 
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
 
 <br><br><br>
 
@@ -441,78 +207,6 @@ plt.tight_layout()
 plt.show()
 ```
 
-<div class='frame1'>Sub-code</div>
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
 
 
 <br><br><br>
@@ -555,79 +249,6 @@ plt.tight_layout()
 plt.show()
 ```
 
-<div class='frame1'>Sub-code</div>
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
 
 <br><br><br>
 
@@ -665,78 +286,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-<div class='frame1'>Sub-code</div>
-```python
 
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
 
 
 <br><br><br>
@@ -775,78 +325,6 @@ plt.tight_layout()
 plt.show()
 ```
 
-<div class='frame1'>Sub-code</div>
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
 
 
 <br><br><br>
@@ -885,78 +363,6 @@ plt.tight_layout()
 plt.show()
 ```
 
-<div class='frame1'>Sub-code</div>
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
 
 
 <br><br><br>
@@ -993,11 +399,6 @@ ax[2].set_title("PDF")
 
 plt.tight_layout()
 plt.show()
-```
-
-<div class='frame1'>Sub-code</div>
-```python
-
 ```
 
 <br><br><br>
@@ -1037,79 +438,6 @@ plt.tight_layout()
 plt.show()
 ```
 
-<div class='frame1'>Sub-code</div>
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
 
 <br><br><br>
 
@@ -1147,78 +475,6 @@ plt.tight_layout()
 plt.show()
 ```
 
-<div class='frame1'>Sub-code</div>
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
 
 
 <br><br><br>
@@ -1326,78 +582,105 @@ plt.tight_layout()
 plt.show()
 ```
 
+---
+
 <div class='frame1'>Sub-code</div>
 ```python
-
+# Random variables
+print(X.rvs(size=10, random_state=None))
 ```
 
 ```python
-
+# Probability density function
+x = np.linspace(*X.interval(0.999), num=5) 
+print(X.pdf(x))
 ```
 
 ```python
-
+# Log of the probability density function.
+print(X.logpdf(x))
 ```
 
 ```python
-
+# Cumulative distribution function.
+print(X.cdf(x))
 ```
 
 ```python
-
+# Log of the cumulative distribution function.
+print(X.logcdf(x))
 ```
 
 ```python
-
+# Survival function (also defined as 1 - cdf, but sf is sometimes more accurate).
+print(X.sf(x))
 ```
 
 ```python
-
+# Log of the survival function.
+print(X.logsf(x))
 ```
 
 ```python
-
+# Percent point function (inverse of cdf — percentiles).
+q = np.linspace(0.01,0.99, num=5) 
+print(X.ppf(q))
 ```
 
 ```python
-
+# Inverse survival function (inverse of sf).
+print(X.isf(q))
 ```
 
 ```python
-
+# Non-central moment of order n
+for n in [1,2]:
+    print(X.moment(n))    
 ```
 
 ```python
-
+# Mean(‘m’), variance(‘v’), skew(‘s’), and/or kurtosis(‘k’).
+print(X.stats(moments='mvsk'))
 ```
 
 ```python
-
+# (Differential) entropy of the RV.
+print(X.entropy())
 ```
 
 ```python
+# Parameter estimates for generic data.
+data = X.rvs(size=10, random_state=None)
 
+# loc : mean, scale : standard deviation
+print(stats.beta.fit(data, 1, 2, loc=0, scale=1))
 ```
 
 ```python
-
+# Median
+print(X.median())
 ```
 
 ```python
-
+# Mean
+print(X.mean())
 ```
 
 ```python
-
+# Variance
+print(X.var())
 ```
 
 ```python
-
+# Standard deviation
+print(X.std())
 ```
 
 ```python
-
+# Interval
+print(X.interval(0.05))
 ```
+
 
 
 <br><br><br>
