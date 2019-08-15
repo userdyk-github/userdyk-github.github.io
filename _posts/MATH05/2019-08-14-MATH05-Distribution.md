@@ -101,7 +101,7 @@ plt.show()
 >   $$ parameters\ :\ a,\ b,\ loc,\ scale\ \xrightarrow{stats.beta} random\ variable\ :\ X $$
 >   $$ x\ axis\ range : x \xrightarrow{X.pdf} distribution\ function\ :\ X.pdf(x) $$
 >   $$ x,\ X.pdf(x) \xrightarrow{ax.plot} visuallization\ for\ X.pdf(x)\ :\ ax.plot(x,X.pdf(x)) $$
->   $$ data\ fitting :\ X.rvs(#),\ stats.beta \xrightarrow{sns.distplot} fit\ curve $$
+>   $$ sample\ data\ fitting :\ X.rvs(the\ number),\ fit=stats.beta \xrightarrow{sns.distplot} visuallization\ for\ fit\ curve $$
 > </div>
 
 
