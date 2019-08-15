@@ -100,7 +100,7 @@ plt.show()
 >   <div class='frame2'> </div>
 >   $$ parameters\ :\ a,\ b,\ loc,\ scale\ \xrightarrow{stats.beta} random\ variable\ :\ X $$
 >   $$ x\ axis\ range : x \xrightarrow{X.pdf} distribution\ function $$
->   $$ x\ axis\ range : x \xrightarrow{X.pdf} distribution\ function $$
+>   $$ sampel\ X.rvs\ stats.beta \xrightarrow{sns.distplot} visuallization $$
 > </div>
 
 
