@@ -95,7 +95,7 @@ plt.show()
 ```
 
   
-<div align="left" style="color:black; font-size: 80%;">
+<div>
 $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </div>
 <div class='frame2'> </div>
 
@@ -144,7 +144,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-<div align="left" style="color:black; font-size: 80%;">
+<div>
 $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </div>
 <div class='frame2'> </div>
 
@@ -195,7 +195,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-<div align="left" style="color:black; font-size: 80%;">
+<div>
 $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </div>
 <div class='frame2'> </div>
 
@@ -244,7 +244,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-<div align="left" style="color:black; font-size: 80%;">
+<div>
 $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </div>
 <div class='frame2'> </div>
 
@@ -298,7 +298,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-<div align="left" style="color:black; font-size: 80%;">
+<div>
 $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </div>
 <div class='frame2'> </div>
 
@@ -346,7 +346,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-<div align="left" style="color:black; font-size: 80%;">
+<div>
 $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </div>
 <div class='frame2'> </div>
 
@@ -397,7 +397,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-<div align="left" style="color:black; font-size: 80%;">
+<div>
 $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </div>
 <div class='frame2'> </div>
 
@@ -446,7 +446,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-<div align="left" style="color:black; font-size: 80%;">
+<div>
 $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </div>
 <div class='frame2'> </div>
 
@@ -496,7 +496,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-<div align="left" style="color:black; font-size: 80%;">
+<div>
 $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </div>
 <div class='frame2'> </div>
 
@@ -547,7 +547,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-<div align="left" style="color:black; font-size: 80%;">
+<div>
 $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </div>
 <div class='frame2'> </div>
 
@@ -596,7 +596,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-<div align="left" style="color:black; font-size: 80%;">
+<div>
 $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </div>
 <div class='frame2'> </div>
 
@@ -646,7 +646,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-<div align="left" style="color:black; font-size: 80%;">
+<div>
 $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </div>
 <div class='frame2'> </div>
 
@@ -694,7 +694,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-<div align="left" style="color:black; font-size: 80%;">
+<div>
 $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </div>
 <div class='frame2'> </div>
 
@@ -742,7 +742,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-<div align="left" style="color:black; font-size: 80%;">
+<div>
 $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </div>
 <div class='frame2'> </div>
 
