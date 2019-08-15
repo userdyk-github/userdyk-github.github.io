@@ -68,10 +68,10 @@ plt.show()
 $$ data \xrightarrow{curve\ fitting} y = a e^{-bx}+c $$ </div>
 <div class='frame2'> </div>
 
-|STEP| INPUT                      | FUNCTION                       | OUTPUT                        |
-|:---|:---------------------------|:-------------------------------|:------------------------------|
-| 1  | func, xdata, ydata         | $$\xrightarrow{curve\_fit}$$   | popt(= a, b, c), pcov         |
-| 2  | xdata, func(xdata, *popt)  | $$\xrightarrow{X.pdf}$$        | graph : $$ y = a e^{-bx}+c $$ |
+|STEP| INPUT                      | FUNCTION                       | OUTPUT                              |
+|:---|:---------------------------|:-------------------------------|:------------------------------------|
+| 1  | func, xdata, ydata         | $$\xrightarrow{curve\_fit}$$   | popt(= a, b, c), pcov(= covariance) |
+| 2  | xdata, func(xdata, *popt)  | $$\xrightarrow{X.pdf}$$        | graph : $$ y = a e^{-bx}+c $$       |
 
 
 
