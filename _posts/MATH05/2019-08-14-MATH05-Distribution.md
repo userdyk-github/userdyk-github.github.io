@@ -99,10 +99,10 @@ plt.show()
 $$ random\ variable\ X \xrightarrow{function} distribution $$ </div>
 <div class='frame2'> </div>
 <span class='jb-medium'>
-  $$ parameters\ :\ a,\ b,\ loc,\ scale\ \xrightarrow{stats.beta} random\ variable\ :\ X $$
-  $$ x\ axis\ range : x \xrightarrow{X.pdf} distribution\ function\ :\ X.pdf(x) $$
-  $$ x,\ X.pdf(x) \xrightarrow{ax.plot} visuallization\ for\ X.pdf(x)\ :\ ax.plot(x,X.pdf(x)) $$
-  $$ sample\ data\ fitting :\ X.rvs(the\ number),\ fit=stats.beta \xrightarrow{sns.distplot} visuallization\ for\ fit\ curve $$
+  $$ parameters\ :\ a,\ b,\ loc,\ scale\ \xrightarrow{stats.beta} random\ variable\ :\ X $$ <br>
+  $$ x\ axis\ range : x \xrightarrow{X.pdf} distribution\ function\ :\ X.pdf(x) $$ <br>
+  $$ x,\ X.pdf(x) \xrightarrow{ax.plot} visuallization\ for\ X.pdf(x)\ :\ ax.plot(x,X.pdf(x)) $$ <br>
+  $$ sample\ data\ fitting :\ X.rvs(the\ number),\ fit=stats.beta \xrightarrow{sns.distplot} visuallization\ for\ fit\ curve $$ <br>
 </span>
 
 
