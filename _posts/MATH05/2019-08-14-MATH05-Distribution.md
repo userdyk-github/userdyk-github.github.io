@@ -94,18 +94,16 @@ plt.tight_layout()
 plt.show()
 ```
 
-<span class='"jb-medium"'>
-  $$ hello $$
-</span>
   
 <div align="left" style="color:black; font-size: 80%;">
-$$ random\ variable\ X \xrightarrow{function} distribution $$
+$$ random\ variable\ X \xrightarrow{function} distribution $$ </div>
 <div class='frame2'> </div>
-$$ parameters\ :\ a,\ b,\ loc,\ scale\ \xrightarrow{stats.beta} random\ variable\ :\ X $$
-$$ x\ axis\ range : x \xrightarrow{X.pdf} distribution\ function\ :\ X.pdf(x) $$
-$$ x,\ X.pdf(x) \xrightarrow{ax.plot} visuallization\ for\ X.pdf(x)\ :\ ax.plot(x,X.pdf(x)) $$
-$$ sample\ data\ fitting :\ X.rvs(the\ number),\ fit=stats.beta \xrightarrow{sns.distplot} visuallization\ for\ fit\ curve $$
-</div>
+<span class='"jb-medium"'>
+  $$ parameters\ :\ a,\ b,\ loc,\ scale\ \xrightarrow{stats.beta} random\ variable\ :\ X $$
+  $$ x\ axis\ range : x \xrightarrow{X.pdf} distribution\ function\ :\ X.pdf(x) $$
+  $$ x,\ X.pdf(x) \xrightarrow{ax.plot} visuallization\ for\ X.pdf(x)\ :\ ax.plot(x,X.pdf(x)) $$
+  $$ sample\ data\ fitting :\ X.rvs(the\ number),\ fit=stats.beta \xrightarrow{sns.distplot} visuallization\ for\ fit\ curve $$
+</span>
 
 
 
