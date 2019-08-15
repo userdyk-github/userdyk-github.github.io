@@ -94,7 +94,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-<span style="color:black; font-size: 80%;>
+<span class='"jb-medium"'>
   $$ hello $$
 </span>
   
