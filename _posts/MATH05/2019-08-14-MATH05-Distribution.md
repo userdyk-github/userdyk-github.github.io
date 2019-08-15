@@ -334,7 +334,8 @@ plt.show()
 ### StudentT
 
 <div style="color:black; font-size: 80%; text-align: center;">
-$$f(x; \nu) = \frac{\Gamma((\nu+1)/2)}{\sqrt{\pi \nu} \Gamma(\nu)}(1+x^2/\nu)^{-(\nu+1)/2}\qquad where\ x\ is\ a\ real\ number\ and\ degrees\ of\ freedom\ parameter\ \nu>0$$
+$$f(x; \nu) = \frac{\Gamma((\nu+1)/2)}{\sqrt{\pi \nu} \Gamma(\nu)}(1+x^2/\nu)^{-(\nu+1)/2}$$
+$$ where\ x\ is\ a\ real\ number\ and\ degrees\ of\ freedom\ parameter\ \nu>0$$
 </div>
 
 ```python
