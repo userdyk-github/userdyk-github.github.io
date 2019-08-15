@@ -94,9 +94,14 @@ plt.tight_layout()
 plt.show()
 ```
 
+<div>
+  asdfnnaks;df
+</div>
 
 <div>
-$$ random\ variable\ X \xrightarrow{function} distribution $$ </div>
+  $$ random\ variable\ X \xrightarrow{function} distribution $$
+</div>
+
 <div class='frame2'> </div>
 
 <div align="left" style="color:black; font-size: 80%;">
