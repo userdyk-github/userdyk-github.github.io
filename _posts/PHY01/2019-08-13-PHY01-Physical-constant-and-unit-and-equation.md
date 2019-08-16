@@ -25,15 +25,15 @@ List of posts to read before reading this article
 
 | Quantity | Symbol | Value |
 |:---------|:-------|:------|
-| Atomic mass unit | $$ u $$| $$1.66053886(28)\times 10^{ -27 }kg $$<br> 931.494 043 (80) MeV/c2|
-| Avogadro’s number | $$ N_{ A }  $$| 6.022 141 5 (10) 10+23 particles/mol |
-| Bohr magneton|$$\mu _{ B }=\frac { e\hbar  }{ 2m_{ e } } $$|9.274 009 49 (80) 10-24 J/T |
-| Bohr radius | $$  a_{ 0 }=\frac { \hbar ^{ 2 } }{ m_{ e }e^{ 2 }k_{ e } } $$| 5.291 772 108 (18) 10-11 m|
-| Boltzmann’s constant |$$ k_{ B }=\frac { R }{ N_{ A } }   $$|1.380 650 5 (24) 10-23 J/K |
-| Compton wavelength |$$  \lambda _{ C }=\frac { h }{ m_{ e }c }  $$|2.426 310 238 (16) 10-12 m |
-| Coulomb constant |$$k_{ e }=\frac { 1 }{ 4\pi \varepsilon _{ 0 } }   $$|8.987 551 788...10+9 N m2/C2 (exact) |
-| Deuteron mass |$$m_{ d }   $$|3.343 583 35 (57) 10-27 kg <br> 2.013 553 212 70 (35) u|
-| Electron mass |$$ m_{ e }  $$ | 9.109 382 6 (16) 10-31 kg <br> 5.485 799 094 5 (24) 10-4 u <br> 0.510 998 918 (44) MeV/c2| 
+| Atomic mass unit | $$ u $$| $$1.66053886(28)\times 10^{ -27 }kg $$<br> $$$$|
+| Avogadro’s number | $$ N_{ A }  $$| $$$$ |
+| Bohr magneton|$$\mu _{ B }=\frac { e\hbar  }{ 2m_{ e } } $$|$$$$ |
+| Bohr radius | $$  a_{ 0 }=\frac { \hbar ^{ 2 } }{ m_{ e }e^{ 2 }k_{ e } } $$| $$$$|
+| Boltzmann’s constant |$$ k_{ B }=\frac { R }{ N_{ A } }   $$|$$$$ |
+| Compton wavelength |$$  \lambda _{ C }=\frac { h }{ m_{ e }c }  $$|$$$$|
+| Coulomb constant |$$k_{ e }=\frac { 1 }{ 4\pi \varepsilon _{ 0 } }   $$|$$$$|
+| Deuteron mass |$$m_{ d }   $$|$$$$ <br>$$$$|
+| Electron mass |$$ m_{ e }  $$ |$$$$<br>$$$$<br>$$$$| 
 | Electron volt | $$ eV  $$| 1.602 176 53 (14) 10-19 J|
 | Elementary charge|$$ e $$|1.602 176 53 (14) 10-19 C |
 | Gas constant| $$ R $$| 8.314 472 (15) J/mol K|
