@@ -203,13 +203,13 @@ List of posts to read before reading this article
 |System|Equation|
 |:--|:--|
 |Classical Mechanics|<span class='jb-small'>$$\overrightarrow { a }=\frac { \overrightarrow { F } }{ m } $$</span>|
-|Classical Electromagnetics|<span class='jb-small'>$$\nabla \cdot \overrightarrow { E }=\frac { \rho  }{ \varepsilon _{ 0 } }$$</span> <br><span class='jb-small'>$$$$</span><br><span class='jb-small'>$$$$</span><br><span class='jb-small'>$$$$</span><br><br> <span class='jb-small'>$$$$</span><br><span class='jb-small'>$$$$</span><br><span class='jb-small'>$$$$</span><br><span class='jb-small'>$$$$</span>  <br><br><span class='jb-small'>$$$$</span><br><span class='jb-small'>$$$$</span>|
-|Quantum System|<span class='jb-small'>$$$$</span><br><span class='jb-small'>$$$$</span>|
-|Statistical and Thermal Physics|<span class='jb-small'>$$$$</span><br><span class='jb-small'>$$$$</span>|
-|Optics|<span class='jb-small'>$$$$</span>|
-|Solid State Physics|<span class='jb-small'>$$$$</span>|
-|Fluid System|<span class='jb-small'>$$$$</span><br><span class='jb-small'>$$$$</span>|
-|General relativity|<span class='jb-small'>$$$$</span>|
+|Classical Electromagnetics|<span class='jb-small'>$$\nabla \cdot \overrightarrow { E }=\frac { \rho  }{ \varepsilon _{ 0 } }$$</span> <br><span class='jb-small'>$$\nabla \times \overrightarrow { E }=-\frac { \partial \overrightarrow { B } }{ \partial t } $$</span><br><span class='jb-small'>$$\nabla \cdot \overrightarrow { B }=0$$</span><br><span class='jb-small'>$$\nabla \times \overrightarrow { B }=\mu _{ 0 }\overrightarrow { J }+\mu _{ 0 }\varepsilon _{ 0 }\frac { \partial \overrightarrow { E } }{ \partial t } $$</span><br><br> <span class='jb-small'>$$\oint _{ S }{ \overrightarrow { E }\cdot d\overrightarrow { a }=\frac { Q }{ \varepsilon _{ 0 } } } $$</span><br><span class='jb-small'>$$\oint _{ C }{ \overrightarrow { E }\times d\overrightarrow { l }=-\frac { d }{ dt }\int _{ S }\overrightarrow { B }\cdot d\overrightarrow { a } } $$</span><br><span class='jb-small'>$$\oint _{ S }{ \overrightarrow { B }\cdot d\overrightarrow { a }=0 } $$</span><br><span class='jb-small'>$$ \oint _{ C }{ \overrightarrow { B }\times d\overrightarrow { a }=\mu _{ 0 }\overrightarrow { I }+\mu _{ 0 }\varepsilon _{ 0 }\frac { d }{ dt }\int _{ S }\overrightarrow { E }\cdot d\overrightarrow { a } } $$</span>  <br><br><span class='jb-small'>$$\frac { \partial F^{ \mu \nu  } }{ \partial x^{ \nu  } }=\mu _{ 0 }J^{ \mu  }$$</span><br><span class='jb-small'>$$ \frac { \partial G^{ \mu \nu  } }{ \partial x^{ \nu  } }=0 $$</span>|
+|Quantum System|<span class='jb-small'>$$i\hbar \frac { \partial  }{ \partial t }|\Psi >=\hat { H }|\Psi > $$</span><br><span class='jb-small'>$$i\hbar \gamma ^{ \mu  }\partial _{ \mu  }|\Psi >-mc|\Psi >=0 $$</span>|
+|Statistical and Thermal Physics|<span class='jb-small'>$$\Delta U=\sum { T } $$</span><br><span class='jb-small'>$$2^{ nd }lawdS\ge 0 $$</span>|
+|Optics|<span class='jb-small'>$$\frac { \partial ^{ 2 }u }{ \partial t^{ 2 } }=c^{ 2 }\nabla ^{ 2 }u $$</span>|
+|Solid State Physics|<span class='jb-small'>$$\psi (\overrightarrow { r })=e^{ i\overrightarrow { k }\cdot \overrightarrow { r } }u(\overrightarrow { r }) $$</span>|
+|Fluid System|<span class='jb-small'>$$\frac { \partial u_{ i } }{ \partial t }+u_{ j }\frac { \partial u_{ i } }{ \partial x_{ j } }=f_{ i }-\frac { 1 }{ \rho  }\frac { \partial p }{ \partial x_{ i } }+\nu \frac { \partial ^{ 2 }u_{ i } }{ \partial x_{ j }\partial x_{ j } } $$</span><br><span class='jb-small'>$$\frac { \partial \overrightarrow { u } }{ \partial t }+(\overrightarrow { u }\cdot \nabla )\overrightarrow { u }=\overrightarrow { f }-\frac { 1 }{ \rho  }\nabla \overrightarrow { p }+\nu \nabla ^{ 2 }\overrightarrow { u } $$</span>|
+|General relativity|<span class='jb-small'>$$G_{ \mu \nu  }+\Lambda _{ \mu \nu  }=\frac { 8\pi G }{ c^{ 4 } }T_{ \mu \nu  } $$</span>|
 
 
 <br><br><br>
