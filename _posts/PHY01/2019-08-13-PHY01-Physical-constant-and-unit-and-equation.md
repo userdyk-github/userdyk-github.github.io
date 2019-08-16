@@ -27,7 +27,7 @@ List of posts to read before reading this article
 |:---------|:-------|:------|
 | Atomic mass unit | | 1.660 538 86 (28) 10-27 kg|
 | Avogadro’s number | | 931.494 043 (80) MeV/c2 |
-| Bohr magneton| |6.022 141 5 (10) 10+23 particles/mol |
+| Bohr magneton|$$\mu _{ B }=\frac { e\hbar  }{ 2m_{ e } } $$|6.022 141 5 (10) 10+23 particles/mol |
 | Bohr radius | | 9.274 009 49 (80) 10-24 J/T|
 | Boltzmann’s constant | |5.291 772 108 (18) 10-11 m |
 | Compton wavelength | |1.380 650 5 (24) 10-23 J/K |
