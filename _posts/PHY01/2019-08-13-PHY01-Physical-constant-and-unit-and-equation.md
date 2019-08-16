@@ -202,14 +202,14 @@ List of posts to read before reading this article
 
 |System|Equation|
 |:--|:--|
-|Classical Mechanics||
-|Classical Electromagnetics||
-|Quantum System||
-|Statistical and Thermal Physics||
-|Optics||
-|Solid State Physics||
-|Fluid System||
-|General relativity||
+|Classical Mechanics|<span class='jb-x-small'>$$$$</span>|
+|Classical Electromagnetics|<span class='jb-x-small'>$$$$</span> <br><span class='jb-x-small'>$$$$</span><br><span class='jb-x-small'>$$$$</span><br><span class='jb-x-small'>$$$$</span><br><br> <span class='jb-x-small'>$$$$</span><br><span class='jb-x-small'>$$$$</span><br><span class='jb-x-small'>$$$$</span><br><span class='jb-x-small'>$$$$</span>  <br><br><span class='jb-x-small'>$$$$</span><br><span class='jb-x-small'>$$$$</span>|
+|Quantum System|<span class='jb-x-small'>$$$$</span><br><span class='jb-x-small'>$$$$</span>|
+|Statistical and Thermal Physics|<span class='jb-x-small'>$$$$</span><br><span class='jb-x-small'>$$$$</span>|
+|Optics|<span class='jb-x-small'>$$$$</span>|
+|Solid State Physics|<span class='jb-x-small'>$$$$</span>|
+|Fluid System|<span class='jb-x-small'>$$$$</span><br><span class='jb-x-small'>$$$$</span>|
+|General relativity|<span class='jb-x-small'>$$$$</span>|
 
 
 <br><br><br>
