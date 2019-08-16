@@ -53,6 +53,19 @@ List of posts to read before reading this article
 
 ## Some Prefixes for Powers of Ten
 
+|Power|Prefix|Abbreviation|Power|Prefix|Abbreviation|
+|:----|:-----|:-----------|:----|:-----|:-----------|
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+
 
 
 ---
