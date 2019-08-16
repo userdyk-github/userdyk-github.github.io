@@ -1,6 +1,6 @@
 ---
 layout : post
-title : PHY01
+title : PHY01, Physical constant and unit and equation
 categories: [PHY01]
 comments : true
 tags : [PHY01]
