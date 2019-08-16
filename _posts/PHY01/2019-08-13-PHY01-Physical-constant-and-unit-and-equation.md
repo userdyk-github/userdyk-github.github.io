@@ -25,29 +25,29 @@ List of posts to read before reading this article
 
 | Quantity | Symbol | Value |
 |:---------|:-------|:------|
-| Atomic mass unit | $$ u $$| <span class='jb-medium'>$$1.66053886(28)\times 10^{ -27 }\ kg $$<br> $$931.494043(80)\ MeV/c^{ 2 } $$ </span>|
-| Avogadro’s number | $$ N_{ A }  $$| <span class='jb-medium'>$$6.0221415(10)\times 10^{ 23 }\ particles/mol $$</span> |
-| Bohr magneton|$$\mu _{ B }=\frac { e\hbar  }{ 2m_{ e } } $$|<span class='jb-medium'>$$9.27400949(80)\times 10^{ -24 }\ J/T $$ </span>|
-| Bohr radius | $$  a_{ 0 }=\frac { \hbar ^{ 2 } }{ m_{ e }e^{ 2 }k_{ e } } $$| <span class='jb-medium'>$$5.291772108(18)\times 10^{ -11 }\ m $$</span>|
-| Boltzmann’s constant |$$ k_{ B }=\frac { R }{ N_{ A } }   $$|<span class='jb-medium'>$$1.3806505(24)\times 10^{ -23 }\ J/K $$ </span>|
-| Compton wavelength |$$  \lambda _{ C }=\frac { h }{ m_{ e }c }  $$|<span class='jb-medium'>$$2.426310238(16)\times 10^{ -12 }\ m $$</span>|
-| Coulomb constant |$$k_{ e }=\frac { 1 }{ 4\pi \varepsilon _{ 0 } }   $$|<span class='jb-medium'>$$8.987551788...\times 10^{ 9 }\ N\cdot m^{ 2 }/C^{ 2 } $$</span>|
-| Deuteron mass |$$m_{ d }   $$|<span class='jb-medium'>$$3.34358335(57)\times 10^{ -27 }\ kg $$ <br>$$2.01355321270(35)\ u $$</span>|
-| Electron mass |$$ m_{ e }  $$ |<span class='jb-medium'>$$9.1093826(16)\times 10^{ -31 }\ kg $$<br>$$5.4857990945(24)\times 10^{ -4 }\ u $$<br>$$0.510998918(44)\ MeV/c^{ 2 } $$</span>| 
-| Electron volt | $$ eV  $$|<span class='jb-medium'>$$1.60217653(14)\times 10^{ -19 }\ J $$</span>|
-| Elementary charge|$$ e $$|<span class='jb-medium'>$$1.60217653(14)\times 10^{ -19 }\ C $$ </span>|
-| Gas constant| $$ R $$| <span class='jb-medium'>$$8.314472(15)\ J/mol\cdot K $$</span>|
-| Gravitational constant |$$ G $$|<span class='jb-medium'>$$6.6742(10)\times 10^{ -11 }\ N\cdot m^{ 2 }/kg^{ 2 } $$</span>|
-| Josephson frequency – voltage ratio | $$ \frac { 2e }{ h }  $$|<span class='jb-medium'>$$4.83597879(41)\times 10^{ 14 }\ Hz/V $$</span>|
-| Magnetic flux quantum| $$ \Phi _{ 0 }=\frac { h }{ 2e }  $$|<span class='jb-medium'>$$2.06783372(18)\times 10^{ -15 }\ T\cdot m^{ 2 } $$</span>|
-| Neutron mass|$$ m_{ n }  $$ | <span class='jb-medium'>$$1.67492728(29)\times 10^{ -27 }\ kg $$ <br> $$1.00866491560(55)\ u $$ <br> $$939.565360(81)\ MeV/c^{ 2 } $$</span> |
-| Nuclear magneton|$$ \mu _{ n }=\frac { e\hbar  }{ 2m_{ p } }  $$| <span class='jb-medium'>$$5.05078343(43)\times 10^{ -27 }\ J/T $$</span>|
-| Permeability of free space |$$ \mu _{ 0 }  $$|<span class='jb-medium'>$$4\pi \times 10^{ -7 }\ T\cdot m/A $$</span> |
-| Permittivity of free space|$$\varepsilon _{ 0 }=\frac { 1 }{ \mu _{ 0 }c^{ 2 } } $$|<span class='jb-medium'> $$8.854187817...\times 10^{ -12 }\ C^{ 2 }/N\cdot m^{ 2 } $$</span>|
-| Planck’s constant |$$h$$ <br> $$  \hbar =\frac { h }{ 2\pi  }  $$|<span class='jb-medium'>$$6.6260693(11)\times 10^{ -34 }\ J\cdot s $$ <br>$$1.05457168(18)\times 10^{ -34 }\ J\cdot s $$ </span>|
-| Proton mass |$$ m_{ p }  $$|<span class='jb-medium'>$$1.67262171(29)\times 10^{ -27 }\ kg $$<br>$$1.00727646688(13)\ u $$ <br> $$938.272029(80)\ MeV/c^{ 2 } $$</span>|
-| Rydberg constant|$$ R_{ H }  $$|<span class='jb-medium'>$$1.0973731568525(73)\times 10^{ 7 }\ m^{ -1 } $$</span>|
-| Speed of light in vacuum|$$ c $$|<span class='jb-medium'>$$2.99792458\times 10^{ 8 }\ m/s $$</span>|
+| Atomic mass unit | $$ u $$| <span class='jb-x-small'>$$1.66053886(28)\times 10^{ -27 }\ kg $$<br> $$931.494043(80)\ MeV/c^{ 2 } $$ </span>|
+| Avogadro’s number | $$ N_{ A }  $$| <span class='jb-x-small'>$$6.0221415(10)\times 10^{ 23 }\ particles/mol $$</span> |
+| Bohr magneton|$$\mu _{ B }=\frac { e\hbar  }{ 2m_{ e } } $$|<span class='jb-x-small'>$$9.27400949(80)\times 10^{ -24 }\ J/T $$ </span>|
+| Bohr radius | $$  a_{ 0 }=\frac { \hbar ^{ 2 } }{ m_{ e }e^{ 2 }k_{ e } } $$| <span class='jb-x-small'>$$5.291772108(18)\times 10^{ -11 }\ m $$</span>|
+| Boltzmann’s constant |$$ k_{ B }=\frac { R }{ N_{ A } }   $$|<span class='jb-x-small'>$$1.3806505(24)\times 10^{ -23 }\ J/K $$ </span>|
+| Compton wavelength |$$  \lambda _{ C }=\frac { h }{ m_{ e }c }  $$|<span class='jb-x-small'>$$2.426310238(16)\times 10^{ -12 }\ m $$</span>|
+| Coulomb constant |$$k_{ e }=\frac { 1 }{ 4\pi \varepsilon _{ 0 } }   $$|<span class='jb-x-small'>$$8.987551788...\times 10^{ 9 }\ N\cdot m^{ 2 }/C^{ 2 } $$</span>|
+| Deuteron mass |$$m_{ d }   $$|<span class='jb-x-small'>$$3.34358335(57)\times 10^{ -27 }\ kg $$ <br>$$2.01355321270(35)\ u $$</span>|
+| Electron mass |$$ m_{ e }  $$ |<span class='jb-x-small'>$$9.1093826(16)\times 10^{ -31 }\ kg $$<br>$$5.4857990945(24)\times 10^{ -4 }\ u $$<br>$$0.510998918(44)\ MeV/c^{ 2 } $$</span>| 
+| Electron volt | $$ eV  $$|<span class='jb-x-small'>$$1.60217653(14)\times 10^{ -19 }\ J $$</span>|
+| Elementary charge|$$ e $$|<span class='jb-x-small'>$$1.60217653(14)\times 10^{ -19 }\ C $$ </span>|
+| Gas constant| $$ R $$| <span class='jb-x-small'>$$8.314472(15)\ J/mol\cdot K $$</span>|
+| Gravitational constant |$$ G $$|<span class='jb-x-small'>$$6.6742(10)\times 10^{ -11 }\ N\cdot m^{ 2 }/kg^{ 2 } $$</span>|
+| Josephson frequency – voltage ratio | $$ \frac { 2e }{ h }  $$|<span class='jb-x-small'>$$4.83597879(41)\times 10^{ 14 }\ Hz/V $$</span>|
+| Magnetic flux quantum| $$ \Phi _{ 0 }=\frac { h }{ 2e }  $$|<span class='jb-x-small'>$$2.06783372(18)\times 10^{ -15 }\ T\cdot m^{ 2 } $$</span>|
+| Neutron mass|$$ m_{ n }  $$ | <span class='jb-x-small'>$$1.67492728(29)\times 10^{ -27 }\ kg $$ <br> $$1.00866491560(55)\ u $$ <br> $$939.565360(81)\ MeV/c^{ 2 } $$</span> |
+| Nuclear magneton|$$ \mu _{ n }=\frac { e\hbar  }{ 2m_{ p } }  $$| <span class='jb-x-small'>$$5.05078343(43)\times 10^{ -27 }\ J/T $$</span>|
+| Permeability of free space |$$ \mu _{ 0 }  $$|<span class='jb-x-small'>$$4\pi \times 10^{ -7 }\ T\cdot m/A $$</span> |
+| Permittivity of free space|$$\varepsilon _{ 0 }=\frac { 1 }{ \mu _{ 0 }c^{ 2 } } $$|<span class='jb-x-small'> $$8.854187817...\times 10^{ -12 }\ C^{ 2 }/N\cdot m^{ 2 } $$</span>|
+| Planck’s constant |$$h$$ <br> $$  \hbar =\frac { h }{ 2\pi  }  $$|<span class='jb-x-small'>$$6.6260693(11)\times 10^{ -34 }\ J\cdot s $$ <br>$$1.05457168(18)\times 10^{ -34 }\ J\cdot s $$ </span>|
+| Proton mass |$$ m_{ p }  $$|<span class='jb-x-small'>$$1.67262171(29)\times 10^{ -27 }\ kg $$<br>$$1.00727646688(13)\ u $$ <br> $$938.272029(80)\ MeV/c^{ 2 } $$</span>|
+| Rydberg constant|$$ R_{ H }  $$|<span class='jb-x-small'>$$1.0973731568525(73)\times 10^{ 7 }\ m^{ -1 } $$</span>|
+| Speed of light in vacuum|$$ c $$|<span class='jb-x-small'>$$2.99792458\times 10^{ 8 }\ m/s $$</span>|
 
 <br><br><br>
 
@@ -106,23 +106,23 @@ List of posts to read before reading this article
 
 |Quantity|Symbol|Conversation|
 |:--|:--|:--|
-|Frequency|<span class='jb-medium'>$$Hz$$</span>|<span class='jb-medium'>$$1Hz=1s^{-1}$$</span>|
-|Electric charge|<span class='jb-medium'>$$C$$</span>|<span class='jb-medium frame2'>$$I=\frac{dQ}{dt}$$</span><br><span class='jb-medium'>$$1C=1s\times 1A$$</span>|
-|Force|<span class='jb-medium'>$$N$$</span>|<span class='jb-medium frame2'>$$\overrightarrow { F }=m\overrightarrow { a } $$</span> / <span class='jb-medium frame2'>$$\overrightarrow { a }=\frac { d^{ 2 }\overrightarrow { r } }{ dt^{ 2 } } $$</span><br><span class='jb-medium'>$$1N=1kg\cdot 1m/s^{ 2 } $$</span>|
-|Angle|<span class='jb-medium'>$$rad$$</span>|<span class='jb-medium frame2'>$$\theta =\frac { r }{ l } $$</span><br>1 rad means  |
-|Solid angle|<span class='jb-medium'>$$sr$$</span>|<span class='jb-medium frame2'>$$\Omega =\frac { A }{ r^{ 2 } } $$</span><br>1sr means|
-|Luminous flux|<span class='jb-medium'>$$lm$$</span>|<span class='jb-medium'>$$1 lm = 1cd\times 1sr$$</span>|
-|Illuminuance|<span class='jb-medium'>$$lx$$</span>|<span class='jb-medium'>$$1lx=1cd/1m^{ 2 } $$</span>|
-|Energy|<span class='jb-medium'>$$J$$</span>|<span class='jb-medium frame2'>$$W=\int { \overrightarrow { F }\cdot d\overrightarrow { s } } $$</span> / <span class='jb-medium frame2'>$$\overrightarrow { F }=m\overrightarrow { a } $$</span> / <span class='jb-medium frame2'>$$\overrightarrow { a }=\frac { d^{ 2 }\overrightarrow { r } }{ dt^{ 2 } } $$</span><br><span class='jb-medium frame2'>$$\overrightarrow { F }=-\nabla U $$</span> / <span class='jb-medium frame2'>$$\overrightarrow { F }=m\overrightarrow { a } $$</span> / <span class='jb-medium frame2'>$$\overrightarrow { a }=\frac { d^{ 2 }\overrightarrow { r } }{ dt^{ 2 } } $$</span> <br><span class='jb-medium frame2'>$$E=\frac { 1 }{ 2 }mv^{ 2 } $$</span> / <span class='jb-medium frame2'>$$\overrightarrow { v }=\frac { d\overrightarrow { r } }{ dt } $$</span> <br> <span class='jb-medium'>$$1  J = 1N \times 1m =1kg\cdot 1m/s^{ 2 }\cdot 1m=1kg\cdot m^{ 2 }/s^{ 2 } $$</span><br><br><span class='jb-medium frame2'>$$P=\frac { dE }{ dt } $$</span><br><span class='jb-medium'>$$1 J = 1W \times 1s$$</span><br><br><span class='jb-medium frame2'>$$q\Delta V=\Delta U $$</span><br><span class='jb-medium'>$$1 eV = 1.602177\times 10^{ -19 }J $$</span><br><br><span class='jb-medium frame2'>Ref, $$\Delta E=\sum { T } $$</span>|
-|Voltage|<span class='jb-medium'>$$V$$</span>|<span class='jb-medium frame2'>$$\Delta V=\frac { \Delta U }{ q } $$</span> / <span class='jb-medium frame2'>$$W=\int { \overrightarrow { F }\cdot d\overrightarrow { s } } $$</span> / <span class='jb-medium frame2'>$$\overrightarrow { F }=m\overrightarrow { a } $$</span> / <span class='jb-medium frame2'>$$\overrightarrow { a }=\frac { d^{ 2 }\overrightarrow { r } }{ dt^{ 2 } } $$</span> <br> <span class='jb-medium'>$$1 V = 1J/1C = 1kg\cdot m^{ 2 }/A\cdot s^{ 3 } $$</span><br><br> <span class='jb-medium frame2'>$$\overrightarrow { E }=\frac { \overrightarrow { F } }{ q }=-\nabla V $$</span><br> <span class='jb-medium'>$$unit\ of\ electric\ field = 1N/1C = 1V/1m$$</span><br><br>Ref, <span class='jb-medium frame2'>$$\overrightarrow { F }=q\overrightarrow { E } $$</span> / <span class='jb-medium frame2'>$$\overrightarrow { E }=\frac { 1 }{ 4\pi \varepsilon _{ 0 } }\frac { Q }{ r^{ 3 } }\overrightarrow { r } $$</span> / <span class='jb-medium frame2'>$$\oint _{ S }{ \overrightarrow { E }\cdot d\overrightarrow { a } }=\frac { Q }{ \varepsilon _{ 0 } } $$</span> / <span class='jb-medium frame2'>$$\nabla \cdot \overrightarrow { E }=\frac { \rho  }{ \varepsilon _{ 0 } } $$</span><br><span class='jb-medium frame2'>$$\oint _{ C }{ \overrightarrow { E }\cdot d\overrightarrow { l } }=-\frac { d }{ dt }\int _{ S }{ \overrightarrow { B }\cdot d\overrightarrow { a } } $$</span> / <span class='jb-medium frame2'>$$\nabla \times \overrightarrow { E }=-\frac { \partial  }{ \partial t }\overrightarrow { B } $$</span>|
-|Temperature|<span class='jb-medium'>$$T$$</span>|<span class='jb-medium'>$$$$</span>|
-|Pressure|<span class='jb-medium'>$$Pa$$</span>|<span class='jb-medium'>$$$$</span>|
-|Power|<span class='jb-medium'>$$W$$</span>|<span class='jb-medium'>$$$$</span>|
-|Electrical capacitance|<span class='jb-medium'>$$F$$</span>|<span class='jb-medium'>$$$$</span>|
-|Electrical resistance|<span class='jb-medium'>$$\Omega$$</span>|<span class='jb-medium'>$$$$</span>|
-|Electrical conductance|<span class='jb-medium'>$$S$$</span>|<span class='jb-medium'>$$$$</span>|
-|Magnetic flux|<span class='jb-medium'>$$Wb$$</span>|<span class='jb-medium'>$$$$</span>|
-|Electrical inductance|<span class='jb-medium'>$$H$$</span>|<span class='jb-medium'>$$$$</span>|
+|Frequency|<span class='jb-x-small'>$$Hz$$</span>|<span class='jb-x-small'>$$1Hz=1s^{-1}$$</span>|
+|Electric charge|<span class='jb-x-small'>$$C$$</span>|<span class='jb-x-small frame2'>$$I=\frac{dQ}{dt}$$</span><br><span class='jb-x-small'>$$1C=1s\times 1A$$</span>|
+|Force|<span class='jb-x-small'>$$N$$</span>|<span class='jb-x-small frame2'>$$\overrightarrow { F }=m\overrightarrow { a } $$</span> / <span class='jb-x-small frame2'>$$\overrightarrow { a }=\frac { d^{ 2 }\overrightarrow { r } }{ dt^{ 2 } } $$</span><br><span class='jb-x-small'>$$1N=1kg\cdot 1m/s^{ 2 } $$</span>|
+|Angle|<span class='jb-x-small'>$$rad$$</span>|<span class='jb-x-small frame2'>$$\theta =\frac { r }{ l } $$</span><br>1 rad means  |
+|Solid angle|<span class='jb-x-small'>$$sr$$</span>|<span class='jb-x-small frame2'>$$\Omega =\frac { A }{ r^{ 2 } } $$</span><br>1sr means|
+|Luminous flux|<span class='jb-x-small'>$$lm$$</span>|<span class='jb-x-small'>$$1 lm = 1cd\times 1sr$$</span>|
+|Illuminuance|<span class='jb-x-small'>$$lx$$</span>|<span class='jb-x-small'>$$1lx=1cd/1m^{ 2 } $$</span>|
+|Energy|<span class='jb-x-small'>$$J$$</span>|<span class='jb-x-small frame2'>$$W=\int { \overrightarrow { F }\cdot d\overrightarrow { s } } $$</span> / <span class='jb-x-small frame2'>$$\overrightarrow { F }=m\overrightarrow { a } $$</span> / <span class='jb-x-small frame2'>$$\overrightarrow { a }=\frac { d^{ 2 }\overrightarrow { r } }{ dt^{ 2 } } $$</span><br><span class='jb-x-small frame2'>$$\overrightarrow { F }=-\nabla U $$</span> / <span class='jb-x-small frame2'>$$\overrightarrow { F }=m\overrightarrow { a } $$</span> / <span class='jb-x-small frame2'>$$\overrightarrow { a }=\frac { d^{ 2 }\overrightarrow { r } }{ dt^{ 2 } } $$</span> <br><span class='jb-x-small frame2'>$$E=\frac { 1 }{ 2 }mv^{ 2 } $$</span> / <span class='jb-x-small frame2'>$$\overrightarrow { v }=\frac { d\overrightarrow { r } }{ dt } $$</span> <br> <span class='jb-x-small'>$$1  J = 1N \times 1m =1kg\cdot 1m/s^{ 2 }\cdot 1m=1kg\cdot m^{ 2 }/s^{ 2 } $$</span><br><br><span class='jb-x-small frame2'>$$P=\frac { dE }{ dt } $$</span><br><span class='jb-x-small'>$$1 J = 1W \times 1s$$</span><br><br><span class='jb-x-small frame2'>$$q\Delta V=\Delta U $$</span><br><span class='jb-x-small'>$$1 eV = 1.602177\times 10^{ -19 }J $$</span><br><br><span class='jb-x-small frame2'>Ref, $$\Delta E=\sum { T } $$</span>|
+|Voltage|<span class='jb-x-small'>$$V$$</span>|<span class='jb-x-small frame2'>$$\Delta V=\frac { \Delta U }{ q } $$</span> / <span class='jb-x-small frame2'>$$W=\int { \overrightarrow { F }\cdot d\overrightarrow { s } } $$</span> / <span class='jb-x-small frame2'>$$\overrightarrow { F }=m\overrightarrow { a } $$</span> / <span class='jb-x-small frame2'>$$\overrightarrow { a }=\frac { d^{ 2 }\overrightarrow { r } }{ dt^{ 2 } } $$</span> <br> <span class='jb-x-small'>$$1 V = 1J/1C = 1kg\cdot m^{ 2 }/A\cdot s^{ 3 } $$</span><br><br> <span class='jb-x-small frame2'>$$\overrightarrow { E }=\frac { \overrightarrow { F } }{ q }=-\nabla V $$</span><br> <span class='jb-x-small'>$$unit\ of\ electric\ field = 1N/1C = 1V/1m$$</span><br><br>Ref, <span class='jb-x-small frame2'>$$\overrightarrow { F }=q\overrightarrow { E } $$</span> / <span class='jb-x-small frame2'>$$\overrightarrow { E }=\frac { 1 }{ 4\pi \varepsilon _{ 0 } }\frac { Q }{ r^{ 3 } }\overrightarrow { r } $$</span> / <span class='jb-x-small frame2'>$$\oint _{ S }{ \overrightarrow { E }\cdot d\overrightarrow { a } }=\frac { Q }{ \varepsilon _{ 0 } } $$</span> / <span class='jb-x-small frame2'>$$\nabla \cdot \overrightarrow { E }=\frac { \rho  }{ \varepsilon _{ 0 } } $$</span><br><span class='jb-x-small frame2'>$$\oint _{ C }{ \overrightarrow { E }\cdot d\overrightarrow { l } }=-\frac { d }{ dt }\int _{ S }{ \overrightarrow { B }\cdot d\overrightarrow { a } } $$</span> / <span class='jb-x-small frame2'>$$\nabla \times \overrightarrow { E }=-\frac { \partial  }{ \partial t }\overrightarrow { B } $$</span>|
+|Temperature|<span class='jb-x-small'>$$T$$</span>|<span class='jb-x-small'>$$$$</span>|
+|Pressure|<span class='jb-x-small'>$$Pa$$</span>|<span class='jb-x-small'>$$$$</span>|
+|Power|<span class='jb-x-small'>$$W$$</span>|<span class='jb-x-small'>$$$$</span>|
+|Electrical capacitance|<span class='jb-x-small'>$$F$$</span>|<span class='jb-x-small'>$$$$</span>|
+|Electrical resistance|<span class='jb-x-small'>$$\Omega$$</span>|<span class='jb-x-small'>$$$$</span>|
+|Electrical conductance|<span class='jb-x-small'>$$S$$</span>|<span class='jb-x-small'>$$$$</span>|
+|Magnetic flux|<span class='jb-x-small'>$$Wb$$</span>|<span class='jb-x-small'>$$$$</span>|
+|Electrical inductance|<span class='jb-x-small'>$$H$$</span>|<span class='jb-x-small'>$$$$</span>|
 
 
 <br><br><br>
@@ -133,7 +133,7 @@ List of posts to read before reading this article
 
 |Physical quantity|Symbol|Unit|SI unit conversation factor|SI unit|Dimension|
 |:--|:--|:--|:--|:--|:--|
-||<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|
+||<span class='jb-x-small'>$$$$</span>|<span class='jb-x-small'>$$$$</span>|<span class='jb-x-small'>$$$$</span>|<span class='jb-x-small'>$$$$</span>|<span class='jb-x-small'>$$$$</span>|
 ||$$$$|$$$$|$$$$|$$$$|$$$$|
 ||$$$$|$$$$|$$$$|$$$$|$$$$|
 ||$$$$|$$$$|$$$$|$$$$|$$$$|
