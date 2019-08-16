@@ -28,12 +28,12 @@ List of posts to read before reading this article
 | Atomic mass unit | $$ u $$| $$1.66053886(28)\times 10^{ -27 }kg $$<br> $$931.494043(80)MeV/c^{ 2 } $$|
 | Avogadro’s number | $$ N_{ A }  $$| $$6.0221415(10)\times 10^{ 23 }particles/mol $$ |
 | Bohr magneton|$$\mu _{ B }=\frac { e\hbar  }{ 2m_{ e } } $$|$$9.27400949(80)\times 10^{ -24 }J/T $$ |
-| Bohr radius | $$  a_{ 0 }=\frac { \hbar ^{ 2 } }{ m_{ e }e^{ 2 }k_{ e } } $$| $$$$|
-| Boltzmann’s constant |$$ k_{ B }=\frac { R }{ N_{ A } }   $$|$$$$ |
-| Compton wavelength |$$  \lambda _{ C }=\frac { h }{ m_{ e }c }  $$|$$$$|
-| Coulomb constant |$$k_{ e }=\frac { 1 }{ 4\pi \varepsilon _{ 0 } }   $$|$$$$|
-| Deuteron mass |$$m_{ d }   $$|$$$$ <br>$$$$|
-| Electron mass |$$ m_{ e }  $$ |$$$$<br>$$$$<br>$$$$| 
+| Bohr radius | $$  a_{ 0 }=\frac { \hbar ^{ 2 } }{ m_{ e }e^{ 2 }k_{ e } } $$| $$5.291772108(18)\times 10^{ -11 }m $$|
+| Boltzmann’s constant |$$ k_{ B }=\frac { R }{ N_{ A } }   $$|$$1.3806505(24)\times 10^{ -23 }J/K $$ |
+| Compton wavelength |$$  \lambda _{ C }=\frac { h }{ m_{ e }c }  $$|$$2.426310238(16)\times 10^{ -12 }m $$|
+| Coulomb constant |$$k_{ e }=\frac { 1 }{ 4\pi \varepsilon _{ 0 } }   $$|$$8.987551788...\times 10^{ 9 }N\cdot m^{ 2 }/C^{ 2 } $$|
+| Deuteron mass |$$m_{ d }   $$|$$3.34358335(57)\times 10^{ -27 }kg $$ <br>$$2.01355321270(35)u $$|
+| Electron mass |$$ m_{ e }  $$ |$$9.1093826(16)\times 10^{ -31 }kg $$<br>$$5.4857990945(24)\times 10^{ -4 }u $$<br>$$0.510998918(44)MeV/c^{ 2 } $$| 
 | Electron volt | $$ eV  $$| 1.602 176 53 (14) 10-19 J|
 | Elementary charge|$$ e $$|1.602 176 53 (14) 10-19 C |
 | Gas constant| $$ R $$| 8.314 472 (15) J/mol K|
