@@ -203,7 +203,7 @@ List of posts to read before reading this article
 |System|Equation|
 |:--|:--|
 |Classical Mechanics|<span class='jb-small'>$$\overrightarrow { a }=\frac { \overrightarrow { F } }{ m } $$</span>|
-|Classical Electromagnetics|<span class='jb-small'>$$$$</span> <br><span class='jb-small'>$$$$</span><br><span class='jb-small'>$$$$</span><br><span class='jb-small'>$$$$</span><br><br> <span class='jb-small'>$$$$</span><br><span class='jb-small'>$$$$</span><br><span class='jb-small'>$$$$</span><br><span class='jb-small'>$$$$</span>  <br><br><span class='jb-small'>$$$$</span><br><span class='jb-small'>$$$$</span>|
+|Classical Electromagnetics|<span class='jb-small'>$$\nabla \cdot \overrightarrow { E }=\frac { \rho  }{ \varepsilon _{ 0 } }$$</span> <br><span class='jb-small'>$$$$</span><br><span class='jb-small'>$$$$</span><br><span class='jb-small'>$$$$</span><br><br> <span class='jb-small'>$$$$</span><br><span class='jb-small'>$$$$</span><br><span class='jb-small'>$$$$</span><br><span class='jb-small'>$$$$</span>  <br><br><span class='jb-small'>$$$$</span><br><span class='jb-small'>$$$$</span>|
 |Quantum System|<span class='jb-small'>$$$$</span><br><span class='jb-small'>$$$$</span>|
 |Statistical and Thermal Physics|<span class='jb-small'>$$$$</span><br><span class='jb-small'>$$$$</span>|
 |Optics|<span class='jb-small'>$$$$</span>|
