@@ -59,16 +59,16 @@ List of posts to read before reading this article
 
 |Power|Prefix|Abbreviation|Power|Prefix|Abbreviation|
 |:----|:-----|:-----------|:----|:-----|:-----------|
-|$$$$|yocto|$$y$$|$$$$|deca|$$da$$|
-|$$$$|zepto|$$z$$|$$$$|hecto|$$h$$|
-|$$$$|atto|$$a$$|$$$$|kilo|$$k$$|
-|$$$$|femto|$$f$$|$$$$|mega|$$M$$|
-|$$$$|pico|$$p$$|$$$$|giga|$$G$$|
-|$$$$|nano|$$n$$|$$$$|tera|$$T$$|
-|$$$$|micro|$$\mu$$|$$$$|peta|$$P$$|
-|$$$$|milli|$$m$$|$$$$|exa|$$E$$|
-|$$$$|centi|$$c$$|$$$$|zetta|$$Z$$|
-|$$$$|deci|$$d$$|$$$$|yotta|$$Y$$|
+|$$10^{-24}$$|yocto|$$y$$|$$10^{1}$$|deca|$$da$$|
+|$$10^{-21}$$|zepto|$$z$$|$$10^{2}$$|hecto|$$h$$|
+|$$10^{-18}$$|atto|$$a$$|$$10^{3}$$|kilo|$$k$$|
+|$$10^{-15}$$|femto|$$f$$|$$10^{6}$$|mega|$$M$$|
+|$$10^{-12}$$|pico|$$p$$|$$10^{9}$$|giga|$$G$$|
+|$$10^{-9}$$|nano|$$n$$|$$10^{12}$$|tera|$$T$$|
+|$$10^{-6}$$|micro|$$\mu$$|$$10^{15}$$|peta|$$P$$|
+|$$10^{-3}$$|milli|$$m$$|$$10^{18}$$|exa|$$E$$|
+|$$10^{-2}$$|centi|$$c$$|$$10^{21}$$|zetta|$$Z$$|
+|$$10^{-1}$$|deci|$$d$$|$$10^{24}$$|yotta|$$Y$$|
 
 
 ---
