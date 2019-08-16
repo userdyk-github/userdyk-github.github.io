@@ -110,10 +110,10 @@ List of posts to read before reading this article
 |Electric charge|<span class='jb-medium'>$$C$$</span>|<span class='jb-medium frame2'>$$I=\frac{dQ}{dt}$$</span><br><span class='jb-medium'>$$1C=1s\times 1A$$</span>|
 |Force|<span class='jb-medium'>$$N$$</span>|<span class='jb-medium frame2'>$$\overrightarrow { F }=m\overrightarrow { a } $$</span> <span class='jb-medium frame2'>$$\overrightarrow { a }=\frac { d^{ 2 }\overrightarrow { r } }{ dt^{ 2 } } $$</span><br><span class='jb-medium'>$$1N=1kg\cdot 1m/s^{ 2 } $$</span>|
 |Angle|<span class='jb-medium'>$$rad$$</span>|<span class='jb-medium frame2'>$$\theta =\frac { r }{ l } $$</span><br>1 rad means  |
-|Solid angle|<span class='jb-medium'>$$sr$$</span>|<span class='jb-medium'>$$$$</span>|
-|Luminous flux|<span class='jb-medium'>$$lm$$</span>|<span class='jb-medium'>$$$$</span>|
-|Illuminuance|<span class='jb-medium'>$$lx$$</span>|<span class='jb-medium'>$$$$</span>|
-|Energy|<span class='jb-medium'>$$J$$</span>|<span class='jb-medium'>$$$$</span>|
+|Solid angle|<span class='jb-medium'>$$sr$$</span>|<span class='jb-medium frame2'>$$\Omega =\frac { A }{ r^{ 2 } } $$</span><br>1sr means|
+|Luminous flux|<span class='jb-medium'>$$lm$$</span>|<span class='jb-medium'>$$1 lm = 1cd/times 1sr$$</span>|
+|Illuminuance|<span class='jb-medium'>$$lx$$</span>|<span class='jb-medium'>$$1lx=1cd/1m^{ 2 } $$</span>|
+|Energy|<span class='jb-medium'>$$J$$</span>|<span class='jb-medium'>$$W=\int { \overrightarrow { F }\cdot d\overrightarrow { s } } $$</span><span class='jb-medium'>$$\overrightarrow { F }=m\overrightarrow { a } $$</span><span class='jb-medium'>$$\overrightarrow { a }=\frac { d^{ 2 }\overrightarrow { r } }{ dt^{ 2 } } $$</span> or <span class='jb-medium'>$$\overrightarrow { F }=-\nabla U $$</span><span class='jb-medium'>$$\overrightarrow { F }=m\overrightarrow { a } $$</span><span class='jb-medium'>$$\overrightarrow { a }=\frac { d^{ 2 }\overrightarrow { r } }{ dt^{ 2 } } $$</span> or <span class='jb-medium'>$$E=\frac { 1 }{ 2 }mv^{ 2 } $$</span><span class='jb-medium'>$$\overrightarrow { v }=\frac { d\overrightarrow { r } }{ dt } $$</span><br><span class='jb-medium'>$$1  J = 1N /times 1m =1kg\cdot 1m/s^{ 2 }\cdot 1m=1kg\cdot m^{ 2 }/s^{ 2 } $$</span>|
 |Voltage|<span class='jb-medium'>$$V$$</span>|<span class='jb-medium'>$$$$</span>|
 |Temperature|<span class='jb-medium'>$$T$$</span>|<span class='jb-medium'>$$$$</span>|
 |Pressure|<span class='jb-medium'>$$Pa$$</span>|<span class='jb-medium'>$$$$</span>|
