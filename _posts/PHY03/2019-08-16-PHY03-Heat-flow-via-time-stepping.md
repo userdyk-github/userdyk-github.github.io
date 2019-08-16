@@ -41,7 +41,7 @@ List of posts followed by this article
 ---
 
 Reference
-- [post1](https://userdyk-github.github.io/)
+- Rubin H. Landau, ManuelJ. Páez, Cristian C. Bordeianu - Computational Physics, Problem Solving with Python, 3rd completely revised edition
 - <a href='https://userdyk-github.github.io/'>post2</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
