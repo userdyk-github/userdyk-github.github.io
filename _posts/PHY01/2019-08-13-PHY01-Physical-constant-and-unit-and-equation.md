@@ -38,7 +38,7 @@ List of posts to read before reading this article
 | Elementary charge|$$ e $$ |1.602 176 53 (14) 10-19 C |
 | Gas constant| $$ R $$ | 8.314 472 (15) J/mol K|
 | Gravitational constant |$$ G $$ |6.674 2 (10) 10-11 N m2/kg2 |
-| Josephson frequency–voltage ratio | $$ \frac { 2e }{ h }  $$|4.835 978 79 (41) 10+14 Hz/V |
+| Josephson frequency <br> –voltage ratio | $$ \frac { 2e }{ h }  $$|4.835 978 79 (41) 10+14 Hz/V |
 | Magnetic flux quantum| $$ \Phi _{ 0 }=\frac { h }{ 2e }  $$| 2.067 833 72 (18) 10-15 T m2 |
 | Neutron mass|$$ m_{ n }  $$ | 1.674 927 28 (29) 10-27 kg <br> 1.008 664 915 60 (55) u <br> 939.565 360 (81) MeV/c2 |
 | Nuclear magneton|$$ \mu _{ n }=\frac { e\hbar  }{ 2m_{ p } }  $$ | 5.050 783 43 (43) 10-27 J/T|
