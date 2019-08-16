@@ -21,18 +21,21 @@ List of posts to read before reading this article
 
 ---
 
-## title1
+## Heat Flow via Time-Stepping (Leapfrog)
 
 ---
 
-## title2
+## The Parabolic Heat Equation (Theory)
 
 ---
 
-## title3
+##  Assessment and Visualization
 
 ---
 
+##  Improved Heat Flow: Crank–Nicolson Method
+
+---
 List of posts followed by this article
 - [post1](https://userdyk-github.github.io/)
 - <a href='https://userdyk-github.github.io/'>post2</a>
