@@ -25,9 +25,9 @@ List of posts to read before reading this article
 
 | Quantity | Symbol | Value |
 |:---------|:-------|:------|
-| Atomic mass unit | $$ u $$| $$1.66053886(28)\times 10^{ -27 }kg $$<br> $$$$|
-| Avogadro’s number | $$ N_{ A }  $$| $$$$ |
-| Bohr magneton|$$\mu _{ B }=\frac { e\hbar  }{ 2m_{ e } } $$|$$$$ |
+| Atomic mass unit | $$ u $$| $$1.66053886(28)\times 10^{ -27 }kg $$<br> $$931.494043(80)MeV/c^{ 2 } $$|
+| Avogadro’s number | $$ N_{ A }  $$| $$6.0221415(10)\times 10^{ 23 }particles/mol $$ |
+| Bohr magneton|$$\mu _{ B }=\frac { e\hbar  }{ 2m_{ e } } $$|$$9.27400949(80)\times 10^{ -24 }J/T $$ |
 | Bohr radius | $$  a_{ 0 }=\frac { \hbar ^{ 2 } }{ m_{ e }e^{ 2 }k_{ e } } $$| $$$$|
 | Boltzmann’s constant |$$ k_{ B }=\frac { R }{ N_{ A } }   $$|$$$$ |
 | Compton wavelength |$$  \lambda _{ C }=\frac { h }{ m_{ e }c }  $$|$$$$|
