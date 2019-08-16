@@ -23,6 +23,33 @@ List of posts to read before reading this article
 
 ## Some Physical Constant
 
+| Quantity | Symbol | Value |
+|:---------|:-------|:------|
+| Atomic mass unit | | |
+| Avogadro’s number | | |
+| Bohr magneton| | |
+| Bohr radius | | |
+| Boltzmann’s constant | | |
+| Compton wavelength | | |
+| Coulomb constant | | |
+| Deuteron mass | | |
+| Electron mass | | |
+| Electron volt | | |
+| Elementary charge| | |
+| Gas constant| | |
+| Gravitational constant | | |
+| Gravitational constant| | |
+| Josephson frequency–voltage ratio | | |
+| Magnetic flux quantum| | |
+| Neutron mass| | |
+| Nuclear magneton| | |
+| Permeability of free space | | |
+| Permittivity of free space| | |
+| Planck’s constant | | |
+| Proton mass | | |
+| Rydberg constant|||
+| Speed of light in vacuum|||
+
 ---
 
 ## Some Prefixes for Powers of Ten
