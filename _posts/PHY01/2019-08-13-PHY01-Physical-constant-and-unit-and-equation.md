@@ -70,6 +70,7 @@ List of posts to read before reading this article
 |$$10^{-2}$$|centi|$$c$$|$$10^{21}$$|zetta|$$Z$$|
 |$$10^{-1}$$|deci|$$d$$|$$10^{24}$$|yotta|$$Y$$|
 
+<br><br><br>
 
 ---
 
@@ -80,6 +81,8 @@ List of posts to read before reading this article
 |cgs system|centimeter(cm)|gram(g)|second(s)|dyne|
 |mks system|meter(m)|kilogram(kg)|second(s)|newton(N)|
 |Engineering system|foot(ft)|slug|second(s)|pound(lb)|
+
+<br><br><br>
 
 ---
 
@@ -95,17 +98,25 @@ List of posts to read before reading this article
 |Amount of subtance|mol|The quantity of matter is one of the basic quantities in the international system of units of quantity of substances such as atoms and molecules. In the international system of units, mole is defined as the unit of material quantity, and one mole corresponds to the amount of a substance of 12 grams (g) of carbon-12.|
 |Luminous Intensity|cd|Candela (SI) is the SI unit of light intensity and means the luminous flux per unit solid angle of light emitted in a specific direction from a point light source. Candela is defined as the brightness when a light source emitting monochromatic light [1] with a frequency of 540 × 1012 hertz radiates energy at a rate of 1/683 watts per steradian in any given direction.|
 
+<br><br><br>
+
 ---
 
 ## SI-Unit : Derived Unit
+
+<br><br><br>
 
 ---
 
 ## Symbols, Dimensions, and Units of Physical Quantities
 
+<br><br><br>
+
 ---
 
 ## Equations
+
+<br><br><br>
 
 ---
 
