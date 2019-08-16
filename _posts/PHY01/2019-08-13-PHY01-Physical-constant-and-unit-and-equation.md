@@ -108,7 +108,7 @@ List of posts to read before reading this article
 |:--|:--|:--|
 |Frequency|<span class='jb-medium'>$$Hz$$</span>|<span class='jb-medium'>$$1Hz=1s^{-1}$$</span>|
 |Electric charge|<span class='jb-medium'>$$C$$</span>|<span class='jb-medium frame1'>$$I=\frac{dQ}{dt}$$</span><br>$$<span class='jb-medium'>1C=1s\times 1A$$</span>|
-|Force|<span class='jb-medium'>$$N$$</span>|<span class='jb-medium'>$$$$</span>|
+|Force|<span class='jb-medium'>$$N$$</span>|<span class='jb-medium'>$$\overrightarrow { a }=\frac { d^{ 2 }\overrightarrow { r } }{ dt^{ 2 } } $$</span>|
 |Angle|<span class='jb-medium'>$$rad$$</span>|<span class='jb-medium'>$$$$</span>|
 |Solid angle|<span class='jb-medium'>$$sr$$</span>|<span class='jb-medium'>$$$$</span>|
 |Luminous flux|<span class='jb-medium'>$$lm$$</span>|<span class='jb-medium'>$$$$</span>|
