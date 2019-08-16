@@ -39,15 +39,15 @@ List of posts to read before reading this article
 | Gas constant| $$ R $$ | 8.314 472 (15) J/mol K|
 | Gravitational constant |$$ G $$ |6.674 2 (10) 10-11 N m2/kg2 |
 | Josephson frequency–voltage ratio | $$ \frac { 2e }{ h }  $$|4.835 978 79 (41) 10+14 Hz/V |
-| Magnetic flux quantum| $$  $$| 2.067 833 72 (18) 10-15 T m2 |
-| Neutron mass|$$  $$ | 1.674 927 28 (29) 10-27 kg <br> 1.008 664 915 60 (55) u <br> 939.565 360 (81) MeV/c2 |
-| Nuclear magneton|$$  $$ | 5.050 783 43 (43) 10-27 J/T|
-| Permeability of free space | $$  $$|4pi*10-7 T m/A (exact) |
-| Permittivity of free space| $$  $$| 8.854 187 817...10-12 C2/N m2 (exact)|
-| Planck’s constant | $$  $$|6.626 069 3 (11) 10-34 J s <br> 1.054 571 68 (18) 10-34 J s |
-| Proton mass |$$  $$ | 1.672 621 71 (29) 10-27 kg <br> 1.007 276 466 88 (13) u <br> 938.272 029 (80) MeV/c2|
-| Rydberg constant|$$  $$|1.097 373 156 852 5 (73) 10+7 m-1|
-| Speed of light in vacuum|$$  $$|2.997 924 58 10+8 m/s (exact)|
+| Magnetic flux quantum| $$ \Phi _{ 0 }=\frac { h }{ 2e }  $$| 2.067 833 72 (18) 10-15 T m2 |
+| Neutron mass|$$ m_{ n }  $$ | 1.674 927 28 (29) 10-27 kg <br> 1.008 664 915 60 (55) u <br> 939.565 360 (81) MeV/c2 |
+| Nuclear magneton|$$ \mu _{ n }=\frac { e\hbar  }{ 2m_{ p } }  $$ | 5.050 783 43 (43) 10-27 J/T|
+| Permeability of free space | $$ \mu _{ 0 }  $$|4pi*10-7 T m/A (exact) |
+| Permittivity of free space| $$ \varepsilon _{ 0 }=\frac { 1 }{ \mu _{ 0 }c^{ 2 } }  $$| 8.854 187 817...10-12 C2/N m2 (exact)|
+| Planck’s constant | $$ h <br> \hbar =\frac { h }{ 2\pi  }  $$|6.626 069 3 (11) 10-34 J s <br> 1.054 571 68 (18) 10-34 J s |
+| Proton mass |$$ m_{ p }  $$ | 1.672 621 71 (29) 10-27 kg <br> 1.007 276 466 88 (13) u <br> 938.272 029 (80) MeV/c2|
+| Rydberg constant|$$ R_{ H }  $$|1.097 373 156 852 5 (73) 10+7 m-1|
+| Speed of light in vacuum|$$ c $$|2.997 924 58 10+8 m/s (exact)|
 
 ---
 
