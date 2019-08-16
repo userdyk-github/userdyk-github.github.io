@@ -27,6 +27,8 @@ List of posts to read before reading this article
 
 ## The Parabolic Heat Equation (Theory)
 
+![Figure_1](https://user-images.githubusercontent.com/52376448/63160583-1779ee80-c059-11e9-9705-fcbd012e9a5a.png)
+
 <div class='frame1'>Main code</div>
 
 ```python
