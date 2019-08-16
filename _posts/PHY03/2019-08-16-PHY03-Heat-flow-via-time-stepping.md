@@ -66,7 +66,7 @@ def functz (Tpl):
     z = Tpl[X, Y]
     return z
 
-Z = functz (Tpl )
+Z = functz (Tpl)
 fig = p.figure()                                               # Create figure
 ax = Axes3D(fig)
 ax . plot_wireframe(X, Y, Z, color='r')
