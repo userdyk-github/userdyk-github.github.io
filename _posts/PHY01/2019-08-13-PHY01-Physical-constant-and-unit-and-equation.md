@@ -106,23 +106,23 @@ List of posts to read before reading this article
 
 |Quantity|Symbol|Conversation|
 |:--|:--|:--|
-||<span class='jb-medium'>$$Hz$$</span>|<span class='jb-medium'>$$$$</span>|
-||<span class='jb-medium'>$$C$$</span>|<span class='jb-medium'>$$$$</span>|
-||<span class='jb-medium'>$$N$$</span>|<span class='jb-medium'>$$$$</span>|
-||<span class='jb-medium'>$$rad$$</span>|<span class='jb-medium'>$$$$</span>|
-||<span class='jb-medium'>$$sr$$</span>|<span class='jb-medium'>$$$$</span>|
-||<span class='jb-medium'>$$lm$$</span>|<span class='jb-medium'>$$$$</span>|
-||<span class='jb-medium'>$$lx$$</span>|<span class='jb-medium'>$$$$</span>|
-||<span class='jb-medium'>$$J$$</span>|<span class='jb-medium'>$$$$</span>|
-||<span class='jb-medium'>$$V$$</span>|<span class='jb-medium'>$$$$</span>|
-||<span class='jb-medium'>$$T$$</span>|<span class='jb-medium'>$$$$</span>|
-||<span class='jb-medium'>$$Pa$$</span>|<span class='jb-medium'>$$$$</span>|
-||<span class='jb-medium'>$$W$$</span>|<span class='jb-medium'>$$$$</span>|
-||<span class='jb-medium'>$$F$$</span>|<span class='jb-medium'>$$$$</span>|
-||<span class='jb-medium'>$$\Omega$$</span>|<span class='jb-medium'>$$$$</span>|
-||<span class='jb-medium'>$$S$$</span>|<span class='jb-medium'>$$$$</span>|
-||<span class='jb-medium'>$$Wh$$</span>|<span class='jb-medium'>$$$$</span>|
-||<span class='jb-medium'>$$H$$</span>|<span class='jb-medium'>$$$$</span>|
+|Frequency|<span class='jb-medium'>$$Hz$$</span>|<span class='jb-medium'>$$$$</span>|
+|Electric charge|<span class='jb-medium'>$$C$$</span>|<span class='jb-medium'>$$$$</span>|
+|Force|<span class='jb-medium'>$$N$$</span>|<span class='jb-medium'>$$$$</span>|
+|Angle|<span class='jb-medium'>$$rad$$</span>|<span class='jb-medium'>$$$$</span>|
+|Solid angle|<span class='jb-medium'>$$sr$$</span>|<span class='jb-medium'>$$$$</span>|
+|Luminous flux|<span class='jb-medium'>$$lm$$</span>|<span class='jb-medium'>$$$$</span>|
+|Illuminuance|<span class='jb-medium'>$$lx$$</span>|<span class='jb-medium'>$$$$</span>|
+|Energy|<span class='jb-medium'>$$J$$</span>|<span class='jb-medium'>$$$$</span>|
+|Voltage|<span class='jb-medium'>$$V$$</span>|<span class='jb-medium'>$$$$</span>|
+|Temperature|<span class='jb-medium'>$$T$$</span>|<span class='jb-medium'>$$$$</span>|
+|Pressure|<span class='jb-medium'>$$Pa$$</span>|<span class='jb-medium'>$$$$</span>|
+|Power|<span class='jb-medium'>$$W$$</span>|<span class='jb-medium'>$$$$</span>|
+|Electrical capacitance|<span class='jb-medium'>$$F$$</span>|<span class='jb-medium'>$$$$</span>|
+|Electrical resistance|<span class='jb-medium'>$$\Omega$$</span>|<span class='jb-medium'>$$$$</span>|
+|Electrical conductance|<span class='jb-medium'>$$S$$</span>|<span class='jb-medium'>$$$$</span>|
+|Magnetic flux|<span class='jb-medium'>$$Wb$$</span>|<span class='jb-medium'>$$$$</span>|
+|Electrical inductance|<span class='jb-medium'>$$H$$</span>|<span class='jb-medium'>$$$$</span>|
 
 
 <br><br><br>
