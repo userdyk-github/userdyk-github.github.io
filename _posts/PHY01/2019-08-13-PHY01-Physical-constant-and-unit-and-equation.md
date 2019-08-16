@@ -22,7 +22,7 @@ List of posts to read before reading this article
 ---
 
 ## Some Physical Constant
-|Some Physical Constant|
+
 | Quantity | Symbol | Value |
 |:---------|:-------|:------|
 | Atomic mass unit | $$ u $$| $$1.66053886(28)\times 10^{ -27 }\ kg $$<br> $$931.494043(80)\ MeV/c^{ 2 } $$|
