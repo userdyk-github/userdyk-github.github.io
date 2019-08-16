@@ -202,8 +202,8 @@ List of posts to read before reading this article
 
 |System|Equation|
 |:--|:--|
-|Classical Mechanics|<span class='jb-x-small'>$$$$</span>|
-|Classical Electromagnetics|<span class='jb-x-small'>$$$$</span> <br><span class='jb-x-small'>$$$$</span><br><span class='jb-x-small'>$$$$</span><br><span class='jb-x-small'>$$$$</span><br><br> <span class='jb-x-small'>$$$$</span><br><span class='jb-x-small'>$$$$</span><br><span class='jb-x-small'>$$$$</span><br><span class='jb-x-small'>$$$$</span>  <br><br><span class='jb-x-small'>$$$$</span><br><span class='jb-x-small'>$$$$</span>|
+|Classical Mechanics|<span class='jb-x-small'>$$\overrightarrow { a }=\frac { \overrightarrow { F } }{ m } $$</span>|
+|Classical Electromagnetics|<span class='jb-x-small'>$$\begin{ matrix }{ vector }\\{ differential }\\{ form }\end{ matrix }\begin{ cases }{ \nabla \cdot \overrightarrow { E }=\frac { \rho  }{ \varepsilon _{ 0 } } }\\{ \nabla \times \overrightarrow { E }=-\frac { \partial \overrightarrow { B } }{ \partial t } }\\{ \nabla \cdot \overrightarrow { B }=0 }\\{ \nabla \times \overrightarrow { B }=\mu _{ 0 }\overrightarrow { J }+\mu _{ 0 }\varepsilon _{ 0 }\frac { \partial \overrightarrow { E } }{ \partial t } }\end{ cases } $$</span> <br><span class='jb-x-small'>$$$$</span><br><span class='jb-x-small'>$$$$</span><br><span class='jb-x-small'>$$$$</span><br><br> <span class='jb-x-small'>$$$$</span><br><span class='jb-x-small'>$$$$</span><br><span class='jb-x-small'>$$$$</span><br><span class='jb-x-small'>$$$$</span>  <br><br><span class='jb-x-small'>$$$$</span><br><span class='jb-x-small'>$$$$</span>|
 |Quantum System|<span class='jb-x-small'>$$$$</span><br><span class='jb-x-small'>$$$$</span>|
 |Statistical and Thermal Physics|<span class='jb-x-small'>$$$$</span><br><span class='jb-x-small'>$$$$</span>|
 |Optics|<span class='jb-x-small'>$$$$</span>|
