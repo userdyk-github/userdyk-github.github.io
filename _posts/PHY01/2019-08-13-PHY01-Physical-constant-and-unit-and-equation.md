@@ -25,7 +25,7 @@ List of posts to read before reading this article
 
 | Quantity | Symbol | Value |
 |:---------|:-------|:------|
-| Atomic mass unit | $$ u $$| 1.660 538 86 (28) 10-27 kg|
+| Atomic mass unit | <div>$$ u $$</div>| 1.660 538 86 (28) 10-27 kg|
 | Avogadro’s number | $$ N_{ A }  $$| 931.494 043 (80) MeV/c2 |
 | Bohr magneton|$$\mu _{ B }=\frac { e\hbar  }{ 2m_{ e } } $$|6.022 141 5 (10) 10+23 particles/mol |
 | Bohr radius | $$  a_{ 0 }=\frac { \hbar ^{ 2 } }{ m_{ e }e^{ 2 }k_{ e } } $$| 9.274 009 49 (80) 10-24 J/T|
@@ -43,7 +43,7 @@ List of posts to read before reading this article
 | Neutron mass|$$ m_{ n }  $$ | 1.674 927 28 (29) 10-27 kg <br> 1.008 664 915 60 (55) u <br> 939.565 360 (81) MeV/c2 |
 | Nuclear magneton|$$ \mu _{ n }=\frac { e\hbar  }{ 2m_{ p } }  $$| 5.050 783 43 (43) 10-27 J/T|
 | Permeability of <br> free space |$$ \mu _{ 0 }  $$|4pi*10-7 T m/A (exact) |
-| Permittivity of <br> free space|$$</div> \varepsilon _{ 0 }=\frac { 1 }{ \mu _{ 0 }c^{ 2 } } $$| 8.854 187 817...10-12 C2/N m2 (exact)|
+| Permittivity of <br> free space|$$\varepsilon _{ 0 }=\frac { 1 }{ \mu _{ 0 }c^{ 2 } } $$| 8.854 187 817...10-12 C2/N m2 (exact)|
 | Planck’s constant |$$h$$ <br> $$  \hbar =\frac { h }{ 2\pi  }  $$|6.626 069 3 (11) 10-34 J s <br> 1.054 571 68 (18) 10-34 J s |
 | Proton mass |$$ m_{ p }  $$| 1.672 621 71 (29) 10-27 kg <br> 1.007 276 466 88 (13) u <br> 938.272 029 (80) MeV/c2|
 | Rydberg constant|$$ R_{ H }  $$|1.097 373 156 852 5 (73) 10+7 m-1|
