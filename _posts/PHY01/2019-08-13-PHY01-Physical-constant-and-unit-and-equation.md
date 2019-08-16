@@ -25,27 +25,27 @@ List of posts to read before reading this article
 
 | Quantity | Symbol | Value |
 |:---------|:-------|:------|
-| Atomic mass unit | | |
-| Avogadro’s number | | |
-| Bohr magneton| | |
-| Bohr radius | | |
-| Boltzmann’s constant | | |
-| Compton wavelength | | |
-| Coulomb constant | | |
-| Deuteron mass | | |
-| Electron mass | | |
-| Electron volt | | |
-| Elementary charge| | |
-| Gas constant| | |
-| Gravitational constant | | |
-| Gravitational constant| | |
-| Josephson frequency–voltage ratio | | |
-| Magnetic flux quantum| | |
-| Neutron mass| | |
-| Nuclear magneton| | |
-| Permeability of free space | | |
-| Permittivity of free space| | |
-| Planck’s constant | | |
+| Atomic mass unit | | 1.660 538 86 (28) 10-27 kg|
+| Avogadro’s number | | 931.494 043 (80) MeV/c2 |
+| Bohr magneton| |6.022 141 5 (10) 10+23 particles/mol |
+| Bohr radius | | 9.274 009 49 (80) 10-24 J/T|
+| Boltzmann’s constant | |5.291 772 108 (18) 10-11 m |
+| Compton wavelength | |1.380 650 5 (24) 10-23 J/K |
+| Coulomb constant | |2.426 310 238 (16) 10-12 m |
+| Deuteron mass | |8.987 551 788...10+9 N m2/C2 (exact) <br> 3.343 583 35 (57) 10-27 kg|
+| Electron mass | | 9.109 382 6 (16) 10-31 kg <br> 5.485 799 094 5 (24) 10-4 u <br> 0.510 998 918 (44) MeV/c2| 
+| Electron volt | | 2.013 553 212 70 (35) u|
+| Elementary charge| |9.109 382 6 (16) 10-31 kg |
+| Gas constant| | 5.485 799 094 5 (24) 10-4 u|
+| Gravitational constant | |0.510 998 918 (44) MeV/c2 |
+| Gravitational constant| |1.602 176 53 (14) 10-19 J |
+| Josephson frequency–voltage ratio | |1.602 176 53 (14) 10-19 C |
+| Magnetic flux quantum| | 8.314 472 (15) J/mol K |
+| Neutron mass| | 6.674 2 (10) 10-11 N m2/kg2 |
+| Nuclear magneton| | 4.835 978 79 (41) 10+14 Hz/V|
+| Permeability of free space | |2.067 833 72 (18) 10-15 T m2 |
+| Permittivity of free space| | 1.674 927 28 (29) 10-27 kg|
+| Planck’s constant | |1.008 664 915 60 (55) u |
 | Proton mass | | |
 | Rydberg constant|||
 | Speed of light in vacuum|||
