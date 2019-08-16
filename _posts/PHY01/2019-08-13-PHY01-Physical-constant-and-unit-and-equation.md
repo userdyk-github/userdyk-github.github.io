@@ -106,23 +106,23 @@ List of posts to read before reading this article
 
 |Quantity|Symbol|Conversation|
 |:--|:--|:--|
-||$$$$|$$$$|
-||$$$$|$$$$|
-||$$$$|$$$$|
-||$$$$|$$$$|
-||$$$$|$$$$|
-||$$$$|$$$$|
-||$$$$|$$$$|
-||$$$$|$$$$|
-||$$$$|$$$$|
-||$$$$|$$$$|
-||$$$$|$$$$|
-||$$$$|$$$$|
-||$$$$|$$$$|
-||$$$$|$$$$|
-||$$$$|$$$$|
-||$$$$|$$$$|
-||$$$$|$$$$|
+||<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|
+||<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|
+||<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|
+||<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|
+||<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|
+||<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|
+||<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|
+||<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|
+||<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|
+||<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|
+||<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|
+||<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|
+||<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|
+||<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|
+||<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|
+||<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|
+||<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|
 
 
 <br><br><br>
