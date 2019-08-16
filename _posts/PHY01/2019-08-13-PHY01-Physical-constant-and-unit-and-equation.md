@@ -34,21 +34,20 @@ List of posts to read before reading this article
 | Coulomb constant | |2.426 310 238 (16) 10-12 m |
 | Deuteron mass | |8.987 551 788...10+9 N m2/C2 (exact) <br> 3.343 583 35 (57) 10-27 kg|
 | Electron mass | | 9.109 382 6 (16) 10-31 kg <br> 5.485 799 094 5 (24) 10-4 u <br> 0.510 998 918 (44) MeV/c2| 
-| Electron volt | | 2.013 553 212 70 (35) u|
-| Elementary charge| |9.109 382 6 (16) 10-31 kg |
-| Gas constant| | 5.485 799 094 5 (24) 10-4 u|
-| Gravitational constant | |0.510 998 918 (44) MeV/c2 |
-| Gravitational constant| |1.602 176 53 (14) 10-19 J |
-| Josephson frequency–voltage ratio | |1.602 176 53 (14) 10-19 C |
-| Magnetic flux quantum| | 8.314 472 (15) J/mol K |
-| Neutron mass| | 6.674 2 (10) 10-11 N m2/kg2 |
-| Nuclear magneton| | 4.835 978 79 (41) 10+14 Hz/V|
-| Permeability of free space | |2.067 833 72 (18) 10-15 T m2 |
-| Permittivity of free space| | 1.674 927 28 (29) 10-27 kg|
-| Planck’s constant | |1.008 664 915 60 (55) u |
-| Proton mass | | |
-| Rydberg constant|||
-| Speed of light in vacuum|||
+| Electron volt | | 1.602 176 53 (14) 10-19 J|
+| Elementary charge| |1.602 176 53 (14) 10-19 C |
+| Gas constant| | 8.314 472 (15) J/mol K|
+| Gravitational constant | |6.674 2 (10) 10-11 N m2/kg2 |
+| Josephson frequency–voltage ratio | |4.835 978 79 (41) 10+14 Hz/V |
+| Magnetic flux quantum| | 2.067 833 72 (18) 10-15 T m2 |
+| Neutron mass| | 1.674 927 28 (29) 10-27 kg <br> 1.008 664 915 60 (55) u <br> 939.565 360 (81) MeV/c2 |
+| Nuclear magneton| | 5.050 783 43 (43) 10-27 J/T|
+| Permeability of free space | |4pi*10-7 T m/A (exact) |
+| Permittivity of free space| | 8.854 187 817...10-12 C2/N m2 (exact)|
+| Planck’s constant | |6.626 069 3 (11) 10-34 J s <br> 1.054 571 68 (18) 10-34 J s |
+| Proton mass | | 1.672 621 71 (29) 10-27 kg <br> 1.007 276 466 88 (13) u <br> 938.272 029 (80) MeV/c2|
+| Rydberg constant||1.097 373 156 852 5 (73) 10+7 m-1|
+| Speed of light in vacuum||2.997 924 58 10+8 m/s (exact)|
 
 ---
 
