@@ -38,16 +38,16 @@ List of posts to read before reading this article
 | Elementary charge|$$ e $$|$$1.60217653(14)\times 10^{ -19 }\ C $$ |
 | Gas constant| $$ R $$| $$8.314472(15)\ J/mol\cdot K $$|
 | Gravitational constant |$$ G $$|$$6.6742(10)\times 10^{ -11 }\ N\cdot m^{ 2 }/kg^{ 2 } $$|
-| Josephson frequency <br> –voltage ratio | $$ \frac { 2e }{ h }  $$|$$4.83597879(41)\times 10^{ 14 }\ Hz/V $$|
-| Magnetic flux <br> quantum| $$ \Phi _{ 0 }=\frac { h }{ 2e }  $$|$$2.06783372(18)\times 10^{ -15 }\ T\cdot m^{ 2 } $$|
+| Josephson frequency – voltage ratio | $$ \frac { 2e }{ h }  $$|$$4.83597879(41)\times 10^{ 14 }\ Hz/V $$|
+| Magnetic flux quantum| $$ \Phi _{ 0 }=\frac { h }{ 2e }  $$|$$2.06783372(18)\times 10^{ -15 }\ T\cdot m^{ 2 } $$|
 | Neutron mass|$$ m_{ n }  $$ | $$1.67492728(29)\times 10^{ -27 }\ kg $$<br>$$1.00866491560(55)\ u $$<br>939.565360(81)\ MeV/c^{ 2 } $$ |
 | Nuclear magneton|$$ \mu _{ n }=\frac { e\hbar  }{ 2m_{ p } }  $$| $$5.05078343(43)\times 10^{ -27 }\ J/T $$|
-| Permeability of <br> free space |$$ \mu _{ 0 }  $$|$$4\pi \times 10^{ -7 }\ T\cdot m/A $$ |
-| Permittivity of <br> free space|$$\varepsilon _{ 0 }=\frac { 1 }{ \mu _{ 0 }c^{ 2 } } $$| $$8.854187817...\times 10^{ -12 }\ C^{ 2 }/N\cdot m^{ 2 } $$|
+| Permeability of free space |$$ \mu _{ 0 }  $$|$$4\pi \times 10^{ -7 }\ T\cdot m/A $$ |
+| Permittivity of free space|$$\varepsilon _{ 0 }=\frac { 1 }{ \mu _{ 0 }c^{ 2 } } $$| $$8.854187817...\times 10^{ -12 }\ C^{ 2 }/N\cdot m^{ 2 } $$|
 | Planck’s constant |$$h$$ <br> $$  \hbar =\frac { h }{ 2\pi  }  $$|$$6.6260693(11)\times 10^{ -34 }\ J\cdot s $$ <br>$$1.05457168(18)\times 10^{ -34 }\ J\cdot s $$ |
 | Proton mass |$$ m_{ p }  $$|$$1.67262171(29)\times 10^{ -27 }\ kg $$<br>$$1.00727646688(13)\ u $$ <br> $$938.272029(80)\ MeV/c^{ 2 } $$|
 | Rydberg constant|$$ R_{ H }  $$|$$1.0973731568525(73)\times 10^{ 7 }\ m^{ -1 } $$|
-| Speed of light <br> in vacuum|$$ c $$|$$2.99792458\times 10^{ 8 }\ m/s $$|
+| Speed of light in vacuum|$$ c $$|$$2.99792458\times 10^{ 8 }\ m/s $$|
 
 <br><br><br>
 
