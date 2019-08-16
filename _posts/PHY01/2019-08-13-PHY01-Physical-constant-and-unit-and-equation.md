@@ -200,6 +200,18 @@ List of posts to read before reading this article
 
 ## Equations
 
+|System|Equation|
+|:--|:--|
+|Classical Mechanics||
+|Classical Electromagnetics||
+|Quantum System||
+|Statistical and Thermal Physics||
+|Optics||
+|Solid State Physics||
+|Fluid System||
+|General relativity||
+
+
 <br><br><br>
 
 ---
