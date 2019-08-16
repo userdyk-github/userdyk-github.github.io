@@ -94,7 +94,7 @@ title: Study
 
 ## PHY01 : Classical mechanics
 
-- <a href='https://userdyk-github.github.io/'>1</a>
+- <a href='https://userdyk-github.github.io/phy01/PHY01-Physical-constant-and-unit-and-equation.html'>Physical constant and unit and equation</a>
 - <a href='https://userdyk-github.github.io/'>2</a>
 - <a href='https://userdyk-github.github.io/'>3</a>
 - <a href='https://userdyk-github.github.io/'>4</a>
