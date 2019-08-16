@@ -40,7 +40,7 @@ List of posts to read before reading this article
 | Gravitational constant |$$ G $$|$$6.6742(10)\times 10^{ -11 }\ N\cdot m^{ 2 }/kg^{ 2 } $$|
 | Josephson frequency <br> –voltage ratio | $$ \frac { 2e }{ h }  $$|$$4.83597879(41)\times 10^{ 14 }\ Hz/V $$|
 | Magnetic flux <br> quantum| $$ \Phi _{ 0 }=\frac { h }{ 2e }  $$|$$2.06783372(18)\times 10^{ -15 }\ T\cdot m^{ 2 } $$|
-| Neutron mass|$$ m_{ n }  $$ | $$1.67492728(29)\times 10^{ -27 }\ kg $$<br>$$1.00866491560(55)\ u $$<br>$$939.565 360 (81)\ MeV/c2$$ |
+| Neutron mass|$$ m_{ n }  $$ | $$1.67492728(29)\times 10^{ -27 }\ kg $$<br>$$1.00866491560(55)\ u $$<br>939.565360(81)\ MeV/c^{ 2 } $$ |
 | Nuclear magneton|$$ \mu _{ n }=\frac { e\hbar  }{ 2m_{ p } }  $$| $$5.05078343(43)\times 10^{ -27 }\ J/T $$|
 | Permeability of <br> free space |$$ \mu _{ 0 }  $$|$$4\pi \times 10^{ -7 }\ T\cdot m/A $$ |
 | Permittivity of <br> free space|$$\varepsilon _{ 0 }=\frac { 1 }{ \mu _{ 0 }c^{ 2 } } $$| $$8.854187817...\times 10^{ -12 }\ C^{ 2 }/N\cdot m^{ 2 } $$|
