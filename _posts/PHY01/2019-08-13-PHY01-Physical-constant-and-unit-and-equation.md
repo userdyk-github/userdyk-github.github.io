@@ -34,20 +34,20 @@ List of posts to read before reading this article
 | Coulomb constant |$$k_{ e }=\frac { 1 }{ 4\pi \varepsilon _{ 0 } }   $$|$$8.987551788...\times 10^{ 9 }N\cdot m^{ 2 }/C^{ 2 } $$|
 | Deuteron mass |$$m_{ d }   $$|$$3.34358335(57)\times 10^{ -27 }kg $$ <br>$$2.01355321270(35)u $$|
 | Electron mass |$$ m_{ e }  $$ |$$9.1093826(16)\times 10^{ -31 }kg $$<br>$$5.4857990945(24)\times 10^{ -4 }u $$<br>$$0.510998918(44)MeV/c^{ 2 } $$| 
-| Electron volt | $$ eV  $$|$$$$|
-| Elementary charge|$$ e $$|$$$$ |
-| Gas constant| $$ R $$| $$$$|
-| Gravitational constant |$$ G $$|$$$$|
-| Josephson frequency <br> –voltage ratio | $$ \frac { 2e }{ h }  $$|$$$$|
-| Magnetic flux <br> quantum| $$ \Phi _{ 0 }=\frac { h }{ 2e }  $$|$$$$|
-| Neutron mass|$$ m_{ n }  $$ | $$$$<br>$$$$<br>$$$$ |
-| Nuclear magneton|$$ \mu _{ n }=\frac { e\hbar  }{ 2m_{ p } }  $$| $$$$|
-| Permeability of <br> free space |$$ \mu _{ 0 }  $$|$$$$ |
-| Permittivity of <br> free space|$$\varepsilon _{ 0 }=\frac { 1 }{ \mu _{ 0 }c^{ 2 } } $$| $$$$|
-| Planck’s constant |$$h$$ <br> $$  \hbar =\frac { h }{ 2\pi  }  $$|$$$$ <br>$$$$ |
-| Proton mass |$$ m_{ p }  $$|$$$$<br>$$$$ <br> $$$$|
-| Rydberg constant|$$ R_{ H }  $$|$$$$|
-| Speed of light <br> in vacuum|$$ c $$|$$$$|
+| Electron volt | $$ eV  $$|$$1.60217653(14)\times 10^{ -19 }J $$|
+| Elementary charge|$$ e $$|$$1.60217653(14)\times 10^{ -19 }C $$ |
+| Gas constant| $$ R $$| $$8.314472(15)J/mol\cdot K $$|
+| Gravitational constant |$$ G $$|$$6.6742(10)\times 10^{ -11 }N\cdot m^{ 2 }/kg^{ 2 } $$|
+| Josephson frequency <br> –voltage ratio | $$ \frac { 2e }{ h }  $$|$$4.83597879(41)\times 10^{ 14 }Hz/V $$|
+| Magnetic flux <br> quantum| $$ \Phi _{ 0 }=\frac { h }{ 2e }  $$|$$2.06783372(18)\times 10^{ -15 }T\cdot m^{ 2 } $$|
+| Neutron mass|$$ m_{ n }  $$ | $$1.67492728(29)\times 10^{ -27 }kg $$<br>$$1.00866491560(55)u $$<br>$$939.565 360 (81) MeV/c2$$ |
+| Nuclear magneton|$$ \mu _{ n }=\frac { e\hbar  }{ 2m_{ p } }  $$| $$5.05078343(43)\times 10^{ -27 }J/T $$|
+| Permeability of <br> free space |$$ \mu _{ 0 }  $$|$$4\pi \times 10^{ -7 }T\cdot m/A $$ |
+| Permittivity of <br> free space|$$\varepsilon _{ 0 }=\frac { 1 }{ \mu _{ 0 }c^{ 2 } } $$| $$8.854187817...\times 10^{ -12 }C^{ 2 }/N\cdot m^{ 2 } $$|
+| Planck’s constant |$$h$$ <br> $$  \hbar =\frac { h }{ 2\pi  }  $$|$$6.6260693(11)\times 10^{ -34 }J\cdot s $$ <br>$$1.05457168(18)\times 10^{ -34 }J\cdot s $$ |
+| Proton mass |$$ m_{ p }  $$|$$1.67262171(29)\times 10^{ -27 }kg $$<br>$$1.00727646688(13)u $$ <br> $$938.272029(80)MeV/c^{ 2 } $$|
+| Rydberg constant|$$ R_{ H }  $$|$$1.0973731568525(73)\times 10^{ 7 }m^{ -1 } $$|
+| Speed of light <br> in vacuum|$$ c $$|$$2.99792458\times 10^{ 8 }m/s $$|
 
 ---
 
