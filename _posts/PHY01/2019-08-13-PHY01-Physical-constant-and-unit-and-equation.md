@@ -133,7 +133,7 @@ List of posts to read before reading this article
 
 |Physical quantity|Symbol|Unit|SI unit conversation factor|SI unit|Dimension|
 |:--|:--|:--|:--|:--|:--|
-||$$$$|$$$$|$$$$|$$$$|$$$$|
+||<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|
 ||$$$$|$$$$|$$$$|$$$$|$$$$|
 ||$$$$|$$$$|$$$$|$$$$|$$$$|
 ||$$$$|$$$$|$$$$|$$$$|$$$$|
