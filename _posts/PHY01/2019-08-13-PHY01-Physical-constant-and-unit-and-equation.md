@@ -44,7 +44,7 @@ List of posts to read before reading this article
 | Nuclear magneton|$$ \mu _{ n }=\frac { e\hbar  }{ 2m_{ p } }  $$ | 5.050 783 43 (43) 10-27 J/T|
 | Permeability of free space | $$ \mu _{ 0 }  $$|4pi*10-7 T m/A (exact) |
 | Permittivity of free space| $$ \varepsilon _{ 0 }=\frac { 1 }{ \mu _{ 0 }c^{ 2 } }  $$| 8.854 187 817...10-12 C2/N m2 (exact)|
-| Planck’s constant | $$ h <br> \hbar =\frac { h }{ 2\pi  }  $$|6.626 069 3 (11) 10-34 J s <br> 1.054 571 68 (18) 10-34 J s |
+| Planck’s constant | $$h$$ <br> $$  \hbar =\frac { h }{ 2\pi  }  $$|6.626 069 3 (11) 10-34 J s <br> 1.054 571 68 (18) 10-34 J s |
 | Proton mass |$$ m_{ p }  $$ | 1.672 621 71 (29) 10-27 kg <br> 1.007 276 466 88 (13) u <br> 938.272 029 (80) MeV/c2|
 | Rydberg constant|$$ R_{ H }  $$|1.097 373 156 852 5 (73) 10+7 m-1|
 | Speed of light in vacuum|$$ c $$|2.997 924 58 10+8 m/s (exact)|
