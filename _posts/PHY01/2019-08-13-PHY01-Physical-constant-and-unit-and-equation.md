@@ -85,6 +85,16 @@ List of posts to read before reading this article
 
 ## SI-Unit : Fundamental Unit
 
+|Quantity|symbol|Definition|
+|:-------|:-----|:---------|
+|Length|m|According to the current International Bureau of Weights and Measures (BIPM KCDB), 1m is the distance that light travels in a vacuum for 1/299792458 seconds, and 1 second is the time it takes for the light of a specific wavelength emitted from cesium-133 atoms to vibrate 9,192,631,770 times.|
+|Mass|kg|Kilograms are units of mass. Kilogram is equal to the mass of the International Kilogram.|
+|Time|s|The current international standard is the cesium atomic clock, which takes one second for the cesium-133 (133Cs) nucleus to vibrate 9,192,631,770 times.|
+|Electric current|A|The SI unit of current is amperes, which means that 1 ampere flows 1 coulomb charge per second. One amperage is a constant current that flows in a vacuum in two straight conductors placed parallel to each other at 1 m intervals and exerts a force of 2 * 10 ^ (-7) N per meter of each of these conductors.|
+|Temperature|K|The international unit of temperature is Kelvin (K). Kelvin is defined as 1 / 273.16 of the thermodynamic temperature of the triple point of water. By using the thermodynamic definition temperature in the temperature reference used in the general definition, even the temperature in the general definition can be related to the physical meaning and various fundamental physics.|
+|Amount of subtance|mol|The quantity of matter is one of the basic quantities in the international system of units of quantity of substances such as atoms and molecules. In the international system of units, mole is defined as the unit of material quantity, and one mole corresponds to the amount of a substance of 12 grams (g) of carbon-12.|
+|Luminous Intensity|cd|Candela (SI) is the SI unit of light intensity and means the luminous flux per unit solid angle of light emitted in a specific direction from a point light source. Candela is defined as the brightness when a light source emitting monochromatic light [1] with a frequency of 540 × 1012 hertz radiates energy at a rate of 1/683 watts per steradian in any given direction.|
+
 ---
 
 ## SI-Unit : Derived Unit
