@@ -114,7 +114,7 @@ title: Study
 
 ## PHY03 : Thermodynamic and statistical mechanics
 
-- <a href='https://userdyk-github.github.io/'>1</a>
+- <a href='https://userdyk-github.github.io/phy03/PHY03-Heat-flow-via-time-stepping.html'>Heat flow via time stepping</a>
 - <a href='https://userdyk-github.github.io/'>2</a>
 - <a href='https://userdyk-github.github.io/'>3</a>
 - <a href='https://userdyk-github.github.io/'>4</a>
