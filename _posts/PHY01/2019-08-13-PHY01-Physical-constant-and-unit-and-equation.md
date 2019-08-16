@@ -115,7 +115,7 @@ List of posts to read before reading this article
 |Illuminuance|<span class='jb-x-small'>$$lx$$</span>|<span class='jb-x-small'>$$1lx=1cd/1m^{ 2 } $$</span>|
 |Energy|<span class='jb-x-small'>$$J$$</span>|<span class='jb-x-small frame2'>$$W=\int { \overrightarrow { F }\cdot d\overrightarrow { s } } $$</span> / <span class='jb-x-small frame2'>$$\overrightarrow { F }=m\overrightarrow { a } $$</span> / <span class='jb-x-small frame2'>$$\overrightarrow { a }=\frac { d^{ 2 }\overrightarrow { r } }{ dt^{ 2 } } $$</span><br><span class='jb-x-small frame2'>$$\overrightarrow { F }=-\nabla U $$</span> / <span class='jb-x-small frame2'>$$\overrightarrow { F }=m\overrightarrow { a } $$</span> / <span class='jb-x-small frame2'>$$\overrightarrow { a }=\frac { d^{ 2 }\overrightarrow { r } }{ dt^{ 2 } } $$</span> <br><span class='jb-x-small frame2'>$$E=\frac { 1 }{ 2 }mv^{ 2 } $$</span> / <span class='jb-x-small frame2'>$$\overrightarrow { v }=\frac { d\overrightarrow { r } }{ dt } $$</span> <br> <span class='jb-x-small'>$$1  J = 1N \times 1m =1kg\cdot 1m/s^{ 2 }\cdot 1m=1kg\cdot m^{ 2 }/s^{ 2 } $$</span><br><br><span class='jb-x-small frame2'>$$P=\frac { dE }{ dt } $$</span><br><span class='jb-x-small'>$$1 J = 1W \times 1s$$</span><br><br><span class='jb-x-small frame2'>$$q\Delta V=\Delta U $$</span><br><span class='jb-x-small'>$$1 eV = 1.602177\times 10^{ -19 }J $$</span><br><br><span class='jb-x-small frame2'> $$Ref]\ \Delta E=\sum { T } $$</span>|
 |Voltage|<span class='jb-x-small'>$$V$$</span>|<span class='jb-x-small frame2'>$$\Delta V=\frac { \Delta U }{ q } $$</span> / <span class='jb-x-small frame2'>$$W=\int { \overrightarrow { F }\cdot d\overrightarrow { s } } $$</span> / <span class='jb-x-small frame2'>$$\overrightarrow { F }=m\overrightarrow { a } $$</span> / <span class='jb-x-small frame2'>$$\overrightarrow { a }=\frac { d^{ 2 }\overrightarrow { r } }{ dt^{ 2 } } $$</span> <br> <span class='jb-x-small'>$$1 V = 1J/1C = 1kg\cdot m^{ 2 }/A\cdot s^{ 3 } $$</span><br><br> <span class='jb-x-small frame2'>$$\overrightarrow { E }=\frac { \overrightarrow { F } }{ q }=-\nabla V $$</span><br> <span class='jb-x-small'>$$unit\ of\ electric\ field = 1N/1C = 1V/1m$$</span><br><br><span class='jb-x-small frame2'>$$Ref]\ \overrightarrow { F }=q\overrightarrow { E } $$</span> / <span class='jb-x-small frame2'>$$\overrightarrow { E }=\frac { 1 }{ 4\pi \varepsilon _{ 0 } }\frac { Q }{ r^{ 3 } }\overrightarrow { r } $$</span> / <span class='jb-x-small frame2'>$$\oint _{ S }{ \overrightarrow { E }\cdot d\overrightarrow { a } }=\frac { Q }{ \varepsilon _{ 0 } } $$</span> / <span class='jb-x-small frame2'>$$\nabla \cdot \overrightarrow { E }=\frac { \rho  }{ \varepsilon _{ 0 } } $$</span><br><span class='jb-x-small frame2'>$$\oint _{ C }{ \overrightarrow { E }\cdot d\overrightarrow { l } }=-\frac { d }{ dt }\int _{ S }{ \overrightarrow { B }\cdot d\overrightarrow { a } } $$</span> / <span class='jb-x-small frame2'>$$\nabla \times \overrightarrow { E }=-\frac { \partial  }{ \partial t }\overrightarrow { B } $$</span>|
-|Magnetic Field|<span class='jb-x-small'>$$T$$</span>|<span class='jb-x-small'>$$$$</span>|
+|Magnetic Field|<span class='jb-x-small'>$$T$$</span>| <span class='jb-x-small frame2'>$$\overrightarrow { F }=q\overrightarrow { v }\times \overrightarrow { B } $$</span> / <span class='jb-x-small frame2'>$$\overrightarrow { v }=\frac { d\overrightarrow { r } }{ dt } $$</span> / <span class='jb-x-small frame2'>$$I=\frac { dQ }{ dt } $$</span> or <span class='jb-x-small frame2'>$$\overrightarrow { F }=\int { I(d\overrightarrow { l }\times \overrightarrow { B }) } $$</span> / <span class='jb-x-small frame2'>$$I=\frac { dQ }{ dt } $$</span><br> <span class='jb-x-small'>$$1 T =\frac { 1N }{ 1C\cdot 1m/s }=\frac { 1N }{ 1A\cdot 1m } $$</span> <br> <span class='jb-x-small'>$$1 T =10^{ 4 }G $$</span><br><br> <span class='jb-x-small frame2'>$$\Phi _{ B }=\int { \overrightarrow { B }\cdot d\overrightarrow { a } } $$</span> <br><span class='jb-x-small'>$$1T = 1Wb/1m^{ 2 } $$</span> <br><br><span class='jb-x-small frame2'>$$\overrightarrow { F }=q\overrightarrow { v }\times \overrightarrow { B } $$</span> / <span class='jb-x-small frame2'>$$\overrightarrow { B }=\frac { \mu _{ 0 }I }{ 4\pi  }\int { \frac { d\overrightarrow { l }\times (\overrightarrow { r }-\overrightarrow { r' }) }{ \left| \overrightarrow { r }-\overrightarrow { r' } \right| ^{ 3 } } } $$</span> / <span class='jb-x-small frame2'>$$\oint _{ S }^{ ' }{ \overrightarrow { B }\cdot d\overrightarrow { a } }=0 $$</span><br><span class='jb-x-small'>$$\oint _{ C }{ \overrightarrow { B }\cdot d\overrightarrow { l } }=\mu _{ 0 }I+\mu _{ 0 }\varepsilon _{ 0 }\frac { d }{ dt }\int _{ S }{ \overrightarrow { E }\cdot d\overrightarrow { a } } $$</span> / <span class='jb-x-small frame2'>$$\nabla \times \overrightarrow { B }=\mu _{ 0 }\overrightarrow { J }+\mu _{ 0 }\varepsilon _{ 0 }\frac { \partial \overrightarrow { E } }{ \partial t } $$</span>|
 |Pressure|<span class='jb-x-small'>$$Pa$$</span>|<span class='jb-x-small'>$$$$</span>|
 |Power|<span class='jb-x-small'>$$W$$</span>|<span class='jb-x-small'>$$$$</span>|
 |Electrical capacitance|<span class='jb-x-small'>$$F$$</span>|<span class='jb-x-small'>$$$$</span>|
@@ -218,72 +218,3 @@ Reference
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
-
-Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
-
-[Link to another page](another-page).
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-* * *
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-
-![](https://assets-cdn.github.com/images/icons/emoji/octocat.png)
-![](https://guides.github.com/activities/hello-world/branching.png)
-
