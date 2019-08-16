@@ -26,28 +26,28 @@ List of posts to read before reading this article
 | Quantity | Symbol | Value |
 |:---------|:-------|:------|
 | Atomic mass unit | $$ u $$| <span class='jb-medium'>$$1.66053886(28)\times 10^{ -27 }\ kg $$<br> $$931.494043(80)\ MeV/c^{ 2 } $$ </span>|
-| Avogadro’s number | $$ N_{ A }  $$| $$6.0221415(10)\times 10^{ 23 }\ particles/mol $$ |
-| Bohr magneton|$$\mu _{ B }=\frac { e\hbar  }{ 2m_{ e } } $$|$$9.27400949(80)\times 10^{ -24 }\ J/T $$ |
-| Bohr radius | $$  a_{ 0 }=\frac { \hbar ^{ 2 } }{ m_{ e }e^{ 2 }k_{ e } } $$| $$5.291772108(18)\times 10^{ -11 }\ m $$|
-| Boltzmann’s constant |$$ k_{ B }=\frac { R }{ N_{ A } }   $$|$$1.3806505(24)\times 10^{ -23 }\ J/K $$ |
-| Compton wavelength |$$  \lambda _{ C }=\frac { h }{ m_{ e }c }  $$|$$2.426310238(16)\times 10^{ -12 }\ m $$|
-| Coulomb constant |$$k_{ e }=\frac { 1 }{ 4\pi \varepsilon _{ 0 } }   $$|$$8.987551788...\times 10^{ 9 }\ N\cdot m^{ 2 }/C^{ 2 } $$|
-| Deuteron mass |$$m_{ d }   $$|$$3.34358335(57)\times 10^{ -27 }\ kg $$ <br>$$2.01355321270(35)\ u $$|
-| Electron mass |$$ m_{ e }  $$ |$$9.1093826(16)\times 10^{ -31 }\ kg $$<br>$$5.4857990945(24)\times 10^{ -4 }\ u $$<br>$$0.510998918(44)\ MeV/c^{ 2 } $$| 
-| Electron volt | $$ eV  $$|$$1.60217653(14)\times 10^{ -19 }\ J $$|
-| Elementary charge|$$ e $$|$$1.60217653(14)\times 10^{ -19 }\ C $$ |
-| Gas constant| $$ R $$| $$8.314472(15)\ J/mol\cdot K $$|
-| Gravitational constant |$$ G $$|$$6.6742(10)\times 10^{ -11 }\ N\cdot m^{ 2 }/kg^{ 2 } $$|
-| Josephson frequency – voltage ratio | $$ \frac { 2e }{ h }  $$|$$4.83597879(41)\times 10^{ 14 }\ Hz/V $$|
-| Magnetic flux quantum| $$ \Phi _{ 0 }=\frac { h }{ 2e }  $$|$$2.06783372(18)\times 10^{ -15 }\ T\cdot m^{ 2 } $$|
-| Neutron mass|$$ m_{ n }  $$ | $$1.67492728(29)\times 10^{ -27 }\ kg $$<br>$$1.00866491560(55)\ u $$<br>939.565360(81)\ MeV/c^{ 2 } $$ |
-| Nuclear magneton|$$ \mu _{ n }=\frac { e\hbar  }{ 2m_{ p } }  $$| $$5.05078343(43)\times 10^{ -27 }\ J/T $$|
-| Permeability of free space |$$ \mu _{ 0 }  $$|$$4\pi \times 10^{ -7 }\ T\cdot m/A $$ |
-| Permittivity of free space|$$\varepsilon _{ 0 }=\frac { 1 }{ \mu _{ 0 }c^{ 2 } } $$| $$8.854187817...\times 10^{ -12 }\ C^{ 2 }/N\cdot m^{ 2 } $$|
-| Planck’s constant |$$h$$ <br> $$  \hbar =\frac { h }{ 2\pi  }  $$|$$6.6260693(11)\times 10^{ -34 }\ J\cdot s $$ <br>$$1.05457168(18)\times 10^{ -34 }\ J\cdot s $$ |
-| Proton mass |$$ m_{ p }  $$|$$1.67262171(29)\times 10^{ -27 }\ kg $$<br>$$1.00727646688(13)\ u $$ <br> $$938.272029(80)\ MeV/c^{ 2 } $$|
-| Rydberg constant|$$ R_{ H }  $$|$$1.0973731568525(73)\times 10^{ 7 }\ m^{ -1 } $$|
-| Speed of light in vacuum|$$ c $$|$$2.99792458\times 10^{ 8 }\ m/s $$|
+| Avogadro’s number | $$ N_{ A }  $$| <span class='jb-medium'>$$6.0221415(10)\times 10^{ 23 }\ particles/mol $$</span> |
+| Bohr magneton|$$\mu _{ B }=\frac { e\hbar  }{ 2m_{ e } } $$|<span class='jb-medium'>$$9.27400949(80)\times 10^{ -24 }\ J/T $$ </span>|
+| Bohr radius | $$  a_{ 0 }=\frac { \hbar ^{ 2 } }{ m_{ e }e^{ 2 }k_{ e } } $$| <span class='jb-medium'>$$5.291772108(18)\times 10^{ -11 }\ m $$</span>|
+| Boltzmann’s constant |$$ k_{ B }=\frac { R }{ N_{ A } }   $$|<span class='jb-medium'>$$1.3806505(24)\times 10^{ -23 }\ J/K $$ </span>|
+| Compton wavelength |$$  \lambda _{ C }=\frac { h }{ m_{ e }c }  $$|<span class='jb-medium'>$$2.426310238(16)\times 10^{ -12 }\ m $$</span>|
+| Coulomb constant |$$k_{ e }=\frac { 1 }{ 4\pi \varepsilon _{ 0 } }   $$|<span class='jb-medium'>$$8.987551788...\times 10^{ 9 }\ N\cdot m^{ 2 }/C^{ 2 } $$</span>|
+| Deuteron mass |$$m_{ d }   $$|<span class='jb-medium'>$$3.34358335(57)\times 10^{ -27 }\ kg $$ <br>$$2.01355321270(35)\ u $$</span>|
+| Electron mass |$$ m_{ e }  $$ |<span class='jb-medium'>$$9.1093826(16)\times 10^{ -31 }\ kg $$<br>$$5.4857990945(24)\times 10^{ -4 }\ u $$<br>$$0.510998918(44)\ MeV/c^{ 2 } $$</span>| 
+| Electron volt | $$ eV  $$|<span class='jb-medium'>$$1.60217653(14)\times 10^{ -19 }\ J $$</span>|
+| Elementary charge|$$ e $$|<span class='jb-medium'>$$1.60217653(14)\times 10^{ -19 }\ C $$ </span>|
+| Gas constant| $$ R $$| <span class='jb-medium'>$$8.314472(15)\ J/mol\cdot K $$</span>|
+| Gravitational constant |$$ G $$|<span class='jb-medium'>$$6.6742(10)\times 10^{ -11 }\ N\cdot m^{ 2 }/kg^{ 2 } $$</span>|
+| Josephson frequency – voltage ratio | $$ \frac { 2e }{ h }  $$|<span class='jb-medium'>$$4.83597879(41)\times 10^{ 14 }\ Hz/V $$</span>|
+| Magnetic flux quantum| $$ \Phi _{ 0 }=\frac { h }{ 2e }  $$|<span class='jb-medium'>$$2.06783372(18)\times 10^{ -15 }\ T\cdot m^{ 2 } $$</span>|
+| Neutron mass|$$ m_{ n }  $$ | <span class='jb-medium'>$$1.67492728(29)\times 10^{ -27 }\ kg $$<br>$$1.00866491560(55)\ u $$<br>939.565360(81)\ MeV/c^{ 2 } $$</span> |
+| Nuclear magneton|$$ \mu _{ n }=\frac { e\hbar  }{ 2m_{ p } }  $$| <span class='jb-medium'>$$5.05078343(43)\times 10^{ -27 }\ J/T $$</span>|
+| Permeability of free space |$$ \mu _{ 0 }  $$|<span class='jb-medium'>$$4\pi \times 10^{ -7 }\ T\cdot m/A $$</span> |
+| Permittivity of free space|$$\varepsilon _{ 0 }=\frac { 1 }{ \mu _{ 0 }c^{ 2 } } $$|<span class='jb-medium'> $$8.854187817...\times 10^{ -12 }\ C^{ 2 }/N\cdot m^{ 2 } $$</span>|
+| Planck’s constant |$$h$$ <br> $$  \hbar =\frac { h }{ 2\pi  }  $$|<span class='jb-medium'>$$6.6260693(11)\times 10^{ -34 }\ J\cdot s $$ <br>$$1.05457168(18)\times 10^{ -34 }\ J\cdot s $$ </span>|
+| Proton mass |$$ m_{ p }  $$|<span class='jb-medium'>$$1.67262171(29)\times 10^{ -27 }\ kg $$<br>$$1.00727646688(13)\ u $$ <br> $$938.272029(80)\ MeV/c^{ 2 } $$</span>|
+| Rydberg constant|$$ R_{ H }  $$|<span class='jb-medium'>$$1.0973731568525(73)\times 10^{ 7 }\ m^{ -1 } $$</span>|
+| Speed of light in vacuum|$$ c $$|<span class='jb-medium'>$$2.99792458\times 10^{ 8 }\ m/s $$</span>|
 
 <br><br><br>
 
