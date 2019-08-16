@@ -106,23 +106,23 @@ List of posts to read before reading this article
 
 |Quantity|Symbol|Conversation|
 |:--|:--|:--|
-||<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|
-||<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|
-||<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|
-||<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|
-||<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|
-||<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|
-||<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|
-||<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|
-||<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|
-||<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|
-||<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|
-||<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|
-||<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|
-||<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|
-||<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|
-||<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|
-||<span class='jb-medium'>$$$$</span>|<span class='jb-medium'>$$$$</span>|
+||<span class='jb-medium'>$$Hz$$</span>|<span class='jb-medium'>$$$$</span>|
+||<span class='jb-medium'>$$C$$</span>|<span class='jb-medium'>$$$$</span>|
+||<span class='jb-medium'>$$N$$</span>|<span class='jb-medium'>$$$$</span>|
+||<span class='jb-medium'>$$rad$$</span>|<span class='jb-medium'>$$$$</span>|
+||<span class='jb-medium'>$$sr$$</span>|<span class='jb-medium'>$$$$</span>|
+||<span class='jb-medium'>$$lm$$</span>|<span class='jb-medium'>$$$$</span>|
+||<span class='jb-medium'>$$lx$$</span>|<span class='jb-medium'>$$$$</span>|
+||<span class='jb-medium'>$$J$$</span>|<span class='jb-medium'>$$$$</span>|
+||<span class='jb-medium'>$$V$$</span>|<span class='jb-medium'>$$$$</span>|
+||<span class='jb-medium'>$$T$$</span>|<span class='jb-medium'>$$$$</span>|
+||<span class='jb-medium'>$$Pa$$</span>|<span class='jb-medium'>$$$$</span>|
+||<span class='jb-medium'>$$W$$</span>|<span class='jb-medium'>$$$$</span>|
+||<span class='jb-medium'>$$F$$</span>|<span class='jb-medium'>$$$$</span>|
+||<span class='jb-medium'>$$\Omega$$</span>|<span class='jb-medium'>$$$$</span>|
+||<span class='jb-medium'>$$S$$</span>|<span class='jb-medium'>$$$$</span>|
+||<span class='jb-medium'>$$Wh$$</span>|<span class='jb-medium'>$$$$</span>|
+||<span class='jb-medium'>$$H$$</span>|<span class='jb-medium'>$$$$</span>|
 
 
 <br><br><br>
