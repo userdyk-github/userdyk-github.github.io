@@ -3,14 +3,6 @@ layout: page
 title: Study
 ---
 
-## Contents
-{:.no_toc}
-
-* ToC
-{:toc}
-
----
-
 ## AI01 : Data science analysis
 
 - <a href='https://userdyk-github.github.io/'>1</a>
