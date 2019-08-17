@@ -3,16 +3,6 @@ layout: page
 title: Lecture URL
 ---
 
-## Contents
-{:.no_toc}
-
-* ToC
-{:toc}
-
----
-
-
-
 ## Physics
 
 ### General physics
