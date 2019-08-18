@@ -13,6 +13,7 @@ title: Research
 
 ## Research trends
 
+### International research trend
+
 ### Domestic research trend
 
-### International research trend
