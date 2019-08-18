@@ -10,3 +10,7 @@ Projects
 <div>
 Publications
 </div>
+<hr>
+<div>
+Research trends
+</div>
