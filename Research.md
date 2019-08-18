@@ -14,8 +14,8 @@ title: Research
 ## Research trends
 
 ### International research trend
-<a href='https://kis.kaist.ac.kr/index.php?mid=KIAI_O'>KAIST</a>
 
 
 ### Domestic research trend
+<a href='https://kis.kaist.ac.kr/index.php?mid=KIAI_O'>KAIST</a>
 
