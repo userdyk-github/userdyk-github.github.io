@@ -18,4 +18,5 @@ title: Research
 
 ### Domestic research trend
 <a href='https://kis.kaist.ac.kr/index.php?mid=KIAI_O'>KAIST</a>
-<a href='http://mllab.snu.ac.kr/'>SNU</a>
+<a href='http://mllab.snu.ac.kr/'>SNU, Hyun Oh Song</a>
+<a href='http://vision.snu.ac.kr/'>SNU, Gunhee Kim</a>
