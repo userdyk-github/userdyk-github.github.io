@@ -26,7 +26,7 @@ title: Study
 
 ## AI03 : Deep learning
 
-- <a href='https://userdyk-github.github.io/'>1</a>
+- <a href='https://userdyk-github.github.io/'>Fundamental of deep learning</a>
 - <a href='https://userdyk-github.github.io/'>2</a>
 - <a href='https://userdyk-github.github.io/'>3</a>
 - <a href='https://userdyk-github.github.io/'>4</a>
