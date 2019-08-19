@@ -39,7 +39,7 @@ title: Lecture URL
 ### Basic
 
 - <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMBT57a9dvEtd6OuWpugF9SH'>Linux</a>
-- <a href='https://www.youtube.com/playlist?list=PLRx0vPvlEmdDNHeulKC6JM25MmZVS_3nT'>C</a>, <a href='https://www.youtube.com/playlist?list=PLRx0vPvlEmdBjfCADjCc41aD4G0bmdl4R'>Java</a>, <a href='https://www.youtube.com/playlist?list=PLGPF8gvWLYyontH0PECIUFFUdvATXWQEL'>Python</a>, <a href=''>C++</a>, <a href=''>C#</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMA0lO0qip6Phh6UL73TS0es'>Python, Ruby</a>
+- <a href='https://www.youtube.com/playlist?list=PLRx0vPvlEmdDNHeulKC6JM25MmZVS_3nT'>C</a>, <a href='https://www.youtube.com/playlist?list=PLRx0vPvlEmdBjfCADjCc41aD4G0bmdl4R'>Java</a>, <a href='https://www.youtube.com/playlist?list=PLGPF8gvWLYyontH0PECIUFFUdvATXWQEL'>Python</a>, <a href=''>C++</a>, <a href=''>C#</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMA0lO0qip6Phh6UL73TS0es'>Python&Ruby</a>
 - <a href='https://www.youtube.com/playlist?list=PLU53e7oUT8pEbDM9pq_KiIjWwH0Y_-h4W'>Mathematica</a>, <a href=''>Matlab</a>, <a href='https://www.youtube.com/playlist?list=PLSEvxm6HLvZnH71B0UEWwEuUjKcAahYaz'>R</a>
 - <a href='https://www.youtube.com/playlist?list=PLRx0vPvlEmdDHxCvAQS1_6XV4deOwfVrz'>Algorithm</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMDsWOOn_P0EmAWB8DArS3Fk'>Data structure</a>
 
