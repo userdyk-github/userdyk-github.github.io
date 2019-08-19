@@ -1,6 +1,6 @@
 ---
 layout : post
-title : AI03
+title : AI03, Fundamental of deep learning
 categories: [AI03]
 comments : true
 tags : [AI03]
