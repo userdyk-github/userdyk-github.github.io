@@ -21,15 +21,15 @@ List of posts to read before reading this article
 
 ---
 
-## title1
+## Regression with sklearn
 
 ---
 
-## title2
+## Regression with tensorflow
 
 ---
 
-## title3
+## Regression with pytorch
 
 ---
 
