@@ -1,6 +1,6 @@
 ---
 layout : post
-title : AI02
+title : AI02, Clustering
 categories: [AI02]
 comments : true
 tags : [AI02]
