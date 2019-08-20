@@ -23,6 +23,49 @@ List of posts to read before reading this article
 
 ## Regression with sklearn
 
+```python
+from sklearn import datasets
+
+X_all, y_all = datasets.make_regression(n_samples=50, n_features=50, n_informative=10)
+X_train, X_test, y_train, y_test = model_selection.train_test_split(X_all, y_all, train_size=0.5)
+model = linear_model.LinearRegression()
+model.fit(X_train, y_train)
+
+def sse(resid):
+    return np.sum(resid**2) 
+    
+resid_train = y_train - model.predict(X_train) 
+sse_train = sse(resid_train)   
+sse_train
+
+resid_test = y_test - model.predict(X_test)  
+sse_test = sse(resid_test)   
+sse_test 
+
+# R-squared score 
+model.score(X_train, y_train) 
+model.score(X_test, y_test) 
+
+def plot_residuals_and_coeff(resid_train, resid_test, coeff): 
+    fig, axes = plt.subplots(1, 3, figsize=(12, 3))  
+    axes[0].bar(np.arange(len(resid_train)), resid_train) 
+    axes[0].set_xlabel("sample number")  
+    axes[0].set_ylabel("residual")    
+    axes[0].set_title("training data")   
+    axes[1].bar(np.arange(len(resid_test)), resid_test) 
+    axes[1].set_xlabel("sample number")  
+    axes[1].set_ylabel("residual")   
+    axes[1].set_title("testing data")  
+    axes[2].bar(np.arange(len(coeff)), coeff)  
+    axes[2].set_xlabel("coefficient number")
+    axes[2].set_ylabel("coefficient")   
+    fig.tight_layout()   
+    return fig, axes
+    
+fig, ax = plot_residuals_and_coeff(resid_train, resid_test,  model.coef_)
+```
+
+
 ---
 
 ## Regression with tensorflow
