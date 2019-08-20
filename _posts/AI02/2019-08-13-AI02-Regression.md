@@ -38,6 +38,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 import seaborn as sns
+
 X_all, y_all = datasets.make_regression(n_samples=50, n_features=50, n_informative=10)
 X_train, X_test, y_train, y_test = model_selection.train_test_split(X_all, y_all, train_size=0.5)
 model = linear_model.LinearRegression()
