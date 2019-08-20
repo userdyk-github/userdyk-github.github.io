@@ -15,9 +15,9 @@ title: Study
 
 ## AI02 : Machine learning
 
-- <a href='https://userdyk-github.github.io/'>1</a>
-- <a href='https://userdyk-github.github.io/'>2</a>
-- <a href='https://userdyk-github.github.io/'>3</a>
+- <a href='https://userdyk-github.github.io/'>Regression</a>
+- <a href='https://userdyk-github.github.io/'>Classification</a>
+- <a href='https://userdyk-github.github.io/'>Clustering</a>
 - <a href='https://userdyk-github.github.io/'>4</a>
 - <a href='https://userdyk-github.github.io/'>5</a>
 
