@@ -1,6 +1,6 @@
 ---
 layout : post
-title : MATH01
+title : MATH01, Nonlinear equations
 categories: [MATH01]
 comments : true
 tags : [MATH01]
