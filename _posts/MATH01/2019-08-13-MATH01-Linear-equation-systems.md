@@ -21,11 +21,11 @@ List of posts to read before reading this article
 
 ---
 
-## title1
+## Square Systems
 
 ---
 
-## title2
+## Rectangular Systems
 
 ---
 
