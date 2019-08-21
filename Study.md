@@ -146,9 +146,9 @@ title: Study
 
 ## MATH01 : Linear algebra
 
-- <a href='https://userdyk-github.github.io/'>Linear equation systems</a>
-- <a href='https://userdyk-github.github.io/'>Eigenvalue Problems</a>
-- <a href='https://userdyk-github.github.io/'>Nonlinear Equations</a>
+- <a href='https://userdyk-github.github.io/math01/MATH01-Linear-equation-systems.html'>Linear equation systems</a>
+- <a href='https://userdyk-github.github.io/math01/MATH01-Eigenvalue-problems.html'>Eigenvalue Problems</a>
+- <a href='https://userdyk-github.github.io/math01/MATH01-Nonlinear-equations.html'>Nonlinear Equations</a>
 - <a href='https://userdyk-github.github.io/'>4</a>
 - <a href='https://userdyk-github.github.io/'>5</a>
 
