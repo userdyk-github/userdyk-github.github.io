@@ -146,9 +146,9 @@ title: Study
 
 ## MATH01 : Linear algebra
 
-- <a href='https://userdyk-github.github.io/'>1</a>
-- <a href='https://userdyk-github.github.io/'>2</a>
-- <a href='https://userdyk-github.github.io/'>3</a>
+- <a href='https://userdyk-github.github.io/'>Linear equation systems</a>
+- <a href='https://userdyk-github.github.io/'>Eigenvalue Problems</a>
+- <a href='https://userdyk-github.github.io/'>Nonlinear Equations</a>
 - <a href='https://userdyk-github.github.io/'>4</a>
 - <a href='https://userdyk-github.github.io/'>5</a>
 
