@@ -23,9 +23,10 @@ List of posts to read before reading this article
 
 
 ## Square Systems
-
-$$Ax=b$$
-$$\begin{pmatrix}2 & 3 \\5 & 4\end{pmatrix}x=\begin{pmatrix}4 \\ 3 \end{pmatrix}$$
+<div style="color:black; font-size: 80%; text-align: center;">
+  $$Ax=b$$ <br>
+  $$\begin{pmatrix}2 & 3 \\5 & 4\end{pmatrix}x=\begin{pmatrix}4 \\ 3 \end{pmatrix}$$
+</div>
 
 <div class='frame1'>Main code : symbolic method</div>
 ```python
@@ -56,11 +57,10 @@ print(x)
 ---
 
 ## Rectangular Systems
-
-$$Ax=b$$
-$$\begin{pmatrix}1 & 2 & 3 \\4 & 5 &6\end{pmatrix}
-\begin{pmatrix}x_{1} \\ x_{2} \\ x_{3} \end{pmatrix}
-=\begin{pmatrix}7 \\ 8 \end{pmatrix}$$
+<div style="color:black; font-size: 80%; text-align: center;">
+  $$Ax=b$$ <br>
+  $$\begin{pmatrix}1 & 2 & 3 \\4 & 5 &6\end{pmatrix}\begin{pmatrix}x_{1} \\ x_{2} \\ x_{3} \end{pmatrix}=\begin{pmatrix}7 \\ 8 \end{pmatrix}$$
+</div>
 
 <div class='frame1'>Main code</div>
 
@@ -79,7 +79,9 @@ print(solution)
 
 ### Data fitting
 
-$$\begin{pmatrix}1 & x_{1} & x_{1}^{2} \\\vdots & \vdots& \vdots \\1 & x_{m} & x_{m}^{2}\end{pmatrix}\begin{pmatrix}A \\B \\C \end{pmatrix}=\begin{pmatrix}y_{1} \\\vdots \\y_{m} \end{pmatrix} $$
+<div style="color:black; font-size: 80%; text-align: center;">
+  $$\begin{pmatrix}1 & x_{1} & x_{1}^{2} \\\vdots & \vdots& \vdots \\1 & x_{m} & x_{m}^{2}\end{pmatrix}\begin{pmatrix}A \\B \\C \end{pmatrix}=\begin{pmatrix}y_{1} \\\vdots \\y_{m} \end{pmatrix} $$
+</div>
 
 <div class='frame1'>Main code</div>
 ```python
