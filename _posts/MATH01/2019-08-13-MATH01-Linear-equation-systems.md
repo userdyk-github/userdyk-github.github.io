@@ -117,6 +117,43 @@ plt.show()
 ![Figure_1](https://user-images.githubusercontent.com/52376448/63553433-53d7ae00-c575-11e9-9b90-c2057b8860fc.png)
 <br><br><br>
 
+<div class='frame1'>Main code</div>
+```python
+import numpy as np
+from scipy import linalg as la
+import matplotlib.pyplot as plt
+
+# define true model parameters
+x = np.linspace(-1, 1, 100)
+a, b, c = 1, 2, 3
+y_exact = a + b * x + c * x**2
+
+# simulate noisy data
+m = 100
+X = 1 - 2 * np.random.rand(m)
+Y = a + b * X + c * X**2 + np.random.randn(m)
+
+# fit the data to the model using linear least square:    
+# 1st order polynomial   
+A = np.vstack([X**n for n in range(2)])   
+sol, r, rank, sv = la.lstsq(A.T, Y)  
+y_fit1 = sum([s * x**n for n, s in enumerate(sol)])   
+
+# 15th order polynomial    
+A = np.vstack([X**n for n in range(16)])    
+sol, r, rank, sv = la.lstsq(A.T, Y)   
+y_fit15 = sum([s * x**n for n, s in enumerate(sol)])  
+
+fig, ax = plt.subplots(figsize=(12, 4))   
+ax.plot(X, Y, 'go', alpha=0.5, label='Simulated data')
+ax.plot(x, y_exact, 'k', lw=2, label='True value $y = 1 + 2x + 3x^2$')   
+ax.plot(x, y_fit1, 'b', lw=2, label='Least square fit [1st order]')    
+ax.plot(x, y_fit15, 'm', lw=2, label='Least square fit [15th order]')   
+ax.set_xlabel(r"$x$", fontsize=18)  
+ax.set_ylabel(r"$y$", fontsize=18)   
+ax.legend(loc=2)
+```
+
 ---
 
 List of posts followed by this article
