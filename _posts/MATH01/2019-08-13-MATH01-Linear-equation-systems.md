@@ -36,7 +36,14 @@ print(x)
 
 <div class='frame1'>numerical</div>
 ```python
+import numpy as np
+from scipy import linalg as la
 
+A = np.array([[2,3],[5,4]])
+b = np.array([4,3])
+x = la.solve(A,b)
+
+print(x)
 ```
 
 
