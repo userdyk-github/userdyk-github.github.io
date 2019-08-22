@@ -21,7 +21,9 @@ List of posts to read before reading this article
 
 ---
 
-## Square Systems : $$Ax=b$$
+$$Ax=b$$
+
+## Square Systems
 
 $$\begin{pmatrix}2 & 3 \\5 & 4\end{pmatrix}x=\begin{pmatrix}4 \\ 3 \end{pmatrix}$$
 
@@ -54,6 +56,9 @@ print(x)
 ---
 
 ## Rectangular Systems
+
+$$\begin{pmatrix}2 & 3 \\5 & 4\end{pmatrix}x=\begin{pmatrix}4 \\ 3 \end{pmatrix}$$
+
 
 ---
 
