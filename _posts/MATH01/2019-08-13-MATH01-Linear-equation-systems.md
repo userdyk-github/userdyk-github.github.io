@@ -23,6 +23,22 @@ List of posts to read before reading this article
 
 ## Square Systems
 
+```python
+from sympy import Matrix
+
+A = Matrix([[2,3],[5,4]])
+b = Matrix([4,5])
+x = A.solve(b)
+
+print(x)
+```
+
+```python
+
+```
+
+
+
 ---
 
 ## Rectangular Systems
