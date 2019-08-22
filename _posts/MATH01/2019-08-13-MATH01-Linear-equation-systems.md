@@ -28,7 +28,7 @@ List of posts to read before reading this article
   $$\begin{pmatrix}2 & 3 \\5 & 4\end{pmatrix}x=\begin{pmatrix}4 \\ 3 \end{pmatrix}$$
 </div>
 
-<span class='frame1'>Main code : method1</span>
+<span class='frame2'>Main code : method1</span>
 ```python
 from sympy import Matrix
 
@@ -40,7 +40,7 @@ print(x)
 ```
 
 
-<span class='frame1'>Main code : method1</span>
+<span class='frame2'>Main code : method1</span>
 ```python
 import numpy as np
 from scipy import linalg as la
@@ -62,7 +62,7 @@ print(x)
   $$\begin{pmatrix}1 & 2 & 3 \\4 & 5 &6\end{pmatrix}\begin{pmatrix}x_{1} \\ x_{2} \\ x_{3} \end{pmatrix}=\begin{pmatrix}7 \\ 8 \end{pmatrix}$$
 </div>
 
-<span class='frame1'>Main code</span>
+<span class='frame2'>Main code</span>
 
 ```python
 from sympy import symbols, Matrix, solve
@@ -83,7 +83,7 @@ print(solution)
   $$\begin{pmatrix}1 & x_{1} & x_{1}^{2} \\\vdots & \vdots& \vdots \\1 & x_{m} & x_{m}^{2}\end{pmatrix}\begin{pmatrix}A \\B \\C \end{pmatrix}=\begin{pmatrix}y_{1} \\\vdots \\y_{m} \end{pmatrix} $$
 </div>
 
-<span class='frame1'>Main code</span>
+<span class='frame2'>Main code</span>
 ```python
 import numpy as np
 from scipy import linalg as la
@@ -117,7 +117,7 @@ plt.show()
 ![Figure_1](https://user-images.githubusercontent.com/52376448/63553433-53d7ae00-c575-11e9-9b90-c2057b8860fc.png)
 <br><br><br>
 
-<span class='frame1'>Main code</span>
+<span class='frame2'>Main code</span>
 ```python
 import numpy as np
 from scipy import linalg as la
