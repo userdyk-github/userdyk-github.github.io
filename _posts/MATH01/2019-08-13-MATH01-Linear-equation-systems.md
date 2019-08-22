@@ -156,6 +156,7 @@ plt.show()
 ```
 ![Figure_1](https://user-images.githubusercontent.com/52376448/63554103-7f5b9800-c577-11e9-8dd6-55d34a2eab6b.png)
 
+<br><br><br>
 ---
 
 List of posts followed by this article
