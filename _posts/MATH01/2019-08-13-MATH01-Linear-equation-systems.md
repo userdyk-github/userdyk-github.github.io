@@ -28,7 +28,7 @@ List of posts to read before reading this article
   $$\begin{pmatrix}2 & 3 \\5 & 4\end{pmatrix}x=\begin{pmatrix}4 \\ 3 \end{pmatrix}$$
 </div>
 
-<div class='frame1'>Main code : method1</div>
+<span class='frame1'>Main code : method1</span>
 ```python
 from sympy import Matrix
 
