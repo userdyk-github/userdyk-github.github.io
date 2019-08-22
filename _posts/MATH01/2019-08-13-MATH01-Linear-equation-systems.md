@@ -23,6 +23,7 @@ List of posts to read before reading this article
 
 ## Square Systems
 
+$$Ax=b$$
 <div class='frame1'>Main code : symbolic</div>
 ```python
 from sympy import Matrix
@@ -34,6 +35,7 @@ x = A.solve(b)
 print(x)
 ```
 
+$$Ax=b$$
 <div class='frame1'>Main code : numerical</div>
 ```python
 import numpy as np
