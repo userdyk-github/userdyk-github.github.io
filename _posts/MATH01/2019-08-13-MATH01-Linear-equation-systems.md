@@ -61,6 +61,8 @@ $$\begin{pmatrix}1 & 2 & 3 \\4 & 5 &6\end{pmatrix}
 \begin{pmatrix}x_{1} \\ x_{2} \\ x_{3} \end{pmatrix}
 =\begin{pmatrix}7 \\ 8 \end{pmatrix}$$
 
+<div class='frame1'>Main code</div>
+
 ```python
 from sympy import symbols, Matrix, solve
 
