@@ -28,7 +28,7 @@ List of posts to read before reading this article
   $$\begin{pmatrix}2 & 3 \\5 & 4\end{pmatrix}x=\begin{pmatrix}4 \\ 3 \end{pmatrix}$$
 </div>
 
-<div class='frame1'>Main code : symbolic method</div>
+<div class='frame1'>Main code : sumpy</div>
 ```python
 from sympy import Matrix
 
@@ -40,7 +40,7 @@ print(x)
 ```
 
 
-<div class='frame1'>Main code : numerical method</div>
+<div class='frame1'>Main code : scipy</div>
 ```python
 import numpy as np
 from scipy import linalg as la
