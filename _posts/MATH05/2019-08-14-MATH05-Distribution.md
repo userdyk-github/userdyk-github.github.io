@@ -63,7 +63,7 @@ List of posts to read before reading this article
   $$f(x; a, b) = \frac{\Gamma(a+b) x^{a-1} (1-x)^{b-1}}{\Gamma(a) \Gamma(b)}\qquad for\ 0\le x \le 1,\ \ \ \ a>0,\ b>0$$
 </div>
 
-<span class='frame1'>
+<span class='frame2'>
   Main code
 </span>
 
@@ -116,7 +116,7 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
   $$f(x; k) = \frac{1}{2^{k/2} \Gamma \left( k/2 \right)}x^{k/2-1} \exp \left( -x/2 \right)\qquad for\ x>0\ and\ k>0$$
 </div>
 
-<span class='frame1'>
+<span class='frame2'>
   Main code
 </span>
 
@@ -167,7 +167,7 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
   $$scale\ =\ 1/\lambda$$
 </div>
 
-<span class='frame1'>
+<span class='frame2'>
   Main code
 </span>
 
@@ -216,7 +216,7 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
   $$f(x; df_1, df_2) = \frac{df_2^{df_2/2} df_1^{df_1/2} x^{df_1 / 2-1}}{(df_2+df_1 x)^{(df_1+df_2)/2}B(df_1/2, df_2/2)}\qquad for\ x>0$$
 </div>
 
-<span class='frame1'>
+<span class='frame2'>
   Main code
 </span>
 
@@ -270,7 +270,7 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
   $$f(x; a) = \frac{x^{a-1} \exp(-x)}{\Gamma(a)}\qquad for\ x\ge0,\ a>0$$
 </div>
 
-<span class='frame1'>
+<span class='frame2'>
   Main code
 </span>
 
@@ -318,7 +318,7 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
   $$f(x) = \frac{1}{2} \exp(-|x|)\qquad for\ a\ real\ number\ x$$
 </div>
 
-<span class='frame1'>
+<span class='frame2'>
   Main code
 </span>
 
@@ -369,7 +369,7 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
   $$f(x) = \frac{\exp(-x)}{(1+\exp(-x))^2}$$
 </div>
 
-<span class='frame1'>
+<span class='frame2'>
   Main code
 </span>
 
@@ -418,7 +418,7 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
   $$f(x; s) = \frac{1}{s x \sqrt{2\pi}}\exp\left(-\frac{\log^2(x)}{2s^2}\right)\qquad for\ x>0,\ s>0$$
 </div>
 
-<span class='frame1'>
+<span class='frame2'>
   Main code
 </span>
 
@@ -468,7 +468,7 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
   $$f(x;\mu,\sigma) = \frac{\exp(-(x-\mu)^2/2)}{\sqrt{2\pi\sigma}}\qquad for\ a\ real\ number\ x$$
 </div>
 
-<span class='frame1'>
+<span class='frame2'>
   Main code
 </span>
 
@@ -519,7 +519,7 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
   $$ where\ x\ is\ a\ real\ number\ and\ degrees\ of\ freedom\ parameter\ \nu>0$$
 </div>
 
-<span class='frame1'>
+<span class='frame2'>
   Main code
 </span>
 
@@ -568,7 +568,7 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
   $$ [𝑙𝑜𝑐,𝑙𝑜𝑐 + 𝑠𝑐𝑎𝑙𝑒] $$
 </div>
 
-<span class='frame1'>
+<span class='frame2'>
   Main code
 </span>
 
@@ -618,7 +618,7 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
   $$Weibull\ min\ :\ f(x; c) = c x^{c-1} \exp(-x^c)\qquad for\ x\ge0,\ c>0$$
 </div>
 
-<span class='frame1'>
+<span class='frame2'>
   Main code
 </span>
 
@@ -666,7 +666,7 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
   $$Weibull\ max\ :\ f(x; c) = c (-x)^{c-1} \exp(-(-x)^c)\qquad for\ x<0,\ c>0$$
 </div>
 
-<span class='frame1'>
+<span class='frame2'>
   Main code
 </span>
 
@@ -714,7 +714,7 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
   $$Weibull\ double\ :\ f(x; c) = c / 2 |x|^{c-1} \exp(-|x|^c)\qquad for\ a\ real\ numbers,\ x\ and\ c>0$$
 </div>
 
-<span class='frame1'>
+<span class='frame2'>
   Main code
 </span>
 
@@ -758,7 +758,7 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
 
 ---
 
-<span class='frame1'>Sub-code</span>
+<span class='frame2'>Sub-code</span>
 
 ```python
 # Random variables
