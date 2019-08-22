@@ -50,7 +50,7 @@ x = la.solve(A,b)
 
 print(x)
 ```
-
+<br><br><br>
 
 
 ---
@@ -74,6 +74,7 @@ solution = solve(A*x - b, x_vars)
 
 print(solution)
 ```
+<br><br>
 
 ### Data fitting
 
@@ -108,7 +109,7 @@ ax.set_xlabel(r"$x$", fontsize=18)
 ax.set_ylabel(r"$y$", fontsize=18)   
 ax.legend(loc=2)
 ```
-
+<br><br><br>
 
 ---
 
