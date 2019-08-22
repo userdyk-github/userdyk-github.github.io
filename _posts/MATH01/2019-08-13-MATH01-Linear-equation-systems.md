@@ -153,6 +153,7 @@ ax.set_xlabel(r"$x$", fontsize=18)
 ax.set_ylabel(r"$y$", fontsize=18)   
 ax.legend(loc=2)
 ```
+![Figure_1](https://user-images.githubusercontent.com/52376448/63554103-7f5b9800-c577-11e9-8dd6-55d34a2eab6b.png)
 
 ---
 
