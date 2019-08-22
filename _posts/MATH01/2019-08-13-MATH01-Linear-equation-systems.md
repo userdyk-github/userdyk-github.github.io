@@ -23,7 +23,7 @@ List of posts to read before reading this article
 
 ## Square Systems
 
-<div class='frame1'>symbolic</div>
+<div class='frame1'>Main code : symbolic</div>
 ```python
 from sympy import Matrix
 
@@ -34,7 +34,7 @@ x = A.solve(b)
 print(x)
 ```
 
-<div class='frame1'>numerical</div>
+<div class='frame1'>Main code : numerical</div>
 ```python
 import numpy as np
 from scipy import linalg as la
