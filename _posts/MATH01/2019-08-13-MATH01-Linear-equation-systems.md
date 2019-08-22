@@ -23,9 +23,9 @@ List of posts to read before reading this article
 
 ## Square Systems : $$Ax=b$$
 
-$$\begin{pmatrix}2 & 3 \\5 & 4\end{pmatrix}x=\begin{pmatrix}4 & 3 \end{pmatrix}$$
+$$\begin{pmatrix}2 & 3 \\5 & 4\end{pmatrix}x=\begin{pmatrix}4 \\ 3 \end{pmatrix}$$
 
-<div class='frame1'>Main code : symbolic</div>
+<div class='frame1'>Main code : symbolic method</div>
 ```python
 from sympy import Matrix
 
@@ -36,12 +36,8 @@ x = A.solve(b)
 print(x)
 ```
 
-\begin{pmatrix}
-x & y \\
-z & v
-\end{pmatrix}
 
-<div class='frame1'>Main code : numerical</div>
+<div class='frame1'>Main code : numerical method</div>
 ```python
 import numpy as np
 from scipy import linalg as la
