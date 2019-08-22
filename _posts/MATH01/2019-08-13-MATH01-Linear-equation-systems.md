@@ -21,13 +21,9 @@ List of posts to read before reading this article
 
 ---
 
-## Square Systems $$Ax=b$$
+## Square Systems : $$Ax=b$$
 
-
-\begin{pmatrix}
-x & y \\
-z & v
-\end{pmatrix}
+$$\begin{pmatrix}2 & 3 \\5 & 4\end{pmatrix}x=\begin{pmatrix}4 & 3 \end{pmatrix}$$
 
 <div class='frame1'>Main code : symbolic</div>
 ```python
@@ -40,7 +36,11 @@ x = A.solve(b)
 print(x)
 ```
 
-$$Ax=b$$
+\begin{pmatrix}
+x & y \\
+z & v
+\end{pmatrix}
+
 <div class='frame1'>Main code : numerical</div>
 ```python
 import numpy as np
