@@ -22,7 +22,7 @@ List of posts to read before reading this article
 ---
 
 
-## Square Systems
+## <span>Square Systems</span>
 <div style="color:black; font-size: 80%; text-align: center;">
   $$Ax=b$$ 
   $$\begin{pmatrix}2 & 3 \\5 & 4\end{pmatrix}x=\begin{pmatrix}4 \\ 3 \end{pmatrix}$$
