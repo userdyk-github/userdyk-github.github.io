@@ -28,7 +28,7 @@ List of posts to read before reading this article
 from sympy import Matrix
 
 A = Matrix([[2,3],[5,4]])
-b = Matrix([4,5])
+b = Matrix([4,3])
 x = A.solve(b)
 
 print(x)
