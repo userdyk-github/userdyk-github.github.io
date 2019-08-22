@@ -28,7 +28,7 @@ List of posts to read before reading this article
   $$\begin{pmatrix}2 & 3 \\5 & 4\end{pmatrix}x=\begin{pmatrix}4 \\ 3 \end{pmatrix}$$
 </div>
 
-<div class='frame1'>Main code : sumpy</div>
+<div class='frame1'>Main code : method1</div>
 ```python
 from sympy import Matrix
 
@@ -40,7 +40,7 @@ print(x)
 ```
 
 
-<div class='frame1'>Main code : scipy</div>
+<div class='frame1'>Main code : method1</div>
 ```python
 import numpy as np
 from scipy import linalg as la
@@ -87,6 +87,7 @@ print(solution)
 ```python
 import numpy as np
 from scipy import linalg as la
+import matplotlib.pyplot as plt
 
 # define true model parameters
 x = np.linspace(-1, 1, 100)
@@ -111,7 +112,9 @@ ax.plot(x, y_fit, 'b', lw=2, label='Leat square fit')
 ax.set_xlabel(r"$x$", fontsize=18)    
 ax.set_ylabel(r"$y$", fontsize=18)   
 ax.legend(loc=2)
+plt.show()
 ```
+![Figure_1](https://user-images.githubusercontent.com/52376448/63553433-53d7ae00-c575-11e9-9b90-c2057b8860fc.png)
 <br><br><br>
 
 ---
