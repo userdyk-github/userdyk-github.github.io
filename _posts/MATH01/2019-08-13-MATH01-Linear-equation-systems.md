@@ -75,7 +75,7 @@ solution = solve(A*x - b, x_vars)
 print(solution)
 ```
 
-### data fitting
+### Data fitting
 
 $$\begin{pmatrix}1 & x_{1} & x_{1}^{2} \\\vdots & \vdots& \vdots \\1 & x_{m} & x_{m}^{2}\end{pmatrix}\begin{pmatrix}A \\B \\C \end{pmatrix}=\begin{pmatrix}y_{1} \\\vdots \\y_{m} \end{pmatrix} $$
 
