@@ -21,9 +21,14 @@ List of posts to read before reading this article
 
 ---
 
-## Square Systems
+## Square Systems $$Ax=b$$
 
-$$Ax=b$$
+
+\begin{pmatrix}
+x & y \\
+z & v
+\end{pmatrix}
+
 <div class='frame1'>Main code : symbolic</div>
 ```python
 from sympy import Matrix
