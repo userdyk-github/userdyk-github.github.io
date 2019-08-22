@@ -57,7 +57,9 @@ print(x)
 
 ## Rectangular Systems
 
-$$\begin{pmatrix}2 & 3 \\5 & 4\end{pmatrix}x=\begin{pmatrix}4 \\ 3 \end{pmatrix}$$
+$$\begin{pmatrix}1 & 2 & 3 \\4 & 5 &6\end{pmatrix}
+\begin{pmatrix}\x_{1} \\ \x_{2} \\ \x_{3} \end{pmatrix}
+=\begin{pmatrix}7 \\ 8 \end{pmatrix}$$
 
 
 ---
