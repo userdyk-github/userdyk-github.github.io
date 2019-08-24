@@ -27,10 +27,8 @@ List of posts to read before reading this article
 
 I will introduce data fitting techniques. The goal is to answer which mathematical graph are best suited to data given to you, as shown in the figure on the left. ***As a result, as an answer to this question, if you run the below following main code, you can get the above graph on the right.*** 
 
-<dl>
-<dt class='frame1'>Main code</dt>
-</dl>
 
+`Main code`
 ```python
 # [0] : Importing modules
 import numpy as np
@@ -83,10 +81,8 @@ $$ data \xrightarrow{curve\ fitting} y = a e^{-bx}+c $$ </div>
 
 It might be difficult to understand the meaning by looking at only the above code. To simplify the problem, the mathematical graph you are going to fit on will be confined to models that can be mathematically represented in the form of $$ a e^{-bx} + c $$ rather than in any form. In other word, the following details-code [1] below is the description of this as a programming language. Instead of thinking about the complex number of cases, you should approach simple thing first. ***And then in order to finally obtain the curve you want to fit, you must find the value of the constant $$ a, b, c $$.***
 
-<dl>
-<dt class='frame2'>Details-code [1] : Mathematical representation of the curve you want to fit</dt>
-</dl>
 
+`Details-code [1] : Mathematical representation of the curve you want to fit`
 ```python
 # [1] : Mathematical representation of the graph you want to fit
 def func(x, a, b, c):
@@ -101,10 +97,8 @@ Before you find the values of a, b, and c defined above, let's look at the data.
 
 
 
-<dl>
-<dt class='frame2'>Details-code [2] : Input Data</dt>
-</dl>
 
+`Details-code [2] : Input Data`
 ```python
 # [2] : Input Data
 np.random.seed(1729)
@@ -137,10 +131,9 @@ $$ pcov =
 \end{pmatrix} $$ <br>
 </div>
 
-<dl>
-<dt class='frame2'>Details-code [3] : Output through input target function(1)</dt>
-</dl>
 
+
+`Details-code [3] : Output through input target function(1)`
 ```python
 # [3] : Output through input target function(1)
 popt, pcov = curve_fit(func, xdata, ydata)
@@ -164,10 +157,7 @@ $$ pcov =
 
 
 
-<dl>
-<dt class='frame2'>Details-code [4] : Output through input target function(2)</dt>
-</dl>
-
+`Details-code [4] : Output through input target function(2)`
 ```python
 # [4] : Output through input target function(2)
 popt, pcov = curve_fit(func, xdata, ydata, bounds=(0, [3., 1., 0.5]))
@@ -188,10 +178,9 @@ $$ pcov =
 </div>
 <br><br><br>
 
-<dl>
-<dt class='frame2'>Details-code [5]</dt>
-</dl>
 
+
+`Details-code [5]`
 ```python
 # [5] : Visualization
 plt.xlabel('x')
