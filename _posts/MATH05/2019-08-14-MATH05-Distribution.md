@@ -61,7 +61,7 @@ List of posts to read before reading this article
 
 
 
----
+<hr class="division2">
 
 ## **Continous distribution**
 
