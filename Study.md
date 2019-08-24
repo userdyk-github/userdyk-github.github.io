@@ -150,6 +150,7 @@ title: Study
 - <a href='https://userdyk-github.github.io/math01/MATH01-Linear-equation-systems.html'>Linear equation systems</a>
 - <a href='https://userdyk-github.github.io/math01/MATH01-Eigenvalue-problems.html'>Eigenvalue problems</a>
 - <a href='https://userdyk-github.github.io/math01/MATH01-Nonlinear-equations.html'>Nonlinear equations</a>
+- <a href='https://userdyk-github.github.io/math01/MATH01-Singular-value-decomposition.html'>Singular value decomposition</a>
 - <a href='https://userdyk-github.github.io/math01/MATH01-Sparse-matrices.html'>Sparse matrices</a>
 
 
@@ -165,8 +166,8 @@ title: Study
 - <a href='https://userdyk-github.github.io/math02/MATH02-Integrals-calculus.html'>Integral calculus</a>
 - <a href='https://userdyk-github.github.io/math02/MATH02-Vector-calculus.html'>Vector calculus</a>
 - <a href='https://userdyk-github.github.io/math02/MATH02-Special-functions-and-numbers.html'>Special functions and numbers</a>
-
-
+- <a href='https://userdyk-github.github.io/math02/MATH02-Variations.html'>Variations</a>
+- <a href='https://userdyk-github.github.io/math02/MATH02-Mean-value-theorem.html'>Mean value theorem</a>
 
 
 ---
@@ -175,7 +176,9 @@ title: Study
 
 - <a href='https://userdyk-github.github.io/math03/MATH03-Complex-functions.html'>Complex functions</a>
 - <a href='https://userdyk-github.github.io/math03/MATH03-Cauchy–Riemann-equations.html'>Cauchy–Riemann equations</a>
+- <a href='https://userdyk-github.github.io/math03/MATH03-Line-integral.html'>Line integral</a>
 - <a href='https://userdyk-github.github.io/math03/MATH03-Cauchy-integral-theorem-and-formula.html'>Cauchy integral theorem and formula</a>
+- <a href='https://userdyk-github.github.io/math03/MATH03-Laurent-series.html'>Laurent series</a>
 - <a href='https://userdyk-github.github.io/math03/MATH03-Liouville-theorem.html'>Liouville theorem</a>
 - <a href='https://userdyk-github.github.io/math03/MATH03-Residue-theorem.html'>Residue theorem</a>
 
@@ -190,7 +193,10 @@ title: Study
 - <a href='https://userdyk-github.github.io/math04/MATH04-PDE-finite-element-method.html'>PDE finite element method</a>
 - <a href='https://userdyk-github.github.io/math04/MATH04-PDE-finite-difference-method.html'>PDE finite difference method</a>
 - <a href='https://userdyk-github.github.io/math04/MATH04-PDE-finite-volume-method.html'>PDE finite volume method</a>
-
+- <a href='https://userdyk-github.github.io/math04/MATH04-ODE-Sturm–Liouville-theory.html'>Sturm–Liouville theory</a>
+- <a href='https://userdyk-github.github.io/math04/MATH04-ODE-Green-function.html'>Green function</a>
+- <a href='https://userdyk-github.github.io/math04/MATH04-ODE-numerical-methods.html'>ODE numerical methods</a>
+- <a href='https://userdyk-github.github.io/math04/MATH04-ODE-numerical-methods.html'>ODE numerical methods</a>
 
 ---
 
