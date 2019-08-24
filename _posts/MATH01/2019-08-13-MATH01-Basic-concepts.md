@@ -380,7 +380,6 @@ import sympy
 #sympy.init_printing()
 
 M = sympy.Matrix([[1, 2], [3, 4]])
-
 M.singular_values()
 ```
 
