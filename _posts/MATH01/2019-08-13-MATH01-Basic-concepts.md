@@ -26,6 +26,7 @@ List of posts to read before reading this article
 ### Columns vector
 
 <span class='frame2 jb-small'>INPUT</span>
+`INPUT`
 ```python
 import sympy
 #sympy.init_printing()
