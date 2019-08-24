@@ -98,11 +98,18 @@ Matrix([
 <span class='frame2 jb-small'>INPUT</span>
 ```python
 import sympy
+
+a, b, c, d = sympy.symbols("a, b, c, d")
+M = sympy.Matrix([[a, b], [c, d]])
+
+M.T
 ```
 
 <span class='frame2 jb-small'>OUTPUT</span>
 ```python
-
+Matrix([
+[a, c],
+[b, d]])
 ```
 <br><br>
 
@@ -111,11 +118,18 @@ import sympy
 <span class='frame2 jb-small'>INPUT</span>
 ```python
 import sympy
+
+a, b, c, d = sympy.symbols("a, b, c, d")
+M = sympy.Matrix([[a, b], [c, d]])
+
+M.H
 ```
 
 <span class='frame2 jb-small'>OUTPUT</span>
 ```python
-
+Matrix([
+[conjugate(a), conjugate(c)],
+[conjugate(b), conjugate(d)]])
 ```
 <br><br>
 
@@ -124,10 +138,16 @@ import sympy
 <span class='frame2 jb-small'>INPUT</span>
 ```python
 import sympy
+
+a, b, c, d = sympy.symbols("a, b, c, d")
+M = sympy.Matrix([[a, b], [c, d]])
+
+M.trace()
 ```
 
 <span class='frame2 jb-small'>OUTPUT</span>
 ```python
+a + d
 ```
 <br><br>
 
@@ -136,10 +156,16 @@ import sympy
 <span class='frame2 jb-small'>INPUT</span>
 ```python
 import sympy
+
+a, b, c, d = sympy.symbols("a, b, c, d")
+M = sympy.Matrix([[a, b], [c, d]])
+
+M.det()
 ```
 
 <span class='frame2 jb-small'>OUTPUT</span>
 ```python
+a*d - b*c
 ```
 <br><br>
 
