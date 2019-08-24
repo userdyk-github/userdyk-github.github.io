@@ -27,7 +27,7 @@ some text and [here is possible to download the file in PDF][1]
 
 [1]:{{ site.url }}/download/file.py
 
----
+<hr class="division2">
 
 ## The Parabolic Heat Equation (Theory)
 
@@ -83,11 +83,11 @@ p . show( )
 print ('finished')
 ```
 
----
+<hr class="division2">
 
 ##  Assessment and Visualization
 
----
+<hr class="division2">
 
 ##  Improved Heat Flow: Crank–Nicolson Method
 
