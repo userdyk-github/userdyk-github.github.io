@@ -53,7 +53,24 @@ Matrix([[1, 2]])
 ```
 <br><br>
 
-### Value of a corresponding element
+### Value of a corresponding element(1)
+
+<span class='frame2 jb-small'>INPUT</span>
+```python
+import sympy
+sympy.Matrix(3, 4, lambda m, n: 10 * m + n)
+```
+
+<span class='frame2 jb-small'>OUTPUT</span>
+```python
+Matrix([
+[ 0,  1,  2,  3],
+[10, 11, 12, 13],
+[20, 21, 22, 23]])
+```
+<br><br>
+
+### Value of a corresponding element(2)
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
