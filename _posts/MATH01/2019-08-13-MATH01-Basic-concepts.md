@@ -12,6 +12,7 @@ List of posts to read before reading this article
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
+***
 
 ## Contents
 {:.no_toc}
