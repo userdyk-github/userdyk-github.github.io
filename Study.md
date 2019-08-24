@@ -148,19 +148,19 @@ title: Study
 
 - <a href='https://userdyk-github.github.io/math01/MATH01-.html'>Basic</a>
 - <a href='https://userdyk-github.github.io/math01/MATH01-Linear-equation-systems.html'>Linear equation systems</a>
-- <a href='https://userdyk-github.github.io/math01/MATH01-Eigenvalue-problems.html'>Eigenvalue Problems</a>
-- <a href='https://userdyk-github.github.io/math01/MATH01-Nonlinear-equations.html'>Nonlinear Equations</a>
+- <a href='https://userdyk-github.github.io/math01/MATH01-Eigenvalue-problems.html'>Eigenvalue problems</a>
+- <a href='https://userdyk-github.github.io/math01/MATH01-Nonlinear-equations.html'>Nonlinear equations</a>
 - <a href='https://userdyk-github.github.io/math01/MATH01-.html'>5</a>
 
 ---
 
 ## MATH02 : Calulus
 
-- <a href='https://userdyk-github.github.io/math02/MATH02-.html'>Derivatives</a>
-- <a href='https://userdyk-github.github.io/math02/MATH02-.html'>Integrals</a>
-- <a href='https://userdyk-github.github.io/math02/MATH02-.html'>Series</a>
-- <a href='https://userdyk-github.github.io/math02/MATH02-.html'>Limits</a>
-- <a href='https://userdyk-github.github.io/math02/MATH02-.html'>Sums and Products</a>
+- <a href='https://userdyk-github.github.io/math02/MATH02-Derivatives.html'>Derivatives</a>
+- <a href='https://userdyk-github.github.io/math02/MATH02-Integrals.html'>Integrals</a>
+- <a href='https://userdyk-github.github.io/math02/MATH02-Series.html'>Series</a>
+- <a href='https://userdyk-github.github.io/math02/MATH02-Limits.html'>Limits</a>
+- <a href='https://userdyk-github.github.io/math02/MATH02-Sums-and-products.html'>Sums and products</a>
 
 ---
 
