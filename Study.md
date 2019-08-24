@@ -66,7 +66,6 @@ title: Study
 
 ## EE01 : Integrated circuits
 
-- <a href='https://userdyk-github.github.io/ee01/EE01-.html'>1</a>
 - <a href='https://userdyk-github.github.io/ee01/EE01-.html'>Transistor–Transistor Logic</a>
 - <a href='https://userdyk-github.github.io/ee01/EE01-.html'>Emitter-Coupled Logic</a>
 - <a href='https://userdyk-github.github.io/ee01/EE01-.html'>NMOS Logic</a>
