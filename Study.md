@@ -181,11 +181,13 @@ title: Study
 
 ## MATH04 : Differential equation
 
-- <a href='https://userdyk-github.github.io/math04/MATH04-.html'>1</a>
-- <a href='https://userdyk-github.github.io/math04/MATH04-.html'>2</a>
-- <a href='https://userdyk-github.github.io/math04/MATH04-.html'>3</a>
-- <a href='https://userdyk-github.github.io/math04/MATH04-.html'>4</a>
-- <a href='https://userdyk-github.github.io/math04/MATH04-.html'>5</a>
+- <a href='https://userdyk-github.github.io/math04/MATH04-ODE-Analytical-solutions.html'>ODE Analytical solutions</a>
+- <a href='https://userdyk-github.github.io/math04/MATH04-ODE-numerical-methods.html'>ODE numerical methods</a>
+- <a href='https://userdyk-github.github.io/math04/MATH04-ODE-numerical-integration.html'>ODE numerical integration</a>
+- <a href='https://userdyk-github.github.io/math04/MATH04-PDE-Analytical-solutions.html'>PDE Analytical solutions</a>
+- <a href='https://userdyk-github.github.io/math04/MATH04-PDE-finite-element-method.html'>PDE finite element method</a>
+- <a href='https://userdyk-github.github.io/math04/MATH04-PDE-finite-difference-method.html'>PDE finite difference method</a>
+- <a href='https://userdyk-github.github.io/math04/MATH04-PDE-finite-volume-method.html'>PDE finite volume method</a>
 
 
 ---
