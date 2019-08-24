@@ -5,7 +5,7 @@ title: Study
 
 ## AI01 : Data science analysis
 
-- <a href='https://userdyk-github.github.io/ai01/AI01-.html'>1</a>
+- <a href='https://userdyk-github.github.io/ai01/AI01-.html'>Image Data Preparation</a>
 - <a href='https://userdyk-github.github.io/ai01/AI01-.html'>2</a>
 - <a href='https://userdyk-github.github.io/ai01/AI01-.html'>3</a>
 - <a href='https://userdyk-github.github.io/ai01/AI01-.html'>4</a>
@@ -35,9 +35,11 @@ title: Study
 
 - <a href='https://userdyk-github.github.io/ai03/AI03-Fundamental-of-deep-learning.html'>Fundamental of deep learning</a>
 - <a href='https://userdyk-github.github.io/ai03/AI03-.html'>Convolutional neural networks</a>
-- <a href='https://userdyk-github.github.io/ai03/AI03-.html'>3</a>
-- <a href='https://userdyk-github.github.io/ai03/AI03-.html'>4</a>
-- <a href='https://userdyk-github.github.io/ai03/AI03-.html'>5</a>
+- <a href='https://userdyk-github.github.io/ai03/AI03-.html'>Recurrent neural networks</a>
+- <a href='https://userdyk-github.github.io/ai03/AI03-.html'>Generative adversarial networks</a>
+- <a href='https://userdyk-github.github.io/ai03/AI03-.html'>Auto-encoders</a>
+- <a href='https://userdyk-github.github.io/ai03/AI03-.html'>Variational autoencoder</a>
+
 
 ---
 
@@ -53,11 +55,12 @@ title: Study
 
 ## AI05 : Computer vision
 
-- <a href='https://userdyk-github.github.io/ai05/AI05-.html'>1</a>
-- <a href='https://userdyk-github.github.io/ai05/AI05-.html'>2</a>
-- <a href='https://userdyk-github.github.io/ai05/AI05-.html'>3</a>
-- <a href='https://userdyk-github.github.io/ai05/AI05-.html'>4</a>
-- <a href='https://userdyk-github.github.io/ai05/AI05-.html'>5</a>
+- <a href='https://userdyk-github.github.io/ai05/AI05-.html'>Image Classification</a>
+- <a href='https://userdyk-github.github.io/ai05/AI05-.html'>Object Detection</a>
+- <a href='https://userdyk-github.github.io/ai05/AI05-.html'>Face Recognition</a>
+- <a href='https://userdyk-github.github.io/ai05/AI05-.html'>Image segmentation</a>
+- <a href='https://userdyk-github.github.io/ai05/AI05-.html'>Motion analysis</a>
+- <a href='https://userdyk-github.github.io/ai05/AI05-.html'>Image restoration</a>
 
 ---
 
