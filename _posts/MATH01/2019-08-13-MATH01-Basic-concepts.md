@@ -32,6 +32,7 @@ List of posts to read before reading this article
 <span class='frame2 jb-small'>OUTPUT</span>
 ```python
 ```
+<br><br>
 
 ### the adjoint of a matrix
 
@@ -42,6 +43,7 @@ List of posts to read before reading this article
 <span class='frame2 jb-small'>OUTPUT</span>
 ```python
 ```
+<br><br>
 
 ### the trace (sum of diagonal elements) of a matrix
 
@@ -52,6 +54,7 @@ List of posts to read before reading this article
 <span class='frame2 jb-small'>OUTPUT</span>
 ```python
 ```
+<br><br>
 
 ### the determinant of a matrix
 
@@ -62,6 +65,7 @@ List of posts to read before reading this article
 <span class='frame2 jb-small'>OUTPUT</span>
 ```python
 ```
+<br><br>
 
 ### the inverse of a matrix
 
@@ -72,6 +76,7 @@ List of posts to read before reading this article
 <span class='frame2 jb-small'>OUTPUT</span>
 ```python
 ```
+<br><br>
 
 ### the LU decomposition of a matrix
 
@@ -82,6 +87,7 @@ List of posts to read before reading this article
 <span class='frame2 jb-small'>OUTPUT</span>
 ```python
 ```
+<br><br>
 
 ### a linear system of equations in the form Mx = b, using LU factorization
 
@@ -92,6 +98,7 @@ List of posts to read before reading this article
 <span class='frame2 jb-small'>OUTPUT</span>
 ```python
 ```
+<br><br>
 
 ### the QR decomposition of a matrix
 
@@ -102,6 +109,7 @@ List of posts to read before reading this article
 <span class='frame2 jb-small'>OUTPUT</span>
 ```python
 ```
+<br><br>
 
 ### a linear system of equations in the form Mx = b, using QR factorization
 
@@ -112,6 +120,7 @@ List of posts to read before reading this article
 <span class='frame2 jb-small'>OUTPUT</span>
 ```python
 ```
+<br><br>
 
 ### Diagonalization of a matrix M
 
@@ -122,6 +131,7 @@ List of posts to read before reading this article
 <span class='frame2 jb-small'>OUTPUT</span>
 ```python
 ```
+<br><br>
 
 ### the norm of a matrix
 
@@ -132,6 +142,7 @@ List of posts to read before reading this article
 <span class='frame2 jb-small'>OUTPUT</span>
 ```python
 ```
+<br><br>
 
 ### a set of vectors that span the null space of a Matrix
 
@@ -142,6 +153,7 @@ List of posts to read before reading this article
 <span class='frame2 jb-small'>OUTPUT</span>
 ```python
 ```
+<br><br>
 
 ### the rank of a matrix
 
@@ -152,6 +164,7 @@ List of posts to read before reading this article
 <span class='frame2 jb-small'>OUTPUT</span>
 ```python
 ```
+<br><br>
 
 ### the singular values of a matrix
 
@@ -162,6 +175,7 @@ List of posts to read before reading this article
 <span class='frame2 jb-small'>OUTPUT</span>
 ```python
 ```
+<br><br>
 
 ### a linear system of equations in the form Mx = b
 
@@ -172,6 +186,7 @@ List of posts to read before reading this article
 <span class='frame2 jb-small'>OUTPUT</span>
 ```python
 ```
+<br><br>
 
 ---
 
