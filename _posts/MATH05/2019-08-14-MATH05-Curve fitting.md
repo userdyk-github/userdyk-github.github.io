@@ -194,15 +194,15 @@ plt.show()
 <br><br><br>
 
  
----
+<hr class="division2">
 
 ## **Gaussian model fitting**
 
----
+<hr class="division2">
 
 ## **Two gaussian model fitting**
 
----
+<hr class="division2">
 
 ## **Curve fit with seaborn based on specific distribution**
 
