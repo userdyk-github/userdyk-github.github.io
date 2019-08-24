@@ -19,7 +19,7 @@ List of posts to read before reading this article
 * ToC
 {:toc}
 
----
+<hr class="division1">
 
 ## **Expoential model fitting**
 
@@ -206,7 +206,7 @@ plt.show()
 
 ## **Curve fit with seaborn based on specific distribution**
 
----
+<hr class="division1">
 
 List of posts followed by this article
 - [post1](https://userdyk-github.github.io/)
