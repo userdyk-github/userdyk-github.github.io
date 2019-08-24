@@ -23,6 +23,7 @@ List of posts to read before reading this article
 
 ## Regression with statsmodel
 
+<hr class="division2">
 
 ## Regression with sklearn
 
@@ -82,11 +83,11 @@ fig, ax = plot_residuals_and_coeff(resid_train, resid_test,  model.coef_)
 ```
 
 
----
+<hr class="division2">
 
 ## Regression with tensorflow
 
----
+<hr class="division2">
 
 ## Regression with pytorch
 
