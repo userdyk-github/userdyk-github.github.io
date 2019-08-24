@@ -20,6 +20,8 @@ List of posts to read before reading this article
 {:toc}
 
 ---
+---
+---
 
 ## **Expoential model fitting**
 
@@ -194,21 +196,26 @@ plt.show()
 <br><br><br>
 
  
-
-
+---
+---
 ---
 
 ## **Gaussian model fitting**
 
 ---
+---
+---
 
 ## **Two gaussian model fitting**
 
-
+---
+---
 ---
 
 ## **Curve fit with seaborn based on specific distribution**
 
+---
+---
 ---
 
 List of posts followed by this article
