@@ -23,8 +23,6 @@ List of posts to read before reading this article
 
 ## **Functions and Methods for Operating**
 
----
-
 ### Columns vector
 
 `INPUT`
