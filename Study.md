@@ -152,6 +152,8 @@ title: Study
 - <a href='https://userdyk-github.github.io/math01/MATH01-Nonlinear-equations.html'>Nonlinear equations</a>
 - <a href='https://userdyk-github.github.io/math01/MATH01-Sparse-matrices.html'>Sparse matrices</a>
 
+
+
 ---
 
 ## MATH02 : Calulus
@@ -171,11 +173,11 @@ title: Study
 
 ## MATH03 : Complex analysis
 
-- <a href='https://userdyk-github.github.io/math03/MATH03-.html'>1</a>
-- <a href='https://userdyk-github.github.io/math03/MATH03-.html'>2</a>
-- <a href='https://userdyk-github.github.io/math03/MATH03-.html'>3</a>
-- <a href='https://userdyk-github.github.io/math03/MATH03-.html'>4</a>
-- <a href='https://userdyk-github.github.io/math03/MATH03-.html'>5</a>
+- <a href='https://userdyk-github.github.io/math03/MATH03-Complex-functions.html'>Complex functions</a>
+- <a href='https://userdyk-github.github.io/math03/MATH03-Cauchy–Riemann-equations.html'>Cauchy–Riemann equations</a>
+- <a href='https://userdyk-github.github.io/math03/MATH03-Cauchy-integral-theorem-and-formula.html'>Cauchy integral theorem and formula</a>
+- <a href='https://userdyk-github.github.io/math03/MATH03-Liouville-theorem.html'>Liouville theorem</a>
+- <a href='https://userdyk-github.github.io/math03/MATH03-Residue-theorem.html'>Residue theorem</a>
 
 ---
 
@@ -205,6 +207,8 @@ title: Study
 - <a href='https://userdyk-github.github.io/math05/MATH05-Partition-of-variance.html'>Partition of variance</a>
 - <a href='https://userdyk-github.github.io/math05/MATH05-Non-parametric-tests.html'>Non-parametric tests</a>
 - <a href='https://userdyk-github.github.io/math05/MATH05-Time-series.html'>Time series</a>
+- <a href='https://userdyk-github.github.io/math05/MATH05-Sparse-Principal-component-analysis.html'>Principal component analysis</a>
+
 
 
 ---
@@ -212,10 +216,10 @@ title: Study
 ## MATH06 : Optimization
 
 - <a href='https://userdyk-github.github.io/math06/MATH06-Interpolation.html'>Interpolation</a>
-- <a href='https://userdyk-github.github.io/math06/MATH06-.html'>2</a>
-- <a href='https://userdyk-github.github.io/math06/MATH06-.html'>3</a>
-- <a href='https://userdyk-github.github.io/math06/MATH06-.html'>4</a>
-- <a href='https://userdyk-github.github.io/math06/MATH06-.html'>5</a>
-
+- <a href='https://userdyk-github.github.io/math06/MATH06-Unconstrained-nonlinear.html'>Unconstrained nonlinear</a>
+- <a href='https://userdyk-github.github.io/math06/MATH06-Constrained-nonlinear.html'>Constrained nonlinear</a>
+- <a href='https://userdyk-github.github.io/math06/MATH06-Convex-optimization.html'>Convex optimization</a>
+- <a href='https://userdyk-github.github.io/math06/MATH06-Combinatorial.html'>Combinatorial</a>
+- <a href='https://userdyk-github.github.io/math06/MATH06-Metaheuristics.html'>Metaheuristics</a>
 
 ---
