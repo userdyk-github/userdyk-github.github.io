@@ -67,20 +67,32 @@ title: Study
 ## EE01 : Integrated circuits
 
 - <a href='https://userdyk-github.github.io/ee01/EE01-.html'>1</a>
-- <a href='https://userdyk-github.github.io/ee01/EE01-.html'>2</a>
-- <a href='https://userdyk-github.github.io/ee01/EE01-.html'>3</a>
-- <a href='https://userdyk-github.github.io/ee01/EE01-.html'>4</a>
-- <a href='https://userdyk-github.github.io/ee01/EE01-.html'>5</a>
+- <a href='https://userdyk-github.github.io/ee01/EE01-.html'>Transistor–Transistor Logic</a>
+- <a href='https://userdyk-github.github.io/ee01/EE01-.html'>Emitter-Coupled Logic</a>
+- <a href='https://userdyk-github.github.io/ee01/EE01-.html'>NMOS Logic</a>
+- <a href='https://userdyk-github.github.io/ee01/EE01-.html'>CMOS Logic</a>
+- <a href='https://userdyk-github.github.io/ee01/EE01-.html'>Low-Power CMOS Logic</a>
+- <a href='https://userdyk-github.github.io/ee01/EE01-.html'>BiCMOS Logic</a>
+- <a href='https://userdyk-github.github.io/ee01/EE01-.html'>Interfacing between Digital Logic Circuits</a>
+- <a href='https://userdyk-github.github.io/ee01/EE01-.html'>BiCMOS Logic</a>
+- <a href='https://userdyk-github.github.io/ee01/EE01-.html'>Interconnect</a>
+- <a href='https://userdyk-github.github.io/ee01/EE01-.html'>Bistable Circuits</a>
+- <a href='https://userdyk-github.github.io/ee01/EE01-.html'>Digital Memories</a>
+- <a href='https://userdyk-github.github.io/ee01/EE01-.html'>Design and Layout</a>
+- <a href='https://userdyk-github.github.io/ee01/EE01-.html'>Integrated Circuit Packages</a>
 
 ---
 
 ## EE02 : Semiconductor devices
 
-- <a href='https://userdyk-github.github.io/ee02/EE02-.html'>1</a>
-- <a href='https://userdyk-github.github.io/ee02/EE02-.html'>2</a>
-- <a href='https://userdyk-github.github.io/ee02/EE02-.html'>3</a>
-- <a href='https://userdyk-github.github.io/ee02/EE02-.html'>4</a>
-- <a href='https://userdyk-github.github.io/ee02/EE02-.html'>5</a>
+- <a href='https://userdyk-github.github.io/ee02/EE02-.html'>Semiconductor Physics</a>
+- <a href='https://userdyk-github.github.io/ee02/EE02-.html'>p-n Junctions</a>
+- <a href='https://userdyk-github.github.io/ee02/EE02-.html'>Metal-Semiconductor Contacts</a>
+- <a href='https://userdyk-github.github.io/ee02/EE02-.html'>Metal-Insulator-Semiconductor Capacitors</a>
+- <a href='https://userdyk-github.github.io/ee02/EE02-.html'>Diodes</a>
+- <a href='https://userdyk-github.github.io/ee02/EE02-.html'>MOSFETs</a>
+- <a href='https://userdyk-github.github.io/ee02/EE02-.html'>Photodetectors and Solar Cells</a>
+- <a href='https://userdyk-github.github.io/ee02/EE02-.html'>Sensors</a>
 
 ---
 
@@ -127,11 +139,18 @@ title: Study
 
 ## PHY03 : Thermodynamic and statistical mechanics
 
+- <a href='https://userdyk-github.github.io/phy03/PHY03-.html'>Preliminaries</a>
+- <a href='https://userdyk-github.github.io/phy03/PHY03-.html'>Kinetic theory of gases</a>
+- <a href='https://userdyk-github.github.io/phy03/PHY03-.html'>Transport and thermal diffusion</a>
+- <a href='https://userdyk-github.github.io/phy03/PHY03-.html'>The first law</a>
+- <a href='https://userdyk-github.github.io/phy03/PHY03-.html'>The second law</a>
+- <a href='https://userdyk-github.github.io/phy03/PHY03-.html'>Thermodynamics in action</a>
+- <a href='https://userdyk-github.github.io/phy03/PHY03-.html'>Statistical mechanics</a>
+- <a href='https://userdyk-github.github.io/phy03/PHY03-.html'>Beyond the ideal gas</a>
+- <a href='https://userdyk-github.github.io/phy03/PHY03-.html'>Thermodynamics in action</a>
+- <a href='https://userdyk-github.github.io/phy03/PHY03-.html'>Special topics</a>
 - <a href='https://userdyk-github.github.io/phy03/PHY03-Heat-flow-via-time-stepping.html'>Heat flow via time stepping</a>
-- <a href='https://userdyk-github.github.io/phy03/PHY03-.html'>2</a>
-- <a href='https://userdyk-github.github.io/phy03/PHY03-.html'>3</a>
-- <a href='https://userdyk-github.github.io/phy03/PHY03-.html'>4</a>
-- <a href='https://userdyk-github.github.io/phy03/PHY03-.html'>5</a>
+
 
 ---
 
