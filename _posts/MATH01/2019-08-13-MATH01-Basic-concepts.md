@@ -23,19 +23,19 @@ List of posts to read before reading this article
 
 ## Functions and Methods for Operating
 
-<span class='frame2 jb-x-small'>INPUT</span>
+<span class='frame2 jb-small'>INPUT</span>
 ```python
 ```
 
-<span class='frame2 jb-x-small'>OUTPUT</span>
+<span class='frame2 jb-small'>OUTPUT</span>
 ```python
 ```
 
-<span class='frame2 jb-x-small'>INPUT</span>
+<span class='frame2 jb-small'>INPUT</span>
 ```python
 ```
 
-<span class='frame2 jb-x-small'>OUTPUT</span>
+<span class='frame2 jb-small'>OUTPUT</span>
 ```python
 ```
 
