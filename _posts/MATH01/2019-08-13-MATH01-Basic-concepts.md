@@ -239,14 +239,24 @@ Matrix([
 <span class='frame2 jb-small'>INPUT</span>
 ```python
 import sympy
+
+a, b, c, d = sympy.symbols("a, b, c, d")
+M = sympy.Matrix([[a, b], [c, d]])
+
+M.QRdecomposition()
 ```
 
 <span class='frame2 jb-small'>OUTPUT</span>
 ```python
+(Matrix([
+[a/sqrt(Abs(a)**2 + Abs(c)**2), (-a*(a*b/sqrt(Abs(a)**2 + Abs(c)**2) + c*d/sqrt(Abs(a)**2 + Abs(c)**2))/sqrt(Abs(a)**2 + Abs(c)**2) + b)/sqrt(Abs(a*(a*b/sqrt(Abs(a)**2 + Abs(c)**2) + c*d/sqrt(Abs(a)**2 + Abs(c)**2))/sqrt(Abs(a)**2 + Abs(c)**2) - b)**2 + Abs(c*(a*b/sqrt(Abs(a)**2 + Abs(c)**2) + c*d/sqrt(Abs(a)**2 + Abs(c)**2))/sqrt(Abs(a)**2 + Abs(c)**2) - d)**2)],
+[c/sqrt(Abs(a)**2 + Abs(c)**2), (-c*(a*b/sqrt(Abs(a)**2 + Abs(c)**2) + c*d/sqrt(Abs(a)**2 + Abs(c)**2))/sqrt(Abs(a)**2 + Abs(c)**2) + d)/sqrt(Abs(a*(a*b/sqrt(Abs(a)**2 + Abs(c)**2) + c*d/sqrt(Abs(a)**2 + Abs(c)**2))/sqrt(Abs(a)**2 + Abs(c)**2) - b)**2 + Abs(c*(a*b/sqrt(Abs(a)**2 + Abs(c)**2) + c*d/sqrt(Abs(a)**2 + Abs(c)**2))/sqrt(Abs(a)**2 + Abs(c)**2) - d)**2)]]), Matrix([
+[sqrt(Abs(a)**2 + Abs(c)**2),                                                                                                                                                                   a*b/sqrt(Abs(a)**2 + Abs(c)**2) + c*d/sqrt(Abs(a)**2 + Abs(c)**2)],
+[                          0, sqrt(Abs(a*(a*b/sqrt(Abs(a)**2 + Abs(c)**2) + c*d/sqrt(Abs(a)**2 + Abs(c)**2))/sqrt(Abs(a)**2 + Abs(c)**2) - b)**2 + Abs(c*(a*b/sqrt(Abs(a)**2 + Abs(c)**2) + c*d/sqrt(Abs(a)**2 + Abs(c)**2))/sqrt(Abs(a)**2 + Abs(c)**2) - d)**2)]]))
 ```
 <br><br>
 
-### Linear system of equations in the form Mx = b, using QR factorization
+### Linear system of equations in the form Mx = v, using QR factorization
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
@@ -318,7 +328,7 @@ import sympy
 ```
 <br><br>
 
-### Linear system of equations in the form Mx = b
+### Linear system of equations in the form Mx = v
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
