@@ -256,19 +256,17 @@ Matrix([
 import sympy
 #sympy.init_printing()
 
-a, b, c, d = sympy.symbols("a, b, c, d")
-M = sympy.Matrix([[a, b], [c, d]])
-
+M = sympy.Matrix([[1, 2], [3, 4]])
 M.QRdecomposition()
 ```
 
-`OUTPUT` : <span class='jb-small'>$$\displaystyle \left( \left[\begin{matrix}\frac{a}{\sqrt{a^{2} + c^{2}}} & \frac{- \frac{a \left(\frac{a b}{\sqrt{a^{2} + c^{2}}} + \frac{c d}{\sqrt{a^{2} + c^{2}}}\right)}{\sqrt{a^{2} + c^{2}}} + b}{\sqrt{\left(\frac{a \left(\frac{a b}{\sqrt{a^{2} + c^{2}}} + \frac{c d}{\sqrt{a^{2} + c^{2}}}\right)}{\sqrt{a^{2} + c^{2}}} - b\right)^{2} + \left(\frac{c \left(\frac{a b}{\sqrt{a^{2} + c^{2}}} + \frac{c d}{\sqrt{a^{2} + c^{2}}}\right)}{\sqrt{a^{2} + c^{2}}} - d\right)^{2}}}\\\frac{c}{\sqrt{a^{2} + c^{2}}} & \frac{- \frac{c \left(\frac{a b}{\sqrt{a^{2} + c^{2}}} + \frac{c d}{\sqrt{a^{2} + c^{2}}}\right)}{\sqrt{a^{2} + c^{2}}} + d}{\sqrt{\left(\frac{a \left(\frac{a b}{\sqrt{a^{2} + c^{2}}} + \frac{c d}{\sqrt{a^{2} + c^{2}}}\right)}{\sqrt{a^{2} + c^{2}}} - b\right)^{2} + \left(\frac{c \left(\frac{a b}{\sqrt{a^{2} + c^{2}}} + \frac{c d}{\sqrt{a^{2} + c^{2}}}\right)}{\sqrt{a^{2} + c^{2}}} - d\right)^{2}}}\end{matrix}\right], \  \left[\begin{matrix}\sqrt{a^{2} + c^{2}} & \frac{a b}{\sqrt{a^{2} + c^{2}}} + \frac{c d}{\sqrt{a^{2} + c^{2}}}\\0 & \sqrt{\left(\frac{a \left(\frac{a b}{\sqrt{a^{2} + c^{2}}} + \frac{c d}{\sqrt{a^{2} + c^{2}}}\right)}{\sqrt{a^{2} + c^{2}}} - b\right)^{2} + \left(\frac{c \left(\frac{a b}{\sqrt{a^{2} + c^{2}}} + \frac{c d}{\sqrt{a^{2} + c^{2}}}\right)}{\sqrt{a^{2} + c^{2}}} - d\right)^{2}}\end{matrix}\right]\right)$$</span>
+`OUTPUT` : <span class='jb-small'>$$\displaystyle \left( \left[\begin{matrix}\frac{\sqrt{10}}{10} & \frac{3 \sqrt{10}}{10}\\\frac{3 \sqrt{10}}{10} & - \frac{\sqrt{10}}{10}\end{matrix}\right], \  \left[\begin{matrix}\sqrt{10} & \frac{7 \sqrt{10}}{5}\\0 & \frac{\sqrt{10}}{5}\end{matrix}\right]\right)$$</span>
 ```python
 (Matrix([
-[a/sqrt(Abs(a)**2 + Abs(c)**2), (-a*(a*b/sqrt(Abs(a)**2 + Abs(c)**2) + c*d/sqrt(Abs(a)**2 + Abs(c)**2))/sqrt(Abs(a)**2 + Abs(c)**2) + b)/sqrt(Abs(a*(a*b/sqrt(Abs(a)**2 + Abs(c)**2) + c*d/sqrt(Abs(a)**2 + Abs(c)**2))/sqrt(Abs(a)**2 + Abs(c)**2) - b)**2 + Abs(c*(a*b/sqrt(Abs(a)**2 + Abs(c)**2) + c*d/sqrt(Abs(a)**2 + Abs(c)**2))/sqrt(Abs(a)**2 + Abs(c)**2) - d)**2)],
-[c/sqrt(Abs(a)**2 + Abs(c)**2), (-c*(a*b/sqrt(Abs(a)**2 + Abs(c)**2) + c*d/sqrt(Abs(a)**2 + Abs(c)**2))/sqrt(Abs(a)**2 + Abs(c)**2) + d)/sqrt(Abs(a*(a*b/sqrt(Abs(a)**2 + Abs(c)**2) + c*d/sqrt(Abs(a)**2 + Abs(c)**2))/sqrt(Abs(a)**2 + Abs(c)**2) - b)**2 + Abs(c*(a*b/sqrt(Abs(a)**2 + Abs(c)**2) + c*d/sqrt(Abs(a)**2 + Abs(c)**2))/sqrt(Abs(a)**2 + Abs(c)**2) - d)**2)]]), Matrix([
-[sqrt(Abs(a)**2 + Abs(c)**2),                                                                                                                                                                   a*b/sqrt(Abs(a)**2 + Abs(c)**2) + c*d/sqrt(Abs(a)**2 + Abs(c)**2)],
-[                          0, sqrt(Abs(a*(a*b/sqrt(Abs(a)**2 + Abs(c)**2) + c*d/sqrt(Abs(a)**2 + Abs(c)**2))/sqrt(Abs(a)**2 + Abs(c)**2) - b)**2 + Abs(c*(a*b/sqrt(Abs(a)**2 + Abs(c)**2) + c*d/sqrt(Abs(a)**2 + Abs(c)**2))/sqrt(Abs(a)**2 + Abs(c)**2) - d)**2)]]))
+[  sqrt(10)/10, 3*sqrt(10)/10],
+[3*sqrt(10)/10,  -sqrt(10)/10]]), Matrix([
+[sqrt(10), 7*sqrt(10)/5],
+[       0,   sqrt(10)/5]]))
 ```
 <br><br>
 
