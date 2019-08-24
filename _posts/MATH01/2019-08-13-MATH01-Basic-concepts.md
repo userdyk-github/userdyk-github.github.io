@@ -412,14 +412,6 @@ Matrix([
 
 ---
 
-## title2
-
----
-
-## title3
-
----
-
 List of posts followed by this article
 - [post1](https://userdyk-github.github.io/)
 - <a href='https://userdyk-github.github.io/'>post2</a>
