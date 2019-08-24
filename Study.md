@@ -156,11 +156,16 @@ title: Study
 
 ## MATH02 : Calulus
 
-- <a href='https://userdyk-github.github.io/math02/MATH02-Derivatives.html'>Derivatives</a>
-- <a href='https://userdyk-github.github.io/math02/MATH02-Integrals.html'>Integrals</a>
-- <a href='https://userdyk-github.github.io/math02/MATH02-Series.html'>Series</a>
 - <a href='https://userdyk-github.github.io/math02/MATH02-Limits.html'>Limits</a>
+- <a href='https://userdyk-github.github.io/math02/MATH02-Series.html'>Series</a>
 - <a href='https://userdyk-github.github.io/math02/MATH02-Sums-and-products.html'>Sums and products</a>
+- <a href='https://userdyk-github.github.io/math02/MATH02-Derivative-calculus.html'>Derivative calculus</a>
+- <a href='https://userdyk-github.github.io/math02/MATH02-Integrals-calculus.html'>Integral calculus</a>
+- <a href='https://userdyk-github.github.io/math02/MATH02-Vector-calculus.html'>Vector calculus</a>
+- <a href='https://userdyk-github.github.io/math02/MATH02-Special-functions-and-numbers.html'>Special functions and numbers</a>
+
+
+
 
 ---
 
