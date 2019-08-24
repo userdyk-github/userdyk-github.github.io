@@ -97,10 +97,12 @@ Matrix([
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
+import sympy
 ```
 
 <span class='frame2 jb-small'>OUTPUT</span>
 ```python
+
 ```
 <br><br>
 
@@ -108,10 +110,12 @@ Matrix([
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
+import sympy
 ```
 
 <span class='frame2 jb-small'>OUTPUT</span>
 ```python
+
 ```
 <br><br>
 
@@ -119,6 +123,7 @@ Matrix([
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
+import sympy
 ```
 
 <span class='frame2 jb-small'>OUTPUT</span>
@@ -130,6 +135,7 @@ Matrix([
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
+import sympy
 ```
 
 <span class='frame2 jb-small'>OUTPUT</span>
@@ -141,6 +147,7 @@ Matrix([
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
+import sympy
 ```
 
 <span class='frame2 jb-small'>OUTPUT</span>
@@ -152,6 +159,7 @@ Matrix([
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
+import sympy
 ```
 
 <span class='frame2 jb-small'>OUTPUT</span>
@@ -163,6 +171,7 @@ Matrix([
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
+import sympy
 ```
 
 <span class='frame2 jb-small'>OUTPUT</span>
@@ -174,6 +183,7 @@ Matrix([
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
+import sympy
 ```
 
 <span class='frame2 jb-small'>OUTPUT</span>
@@ -185,6 +195,7 @@ Matrix([
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
+import sympy
 ```
 
 <span class='frame2 jb-small'>OUTPUT</span>
@@ -196,6 +207,7 @@ Matrix([
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
+import sympy
 ```
 
 <span class='frame2 jb-small'>OUTPUT</span>
@@ -207,6 +219,7 @@ Matrix([
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
+import sympy
 ```
 
 <span class='frame2 jb-small'>OUTPUT</span>
@@ -218,6 +231,7 @@ Matrix([
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
+import sympy
 ```
 
 <span class='frame2 jb-small'>OUTPUT</span>
@@ -229,6 +243,7 @@ Matrix([
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
+import sympy
 ```
 
 <span class='frame2 jb-small'>OUTPUT</span>
@@ -240,6 +255,7 @@ Matrix([
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
+import sympy
 ```
 
 <span class='frame2 jb-small'>OUTPUT</span>
@@ -251,6 +267,7 @@ Matrix([
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
+import sympy
 ```
 
 <span class='frame2 jb-small'>OUTPUT</span>
