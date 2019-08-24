@@ -146,7 +146,7 @@ title: Study
 
 ## MATH01 : Linear algebra
 
-- <a href='https://userdyk-github.github.io/math01/MATH01-Basic-linear-algebra.html'>Basic linear algebra</a>
+- <a href='https://userdyk-github.github.io/math01/MATH01-Basic-concepts.html'>Basic concepts</a>
 - <a href='https://userdyk-github.github.io/math01/MATH01-Linear-equation-systems.html'>Linear equation systems</a>
 - <a href='https://userdyk-github.github.io/math01/MATH01-Eigenvalue-problems.html'>Eigenvalue problems</a>
 - <a href='https://userdyk-github.github.io/math01/MATH01-Nonlinear-equations.html'>Nonlinear equations</a>
@@ -211,7 +211,7 @@ title: Study
 
 ## MATH06 : Optimization
 
-- <a href='https://userdyk-github.github.io/math06/MATH06-.html'>1</a>
+- <a href='https://userdyk-github.github.io/math06/MATH06-Interpolation.html'>Interpolation</a>
 - <a href='https://userdyk-github.github.io/math06/MATH06-.html'>2</a>
 - <a href='https://userdyk-github.github.io/math06/MATH06-.html'>3</a>
 - <a href='https://userdyk-github.github.io/math06/MATH06-.html'>4</a>
