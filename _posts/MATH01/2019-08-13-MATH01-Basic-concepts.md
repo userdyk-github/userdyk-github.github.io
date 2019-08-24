@@ -303,19 +303,18 @@ Matrix([
 import sympy
 #sympy.init_printing()
 
-a, b, c, d = sympy.symbols("a, b, c, d")
-M = sympy.Matrix([[a, b], [c, d]])
+M = sympy.Matrix([[1, 2], [3, 4]])
 
 M.diagonalize()
 ```
 
-`OUTPUT` : <span class='jb-small'>$$\left ( \left[\begin{matrix}- \frac{2 b}{a - d + \sqrt{a^{2} - 2 a d + 4 b c + d^{2}}} & \frac{2 b}{- a + d + \sqrt{a^{2} - 2 a d + 4 b c + d^{2}}}\\1 & 1\end{matrix}\right], \quad \left[\begin{matrix}\frac{a}{2} + \frac{d}{2} - \frac{1}{2} \sqrt{a^{2} - 2 a d + 4 b c + d^{2}} & 0\\0 & \frac{a}{2} + \frac{d}{2} + \frac{1}{2} \sqrt{a^{2} - 2 a d + 4 b c + d^{2}}\end{matrix}\right]\right )$$</span>
+`OUTPUT` : <span class='jb-small'>$$\displaystyle \left( \left[\begin{matrix}- \frac{\sqrt{33}}{6} - \frac{1}{2} & - \frac{1}{2} + \frac{\sqrt{33}}{6}\\1 & 1\end{matrix}\right], \  \left[\begin{matrix}\frac{5}{2} - \frac{\sqrt{33}}{2} & 0\\0 & \frac{5}{2} + \frac{\sqrt{33}}{2}\end{matrix}\right]\right)$$</span>
 ```python
 (Matrix([
-[-2*b/(a - d + sqrt(a**2 - 2*a*d + 4*b*c + d**2)), 2*b/(-a + d + sqrt(a**2 - 2*a*d + 4*b*c + d**2))],
-[                                               1,                                                1]]), Matrix([
-[a/2 + d/2 - sqrt(a**2 - 2*a*d + 4*b*c + d**2)/2,                                               0],
-[                                              0, a/2 + d/2 + sqrt(a**2 - 2*a*d + 4*b*c + d**2)/2]]))
+[-sqrt(33)/6 - 1/2, -1/2 + sqrt(33)/6],
+[                1,                 1]]), Matrix([
+[5/2 - sqrt(33)/2,                0],
+[               0, 5/2 + sqrt(33)/2]]))
 ```
 <br><br>
 
