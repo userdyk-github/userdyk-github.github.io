@@ -15,11 +15,18 @@ title: Study
 
 ## AI02 : Machine learning
 
+- <a href='https://userdyk-github.github.io/ai02/AI02-.html'>Dimensionality reduction</a>
 - <a href='https://userdyk-github.github.io/ai02/AI02-Regression.html'>Regression</a>
 - <a href='https://userdyk-github.github.io/ai02/AI02-Classification.html'>Classification</a>
 - <a href='https://userdyk-github.github.io/ai02/AI02-Clustering.html'>Clustering</a>
-- <a href='https://userdyk-github.github.io/ai02/AI02-.html'>4</a>
-- <a href='https://userdyk-github.github.io/ai02/AI02-.html'>5</a>
+- <a href='https://userdyk-github.github.io/ai02/AI02-k-Nearest-neighbors.html'>k-Nearest neighbors</a>
+- <a href='https://userdyk-github.github.io/ai02/AI02-.html'>Support vector machine</a>
+- <a href='https://userdyk-github.github.io/ai02/AI02-Decision-trees.html'>Decision trees</a>
+- <a href='https://userdyk-github.github.io/ai02/AI02-.html'>Naive-Bayes classifier</a>
+- <a href='https://userdyk-github.github.io/ai02/AI02-.html'>Hidden markov model</a>
+- <a href='https://userdyk-github.github.io/ai02/AI02-.html'>Ensemble learning</a>
+
+
 
 ---
 
@@ -87,18 +94,24 @@ title: Study
 ## PHY01 : Classical mechanics
 
 - <a href='https://userdyk-github.github.io/phy01/PHY01-Physical-constant-and-unit-and-equation.html'>Physical constant and unit and equation</a>
-- <a href='https://userdyk-github.github.io/phy01/PHY01-.html'>2</a>
-- <a href='https://userdyk-github.github.io/phy01/PHY01-.html'>3</a>
-- <a href='https://userdyk-github.github.io/phy01/PHY01-.html'>4</a>
-- <a href='https://userdyk-github.github.io/phy01/PHY01-.html'>5</a>
+- <a href='https://userdyk-github.github.io/phy01/PHY01-Kinematics.html'>Kinematics</a>
+- <a href='https://userdyk-github.github.io/phy01/PHY01-.html'>Newtonian Mechanics</a>
+- <a href='https://userdyk-github.github.io/phy01/PHY01-.html'>Central Forces</a>
+- <a href='https://userdyk-github.github.io/phy01/PHY01-.html'>Calculus of Variations</a>
+- <a href='https://userdyk-github.github.io/phy01/PHY01-.html'>Lagrange Dynamics</a>
+- <a href='https://userdyk-github.github.io/phy01/PHY01-.html'>Hamiltonian Dynamics</a>
+- <a href='https://userdyk-github.github.io/phy01/PHY01-.html'>Chaotic Systems</a>
+- <a href='https://userdyk-github.github.io/phy01/PHY01-.html'>Rigid Body</a>
+- <a href='https://userdyk-github.github.io/phy01/PHY01-.html'>Nonlinear Dynamics</a>
 
 ---
 
 ## PHY02 : Electromagnetism
 
-- <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>1</a>
-- <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>2</a>
-- <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>3</a>
+- <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Potential and Electric Field of Discrete Charge
+Distributions</a>
+- <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Boundary Problem of Electrostatics</a>
+- <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Two Ions in the Penning Trap</a>
 - <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>4</a>
 - <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>5</a>
 
@@ -116,11 +129,14 @@ title: Study
 
 ## PHY04 : Quantum theory
 
-- <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>1</a>
-- <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>2</a>
-- <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>3</a>
-- <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>4</a>
-- <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>5</a>
+- <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>Blackbody Radiation</a>
+- <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>The Schrödinger Equation</a>
+- <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>One-Dimensional Potential</a>
+- <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>The Harmonic Oscillator</a>
+- <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>Anharmonic Oscillator</a>
+- <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>Motion in the Central Force Field</a>
+- <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>Second Virial Coefficient and Its Quantum Corrections</a>
+
 
 ---
 
@@ -136,11 +152,12 @@ title: Study
 
 ## PHY06 : Theory of relativity
 
-- <a href='https://userdyk-github.github.io/phy06/PHY06-.html'>1</a>
-- <a href='https://userdyk-github.github.io/phy06/PHY06-.html'>2</a>
-- <a href='https://userdyk-github.github.io/phy06/PHY06-.html'>3</a>
-- <a href='https://userdyk-github.github.io/phy06/PHY06-.html'>4</a>
-- <a href='https://userdyk-github.github.io/phy06/PHY06-.html'>5</a>
+- <a href='https://userdyk-github.github.io/phy06/PHY06-.html'>The Orbits in General Relativity</a>
+- <a href='https://userdyk-github.github.io/phy06/PHY06-.html'>Light Bending in the Gravitational Field</a>
+- <a href='https://userdyk-github.github.io/phy06/PHY06-.html'>Einstein's Field Equations</a>
+- <a href='https://userdyk-github.github.io/phy06/PHY06-.html'>The Schwarzschild Solution</a>
+- <a href='https://userdyk-github.github.io/phy06/PHY06-.html'>The Reissner–Nordstrom Solution for a Charged
+Mass Point</a>
 
 ---
 
