@@ -261,10 +261,21 @@ M.QRdecomposition()
 <span class='frame2 jb-small'>INPUT</span>
 ```python
 import sympy
+
+a, b, c, d = sympy.symbols("a, b, c, d")
+M = sympy.Matrix([[a, b], [c, d]])
+
+v_1, v_2 = sympy.symbols("v_1, v_2")
+v = sympy.Matrix([v_1, v_2])
+
+M.QRsolve(v)
 ```
 
 <span class='frame2 jb-small'>OUTPUT</span>
 ```python
+Matrix([
+[(a*v_1/sqrt(Abs(a)**2 + Abs(c)**2) + c*v_2/sqrt(Abs(a)**2 + Abs(c)**2) - (a*b/sqrt(Abs(a)**2 + Abs(c)**2) + c*d/sqrt(Abs(a)**2 + Abs(c)**2))*(v_1*(-a*(a*b/sqrt(Abs(a)**2 + Abs(c)**2) + c*d/sqrt(Abs(a)**2 + Abs(c)**2))/sqrt(Abs(a)**2 + Abs(c)**2) + b)/sqrt(Abs(a*(a*b/sqrt(Abs(a)**2 + Abs(c)**2) + c*d/sqrt(Abs(a)**2 + Abs(c)**2))/sqrt(Abs(a)**2 + Abs(c)**2) - b)**2 + Abs(c*(a*b/sqrt(Abs(a)**2 + Abs(c)**2) + c*d/sqrt(Abs(a)**2 + Abs(c)**2))/sqrt(Abs(a)**2 + Abs(c)**2) - d)**2) + v_2*(-c*(a*b/sqrt(Abs(a)**2 + Abs(c)**2) + c*d/sqrt(Abs(a)**2 + Abs(c)**2))/sqrt(Abs(a)**2 + Abs(c)**2) + d)/sqrt(Abs(a*(a*b/sqrt(Abs(a)**2 + Abs(c)**2) + c*d/sqrt(Abs(a)**2 + Abs(c)**2))/sqrt(Abs(a)**2 + Abs(c)**2) - b)**2 + Abs(c*(a*b/sqrt(Abs(a)**2 + Abs(c)**2) + c*d/sqrt(Abs(a)**2 + Abs(c)**2))/sqrt(Abs(a)**2 + Abs(c)**2) - d)**2))/sqrt(Abs(a*(a*b/sqrt(Abs(a)**2 + Abs(c)**2) + c*d/sqrt(Abs(a)**2 + Abs(c)**2))/sqrt(Abs(a)**2 + Abs(c)**2) - b)**2 + Abs(c*(a*b/sqrt(Abs(a)**2 + Abs(c)**2) + c*d/sqrt(Abs(a)**2 + Abs(c)**2))/sqrt(Abs(a)**2 + Abs(c)**2) - d)**2))/sqrt(Abs(a)**2 + Abs(c)**2)],
+[                                                                                                                                                                          (v_1*(-a*(a*b/sqrt(Abs(a)**2 + Abs(c)**2) + c*d/sqrt(Abs(a)**2 + Abs(c)**2))/sqrt(Abs(a)**2 + Abs(c)**2) + b)/sqrt(Abs(a*(a*b/sqrt(Abs(a)**2 + Abs(c)**2) + c*d/sqrt(Abs(a)**2 + Abs(c)**2))/sqrt(Abs(a)**2 + Abs(c)**2) - b)**2 + Abs(c*(a*b/sqrt(Abs(a)**2 + Abs(c)**2) + c*d/sqrt(Abs(a)**2 + Abs(c)**2))/sqrt(Abs(a)**2 + Abs(c)**2) - d)**2) + v_2*(-c*(a*b/sqrt(Abs(a)**2 + Abs(c)**2) + c*d/sqrt(Abs(a)**2 + Abs(c)**2))/sqrt(Abs(a)**2 + Abs(c)**2) + d)/sqrt(Abs(a*(a*b/sqrt(Abs(a)**2 + Abs(c)**2) + c*d/sqrt(Abs(a)**2 + Abs(c)**2))/sqrt(Abs(a)**2 + Abs(c)**2) - b)**2 + Abs(c*(a*b/sqrt(Abs(a)**2 + Abs(c)**2) + c*d/sqrt(Abs(a)**2 + Abs(c)**2))/sqrt(Abs(a)**2 + Abs(c)**2) - d)**2))/sqrt(Abs(a*(a*b/sqrt(Abs(a)**2 + Abs(c)**2) + c*d/sqrt(Abs(a)**2 + Abs(c)**2))/sqrt(Abs(a)**2 + Abs(c)**2) - b)**2 + Abs(c*(a*b/sqrt(Abs(a)**2 + Abs(c)**2) + c*d/sqrt(Abs(a)**2 + Abs(c)**2))/sqrt(Abs(a)**2 + Abs(c)**2) - d)**2)]])
 ```
 <br><br>
 
@@ -273,10 +284,20 @@ import sympy
 <span class='frame2 jb-small'>INPUT</span>
 ```python
 import sympy
+
+a, b, c, d = sympy.symbols("a, b, c, d")
+M = sympy.Matrix([[a, b], [c, d]])
+
+M.diagonalize()
 ```
 
 <span class='frame2 jb-small'>OUTPUT</span>
 ```python
+(Matrix([
+[-2*b/(a - d + sqrt(a**2 - 2*a*d + 4*b*c + d**2)), 2*b/(-a + d + sqrt(a**2 - 2*a*d + 4*b*c + d**2))],
+[                                               1,                                                1]]), Matrix([
+[a/2 + d/2 - sqrt(a**2 - 2*a*d + 4*b*c + d**2)/2,                                               0],
+[                                              0, a/2 + d/2 + sqrt(a**2 - 2*a*d + 4*b*c + d**2)/2]]))
 ```
 <br><br>
 
@@ -285,10 +306,16 @@ import sympy
 <span class='frame2 jb-small'>INPUT</span>
 ```python
 import sympy
+
+a, b, c, d = sympy.symbols("a, b, c, d")
+M = sympy.Matrix([[a, b], [c, d]])
+
+M.norm()
 ```
 
 <span class='frame2 jb-small'>OUTPUT</span>
 ```python
+sqrt(Abs(a)**2 + Abs(b)**2 + Abs(c)**2 + Abs(d)**2)
 ```
 <br><br>
 
@@ -297,10 +324,18 @@ import sympy
 <span class='frame2 jb-small'>INPUT</span>
 ```python
 import sympy
+
+a, b, c, d = sympy.symbols("a, b")
+M = sympy.Matrix([[a, b], [a, b]])
+
+M.nullspace()
 ```
 
 <span class='frame2 jb-small'>OUTPUT</span>
 ```python
+[Matrix([
+[-b/a],
+[   1]])]
 ```
 <br><br>
 
@@ -309,10 +344,16 @@ import sympy
 <span class='frame2 jb-small'>INPUT</span>
 ```python
 import sympy
+
+a, b, c, d = sympy.symbols("a, b, c, d")
+M = sympy.Matrix([[a, b], [c, d]])
+
+M.rank()
 ```
 
 <span class='frame2 jb-small'>OUTPUT</span>
 ```python
+2
 ```
 <br><br>
 
@@ -321,10 +362,16 @@ import sympy
 <span class='frame2 jb-small'>INPUT</span>
 ```python
 import sympy
+
+a, b, c, d = sympy.symbols("a, b, c, d")
+M = sympy.Matrix([[a, b], [c, d]])
+
+M.singular_values()
 ```
 
 <span class='frame2 jb-small'>OUTPUT</span>
 ```python
+[sqrt(a*conjugate(a)/2 + b*conjugate(b)/2 + c*conjugate(c)/2 + d*conjugate(d)/2 + sqrt(-4*(a*conjugate(a) + c*conjugate(c))*(b*conjugate(b) + d*conjugate(d)) + 4*(a*conjugate(b) + c*conjugate(d))*(b*conjugate(a) + d*conjugate(c)) + (a*conjugate(a) + b*conjugate(b) + c*conjugate(c) + d*conjugate(d))**2)/2), sqrt(a*conjugate(a)/2 + b*conjugate(b)/2 + c*conjugate(c)/2 + d*conjugate(d)/2 - sqrt(-4*(a*conjugate(a) + c*conjugate(c))*(b*conjugate(b) + d*conjugate(d)) + 4*(a*conjugate(b) + c*conjugate(d))*(b*conjugate(a) + d*conjugate(c)) + (a*conjugate(a) + b*conjugate(b) + c*conjugate(c) + d*conjugate(d))**2)/2)]
 ```
 <br><br>
 
@@ -333,10 +380,18 @@ import sympy
 <span class='frame2 jb-small'>INPUT</span>
 ```python
 import sympy
+
+a, b, c, d = sympy.symbols("a, b, c, d")
+M = sympy.Matrix([[a, b], [c, d]])
+
+M.solve(v)
 ```
 
 <span class='frame2 jb-small'>OUTPUT</span>
 ```python
+Matrix([
+[(-b*(a*v_2 - c*v_1) + v_1*(a*d - b*c))/(a*(a*d - b*c))],
+[                           (a*v_2 - c*v_1)/(a*d - b*c)]])
 ```
 <br><br>
 
