@@ -11,7 +11,7 @@ List of posts to read before reading this article
 - <a href='https://userdyk-github.github.io/'>post2</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
-<hr class="division1">
+---
 
 ## Contents
 {:.no_toc}
@@ -19,7 +19,7 @@ List of posts to read before reading this article
 * ToC
 {:toc}
 
----
+<hr class="division1">
 
 ## **Functions and Methods for Operating**
 
@@ -462,7 +462,7 @@ Matrix([
 ```
 <br><br><br>
 
----
+<hr class="division1">
 
 List of posts followed by this article
 - [post1](https://userdyk-github.github.io/)
