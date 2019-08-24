@@ -34,15 +34,27 @@ List of posts to read before reading this article
 >
 > When something is important enough, you do it even if the odds are not in your favor.
 
+---
+
 ### Geometric
+
+---
 
 ### Poisson
 
+---
+
 ### Logarithmic
+
+---
 
 ### NegativeBinomial
 
+---
+
 ### YuleSimon
+
+---
 
 ### Zeta
 
@@ -56,6 +68,8 @@ List of posts to read before reading this article
 > Objective : 
 >
 > When something is important enough, you do it even if the odds are not in your favor.
+
+---
 
 ### Beta
 
@@ -107,6 +121,8 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
 
 <br><br><br>
 
+---
+
 ### ChiSquared
 
 <div style="color:black; font-size: 80%; text-align: center;">
@@ -151,6 +167,8 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
 
 
 <br><br><br>
+
+---
 
 
 ### Exponential
@@ -201,6 +219,8 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
 
 <br><br><br>
 
+---
+
 ### FDistribution
 
 <div style="color:black; font-size: 80%; text-align: center;">
@@ -248,9 +268,13 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
 
 <br><br><br>
 
+---
+
 ### FisherZ
 
 <br><br><br>
+
+---
 
 ### Gamma
 
@@ -345,6 +369,8 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
 
 <br><br><br>
 
+---
+
 ### Logistic
 
 <div style="color:black; font-size: 80%; text-align: center;">
@@ -390,6 +416,8 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
 
 
 <br><br><br>
+
+---
 
 ### LogNormal
 
@@ -438,6 +466,8 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
 
 <br><br><br>
 
+---
+
 ### Normal
 
 <div style="color:black; font-size: 80%; text-align: center;">
@@ -484,6 +514,8 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
 
 
 <br><br><br>
+
+---
 
 ### StudentT
 
@@ -532,6 +564,8 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
 
 <br><br><br>
 
+---
+
 ### Uniform
 
 <div style="color:black; font-size: 80%; text-align: center;">
@@ -578,6 +612,8 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
 
 
 <br><br><br>
+
+---
 
 ### Weibull
 
