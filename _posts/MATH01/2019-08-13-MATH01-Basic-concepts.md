@@ -174,10 +174,18 @@ a*d - b*c
 <span class='frame2 jb-small'>INPUT</span>
 ```python
 import sympy
+
+a, b, c, d = sympy.symbols("a, b, c, d")
+M = sympy.Matrix([[a, b], [c, d]])
+
+M.inv()
 ```
 
 <span class='frame2 jb-small'>OUTPUT</span>
 ```python
+Matrix([
+[ d/(a*d - b*c), -b/(a*d - b*c)],
+[-c/(a*d - b*c),  a/(a*d - b*c)]])
 ```
 <br><br>
 
@@ -186,22 +194,43 @@ import sympy
 <span class='frame2 jb-small'>INPUT</span>
 ```python
 import sympy
+
+a, b, c, d = sympy.symbols("a, b, c, d")
+M = sympy.Matrix([[a, b], [c, d]])
+
+M.LUdecomposition()
 ```
 
 <span class='frame2 jb-small'>OUTPUT</span>
 ```python
+(Matrix([
+[  1, 0],
+[c/a, 1]]), Matrix([
+[a,         b],
+[0, d - b*c/a]]), [])
 ```
 <br><br>
 
-### Linear system of equations in the form Mx = b, using LU factorization
+### Linear system of equations in the form Mx = v, using LU factorization
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
 import sympy
+
+a, b, c, d = sympy.symbols("a, b, c, d")
+M = sympy.Matrix([[a, b], [c, d]])
+
+v_1, v_2 = sympy.symbols("v_1, v_2")
+v = sympy.Matrix([v_1, v_2])
+
+M.LUsolve(v)
 ```
 
 <span class='frame2 jb-small'>OUTPUT</span>
 ```python
+Matrix([
+[(-b*(v_2 - c*v_1/a)/(d - b*c/a) + v_1)/a],
+[             (v_2 - c*v_1/a)/(d - b*c/a)]])
 ```
 <br><br>
 
