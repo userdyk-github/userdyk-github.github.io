@@ -345,7 +345,7 @@ sqrt(Abs(a)**2 + Abs(b)**2 + Abs(c)**2 + Abs(d)**2)
 import sympy
 #sympy.init_printing()
 
-a, b, c, d = sympy.symbols("a, b, c, d")
+a, b = sympy.symbols("a, b")
 M = sympy.Matrix([[a, b], [a, b]])
 
 M.nullspace()
