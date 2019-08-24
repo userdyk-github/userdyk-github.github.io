@@ -28,6 +28,8 @@ List of posts to read before reading this article
 <span class='frame2 jb-small'>INPUT</span>
 ```python
 import sympy
+#sympy.init_printing()
+
 sympy.Matrix([1, 2])
 ```
 
@@ -44,6 +46,8 @@ Matrix([
 <span class='frame2 jb-small'>INPUT</span>
 ```python
 import sympy
+#sympy.init_printing()
+
 sympy.Matrix([[1, 2]])
 ```
 
@@ -58,6 +62,8 @@ Matrix([[1, 2]])
 <span class='frame2 jb-small'>INPUT</span>
 ```python
 import sympy
+#sympy.init_printing()
+
 sympy.Matrix(3, 4, lambda m, n: 10 * m + n)
 ```
 
@@ -75,6 +81,7 @@ Matrix([
 <span class='frame2 jb-small'>INPUT</span>
 ```python
 import sympy
+#sympy.init_printing()
 
 a, b, c, d = sympy.symbols("a, b, c, d")
 M = sympy.Matrix([[a, b], [c, d]])
@@ -98,6 +105,7 @@ Matrix([
 <span class='frame2 jb-small'>INPUT</span>
 ```python
 import sympy
+#sympy.init_printing()
 
 a, b, c, d = sympy.symbols("a, b, c, d")
 M = sympy.Matrix([[a, b], [c, d]])
@@ -118,6 +126,7 @@ Matrix([
 <span class='frame2 jb-small'>INPUT</span>
 ```python
 import sympy
+#sympy.init_printing()
 
 a, b, c, d = sympy.symbols("a, b, c, d")
 M = sympy.Matrix([[a, b], [c, d]])
@@ -138,6 +147,7 @@ Matrix([
 <span class='frame2 jb-small'>INPUT</span>
 ```python
 import sympy
+#sympy.init_printing()
 
 a, b, c, d = sympy.symbols("a, b, c, d")
 M = sympy.Matrix([[a, b], [c, d]])
@@ -156,6 +166,7 @@ a + d
 <span class='frame2 jb-small'>INPUT</span>
 ```python
 import sympy
+#sympy.init_printing()
 
 a, b, c, d = sympy.symbols("a, b, c, d")
 M = sympy.Matrix([[a, b], [c, d]])
@@ -174,6 +185,7 @@ a*d - b*c
 <span class='frame2 jb-small'>INPUT</span>
 ```python
 import sympy
+#sympy.init_printing()
 
 a, b, c, d = sympy.symbols("a, b, c, d")
 M = sympy.Matrix([[a, b], [c, d]])
@@ -194,6 +206,7 @@ Matrix([
 <span class='frame2 jb-small'>INPUT</span>
 ```python
 import sympy
+#sympy.init_printing()
 
 a, b, c, d = sympy.symbols("a, b, c, d")
 M = sympy.Matrix([[a, b], [c, d]])
@@ -216,6 +229,7 @@ M.LUdecomposition()
 <span class='frame2 jb-small'>INPUT</span>
 ```python
 import sympy
+#sympy.init_printing()
 
 a, b, c, d = sympy.symbols("a, b, c, d")
 M = sympy.Matrix([[a, b], [c, d]])
@@ -239,6 +253,7 @@ Matrix([
 <span class='frame2 jb-small'>INPUT</span>
 ```python
 import sympy
+#sympy.init_printing()
 
 a, b, c, d = sympy.symbols("a, b, c, d")
 M = sympy.Matrix([[a, b], [c, d]])
@@ -261,6 +276,7 @@ M.QRdecomposition()
 <span class='frame2 jb-small'>INPUT</span>
 ```python
 import sympy
+#sympy.init_printing()
 
 a, b, c, d = sympy.symbols("a, b, c, d")
 M = sympy.Matrix([[a, b], [c, d]])
@@ -284,6 +300,7 @@ Matrix([
 <span class='frame2 jb-small'>INPUT</span>
 ```python
 import sympy
+#sympy.init_printing()
 
 a, b, c, d = sympy.symbols("a, b, c, d")
 M = sympy.Matrix([[a, b], [c, d]])
@@ -306,6 +323,7 @@ M.diagonalize()
 <span class='frame2 jb-small'>INPUT</span>
 ```python
 import sympy
+#sympy.init_printing()
 
 a, b, c, d = sympy.symbols("a, b, c, d")
 M = sympy.Matrix([[a, b], [c, d]])
@@ -324,6 +342,7 @@ sqrt(Abs(a)**2 + Abs(b)**2 + Abs(c)**2 + Abs(d)**2)
 <span class='frame2 jb-small'>INPUT</span>
 ```python
 import sympy
+#sympy.init_printing()
 
 a, b, c, d = sympy.symbols("a, b")
 M = sympy.Matrix([[a, b], [a, b]])
@@ -344,6 +363,7 @@ M.nullspace()
 <span class='frame2 jb-small'>INPUT</span>
 ```python
 import sympy
+#sympy.init_printing()
 
 a, b, c, d = sympy.symbols("a, b, c, d")
 M = sympy.Matrix([[a, b], [c, d]])
@@ -362,6 +382,7 @@ M.rank()
 <span class='frame2 jb-small'>INPUT</span>
 ```python
 import sympy
+#sympy.init_printing()
 
 a, b, c, d = sympy.symbols("a, b, c, d")
 M = sympy.Matrix([[a, b], [c, d]])
@@ -380,6 +401,7 @@ M.singular_values()
 <span class='frame2 jb-small'>INPUT</span>
 ```python
 import sympy
+#sympy.init_printing()
 
 a, b, c, d = sympy.symbols("a, b, c, d")
 M = sympy.Matrix([[a, b], [c, d]])
