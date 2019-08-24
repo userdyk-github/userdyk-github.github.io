@@ -19,7 +19,7 @@ List of posts to read before reading this article
 * ToC
 {:toc}
 
----
+<hr class="division1">
 
 
 ## Square Systems
@@ -158,7 +158,7 @@ plt.show()
 
 <br><br><br>
 
----
+<hr class="division1">
 
 List of posts followed by this article
 - [post1](https://userdyk-github.github.io/)
