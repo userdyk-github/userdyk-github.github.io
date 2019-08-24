@@ -23,7 +23,7 @@ List of posts to read before reading this article
 
 ## Functions and Methods for Operating
 
-### the transpose of a matrix
+### Columns vector
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
@@ -34,7 +34,7 @@ List of posts to read before reading this article
 ```
 <br><br>
 
-### the adjoint of a matrix
+### Row vector
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
@@ -45,7 +45,7 @@ List of posts to read before reading this article
 ```
 <br><br>
 
-### the trace (sum of diagonal elements) of a matrix
+### The transpose of a matrix
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
@@ -56,7 +56,7 @@ List of posts to read before reading this article
 ```
 <br><br>
 
-### the determinant of a matrix
+### The adjoint of a matrix
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
@@ -67,7 +67,7 @@ List of posts to read before reading this article
 ```
 <br><br>
 
-### the inverse of a matrix
+### The trace (sum of diagonal elements) of a matrix
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
@@ -78,7 +78,7 @@ List of posts to read before reading this article
 ```
 <br><br>
 
-### the LU decomposition of a matrix
+### The determinant of a matrix
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
@@ -89,7 +89,7 @@ List of posts to read before reading this article
 ```
 <br><br>
 
-### a linear system of equations in the form Mx = b, using LU factorization
+### The inverse of a matrix
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
@@ -100,7 +100,7 @@ List of posts to read before reading this article
 ```
 <br><br>
 
-### the QR decomposition of a matrix
+### The LU decomposition of a matrix
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
@@ -111,7 +111,29 @@ List of posts to read before reading this article
 ```
 <br><br>
 
-### a linear system of equations in the form Mx = b, using QR factorization
+### A linear system of equations in the form Mx = b, using LU factorization
+
+<span class='frame2 jb-small'>INPUT</span>
+```python
+```
+
+<span class='frame2 jb-small'>OUTPUT</span>
+```python
+```
+<br><br>
+
+### The QR decomposition of a matrix
+
+<span class='frame2 jb-small'>INPUT</span>
+```python
+```
+
+<span class='frame2 jb-small'>OUTPUT</span>
+```python
+```
+<br><br>
+
+### A linear system of equations in the form Mx = b, using QR factorization
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
@@ -133,7 +155,7 @@ List of posts to read before reading this article
 ```
 <br><br>
 
-### the norm of a matrix
+### The norm of a matrix
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
@@ -144,7 +166,7 @@ List of posts to read before reading this article
 ```
 <br><br>
 
-### a set of vectors that span the null space of a Matrix
+### A set of vectors that span the null space of a Matrix
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
@@ -155,7 +177,7 @@ List of posts to read before reading this article
 ```
 <br><br>
 
-### the rank of a matrix
+### The rank of a matrix
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
@@ -166,7 +188,7 @@ List of posts to read before reading this article
 ```
 <br><br>
 
-### the singular values of a matrix
+### The singular values of a matrix
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
@@ -177,7 +199,7 @@ List of posts to read before reading this article
 ```
 <br><br>
 
-### a linear system of equations in the form Mx = b
+### A linear system of equations in the form Mx = b
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
