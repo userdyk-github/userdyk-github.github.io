@@ -150,7 +150,7 @@ title: Study
 - <a href='https://userdyk-github.github.io/math01/MATH01-Linear-equation-systems.html'>Linear equation systems</a>
 - <a href='https://userdyk-github.github.io/math01/MATH01-Eigenvalue-problems.html'>Eigenvalue problems</a>
 - <a href='https://userdyk-github.github.io/math01/MATH01-Nonlinear-equations.html'>Nonlinear equations</a>
-- <a href='https://userdyk-github.github.io/math01/MATH01-.html'>5</a>
+- <a href='https://userdyk-github.github.io/math01/MATH01-Sparse-matrices.html'>Sparse matrices</a>
 
 ---
 
