@@ -195,8 +195,7 @@ title: Study
 - <a href='https://userdyk-github.github.io/math04/MATH04-PDE-finite-volume-method.html'>PDE finite volume method</a>
 - <a href='https://userdyk-github.github.io/math04/MATH04-ODE-Sturm–Liouville-theory.html'>Sturm–Liouville theory</a>
 - <a href='https://userdyk-github.github.io/math04/MATH04-ODE-Green-function.html'>Green function</a>
-- <a href='https://userdyk-github.github.io/math04/MATH04-ODE-numerical-methods.html'>ODE numerical methods</a>
-- <a href='https://userdyk-github.github.io/math04/MATH04-ODE-numerical-methods.html'>ODE numerical methods</a>
+
 
 ---
 
