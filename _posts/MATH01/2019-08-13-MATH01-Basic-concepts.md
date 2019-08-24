@@ -25,13 +25,13 @@ List of posts to read before reading this article
 
 ### Columns vector
 
-<span class='frame2 jb-small'>INPUT</span>
+<span class='frame2 jb-small'>INPUT[1]</span>
 ```python
 import sympy
 sympy.Matrix([1, 2])
 ```
 
-<span class='frame2 jb-small'>OUTPUT</span>
+<span class='frame2 jb-small'>OUTPUT[1]</span>
 ```python
 Matrix([
 [1],
@@ -41,27 +41,25 @@ Matrix([
 
 ### Row vector
 
-<span class='frame2 jb-small'>INPUT</span>
+<span class='frame2 jb-small'>INPUT[2]</span>
 ```python
-import sympy
 sympy.Matrix([[1, 2]])
 ```
 
-<span class='frame2 jb-small'>OUTPUT</span>
+<span class='frame2 jb-small'>OUTPUT[2]</span>
 ```python
 Matrix([[1, 2]])
 ```
 <br><br>
 
-### Value of a corresponding element(1)
+### Value of a corresponding element
 
-<span class='frame2 jb-small'>INPUT</span>
+<span class='frame2 jb-small'>INPUT[3]</span>
 ```python
-import sympy
 sympy.Matrix(3, 4, lambda m, n: 10 * m + n)
 ```
 
-<span class='frame2 jb-small'>OUTPUT</span>
+<span class='frame2 jb-small'>OUTPUT[3]</span>
 ```python
 Matrix([
 [ 0,  1,  2,  3],
@@ -70,184 +68,188 @@ Matrix([
 ```
 <br><br>
 
-### Value of a corresponding element(2)
+### Matrix multiplication
 
-<span class='frame2 jb-small'>INPUT</span>
+<span class='frame2 jb-small'>INPUT[4]</span>
 ```python
-import sympy
-sympy.Matrix(3, 4, lambda m, n: 10 * m + n)
+a, b, c, d = sympy.symbols("a, b, c, d")
+M = sympy.Matrix([[a, b], [c, d]])
+
+x_1, x_2 = sympy.symbols("x_1, x_2")
+x = sympy.Matrix([x_1, x_2])
+
+M * x
 ```
 
-<span class='frame2 jb-small'>OUTPUT</span>
+<span class='frame2 jb-small'>OUTPUT[4]</span>
 ```python
 Matrix([
-[ 0,  1,  2,  3],
-[10, 11, 12, 13],
-[20, 21, 22, 23]])
+[a*x_1 + b*x_2],
+[c*x_1 + d*x_2]])
 ```
 <br><br>
 
 ### Transpose of a matrix
 
-<span class='frame2 jb-small'>INPUT</span>
+<span class='frame2 jb-small'>INPUT[]</span>
 ```python
 ```
 
-<span class='frame2 jb-small'>OUTPUT</span>
+<span class='frame2 jb-small'>OUTPUT[]</span>
 ```python
 ```
 <br><br>
 
 ### Adjoint of a matrix
 
-<span class='frame2 jb-small'>INPUT</span>
+<span class='frame2 jb-small'>INPUT[]</span>
 ```python
 ```
 
-<span class='frame2 jb-small'>OUTPUT</span>
+<span class='frame2 jb-small'>OUTPUT[]</span>
 ```python
 ```
 <br><br>
 
 ### Trace (sum of diagonal elements) of a matrix
 
-<span class='frame2 jb-small'>INPUT</span>
+<span class='frame2 jb-small'>INPUT[]</span>
 ```python
 ```
 
-<span class='frame2 jb-small'>OUTPUT</span>
+<span class='frame2 jb-small'>OUTPUT[]</span>
 ```python
 ```
 <br><br>
 
 ### Determinant of a matrix
 
-<span class='frame2 jb-small'>INPUT</span>
+<span class='frame2 jb-small'>INPUT[]</span>
 ```python
 ```
 
-<span class='frame2 jb-small'>OUTPUT</span>
+<span class='frame2 jb-small'>OUTPUT[]</span>
 ```python
 ```
 <br><br>
 
 ### Inverse of a matrix
 
-<span class='frame2 jb-small'>INPUT</span>
+<span class='frame2 jb-small'>INPUT[]</span>
 ```python
 ```
 
-<span class='frame2 jb-small'>OUTPUT</span>
+<span class='frame2 jb-small'>OUTPUT[]</span>
 ```python
 ```
 <br><br>
 
 ### LU decomposition of a matrix
 
-<span class='frame2 jb-small'>INPUT</span>
+<span class='frame2 jb-small'>INPUT[]</span>
 ```python
 ```
 
-<span class='frame2 jb-small'>OUTPUT</span>
+<span class='frame2 jb-small'>OUTPUT[]</span>
 ```python
 ```
 <br><br>
 
 ### Linear system of equations in the form Mx = b, using LU factorization
 
-<span class='frame2 jb-small'>INPUT</span>
+<span class='frame2 jb-small'>INPUT[]</span>
 ```python
 ```
 
-<span class='frame2 jb-small'>OUTPUT</span>
+<span class='frame2 jb-small'>OUTPUT[]</span>
 ```python
 ```
 <br><br>
 
 ### QR decomposition of a matrix
 
-<span class='frame2 jb-small'>INPUT</span>
+<span class='frame2 jb-small'>INPUT[]</span>
 ```python
 ```
 
-<span class='frame2 jb-small'>OUTPUT</span>
+<span class='frame2 jb-small'>OUTPUT[]</span>
 ```python
 ```
 <br><br>
 
 ### Linear system of equations in the form Mx = b, using QR factorization
 
-<span class='frame2 jb-small'>INPUT</span>
+<span class='frame2 jb-small'>INPUT[]</span>
 ```python
 ```
 
-<span class='frame2 jb-small'>OUTPUT</span>
+<span class='frame2 jb-small'>OUTPUT[]</span>
 ```python
 ```
 <br><br>
 
 ### Diagonalization of a matrix M
 
-<span class='frame2 jb-small'>INPUT</span>
+<span class='frame2 jb-small'>INPUT[]</span>
 ```python
 ```
 
-<span class='frame2 jb-small'>OUTPUT</span>
+<span class='frame2 jb-small'>OUTPUT[]</span>
 ```python
 ```
 <br><br>
 
 ### Norm of a matrix
 
-<span class='frame2 jb-small'>INPUT</span>
+<span class='frame2 jb-small'>INPUT[]</span>
 ```python
 ```
 
-<span class='frame2 jb-small'>OUTPUT</span>
+<span class='frame2 jb-small'>OUTPUT[]</span>
 ```python
 ```
 <br><br>
 
 ### Set of vectors that span the null space of a Matrix
 
-<span class='frame2 jb-small'>INPUT</span>
+<span class='frame2 jb-small'>INPUT[]</span>
 ```python
 ```
 
-<span class='frame2 jb-small'>OUTPUT</span>
+<span class='frame2 jb-small'>OUTPUT[]</span>
 ```python
 ```
 <br><br>
 
 ### Rank of a matrix
 
-<span class='frame2 jb-small'>INPUT</span>
+<span class='frame2 jb-small'>INPUT[]</span>
 ```python
 ```
 
-<span class='frame2 jb-small'>OUTPUT</span>
+<span class='frame2 jb-small'>OUTPUT[]</span>
 ```python
 ```
 <br><br>
 
 ### Singular values of a matrix
 
-<span class='frame2 jb-small'>INPUT</span>
+<span class='frame2 jb-small'>INPUT[]</span>
 ```python
 ```
 
-<span class='frame2 jb-small'>OUTPUT</span>
+<span class='frame2 jb-small'>OUTPUT[]</span>
 ```python
 ```
 <br><br>
 
 ### Linear system of equations in the form Mx = b
 
-<span class='frame2 jb-small'>INPUT</span>
+<span class='frame2 jb-small'>INPUT[]</span>
 ```python
 ```
 
-<span class='frame2 jb-small'>OUTPUT</span>
+<span class='frame2 jb-small'>OUTPUT[]</span>
 ```python
 ```
 <br><br>
