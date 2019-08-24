@@ -25,7 +25,6 @@ List of posts to read before reading this article
 
 ### Columns vector
 
-<span class='frame2 jb-small'>INPUT</span>
 `INPUT`
 ```python
 import sympy
@@ -45,7 +44,7 @@ $$\left[\begin{matrix}1\\2\end{matrix}\right]$$
 
 ### Row vector
 
-<span class='frame2 jb-small'>INPUT</span>
+`INPUT`
 ```python
 import sympy
 #sympy.init_printing()
@@ -61,7 +60,7 @@ Matrix([[1, 2]])
 
 ### Value of a corresponding element
 
-<span class='frame2 jb-small'>INPUT</span>
+`INPUT`
 ```python
 import sympy
 #sympy.init_printing()
@@ -80,7 +79,7 @@ Matrix([
 
 ### Matrix multiplication
 
-<span class='frame2 jb-small'>INPUT</span>
+`INPUT`
 ```python
 import sympy
 #sympy.init_printing()
@@ -104,7 +103,7 @@ Matrix([
 
 ### Transpose of a matrix
 
-<span class='frame2 jb-small'>INPUT</span>
+`INPUT`
 ```python
 import sympy
 #sympy.init_printing()
@@ -125,7 +124,7 @@ Matrix([
 
 ### Adjoint of a matrix
 
-<span class='frame2 jb-small'>INPUT</span>
+`INPUT`
 ```python
 import sympy
 #sympy.init_printing()
@@ -146,7 +145,7 @@ Matrix([
 
 ### Trace (sum of diagonal elements) of a matrix
 
-<span class='frame2 jb-small'>INPUT</span>
+`INPUT`
 ```python
 import sympy
 #sympy.init_printing()
@@ -165,7 +164,7 @@ a + d
 
 ### Determinant of a matrix
 
-<span class='frame2 jb-small'>INPUT</span>
+`INPUT`
 ```python
 import sympy
 #sympy.init_printing()
@@ -176,7 +175,7 @@ M = sympy.Matrix([[a, b], [c, d]])
 M.det()
 ```
 
-<span class='frame2 jb-small'>OUTPUT</span>
+`INPUT`
 ```python
 a*d - b*c
 ```
@@ -184,7 +183,7 @@ a*d - b*c
 
 ### Inverse of a matrix
 
-<span class='frame2 jb-small'>INPUT</span>
+`INPUT`
 ```python
 import sympy
 #sympy.init_printing()
@@ -205,7 +204,7 @@ Matrix([
 
 ### LU decomposition of a matrix
 
-<span class='frame2 jb-small'>INPUT</span>
+`INPUT`
 ```python
 import sympy
 #sympy.init_printing()
@@ -228,7 +227,7 @@ M.LUdecomposition()
 
 ### Linear system of equations in the form Mx = v, using LU factorization
 
-<span class='frame2 jb-small'>INPUT</span>
+`INPUT`
 ```python
 import sympy
 #sympy.init_printing()
@@ -252,7 +251,7 @@ Matrix([
 
 ### QR decomposition of a matrix
 
-<span class='frame2 jb-small'>INPUT</span>
+`INPUT`
 ```python
 import sympy
 #sympy.init_printing()
@@ -275,7 +274,7 @@ M.QRdecomposition()
 
 ### Linear system of equations in the form Mx = v, using QR factorization
 
-<span class='frame2 jb-small'>INPUT</span>
+`INPUT`
 ```python
 import sympy
 #sympy.init_printing()
@@ -299,7 +298,7 @@ Matrix([
 
 ### Diagonalization of a matrix M
 
-<span class='frame2 jb-small'>INPUT</span>
+`INPUT`
 ```python
 import sympy
 #sympy.init_printing()
@@ -322,7 +321,7 @@ M.diagonalize()
 
 ### Norm of a matrix
 
-<span class='frame2 jb-small'>INPUT</span>
+`INPUT`
 ```python
 import sympy
 #sympy.init_printing()
@@ -341,7 +340,7 @@ sqrt(Abs(a)**2 + Abs(b)**2 + Abs(c)**2 + Abs(d)**2)
 
 ### Set of vectors that span the null space of a Matrix
 
-<span class='frame2 jb-small'>INPUT</span>
+`INPUT`
 ```python
 import sympy
 #sympy.init_printing()
@@ -362,7 +361,7 @@ M.nullspace()
 
 ### Rank of a matrix
 
-<span class='frame2 jb-small'>INPUT</span>
+`INPUT`
 ```python
 import sympy
 #sympy.init_printing()
@@ -381,7 +380,7 @@ M.rank()
 
 ### Singular values of a matrix
 
-<span class='frame2 jb-small'>INPUT</span>
+`INPUT`
 ```python
 import sympy
 #sympy.init_printing()
@@ -400,7 +399,7 @@ M.singular_values()
 
 ### Linear system of equations in the form Mx = v
 
-<span class='frame2 jb-small'>INPUT</span>
+`INPUT`
 ```python
 import sympy
 #sympy.init_printing()
