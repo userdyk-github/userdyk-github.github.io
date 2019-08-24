@@ -23,6 +23,8 @@ List of posts to read before reading this article
 
 ## **Functions and Methods for Operating**
 
+---
+
 ### Columns vector
 
 `INPUT`
@@ -40,7 +42,9 @@ Matrix([
 [2]])
 ```
 
-<br><br>
+<br><br><br>
+
+---
 
 ### Row vector
 
@@ -56,7 +60,10 @@ sympy.Matrix([[1, 2]])
 ```python
 Matrix([[1, 2]])
 ```
-<br><br>
+<br><br><br>
+
+---
+
 
 ### Value of a corresponding element
 
@@ -75,7 +82,10 @@ Matrix([
 [10, 11, 12, 13],
 [20, 21, 22, 23]])
 ```
-<br><br>
+<br><br><br>
+
+---
+
 
 ### Matrix multiplication
 
@@ -99,7 +109,10 @@ Matrix([
 [a*x_1 + b*x_2],
 [c*x_1 + d*x_2]])
 ```
-<br><br>
+<br><br><br>
+
+---
+
 
 ### Transpose of a matrix
 
@@ -120,7 +133,10 @@ Matrix([
 [a, c],
 [b, d]])
 ```
-<br><br>
+<br><br><br>
+
+---
+
 
 ### Adjoint of a matrix
 
@@ -141,7 +157,10 @@ Matrix([
 [conjugate(a), conjugate(c)],
 [conjugate(b), conjugate(d)]])
 ```
-<br><br>
+<br><br><br>
+
+---
+
 
 ### Trace (sum of diagonal elements) of a matrix
 
@@ -160,7 +179,10 @@ M.trace()
 ```python
 a + d
 ```
-<br><br>
+<br><br><br>
+
+---
+
 
 ### Determinant of a matrix
 
@@ -179,7 +201,10 @@ M.det()
 ```python
 a*d - b*c
 ```
-<br><br>
+<br><br><br>
+
+---
+
 
 ### Inverse of a matrix
 
@@ -200,7 +225,10 @@ Matrix([
 [ d/(a*d - b*c), -b/(a*d - b*c)],
 [-c/(a*d - b*c),  a/(a*d - b*c)]])
 ```
-<br><br>
+<br><br><br>
+
+---
+
 
 ### LU decomposition of a matrix
 
@@ -223,7 +251,10 @@ M.LUdecomposition()
 [a,         b],
 [0, d - b*c/a]]), [])
 ```
-<br><br>
+<br><br><br>
+
+---
+
 
 ### Linear system of equations in the form Mx = v, using LU factorization
 
@@ -247,7 +278,9 @@ Matrix([
 [(-b*(v_2 - c*v_1/a)/(d - b*c/a) + v_1)/a],
 [             (v_2 - c*v_1/a)/(d - b*c/a)]])
 ```
-<br><br>
+<br><br><br>
+
+---
 
 ### QR decomposition of a matrix
 
@@ -268,7 +301,10 @@ M.QRdecomposition()
 [sqrt(10), 7*sqrt(10)/5],
 [       0,   sqrt(10)/5]]))
 ```
-<br><br>
+<br><br><br>
+
+---
+
 
 ### Linear system of equations in the form Mx = v, using QR factorization
 
@@ -289,7 +325,10 @@ Matrix([
 [ -4],
 [9/2]])
 ```
-<br><br>
+<br><br><br>
+
+---
+
 
 ### Diagonalization of a matrix M
 
@@ -311,7 +350,10 @@ M.diagonalize()
 [5/2 - sqrt(33)/2,                0],
 [               0, 5/2 + sqrt(33)/2]]))
 ```
-<br><br>
+<br><br><br>
+
+---
+
 
 ### Norm of a matrix
 
@@ -330,7 +372,10 @@ M.norm()
 ```python
 sqrt(Abs(a)**2 + Abs(b)**2 + Abs(c)**2 + Abs(d)**2)
 ```
-<br><br>
+<br><br><br>
+
+---
+
 
 ### Set of vectors that span the null space of a Matrix
 
@@ -351,7 +396,10 @@ M.nullspace()
 [-b/a],
 [   1]])]
 ```
-<br><br>
+<br><br><br>
+
+---
+
 
 ### Rank of a matrix
 
@@ -370,7 +418,9 @@ M.rank()
 ```python
 2
 ```
-<br><br>
+<br><br><br>
+
+---
 
 ### Singular values of a matrix
 
@@ -387,7 +437,9 @@ M.singular_values()
 ```python
 [sqrt(sqrt(221) + 15), sqrt(15 - sqrt(221))]
 ```
-<br><br>
+<br><br><br>
+
+---
 
 ### Linear system of equations in the form Mx = v
 
@@ -408,7 +460,7 @@ Matrix([
 [(-b*(a*v_2 - c*v_1) + v_1*(a*d - b*c))/(a*(a*d - b*c))],
 [                           (a*v_2 - c*v_1)/(a*d - b*c)]])
 ```
-<br><br>
+<br><br><br>
 
 ---
 
