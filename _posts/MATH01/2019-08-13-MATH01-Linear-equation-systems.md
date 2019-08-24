@@ -54,7 +54,7 @@ print(x)
 <br><br><br>
 
 
----
+<hr class="division2">
 
 ## Rectangular Systems
 <div style="color:black; font-size: 80%; text-align: center;">
