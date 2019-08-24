@@ -68,7 +68,7 @@ import sympy
 sympy.Matrix(3, 4, lambda m, n: 10 * m + n)
 ```
 
-`OUTPUT` : <span class='jb-small'></span>
+`OUTPUT` : <span class='jb-small'>$$\left[\begin{matrix}0 & 1 & 2 & 3\\10 & 11 & 12 & 13\\20 & 21 & 22 & 23\end{matrix}\right]$$</span>
 ```python
 Matrix([
 [ 0,  1,  2,  3],
@@ -93,7 +93,7 @@ x = sympy.Matrix([x_1, x_2])
 M * x
 ```
 
-`OUTPUT` : <span class='jb-small'></span>
+`OUTPUT` : <span class='jb-small'>$$\left[\begin{matrix}a x_{1} + b x_{2}\\c x_{1} + d x_{2}\end{matrix}\right]$$</span>
 ```python
 Matrix([
 [a*x_1 + b*x_2],
@@ -114,7 +114,7 @@ M = sympy.Matrix([[a, b], [c, d]])
 M.T
 ```
 
-`OUTPUT` : <span class='jb-small'></span>
+`OUTPUT` : <span class='jb-small'>$$\left[\begin{matrix}a & c\\b & d\end{matrix}\right]$$</span>
 ```python
 Matrix([
 [a, c],
@@ -135,7 +135,7 @@ M = sympy.Matrix([[a, b], [c, d]])
 M.H
 ```
 
-`OUTPUT` : <span class='jb-small'></span>
+`OUTPUT` : <span class='jb-small'>$$\left[\begin{matrix}\overline{a} & \overline{c}\\\overline{b} & \overline{d}\end{matrix}\right]$$</span>
 ```python
 Matrix([
 [conjugate(a), conjugate(c)],
@@ -156,7 +156,7 @@ M = sympy.Matrix([[a, b], [c, d]])
 M.trace()
 ```
 
-`OUTPUT` : <span class='jb-small'></span>
+`OUTPUT` : <span class='jb-small'>$$a + d$$</span>
 ```python
 a + d
 ```
@@ -175,7 +175,7 @@ M = sympy.Matrix([[a, b], [c, d]])
 M.det()
 ```
 
-`OUTPUT` : <span class='jb-small'></span>
+`OUTPUT` : <span class='jb-small'>$$a d - b c$$</span>
 ```python
 a*d - b*c
 ```
@@ -194,7 +194,7 @@ M = sympy.Matrix([[a, b], [c, d]])
 M.inv()
 ```
 
-`OUTPUT` : <span class='jb-small'></span>
+`OUTPUT` : <span class='jb-small'>$$\left[\begin{matrix}\frac{d}{a d - b c} & - \frac{b}{a d - b c}\\- \frac{c}{a d - b c} & \frac{a}{a d - b c}\end{matrix}\right]$$</span>
 ```python
 Matrix([
 [ d/(a*d - b*c), -b/(a*d - b*c)],
@@ -215,7 +215,7 @@ M = sympy.Matrix([[a, b], [c, d]])
 M.LUdecomposition()
 ```
 
-`OUTPUT` : <span class='jb-small'></span>
+`OUTPUT` : <span class='jb-small'>$$\left ( \left[\begin{matrix}1 & 0\\\frac{c}{a} & 1\end{matrix}\right], \quad \left[\begin{matrix}a & b\\0 & d - \frac{b c}{a}\end{matrix}\right], \quad \left [ \right ]\right )$$</span>
 ```python
 (Matrix([
 [  1, 0],
@@ -241,7 +241,7 @@ v = sympy.Matrix([v_1, v_2])
 M.LUsolve(v)
 ```
 
-`OUTPUT` : <span class='jb-small'></span>
+`OUTPUT` : <span class='jb-small'>$$\left[\begin{matrix}\frac{1}{a} \left(- \frac{b \left(v_{2} - \frac{c v_{1}}{a}\right)}{d - \frac{b c}{a}} + v_{1}\right)\\\frac{v_{2} - \frac{c v_{1}}{a}}{d - \frac{b c}{a}}\end{matrix}\right]$$</span>
 ```python
 Matrix([
 [(-b*(v_2 - c*v_1/a)/(d - b*c/a) + v_1)/a],
