@@ -21,7 +21,23 @@ List of posts to read before reading this article
 
 ---
 
-## title1
+## Functions and Methods for Operating
+
+<span class='frame2'>INPUT</span>
+```python
+```
+
+<span class='frame2'>OUTPUT</span>
+```python
+```
+
+<span class='frame2'>INPUT</span>
+```python
+```
+
+<span class='frame2'>OUTPUT</span>
+```python
+```
 
 ---
 
