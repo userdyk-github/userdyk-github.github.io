@@ -309,7 +309,7 @@ M = sympy.Matrix([[a, b], [c, d]])
 M.diagonalize()
 ```
 
-`OUTPUT` : <span class='jb-small'></span>
+`OUTPUT` : <span class='jb-small'>$$\left ( \left[\begin{matrix}- \frac{2 b}{a - d + \sqrt{a^{2} - 2 a d + 4 b c + d^{2}}} & \frac{2 b}{- a + d + \sqrt{a^{2} - 2 a d + 4 b c + d^{2}}}\\1 & 1\end{matrix}\right], \quad \left[\begin{matrix}\frac{a}{2} + \frac{d}{2} - \frac{1}{2} \sqrt{a^{2} - 2 a d + 4 b c + d^{2}} & 0\\0 & \frac{a}{2} + \frac{d}{2} + \frac{1}{2} \sqrt{a^{2} - 2 a d + 4 b c + d^{2}}\end{matrix}\right]\right )$$</span>
 ```python
 (Matrix([
 [-2*b/(a - d + sqrt(a**2 - 2*a*d + 4*b*c + d**2)), 2*b/(-a + d + sqrt(a**2 - 2*a*d + 4*b*c + d**2))],
@@ -332,7 +332,7 @@ M = sympy.Matrix([[a, b], [c, d]])
 M.norm()
 ```
 
-`OUTPUT` : <span class='jb-small'></span>
+`OUTPUT` : <span class='jb-small'>$$\sqrt{\left|{a}\right|^{2} + \left|{b}\right|^{2} + \left|{c}\right|^{2} + \left|{d}\right|^{2}}$$</span>
 ```python
 sqrt(Abs(a)**2 + Abs(b)**2 + Abs(c)**2 + Abs(d)**2)
 ```
@@ -372,7 +372,7 @@ M = sympy.Matrix([[a, b], [c, d]])
 M.rank()
 ```
 
-`OUTPUT` : <span class='jb-small'></span>
+`OUTPUT` : <span class='jb-small'>$$2$$</span>
 ```python
 2
 ```
@@ -391,7 +391,7 @@ M = sympy.Matrix([[a, b], [c, d]])
 M.singular_values()
 ```
 
-`OUTPUT` : <span class='jb-small'></span>
+`OUTPUT` : <span class='jb-small'>$$\left [ \sqrt{\frac{a \overline{a}}{2} + \frac{b \overline{b}}{2} + \frac{c \overline{c}}{2} + \frac{d \overline{d}}{2} + \frac{1}{2} \sqrt{- 4 \left(a \overline{a} + c \overline{c}\right) \left(b \overline{b} + d \overline{d}\right) + 4 \left(a \overline{b} + c \overline{d}\right) \left(b \overline{a} + d \overline{c}\right) + \left(a \overline{a} + b \overline{b} + c \overline{c} + d \overline{d}\right)^{2}}}, \quad \sqrt{\frac{a \overline{a}}{2} + \frac{b \overline{b}}{2} + \frac{c \overline{c}}{2} + \frac{d \overline{d}}{2} - \frac{1}{2} \sqrt{- 4 \left(a \overline{a} + c \overline{c}\right) \left(b \overline{b} + d \overline{d}\right) + 4 \left(a \overline{b} + c \overline{d}\right) \left(b \overline{a} + d \overline{c}\right) + \left(a \overline{a} + b \overline{b} + c \overline{c} + d \overline{d}\right)^{2}}}\right ]$$</span>
 ```python
 [sqrt(a*conjugate(a)/2 + b*conjugate(b)/2 + c*conjugate(c)/2 + d*conjugate(d)/2 + sqrt(-4*(a*conjugate(a) + c*conjugate(c))*(b*conjugate(b) + d*conjugate(d)) + 4*(a*conjugate(b) + c*conjugate(d))*(b*conjugate(a) + d*conjugate(c)) + (a*conjugate(a) + b*conjugate(b) + c*conjugate(c) + d*conjugate(d))**2)/2), sqrt(a*conjugate(a)/2 + b*conjugate(b)/2 + c*conjugate(c)/2 + d*conjugate(d)/2 - sqrt(-4*(a*conjugate(a) + c*conjugate(c))*(b*conjugate(b) + d*conjugate(d)) + 4*(a*conjugate(b) + c*conjugate(d))*(b*conjugate(a) + d*conjugate(c)) + (a*conjugate(a) + b*conjugate(b) + c*conjugate(c) + d*conjugate(d))**2)/2)]
 ```
@@ -410,7 +410,7 @@ M = sympy.Matrix([[a, b], [c, d]])
 M.solve(v)
 ```
 
-`OUTPUT` : <span class='jb-small'></span>
+`OUTPUT` : <span class='jb-small'>$$\left[\begin{matrix}- \frac{b v_{2}}{a d - b c} + \frac{d v_{1}}{a d - b c}\\\frac{a v_{2}}{a d - b c} - \frac{c v_{1}}{a d - b c}\end{matrix}\right]$$</span>
 ```python
 Matrix([
 [(-b*(a*v_2 - c*v_1) + v_1*(a*d - b*c))/(a*(a*d - b*c))],
