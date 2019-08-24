@@ -34,7 +34,7 @@ title: Study
 ## AI03 : Deep learning
 
 - <a href='https://userdyk-github.github.io/ai03/AI03-Fundamental-of-deep-learning.html'>Fundamental of deep learning</a>
-- <a href='https://userdyk-github.github.io/ai03/AI03-.html'>2</a>
+- <a href='https://userdyk-github.github.io/ai03/AI03-.html'>Convolutional neural networks</a>
 - <a href='https://userdyk-github.github.io/ai03/AI03-.html'>3</a>
 - <a href='https://userdyk-github.github.io/ai03/AI03-.html'>4</a>
 - <a href='https://userdyk-github.github.io/ai03/AI03-.html'>5</a>
