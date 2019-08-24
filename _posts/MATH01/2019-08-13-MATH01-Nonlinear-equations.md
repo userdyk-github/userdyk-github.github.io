@@ -23,11 +23,11 @@ List of posts to read before reading this article
 
 ## title1
 
----
+<hr class="division2">
 
 ## title2
 
----
+<hr class="division2">
 
 ## title3
 
