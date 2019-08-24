@@ -11,7 +11,7 @@ List of posts to read before reading this article
 - <a href='https://userdyk-github.github.io/'>post2</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
-<hr color='black'>
+<hr color="black">
 
 ## Contents
 {:.no_toc}
