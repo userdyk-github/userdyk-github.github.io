@@ -19,7 +19,7 @@ List of posts to read before reading this article
 * ToC
 {:toc}
 
----
+<hr class="division1">
 
 ## Regression with statsmodel
 
@@ -90,7 +90,7 @@ fig, ax = plot_residuals_and_coeff(resid_train, resid_test,  model.coef_)
 
 ## Regression with pytorch
 
----
+<hr class="division1">
 
 List of posts followed by this article
 - [post1](https://userdyk-github.github.io/)
