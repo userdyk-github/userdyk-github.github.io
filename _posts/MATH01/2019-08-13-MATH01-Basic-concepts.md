@@ -39,7 +39,7 @@ Matrix([
 [1],
 [2]])
 ```
-`$$\left[\begin{matrix}1\\2\end{matrix}\right]$$`
+$$`\left[\begin{matrix}1\\2\end{matrix}\right]`$$
 
 <br><br>
 
