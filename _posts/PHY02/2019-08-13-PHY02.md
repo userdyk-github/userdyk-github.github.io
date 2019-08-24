@@ -19,7 +19,7 @@ List of posts to read before reading this article
 * ToC
 {:toc}
 
----
+<hr class="division1">
 
 ## title1
 
@@ -31,7 +31,7 @@ List of posts to read before reading this article
 
 ## title3
 
----
+<hr class="division1">
 
 List of posts followed by this article
 - [post1](https://userdyk-github.github.io/)
