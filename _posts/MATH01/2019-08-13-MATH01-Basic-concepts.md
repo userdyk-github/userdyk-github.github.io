@@ -385,15 +385,14 @@ M.rank()
 import sympy
 #sympy.init_printing()
 
-a, b, c, d = sympy.symbols("a, b, c, d")
-M = sympy.Matrix([[a, b], [c, d]])
+M = sympy.Matrix([[1, 2], [3, 4]])
 
 M.singular_values()
 ```
 
-`OUTPUT` : <span class='jb-small'>$$\left [ \sqrt{\frac{a \overline{a}}{2} + \frac{b \overline{b}}{2} + \frac{c \overline{c}}{2} + \frac{d \overline{d}}{2} + \frac{1}{2} \sqrt{- 4 \left(a \overline{a} + c \overline{c}\right) \left(b \overline{b} + d \overline{d}\right) + 4 \left(a \overline{b} + c \overline{d}\right) \left(b \overline{a} + d \overline{c}\right) + \left(a \overline{a} + b \overline{b} + c \overline{c} + d \overline{d}\right)^{2}}}, \quad \sqrt{\frac{a \overline{a}}{2} + \frac{b \overline{b}}{2} + \frac{c \overline{c}}{2} + \frac{d \overline{d}}{2} - \frac{1}{2} \sqrt{- 4 \left(a \overline{a} + c \overline{c}\right) \left(b \overline{b} + d \overline{d}\right) + 4 \left(a \overline{b} + c \overline{d}\right) \left(b \overline{a} + d \overline{c}\right) + \left(a \overline{a} + b \overline{b} + c \overline{c} + d \overline{d}\right)^{2}}}\right ]$$</span>
+`OUTPUT` : <span class='jb-small'>$$\displaystyle \left[ \sqrt{\sqrt{221} + 15}, \  \sqrt{15 - \sqrt{221}}\right]$$</span>
 ```python
-[sqrt(a*conjugate(a)/2 + b*conjugate(b)/2 + c*conjugate(c)/2 + d*conjugate(d)/2 + sqrt(-4*(a*conjugate(a) + c*conjugate(c))*(b*conjugate(b) + d*conjugate(d)) + 4*(a*conjugate(b) + c*conjugate(d))*(b*conjugate(a) + d*conjugate(c)) + (a*conjugate(a) + b*conjugate(b) + c*conjugate(c) + d*conjugate(d))**2)/2), sqrt(a*conjugate(a)/2 + b*conjugate(b)/2 + c*conjugate(c)/2 + d*conjugate(d)/2 - sqrt(-4*(a*conjugate(a) + c*conjugate(c))*(b*conjugate(b) + d*conjugate(d)) + 4*(a*conjugate(b) + c*conjugate(d))*(b*conjugate(a) + d*conjugate(c)) + (a*conjugate(a) + b*conjugate(b) + c*conjugate(c) + d*conjugate(d))**2)/2)]
+[sqrt(sqrt(221) + 15), sqrt(15 - sqrt(221))]
 ```
 <br><br>
 
