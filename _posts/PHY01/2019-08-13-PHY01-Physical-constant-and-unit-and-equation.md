@@ -19,7 +19,7 @@ List of posts to read before reading this article
 * ToC
 {:toc}
 
----
+<hr class="division1">
 
 ## Some Physical Constant
 
@@ -214,7 +214,7 @@ List of posts to read before reading this article
 
 <br><br><br>
 
----
+<hr class="division1">
 
 
 List of posts followed by this article
