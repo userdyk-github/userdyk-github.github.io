@@ -51,7 +51,7 @@ sympy.Matrix([[1, 2]])
 ```
 <br><br>
 
-###  The value of a corresponding element
+### Value of a corresponding element
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
@@ -64,7 +64,7 @@ sympy.Matrix(3, 4, lambda m, n: 10 * m + n)
 ```
 <br><br>
 
-### The transpose of a matrix
+### Transpose of a matrix
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
@@ -75,7 +75,7 @@ sympy.Matrix(3, 4, lambda m, n: 10 * m + n)
 ```
 <br><br>
 
-### The adjoint of a matrix
+### Adjoint of a matrix
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
@@ -86,7 +86,7 @@ sympy.Matrix(3, 4, lambda m, n: 10 * m + n)
 ```
 <br><br>
 
-### The trace (sum of diagonal elements) of a matrix
+### Trace (sum of diagonal elements) of a matrix
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
@@ -97,7 +97,7 @@ sympy.Matrix(3, 4, lambda m, n: 10 * m + n)
 ```
 <br><br>
 
-### The determinant of a matrix
+### Determinant of a matrix
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
@@ -108,7 +108,7 @@ sympy.Matrix(3, 4, lambda m, n: 10 * m + n)
 ```
 <br><br>
 
-### The inverse of a matrix
+### Inverse of a matrix
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
@@ -119,7 +119,7 @@ sympy.Matrix(3, 4, lambda m, n: 10 * m + n)
 ```
 <br><br>
 
-### The LU decomposition of a matrix
+### LU decomposition of a matrix
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
@@ -130,7 +130,7 @@ sympy.Matrix(3, 4, lambda m, n: 10 * m + n)
 ```
 <br><br>
 
-### A linear system of equations in the form Mx = b, using LU factorization
+### Linear system of equations in the form Mx = b, using LU factorization
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
@@ -141,7 +141,7 @@ sympy.Matrix(3, 4, lambda m, n: 10 * m + n)
 ```
 <br><br>
 
-### The QR decomposition of a matrix
+### QR decomposition of a matrix
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
@@ -152,7 +152,7 @@ sympy.Matrix(3, 4, lambda m, n: 10 * m + n)
 ```
 <br><br>
 
-### A linear system of equations in the form Mx = b, using QR factorization
+### Linear system of equations in the form Mx = b, using QR factorization
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
@@ -174,7 +174,7 @@ sympy.Matrix(3, 4, lambda m, n: 10 * m + n)
 ```
 <br><br>
 
-### The norm of a matrix
+### Norm of a matrix
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
@@ -185,7 +185,7 @@ sympy.Matrix(3, 4, lambda m, n: 10 * m + n)
 ```
 <br><br>
 
-### A set of vectors that span the null space of a Matrix
+### Set of vectors that span the null space of a Matrix
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
@@ -196,7 +196,7 @@ sympy.Matrix(3, 4, lambda m, n: 10 * m + n)
 ```
 <br><br>
 
-### The rank of a matrix
+### Rank of a matrix
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
@@ -207,7 +207,7 @@ sympy.Matrix(3, 4, lambda m, n: 10 * m + n)
 ```
 <br><br>
 
-### The singular values of a matrix
+### Singular values of a matrix
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
@@ -218,7 +218,7 @@ sympy.Matrix(3, 4, lambda m, n: 10 * m + n)
 ```
 <br><br>
 
-### A linear system of equations in the form Mx = b
+### Linear system of equations in the form Mx = b
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
