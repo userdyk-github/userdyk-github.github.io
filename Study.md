@@ -108,12 +108,17 @@ title: Study
 
 ## PHY02 : Electromagnetism
 
-- <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Potential and Electric Field of Discrete Charge
-Distributions</a>
-- <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Boundary Problem of Electrostatics</a>
-- <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Two Ions in the Penning Trap</a>
-- <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>4</a>
-- <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>5</a>
+- <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Electrostatics</a>
+- <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Special Techniques</a>
+- <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Electric Fields in Matter</a>
+- <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Magnetostatics</a>
+- <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Magnetic Fields in Matter</a>
+- <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Electrodynamics</a>
+- <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Conservation Laws</a>
+- <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Electromagnetic Waves</a>
+- <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Potentials and Fields</a>
+- <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Radiation</a>
+- <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Electrodynamics and Relativity</a>
 
 ---
 
@@ -136,17 +141,26 @@ Distributions</a>
 - <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>Anharmonic Oscillator</a>
 - <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>Motion in the Central Force Field</a>
 - <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>Second Virial Coefficient and Its Quantum Corrections</a>
+- <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>Perturbation theory</a>
+- <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>Variational principle</a>
+- <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>WKB approximation</a>
+- <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>Adiabatic</a>
+- <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>Scattering</a>
 
 
 ---
 
 ## PHY05 : Solid state physics
 
-- <a href='https://userdyk-github.github.io/phy05/PHY05-.html'>1</a>
-- <a href='https://userdyk-github.github.io/phy05/PHY05-.html'>2</a>
-- <a href='https://userdyk-github.github.io/phy05/PHY05-.html'>3</a>
-- <a href='https://userdyk-github.github.io/phy05/PHY05-.html'>4</a>
-- <a href='https://userdyk-github.github.io/phy05/PHY05-.html'>5</a>
+- <a href='https://userdyk-github.github.io/phy05/PHY05-.html'>Physics of Solids without Considering Micro-
+scopic Structure</a>
+- <a href='https://userdyk-github.github.io/phy05/PHY05-.html'>Structure of Materials</a>
+- <a href='https://userdyk-github.github.io/phy05/PHY05-.html'>Toy Models of Solids in One Dimension</a>
+- <a href='https://userdyk-github.github.io/phy05/PHY05-.html'>Geometry of Solids</a>
+- <a href='https://userdyk-github.github.io/phy05/PHY05-.html'>Neutron and X-Ray Diffraction</a>
+- <a href='https://userdyk-github.github.io/phy05/PHY05-.html'>Electrons in Solids</a>
+- <a href='https://userdyk-github.github.io/phy05/PHY05-.html'>Magnetism and Mean Field Theories</a>
+
 
 ---
 
@@ -184,7 +198,6 @@ Mass Point</a>
 - <a href='https://userdyk-github.github.io/math02/MATH02-Vector-calculus.html'>Vector calculus</a>
 - <a href='https://userdyk-github.github.io/math02/MATH02-Special-functions-and-numbers.html'>Special functions and numbers</a>
 - <a href='https://userdyk-github.github.io/math02/MATH02-Variations.html'>Variations</a>
-- <a href='https://userdyk-github.github.io/math02/MATH02-Mean-value-theorem.html'>Mean value theorem</a>
 
 
 ---
