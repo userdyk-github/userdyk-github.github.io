@@ -187,6 +187,7 @@ title: Study
 
 ## MATH05 : Statistics
 
+- <a href='https://userdyk-github.github.io/math05/MATH05-Descriptive-statistics.html'>Descriptive statistics</a>
 - <a href='https://userdyk-github.github.io/math05/MATH05-Distribution.html'>Distribution</a>
 - <a href='https://userdyk-github.github.io/math05/MATH05-Curve-fitting.html'>Curve fitting</a>
 - <a href='https://userdyk-github.github.io/math05/MATH05-Specific-tests.html'>Specific tests</a>
