@@ -5,7 +5,7 @@ title: Study
 
 ## AI01 : Data science analysis
 
-- <a href='https://userdyk-github.github.io/ai01/AI01-.html'>Image Data Preparation</a>
+- <a href='https://userdyk-github.github.io/ai01/AI01-.html'>Image data preparation</a>
 - <a href='https://userdyk-github.github.io/ai01/AI01-.html'>2</a>
 - <a href='https://userdyk-github.github.io/ai01/AI01-.html'>3</a>
 - <a href='https://userdyk-github.github.io/ai01/AI01-.html'>4</a>
@@ -55,9 +55,9 @@ title: Study
 
 ## AI05 : Computer vision
 
-- <a href='https://userdyk-github.github.io/ai05/AI05-.html'>Image Classification</a>
-- <a href='https://userdyk-github.github.io/ai05/AI05-.html'>Object Detection</a>
-- <a href='https://userdyk-github.github.io/ai05/AI05-.html'>Face Recognition</a>
+- <a href='https://userdyk-github.github.io/ai05/AI05-.html'>Image classification</a>
+- <a href='https://userdyk-github.github.io/ai05/AI05-.html'>Object detection</a>
+- <a href='https://userdyk-github.github.io/ai05/AI05-.html'>Face recognition</a>
 - <a href='https://userdyk-github.github.io/ai05/AI05-.html'>Image segmentation</a>
 - <a href='https://userdyk-github.github.io/ai05/AI05-.html'>Motion analysis</a>
 - <a href='https://userdyk-github.github.io/ai05/AI05-.html'>Image restoration</a>
@@ -109,30 +109,30 @@ title: Study
 
 - <a href='https://userdyk-github.github.io/phy01/PHY01-Physical-constant-and-unit-and-equation.html'>Physical constant and unit and equation</a>
 - <a href='https://userdyk-github.github.io/phy01/PHY01-Kinematics.html'>Kinematics</a>
-- <a href='https://userdyk-github.github.io/phy01/PHY01-.html'>Newtonian Mechanics</a>
-- <a href='https://userdyk-github.github.io/phy01/PHY01-.html'>Central Forces</a>
-- <a href='https://userdyk-github.github.io/phy01/PHY01-.html'>Calculus of Variations</a>
-- <a href='https://userdyk-github.github.io/phy01/PHY01-.html'>Lagrange Dynamics</a>
-- <a href='https://userdyk-github.github.io/phy01/PHY01-.html'>Hamiltonian Dynamics</a>
-- <a href='https://userdyk-github.github.io/phy01/PHY01-.html'>Chaotic Systems</a>
-- <a href='https://userdyk-github.github.io/phy01/PHY01-.html'>Rigid Body</a>
-- <a href='https://userdyk-github.github.io/phy01/PHY01-.html'>Nonlinear Dynamics</a>
+- <a href='https://userdyk-github.github.io/phy01/PHY01-.html'>Newtonian mechanics</a>
+- <a href='https://userdyk-github.github.io/phy01/PHY01-.html'>Central forces</a>
+- <a href='https://userdyk-github.github.io/phy01/PHY01-.html'>Calculus of variations</a>
+- <a href='https://userdyk-github.github.io/phy01/PHY01-.html'>Lagrange dynamics</a>
+- <a href='https://userdyk-github.github.io/phy01/PHY01-.html'>Hamiltonian dynamics</a>
+- <a href='https://userdyk-github.github.io/phy01/PHY01-.html'>Chaotic systems</a>
+- <a href='https://userdyk-github.github.io/phy01/PHY01-.html'>Rigid body</a>
+- <a href='https://userdyk-github.github.io/phy01/PHY01-.html'>Nonlinear dynamics</a>
 
 ---
 
 ## PHY02 : Electromagnetism
 
 - <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Electrostatics</a>
-- <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Special Techniques</a>
-- <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Electric Fields in Matter</a>
+- <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Special techniques</a>
+- <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Electric fields in matter</a>
 - <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Magnetostatics</a>
-- <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Magnetic Fields in Matter</a>
+- <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Magnetic fields in matter</a>
 - <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Electrodynamics</a>
-- <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Conservation Laws</a>
-- <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Electromagnetic Waves</a>
-- <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Potentials and Fields</a>
+- <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Conservation laws</a>
+- <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Electromagnetic waves</a>
+- <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Potentials and fields</a>
 - <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Radiation</a>
-- <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Electrodynamics and Relativity</a>
+- <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Electrodynamics and relativity</a>
 
 ---
 
@@ -155,13 +155,13 @@ title: Study
 
 ## PHY04 : Quantum theory
 
-- <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>Blackbody Radiation</a>
-- <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>The Schrödinger Equation</a>
-- <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>One-Dimensional Potential</a>
-- <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>The Harmonic Oscillator</a>
-- <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>Anharmonic Oscillator</a>
-- <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>Motion in the Central Force Field</a>
-- <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>Second Virial Coefficient and Its Quantum Corrections</a>
+- <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>Blackbody radiation</a>
+- <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>The schrödinger equation</a>
+- <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>One-Dimensional potential</a>
+- <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>The harmonic oscillator</a>
+- <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>Anharmonic oscillator</a>
+- <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>Motion in the central force field</a>
+- <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>Second virial coefficient and its quantum corrections</a>
 - <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>Perturbation theory</a>
 - <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>Variational principle</a>
 - <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>WKB approximation</a>
@@ -173,25 +173,25 @@ title: Study
 
 ## PHY05 : Solid state physics
 
-- <a href='https://userdyk-github.github.io/phy05/PHY05-.html'>Physics of Solids without Considering Micro-
+- <a href='https://userdyk-github.github.io/phy05/PHY05-.html'>Physics of solids without considering micro-
 scopic Structure</a>
-- <a href='https://userdyk-github.github.io/phy05/PHY05-.html'>Structure of Materials</a>
-- <a href='https://userdyk-github.github.io/phy05/PHY05-.html'>Toy Models of Solids in One Dimension</a>
-- <a href='https://userdyk-github.github.io/phy05/PHY05-.html'>Geometry of Solids</a>
-- <a href='https://userdyk-github.github.io/phy05/PHY05-.html'>Neutron and X-Ray Diffraction</a>
-- <a href='https://userdyk-github.github.io/phy05/PHY05-.html'>Electrons in Solids</a>
-- <a href='https://userdyk-github.github.io/phy05/PHY05-.html'>Magnetism and Mean Field Theories</a>
+- <a href='https://userdyk-github.github.io/phy05/PHY05-.html'>Structure of materials</a>
+- <a href='https://userdyk-github.github.io/phy05/PHY05-.html'>Toy models of solids in one dimension</a>
+- <a href='https://userdyk-github.github.io/phy05/PHY05-.html'>Geometry of solids</a>
+- <a href='https://userdyk-github.github.io/phy05/PHY05-.html'>Neutron and X-Ray diffraction</a>
+- <a href='https://userdyk-github.github.io/phy05/PHY05-.html'>Electrons in solids</a>
+- <a href='https://userdyk-github.github.io/phy05/PHY05-.html'>Magnetism and mean field theories</a>
 
 
 ---
 
 ## PHY06 : Theory of relativity
 
-- <a href='https://userdyk-github.github.io/phy06/PHY06-.html'>The Orbits in General Relativity</a>
-- <a href='https://userdyk-github.github.io/phy06/PHY06-.html'>Light Bending in the Gravitational Field</a>
-- <a href='https://userdyk-github.github.io/phy06/PHY06-.html'>Einstein's Field Equations</a>
-- <a href='https://userdyk-github.github.io/phy06/PHY06-.html'>The Schwarzschild Solution</a>
-- <a href='https://userdyk-github.github.io/phy06/PHY06-.html'>The Reissner–Nordstrom Solution for a Charged
+- <a href='https://userdyk-github.github.io/phy06/PHY06-.html'>The orbits in general relativity</a>
+- <a href='https://userdyk-github.github.io/phy06/PHY06-.html'>Light bending in the gravitational field</a>
+- <a href='https://userdyk-github.github.io/phy06/PHY06-.html'>Einstein's field equations</a>
+- <a href='https://userdyk-github.github.io/phy06/PHY06-.html'>The schwarzschild solution</a>
+- <a href='https://userdyk-github.github.io/phy06/PHY06-.html'>The Reissner–Nordstrom solution for a charged
 Mass Point</a>
 
 ---
