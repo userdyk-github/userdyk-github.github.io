@@ -23,6 +23,8 @@ List of posts to read before reading this article
 
 ## Functions and Methods for Operating
 
+### the transpose of a matrix
+
 <span class='frame2 jb-small'>INPUT</span>
 ```python
 ```
@@ -30,6 +32,138 @@ List of posts to read before reading this article
 <span class='frame2 jb-small'>OUTPUT</span>
 ```python
 ```
+
+### the adjoint of a matrix
+
+<span class='frame2 jb-small'>INPUT</span>
+```python
+```
+
+<span class='frame2 jb-small'>OUTPUT</span>
+```python
+```
+
+### the trace (sum of diagonal elements) of a matrix
+
+<span class='frame2 jb-small'>INPUT</span>
+```python
+```
+
+<span class='frame2 jb-small'>OUTPUT</span>
+```python
+```
+
+### the determinant of a matrix
+
+<span class='frame2 jb-small'>INPUT</span>
+```python
+```
+
+<span class='frame2 jb-small'>OUTPUT</span>
+```python
+```
+
+### the inverse of a matrix
+
+<span class='frame2 jb-small'>INPUT</span>
+```python
+```
+
+<span class='frame2 jb-small'>OUTPUT</span>
+```python
+```
+
+### the LU decomposition of a matrix
+
+<span class='frame2 jb-small'>INPUT</span>
+```python
+```
+
+<span class='frame2 jb-small'>OUTPUT</span>
+```python
+```
+
+### a linear system of equations in the form Mx = b, using LU factorization
+
+<span class='frame2 jb-small'>INPUT</span>
+```python
+```
+
+<span class='frame2 jb-small'>OUTPUT</span>
+```python
+```
+
+### the QR decomposition of a matrix
+
+<span class='frame2 jb-small'>INPUT</span>
+```python
+```
+
+<span class='frame2 jb-small'>OUTPUT</span>
+```python
+```
+
+### a linear system of equations in the form Mx = b, using QR factorization
+
+<span class='frame2 jb-small'>INPUT</span>
+```python
+```
+
+<span class='frame2 jb-small'>OUTPUT</span>
+```python
+```
+
+### Diagonalization of a matrix M
+
+<span class='frame2 jb-small'>INPUT</span>
+```python
+```
+
+<span class='frame2 jb-small'>OUTPUT</span>
+```python
+```
+
+### the norm of a matrix
+
+<span class='frame2 jb-small'>INPUT</span>
+```python
+```
+
+<span class='frame2 jb-small'>OUTPUT</span>
+```python
+```
+
+### a set of vectors that span the null space of a Matrix
+
+<span class='frame2 jb-small'>INPUT</span>
+```python
+```
+
+<span class='frame2 jb-small'>OUTPUT</span>
+```python
+```
+
+### the rank of a matrix
+
+<span class='frame2 jb-small'>INPUT</span>
+```python
+```
+
+<span class='frame2 jb-small'>OUTPUT</span>
+```python
+```
+
+### the singular values of a matrix
+
+<span class='frame2 jb-small'>INPUT</span>
+```python
+```
+
+<span class='frame2 jb-small'>OUTPUT</span>
+```python
+```
+
+### a linear system of equations in the form Mx = b
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
