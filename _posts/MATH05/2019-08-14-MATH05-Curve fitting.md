@@ -20,8 +20,6 @@ List of posts to read before reading this article
 {:toc}
 
 ---
----
----
 
 ## **Expoential model fitting**
 
@@ -84,7 +82,7 @@ $$ data \xrightarrow{curve\ fitting} y = a e^{-bx}+c $$ </div>
 It might be difficult to understand the meaning by looking at only the above code. To simplify the problem, the mathematical graph you are going to fit on will be confined to models that can be mathematically represented in the form of $$ a e^{-bx} + c $$ rather than in any form. In other word, the following details-code [1] below is the description of this as a programming language. Instead of thinking about the complex number of cases, you should approach simple thing first. ***And then in order to finally obtain the curve you want to fit, you must find the value of the constant $$ a, b, c $$.***
 
 
-`Details-code [1] : Mathematical representation of the curve you want to fit`
+`Details-code [1]`
 ```python
 # [1] : Mathematical representation of the graph you want to fit
 def func(x, a, b, c):
@@ -100,7 +98,7 @@ Before you find the values of a, b, and c defined above, let's look at the data.
 
 
 
-`Details-code [2] : Input Data`
+`Details-code [2]`
 ```python
 # [2] : Input Data
 np.random.seed(1729)
@@ -135,7 +133,7 @@ $$ pcov =
 
 
 
-`Details-code [3] : Output through input target function(1)`
+`Details-code [3]`
 ```python
 # [3] : Output through input target function(1)
 popt, pcov = curve_fit(func, xdata, ydata)
@@ -159,7 +157,7 @@ $$ pcov =
 
 
 
-`Details-code [4] : Output through input target function(2)`
+`Details-code [4]`
 ```python
 # [4] : Output through input target function(2)
 popt, pcov = curve_fit(func, xdata, ydata, bounds=(0, [3., 1., 0.5]))
@@ -197,25 +195,17 @@ plt.show()
 
  
 ---
----
----
 
 ## **Gaussian model fitting**
 
----
----
 ---
 
 ## **Two gaussian model fitting**
 
 ---
----
----
 
 ## **Curve fit with seaborn based on specific distribution**
 
----
----
 ---
 
 List of posts followed by this article
