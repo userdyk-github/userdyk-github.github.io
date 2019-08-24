@@ -27,10 +27,13 @@ List of posts to read before reading this article
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
+import sympy
+sympy.Matrix([1, 2])
 ```
 
 <span class='frame2 jb-small'>OUTPUT</span>
 ```python
+
 ```
 <br><br>
 
@@ -38,6 +41,22 @@ List of posts to read before reading this article
 
 <span class='frame2 jb-small'>INPUT</span>
 ```python
+import sympy
+sympy.Matrix([[1, 2]])
+```
+
+<span class='frame2 jb-small'>OUTPUT</span>
+```python
+
+```
+<br><br>
+
+###  The value of a corresponding element
+
+<span class='frame2 jb-small'>INPUT</span>
+```python
+import sympy
+sympy.Matrix(3, 4, lambda m, n: 10 * m + n)
 ```
 
 <span class='frame2 jb-small'>OUTPUT</span>
