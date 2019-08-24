@@ -33,13 +33,12 @@ import sympy
 sympy.Matrix([1, 2])
 ```
 
-`OUTPUT`
+`OUTPUT` : <span class='jb-small'>$$\left[\begin{matrix}1\\2\end{matrix}\right]$$</span>
 ```python
 Matrix([
 [1],
 [2]])
 ```
-$$`\left[\begin{matrix}1\\2\end{matrix}\right]`$$
 
 <br><br>
 
