@@ -19,7 +19,7 @@ List of posts to read before reading this article
 * ToC
 {:toc}
 
----
+<hr class="division1">
 
 <div style="color:black; font-size: 80%; text-align: center;">
   $$Parameters(loc,\ scale)\ :\ y=\frac{x-loc}{scale}$$
@@ -853,7 +853,7 @@ print(X.interval(0.05))
 
 <br><br><br>
 
----
+<hr class="division1">
 
 List of posts followed by this article
 - [post1](https://userdyk-github.github.io/)
