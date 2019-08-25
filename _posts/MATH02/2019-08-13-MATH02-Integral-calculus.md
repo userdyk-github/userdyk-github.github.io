@@ -21,9 +21,9 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## integrate
+## Indefinite integral
 
-### Indefinite integral
+### Single-variable function
 
 `INPUT`
 ```python
@@ -31,8 +31,8 @@ import sympy
 #symypy.init_printing()
 from sympy import symbols, Function, integrate
 
-a, b, x, y = sympy.symbols("a, b, x, y")
-f = sympy.Function("f")(x)
+x = symbols("x")
+f = Function("f")(x)
 
 integrate(f)
 ```
@@ -41,7 +41,28 @@ integrate(f)
 
 ---
 
-### Definite integral
+### Explicit function
+
+`INPUT`
+```python
+import sympy
+#symypy.init_printing()
+from sympy import symbols, sin, integrate
+
+x = symbols("x")
+
+integrate(sin(x))
+```
+`OUTPUT` : <span class='jb-small'>$$\displaystyle - \cos{\left(x \right)}$$</span>
+<br><br><br>
+ 
+
+
+<hr class="division2">
+
+## Definite integral
+
+### Single-variable function
 
 `INPUT`
 ```python
@@ -49,21 +70,30 @@ import sympy
 #symypy.init_printing()
 from sympy import symbols, Function, integrate
 
-a, b, x, y = sympy.symbols("a, b, x, y")
-f = sympy.Function("f")(x)
+a, b, x, y = symbols("a, b, x, y")
+f = Function("f")(x)
 
 integrate(f, (x, a, b))
 ```
 `OUTPUT` : <span class='jb-small'>$$\displaystyle \int\limits_{a}^{b} f{\left(x \right)}\, dx$$</span>
 <br><br><br>
 
-<hr class="division2">
+---
 
-## title2
+### Explicit function
 
-<hr class="division2">
+`INPUT`
+```python
+import sympy
+#symypy.init_printing()
+from sympy import symbols, sin, integrate
 
-## title3
+a, b, x, y = symbols("a, b, x, y")
+
+integrate(sin(x), (x, a, b))
+```
+`OUTPUT` : <span class='jb-small'>$$\displaystyle \cos{\left(a \right)} - \cos{\left(b \right)}$$</span>
+<br><br><br>
 
 <hr class="division1">
 
