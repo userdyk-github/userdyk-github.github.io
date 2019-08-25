@@ -21,7 +21,9 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
+## integrate
+
+### Indefinite integral
 
 `INPUT`
 ```python
@@ -35,6 +37,24 @@ f = sympy.Function("f")(x)
 integrate(f)
 ```
 `OUTPUT` : <span class='jb-small'>$$\displaystyle \int f{\left(x \right)}\, dx$$</span>
+<br><br><br>
+
+---
+
+### Definite integral
+
+`INPUT`
+```python
+import sympy
+#symypy.init_printing()
+from sympy import symbols, Function, integrate
+
+a, b, x, y = sympy.symbols("a, b, x, y")
+f = sympy.Function("f")(x)
+
+integrate(f, (x, a, b))
+```
+`OUTPUT` : <span class='jb-small'>$$\displaystyle \int\limits_{a}^{b} f{\left(x \right)}\, dx$$</span>
 <br><br><br>
 
 <hr class="division2">
