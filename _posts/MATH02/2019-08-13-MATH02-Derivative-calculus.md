@@ -37,6 +37,25 @@ f = Function('f')(x)
 diff(f, x)
 ```
 `OUTPUT` : <span class='jb-small'>$$\displaystyle \frac{d}{d x} f{\left(x \right)}$$</span>
+<br><br><br>
+
+---
+
+### Higher-order derivative
+
+`INPUT`
+```python
+import sympy
+#symypy.init_printing()
+from sympy import symbols, Function, diff
+
+x = symbols('x')
+f = Function('f')(x)
+
+diff(f, x, 3)
+```
+`OUTPUT` : <span class='jb-small'>$$\displaystyle \frac{d^{3}}{d x^{3}} f{\left(x \right)}$$</span>
+<br><br><br>
 
 <hr class="division2">
 
