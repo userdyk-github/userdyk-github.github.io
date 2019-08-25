@@ -32,8 +32,7 @@ import sympy
 from sympy import symbols, Sum, oo
 
 n = symbols("n", integer=True)
-x = Sum(1/(n**2), (n, 1, oo))
-x
+Sum(1/(n**2), (n, 1, oo))
 ```
 `OUTPUT` : <span class='jb-small'>$$\displaystyle \sum_{n=1}^{\infty} \frac{1}{n^{2}}$$</span>
 <br><br><br>
@@ -68,8 +67,7 @@ import sympy
 from sympy import symbols, Product
 
 n = symbols("n", integer=True)
-x = Product(n, (n, 1, 7))
-x
+Product(n, (n, 1, 7))
 ```
 `OUTPUT` : <span class='jb-small'>$$\displaystyle \prod_{n=1}^{7} n$$</span>
 <br><br><br>
