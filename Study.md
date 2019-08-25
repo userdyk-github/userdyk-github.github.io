@@ -62,7 +62,7 @@ title: Study
 - <a href='https://userdyk-github.github.io/ai05/AI05-.html'>Motion analysis</a>
 - <a href='https://userdyk-github.github.io/ai05/AI05-.html'>Image restoration</a>
 
----
+<hr class='division2'>
 
 ## EE01 : Integrated circuits
 
@@ -103,7 +103,8 @@ title: Study
 - <a href='https://userdyk-github.github.io/ee03/EE03-.html'>4</a>
 - <a href='https://userdyk-github.github.io/ee03/EE03-.html'>5</a>
 
----
+<hr class='division2'>
+
 
 ## PHY01 : Classical mechanics
 
@@ -194,7 +195,8 @@ scopic Structure</a>
 - <a href='https://userdyk-github.github.io/phy06/PHY06-.html'>The Reissner–Nordstrom solution for a charged
 Mass Point</a>
 
----
+<hr class='division2'>
+
 
 ## MATH01 : Linear algebra
 
