@@ -139,7 +139,7 @@ expr.diff(x)
 
 ## Derivative
 
-### Symbolically represent the derivative
+### Symbolically represent a derivative
 
 `INPUT`
 ```python
@@ -155,7 +155,7 @@ Derivative(exp(cos(x)), x)
 
 ---
 
-### Evalutation for derivative
+### Evalutation for a derivative
 
 `INPUT`
 ```python
