@@ -75,6 +75,42 @@ integrate(sin(x * cos(x)))
 
 ---
 
+### Symbolically represent an integral
+
+`INPUT`
+```python
+import sympy
+#symypy.init_printing()
+from sympy import symbols, Integral
+
+x = symbols("x")
+
+Integral(x)
+```
+`OUTPUT` : <span class='jb-small'>$$\displaystyle \int x\, dx$$</span>
+<br><br><br>
+
+---
+
+### Evalutation for an integral
+
+`INPUT`
+```python
+import sympy
+#symypy.init_printing()
+from sympy import symbols, Integral
+
+x = symbols("x")
+
+i = Integral(x)
+i.doit()
+```
+`OUTPUT` : <span class='jb-small'>$$\displaystyle \frac{x^{2}}{2}$$</span>
+<br><br><br>
+
+---
+
+
 ### Integral of a multivariable expression
 
 `INPUT`
@@ -90,7 +126,6 @@ integrate(expr, x, y)
 ```
 `OUTPUT` : <span class='jb-small'>$$\displaystyle \frac{x^{3} y}{3} + \frac{x^{2} y^{2}}{2} + \frac{x y^{3}}{3}$$</span>
 <br><br><br>
-
 
 
 <hr class="division2">
@@ -162,6 +197,41 @@ a, b, x = symbols("a, b, x")
 integrate(sin(x * cos(x)),(x,a,b))
 ```
 `OUTPUT` : <span class='jb-small'>$$\displaystyle \int\limits_{a}^{b} \sin{\left(x \cos{\left(x \right)} \right)}\, dx$$</span>
+<br><br><br>
+
+---
+
+### Symbolically represent an integral
+
+`INPUT`
+```python
+import sympy
+#symypy.init_printing()
+from sympy import symbols, Integral
+
+a, b, x = symbols("a, b, x")
+
+Integral(x, (x, a, b))
+```
+`OUTPUT` : <span class='jb-small'>$$\displaystyle \int\limits_{a}^{b} x\, dx$$</span>
+<br><br><br>
+
+---
+
+### Evalutation for an integral
+
+`INPUT`
+```python
+import sympy
+#symypy.init_printing()
+from sympy import symbols, Integral
+
+a, b, x = symbols("a, b, x")
+
+i = Integral(x, (x, a, b))
+i.doit()
+```
+`OUTPUT` : <span class='jb-small'>$$\displaystyle - \frac{a^{2}}{2} + \frac{b^{2}}{2}$$</span>
 <br><br><br>
 
 ---
