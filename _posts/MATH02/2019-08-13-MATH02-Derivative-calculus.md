@@ -21,11 +21,11 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
+## Derivative of an abstract function
 
 <hr class="division2">
 
-## title2
+## Derivative of an specific function
 
 <hr class="division2">
 
