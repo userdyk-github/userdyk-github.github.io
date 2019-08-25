@@ -23,6 +23,18 @@ List of posts to read before reading this article
 
 ## title1
 
+`INPUT`
+```python
+import sympy
+#symypy.init_printing()
+from sympy import symbols, Sum, oo
+
+n = symbols("n", integer=True)
+x = Sum(1/(n**2), (n, 1, oo))
+x
+```
+`OUTPUT` : <span class='jb-small'>$$\displaystyle \sum_{n=1}^{\infty} \frac{1}{n^{2}}$$</span>
+
 <hr class="division2">
 
 ## title2
