@@ -105,7 +105,7 @@ import sympy
 #symypy.init_printing()
 from sympy import symbols, Function, integrate
 
-a, b, x, y = symbols("a, b, x, y")
+a, b, x = symbols("a, b, x")
 f = Function("f")(x)
 
 integrate(f, (x, a, b))
@@ -123,7 +123,7 @@ import sympy
 #symypy.init_printing()
 from sympy import symbols, sin, integrate
 
-a, b, x, y = symbols("a, b, x, y")
+a, b, x = symbols("a, b, x")
 
 integrate(sin(x), (x, a, b))
 ```
@@ -140,7 +140,7 @@ import sympy
 #symypy.init_printing()
 from sympy import symbols, exp, integrate, oo
 
-a, b, x, y = symbols("a, b, x, y")
+x = symbols("x")
 
 integrate(exp(-x**2), (x, 0, oo))
 ```
@@ -157,7 +157,7 @@ import sympy
 #symypy.init_printing()
 from sympy import symbols, sin, cos, integrate, oo
 
-a, b, x, y = symbols("a, b, x, y")
+a, b, x = symbols("a, b, x")
 
 integrate(sin(x * cos(x)),(x,a,b))
 ```
