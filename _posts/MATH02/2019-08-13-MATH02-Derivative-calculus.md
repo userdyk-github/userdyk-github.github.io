@@ -52,7 +52,9 @@ from sympy import symbols, Function, diff
 x = symbols('x')
 f = Function('f')(x)
 
-f.diff(x, 3)           # equivalent to diff(f, x, x, x)
+f.diff(x, 3)           # equivalent to f.diff(x, x, x)
+                       # equivalent to diff(f, x, 3)
+                       # equivalent to diff(f, x, x, x)
 ```
 `OUTPUT` : <span class='jb-small'>$$\displaystyle \frac{d^{3}}{d x^{3}} f{\left(x \right)}$$</span>
 <br><br><br>
@@ -70,8 +72,10 @@ from sympy import symbols, Function, diff
 x, y = symbols('x, y')
 g = sympy.Function('g')(x, y)
 
-g2 = g.diff(x, y)           # equivalent to sympy.diff(g, x, y)
-g5 = g.diff(x, 3, y, 2)     # equivalent to sympy.diff(g, x, x, x, y, y)
+g2 = g.diff(x, y)           # equivalent to diff(g, x, y)
+g5 = g.diff(x, 3, y, 2)     # equivalent to g.diff(x, x, x, y, y)
+                            # equivalent to diff(g, x, 3, y, 2)
+                            # equivalent to diff(g, x, x, x, y, y)
 
 g2, g5
 ```
