@@ -21,7 +21,7 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## Derivative of an abstract function
+## diff : Derivative of an abstract function
 
 ### First-order derivative
 
@@ -80,11 +80,91 @@ g2, g5
 
 <hr class="division2">
 
-## Derivative of an specific function
+## diff : Derivative of an specific function
+
+### Polynomials
+
+`INPUT`
+```python
+import sympy
+#symypy.init_printing()
+from sympy import symbols, diff
+
+x = symbols('x')
+expr = x**4 + x**3 + x**2 + x + 1
+expr.diff(x)
+```
+`OUTPUT` : <span class='jb-small'>$$\displaystyle 4 x^{3} + 3 x^{2} + 2 x + 1$$</span>
+<br><br><br>
+
+---
+
+### Trigonometric
+
+`INPUT`
+```python
+import sympy
+#symypy.init_printing()
+from sympy import symbols, diff, cos, sin
+
+x, y = symbols('x, y')
+expr = sin(x * y) * cos(x / 2)
+expr.diff(x)
+```
+`OUTPUT` : <span class='jb-small'>$$\displaystyle y \cos{\left(\frac{x}{2} \right)} \cos{\left(x y \right)} - \frac{\sin{\left(\frac{x}{2} \right)} \sin{\left(x y \right)}}{2}$$</span>
+<br><br><br>
+
+---
+
+### Special function
+
+`INPUT`
+```python
+import sympy
+#symypy.init_printing()
+from sympy import symbols, diff
+
+x = symbols('x')
+expr = sympy.special.polynomials.hermite(x, 0)
+expr.diff(x)
+```
+`OUTPUT` : <span class='jb-small'>$$\displaystyle \frac{2^{x} \sqrt{\pi} \operatorname{polygamma}{\left(0,\frac{1}{2} - \frac{x}{2} \right)}}{2 \Gamma\left(\frac{1}{2} - \frac{x}{2}\right)} + \frac{2^{x} \sqrt{\pi} \log{\left(2 \right)}}{\Gamma\left(\frac{1}{2} - \frac{x}{2}\right)}$$</span>
+<br><br><br>
 
 <hr class="division2">
 
-## title3
+## Derivative
+
+### Symbolically represent the derivative
+
+`INPUT`
+```python
+import sympy
+#symypy.init_printing()
+from sympy import symbols, Derivative, exp, cos
+
+x = symbols('x')
+Derivative(exp(cos(x)), x)
+```
+`OUTPUT` : <span class='jb-small'>$$\displaystyle \frac{d}{d x} e^{\cos{\left(x \right)}}$$</span>
+<br><br><br>
+
+---
+
+### Evalutation for derivative
+
+`INPUT`
+```python
+import sympy
+#symypy.init_printing()
+from sympy import symbols, Derivative, exp, cos
+
+x = symbols('x')
+d = Derivative(exp(cos(x)), x)
+d.doit()
+```
+`OUTPUT` : <span class='jb-small'>$$\displaystyle - e^{\cos{\left(x \right)}} \sin{\left(x \right)}$$</span>
+<br><br><br>
 
 <hr class="division1">
 
