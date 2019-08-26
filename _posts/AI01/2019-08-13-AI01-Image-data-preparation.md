@@ -42,7 +42,7 @@ image.show()
 ```
 
 <details markdown="1">
-<summary>접기/펼치기</summary>
+<summary>OUTPUT</summary>
 <p>
     JPEG<br>
     RGB<br>
