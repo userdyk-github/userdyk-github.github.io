@@ -229,6 +229,37 @@ for filename in listdir('images'):
 
 ## **How to Save Images to File**
 
+### ***Saving image with keras***
+
+```python
+# example of saving an image with the Keras API
+from keras.preprocessing.image import load_img
+from keras.preprocessing.image import save_img
+from keras.preprocessing.image import img_to_array
+
+# load image as as grayscale
+img = load_img('beach.jpg', color_mode='grayscale')
+
+# convert image to a numpy array
+img_array = img_to_array(img)
+
+# save the image with a new filename
+save_img('bondi_beach_grayscale.jpg', img_array)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+[bondi_beach_grayscale.jpg][1]
+
+[1]:{{ site.url }}/download/AI01/bondi_beach_grayscale.jpg
+<hr class='division3'>
+</details>
+
+
+<br><br><br>
+
+---
+
 ### ***Saving image with PIL***
 
 ```python
