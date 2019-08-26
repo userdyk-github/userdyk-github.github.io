@@ -43,12 +43,14 @@ image.show()
 
 <details markdown="1">
 <summary class='jb-small'>OUTPUT</summary>
+<hr class='division3'>
 <p>
     JPEG<br>
     RGB<br>
     (640, 360)
 </p>
 ![opera_house](https://user-images.githubusercontent.com/52376448/63676217-6a0b9580-c825-11e9-96fd-0d2b96f653c1.jpg)
+<hr class='division4'>
 </details>
 
 <br><br><br>
