@@ -51,7 +51,7 @@ image.show()
 
 ---
 
-### **How to Convert Images to NumPy Arrays and Back**
+### ***How to Convert Images to NumPy Arrays and Back***
 
 `Matplotlib`
 ```python
@@ -147,7 +147,7 @@ for filename in listdir('images'):
 
 ---
 
-### **How to Save Images to File**
+### ***How to Save Images to File***
 
 `Saving images`
 ```python
@@ -196,7 +196,7 @@ image2.show()
 
 ---
 
-### **How to Resize Images**
+### ***How to Resize Images***
 
 `Resize images, preserving the aspect ratio`
 ```python
@@ -246,7 +246,7 @@ img_resized.show()
 
 ---
 
-### **How to Flip, Rotate, and Crop Images**
+### ***How to Flip, Rotate, and Crop Images***
 
 `Flip images`
 ```python
