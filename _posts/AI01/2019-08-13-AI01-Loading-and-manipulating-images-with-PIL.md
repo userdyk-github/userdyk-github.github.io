@@ -112,7 +112,9 @@ io.imshow(img_rgb)
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 <matplotlib.image.AxesImage at 0x1b99ef0da90>
+![다운로드](https://user-images.githubusercontent.com/52376448/63702102-4108f600-c861-11e9-8bda-c3326a0bec65.png)
 
+![다운로드 (1)](https://user-images.githubusercontent.com/52376448/63702107-449c7d00-c861-11e9-98c1-f16f156b00df.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -148,7 +150,9 @@ io.imshow(img_rgb)
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 <matplotlib.image.AxesImage at 0x194140a0cf8>
+![다운로드 (2)](https://user-images.githubusercontent.com/52376448/63702164-639b0f00-c861-11e9-8737-08537e2bc073.png)
 
+![다운로드 (3)](https://user-images.githubusercontent.com/52376448/63702173-6564d280-c861-11e9-857b-bbc28e15932a.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -183,7 +187,9 @@ io.imshow(img_rgb)
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 <matplotlib.image.AxesImage at 0x194141acf98>
+![다운로드 (4)](https://user-images.githubusercontent.com/52376448/63702214-7d3c5680-c861-11e9-839c-80bc4f8bd825.png)
 
+![다운로드 (5)](https://user-images.githubusercontent.com/52376448/63702221-7f061a00-c861-11e9-93e2-435a552b46a6.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -218,7 +224,9 @@ io.imshow(img_rgb)
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 <matplotlib.image.AxesImage at 0x194142c0940>
+![다운로드 (6)](https://user-images.githubusercontent.com/52376448/63702241-8af1dc00-c861-11e9-9fac-480a3545b3bb.png)
 
+![다운로드 (7)](https://user-images.githubusercontent.com/52376448/63702246-8d543600-c861-11e9-8fdc-49164ccfef90.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -253,7 +261,9 @@ io.imshow(img_rgb)
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 <matplotlib.image.AxesImage at 0x19415d2a6d8>
+![다운로드 (8)](https://user-images.githubusercontent.com/52376448/63702272-98a76180-c861-11e9-8d68-82ce82c99353.png)
 
+![다운로드 (9)](https://user-images.githubusercontent.com/52376448/63702277-9b09bb80-c861-11e9-9d00-c27df3b67290.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -288,7 +298,9 @@ io.imshow(img_rgb)
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 <matplotlib.image.AxesImage at 0x19415e8e470>
+![다운로드 (10)](https://user-images.githubusercontent.com/52376448/63702289-a2c96000-c861-11e9-9ec1-ad7f7bcccd78.png)
 
+![다운로드 (11)](https://user-images.githubusercontent.com/52376448/63702292-a4932380-c861-11e9-9806-88c18c2a9b0b.png)
 <hr class='division3'>
 </details>
 <br><br><br>
