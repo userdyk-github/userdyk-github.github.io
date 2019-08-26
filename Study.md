@@ -3,7 +3,7 @@ layout: page
 title: Study
 ---
 
-## AI01 : Data science analysis
+## **AI01 : Data science analysis**
 
 - <a href='https://userdyk-github.github.io/ai01/AI01-Image-data-preparation.html'>Image data preparation</a>
 - <a href='https://userdyk-github.github.io/ai01/AI01-.html'>2</a>
@@ -13,7 +13,7 @@ title: Study
 
 ---
 
-## AI02 : Machine learning
+## **AI02 : Machine learning**
 
 - <a href='https://userdyk-github.github.io/ai02/AI02-.html'>Dimensionality reduction</a>
 - <a href='https://userdyk-github.github.io/ai02/AI02-Regression.html'>Regression</a>
@@ -31,7 +31,7 @@ title: Study
 ---
 
 
-## AI03 : Deep learning
+## **AI03 : Deep learning**
 
 - <a href='https://userdyk-github.github.io/ai03/AI03-Fundamental-of-deep-learning.html'>Fundamental of deep learning</a>
 - <a href='https://userdyk-github.github.io/ai03/AI03-.html'>Convolutional neural networks</a>
@@ -43,7 +43,7 @@ title: Study
 
 ---
 
-## AI04 : Reinforcement learning
+## **AI04 : Reinforcement learning**
 
 - <a href='https://userdyk-github.github.io/ai04/AI04-.html'>1</a>
 - <a href='https://userdyk-github.github.io/ai04/AI04-.html'>2</a>
@@ -53,7 +53,7 @@ title: Study
 
 ---
 
-## AI05 : Computer vision
+## **AI05 : Computer vision**
 
 - <a href='https://userdyk-github.github.io/ai05/AI05-.html'>Image classification</a>
 - <a href='https://userdyk-github.github.io/ai05/AI05-.html'>Object detection</a>
@@ -64,7 +64,7 @@ title: Study
 
 <hr class='division2'>
 
-## EE01 : Integrated circuits
+## **EE01 : Integrated circuits**
 
 - <a href='https://userdyk-github.github.io/ee01/EE01-.html'>Transistor–Transistor Logic</a>
 - <a href='https://userdyk-github.github.io/ee01/EE01-.html'>Emitter-Coupled Logic</a>
@@ -82,7 +82,7 @@ title: Study
 
 ---
 
-## EE02 : Semiconductor devices
+## **EE02 : Semiconductor devices**
 
 - <a href='https://userdyk-github.github.io/ee02/EE02-.html'>Semiconductor Physics</a>
 - <a href='https://userdyk-github.github.io/ee02/EE02-.html'>p-n Junctions</a>
@@ -95,7 +95,7 @@ title: Study
 
 ---
 
-## EE03 : Signal processing
+## **EE03 : Signal processing**
 
 - <a href='https://userdyk-github.github.io/ee03/EE03-.html'>1</a>
 - <a href='https://userdyk-github.github.io/ee03/EE03-.html'>2</a>
@@ -106,7 +106,7 @@ title: Study
 <hr class='division2'>
 
 
-## PHY01 : Classical mechanics
+## **PHY01 : Classical mechanics**
 
 - <a href='https://userdyk-github.github.io/phy01/PHY01-Physical-constant-and-unit-and-equation.html'>Physical constant and unit and equation</a>
 - <a href='https://userdyk-github.github.io/phy01/PHY01-Kinematics.html'>Kinematics</a>
@@ -121,7 +121,7 @@ title: Study
 
 ---
 
-## PHY02 : Electromagnetism
+## **PHY02 : Electromagnetism**
 
 - <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Electrostatics</a>
 - <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Special techniques</a>
@@ -137,7 +137,7 @@ title: Study
 
 ---
 
-## PHY03 : Thermodynamic and statistical mechanics
+## **PHY03 : Thermodynamic and statistical mechanics**
 
 - <a href='https://userdyk-github.github.io/phy03/PHY03-.html'>Preliminaries</a>
 - <a href='https://userdyk-github.github.io/phy03/PHY03-.html'>Kinetic theory of gases</a>
@@ -154,7 +154,7 @@ title: Study
 
 ---
 
-## PHY04 : Quantum theory
+## **PHY04 : Quantum theory**
 
 - <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>Blackbody radiation</a>
 - <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>The schrödinger equation</a>
@@ -172,7 +172,7 @@ title: Study
 
 ---
 
-## PHY05 : Solid state physics
+## **PHY05 : Solid state physics**
 
 - <a href='https://userdyk-github.github.io/phy05/PHY05-.html'>Physics of solids without considering micro-
 scopic Structure</a>
@@ -186,7 +186,7 @@ scopic Structure</a>
 
 ---
 
-## PHY06 : Theory of relativity
+## **PHY06 : Theory of relativity**
 
 - <a href='https://userdyk-github.github.io/phy06/PHY06-.html'>The orbits in general relativity</a>
 - <a href='https://userdyk-github.github.io/phy06/PHY06-.html'>Light bending in the gravitational field</a>
@@ -198,7 +198,7 @@ Mass Point</a>
 <hr class='division2'>
 
 
-## MATH01 : Linear algebra
+## **MATH01 : Linear algebra**
 
 - <a href='https://userdyk-github.github.io/math01/MATH01-Basic-concepts.html'>Basic concepts</a>
 - <a href='https://userdyk-github.github.io/math01/MATH01-Linear-equation-systems.html'>Linear equation systems</a>
@@ -211,7 +211,7 @@ Mass Point</a>
 
 ---
 
-## MATH02 : Calulus
+## **MATH02 : Calulus**
 
 - <a href='https://userdyk-github.github.io/math02/MATH02-Limits.html'>Limits</a>
 - <a href='https://userdyk-github.github.io/math02/MATH02-Series.html'>Series</a>
@@ -225,7 +225,7 @@ Mass Point</a>
 
 ---
 
-## MATH03 : Complex analysis
+## **MATH03 : Complex analysis**
 
 - <a href='https://userdyk-github.github.io/math03/MATH03-Complex-functions.html'>Complex functions</a>
 - <a href='https://userdyk-github.github.io/math03/MATH03-Cauchy–Riemann-equations.html'>Cauchy–Riemann equations</a>
@@ -237,7 +237,7 @@ Mass Point</a>
 
 ---
 
-## MATH04 : Differential equation
+## **MATH04 : Differential equation**
 
 - <a href='https://userdyk-github.github.io/math04/MATH04-ODE-Analytical-solutions.html'>ODE analytical solutions</a>
 - <a href='https://userdyk-github.github.io/math04/MATH04-ODE-numerical-methods.html'>ODE numerical methods</a>
@@ -252,7 +252,7 @@ Mass Point</a>
 
 ---
 
-## MATH05 : Statistics
+## **MATH05 : Statistics**
 
 - <a href='https://userdyk-github.github.io/math05/MATH05-Descriptive-statistics.html'>Descriptive statistics</a>
 - <a href='https://userdyk-github.github.io/math05/MATH05-Distribution.html'>Distribution</a>
@@ -271,7 +271,7 @@ Mass Point</a>
 
 ---
 
-## MATH06 : Optimization
+## **MATH06 : Optimization**
 
 - <a href='https://userdyk-github.github.io/math06/MATH06-Interpolation.html'>Interpolation</a>
 - <a href='https://userdyk-github.github.io/math06/MATH06-Unconstrained-nonlinear.html'>Unconstrained nonlinear</a>
