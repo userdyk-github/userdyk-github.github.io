@@ -337,21 +337,109 @@ cropped.show()
 
 ## **How to Manually Scale Image Pixel Data**
 
+### ***Sample Image***
+
+---
+
+### ***Normalize Pixel Values***
+
+---
+
+### ***Center Pixel Values***
+
+---
+
+### ***Standardize Pixel Values***
+
+---
+
 <hr class="division2">
 
 ## **How to Load and Manipulate Images with Keras**
+
+### ***Test Image***
+
+---
+
+### ***How to Load an Image with Keras***
+
+---
+
+### ***How to Convert an Image With Keras***
+
+---
+
+### ***How to Save an Image With Keras***
+
+---
 
 <hr class="division2">
 
 ## **How to Scale Image Pixel Data with Keras**
 
+### ***MNIST Handwritten Image Classiﬁcation Dataset***
+
+---
+
+
+### ***ImageDataGenerator Class for Pixel Scaling***
+
+---
+
+
+### ***How to Normalize Images With ImageDataGenerator***
+
+---
+
+
+### ***How to Center Images With ImageDataGenerator***
+
+---
+
+
+### ***How to Standardize Images With ImageDataGenerator***
+
+---
+
 <hr class="division2">
 
 ## **How to Load Large Datasets From Directories with Keras**
 
+### ***How to Progressively Load Images***
+
+---
+
 <hr class="division2">
 
 ## **How to Use Image Data Augmentation in Keras**
+
+### ***Sample Image***
+
+---
+
+### ***Image Augmentation With ImageDataGenerator***
+
+---
+
+### ***Horizontal and Vertical Shift Augmentation***
+
+---
+
+### ***Horizontal and Vertical Flip Augmentation***
+
+---
+
+### ***Random Rotation Augmentation***
+
+---
+
+### ***Random Brightness Augmentation***
+
+---
+
+### ***Random Zoom Augmentation***
+
+---
 
 <hr class="division1">
 
