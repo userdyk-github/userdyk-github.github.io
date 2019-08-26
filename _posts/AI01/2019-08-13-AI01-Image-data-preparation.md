@@ -23,7 +23,7 @@ List of posts to read before reading this article
 
 ## **How to Load and Manipulate Images With PIL,Pillow**
 
-### **How to Load and Display Images**
+### ***How to Load and Display Images***
 
 ```python
 # load and show an image with Pillow 
