@@ -48,6 +48,7 @@ img.show()
   RGB<br>
   (640, 427)
 </p>
+![beach](https://user-images.githubusercontent.com/52376448/63721646-9e666c80-c88c-11e9-97ee-096cc2a4f9d1.jpg)
 <hr class='division3'>
 </details>
 
@@ -80,6 +81,31 @@ img.show()
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+<hr class='division3'>
+</details>
+
+<br><br><br>
+
+<hr class="division2">
+
+## **How to Convert an Image With Keras to Gray Scale**
+
+```python
+# example of loading an image with the Keras API
+from keras.preprocessing.image import load_img
+
+# load the image
+img = load_img('beach.jpg', grayscale=True)
+print(img.mode)
+img
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<p>
+  L
+</p>
+![다운로드](https://user-images.githubusercontent.com/52376448/63721802-f8ffc880-c88c-11e9-9c03-5999a37ca43b.png)
 <hr class='division3'>
 </details>
 
