@@ -98,7 +98,25 @@ io.imshow(image)
 
 `RGB to XYZ and Vice Versa`
 ```python
+#Import libraries 
+from skimage import io 
+from skimage import color
+from skimage import data 
 
+#Read image 
+img = io.imread('puppy.jpg')
+
+#Convert to XYZ 
+img_xyz = color.rgb2xyz(img)
+
+#Convert back to RGB 
+img_rgb = color.xyz2rgb(img_xyz)
+
+#Show both figures 
+figure(0) 
+io.imshow(img_xyz) 
+figure(1) 
+io.imshow(img_rgb)
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -109,7 +127,24 @@ io.imshow(image)
 
 `RGB to LAB and Vice Versa`
 ```python
+#Import libraries 
+from skimage import io
+from skimage import color 
 
+#Read image 
+img = io.imread('puppy.jpg')
+
+#Convert to LAB 
+img_lab = color.rgb2lab(img)
+
+#Convert back to RGB 
+img_rgb = color.lab2rgb(img_lab)
+
+#Show both figures 
+figure(0) 
+io.imshow(img_lab)
+figure(1)
+io.imshow(img_rgb)
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -120,7 +155,24 @@ io.imshow(image)
 
 `RGB to YUV and Vice Versa`
 ```python
+#Import libraries 
+from skimage import io 
+from skimage import color 
 
+#Read image
+img = io.imread('puppy.jpg')
+
+#Convert to YUV 
+img_yuv = color.rgb2yuv(img)
+
+#Convert back to RGB
+img_rgb = color.yuv2rgb(img_yuv)
+
+#Show both figures 
+figure(0) 
+io.imshow(img_yuv) 
+figure(1) 
+io.imshow(img_rgb)
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -131,7 +183,24 @@ io.imshow(image)
 
 `RGB to YIQ and Vice Versa`
 ```python
+#Import libraries 
+from skimage import io 
+from skimage import color 
 
+#Read image 
+img = io.imread('puppy.jpg')
+
+#Convert to YIQ 
+img_yiq = color.rgb2yiq(img)
+
+#Convert back to RGB 
+img_rgb = color.yiq2rgb(img_yiq)
+
+#Show both figures 
+figure(0)
+io.imshow(img_yiq) 
+figure(1)
+io.imshow(img_rgb)
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -142,7 +211,24 @@ io.imshow(image)
 
 `RGB to YPbPr and Vice Versa`
 ```python
+#Import libraries 
+from skimage import io 
+from skimage import color 
 
+#Read image
+img = io.imread('puppy.jpg')
+
+#Convert to YPbPr 
+img_ypbpr= color.rgb2ypbpr(img)
+
+#Convert back to RGB 
+img_rgb= color.ypbpr2rgb(img_ypbpr)
+
+#Show both figures
+figure(0)
+io.imshow(img_ypbpr) 
+figure(1) 
+io.imshow(img_rgb)
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
