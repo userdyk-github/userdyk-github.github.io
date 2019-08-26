@@ -741,7 +741,7 @@ cropped.show()
 
 <hr class='division2'>
 
-## **How to create basic drawings**
+## **How to Create Basic Drawings**
 
 ### ***Lines***
 
