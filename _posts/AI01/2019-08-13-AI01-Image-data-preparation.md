@@ -21,15 +21,27 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
+## How to Load and Manipulate Images With PIL,Pillow
 
 <hr class="division2">
 
-## title2
+## How to Manually Scale Image Pixel Data
 
 <hr class="division2">
 
-## title3
+## How to Load and Manipulate Images with Keras
+
+<hr class="division2">
+
+## How to Scale Image Pixel Data with Keras
+
+<hr class="division2">
+
+## How to Load Large Datasets From Directories with Keras
+
+<hr class="division2">
+
+## How to Use Image Data Augmentation in Keras
 
 <hr class="division1">
 
