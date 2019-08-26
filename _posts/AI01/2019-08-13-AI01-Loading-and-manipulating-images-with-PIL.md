@@ -859,6 +859,41 @@ io.imshow(img)
 </details>
 <br><br><br>
 
+<hr class='division2'>
+
+## How to Gamma Correction(Gamma Encoding)
+
+```python
+%matplotlib inline
+
+from skimage import exposure 
+from skimage import io 
+from pylab import * 
+
+img = io.imread('puppy.jpg') 
+gamma_corrected1 = exposure.adjust_gamma(img, 0.5) 
+gamma_corrected2 = exposure.adjust_gamma(img, 5) 
+
+figure(0) 
+io.imshow(gamma_corrected1) 
+figure(1)
+io.imshow(gamma_corrected2)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<p>
+    <matplotlib.image.AxesImage at 0x1dd37ad2cc0>
+</p>
+![다운로드 (4)](https://user-images.githubusercontent.com/52376448/63704331-cf7f7680-c865-11e9-81f9-479c8b7a7804.png)
+
+![다운로드 (5)](https://user-images.githubusercontent.com/52376448/63704334-d1e1d080-c865-11e9-8f8e-f6b4357cd3a4.png)
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
+
 
 <hr class="division1">
 
