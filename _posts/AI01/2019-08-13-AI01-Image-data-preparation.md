@@ -41,6 +41,9 @@ print(image.size)
 image.show()
 ```
 `OUTPUT`
+JPEG<br>
+RGB<br>
+(640, 360)<br>
 <br><br><br>
 
 ---
@@ -66,6 +69,10 @@ pyplot.imshow(data)
 pyplot.show()
 ```
 `OUTPUT`
+<class 'numpy.ndarray'><br>
+uint8<br>
+(360, 640, 3)<br>
+![다운로드](https://user-images.githubusercontent.com/52376448/63675998-03867780-c825-11e9-8986-97f3e72827cb.png)
 <br><br><br>
 
 `PIL`
