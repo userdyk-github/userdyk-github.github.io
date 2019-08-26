@@ -510,7 +510,7 @@ array([[[ 62.565197 ,  63.41338  ,  61.01708  ,   0.       ],
 <hr class='division3'>
 </details>
 
-<br>
+<br><br><br>
 `SUPPLEMENT1`
 ```python
 import numpy as np
