@@ -23,7 +23,8 @@ List of posts to read before reading this article
 
 ## **How to Load and Display Images**
 
-`PIL`
+### ***Load and show an image with Pillow***
+
 ```python
 # load and show an image with Pillow 
 from PIL import Image 
@@ -52,9 +53,11 @@ image.show()
 <hr class='division3'>
 </details>
 
-<br>
+<br><br><br>
 
-`skimage`
+---
+
+### ***Load and show an image with skimage***
 ```python
 %matplotlib inline
 from skimage import io                  # pip install scikit-image
@@ -62,6 +65,7 @@ from skimage import io                  # pip install scikit-image
 image = io.imread('puppy.jpg')
 print(type(image))
 print(image.shape)
+
 io.imshow(image)
 ```
 
@@ -83,7 +87,8 @@ io.imshow(image)
 
 ## **How to Convert Color Space**
 
-`RGB to HSV and Vice Versa`
+### ***RGB to HSV and Vice Versa***
+
 ```python
 %matplotlib inline
 
@@ -108,9 +113,12 @@ io.imshow(img_rgb)
 <hr class='division3'>
 <hr class='division3'>
 </details>
-<br>
+<br><br><br>
 
-`RGB to XYZ and Vice Versa`
+---
+
+### ***RGB to XYZ and Vice Versa***
+
 ```python
 %matplotlib inline
 
@@ -139,9 +147,12 @@ io.imshow(img_rgb)
 <hr class='division3'>
 <hr class='division3'>
 </details>
-<br>
+<br><br><br>
 
-`RGB to LAB and Vice Versa`
+---
+
+### ***RGB to LAB and Vice Versa***
+
 ```python
 %matplotlib inline
 
@@ -169,9 +180,12 @@ io.imshow(img_rgb)
 <hr class='division3'>
 <hr class='division3'>
 </details>
-<br>
+<br><br><br>
 
-`RGB to YUV and Vice Versa`
+---
+
+### ***RGB to YUV and Vice Versa***
+
 ```python
 %matplotlib inline
 
@@ -199,9 +213,12 @@ io.imshow(img_rgb)
 <hr class='division3'>
 <hr class='division3'>
 </details>
-<br>
+<br><br><br>
 
-`RGB to YIQ and Vice Versa`
+---
+
+### ***RGB to YIQ and Vice Versa***
+
 ```python
 %matplotlib inline
 
@@ -229,9 +246,12 @@ io.imshow(img_rgb)
 <hr class='division3'>
 <hr class='division3'>
 </details>
-<br>
+<br><br><br>
 
-`RGB to YPbPr and Vice Versa`
+---
+
+### ***RGB to YPbPr and Vice Versa***
+
 ```python
 %matplotlib inline
 
@@ -259,7 +279,7 @@ io.imshow(img_rgb)
 <hr class='division3'>
 <hr class='division3'>
 </details>
-<br>
+<br><br><br>
 
 <hr class="division2">
 
