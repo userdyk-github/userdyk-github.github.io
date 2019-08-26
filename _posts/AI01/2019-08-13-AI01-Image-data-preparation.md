@@ -220,6 +220,7 @@ print(image2.format)
 <hr class='division3'>
 </details>
 [opera_house.png][1]
+
 [1]:{{ site.url }}/download/AI01/opera_house.png
 
 <br>
@@ -240,6 +241,7 @@ df.to_excel(filepath, index=False)      # pip install OpenPyXL
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 [pixel_values1.xlsx][1]
+
 [1]:{{ site.url }}/download/AI01/pixel_values1.xlsx
 <hr class='division3'>
 </details>
