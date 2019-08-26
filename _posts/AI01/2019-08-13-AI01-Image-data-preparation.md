@@ -40,7 +40,9 @@ print(image.size)
 # show the image 
 image.show()
 ```
-`OUTPUT` : <details markdown="1"><summary>접기/펼치기</summary>
+`OUTPUT` : 
+<details markdown="1">
+<summary>접기/펼치기</summary>
 <p>
     JPEG<br>
     RGB<br>
