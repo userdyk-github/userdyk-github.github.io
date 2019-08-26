@@ -34,6 +34,41 @@ List of posts to read before reading this article
 
 <br><br><br>
 
+### ***Loading and showing an image with keras***
+
+```python
+# example of loading an image with the Keras API
+from keras.preprocessing.image import load_img
+
+# load the image
+img = load_img('beach.jpg')
+
+# report details about the image
+print(type(img))
+print(img.format)
+print(img.mode)
+print(img.size)
+
+# show the image
+img.show()
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<p>
+  <class 'PIL.JpegImagePlugin.JpegImageFile'><br>
+  JPEG<br>
+  RGB<br>
+  (640, 427)
+</p>
+![beach](https://user-images.githubusercontent.com/52376448/63721646-9e666c80-c88c-11e9-97ee-096cc2a4f9d1.jpg)
+<hr class='division3'>
+</details>
+
+<br><br><br>
+
+---
+
 ### ***Loading and showing an image with Pillow***
 
 ```python
