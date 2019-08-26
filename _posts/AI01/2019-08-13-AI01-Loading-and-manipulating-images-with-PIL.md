@@ -511,7 +511,7 @@ io.imshow(img_rgb)
 
 ## **How to Convert Images to NumPy Arrays and Back**
 
-### ***Conversion with PIL***
+### ***Convert an loaded image with PIL to type of 'numpy.ndarray'***
 
 ```python
 # load image and convert to and from NumPy array 
@@ -557,6 +557,30 @@ image2
 </details>
 
 <br><br><br>
+
+---
+
+### ***Convert an loaded image with skimage to type of 'numpy.ndarray'***
+
+```python
+%matplotlib inline
+from skimage import io                  # pip install scikit-image
+import numpy as np
+
+image = io.imread('puppy.jpg')
+image = np.asarray(image)
+type(image)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<p>
+    <class 'numpy.ndarray'>
+</p>
+<hr class='division3'>
+</details>
+<br><br><br>
+
 
 
 <hr class="division2">
