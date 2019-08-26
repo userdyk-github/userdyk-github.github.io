@@ -143,6 +143,8 @@ print(type(img))
 # convert to numpy array
 img_ndarray = np.asarray(img).astype('float32')
 img_array = img_to_array(img)
+print(img_ndarray.dtype)
+print(img_ndarray.shape)
 print(img_array.dtype)
 print(img_array.shape)
 
@@ -156,6 +158,8 @@ img_pil2 = Image.fromarray(img_pil2)
 <hr class='division3'>
 <p>
   <class 'PIL.JpegImagePlugin.JpegImageFile'><br>
+  float32<br>
+  (427, 640, 3)<br>
   float32<br>
   (427, 640, 3)
 </p>
