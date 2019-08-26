@@ -327,6 +327,7 @@ cropped = image.crop((100, 100, 200, 200))
 cropped.show()
 ```
 `OUTPUT`
+![cropped](https://user-images.githubusercontent.com/52376448/63678860-0ab08400-c82b-11e9-9329-b77b8496da5c.png)
 <br><br><br>
 
 ---
