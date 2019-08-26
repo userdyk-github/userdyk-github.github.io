@@ -83,6 +83,75 @@ io.imshow(image)
 
 ---
 
+### ***How to Convert Color Space***
+
+`RGB to HSV and Vice Versa`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br>
+
+`RGB to XYZ and Vice Versa`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br>
+
+`RGB to LAB and Vice Versa`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br>
+
+`RGB to YUV and Vice Versa`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br>
+
+`RGB to YIQ and Vice Versa`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br>
+
+`RGB to YPbPr and Vice Versa`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br>
+---
+
 ### ***How to Convert Images to NumPy Arrays and Back***
 
 `Matplotlib`
