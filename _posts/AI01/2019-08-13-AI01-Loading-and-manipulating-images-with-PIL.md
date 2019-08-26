@@ -83,6 +83,38 @@ io.imshow(image)
 
 <br><br><br>
 
+---
+
+### ***Loading all images in a directory***
+
+```python
+# load all images in a directory 
+from os import listdir
+from matplotlib import image
+
+# load all images in a directory 
+loaded_images = list() 
+
+for filename in listdir('images'):
+    # load image
+    img_data = image.imread('images/' + filename) 
+    
+    # store loaded image 
+    loaded_images.append(img_data)
+    print('> loaded %s %s' % (filename, img_data.shape))
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<p>
+    > loaded beauty.jpg (150, 120, 3)<br>
+    > loaded opera_house.jpg (360, 640, 3)
+</p>
+<hr class='division3'>
+</details>
+
+<br><br><br>
+
 <hr class="division2">
 
 ## **How to Convert Color Space**
@@ -391,37 +423,6 @@ image2
 
 <br><br><br>
 
----
-
-### ***Loading all images in a directory***
-
-```python
-# load all images in a directory 
-from os import listdir
-from matplotlib import image
-
-# load all images in a directory 
-loaded_images = list() 
-
-for filename in listdir('images'):
-    # load image
-    img_data = image.imread('images/' + filename) 
-    
-    # store loaded image 
-    loaded_images.append(img_data)
-    print('> loaded %s %s' % (filename, img_data.shape))
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-<p>
-    > loaded beauty.jpg (150, 120, 3)<br>
-    > loaded opera_house.jpg (360, 640, 3)
-</p>
-<hr class='division3'>
-</details>
-
-<br><br><br>
 
 <hr class="division2">
 
