@@ -117,6 +117,103 @@ for filename in listdir('images'):
 
 <hr class="division2">
 
+## **How to Save Images to File**
+
+### ***Saving image with PIL***
+
+```python
+# example of saving an image in another format 
+from PIL import Image
+
+# load the image 
+image = Image.open('opera_house.jpg')
+
+# save as PNG format 
+image.save('opera_house.png', format='PNG') 
+
+# load the image again and inspect the format 
+image2 = Image.open('opera_house.png')
+print(image2.format)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<p>
+    PNG
+</p>
+[opera_house.png][1]
+
+[1]:{{ site.url }}/download/AI01/opera_house.png
+<hr class='division3'>
+</details>
+
+
+<br><br><br>
+
+---
+
+### ***Saving image with skimage***
+
+```python
+#Import libraries 
+from skimage import io 
+from skimage import color 
+
+#Read image 
+img = io.imread('puppy.jpg')
+
+#Convert to YPbPr 
+img_ypbpr= color.rgb2ypbpr(img)
+
+#Convert back to RGB 
+img_rgb= color.ypbpr2rgb(img_ypbpr)
+
+#Save image
+io.imsave("puppy_ypbpr.jpg", img_ypbpr)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<p>
+    PNG
+</p>
+[puppy_ypbpr.jpg][1]
+
+[1]:{{ site.url }}/download/AI01/puppy_ypbpr.jpg
+<hr class='division3'>
+</details>
+
+
+<br><br><br>
+
+---
+
+### ***Saving image with Pandas(format : xlsx)***
+
+```python
+from skimage import io                  
+import pandas as pd
+
+image = io.imread('puppy.jpg')
+df = pd.DataFrame(image.flatten())        # flatten() : convert the three dimensions of an RGB image to a single dimension
+
+# saving in excel format
+filepath = 'pixel_values1.xlsx'
+df.to_excel(filepath, index=False)      # pip install OpenPyXL
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+[pixel_values1.xlsx][1]
+
+[1]:{{ site.url }}/download/AI01/pixel_values1.xlsx
+<hr class='division3'>
+</details>
+
+<br><br><br>
+
+<hr class="division2">
+
 ## **How to Convert Color Space**
 
 ### ***RGB to HSV and Vice Versa***
@@ -426,102 +523,6 @@ image2
 
 <hr class="division2">
 
-## **How to Save Images to File**
-
-### ***Saving image with PIL***
-
-```python
-# example of saving an image in another format 
-from PIL import Image
-
-# load the image 
-image = Image.open('opera_house.jpg')
-
-# save as PNG format 
-image.save('opera_house.png', format='PNG') 
-
-# load the image again and inspect the format 
-image2 = Image.open('opera_house.png')
-print(image2.format)
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-<p>
-    PNG
-</p>
-[opera_house.png][1]
-
-[1]:{{ site.url }}/download/AI01/opera_house.png
-<hr class='division3'>
-</details>
-
-
-<br><br><br>
-
----
-
-### ***Saving image with skimage***
-
-```python
-#Import libraries 
-from skimage import io 
-from skimage import color 
-
-#Read image 
-img = io.imread('puppy.jpg')
-
-#Convert to YPbPr 
-img_ypbpr= color.rgb2ypbpr(img)
-
-#Convert back to RGB 
-img_rgb= color.ypbpr2rgb(img_ypbpr)
-
-#Save image
-io.imsave("puppy_ypbpr.jpg", img_ypbpr)
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-<p>
-    PNG
-</p>
-[puppy_ypbpr.jpg][1]
-
-[1]:{{ site.url }}/download/AI01/puppy_ypbpr.jpg
-<hr class='division3'>
-</details>
-
-
-<br><br><br>
-
----
-
-### ***Saving image with Pandas(format : xlsx)***
-
-```python
-from skimage import io                  
-import pandas as pd
-
-image = io.imread('puppy.jpg')
-df = pd.DataFrame(image.flatten())        # flatten() : convert the three dimensions of an RGB image to a single dimension
-
-# saving in excel format
-filepath = 'pixel_values1.xlsx'
-df.to_excel(filepath, index=False)      # pip install OpenPyXL
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-[pixel_values1.xlsx][1]
-
-[1]:{{ site.url }}/download/AI01/pixel_values1.xlsx
-<hr class='division3'>
-</details>
-
-<br><br><br>
-
-<hr class="division2">
 
 ## **How to Resize Images**
 
