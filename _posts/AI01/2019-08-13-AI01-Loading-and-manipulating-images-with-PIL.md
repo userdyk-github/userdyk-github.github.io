@@ -29,6 +29,7 @@ List of posts to read before reading this article
 |skimage|<class 'imageio.core.util.Array'>|
 |cv2|<class 'numpy.ndarray'>|
 |matplotlib|<class 'numpy.ndarray'>|
+<br><br><br>
 
 ### ***Loading and showing an image with Pillow***
 
@@ -90,6 +91,40 @@ io.imshow(image)
 <hr class='division3'>
 </details>
 
+<br><br><br>
+
+---
+
+### ***Loading and showing an image with matplotlib***
+
+```python
+# load and display an image with Matplotlib 
+from matplotlib import image
+from matplotlib import pyplot
+
+# load image as pixel array 
+data = image.imread('opera_house.jpg') 
+print(type(data))
+
+# summarize shape of the pixel array 
+print(data.dtype) 
+print(data.shape) 
+
+# display the array of pixels as an image
+pyplot.imshow(data) 
+pyplot.show()
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<p>
+    <class 'numpy.ndarray'><br>
+    uint8<br>
+    (360, 640, 3)
+</p>
+![63675998-03867780-c825-11e9-8986-97f3e72827cb](https://user-images.githubusercontent.com/52376448/63707134-28eaa400-c86c-11e9-9ecc-1cfc1e1aa073.png)
+<hr class='division3'>
+</details>
 <br><br><br>
 
 ---
