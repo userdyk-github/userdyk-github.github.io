@@ -562,9 +562,9 @@ from PIL import Image
 img = load_img('beach.jpg')
 print(type(img))
 
-# convert to numpy array
-img_ndarray = np.asarray(img).astype('float32')   # is equal to img_array
-img_array = img_to_array(img)                     # is equal to img_ndarry
+# convert to numpy array(img_ndarray is equal way to img_array)
+img_ndarray = np.asarray(img).astype('float32')
+img_array = img_to_array(img)
 print(img_ndarray.dtype)
 print(img_ndarray.shape)
 print(img_array.dtype)
