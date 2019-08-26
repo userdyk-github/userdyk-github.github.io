@@ -191,6 +191,7 @@ image2 = Image.open('opera_house_grayscale.jpg')
 image2.show()
 ```
 `OUTPUT`
+![opera_house_grayscale](https://user-images.githubusercontent.com/52376448/63677448-f3bc6280-c827-11e9-997c-4c3d09c99692.jpg)
 <br><br><br>
 
 ---
