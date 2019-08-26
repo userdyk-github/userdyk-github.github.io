@@ -72,10 +72,12 @@ pyplot.imshow(data)
 pyplot.show()
 ```
 `OUTPUT`
-<class 'numpy.ndarray'><br>
-uint8<br>
-(360, 640, 3)<br>
-![다운로드](https://user-images.githubusercontent.com/52376448/63675998-03867780-c825-11e9-8986-97f3e72827cb.png)
+<p>
+    <class 'numpy.ndarray'><br>
+    uint8<br>
+    (360, 640, 3)<br>
+    ![다운로드](https://user-images.githubusercontent.com/52376448/63675998-03867780-c825-11e9-8986-97f3e72827cb.png)
+</p>
 <br><br><br>
 
 `PIL`
@@ -107,14 +109,15 @@ print(image2.size)
 image2
 ```
 `OUTPUT`
-<class 'PIL.JpegImagePlugin.JpegImageFile'><br>
-<class 'numpy.ndarray'><br>
-(360, 640, 3)<br>
-<class 'PIL.Image.Image'><br>
-None<br>
-RGB<br>
-(640, 360)<br>
-
+<p>
+    <class 'PIL.JpegImagePlugin.JpegImageFile'><br>
+    <class 'numpy.ndarray'><br>
+    (360, 640, 3)<br>
+    <class 'PIL.Image.Image'><br>
+    None<br>
+    RGB<br>
+    (640, 360)<br>
+</p>
 <br><br><br>
 
 `Loading all images in a directory`
