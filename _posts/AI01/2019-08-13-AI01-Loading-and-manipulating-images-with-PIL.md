@@ -29,6 +29,7 @@ List of posts to read before reading this article
 |skimage|<class 'imageio.core.util.Array'>|
 |cv2|<class 'numpy.ndarray'>|
 |matplotlib|<class 'numpy.ndarray'>|
+
 <br><br><br>
 
 ### ***Loading and showing an image with Pillow***
