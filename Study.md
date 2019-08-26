@@ -5,7 +5,7 @@ title: Study
 
 ## AI01 : Data science analysis
 
-- <a href='https://userdyk-github.github.io/ai01/AI01-.html'>Image data preparation</a>
+- <a href='https://userdyk-github.github.io/ai01/AI01-Image-data-preparation.html'>Image data preparation</a>
 - <a href='https://userdyk-github.github.io/ai01/AI01-.html'>2</a>
 - <a href='https://userdyk-github.github.io/ai01/AI01-.html'>3</a>
 - <a href='https://userdyk-github.github.io/ai01/AI01-.html'>4</a>
