@@ -525,7 +525,7 @@ df.to_excel(filepath, index=False)      # pip install OpenPyXL
 
 ## **How to Resize Images**
 
-### ***Resizing images, preserving the aspect ratio***
+### ***Resizing images, preserving the aspect ratio with PIL***
 
 ```python
 # create a thumbnail of an image 
@@ -561,7 +561,7 @@ image.show()
 
 ---
 
-### ***Resizing images, forcing the pixels into a new shape***
+### ***Resizing images, forcing the pixels into a new shape with PIL***
 
 ```python
 # resize image and force a new shape 
@@ -595,11 +595,34 @@ img_resized.show()
 
 <br><br><br>
 
+---
+
+### ***Resizing images, forcing the pixels into a new shape with skimage***
+
+```python
+from skimage import io
+from skimage.transform import resize
+
+img = io.imread('puppy.jpg')
+img_res = resize(img, (100,100)) 
+io.imshow(img_res)
+io.imsave("ss.jpg", img_res)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (1)](https://user-images.githubusercontent.com/52376448/63703411-e7ee9180-c863-11e9-998c-b774033d0b3c.png)
+<hr class='division3'>
+</details>
+
+<br><br><br>
+
+
 <hr class="division2">
 
 ## **How to Flip, Rotate, and Crop Images**
 
-### ***Flipping images***
+### ***Flipping images with PIL***
 
 ```python
 # create flipped versions of an image 
@@ -635,7 +658,7 @@ pyplot.show()
 
 ---
 
-### ***Rotating images***
+### ***Rotating images with PIL***
 
 ```python
 # create rotated versions of an image 
@@ -669,7 +692,30 @@ pyplot.show()
 
 ---
 
-### ***Cropping images***
+### ***Rotating images with skimage***
+
+```python
+%matplotlib inline
+from skimage import io 
+from skimage.transform import rotate 
+
+img = io.imread('puppy.jpg')
+img_rot = rotate(img, 20) 
+io.imshow(img_rot)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<matplotlib.image.AxesImage at 0x2708d61b390>
+![다운로드](https://user-images.githubusercontent.com/52376448/63703165-6860c280-c863-11e9-9ec1-ee74cd52eee8.png)
+<hr class='division3'>
+</details>
+
+<br><br><br>
+
+---
+
+### ***Cropping images with PIL***
 
 ```python
 # example of cropping an image 
