@@ -898,8 +898,7 @@ io.imshow(gamma_corrected2)
 
 ## **How to Determine Structural Similarity**
 
-Structural Similarity is used to find the index that indicate how much two images are similar.<br>
-SSIM takes three arguments. **The first** refers to the image; **the second** indicates the range of the pixels (the highest pixel color value less the lowest pixel color value). **The third** argument is multichannel.
+Structural Similarity is used to find the index that indicate how much two images are similar.Here, SSIM takes three arguments. **The first** refers to the image; **the second** indicates the range of the pixels (the highest pixel color value less the lowest pixel color value). **The third** argument is multichannel.
 ```python
 from skimage import io 
 from skimage.measure import compare_ssim as ssim
