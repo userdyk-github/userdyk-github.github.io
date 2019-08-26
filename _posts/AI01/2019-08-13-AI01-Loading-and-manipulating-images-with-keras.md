@@ -145,11 +145,38 @@ img
 ## **How to Save an Image With Keras**
 
 ```python
+# example of saving an image with the Keras API
+from keras.preprocessing.image import load_img
+from keras.preprocessing.image import save_img
+from keras.preprocessing.image import img_to_array
 
+# load image as as grayscale
+img = load_img('beach.jpg', color_mode='grayscale')
+
+# convert image to a numpy array
+img_array = img_to_array(img)
+
+# save the image with a new filename
+save_img('bondi_beach_grayscale.jpg', img_array)
+
+# load the image to confirm it was saved correctly
+img = load_img('bondi_beach_grayscale.jpg')
+print(type(img))
+print(img.format)
+print(img.mode)
+print(img.size)
+img.show()
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+<p>
+  <class 'PIL.Image.Image'><br>
+  None<br>
+  RGB<br>
+  (640, 427)
+</p>
+![bondi_beach_grayscale](https://user-images.githubusercontent.com/52376448/63722526-50526880-c88e-11e9-98b3-d8bc432be018.jpg)
 <hr class='division3'>
 </details>
 
