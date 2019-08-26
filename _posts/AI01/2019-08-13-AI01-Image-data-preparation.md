@@ -21,7 +21,7 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## **How to Load and Manipulate Images With PIL,Pillow**
+## ***How to Load and Manipulate Images With PIL,Pillow***
 
 ### **How to Load and Display Images**
 
