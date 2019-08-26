@@ -124,7 +124,18 @@ for filename in listdir('images'):
 ### How to Save Images to File
 
 ```python
+# example of saving an image in another format 
+from PIL import Image
 
+# load the image 
+image = Image.open('opera_house.jpg')
+
+# save as PNG format 
+image.save('opera_house.png', format='PNG') 
+
+# load the image again and inspect the format 
+image2 = Image.open('opera_house.png')
+print(image2.format)
 ```
 `OUTPUT`
 <br><br><br>
@@ -133,8 +144,48 @@ for filename in listdir('images'):
 
 ### How to Resize Images
 
+`Resize images, preserving the aspect ratio`
 ```python
+# create a thumbnail of an image 
+from PIL import Image
 
+# load the image 
+image = Image.open('opera_house.jpg') 
+
+# report the size of the image
+print(image.size)
+
+# create a thumbnail and preserve aspect ratio 
+image.thumbnail((100,100)) 
+
+# report the size of the modified image 
+print(image.size) 
+
+# show the image 
+image.show()
+```
+`OUTPUT`
+<br><br><br>
+
+`Resize images, force the pixels into a new shape`
+```python
+# resize image and force a new shape 
+from PIL import Image
+
+# load the image
+image = Image.open('opera_house.jpg') 
+
+# report the size of the image 
+print(image.size) 
+
+# resize image and ignore original aspect ratio
+img_resized = image.resize((200,200))
+
+# report the size of the thumbnail 
+print(img_resized.size)
+
+# show the image 
+img_resized.show()
 ```
 `OUTPUT`
 <br><br><br>
@@ -143,8 +194,71 @@ for filename in listdir('images'):
 
 ### How to Flip, Rotate, and Crop Images
 
+`Flip images`
 ```python
+# create flipped versions of an image 
+from PIL import Image
+from matplotlib import pyplot 
 
+# load image 
+image = Image.open('opera_house.jpg')
+
+# horizontal flip 
+hoz_flip = image.transpose(Image.FLIP_LEFT_RIGHT) 
+
+# vertical flip 
+ver_flip = image.transpose(Image.FLIP_TOP_BOTTOM) 
+
+# plot all three images using matplotlib 
+pyplot.subplot(311)
+pyplot.imshow(image)
+pyplot.subplot(312)
+pyplot.imshow(hoz_flip) 
+pyplot.subplot(313) 
+pyplot.imshow(ver_flip)
+pyplot.show()
+```
+`OUTPUT`
+<br><br><br>
+
+`Rotate images`
+```python
+# create rotated versions of an image 
+from PIL import Image 
+from matplotlib import pyplot
+
+# load image 
+image = Image.open('opera_house.jpg')
+
+# plot original image 
+pyplot.subplot(311) 
+pyplot.imshow(image) 
+
+# rotate 45 degrees 
+pyplot.subplot(312) 
+pyplot.imshow(image.rotate(45))
+
+# rotate 90 degrees
+pyplot.subplot(313) 
+pyplot.imshow(image.rotate(90))
+pyplot.show()
+```
+`OUTPUT`
+<br><br><br>
+
+`Crop images`
+```python
+# example of cropping an image 
+from PIL import Image
+
+# load image
+image = Image.open('opera_house.jpg') 
+
+# create a cropped image 
+cropped = image.crop((100, 100, 200, 200))
+
+# show cropped image 
+cropped.show()
 ```
 `OUTPUT`
 <br><br><br>
