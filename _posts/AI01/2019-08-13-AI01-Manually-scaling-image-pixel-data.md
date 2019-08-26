@@ -750,6 +750,20 @@ Min: 0.000, Max: 0.980
 
 <br><br><br>
 
+`SUPPLEMENT`
+```python
+import numpy as np
+clip(np.array([1,2,3,4,5]),2,4)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<p>array([2, 2, 3, 4, 4])</p>
+<hr class='division3'>
+</details>
+
+<br><br><br>
+
 ---
 
 ### ***Local Standardization***
