@@ -1,7 +1,6 @@
-Manually scaling image pixel data
 ---
 layout : post
-title : AI01
+title : AI01, Manually scaling image pixel data
 categories: [AI01]
 comments : true
 tags : [AI01]
