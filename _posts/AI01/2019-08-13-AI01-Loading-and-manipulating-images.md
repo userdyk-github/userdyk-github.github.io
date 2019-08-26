@@ -41,16 +41,16 @@ List of posts to read before reading this article
 from keras.preprocessing.image import load_img
 
 # load the image
-img = load_img('beach.jpg')
+image = load_img('beach.jpg')
 
 # report details about the image
-print(type(img))
-print(img.format)
-print(img.mode)
-print(img.size)
+print(type(image))
+print(image.format)
+print(image.mode)
+print(image.size)
 
 # show the image
-img.show()
+image.show()
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
