@@ -339,17 +339,37 @@ cropped.show()
 
 ### ***Sample Image***
 
+```python
+
+```
+`OUTPUT`
+
 ---
 
 ### ***Normalize Pixel Values***
+
+```python
+
+```
+`OUTPUT`
 
 ---
 
 ### ***Center Pixel Values***
 
+```python
+
+```
+`OUTPUT`
+
 ---
 
 ### ***Standardize Pixel Values***
+
+```python
+
+```
+`OUTPUT`
 
 ---
 
@@ -359,17 +379,37 @@ cropped.show()
 
 ### ***Test Image***
 
+```python
+
+```
+`OUTPUT`
+
 ---
 
 ### ***How to Load an Image with Keras***
+
+```python
+
+```
+`OUTPUT`
 
 ---
 
 ### ***How to Convert an Image With Keras***
 
+```python
+
+```
+`OUTPUT`
+
 ---
 
 ### ***How to Save an Image With Keras***
+
+```python
+
+```
+`OUTPUT`
 
 ---
 
@@ -379,25 +419,50 @@ cropped.show()
 
 ### ***MNIST Handwritten Image Classiﬁcation Dataset***
 
+```python
+
+```
+`OUTPUT`
+
 ---
 
 
 ### ***ImageDataGenerator Class for Pixel Scaling***
+
+```python
+
+```
+`OUTPUT`
 
 ---
 
 
 ### ***How to Normalize Images With ImageDataGenerator***
 
+```python
+
+```
+`OUTPUT`
+
 ---
 
 
 ### ***How to Center Images With ImageDataGenerator***
 
+```python
+
+```
+`OUTPUT`
+
 ---
 
 
 ### ***How to Standardize Images With ImageDataGenerator***
+
+```python
+
+```
+`OUTPUT`
 
 ---
 
@@ -407,6 +472,11 @@ cropped.show()
 
 ### ***How to Progressively Load Images***
 
+```python
+
+```
+`OUTPUT`
+
 ---
 
 <hr class="division2">
@@ -415,29 +485,64 @@ cropped.show()
 
 ### ***Sample Image***
 
+```python
+
+```
+`OUTPUT`
+
 ---
 
 ### ***Image Augmentation With ImageDataGenerator***
+
+```python
+
+```
+`OUTPUT`
 
 ---
 
 ### ***Horizontal and Vertical Shift Augmentation***
 
+```python
+
+```
+`OUTPUT`
+
 ---
 
 ### ***Horizontal and Vertical Flip Augmentation***
+
+```python
+
+```
+`OUTPUT`
 
 ---
 
 ### ***Random Rotation Augmentation***
 
+```python
+
+```
+`OUTPUT`
+
 ---
 
 ### ***Random Brightness Augmentation***
 
+```python
+
+```
+`OUTPUT`
+
 ---
 
 ### ***Random Zoom Augmentation***
+
+```python
+
+```
+`OUTPUT`
 
 ---
 
