@@ -21,9 +21,9 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## How to Load and Manipulate Images With PIL,Pillow
+## **How to Load and Manipulate Images With PIL,Pillow**
 
-### How to Load and Display Images
+### **How to Load and Display Images**
 
 ```python
 # load and show an image with Pillow 
@@ -51,7 +51,7 @@ image.show()
 
 ---
 
-### How to Convert Images to NumPy Arrays and Back
+### **How to Convert Images to NumPy Arrays and Back**
 
 `Matplotlib`
 ```python
@@ -147,7 +147,7 @@ for filename in listdir('images'):
 
 ---
 
-### How to Save Images to File
+### **How to Save Images to File**
 
 `Saving images`
 ```python
@@ -195,7 +195,7 @@ image2.show()
 
 ---
 
-### How to Resize Images
+### **How to Resize Images**
 
 `Resize images, preserving the aspect ratio`
 ```python
@@ -245,7 +245,7 @@ img_resized.show()
 
 ---
 
-### How to Flip, Rotate, and Crop Images
+### **How to Flip, Rotate, and Crop Images**
 
 `Flip images`
 ```python
@@ -320,23 +320,23 @@ cropped.show()
 
 <hr class="division2">
 
-## How to Manually Scale Image Pixel Data
+## **How to Manually Scale Image Pixel Data**
 
 <hr class="division2">
 
-## How to Load and Manipulate Images with Keras
+## **How to Load and Manipulate Images with Keras**
 
 <hr class="division2">
 
-## How to Scale Image Pixel Data with Keras
+## **How to Scale Image Pixel Data with Keras**
 
 <hr class="division2">
 
-## How to Load Large Datasets From Directories with Keras
+## **How to Load Large Datasets From Directories with Keras**
 
 <hr class="division2">
 
-## How to Use Image Data Augmentation in Keras
+## **How to Use Image Data Augmentation in Keras**
 
 <hr class="division1">
 
