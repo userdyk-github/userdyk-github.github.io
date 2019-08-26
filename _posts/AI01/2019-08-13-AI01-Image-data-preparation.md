@@ -217,7 +217,8 @@ print(image2.format)
 <p>
     PNG
 </p>
-![캡처](https://user-images.githubusercontent.com/52376448/63678983-4f3c1f80-c82b-11e9-9553-e2f82d73f67a.JPG)
+[opera_house.png][1]
+[1]:{{ site.url }}/download/opera_house.png
 <hr class='division3'>
 </details>
 
