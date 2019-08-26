@@ -739,6 +739,126 @@ cropped.show()
 
 <br><br><br>
 
+<hr class='division2'>
+
+## **How to create basic drawings**
+
+### ***Lines***
+
+```python
+%matplotlib inline
+from skimage import io 
+from skimage import draw
+
+img = io.imread('puppy.JPG')
+print(img.shape)
+x,y = draw.line(0,0,100,100)
+img[x, y] = 0
+io.imshow(img)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<p>
+    (366, 487, 3)<br>
+    <matplotlib.image.AxesImage at 0x25100100908>
+</p>
+![다운로드 (1)](https://user-images.githubusercontent.com/52376448/63703992-0acd7580-c865-11e9-8a99-a8fc26c087a3.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+### ***Rectangles***
+
+```python
+from skimage import io 
+from skimage import draw
+img = io.imread('puppy.jpg') 
+
+def rectangle(x, y, w, h): 
+    rr, cc = [x, x + w, x + w, x], [y, y, y + h, y + h]
+    return (draw.polygon(rr, cc))
+
+rr, cc = rectangle(10, 10, 355,355)
+img[rr, cc] = 1 
+io.imshow(img)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<p>
+    <matplotlib.image.AxesImage at 0x25100046320>
+</p>
+![다운로드 (2)](https://user-images.githubusercontent.com/52376448/63704000-0d2fcf80-c865-11e9-8ff2-5a51305b35ba.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+### ***Circles***
+
+```python
+#Import libraries 
+from skimage import io 
+from skimage import draw
+
+#Load image
+img = io.imread('puppy.jpg')
+
+#Define circle coordinates and radius 
+x, y = draw.circle(10,10, 100)
+
+#Draw circle 
+img[x, y] = 1
+
+#Show image
+io.imshow(img)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<p>
+    <matplotlib.image.AxesImage at 0x251001516d8>
+</p>
+![다운로드 (3)](https://user-images.githubusercontent.com/52376448/63704008-10c35680-c865-11e9-84d4-c173217b84bd.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+### ***Bezier Curve***
+
+```python
+#Import libraries
+from skimage import io 
+from skimage import draw
+#Load image 
+img = io.imread('puppy.jpg')
+
+#Define Bezier curve coordinates 
+x, y = draw.bezier_curve(0,0, 100, 100, 200,300,100)
+
+#Draw Bezier curve 
+img[x, y] = 1
+
+#Show image 
+io.imshow(img)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<p>
+    <matplotlib.image.AxesImage at 0x251011930b8>
+</p>
+![다운로드](https://user-images.githubusercontent.com/52376448/63704011-128d1a00-c865-11e9-9cf0-ac6aaa32cde7.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
 
 <hr class="division1">
 
