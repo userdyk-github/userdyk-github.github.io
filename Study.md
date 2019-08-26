@@ -5,10 +5,13 @@ title: Study
 
 ## **AI01 : Data science analysis**
 
-- <a href='https://userdyk-github.github.io/ai01/AI01-Image-data-preparation.html'>Image data preparation</a>
-- <a href='https://userdyk-github.github.io/ai01/AI01-.html'>2</a>
-- <a href='https://userdyk-github.github.io/ai01/AI01-.html'>3</a>
-- <a href='https://userdyk-github.github.io/ai01/AI01-.html'>4</a>
+- <a href='https://userdyk-github.github.io/ai01/AI01-Loading-and-manipulating-images-with-PIL.html'>Loading and manipulating images with PIL</a>
+- <a href='https://userdyk-github.github.io/ai01/AI01-Manually-scaling-image-pixel-data.html'>Manually scaling image pixel data</a>
+- <a href='https://userdyk-github.github.io/ai01/AI01-Loading-and-manipulating-images-with-keras.html'>Loading and manipulating images with keras</a>
+- <a href='https://userdyk-github.github.io/ai01/AI01-Scaling-image-pixel-data-with-keras.html'>Scaling image pixel data with keras</a>
+- <a href='https://userdyk-github.github.io/ai01/AI01-Loading-large-datasets-from-directories-with-keras.html'>Loading large datasets from directories with keras</a>
+- <a href='https://userdyk-github.github.io/ai01/AI01-Using-image-data-augmentation-in-keras.html'>Using image data augmentation in keras</a>
+- <a href='https://userdyk-github.github.io/ai01/AI01-.html'>5</a>
 - <a href='https://userdyk-github.github.io/ai01/AI01-.html'>5</a>
 
 ---
