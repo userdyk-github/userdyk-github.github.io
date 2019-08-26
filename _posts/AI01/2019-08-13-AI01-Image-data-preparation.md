@@ -25,6 +25,7 @@ List of posts to read before reading this article
 
 ### ***How to Load and Display Images***
 
+`PIL`
 ```python
 # load and show an image with Pillow 
 from PIL import Image 
@@ -53,6 +54,30 @@ image.show()
 <hr class='division3'>
 </details>
 
+<br>
+
+`skimage`
+```python
+%matplotlib inline
+from skimage import io                  # pip install scikit-image
+
+image = io.imread('puppy.jpg')
+print(type(image))
+print(image.shape)
+io.imshow(image)
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<p>
+    <class 'imageio.core.util.Array'><br>
+    (366, 487, 3)
+</p>
+<matplotlib.image.AxesImage at 0x22978a710f0>
+![다운로드 (2)](https://user-images.githubusercontent.com/52376448/63694276-0ac37a80-c851-11e9-89df-295e2b74bb49.png)
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
@@ -472,6 +497,7 @@ array([[[221, 223, 226, 255],
 <hr class='division3'>
 </details>
 
+<br>
 
 `STEP 2`
 ```python
