@@ -251,7 +251,7 @@ img_resized.show()
     (640, 360)<br>
     (200, 200)
 </p>
-![resizing_opera_house](https://user-images.githubusercontent.com/52376448/63678027-43e7f480-c829-11e9-9ea4-0dffd961c6a1.png)
+![resizing_opera_house2](https://user-images.githubusercontent.com/52376448/63678380-0fc10380-c82a-11e9-9f82-a3744ef5237f.png)
 <br><br><br>
 
 ---
