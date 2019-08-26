@@ -21,15 +21,19 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
+## **How to Progressively Load Images**
 
-<hr class="division2">
+```python
 
-## title2
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
 
-<hr class="division2">
+<br><br><br>
 
-## title3
 
 <hr class="division1">
 
