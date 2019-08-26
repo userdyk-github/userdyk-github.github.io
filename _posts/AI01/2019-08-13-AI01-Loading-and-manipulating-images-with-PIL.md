@@ -111,6 +111,8 @@ io.imshow(img_rgb)
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+<matplotlib.image.AxesImage at 0x1b99ef0da90>
+
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -145,6 +147,8 @@ io.imshow(img_rgb)
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+<matplotlib.image.AxesImage at 0x194140a0cf8>
+
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -178,6 +182,8 @@ io.imshow(img_rgb)
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+<matplotlib.image.AxesImage at 0x194141acf98>
+
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -211,6 +217,8 @@ io.imshow(img_rgb)
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+<matplotlib.image.AxesImage at 0x194142c0940>
+
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -244,6 +252,8 @@ io.imshow(img_rgb)
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+<matplotlib.image.AxesImage at 0x19415d2a6d8>
+
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -277,6 +287,8 @@ io.imshow(img_rgb)
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+<matplotlib.image.AxesImage at 0x19415e8e470>
+
 <hr class='division3'>
 </details>
 <br><br><br>
