@@ -129,11 +129,216 @@ img
 ## **How to Convert an Image With Keras**
 
 ```python
+# example of converting an image with the Keras API
+from keras.preprocessing.image import load_img
+from keras.preprocessing.image import img_to_array
+from keras.preprocessing.image import array_to_img
+import numpy as np
+from PIL import Image
 
+# load the image
+img = load_img('beach.jpg')
+print(type(img))
+
+# convert to numpy array
+img_ndarray = np.asarray(img).astype('float32')
+img_array = img_to_array(img)
+print(img_array.dtype)
+print(img_array.shape)
+
+# convert back to image
+img_pil1 = array_to_img(img_array)
+img_pil2 = img_array.astype(np.uint8)
+img_pil2 = Image.fromarray(img_pil2)
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+<p>
+  <class 'PIL.JpegImagePlugin.JpegImageFile'><br>
+  float32<br>
+  (427, 640, 3)
+</p>
+<hr class='division3'>
+</details>
+
+<br>
+
+```python
+print(type(img_ndarray))
+print(img_ndarray.shape)
+img_ndarray
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<p>
+  <class 'numpy.ndarray'><br>
+  (427, 640, 3)
+</p>
+```
+array([[[ 47., 107., 195.],
+        [ 47., 107., 195.],
+        [ 46., 106., 194.],
+        ...,
+        [ 31.,  97., 191.],
+        [ 30.,  96., 190.],
+        [ 29.,  95., 189.]],
+
+       [[ 46., 106., 194.],
+        [ 47., 107., 195.],
+        [ 47., 107., 195.],
+        ...,
+        [ 31.,  97., 191.],
+        [ 31.,  97., 191.],
+        [ 30.,  96., 190.]],
+
+       [[ 46., 106., 194.],
+        [ 48., 108., 196.],
+        [ 51., 108., 197.],
+        ...,
+        [ 30.,  96., 190.],
+        [ 31.,  97., 191.],
+        [ 30.,  96., 190.]],
+
+       ...,
+
+       [[  1.,   1.,   3.],
+        [  1.,   1.,   3.],
+        [  3.,   3.,   1.],
+        ...,
+        [130., 149., 155.],
+        [136., 155., 161.],
+        [135., 152., 160.]],
+
+       [[  0.,   1.,   0.],
+        [  1.,   2.,   0.],
+        [  1.,   2.,   0.],
+        ...,
+        [123., 143., 144.],
+        [129., 148., 152.],
+        [131., 148., 155.]],
+
+       [[  1.,   0.,   5.],
+        [  0.,   0.,   4.],
+        [  0.,   1.,   0.],
+        ...,
+        [122., 142., 141.],
+        [126., 146., 145.],
+        [129., 147., 149.]]], dtype=float32)
+```
+<hr class='division3'>
+</details>
+
+<br>
+
+```python
+print(type(img_array))
+print(img_array.shape)
+img_array
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<p>
+  <class 'numpy.ndarray'><br>
+  (427, 640, 3)
+</p>
+```
+array([[[ 47., 107., 195.],
+        [ 47., 107., 195.],
+        [ 46., 106., 194.],
+        ...,
+        [ 31.,  97., 191.],
+        [ 30.,  96., 190.],
+        [ 29.,  95., 189.]],
+
+       [[ 46., 106., 194.],
+        [ 47., 107., 195.],
+        [ 47., 107., 195.],
+        ...,
+        [ 31.,  97., 191.],
+        [ 31.,  97., 191.],
+        [ 30.,  96., 190.]],
+
+       [[ 46., 106., 194.],
+        [ 48., 108., 196.],
+        [ 51., 108., 197.],
+        ...,
+        [ 30.,  96., 190.],
+        [ 31.,  97., 191.],
+        [ 30.,  96., 190.]],
+
+       ...,
+
+       [[  1.,   1.,   3.],
+        [  1.,   1.,   3.],
+        [  3.,   3.,   1.],
+        ...,
+        [130., 149., 155.],
+        [136., 155., 161.],
+        [135., 152., 160.]],
+
+       [[  0.,   1.,   0.],
+        [  1.,   2.,   0.],
+        [  1.,   2.,   0.],
+        ...,
+        [123., 143., 144.],
+        [129., 148., 152.],
+        [131., 148., 155.]],
+
+       [[  1.,   0.,   5.],
+        [  0.,   0.,   4.],
+        [  0.,   1.,   0.],
+        ...,
+        [122., 142., 141.],
+        [126., 146., 145.],
+        [129., 147., 149.]]], dtype=float32)
+```
+<hr class='division3'>
+</details>
+
+<br>
+
+```python
+print(type(img_pil1))
+print(img_pil1.format) 
+print(img_pil1.mode)
+print(img_pil1.size)
+img_pil1
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<p>
+  <class 'PIL.Image.Image'><br>
+  None<br>
+  RGB<br>
+  (640, 427)
+</p>  
+![다운로드 (3)](https://user-images.githubusercontent.com/52376448/63722987-585ed800-c88f-11e9-8edf-586712ad87d1.png)
+<hr class='division3'>
+</details>
+
+<br>
+
+```python
+print(type(img_pil2))
+print(img_pil2.format) 
+print(img_pil2.mode)
+print(img_pil2.size)
+img_pil2
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<p>
+  <class 'PIL.Image.Image'><br>
+  None<br>
+  RGB<br>
+  (640, 427)
+</p>  
+![다운로드 (4)](https://user-images.githubusercontent.com/52376448/63723086-9825bf80-c88f-11e9-8a45-e1e28158a1db.png)
 <hr class='division3'>
 </details>
 
