@@ -85,6 +85,34 @@ io.imshow(image)
 
 ---
 
+### ***Loading an image with cv2 and showing an image with skimage***
+
+```python
+%matplotlib inline
+from skimage import io                  # pip install scikit-image
+import cv2      #import required packages : pip install opencv-contrib-python
+
+image = cv2.imread('cat.jpg')
+print(type(image))
+print(image.shape)
+
+io.imshow(image)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<p>
+    <class 'numpy.ndarray'><br>
+    (225, 225, 3)<br>
+    <matplotlib.image.AxesImage at 0x1f1b00a26a0><br>
+</p>
+![다운로드](https://user-images.githubusercontent.com/52376448/63705829-f7240e00-c868-11e9-8b18-05a3409b92aa.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
 ### ***Loading all images in a directory***
 
 ```python
