@@ -516,17 +516,184 @@ array([[[ 62.565197 ,  63.41338  ,  61.01708  ,   0.       ],
 
 ## **Standardize Pixel Values**
 
-```python
+***For consistency of the input data***, it may make more sense to standardize images per-channel using statistics calculated per minibatch or across the training dataset, if possible.
+<br><br><br>
 
+
+### ***Global Standardization***
+
+```python
+# example of global pixel standardization
+from numpy import asarray
+from PIL import Image
+
+# load image
+image = Image.open('boat.png')
+pixels = asarray(image)
+
+# convert from integers to floats
+pixels = pixels.astype('float32')
+
+# calculate global mean and standard deviation
+mean, std = pixels.mean(), pixels.std()
+print('Mean: %.3f, Standard Deviation: %.3f' % (mean, std))
+
+# global standardization of pixels
+pixels = (pixels - mean) / std
+
+# confirm it had the desired effect
+mean, std = pixels.mean(), pixels.std()
+print('Mean: %.3f, Standard Deviation: %.3f' % (mean, std))
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+<p>
+    Mean: 184.501, Standard Deviation: 73.418<br>
+    Mean: -0.000, Standard Deviation: 1.000
+</p>
 <hr class='division3'>
 </details>
 
 <br><br><br>
 
+---
+
+### ***Positive Global Standardization***
+
+```python
+# example of global pixel standardization shifted to positive domain
+from numpy import asarray
+from numpy import clip
+from PIL import Image
+
+# load image
+image = Image.open('boat.png')
+pixels = asarray(image)
+
+# convert from integers to floats
+pixels = pixels.astype('float32')
+
+# calculate global mean and standard deviation
+mean, std = pixels.mean(), pixels.std()
+print('Mean: %.3f, Standard Deviation: %.3f' % (mean, std))
+
+# global standardization of pixels
+pixels = (pixels - mean) / std
+
+# clip pixel values to [-1,1]
+pixels = clip(pixels, -1.0, 1.0)
+
+# shift from [-1,1] to [0,1] with 0.5 mean
+pixels = (pixels + 1.0) / 2.0
+
+# confirm it had the desired effect
+mean, std = pixels.mean(), pixels.std()
+print('Mean: %.3f, Standard Deviation: %.3f' % (mean, std))
+print('Min: %.3f, Max: %.3f' % (pixels.min(), pixels.max()))
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+Mean: 184.501, Standard Deviation: 73.418
+[[[ 0.4971365   0.52437776  0.5652396   0.9602377 ]
+  [ 0.34730968  0.3745509   0.41541278  0.9602377 ]
+  [ 0.08851784  0.10213846  0.14300032  0.9602377 ]
+  ...
+  [ 0.08851784  0.10213846  0.14300032  0.9602377 ]
+  [ 0.34730968  0.3745509   0.41541278  0.9602377 ]
+  [ 0.4971365   0.52437776  0.5652396   0.9602377 ]]
+
+ [[ 0.38817152  0.41541278  0.442654    0.9602377 ]
+  [ 0.07489721  0.10213846  0.1293797   0.9602377 ]
+  [ 0.29282716  0.3064478   0.32006842  0.9602377 ]
+  ...
+  [ 0.29282716  0.3064478   0.32006842  0.9602377 ]
+  [ 0.07489721  0.10213846  0.1293797   0.9602377 ]
+  [ 0.38817152  0.41541278  0.442654    0.9602377 ]]
+
+ [[ 0.19748281  0.22472405  0.26558593  0.9602377 ]
+  [ 0.15662095  0.1838622   0.19748281  0.9602377 ]
+  [ 0.7014459   0.6742046   0.7014459   0.9602377 ]
+  ...
+  [ 0.7014459   0.6742046   0.7014459   0.9602377 ]
+  [ 0.15662095  0.1838622   0.19748281  0.9602377 ]
+  [ 0.19748281  0.22472405  0.26558593  0.9602377 ]]
+
+ ...
+
+ [[ 0.11575908  0.11575908  0.11575908  0.9602377 ]
+  [-0.06130901 -0.06130901 -0.06130901  0.9602377 ]
+  [-0.45630705 -0.44268644 -0.44268644  0.9602377 ]
+  ...
+  [-0.4154452  -0.4154452  -0.40182456  0.9602377 ]
+  [-0.06130901 -0.06130901 -0.06130901  0.9602377 ]
+  [ 0.11575908  0.11575908  0.11575908  0.9602377 ]]
+
+ [[ 0.17024156  0.17024156  0.17024156  0.9602377 ]
+  [ 0.10213846  0.10213846  0.10213846  0.9602377 ]
+  [-0.07492963 -0.07492963 -0.07492963  0.9602377 ]
+  ...
+  [-0.07492963 -0.07492963 -0.07492963  0.9602377 ]
+  [ 0.10213846  0.10213846  0.10213846  0.9602377 ]
+  [ 0.17024156  0.17024156  0.17024156  0.9602377 ]]
+
+ [[ 0.1838622   0.1838622   0.1838622   0.9602377 ]
+  [ 0.15662095  0.15662095  0.15662095  0.9602377 ]
+  [ 0.10213846  0.10213846  0.10213846  0.9602377 ]
+  ...
+  [ 0.10213846  0.10213846  0.10213846  0.9602377 ]
+  [ 0.15662095  0.15662095  0.15662095  0.9602377 ]
+  [ 0.1838622   0.1838622   0.1838622   0.9602377 ]]]
+Mean: 0.563, Standard Deviation: 0.396
+Min: 0.000, Max: 0.980
+```
+<hr class='division3'>
+</details>
+
+<br><br><br>
+
+---
+
+### ***Local Standardization***
+
+```python
+# example of per-channel pixel standardization
+from numpy import asarray
+from PIL import Image
+
+# load image
+image = Image.open('boat.png')
+pixels = asarray(image)
+
+# convert from integers to floats
+pixels = pixels.astype('float32')
+
+# calculate per-channel means and standard deviations
+means = pixels.mean(axis=(0,1), dtype='float64')
+stds = pixels.std(axis=(0,1), dtype='float64')
+print('Means: %s, Stds: %s' % (means, stds))
+
+# per-channel standardization of pixels
+pixels = (pixels - means) / stds
+
+# confirm it had the desired effect
+means = pixels.mean(axis=(0,1), dtype='float64')
+stds = pixels.std(axis=(0,1), dtype='float64')
+print('Means: %s, Stds: %s' % (means, stds))
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<p>
+    Means: [158.43480487 159.58662109 164.9829202  255.        ], Stds: [70.63586854 70.73750037 70.1171148   0.        ]<br>
+    Means: [-3.98300453e-13 -1.93157989e-13  3.25967320e-13             nan], Stds: [ 1.  1.  1. nan]
+</p>
+<hr class='division3'>
+</details>
+
+<br><br><br>
 
 <hr class="division1">
 
