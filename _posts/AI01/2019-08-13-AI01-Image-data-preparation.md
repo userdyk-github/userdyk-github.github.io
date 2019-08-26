@@ -116,8 +116,9 @@ image2
     <class 'PIL.Image.Image'><br>
     None<br>
     RGB<br>
-    (640, 360)<br>
+    (640, 360)
 </p>
+![다운로드 (1)](https://user-images.githubusercontent.com/52376448/63676659-64627f80-c826-11e9-8d08-691a225d1ea0.png)
 <br><br><br>
 
 `Loading all images in a directory`
