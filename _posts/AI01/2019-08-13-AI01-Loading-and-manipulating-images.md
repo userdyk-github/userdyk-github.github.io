@@ -25,10 +25,12 @@ List of posts to read before reading this article
 
 |Lib|Loaded image type|
 |:--|:--|
+|keras|<class 'PIL.JpegImagePlugin.JpegImageFile'>|
 |PIL|<class 'PIL.JpegImagePlugin.JpegImageFile'>|
 |skimage|<class 'imageio.core.util.Array'>|
 |cv2|<class 'numpy.ndarray'>|
 |matplotlib|<class 'numpy.ndarray'>|
+
 
 <br><br><br>
 
