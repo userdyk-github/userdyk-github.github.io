@@ -1,7 +1,6 @@
-Loading large datasets from directories with keras
 ---
 layout : post
-title : AI01
+title : AI01, Loading large datasets from directories with keras
 categories: [AI01]
 comments : true
 tags : [AI01]
