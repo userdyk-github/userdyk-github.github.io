@@ -238,6 +238,8 @@ df.to_excel(filepath, index=False)      # pip install OpenPyXL
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+[pixel_values1.xlsx][1]
+[1]:{{ site.url }}/download/pixel_values1.xlsx
 <hr class='division3'>
 </details>
 
