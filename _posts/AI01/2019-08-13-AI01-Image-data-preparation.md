@@ -219,6 +219,7 @@ print(image.size)
 image.show()
 ```
 `OUTPUT`
+![resizing_opera_house](https://user-images.githubusercontent.com/52376448/63678027-43e7f480-c829-11e9-9ea4-0dffd961c6a1.png)
 <br><br><br>
 
 `Resize images, force the pixels into a new shape`
@@ -242,6 +243,7 @@ print(img_resized.size)
 img_resized.show()
 ```
 `OUTPUT`
+![resizing_opera_house](https://user-images.githubusercontent.com/52376448/63678095-6e39b200-c829-11e9-99b7-10de275ead25.png)
 <br><br><br>
 
 ---
