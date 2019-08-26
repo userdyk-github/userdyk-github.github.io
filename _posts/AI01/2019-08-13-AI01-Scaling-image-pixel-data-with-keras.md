@@ -21,15 +21,83 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
+## **MNIST Handwritten Image Classiﬁcation Dataset**
+
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
+<br><br><br>
 
 <hr class="division2">
 
-## title2
+
+## **ImageDataGenerator Class for Pixel Scaling**
+
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
+<br><br><br>
 
 <hr class="division2">
 
-## title3
+
+## **How to Normalize Images With ImageDataGenerator**
+
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
+<br><br><br>
+
+<hr class="division2">
+
+
+## **How to Center Images With ImageDataGenerator**
+
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
+<br><br><br>
+
+<hr class="division2">
+
+
+## **How to Standardize Images With ImageDataGenerator**
+
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
+<br><br><br>
+
 
 <hr class="division1">
 
