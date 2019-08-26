@@ -1,7 +1,6 @@
-Loading and manipulating images with keras
 ---
 layout : post
-title : AI01
+title : AI01, Loading and manipulating images with keras
 categories: [AI01]
 comments : true
 tags : [AI01]
