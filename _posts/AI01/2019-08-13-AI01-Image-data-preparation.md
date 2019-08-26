@@ -283,6 +283,7 @@ pyplot.imshow(ver_flip)
 pyplot.show()
 ```
 `OUTPUT`
+![다운로드](https://user-images.githubusercontent.com/52376448/63678432-32ebb300-c82a-11e9-8c39-2ce84487cac1.png)
 <br><br><br>
 
 `Rotate images`
@@ -308,6 +309,7 @@ pyplot.imshow(image.rotate(90))
 pyplot.show()
 ```
 `OUTPUT`
+![다운로드 (1)](https://user-images.githubusercontent.com/52376448/63678480-4860dd00-c82a-11e9-98c4-71261d682c57.png)
 <br><br><br>
 
 `Crop images`
