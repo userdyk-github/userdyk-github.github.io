@@ -1,7 +1,6 @@
-Using image data augmentation in keras
 ---
 layout : post
-title : AI01
+title : AI01, Using image data augmentation in keras
 categories: [AI01]
 comments : true
 tags : [AI01]
