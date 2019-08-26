@@ -40,13 +40,15 @@ print(image.size)
 # show the image 
 image.show()
 ```
-`OUTPUT`
+`OUTPUT` : <details markdown="1"><summary>접기/펼치기</summary>
 <p>
     JPEG<br>
     RGB<br>
     (640, 360)
 </p>
 ![opera_house](https://user-images.githubusercontent.com/52376448/63676217-6a0b9580-c825-11e9-96fd-0d2b96f653c1.jpg)
+</details>
+
 <br><br><br>
 
 ---
