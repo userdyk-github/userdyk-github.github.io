@@ -87,7 +87,23 @@ io.imshow(image)
 
 `RGB to HSV and Vice Versa`
 ```python
+%matplotlib inline
 
+#Import libraries 
+from skimage import io
+from skimage import color
+from skimage import data
+from pylab import *
+
+img = io.imread('puppy.jpg')         #Read image 
+img_hsv = color.rgb2hsv(img)         #Convert to HSV
+img_rgb = color.hsv2rgb(img_hsv)     #Convert back to RGB 
+
+#Show both figures 
+figure(0)                            
+io.imshow(img_hsv)
+figure(1)
+io.imshow(img_rgb)
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -98,6 +114,8 @@ io.imshow(image)
 
 `RGB to XYZ and Vice Versa`
 ```python
+%matplotlib inline
+
 #Import libraries 
 from skimage import io 
 from skimage import color
@@ -127,6 +145,8 @@ io.imshow(img_rgb)
 
 `RGB to LAB and Vice Versa`
 ```python
+%matplotlib inline
+
 #Import libraries 
 from skimage import io
 from skimage import color 
@@ -155,6 +175,8 @@ io.imshow(img_rgb)
 
 `RGB to YUV and Vice Versa`
 ```python
+%matplotlib inline
+
 #Import libraries 
 from skimage import io 
 from skimage import color 
@@ -183,6 +205,8 @@ io.imshow(img_rgb)
 
 `RGB to YIQ and Vice Versa`
 ```python
+%matplotlib inline
+
 #Import libraries 
 from skimage import io 
 from skimage import color 
@@ -211,6 +235,8 @@ io.imshow(img_rgb)
 
 `RGB to YPbPr and Vice Versa`
 ```python
+%matplotlib inline
+
 #Import libraries 
 from skimage import io 
 from skimage import color 
