@@ -460,6 +460,42 @@ print(image2.format)
 
 ---
 
+### ***Saving image with skimage***
+
+```python
+#Import libraries 
+from skimage import io 
+from skimage import color 
+
+#Read image 
+img = io.imread('puppy.jpg')
+
+#Convert to YPbPr 
+img_ypbpr= color.rgb2ypbpr(img)
+
+#Convert back to RGB 
+img_rgb= color.ypbpr2rgb(img_ypbpr)
+
+#Save image
+io.imsave("puppy_ypbpr.jpg", img_ypbpr)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<p>
+    PNG
+</p>
+[puppy_ypbpr.jpg][1]
+
+[1]:{{ site.url }}/download/AI01/puppy_ypbpr.jpg
+<hr class='division3'>
+</details>
+
+
+<br><br><br>
+
+---
+
 ### ***Saving image with Pandas(format : xlsx)***
 
 ```python
