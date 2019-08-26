@@ -115,7 +115,7 @@ pyplot.show()
 <hr class='division3'>
 </details>
 
-<br><br><br>
+<br>
 
 `PIL`
 ```python
@@ -161,7 +161,7 @@ image2
 <hr class='division3'>
 </details>
 
-<br><br><br>
+<br>
 
 `Loading all images in a directory`
 ```python
@@ -196,7 +196,7 @@ for filename in listdir('images'):
 
 ### ***How to Save Images to File***
 
-`Saving images`
+`PLI`
 ```python
 # example of saving an image in another format 
 from PIL import Image
@@ -221,32 +221,23 @@ print(image2.format)
 <hr class='division3'>
 </details>
 
-<br><br><br>
+<br>
 
-`Showing again saved images after saving images`
+`Pandas : xlsx`
 ```python
-# example of saving a grayscale version of a loaded image
-from PIL import Image
+from skimage import io                  
+import pandas as pd
 
-# load the image 
-image = Image.open('opera_house.jpg')
+image = io.imread('puppy.jpg')
+df = pd.DataFrame(image.flatten())        # flatten() : convert the three dimensions of an RGB image to a single dimension
 
-# convert the image to grayscale 
-gs_image = image.convert(mode='L')
-
-# save in jpeg format
-gs_image.save('opera_house_grayscale.jpg')
-
-# load the image again and show it 
-image2 = Image.open('opera_house_grayscale.jpg')
-
-# show the image 
-image2.show()
+# saving in excel format
+filepath = 'pixel_values1.xlsx'
+df.to_excel(filepath, index=False)      # pip install OpenPyXL
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-![opera_house_grayscale](https://user-images.githubusercontent.com/52376448/63677448-f3bc6280-c827-11e9-997c-4c3d09c99692.jpg)
 <hr class='division3'>
 </details>
 
