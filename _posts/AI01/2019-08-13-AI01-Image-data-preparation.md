@@ -44,9 +44,9 @@ image.show()
 <p>
     JPEG<br>
     RGB<br>
-    (640, 360)<br>
-    ![opera_house](https://user-images.githubusercontent.com/52376448/63676217-6a0b9580-c825-11e9-96fd-0d2b96f653c1.jpg)
+    (640, 360)
 </p>
+![opera_house](https://user-images.githubusercontent.com/52376448/63676217-6a0b9580-c825-11e9-96fd-0d2b96f653c1.jpg)
 <br><br><br>
 
 ---
@@ -75,9 +75,9 @@ pyplot.show()
 <p>
     <class 'numpy.ndarray'><br>
     uint8<br>
-    (360, 640, 3)<br>
-    ![다운로드](https://user-images.githubusercontent.com/52376448/63675998-03867780-c825-11e9-8986-97f3e72827cb.png)
+    (360, 640, 3)
 </p>
+![다운로드](https://user-images.githubusercontent.com/52376448/63675998-03867780-c825-11e9-8986-97f3e72827cb.png)
 <br><br><br>
 
 `PIL`
