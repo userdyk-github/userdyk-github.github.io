@@ -862,7 +862,7 @@ io.imshow(img)
 
 <hr class='division2'>
 
-## How to Gamma Correction(Gamma Encoding)
+## **How to Gamma Correction(Gamma Encoding)**
 
 ```python
 %matplotlib inline
