@@ -139,6 +139,10 @@ for filename in listdir('images'):
     print('> loaded %s %s' % (filename, img_data.shape))
 ```
 `OUTPUT`
+<p>
+    > loaded beauty.jpg (150, 120, 3)
+    > loaded opera_house.jpg (360, 640, 3)
+</p>
 <br><br><br>
 
 ---
