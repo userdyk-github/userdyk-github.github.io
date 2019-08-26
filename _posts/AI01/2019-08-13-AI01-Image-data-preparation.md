@@ -53,6 +53,7 @@ image.show()
 <hr class='division3'>
 </details>
 
+
 <br><br><br>
 
 ---
