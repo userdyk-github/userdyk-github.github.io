@@ -548,6 +548,45 @@ io.imshow(img_rgb)
 
 ## **How to Convert Images to NumPy Arrays and Back**
 
+### ***Convert an loaded image with keras to type of ‘numpy.ndarray’***
+
+```python
+# example of converting an image with the Keras API
+from keras.preprocessing.image import load_img
+from keras.preprocessing.image import img_to_array
+from keras.preprocessing.image import array_to_img
+import numpy as np
+from PIL import Image
+
+# load the image
+img = load_img('beach.jpg')
+print(type(img))
+
+# convert to numpy array
+img_ndarray = np.asarray(img).astype('float32')
+img_array = img_to_array(img)
+print(img_array.dtype)
+print(img_array.shape)
+
+# convert back to image
+img_pil1 = array_to_img(img_array)
+img_pil2 = img_array.astype(np.uint8)
+img_pil2 = Image.fromarray(img_pil2)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<p>
+  <class 'PIL.JpegImagePlugin.JpegImageFile'><br>
+  float32<br>
+  (427, 640, 3)
+</p>  
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
 ### ***Convert an loaded image with PIL to type of 'numpy.ndarray'***
 
 ```python
