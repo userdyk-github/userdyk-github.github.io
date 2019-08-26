@@ -23,6 +23,13 @@ List of posts to read before reading this article
 
 ## **How to Load and Display Images**
 
+|Lib|Loaded image type|
+|:--|:--|
+|PIL|<class 'PIL.JpegImagePlugin.JpegImageFile'>|
+|skimage|<class 'imageio.core.util.Array'>|
+|cv2|<class 'numpy.ndarray'>|
+|matplotlib|<class 'numpy.ndarray'>|
+
 ### ***Loading and showing an image with Pillow***
 
 ```python
@@ -36,6 +43,7 @@ image = Image.open('opera_house.jpg')
 print(image.format)
 print(image.mode)
 print(image.size)
+print(type(image))
 
 # show the image 
 image.show()
@@ -47,7 +55,8 @@ image.show()
 <p>
     JPEG<br>
     RGB<br>
-    (640, 360)
+    (640, 360)<br>
+    <class 'PIL.JpegImagePlugin.JpegImageFile'>
 </p>
 ![opera_house](https://user-images.githubusercontent.com/52376448/63676217-6a0b9580-c825-11e9-96fd-0d2b96f653c1.jpg)
 <hr class='division3'>
