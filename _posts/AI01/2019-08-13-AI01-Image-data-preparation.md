@@ -140,7 +140,7 @@ for filename in listdir('images'):
 ```
 `OUTPUT`
 <p>
-    > loaded beauty.jpg (150, 120, 3)
+    > loaded beauty.jpg (150, 120, 3)<br>
     > loaded opera_house.jpg (360, 640, 3)
 </p>
 <br><br><br>
@@ -149,6 +149,7 @@ for filename in listdir('images'):
 
 ### How to Save Images to File
 
+`Saving images`
 ```python
 # example of saving an image in another format 
 from PIL import Image
@@ -162,6 +163,32 @@ image.save('opera_house.png', format='PNG')
 # load the image again and inspect the format 
 image2 = Image.open('opera_house.png')
 print(image2.format)
+```
+`OUTPUT`
+<p>
+    PNG
+</p>
+<br><br><br>
+
+`Showing again saved images after saving images`
+```python
+# example of saving a grayscale version of a loaded image
+from PIL import Image
+
+# load the image 
+image = Image.open('opera_house.jpg')
+
+# convert the image to grayscale 
+gs_image = image.convert(mode='L')
+
+# save in jpeg format
+gs_image.save('opera_house_grayscale.jpg')
+
+# load the image again and show it 
+image2 = Image.open('opera_house_grayscale.jpg')
+
+# show the image 
+image2.show()
 ```
 `OUTPUT`
 <br><br><br>
