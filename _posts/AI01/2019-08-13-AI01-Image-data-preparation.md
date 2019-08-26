@@ -23,6 +23,12 @@ List of posts to read before reading this article
 
 ## How to Load and Manipulate Images With PIL,Pillow
 
+### How to Load and Display Images
+
+### 
+
+### 
+
 <hr class="division2">
 
 ## How to Manually Scale Image Pixel Data
@@ -53,8 +59,8 @@ List of posts followed by this article
 ---
 
 Reference
+- <a>Jason Brownlee, Deep Learning for Computer Vision</a>
 - [post1](https://userdyk-github.github.io/)
-- <a href='https://userdyk-github.github.io/'>post2</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
