@@ -41,10 +41,12 @@ print(image.size)
 image.show()
 ```
 `OUTPUT`
-JPEG<br>
-RGB<br>
-(640, 360)<br>
-![opera_house](https://user-images.githubusercontent.com/52376448/63676217-6a0b9580-c825-11e9-96fd-0d2b96f653c1.jpg)
+<p>
+    JPEG<br>
+    RGB<br>
+    (640, 360)<br>
+    ![opera_house](https://user-images.githubusercontent.com/52376448/63676217-6a0b9580-c825-11e9-96fd-0d2b96f653c1.jpg)
+</p>
 <br><br><br>
 
 ---
