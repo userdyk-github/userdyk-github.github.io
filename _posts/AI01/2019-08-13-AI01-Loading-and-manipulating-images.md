@@ -1,6 +1,6 @@
 ---
 layout : post
-title : AI01, Loading and manipulating images with PIL
+title : AI01, Loading and manipulating images
 categories: [AI01]
 comments : true
 tags : [AI01]
