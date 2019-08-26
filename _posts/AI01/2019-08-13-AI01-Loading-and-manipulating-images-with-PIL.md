@@ -511,41 +511,6 @@ io.imshow(img_rgb)
 
 ## **How to Convert Images to NumPy Arrays and Back**
 
-### ***Conversion with Matplotlib***
-
-```python
-# load and display an image with Matplotlib 
-from matplotlib import image
-from matplotlib import pyplot
-
-# load image as pixel array 
-data = image.imread('opera_house.jpg') 
-print(type(data))
-
-# summarize shape of the pixel array 
-print(data.dtype) 
-print(data.shape) 
-
-# display the array of pixels as an image
-pyplot.imshow(data) 
-pyplot.show()
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-<p>
-    <class 'numpy.ndarray'><br>
-    uint8<br>
-    (360, 640, 3)
-</p>
-![다운로드](https://user-images.githubusercontent.com/52376448/63675998-03867780-c825-11e9-8986-97f3e72827cb.png)
-<hr class='division3'>
-</details>
-
-<br><br><br>
-
----
-
 ### ***Conversion with PIL***
 
 ```python
