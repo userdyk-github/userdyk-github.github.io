@@ -331,8 +331,6 @@ cropped.show()
 ![cropped](https://user-images.githubusercontent.com/52376448/63678860-0ab08400-c82b-11e9-9329-b77b8496da5c.png)
 <br><br><br>
 
----
-
 <hr class="division2">
 
 ## **How to Manually Scale Image Pixel Data**
@@ -343,6 +341,7 @@ cropped.show()
 
 ```
 `OUTPUT`
+<br><br><br>
 
 ---
 
@@ -352,6 +351,7 @@ cropped.show()
 
 ```
 `OUTPUT`
+<br><br><br>
 
 ---
 
@@ -361,6 +361,7 @@ cropped.show()
 
 ```
 `OUTPUT`
+<br><br><br>
 
 ---
 
@@ -370,8 +371,7 @@ cropped.show()
 
 ```
 `OUTPUT`
-
----
+<br><br><br>
 
 <hr class="division2">
 
@@ -383,6 +383,7 @@ cropped.show()
 
 ```
 `OUTPUT`
+<br><br><br>
 
 ---
 
@@ -392,6 +393,7 @@ cropped.show()
 
 ```
 `OUTPUT`
+<br><br><br>
 
 ---
 
@@ -401,6 +403,7 @@ cropped.show()
 
 ```
 `OUTPUT`
+<br><br><br>
 
 ---
 
@@ -410,8 +413,8 @@ cropped.show()
 
 ```
 `OUTPUT`
+<br><br><br>
 
----
 
 <hr class="division2">
 
@@ -423,6 +426,7 @@ cropped.show()
 
 ```
 `OUTPUT`
+<br><br><br>
 
 ---
 
@@ -433,6 +437,7 @@ cropped.show()
 
 ```
 `OUTPUT`
+<br><br><br>
 
 ---
 
@@ -443,6 +448,7 @@ cropped.show()
 
 ```
 `OUTPUT`
+<br><br><br>
 
 ---
 
@@ -453,6 +459,7 @@ cropped.show()
 
 ```
 `OUTPUT`
+<br><br><br>
 
 ---
 
@@ -463,8 +470,9 @@ cropped.show()
 
 ```
 `OUTPUT`
+<br><br><br>
 
----
+
 
 <hr class="division2">
 
@@ -476,8 +484,9 @@ cropped.show()
 
 ```
 `OUTPUT`
+<br><br><br>
 
----
+
 
 <hr class="division2">
 
@@ -489,6 +498,7 @@ cropped.show()
 
 ```
 `OUTPUT`
+<br><br><br>
 
 ---
 
@@ -498,6 +508,7 @@ cropped.show()
 
 ```
 `OUTPUT`
+<br><br><br>
 
 ---
 
@@ -507,6 +518,7 @@ cropped.show()
 
 ```
 `OUTPUT`
+<br><br><br>
 
 ---
 
@@ -516,6 +528,7 @@ cropped.show()
 
 ```
 `OUTPUT`
+<br><br><br>
 
 ---
 
@@ -525,6 +538,7 @@ cropped.show()
 
 ```
 `OUTPUT`
+<br><br><br>
 
 ---
 
@@ -534,6 +548,7 @@ cropped.show()
 
 ```
 `OUTPUT`
+<br><br><br>
 
 ---
 
@@ -543,8 +558,9 @@ cropped.show()
 
 ```
 `OUTPUT`
+<br><br><br>
 
----
+
 
 <hr class="division1">
 
