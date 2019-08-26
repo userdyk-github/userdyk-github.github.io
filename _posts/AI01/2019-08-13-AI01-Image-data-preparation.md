@@ -42,7 +42,7 @@ image.show()
 ```
 
 <details markdown="1">
-<summary class='jb-small'>OUTPUT</summary>
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 <p>
     JPEG<br>
