@@ -23,7 +23,7 @@ List of posts to read before reading this article
 
 ## **How to Load and Display Images**
 
-### ***Load and show an image with Pillow***
+### ***Loading and showing an image with Pillow***
 
 ```python
 # load and show an image with Pillow 
@@ -57,7 +57,7 @@ image.show()
 
 ---
 
-### ***Load and show an image with skimage***
+### ***Loading and showing an image with skimage***
 ```python
 %matplotlib inline
 from skimage import io                  # pip install scikit-image
@@ -285,7 +285,8 @@ io.imshow(img_rgb)
 
 ## **How to Convert Images to NumPy Arrays and Back**
 
-`Matplotlib`
+### ***Conversion with Matplotlib***
+
 ```python
 # load and display an image with Matplotlib 
 from matplotlib import image
@@ -315,9 +316,12 @@ pyplot.show()
 <hr class='division3'>
 </details>
 
-<br>
+<br><br><br>
 
-`PIL`
+---
+
+### ***Conversion with PIL***
+
 ```python
 # load image and convert to and from NumPy array 
 from PIL import Image
@@ -361,9 +365,12 @@ image2
 <hr class='division3'>
 </details>
 
-<br>
+<br><br><br>
 
-`Loading all images in a directory`
+---
+
+### ***Loading all images in a directory***
+
 ```python
 # load all images in a directory 
 from os import listdir
@@ -396,7 +403,8 @@ for filename in listdir('images'):
 
 ## **How to Save Images to File**
 
-`PLI`
+### ***Saving image with PIL***
+
 ```python
 # example of saving an image in another format 
 from PIL import Image
@@ -424,9 +432,12 @@ print(image2.format)
 </details>
 
 
-<br>
+<br><br><br>
 
-`Pandas : xlsx`
+---
+
+### ***Saving image with Pandas(format : xlsx)***
+
 ```python
 from skimage import io                  
 import pandas as pd
@@ -453,7 +464,8 @@ df.to_excel(filepath, index=False)      # pip install OpenPyXL
 
 ## **How to Resize Images**
 
-`Resize images, preserving the aspect ratio`
+### ***Resizing images, preserving the aspect ratio***
+
 ```python
 # create a thumbnail of an image 
 from PIL import Image
@@ -486,7 +498,10 @@ image.show()
 
 <br><br><br>
 
-`Resize images, force the pixels into a new shape`
+---
+
+### ***Resizing images, forcing the pixels into a new shape***
+
 ```python
 # resize image and force a new shape 
 from PIL import Image
@@ -523,7 +538,8 @@ img_resized.show()
 
 ## **How to Flip, Rotate, and Crop Images**
 
-`Flip images`
+### ***Flipping images***
+
 ```python
 # create flipped versions of an image 
 from PIL import Image
@@ -556,7 +572,10 @@ pyplot.show()
 
 <br><br><br>
 
-`Rotate images`
+---
+
+### ***Rotating images***
+
 ```python
 # create rotated versions of an image 
 from PIL import Image 
@@ -587,7 +606,10 @@ pyplot.show()
 
 <br><br><br>
 
-`Crop images`
+---
+
+### ***Cropping images***
+
 ```python
 # example of cropping an image 
 from PIL import Image
