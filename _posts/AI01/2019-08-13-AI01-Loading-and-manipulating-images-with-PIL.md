@@ -898,6 +898,40 @@ io.imshow(img)
 </details>
 <br><br><br>
 
+---
+
+### ***Text***
+
+```python
+%matplotlib inline
+#import required packages 
+import cv2
+import numpy as np
+from skimage import io
+
+#Read image
+image = cv2.imread("cat_1.jpg")
+
+#Define font 
+font  = cv2.FONT_HERSHEY_SIMPLEX
+
+#Write on the image 
+cv2.putText(image, "I am a Cat", (50, 50), font, 0.8, (0, 255, 0), 2, cv2.LINE_AA)
+io.imshow(image)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<p>
+    <matplotlib.image.AxesImage at 0x2386ff17ac8>
+</p>
+![다운로드 (1)](https://user-images.githubusercontent.com/52376448/63707520-0d33cd80-c86d-11e9-8571-9c5b570469bb.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+
+
 <hr class='division2'>
 
 ## **How to Gamma Correction(Gamma Encoding)**
