@@ -1,6 +1,6 @@
 ---
 layout : post
-title : AI01, Image data preparation
+title : AI01, How to load and manipulate images with PIL
 categories: [AI01]
 comments : true
 tags : [AI01]
