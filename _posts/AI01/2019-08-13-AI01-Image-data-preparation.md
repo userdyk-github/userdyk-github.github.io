@@ -78,13 +78,18 @@ print(data.shape)
 pyplot.imshow(data) 
 pyplot.show()
 ```
-`OUTPUT`
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
 <p>
     <class 'numpy.ndarray'><br>
     uint8<br>
     (360, 640, 3)
 </p>
 ![다운로드](https://user-images.githubusercontent.com/52376448/63675998-03867780-c825-11e9-8986-97f3e72827cb.png)
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 `PIL`
@@ -115,7 +120,9 @@ print(image2.size)
 
 image2
 ```
-`OUTPUT`
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
 <p>
     <class 'PIL.JpegImagePlugin.JpegImageFile'><br>
     <class 'numpy.ndarray'><br>
@@ -126,6 +133,9 @@ image2
     (640, 360)
 </p>
 ![다운로드 (1)](https://user-images.githubusercontent.com/52376448/63676659-64627f80-c826-11e9-8d08-691a225d1ea0.png)
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 `Loading all images in a directory`
@@ -145,11 +155,16 @@ for filename in listdir('images'):
     loaded_images.append(img_data)
     print('> loaded %s %s' % (filename, img_data.shape))
 ```
-`OUTPUT`
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
 <p>
     > loaded beauty.jpg (150, 120, 3)<br>
     > loaded opera_house.jpg (360, 640, 3)
 </p>
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 ---
@@ -171,11 +186,16 @@ image.save('opera_house.png', format='PNG')
 image2 = Image.open('opera_house.png')
 print(image2.format)
 ```
-`OUTPUT`
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
 <p>
     PNG
 </p>
 ![캡처](https://user-images.githubusercontent.com/52376448/63678983-4f3c1f80-c82b-11e9-9553-e2f82d73f67a.JPG)
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 `Showing again saved images after saving images`
@@ -198,8 +218,13 @@ image2 = Image.open('opera_house_grayscale.jpg')
 # show the image 
 image2.show()
 ```
-`OUTPUT`
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
 ![opera_house_grayscale](https://user-images.githubusercontent.com/52376448/63677448-f3bc6280-c827-11e9-997c-4c3d09c99692.jpg)
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 ---
@@ -226,12 +251,17 @@ print(image.size)
 # show the image 
 image.show()
 ```
-`OUTPUT`
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
 <p>
     (640, 360)<br>
     (100, 56)
 </p>
 ![resizing_opera_house](https://user-images.githubusercontent.com/52376448/63678027-43e7f480-c829-11e9-9ea4-0dffd961c6a1.png)
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 `Resize images, force the pixels into a new shape`
@@ -254,12 +284,17 @@ print(img_resized.size)
 # show the image 
 img_resized.show()
 ```
-`OUTPUT`
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
 <p>
     (640, 360)<br>
     (200, 200)
 </p>
 ![resizing_opera_house2](https://user-images.githubusercontent.com/52376448/63678380-0fc10380-c82a-11e9-9f82-a3744ef5237f.png)
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 ---
@@ -290,8 +325,13 @@ pyplot.subplot(313)
 pyplot.imshow(ver_flip)
 pyplot.show()
 ```
-`OUTPUT`
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
 ![다운로드](https://user-images.githubusercontent.com/52376448/63678432-32ebb300-c82a-11e9-8c39-2ce84487cac1.png)
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 `Rotate images`
@@ -316,8 +356,13 @@ pyplot.subplot(313)
 pyplot.imshow(image.rotate(90))
 pyplot.show()
 ```
-`OUTPUT`
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
 ![다운로드 (1)](https://user-images.githubusercontent.com/52376448/63678480-4860dd00-c82a-11e9-98c4-71261d682c57.png)
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 `Crop images`
@@ -334,8 +379,13 @@ cropped = image.crop((100, 100, 200, 200))
 # show cropped image 
 cropped.show()
 ```
-`OUTPUT`
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
 ![cropped](https://user-images.githubusercontent.com/52376448/63678860-0ab08400-c82b-11e9-9329-b77b8496da5c.png)
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 <hr class="division2">
@@ -360,7 +410,9 @@ print(pixels.dtype)
 print(pixels.min(), pixels.max())
 pixels
 ```
-`OUTPUT1`
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT1</summary>
+<hr class='division3'>
 <p>
     (856, 1280, 4)<br>
     uint8<br>
@@ -417,6 +469,10 @@ array([[[221, 223, 226, 255],
         [196, 196, 196, 255],
         [198, 198, 198, 255]]], dtype=uint8)
 ```
+<hr class='division3'>
+</details>
+
+
 `STEP 2`
 ```python
 # convert from integers to floats
@@ -430,7 +486,9 @@ print(pixels.min(), pixels.max())
 
 pixels
 ```
-`OUTPUT2`
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT2</summary>
+<hr class='division3'>
 <p>
     0.0 0.003921569
 </p>
@@ -485,6 +543,10 @@ array([[[0.00339869, 0.00342945, 0.00347559, 0.00392157],
         [0.00301423, 0.00301423, 0.00301423, 0.00392157],
         [0.00304498, 0.00304498, 0.00304498, 0.00392157]]], dtype=float32)
 ```
+<hr class='division3'>
+</details>
+
+
 <br><br><br>
 
 ---
@@ -494,7 +556,12 @@ array([[[0.00339869, 0.00342945, 0.00347559, 0.00392157],
 ```python
 
 ```
-`OUTPUT`
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 
@@ -505,7 +572,12 @@ array([[[0.00339869, 0.00342945, 0.00347559, 0.00392157],
 ```python
 
 ```
-`OUTPUT`
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 <hr class="division2">
@@ -517,7 +589,12 @@ array([[[0.00339869, 0.00342945, 0.00347559, 0.00392157],
 ```python
 
 ```
-`OUTPUT`
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 ---
@@ -527,7 +604,12 @@ array([[[0.00339869, 0.00342945, 0.00347559, 0.00392157],
 ```python
 
 ```
-`OUTPUT`
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 ---
@@ -537,7 +619,12 @@ array([[[0.00339869, 0.00342945, 0.00347559, 0.00392157],
 ```python
 
 ```
-`OUTPUT`
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 ---
@@ -547,7 +634,12 @@ array([[[0.00339869, 0.00342945, 0.00347559, 0.00392157],
 ```python
 
 ```
-`OUTPUT`
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 
@@ -560,7 +652,12 @@ array([[[0.00339869, 0.00342945, 0.00347559, 0.00392157],
 ```python
 
 ```
-`OUTPUT`
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 ---
@@ -571,7 +668,12 @@ array([[[0.00339869, 0.00342945, 0.00347559, 0.00392157],
 ```python
 
 ```
-`OUTPUT`
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 ---
@@ -582,7 +684,12 @@ array([[[0.00339869, 0.00342945, 0.00347559, 0.00392157],
 ```python
 
 ```
-`OUTPUT`
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 ---
@@ -593,7 +700,12 @@ array([[[0.00339869, 0.00342945, 0.00347559, 0.00392157],
 ```python
 
 ```
-`OUTPUT`
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 ---
@@ -604,7 +716,12 @@ array([[[0.00339869, 0.00342945, 0.00347559, 0.00392157],
 ```python
 
 ```
-`OUTPUT`
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 
@@ -618,7 +735,12 @@ array([[[0.00339869, 0.00342945, 0.00347559, 0.00392157],
 ```python
 
 ```
-`OUTPUT`
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 
@@ -632,7 +754,12 @@ array([[[0.00339869, 0.00342945, 0.00347559, 0.00392157],
 ```python
 
 ```
-`OUTPUT`
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 ---
@@ -642,7 +769,12 @@ array([[[0.00339869, 0.00342945, 0.00347559, 0.00392157],
 ```python
 
 ```
-`OUTPUT`
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 ---
@@ -652,7 +784,12 @@ array([[[0.00339869, 0.00342945, 0.00347559, 0.00392157],
 ```python
 
 ```
-`OUTPUT`
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 ---
@@ -662,7 +799,12 @@ array([[[0.00339869, 0.00342945, 0.00347559, 0.00392157],
 ```python
 
 ```
-`OUTPUT`
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 ---
@@ -672,7 +814,12 @@ array([[[0.00339869, 0.00342945, 0.00347559, 0.00392157],
 ```python
 
 ```
-`OUTPUT`
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 ---
@@ -682,7 +829,13 @@ array([[[0.00339869, 0.00342945, 0.00347559, 0.00392157],
 ```python
 
 ```
-`OUTPUT`
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
+
 <br><br><br>
 
 ---
@@ -692,7 +845,12 @@ array([[[0.00339869, 0.00342945, 0.00347559, 0.00392157],
 ```python
 
 ```
-`OUTPUT`
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 
