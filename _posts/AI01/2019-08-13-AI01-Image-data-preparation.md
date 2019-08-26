@@ -217,11 +217,12 @@ print(image2.format)
 <p>
     PNG
 </p>
-<hr class='division3'>
-</details>
 [opera_house.png][1]
 
 [1]:{{ site.url }}/download/AI01/opera_house.png
+<hr class='division3'>
+</details>
+
 
 <br>
 
