@@ -509,6 +509,102 @@ array([[[ 62.565197 ,  63.41338  ,  61.01708  ,   0.       ],
 ```
 <hr class='division3'>
 </details>
+
+<br>
+`SUPPLEMENT1`
+```python
+import numpy as np
+a = np.array([[1, 2], 
+              [3, 4]])
+
+print(a.shape)
+print(np.mean(a))          # (1+2+3+4)/4 = 2.5
+print(np.mean(a, axis=0))  # (1+3)/2 = 2, (2+4)/2 = 3
+print(np.mean(a, axis=1))  # (1+2)/2 = 2.5, (3+4)/2 = 3.5
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<p>
+    (2, 2)<br>
+    2.5 <br>
+    [2. 3.] <br>
+    [1.5 3.5] 
+</p>
+<hr class='division3'>
+</details>
+
+<br>
+`SUPPLEMENT2`
+```python
+import numpy as np
+a = np.array([[[1, 2], 
+               [3, 4]],
+              
+               [[5,6],
+                [7,8]]])
+
+print(a.shape)
+
+print(np.mean(a),'\n\n')                # (1+2+3+4+5+6+7+8)/8
+
+
+
+print(np.mean(a, axis=0))               # (1+5)/2 = 3, (2+6)/2 = 4
+                                        # (3+7)/2 = 5, (4+8)/2 = 6
+print(np.mean(a, axis=(0,1)))           # ([1+5]/2 + [3+7]/2)/2 = 4
+                                        # ([2+6]/2 + [4+8]/2)/2 = 5
+print(np.mean(a, axis=(0,2)),'\n\n')    # ([1+5]/2 + [2+6]/2)/2 = 3.5
+                                        # ([3+7]/2 + [4+8]/2)/2 = 5.5
+
+
+
+print(np.mean(a, axis=1))               # (1+3)/2 = 2, (2+4)/2 = 3
+                                        # (5+7)/2 = 6, (6+8)/2 = 7
+print(np.mean(a, axis=(1,0)))           # ([1+3]/2 + [5+7]/2)/2 = 4
+                                        # ([2+4]/2 + [6+8]/2)/2 = 5
+print(np.mean(a, axis=(1,2)),'\n\n')    # ([1+3]/2 + [2+4]/2)/2 = 2.5
+                                        # ([5+7]/2 + [6+8]/2)/2 = 6.5
+
+
+
+print(np.mean(a, axis=2))               # (1+2)/2 = 1.5, (3+4)/2 = 3.5
+                                        # (5+6)/2 = 5.5, (7+8)/2 = 7.5
+print(np.mean(a, axis=(2,0)))           # ([1+2]/2 + [5+6]/2)/2 = 3.5
+                                        # ([3+4]/2 + [7+8]/2)/2 = 5.5
+print(np.mean(a, axis=(2,1)),'\n\n')    # ([1+2]/2 + [3+4]/2)/2 = 2.5
+                                        # ([5+6]/2 + [7+8]/2)/2 = 6.5
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<p>
+    (2, 2, 2)<br>
+    4.5 <br><br>
+
+
+    [[3. 4.]<br>
+     [5. 6.]]<br>
+    [4. 5.]<br>
+    [3.5 5.5] <br><br>
+
+
+    [[2. 3.]<br>
+     [6. 7.]]<br>
+    [4. 5.]<br>
+    [2.5 6.5] <br><br>
+
+
+    [[1.5 3.5]<br>
+     [5.5 7.5]]<br>
+    [3.5 5.5]<br>
+    [2.5 6.5] <br><br>
+
+</p>
+<hr class='division3'>
+</details>
+
+
 <br><br><br>
 
 
