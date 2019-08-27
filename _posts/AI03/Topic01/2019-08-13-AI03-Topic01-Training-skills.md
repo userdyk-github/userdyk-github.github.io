@@ -1,6 +1,6 @@
 ---
 layout : post
-title : AI03-Topic01, Learning skills
+title : AI03-Topic01, Training skills
 categories: [AI03-Topic01]
 comments : true
 tags : [AI03-Topic01]
@@ -21,15 +21,23 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
+## **Parameter update**
 
 <hr class="division2">
 
-## title2
+## **Initial value of weight**
 
 <hr class="division2">
 
-## title3
+## **Batch normalization**
+
+<hr class="division2">
+
+## **For the right training**
+
+<hr class="division2">
+
+## **Find appropriate hyperparameter values**
 
 <hr class="division1">
 
