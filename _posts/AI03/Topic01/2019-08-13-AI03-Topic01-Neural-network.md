@@ -26,6 +26,8 @@ List of posts to read before reading this article
 ### ***Implement the step function***
 
 ```python
+import numpy as np
+
 def step_function1(x):
   if x > 0:
     return 1
@@ -36,7 +38,6 @@ def step_function2(x):
   y = x > 0
   return y.astype(np.int)
 
-import numpy as np
 
 x1 = 10.0
 x2 = np.array([-10.0, 5.0, 10.0])
