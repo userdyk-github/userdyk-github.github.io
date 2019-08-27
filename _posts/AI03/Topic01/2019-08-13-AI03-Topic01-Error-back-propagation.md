@@ -33,15 +33,15 @@ List of posts to read before reading this article
 
 <hr class="division2">
 
-## **Implement a Simple Hierarchy**
+## **Implement a simple layer**
 
 <hr class="division2">
 
-## **Implement the activation function hierarchy**
+## **Implement the activation function layer**
 
 <hr class="division2">
 
-## **Implement the Affine/Softmax hierarchy**
+## **Implement the Affine/Softmax layer**
 
 <hr class="division2">
 
