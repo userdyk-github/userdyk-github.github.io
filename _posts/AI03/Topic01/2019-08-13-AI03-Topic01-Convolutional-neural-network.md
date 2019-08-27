@@ -21,15 +21,31 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
+## **Overall structure**
 
 <hr class="division2">
 
-## title2
+## **Convolution layer**
 
 <hr class="division2">
 
-## title3
+## **Pooling layer**
+
+<hr class="division2">
+
+## **Implement Convolution/Pooling layer**
+
+<hr class="division2">
+
+## **Implement CNN**
+
+<hr class="division2">
+
+## **Visualization CNN**
+
+<hr class="division2">
+
+## **Representitive CNN**
 
 <hr class="division1">
 
