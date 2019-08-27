@@ -56,6 +56,7 @@ title: Study
 
 ## **AI05 : Computer vision**
 
+- <a href='https://userdyk-github.github.io/ai05/AI05-Basic-image-processing.html'>Basic image processing</a>
 - <a href='https://userdyk-github.github.io/ai05/AI05-.html'>Image classification</a>
 - <a href='https://userdyk-github.github.io/ai05/AI05-.html'>Object detection</a>
 - <a href='https://userdyk-github.github.io/ai05/AI05-.html'>Face recognition</a>
