@@ -54,6 +54,24 @@ print(step_function2(x2))
 </p>
 <hr class='division3'>
 </details>
+<br>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+```python
+>>> import numpy as np
+>>> np.array([-10.0, 10.0, 10.0])
+array([-10.0, 10.0, 10.0])
+
+>>> np.array([-10.0, 10.0, 10.0])>0
+array([False,  True])
+
+>>> np.array([False, True]).astype(np.int)
+array([0, 1])
+```
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 ---
