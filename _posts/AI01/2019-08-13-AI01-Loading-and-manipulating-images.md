@@ -31,6 +31,11 @@ List of posts to read before reading this article
 |cv2|<class 'numpy.ndarray'>|
 |matplotlib|<class 'numpy.ndarray'>|
 
+|Loaded image type|Lib for showing|
+|:--|:--|
+|<class 'PIL.JpegImagePlugin.JpegImageFile'>|keras, PIL, matplotlib|
+|<class 'imageio.core.util.Array'><br><class 'numpy.ndarray'>|skimage, matplotlib|
+
 
 <br><br><br>
 
