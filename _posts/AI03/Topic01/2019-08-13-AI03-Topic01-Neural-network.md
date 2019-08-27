@@ -250,6 +250,7 @@ array([0.21682708, 0.49627909])
 <details markdown="1">
 <summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
 <hr class='division3'>
+![캡처](https://user-images.githubusercontent.com/52376448/63814662-95e56300-c96c-11e9-870b-7cc24ac738e0.JPG)
 <hr class='division3'>
 </details>
 <br><br><br>
