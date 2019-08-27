@@ -21,15 +21,23 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
+## **Deeper**
 
 <hr class="division2">
 
-## title2
+## **Early History of Deep Learning**
 
 <hr class="division2">
 
-## title3
+## **Quicker**
+
+<hr class="division2">
+
+## **Application of Deep Learning**
+
+<hr class="division2">
+
+## **The future of deep learning**
 
 <hr class="division1">
 
