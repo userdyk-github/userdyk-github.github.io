@@ -21,27 +21,209 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## **Perceptron to Neural Network**
-
-<hr class="division2">
-
 ## **Activation function**
+
+### ***Implement the step function***
+
+```python
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+### ***Graph of the step function***
+
+```python
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+### ***Implement the sigmoid function***
+
+```python
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+### ***ReLU function***
+
+```python
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
 
 <hr class="division2">
 
 ## **Calculation of multidimensional array**
 
+### *** ***
+
+```python
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+### *** ***
+
+```python
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+### *** ***
+
+```python
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+
 <hr class="division2">
 
 ## **Implement a three-layer neural network**
+
+### *** ***
+
+```python
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+### *** ***
+
+```python
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
 
 <hr class="division2">
 
 ## **Design the output layer**
 
+### *** ***
+
+```python
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+### *** ***
+
+```python
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+### *** ***
+
+```python
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+
 <hr class="division2">
 
-## **Handwriting Number Recognition**
+### *** ***
+
+```python
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+### *** ***
+
+```python
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+### *** ***
+
+```python
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
 
 <hr class="division1">
 
