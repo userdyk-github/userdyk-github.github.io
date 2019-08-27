@@ -21,15 +21,31 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
+## **Calculation graph**
 
 <hr class="division2">
 
-## title2
+## **Chain rule**
 
 <hr class="division2">
 
-## title3
+## **Error back propagation**
+
+<hr class="division2">
+
+## **Implementing a Simple Hierarchy**
+
+<hr class="division2">
+
+## **Implementing the activation function hierarchy**
+
+<hr class="division2">
+
+## **Implementing the Affine/Softmax hierarchy**
+
+<hr class="division2">
+
+## **Implementing Error back propagation**
 
 <hr class="division1">
 
