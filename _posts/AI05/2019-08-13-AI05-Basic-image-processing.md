@@ -195,6 +195,59 @@ io.imshow(image)
 
 ---
 
+### ***dtype = np.int8***
+
+```python
+import numpy as np
+from skimage import io
+
+image = np.array([[[255,0,0],[0,255,0],[0,0,255]],
+                  [[0,0,0],[128,128,128],[255,255,255]]], dtype=np.int8)
+
+print('dtype : ', image.dtype)
+print('shape : ', image.shape)
+io.imshow(image)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<p>
+  dtype :  int8<br>
+  shape :  (2, 3, 3)<br>
+  <matplotlib.image.AxesImage at 0x260c51ca898>
+</p>
+![다운로드 (1)](https://user-images.githubusercontent.com/52376448/63790589-89ddaf00-c934-11e9-8570-b7487526b92f.png)
+<hr class='division3'>
+</details>
+
+---
+
+### ***dtype = np.uint16***
+
+```python
+import numpy as np
+from skimage import io
+
+image = np.array([[[255,0,0],[0,255,0],[0,0,255]],
+                  [[0,0,0],[128,128,128],[255,255,255]]], dtype=np.uint16)
+
+print('dtype : ', image.dtype)
+print('shape : ', image.shape)
+io.imshow(image)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<p>
+  dtype :  uint16<br>
+  shape :  (2, 3, 3)<br>
+  <matplotlib.image.AxesImage at 0x260c5282358>
+</p>
+![다운로드 (2)](https://user-images.githubusercontent.com/52376448/63790648-aed22200-c934-11e9-84f1-bc4bfdd7c418.png)
+<hr class='division3'>
+</details>
+
+<br><br><br>
 
 <hr class="division1">
 
