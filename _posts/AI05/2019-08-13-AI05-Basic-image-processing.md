@@ -21,7 +21,7 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
+## Building image with numpy
 
 <hr class="division2">
 
