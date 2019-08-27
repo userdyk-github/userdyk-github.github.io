@@ -51,7 +51,7 @@ io.imshow(image)
 <hr class='division3'>
 <p>
   dtype :  uint8<br>
-  shape :  (12, 16)
+  shape :  (12, 16)<br>
   <matplotlib.image.AxesImage at 0x260c1d7d630>
 </p>
 ![다운로드 (8)](https://user-images.githubusercontent.com/52376448/63788477-86e0bf80-c930-11e9-80ff-3959fe9caf3d.png)
