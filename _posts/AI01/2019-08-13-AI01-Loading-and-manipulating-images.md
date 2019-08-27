@@ -23,6 +23,8 @@ List of posts to read before reading this article
 
 ## **How to Load and Display Images**
 
+<br>
+
 |Lib for loading an image|Loaded image type|
 |:--|:--|
 |keras|<class 'PIL.JpegImagePlugin.JpegImageFile'>|
