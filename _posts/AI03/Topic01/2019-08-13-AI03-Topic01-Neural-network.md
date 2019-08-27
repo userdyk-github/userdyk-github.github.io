@@ -34,7 +34,6 @@ def step_function1(x):
     return 1
   else:
     return 0
-    
 x1 = 10.0
 print(step_function1(x1))
 
@@ -42,7 +41,6 @@ print(step_function1(x1))
 def step_function2(x):
   y = x > 0
   return y.astype(np.int)
-  
 x2 = np.array([-10.0, 5.0, 10.0])
 print(step_function2(x2))
 ```
