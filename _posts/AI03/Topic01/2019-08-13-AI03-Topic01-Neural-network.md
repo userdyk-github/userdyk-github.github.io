@@ -26,10 +26,32 @@ List of posts to read before reading this article
 ### ***Implement the step function***
 
 ```python
+def step_function1(x):
+  if x > 0:
+    return 1
+  else:
+    return 0
+
+def step_function2(x):
+  y = x > 0
+  return y.astype(np.int)
+
+import numpy as np
+
+x1 = 10.0
+x2 = np.array([-10.0, 5.0, 10.0])
+
+print(step_function1(x1))
+print(step_function2(x2))
 ```
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+<p>
+  1<br>
+  [0 1 1]
+</p>
 <hr class='division3'>
 </details>
 <br><br><br>
