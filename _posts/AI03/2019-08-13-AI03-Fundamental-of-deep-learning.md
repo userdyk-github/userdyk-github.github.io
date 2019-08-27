@@ -16,4 +16,3 @@ tags : [AI03]
 - <a href='https://userdyk-github.github.io/'>Convolutional neural network</a>
 - <a href='https://userdyk-github.github.io/'>Deep learning</a>
 
----
