@@ -23,7 +23,6 @@ List of posts to read before reading this article
 
 ## **MNIST Handwritten Image Classiﬁcation Dataset**
 
-`STEP1`
 ```python
 # example of loading the MNIST dataset
 from keras.datasets import mnist
