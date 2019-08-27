@@ -21,27 +21,27 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## Perceptron to Neural Network
+## **Perceptron to Neural Network**
 
 <hr class="division2">
 
-## Activation function
+## **Activation function**
 
 <hr class="division2">
 
-## Calculation of multidimensional array
+## **Calculation of multidimensional array**
 
 <hr class="division2">
 
-## Implement a three-layer neural network
+## **Implement a three-layer neural network**
 
 <hr class="division2">
 
-## Design the output layer
+## **Design the output layer**
 
 <hr class="division2">
 
-## Handwriting Number Recognition
+## **Handwriting Number Recognition**
 
 <hr class="division1">
 
