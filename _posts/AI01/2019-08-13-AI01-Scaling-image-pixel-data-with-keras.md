@@ -53,6 +53,24 @@ print('Test', test_images.min(), test_images.max(), test_images.mean(), test_ima
 </p>
 <hr class='division3'>
 </details>
+
+<br>
+
+```python
+print(train_images[0].shape)
+io.imshow(train_images[0])
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<p>
+  (28, 28)<br>
+  <matplotlib.image.AxesImage at 0x23244de4fd0>
+</p>
+![다운로드 (3)](https://user-images.githubusercontent.com/52376448/63792062-bba44500-c937-11e9-9747-e048df95e1a6.png)
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 <hr class="division2">
