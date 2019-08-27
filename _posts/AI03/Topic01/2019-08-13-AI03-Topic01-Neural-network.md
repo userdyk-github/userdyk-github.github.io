@@ -24,7 +24,7 @@ List of posts to read before reading this article
 ## **Activation function**
 
 ### ***Implement the step function***
-<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a32e22e6cb7bd6418442d4ab3af89ee1341aa102" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:23.637ex; height:6.176ex;" alt="{\displaystyle \chi _{A}(x)={\begin{cases}1&amp;{\text{if }}x\in A,\\0&amp;{\text{if }}x\notin A.\\\end{cases}}}">
+<div><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a32e22e6cb7bd6418442d4ab3af89ee1341aa102" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:23.637ex; height:6.176ex;" alt="{\displaystyle \chi _{A}(x)={\begin{cases}1&amp;{\text{if }}x\in A,\\0&amp;{\text{if }}x\notin A.\\\end{cases}}}"></div>
 ```python
 import numpy as np
 
