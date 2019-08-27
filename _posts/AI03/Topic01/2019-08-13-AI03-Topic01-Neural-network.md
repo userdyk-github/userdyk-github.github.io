@@ -77,7 +77,7 @@ List of posts to read before reading this article
 
 ## **Calculation of multidimensional array**
 
-### *** ***
+### ***Multidimensional array***
 
 ```python
 ```
@@ -90,7 +90,7 @@ List of posts to read before reading this article
 
 ---
 
-### *** ***
+### ***Matrix multiplication***
 
 ```python
 ```
@@ -103,7 +103,7 @@ List of posts to read before reading this article
 
 ---
 
-### *** ***
+### ***Matrix multiplication in Neural Networks***
 
 ```python
 ```
@@ -119,7 +119,7 @@ List of posts to read before reading this article
 
 ## **Implement a three-layer neural network**
 
-### *** ***
+### ***Implement a neuronal signal transduction***
 
 ```python
 ```
@@ -132,7 +132,7 @@ List of posts to read before reading this article
 
 ---
 
-### *** ***
+### ***Summary for Implement***
 
 ```python
 ```
@@ -148,7 +148,7 @@ List of posts to read before reading this article
 
 ## **Design the output layer**
 
-### *** ***
+### ***Implement identity and softmax function***
 
 ```python
 ```
@@ -161,7 +161,7 @@ List of posts to read before reading this article
 
 ---
 
-### *** ***
+### ***Cautions for implementing softmax function***
 
 ```python
 ```
@@ -174,7 +174,7 @@ List of posts to read before reading this article
 
 ---
 
-### *** ***
+### ***Characteristics of Softmax function***
 
 ```python
 ```
@@ -188,7 +188,9 @@ List of posts to read before reading this article
 
 <hr class="division2">
 
-### *** ***
+## **Handwriting number recognition**
+
+### ***MNIST dataset***
 
 ```python
 ```
@@ -201,7 +203,7 @@ List of posts to read before reading this article
 
 ---
 
-### *** ***
+### ***Inference processing of neural network***
 
 ```python
 ```
@@ -214,7 +216,7 @@ List of posts to read before reading this article
 
 ---
 
-### *** ***
+### ***Batch processing***
 
 ```python
 ```
@@ -240,79 +242,3 @@ Reference
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
-
-Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
-
-[Link to another page](another-page).
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-* * *
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-
-![](https://assets-cdn.github.com/images/icons/emoji/octocat.png)
-![](https://guides.github.com/activities/hello-world/branching.png)
-
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-<hr class='division3'>
-</details>
-
-
