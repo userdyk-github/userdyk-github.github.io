@@ -21,15 +21,23 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
+## **Train from the data**
 
 <hr class="division2">
 
-## title2
+## **Loss function**
 
 <hr class="division2">
 
-## title3
+## **Neumerical derivative**
+
+<hr class="division2">
+
+## **Gradient**
+
+<hr class="division2">
+
+## **Implement Learning Algorithms**
 
 <hr class="division1">
 
