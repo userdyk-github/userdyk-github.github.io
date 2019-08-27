@@ -79,11 +79,41 @@ io.imshow(train_images[0])
 ## **ImageDataGenerator Class for Pixel Scaling**
 
 ```python
+# import modules
+from keras.models import Sequential
+from keras.layers import Conv2D
+from keras.layers import MaxPooling2D
+from keras.layers import Flatten 
+from keras.layers import Dense
+from keras.datasets import mnist
+from keras.preprocessing.image import ImageDataGenerator
 
+# fit model
+model = Sequential()
+model.add(Conv2D(32, (3, 3), input_shape = (28, 28, 1), activation = 'relu'))
+model.add(MaxPooling2D(pool_size = (2, 2)))
+model.add(Conv2D(32, (3, 3), activation = 'relu'))
+model.add(MaxPooling2D(pool_size = (2, 2)))
+model.add(Flatten())
+model.add(Dense(units = 128, activation = 'relu'))
+model.add(Dense(units = 1, activation = 'sigmoid'))
+model.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = ['accuracy'])
+
+
+
+
+
+datagen = ImageDataGenerator()                                                # create data generator
+(train_images, train_labels), (test_images, test_labels) = mnist.load_data()  # load dataset
+train_iterator = datagen.flow(train_images, train_labels)                     # get batch iterator
+model.fit_generator(train_iterator, steps_per_epoch=10)
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+<p>
+  
+</p>
 <hr class='division3'>
 </details>
 
