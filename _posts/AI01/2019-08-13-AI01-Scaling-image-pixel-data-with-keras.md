@@ -88,6 +88,10 @@ from keras.layers import Dense
 from keras.datasets import mnist
 from keras.preprocessing.image import ImageDataGenerator
 
+# load dataset
+(train_images, train_labels), (test_images, test_labels) = mnist.load_data()  # load dataset
+train_images = train_images.reshape(60000,28,28,1)                            # reshape to rank 4
+
 # fit model
 model = Sequential()
 model.add(Conv2D(32, (3, 3), input_shape = (28, 28, 1), activation = 'relu'))
@@ -99,12 +103,7 @@ model.add(Dense(units = 128, activation = 'relu'))
 model.add(Dense(units = 1, activation = 'sigmoid'))
 model.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = ['accuracy'])
 
-
-
-
-
 datagen = ImageDataGenerator()                                                # create data generator
-(train_images, train_labels), (test_images, test_labels) = mnist.load_data()  # load dataset
 train_iterator = datagen.flow(train_images, train_labels)                     # get batch iterator
 model.fit_generator(train_iterator, steps_per_epoch=10)
 ```
