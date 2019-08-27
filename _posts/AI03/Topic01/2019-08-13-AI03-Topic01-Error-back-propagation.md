@@ -33,19 +33,19 @@ List of posts to read before reading this article
 
 <hr class="division2">
 
-## **Implementing a Simple Hierarchy**
+## **Implement a Simple Hierarchy**
 
 <hr class="division2">
 
-## **Implementing the activation function hierarchy**
+## **Implement the activation function hierarchy**
 
 <hr class="division2">
 
-## **Implementing the Affine/Softmax hierarchy**
+## **Implement the Affine/Softmax hierarchy**
 
 <hr class="division2">
 
-## **Implementing Error back propagation**
+## **Implement Error back propagation**
 
 <hr class="division1">
 
