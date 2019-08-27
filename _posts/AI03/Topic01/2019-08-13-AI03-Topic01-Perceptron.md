@@ -1,6 +1,6 @@
 ---
 layout : post
-title : AI03-Topic01
+title : AI03-Topic01, Perceptron
 categories: [AI03-Topic01]
 comments : true
 tags : [AI03-Topic01]
