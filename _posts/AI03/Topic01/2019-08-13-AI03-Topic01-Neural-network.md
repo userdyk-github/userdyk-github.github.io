@@ -121,7 +121,7 @@ array([-5., -4., -3., -2., -1.,  0.,  1.,  2.,  3.,  4.])
 ---
 
 ### ***Implement the sigmoid function***
-
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9537e778e229470d85a68ee0b099c08298a1a3f6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.171ex; width:26.95ex; height:5.509ex;" alt="{\displaystyle S(x)={\frac {1}{1+e^{-x}}}={\frac {e^{x}}{e^{x}+1}}.}">
 ```python
 import numpy as np
 import matplotlib.pylab as plt
