@@ -21,11 +21,11 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## Building image with numpy
+## Building 2d-image with numpy
 
 <hr class="division2">
 
-## title2
+## Building 3d-image with numpy
 
 <hr class="division2">
 
