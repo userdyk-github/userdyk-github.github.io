@@ -23,7 +23,7 @@ List of posts to read before reading this article
 
 ## **How to Load and Display Images**
 
-|Lib|Loaded image type|
+|Lib for loading a image|Loaded image type|
 |:--|:--|
 |keras|<class 'PIL.JpegImagePlugin.JpegImageFile'>|
 |PIL|<class 'PIL.JpegImagePlugin.JpegImageFile'>|
@@ -33,7 +33,7 @@ List of posts to read before reading this article
 
 <br>
 
-|Loaded image type|Lib for showing|
+|Loaded image type|Lib for showing a image|
 |:--|:--|
 |<class 'PIL.JpegImagePlugin.JpegImageFile'>|keras, PIL, matplotlib|
 |<class 'imageio.core.util.Array'><br><class 'numpy.ndarray'>|skimage, matplotlib|
