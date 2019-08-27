@@ -31,14 +31,11 @@ from keras.datasets import mnist
 # load dataset
 (train_images, train_labels), (test_images, test_labels) = mnist.load_data()
 
+# summarize dataset type and shape
 print(type(train_images), train_images.shape)
 print(type(train_labels), train_labels.shape)
 print(type(test_images), test_images.shape)
 print(type(test_labels), test_labels.shape)
-
-# summarize dataset shape
-print('Train', train_images.shape, train_labels.shape)
-print('Test', (test_images.shape, test_labels.shape))
 
 # summarize pixel values
 print('Train', train_images.min(), train_images.max(), train_images.mean(), train_images.std())
@@ -52,8 +49,6 @@ print('Test', test_images.min(), test_images.max(), test_images.mean(), test_ima
   <class 'numpy.ndarray'> (60000,)<br>
   <class 'numpy.ndarray'> (10000, 28, 28)<br>
   <class 'numpy.ndarray'> (10000,)<br>
-  Train (60000, 28, 28) (60000,)<br>
-  Test ((10000, 28, 28), (10000,))<br>
   Train 0 255 33.318421449829934 78.56748998339798<br>
   Test 0 255 33.791224489795916 79.17246322228644<br>
 </p>
