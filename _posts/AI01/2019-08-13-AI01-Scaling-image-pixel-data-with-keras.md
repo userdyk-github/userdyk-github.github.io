@@ -31,10 +31,10 @@ from keras.datasets import mnist
 (train_images, train_labels), (test_images, test_labels) = mnist.load_data()
 
 # summarize dataset type and shape
-print(type(train_images), train_images.shape)
-print(type(train_labels), train_labels.shape)
-print(type(test_images), test_images.shape)
-print(type(test_labels), test_labels.shape)
+print(type(train_images), train_images.dtype, train_images.shape)
+print(type(train_labels), train_labels.dtype, train_labels.shape)
+print(type(test_images), test_images.dtype, test_images.shape)
+print(type(test_labels), test_labels.dtype, test_labels.shape)
 
 # summarize pixel values
 print('Train', train_images.min(), train_images.max(), train_images.mean(), train_images.std())
@@ -44,10 +44,10 @@ print('Test', test_images.min(), test_images.max(), test_images.mean(), test_ima
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 <p>
-  <class 'numpy.ndarray'> (60000, 28, 28)<br>
-  <class 'numpy.ndarray'> (60000,)<br>
-  <class 'numpy.ndarray'> (10000, 28, 28)<br>
-  <class 'numpy.ndarray'> (10000,)<br>
+  <class 'numpy.ndarray'> uint8 (60000, 28, 28)<br>
+  <class 'numpy.ndarray'> uint8 (60000,)<br>
+  <class 'numpy.ndarray'> uint8 (10000, 28, 28)<br>
+  <class 'numpy.ndarray'> uint8 (10000,)<br>
   Train 0 255 33.318421449829934 78.56748998339798<br>
   Test 0 255 33.791224489795916 79.17246322228644<br>
 </p>
