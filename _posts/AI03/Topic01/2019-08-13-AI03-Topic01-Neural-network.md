@@ -307,32 +307,24 @@ print(y)
 ### ***Implement identity and softmax function***
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/46d00b0bc5d63bf06b74d6d34234e063e03a1d26" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.505ex; width:58.066ex; height:7.343ex;" alt="{\displaystyle \sigma (\mathbf {z} )_{i}={\frac {e^{\beta z_{i}}}{\sum _{j=1}^{K}e^{\beta z_{j}}}}{\text{ or }}\sigma (\mathbf {z} )_{i}={\frac {e^{-\beta z_{i}}}{\sum _{j=1}^{K}e^{-\beta z_{j}}}}{\text{ for }}i=1,\dotsc ,K}">
 ```python
-def softmax1(a):
+def softmax(a):
     exp_a = np.exp(a)
     sum_exp_a = np.sum(exp_a)
     y = exp_a / sum_exp_a
     return y
-a1 = np.array([1010,1000,990])
-y1 = softmax1(a1)
-print(y1)
-
-
-def softmax2(a):
-    c =np.max(a)
-    exp_a = np.exp(a-c)
-    sum_exp_a = np.sum(exp_a)
-    y = exp_a / sum_exp_a
-    return y
+    
+a1 = np.array([0.3,2.9,4.0])
 a2 = np.array([1010,1000,990])
-y2 = softmax2(a2)
-print(y2)
+y1 = softmax(a1)
+y2 = softmax(a2)
+print(y1, y2)
+
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
-[nan nan nan]
-[9.99954600e-01 4.53978686e-05 2.06106005e-09]
+[0.01821127 0.24519181 0.73659691] [nan nan nan]
 ```
 <hr class='division3'>
 </details>
@@ -343,10 +335,25 @@ print(y2)
 ### ***Cautions for implementing softmax function***
 
 ```python
+def softmax(a):
+    c =np.max(a)
+    exp_a = np.exp(a-c)
+    sum_exp_a = np.sum(exp_a)
+    y = exp_a / sum_exp_a
+    return y
+    
+a1 = np.array([0.3,2.9,4.0])
+a2 = np.array([1010,1000,990])
+y1 = softmax(a1)
+y2 = softmax(a2)
+print(y1, y2)
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+```
+[0.01821127 0.24519181 0.73659691] [9.99954600e-01 4.53978686e-05 2.06106005e-09]
+```
 <hr class='division3'>
 </details>
 <br><br><br>
