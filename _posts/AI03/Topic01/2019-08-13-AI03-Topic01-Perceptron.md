@@ -21,27 +21,27 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## What is Perceptron?
+## **What is Perceptron?**
 
 <hr class="division2">
 
-## Simple logic circuit
+## **Simple logic circuit**
 
 <hr class="division2">
 
-## Implementing Perceptron
+## **Implementing Perceptron**
 
 <hr class="division2">
 
-## Limit of Percentron
+## **Limit of Percentron**
 
 <hr class="division2">
 
-## What if the multilayer perceptron crashes?
+## **What if the multilayer perceptron crashes?**
 
 <hr class="division2">
 
-## From NAND to Computer
+## **From NAND to Computer**
 
 <hr class="division1">
 
