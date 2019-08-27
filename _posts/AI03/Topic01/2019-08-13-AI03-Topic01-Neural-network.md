@@ -97,6 +97,22 @@ plt.show()
 ![다운로드 (4)](https://user-images.githubusercontent.com/52376448/63807679-26b24380-c959-11e9-8acd-acacbefec72c.png)
 <hr class='division3'>
 </details>
+<br>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+```python
+>>> import numpy as np
+>>> def step_function(x):
+...   return np.array(x > 0, dtype=np.int)
+
+>>> a = np.array([-10, 10, 20])
+>>> step_function(a)
+array([0, 1, 1])
+```
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 ---
