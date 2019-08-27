@@ -54,7 +54,7 @@ io.imshow(image)
   shape :  (12, 16)
   <matplotlib.image.AxesImage at 0x260c1d7d630>
 </p>
-![다운로드 (5)](https://user-images.githubusercontent.com/52376448/63787981-ae835800-c92f-11e9-96b2-201e86a9fcf9.png)
+![다운로드 (8)](https://user-images.githubusercontent.com/52376448/63788477-86e0bf80-c930-11e9-80ff-3959fe9caf3d.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -92,7 +92,7 @@ io.imshow(image)
   shape :  (12, 16)<br>
   <matplotlib.image.AxesImage at 0x260c1ddf208>
 </p>
-![다운로드 (6)](https://user-images.githubusercontent.com/52376448/63788069-d2df3480-c92f-11e9-80a6-9953b5f172ea.png)
+![다운로드 (9)](https://user-images.githubusercontent.com/52376448/63788479-86e0bf80-c930-11e9-905e-423fad817438.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -130,7 +130,7 @@ io.imshow(image)
   shape :  (12, 16)<br>
   <matplotlib.image.AxesImage at 0x260c1e96208>
 </p>
-![다운로드 (7)](https://user-images.githubusercontent.com/52376448/63788129-e5f20480-c92f-11e9-9723-a44559fe94dd.png)
+![다운로드 (10)](https://user-images.githubusercontent.com/52376448/63788476-86482900-c930-11e9-8fe8-5c9c48218b9d.png)
 <hr class='division3'>
 </details>
 <br><br><br>
