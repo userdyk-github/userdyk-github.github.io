@@ -452,6 +452,43 @@ img_show(img)
 ![다운로드](https://user-images.githubusercontent.com/52376448/63860073-71789d80-c9e3-11e9-9b49-44daf7e1ad4a.png)
 <hr class='division3'>
 </details>
+<br>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+```python
+>>> from dataset.mnist import load_mnist
+>>> (x_train, t_train),(x_test, t_test) = load_mnist(flatten=True, normalize=False)
+
+>>> type(x_train)
+<class 'numpy.ndarray'>
+>>> type(t_train)
+<class 'numpy.ndarray'>
+>>> type(x_test)
+<class 'numpy.ndarray'>
+>>> type(t_test)
+<class 'numpy.ndarray'>
+
+>>> x_train.shape
+(60000, 784)
+>>> t_train.shape
+(60000,)
+>>> x_test.shape
+(10000, 784)
+>>> t_test.shape
+(10000,)
+
+>>> x_train.dtype
+dtype('uint8')
+>>> t_train.dtype
+dtype('uint8')
+>>> x_test.dtype
+dtype('uint8')
+>>> t_test.dtype
+dtype('uint8')
+```
+<hr class='division3'>
+</details>
 <br><br><br>
 
 ---
