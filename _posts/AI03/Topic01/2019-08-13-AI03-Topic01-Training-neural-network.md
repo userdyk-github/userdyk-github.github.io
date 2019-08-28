@@ -24,14 +24,23 @@ List of posts to read before reading this article
 ## **Loss function**
 
 ### ***Mean squared error, MSE***
-
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e258221518869aa1c6561bb75b99476c4734108e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:24.729ex; height:6.843ex;" alt="{\displaystyle \operatorname {MSE} ={\frac {1}{n}}\sum _{i=1}^{n}(Y_{i}-{\hat {Y_{i}}})^{2}.}">
 ```python
+import numpy as np
 
+def mean_squared_error(y,t):
+    return 0.5 * np.sum((y-t)**2)
+    
+y = np.array([1,2,3])
+t = np.array([3,4,7])
+
+mean_squared_error(y,t)
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
+12.0
 ```
 <hr class='division3'>
 </details>
