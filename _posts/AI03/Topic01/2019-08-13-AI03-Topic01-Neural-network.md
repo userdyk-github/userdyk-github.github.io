@@ -706,9 +706,23 @@ print("Accuracy:" + str(float(accuracy_cnt) / len(x)))
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+```
+Accuracy :0.9352
+```
 <hr class='division3'>
 </details>
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+```
+```
+<hr class='division3'>
+</details>
+
 <br><br><br>
+
+
 
 <hr class="division1">
 
