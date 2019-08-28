@@ -6,12 +6,17 @@ comments : false
 tags : [PL03]
 ---
 [Back to the previous page](https://userdyk-github.github.io/Study.html) <br>
+[See more wikipedia for a list of Python libraries](https://en.wikipedia.org/wiki/List_of_Python_software#Mathematical_libraries) <br>
 
-
-- <a href='https://userdyk-github.github.io/ai03-topic01/AI03-Topic01-Perceptron.html'>Perceptron</a>
-- <a href='https://userdyk-github.github.io/ai03-topic01/AI03-Topic01-Neural-network.html'>Neural network</a>
-- <a href='https://userdyk-github.github.io/ai03-topic01/AI03-Topic01-Training-neural-network.html'>Training neural network</a>
-- <a href='https://userdyk-github.github.io/ai03-topic01/AI03-Topic01-Error-back-propagation.html'>Error back propagation</a>
-- <a href='https://userdyk-github.github.io/ai03-topic01/AI03-Topic01-Training-skills.html'>Training skills</a>
-- <a href='https://userdyk-github.github.io/ai03-topic01/AI03-Topic01-Convolutional-neural-network.html'>Convolutional neural network</a>
-- <a href='https://userdyk-github.github.io/ai03-topic01/AI03-Topic01-Deep-learning.html'>Deep learning</a>
+- <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-NumPy.html'>NumPy</a>
+- <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-Matplotlib.html'>Matplotlib</a>
+- <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-SymPy.html'>SymPy</a>
+- <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-SciPy.html'>SciPy</a>
+- <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-StatsModel.html'>StatsModel</a>
+- <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-scikit-learn.html'>scikit-learn</a>
+- <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-Pandas.html'>Pandas</a>
+- <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-TensorFlow.html'>TensorFlow</a>
+- <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-Keras.html'>Keras</a>
+- <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-PyTorch.html'>PyTorch</a>
+- <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-PyQt.html'>PyQt</a>
+- <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-Tkinter.html'>Tkinter</a>
