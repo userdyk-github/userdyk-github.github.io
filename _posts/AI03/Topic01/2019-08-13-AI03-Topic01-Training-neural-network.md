@@ -162,7 +162,7 @@ List of posts to read before reading this article
 
 ---
 
-### Gradient at neural network###
+### ***Gradient at neural network***
 
 ```python
 
