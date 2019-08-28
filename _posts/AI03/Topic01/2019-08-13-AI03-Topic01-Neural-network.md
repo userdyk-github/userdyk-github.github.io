@@ -368,7 +368,7 @@ print(y1, y2)
 ```
 <hr class='division3'>
 </details>
-<br>
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
 <hr class='division3'>
@@ -452,7 +452,6 @@ img_show(img)
 ![다운로드](https://user-images.githubusercontent.com/52376448/63860073-71789d80-c9e3-11e9-9b49-44daf7e1ad4a.png)
 <hr class='division3'>
 </details>
-<br>
 <details markdown="1">
 <summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
 <hr class='division3'>
