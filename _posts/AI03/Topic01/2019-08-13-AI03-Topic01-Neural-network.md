@@ -328,6 +328,18 @@ print(y1, y2)
 ```
 <hr class='division3'>
 </details>
+<br>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+```python
+>>> import numpy as np
+>>> a = np.array([1010,1000,990])
+>>> np.exp(a)/np.sum(np.exp(a))
+array([nan, nan, nan])
+```
+<hr class='division3'>
+</details>
 <br><br><br>
 
 ---
@@ -353,6 +365,22 @@ print(y1, y2)
 <hr class='division3'>
 ```
 [0.01821127 0.24519181 0.73659691] [9.99954600e-01 4.53978686e-05 2.06106005e-09]
+```
+<hr class='division3'>
+</details>
+<br>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+```python
+>>> import numpy as np
+>>> a = np.array([1010,1000,990])
+>>> c = np.max(a)
+>>> a - c
+array([  0, -10, -20])
+
+>>> np.exp(a-c)/np.sum(np.exp(a-c))
+array([9.99954600e-01, 4.53978686e-05, 2.06106005e-09])
 ```
 <hr class='division3'>
 </details>
