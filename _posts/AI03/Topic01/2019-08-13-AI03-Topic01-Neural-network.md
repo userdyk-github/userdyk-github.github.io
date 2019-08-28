@@ -391,12 +391,14 @@ array([9.99954600e-01, 4.53978686e-05, 2.06106005e-09])
 ### ***Characteristics of Softmax function***
 
 ```python
+>>> a = np.array([0.3,2.9,4.0])
+>>> y = softmax(a)
+>>> print(y)
+[0.01821127 0.24519181 0.73659691]
+
+>>> np.sum(y)
+1.0
 ```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-<hr class='division3'>
-</details>
 <br><br><br>
 
 
