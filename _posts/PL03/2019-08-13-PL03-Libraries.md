@@ -9,7 +9,7 @@ tags : [PL03]
 [See more wikipedia for a list of python libraries](https://en.wikipedia.org/wiki/List_of_Python_software) <br>
 
 - <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-NumPy.html'>NumPy</a>
-  - [https://docs.scipy.org/doc/numpy/genindex.html](https://docs.scipy.org/doc/numpy/genindex.html)
+  - <span class='jb-small'>[https://docs.scipy.org/doc/numpy/genindex.html](https://docs.scipy.org/doc/numpy/genindex.html)</span>
   
 - <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-Matplotlib.html'>Matplotlib</a>
   - [https://matplotlib.org/api/index.html](https://matplotlib.org/api/index.html)
