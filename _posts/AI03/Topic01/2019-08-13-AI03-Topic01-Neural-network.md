@@ -246,7 +246,6 @@ array([0.21682708, 0.49627909])
 ```
 <hr class='division3'>
 </details>
-<br>
 <details markdown="1">
 <summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
 <hr class='division3'>
