@@ -717,6 +717,15 @@ Accuracy :0.9352
 <hr class='division3'>
 ![그림1](https://user-images.githubusercontent.com/52376448/63877466-a811e080-ca02-11e9-807a-2f5e33e85cc3.png)
 ```
+>>> from dataset.mnist import load_mnist
+>>> (_,_), (x,t) = load_mnist(normalize=True, flatten=True, one_hot_label=False)
+
+>>> x[0:100].shape
+(100, 784)
+>>> t[0:100].shape
+(100,)
+
+
 >>> import numpy as np
 >>> np.sum([True, True, False])
 2
