@@ -3,6 +3,8 @@ layout: page
 title: Study
 ---
 
+<hr class='division2'>
+
 ## **AI01 : Data science analysis**
 
 - <a href='https://userdyk-github.github.io/ai01/AI01-Loading-and-manipulating-images.html'>Topic : Loading and manipulating images</a>
@@ -305,5 +307,5 @@ Mass Point</a>
 - <a href='https://userdyk-github.github.io/pl03/PL03-Syntax-and-semantics.html'>Topic : Syntax and semantics</a>
 - <a href='https://userdyk-github.github.io/pl03/PL03-Libraries.html'>Topic : Libraries</a>
 
----
+<hr class='division2'>
 
