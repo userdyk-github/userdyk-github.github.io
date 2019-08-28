@@ -307,5 +307,27 @@ Mass Point</a>
 - <a href='https://userdyk-github.github.io/pl03/PL03-Syntax-and-semantics.html'>Topic : Syntax and semantics</a>
 - <a href='https://userdyk-github.github.io/pl03/PL03-Libraries.html'>Topic : Libraries</a>
 
+---
+
+## **PL04 : Mathematica**
+
+- <a href='https://userdyk-github.github.io/pl04/PL04-Syntax.html'>Topic : Syntax</a>
+- <a href='https://userdyk-github.github.io/pl04/PL04-Applications.html'>Topic : Applications</a>
+
+---
+
+## **PL05 : MATLAB**
+
+- <a href='https://userdyk-github.github.io/pl05/PL05-Syntax.html'>Topic : Syntax</a>
+- <a href='https://userdyk-github.github.io/pl05/PL05-Applications.html'>Topic : Applications</a>
+
+---
+
+## **PL06 : R**
+
+- <a href='https://userdyk-github.github.io/pl06/PL06-Syntax.html'>Topic : Syntax</a>
+- <a href='https://userdyk-github.github.io/pl06/PL06-Packages.html'>Topic : Packages</a>
+
+
 <hr class='division2'>
 
