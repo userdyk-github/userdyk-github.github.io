@@ -427,10 +427,29 @@ array([9.99954600e-01, 4.53978686e-05, 2.06106005e-09])
 
 
 ```python
+import sys, os
+sys.path.append(os.pardir)
+
+from dataset.mnist import load_mnist
+from PIL import Image
+import numpy as np
+
+def img_show(img):
+    pil_img = Image.fromarray(np.unit8(img))
+    pil_img.show()
+
+
+# load dataset
+(x_train, t_train),(x_test, t_test) = load_mnist(flatten=True, normalize=False)
+
+img, label = x_train[0], t_train[0]
+img = img.reshape(28, 28)
+img_show(img)
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드](https://user-images.githubusercontent.com/52376448/63860073-71789d80-c9e3-11e9-9b49-44daf7e1ad4a.png)
 <hr class='division3'>
 </details>
 <br><br><br>
