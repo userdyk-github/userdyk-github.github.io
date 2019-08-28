@@ -497,11 +497,14 @@ dtype('uint8')
 <details markdown="1">
 <summary class='jb-small' style="color:blue">ADVANCDED PREPERATION</summary>
 <hr class='division3'>
-[dataset.zip][1]
-[sample_weight.pkl][2]
+[dataset.zip][1] <br>
+[common.zip][2] <br>
+[sample_weight.pkl][3]
+
 
 [1]:{{ site.url }}/download/AI03/AI03-Topic01/dataset.zip
-[2]:{{ site.url }}/download/AI03/AI03-Topic01/sample_weight.pkl
+[2]:{{ site.url }}/download/AI03/AI03-Topic01/common.zip
+[3]:{{ site.url }}/download/AI03/AI03-Topic01/sample_weight.pkl
 <hr class='division3'>
 </details>
 
@@ -552,8 +555,20 @@ print('Accuracy :' + str(float(accuracy_cnt)/len(x)))
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+```
+Accuracy :0.9352
+```
 <hr class='division3'>
 </details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+```
+
+```
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 ---
