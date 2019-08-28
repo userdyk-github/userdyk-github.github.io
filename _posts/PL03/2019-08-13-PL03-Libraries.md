@@ -54,14 +54,14 @@ tags : [PL03]
   - <span class='jb-small'>[https://keras.io/](https://keras.io/)</span>
   
 - <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-PyTorch.html'>PyTorch</a>
-  - [https://pytorch.org/docs/stable/index.html](https://pytorch.org/docs/stable/index.html)</span>
-  - [https://pytorch.org/tutorials/](https://pytorch.org/tutorials/)</span>
+  - <span class='jb-small'>[https://pytorch.org/docs/stable/index.html](https://pytorch.org/docs/stable/index.html)</span>
+  - <span class='jb-small'>[https://pytorch.org/tutorials/](https://pytorch.org/tutorials/)</span>
   
 - <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-BeautifulSoup.html'>BeautifulSoup</a>
-  - [https://www.crummy.com/software/BeautifulSoup/bs4/doc/#](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#)</span>
+  - <span class='jb-small'>[https://www.crummy.com/software/BeautifulSoup/bs4/doc/#](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#)</span>
   
 - <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-PyQt.html'>PyQt</a>
-  - [https://www.tutorialspoint.com/pyqt/index.htm](https://www.tutorialspoint.com/pyqt/index.htm)</span>
+  - <span class='jb-small'>[https://www.tutorialspoint.com/pyqt/index.htm](https://www.tutorialspoint.com/pyqt/index.htm)</span>
   
 - <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-Tkinter.html'>Tkinter</a>
-  - [https://tkdocs.com/tutorial/index.html](https://tkdocs.com/tutorial/index.html)</span>
+  - <span class='jb-small'>[https://tkdocs.com/tutorial/index.html](https://tkdocs.com/tutorial/index.html)</span>
