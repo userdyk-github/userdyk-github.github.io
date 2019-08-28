@@ -442,6 +442,7 @@ def img_show(img):
 # load dataset
 (x_train, t_train),(x_test, t_test) = load_mnist(flatten=True, normalize=False)
 
+# 0th sample test
 img, label = x_train[0], t_train[0]
 img = img.reshape(28, 28)
 img_show(img)
