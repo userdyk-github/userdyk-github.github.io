@@ -9,7 +9,7 @@ tags : [PL03]
 [See more wikipedia for a list of python libraries](https://en.wikipedia.org/wiki/List_of_Python_software) <br>
 
 - <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-NumPy.html'>NumPy</a>
-  - sd
+  - 
 - <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-Matplotlib.html'>Matplotlib</a>
 - <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-SymPy.html'>SymPy</a>
 - <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-SciPy.html'>SciPy</a>
@@ -19,6 +19,7 @@ tags : [PL03]
 - <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-Pandas.html'>Pandas</a>
 - <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-TensorFlow.html'>TensorFlow</a>
 - <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-Keras.html'>Keras</a>
+  - https://keras.io/
 - <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-PyTorch.html'>PyTorch</a>
 - <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-BeautifulSoup.html'>BeautifulSoup</a>
 - <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-PyQt.html'>PyQt</a>
