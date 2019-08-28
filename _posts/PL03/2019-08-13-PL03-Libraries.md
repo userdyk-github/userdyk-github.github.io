@@ -2,6 +2,7 @@
 layout : post
 title : PL03
 categories: [PL03]
+comments : true
 tags : [PL03]
 ---
 [Back to the previous page](https://userdyk-github.github.io/Study.html) <br>
