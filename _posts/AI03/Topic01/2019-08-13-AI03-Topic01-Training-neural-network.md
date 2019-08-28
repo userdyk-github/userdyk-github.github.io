@@ -114,13 +114,14 @@ cross_entropy_error(y,t)
 ```python
 import numpy as np
 
+# definition of derivative
 def numerical_diff(f, x):
     h = 1e-4  # 0.0001
     return (f(x+h) - f(x-h)) / (2*h)
 
+# test
 def f(x):
     return 0.01*x**2 + 0.1*x
-
 x = np.linspace(-1,1,100)
 
 numerical_diff(f, x)
