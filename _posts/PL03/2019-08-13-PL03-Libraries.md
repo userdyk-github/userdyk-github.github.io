@@ -6,7 +6,7 @@ comments : false
 tags : [PL03]
 ---
 [Back to the previous page](https://userdyk-github.github.io/Study.html) <br>
-[See more wikipedia for a list of Python libraries](https://en.wikipedia.org/wiki/List_of_Python_software#Mathematical_libraries) <br>
+[See more wikipedia for a list of python libraries](https://en.wikipedia.org/wiki/List_of_Python_software#Mathematical_libraries) <br>
 
 - <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-NumPy.html'>NumPy</a>
 - <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-Matplotlib.html'>Matplotlib</a>
