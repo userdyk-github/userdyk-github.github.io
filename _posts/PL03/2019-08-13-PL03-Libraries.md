@@ -48,19 +48,20 @@ tags : [PL03]
   - [https://pandas.pydata.org/pandas-docs/stable/reference/window.html](https://pandas.pydata.org/pandas-docs/stable/reference/window.html)
   
 - <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-TensorFlow.html'>TensorFlow</a>
-  - []()
+  - [https://www.tensorflow.org/api_docs/python/tf](https://www.tensorflow.org/api_docs/python/tf)
   
 - <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-Keras.html'>Keras</a>
   - [https://keras.io/](https://keras.io/)
   
 - <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-PyTorch.html'>PyTorch</a>
-  - []()
+  - [https://pytorch.org/docs/stable/index.html](https://pytorch.org/docs/stable/index.html)
+  - [https://pytorch.org/tutorials/](https://pytorch.org/tutorials/)
   
 - <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-BeautifulSoup.html'>BeautifulSoup</a>
-  - []()
+  - [https://www.crummy.com/software/BeautifulSoup/bs4/doc/#](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#)
   
 - <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-PyQt.html'>PyQt</a>
-  - []()
+  - [https://www.tutorialspoint.com/pyqt/index.htm](https://www.tutorialspoint.com/pyqt/index.htm)
   
 - <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-Tkinter.html'>Tkinter</a>
-  - []()
+  - [https://tkdocs.com/tutorial/index.html](https://tkdocs.com/tutorial/index.html)
