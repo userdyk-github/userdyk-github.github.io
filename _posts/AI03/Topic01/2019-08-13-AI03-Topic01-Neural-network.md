@@ -717,6 +717,15 @@ Accuracy :0.9352
 <hr class='division3'>
 ![그림1](https://user-images.githubusercontent.com/52376448/63877466-a811e080-ca02-11e9-807a-2f5e33e85cc3.png)
 ```
+>>> import numpy as np
+>>> np.sum([True, True, False])
+2
+
+>>> A = np.array([11,12,13,14,15,16,1,2,3])
+>>> B = np.array([21,22,23,24,25,26,1,2,3])
+>>> np.sum(A == B)
+3
+
 
 ```
 <hr class='division3'>
