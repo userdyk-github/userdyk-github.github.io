@@ -416,6 +416,16 @@ array([9.99954600e-01, 4.53978686e-05, 2.06106005e-09])
 
 ### ***MNIST dataset***
 
+<details markdown="1">
+<summary class='jb-small' style="color:blue">ADVANCDED PREPERATION</summary>
+<hr class='division3'>
+[dataset.zip][1]
+
+[1]:{{ site.url }}/download/AI03/AI03-Topic01/dataset.zip
+<hr class='division3'>
+</details>
+
+
 ```python
 ```
 <details markdown="1">
