@@ -390,7 +390,7 @@ array([9.99954600e-01, 4.53978686e-05, 2.06106005e-09])
 
 ### ***Characteristics of Softmax function***
 
-```python
+```
 >>> import numpy as np
 >>> def softmax(a):
 ...   c =np.max(a)
@@ -456,7 +456,7 @@ img_show(img)
 <details markdown="1">
 <summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
 <hr class='division3'>
-```python
+```
 >>> from dataset.mnist import load_mnist
 >>> (x_train, t_train),(x_test, t_test) = load_mnist(flatten=True, normalize=False)
 
