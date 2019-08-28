@@ -114,11 +114,40 @@ cross_entropy_error(y,t)
 ```python
 import numpy as np
 
+# 1st-definition of derivative
+def numerical_diff1(f, x):
+    h = 1e-4  # 0.0001
+    return (f(x+h) - f(x)) / (h)
+    
+# 2rd-definition of derivative
+def numerical_diff2(f, x):
+    h = 1e-4  # 0.0001
+    return (f(x+h) - f(x-h)) / (2*h)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">CAUTION</summary>
+<hr class='division3'>
+```
+>>> import numpy as np
+>>> np.float32(1e-50)
+0.0
+```
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+### ***Example for numerical derivative***
+
+```python
+import numpy as np
+
 # definition of derivative
 def numerical_diff(f, x):
     h = 1e-4  # 0.0001
     return (f(x+h) - f(x-h)) / (2*h)
-
+    
 # test
 def f(x):
     return 0.01*x**2 + 0.1*x
@@ -150,32 +179,6 @@ array([0.08      , 0.08040404, 0.08080808, 0.08121212, 0.08161616,
        0.11434343, 0.11474747, 0.11515152, 0.11555556, 0.1159596 ,
        0.11636364, 0.11676768, 0.11717172, 0.11757576, 0.1179798 ,
        0.11838384, 0.11878788, 0.11919192, 0.11959596, 0.12      ])
-```
-<hr class='division3'>
-</details>
-<details markdown="1">
-<summary class='jb-small' style="color:blue">CAUTION</summary>
-<hr class='division3'>
-```
->>> import numpy as np
->>> np.float32(1e-50)
-0.0
-```
-<hr class='division3'>
-</details>
-<br><br><br>
-
----
-
-### ***Example for numerical derivative***
-
-```python
-
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-```
 ```
 <hr class='division3'>
 </details>
