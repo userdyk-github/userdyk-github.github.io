@@ -717,22 +717,26 @@ Accuracy :0.9352
 <hr class='division3'>
 ![그림1](https://user-images.githubusercontent.com/52376448/63877466-a811e080-ca02-11e9-807a-2f5e33e85cc3.png)
 ```
+>>> import numpy as np
 >>> from dataset.mnist import load_mnist
->>> (_,_), (x,t) = load_mnist(normalize=True, flatten=True, one_hot_label=False)
 
+>>> (_,_), (x,t) = load_mnist(normalize=True, flatten=True, one_hot_label=False)
 >>> x[0:100].shape
 (100, 784)
 >>> t[0:100].shape
 (100,)
 
-
->>> import numpy as np
->>> np.sum([True, True, False])
-2
+>>> x = np.array([[0.1,0.8,0.1],[0.3,0.1,0.6],[0.2,0.5,0.3],[0.8,0.1,0.1]])
+>>> np.argmax(x, axis=0)
+array([3, 0, 1], dtype=int64)
+>>> np.argmax(x, axis=1)
+array([1, 2, 1, 0], dtype=int64)
 
 >>> A = np.array([11,12,13,14,15,16,1,2,3])
 >>> B = np.array([21,22,23,24,25,26,1,2,3])
 >>> np.sum(A == B)
+3
+>>> np.sum([False, False, False, False, False, False, False, True, True, True])
 3
 ```
 <hr class='division3'>
