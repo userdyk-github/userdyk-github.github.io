@@ -734,8 +734,6 @@ Accuracy :0.9352
 >>> B = np.array([21,22,23,24,25,26,1,2,3])
 >>> np.sum(A == B)
 3
-
-
 ```
 <hr class='division3'>
 </details>
