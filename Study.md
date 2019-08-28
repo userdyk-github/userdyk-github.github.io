@@ -282,4 +282,28 @@ Mass Point</a>
 - <a href='https://userdyk-github.github.io/math06/MATH06-Combinatorial.html'>Topic : Combinatorial</a>
 - <a href='https://userdyk-github.github.io/math06/MATH06-Metaheuristics.html'>Topic : Metaheuristics</a>
 
+
+
+<hr class='division2'>
+
+## **PL01 : C**
+
+- <a href='https://userdyk-github.github.io/pl01/PL01-Syntax.html'>Topic : Syntax</a>
+- <a href='https://userdyk-github.github.io/pl01/PL01-Libraries.html'>Topic : Libraries</a>
+
 ---
+
+## **PL02 : Java**
+
+- <a href='https://userdyk-github.github.io/pl02/PL02-Syntax.html'>Topic : Syntax</a>
+- <a href='https://userdyk-github.github.io/pl02/PL02-Class-libraries.html'>Topic : Class libraries</a>
+
+---
+
+## **PL03 : Python**
+
+- <a href='https://userdyk-github.github.io/pl03/PL03-Syntax-and-semantics.html'>Topic : Syntax and semantics</a>
+- <a href='https://userdyk-github.github.io/pl03/PL03-Libraries.html'>Topic : Libraries</a>
+
+---
+
