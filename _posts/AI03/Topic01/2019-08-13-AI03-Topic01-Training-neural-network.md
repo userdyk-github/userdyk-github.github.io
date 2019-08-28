@@ -49,14 +49,22 @@ mean_squared_error(y,t)
 ---
 
 ### ***Cross entropy error, CEE***
-
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c6b895514e10a3ce88773852cba1cb1e248ed763" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:28.839ex; height:5.676ex;" alt="{\displaystyle H(p,q)=-\sum _{x\in {\mathcal {X}}}p(x)\,\log q(x)}">
 ```python
+def cross_entropy_error(y,t):
+    delta = 1e-7
+    return -np.sum(t * np.log(y + delta))
+    
+y = np.array([0,2,3,8,9])
+t = np.array([3,4,7,8,9])
 
+cross_entropy_error(y,t)
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
+1.4808580471604245
 ```
 <hr class='division3'>
 </details>
