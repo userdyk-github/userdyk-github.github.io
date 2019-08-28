@@ -536,7 +536,7 @@ def predict(network, x):
     y = softmax(a3)
     return y
     
- 
+# prediction
 accuracy_cnt = 0
 x, t = get_data()
 network = init_network()
