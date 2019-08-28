@@ -9,6 +9,7 @@ tags : [PL03]
 [See more wikipedia for a list of python libraries](https://en.wikipedia.org/wiki/List_of_Python_software) <br>
 
 - <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-NumPy.html'>NumPy</a>
+  - sd
 - <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-Matplotlib.html'>Matplotlib</a>
 - <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-SymPy.html'>SymPy</a>
 - <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-SciPy.html'>SciPy</a>
