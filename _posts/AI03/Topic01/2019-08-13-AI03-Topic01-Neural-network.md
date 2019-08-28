@@ -689,7 +689,7 @@ def predict(network, x):
     return y
 
 
-# Batch processing
+# Prediction with batch processing
 batch_size = 100 
 accuracy_cnt = 0
 x, t = get_data()
