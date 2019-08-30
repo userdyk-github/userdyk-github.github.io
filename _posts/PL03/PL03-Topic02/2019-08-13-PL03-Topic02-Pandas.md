@@ -1,6 +1,6 @@
 ---
 layout : post
-title : PL03-Topic02
+title : PL03-Topic02, Pandas
 categories: [PL03-Topic02]
 comments : true
 tags : [PL03-Topic02]
