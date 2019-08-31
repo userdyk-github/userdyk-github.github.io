@@ -276,7 +276,6 @@ numerical_diff(f, x)
 ### ***Partial derivative***
 
 ```python
-
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -298,8 +297,37 @@ numerical_diff(f, x)
 ### ***Gradient descent method***
 
 ```python
+import numpy as np
 
-```
+
+def numerical_gradient(f, x):
+    h = 1e-4  # 0.0001
+    grad = np.zeros_like(x)
+
+    for idx in range(x.size):
+        tmp_val = x[idx]
+
+        # calculate f(x+h)
+        x[idx] = tmp_val + h
+        fxh1 = f(x)
+
+        # calculate f(x-h)
+        x[idx] = tmp_val - h
+        fxh2 = f(x)
+
+        grad[idx] = (fxh1 - fxh2) / (2 * h)
+        x[idx] = tmp_val
+
+    return grad
+
+
+def function(x):
+    return x[0] ** 2 + x[1] ** 2
+
+
+x = np.linspace(-5, 5, 100)
+diff = numerical_gradient(function, np.array([3,4]))
+print(diff)```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
