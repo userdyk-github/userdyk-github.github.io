@@ -327,7 +327,10 @@ def function(x):
 
 x = np.linspace(-5, 5, 100)
 diff = numerical_gradient(function, np.array([3,4]))
-print(diff)```
+print(diff)
+```
+
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
