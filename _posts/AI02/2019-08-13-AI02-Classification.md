@@ -120,23 +120,30 @@ import pandas as pd
 from sklearn import datasets
 
 iris = datasets.load_iris()
-pd.DataFrame(iris.data)
-```
-```
-       0    1    2    3
-0    5.1  3.5  1.4  0.2
-1    4.9  3.0  1.4  0.2
-2    4.7  3.2  1.3  0.2
-3    4.6  3.1  1.5  0.2
-4    5.0  3.6  1.4  0.2
-..   ...  ...  ...  ...
-145  6.7  3.0  5.2  2.3
-146  6.3  2.5  5.0  1.9
-147  6.5  3.0  5.2  2.0
-148  6.2  3.4  5.4  2.3
-149  5.9  3.0  5.1  1.8
+iris.feature_names.append('target_names')
 
-[150 rows x 4 columns]
+df1 = pd.DataFrame(iris.data)
+df2 = pd.DataFrame(iris.target)
+df = pd.concat([df1,df2], axis=1)
+df.columns = iris.feature_names
+
+print(df)
+```
+```
+     sepal length (cm)  sepal width (cm)  ...  petal width (cm)  target_names
+0                  5.1               3.5  ...               0.2             0
+1                  4.9               3.0  ...               0.2             0
+2                  4.7               3.2  ...               0.2             0
+3                  4.6               3.1  ...               0.2             0
+4                  5.0               3.6  ...               0.2             0
+..                 ...               ...  ...               ...           ...
+145                6.7               3.0  ...               2.3             2
+146                6.3               2.5  ...               1.9             2
+147                6.5               3.0  ...               2.0             2
+148                6.2               3.4  ...               2.3             2
+149                5.9               3.0  ...               1.8             2
+
+[150 rows x 5 columns]
 ```
 <hr class='division3'>
 </details>
