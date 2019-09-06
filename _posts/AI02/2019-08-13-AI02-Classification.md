@@ -81,7 +81,7 @@ weighted avg       0.98      0.98      0.98        45
 
 
 <details markdown="1">
-<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<summary class='jb-small' style="color:blue">SUPPLEMENT1</summary>
 <hr class='division3'>
 ```
 >>> from sklearn import datasets
@@ -110,6 +110,37 @@ array(['setosa', 'versicolor', 'virginica'], dtype='<U10')
 ```
 <hr class='division3'>
 </details>
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT2</summary>
+<hr class='division3'>
+**iris dataset**
+```python
+import pandas as pd
+from sklearn import datasets
+
+iris = datasets.load_iris()
+pd.DataFrame(iris.data)
+```
+```
+       0    1    2    3
+0    5.1  3.5  1.4  0.2
+1    4.9  3.0  1.4  0.2
+2    4.7  3.2  1.3  0.2
+3    4.6  3.1  1.5  0.2
+4    5.0  3.6  1.4  0.2
+..   ...  ...  ...  ...
+145  6.7  3.0  5.2  2.3
+146  6.3  2.5  5.0  1.9
+147  6.5  3.0  5.2  2.0
+148  6.2  3.4  5.4  2.3
+149  5.9  3.0  5.1  1.8
+
+[150 rows x 4 columns]
+```
+<hr class='division3'>
+</details>
+
 
 <br><br><br>
 
