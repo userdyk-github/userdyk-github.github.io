@@ -25,7 +25,7 @@ List of posts to read before reading this article
 
 ### ***One-column***
 
-#### a series] creating
+#### A series] creating
 
 `METHOD1 : sperately`
 ```python
@@ -111,7 +111,7 @@ Name: Population, dtype: int64
 
 ---
 
-#### a series] searching index(key) & name of a column
+#### A series] searching index(key) & name of a column
 
 ```python
 import pandas as pd
@@ -140,7 +140,7 @@ print('\n s.name : \n',s.name)
 
 ---
 
-#### a series] searching values based on index(key)
+#### A series] searching values based on index(key)
 
 ```python
 import pandas as pd
@@ -245,7 +245,7 @@ Name: Population, dtype: int64
 
 ---
 
-#### a series] analysis
+#### A series] analysis
 
 ```python
 import pandas as pd
@@ -311,7 +311,7 @@ Name: Population, dtype: int64
 
 ---
 
-#### a series] statistics
+#### A series] statistics
 
 ```python
 import pandas as pd
