@@ -27,11 +27,10 @@ List of posts to read before reading this article
 
 #### a series] creating
 
-`METHOD1`
+`METHOD1 : sperately`
 ```python
 import pandas as pd
 
-# method1 : sperately
 s = pd.Series([909976, 8615246, 2872086, 2273305])
 s.name = "Population"
 s.index = ["Stockholm", "London", "Rome", "Paris"] 
@@ -62,11 +61,10 @@ Name: Population, dtype: int64
 <hr class='division3'>
 </details>
 <br>
-`METHOD2`
+`METHOD2 : all at once`
 ```python
 import pandas as pd
 
-# method2 : all at once
 s = pd.Series([909976, 8615246, 2872086, 2273305], 
               name="Population" ,
               index=["Stockholm", "London", "Rome", "Paris"])
