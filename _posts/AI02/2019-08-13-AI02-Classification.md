@@ -89,6 +89,9 @@ weighted avg       0.98      0.98      0.98        45
 >>> type(iris) 
 sklearn.utils.Bunch
 
+>>> type(iris.data)
+<class 'numpy.ndarray'>
+
 >>> iris.target_names
 array(['setosa', 'versicolor', 'virginica'], dtype='<U10')
 
