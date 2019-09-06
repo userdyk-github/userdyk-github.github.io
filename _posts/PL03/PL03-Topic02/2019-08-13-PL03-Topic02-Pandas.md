@@ -699,9 +699,137 @@ Index(['Population', 'State'], dtype='object')
 ```
 <hr class='division3'>
 </details>
+<br>
+
+searching row or values of row
+```python
+df.loc["Stockholm"]
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+searching single row
+```
+Population    909976
+State         Sweden
+Name: Stockholm, dtype: object
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python
+df.loc[["Paris","Rome"]]
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+searching method1 multi-rows
+```
+       Population   State                  
+Paris     2273305  France
+Rome      2872086   Italy
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python
+df[2:4]
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+searching method2 multi-rows
+```
+       Population   State                
+Rome      2872086   Italy
+Paris     2273305  France
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python
+df.loc["Stockholm","Population"]
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+searching method1 single value
+```
+909976
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python
+df.loc["Stockholm"][0]
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+searching method2 single value
+```
+909976
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python
+df.loc["Stockholm"]["Population"]
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+searching method3 single value
+```
+909976
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python
+df.loc["Stockholm"].Population
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+searching method4 single value
+```
+909976
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python
+df.loc[["Paris","Rome"],"Population"]
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+searching multi-values
+```
+Paris    2273305
+Rome     2872086
+Name: Population, dtype: int64
+```
+<hr class='division3'>
+</details>
+
+
+
+
+
 
 
 <br><br><br>
+
+
 
 
 
