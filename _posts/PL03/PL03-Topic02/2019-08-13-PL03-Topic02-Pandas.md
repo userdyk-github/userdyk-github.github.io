@@ -715,7 +715,7 @@ State         Sweden
 Name: Stockholm, dtype: object
 ```
 <br>
-`SUPPLEMENT`
+`SUPPLEMENT`<br>
 **Original dataset**
 
 |             |Population |          State|
@@ -748,7 +748,7 @@ Paris     2273305  France
 Rome      2872086   Italy
 ```
 <br>
-`SUPPLEMENT`
+`SUPPLEMENT`<br>
 **Original dataset**
 
 |             |Population |          State|
@@ -781,7 +781,7 @@ Rome      2872086   Italy
 Paris     2273305  France
 ```
 <br>
-`SUPPLEMENT`
+`SUPPLEMENT`<br>
 **Original dataset**
 
 |             |Population |          State|
@@ -812,7 +812,7 @@ searching method1 single value
 909976
 ```
 <br>
-`SUPPLEMENT`
+`SUPPLEMENT`<br>
 **Original dataset**
 
 |             |Population |          State|
@@ -843,7 +843,7 @@ searching method2 single value
 909976
 ```
 <br>
-`SUPPLEMENT`
+`SUPPLEMENT`<br>
 **Original dataset**
 
 |             |Population |          State|
@@ -874,7 +874,7 @@ searching method3 single value
 909976
 ```
 <br>
-`SUPPLEMENT`
+`SUPPLEMENT`<br>
 **Original dataset**
 
 |             |Population |          State|
@@ -905,7 +905,7 @@ searching method4 single value
 909976
 ```
 <br>
-`SUPPLEMENT`
+`SUPPLEMENT`<br>
 **Original dataset**
 
 |             |Population |          State|
@@ -938,7 +938,7 @@ Rome     2872086
 Name: Population, dtype: int64
 ```
 <br>
-`SUPPLEMENT`
+`SUPPLEMENT`<br>
 **Original dataset**
 
 |             |Population |          State|
