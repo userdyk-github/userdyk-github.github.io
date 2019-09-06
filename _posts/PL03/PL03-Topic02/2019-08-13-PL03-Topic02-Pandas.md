@@ -118,20 +118,6 @@ Name: Population, dtype: int64
 <br>
 
 ```python 
-s.values
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-method searching all values 
-```
-array([ 909976, 8615246, 2872086, 2273305], dtype=int64)
-```
-<hr class='division3'>
-</details>
-<br>
-
-```python 
 s.index
 ```
 <details markdown="1">
@@ -151,6 +137,20 @@ s.name
 <hr class='division3'>
 ```
 'Population'
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python 
+s.values
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+method searching all values 
+```
+array([ 909976, 8615246, 2872086, 2273305], dtype=int64)
 ```
 <hr class='division3'>
 </details>
