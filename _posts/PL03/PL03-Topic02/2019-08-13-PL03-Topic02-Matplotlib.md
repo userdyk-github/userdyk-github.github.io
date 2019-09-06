@@ -60,7 +60,7 @@ List of posts to read before reading this article
 
 ---
 
-### ***Supplot commands***
+### ***Subplot commands***
 
 ---
 
