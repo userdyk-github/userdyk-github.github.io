@@ -27,16 +27,64 @@ List of posts to read before reading this article
 
 #### a series] creating
 
+`METHOD1`
 ```python
+import pandas as pd
 
+# method1 : sperately
+s = pd.Series([909976, 8615246, 2872086, 2273305])
+s.name = "Population"
+s.index = ["Stockholm", "London", "Rome", "Paris"] 
+
+print('\n type(s) : \n',type(s),
+      '\n\n type(s.name) : \n',type(s.name),
+      '\n\n type(s.index) : \n',type(s.index))
+s
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
+ type(s) : 
+ <class 'pandas.core.series.Series'> 
+
+ type(s.name) : 
+ <class 'str'> 
+
+ type(s.index) : 
+ <class 'pandas.core.indexes.base.Index'>
+Stockholm     909976
+London       8615246
+Rome         2872086
+Paris        2273305
+Name: Population, dtype: int64
 ```
 <hr class='division3'>
 </details>
+<br>
+`METHOD2`
+```python
+import pandas as pd
+
+# method2 : all at once
+s = pd.Series([909976, 8615246, 2872086, 2273305], 
+              name="Population" ,
+              index=["Stockholm", "London", "Rome", "Paris"])
+s
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+Stockholm     909976
+London       8615246
+Rome         2872086
+Paris        2273305
+Name: Population, dtype: int64
+```
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 ---
@@ -44,12 +92,25 @@ List of posts to read before reading this article
 #### a series] searching index(key) & name of a column
 
 ```python
+import pandas as pd
 
+# searching all index
+list(s.index)
+print('\n list(s.index) : \n',list(s.index))
+
+# searching name
+s.name
+print('\n s.name : \n',s.name)
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
+ list(s.index) : 
+ ['Stockholm', 'London', 'Rome', 'Paris']
+
+ s.name : 
+ Population
 ```
 <hr class='division3'>
 </details>
@@ -60,12 +121,101 @@ List of posts to read before reading this article
 #### a series] searching values based on index(key)
 
 ```python
+import pandas as pd
 
+# method0 searching single value 
+s[1]
+print('\n method0 searching single value, \n s[1] : \n',
+      s[1])
+
+# method1 searching single value 
+s["London"]
+print('\n method1 searching single value, \n s["London"] : \n',
+      s["London"])
+
+# method2 searching single value 
+s.London
+print('\n method2 searching single value, \n s.London : \n',
+      s.London)
+
+
+
+
+
+# method0 searching multi-values 
+s[[1,2]]
+print('\n\n method0 searching multi-values, \n s[[1,2]] : \n',
+      s[[1,2]])
+
+# method1 searching multi-values 
+s[["London","Rome"]]
+print('\n method1 searching multi-values, \n s[["London","Rome"]] : \n',
+      s[["London","Rome"]])
+
+# method2 searching multi-values 
+s[1:3]
+print('\n method2 searching multi-values, \n s[1:2] : \n',
+      s[1:3])
+
+# method3 searching multi-values 
+s["London":"Rome"]
+print('\n method3 searching multi-values, \n s["London":"Rome"] : \n',
+      s["London":"Rome"])
+
+
+
+
+
+#  method searching all values
+s.values
+print('\n\n method searching all values, \n s.values : \n',
+      s.values)
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
+ method0 searching single value, 
+ s[1] : 
+ 8615246
+
+ method1 searching single value, 
+ s["London"] : 
+ 8615246
+
+ method2 searching single value, 
+ s.London : 
+ 8615246
+
+
+ method0 searching multi-values, 
+ s[[1,2]] : 
+ London    8615246
+Rome      2872086
+Name: Population, dtype: int64
+
+ method1 searching multi-values, 
+ s[["London","Rome"]] : 
+ London    8615246
+Rome      2872086
+Name: Population, dtype: int64
+
+ method2 searching multi-values, 
+ s[1:2] : 
+ London    8615246
+Rome      2872086
+Name: Population, dtype: int64
+
+ method3 searching multi-values, 
+ s["London":"Rome"] : 
+ London    8615246
+Rome      2872086
+Name: Population, dtype: int64
+
+
+ method searching all values, 
+ s.values : 
+ [ 909976 8615246 2872086 2273305]
 ```
 <hr class='division3'>
 </details>
@@ -76,12 +226,62 @@ List of posts to read before reading this article
 #### a series] analysis
 
 ```python
+import pandas as pd
 
+s = pd.Series([1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,4,4,4], 
+              name="Population")
+s.head()
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
+0    1
+1    1
+2    1
+3    2
+4    2
+Name: Population, dtype: int64
+```
+<hr class='division3'>
+</details>
+<br>
+```python
+s.shape
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+(21,)
+```
+<hr class='division3'>
+</details>
+<br>
+```python
+s.unique()
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+array([1, 2, 3, 4], dtype=int64)
+```
+<hr class='division3'>
+</details>
+<br>
+```python
+s.value_counts()
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+3    10
+2     5
+4     3
+1     3
+Name: Population, dtype: int64
 ```
 <hr class='division3'>
 </details>
@@ -92,6 +292,7 @@ List of posts to read before reading this article
 #### a series] statistics
 
 ```python
+import pandas as pd
 
 ```
 <details markdown="1">
