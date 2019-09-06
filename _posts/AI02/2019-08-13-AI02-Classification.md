@@ -292,12 +292,31 @@ weighted avg       1.00      1.00      1.00        45
  [ 0 12  1]
  [ 0  3 12]]
 ```
+
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+### ***The resulting classification accuracy for each classifier***
+
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+
+```
+
+
 <hr class='division3'>
 </details>
 
-
 <br><br><br>
-
 <hr class="division2">
 
 ## **Implement with tensorflow**
