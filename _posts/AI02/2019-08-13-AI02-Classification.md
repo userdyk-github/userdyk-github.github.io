@@ -53,7 +53,9 @@ classifier.fit(X_train, y_train)
 y_test_pred = classifier.predict(X_test)
 
 # result
-print(metrics.classification_report(y_test, y_test_pred))
+print(metrics.classification_report(y_test, y_test_pred), '\n\n\n')
+print(metrics.confusion_matrix(y_test, y_test_pred))
+
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -68,9 +70,43 @@ print(metrics.classification_report(y_test, y_test_pred))
     accuracy                           0.98        45
    macro avg       0.98      0.98      0.98        45
 weighted avg       0.98      0.98      0.98        45
+
+
+
+[[12  0  0]
+ [ 0 13  1]
+ [ 0  1 18]]
 ```
 <hr class='division3'>
 </details>
+
+<br><br><br>
+
+`SUPPLEMENT`
+```
+>>> from sklearn import datasets
+>>> iris = datasets.load_iris() 
+
+>>> type(iris) 
+sklearn.utils.Bunch
+
+>>> iris.target_names
+array(['setosa', 'versicolor', 'virginica'], dtype='<U10')
+
+>>> iris.feature_names 
+['sepal length (cm)',
+ 'sepal width (cm)',
+ 'petal length (cm)',
+ 'petal width (cm)']
+
+>>> iris.data.shape 
+(150, 4)
+
+>>> iris.target.shape 
+(150,)
+```
+
+
 <br><br><br>
 
 ---
