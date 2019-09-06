@@ -555,7 +555,7 @@ Stockholm3        NaN        NaN   909976.0
 
 ### ***One-dataframe***
 
-#### Creating
+#### Creating and searching
 
 `Creating method1 based on row`
 ```python
@@ -671,6 +671,36 @@ Paris         2273305          France
 ```
 <hr class='division3'>
 </details>
+<br>
+
+```python
+df.index
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+searching all index
+```
+Index(['Stockholm', 'London', 'Rome', 'Paris'], dtype='object', name='index')
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python
+df.columns
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+searching all columns
+```
+Index(['Population', 'State'], dtype='object')
+```
+<hr class='division3'>
+</details>
+
+
 <br><br><br>
 
 
