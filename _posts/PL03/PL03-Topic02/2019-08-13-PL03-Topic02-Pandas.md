@@ -25,9 +25,7 @@ List of posts to read before reading this article
 
 ### ***One-column***
 
-#### A series] creating
-
-`METHOD1 : sperately`
+`CREATING METHOD1 : sperately`
 ```python
 import pandas as pd
 
@@ -85,7 +83,7 @@ type(s.index)
 
 
 <br><br><br>
-`METHOD2 : all at once`
+`CREATING METHOD2 : all at once`
 ```python
 import pandas as pd
 
