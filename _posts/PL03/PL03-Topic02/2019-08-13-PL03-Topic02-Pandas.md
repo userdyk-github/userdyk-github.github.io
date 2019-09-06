@@ -405,7 +405,124 @@ s.plot(ax=axes[3], kind='pie', title='pie')
 
 ### ***Several columns***
 
----
+#### Creating and concatenate
+
+```python
+import pandas as pd
+
+s1 = pd.Series([909976, 8615246, 2872086, 2273305], 
+              name="Population1" ,
+              index=["Stockholm1", "London1", "Rome1", "Paris1"])
+s2 = pd.Series([909976, 8615246, 2872086, 2273305], 
+              name="Population2" ,
+              index=["Stockholm2", "London2", "Rome2", "Paris2"])
+s3 = pd.Series([909976, 8615246, 2872086, 2273305], 
+              name="Population3" ,
+              index=["Stockholm3", "London3", "Rome3", "Paris3"])
+```
+```python
+print(s1,"\n\n",s2,'\n\n',s3)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+Stockholm1     909976
+London1       8615246
+Rome1         2872086
+Paris1        2273305
+Name: Population1, dtype: int64 
+
+ Stockholm2     909976
+London2       8615246
+Rome2         2872086
+Paris2        2273305
+Name: Population2, dtype: int64 
+
+ Stockholm3     909976
+London3       8615246
+Rome3         2872086
+Paris3        2273305
+Name: Population3, dtype: int64
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python
+pd.concat([s1, s2, s3], axis=1)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+            Population1  Population2  Population3
+London1       8615246.0          NaN          NaN
+London2             NaN    8615246.0          NaN
+London3             NaN          NaN    8615246.0
+Paris1        2273305.0          NaN          NaN
+Paris2              NaN    2273305.0          NaN
+Paris3              NaN          NaN    2273305.0
+Rome1         2872086.0          NaN          NaN
+Rome2               NaN    2872086.0          NaN
+Rome3               NaN          NaN    2872086.0
+Stockholm1     909976.0          NaN          NaN
+Stockholm2          NaN     909976.0          NaN
+Stockholm3          NaN          NaN     909976.0
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python
+pd.concat([s1, s2, s3], axis=1, ignore_index=True)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+                    0          1          2
+London1     8615246.0        NaN        NaN
+London2           NaN  8615246.0        NaN
+London3           NaN        NaN  8615246.0
+Paris1      2273305.0        NaN        NaN
+Paris2            NaN  2273305.0        NaN
+Paris3            NaN        NaN  2273305.0
+Rome1       2872086.0        NaN        NaN
+Rome2             NaN  2872086.0        NaN
+Rome3             NaN        NaN  2872086.0
+Stockholm1   909976.0        NaN        NaN
+Stockholm2        NaN   909976.0        NaN
+Stockholm3        NaN        NaN   909976.0
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python
+pd.concat([s1, s2, s3], axis=1, keys=['C0', 'C1', 'C2'])
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+                   C0         C1         C2
+London1     8615246.0        NaN        NaN
+London2           NaN  8615246.0        NaN
+London3           NaN        NaN  8615246.0
+Paris1      2273305.0        NaN        NaN
+Paris2            NaN  2273305.0        NaN
+Paris3            NaN        NaN  2273305.0
+Rome1       2872086.0        NaN        NaN
+Rome2             NaN  2872086.0        NaN
+Rome3             NaN        NaN  2872086.0
+Stockholm1   909976.0        NaN        NaN
+Stockholm2        NaN   909976.0        NaN
+Stockholm3        NaN        NaN   909976.0
+```
+<hr class='division3'>
+</details>
+<br><br><br>
 
 <hr class="division2">
 
