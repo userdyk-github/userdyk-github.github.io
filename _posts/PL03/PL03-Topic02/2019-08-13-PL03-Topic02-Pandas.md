@@ -36,7 +36,7 @@ s.index = ["Stockholm", "London", "Rome", "Paris"]
 s
 ```
 <details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<summary class='jb-small' style="color:gray">OUTPUT</summary>
 <hr class='division3'>
 ```
 Stockholm     909976
