@@ -122,7 +122,8 @@ import pandas as pd
 s = pd.Series([909976, 8615246, 2872086, 2273305], 
               name="Population" ,
               index=["Stockholm", "London", "Rome", "Paris"])
-              
+```
+```python 
 s.index
 ```
 <details markdown="1">
