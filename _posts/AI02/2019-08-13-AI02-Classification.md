@@ -144,6 +144,12 @@ print(metrics.confusion_matrix(y_test, y_test_pred))
     accuracy                           0.96        45
    macro avg       0.95      0.95      0.95        45
 weighted avg       0.96      0.96      0.96        45
+
+
+
+[[16  0  0]
+ [ 0 14  2]
+ [ 0  0 13]]
 ```
 <hr class='division3'>
 </details>
@@ -185,6 +191,12 @@ print(metrics.confusion_matrix(y_test, y_test_pred))
     accuracy                           1.00        45
    macro avg       1.00      1.00      1.00        45
 weighted avg       1.00      1.00      1.00        45
+
+
+
+[[12  0  0]
+ [ 0 11  0]
+ [ 0  7 15]]
 ```
 <hr class='division3'>
 </details>
@@ -226,6 +238,12 @@ print(metrics.confusion_matrix(y_test, y_test_pred))
     accuracy                           0.96        45
    macro avg       0.95      0.95      0.95        45
 weighted avg       0.96      0.96      0.96        45
+
+
+
+[[16  0  0]
+ [ 0 12  0]
+ [ 0  2 15]]
 ```
 <hr class='division3'>
 </details>
@@ -267,6 +285,12 @@ print(metrics.confusion_matrix(y_test, y_test_pred))
     accuracy                           1.00        45
    macro avg       1.00      1.00      1.00        45
 weighted avg       1.00      1.00      1.00        45
+
+
+
+[[17  0  0]
+ [ 0 12  1]
+ [ 0  3 12]]
 ```
 <hr class='division3'>
 </details>
