@@ -421,7 +421,7 @@ s3 = pd.Series([909976, 8615246, 2872086, 2273305],
               index=["Stockholm3", "London3", "Rome3", "Paris3"])
 ```
 ```python
-print(s1,"\n\n",s2,'\n\n',s3)
+s1, s2, s3
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
