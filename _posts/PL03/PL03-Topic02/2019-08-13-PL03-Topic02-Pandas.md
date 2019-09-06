@@ -716,7 +716,16 @@ Name: Stockholm, dtype: object
 ```
 <br>
 `SUPPLEMENT`
-```python
+**Original dataset**
+|             |Population |          State|
+|:------------|:----------|:--------------|
+|Stockholm    | 909976    |        Sweden |
+|London       | 8615246   |United Kingdom |
+|Rome         | 2872086   |         Italy |
+|Paris        | 2273305   |        France |
+<br>
+**Data-type**
+```
  INPUT : type(df.loc["Stockholm"])
 OUTPUT : <class 'pandas.core.series.Series'>
 ```
@@ -738,7 +747,16 @@ Rome      2872086   Italy
 ```
 <br>
 `SUPPLEMENT`
-```python
+**Original dataset**
+|             |Population |          State|
+|:------------|:----------|:--------------|
+|Stockholm    | 909976    |        Sweden |
+|London       | 8615246   |United Kingdom |
+|Rome         | 2872086   |         Italy |
+|Paris        | 2273305   |        France |
+<br>
+**Data-type**
+```
  INPUT : type(df.loc[["Paris","Rome"]])
 OUTPUT : <class 'pandas.core.frame.DataFrame'>
 ```
@@ -760,7 +778,16 @@ Paris     2273305  France
 ```
 <br>
 `SUPPLEMENT`
-```python
+**Original dataset**
+|             |Population |          State|
+|:------------|:----------|:--------------|
+|Stockholm    | 909976    |        Sweden |
+|London       | 8615246   |United Kingdom |
+|Rome         | 2872086   |         Italy |
+|Paris        | 2273305   |        France |
+<br>
+**Data-type**
+```
  INPUT : type(df[2:4])
 OUTPUT : <class 'pandas.core.frame.DataFrame'>
 ```
@@ -780,7 +807,16 @@ searching method1 single value
 ```
 <br>
 `SUPPLEMENT`
-```python
+**Original dataset**
+|             |Population |          State|
+|:------------|:----------|:--------------|
+|Stockholm    | 909976    |        Sweden |
+|London       | 8615246   |United Kingdom |
+|Rome         | 2872086   |         Italy |
+|Paris        | 2273305   |        France |
+<br>
+**Data-type**
+```
  INPUT : type(df.loc["Stockholm","Population"])
 OUTPUT : <class 'numpy.int64'>
 ```
@@ -800,7 +836,16 @@ searching method2 single value
 ```
 <br>
 `SUPPLEMENT`
-```python
+**Original dataset**
+|             |Population |          State|
+|:------------|:----------|:--------------|
+|Stockholm    | 909976    |        Sweden |
+|London       | 8615246   |United Kingdom |
+|Rome         | 2872086   |         Italy |
+|Paris        | 2273305   |        France |
+<br>
+**Data-type**
+```
  INPUT : type(df.loc["Stockholm"][0])
 OUTPUT : <class 'numpy.int64'>
 ```
@@ -820,7 +865,16 @@ searching method3 single value
 ```
 <br>
 `SUPPLEMENT`
-```python
+**Original dataset**
+|             |Population |          State|
+|:------------|:----------|:--------------|
+|Stockholm    | 909976    |        Sweden |
+|London       | 8615246   |United Kingdom |
+|Rome         | 2872086   |         Italy |
+|Paris        | 2273305   |        France |
+<br>
+**Data-type**
+```
  INPUT : type(df.loc["Stockholm"]["Population"])
 OUTPUT : <class 'numpy.int64'>
 ```
@@ -840,7 +894,16 @@ searching method4 single value
 ```
 <br>
 `SUPPLEMENT`
-```python
+**Original dataset**
+|             |Population |          State|
+|:------------|:----------|:--------------|
+|Stockholm    | 909976    |        Sweden |
+|London       | 8615246   |United Kingdom |
+|Rome         | 2872086   |         Italy |
+|Paris        | 2273305   |        France |
+<br>
+**Data-type**
+```
  INPUT : type(df.loc["Stockholm"].Population)
 OUTPUT :  <class 'numpy.int64'>
 ```
@@ -862,7 +925,16 @@ Name: Population, dtype: int64
 ```
 <br>
 `SUPPLEMENT`
-```python
+**Original dataset**
+|             |Population |          State|
+|:------------|:----------|:--------------|
+|Stockholm    | 909976    |        Sweden |
+|London       | 8615246   |United Kingdom |
+|Rome         | 2872086   |         Italy |
+|Paris        | 2273305   |        France |
+<br>
+**Data-type**
+```
  INPUT : type(df.loc[["Paris","Rome"],"Population"])
 OUTPUT : <class 'pandas.core.series.Series'>
 ```
