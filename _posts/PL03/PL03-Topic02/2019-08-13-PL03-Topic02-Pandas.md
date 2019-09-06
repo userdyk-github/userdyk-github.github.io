@@ -1245,7 +1245,16 @@ df
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
-
+               Population           State
+Alphabet rank                            
+a        1         909976          Sweden
+b        2        8615246  United Kingdom
+x        3        2872086           Italy
+d        4        2273305           Seoul
+a        6         123234           Suwon
+         5         123444          France
+b        7          23333           Korea
+c        8         343434           Japan
 ```
 <hr class='division3'>
 </details>
@@ -1259,12 +1268,21 @@ df
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
-
+               Population           State
+Alphabet rank                            
+a        1         909976          Sweden
+         5         123444          France
+         6         123234           Suwon
+b        2        8615246  United Kingdom
+         7          23333           Korea
+c        8         343434           Japan
+d        4        2273305           Seoul
+x        3        2872086           Italy
 ```
 <hr class='division3'>
 </details>
 <br>
-`STEP5`
+`Based on rank`
 ```python
 df.sort_values("rank", ascending=False)
 ```
@@ -1272,12 +1290,21 @@ df.sort_values("rank", ascending=False)
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
-
+               Population           State
+Alphabet rank                            
+c        8         343434           Japan
+b        7          23333           Korea
+a        6         123234           Suwon
+         5         123444          France
+d        4        2273305           Seoul
+x        3        2872086           Italy
+b        2        8615246  United Kingdom
+a        1         909976          Sweden
 ```
 <hr class='division3'>
 </details>
 <br>
-`STEP6`
+`Based on Population`
 ```python
 df.sort_values("Population", ascending=False)
 ```
@@ -1285,12 +1312,21 @@ df.sort_values("Population", ascending=False)
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
-
+               Population           State
+Alphabet rank                            
+b        2        8615246  United Kingdom
+x        3        2872086           Italy
+d        4        2273305           Seoul
+a        1         909976          Sweden
+c        8         343434           Japan
+a        5         123444          France
+         6         123234           Suwon
+b        7          23333           Korea
 ```
 <hr class='division3'>
 </details>
 <br>
-`STEP7`
+`Based on State`
 ```python
 df.sort_values("State", ascending=False)
 ```
@@ -1298,20 +1334,39 @@ df.sort_values("State", ascending=False)
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
-
+               Population           State
+Alphabet rank                            
+b        2        8615246  United Kingdom
+a        1         909976          Sweden
+         6         123234           Suwon
+d        4        2273305           Seoul
+b        7          23333           Korea
+c        8         343434           Japan
+x        3        2872086           Italy
+a        5         123444          France
 ```
 <hr class='division3'>
 </details>
 <br>
-`STEP8`
+`Based on Alphabet`
 ```python
-df.sort_values("Alphabet", ascending=False)
+df = df.sort_values("Alphabet", ascending=False)
+df
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
-
+               Population           State
+Alphabet rank                            
+x        3        2872086           Italy
+d        4        2273305           Seoul
+c        8         343434           Japan
+b        2        8615246  United Kingdom
+         7          23333           Korea
+a        1         909976          Sweden
+         6         123234           Suwon
+         5         123444          France
 ```
 <hr class='division3'>
 </details>
