@@ -555,6 +555,157 @@ Stockholm3        NaN        NaN   909976.0
 
 ### ***One-dataframe***
 
+#### Creating
+
+`Creating method1 based on row`
+```python
+import pandas as pd
+
+df = pd.DataFrame([[909976, "Sweden"],
+                   [8615246, "United Kingdom"],
+                   [2872086, "Italy"],
+                   [2273305, "France"]])
+df.index = ["Stockholm", "London", "Rome", "Paris"]
+df.columns = ["Population", "State"] 
+```
+```python
+df
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+           Population           State
+Stockholm      909976          Sweden
+London        8615246  United Kingdom
+Rome          2872086           Italy
+Paris         2273305          France
+```
+<hr class='division3'>
+</details>
+<br><br><br>
+
+
+
+`Creating method2 based on row`
+```python
+import pandas as pd
+
+df = pd.DataFrame([[909976, "Sweden"],
+                   [8615246, "United Kingdom"],
+                   [2872086, "Italy"],
+                   [2273305, "France"]])
+df.index = ["Stockholm", "London", "Rome", "Paris"]
+df.rename(columns={0:"Population", 1:"State"}, inplace=True)
+```
+```python
+df
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+           Population           State
+Stockholm      909976          Sweden
+London        8615246  United Kingdom
+Rome          2872086           Italy
+Paris         2273305          France
+```
+<hr class='division3'>
+</details>
+<br><br><br>
+
+
+
+`Creating method3 based on row, all at once`
+```python
+import pandas as pd
+
+df = pd.DataFrame([[909976, "Sweden"],
+                   [8615246, "United Kingdom"],
+                   [2872086, "Italy"],
+                   [2273305, "France"]],
+                 index=["Stockholm", "London", "Rome", "Paris"],
+                 columns=["Population", "State"])
+```
+```python
+df
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+           Population           State
+Stockholm      909976          Sweden
+London        8615246  United Kingdom
+Rome          2872086           Italy
+Paris         2273305          France
+```
+<hr class='division3'>
+</details>
+<br><br><br>
+
+
+
+
+`Creating method1 based on columns, all at once`
+```python
+import pandas as pd
+
+df = pd.DataFrame({"Population": [909976, 8615246, 2872086, 2273305],
+                   "State": ["Sweden", "United Kingdom", "Italy", "France"]},
+                  index=["Stockholm", "London", "Rome", "Paris"])
+```
+```python
+df
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+           Population           State
+Stockholm      909976          Sweden
+London        8615246  United Kingdom
+Rome          2872086           Italy
+Paris         2273305          France
+```
+<hr class='division3'>
+</details>
+<br><br><br>
+
+
+
+`Creating method2 based on columns`
+```python
+import pandas as pd
+
+df = pd.DataFrame({"Population": [909976, 8615246, 2872086, 2273305],
+                   "State": ["Sweden", "United Kingdom", "Italy", "France"],
+                   "index": ["Stockholm", "London", "Rome", "Paris"]})
+df = df.set_index("index")
+```
+```python
+df
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+           Population           State
+index                                
+Stockholm      909976          Sweden
+London        8615246  United Kingdom
+Rome          2872086           Italy
+Paris         2273305          France
+```
+<hr class='division3'>
+</details>
+<br><br><br>
+
+
+
+
+
 ---
 
 ### ***Several dataframes***
