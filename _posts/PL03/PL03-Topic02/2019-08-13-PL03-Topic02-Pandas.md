@@ -36,7 +36,7 @@ s.index = ["Stockholm", "London", "Rome", "Paris"]
 s
 ```
 <details markdown="1">
-<summary class='jb-small' style="color:gray">OUTPUT</summary>
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
 Stockholm     909976
@@ -47,6 +47,8 @@ Name: Population, dtype: int64
 ```
 <hr class='division3'>
 </details>
+<br>
+
 ```python
 type(s)
 ```
@@ -58,6 +60,8 @@ type(s)
 ```
 <hr class='division3'>
 </details>
+
+<br>
 ```python
 type(s.name)
 ```
@@ -69,6 +73,8 @@ type(s.name)
 ```
 <hr class='division3'>
 </details>
+
+<br>
 ```python
 type(s.index)
 ```
