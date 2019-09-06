@@ -346,13 +346,58 @@ weighted avg       1.00      1.00      1.00        45
 ### ***The resulting classification accuracy for each classifier***
 
 ```python
+from sklearn import datasets
+from sklearn import model_selection
+from sklearn import linear_model
+from sklearn import metrics
+from sklearn import tree
+from sklearn import neighbors
+from sklearn import svm
+from sklearn import ensemble
 
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+
+train_size_vec = np.linspace(0.1, 0.9, 30)
+classifiers = [linear_model.LogisticRegression,
+               neighbors.KNeighborsClassifier,
+               svm.SVC,
+               tree.DecisionTreeClassifier,
+               ensemble.RandomForestClassifier]
+cm_diags = np.zeros((3, len(train_size_vec), len(classifiers)), dtype=float)
+
+
+iris = datasets.load_iris()
+for n, train_size in enumerate(train_size_vec):
+    X_train, X_test, y_train, y_test = model_selection.train_test_split(iris.data, iris.target, train_size=train_size)
+    for m, Classifier in enumerate(classifiers):
+        classifier = Classifier()
+        classifier.fit(X_train, y_train)
+        y_test_p = classifier.predict(X_test)
+        cm_diags[:, n, m] = metrics.confusion_matrix(y_test, y_test_p).diagonal()
+        cm_diags[:, n, m] /= np.bincount(y_test)
+
+
+fig, axes = plt.subplots(1, len(classifiers), figsize=(12, 3))
+for m, Classifier in enumerate(classifiers):
+    axes[m].plot(train_size_vec, cm_diags[2, :, m], label=iris.target_names[2])
+    axes[m].plot(train_size_vec, cm_diags[1, :, m], label=iris.target_names[1])
+    axes[m].plot(train_size_vec, cm_diags[0, :, m], label=iris.target_names[0])
+    axes[m].set_title(type(Classifier()).__name__)
+    axes[m].set_ylim(0, 1.1)
+    axes[m].set_ylabel("classification accuracy")
+    axes[m].set_xlabel("training size ratio")
+    axes[m].legend(loc=4)
+
+plt.show()
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
-
+![다운로드 (1)](https://user-images.githubusercontent.com/52376448/64465993-54ae3980-d14a-11e9-8e33-881b5537b2b2.png)
 ```
 
 
