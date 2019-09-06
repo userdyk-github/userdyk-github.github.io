@@ -963,6 +963,199 @@ OUTPUT : <class 'pandas.core.series.Series'>
 
 
 
+
+<br>
+
+searching columns or values of columns
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+```
+
+```
+<br>
+<br>
+**Original dataset**
+
+|             |Population |          State|
+|:------------|:----------|:--------------|
+|Stockholm    | 909976    |        Sweden |
+|London       | 8615246   |United Kingdom |
+|Rome         | 2872086   |         Italy |
+|Paris        | 2273305   |        France |
+
+<br>
+**Data-type**
+```
+ INPUT : 
+OUTPUT : 
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+```
+
+```
+<br>
+<br>
+**Original dataset**
+
+|             |Population |          State|
+|:------------|:----------|:--------------|
+|Stockholm    | 909976    |        Sweden |
+|London       | 8615246   |United Kingdom |
+|Rome         | 2872086   |         Italy |
+|Paris        | 2273305   |        France |
+
+<br>
+**Data-type**
+```
+ INPUT : 
+OUTPUT : 
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+```
+
+```
+<br>
+<br>
+**Original dataset**
+
+|             |Population |          State|
+|:------------|:----------|:--------------|
+|Stockholm    | 909976    |        Sweden |
+|London       | 8615246   |United Kingdom |
+|Rome         | 2872086   |         Italy |
+|Paris        | 2273305   |        France |
+
+<br>
+**Data-type**
+```
+ INPUT : 
+OUTPUT : 
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+```
+
+```
+<br>
+<br>
+**Original dataset**
+
+|             |Population |          State|
+|:------------|:----------|:--------------|
+|Stockholm    | 909976    |        Sweden |
+|London       | 8615246   |United Kingdom |
+|Rome         | 2872086   |         Italy |
+|Paris        | 2273305   |        France |
+
+<br>
+**Data-type**
+```
+ INPUT : 
+OUTPUT : 
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+```
+
+```
+<br>
+<br>
+**Original dataset**
+
+|             |Population |          State|
+|:------------|:----------|:--------------|
+|Stockholm    | 909976    |        Sweden |
+|London       | 8615246   |United Kingdom |
+|Rome         | 2872086   |         Italy |
+|Paris        | 2273305   |        France |
+
+<br>
+**Data-type**
+```
+ INPUT : 
+OUTPUT : 
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+```
+
+```
+<br>
+<br>
+**Original dataset**
+
+|             |Population |          State|
+|:------------|:----------|:--------------|
+|Stockholm    | 909976    |        Sweden |
+|London       | 8615246   |United Kingdom |
+|Rome         | 2872086   |         Italy |
+|Paris        | 2273305   |        France |
+
+<br>
+**Data-type**
+```
+ INPUT : 
+OUTPUT : 
+```
+<hr class='division3'>
+</details>
+
+
+
+
+
 <br><br><br>
 
 
@@ -994,6 +1187,8 @@ Paris         2273305          France
 ```
 <hr class='division3'>
 </details>
+
+
 <br><br><br>
 
 
