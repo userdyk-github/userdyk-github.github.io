@@ -140,13 +140,13 @@ s.name
 </details>
 <br>
 
-`Searching values based on index(key)`
 ```python 
 s[1]
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+Searching values based on index(key)
 ```
 8615246
 ```
