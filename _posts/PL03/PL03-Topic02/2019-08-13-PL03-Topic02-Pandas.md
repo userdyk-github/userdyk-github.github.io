@@ -717,12 +717,14 @@ Name: Stockholm, dtype: object
 <br>
 `SUPPLEMENT`
 **Original dataset**
+
 |             |Population |          State|
 |:------------|:----------|:--------------|
 |Stockholm    | 909976    |        Sweden |
 |London       | 8615246   |United Kingdom |
 |Rome         | 2872086   |         Italy |
 |Paris        | 2273305   |        France |
+
 <br>
 **Data-type**
 ```
@@ -748,12 +750,14 @@ Rome      2872086   Italy
 <br>
 `SUPPLEMENT`
 **Original dataset**
+
 |             |Population |          State|
 |:------------|:----------|:--------------|
 |Stockholm    | 909976    |        Sweden |
 |London       | 8615246   |United Kingdom |
 |Rome         | 2872086   |         Italy |
 |Paris        | 2273305   |        France |
+
 <br>
 **Data-type**
 ```
@@ -779,12 +783,14 @@ Paris     2273305  France
 <br>
 `SUPPLEMENT`
 **Original dataset**
+
 |             |Population |          State|
 |:------------|:----------|:--------------|
 |Stockholm    | 909976    |        Sweden |
 |London       | 8615246   |United Kingdom |
 |Rome         | 2872086   |         Italy |
 |Paris        | 2273305   |        France |
+
 <br>
 **Data-type**
 ```
@@ -808,12 +814,14 @@ searching method1 single value
 <br>
 `SUPPLEMENT`
 **Original dataset**
+
 |             |Population |          State|
 |:------------|:----------|:--------------|
 |Stockholm    | 909976    |        Sweden |
 |London       | 8615246   |United Kingdom |
 |Rome         | 2872086   |         Italy |
 |Paris        | 2273305   |        France |
+
 <br>
 **Data-type**
 ```
@@ -837,12 +845,14 @@ searching method2 single value
 <br>
 `SUPPLEMENT`
 **Original dataset**
+
 |             |Population |          State|
 |:------------|:----------|:--------------|
 |Stockholm    | 909976    |        Sweden |
 |London       | 8615246   |United Kingdom |
 |Rome         | 2872086   |         Italy |
 |Paris        | 2273305   |        France |
+
 <br>
 **Data-type**
 ```
@@ -866,12 +876,14 @@ searching method3 single value
 <br>
 `SUPPLEMENT`
 **Original dataset**
+
 |             |Population |          State|
 |:------------|:----------|:--------------|
 |Stockholm    | 909976    |        Sweden |
 |London       | 8615246   |United Kingdom |
 |Rome         | 2872086   |         Italy |
 |Paris        | 2273305   |        France |
+
 <br>
 **Data-type**
 ```
@@ -895,12 +907,14 @@ searching method4 single value
 <br>
 `SUPPLEMENT`
 **Original dataset**
+
 |             |Population |          State|
 |:------------|:----------|:--------------|
 |Stockholm    | 909976    |        Sweden |
 |London       | 8615246   |United Kingdom |
 |Rome         | 2872086   |         Italy |
 |Paris        | 2273305   |        France |
+
 <br>
 **Data-type**
 ```
@@ -926,12 +940,14 @@ Name: Population, dtype: int64
 <br>
 `SUPPLEMENT`
 **Original dataset**
+
 |             |Population |          State|
 |:------------|:----------|:--------------|
 |Stockholm    | 909976    |        Sweden |
 |London       | 8615246   |United Kingdom |
 |Rome         | 2872086   |         Italy |
 |Paris        | 2273305   |        France |
+
 <br>
 **Data-type**
 ```
