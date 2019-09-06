@@ -112,30 +112,26 @@ Name: Population, dtype: int64
 ---
 
 #### A series] searching index(key) & name of a column
-
+`Searching all index`
 ```python
 import pandas as pd
 
-# searching all index
-list(s.index)
-print('\n list(s.index) : \n',list(s.index))
-
-# searching name
-s.name
-print('\n s.name : \n',s.name)
+s = pd.Series([909976, 8615246, 2872086, 2273305], 
+              name="Population" ,
+              index=["Stockholm", "London", "Rome", "Paris"])
+              
+s.index
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
- list(s.index) : 
- ['Stockholm', 'London', 'Rome', 'Paris']
-
- s.name : 
- Population
+Index(['Stockholm', 'London', 'Rome', 'Paris'], dtype='object')
 ```
 <hr class='division3'>
 </details>
+<br>
+
 <br><br><br>
 
 ---
