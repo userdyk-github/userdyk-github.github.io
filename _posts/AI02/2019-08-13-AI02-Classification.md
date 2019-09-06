@@ -79,9 +79,10 @@ weighted avg       0.98      0.98      0.98        45
 <hr class='division3'>
 </details>
 
-<br><br><br>
 
-`SUPPLEMENT`
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
 ```
 >>> from sklearn import datasets
 >>> iris = datasets.load_iris() 
@@ -107,7 +108,8 @@ array(['setosa', 'versicolor', 'virginica'], dtype='<U10')
 >>> iris.target.shape 
 (150,)
 ```
-
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
