@@ -345,6 +345,7 @@ Name: Population, dtype: int64
 
 ```python
 import pandas as pd
+import matplotlib.pyplot as plt
 
 s = pd.Series([1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,4,4,4], 
               name="Population")
@@ -384,8 +385,6 @@ Name: Population, dtype: float64
 <br>
 
 ```python
-import matplotlib.pyplot as plt
-
 fig, axes = plt.subplots(1,4, figsize=(12, 3))
 s.plot(ax=axes[0], kind='line', title='line')
 s.plot(ax=axes[1], kind='bar', title='bar')
