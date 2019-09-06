@@ -71,6 +71,7 @@ weighted avg       0.98      0.98      0.98        45
 ```
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -110,6 +111,7 @@ weighted avg       0.96      0.96      0.96        45
 ```
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -123,6 +125,7 @@ weighted avg       0.96      0.96      0.96        45
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -136,6 +139,7 @@ weighted avg       0.96      0.96      0.96        45
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
