@@ -1526,6 +1526,20 @@ df.loc['a'].std()
 
 ### ***Several dataframes***
 
+#### Creating
+
+---
+
+#### Deleting
+
+---
+
+#### Concatenating
+
+---
+
+#### Merging
+
 ---
 
 <hr class="division2">
