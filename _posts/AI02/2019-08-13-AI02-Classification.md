@@ -21,15 +21,27 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## sklearn
+## **A wide variety of alternative algorithms for classification**
+
+- Logistic regression
+- **KNN**, k-nearest neighbor methods
+- **SVM**, support vector machines
+- Decision trees
+- Random forest methods
+
+---
+
+## **Implement with sklearn**
+
+The scikit-learn provide
 
 <hr class="division2">
 
-## tensorflow
+## **Implement with tensorflow**
 
 <hr class="division2">
 
-## pytorch
+## **Implement with pytorch**
 
 <hr class="division1">
 
