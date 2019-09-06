@@ -270,13 +270,15 @@ Name: Population, dtype: int64
 
 
 
-#### A series] analysis
+#### Analysis
 
 ```python
 import pandas as pd
 
 s = pd.Series([1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,4,4,4], 
               name="Population")
+```
+```python
 s.head()
 ```
 <details markdown="1">
@@ -292,6 +294,7 @@ Name: Population, dtype: int64
 ```
 <hr class='division3'>
 </details>
+<br>
 
 ```python
 s.shape
@@ -304,6 +307,7 @@ s.shape
 ```
 <hr class='division3'>
 </details>
+<br>
 
 ```python
 s.unique()
@@ -316,6 +320,7 @@ array([1, 2, 3, 4], dtype=int64)
 ```
 <hr class='division3'>
 </details>
+<br>
 
 ```python
 s.value_counts()
@@ -336,7 +341,7 @@ Name: Population, dtype: int64
 
 ---
 
-#### A series] statistics
+#### Statistics
 
 ```python
 import pandas as pd
