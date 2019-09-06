@@ -21,15 +21,69 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
+## **Getting Started**
+
+---
+
+### ***First Steps***
+
+---
+
+### ***Customizing the Color and Styles***
+
+---
+
+### ***Working with Annotations***
+
+
 
 <hr class="division2">
 
-## title2
+## **Figure**
+
+---
+
+### ***Working with Figures***
+
+---
+
+### ***Working with a File Output***
+
+---
+
+### ***Working with Maps***
 
 <hr class="division2">
 
-## title3
+## **Axes**
+
+<hr class="division2">
+
+## **Advanced Axes Layouts**
+
+<hr class="division2">
+
+## **Colormap Plots**
+
+<hr class="division2">
+
+## **3D Plots**
+
+---
+
+### ***Working with 3D Figures***
+
+<hr class="division2">
+
+## **User Interface**
+
+<hr class="division2">
+
+## **Korean font**
+
+<hr class="division2">
+
+## **A variety of plot**
 
 <hr class="division1">
 
