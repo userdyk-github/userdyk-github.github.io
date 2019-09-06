@@ -21,15 +21,15 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
+## sklearn
 
 <hr class="division2">
 
-## title2
+## tensorflow
 
 <hr class="division2">
 
-## title3
+## pytorch
 
 <hr class="division1">
 
