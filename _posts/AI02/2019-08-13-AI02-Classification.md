@@ -35,7 +35,7 @@ List of posts to read before reading this article
 
 ## **Implement with sklearn**
 
-### ***Through logistic regression***
+### ***Classification through logistic regression***
 
 ```python
 from sklearn import datasets
@@ -75,7 +75,7 @@ weighted avg       0.98      0.98      0.98        45
 
 ---
 
-### ***Through k-nearest neighbor methods***
+### ***Classification through k-nearest neighbor methods***
 
 ```python
 from sklearn import datasets
@@ -115,7 +115,7 @@ weighted avg       0.96      0.96      0.96        45
 
 ---
 
-### ***Through support vector machines***
+### ***Classification through support vector machines***
 
 ```python
 
@@ -129,7 +129,7 @@ weighted avg       0.96      0.96      0.96        45
 
 ---
 
-### ***Through decision trees***
+### ***Classification through decision trees***
 
 ```python
 
@@ -143,7 +143,7 @@ weighted avg       0.96      0.96      0.96        45
 
 ---
 
-### ***Through Random forest methods***
+### ***Classification through random forest methods***
 
 ```python
 
