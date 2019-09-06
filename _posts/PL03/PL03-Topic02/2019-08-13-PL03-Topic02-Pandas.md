@@ -1526,15 +1526,209 @@ df.loc['a'].std()
 
 ### ***Several dataframes***
 
-#### Creating
-
----
-
 #### Deleting
+
+`drop`
+```python
+import pandas as pd
+import numpy as np
+
+df = pd.DataFrame(np.arange(12).reshape(3, 4),
+                  columns=['A', 'B', 'C', 'D'])
+df
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+   A  B   C   D
+0  0  1   2   3
+1  4  5   6   7
+2  8  9  10  11
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python
+# single column drop
+df.drop('A', axis=1)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+   A  B   C   D
+0  0  1   2   3
+1  4  5   6   7
+2  8  9  10  11
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python
+# multi-columns drop
+df.drop(['B', 'C'], axis=1)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+   A  B   C   D
+0  0  1   2   3
+1  4  5   6   7
+2  8  9  10  11
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python
+# single row drop
+df.drop(1, axis=0)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+   A  B   C   D
+0  0  1   2   3
+1  4  5   6   7
+2  8  9  10  11
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python
+# multi-row drop
+df.drop([1,2], axis=0)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+   A  B   C   D
+0  0  1   2   3
+1  4  5   6   7
+2  8  9  10  11
+```
+<hr class='division3'>
+</details>
+<br><br><br>
+
+
+`drop_duplicates`
+```python
+import pandas as pd
+
+df = pd.DataFrame({"phone": [909976, 8615246, 2872086, 2273305,2273305,2273305,2273305]})
+```
+```python
+df
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+     phone
+0   909976
+1  8615246
+2  2872086
+3  2273305
+4  2273305
+5  2273305
+6  2273305
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python
+df.drop_duplicates('phone',keep='first')
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+     phone
+0   909976
+1  8615246
+2  2872086
+3  2273305
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python
+df.drop_duplicates('phone',keep='last')
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+     phone
+0   909976
+1  8615246
+2  2872086
+6  2273305
+```
+<hr class='division3'>
+</details>
+
+
+
+
+
+
+
+
 
 ---
 
 #### Concatenating
+
+```python
+df1 = pd.DataFrame([[909976, "Sweden1"],
+                    [8615246, "United Kingdom1"],
+                    [2872086, "Italy1"],
+                    [2273305, "France1"]],
+                  index=["Stockholm1", "London1", "Rome1", "Paris1"],
+                  columns=["Population1", "State1"])
+
+df2 = pd.DataFrame([[909976, "Sweden2"],
+                    [8615246, "United Kingdom2"],
+                    [2872086, "Italy2"],
+                    [2273305, "France2"]],
+                  index=["Stockholm2", "London2", "Rome2", "Paris2"],
+                  columns=["Population2", "State2"])
+```
+```python
+df1, df2
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+            Population1           State1
+Stockholm1       909976          Sweden1
+London1         8615246  United Kingdom1
+Rome1           2872086           Italy1
+Paris1          2273305          France1 
+
+             Population2           State2
+Stockholm2       909976          Sweden2
+London2         8615246  United Kingdom2
+Rome2           2872086           Italy2
+Paris2          2273305          France2
+```
+<hr class='division3'>
+</details>
+<br>
+
+
 
 ---
 
