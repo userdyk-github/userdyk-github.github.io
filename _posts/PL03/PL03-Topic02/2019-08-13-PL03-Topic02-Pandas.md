@@ -115,8 +115,7 @@ Name: Population, dtype: int64
 
 ---
 
-#### A series] searching index(key) & name of a column
-`Searching all index`
+`Searching all index and name`
 ```python
 import pandas as pd
 
@@ -135,6 +134,17 @@ Index(['Stockholm', 'London', 'Rome', 'Paris'], dtype='object')
 <hr class='division3'>
 </details>
 <br>
+```python 
+s.name
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+'Population'
+```
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
