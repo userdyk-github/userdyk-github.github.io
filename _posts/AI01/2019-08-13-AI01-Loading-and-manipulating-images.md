@@ -178,10 +178,14 @@ pyplot.show()
 
 ### ***Loading an image with cv2 and showing an image with skimage***
 
+**import required packages**
+- pip install scikit-image
+- pip install opencv-contrib-python
+
 ```python
 %matplotlib inline
-from skimage import io                  # pip install scikit-image
-import cv2      #import required packages : pip install opencv-contrib-python
+from skimage import io
+import cv2
 
 image = cv2.imread('cat.jpg')
 print(type(image))
