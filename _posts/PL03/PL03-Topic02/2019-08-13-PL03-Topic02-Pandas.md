@@ -35,23 +35,12 @@ s = pd.Series([909976, 8615246, 2872086, 2273305])
 s.name = "Population"
 s.index = ["Stockholm", "London", "Rome", "Paris"] 
 
-print('\n type(s) : \n',type(s),
-      '\n\n type(s.name) : \n',type(s.name),
-      '\n\n type(s.index) : \n',type(s.index))
 s
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
- type(s) : 
- <class 'pandas.core.series.Series'> 
-
- type(s.name) : 
- <class 'str'> 
-
- type(s.index) : 
- <class 'pandas.core.indexes.base.Index'>
 Stockholm     909976
 London       8615246
 Rome         2872086
@@ -60,7 +49,42 @@ Name: Population, dtype: int64
 ```
 <hr class='division3'>
 </details>
-<br>
+```python
+type(s)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+<class 'pandas.core.series.Series'> 
+```
+<hr class='division3'>
+</details>
+```python
+type(s.name)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+<class 'str'> 
+```
+<hr class='division3'>
+</details>
+```python
+type(s.index)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+<class 'pandas.core.indexes.base.Index'>
+```
+<hr class='division3'>
+</details>
+
+
+<br><br><br>
 `METHOD2 : all at once`
 ```python
 import pandas as pd
