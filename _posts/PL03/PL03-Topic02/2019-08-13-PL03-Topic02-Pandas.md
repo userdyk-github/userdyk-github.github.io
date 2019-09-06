@@ -25,6 +25,8 @@ List of posts to read before reading this article
 
 ### ***One-column***
 
+#### Creating and searching
+
 `CREATING METHOD1 : sperately`
 ```python
 import pandas as pd
