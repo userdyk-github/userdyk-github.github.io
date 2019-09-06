@@ -146,14 +146,40 @@ s[1]
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-Searching values based on index(key)
+method0 : searching single value 
 ```
 8615246
 ```
 <hr class='division3'>
 </details>
+<br>
 
+```python 
+s["London"]
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+method1 : searching single value 
+```
+8615246
+```
+<hr class='division3'>
+</details>
+<br>
 
+```python 
+s.London
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+method2 : searching single value 
+```
+8615246
+```
+<hr class='division3'>
+</details>
 <br><br><br>
 
 ---
