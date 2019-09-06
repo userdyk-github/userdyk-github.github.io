@@ -32,7 +32,8 @@ import pandas as pd
 s = pd.Series([909976, 8615246, 2872086, 2273305])
 s.name = "Population"
 s.index = ["Stockholm", "London", "Rome", "Paris"] 
-
+```
+```python
 s
 ```
 <details markdown="1">
@@ -96,6 +97,8 @@ import pandas as pd
 s = pd.Series([909976, 8615246, 2872086, 2273305], 
               name="Population" ,
               index=["Stockholm", "London", "Rome", "Paris"])
+```
+```python
 s
 ```
 <details markdown="1">
@@ -111,18 +114,6 @@ Name: Population, dtype: int64
 <hr class='division3'>
 </details>
 
-<br><br><br>
-
----
-
-`Searching all index and name`
-```python
-import pandas as pd
-
-s = pd.Series([909976, 8615246, 2872086, 2273305], 
-              name="Population" ,
-              index=["Stockholm", "London", "Rome", "Paris"])
-```
 ```python 
 s.index
 ```
