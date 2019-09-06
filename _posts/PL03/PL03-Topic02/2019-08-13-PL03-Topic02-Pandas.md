@@ -1846,16 +1846,17 @@ df
 <details markdown='1'>
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+<span class='jb-small'>United Kingdom = UK</span>
 ```
-               Population1  Population2           State1           State2
-C0 Stockholm1     909976.0          NaN          Sweden1              NaN
-   London1       8615246.0          NaN  United Kingdom1              NaN
-   Rome1         2872086.0          NaN           Italy1              NaN
-   Paris1        2273305.0          NaN          France1              NaN
-C1 Stockholm2          NaN     909976.0              NaN          Sweden2
-   London2             NaN    8615246.0              NaN  United Kingdom2
-   Rome2               NaN    2872086.0              NaN           Italy2
-   Paris2              NaN    2273305.0              NaN          France2
+               Population1  Population2      State1      State2
+C0 Stockholm1     909976.0          NaN     Sweden1         NaN
+   London1       8615246.0          NaN         UK1         NaN
+   Rome1         2872086.0          NaN      Italy1         NaN
+   Paris1        2273305.0          NaN     France1         NaN
+C1 Stockholm2          NaN     909976.0         NaN     Sweden2
+   London2             NaN    8615246.0         NaN         UK2
+   Rome2               NaN    2872086.0         NaN      Italy2
+   Paris2              NaN    2273305.0         NaN     France2
 ```
 <hr class='division3'>
 </details>
