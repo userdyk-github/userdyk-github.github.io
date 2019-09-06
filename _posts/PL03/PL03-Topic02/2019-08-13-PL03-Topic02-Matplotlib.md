@@ -43,27 +43,85 @@ List of posts to read before reading this article
 
 ---
 
+### ***Figure object***
+
+---
+
 ### ***Working with Figures***
 
 ---
 
 ### ***Working with a File Output***
 
----
-
-### ***Working with Maps***
 
 <hr class="division2">
 
 ## **Axes**
 
+---
+
+### ***Supplot commands***
+
+---
+
+### ***Line properties***
+
+---
+
+### ***Text formatting and annotations***
+
+---
+
+### ***Axis propertires***
+
+#### Axis labels and titles
+
+---
+
+#### Axis range
+
+---
+
+#### Axis ticks, tick labels, and grids
+
+---
+
+#### Log plots
+
+---
+
+#### Twin axes
+
+---
+
+#### Spines
+
+
 <hr class="division2">
 
 ## **Advanced Axes Layouts**
 
+### ***Insets***
+
+---
+
+### ***Subplots***
+
+---
+
+### ***Subplot2grid***
+
+---
+
+### ***GridSpec***
+
 <hr class="division2">
 
 ## **Colormap Plots**
+
+---
+
+### ***Working with Maps***
 
 <hr class="division2">
 
