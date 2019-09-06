@@ -1542,6 +1542,9 @@ df.loc['a'].std()
 
 ---
 
+#### Drop_duplicates
+
+
 <hr class="division2">
 
 ## **Covert Data-Type**
