@@ -348,7 +348,8 @@ import pandas as pd
 
 s = pd.Series([1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,4,4,4], 
               name="Population")
-              
+```
+```python
 s.median(), s.mean(), s.std(), s.min(), s.max()
 ```
 <details markdown="1">
@@ -359,6 +360,46 @@ s.median(), s.mean(), s.std(), s.min(), s.max()
 ```
 <hr class='division3'>
 </details>
+<br>
+
+```python
+s.describe()
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+count    21.000000
+mean      2.619048
+std       0.920662
+min       1.000000
+25%       2.000000
+50%       3.000000
+75%       3.000000
+max       4.000000
+Name: Population, dtype: float64
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python
+import matplotlib.pyplot as plt
+
+fig, axes = plt.subplots(1,4, figsize=(12, 3))
+s.plot(ax=axes[0], kind='line', title='line')
+s.plot(ax=axes[1], kind='bar', title='bar')
+s.plot(ax=axes[2], kind='box', title='box')
+s.plot(ax=axes[3], kind='pie', title='pie')
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드](https://user-images.githubusercontent.com/52376448/64455025-7d710780-d127-11e9-9734-4b88a3bf9f37.png)
+<hr class='division3'>
+</details>
+
+
 <br><br><br>
 
 ---
