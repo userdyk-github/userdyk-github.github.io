@@ -138,112 +138,22 @@ s.name
 ```
 <hr class='division3'>
 </details>
+<br>
 
-<br><br><br>
-
----
-
-#### A series] searching values based on index(key)
-
-```python
-import pandas as pd
-
-# method0 searching single value 
+`Searching values based on index(key)`
+```python 
 s[1]
-print('\n method0 searching single value, \n s[1] : \n',
-      s[1])
-
-# method1 searching single value 
-s["London"]
-print('\n method1 searching single value, \n s["London"] : \n',
-      s["London"])
-
-# method2 searching single value 
-s.London
-print('\n method2 searching single value, \n s.London : \n',
-      s.London)
-
-
-
-
-
-# method0 searching multi-values 
-s[[1,2]]
-print('\n\n method0 searching multi-values, \n s[[1,2]] : \n',
-      s[[1,2]])
-
-# method1 searching multi-values 
-s[["London","Rome"]]
-print('\n method1 searching multi-values, \n s[["London","Rome"]] : \n',
-      s[["London","Rome"]])
-
-# method2 searching multi-values 
-s[1:3]
-print('\n method2 searching multi-values, \n s[1:2] : \n',
-      s[1:3])
-
-# method3 searching multi-values 
-s["London":"Rome"]
-print('\n method3 searching multi-values, \n s["London":"Rome"] : \n',
-      s["London":"Rome"])
-
-
-
-
-
-#  method searching all values
-s.values
-print('\n\n method searching all values, \n s.values : \n',
-      s.values)
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
- method0 searching single value, 
- s[1] : 
- 8615246
-
- method1 searching single value, 
- s["London"] : 
- 8615246
-
- method2 searching single value, 
- s.London : 
- 8615246
-
-
- method0 searching multi-values, 
- s[[1,2]] : 
- London    8615246
-Rome      2872086
-Name: Population, dtype: int64
-
- method1 searching multi-values, 
- s[["London","Rome"]] : 
- London    8615246
-Rome      2872086
-Name: Population, dtype: int64
-
- method2 searching multi-values, 
- s[1:2] : 
- London    8615246
-Rome      2872086
-Name: Population, dtype: int64
-
- method3 searching multi-values, 
- s["London":"Rome"] : 
- London    8615246
-Rome      2872086
-Name: Population, dtype: int64
-
-
- method searching all values, 
- s.values : 
- [ 909976 8615246 2872086 2273305]
+8615246
 ```
 <hr class='division3'>
 </details>
+
+
 <br><br><br>
 
 ---
