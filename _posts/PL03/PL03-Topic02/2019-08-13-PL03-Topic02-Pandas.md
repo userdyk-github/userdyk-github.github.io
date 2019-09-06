@@ -1186,7 +1186,7 @@ Paris         2273305          France
 ---
 
 #### Arrangement
-
+`STEP1`
 ```python
 import pandas as pd
 
@@ -1214,7 +1214,7 @@ df
 <hr class='division3'>
 </details>
 <br>
-
+`STEP2`
 ```python
 df = df.sort_index(axis=1)
 df
@@ -1236,7 +1236,7 @@ df
 <hr class='division3'>
 </details>
 <br>
-
+`STEP3`
 ```python
 df = df.set_index(['Alphabet','rank'])
 df
@@ -1250,7 +1250,7 @@ df
 <hr class='division3'>
 </details>
 <br>
-
+`STEP4`
 ```python
 df = df.sort_index()
 df
@@ -1264,7 +1264,7 @@ df
 <hr class='division3'>
 </details>
 <br>
-
+`STEP5`
 ```python
 df.sort_values("rank", ascending=False)
 ```
@@ -1277,7 +1277,7 @@ df.sort_values("rank", ascending=False)
 <hr class='division3'>
 </details>
 <br>
-
+`STEP6`
 ```python
 df.sort_values("Population", ascending=False)
 ```
@@ -1290,7 +1290,7 @@ df.sort_values("Population", ascending=False)
 <hr class='division3'>
 </details>
 <br>
-
+`STEP7`
 ```python
 df.sort_values("State", ascending=False)
 ```
@@ -1303,7 +1303,7 @@ df.sort_values("State", ascending=False)
 <hr class='division3'>
 </details>
 <br>
-
+`STEP8`
 ```python
 df.sort_values("Alphabet", ascending=False)
 ```
