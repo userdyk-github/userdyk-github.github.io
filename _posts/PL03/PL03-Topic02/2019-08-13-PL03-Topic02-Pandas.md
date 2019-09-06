@@ -245,7 +245,7 @@ Name: Population, dtype: int64
 ```
 <hr class='division3'>
 </details>
-<br>
+
 ```python
 s.shape
 ```
@@ -257,7 +257,7 @@ s.shape
 ```
 <hr class='division3'>
 </details>
-<br>
+
 ```python
 s.unique()
 ```
@@ -269,7 +269,7 @@ array([1, 2, 3, 4], dtype=int64)
 ```
 <hr class='division3'>
 </details>
-<br>
+
 ```python
 s.value_counts()
 ```
@@ -294,11 +294,16 @@ Name: Population, dtype: int64
 ```python
 import pandas as pd
 
+s = pd.Series([1,1,1,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,4,4,4], 
+              name="Population")
+              
+s.median(), s.mean(), s.std(), s.min(), s.max()
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
+(3.0, 2.619047619047619, 0.9206622874969125, 1, 4)
 ```
 <hr class='division3'>
 </details>
