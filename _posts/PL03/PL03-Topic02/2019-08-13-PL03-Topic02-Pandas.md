@@ -21,15 +21,43 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
+## **Series**
+
+### ***One-column***
+
+---
+
+### ***Several columns***
+
+---
 
 <hr class="division2">
 
-## title2
+## **DataFrame**
+
+### ***One-dataframe***
+
+---
+
+### ***Several dataframes***
+
+---
 
 <hr class="division2">
 
-## title3
+## **Covert Data-Type**
+
+### ***DataFrame to Series***
+
+---
+
+### ***Series to DataFrame***
+
+---
+
+### ***DataFrame to numpy***
+
+---
 
 <hr class="division1">
 
