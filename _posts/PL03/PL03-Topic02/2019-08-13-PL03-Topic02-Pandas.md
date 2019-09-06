@@ -1727,8 +1727,90 @@ Paris2          2273305          France2
 <hr class='division3'>
 </details>
 <br>
+`Concat for left and right`
+```python
+df = pd.concat([df1, df2], axis=1)
+df
+```
+<details markdown='1'>
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
 
+```
+<hr class='division3'>
+</details>
+<br>
 
+```python
+df = pd.concat([df1, df2], axis=1, ignore_index=True)
+df
+```
+<details markdown='1'>
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python
+df = pd.concat([df1, df2], axis=1, keys=['C0', 'C1'])
+df
+```
+<details markdown='1'>
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+
+```
+<hr class='division3'>
+</details>
+<br>
+`Concat for up and down`
+```python
+df = pd.concat([df1, df2], axis=0)
+df
+```
+<details markdown='1'>
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python
+df = pd.concat([df1, df2], axis=0, ignore_index=True)
+df
+```
+<details markdown='1'>
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python
+df = pd.concat([df1, df2], axis=0, keys=['C0', 'C1'])
+df
+```
+<details markdown='1'>
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+
+```
+<hr class='division3'>
+</details>
+<br><br><br>
 
 ---
 
