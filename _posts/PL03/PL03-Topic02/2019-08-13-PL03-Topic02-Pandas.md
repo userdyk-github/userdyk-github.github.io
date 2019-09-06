@@ -719,7 +719,9 @@ Name: Stockholm, dtype: object
 ```python
 type(df.loc["Stockholm"])
 ```
-```OUTPUT : <class 'pandas.core.series.Series'>```
+```
+OUTPUT : <class 'pandas.core.series.Series'>
+```
 <hr class='division3'>
 </details>
 <br>
@@ -741,7 +743,9 @@ Rome      2872086   Italy
 ```python
 type(df.loc[["Paris","Rome"]])
 ```
-```OUTPUT : <class 'pandas.core.frame.DataFrame'>```
+```
+OUTPUT : <class 'pandas.core.frame.DataFrame'>
+```
 <hr class='division3'>
 </details>
 <br>
@@ -763,7 +767,9 @@ Paris     2273305  France
 ```python
 type(df[2:4])
 ```
-```OUTPUT : <class 'pandas.core.frame.DataFrame'>```
+```
+OUTPUT : <class 'pandas.core.frame.DataFrame'>
+```
 <hr class='division3'>
 </details>
 <br>
@@ -783,7 +789,9 @@ searching method1 single value
 ```python
 type(df.loc["Stockholm","Population"])
 ```
-```OUTPUT : <class 'numpy.int64'>```
+```
+OUTPUT : <class 'numpy.int64'>
+```
 <hr class='division3'>
 </details>
 <br>
@@ -803,7 +811,9 @@ searching method2 single value
 ```python
 type(df.loc["Stockholm"][0])
 ```
-```OUTPUT : <class 'numpy.int64'>```
+```
+OUTPUT : <class 'numpy.int64'>
+```
 <hr class='division3'>
 </details>
 <br>
@@ -823,7 +833,9 @@ searching method3 single value
 ```python
 type(df.loc["Stockholm"]["Population"])
 ```
-```OUTPUT : <class 'numpy.int64'>```
+```
+OUTPUT : <class 'numpy.int64'>
+```
 <hr class='division3'>
 </details>
 <br>
@@ -843,7 +855,9 @@ searching method4 single value
 ```python
 type(df.loc["Stockholm"].Population)
 ```
-```OUTPUT :  <class 'numpy.int64'>```
+```
+OUTPUT :  <class 'numpy.int64'>
+```
 <hr class='division3'>
 </details>
 <br>
@@ -865,7 +879,9 @@ Name: Population, dtype: int64
 ```python
 type(df.loc[["Paris","Rome"],"Population"])
 ```
-```OUTPUT : <class 'pandas.core.series.Series'>```
+```
+OUTPUT : <class 'pandas.core.series.Series'>
+```
 <hr class='division3'>
 </details>
 
