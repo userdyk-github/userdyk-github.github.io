@@ -29,19 +29,27 @@ List of posts to read before reading this article
 - Decision trees
 - Random forest methods
 
+<br><br><br>
+
 ---
 
 ## **Implement with sklearn**
 
 The scikit-learn provide
 
+<br><br><br>
+
 <hr class="division2">
 
 ## **Implement with tensorflow**
 
+<br><br><br>
+
 <hr class="division2">
 
 ## **Implement with pytorch**
+
+<br><br><br>
 
 <hr class="division1">
 
