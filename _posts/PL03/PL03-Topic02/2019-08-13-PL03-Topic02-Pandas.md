@@ -701,7 +701,7 @@ Index(['Population', 'State'], dtype='object')
 </details>
 <br>
 
-searching row or values of row
+**Searching row or values of row**
 ```python
 df.loc["Stockholm"]
 ```
@@ -969,7 +969,7 @@ OUTPUT : <class 'pandas.core.series.Series'>
 
 <br>
 
-searching columns or values of columns
+**Searching columns or values of columns**
 ```python
 df['Population']
 ```
