@@ -180,9 +180,92 @@ method2 : searching single value
 ```
 <hr class='division3'>
 </details>
+<br>
+
+```python 
+s[[1,2]]
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+method0 : searching multi-values
+```
+London    8615246
+Rome      2872086
+Name: Population, dtype: int64
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python 
+s[["London","Rome"]]
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+method1 : searching multi-values 
+```
+London    8615246
+Rome      2872086
+Name: Population, dtype: int64
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python 
+s[1:3]
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+method2 : searching multi-values
+```
+London    8615246
+Rome      2872086
+Name: Population, dtype: int64
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python 
+s["London":"Rome"]
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+method3 : searching multi-values 
+```
+London    8615246
+Rome      2872086
+Name: Population, dtype: int64
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python 
+s.values
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+method searching all values 
+```
+array([ 909976, 8615246, 2872086, 2273305], dtype=int64)
+```
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 ---
+
+
+
+
 
 #### A series] analysis
 
