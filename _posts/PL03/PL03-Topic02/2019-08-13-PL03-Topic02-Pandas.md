@@ -113,6 +113,7 @@ Name: Population, dtype: int64
 ```
 <hr class='division3'>
 </details>
+<br>
 
 ```python 
 s.index
