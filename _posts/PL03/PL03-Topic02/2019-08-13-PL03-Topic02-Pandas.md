@@ -708,7 +708,7 @@ df.loc["Stockholm"]
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-searching single row
+method searching single row
 ```
 Population    909976
 State         Sweden
@@ -741,7 +741,7 @@ df.loc[["Paris","Rome"]]
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-searching method1 multi-rows
+method1 searching multi-rows
 ```
        Population   State                  
 Paris     2273305  France
@@ -774,7 +774,7 @@ df[2:4]
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-searching method2 multi-rows
+method2 searching multi-rows
 ```
        Population   State                
 Rome      2872086   Italy
@@ -807,7 +807,7 @@ df.loc["Stockholm","Population"]
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-searching method1 single value
+method1 searching single value
 ```
 909976
 ```
@@ -838,7 +838,7 @@ df.loc["Stockholm"][0]
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-searching method2 single value
+method2 searching single value
 ```
 909976
 ```
@@ -869,7 +869,7 @@ df.loc["Stockholm"]["Population"]
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-searching method3 single value
+method3 searching single value
 ```
 909976
 ```
@@ -900,7 +900,7 @@ df.loc["Stockholm"].Population
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-searching method4 single value
+method4 searching single value
 ```
 909976
 ```
@@ -964,18 +964,25 @@ OUTPUT : <class 'pandas.core.series.Series'>
 
 
 
+
+
+
 <br>
 
 searching columns or values of columns
 ```python
-
+df['Population']
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-
+method1 searching single column
 ```
-
+Stockholm     909976
+London       8615246
+Rome         2872086
+Paris        2273305
+Name: Population, dtype: int64
 ```
 <br>
 <br>
@@ -991,22 +998,26 @@ searching columns or values of columns
 <br>
 **Data-type**
 ```
- INPUT : 
-OUTPUT : 
+ INPUT : type(df['Population'])
+OUTPUT : <class 'pandas.core.series.Series'>
 ```
 <hr class='division3'>
 </details>
 <br>
 
 ```python
-
+df.Population
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-
+method2 searching single column
 ```
-
+Stockholm     909976
+London       8615246
+Rome         2872086
+Paris        2273305
+Name: Population, dtype: int64
 ```
 <br>
 <br>
@@ -1022,22 +1033,22 @@ OUTPUT :
 <br>
 **Data-type**
 ```
- INPUT : 
-OUTPUT : 
+ INPUT : type(df.Population)
+OUTPUT : <class 'pandas.core.series.Series'>
 ```
 <hr class='division3'>
 </details>
 <br>
 
 ```python
-
+df['Population'][0]
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-
+method1 searching single value
 ```
-
+909976
 ```
 <br>
 <br>
@@ -1051,24 +1062,19 @@ OUTPUT :
 |Paris        | 2273305   |        France |
 
 <br>
-**Data-type**
-```
- INPUT : 
-OUTPUT : 
-```
 <hr class='division3'>
 </details>
 <br>
 
 ```python
-
+df.Population[0]
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-
+method2 searching single value
 ```
-
+909976
 ```
 <br>
 <br>
@@ -1082,24 +1088,19 @@ OUTPUT :
 |Paris        | 2273305   |        France |
 
 <br>
-**Data-type**
-```
- INPUT : 
-OUTPUT : 
-```
 <hr class='division3'>
 </details>
 <br>
 
 ```python
-
+df['Population']['Stockholm']
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-
+method3 searching single value
 ```
-
+909976
 ```
 <br>
 <br>
@@ -1113,24 +1114,19 @@ OUTPUT :
 |Paris        | 2273305   |        France |
 
 <br>
-**Data-type**
-```
- INPUT : 
-OUTPUT : 
-```
 <hr class='division3'>
 </details>
 <br>
 
 ```python
-
+df['Population'].Stockholm
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-
+method4 searching single value
 ```
-
+909976
 ```
 <br>
 <br>
@@ -1144,11 +1140,6 @@ OUTPUT :
 |Paris        | 2273305   |        France |
 
 <br>
-**Data-type**
-```
- INPUT : 
-OUTPUT : 
-```
 <hr class='division3'>
 </details>
 
