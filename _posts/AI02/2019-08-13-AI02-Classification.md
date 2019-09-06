@@ -118,11 +118,37 @@ weighted avg       0.96      0.96      0.96        45
 ### ***Classification through support vector machines***
 
 ```python
+from sklearn import datasets
+from sklearn import model_selection
+from sklearn import svm
+from sklearn import metrics
 
+# loading dataset
+iris = datasets.load_iris()
+X_train, X_test, y_train, y_test = model_selection.train_test_split(iris.data, iris.target, train_size=0.7)
+
+# classification for loaded dataset
+classifier = svm.SVC()
+classifier.fit(X_train, y_train)
+y_test_pred = classifier.predict(X_test)
+
+# result
+print(metrics.classification_report(y_test, y_test_pred))
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+```
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00        17
+           1       1.00      1.00      1.00        17
+           2       1.00      1.00      1.00        11
+
+    accuracy                           1.00        45
+   macro avg       1.00      1.00      1.00        45
+weighted avg       1.00      1.00      1.00        45
+```
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -172,11 +198,37 @@ weighted avg       0.96      0.96      0.96        45
 ### ***Classification through random forest methods***
 
 ```python
+from sklearn import datasets
+from sklearn import model_selection
+from sklearn import ensemble
+from sklearn import metrics
 
+# loading dataset
+iris = datasets.load_iris()
+X_train, X_test, y_train, y_test = model_selection.train_test_split(iris.data, iris.target, train_size=0.7)
+
+# classification for loaded dataset
+classifier = ensemble.RandomForestClassifier()
+classifier.fit(X_train, y_train)
+y_test_pred = classifier.predict(X_test)
+
+# result
+print(metrics.classification_report(y_test, y_test_pred))
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+```
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00        15
+           1       1.00      1.00      1.00        14
+           2       1.00      1.00      1.00        16
+
+    accuracy                           1.00        45
+   macro avg       1.00      1.00      1.00        45
+weighted avg       1.00      1.00      1.00        45
+```
 <hr class='division3'>
 </details>
 
