@@ -1736,7 +1736,15 @@ df
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
-
+            Population1           State1  Population2           State2
+London1       8615246.0  United Kingdom1          NaN              NaN
+London2             NaN              NaN    8615246.0  United Kingdom2
+Paris1        2273305.0          France1          NaN              NaN
+Paris2              NaN              NaN    2273305.0          France2
+Rome1         2872086.0           Italy1          NaN              NaN
+Rome2               NaN              NaN    2872086.0           Italy2
+Stockholm1     909976.0          Sweden1          NaN              NaN
+Stockholm2          NaN              NaN     909976.0          Sweden2
 ```
 <hr class='division3'>
 </details>
@@ -1750,7 +1758,15 @@ df
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
-
+                    0                1          2                3
+London1     8615246.0  United Kingdom1        NaN              NaN
+London2           NaN              NaN  8615246.0  United Kingdom2
+Paris1      2273305.0          France1        NaN              NaN
+Paris2            NaN              NaN  2273305.0          France2
+Rome1       2872086.0           Italy1        NaN              NaN
+Rome2             NaN              NaN  2872086.0           Italy2
+Stockholm1   909976.0          Sweden1        NaN              NaN
+Stockholm2        NaN              NaN   909976.0          Sweden2
 ```
 <hr class='division3'>
 </details>
@@ -1764,7 +1780,16 @@ df
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
-
+                    C0                           C1                 
+           Population1           State1 Population2           State2
+London1      8615246.0  United Kingdom1         NaN              NaN
+London2            NaN              NaN   8615246.0  United Kingdom2
+Paris1       2273305.0          France1         NaN              NaN
+Paris2             NaN              NaN   2273305.0          France2
+Rome1        2872086.0           Italy1         NaN              NaN
+Rome2              NaN              NaN   2872086.0           Italy2
+Stockholm1    909976.0          Sweden1         NaN              NaN
+Stockholm2         NaN              NaN    909976.0          Sweden2
 ```
 <hr class='division3'>
 </details>
@@ -1778,7 +1803,15 @@ df
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
-
+            Population1  Population2           State1           State2
+Stockholm1     909976.0          NaN          Sweden1              NaN
+London1       8615246.0          NaN  United Kingdom1              NaN
+Rome1         2872086.0          NaN           Italy1              NaN
+Paris1        2273305.0          NaN          France1              NaN
+Stockholm2          NaN     909976.0              NaN          Sweden2
+London2             NaN    8615246.0              NaN  United Kingdom2
+Rome2               NaN    2872086.0              NaN           Italy2
+Paris2              NaN    2273305.0              NaN          France2
 ```
 <hr class='division3'>
 </details>
@@ -1792,7 +1825,15 @@ df
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
-
+   Population1  Population2           State1           State2
+0     909976.0          NaN          Sweden1              NaN
+1    8615246.0          NaN  United Kingdom1              NaN
+2    2872086.0          NaN           Italy1              NaN
+3    2273305.0          NaN          France1              NaN
+4          NaN     909976.0              NaN          Sweden2
+5          NaN    8615246.0              NaN  United Kingdom2
+6          NaN    2872086.0              NaN           Italy2
+7          NaN    2273305.0              NaN          France2
 ```
 <hr class='division3'>
 </details>
@@ -1806,7 +1847,15 @@ df
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
-
+               Population1  Population2           State1           State2
+C0 Stockholm1     909976.0          NaN          Sweden1              NaN
+   London1       8615246.0          NaN  United Kingdom1              NaN
+   Rome1         2872086.0          NaN           Italy1              NaN
+   Paris1        2273305.0          NaN          France1              NaN
+C1 Stockholm2          NaN     909976.0              NaN          Sweden2
+   London2             NaN    8615246.0              NaN  United Kingdom2
+   Rome2               NaN    2872086.0              NaN           Italy2
+   Paris2              NaN    2273305.0              NaN          France2
 ```
 <hr class='division3'>
 </details>
