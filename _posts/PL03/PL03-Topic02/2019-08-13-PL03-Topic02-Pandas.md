@@ -450,6 +450,31 @@ Name: Population3, dtype: int64
 <br>
 
 ```python
+pd.concat([s1, s2, s3], axis=0)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+Stockholm1     909976
+London1       8615246
+Rome1         2872086
+Paris1        2273305
+Stockholm2     909976
+London2       8615246
+Rome2         2872086
+Paris2        2273305
+Stockholm3     909976
+London3       8615246
+Rome3         2872086
+Paris3        2273305
+dtype: int64
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python
 pd.concat([s1, s2, s3], axis=1)
 ```
 <details markdown="1">
