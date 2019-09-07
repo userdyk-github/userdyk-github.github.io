@@ -512,33 +512,168 @@ plt.show()
 
 #### Scatter plot
 
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
+
 ---
 
 #### Stem plot
+
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
 
 ---
 
 #### Contour plot
 
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
+
 ---
 
 #### Surface plot
+
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
 
 ---
 
 #### Histogram
 
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
 ---
 
 #### Bar chart
+
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
 
 ---
 
 #### Pie chart
 
----
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
 
 
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
 
 
 
