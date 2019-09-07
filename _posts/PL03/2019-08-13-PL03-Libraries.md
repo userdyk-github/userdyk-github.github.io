@@ -6,7 +6,7 @@ comments : false
 tags : [PL03]
 ---
 [Back to the previous page](https://userdyk-github.github.io/Study.html) <br>
-<a href='https://en.wikipedia.org/wiki/List_of_Python_software' target="_blank"><span class='jb-small'>See more wikipedia for a list of python libraries</span></a><br>
+<a href='https://en.wikipedia.org/wiki/List_of_Python_software' target="_blank">See more wikipedia for a list of python libraries</a><br>
 
 
 
