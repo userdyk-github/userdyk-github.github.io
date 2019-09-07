@@ -37,7 +37,7 @@ tags : [PL03]
   - <a href='https://pandas.pydata.org/pandas-docs/stable/reference/offset_frequency.html' target="_blank">https://pandas.pydata.org/pandas-docs/stable/reference/offset_frequency.html</a>
   - <a href='https://pandas.pydata.org/pandas-docs/stable/reference/extensions.html' target="_blank">https://pandas.pydata.org/pandas-docs/stable/reference/extensions.html</a>
   - <a href='https://pandas.pydata.org/pandas-docs/stable/reference/general_functions.html' target="_blank">https://pandas.pydata.org/pandas-docs/stable/reference/general_functions.html</a>
-  - <a href='https://pandas.pydata.org/pandas-docs/stable/reference/general_utility_functions.html#' target="_blank">(https://pandas.pydata.org/pandas-docs/stable/reference/general_utility_functions.html#</a>
+  - <a href='https://pandas.pydata.org/pandas-docs/stable/reference/general_utility_functions.html#' target="_blank">https://pandas.pydata.org/pandas-docs/stable/reference/general_utility_functions.html#</a>
   - <a href='https://pandas.pydata.org/pandas-docs/stable/reference/groupby.html' target="_blank">https://pandas.pydata.org/pandas-docs/stable/reference/groupby.html</a>
   - <a href='https://pandas.pydata.org/pandas-docs/stable/reference/indexing.html' target="_blank">https://pandas.pydata.org/pandas-docs/stable/reference/indexing.html</a>
   - <a href='https://pandas.pydata.org/pandas-docs/stable/reference/io.html' target="_blank">https://pandas.pydata.org/pandas-docs/stable/reference/io.html</a>
