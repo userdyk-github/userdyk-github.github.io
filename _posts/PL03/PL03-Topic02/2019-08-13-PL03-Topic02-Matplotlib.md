@@ -112,7 +112,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 np.random.seed(0)
-f1 = plt.figure(figsize=(10, 2))    # At the same time, Resize graph while defining objects
+f1 = plt.figure(figsize=(10, 2))    # Simultaneously resize graph while defining objects
 
 plt.title("Plot")
 plt.plot(np.random.randn(100))
@@ -263,6 +263,37 @@ plt.show()
 ![다운로드 (8)](https://user-images.githubusercontent.com/52376448/64471075-7843a500-d187-11e9-8d7c-79e32119f33c.png)
 <hr class='division3'>
 </details>
+<br><br><br>
+
+You can also create multiple Axes objects simultaneously with the subplots command. Axes objects are returned in two-dimensional ndarray form.
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
+fig, axes = plt.subplots(2, 2)
+
+np.random.seed(0)
+axes[0, 0].plot(np.random.rand(5))
+axes[0, 0].set_title("axes 1")
+axes[0, 1].plot(np.random.rand(5))
+axes[0, 1].set_title("axes 2")
+axes[1, 0].plot(np.random.rand(5))
+axes[1, 0].set_title("axes 3")
+axes[1, 1].plot(np.random.rand(5))
+axes[1, 1].set_title("axes 4")
+
+plt.tight_layout()
+plt.show()
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (9)](https://user-images.githubusercontent.com/52376448/64471127-fe5feb80-d187-11e9-93dc-3186c17ecb2f.png)
+<hr class='division3'>
+</details>
+
 
 ---
 
