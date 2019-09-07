@@ -95,7 +95,6 @@ print(df)
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Details code[2]</summary>
 <hr class='division3'>
-`OUTPUT`
 ```python
 # [0] : importing modules
 from sklearn import datasets
@@ -111,6 +110,7 @@ X, y = iris.data, iris.target
 clustering = cluster.KMeans(n_clusters=3)
 clustering.fit(X)
 ```
+`OUTPUT`
 ```
 KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
        n_clusters=3, n_init=10, n_jobs=None, precompute_distances='auto',
