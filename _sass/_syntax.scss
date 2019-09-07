@@ -79,8 +79,8 @@ code {
 }
 pre {
   overflow-x: auto;              /*01*/
-  display: inline-block;         /*02*/
-  /*display: block;*/            /*03*/
+  /*display: inline-block;*/         /*02*/
+  display: block;            /*03*/
   margin-top: 0;                 /*04*/
   margin-bottom: 1rem;           /*05*/
   padding: 1rem;                 /*06*/
@@ -89,8 +89,8 @@ pre {
   white-space: pre;              /*09*/
   white-space: pre-wrap;         /*10*/
   word-break: break-all;         /*11*/
-  /*word-wrap: normal;*/         /*12*/
-  word-wrap: break-word;         /*13*/
+  word-wrap: normal;         /*12*/
+  /*word-wrap: break-word;*/         /*13*/
   background-color: #f9f9f9;     /*14*/
 }
 /* 
