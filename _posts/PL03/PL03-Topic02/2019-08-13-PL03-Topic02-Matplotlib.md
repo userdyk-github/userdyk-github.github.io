@@ -171,7 +171,7 @@ Figure(432x288) 2045494563280
 
 ---
 
-### ***Subplot commands***
+### ***Axes object and subplot commands***
 
 ---
 
