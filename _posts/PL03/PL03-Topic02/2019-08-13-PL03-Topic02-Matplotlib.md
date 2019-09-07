@@ -322,7 +322,35 @@ plt.show()
 ![다운로드 (9)](https://user-images.githubusercontent.com/52376448/64471127-fe5feb80-d187-11e9-93dc-3186c17ecb2f.png)
 <hr class='division3'>
 </details>
+<br><br><br>
 
+The twinx command creates a new Axes object that shares the x-axis.
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
+fig, ax0 = plt.subplots()
+ax0.set_title("Plot")
+ax0.plot([10, 5, 2, 9, 7], 'r-', label="y0")
+ax0.set_xlabel("sharing x-axis")
+ax0.set_ylabel("y0")
+ax0.grid(False)
+
+ax1 = ax0.twinx()
+ax1.plot([100, 200, 220, 180, 120], 'g:', label="y1")
+ax1.set_ylabel("y1")
+ax1.grid(False)
+
+plt.show()
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (11)](https://user-images.githubusercontent.com/52376448/64471189-374c9000-d189-11e9-97d9-d7c37cfa8a26.png)
+<hr class='division3'>
+</details>
+<br><br><br>
 
 ---
 
