@@ -522,7 +522,7 @@ import numpy as np
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-
+![다운로드](https://user-images.githubusercontent.com/52376448/64471579-78936e80-d18e-11e9-9887-08883fe4f740.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -537,7 +537,7 @@ import numpy as np
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-
+![다운로드 (1)](https://user-images.githubusercontent.com/52376448/64471578-77fad800-d18e-11e9-8dc2-aa0658dd64b8.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -557,7 +557,7 @@ import numpy as np
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-
+![다운로드 (2)](https://user-images.githubusercontent.com/52376448/64471596-9234b600-d18e-11e9-9b28-ffa9a689f9a3.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -577,7 +577,7 @@ import numpy as np
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-
+![다운로드 (3)](https://user-images.githubusercontent.com/52376448/64471595-9234b600-d18e-11e9-87c8-5343d794e103.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -597,7 +597,7 @@ import numpy as np
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-
+![다운로드 (4)](https://user-images.githubusercontent.com/52376448/64471613-b0021b00-d18e-11e9-99b3-e97fbb2dccf3.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -616,7 +616,7 @@ import numpy as np
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-
+![다운로드 (5)](https://user-images.githubusercontent.com/52376448/64471612-b0021b00-d18e-11e9-918e-97aa64133e62.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -635,7 +635,7 @@ import numpy as np
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-
+![다운로드 (6)](https://user-images.githubusercontent.com/52376448/64471623-c6a87200-d18e-11e9-8932-e4a3ee3dd8cc.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -650,7 +650,7 @@ import numpy as np
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-
+![다운로드 (7)](https://user-images.githubusercontent.com/52376448/64471622-c6a87200-d18e-11e9-90b0-bafe3d85d707.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -670,7 +670,7 @@ import numpy as np
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-
+![다운로드 (8)](https://user-images.githubusercontent.com/52376448/64471621-c6a87200-d18e-11e9-93a0-a1a16c66c922.png)
 <hr class='division3'>
 </details>
 <br><br><br>
