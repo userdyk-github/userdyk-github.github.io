@@ -161,6 +161,10 @@ Figure(432x288) 2045494563280
 #### Line plot
 
 ```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -170,6 +174,10 @@ Figure(432x288) 2045494563280
 <br><br><br>
 
 ```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -179,6 +187,10 @@ Figure(432x288) 2045494563280
 <br><br><br>
 
 ```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -188,6 +200,10 @@ Figure(432x288) 2045494563280
 <br><br><br>
 
 ```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -197,6 +213,10 @@ Figure(432x288) 2045494563280
 <br><br><br>
 
 ```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -206,6 +226,10 @@ Figure(432x288) 2045494563280
 <br><br><br>
 
 ```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -215,6 +239,10 @@ Figure(432x288) 2045494563280
 <br><br><br>
 
 ```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -224,6 +252,10 @@ Figure(432x288) 2045494563280
 <br><br><br>
 
 ```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -233,6 +265,10 @@ Figure(432x288) 2045494563280
 <br><br><br>
 
 ```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -242,6 +278,10 @@ Figure(432x288) 2045494563280
 <br><br><br>
 
 ```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -251,6 +291,10 @@ Figure(432x288) 2045494563280
 <br><br><br>
 
 ```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -260,6 +304,10 @@ Figure(432x288) 2045494563280
 <br><br><br>
 
 ```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -269,6 +317,10 @@ Figure(432x288) 2045494563280
 <br><br><br>
 
 ```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -278,6 +330,10 @@ Figure(432x288) 2045494563280
 <br><br><br>
 
 ```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
