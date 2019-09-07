@@ -6,7 +6,8 @@ comments : false
 tags : [PL03]
 ---
 [Back to the previous page](https://userdyk-github.github.io/Study.html) <br>
-[See more wikipedia for a list of python libraries](https://en.wikipedia.org/wiki/List_of_Python_software) <br>
+<a href='https://en.wikipedia.org/wiki/List_of_Python_software' target="_blank">See more wikipedia for a list of python libraries</a><br>
+
 
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-NumPy.html'>NumPy</a>
   - <span class='jb-small'>[https://docs.scipy.org/doc/numpy/genindex.html](https://docs.scipy.org/doc/numpy/genindex.html)</span>
