@@ -165,10 +165,16 @@ Figure(432x288) 2045494563280
 import matplotlib.pyplot as plt
 import numpy as np
 
+# list plot : [0,1,2,3] -> [1,4,9,16]
+plt.title('Plot')
+plt.plot([1,4,9,16])
+
+plt.show()
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드 (12)](https://user-images.githubusercontent.com/52376448/64471321-14bb7680-d18b-11e9-8b1d-22a71a80138e.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -178,10 +184,16 @@ import numpy as np
 import matplotlib.pyplot as plt
 import numpy as np
 
+# list plot : [10,20,30,40] -> [1,4,9,16]
+plt.title('Plot')
+plt.plot([10,20,30,40],[1,4,9,16])
+
+plt.show()
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드 (13)](https://user-images.githubusercontent.com/52376448/64471326-374d8f80-d18b-11e9-8005-4e6867795c22.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -191,57 +203,31 @@ import numpy as np
 import matplotlib.pyplot as plt
 import numpy as np
 
+# list plot : [10,20,30,40] -> [1,4,9,16]
+# style(simple decoration) : color/marker/line
+plt.title("Plot")
+plt.plot([10, 20, 30, 40], [1, 4, 9, 16], 'rs--')
+
+plt.show()
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드 (14)](https://user-images.githubusercontent.com/52376448/64471332-68c65b00-d18b-11e9-895f-67163165eef0.png)
 <hr class='division3'>
 </details>
 <br><br><br>
 
+
+Style strings are specified in the order of color, marker, and line style. If some of these are omitted, the default value is applied.
+- [color ref](https://matplotlib.org/examples/color/named_colors.html)
+- [marker ref](https://matplotlib.org/examples/lines_bars_and_markers/marker_reference.html)
+- [line style ref](https://matplotlib.org/examples/lines_bars_and_markers/line_styles_reference.html)
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
 import numpy as np
 
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-<hr class='division3'>
-</details>
-<br><br><br>
-
-```python
-%matplotlib inline
-import matplotlib.pyplot as plt
-import numpy as np
-
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-<hr class='division3'>
-</details>
-<br><br><br>
-
-```python
-%matplotlib inline
-import matplotlib.pyplot as plt
-import numpy as np
-
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-<hr class='division3'>
-</details>
-<br><br><br>
-
-```python
-%matplotlib inline
-import matplotlib.pyplot as plt
-import numpy as np
 
 ```
 <details markdown="1">
@@ -256,18 +242,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import numpy as np
 
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-<hr class='division3'>
-</details>
-<br><br><br>
-
-```python
-%matplotlib inline
-import matplotlib.pyplot as plt
-import numpy as np
 
 ```
 <details markdown="1">
@@ -282,18 +256,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import numpy as np
 
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-<hr class='division3'>
-</details>
-<br><br><br>
-
-```python
-%matplotlib inline
-import matplotlib.pyplot as plt
-import numpy as np
 
 ```
 <details markdown="1">
@@ -321,6 +283,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import numpy as np
 
+
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -333,6 +296,77 @@ import numpy as np
 %matplotlib inline
 import matplotlib.pyplot as plt
 import numpy as np
+
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
 
 ```
 <details markdown="1">
