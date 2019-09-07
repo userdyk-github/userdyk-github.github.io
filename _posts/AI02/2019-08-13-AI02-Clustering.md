@@ -121,7 +121,7 @@ KMeans(algorithm='auto', copy_x=True, init='k-means++', max_iter=300,
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Details code[3]</summary>
 <hr class='division3'>
-```
+```python
 # [0] : importing modules
 from sklearn import datasets
 from sklearn import metrics
