@@ -59,6 +59,7 @@ print(metrics.confusion_matrix(y_test, y_test_pred))
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+On the below confusion matrix matrix, **the diagonals** correspond to the number of samples that are correctly classified for each level of the category variable, and **the off-diagonal elements** are the number of incorrectly classified samples. More specifically, the element of the confusion matrix C is the number of samples of category i that were categorized as j. 
 ```
               precision    recall  f1-score   support
 
