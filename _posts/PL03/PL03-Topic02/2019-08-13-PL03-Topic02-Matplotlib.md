@@ -152,7 +152,7 @@ Figure(432x288) 2045494563280
 ![다운로드 (6)](https://user-images.githubusercontent.com/52376448/64470689-89d67e00-d182-11e9-9a82-6c0a0aa44163.png)
 <hr class='division3'>
 </details>
-
+<br><br><br>
 
 
 
@@ -173,7 +173,46 @@ Figure(432x288) 2045494563280
 
 ### ***Axes object and subplot commands***
 
+```
+x1 = np.linspace(0.0, 5.0)
+x2 = np.linspace(0.0, 2.0)
+y1 = np.cos(2 * np.pi * x1) * np.exp(-x1)
+y2 = np.cos(2 * np.pi * x2)
+
+ax1 = plt.subplot(2, 1, 1)
+plt.plot(x1, y1, 'yo-')
+plt.title('A tale of 2 subplots')
+plt.ylabel('Damped oscillation')
+print(ax1)          # Identification for the allocated sub-object
+
+ax2 = plt.subplot(2, 1, 2)
+plt.plot(x2, y2, 'r.-')
+plt.xlabel('time (s)')
+plt.ylabel('Undamped')
+print(ax2)          # Identification for the allocated sub-object
+
+plt.tight_layout()  # The command automatically adjusts the spacing between plots
+plt.show()
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+AxesSubplot(0.125,0.536818;0.775x0.343182)
+AxesSubplot(0.125,0.125;0.775x0.343182)
+```
+![다운로드 (7)](https://user-images.githubusercontent.com/52376448/64470780-e4bca500-d183-11e9-8587-666a282f6e87.png)
+<hr class='division3'>
+</details>
+
+
+
+
+
 ---
+
+
 
 ### ***Line properties***
 
