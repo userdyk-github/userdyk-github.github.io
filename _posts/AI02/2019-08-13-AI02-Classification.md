@@ -346,7 +346,7 @@ weighted avg       1.00      1.00      1.00        45
 
 ### ***The resulting classification accuracy for each classifier***
 
-```
+```python
 from sklearn import datasets
 from sklearn import model_selection
 from sklearn import linear_model
