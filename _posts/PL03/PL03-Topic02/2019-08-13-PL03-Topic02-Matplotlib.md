@@ -223,6 +223,7 @@ Style strings are specified in the order of color, marker, and line style. If so
 - [color ref](https://matplotlib.org/examples/color/named_colors.html)
 - [marker ref](https://matplotlib.org/examples/lines_bars_and_markers/marker_reference.html)
 - [line style ref](https://matplotlib.org/examples/lines_bars_and_markers/line_styles_reference.html)
+
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
