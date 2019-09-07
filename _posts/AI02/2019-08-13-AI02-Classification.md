@@ -346,7 +346,7 @@ weighted avg       1.00      1.00      1.00        45
 
 ### ***The resulting classification accuracy for each classifier***
 
-{% highlight python %}
+```
 from sklearn import datasets
 from sklearn import model_selection
 from sklearn import linear_model
@@ -393,7 +393,7 @@ for m, Classifier in enumerate(classifiers):
     axes[m].legend(loc=4)
 
 plt.show()
-{% endhighlight %}
+```
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
