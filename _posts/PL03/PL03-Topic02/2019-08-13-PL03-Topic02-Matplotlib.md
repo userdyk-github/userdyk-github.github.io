@@ -228,11 +228,27 @@ Style strings are specified in the order of color, marker, and line style. If so
 import matplotlib.pyplot as plt
 import numpy as np
 
+# list plot : [10,20,30,40] -> [1,4,9,16]
+# details decoration
+plt.title("Plot")
+plt.plot([10, 20, 30, 40], [1, 4, 9, 16], c="b",
+         lw=5, ls="--", marker="o", ms=15, mec="g", mew=5, mfc="r")
 
+plt.show()
+
+# color           : c        : 선 색깔
+# linesidth       : lw       : 선 굵기
+# linestyle       : ls       : 선 스타일
+# marker          : marker   : 마커 종류
+# markersize      : ms       : 마커 크기
+# markeredgecolor : mec      : 마커 선 색깔
+# markeredgewidth : mew      : 마커 선 굵기
+# markerfacecolor : mfc      : 마커 내부 색깔
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드 (15)](https://user-images.githubusercontent.com/52376448/64471377-0752bc00-d18c-11e9-939e-a18d66a0254f.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -242,11 +258,20 @@ import numpy as np
 import matplotlib.pyplot as plt
 import numpy as np
 
+# list plot : [10,20,30,40] -> [1,4,9,16]
+# 그래프 척도(scale, size) 설정 : lim
+plt.title("Plot")
+plt.plot([10, 20, 30, 40], [1, 4, 9, 16],
+         c="b", lw=5, ls="--", marker="o", ms=15, mec="g", mew=5, mfc="r")
+plt.xlim(0, 50)
+plt.ylim(-10, 30)
 
+plt.show()
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드 (16)](https://user-images.githubusercontent.com/52376448/64471381-218c9a00-d18c-11e9-9feb-b0fc459a908e.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -256,11 +281,19 @@ import numpy as np
 import matplotlib.pyplot as plt
 import numpy as np
 
+# numpy plot
+x = np.linspace(-np.pi, np.pi, 50)
+y = np.cos(x)
 
+plt.title("Plot")
+plt.plot(x, y)
+
+plt.show()
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드 (17)](https://user-images.githubusercontent.com/52376448/64471392-3e28d200-d18c-11e9-8e12-274db830c086.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -270,10 +303,21 @@ import numpy as np
 import matplotlib.pyplot as plt
 import numpy as np
 
+# numpy plot
+# simple decoration
+# style : color/marker/line
+x = np.linspace(-np.pi, np.pi, 50)
+y = np.cos(x)
+
+plt.title("Plot")
+plt.plot(x, y, 'rs--')
+
+plt.show()
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드 (18)](https://user-images.githubusercontent.com/52376448/64471398-5698ec80-d18c-11e9-813c-bf64699f5d93.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -283,11 +327,22 @@ import numpy as np
 import matplotlib.pyplot as plt
 import numpy as np
 
+# numpy plot
+# axes tick set(1)
+x = np.linspace(-np.pi, np.pi, 50)
+y = np.cos(x)
 
+plt.title("Plot")
+plt.plot(x, y, 'rs--')
+plt.xticks([-np.pi, -np.pi / 2, 0, np.pi / 2, np.pi])
+plt.yticks([-1, 0, +1])
+
+plt.show()
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드 (19)](https://user-images.githubusercontent.com/52376448/64471421-8647f480-d18c-11e9-980b-d240678848a2.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -297,11 +352,23 @@ import numpy as np
 import matplotlib.pyplot as plt
 import numpy as np
 
+# numpy plot
+# axes tick set(2) : Latex
+x = np.linspace(-np.pi, np.pi, 50)
+y = np.cos(x)
 
+plt.title("Plot")
+plt.plot(x, y, 'rs--')
+plt.xticks([-np.pi, -np.pi / 2, 0, np.pi / 2, np.pi],
+           [r'$-\pi$', r'$-\pi/2$', r'$0$', r'$+\pi/2$', r'$+\pi$'])
+plt.yticks([-1, 0, 1], ["Low", "Zero", "High"])
+
+plt.show()
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드 (20)](https://user-images.githubusercontent.com/52376448/64471430-a1b2ff80-d18c-11e9-82bd-a20fae4a9dd0.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -311,11 +378,24 @@ import numpy as np
 import matplotlib.pyplot as plt
 import numpy as np
 
+# numpy plot
+# grid 설정 : grid
+x = np.linspace(-np.pi, np.pi, 50)
+y = np.cos(x)
 
+plt.title("Plot")
+plt.plot(x, y, 'rs--')
+plt.xticks([-np.pi, -np.pi / 2, 0, np.pi / 2, np.pi],
+           [r'$-\pi$', r'$-\pi/2$', r'$0$', r'$+\pi/2$', r'$+\pni$'])
+plt.yticks([-1, 0, 1], ["Low", "Zero", "High"])
+plt.grid(True)
+
+plt.show()
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드 (21)](https://user-images.githubusercontent.com/52376448/64471442-b68f9300-d18c-11e9-918c-941319187623.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -325,11 +405,19 @@ import numpy as np
 import matplotlib.pyplot as plt
 import numpy as np
 
+# numpy plot
+# multi-plot(1) : can be expressed with 1 plot
+t = np.arange(0., 5., 0.2)
 
+plt.title("Plot")
+plt.plot(t, t, 'r--', t, 0.5 * t**2, 'bs:', t, 0.2 * t**3, 'g^-')
+
+plt.show()
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드 (22)](https://user-images.githubusercontent.com/52376448/64471458-e3dc4100-d18c-11e9-8ee7-ae1969b8eaf7.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -339,11 +427,32 @@ import numpy as np
 import matplotlib.pyplot as plt
 import numpy as np
 
+# list plot
+# multi-plot(2) : using several plots
+plt.title("Plot")
+plt.plot([1, 4, 9, 16],
+         c="b", lw=5, ls="--", marker="o", ms=15, mec="g", mew=5, mfc="r")
+plt.plot([9, 16, 4, 1],
+         c="k", lw=3, ls=":", marker="s", ms=10, mec="m", mew=5, mfc="c")
 
+plt.show()
+
+# plt.hold(True)   # <- This code is required in version 1, 5
+# plt.hold(False)  # <- This code is required in version 1, 5
+
+# color           : c        : 선 색깔
+# linesidth       : lw       : 선 굵기
+# linestyle       : ls       : 선 스타일
+# marker          : marker   : 마커 종류
+# markersize      : ms       : 마커 크기
+# markeredgecolor : mec      : 마커 선 색깔
+# markeredgewidth : mew      : 마커 선 굵기
+# markerfacecolor : mfc      : 마커 내부 색깔
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드 (23)](https://user-images.githubusercontent.com/52376448/64471485-30278100-d18d-11e9-89fe-3854563aeab7.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -353,11 +462,22 @@ import numpy as np
 import matplotlib.pyplot as plt
 import numpy as np
 
+# numpy plot
+# setting legend 
+X = np.linspace(-np.pi, np.pi, 256)
+C, S = np.cos(X), np.sin(X)
 
+plt.title("Plot")
+plt.plot(X, C, ls="--", label="cosine")    # setting legend using label
+plt.plot(X, S, ls=":", label="sine")       # setting legend using label
+plt.legend(loc=2)                          # lov value means a position of legend in figure
+
+plt.show()
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드 (24)](https://user-images.githubusercontent.com/52376448/64471500-7381ef80-d18d-11e9-82ef-cb3c32753779.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -367,11 +487,22 @@ import numpy as np
 import matplotlib.pyplot as plt
 import numpy as np
 
+# numpy plot
+# naming axis
+X = np.linspace(-np.pi, np.pi, 256)
+C, S = np.cos(X), np.sin(X)
 
+plt.title("Cosine Plot")
+plt.plot(X, C, label="cosine")
+plt.xlabel("time")                # naming x-axis
+plt.ylabel("amplitude")           # naming x-axis
+
+plt.show()
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드 (25)](https://user-images.githubusercontent.com/52376448/64471505-8268a200-d18d-11e9-841f-c5317ecd1864.png)
 <hr class='division3'>
 </details>
 <br><br><br>
