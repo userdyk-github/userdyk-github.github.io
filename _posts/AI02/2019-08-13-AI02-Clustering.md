@@ -56,6 +56,29 @@ print(metrics.confusion_matrix(y, y_pred))
 ```
 <hr class='division3'>
 </details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Details code</summary>
+<hr class='division3'>
+`Details code[1]`
+```
+
+```
+<br><br><br>
+
+`Details code[3]`
+```
+
+```
+<br><br><br>
+
+`Details code[4]`
+```
+
+```
+<br><br><br>
+<hr class='division3'>
+</details>
+
 
 <hr class="division2">
 
