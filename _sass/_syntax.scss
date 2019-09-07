@@ -78,24 +78,25 @@ code {
   border-radius: 3px;
 }
 pre {
-  overflow-x: auto;              /*01*/
-  /*display: inline-block;*/         /*02*/
-  display: block;            /*03*/
-  margin-top: 0;                 /*04*/
-  margin-bottom: 1rem;           /*05*/
-  padding: 1rem;                 /*06*/
-  font-size: .8rem;              /*07*/
-  line-height: 1.4;              /*08*/
-  white-space: pre;              /*09*/
-  white-space: pre-wrap;         /*10*/
-  word-break: break-all;         /*11*/
-  word-wrap: normal;         /*12*/
-  /*word-wrap: break-word;*/         /*13*/
-  background-color: #f9f9f9;     /*14*/
+  /*display: block;*/                /*01*/
+  margin-top: 0;                 /*02*/
+  margin-bottom: 1rem;           /*03*/
+  padding: 1rem;                 /*04*/
+  font-size: .8rem;              /*05*/
+  line-height: 1.4;              /*06*/
+  white-space: pre;              /*07*/
+  white-space: pre-wrap;         /*08*/
+  word-break: break-all;         /*09*/
+  /*word-wrap: break-word;*/         /*10*/
+  background-color: #f9f9f9;     /*11*/
+  
+  overflow-x: auto;              /*12*/
+  display: inline-block;         /*13*/
+  word-wrap: normal;             /*14*/
 }
 /* 
-origin code view : turn off [01,02,12]
-all code view    : turn off [03,10,13]
+origin code view : turn off [12,13,14]
+all code view    : turn off []
 scrolling        : turn off []
 */
 
