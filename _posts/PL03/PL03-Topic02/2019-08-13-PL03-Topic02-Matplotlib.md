@@ -804,12 +804,12 @@ plt.show()
 import matplotlib.pyplot as plt
 import numpy as np
 
-x = np.linspace(-5, 2, 100)                     # 3th factor mean smoothness 
+x = np.linspace(-5, 2, 100)                # 3th factor mean smoothness 
 y =  x**3 + 5*x**2 + 10
 
-fig, ax = plt.subplots()                        # show a picture on screen
-ax.plot(x, y, color="blue", label="y(x)")       # here, you can change type of plot,
-                                                # if you want, use ax.step, ax.bar, ax.hist, ax.errorbar, ax.scatter, ax.fill_between, ax.quiver instead of ax.plot
+fig, ax = plt.subplots()                   # show a picture on screen
+ax.plot(x, y, color="blue", label="y(x)")  # here, you can change type of plot,
+                                           # if you want, use ax.step, ax.bar, ax.hist, ax.errorbar, ax.scatter, ax.fill_between, ax.quiver instead of ax.plot
 ax.set_xlabel("x")
 ax.set_ylabel("y")
 ax.legend()
