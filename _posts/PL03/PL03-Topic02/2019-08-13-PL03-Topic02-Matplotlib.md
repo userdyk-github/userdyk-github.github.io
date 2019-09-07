@@ -517,7 +517,12 @@ plt.show()
 import matplotlib.pyplot as plt
 import numpy as np
 
-
+np.random.seed(0)
+X = np.random.normal(0, 1, 100)
+Y = np.random.normal(0, 1, 100)
+plt.title("Scatter Plot")
+plt.scatter(X, Y)
+plt.show()
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -532,7 +537,15 @@ import numpy as np
 import matplotlib.pyplot as plt
 import numpy as np
 
-
+N = 30
+np.random.seed(0)
+x = np.random.rand(N)
+y1 = np.random.rand(N)
+y2 = np.random.rand(N)
+y3 = np.pi * (15 * np.random.rand(N))**2
+plt.title("Bubble Chart")
+plt.scatter(x, y1, c=y2, s=y3)   # s : size, c : color
+plt.show()
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -552,7 +565,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 import numpy as np
 
-
+x = np.linspace(0.1, 2 * np.pi, 10)
+plt.title("Stem Plot")
+plt.stem(x, np.cos(x), '-.')
+plt.show()
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -572,7 +588,19 @@ import numpy as np
 import matplotlib.pyplot as plt
 import numpy as np
 
+def f(x, y):
+    return (1 - x / 2 + x ** 5 + y ** 3) * np.exp(-x ** 2 - y ** 2)
 
+n = 256
+x = np.linspace(-3, 3, n)
+y = np.linspace(-3, 3, n)
+XX, YY = np.meshgrid(x, y)
+ZZ = f(XX, YY)
+
+plt.title("Contour plots")
+plt.contourf(XX, YY, ZZ, alpha=.75, cmap='jet')
+plt.contour(XX, YY, ZZ, colors='black')
+plt.show()
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -589,10 +617,21 @@ import numpy as np
 
 ```python
 %matplotlib inline
+from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
 import numpy as np
 
+X = np.arange(-4, 4, 0.25)
+Y = np.arange(-4, 4, 0.25)
+XX, YY = np.meshgrid(X, Y)
+RR = np.sqrt(XX**2 + YY**2)
+ZZ = np.sin(RR)
 
+fig = plt.figure()
+ax = Axes3D(fig)
+ax.set_title("3D Surface Plot")
+ax.plot_surface(XX, YY, ZZ, rstride=1, cstride=1, cmap='hot')
+plt.show()
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -611,12 +650,46 @@ import numpy as np
 import matplotlib.pyplot as plt
 import numpy as np
 
-
+np.random.seed(0)
+x = np.random.randn(1000)
+plt.title("Histogram")
+arrays, bins, patches = plt.hist(x, bins=10)   # bins : Interval to aggregate data
+plt.show()
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (5)](https://user-images.githubusercontent.com/52376448/64471612-b0021b00-d18e-11e9-918e-97aa64133e62.png)
+<hr class='division3'>
+</details>
+
+<br>
+
+```python
+arrays
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+array([  9.,  20.,  70., 146., 217., 239., 160.,  86.,  38.,  15.])
+```
+<hr class='division3'>
+</details>
+
+<br>
+
+```python
+bins
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+array([-3.04614305, -2.46559324, -1.88504342, -1.3044936 , -0.72394379,
+       -0.14339397,  0.43715585,  1.01770566,  1.59825548,  2.1788053 ,
+        2.75935511])
+```
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -630,7 +703,16 @@ import numpy as np
 import matplotlib.pyplot as plt
 import numpy as np
 
-
+y = [2, 3, 1]
+x = np.arange(len(y))
+xlabel = ['a', 'b', 'c']
+plt.title("Bar Chart")
+plt.bar(x, y)
+plt.xticks(x, xlabel)
+plt.yticks(sorted(y))
+plt.xlabel("abc")
+plt.ylabel("frequency")
+plt.show()
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -645,7 +727,18 @@ import numpy as np
 import matplotlib.pyplot as plt
 import numpy as np
 
+np.random.seed(0)
 
+people = ['a', 'b', 'c', 'd']
+y_pos = np.arange(len(people))
+performance = 3 + 10 * np.random.rand(len(people))
+error = np.random.rand(len(people))
+
+plt.title("Barh Chart")
+plt.barh(y_pos, performance, xerr=error, alpha=0.4)   # alpha : transparency [0,1]
+plt.yticks(y_pos, people)
+plt.xlabel('x label')
+plt.show()
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -665,7 +758,17 @@ import numpy as np
 import matplotlib.pyplot as plt
 import numpy as np
 
+plt.axis('equal')  # retaining the shape of a circle
 
+labels = ['frog', 'pig', 'dog', 'log']
+sizes = [15, 30, 45, 10]
+colors = ['yellowgreen', 'gold', 'lightskyblue', 'lightcoral']
+explode = (0, 0.1, 0, 0)
+plt.title("Pie Chart")
+plt.pie(sizes, explode=explode, labels=labels, colors=colors,
+        autopct='%1.1f%%', shadow=True, startangle=90)
+plt.axis('equal')
+plt.show()
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
