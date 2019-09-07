@@ -28,7 +28,6 @@ List of posts to read before reading this article
 import matplotlib.pyplot as plt
 import numpy as np
 
-
 x = np.linspace(1,10,10)
 y = np.linspace(2,20,10)
 
@@ -41,7 +40,25 @@ plt.show()
 ![다운로드 (2)](https://user-images.githubusercontent.com/52376448/64470527-68c05e00-d17f-11e9-85ee-bb3f4d89bea9.png)
 <hr class='division3'>
 </details>
+<br><br><br>
 
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(1,10,100)
+y = x**4 + x
+
+plt.plot(x,y)
+plt.show()
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (3)](https://user-images.githubusercontent.com/52376448/64470533-92798500-d17f-11e9-9f63-dd9e76e991e0.png)
+<hr class='division3'>
+</details>
 
 
 
