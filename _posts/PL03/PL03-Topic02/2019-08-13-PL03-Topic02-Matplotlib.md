@@ -190,7 +190,11 @@ Figure(432x288) 2045494563280
 <hr class='division3'>
 </details>
 
-```
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
 x1 = np.linspace(0.0, 5.0)
 x2 = np.linspace(0.0, 2.0)
 y1 = np.cos(2 * np.pi * x1) * np.exp(-x1)
@@ -222,10 +226,43 @@ AxesSubplot(0.125,0.125;0.775x0.343182)
 ![다운로드 (7)](https://user-images.githubusercontent.com/52376448/64470780-e4bca500-d183-11e9-8587-666a282f6e87.png)
 <hr class='division3'>
 </details>
+<br><br><br>
 
 
+If there are four plots in 2x2, draw as follows. The argument (2,2,1) for subplot can be abbreviated a single number of 221. Axes' position counts from top to bottom, from left to right.
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
 
+np.random.seed(0)
 
+plt.subplot(221)
+plt.plot(np.random.rand(5))
+plt.title("axes 1")
+
+plt.subplot(222)
+plt.plot(np.random.rand(5))
+plt.title("axes 2")
+
+plt.subplot(223)
+plt.plot(np.random.rand(5))
+plt.title("axes 3")
+
+plt.subplot(224)
+plt.plot(np.random.rand(5))
+plt.title("axes 4")
+
+plt.tight_layout()
+plt.show()
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (8)](https://user-images.githubusercontent.com/52376448/64471075-7843a500-d187-11e9-8d7c-79e32119f33c.png)
+<hr class='division3'>
+</details>
 
 ---
 
