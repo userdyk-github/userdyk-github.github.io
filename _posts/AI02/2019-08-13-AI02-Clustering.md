@@ -95,6 +95,7 @@ print(df)
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Details code[2]</summary>
 <hr class='division3'>
+`INPUT`
 ```python
 # [0] : importing modules
 from sklearn import datasets
