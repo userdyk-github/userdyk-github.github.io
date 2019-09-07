@@ -309,24 +309,31 @@ Mass Point</a>
 
 ---
 
-## **PL04 : Mathematica**
+## **PL04 : C++**
 
 - <a href='https://userdyk-github.github.io/pl04/PL04-Syntax.html'>Topic : Syntax</a>
-- <a href='https://userdyk-github.github.io/pl04/PL04-Applications.html'>Topic : Applications</a>
+- <a href='https://userdyk-github.github.io/pl04/PL04-Standard-library.html'>Topic : Standard library</a>
 
 ---
 
-## **PL05 : MATLAB**
+## **PL05 : Mathematica**
 
 - <a href='https://userdyk-github.github.io/pl05/PL05-Syntax.html'>Topic : Syntax</a>
 - <a href='https://userdyk-github.github.io/pl05/PL05-Applications.html'>Topic : Applications</a>
 
 ---
 
-## **PL06 : R**
+## **PL06 : MATLAB**
 
 - <a href='https://userdyk-github.github.io/pl06/PL06-Syntax.html'>Topic : Syntax</a>
-- <a href='https://userdyk-github.github.io/pl06/PL06-Packages.html'>Topic : Packages</a>
+- <a href='https://userdyk-github.github.io/pl06/PL06-Applications.html'>Topic : Applications</a>
+
+---
+
+## **PL07 : R**
+
+- <a href='https://userdyk-github.github.io/pl07/PL07-Syntax.html'>Topic : Syntax</a>
+- <a href='https://userdyk-github.github.io/pl07/PL07-Packages.html'>Topic : Packages</a>
 
 
 <hr class='division2'>
