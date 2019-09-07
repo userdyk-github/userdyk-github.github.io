@@ -124,6 +124,37 @@ plt.show()
 ![다운로드 (5)](https://user-images.githubusercontent.com/52376448/64470630-88588600-d181-11e9-8fb1-a244466c4da3.png)
 <hr class='division3'>
 </details>
+<br><br><br>
+
+**Checking the currently allocated figure object**
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
+f1 = plt.figure(1)
+
+plt.title("Plot")
+plt.plot([1, 2, 3, 4], 'ro:')
+
+f2 = plt.gcf()
+print(f1, id(f1))             # identification1 for object directly using id
+print(f2, id(f2))             # identification2 for object using gcf and id(in principle)
+plt.show()
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+Figure(432x288) 2045494563280
+Figure(432x288) 2045494563280
+```
+![다운로드 (6)](https://user-images.githubusercontent.com/52376448/64470689-89d67e00-d182-11e9-9a82-6c0a0aa44163.png)
+<hr class='division3'>
+</details>
+
+
+
 
 ---
 
