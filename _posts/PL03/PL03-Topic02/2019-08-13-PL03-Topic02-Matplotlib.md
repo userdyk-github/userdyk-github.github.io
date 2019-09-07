@@ -83,7 +83,7 @@ plt.show()
 
 ---
 
-### ***Figure object***
+### ***Figure object and plot commands***
 
 **Graphs plot in general**
 ```python
