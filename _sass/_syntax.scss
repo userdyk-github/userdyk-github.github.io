@@ -87,10 +87,10 @@ pre {
   font-size: .8rem;              /*07*/
   line-height: 1.4;              /*08*/
   white-space: pre;              /*09*/
-  /*white-space: pre-wrap;*/     /*10*/
+  white-space: pre-wrap;         /*10*/
   word-break: break-all;         /*11*/
-  word-wrap: normal;             /*12*/
-  /*word-wrap: break-word;*/     /*13*/
+  /*word-wrap: normal;*/         /*12*/
+  word-wrap: break-word;         /*13*/
   background-color: #f9f9f9;     /*14*/
 }
 /* 
