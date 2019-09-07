@@ -78,7 +78,7 @@ code {
   border-radius: 3px;
 }
 pre {
-  /*display: block;*/                /*01*/
+  display: block;                /*01*/
   margin-top: 0;                 /*02*/
   margin-bottom: 1rem;           /*03*/
   padding: 1rem;                 /*04*/
@@ -91,12 +91,12 @@ pre {
   background-color: #f9f9f9;     /*11*/
   
   overflow-x: auto;              /*12*/
-  display: inline-block;         /*13*/
+  /*display: inline-block;*/         /*13*/
   word-wrap: normal;             /*14*/
 }
 /* 
 origin code view : turn off [12,13,14]
-all code view    : turn off []
+all code view    : turn off [08,10,13]
 scrolling        : turn off []
 */
 
