@@ -164,8 +164,6 @@ On the above confusion matrix matrix, **the diagonals** correspond to the number
 
 ## title3
 
-<a href="https://userdyk-github.github.io/" target="_blank">hello</a>
-
 <hr class="division1">
 
 List of posts followed by this article
