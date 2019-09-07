@@ -78,21 +78,27 @@ code {
   border-radius: 3px;
 }
 pre {
-  overflow-x: auto;
-  display: inline-block;
-  /*display: block;*/
-  margin-top: 0;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  font-size: .8rem;
-  line-height: 1.4;
-  white-space: pre;
-  /*white-space: pre-wrap;*/
-  word-break: break-all;
-  word-wrap: normal;
-  /*word-wrap: break-word;*/
-  background-color: #f9f9f9;
+  overflow-x: auto;              /*01*/
+  display: inline-block;         /*02*/
+  /*display: block;*/            /*03*/
+  margin-top: 0;                 /*04*/
+  margin-bottom: 1rem;           /*05*/
+  padding: 1rem;                 /*06*/
+  font-size: .8rem;              /*07*/
+  line-height: 1.4;              /*08*/
+  white-space: pre;              /*09*/
+  /*white-space: pre-wrap;*/     /*10*/
+  word-break: break-all;         /*11*/
+  word-wrap: normal;             /*12*/
+  /*word-wrap: break-word;*/     /*13*/
+  background-color: #f9f9f9;     /*14*/
 }
+/* 
+all code  : turn off [03,10,13]
+scrolling : turn off []
+*/
+
+
 pre code {
   padding: 0;
   font-size: 100%;
