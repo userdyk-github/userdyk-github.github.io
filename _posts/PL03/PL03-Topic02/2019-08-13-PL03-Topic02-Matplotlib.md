@@ -126,7 +126,7 @@ plt.show()
 </details>
 <br><br><br>
 
-**Checking the currently allocated figure object**
+**Identification for the currently allocated figure object**
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
