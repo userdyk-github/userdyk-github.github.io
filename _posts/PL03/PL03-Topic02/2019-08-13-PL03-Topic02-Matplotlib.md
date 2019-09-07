@@ -173,6 +173,18 @@ Figure(432x288) 2045494563280
 
 ### ***Axes object and subplot commands***
 
+<p>
+  In some cases, it may be necessary to display multiple plots in an array within a single window, as follows. And each plot in Figure belongs to an object called Axes.
+</p>
+
+<p>
+  To create Axes within the Figure, you must explicitly acquire Axes objects using the original subplot command(~like plt.subplot). However, using the plot command(~like plt.plot) automatically generates Axes.
+</p>
+
+<p>
+  The subplot command creates grid-type Axes objects, and you can think of Figure as a matrix and Axes as an element of the matrix. For example, if you have two plots up and down, the row is 2 and the column is 1 is 2x1. The subplot command has three arguments, two numbers for the first two elements to indicate the shape of the entire grid matrix and the third argument to indicate where the graph is. Therefore, to draw two plots up and down in one Figure, you must execute the command as follows. Note that the number pointing to the first plot is not zero but one, since numeric indexing follows Matlab practices rather than Python.
+</p>
+
 ```
 x1 = np.linspace(0.0, 5.0)
 x2 = np.linspace(0.0, 2.0)
