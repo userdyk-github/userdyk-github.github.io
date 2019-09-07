@@ -397,11 +397,7 @@ plt.show()
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-```
 ![다운로드 (1)](https://user-images.githubusercontent.com/52376448/64465993-54ae3980-d14a-11e9-8e33-881b5537b2b2.png)
-```
-
-
 <hr class='division3'>
 </details>
 
