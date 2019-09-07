@@ -85,6 +85,27 @@ plt.show()
 
 ### ***Figure object***
 
+**Normal graph plot**
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
+np.random.seed(0)
+
+plt.title("Plot")
+plt.plot(np.random.randn(100))
+
+plt.show()
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (4)](https://user-images.githubusercontent.com/52376448/64470563-264b5100-d180-11e9-9360-63438cc1bdb1.png)
+<hr class='division3'>
+</details>
+
+
 ---
 
 ### ***Working with Figures***
