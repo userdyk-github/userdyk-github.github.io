@@ -23,6 +23,39 @@ List of posts to read before reading this article
 
 ## Clustering with sklearn
 
+```python
+from sklearn import datasets
+from sklearn import metrics
+from sklearn import cluster
+import numpy as np
+
+# loading dataset
+iris = datasets.load_iris()
+X, y = iris.data, iris.target
+
+# clustering
+clustering = cluster.KMeans(n_clusters=3)
+clustering.fit(X)
+y_pred = clustering.predict(X)
+
+# correction assigned different integer values to the groups
+idx_0, idx_1, idx_2 = (np.where(y_pred == n) for n in range(3))
+y_pred[idx_0], y_pred[idx_1], y_pred[idx_2] = 2, 0, 1
+
+# summarize the overlaps between the supervised and unsupervised classification
+print(metrics.confusion_matrix(y, y_pred))
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+[[ 0  0 50]
+ [48  2  0]
+ [14 36  0]]
+```
+<hr class='division3'>
+</details>
+
 <hr class="division2">
 
 ## title2
