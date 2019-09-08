@@ -5,15 +5,21 @@ title: Research
 
 ## Projects
 
+<br><br><br>
+
 ---
 
 ## Publications
+
+<br><br><br>
 
 ---
 
 ## Paper review
 
 [Go to the paper review page](https://userdyk-github.github.io/research/PAPER-REVIEW.html)
+
+<br><br><br>
 
 ---
 
@@ -32,6 +38,8 @@ title: Research
 <a href=''></a><br>
 <a href=''></a><br>
 
+
+<br><br><br>
 
 
 ### Domestic research trend
