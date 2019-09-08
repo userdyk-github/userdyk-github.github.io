@@ -111,6 +111,10 @@ title: RESEARCH
 ### _Academic research trend_
 
 #### _International_
+> STANDFORD | <a href='http://ai.stanford.edu/' target="_blank">URL</a><br>
+>> <a href='http://physbam.stanford.edu/~fedkiw/">Ron Fedkiw</a>|<br>
+> <a href='' target="_blank"></a>
+
 
 #### _Domestic_
 > KAIST | <a href='https://kis.kaist.ac.kr/index.php?mid=KIAI_O' target="_blank">URL</a><br>
