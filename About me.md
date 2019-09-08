@@ -27,10 +27,10 @@ Email(sending only) : userdyk@naver.com <br><br>
 
 <hr>
 
-> GitHub | [URL](https://github.com/aglipthhau/)
-> LinkedIn | [URL](https://www.linkedin.com/in/userdyk/)
-> ResearchGate | [URL](https://www.researchgate.net/profile/Dongmyeong_Lee2)
-> Google Scholar | [URL]()
-> Resume | 
+### GitHub | [URL](https://github.com/aglipthhau/)
+### LinkedIn | [URL](https://www.linkedin.com/in/userdyk/)
+### ResearchGate | [URL](https://www.researchgate.net/profile/Dongmyeong_Lee2)
+### Google Scholar | [URL]()
+### Resume | 
 
 <hr>
