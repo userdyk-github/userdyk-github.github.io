@@ -112,11 +112,11 @@ title: RESEARCH
 
 #### _International_
 > STANDFORD | <a href='http://ai.stanford.edu/' target="_blank">URL</a><br>
->> <a href='http://physbam.stanford.edu/~fedkiw/">Ron Fedkiw</a>|<br>
+>> <a href='http://physbam.stanford.edu/~fedkiw/">Ron Fedkiw</a><br>
 > <a href='' target="_blank"></a>
 
 > Berkeley | <a href='https://bair.berkeley.edu/' target="_blank">URL</a><br>
->> <a href='http://physbam.stanford.edu/~fedkiw/">Ron Fedkiw</a>|<br>
+>> <a href='http://physbam.stanford.edu/~fedkiw/">Ron Fedkiw</a><br>
 > <a href='' target="_blank"></a>
 
 
