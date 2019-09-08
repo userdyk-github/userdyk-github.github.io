@@ -37,9 +37,14 @@ title: Research
 
 
 ### _Industry research trend_
+
+#### _International_
 > <a href='https://deepmind.com' target="_blank">DEEPMIND</a><br>
 > <a href='https://openai.com/' target="_blank">OPENAI</a><br>
 > <a href='https://www.aboutamazon.com/research' target="_blank">AMAZON</a><br>
+
+#### _Domestic_
+
 > <a href='https://clova.ai/ko/research/research-areas.html' target="_blank">NAVER</a><br>
 > <a href='https://kakao.ai/tech' target="_blank">KAKAO</a><br>
 > <a href='https://research.samsung.com/artificial-intelligence' target="_blank">SAMSUNG</a><br>
@@ -48,8 +53,8 @@ title: Research
 
 <br><br><br>
 
-
 ### _Academic research trend_
+
 > <a href='https://kis.kaist.ac.kr/index.php?mid=KIAI_O' target="_blank">KAIST</a><br>
 > <a href='http://mllab.snu.ac.kr/' target="_blank">SNU, Hyun Oh Song</a><br>
 > <a href='http://vision.snu.ac.kr/' target="_blank">SNU, Gunhee Kim</a><br>
