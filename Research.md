@@ -41,11 +41,11 @@ title: Research
 #### _International_
 
 > DEEPMIND 
->> <a href='https://deepmind.com' target="_blank">research</a>|<br> 
+>> <a href='https://deepmind.com/research' target="_blank">research</a>|<br> 
 > <a href='' target="_blank"></a>
 
 > OPENAI
->> <a href='https://openai.com/' target="_blank">research</a>|<br>
+>> <a href='https://openai.com/progress/' target="_blank">research</a>|<br>
 > <a href='' target="_blank"></a>
 
 > AMAZON
