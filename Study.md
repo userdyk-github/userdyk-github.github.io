@@ -66,6 +66,8 @@ title: Study
 - <a href='https://userdyk-github.github.io/ai05/AI05-.html'>Topic : Motion analysis</a>
 - <a href='https://userdyk-github.github.io/ai05/AI05-.html'>Topic : Image restoration</a>
 
+<br><br><br>
+
 <hr class='division2'>
 
 ## **EE01 : Integrated circuits**
@@ -106,6 +108,8 @@ title: Study
 - <a href='https://userdyk-github.github.io/ee03/EE03-.html'>Topic : 3</a>
 - <a href='https://userdyk-github.github.io/ee03/EE03-.html'>Topic : 4</a>
 - <a href='https://userdyk-github.github.io/ee03/EE03-.html'>Topic : 5</a>
+
+<br><br><br>
 
 <hr class='division2'>
 
@@ -199,6 +203,8 @@ scopic Structure</a>
 - <a href='https://userdyk-github.github.io/phy06/PHY06-.html'>Topic : The Reissner–Nordstrom solution for a charged
 Mass Point</a>
 
+<br><br><br>
+
 <hr class='division2'>
 
 
@@ -285,6 +291,8 @@ Mass Point</a>
 - <a href='https://userdyk-github.github.io/math06/MATH06-Metaheuristics.html'>Topic : Metaheuristics</a>
 
 
+
+<br><br><br>
 
 <hr class='division2'>
 
