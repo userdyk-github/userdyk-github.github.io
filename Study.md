@@ -4,9 +4,6 @@ layout: page
 title: STUDY
 ---
 
-
-![캡처](https://user-images.githubusercontent.com/52376448/64490428-98628980-d297-11e9-8ff2-bf3ad91b8ef4.JPG)
-
 ## _AI01 : Data science analysis_
 
 > <a href='https://userdyk-github.github.io/ai01/AI01-Loading-and-manipulating-images.html'>Topic : Loading and manipulating images</a><br>
