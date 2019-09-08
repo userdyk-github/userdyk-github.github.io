@@ -1,9 +1,9 @@
 ---
 layout : post
 title : PAPER-REVIEW
-categories: [PAPER-REVIEW]
+categories: [RESEARCH]
 comments : true
-tags : [PAPER-REVIEW]
+tags : [RESEARCH]
 ---
 [Back to the previous page](https://userdyk-github.github.io/Study.html) <br>
 List of posts to read before reading this article
