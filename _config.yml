@@ -5,7 +5,7 @@ title:               WISDOM
 tagline:             'Dongmyeong Lee'
 description:         'Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning. -Albert Einstein- '
 url:                 'http://userdyk-github.github.io'
-baseurl:             ''
+baseurl:             'wisdom'
 
 # About/contact
 author:
