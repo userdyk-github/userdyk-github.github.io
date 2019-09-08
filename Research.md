@@ -29,7 +29,7 @@ title: Research
 
 > <a href='https://artificialintelligence-news.com/'>AINEWS</a><br>
 
-### _International research trend_
+### _Industry research trend_
 > <a href='https://deepmind.com'>deepmind</a><br>
 > <a href='https://openai.com/'>OpenAI</a><br>
 > <a href='https://www.aboutamazon.com/research'>Amazon</a><br>
@@ -46,7 +46,7 @@ title: Research
 <br><br><br>
 
 
-### _Domestic research trend_
+### _Academic research trend_
 > <a href='https://kis.kaist.ac.kr/index.php?mid=KIAI_O'>KAIST</a><br>
 > <a href='http://mllab.snu.ac.kr/'>SNU, Hyun Oh Song</a><br>
 > <a href='http://vision.snu.ac.kr/'>SNU, Gunhee Kim</a><br>
