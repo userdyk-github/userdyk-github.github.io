@@ -1,9 +1,9 @@
 ---
 layout : post
-title : AI01
-categories: [AI01]
+title : PAPER-REVIEW
+categories: [PAPER-REVIEW]
 comments : true
-tags : [AI01]
+tags : [PAPER-REVIEW]
 ---
 [Back to the previous page](https://userdyk-github.github.io/Study.html) <br>
 List of posts to read before reading this article
