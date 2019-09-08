@@ -9,7 +9,7 @@ tags : [RESEARCH]
 
 
 
-<hr class="division1">
+
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">RELATED WORKS</summary>
@@ -18,3 +18,4 @@ tags : [RESEARCH]
 </details>
 
 <br><br><br>
+<hr class="division1">
