@@ -5,7 +5,7 @@ title: Study
 
 
 
-## **AI01 : Data science analysis**
+## AI01 : Data science analysis
 
 > <a href='https://userdyk-github.github.io/ai01/AI01-Loading-and-manipulating-images.html'>Topic : Loading and manipulating images</a>
 > <a href='https://userdyk-github.github.io/ai01/AI01-Manually-scaling-image-pixel-data.html'>Topic : Manually scaling image pixel data</a>
