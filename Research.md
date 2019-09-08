@@ -3,9 +3,6 @@ layout: page
 title: RESEARCH
 ---
 
-<hr class='division4'>
-<br><br><br>
-
 ## _Projects_
 
 <br><br><br>
