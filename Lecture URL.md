@@ -3,6 +3,8 @@ layout: page
 title: Lecture URL
 ---
 
+---
+
 ## Physics
 
 ### General physics
@@ -34,6 +36,8 @@ title: Lecture URL
 <br>
 
 <hr class='division2'>
+
+<br>
 
 ## Computer Science
 
@@ -70,6 +74,8 @@ title: Lecture URL
 <br>
 
 <hr class='division2'>
+
+<br>
 
 ## Artificial Intelligence
 
