@@ -47,7 +47,7 @@ title: Research
 
 > NAVER | <a href='https://clova.ai/ko/research/research-areas.html' target="_blank">research</a><br>
 > KAKAO | <a href='https://kakao.ai/tech' target="_blank">research</a><br>
-> <a href='https://research.samsung.com/artificial-intelligence' target="_blank">SAMSUNG</a><br>
+> SAMSUNG | <a href='https://research.samsung.com/artificial-intelligence' target="_blank">research</a><br>
 > <a href='' target="_blank"></a><br>
 
 
