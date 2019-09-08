@@ -7,7 +7,7 @@ title: Study
 
 
 
-## AI01 : Data science analysis
+## _AI01 : Data science analysis_
 
 > <a href='https://userdyk-github.github.io/ai01/AI01-Loading-and-manipulating-images.html'>Topic : Loading and manipulating images</a><br>
 > <a href='https://userdyk-github.github.io/ai01/AI01-Manually-scaling-image-pixel-data.html'>Topic : Manually scaling image pixel data</a><br>
@@ -18,7 +18,7 @@ title: Study
 
 ---
 
-## AI02 : Machine learning
+## _AI02 : Machine learning_
 
 > <a href='https://userdyk-github.github.io/ai02/AI02-.html'>Topic : Dimensionality reduction</a><br>
 > <a href='https://userdyk-github.github.io/ai02/AI02-Regression.html'>Topic : Regression</a><br>
