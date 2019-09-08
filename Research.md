@@ -25,6 +25,12 @@ title: RESEARCH
 
 ## _Research trends_
 
+### _NEWS_
+> <a href='http://www.aitimes.kr' target="_blank">인공지능신문</a><br>
+
+<br><br><br>
+
+
 ### _Journal and conference_
 > <a href='https://nips.cc' target="_blank">Neural Information Processing Systems (NIPS)</a><br>
 > <a href='https://www.iclr.cc' target="_blank">International Conference on Learning Representations</a><br>
