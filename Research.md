@@ -41,7 +41,7 @@ title: Research
 > <a href='https://openai.com/' target="_blank">OpenAI</a><br>
 > <a href='https://www.aboutamazon.com/research' target="_blank">Amazon</a><br>
 > <a href='https://clova.ai/ko/research/research-areas.html' target="_blank">NAVER</a><br>
-> <a href='' target="_blank"></a><br>
+> <a href='https://kakao.ai/tech' target="_blank"></a>kakao<br>
 > <a href='' target="_blank"></a><br>
 
 
