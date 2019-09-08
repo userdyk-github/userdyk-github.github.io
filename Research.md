@@ -114,7 +114,13 @@ title: RESEARCH
 
 #### _Domestic_
 > <a href='https://kis.kaist.ac.kr/index.php?mid=KIAI_O' target="_blank">KAIST</a><br>
-> <a href='http://mllab.snu.ac.kr/' target="_blank">SNU, Hyun Oh Song</a><br>
-> <a href='http://vision.snu.ac.kr/' target="_blank">SNU, Gunhee Kim</a><br>
-> <a href='https://mindlab-skku.github.io/' target="_blank">SKKU, Taesup Moon</a><br>
+>> <a href='https://aailab.kaist.ac.kr/xe2/home' target="_blank">Il-Chul Moon</a>|<br>
+> <a href='' target="_blank"></a>
+
+> <a href='https://cse.snu.ac.kr/research/groups' target="_blank">Seoul National University</a><br>
+>> <a href='http://mllab.snu.ac.kr/' target="_blank">Hyun Oh Song</a> | <a href='http://vision.snu.ac.kr/' target="_blank">Gunhee Kim</a> | <br>
+> <a href='' target="_blank"></a>
+
+> <a href='https://sci-cube.skku.edu/sci-cube/professor/faculty_research_science.do' target="_blank">SKKU</a><br>
+>> <a href='https://mindlab-skku.github.io/' target="_blank">Taesup Moon</a> | <br>
 > <a href='' target="_blank"></a><br>
