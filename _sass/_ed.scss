@@ -54,6 +54,41 @@ body {
       -ms-text-size-adjust: 100%;
 }
 
+.backcontainer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  heigh: 100%;
+}
+
+.hero {
+  heigh: 100%;
+  width: 100%;
+  background: url("http://userdyk-github.github.io/assets/img/homeimg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position;
+}
+
+.hero-copy {
+  padding-top: em(70);
+  text-align: center;
+  
+  h1 {
+    font-size: em(48);
+    margin-bottom: .5em;
+  }
+  
+  p {
+    margin: auto;
+    margin-bottom: 3em;
+    font-weight: 200;
+    line-height: 1.4em;
+  }
+  
+}
+
 .content {
   margin-bottom: 4rem;
 }
