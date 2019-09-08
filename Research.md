@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Research
+title: RESEARCH
 ---
 
 <hr class='division4'>
