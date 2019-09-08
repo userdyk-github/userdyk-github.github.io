@@ -41,7 +41,7 @@ title: Research
 #### _International_
 
 > DEEPMIND 
->> <a href='https://deepmind.com' target="_blank">research</a><br> |
+>> <a href='https://deepmind.com' target="_blank">research</a>|<br> 
 > <a href='' target="_blank"></a><br>
 
 > OPENAI
