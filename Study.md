@@ -3,7 +3,7 @@ layout: page
 title: Study
 ---
 
-<hr class='division2'>
+---
 
 ## **AI01 : Data science analysis**
 
