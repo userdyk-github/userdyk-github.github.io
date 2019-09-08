@@ -32,12 +32,8 @@ html,
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
-#background {
-  overflow-x: inherit !important;
-}
 
 html {
   font-family: $main-font;
