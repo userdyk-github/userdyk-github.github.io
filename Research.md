@@ -40,7 +40,7 @@ title: Research
 > <a href='https://deepmind.com' target="_blank">deepmind</a><br>
 > <a href='https://openai.com/' target="_blank">OpenAI</a><br>
 > <a href='https://www.aboutamazon.com/research' target="_blank">Amazon</a><br>
-> <a href='https://clova.ai/ko/research/research-areas.html' target="_blank"></a>NAVER<br>
+> <a href='https://clova.ai/ko/research/research-areas.html' target="_blank">NAVER</a><br>
 > <a href='' target="_blank"></a><br>
 > <a href='' target="_blank"></a><br>
 
