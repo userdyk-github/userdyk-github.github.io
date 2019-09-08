@@ -65,6 +65,10 @@ title: RESEARCH
 >> <a href='https://www.philips.com/a-w/research/home' target="_blank">research</a>|<br>
 > <a href='' target="_blank"></a>
 
+> NVIDIA 
+>> <a href='https://www.nvidia.com/en-us/research/' target="_blank">research</a>|<br>
+> <a href='' target="_blank"></a>
+
 
 
 
