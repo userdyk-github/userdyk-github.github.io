@@ -46,6 +46,7 @@ title: Research
 
 > OPENAI
 >> <a href='https://openai.com/' target="_blank">research</a>|<br>
+> <a href='' target="_blank"></a>
 
 > AMAZON
 >> <a href='https://www.aboutamazon.com/research' target="_blank">research</a>|<br>
