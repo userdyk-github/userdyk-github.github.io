@@ -3,7 +3,7 @@ layout: page
 title: Study
 ---
 
----
+
 
 ## **AI01 : Data science analysis**
 
