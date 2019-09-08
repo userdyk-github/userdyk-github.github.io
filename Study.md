@@ -36,7 +36,7 @@ title: Study
 ---
 
 
-## AI03 : Deep learning
+## _AI03 : Deep learning_
 
 > <a href='https://userdyk-github.github.io/ai03/AI03-Fundamental-of-deep-learning.html'>Topic : Fundamental of deep learning</a><br>
 > <a href='https://userdyk-github.github.io/ai03/AI03-.html'>Topic : Convolutional neural networks</a><br>
@@ -48,7 +48,7 @@ title: Study
 
 ---
 
-## AI04 : Reinforcement learning
+## _AI04 : Reinforcement learning_
 
 > <a href='https://userdyk-github.github.io/ai04/AI04-.html'>Topic : 1</a><br>
 > <a href='https://userdyk-github.github.io/ai04/AI04-.html'>Topic : 2</a><br>
@@ -58,7 +58,7 @@ title: Study
 
 ---
 
-## AI05 : Computer vision
+## _AI05 : Computer vision_
 
 > <a href='https://userdyk-github.github.io/ai05/AI05-Basic-image-processing.html'>Topic : Basic image processing</a><br>
 > <a href='https://userdyk-github.github.io/ai05/AI05-.html'>Topic : Image classification</a><br>
@@ -72,7 +72,7 @@ title: Study
 
 <hr class='division2'>
 
-## EE01 : Integrated circuits
+## _EE01 : Integrated circuits_
 
 > <a href='https://userdyk-github.github.io/ee01/EE01-.html'>Topic : Transistor–Transistor Logic</a><br>
 > <a href='https://userdyk-github.github.io/ee01/EE01-.html'>Topic : Emitter-Coupled Logic</a><br>
@@ -90,7 +90,7 @@ title: Study
 
 ---
 
-## EE02 : Semiconductor devices
+## _EE02 : Semiconductor devices_
 
 > <a href='https://userdyk-github.github.io/ee02/EE02-.html'>Topic : Semiconductor Physics</a><br>
 > <a href='https://userdyk-github.github.io/ee02/EE02-.html'>Topic : p-n Junctions</a><br>
@@ -103,7 +103,7 @@ title: Study
 
 ---
 
-## EE03 : Signal processing
+## _EE03 : Signal processing_
 
 > <a href='https://userdyk-github.github.io/ee03/EE03-.html'>Topic : 1</a><br>
 > <a href='https://userdyk-github.github.io/ee03/EE03-.html'>Topic : 2</a><br>
@@ -116,7 +116,7 @@ title: Study
 <hr class='division2'>
 
 
-## PHY01 : Classical mechanics
+## _PHY01 : Classical mechanics_
 
 > <a href='https://userdyk-github.github.io/phy01/PHY01-Physical-constant-and-unit-and-equation.html'>Physical constant and unit and equation</a><br>
 > <a href='https://userdyk-github.github.io/phy01/PHY01-Kinematics.html'>Topic : Kinematics</a><br>
@@ -131,7 +131,7 @@ title: Study
 
 ---
 
-## PHY02 : Electromagnetism
+## _PHY02 : Electromagnetism_
 
 > <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Topic : Electrostatics</a><br>
 > <a href='https://userdyk-github.github.io/phy02/PHY02-.html'>Topic : Special techniques</a><br>
@@ -147,7 +147,7 @@ title: Study
 
 ---
 
-## PHY03 : Thermodynamic and statistical mechanics
+## _PHY03 : Thermodynamic and statistical mechanics_
 
 > <a href='https://userdyk-github.github.io/phy03/PHY03-.html'>Topic : Preliminaries</a><br>
 > <a href='https://userdyk-github.github.io/phy03/PHY03-.html'>Topic : Kinetic theory of gases</a><br>
@@ -164,7 +164,7 @@ title: Study
 
 ---
 
-## PHY04 : Quantum theory
+## _PHY04 : Quantum theory_
 
 > <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>Topic : Blackbody radiation</a><br>
 > <a href='https://userdyk-github.github.io/phy04/PHY04-.html'>Topic : The schrödinger equation</a><br>
@@ -182,7 +182,7 @@ title: Study
 
 ---
 
-## PHY05 : Solid state physics
+## _PHY05 : Solid state physics_
 
 > <a href='https://userdyk-github.github.io/phy05/PHY05-.html'>Topic : Physics of solids without considering micro-
 scopic Structure</a><br>
@@ -196,7 +196,7 @@ scopic Structure</a><br>
 
 ---
 
-## PHY06 : Theory of relativity
+## _PHY06 : Theory of relativity_
 
 > <a href='https://userdyk-github.github.io/phy06/PHY06-.html'>Topic : The orbits in general relativity</a><br>
 > <a href='https://userdyk-github.github.io/phy06/PHY06-.html'>Topic : Light bending in the gravitational field</a><br>
@@ -210,7 +210,7 @@ Mass Point</a><br>
 <hr class='division2'>
 
 
-## MATH01 : Linear algebra
+## _MATH01 : Linear algebra_
 
 > <a href='https://userdyk-github.github.io/math01/MATH01-Basic-concepts.html'>Topic : Basic concepts</a><br>
 > <a href='https://userdyk-github.github.io/math01/MATH01-Linear-equation-systems.html'>Topic : Linear equation systems</a><br>
@@ -223,7 +223,7 @@ Mass Point</a><br>
 
 ---
 
-## MATH02 : Calulus
+## _MATH02 : Calulus_
 
 > <a href='https://userdyk-github.github.io/math02/MATH02-Limits.html'>Topic : Limits</a><br>
 > <a href='https://userdyk-github.github.io/math02/MATH02-Series.html'>Topic : Series</a><br>
@@ -237,7 +237,7 @@ Mass Point</a><br>
 
 ---
 
-## MATH03 : Complex analysis
+## _MATH03 : Complex analysis_
 
 > <a href='https://userdyk-github.github.io/math03/MATH03-Complex-functions.html'>Topic : Complex functions</a><br>
 > <a href='https://userdyk-github.github.io/math03/MATH03-Cauchy–Riemann-equations.html'>Topic : Cauchy–Riemann equations</a><br>
@@ -249,7 +249,7 @@ Mass Point</a><br>
 
 ---
 
-## MATH04 : Differential equation
+## _MATH04 : Differential equation_
 
 > <a href='https://userdyk-github.github.io/math04/MATH04-ODE-Analytical-solutions.html'>Topic : ODE analytical solutions</a><br>
 > <a href='https://userdyk-github.github.io/math04/MATH04-ODE-numerical-methods.html'>Topic : ODE numerical methods</a><br>
@@ -264,7 +264,7 @@ Mass Point</a><br>
 
 ---
 
-## MATH05 : Statistics
+## _MATH05 : Statistics_
 
 > <a href='https://userdyk-github.github.io/math05/MATH05-Descriptive-statistics.html'>Topic : Descriptive statistics</a><br>
 > <a href='https://userdyk-github.github.io/math05/MATH05-Distribution.html'>Topic : Distribution</a><br>
@@ -283,7 +283,7 @@ Mass Point</a><br>
 
 ---
 
-## MATH06 : Optimization
+## _MATH06 : Optimization_
 
 > <a href='https://userdyk-github.github.io/math06/MATH06-Interpolation.html'>Topic : Interpolation</a><br>
 > <a href='https://userdyk-github.github.io/math06/MATH06-Unconstrained-nonlinear.html'>Topic : Unconstrained nonlinear</a><br>
@@ -298,49 +298,49 @@ Mass Point</a><br>
 
 <hr class='division2'>
 
-## PL01 : C
+## _PL01 : C_
 
 > <a href='https://userdyk-github.github.io/pl01/PL01-Syntax.html'>Topic : Syntax</a><br>
 > <a href='https://userdyk-github.github.io/pl01/PL01-Libraries.html'>Topic : Libraries</a><br>
 
 ---
 
-## PL02 : Java
+## _PL02 : Java_
 
 > <a href='https://userdyk-github.github.io/pl02/PL02-Syntax.html'>Topic : Syntax</a><br>
 > <a href='https://userdyk-github.github.io/pl02/PL02-Class-libraries.html'>Topic : Class libraries</a><br>
 
 ---
 
-## PL03 : Python
+## _PL03 : Python_
 
 > <a href='https://userdyk-github.github.io/pl03/PL03-Syntax-and-semantics.html'>Topic : Syntax and semantics</a><br>
 > <a href='https://userdyk-github.github.io/pl03/PL03-Libraries.html'>Topic : Libraries</a><br>
 
 ---
 
-## PL04 : C++
+## _PL04 : C++_
 
 > <a href='https://userdyk-github.github.io/pl04/PL04-Syntax.html'>Topic : Syntax</a><br>
 > <a href='https://userdyk-github.github.io/pl04/PL04-Standard-library.html'>Topic : Standard library</a><br>
 
 ---
 
-## PL05 : Mathematica
+## _PL05 : Mathematica_
 
 > <a href='https://userdyk-github.github.io/pl05/PL05-Syntax.html'>Topic : Syntax</a><br>
 > <a href='https://userdyk-github.github.io/pl05/PL05-Applications.html'>Topic : Applications</a><br>
 
 ---
 
-## PL06 : MATLAB
+## _PL06 : MATLAB_
 
 > <a href='https://userdyk-github.github.io/pl06/PL06-Syntax.html'>Topic : Syntax</a><br>
 > <a href='https://userdyk-github.github.io/pl06/PL06-Applications.html'>Topic : Applications</a><br>
 
 ---
 
-## PL07 : R
+## _PL07 : R_
 
 > <a href='https://userdyk-github.github.io/pl07/PL07-Syntax.html'>Topic : Syntax</a><br>
 > <a href='https://userdyk-github.github.io/pl07/PL07-Packages.html'>Topic : Packages</a><br>
