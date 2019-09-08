@@ -31,8 +31,9 @@ title: Lecture URL
 - <a href='https://www.youtube.com/playlist?list=PLx9iooiAr6WHa8sHIV1ORPJSj4JFWoF2X'>Theory of relativity</a>
 
 
+<br>
 
----
+<hr class='division2'>
 
 ## Computer Science
 
@@ -66,8 +67,9 @@ title: Lecture URL
 - <a href='https://www.youtube.com/playlist?list=PLf8roV9OYDiHCOrnXIlbrzbeQ0pJsaH8v'>Arduino, Raspberrypi, BeagleBoard</a>
 
 
+<br>
 
----
+<hr class='division2'>
 
 ## Artificial Intelligence
 
