@@ -53,11 +53,22 @@ title: RESEARCH
 >> <a href='https://www.microsoft.com/en-us/research/research-area/artificial-intelligence/' target="_blank">research</a>|<br>
 > <a href='' target="_blank"></a>
 
+> QUALCOMN
+>> <a href='https://www.qualcomm.com/invention/artificial-intelligence/ai-research' target="_blank">research</a>|<br>
+> <a href='' target="_blank"></a>
+
+
+
+
 
 
 
 
 #### _Domestic_
+
+> SAMSUNG
+>> <a href='https://research.samsung.com/artificial-intelligence' target="_blank">research</a>|<br>
+> <a href='' target="_blank"></a>
 
 > NAVER 
 >> <a href='https://clova.ai/ko/research/research-areas.html' target="_blank">research</a>|<br>
@@ -65,10 +76,6 @@ title: RESEARCH
 
 > KAKAO
 >> <a href='https://kakao.ai/tech' target="_blank">research</a>|<br>
-> <a href='' target="_blank"></a>
-
-> SAMSUNG
->> <a href='https://research.samsung.com/artificial-intelligence' target="_blank">research</a>|<br>
 > <a href='' target="_blank"></a>
 
 > SK
