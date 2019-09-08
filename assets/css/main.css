@@ -1,0 +1,7 @@
+/* = = = = = = = = = = Pagination Styles = = = = = = = = = = */
+.pagination {
+  margin-bottom: 30px;
+}
+
+.pagination .previous {
+  float: left;
