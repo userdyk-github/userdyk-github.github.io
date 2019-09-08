@@ -55,6 +55,9 @@ title: Research
 
 ### _Academic research trend_
 
+#### _International_
+
+#### _Domestic_
 > <a href='https://kis.kaist.ac.kr/index.php?mid=KIAI_O' target="_blank">KAIST</a><br>
 > <a href='http://mllab.snu.ac.kr/' target="_blank">SNU, Hyun Oh Song</a><br>
 > <a href='http://vision.snu.ac.kr/' target="_blank">SNU, Gunhee Kim</a><br>
