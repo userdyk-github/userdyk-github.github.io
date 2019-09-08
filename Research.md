@@ -27,10 +27,6 @@ title: Research
 
 ## _Research trends_
 
-> <a href='https://artificialintelligence-news.com/'>AINEWS</a><br>
-
-<br><br><br>
-
 ### _Journal and conference_
 > <a href='https://nips.cc'>Neural Information Processing Systems (NIPS)</a><br>
 > <a href='https://www.iclr.cc'>International Conference on Learning Representations</a><br>
