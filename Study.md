@@ -5,7 +5,7 @@ title: Study
 
 ---
 
-
+<br>
 
 ## _AI01 : Data science analysis_
 
