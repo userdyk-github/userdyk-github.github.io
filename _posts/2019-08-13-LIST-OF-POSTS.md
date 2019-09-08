@@ -1,7 +1,7 @@
 ---
 
 layout : post
-title : LIST-OF-POSTS
+title : List of post
 categories: [MAIN]
 comments : true
 tags : [MAIN]
