@@ -69,6 +69,10 @@ title: RESEARCH
 >> <a href='https://www.nvidia.com/en-us/research/' target="_blank">research</a>|<br>
 > <a href='' target="_blank"></a>
 
+> CANON 
+>> <a href='https://research.eu.medical.canon/specialism/technology-research-and-development/artificial-intelligence' target="_blank">research</a>|<br>
+> <a href='' target="_blank"></a>
+
 
 
 
