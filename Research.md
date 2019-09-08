@@ -57,7 +57,9 @@ title: RESEARCH
 >> <a href='https://www.qualcomm.com/invention/artificial-intelligence/ai-research' target="_blank">research</a>|<br>
 > <a href='' target="_blank"></a>
 
-
+> INTEL
+>> <a href='https://www.intel.ai/research/#gs.1x6fho' target="_blank">research</a>|<br>
+> <a href='' target="_blank"></a>
 
 
 
