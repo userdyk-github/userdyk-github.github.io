@@ -11,8 +11,9 @@ title: Research
 
 ---
 
-## [Paper review](https://userdyk-github.github.io/research/PAPER-REVIEW.html)
+## Paper review
 
+[Go to the review page](https://userdyk-github.github.io/research/PAPER-REVIEW.html)
 
 ---
 
