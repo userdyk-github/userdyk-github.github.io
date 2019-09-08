@@ -8,6 +8,9 @@ tags : [MAIN]
 
 ---
 
+<hr class='division4'>
+<br>
+
 <div class="toc">
   <ul class="posts">
   {% for item in site.posts %}
