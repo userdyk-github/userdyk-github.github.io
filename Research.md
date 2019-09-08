@@ -3,6 +3,8 @@ layout: page
 title: Research
 ---
 
+<br>
+
 ## _Projects_
 
 <br><br><br>
