@@ -336,5 +336,3 @@ Mass Point</a>
 - <a href='https://userdyk-github.github.io/pl07/PL07-Packages.html'>Topic : Packages</a>
 
 
-<hr class='division2'>
-
