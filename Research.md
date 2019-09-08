@@ -29,32 +29,29 @@ title: Research
 ## _Research trends_
 
 ### _Journal and conference_
-> <a href='https://nips.cc'>Neural Information Processing Systems (NIPS)</a><br>
-> <a href='https://www.iclr.cc'>International Conference on Learning Representations</a><br>
-> <a href='https://icml.cc/'>International Conference on Machine Learning (ICML)</a><br>
+> <a href='https://nips.cc' target="_blank">Neural Information Processing Systems (NIPS)</a><br>
+> <a href='https://www.iclr.cc' target="_blank">International Conference on Learning Representations</a><br>
+> <a href='https://icml.cc/' target="_blank">International Conference on Machine Learning (ICML)</a><br>
 
 <br><br><br>
 
 
 ### _Industry research trend_
-> <a href='https://deepmind.com'>deepmind</a><br>
-> <a href='https://openai.com/'>OpenAI</a><br>
-> <a href='https://www.aboutamazon.com/research'>Amazon</a><br>
-> <a href='https://clova.ai/ko/research/research-areas.html'></a>NAVER<br>
-> <a href=''></a><br>
-> <a href=''></a><br>
-> <a href=''></a><br>
-> <a href=''></a><br>
-> <a href=''></a><br>
-> <a href=''></a><br>
+> <a href='https://deepmind.com' target="_blank">deepmind</a><br>
+> <a href='https://openai.com/' target="_blank">OpenAI</a><br>
+> <a href='https://www.aboutamazon.com/research' target="_blank">Amazon</a><br>
+> <a href='https://clova.ai/ko/research/research-areas.html' target="_blank"></a>NAVER<br>
+> <a href='' target="_blank"></a><br>
+> <a href='' target="_blank"></a><br>
+
 
 
 <br><br><br>
 
 
 ### _Academic research trend_
-> <a href='https://kis.kaist.ac.kr/index.php?mid=KIAI_O'>KAIST</a><br>
-> <a href='http://mllab.snu.ac.kr/'>SNU, Hyun Oh Song</a><br>
-> <a href='http://vision.snu.ac.kr/'>SNU, Gunhee Kim</a><br>
-> <a href='https://mindlab-skku.github.io/'>SKKU, Taesup Moon</a><br>
-> <a href=''></a><br>
+> <a href='https://kis.kaist.ac.kr/index.php?mid=KIAI_O' target="_blank">KAIST</a><br>
+> <a href='http://mllab.snu.ac.kr/' target="_blank">SNU, Hyun Oh Song</a><br>
+> <a href='http://vision.snu.ac.kr/' target="_blank">SNU, Gunhee Kim</a><br>
+> <a href='https://mindlab-skku.github.io/' target="_blank">SKKU, Taesup Moon</a><br>
+> <a href='' target="_blank"></a><br>
