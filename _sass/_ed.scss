@@ -55,11 +55,11 @@ body {
 }
 
 .backcontainer {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  heigh: 100%;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  width: 100% !important;
+  heigh: 100% !important;
 }
 
 .hero {
