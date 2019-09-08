@@ -29,10 +29,14 @@ title: Research
 
 > <a href='https://artificialintelligence-news.com/'>AINEWS</a><br>
 
+<br><br><br>
+
 ### _Journal and conference_
 > <a href='https://nips.cc'>Neural Information Processing Systems (NIPS)</a><br>
 > <a href='https://www.iclr.cc'>International Conference on Learning Representations</a><br>
 > <a href='https://icml.cc/'>International Conference on Machine Learning (ICML)</a><br>
+
+<br><br><br>
 
 
 ### _Industry research trend_
