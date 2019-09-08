@@ -2,6 +2,10 @@
 layout: page
 title: About me
 ---
+
+<hr class='division4'>
+<br>
+
 ![userdyk](https://user-images.githubusercontent.com/52376448/62934273-15b4ee80-bdff-11e9-9f58-3783696280df.jpg)
 
 Dongmyeong Lee <br>
