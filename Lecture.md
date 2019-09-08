@@ -37,7 +37,7 @@ title: LECTURE
 
 <br>
 
-<hr class='division2'>
+<hr class='division4'>
 
 <br>
 
@@ -75,7 +75,7 @@ title: LECTURE
 
 <br>
 
-<hr class='division2'>
+<hr class='division4'>
 
 <br>
 
