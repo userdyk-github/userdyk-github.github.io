@@ -44,3 +44,24 @@ exclude:
   - optional
   - vendor
 
+
+
+
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  #- jemoji               # 주석처리
+  - jekyll-include-cache  # 추가
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  #- jemoji                  # 주석처리
+  - jekyll-include-cache  #추가
