@@ -116,7 +116,7 @@ title: RESEARCH
 > <a href='' target="_blank"></a>
 
 > Berkeley | <a href='https://www2.eecs.berkeley.edu/Research/Areas/AI/' target="_blank">URL</a><br>
->> <a href='http://www-video.eecs.berkeley.edu/?_ga=2.160189117.1202821909.1567979786-434982952.1567979786' target="_blank">Ron Fedkiw</a><br>
+>> <a href='http://www-video.eecs.berkeley.edu/?_ga=2.160189117.1202821909.1567979786-434982952.1567979786' target="_blank">Avideh Zakhor</a><br>
 > <a href='' target="_blank"></a>
 
 
