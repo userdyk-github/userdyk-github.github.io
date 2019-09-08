@@ -7,6 +7,8 @@ title: Study
 
 <hr class='division4'>
 
+<br>
+
 ## _AI01 : Data science analysis_
 
 > <a href='https://userdyk-github.github.io/ai01/AI01-Loading-and-manipulating-images.html'>Topic : Loading and manipulating images</a><br>
