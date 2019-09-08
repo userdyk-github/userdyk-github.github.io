@@ -39,9 +39,9 @@ title: Research
 ### _Industry research trend_
 
 #### _International_
-> <a href='https://deepmind.com' target="_blank">DEEPMIND</a><br>
-> <a href='https://openai.com/' target="_blank">OPENAI</a><br>
-> <a href='https://www.aboutamazon.com/research' target="_blank">AMAZON</a><br>
+> DEEPMIND | <a href='https://deepmind.com' target="_blank">research</a><br>
+> OPENAI | <a href='https://openai.com/' target="_blank">research</a><br>
+> AMAZON | <a href='https://www.aboutamazon.com/research' target="_blank">research</a><br>
 
 #### _Domestic_
 
