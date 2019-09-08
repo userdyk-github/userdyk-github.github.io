@@ -13,7 +13,7 @@ title: Research
 
 ## Paper review
 
-[Go to the review page](https://userdyk-github.github.io/research/PAPER-REVIEW.html)
+[Go to the paper review page](https://userdyk-github.github.io/research/PAPER-REVIEW.html)
 
 ---
 
