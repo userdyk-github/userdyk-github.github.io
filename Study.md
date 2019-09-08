@@ -5,7 +5,8 @@ title: STUDY
 ---
 
 <hr class='division4'>
-<br><br><br>
+
+![캡처](https://user-images.githubusercontent.com/52376448/64490428-98628980-d297-11e9-8ff2-bf3ad91b8ef4.JPG)
 
 ## _AI01 : Data science analysis_
 
