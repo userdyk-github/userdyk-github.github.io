@@ -13,14 +13,6 @@ List of posts to read before reading this article
 
 ---
 
-## Contents
-{:.no_toc}
-
-* ToC
-{:toc}
-
-<hr class="division1">
-
 ## title1
 
 <hr class="division2">
