@@ -41,7 +41,8 @@ title: Research
 #### _International_
 
 > DEEPMIND 
->> <a href='https://deepmind.com' target="_blank">research</a><br> | 
+>> <a href='https://deepmind.com' target="_blank">research</a><br> |
+> <a href='' target="_blank"></a><br>
 
 > OPENAI
 >> <a href='https://openai.com/' target="_blank">research</a><br>
@@ -59,8 +60,8 @@ title: Research
 > KAKAO
 >> <a href='https://kakao.ai/tech' target="_blank">research</a><br>
 
-> SAMSUNG | <a href='https://research.samsung.com/artificial-intelligence' target="_blank">research</a><br>
->> 
+> SAMSUNG
+>> <a href='https://research.samsung.com/artificial-intelligence' target="_blank">research</a><br>
 
 > <a href='' target="_blank"></a><br>
 
