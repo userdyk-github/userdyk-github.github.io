@@ -1,13 +1,8 @@
 ---
 
 layout: page
-title: Study
 
 ---
-
-<hr class='division4'>
-
-<br>
 
 ## _AI01 : Data science analysis_
 
