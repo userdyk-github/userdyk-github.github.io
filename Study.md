@@ -72,6 +72,8 @@ title: Study
 
 <hr class='division2'>
 
+<br>
+
 ## _EE01 : Integrated circuits_
 
 > <a href='https://userdyk-github.github.io/ee01/EE01-.html'>Topic : Transistor–Transistor Logic</a><br>
@@ -115,6 +117,7 @@ title: Study
 
 <hr class='division2'>
 
+<br>
 
 ## _PHY01 : Classical mechanics_
 
@@ -209,6 +212,8 @@ Mass Point</a><br>
 
 <hr class='division2'>
 
+<br>
+
 
 ## _MATH01 : Linear algebra_
 
@@ -297,6 +302,8 @@ Mass Point</a><br>
 <br>
 
 <hr class='division2'>
+
+<br>
 
 ## _PL01 : C_
 
