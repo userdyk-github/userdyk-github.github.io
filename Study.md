@@ -5,7 +5,7 @@ title: Study
 
 ---
 
-<br>
+<hr class='division4'>
 
 ## _AI01 : Data science analysis_
 
