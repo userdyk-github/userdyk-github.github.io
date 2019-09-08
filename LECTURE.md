@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Lecture URL
+title: LECTURE
 ---
 
 <hr class='division4'>
