@@ -61,6 +61,10 @@ title: RESEARCH
 >> <a href='https://www.intel.ai/research/#gs.1x6fho' target="_blank">research</a>|<br>
 > <a href='' target="_blank"></a>
 
+> PHILIPS 
+>> <a href='https://www.philips.com/a-w/research/home' target="_blank">research</a>|<br>
+> <a href='' target="_blank"></a>
+
 
 
 
