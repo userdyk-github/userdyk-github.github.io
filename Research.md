@@ -45,6 +45,10 @@ title: RESEARCH
 >> <a href='https://openai.com/progress/' target="_blank">research</a>|<br>
 > <a href='' target="_blank"></a>
 
+> GOOGLE
+>> <a href='https://ai.google/research/' target="_blank">research</a>|<br>
+> <a href='' target="_blank"></a>
+
 > AMAZON
 >> <a href='https://www.aboutamazon.com/research' target="_blank">research</a>|<br>
 > <a href='' target="_blank"></a>
