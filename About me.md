@@ -3,7 +3,6 @@ layout: page
 title: ABOUT ME
 ---
 
-
 ![userdyk](https://user-images.githubusercontent.com/52376448/62934273-15b4ee80-bdff-11e9-9f58-3783696280df.jpg)
 
 Dongmyeong Lee <br>
@@ -23,7 +22,7 @@ Mobile : +82-10-7327-0678 <br>
 Email(sending&reception) : userdyk@gmail.com <br>
 Email(sending only) : userdyk@naver.com <br><br>
 
-<hr>
+<hr><br>
 
 ### GitHub | [URL](https://github.com/aglipthhau/)
 ### LinkedIn | [URL](https://www.linkedin.com/in/userdyk/)
