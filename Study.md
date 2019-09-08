@@ -67,7 +67,7 @@ title: STUDY
 
 <br>
 
-<hr class='division2'>
+<hr class='division4'>
 
 <br>
 
@@ -112,7 +112,7 @@ title: STUDY
 
 <br>
 
-<hr class='division2'>
+<hr class='division4'>
 
 <br>
 
@@ -207,7 +207,7 @@ Mass Point</a><br>
 
 <br>
 
-<hr class='division2'>
+<hr class='division4'>
 
 <br>
 
@@ -298,7 +298,7 @@ Mass Point</a><br>
 
 <br>
 
-<hr class='division2'>
+<hr class='division4'>
 
 <br>
 
