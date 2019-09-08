@@ -1,7 +1,10 @@
 ---
 layout: page
+title: Research
 ---
 
+<hr class='division4'>
+<br><br><br>
 
 ## _Projects_
 
