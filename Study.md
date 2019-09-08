@@ -66,7 +66,7 @@ title: Study
 - <a href='https://userdyk-github.github.io/ai05/AI05-.html'>Topic : Motion analysis</a>
 - <a href='https://userdyk-github.github.io/ai05/AI05-.html'>Topic : Image restoration</a>
 
-<br><br><br>
+<br>
 
 <hr class='division2'>
 
@@ -109,7 +109,7 @@ title: Study
 - <a href='https://userdyk-github.github.io/ee03/EE03-.html'>Topic : 4</a>
 - <a href='https://userdyk-github.github.io/ee03/EE03-.html'>Topic : 5</a>
 
-<br><br><br>
+<br>
 
 <hr class='division2'>
 
@@ -203,7 +203,7 @@ scopic Structure</a>
 - <a href='https://userdyk-github.github.io/phy06/PHY06-.html'>Topic : The Reissner–Nordstrom solution for a charged
 Mass Point</a>
 
-<br><br><br>
+<br>
 
 <hr class='division2'>
 
@@ -292,7 +292,7 @@ Mass Point</a>
 
 
 
-<br><br><br>
+<br>
 
 <hr class='division2'>
 
