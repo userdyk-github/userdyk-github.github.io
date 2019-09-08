@@ -21,7 +21,7 @@ title: Research
 
 ### International research trend
 <a href='https://deepmind.com'>deepmind</a><br>
-<a href=''></a><br>
+<a href='https://openai.com/'>OpenAI</a><br>
 <a href=''></a><br>
 <a href=''></a><br>
 <a href=''></a><br>
