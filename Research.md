@@ -25,11 +25,13 @@ title: Research
 
 ## Research trends
 
+<a href='https://artificialintelligence-news.com/'>AINEWS</a><br>
+
 ### International research trend
 <a href='https://deepmind.com'>deepmind</a><br>
 <a href='https://openai.com/'>OpenAI</a><br>
 <a href='https://www.aboutamazon.com/research'>Amazon</a><br>
-<a href=''></a><br>
+
 <a href=''></a><br>
 <a href=''></a><br>
 <a href=''></a><br>
