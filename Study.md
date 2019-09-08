@@ -7,27 +7,27 @@ title: Study
 
 ## **AI01 : Data science analysis**
 
-- <a href='https://userdyk-github.github.io/ai01/AI01-Loading-and-manipulating-images.html'>Topic : Loading and manipulating images</a>
-- <a href='https://userdyk-github.github.io/ai01/AI01-Manually-scaling-image-pixel-data.html'>Topic : Manually scaling image pixel data</a>
-- <a href='https://userdyk-github.github.io/ai01/AI01-Loading-and-manipulating-images-with-keras.html'>Topic : Loading and manipulating images with keras</a>
-- <a href='https://userdyk-github.github.io/ai01/AI01-Scaling-image-pixel-data-with-keras.html'>Topic : Scaling image pixel data with keras</a>
-- <a href='https://userdyk-github.github.io/ai01/AI01-Loading-large-datasets-from-directories-with-keras.html'>Topic : Loading large datasets from directories with keras</a>
-- <a href='https://userdyk-github.github.io/ai01/AI01-Using-image-data-augmentation-in-keras.html'>Topic : Using image data augmentation in keras</a>
+> <a href='https://userdyk-github.github.io/ai01/AI01-Loading-and-manipulating-images.html'>Topic : Loading and manipulating images</a>
+> <a href='https://userdyk-github.github.io/ai01/AI01-Manually-scaling-image-pixel-data.html'>Topic : Manually scaling image pixel data</a>
+> <a href='https://userdyk-github.github.io/ai01/AI01-Loading-and-manipulating-images-with-keras.html'>Topic : Loading and manipulating images with keras</a>
+> <a href='https://userdyk-github.github.io/ai01/AI01-Scaling-image-pixel-data-with-keras.html'>Topic : Scaling image pixel data with keras</a>
+> <a href='https://userdyk-github.github.io/ai01/AI01-Loading-large-datasets-from-directories-with-keras.html'>Topic : Loading large datasets from directories with keras</a>
+> <a href='https://userdyk-github.github.io/ai01/AI01-Using-image-data-augmentation-in-keras.html'>Topic : Using image data augmentation in keras</a>
 
 ---
 
 ## **AI02 : Machine learning**
 
-- <a href='https://userdyk-github.github.io/ai02/AI02-.html'>Topic : Dimensionality reduction</a>
-- <a href='https://userdyk-github.github.io/ai02/AI02-Regression.html'>Topic : Regression</a>
-- <a href='https://userdyk-github.github.io/ai02/AI02-Classification.html'>Topic : Classification</a>
-- <a href='https://userdyk-github.github.io/ai02/AI02-Clustering.html'>Topic : Clustering</a>
-- <a href='https://userdyk-github.github.io/ai02/AI02-k-Nearest-neighbors.html'>Topic : k-Nearest neighbors</a>
-- <a href='https://userdyk-github.github.io/ai02/AI02-.html'>Topic : Support vector machine</a>
-- <a href='https://userdyk-github.github.io/ai02/AI02-Decision-trees.html'>Topic : Decision trees</a>
-- <a href='https://userdyk-github.github.io/ai02/AI02-.html'>Topic : Naive-Bayes classifier</a>
-- <a href='https://userdyk-github.github.io/ai02/AI02-.html'>Topic : Hidden markov model</a>
-- <a href='https://userdyk-github.github.io/ai02/AI02-.html'>Topic : Ensemble learning</a>
+> <a href='https://userdyk-github.github.io/ai02/AI02-.html'>Topic : Dimensionality reduction</a>
+> <a href='https://userdyk-github.github.io/ai02/AI02-Regression.html'>Topic : Regression</a>
+> <a href='https://userdyk-github.github.io/ai02/AI02-Classification.html'>Topic : Classification</a>
+> <a href='https://userdyk-github.github.io/ai02/AI02-Clustering.html'>Topic : Clustering</a>
+> <a href='https://userdyk-github.github.io/ai02/AI02-k-Nearest-neighbors.html'>Topic : k-Nearest neighbors</a>
+> <a href='https://userdyk-github.github.io/ai02/AI02-.html'>Topic : Support vector machine</a>
+> <a href='https://userdyk-github.github.io/ai02/AI02-Decision-trees.html'>Topic : Decision trees</a>
+> <a href='https://userdyk-github.github.io/ai02/AI02-.html'>Topic : Naive-Bayes classifier</a>
+> <a href='https://userdyk-github.github.io/ai02/AI02-.html'>Topic : Hidden markov model</a>
+> <a href='https://userdyk-github.github.io/ai02/AI02-.html'>Topic : Ensemble learning</a>
 
 
 
