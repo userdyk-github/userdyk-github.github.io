@@ -35,11 +35,17 @@ body {
   overflow-x: hidden;
 }
 
+#background {
+  overflow-x: inherit;
+}
+
 html {
   font-family: $main-font;
   font-size: 16px;
   line-height: 1.5;
 }
+
+
 
 @media (min-width: 38em) {
   html {
