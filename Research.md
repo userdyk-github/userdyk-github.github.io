@@ -49,6 +49,12 @@ title: RESEARCH
 >> <a href='https://www.aboutamazon.com/research' target="_blank">research</a>|<br>
 > <a href='' target="_blank"></a>
 
+> MICROSOFT
+>> <a href='https://www.microsoft.com/en-us/research/research-area/artificial-intelligence/' target="_blank">research</a>|<br>
+> <a href='' target="_blank"></a>
+
+
+
 
 
 #### _Domestic_
