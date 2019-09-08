@@ -65,7 +65,9 @@ title: RESEARCH
 >> <a href='https://research.samsung.com/artificial-intelligence' target="_blank">research</a>|<br>
 > <a href='' target="_blank"></a>
 
-
+> SK
+>>
+> <a href='' target="_blank"></a>
 
 <br><br><br>
 
