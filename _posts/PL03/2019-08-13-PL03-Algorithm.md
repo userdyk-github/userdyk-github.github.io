@@ -71,6 +71,10 @@ List of posts to read before reading this article
 
 ## **Sorting**
 
+![fq0A8hx](https://user-images.githubusercontent.com/52376448/64517642-b5489c80-d32b-11e9-964a-dd4000ec1956.gif)
+
+<br><br><br>
+
 ### ***Bubble Sort***
 
 ![giphy (1)](https://user-images.githubusercontent.com/52376448/64515755-25552380-d328-11e9-8b95-060eb452ffd8.gif)
