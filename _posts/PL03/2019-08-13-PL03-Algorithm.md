@@ -113,7 +113,7 @@ List of posts to read before reading this article
 
 ### ***Quicksort***
 
-![WideeyedAfraidCassowary-size_restricted](https://user-images.githubusercontent.com/52376448/64516047-b3c9a500-d328-11e9-8c5c-f011dfda817c.gif)
+![Sorting_quicksort_anim](https://user-images.githubusercontent.com/52376448/64516995-6b12eb80-d32a-11e9-83e7-9f1a4e2609e5.gif)
 
 ---
 
