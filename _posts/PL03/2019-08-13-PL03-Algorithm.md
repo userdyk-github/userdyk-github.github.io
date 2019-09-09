@@ -55,27 +55,27 @@ List of posts to read before reading this article
 
 ## **Sorting**
 
-### ******
+### ***Bubble Sort***
 
 ---
 
-### ******
+### ***Selection Sort***
 
 ---
 
-### ******
+### ***Insertion Sort***
 
 ---
 
-### ******
+### ***Heap Sort***
 
 ---
 
-### ******
+### ***Merge Sort***
 
 ---
 
-### ******
+### ***Quicksort***
 
 <hr class="division2">
 
