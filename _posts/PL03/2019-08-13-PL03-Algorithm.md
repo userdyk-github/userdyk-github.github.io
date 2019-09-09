@@ -115,6 +115,8 @@ List of posts to read before reading this article
 
 ![Sorting_quicksort_anim](https://user-images.githubusercontent.com/52376448/64516995-6b12eb80-d32a-11e9-83e7-9f1a4e2609e5.gif)
 
+<br><br><br>
+
 ---
 
 ### ***Cocktail shaker sort***
