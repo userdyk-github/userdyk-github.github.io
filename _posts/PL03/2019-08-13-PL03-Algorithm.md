@@ -57,6 +57,8 @@ List of posts to read before reading this article
 
 ### ***Bubble Sort***
 
+![DistantNecessaryFlicker-size_restricted](https://user-images.githubusercontent.com/52376448/64512585-b5439f00-d321-11e9-836b-04ef53262fa2.gif)
+
 ---
 
 ### ***Selection Sort***
