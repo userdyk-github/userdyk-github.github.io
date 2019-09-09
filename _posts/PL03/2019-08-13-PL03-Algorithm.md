@@ -53,6 +53,13 @@ List of posts to read before reading this article
 
 ## **Recursion**
 
+### ***Factorial***
+
+---
+
+### ***Tower of Hanoi***
+
+
 <br><br><br>
 
 <hr class="division2">
@@ -199,7 +206,7 @@ List of posts followed by this article
 ---
 
 Reference
-- [post1](https://userdyk-github.github.io/)
+- [VISUalizing ALgorithms through animation](http://mai1408.github.io/index.html)
 - <a href='https://userdyk-github.github.io/'>post2</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
