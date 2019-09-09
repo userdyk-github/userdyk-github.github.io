@@ -21,51 +21,73 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## Data structure and algorithm
+## **Data structure and algorithm**
 
 <hr class="division2">
 
-## Recursion
+## **Recursion**
 
 <hr class="division2">
 
-## Linked List
+## **Linked List**
 
 <hr class="division2">
 
-## Stack
+## **Stack**
 
 <hr class="division2">
 
-## Queue
+## **Queue**
 
 <hr class="division2">
 
-## Recursion
+## **Recursion**
 
 <hr class="division2">
 
-## Tree
+## **Tree**
 
 <hr class="division2">
 
-## Priority queue and heap
+## **Priority queue and heap**
 
 <hr class="division2">
 
-## Sorting
+## **Sorting**
+
+### ******
+
+---
+
+### ******
+
+---
+
+### ******
+
+---
+
+### ******
+
+---
+
+### ******
+
+---
+
+### ******
 
 <hr class="division2">
 
-## Search
+## **Search**
 
 <hr class="division2">
 
-## Table and Hash
+## **Table and Hash**
 
 <hr class="division2">
 
-## Graph
+## **Graph**
 
 <hr class="division1">
 
