@@ -206,8 +206,8 @@ List of posts followed by this article
 ---
 
 Reference
-- [VISUalizing ALgorithms through animation](http://mai1408.github.io/index.html)
-- <a href='https://userdyk-github.github.io/'>post2</a>
+- <a href='http://mai1408.github.io/index.html' target="_blank">VISUalizing ALgorithms through animation</a>
+- <a href='https://userdyk-github.github.io/'>post3</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
