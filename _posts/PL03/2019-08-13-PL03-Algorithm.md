@@ -183,7 +183,7 @@ List of posts to read before reading this article
 
 ---
 
-### ***A* algorithm***
+### ***A' algorithm***
 
 
 
