@@ -23,33 +23,49 @@ List of posts to read before reading this article
 
 ## **Data structure and algorithm**
 
+<br><br><br>
+
 <hr class="division2">
 
 ## **Recursion**
+
+<br><br><br>
 
 <hr class="division2">
 
 ## **Linked List**
 
+<br><br><br>
+
 <hr class="division2">
 
 ## **Stack**
+
+<br><br><br>
 
 <hr class="division2">
 
 ## **Queue**
 
+<br><br><br>
+
 <hr class="division2">
 
 ## **Recursion**
+
+<br><br><br>
 
 <hr class="division2">
 
 ## **Tree**
 
+<br><br><br>
+
 <hr class="division2">
 
 ## **Priority queue and heap**
+
+<br><br><br>
 
 <hr class="division2">
 
@@ -57,39 +73,67 @@ List of posts to read before reading this article
 
 ### ***Bubble Sort***
 
-![DistantNecessaryFlicker-size_restricted](https://user-images.githubusercontent.com/52376448/64512585-b5439f00-d321-11e9-836b-04ef53262fa2.gif)
+![giphy (1)](https://user-images.githubusercontent.com/52376448/64515755-25552380-d328-11e9-8b95-060eb452ffd8.gif)
+
+<br><br><br>
 
 ---
 
 ### ***Selection Sort***
 
+![AccomplishedCourageousGander-size_restricted](https://user-images.githubusercontent.com/52376448/64515021-c216c180-d326-11e9-9dc8-f56651cb0e3a.gif)
+
+<br><br><br>
+
 ---
 
 ### ***Insertion Sort***
+
+![MEhR5D](https://user-images.githubusercontent.com/52376448/64515885-651c0b00-d328-11e9-8f5f-115193977ce5.gif)
+
+<br><br><br>
 
 ---
 
 ### ***Heap Sort***
 
+![Sorting_heapsort_anim](https://user-images.githubusercontent.com/52376448/64515661-f2ab2b00-d327-11e9-9edf-548887660b1e.gif)
+
+<br><br><br>
+
 ---
 
 ### ***Merge Sort***
+
+![merge-sort-gif-9](https://user-images.githubusercontent.com/52376448/64515971-93014f80-d328-11e9-940c-caa0168e78e0.gif)
+
+<br><br><br>
 
 ---
 
 ### ***Quicksort***
 
+![WideeyedAfraidCassowary-size_restricted](https://user-images.githubusercontent.com/52376448/64516047-b3c9a500-d328-11e9-8c5c-f011dfda817c.gif)
+
+<br><br><br>
+
 <hr class="division2">
 
 ## **Search**
+
+<br><br><br>
 
 <hr class="division2">
 
 ## **Table and Hash**
 
+<br><br><br>
+
 <hr class="division2">
 
 ## **Graph**
+
+<br><br><br>
 
 <hr class="division1">
 
@@ -106,74 +150,6 @@ Reference
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
-
-Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
-
-[Link to another page](another-page).
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-* * *
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-
-![](https://assets-cdn.github.com/images/icons/emoji/octocat.png)
-![](https://guides.github.com/activities/hello-world/branching.png)
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
