@@ -133,6 +133,20 @@ List of posts to read before reading this article
 
 ## **Search**
 
+### ***Linear search***
+
+<br><br><br>
+
+---
+
+### ***Binary search***
+
+<br><br><br>
+
+---
+
+### ***Ternary search***
+
 <br><br><br>
 
 <hr class="division2">
@@ -144,6 +158,34 @@ List of posts to read before reading this article
 <hr class="division2">
 
 ## **Graph**
+
+### ***Breadth-First search***
+
+<br><br><br>
+
+---
+
+### ***Depth-First search***
+
+<br><br><br>
+
+---
+
+### ***Bellman-Ford algorithm***
+
+<br><br><br>
+
+---
+
+### ***Dijkstra's algorithm***
+
+<br><br><br>
+
+---
+
+### ***A* algorithm***
+
+
 
 <br><br><br>
 
