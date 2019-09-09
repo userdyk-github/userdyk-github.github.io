@@ -35,6 +35,7 @@ title: RESEARCH
 > <a href='https://nips.cc' target="_blank">Neural Information Processing Systems (NIPS)</a><br>
 > <a href='https://www.iclr.cc' target="_blank">International Conference on Learning Representations</a><br>
 > <a href='https://icml.cc/' target="_blank">International Conference on Machine Learning (ICML)</a><br>
+> <a href='https://www.thecvf.com' target="_blank">The Computer Vision Foundation</a><br>
 
 <br><br><br>
 
