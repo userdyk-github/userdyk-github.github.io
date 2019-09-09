@@ -103,7 +103,7 @@ title: RESEARCH
 > <a href='' target="_blank"></a>
 
 > SK
->> <a href='https://www.skt.ai/">research</a>|<br>
+>> <a href='https://www.skt.ai/' target="_blank">research</a>|<br>
 > <a href='' target="_blank"></a>
 
 <br><br><br>
