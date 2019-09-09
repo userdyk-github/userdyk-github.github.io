@@ -100,7 +100,7 @@ title: RESEARCH
 > <a href='' target="_blank"></a>
 
 > KAKAO
->> <a href='https://kakao.ai/tech' target="_blank">research</a>|<br>
+>> <a href='https://kakao.ai/tech' target="_blank">research</a>|<a href='https://brunch.co.kr/magazine/kakaoaireport'>magine</a><br>
 > <a href='' target="_blank"></a>
 
 > SK
