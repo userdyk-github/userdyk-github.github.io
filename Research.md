@@ -5,7 +5,7 @@ title: RESEARCH
 
 ## _Projects_
 
-> [Developing a non-visual communication interface for exhibitions of visual arts for the visually impaired and studying the parties' perspectives on expanding the rights of enjoyment of culture](https://userdyk-github.github.io/research/PROJECTS.html)
+> [Developing a non-visual communication interface for exhibitions of visual arts for the visually impaired and studying the parties' perspectives on expanding the rights of enjoyment of culture](https://userdyk-github.github.io/research/PROJECT01.html)
 
 <br><br><br>
 
