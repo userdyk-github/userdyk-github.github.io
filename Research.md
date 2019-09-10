@@ -5,7 +5,7 @@ title: RESEARCH
 
 ## _Projects_
 
-> [Project in progress](https://userdyk-github.github.io/research/PAPER-REVIEW.html)
+> [Project in progress](https://userdyk-github.github.io/research/PROJECTS.html)
 
 <br><br><br>
 
