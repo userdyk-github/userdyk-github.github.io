@@ -9,6 +9,32 @@ tags : [RESEARCH]
 
 <hr class="division1">
 
+## _Deep learning_
+
+- <span class='jb-medium'>A fast learning algorithm for deep belief nets｜ <a href='https://www.cs.toronto.edu/~hinton/absps/fastnc.pdf.' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift｜ <a href='https://arxiv.org/abs/1502.03167' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Rethinking the Inception Architecture for Computer Vision｜ <a href='https://arxiv.org/abs/1512.00567' target="_blank">PDF</a></span>
+- <span class='jb-medium'>GloVe: Global Vectors for Word Representation｜ <a href='https://nlp.stanford.edu/pubs/glove.pdf' target="_blank">PDF</a></span>
+- <span class='jb-medium'>U-Net: Convolutional Networks for Biomedical Image Segmentation｜ <a href='https://arxiv.org/abs/1505.04597.' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Generative Adversarial Networks｜ <a href='https://arxiv.org/abs/1406.2661' target="_blank">PDF</a></span>
+- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a></span>
+- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a></span>
+- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a></span>
+- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a></span>
+- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a></span>
+- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a></span>
+- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a></span>
+
+
+
+<br><br><br>
+
+<hr class="division4">
+
+
+
+
+
 ## _Computer Vision_
 
 - <span class='jb-medium'>ImageNet Large Scale Visual Recognition Challenge, 2015. ｜ <a href='https://arxiv.org/abs/1409.0575'  target="_blank">PDF</a> </span>
