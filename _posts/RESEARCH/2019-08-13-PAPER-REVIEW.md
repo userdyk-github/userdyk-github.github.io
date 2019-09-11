@@ -9,16 +9,40 @@ tags : [RESEARCH]
 
 <hr class="division1">
 
-- Visualizing for the Non-Visual: Enabling the Visually Impaired to Use Visualization ｜ [Review](https://userdyk-github.github.io/research/PAPER-REVIEW-0001.html)
-- 
+## _Computer Vision_
+
+- <span class='jb-medium'></span>
+- <span class='jb-medium'></span>
+- <span class='jb-medium'></span>
+- <span class='jb-medium'></span>
+- <span class='jb-medium'></span>
+- <span class='jb-medium'></span>
+- <span class='jb-medium'></span>
+- <span class='jb-medium'></span>
+- <span class='jb-medium'></span>
+- <span class='jb-medium'></span>
+- <span class='jb-medium'></span>
+- <span class='jb-medium'></span>
+- <span class='jb-medium'></span>
+- <span class='jb-medium'></span>
+- <span class='jb-medium'></span>
+- <span class='jb-medium'></span>
+- <span class='jb-medium'></span>
+- <span class='jb-medium'></span>
 
 
 
-<details markdown="1">
-<summary class='jb-small' style="color:blue">RELATED WORKS</summary>
-<hr class='division3'>
-<hr class='division3'>
-</details>
+
+<br><br><br>
+
+---
+
+## _Etc_
+
+- <span class='jb-medium'>Visualizing for the Non-Visual: Enabling the Visually Impaired to Use Visualization ｜ [Review](https://userdyk-github.github.io/research/PAPER-REVIEW-0001.html)</span>
+- <span class='jb-medium'></span>
+
+
 
 <br><br><br>
 <hr class="division1">
