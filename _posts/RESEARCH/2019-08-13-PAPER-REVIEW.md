@@ -22,6 +22,12 @@ tags : [RESEARCH]
 - <span class='jb-medium'>Very Deep Convolutional Networks for Large-Scale Image Recognition, 2015. ｜ <a href='https://arxiv.org/abs/1409.1556' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Deep Residual Learning for Image Recognition, 2015. ｜ <a href='https://arxiv.org/abs/1512.03385' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Gradient-based Learning Applied To Document Recognition, 1998. ｜ <a href='https://ieeexplore.ieee.org/abstract/document/726791' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Network In Network, 2013. ｜ <a href='https://arxiv.org/abs/1312.4400' target="_blank">PDF</a></span>
+- <span class='jb-medium'>A Survey on Transfer Learning, 2010. ｜ <a href='https://ieeexplore.ieee.org/document/5288526' target="_blank">PDF</a></span>
+- <span class='jb-medium'>How Transferable Are Features In Deep Neural Networks?, 2014. ｜ <a href='https://arxiv.org/abs/1411.1792' target="_blank">PDF</a></span>
+- <span class='jb-medium'>CNN Features Off-the-shelf: An Astounding Baseline For Recognition, 2014 ｜ <a href='https://arxiv.org/abs/1403.6382' target="_blank">PDF</a></span>
+- <span class='jb-medium'> ｜ <a href='' target="_blank">PDF</a></span>
+- <span class='jb-medium'> ｜ <a href='' target="_blank">PDF</a></span>
 - <span class='jb-medium'> ｜ <a href='' target="_blank">PDF</a></span>
 - <span class='jb-medium'> ｜ <a href='' target="_blank">PDF</a></span>
 - <span class='jb-medium'> ｜ <a href='' target="_blank">PDF</a></span>
