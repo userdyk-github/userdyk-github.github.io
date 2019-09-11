@@ -49,6 +49,7 @@ tags : [RESEARCH]
 - <span class='jb-medium'>LONG SHORT-TERM MEMORY｜ <a href='https://www.bioinf.jku.at/publications/older/2604.pdf' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation｜ <a href='https://arxiv.org/abs/1406.1078' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling｜ <a href='https://arxiv.org/abs/1412.3555' target="_blank">PDF</a></span>
+- <span class='jb-medium'>A Neural Probabilistic Language Model｜ <a href='http://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Efficient Estimation of Word Representations in Vector Space｜ <a href='https://arxiv.org/pdf/1301.3781.pdf' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Distributed Representations of Words and Phrases and their Compositionality｜ <a href='http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Linguistic Regularities in Continuous Space Word Representations｜ <a href='https://www.aclweb.org/anthology/N13-1090' target="_blank">PDF</a></span>
@@ -57,13 +58,19 @@ tags : [RESEARCH]
 - <span class='jb-medium'>Neural Machine Translation by Jointly Learning to Align and Translate｜ <a href='https://arxiv.org/abs/1409.0473' target="_blank">PDF</a></span>
 - <span class='jb-medium'>The Fourier Transform - A Primer｜ <a href='https://www.semanticscholar.org/paper/The-Fourier-Transform-a-Primer-the-Fourier-%7B-a-Shatkay/409e109c551767c296792ffa9f6d40a739c96ee7' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Recent Progresses in Deep Learning based Acoustic Models (Updated)｜ <a href='https://arxiv.org/abs/1804.09298' target="_blank">PDF</a></span>
+- <span class='jb-medium'>The Application of Hidden Markov Models in Speech Recognition｜ <a href='http://mi.eng.cam.ac.uk/~mjfg/mjfg_NOW.pdf' target="_blank">PDF</a></span>
+- <span class='jb-medium'>A tutorial on hidden Markov models and selected applications in speech recognition｜ <a href='https://www.cs.ubc.ca/~murphyk/Bayes/rabiner.pdf' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Backpropagation through time: what it does and how to do it｜ <a href='http://axon.cs.byu.edu/~martinez/classes/678/Papers/Werbos_BPTT.pdf' target="_blank">PDF</a></span>
+- <span class='jb-medium'>THE USE OF RECURRENT NEURAL NETWORKS IN CONTINUOUS SPEECH RECOGNITION｜ <a href='http://www.cstr.ed.ac.uk/downloads/publications/1996/rnn4csr96.pdf' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Framewise Phoneme Classification with Bidirectional LSTM and Other Neural Network Architectures｜ <a href='https://www.cs.toronto.edu/~graves/nn_2005.pdf' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Learning to Forget: Continual Prediction with LSTM｜ <a href='http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.55.5709&rep=rep1&type=pdf' target="_blank">PDF</a></span>
 - <span class='jb-medium'>SPEECH RECOGNITION WITH DEEP RECURRENT NEURAL NETWORKS｜ <a href='https://arxiv.org/pdf/1303.5778.pdf' target="_blank">PDF</a></span>
-- <span class='jb-medium'>Deep Speech 2: End-to-End Speech Recognition in English and Mandarin｜ <a href='https://arxiv.org/pdf/1512.02595v1.pdf' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Towards End-to-End Speech Recognition with Recurrent Neural Networks｜ <a href='http://proceedings.mlr.press/v32/graves14.pdf' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Deep Speech 2: End-to-End Speech Recognition in English and Mandarin｜ <a href='https://arxiv.org/abs/1512.02595' target="_blank">PDF</a></span>
+- <span class='jb-medium'>The Application of Hidden Markov Models in Speech Recognition｜ <a href='http://mi.eng.cam.ac.uk/~mjfg/mjfg_NOW.pdf' target="_blank">PDF</a></span>
+- <span class='jb-medium'>The Viterbi Algorithm ｜ <a href='http://members.cbio.mines-paristech.fr/~jvert/svn/bibli/local/Forney1973Viterbi.pdf' target="_blank">PDF</a></span>
+- <span class='jb-medium'>An overview of decoding techniques for large
+vocabulary continuous speech recognition｜ <a href='http://www.cs.cmu.edu/afs/cs/user/tbergkir/www/11711fa16/aubert_asr_decoding.pdf' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Listen, Attend and Spell｜ <a href='https://arxiv.org/abs/1508.01211' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Playing Atari with Deep Reinforcement Learning｜ <a href='https://arxiv.org/abs/1312.5602' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Rainbow: Combining Improvements in Deep Reinforcement Learning｜ <a href='https://arxiv.org/abs/1710.02298' target="_blank">PDF</a></span>
@@ -73,10 +80,6 @@ tags : [RESEARCH]
 - <span class='jb-medium'>Vehicle Detection from 3D Lidar Using Fully Convolutional Network｜ <a href='https://arxiv.org/abs/1608.07916' target="_blank">PDF</a></span>
 - <span class='jb-medium'>End to End Learning for Self-Driving Cars｜ <a href='https://arxiv.org/abs/1604.07316' target="_blank">PDF</a></span>
 - <span class='jb-medium'>ChauffeurNet: Learning to Drive by Imitating the Best and Synthesizing the Worst｜ <a href='https://arxiv.org/abs/1812.03079' target="_blank">PDF</a></span>
-
-
-
-- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a></span>
 
 
 
