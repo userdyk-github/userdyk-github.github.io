@@ -11,7 +11,7 @@ tags : [RESEARCH]
 
 ## _Computer Vision_
 
-- <span class='jb-medium'></span>
+- <span class='jb-medium'>ImageNet Large Scale Visual Recognition Challenge, 2015. ｜ [pdf](https://arxiv.org/abs/1409.0575) </span>
 - <span class='jb-medium'></span>
 - <span class='jb-medium'></span>
 - <span class='jb-medium'></span>
