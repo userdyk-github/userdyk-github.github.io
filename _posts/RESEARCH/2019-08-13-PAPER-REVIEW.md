@@ -7,7 +7,9 @@ tags : [RESEARCH]
 ---
 [Back to the previous page](https://userdyk-github.github.io/Research.html) <br>
 
+<details markdown="1">
 
+- Visualizing for the Non-Visual: Enabling the Visually Impaired to Use Visualization
 
 
 
