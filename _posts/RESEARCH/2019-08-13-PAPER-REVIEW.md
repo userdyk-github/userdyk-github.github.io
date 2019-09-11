@@ -11,30 +11,17 @@ tags : [RESEARCH]
 
 ## _Computer Vision_
 
-- <span class='jb-medium'>ImageNet Large Scale Visual Recognition Challenge, 2015. ｜ [PDF](https://arxiv.org/abs/1409.0575) </span>
-- <span class='jb-medium'></span>
-- <span class='jb-medium'></span>
-- <span class='jb-medium'></span>
-- <span class='jb-medium'></span>
-- <span class='jb-medium'></span>
-- <span class='jb-medium'></span>
-- <span class='jb-medium'></span>
-- <span class='jb-medium'></span>
-- <span class='jb-medium'></span>
-- <span class='jb-medium'></span>
-- <span class='jb-medium'></span>
-- <span class='jb-medium'></span>
-- <span class='jb-medium'></span>
-- <span class='jb-medium'></span>
-- <span class='jb-medium'></span>
-- <span class='jb-medium'></span>
-- <span class='jb-medium'></span>
-- <span class='jb-medium'></span>
-- <span class='jb-medium'></span>
-- <span class='jb-medium'></span>
-- <span class='jb-medium'></span>
-- <span class='jb-medium'></span>
-- <span class='jb-medium'></span>
+- <span class='jb-medium'>ImageNet Large Scale Visual Recognition Challenge, 2015. ｜ <a href='https://arxiv.org/abs/1409.0575'  target="_blank">PDF</a> </span>
+- <span class='jb-medium'> ｜ <a href='' target="_blank">PDF</a></span>
+- <span class='jb-medium'> ｜ <a href='' target="_blank">PDF</a></span>
+- <span class='jb-medium'> ｜ <a href='' target="_blank">PDF</a></span>
+- <span class='jb-medium'> ｜ <a href='' target="_blank">PDF</a></span>
+- <span class='jb-medium'> ｜ <a href='' target="_blank">PDF</a></span>
+- <span class='jb-medium'> ｜ <a href='' target="_blank">PDF</a></span>
+- <span class='jb-medium'> ｜ <a href='' target="_blank">PDF</a></span>
+- <span class='jb-medium'> ｜ <a href='' target="_blank">PDF</a></span>
+- <span class='jb-medium'> ｜ <a href='' target="_blank">PDF</a></span>
+
 
 
 
