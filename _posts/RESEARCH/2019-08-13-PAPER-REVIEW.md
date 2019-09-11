@@ -112,7 +112,7 @@ vocabulary continuous speech recognition｜ <a href='http://www.cs.cmu.edu/afs/c
 - <span class='jb-medium'>Machine Learning Attacks Against the Asirra CAPTCHA, 2007. ｜ <a href='https://dl.acm.org/citation.cfm?id=1455838' target="_blank">PDF</a></span>
 - <span class='jb-medium'>OverFeat: Integrated Recognition, Localization and Detection using Convolutional Networks,
 2013 ｜ <a href='https://arxiv.org/abs/1312.6229' target="_blank">PDF</a></span>
-- <span class='jb-medium'>Selective Search for Object Recognition ｜ <a href='https://link.springer.com/article/10.1007/s11263-013-0620-5' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Selective Search for Object Recognition, 2013. ｜ <a href='https://link.springer.com/article/10.1007/s11263-013-0620-5' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Rich Feature Hierarchies For Accurate Object Detection And Semantic Segmentation, 2013. ｜ <a href='https://arxiv.org/abs/1311.2524' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition, 2014. ｜ <a href='https://arxiv.org/abs/1406.4729' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Fast R-CNN, 2015. ｜ <a href='https://arxiv.org/abs/1504.08083' target="_blank">PDF</a></span>
