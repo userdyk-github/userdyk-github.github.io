@@ -94,7 +94,7 @@ vocabulary continuous speech recognition｜ <a href='http://www.cs.cmu.edu/afs/c
 ## _Computer Vision_
 
 - <span class='jb-medium'>ImageNet Large Scale Visual Recognition Challenge, 2015. ｜ <a href='https://arxiv.org/abs/1409.0575'  target="_blank">PDF</a> </span>
-- <span class='jb-medium'>ImageNet Classification with Deep Convolutional Neural Networks, 2012. ｜ <a href='https://dl.acm.org/citation.cfm?id=3065386' target="_blank">PDF</a> ｜ <a href='https://github.com/Abhisek-/AlexNet' target="_blank">Github</a></span>
+- <span class='jb-medium'>ImageNet Classification with Deep Convolutional Neural Networks, 2012. ｜ <a href='https://dl.acm.org/citation.cfm?id=3065386' target="_blank">PDF</a> ｜ <a href='https://github.com/Abhisek-/AlexNet' target="_blank">Github</a> ｜ <a href=''>Review</a></span>
 - <span class='jb-medium'>Object Detection with Deep Learning: A Review, 2018.｜ <a href='https://arxiv.org/abs/1807.05511' target="_blank">PDF</a></span>
 - <span class='jb-medium'>A Survey of Modern Object Detection Literature using Deep Learning, 2018. ｜ <a href='https://arxiv.org/abs/1808.07256' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Deep Learning for Generic Object Detection: A Survey, 2018. ｜ <a href='https://arxiv.org/abs/1809.02165' target="_blank">PDF</a></span>
