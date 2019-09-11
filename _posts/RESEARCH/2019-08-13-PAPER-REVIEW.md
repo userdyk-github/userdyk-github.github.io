@@ -30,6 +30,16 @@ tags : [RESEARCH]
 - <span class='jb-medium'>Machine Learning Attacks Against the Asirra CAPTCHA, 2007. ｜ <a href='https://dl.acm.org/citation.cfm?id=1455838' target="_blank">PDF</a></span>
 - <span class='jb-medium'>OverFeat: Integrated Recognition, Localization and Detection using Convolutional Networks,
 2013 ｜ <a href='https://arxiv.org/abs/1312.6229' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Selective Search for Object Recognition ｜ <a href='https://link.springer.com/article/10.1007/s11263-013-0620-5' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Rich Feature Hierarchies For Accurate Object Detection And Semantic Segmentation, 2013. ｜ <a href='https://arxiv.org/abs/1311.2524' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition, 2014. ｜ <a href='https://arxiv.org/abs/1406.4729' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Fast R-CNN, 2015. ｜ <a href='https://arxiv.org/abs/1504.08083' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks, 2016. ｜ <a href='https://arxiv.org/abs/1506.01497' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Mask R-CNN, 2017. ｜ <a href='https://arxiv.org/abs/1703.06870' target="_blank">PDF</a></span>
+- <span class='jb-medium'>You Only Look Once: Unified, Real-Time Object Detection, 2015 ｜ <a href='https://arxiv.org/abs/1506.02640' target="_blank">PDF</a></span>
+- <span class='jb-medium'>YOLO9000: Better, Faster, Stronger, 2016. ｜ <a href='https://arxiv.org/abs/1612.08242' target="_blank">PDF</a></span>
+- <span class='jb-medium'>YOLOv3: An Incremental Improvement, 2018. ｜ <a href='https://arxiv.org/abs/1804.02767' target="_blank">PDF</a></span>
+- <span class='jb-medium'> ｜ <a href='' target="_blank">PDF</a></span>
 - <span class='jb-medium'> ｜ <a href='' target="_blank">PDF</a></span>
 - <span class='jb-medium'> ｜ <a href='' target="_blank">PDF</a></span>
 - <span class='jb-medium'> ｜ <a href='' target="_blank">PDF</a></span>
