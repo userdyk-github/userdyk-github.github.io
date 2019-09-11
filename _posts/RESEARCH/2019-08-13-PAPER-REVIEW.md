@@ -54,7 +54,10 @@ tags : [RESEARCH]
 - <span class='jb-medium'>From Facial Parts Responses to Face Detection: A Deep Learning Approach, 2015. ｜ <a href='https://arxiv.org/abs/1509.06451' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Surpassing Human-Level Face Verification Performance on LFW with GaussianFace, 2014. ｜ <a href='https://arxiv.org/abs/1404.3840' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Rapid Object Detection using a Boosted Cascade of Simple Features, 2001. ｜ <a href='https://ieeexplore.ieee.org/document/990517' target="_blank">PDF</a></span>
-- <span class='jb-medium'> ｜ <a href='' target="_blank">PDF</a></span>
+- <span class='jb-medium'>VGGFace2: A Dataset For Recognizing Faces Across Pose And Age, 2017. ｜ <a href='https://arxiv.org/abs/1710.08092' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Joint Face Detection and Alignment Using Multitask Cascaded Convolutional Networks,
+2016 ｜ <a href='https://arxiv.org/abs/1604.02878' target="_blank">PDF</a></span>
+- <span class='jb-medium'>FaceNet: A Unified Embedding for Face Recognition and Clustering, 2015. ｜ <a href='https://arxiv.org/abs/1503.03832' target="_blank">PDF</a></span>
 
 
 
