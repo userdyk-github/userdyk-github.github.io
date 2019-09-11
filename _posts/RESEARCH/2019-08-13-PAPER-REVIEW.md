@@ -26,9 +26,10 @@ tags : [RESEARCH]
 - <span class='jb-medium'>A Survey on Transfer Learning, 2010. ｜ <a href='https://ieeexplore.ieee.org/document/5288526' target="_blank">PDF</a></span>
 - <span class='jb-medium'>How Transferable Are Features In Deep Neural Networks?, 2014. ｜ <a href='https://arxiv.org/abs/1411.1792' target="_blank">PDF</a></span>
 - <span class='jb-medium'>CNN Features Off-the-shelf: An Astounding Baseline For Recognition, 2014 ｜ <a href='https://arxiv.org/abs/1403.6382' target="_blank">PDF</a></span>
-- <span class='jb-medium'> ｜ <a href='' target="_blank">PDF</a></span>
-- <span class='jb-medium'> ｜ <a href='' target="_blank">PDF</a></span>
-- <span class='jb-medium'> ｜ <a href='' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Asirra: A CAPTCHA that Exploits Interest-Aligned Manual Image Categorization, 2007. ｜ <a href='https://dl.acm.org/citation.cfm?id=1315291' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Machine Learning Attacks Against the Asirra CAPTCHA, 2007. ｜ <a href='https://dl.acm.org/citation.cfm?id=1455838' target="_blank">PDF</a></span>
+- <span class='jb-medium'>OverFeat: Integrated Recognition, Localization and Detection using Convolutional Networks,
+2013 ｜ <a href='https://arxiv.org/abs/1312.6229' target="_blank">PDF</a></span>
 - <span class='jb-medium'> ｜ <a href='' target="_blank">PDF</a></span>
 - <span class='jb-medium'> ｜ <a href='' target="_blank">PDF</a></span>
 - <span class='jb-medium'> ｜ <a href='' target="_blank">PDF</a></span>
