@@ -14,13 +14,26 @@ tags : [RESEARCH]
 - <span class='jb-medium'>A fast learning algorithm for deep belief nets｜ <a href='https://www.cs.toronto.edu/~hinton/absps/fastnc.pdf.' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift｜ <a href='https://arxiv.org/abs/1502.03167' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Rethinking the Inception Architecture for Computer Vision｜ <a href='https://arxiv.org/abs/1512.00567' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Very Deep Convolutional Networks for Large-Scale Image Recognition｜ <a href='https://arxiv.org/abs/1409.1556' target="_blank">PDF</a></span>
+- <span class='jb-medium'>ImageNet Classification with Deep Convolutional Neural Networks｜ <a href='https://arxiv.org/abs/1409.1556' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Deep Residual Learning for Image Recognition｜ <a href='https://arxiv.org/abs/1409.1556' target="_blank">PDF</a></span>
 - <span class='jb-medium'>GloVe: Global Vectors for Word Representation｜ <a href='https://nlp.stanford.edu/pubs/glove.pdf' target="_blank">PDF</a></span>
 - <span class='jb-medium'>U-Net: Convolutional Networks for Biomedical Image Segmentation｜ <a href='https://arxiv.org/abs/1505.04597.' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Generative Adversarial Networks｜ <a href='https://arxiv.org/abs/1406.2661' target="_blank">PDF</a></span>
-- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a></span>
-- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a></span>
-- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a></span>
-- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Convolutional Deep Belief Networks for Scalable Unsupervised Learning of Hierarchical Representations｜ <a href='https://ai.stanford.edu/~ang/papers/icml09-ConvolutionalDeepBeliefNetworks.pdf' target="_blank">PDF</a></span>
+- <span class='jb-medium'>ADADELTA: An Adaptive Learning Rate Method｜ <a href='https://arxiv.org/abs/1212.5701' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Adam: A Method for Stochastic Optimization｜ <a href='https://arxiv.org/abs/1412.6980' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation｜ <a href='https://arxiv.org/abs/1609.08144' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm｜ <a href='https://arxiv.org/abs/1712.01815' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Striving for Simplicity: The All Convolutional Net｜ <a href='https://arxiv.org/abs/1412.6806' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Identity Mappings in Deep Residual Networks｜ <a href='https://arxiv.org/abs/1603.05027' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Going Deeper with Convolutions｜ <a href='https://www.cs.unc.edu/~wliu/papers/GoogLeNet.pdf' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning｜ <a href='https://arxiv.org/abs/1602.07261' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Xception: Deep Learning with Depthwise Separable Convolutions｜ <a href='https://arxiv.org/abs/1610.02357' target="_blank">PDF</a></span>
+- <span class='jb-medium'>MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications｜ <a href='https://arxiv.org/abs/1704.04861?source=post_page---------------------------' target="_blank">PDF</a></span>
+- <span class='jb-medium'>MobileNetV2: Inverted Residuals and Linear Bottlenecks｜ <a href='https://arxiv.org/abs/1801.04381' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Densely Connected Convolutional Networks｜ <a href='https://arxiv.org/abs/1608.06993' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Matrix capsules with EM routing｜ <a href='https://ai.google/research/pubs/pub46653' target="_blank">PDF</a></span>
 - <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a></span>
 - <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a></span>
 - <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a></span>
