@@ -10,7 +10,7 @@ tags : [RESEARCH]
 <details markdown="1">
 
 - Visualizing for the Non-Visual: Enabling the Visually Impaired to Use Visualization
-
+- 
 
 
 <details markdown="1">
