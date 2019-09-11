@@ -39,8 +39,20 @@ tags : [RESEARCH]
 - <span class='jb-medium'>You Only Look Once: Unified, Real-Time Object Detection, 2015 ｜ <a href='https://arxiv.org/abs/1506.02640' target="_blank">PDF</a></span>
 - <span class='jb-medium'>YOLO9000: Better, Faster, Stronger, 2016. ｜ <a href='https://arxiv.org/abs/1612.08242' target="_blank">PDF</a></span>
 - <span class='jb-medium'>YOLOv3: An Incremental Improvement, 2018. ｜ <a href='https://arxiv.org/abs/1804.02767' target="_blank">PDF</a></span>
-- <span class='jb-medium'> ｜ <a href='' target="_blank">PDF</a></span>
-- <span class='jb-medium'> ｜ <a href='' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Face Recognition: A Literature Survey, 2003.｜ <a href='https://dl.acm.org/citation.cfm?id=954342' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Face Detection: A Survey, 2001 ｜ <a href='https://www.sciencedirect.com/science/article/pii/S107731420190921X' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Human And Machine Recognition Of Faces: A Survey, 1995. ｜ <a href='https://ieeexplore.ieee.org/abstract/document/381842' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Robust Real-time Object Detection, 2004 ｜ <a href='https://link.springer.com/article/10.1023/B:VISI.0000013087.49260.fb' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Face Recognition Using Eigenfaces, 1991. ｜ <a href='https://www.computer.org/csdl/proceedings/cvpr/1991/2148/00/00139758.pdf' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Deep Face Recognition: A Survey, 2018. ｜ <a href='https://arxiv.org/abs/1804.06655' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Deep Face Recognition, 2015. ｜ <a href='http://cis.csuohio.edu/~sschung/CIS660/DeepFaceRecognition_parkhi15.pdf' target="_blank">PDF</a></span>
+- <span class='jb-medium'>FaceNet: A Unified Embedding for Face Recognition and Clustering, 2015.｜ <a href='https://arxiv.org/abs/1503.03832' target="_blank">PDF</a></span>
+- <span class='jb-medium'>DeepFace: Closing the Gap to Human-Level Performance in Face Verification, 2014｜ <a href='https://ieeexplore.ieee.org/document/6909616' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Deep Learning Face Representation by Joint Identification-Verification, 2014.｜ <a href='https://arxiv.org/abs/1406.4773' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Deep Learning Face Representation from Predicting 10,000 Classes, 2014. ｜ <a href='https://dl.acm.org/citation.cfm?id=2679769' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Multi-view Face Detection Using Deep Convolutional Neural Networks, 2015. ｜ <a href='https://arxiv.org/abs/1502.02766' target="_blank">PDF</a></span>
+- <span class='jb-medium'>From Facial Parts Responses to Face Detection: A Deep Learning Approach, 2015. ｜ <a href='https://arxiv.org/abs/1509.06451' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Surpassing Human-Level Face Verification Performance on LFW with GaussianFace, 2014. ｜ <a href='https://arxiv.org/abs/1404.3840' target="_blank">PDF</a></span>
 - <span class='jb-medium'> ｜ <a href='' target="_blank">PDF</a></span>
 - <span class='jb-medium'> ｜ <a href='' target="_blank">PDF</a></span>
 
