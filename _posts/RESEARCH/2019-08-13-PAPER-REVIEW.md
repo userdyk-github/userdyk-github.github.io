@@ -34,6 +34,44 @@ tags : [RESEARCH]
 - <span class='jb-medium'>MobileNetV2: Inverted Residuals and Linear Bottlenecks｜ <a href='https://arxiv.org/abs/1801.04381' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Densely Connected Convolutional Networks｜ <a href='https://arxiv.org/abs/1608.06993' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Matrix capsules with EM routing｜ <a href='https://ai.google/research/pubs/pub46653' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Dynamic Routing Between Capsules｜ <a href='https://arxiv.org/abs/1710.09829' target="_blank">PDF</a></span>
+- <span class='jb-medium'>You Only Look Once: Unified, Real-Time Object Detection｜ <a href='https://arxiv.org/abs/1506.02640' target="_blank">PDF</a></span>
+- <span class='jb-medium'>YOLO9000: Better, Faster, Stronger｜ <a href='https://arxiv.org/abs/1612.08242' target="_blank">PDF</a></span>
+- <span class='jb-medium'>YOLOv3: An Incremental Improvement｜ <a href='https://arxiv.org/abs/1804.02767' target="_blank">PDF</a></span>
+- <span class='jb-medium'>A Neural Algorithm of Artistic Style｜ <a href='https://arxiv.org/abs/1508.06576' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Perceptual Losses for Real-Time Style Transfer and Super-Resolution｜ <a href='https://arxiv.org/abs/1603.08155' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks｜ <a href='https://arxiv.org/abs/1511.06434' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Conditional Generative Adversarial Nets｜ <a href='https://arxiv.org/abs/1411.1784' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Show and Tell: A Neural Image Caption Generator｜ <a href='https://arxiv.org/abs/1411.4555v2' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation｜ <a href='https://arxiv.org/abs/1406.1078v3' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Sequence to Sequence Learning with Neural Networks｜ <a href='http://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf' target="_blank">PDF</a></span>
+- <span class='jb-medium'>LONG SHORT-TERM MEMORY｜ <a href='https://www.bioinf.jku.at/publications/older/2604.pdf' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation｜ <a href='https://arxiv.org/abs/1406.1078' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling｜ <a href='https://arxiv.org/abs/1412.3555' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Efficient Estimation of Word Representations in Vector Space｜ <a href='https://arxiv.org/pdf/1301.3781.pdf' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Distributed Representations of Words and Phrases and their Compositionality｜ <a href='http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Linguistic Regularities in Continuous Space Word Representations｜ <a href='https://www.aclweb.org/anthology/N13-1090' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Character-Aware Neural Language Models｜ <a href='https://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/viewFile/12489/12017' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Sequence to Sequence Learning with Neural Networks｜ <a href='https://arxiv.org/abs/1409.3215' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation｜ <a href='https://arxiv.org/abs/1406.1078' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Neural Machine Translation by Jointly Learning to Align and Translate｜ <a href='https://arxiv.org/abs/1409.0473' target="_blank">PDF</a></span>
+- <span class='jb-medium'>The Fourier Transform - A Primer｜ <a href='https://www.semanticscholar.org/paper/The-Fourier-Transform-a-Primer-the-Fourier-%7B-a-Shatkay/409e109c551767c296792ffa9f6d40a739c96ee7' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Recent Progresses in Deep Learning based Acoustic Models (Updated)｜ <a href='https://arxiv.org/abs/1804.09298' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Framewise Phoneme Classification with Bidirectional LSTM and Other Neural Network Architectures｜ <a href='https://www.cs.toronto.edu/~graves/nn_2005.pdf' target="_blank">PDF</a></span>
+- <span class='jb-medium'>SPEECH RECOGNITION WITH DEEP RECURRENT NEURAL NETWORKS｜ <a href='https://arxiv.org/pdf/1303.5778.pdf' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Deep Speech 2: End-to-End Speech Recognition in English and Mandarin｜ <a href='https://arxiv.org/pdf/1512.02595v1.pdf' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Towards End-to-End Speech Recognition with Recurrent Neural Networks｜ <a href='http://proceedings.mlr.press/v32/graves14.pdf' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Deep Speech 2: End-to-End Speech Recognition in English and Mandarin｜ <a href='https://arxiv.org/abs/1512.02595' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Listen, Attend and Spell｜ <a href='https://arxiv.org/abs/1508.01211' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Playing Atari with Deep Reinforcement Learning｜ <a href='https://arxiv.org/abs/1312.5602' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Rainbow: Combining Improvements in Deep Reinforcement Learning｜ <a href='https://arxiv.org/abs/1710.02298' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Proximal Policy Optimization Algorithms｜ <a href='https://arxiv.org/abs/1707.06347' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm｜ <a href='https://arxiv.org/abs/1712.01815' target="_blank">PDF</a></span>
+- <span class='jb-medium'>ALVINN: AN AUTONOMOUS LAND VEHICLE IN A NEURAL NETWORK ｜ <a href='https://papers.nips.cc/paper/95-alvinn-an-autonomous-land-vehicle-in-a-neural-network.pdf' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Vehicle Detection from 3D Lidar Using Fully Convolutional Network｜ <a href='https://arxiv.org/abs/1608.07916' target="_blank">PDF</a></span>
+- <span class='jb-medium'>End to End Learning for Self-Driving Cars｜ <a href='https://arxiv.org/abs/1604.07316' target="_blank">PDF</a></span>
+- <span class='jb-medium'>ChauffeurNet: Learning to Drive by Imitating the Best and Synthesizing the Worst｜ <a href='https://arxiv.org/abs/1812.03079' target="_blank">PDF</a></span>
+- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a></span>
 - <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a></span>
 - <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a></span>
 - <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a></span>
