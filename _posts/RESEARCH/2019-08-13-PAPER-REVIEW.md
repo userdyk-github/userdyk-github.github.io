@@ -9,7 +9,7 @@ tags : [RESEARCH]
 
 <hr class="division1">
 
-- Visualizing for the Non-Visual: Enabling the Visually Impaired to Use Visualization
+- Visualizing for the Non-Visual: Enabling the Visually Impaired to Use Visualization ｜ [Review](https://userdyk-github.github.io/research/PAPER-REVIEW-0001.html)
 - 
 
 
