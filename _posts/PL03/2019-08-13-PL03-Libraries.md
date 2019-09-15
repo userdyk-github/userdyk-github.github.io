@@ -64,7 +64,7 @@ tags : [PL03]
   
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-PyQt.html'>PyQt</a>
   - <a href='https://www.tutorialspoint.com/pyqt/index.htm' target="_blank"><span class='jb-small'>https://www.tutorialspoint.com/pyqt/index.htm</span></a>
-  - <a href='https://wikidocs.net/book/2165' target="_blank">https://wikidocs.net/book/2165</a>
+  - <a href='https://wikidocs.net/book/2165' target="_blank"><span class='jb-small'>https://wikidocs.net/book/2165</span></a>
   
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-Tkinter.html'>Tkinter</a>
   - <a href='https://tkdocs.com/tutorial/index.html' target="_blank"><span class='jb-small'>https://tkdocs.com/tutorial/index.html</span></a>
