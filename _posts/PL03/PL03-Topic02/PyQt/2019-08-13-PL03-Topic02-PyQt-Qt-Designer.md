@@ -36,14 +36,13 @@ app.exec()
 <details markdown="1">
 <summary class='jb-small' style="color:blue">FILE PATH</summary>
 <hr class='division3'>
-<div class='jb-medium'>
-  when there exist the ui-file in parent folder,<br>
+<div class='jb-medium'>when there exist the ui-file in parent folder,</div><br>
   `dlg = uic.loadUi("../test.ui")`<br>
-  when there exist the ui-file in same folder,<br>
+<div class='jb-medium'>when there exist the ui-file in same folder,</div><br>
   `dlg = uic.loadUi("test.ui")`<br>
-  when there exist the ui-file in sub-folder,<br>
+<div class='jb-medium'>when there exist the ui-file in sub-folder,</div><br>
   `dlg = uic.loadUi("sub-folder/test.ui")`<br>
-</div>
+
 <hr class='division3'>
 </details>
 
