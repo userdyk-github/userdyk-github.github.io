@@ -1868,6 +1868,21 @@ C1 Stockholm2          NaN     909976.0         NaN     Sweden2
 
 <hr class="division2">
 
+## **Load dataset**
+
+```python
+```
+<details markdown='1'>
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+
+
+<hr class="division2">
+
 ## **Covert Data-Type**
 
 ### ***DataFrame to Series***
