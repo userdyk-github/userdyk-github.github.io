@@ -56,6 +56,7 @@ y_test_pred = classifier.predict(X_test)
 
 # result
 print(metrics.classification_report(y_test, y_test_pred), '\n\n\n')
+print(y_test_pred, '\n')
 print(metrics.confusion_matrix(y_test, y_test_pred))
 ```
 <details markdown="1">
@@ -189,6 +190,7 @@ y_test_pred = classifier.predict(X_test)
 
 # result
 print(metrics.classification_report(y_test, y_test_pred), '\n\n\n')
+print(y_test_pred, '\n')
 print(metrics.confusion_matrix(y_test, y_test_pred))
 ```
 <details markdown="1">
@@ -251,6 +253,7 @@ y_test_pred = classifier.predict(X_test)
 
 # result
 print(metrics.classification_report(y_test, y_test_pred), '\n\n\n')
+print(y_test_pred, '\n')
 print(metrics.confusion_matrix(y_test, y_test_pred))
 ```
 <details markdown="1">
@@ -313,6 +316,7 @@ y_test_pred = classifier.predict(X_test)
 
 # result
 print(metrics.classification_report(y_test, y_test_pred), '\n\n\n')
+print(y_test_pred, '\n')
 print(metrics.confusion_matrix(y_test, y_test_pred))
 ```
 <details markdown="1">
@@ -385,6 +389,7 @@ y_test_pred = classifier.predict(X_test)
 
 # result
 print(metrics.classification_report(y_test, y_test_pred), '\n\n\n')
+print(y_test_pred, '\n')
 print(metrics.confusion_matrix(y_test, y_test_pred))
 ```
 <details markdown="1">
