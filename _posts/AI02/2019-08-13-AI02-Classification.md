@@ -151,6 +151,18 @@ print(df)
 <hr class='division3'>
 </details>
 
+<br><br><br>
+
+**Classification through logistic regression about dataset on real world**
+
+```python
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
@@ -202,6 +214,19 @@ weighted avg       0.96      0.96      0.96        45
 </details>
 <br><br><br>
 
+**Classification through k-nearest neighbor methods about dataset on real world**
+
+```python
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
+<br><br><br>
+
 ---
 
 ### ***Classification through support vector machines***
@@ -248,6 +273,19 @@ weighted avg       1.00      1.00      1.00        45
 ```
 <hr class='division3'>
 </details>
+<br><br><br>
+
+**Classification through support vector machines about dataset on real world**
+
+```python
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 ---
@@ -298,6 +336,19 @@ weighted avg       0.96      0.96      0.96        45
 </details>
 <br><br><br>
 
+**Classification through decision trees about dataset on real world**
+
+```python
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
+<br><br><br>
+
 ---
 
 ### ***Classification through random forest methods***
@@ -346,6 +397,19 @@ weighted avg       1.00      1.00      1.00        45
 
 <hr class='division3'>
 </details>
+<br><br><br>
+
+**Classification through random forest methods about dataset on real world**
+
+```python
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 ---
