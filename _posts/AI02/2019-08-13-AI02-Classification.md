@@ -517,4 +517,4 @@ Reference
 
 ---
 
-[1]:{{ site.url }}/download/AI02/iris.csv.py
+[1]:{{ site.url }}/download/AI02/iris.csv
