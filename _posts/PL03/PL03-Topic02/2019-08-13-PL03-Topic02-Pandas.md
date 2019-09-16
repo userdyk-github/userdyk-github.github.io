@@ -1900,14 +1900,13 @@ C1 Stockholm2          NaN     909976.0         NaN     Sweden2
 <hr class="division1">
 
 List of posts followed by this article
-- <a href='https://datascienceschool.net/view-notebook/c5ccddd6716042ee8be3e5436081778b/' target="_blank">데이터 사이언스 스쿨</a>
+- [post1](https://userdyk-github.github.io/)
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
 
 Reference
-- [post1](https://userdyk-github.github.io/)
-- <a href='https://userdyk-github.github.io/'>post2</a>
+- <a href='https://datascienceschool.net/view-notebook/c5ccddd6716042ee8be3e5436081778b/' target="_blank">데이터 사이언스 스쿨</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
