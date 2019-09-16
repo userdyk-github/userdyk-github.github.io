@@ -55,7 +55,7 @@ title: RESEARCH
 > <a href='' target="_blank"></a>
 
 > GOOGLE
->> <a href='https://ai.google/research/' target="_blank">research</a>|<br>
+>> <a href='https://ai.google/research/' target="_blank">research</a>|<a href='https://ai.google/research/join-us/' target="_blank">careers</a>|<br>
 > <a href='' target="_blank"></a>
 
 > AMAZON
