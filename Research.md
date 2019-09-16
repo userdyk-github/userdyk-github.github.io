@@ -67,7 +67,7 @@ title: RESEARCH
 > <a href='' target="_blank"></a>
 
 > QUALCOMM
->> <a href='https://www.qualcomm.com/invention/artificial-intelligence/ai-research' target="_blank">research</a>|<br>
+>> <a href='https://www.qualcomm.com/invention/artificial-intelligence/ai-research' target="_blank">research</a>|<a href='https://jobs.qualcomm.com/public/search.xhtml' target="_blank">careers</a>|<br>
 > <a href='' target="_blank"></a>
 
 > INTEL
