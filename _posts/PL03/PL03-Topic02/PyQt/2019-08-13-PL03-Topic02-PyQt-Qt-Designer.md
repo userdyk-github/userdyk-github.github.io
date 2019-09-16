@@ -51,7 +51,7 @@ app.exec()
 
 <hr class="division2">
 
-## Convert
+## Convert(1)
 
 `ui file`
 ![캡처](https://user-images.githubusercontent.com/52376448/64971472-b73dcd00-d8e2-11e9-816d-82de1be7c8a9.JPG)
@@ -81,9 +81,40 @@ app.exec()
 <hr class='division3'>
 </details>
 
+<br><br><br>
+
 <hr class="division2">
 
-## title3
+## Convert(2)
+
+```python
+from PyQt5 import QtWidgets, uic
+
+def Convert():
+    dlg.lineEdit_2.setText(str(float(dlg.lineEdit.text())*1.23))
+
+app = QtWidgets.QApplication([])
+dlg = uic.loadUi("test.ui")
+
+dlg.lineEdit.setFocus()
+dlg.lineEdit.setPlaceholderText("Insert")
+dlg.pushButton.clicked.connect(Convert)
+
+dlg.lineEdit.returnPressed.connect(Convert)
+
+dlg.show()
+app.exec()
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![캡처](https://user-images.githubusercontent.com/52376448/64973921-d5a5c780-d8e6-11e9-9aa6-2fba2916c53f.JPG)
+<hr class='division3'>
+</details>
+
+<br><br><br>
+
 
 <hr class="division1">
 
