@@ -21,7 +21,7 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## Execute the ui-file on python
+## Execute the ui-file by python
 
 ```python
 from PyQt5 import QtWidgets, uic
