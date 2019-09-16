@@ -36,6 +36,7 @@ app.exec()
 <details markdown="1">
 <summary class='jb-small' style="color:blue">FILE PATH</summary>
 <hr class='division3'>
+![그림1](https://user-images.githubusercontent.com/52376448/64966645-22cf6c80-d8da-11e9-910d-740977ac18ad.png)
 <div class='jb-medium'>when there exist the ui-file in parent folder,</div>
 `dlg = uic.loadUi("../test.ui")`<br>
 <div class='jb-medium'>when there exist the ui-file in same folder,</div>
