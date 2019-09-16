@@ -76,8 +76,7 @@ List of posts followed by this article
 ---
 
 Reference
-- [Youtube Lecture](https://www.youtube.com/playlist?list=PLuTktZ8WcEGTdId-Kjbj6gsZTk65yudJh)
-- <a href='https://userdyk-github.github.io/'>post2</a>
+- <a href='https://www.youtube.com/playlist?list=PLuTktZ8WcEGTdId-Kjbj6gsZTk65yudJh' target="_blank">Youtube Lecture</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
