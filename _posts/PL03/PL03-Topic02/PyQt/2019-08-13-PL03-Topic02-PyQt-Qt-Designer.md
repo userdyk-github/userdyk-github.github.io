@@ -21,7 +21,7 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
+## Execute ui file on python
 
 ```python
 from PyQt5 import QtWidgets, uic
@@ -32,6 +32,22 @@ dlg = uic.loadUi("test.ui")
 dlg.show()
 app.exec()
 ```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">FILE PATH</summary>
+<hr class='division3'>
+<div class='jb-medium'>
+  when there exist the ui-file in parent folder,<br>
+  `dlg = uic.loadUi("../test.ui")`<br>
+  when there exist the ui-file in same folder,<br>
+  `dlg = uic.loadUi("test.ui")`<br>
+  when there exist the ui-file in sub-folder,<br>
+  `dlg = uic.loadUi("sub-folder/test.ui")`<br>
+</div>
+<hr class='division3'>
+</details>
+
+<br><br><br>
 
 <hr class="division2">
 
@@ -57,11 +73,7 @@ Reference
 
 ---
 
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-<hr class='division3'>
-</details>
+
 
 
 
