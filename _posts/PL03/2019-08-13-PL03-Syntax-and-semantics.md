@@ -21,42 +21,189 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## **Before taking up the main subject**
-
-<br><br><br>
-<hr class="division2">
-
-## **What is python?**
-
-<br><br><br>
-<hr class="division2">
-
 ## **Basis of python programming**
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
 
 <br><br><br>
 <hr class="division2">
 
 ## **Build the structure of the program! Control statement**
 
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
 <br><br><br>
 <hr class="division2">
 
 ## **How to do the input and output of the program**
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
 
 <br><br><br>
 <hr class="division2">
 
 ## **Advanced python**
 
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
 <br><br><br>
 <hr class="division2">
 
 ## **Python programming, how do I get started?**
 
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
 <br><br><br>
 <hr class="division2">
 
 ## **Regular expression**
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
 
 <br><br><br>
 <hr class="division1">
