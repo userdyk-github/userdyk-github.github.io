@@ -339,6 +339,16 @@ weighted avg       0.96      0.96      0.96        45
 **Classification through decision trees about dataset on real world**
 
 ```python
+import pandas as pd
+from sklearn.tree import DecisionTreeClassifier
+
+df = pd.read_csv(r'csv file path', index_col=0)
+y = df[target class column]
+X = df[ col1, col2]
+
+clf= DecisionTreeClassifier()
+clf.fit(X,y)
+clf.predict(X_test)
 ```
 
 <details markdown="1">
