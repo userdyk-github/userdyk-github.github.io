@@ -36,7 +36,7 @@ List of posts to read before reading this article
 
 ## **Implement with sklearn**
 
-### ***Classification through logistic regression***
+### ***Classification through logistic regression for iris-dataset***
 
 ```python
 from sklearn import datasets
@@ -155,7 +155,7 @@ print(df)
 
 ---
 
-### ***Classification through k-nearest neighbor methods***
+### ***Classification through k-nearest neighbor methods for iris-dataset***
 
 ```python
 from sklearn import datasets
@@ -202,7 +202,7 @@ weighted avg       0.96      0.96      0.96        45
 
 ---
 
-### ***Classification through support vector machines***
+### ***Classification through support vector machines for iris-dataset***
 
 ```python
 from sklearn import datasets
@@ -249,7 +249,7 @@ weighted avg       1.00      1.00      1.00        45
 
 ---
 
-### ***Classification through decision trees***
+### ***Classification through decision trees for iris-dataset***
 
 ```python
 from sklearn import datasets
@@ -296,7 +296,7 @@ weighted avg       0.96      0.96      0.96        45
 
 ---
 
-### ***Classification through random forest methods***
+### ***Classification through random forest methods for iris-dataset***
 
 ```python
 from sklearn import datasets
