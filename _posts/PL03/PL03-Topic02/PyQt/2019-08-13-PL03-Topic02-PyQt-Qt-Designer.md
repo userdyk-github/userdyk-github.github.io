@@ -124,6 +124,8 @@ app.exec()
 pyuic5 -x main.ui -o main.py
 ```
 
+<br><br><br>
+
 <hr class="division1">
 
 List of posts followed by this article
