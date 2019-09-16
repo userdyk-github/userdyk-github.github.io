@@ -110,7 +110,7 @@ app.exec()
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-![캡처](https://user-images.githubusercontent.com/52376448/64974240-62508580-d8e7-11e9-888a-b2a4a719e26e.JPG)
+![그림1](https://user-images.githubusercontent.com/52376448/64975105-3209e680-d8e9-11e9-9122-dbbaf018d92c.png)
 <hr class='division3'>
 </details>
 
