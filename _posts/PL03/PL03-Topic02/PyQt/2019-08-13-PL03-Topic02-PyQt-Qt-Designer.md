@@ -1,6 +1,6 @@
 ---
 layout : post
-title : PL03-Topic02, Qt Designer
+title : PL03-Topic02, PyQt, Qt Designer
 categories: [PL03-Topic02]
 comments : true
 tags : [PL03-Topic02]
