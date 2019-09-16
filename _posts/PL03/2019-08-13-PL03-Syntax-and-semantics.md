@@ -21,51 +21,51 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## **Basis of python programming**
+## **Basis of python programming, Data structure**
 
-### ******
-
-<br><br><br>
-
----
-
-### ******
+### ***Number***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***String***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***List***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***Tuple***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***Dictionary***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***Set***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***Bool***
+
+<br><br><br>
+
+---
+
+### ***Variable***
 
 
 <br><br><br>
@@ -73,75 +73,75 @@ List of posts to read before reading this article
 
 ## **Build the structure of the program! Control statement**
 
-### ******
+### ***if***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***while***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***for***
 
 <br><br><br>
 <hr class="division2">
 
 ## **How to do the input and output of the program**
 
-### ******
+### ***Function***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***Input/Ouput***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***Read/Write***
 
 <br><br><br>
 <hr class="division2">
 
 ## **Advanced python**
 
-### ******
+### ***Class***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***Module***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***Package***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***Exception handling***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***Built-in function***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***External function***
 
 <br><br><br>
 <hr class="division2">
@@ -191,19 +191,19 @@ List of posts to read before reading this article
 
 ## **Regular expression**
 
-### ******
+### ***Explore regular expressions***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***Get started with regular expressions***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***Into a world of powerful regular expression***
 
 <br><br><br>
 <hr class="division1">
