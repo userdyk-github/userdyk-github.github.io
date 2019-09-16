@@ -77,7 +77,7 @@ app.exec()
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-![캡처](https://user-images.githubusercontent.com/52376448/64971602-e6543e80-d8e2-11e9-9a3a-03f9c4c90afe.JPG)
+![캡처](https://user-images.githubusercontent.com/52376448/64976720-f8d37580-d8ec-11e9-9514-dba0530d65e8.JPG)
 <hr class='division3'>
 </details>
 
