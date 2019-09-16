@@ -79,7 +79,7 @@ title: RESEARCH
 > <a href='' target="_blank"></a>
 
 > NVIDIA 
->> <a href='https://www.nvidia.com/en-us/research/' target="_blank">research</a>|<br>
+>> <a href='https://www.nvidia.com/en-us/research/' target="_blank">research</a>|<a href='https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite' target="_blank">careers</a><br>
 > <a href='' target="_blank"></a>
 
 > CANON 
