@@ -24,7 +24,13 @@ List of posts to read before reading this article
 ## title1
 
 ```python
+from PyQt5 import QtWidgets, uic
 
+app = QtWidgets.QApplication([])
+dlg = uic.loadUi("")
+
+dlg.show()
+app.exec()
 ```
 
 <hr class="division2">
