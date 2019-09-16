@@ -94,7 +94,7 @@ title: RESEARCH
 #### _Domestic_
 
 > SAMSUNG
->> <a href='https://research.samsung.com/artificial-intelligence' target="_blank">research</a>|<br>
+>> <a href='https://research.samsung.com/artificial-intelligence' target="_blank">research</a>|<a href='https://research.samsung.com/careers' target="_blank">careers</a>|<br>
 > <a href='' target="_blank"></a>
 
 > NAVER 
