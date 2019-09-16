@@ -1558,10 +1558,10 @@ df.drop('A', axis=1)
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
-   A  B   C   D
-0  0  1   2   3
-1  4  5   6   7
-2  8  9  10  11
+   B   C   D
+0  1   2   3
+1  5   6   7
+2  9  10  11
 ```
 <hr class='division3'>
 </details>
@@ -1575,10 +1575,10 @@ df.drop(['B', 'C'], axis=1)
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
-   A  B   C   D
-0  0  1   2   3
-1  4  5   6   7
-2  8  9  10  11
+   A   D
+0  0   3
+1  4   7
+2  8  11
 ```
 <hr class='division3'>
 </details>
@@ -1594,7 +1594,6 @@ df.drop(1, axis=0)
 ```
    A  B   C   D
 0  0  1   2   3
-1  4  5   6   7
 2  8  9  10  11
 ```
 <hr class='division3'>
@@ -1609,10 +1608,8 @@ df.drop([1,2], axis=0)
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
-   A  B   C   D
-0  0  1   2   3
-1  4  5   6   7
-2  8  9  10  11
+   A  B  C  D
+0  0  1  2  3
 ```
 <hr class='division3'>
 </details>
