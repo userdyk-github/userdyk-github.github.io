@@ -118,7 +118,7 @@ app.exec()
 
 <hr class="division2">
 
-## Convert(2)
+## Building .exe file
 
 ```
 pyuic5 -x main.ui -o main.py
