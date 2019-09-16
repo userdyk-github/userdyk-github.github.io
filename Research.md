@@ -63,7 +63,7 @@ title: RESEARCH
 > <a href='' target="_blank"></a>
 
 > MICROSOFT
->> <a href='https://www.microsoft.com/en-us/research/research-area/artificial-intelligence/' target="_blank">research</a>|<br>
+>> <a href='https://www.microsoft.com/en-us/research/research-area/artificial-intelligence/' target="_blank">research</a>|<a href='https://www.microsoft.com/en-us/research/lab/microsoft-research-ai/opportunities/' target="_blank">careers</a>|<br>
 > <a href='' target="_blank"></a>
 
 > QUALCOMN
