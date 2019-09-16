@@ -116,6 +116,13 @@ app.exec()
 
 <br><br><br>
 
+<hr class="division2">
+
+## Convert(2)
+
+```
+pyuic5 -x main.ui -o main.py
+```
 
 <hr class="division1">
 
