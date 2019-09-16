@@ -9,7 +9,7 @@ tags : [PL03]
 <a href='https://en.wikipedia.org/wiki/List_of_Python_software' target="_blank">See more wikipedia for a list of python libraries</a><br>
 
 
-- <a href='https://docs.python.org/3/library/numeric.html' target="_blank">Basic Numeric and Mathematical Modules</a>
+- <a href='https://docs.python.org/3/library/numeric.html' target="_blank">Numeric and Mathematical Modules on The Python Standard Library</a>
 
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-NumPy.html'>NumPy</a>
   - <a href='https://docs.scipy.org/doc/numpy/genindex.html' target="_blank"><span class='jb-small'>https://docs.scipy.org/doc/numpy/genindex.html</span></a>
