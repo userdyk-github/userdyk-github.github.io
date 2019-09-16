@@ -1688,6 +1688,8 @@ df.drop_duplicates('phone',keep='last')
 #### Concatenating
 
 ```python
+import pandas as pd
+
 df1 = pd.DataFrame([[909976, "Sweden1"],
                     [8615246, "United Kingdom1"],
                     [2872086, "Italy1"],
