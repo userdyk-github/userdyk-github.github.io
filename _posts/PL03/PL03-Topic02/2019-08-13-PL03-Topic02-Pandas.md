@@ -1871,12 +1871,60 @@ C1 Stockholm2          NaN     909976.0         NaN     Sweden2
 ## **Load dataset**
 
 ```python
+import pandas as pd
+
+df = pd.read_csv(r'C:\Users\userd\Desktop\dataset\iris.csv')
+df.head()
 ```
 <details markdown='1'>
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![캡처](https://user-images.githubusercontent.com/52376448/64994858-bc1b7480-d914-11e9-8c5b-e374bd2d6929.JPG)
 <hr class='division3'>
 </details>
+<br>
+
+```python
+import pandas as pd
+
+df = pd.read_csv(r'C:\Users\userd\Desktop\dataset\iris.csv', index_col=0)
+df.head()
+```
+<details markdown='1'>
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![캡처](https://user-images.githubusercontent.com/52376448/64994804-91c9b700-d914-11e9-82b5-696f4ccb73ef.JPG)
+<hr class='division3'>
+</details>
+<br>
+
+```python
+import pandas as pd
+
+df = pd.read_csv(r'C:\Users\userd\Desktop\dataset\iris.csv', index_col='sepal.length')
+df.head()
+```
+<details markdown='1'>
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![캡처](https://user-images.githubusercontent.com/52376448/64994804-91c9b700-d914-11e9-82b5-696f4ccb73ef.JPG)
+<hr class='division3'>
+</details>
+<br>
+
+```python
+import pandas as pd
+
+df = pd.read_csv(r'C:\Users\userd\Desktop\dataset\iris.csv', index_col='variety')
+df.head()
+```
+<details markdown='1'>
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![캡처](https://user-images.githubusercontent.com/52376448/64994767-7bbbf680-d914-11e9-91b5-9a96982e652e.JPG)
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 
@@ -1912,3 +1960,4 @@ Reference
 ---
 
 
+[1]:{{ site.url }}/download/PL03/iris.csv
