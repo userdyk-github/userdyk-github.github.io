@@ -128,7 +128,7 @@ List of posts followed by this article
 
 Reference
 - <a href='https://www.youtube.com/playlist?list=PLuTktZ8WcEGTdId-Kjbj6gsZTk65yudJh' target="_blank">Youtube Lecture</a>
-- <a href='https://userdyk-github.github.io/'>post3</a>
+- <a href='https://www.youtube.com/watch?v=qiPS70TSvBk' target="_blank">Building .exe file</a>
 
 ---
 
