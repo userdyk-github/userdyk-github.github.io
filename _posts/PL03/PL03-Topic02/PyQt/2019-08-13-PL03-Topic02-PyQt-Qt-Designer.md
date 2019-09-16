@@ -101,6 +101,7 @@ dlg.lineEdit.setPlaceholderText("Insert")
 dlg.pushButton.clicked.connect(Convert)
 
 dlg.lineEdit.returnPressed.connect(Convert)
+dlg.lineEdit_2.setReadOnly(True)
 
 dlg.show()
 app.exec()
