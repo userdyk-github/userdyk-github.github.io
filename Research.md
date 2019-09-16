@@ -66,7 +66,7 @@ title: RESEARCH
 >> <a href='https://www.microsoft.com/en-us/research/research-area/artificial-intelligence/' target="_blank">research(ai)</a>|<a href='https://www.microsoft.com/en-us/research/research-area/computer-vision/' target="_blank">research(cv)</a>|<a href='https://www.microsoft.com/en-us/research/lab/microsoft-research-ai/opportunities/' target="_blank">careers</a>|<br>
 > <a href='' target="_blank"></a>
 
-> QUALCOMN
+> QUALCOMM
 >> <a href='https://www.qualcomm.com/invention/artificial-intelligence/ai-research' target="_blank">research</a>|<br>
 > <a href='' target="_blank"></a>
 
