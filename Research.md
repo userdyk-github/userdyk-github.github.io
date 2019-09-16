@@ -59,7 +59,7 @@ title: RESEARCH
 > <a href='' target="_blank"></a>
 
 > AMAZON
->> <a href='https://www.aboutamazon.com/research' target="_blank">research</a>|<br>
+>> <a href='https://www.aboutamazon.com/research' target="_blank">research</a>|<a href='https://www.amazon.jobs/en/teams/amazonai' target="_blank">careers</a>|<br>
 > <a href='' target="_blank"></a>
 
 > MICROSOFT
