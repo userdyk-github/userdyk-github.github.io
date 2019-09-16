@@ -27,7 +27,7 @@ List of posts to read before reading this article
 from PyQt5 import QtWidgets, uic
 
 app = QtWidgets.QApplication([])
-dlg = uic.loadUi("")
+dlg = uic.loadUi("test.ui")
 
 dlg.show()
 app.exec()
