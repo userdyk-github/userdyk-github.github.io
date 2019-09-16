@@ -75,7 +75,7 @@ title: RESEARCH
 > <a href='' target="_blank"></a>
 
 > PHILIPS 
->> <a href='https://www.philips.com/a-w/research/home' target="_blank">research</a>|<br>
+>> <a href='https://www.philips.com/a-w/research/home' target="_blank">research</a>|<a href='https://jobs.philips.com/jobs/?q=ai' target="_blank">careers</a>|<br>
 > <a href='' target="_blank"></a>
 
 > NVIDIA 
