@@ -23,11 +23,12 @@ List of posts to read before reading this article
 
 ## **A wide variety of alternative algorithms for classification**
 
-- Logistic regression
-- **KNN**, k-nearest neighbor methods
-- **SVM**, support vector machines
-- Decision trees
-- Random forest methods
+- Logistic regression(Regression-based)
+- **KNN**, k-nearest neighbor methods(Distance-based)
+- **SVM**, support vector machines(Distance-based)
+- Decision trees(Rule-based)
+- Random forest methods(Rule-based)
+- Naive Bayes(Probabilistic)
 
 <br><br><br>
 
