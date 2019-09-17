@@ -81,7 +81,13 @@ vocabulary continuous speech recognition｜ <a href='http://www.cs.cmu.edu/afs/c
 - <span class='jb-medium'>End to End Learning for Self-Driving Cars｜ <a href='https://arxiv.org/abs/1604.07316' target="_blank">PDF</a></span>
 - <span class='jb-medium'>ChauffeurNet: Learning to Drive by Imitating the Best and Synthesizing the Worst｜ <a href='https://arxiv.org/abs/1812.03079' target="_blank">PDF</a></span>
 
+<br><br><br>
 
+---
+
+### optimization methods
+
+- <span class='jb-medium'>Hamiltonian Descent Methods｜ <a href='https://arxiv.org/pdf/1809.05042v1.pdf' target="_blank">PDF</a></span>
 
 <br><br><br>
 
