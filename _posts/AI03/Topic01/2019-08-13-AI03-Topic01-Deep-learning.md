@@ -21,6 +21,12 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
+## **Before taking up the main subject**
+
+
+<br><br><br>
+<hr class="division2">
+
 ## **Deeper**
 
 <hr class="division2">
