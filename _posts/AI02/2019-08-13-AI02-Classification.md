@@ -402,37 +402,12 @@ y_test
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
-145     Virginica
-33         Setosa
-122     Virginica
-103     Virginica
-147     Virginica
-95     Versicolor
-4          Setosa
-45         Setosa
-20         Setosa
-120     Virginica
-115     Virginica
-148     Virginica
-99     Versicolor
-54     Versicolor
-2          Setosa
-5          Setosa
-31         Setosa
-143     Virginica
-47         Setosa
-10         Setosa
-76     Versicolor
-118     Virginica
-44         Setosa
-104     Virginica
-3          Setosa
-42         Setosa
-73     Versicolor
-125     Virginica
-124     Virginica
-70     Versicolor
-Name: variety, dtype: object
+array(['Virginica', 'Setosa', 'Virginica', 'Virginica', 'Virginica',
+       'Versicolor', 'Setosa', 'Setosa', 'Setosa', 'Virginica',
+       'Virginica', 'Virginica', 'Versicolor', 'Versicolor', 'Setosa',
+       'Setosa', 'Setosa', 'Virginica', 'Setosa', 'Setosa', 'Versicolor',
+       'Virginica', 'Setosa', 'Virginica', 'Setosa', 'Setosa',
+       'Versicolor', 'Virginica', 'Virginica', 'Versicolor'], dtype=object)
 ```
 <hr class='division3'>
 </details>
