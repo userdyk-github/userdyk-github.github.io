@@ -6,8 +6,6 @@ comments : false
 tags : [PL03]
 ---
 [Back to the previous page](https://userdyk-github.github.io/Study.html) <br>
-<a href='https://en.wikipedia.org/wiki/List_of_Python_software' target="_blank">See more wikipedia for a list of python libraries</a><br>
-<a href='https://www.datacamp.com/community/data-science-cheatsheets' target="_blank">list of python libraries cheat sheet for data science</a><br>
 
 
 - <a href='https://docs.python.org/3/library/numeric.html' target="_blank">Numeric and Mathematical Modules on the python standard library</a>
@@ -70,3 +68,14 @@ tags : [PL03]
   
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-Tkinter.html'>Tkinter</a>
   - <a href='https://tkdocs.com/tutorial/index.html' target="_blank"><span class='jb-small'>https://tkdocs.com/tutorial/index.html</span></a>
+
+<br><br><br>
+
+---
+
+Reference
+
+- <a href='https://en.wikipedia.org/wiki/List_of_Python_software' target="_blank">List of python libraries</a><br>
+- <a href='https://www.datacamp.com/community/data-science-cheatsheets' target="_blank">List of python libraries cheat sheet for data science</a><br>
+
+---
