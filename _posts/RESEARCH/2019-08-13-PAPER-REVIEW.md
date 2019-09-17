@@ -19,7 +19,7 @@ tags : [RESEARCH]
 - <span class='jb-medium'><strong>Deep Residual Learning for Image Recognition</strong>｜ <a href='https://arxiv.org/abs/1409.1556' target="_blank">PDF</a></span>
 - <span class='jb-medium'>GloVe: Global Vectors for Word Representation｜ <a href='https://nlp.stanford.edu/pubs/glove.pdf' target="_blank">PDF</a></span>
 - <span class='jb-medium'>U-Net: Convolutional Networks for Biomedical Image Segmentation｜ <a href='https://arxiv.org/abs/1505.04597.' target="_blank">PDF</a></span>
-- <span class='jb-medium'>Generative Adversarial Networks｜ <a href='https://arxiv.org/abs/1406.2661' target="_blank">PDF</a></span>
+- <span class='jb-medium'><strong>Generative Adversarial Networks</strong>｜ <a href='https://arxiv.org/abs/1406.2661' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Convolutional Deep Belief Networks for Scalable Unsupervised Learning of Hierarchical Representations｜ <a href='https://ai.stanford.edu/~ang/papers/icml09-ConvolutionalDeepBeliefNetworks.pdf' target="_blank">PDF</a></span>
 - <span class='jb-medium'>ADADELTA: An Adaptive Learning Rate Method｜ <a href='https://arxiv.org/abs/1212.5701' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Adam: A Method for Stochastic Optimization｜ <a href='https://arxiv.org/abs/1412.6980' target="_blank">PDF</a></span>
@@ -42,7 +42,7 @@ tags : [RESEARCH]
 - <span class='jb-medium'>Perceptual Losses for Real-Time Style Transfer and Super-Resolution｜ <a href='https://arxiv.org/abs/1603.08155' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks｜ <a href='https://arxiv.org/abs/1511.06434' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Conditional Generative Adversarial Nets｜ <a href='https://arxiv.org/abs/1411.1784' target="_blank">PDF</a></span>
-- <span class='jb-medium'>Generative Adversarial Nets｜ <a href='http://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf' target="_blank">PDF</a></span>
+- <span class='jb-medium'><strong>Generative Adversarial Nets</strong>｜ <a href='http://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Show and Tell: A Neural Image Caption Generator｜ <a href='https://arxiv.org/abs/1411.4555v2' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation｜ <a href='https://arxiv.org/abs/1406.1078v3' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Sequence to Sequence Learning with Neural Networks｜ <a href='http://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf' target="_blank">PDF</a></span>
