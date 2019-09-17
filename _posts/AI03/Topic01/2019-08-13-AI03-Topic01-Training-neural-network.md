@@ -420,7 +420,7 @@ List of posts followed by this article
 
 Reference
 - [post1](https://userdyk-github.github.io/)
-- <a href='https://userdyk-github.github.io/'>post2</a>
+- <a href='http://shuuki4.github.io/deep%20learning/2016/05/20/Gradient-Descent-Algorithm-Overview.html' target="_blank">Beomsu Kim</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
