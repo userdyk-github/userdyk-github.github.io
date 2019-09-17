@@ -27,7 +27,7 @@ tags : [PL03]
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-StatsModel.html'>StatsModel</a>
   - <a href='https://www.statsmodels.org/devel/py-modindex.html' target="_blank"><span class='jb-small'>https://www.statsmodels.org/devel/py-modindex.html</span></a>
   
-- <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-seaborn.html'>seaborn</a> ｜ <a href='https://www.datacamp.com/community/blog/seaborn-cheat-sheet-python' target="_blank">Cheat Sheet</a>
+- <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-seaborn.html'>seaborn</a> ｜ <a href='https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Python_Seaborn_Cheat_Sheet.pdf' target="_blank">Cheat Sheet</a>
   - <a href='https://seaborn.pydata.org/api.html#distribution-api' target="_blank"><span class='jb-small'>https://seaborn.pydata.org/api.html#distribution-api</span></a>
   
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-scikit-learn.html'>scikit-learn</a> ｜ <a href='https://www.datacamp.com/community/blog/scikit-learn-cheat-sheet' target="_blank">Cheat Sheet</a>
