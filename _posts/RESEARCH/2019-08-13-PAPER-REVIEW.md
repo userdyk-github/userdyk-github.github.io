@@ -140,6 +140,7 @@ vocabulary continuous speech recognition｜ <a href='http://www.cs.cmu.edu/afs/c
 - <span class='jb-medium'>Joint Face Detection and Alignment Using Multitask Cascaded Convolutional Networks,
 2016 ｜ <a href='https://arxiv.org/abs/1604.02878' target="_blank">PDF</a></span>
 - <span class='jb-medium'>FaceNet: A Unified Embedding for Face Recognition and Clustering, 2015. ｜ <a href='https://arxiv.org/abs/1503.03832' target="_blank">PDF</a></span>
+- <span class="jb-medium">An efficient method for the computation of legendre moments. ｜ <a href='http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.886.8468&rep=rep1&type=pdf' target="_blank">PDF</a></span>
 
 
 
