@@ -6,7 +6,8 @@ title: RESEARCH
 - <a href='https://scholar.google.com/' target="_blank">https://scholar.google.com/</a>
 - <a href='https://scholar.google.com/citations?view_op=top_venues' target="_blank">https://scholar.google.com/citations?view_op=top_venues</a>
 - <a href='https://arxiv.org/' target="_blank">https://arxiv.org/</a>
-
+- <a href='https://cmt3.research.microsoft.com/Conference/Recent' target="_blank">https://cmt3.research.microsoft.com/Conference/Recent</a>
+- <a href='https://www.researchgate.net/' target="_blank">https://www.researchgate.net/</a>
 
 <hr class="division1">
 
