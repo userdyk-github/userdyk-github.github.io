@@ -16,7 +16,7 @@ tags : [RESEARCH]
 - <span class='jb-medium'>Rethinking the Inception Architecture for Computer Vision｜ <a href='https://arxiv.org/abs/1512.00567' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Very Deep Convolutional Networks for Large-Scale Image Recognition｜ <a href='https://arxiv.org/abs/1409.1556' target="_blank">PDF</a></span>
 - <span class='jb-medium'>ImageNet Classification with Deep Convolutional Neural Networks｜ <a href='https://arxiv.org/abs/1409.1556' target="_blank">PDF</a> ｜ <a href='https://github.com/Abhisek-/AlexNet' target="_blank">Github</a> ｜ <a href='https://userdyk-github.github.io/research/PAPER-REVIEW-0002.html'>Review</a></span>
-- <span class='jb-medium'>Deep Residual Learning for Image Recognition｜ <a href='https://arxiv.org/abs/1409.1556' target="_blank">PDF</a></span>
+- <span class='jb-medium'><strong>Deep Residual Learning for Image Recognition</strong>｜ <a href='https://arxiv.org/abs/1409.1556' target="_blank">PDF</a></span>
 - <span class='jb-medium'>GloVe: Global Vectors for Word Representation｜ <a href='https://nlp.stanford.edu/pubs/glove.pdf' target="_blank">PDF</a></span>
 - <span class='jb-medium'>U-Net: Convolutional Networks for Biomedical Image Segmentation｜ <a href='https://arxiv.org/abs/1505.04597.' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Generative Adversarial Networks｜ <a href='https://arxiv.org/abs/1406.2661' target="_blank">PDF</a></span>
@@ -102,7 +102,7 @@ vocabulary continuous speech recognition｜ <a href='http://www.cs.cmu.edu/afs/c
 - <span class='jb-medium'>Visualizing and Understanding Convolutional Networks, 2013. ｜ <a href='https://arxiv.org/abs/1311.2901' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Going Deeper with Convolutions, 2014. ｜ <a href='https://arxiv.org/abs/1409.4842' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Very Deep Convolutional Networks for Large-Scale Image Recognition, 2015. ｜ <a href='https://arxiv.org/abs/1409.1556' target="_blank">PDF</a></span>
-- <span class='jb-medium'>Deep Residual Learning for Image Recognition, 2015. ｜ <a href='https://arxiv.org/abs/1512.03385' target="_blank">PDF</a></span>
+- <span class='jb-medium'><strong>Deep Residual Learning for Image Recognition, 2015.</strong> ｜ <a href='https://arxiv.org/abs/1512.03385' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Gradient-based Learning Applied To Document Recognition, 1998. ｜ <a href='https://ieeexplore.ieee.org/abstract/document/726791' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Network In Network, 2013. ｜ <a href='https://arxiv.org/abs/1312.4400' target="_blank">PDF</a></span>
 - <span class='jb-medium'>A Survey on Transfer Learning, 2010. ｜ <a href='https://ieeexplore.ieee.org/document/5288526' target="_blank">PDF</a></span>
