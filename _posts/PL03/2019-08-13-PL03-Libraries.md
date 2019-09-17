@@ -11,7 +11,7 @@ tags : [PL03]
 
 - <a href='https://docs.python.org/3/library/numeric.html' target="_blank">Numeric and Mathematical Modules on the python standard library</a>
 
-- <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-NumPy.html'>NumPy</a>
+- <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-NumPy.html'>NumPy</a>|<a href=''>cheat sheet</a>
   - <a href='https://docs.scipy.org/doc/numpy/genindex.html' target="_blank"><span class='jb-small'>https://docs.scipy.org/doc/numpy/genindex.html</span></a>
   
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-Matplotlib.html'>Matplotlib</a>
