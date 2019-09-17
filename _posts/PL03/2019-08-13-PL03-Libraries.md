@@ -18,16 +18,16 @@ tags : [PL03]
   - <a href='https://matplotlib.org/api/index.html' target="_blank"><span class='jb-small'>https://matplotlib.org/api/index.html</span></a>
   - <a href='https://matplotlib.org/api/pyplot_summary.html' target="_blank"><span class='jb-small'>https://matplotlib.org/api/pyplot_summary.html</span></a>
   
-- <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-SymPy.html'>SymPy</a> ｜ <a href='' target="_blank">Cheat Sheet</a>
+- <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-SymPy.html'>SymPy</a> ｜ <a href='http://daabzlatex.s3.amazonaws.com/9065616cce623384fe5394eddfea4c52.pdf' target="_blank">Cheat Sheet</a>
   - <a href='https://docs.sympy.org/latest/py-modindex.html' target="_blank"><span class='jb-small'>https://docs.sympy.org/latest/py-modindex.html</span></a>
   
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-SciPy.html'>SciPy</a> ｜ <a href='https://www.datacamp.com/community/blog/python-scipy-cheat-sheet#gs.JDSg3OI' target="_blank">Cheat Sheet</a>
   - <a href='https://docs.scipy.org/doc/scipy/reference/' target="_blank"><span class='jb-small'>https://docs.scipy.org/doc/scipy/reference/</span></a>
   
-- <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-StatsModel.html'>StatsModel</a> ｜ <a href='' target="_blank">Cheat Sheet</a>
+- <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-StatsModel.html'>StatsModel</a>
   - <a href='https://www.statsmodels.org/devel/py-modindex.html' target="_blank"><span class='jb-small'>https://www.statsmodels.org/devel/py-modindex.html</span></a>
   
-- <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-seaborn.html'>seaborn</a> ｜ <a href='' target="_blank">Cheat Sheet</a>
+- <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-seaborn.html'>seaborn</a> ｜ <a href='https://www.datacamp.com/community/blog/seaborn-cheat-sheet-python' target="_blank">Cheat Sheet</a>
   - <a href='https://seaborn.pydata.org/api.html#distribution-api' target="_blank"><span class='jb-small'>https://seaborn.pydata.org/api.html#distribution-api</span></a>
   
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-scikit-learn.html'>scikit-learn</a> ｜ <a href='https://www.datacamp.com/community/blog/scikit-learn-cheat-sheet' target="_blank">Cheat Sheet</a>
@@ -63,9 +63,9 @@ tags : [PL03]
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-BeautifulSoup.html'>BeautifulSoup</a> ｜ <a href='' target="_blank">Cheat Sheet</a>
   - <a href='https://www.crummy.com/software/BeautifulSoup/bs4/doc/#' target="_blank"><span class='jb-small'>https://www.crummy.com/software/BeautifulSoup/bs4/doc/#</span></a>
   
-- <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-PyQt.html'>PyQt</a> ｜ <a href='' target="_blank">Cheat Sheet</a>
+- <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-PyQt.html'>PyQt</a>
   - <a href='https://www.tutorialspoint.com/pyqt/index.htm' target="_blank"><span class='jb-small'>https://www.tutorialspoint.com/pyqt/index.htm</span></a>
   - <a href='https://wikidocs.net/book/2165' target="_blank"><span class='jb-small'>https://wikidocs.net/book/2165</span></a>
   
-- <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-Tkinter.html'>Tkinter</a> ｜ <a href='' target="_blank">Cheat Sheet</a>
+- <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-Tkinter.html'>Tkinter</a>
   - <a href='https://tkdocs.com/tutorial/index.html' target="_blank"><span class='jb-small'>https://tkdocs.com/tutorial/index.html</span></a>
