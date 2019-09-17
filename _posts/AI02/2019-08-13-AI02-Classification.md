@@ -157,8 +157,9 @@ print(df)
 
 <br><br><br>
 
-[download csv file of iris data][1] <br>
+
 **Classification through logistic regression about dataset on real world**
+[download csv file of iris data][1] <br>
 
 ```python
 ```
@@ -223,8 +224,9 @@ weighted avg       0.96      0.96      0.96        45
 </details>
 <br><br><br>
 
-[download csv file of iris data][1] <br>
+
 **Classification through k-nearest neighbor methods about dataset on real world**
+[download csv file of iris data][1] <br>
 
 ```python
 ```
@@ -289,8 +291,9 @@ weighted avg       1.00      1.00      1.00        45
 </details>
 <br><br><br>
 
-[download csv file of iris data][1] <br>
+
 **Classification through support vector machines about dataset on real world**
+[download csv file of iris data][1] <br>
 
 ```python
 ```
@@ -355,8 +358,9 @@ weighted avg       0.96      0.96      0.96        45
 </details>
 <br><br><br>
 
-[download csv file of iris data][1] <br>
+
 **Classification through decision trees about dataset on real world**
+[download csv file of iris data][1] <br>
 
 ```python
 import pandas as pd
@@ -433,8 +437,9 @@ weighted avg       1.00      1.00      1.00        45
 </details>
 <br><br><br>
 
-[download csv file of iris data][1] <br>
+
 **Classification through random forest methods about dataset on real world**
+[download csv file of iris data][1] <br>
 
 ```python
 ```
