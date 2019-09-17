@@ -106,7 +106,7 @@ vocabulary continuous speech recognition｜ <a href='http://www.cs.cmu.edu/afs/c
 - <span class='jb-medium'>Gradient-based Learning Applied To Document Recognition, 1998. ｜ <a href='https://ieeexplore.ieee.org/abstract/document/726791' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Network In Network, 2013. ｜ <a href='https://arxiv.org/abs/1312.4400' target="_blank">PDF</a></span>
 - <span class='jb-medium'>A Survey on Transfer Learning, 2010. ｜ <a href='https://ieeexplore.ieee.org/document/5288526' target="_blank">PDF</a></span>
-- <span class='jb-medium'>How Transferable Are Features In Deep Neural Networks?, 2014. ｜ <a href='https://arxiv.org/abs/1411.1792' target="_blank">PDF</a></span>
+- <span class='jb-medium'><strong>How Transferable Are Features In Deep Neural Networks?, 2014. </strong>｜ <a href='https://arxiv.org/abs/1411.1792' target="_blank">PDF</a></span>
 - <span class='jb-medium'>CNN Features Off-the-shelf: An Astounding Baseline For Recognition, 2014 ｜ <a href='https://arxiv.org/abs/1403.6382' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Asirra: A CAPTCHA that Exploits Interest-Aligned Manual Image Categorization, 2007. ｜ <a href='https://dl.acm.org/citation.cfm?id=1315291' target="_blank">PDF</a></span>
 - <span class='jb-medium'>Machine Learning Attacks Against the Asirra CAPTCHA, 2007. ｜ <a href='https://dl.acm.org/citation.cfm?id=1455838' target="_blank">PDF</a></span>
