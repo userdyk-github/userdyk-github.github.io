@@ -1937,13 +1937,63 @@ df.head()
 
 ### ***DataFrame to Series***
 
+```
+>>> import pandas as pd
+
+# based on column
+>>> df = pd.DataFrame({'phone': [1001, 1002, 1003, 1004, 1005, 1006, 1007]})
+>>> type(df)
+pandas.core.frame.DataFrame
+
+>>> df = df['phone']
+>>> type(df)
+pandas.core.series.Series
+
+
+# based on row
+>>> df = pd.DataFrame([[909976, 2872086, 8615246, 2872086]])
+>>> type(df)
+pandas.core.frame.DataFrame
+
+>>> df = df.loc[0]
+>>> type(df)
+pandas.core.series.Series
+```
+<br><br><br>
+
 ---
 
 ### ***Series to DataFrame***
 
+```
+>>> import pandas as pd
+>>> s = pd.Series([1,2,3,4,5])
+>>> type(s)
+pandas.core.series.Series
+
+>>> s= pd.DataFrame(s)
+>>> type(s)
+pandas.core.frame.DataFrame
+```
+<br><br><br>
+
 ---
 
 ### ***DataFrame to numpy***
+
+```
+>>> import pandas as pd
+>>> df = pd.DataFrame({
+        'phone': [1001, 1002, 1003, 1004, 1005, 1006, 1007],
+        '이름': ['둘리', '도우너', '또치', '길동', '희동', '마이콜', '영희']})
+>>> type(df)
+pandas.core.frame.DataFrame
+
+>>> df = df.values
+>>> type(df)
+numpy.ndarray
+```
+<br><br><br>
 
 ---
 
