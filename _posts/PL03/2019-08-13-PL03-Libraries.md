@@ -7,6 +7,7 @@ tags : [PL03]
 ---
 [Back to the previous page](https://userdyk-github.github.io/Study.html) <br>
 <a href='https://en.wikipedia.org/wiki/List_of_Python_software' target="_blank">See more wikipedia for a list of python libraries</a><br>
+<a href='https://www.datacamp.com/community/data-science-cheatsheets' target="_blank">list of python libraries cheat sheet for data science</a><br>
 
 
 - <a href='https://docs.python.org/3/library/numeric.html' target="_blank">Numeric and Mathematical Modules on the python standard library</a>
