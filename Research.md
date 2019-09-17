@@ -6,6 +6,7 @@ title: RESEARCH
 - <a href='https://scholar.google.com/' target="_blank">https://scholar.google.com/</a>
 - <a href='https://arxiv.org/' target="_blank">https://arxiv.org/</a>
 
+<hr class="division1">
 
 
 ## _Projects_
