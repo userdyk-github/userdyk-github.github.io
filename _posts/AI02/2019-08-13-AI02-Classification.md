@@ -366,18 +366,74 @@ weighted avg       0.96      0.96      0.96        45
 import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
 
-df = pd.read_csv(r'csv file path', index_col=0)
-y = df[target class column]
-X = df[ col1, col2]
+df = pd.read_csv(r'C:\Users\userd\Desktop\dataset\iris.csv')
+df = df.sample(frac=1)    # Shuffle, frac=1 means return all rows in random order
+y = df['variety']
+X = df[['sepal.length', 'sepal.width', 'petal.length', 'petal.width']]
+
+y_train = y[0:120]
+y_test = y[120:150]
+X_train = X[0:120]
+X_test = X[120:150]
 
 clf= DecisionTreeClassifier()
-clf.fit(X,y)
+clf.fit(X_train,y_train)
 clf.predict(X_test)
 ```
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+```
+array(['Virginica', 'Setosa', 'Virginica', 'Virginica', 'Virginica',
+       'Versicolor', 'Setosa', 'Setosa', 'Setosa', 'Virginica',
+       'Virginica', 'Virginica', 'Versicolor', 'Versicolor', 'Setosa',
+       'Setosa', 'Setosa', 'Virginica', 'Setosa', 'Setosa', 'Versicolor',
+       'Virginica', 'Setosa', 'Virginica', 'Setosa', 'Setosa',
+       'Versicolor', 'Virginica', 'Virginica', 'Virginica'], dtype=object)
+```
+<hr class='division3'>
+</details>
+<br>
+```python
+y_test
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+145     Virginica
+33         Setosa
+122     Virginica
+103     Virginica
+147     Virginica
+95     Versicolor
+4          Setosa
+45         Setosa
+20         Setosa
+120     Virginica
+115     Virginica
+148     Virginica
+99     Versicolor
+54     Versicolor
+2          Setosa
+5          Setosa
+31         Setosa
+143     Virginica
+47         Setosa
+10         Setosa
+76     Versicolor
+118     Virginica
+44         Setosa
+104     Virginica
+3          Setosa
+42         Setosa
+73     Versicolor
+125     Virginica
+124     Virginica
+70     Versicolor
+Name: variety, dtype: object
+```
 <hr class='division3'>
 </details>
 
