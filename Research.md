@@ -3,6 +3,11 @@ layout: page
 title: RESEARCH
 ---
 
+- <a href='https://scholar.google.com/' target="_blank">https://scholar.google.com/</a>
+- <a href='https://arxiv.org/' target="_blank">https://arxiv.org/</a>
+
+
+
 ## _Projects_
 
 > [Developing a non-visual communication interface for exhibitions of visual arts for the visually impaired and studying the parties' perspectives on expanding the rights of enjoyment of culture](https://userdyk-github.github.io/research/PROJECT01.html)
