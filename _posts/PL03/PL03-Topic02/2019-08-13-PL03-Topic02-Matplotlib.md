@@ -34,7 +34,7 @@ y = np.linspace(2,20,10)
 plt.plot(x,y, 'rs--')
 plt.show()
 ```
-<details markdown="1">
+<details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (2)](https://user-images.githubusercontent.com/52376448/64470527-68c05e00-d17f-11e9-85ee-bb3f4d89bea9.png)
