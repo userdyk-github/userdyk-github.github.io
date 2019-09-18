@@ -31,7 +31,7 @@ sympy.solve(x**2 + 2*x - 3)
 ```
 `OUTPUT` : $$[-3, 1]$$
 
-
+<br><br><br>
 <hr class="division2">
 
 
