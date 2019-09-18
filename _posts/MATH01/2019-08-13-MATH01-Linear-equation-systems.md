@@ -66,6 +66,17 @@ sympy.solve(sympy.exp(x) + 2 * x, x)
 `OUTPUT` : $$\left [ - \operatorname{LambertW}{\left (\frac{1}{2} \right )}\right ]$$
 
 <br><br><br>
+
+```python
+import sympy
+#sympy.init_printing()
+
+x = sympy.Symbol("x")
+sympy.solve(x**5 - x**2 + 1, x) 
+```
+`OUTPUT` : $$\displaystyle \left[ \operatorname{CRootOf} {\left(x^{5} - x^{2} + 1, 0\right)}, \  \operatorname{CRootOf} {\left(x^{5} - x^{2} + 1, 1\right)}, \  \operatorname{CRootOf} {\left(x^{5} - x^{2} + 1, 2\right)}, \  \operatorname{CRootOf} {\left(x^{5} - x^{2} + 1, 3\right)}, \  \operatorname{CRootOf} {\left(x^{5} - x^{2} + 1, 4\right)}\right]$$
+
+<br><br><br>
 <hr class="division2">
 
 
