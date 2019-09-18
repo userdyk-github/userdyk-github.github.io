@@ -75,7 +75,6 @@ x = sympy.Symbol("x")
 sympy.solve(x**5 - x**2 + 1, x) 
 ```
 `OUTPUT` :
-
 <div style="color:black; font-size: 70%; text-align: center;">
   $$[ \operatorname{CRootOf} {\left(x^{5} - x^{2} + 1, 0\right)}, \operatorname{CRootOf} {\left(x^{5} - x^{2} + 1, 1\right)}, $$ 
   $$\operatorname{CRootOf} {\left(x^{5} - x^{2} + 1, 2\right)}, \operatorname{CRootOf} {\left(x^{5} - x^{2} + 1, 3\right)}, $$
@@ -98,7 +97,8 @@ eq2 = x - y + 1
 sympy.solve([eq1, eq2], [x, y], dict=True) 
 ```
 
-`OUTPUT` : <span style="font-size: 70%;">$$\left [ \left \{ x : - \frac{1}{3}, \quad y : \frac{2}{3}\right \}\right ]$$</span>
+`OUTPUT` : 
+<span style="font-size: 70%;">$$\left [ \left \{ x : - \frac{1}{3}, \quad y : \frac{2}{3}\right \}\right ]$$</span>
 <br><br><br>
 
 ```python
