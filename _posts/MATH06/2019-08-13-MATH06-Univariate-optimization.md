@@ -23,7 +23,7 @@ List of posts to read before reading this article
 
 ## title1
 
-|golden search method||
+|bisection method||
 |Newton’s method||
 |hybrid method||
 
