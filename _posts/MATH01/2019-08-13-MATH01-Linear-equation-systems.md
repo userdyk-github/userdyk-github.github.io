@@ -41,7 +41,7 @@ x = sympy.Symbol("x")
 a, b, c = sympy.symbols("a, b, c")
 sympy.solve(a * x**2 + b * x + c, x)
 ```
-`OUTPUT` : 
+`OUTPUT` : $$\left [ \frac{1}{2 a} \left(- b + \sqrt{- 4 a c + b^{2}}\right), \quad - \frac{1}{2 a} \left(b + \sqrt{- 4 a c + b^{2}}\right)\right ]$$
 
 <br><br><br>
 <hr class="division2">
