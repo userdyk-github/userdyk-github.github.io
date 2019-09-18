@@ -30,7 +30,7 @@ import sympy
 x = sympy.Symbol("x")
 sympy.solve(x**2 + 2*x - 3)
 ```
-`OUTPUT` : $$[-3, 1]$$
+`OUTPUT` : <span style="font-size: 70%;">$$[-3, 1]$$</span>
 <br><br><br>
 
 ```python
@@ -41,7 +41,7 @@ x = sympy.Symbol("x")
 a, b, c = sympy.symbols("a, b, c")
 sympy.solve(a * x**2 + b * x + c, x)
 ```
-`OUTPUT` : $$\left [ \frac{1}{2 a} \left(- b + \sqrt{- 4 a c + b^{2}}\right), \quad - \frac{1}{2 a} \left(b + \sqrt{- 4 a c + b^{2}}\right)\right ]$$
+`OUTPUT` : <span style="font-size: 70%;">$$\left [ \frac{1}{2 a} \left(- b + \sqrt{- 4 a c + b^{2}}\right), \quad - \frac{1}{2 a} \left(b + \sqrt{- 4 a c + b^{2}}\right)\right ]$$</span>
 
 <br><br><br>
 
@@ -52,7 +52,7 @@ import sympy
 x = sympy.Symbol("x")
 sympy.solve(sympy.sin(x) - sympy.cos(x), x)
 ```
-`OUTPUT` : $$\left [ - \frac{3 \pi}{4}, \quad \frac{\pi}{4}\right ]$$
+`OUTPUT` : <span style="font-size: 70%;">$$\left [ - \frac{3 \pi}{4}, \quad \frac{\pi}{4}\right ]$$</span>
 
 <br><br><br>
 
