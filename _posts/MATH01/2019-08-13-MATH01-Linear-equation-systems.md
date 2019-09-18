@@ -44,6 +44,19 @@ sympy.solve(a * x**2 + b * x + c, x)
 `OUTPUT` : $$\left [ \frac{1}{2 a} \left(- b + \sqrt{- 4 a c + b^{2}}\right), \quad - \frac{1}{2 a} \left(b + \sqrt{- 4 a c + b^{2}}\right)\right ]$$
 
 <br><br><br>
+
+```python
+import sympy
+sympy.init_printing()
+
+x = sympy.Symbol("x")
+sympy.solve(sympy.sin(x) - sympy.cos(x), x)
+```
+`OUTPUT` : $$\left [ - \frac{3 \pi}{4}, \quad \frac{\pi}{4}\right ]$$
+
+
+
+<br><br><br>
 <hr class="division2">
 
 
