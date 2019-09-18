@@ -43,7 +43,6 @@ integrate(f)
 
 ### Explicit function
 
-`INPUT`
 ```python
 import sympy
 #symypy.init_printing()
@@ -60,7 +59,6 @@ integrate(sin(x))
 
 ### Fail to evaluate an integral, Representing the formal integral
 
-`INPUT`
 ```python
 import sympy
 #symypy.init_printing()
@@ -77,7 +75,6 @@ integrate(sin(x * cos(x)))
 
 ### Symbolically represent an integral
 
-`INPUT`
 ```python
 import sympy
 #symypy.init_printing()
@@ -94,7 +91,6 @@ Integral(x)
 
 ### Evalutation for an integral
 
-`INPUT`
 ```python
 import sympy
 #symypy.init_printing()
@@ -113,7 +109,6 @@ i.doit()
 
 ### Integral of a multivariable expression
 
-`INPUT`
 ```python
 import sympy
 #symypy.init_printing()
@@ -134,7 +129,6 @@ integrate(expr, x, y)
 
 ### Single-variable function
 
-`INPUT`
 ```python
 import sympy
 #symypy.init_printing()
@@ -152,7 +146,6 @@ integrate(f, (x, a, b))
 
 ### Explicit function
 
-`INPUT`
 ```python
 import sympy
 #symypy.init_printing()
@@ -169,7 +162,6 @@ integrate(sin(x), (x, a, b))
 
 ### Infinity
 
-`INPUT`
 ```python
 import sympy
 #symypy.init_printing()
@@ -186,7 +178,6 @@ integrate(exp(-x**2), (x, 0, oo))
 
 ### Fail to evaluate an integral, Representing the formal integral
 
-`INPUT`
 ```python
 import sympy
 #symypy.init_printing()
@@ -203,7 +194,6 @@ integrate(sin(x * cos(x)),(x,a,b))
 
 ### Symbolically represent an integral
 
-`INPUT`
 ```python
 import sympy
 #symypy.init_printing()
@@ -220,7 +210,6 @@ Integral(x, (x, a, b))
 
 ### Evalutation for an integral
 
-`INPUT`
 ```python
 import sympy
 #symypy.init_printing()
@@ -238,7 +227,6 @@ i.doit()
 
 ### Integral of a multivariable expression
 
-`INPUT`
 ```python
 import sympy
 #symypy.init_printing()
