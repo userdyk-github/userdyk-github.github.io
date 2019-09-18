@@ -74,7 +74,15 @@ import sympy
 x = sympy.Symbol("x")
 sympy.solve(x**5 - x**2 + 1, x) 
 ```
-`OUTPUT` : <span> $$\displaystyle \left[ \operatorname{CRootOf} {\left(x^{5} - x^{2} + 1, 0\right)}, \  \operatorname{CRootOf} {\left(x^{5} - x^{2} + 1, 1\right)}, \  \operatorname{CRootOf} {\left(x^{5} - x^{2} + 1, 2\right)}, \  \operatorname{CRootOf} {\left(x^{5} - x^{2} + 1, 3\right)}, \  \operatorname{CRootOf} {\left(x^{5} - x^{2} + 1, 4\right)}\right]$$ </span>
+`OUTPUT` :
+$$
+\begin{align}
+& \displaystyle \left[ \operatorname{CRootOf} {\left(x^{5} - x^{2} + 1, 0\right)}, \ \operatorname{CRootOf} {\left(x^{5} - x^{2} + 1, 1\right)}, \ \\
+& \operatorname{CRootOf} {\left(x^{5} - x^{2} + 1, 2\right)}, \  \operatorname{CRootOf} {\left(x^{5} - x^{2} + 1, 3\right)}, \ \\
+& \operatorname{CRootOf} {\left(x^{5} - x^{2} + 1, 4\right)}\right] \\
+\end{align}
+$$
+
 
 <br><br><br>
 <hr class="division2">
