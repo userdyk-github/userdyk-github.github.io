@@ -76,7 +76,7 @@ sympy.solve(x**5 - x**2 + 1, x)
 ```
 `OUTPUT` :
 
-<div style="color:black; font-size: 80%; text-align: center;">
+<div style="color:black; font-size: 70%; text-align: center;">
   $$[ \operatorname{CRootOf} {\left(x^{5} - x^{2} + 1, 0\right)}, \operatorname{CRootOf} {\left(x^{5} - x^{2} + 1, 1\right)}, $$ 
   $$\operatorname{CRootOf} {\left(x^{5} - x^{2} + 1, 2\right)}, \operatorname{CRootOf} {\left(x^{5} - x^{2} + 1, 3\right)}, $$
   $$\operatorname{CRootOf} {\left(x^{5} - x^{2} + 1, 4\right)}]$$
