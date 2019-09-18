@@ -30,6 +30,15 @@ x = sympy.Symbol("x")
 sympy.solve(x**2 + 2*x - 3)
 ```
 `OUTPUT` : $$[-3, 1]$$
+<br><br><br>
+
+```python
+import sympy
+
+a, b, c = sympy.symbols("a, b, c")
+sympy.solve(a * x**2 + b * x + c, x)
+```
+`OUTPUT` : 
 
 <br><br><br>
 <hr class="division2">
