@@ -63,7 +63,7 @@ import sympy
 x = sympy.Symbol("x")
 sympy.solve(sympy.exp(x) + 2 * x, x)
 ```
-`OUTPUT` : $$\left [ - \operatorname{LambertW}{\left (\frac{1}{2} \right )}\right ]$$
+`OUTPUT` : <span style="font-size: 70%;">$$\left [ - \operatorname{LambertW}{\left (\frac{1}{2} \right )}\right ]$$</span>
 
 <br><br><br>
 
