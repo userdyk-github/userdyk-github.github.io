@@ -25,7 +25,6 @@ List of posts to read before reading this article
 
 ### First-order derivative
 
-`INPUT`
 ```python
 import sympy
 #symypy.init_printing()
@@ -43,7 +42,6 @@ f.diff(x)              # equivalent to diff(f, x)
 
 ### Higher-order derivative
 
-`INPUT`
 ```python
 import sympy
 #symypy.init_printing()
@@ -63,7 +61,6 @@ f.diff(x, 3)           # equivalent to f.diff(x, x, x)
 
 ### Derivative of multivariate functions
 
-`INPUT`
 ```python
 import sympy
 #symypy.init_printing()
@@ -88,7 +85,6 @@ g2, g5
 
 ### Polynomials
 
-`INPUT`
 ```python
 import sympy
 #symypy.init_printing()
@@ -105,7 +101,6 @@ expr.diff(x)
 
 ### Trigonometric
 
-`INPUT`
 ```python
 import sympy
 #symypy.init_printing()
@@ -122,7 +117,6 @@ expr.diff(x)
 
 ### Special function
 
-`INPUT`
 ```python
 import sympy
 #symypy.init_printing()
@@ -141,7 +135,6 @@ expr.diff(x)
 
 ### Symbolically represent a derivative
 
-`INPUT`
 ```python
 import sympy
 #symypy.init_printing()
@@ -157,7 +150,6 @@ Derivative(exp(cos(x)), x)
 
 ### Evalutation for a derivative
 
-`INPUT`
 ```python
 import sympy
 #symypy.init_printing()
