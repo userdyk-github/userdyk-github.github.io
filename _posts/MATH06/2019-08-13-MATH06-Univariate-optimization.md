@@ -25,6 +25,7 @@ List of posts to read before reading this article
 
 |golden search method||
 |Newton’s method||
+|hybrid method||
 
 <hr class="division2">
 
