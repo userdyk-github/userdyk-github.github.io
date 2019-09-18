@@ -36,7 +36,6 @@ List of posts to read before reading this article
 from scipy import optimize
 import numpy as np                     # after executing numpy, and then execute cvxopt!
 import cvxopt                          # Just add path 'C:\Python36\Library\bin' to PATH environment variable
-
 import matplotlib.pyplot as plt 
 import sympy 
 sympy.init_printing()
