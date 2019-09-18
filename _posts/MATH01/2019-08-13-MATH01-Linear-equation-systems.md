@@ -23,6 +23,15 @@ List of posts to read before reading this article
 
 ## **Equation**
 
+```python
+import sympy
+
+x = sympy.Symbol("x")
+sympy.solve(x**2 + 2*x - 3)
+```
+`OUTPUT` : $$[-3, 1]$$
+
+
 <hr class="division2">
 
 
