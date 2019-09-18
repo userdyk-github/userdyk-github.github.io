@@ -47,14 +47,23 @@ sympy.solve(a * x**2 + b * x + c, x)
 
 ```python
 import sympy
-sympy.init_printing()
+#sympy.init_printing()
 
 x = sympy.Symbol("x")
 sympy.solve(sympy.sin(x) - sympy.cos(x), x)
 ```
 `OUTPUT` : $$\left [ - \frac{3 \pi}{4}, \quad \frac{\pi}{4}\right ]$$
 
+<br><br><br>
 
+```python
+import sympy
+#sympy.init_printing()
+
+x = sympy.Symbol("x")
+sympy.solve(sympy.exp(x) + 2 * x, x)
+```
+`OUTPUT` : $$\left [ - \operatorname{LambertW}{\left (\frac{1}{2} \right )}\right ]$$
 
 <br><br><br>
 <hr class="division2">
