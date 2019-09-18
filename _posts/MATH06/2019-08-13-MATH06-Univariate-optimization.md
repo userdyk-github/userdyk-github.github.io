@@ -56,6 +56,7 @@ $$\displaystyle \frac{2^{\frac{2}{3}}}{2 \sqrt[3]{\pi}}$$
 <hr class='division3'>
 </details>
 
+<br><br><br>
 <hr class="division2">
 
 ## title2
