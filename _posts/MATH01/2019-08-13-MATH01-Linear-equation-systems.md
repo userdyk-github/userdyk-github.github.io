@@ -35,6 +35,7 @@ sympy.solve(x**2 + 2*x - 3)
 ```python
 import sympy
 
+x = sympy.Symbol("x")
 a, b, c = sympy.symbols("a, b, c")
 sympy.solve(a * x**2 + b * x + c, x)
 ```
