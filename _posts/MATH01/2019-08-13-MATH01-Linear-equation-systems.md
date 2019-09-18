@@ -113,7 +113,10 @@ eq2 = y**2 - x
 
 sympy.solve([eq1, eq2], [x, y], dict=True) 
 ```
-`OUTPUT` : <span style="font-size: 70%;">$$\left [ \left \{ x : 0, \quad y : 0\right \}, \quad \left \{ x : 1, \quad y : 1\right \}, \quad \left \{ x : \left(- \frac{1}{2} - \frac{\sqrt{3} i}{2}\right)^{2}, \quad y : - \frac{1}{2} - \frac{\sqrt{3} i}{2}\right \}, \quad \left \{ x : \left(- \frac{1}{2} + \frac{\sqrt{3} i}{2}\right)^{2}, \quad y : - \frac{1}{2} + \frac{\sqrt{3} i}{2}\right \}\right ]$$</span>
+`OUTPUT` : <span style="font-size: 70%;">
+  $$[ \left \{ x : 0, \quad y : 0\right \}, \quad \left \{ x : 1, \quad y : 1\right \},$$
+  $$\quad \left \{ x : \left(- \frac{1}{2} - \frac{\sqrt{3} i}{2}\right)^{2}, \quad y : - \frac{1}{2} - \frac{\sqrt{3} i}{2}\right \}, \quad \left \{ x : \left(- \frac{1}{2} + \frac{\sqrt{3} i}{2}\right)^{2}, \quad y : - \frac{1}{2} + \frac{\sqrt{3} i}{2}\right \} ]$$
+</span>
 
 <br><br><br>
 <hr class="division2">
