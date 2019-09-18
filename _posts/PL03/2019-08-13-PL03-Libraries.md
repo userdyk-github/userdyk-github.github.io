@@ -22,7 +22,10 @@ tags : [PL03]
   
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-SciPy.html'>SciPy</a> ｜ <a href='https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Python_SciPy_Cheat_Sheet_Linear_Algebra.pdf' target="_blank">Cheat Sheet</a>
   - <a href='https://docs.scipy.org/doc/scipy/reference/' target="_blank"><span class='jb-small'>https://docs.scipy.org/doc/scipy/reference/</span></a>
-  
+
+- <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-Pyomo.html'>Pyomo</a>
+  - <a href='https://pyomo.readthedocs.io/en/stable/' target="_blank"><span class='jb-small'>https://pyomo.readthedocs.io/en/stable/</span></a>
+
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-StatsModel.html'>StatsModel</a>
   - <a href='https://www.statsmodels.org/devel/py-modindex.html' target="_blank"><span class='jb-small'>https://www.statsmodels.org/devel/py-modindex.html</span></a>
   
