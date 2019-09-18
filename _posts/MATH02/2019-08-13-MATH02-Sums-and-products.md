@@ -25,7 +25,6 @@ List of posts to read before reading this article
 
 ### Sum
 
-`INPUT`
 ```python
 import sympy
 #symypy.init_printing()
@@ -41,7 +40,6 @@ Sum(1/(n**2), (n, 1, oo))
 
 ### Evaluation for sum
 
-`INPUT`
 ```python
 import sympy
 #symypy.init_printing()
@@ -60,7 +58,6 @@ x.doit()
 
 ### Product
 
-`INPUT`
 ```python
 import sympy
 #symypy.init_printing()
@@ -76,7 +73,6 @@ Product(n, (n, 1, 7))
 
 ### Evaluation for product
 
-`INPUT`
 ```python
 import sympy
 #symypy.init_printing()
