@@ -85,6 +85,22 @@ sympy.solve(x**5 - x**2 + 1, x)
 <br><br><br>
 <hr class="division2">
 
+```python
+import sympy
+sympy.init_printing()
+
+x = sympy.Symbol("x")
+y = sympy.Symbol("y")
+
+eq1 = x + 2 * y - 1
+eq2 = x - y + 1
+
+sympy.solve([eq1, eq2], [x, y], dict=True) 
+```
+
+`OUTPUT` : <span style="font-size: 70%;">$$\left [ \left \{ x : - \frac{1}{3}, \quad y : \frac{2}{3}\right \}\right ]$$</span>
+
+
 
 ## **Square Systems**
 <div style="color:black; font-size: 80%; text-align: center;">
