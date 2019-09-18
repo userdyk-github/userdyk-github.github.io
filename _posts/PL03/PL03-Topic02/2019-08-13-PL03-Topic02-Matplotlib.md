@@ -53,7 +53,7 @@ y = x**4 + x
 plt.plot(x,y)
 plt.show()
 ```
-<details markdown="1">
+<details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (3)](https://user-images.githubusercontent.com/52376448/64470533-92798500-d17f-11e9-9f63-dd9e76e991e0.png)
@@ -97,7 +97,7 @@ plt.title("Plot")
 plt.plot(np.random.randn(100))
 plt.show()
 ```
-<details markdown="1">
+<details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (4)](https://user-images.githubusercontent.com/52376448/64470563-264b5100-d180-11e9-9360-63438cc1bdb1.png)
@@ -118,7 +118,7 @@ plt.title("Plot")
 plt.plot(np.random.randn(100))
 plt.show()
 ```
-<details markdown="1">
+<details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (5)](https://user-images.githubusercontent.com/52376448/64470630-88588600-d181-11e9-8fb1-a244466c4da3.png)
@@ -142,7 +142,7 @@ print(f1, id(f1))             # identification1 for object directly using id
 print(f2, id(f2))             # identification2 for object using gcf and id(in principle)
 plt.show()
 ```
-<details markdown="1">
+<details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
@@ -171,7 +171,7 @@ plt.plot([1,4,9,16])
 
 plt.show()
 ```
-<details markdown="1">
+<details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (12)](https://user-images.githubusercontent.com/52376448/64471321-14bb7680-d18b-11e9-8b1d-22a71a80138e.png)
@@ -190,7 +190,7 @@ plt.plot([10,20,30,40],[1,4,9,16])
 
 plt.show()
 ```
-<details markdown="1">
+<details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (13)](https://user-images.githubusercontent.com/52376448/64471326-374d8f80-d18b-11e9-8005-4e6867795c22.png)
@@ -210,7 +210,7 @@ plt.plot([10, 20, 30, 40], [1, 4, 9, 16], 'rs--')
 
 plt.show()
 ```
-<details markdown="1">
+<details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (14)](https://user-images.githubusercontent.com/52376448/64471332-68c65b00-d18b-11e9-895f-67163165eef0.png)
@@ -246,7 +246,7 @@ plt.show()
 # markeredgewidth : mew      : 마커 선 굵기
 # markerfacecolor : mfc      : 마커 내부 색깔
 ```
-<details markdown="1">
+<details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (15)](https://user-images.githubusercontent.com/52376448/64471377-0752bc00-d18c-11e9-939e-a18d66a0254f.png)
@@ -269,7 +269,7 @@ plt.ylim(-10, 30)
 
 plt.show()
 ```
-<details markdown="1">
+<details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (16)](https://user-images.githubusercontent.com/52376448/64471381-218c9a00-d18c-11e9-9feb-b0fc459a908e.png)
@@ -291,7 +291,7 @@ plt.plot(x, y)
 
 plt.show()
 ```
-<details markdown="1">
+<details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (17)](https://user-images.githubusercontent.com/52376448/64471392-3e28d200-d18c-11e9-8e12-274db830c086.png)
@@ -315,7 +315,7 @@ plt.plot(x, y, 'rs--')
 
 plt.show()
 ```
-<details markdown="1">
+<details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (18)](https://user-images.githubusercontent.com/52376448/64471398-5698ec80-d18c-11e9-813c-bf64699f5d93.png)
@@ -340,7 +340,7 @@ plt.yticks([-1, 0, +1])
 
 plt.show()
 ```
-<details markdown="1">
+<details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (19)](https://user-images.githubusercontent.com/52376448/64471421-8647f480-d18c-11e9-980b-d240678848a2.png)
@@ -366,7 +366,7 @@ plt.yticks([-1, 0, 1], ["Low", "Zero", "High"])
 
 plt.show()
 ```
-<details markdown="1">
+<details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (20)](https://user-images.githubusercontent.com/52376448/64471430-a1b2ff80-d18c-11e9-82bd-a20fae4a9dd0.png)
@@ -393,7 +393,7 @@ plt.grid(True)
 
 plt.show()
 ```
-<details markdown="1">
+<details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (21)](https://user-images.githubusercontent.com/52376448/64471442-b68f9300-d18c-11e9-918c-941319187623.png)
@@ -415,7 +415,7 @@ plt.plot(t, t, 'r--', t, 0.5 * t**2, 'bs:', t, 0.2 * t**3, 'g^-')
 
 plt.show()
 ```
-<details markdown="1">
+<details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (22)](https://user-images.githubusercontent.com/52376448/64471458-e3dc4100-d18c-11e9-8ee7-ae1969b8eaf7.png)
@@ -450,7 +450,7 @@ plt.show()
 # markeredgewidth : mew      : 마커 선 굵기
 # markerfacecolor : mfc      : 마커 내부 색깔
 ```
-<details markdown="1">
+<details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (23)](https://user-images.githubusercontent.com/52376448/64471485-30278100-d18d-11e9-89fe-3854563aeab7.png)
@@ -475,7 +475,7 @@ plt.legend(loc=2)                          # lov value means a position of legen
 
 plt.show()
 ```
-<details markdown="1">
+<details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (24)](https://user-images.githubusercontent.com/52376448/64471500-7381ef80-d18d-11e9-82ef-cb3c32753779.png)
@@ -500,7 +500,7 @@ plt.ylabel("amplitude")           # naming x-axis
 
 plt.show()
 ```
-<details markdown="1">
+<details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (25)](https://user-images.githubusercontent.com/52376448/64471505-8268a200-d18d-11e9-841f-c5317ecd1864.png)
@@ -524,7 +524,7 @@ plt.title("Scatter Plot")
 plt.scatter(X, Y)
 plt.show()
 ```
-<details markdown="1">
+<details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드](https://user-images.githubusercontent.com/52376448/64471579-78936e80-d18e-11e9-9887-08883fe4f740.png)
@@ -547,7 +547,7 @@ plt.title("Bubble Chart")
 plt.scatter(x, y1, c=y2, s=y3)   # s : size, c : color
 plt.show()
 ```
-<details markdown="1">
+<details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (1)](https://user-images.githubusercontent.com/52376448/64471578-77fad800-d18e-11e9-8dc2-aa0658dd64b8.png)
@@ -570,7 +570,7 @@ plt.title("Stem Plot")
 plt.stem(x, np.cos(x), '-.')
 plt.show()
 ```
-<details markdown="1">
+<details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (2)](https://user-images.githubusercontent.com/52376448/64471596-9234b600-d18e-11e9-9b28-ffa9a689f9a3.png)
@@ -602,7 +602,7 @@ plt.contourf(XX, YY, ZZ, alpha=.75, cmap='jet')
 plt.contour(XX, YY, ZZ, colors='black')
 plt.show()
 ```
-<details markdown="1">
+<details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (3)](https://user-images.githubusercontent.com/52376448/64471595-9234b600-d18e-11e9-87c8-5343d794e103.png)
@@ -633,7 +633,7 @@ ax.set_title("3D Surface Plot")
 ax.plot_surface(XX, YY, ZZ, rstride=1, cstride=1, cmap='hot')
 plt.show()
 ```
-<details markdown="1">
+<details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (4)](https://user-images.githubusercontent.com/52376448/64471613-b0021b00-d18e-11e9-99b3-e97fbb2dccf3.png)
@@ -656,7 +656,7 @@ plt.title("Histogram")
 arrays, bins, patches = plt.hist(x, bins=10)   # bins : Interval to aggregate data
 plt.show()
 ```
-<details markdown="1">
+<details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (5)](https://user-images.githubusercontent.com/52376448/64471612-b0021b00-d18e-11e9-918e-97aa64133e62.png)
@@ -668,7 +668,7 @@ plt.show()
 ```python
 arrays
 ```
-<details markdown="1">
+<details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
@@ -682,7 +682,7 @@ array([  9.,  20.,  70., 146., 217., 239., 160.,  86.,  38.,  15.])
 ```python
 bins
 ```
-<details markdown="1">
+<details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
@@ -714,7 +714,7 @@ plt.xlabel("abc")
 plt.ylabel("frequency")
 plt.show()
 ```
-<details markdown="1">
+<details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (6)](https://user-images.githubusercontent.com/52376448/64471623-c6a87200-d18e-11e9-8932-e4a3ee3dd8cc.png)
@@ -740,7 +740,7 @@ plt.yticks(y_pos, people)
 plt.xlabel('x label')
 plt.show()
 ```
-<details markdown="1">
+<details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (7)](https://user-images.githubusercontent.com/52376448/64471622-c6a87200-d18e-11e9-90b0-bafe3d85d707.png)
@@ -770,7 +770,7 @@ plt.pie(sizes, explode=explode, labels=labels, colors=colors,
 plt.axis('equal')
 plt.show()
 ```
-<details markdown="1">
+<details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (8)](https://user-images.githubusercontent.com/52376448/64471621-c6a87200-d18e-11e9-93a0-a1a16c66c922.png)
@@ -816,7 +816,7 @@ ax.legend()
 
 plt.show()
 ```
-<details markdown="1">
+<details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (10)](https://user-images.githubusercontent.com/52376448/64471172-c9a06400-d188-11e9-8bcf-e45452da1841.png)
@@ -827,7 +827,7 @@ plt.show()
 <br><br><br>
 
 
-<details markdown="1">
+<details open markdown="1">
 <summary class='jb-small' style="color:blue">EXPLAINATION</summary>
 <hr class='division3'>
 <p>
@@ -870,7 +870,7 @@ plt.tight_layout()  # The command automatically adjusts the spacing between plot
 plt.show()
 ```
 
-<details markdown="1">
+<details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
@@ -911,7 +911,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-<details markdown="1">
+<details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (8)](https://user-images.githubusercontent.com/52376448/64471075-7843a500-d187-11e9-8d7c-79e32119f33c.png)
@@ -941,7 +941,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-<details markdown="1">
+<details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (9)](https://user-images.githubusercontent.com/52376448/64471127-fe5feb80-d187-11e9-93dc-3186c17ecb2f.png)
@@ -969,7 +969,7 @@ ax1.grid(False)
 
 plt.show()
 ```
-<details markdown="1">
+<details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (11)](https://user-images.githubusercontent.com/52376448/64471189-374c9000-d189-11e9-97d9-d7c37cfa8a26.png)
