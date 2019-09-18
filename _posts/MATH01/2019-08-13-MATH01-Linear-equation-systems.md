@@ -25,6 +25,7 @@ List of posts to read before reading this article
 
 ```python
 import sympy
+#sympy.init_printing()
 
 x = sympy.Symbol("x")
 sympy.solve(x**2 + 2*x - 3)
@@ -34,6 +35,7 @@ sympy.solve(x**2 + 2*x - 3)
 
 ```python
 import sympy
+#sympy.init_printing()
 
 x = sympy.Symbol("x")
 a, b, c = sympy.symbols("a, b, c")
@@ -54,6 +56,7 @@ sympy.solve(a * x**2 + b * x + c, x)
 <span class='frame2'>Main code : method1</span>
 ```python
 from sympy import Matrix
+#sympy.init_printing()
 
 A = Matrix([[2,3],[5,4]])
 b = Matrix([4,3])
@@ -89,6 +92,7 @@ print(x)
 
 ```python
 from sympy import symbols, Matrix, solve
+#sympy.init_printing()
 
 x_vars = symbols("x_1, x_2, x_3")
 A = Matrix([[1, 2, 3], [4, 5, 6]])
