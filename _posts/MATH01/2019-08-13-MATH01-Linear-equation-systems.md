@@ -115,17 +115,6 @@ sympy.solve([eq1, eq2], [x, y], dict=True)
 ```
 
 <details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-`OUTPUT` : 
-<div style="font-size: 70%; text-align: center;">
-  $$[ \left \{ x : 0, \quad y : 0\right \}, \quad \left \{ x : 1, \quad y : 1\right \},$$
-  $$\quad \left \{ x : \left(- \frac{1}{2} - \frac{\sqrt{3} i}{2}\right)^{2}, \quad y : - \frac{1}{2} - \frac{\sqrt{3} i}{2}\right \}, \quad \left \{ x : \left(- \frac{1}{2} + \frac{\sqrt{3} i}{2}\right)^{2}, \quad y : - \frac{1}{2} + \frac{\sqrt{3} i}{2}\right \} ]$$
-</div>
-<hr class='division3'>
-</details>
-
-<details markdown="1">
 <summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
 <hr class='division3'>
 ```python
@@ -143,6 +132,13 @@ sols = sympy.solve([eq1, eq2], [x, y], dict=True)
 `OUTPUT` : [True, True, True, True]
 <hr class='division3'>
 </details>
+
+`OUTPUT` : 
+<div style="font-size: 70%; text-align: center;">
+  $$[ \left \{ x : 0, \quad y : 0\right \}, \quad \left \{ x : 1, \quad y : 1\right \},$$
+  $$\quad \left \{ x : \left(- \frac{1}{2} - \frac{\sqrt{3} i}{2}\right)^{2}, \quad y : - \frac{1}{2} - \frac{\sqrt{3} i}{2}\right \}, \quad \left \{ x : \left(- \frac{1}{2} + \frac{\sqrt{3} i}{2}\right)^{2}, \quad y : - \frac{1}{2} + \frac{\sqrt{3} i}{2}\right \} ]$$
+</div>
+
 
 <br><br><br>
 <hr class="division2">
