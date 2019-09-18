@@ -21,11 +21,16 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
+## **Method for root finding**
 
 |bisection method||
 |Newton’s method||
 |hybrid method||
+
+<br><br><br>
+<hr class="division2">
+
+## **The classic optimization problem: Minimize the area of a cylinder with unit volume**
 
 ```python
 from scipy import optimize
