@@ -1958,7 +1958,7 @@ plt.show()
 </details>
 <br><br><br>
 
-
+**Scientific notation labels**
 
 ```python
 import numpy as np
