@@ -329,6 +329,33 @@ plt.show()
 </details>
 <br><br><br>
 
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
+# numpy plot
+# grid 설정 : grid
+x = np.linspace(-np.pi, np.pi, 50)
+y = np.cos(x)
+
+plt.title("Plot")
+plt.plot(x, y, 'rs--')
+plt.xticks([-np.pi, -np.pi / 2, 0, np.pi / 2, np.pi],
+           [r'$-\pi$', r'$-\pi/2$', r'$0$', r'$+\pi/2$', r'$+\pni$'])
+plt.yticks([-1, 0, 1], ["Low", "Zero", "High"])
+plt.grid(True)
+
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (21)](https://user-images.githubusercontent.com/52376448/64471442-b68f9300-d18c-11e9-918c-941319187623.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
 ---
 
 
@@ -899,33 +926,6 @@ plt.show()
 
 
 
-
-```python
-%matplotlib inline
-import matplotlib.pyplot as plt
-import numpy as np
-
-# numpy plot
-# grid 설정 : grid
-x = np.linspace(-np.pi, np.pi, 50)
-y = np.cos(x)
-
-plt.title("Plot")
-plt.plot(x, y, 'rs--')
-plt.xticks([-np.pi, -np.pi / 2, 0, np.pi / 2, np.pi],
-           [r'$-\pi$', r'$-\pi/2$', r'$0$', r'$+\pi/2$', r'$+\pni$'])
-plt.yticks([-1, 0, 1], ["Low", "Zero", "High"])
-plt.grid(True)
-
-plt.show()
-```
-<details open markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-![다운로드 (21)](https://user-images.githubusercontent.com/52376448/64471442-b68f9300-d18c-11e9-918c-941319187623.png)
-<hr class='division3'>
-</details>
-<br><br><br>
 
 ```python
 %matplotlib inline
