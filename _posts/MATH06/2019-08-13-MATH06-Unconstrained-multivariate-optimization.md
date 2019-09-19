@@ -67,21 +67,20 @@ fprime_sym = [f_sym.diff(x_) for x_ in (x1, x2)]
 # Hessian  
 fhess_sym = [[f_sym.diff(x1_, x2_) for x1_ in (x1, x2)] for x2_ in (x1, x2)] 
 
-
+# Convert sympy function to numpy function
 f_lmbda = sympy.lambdify((x1, x2), f_sym, 'numpy') 
 fprime_lmbda = sympy.lambdify((x1, x2), fprime_sym, 'numpy')
 fhess_lmbda = sympy.lambdify((x1, x2), fhess_sym, 'numpy')
 
+# Unpacking for multivariate function
 def func_XY_to_X_Y(f):    
-    """    
-    Wrapper for f(X) -> f(X[0], X[1])  
-    """    
+    '''Wrapper for f(X) -> f(X[0], X[1])'''
     return lambda X: np.array(f(X[0], X[1])) 
-
 f = func_XY_to_X_Y(f_lmbda) 
 fprime = func_XY_to_X_Y(fprime_lmbda) 
 fhess = func_XY_to_X_Y(fhess_lmbda)
 
+# Optimization
 optimize.fmin_ncg(f, (0, 0), fprime=fprime, fhess=fhess)
 ```
 <details markdown="1">
