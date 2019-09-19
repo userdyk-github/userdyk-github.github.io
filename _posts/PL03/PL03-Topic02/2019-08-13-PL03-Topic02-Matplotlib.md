@@ -1405,6 +1405,47 @@ plt.show()
 </details>
 <br><br><br>
 
+
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+
+fig, axes = plt.subplots(2, 2, figsize=(6, 6), sharex=True, sharey=True, squeeze=False)
+
+x1 = np.random.randn(100)
+x2 = np.random.randn(100)
+
+axes[0, 0].set_title("Uncorrelated")
+axes[0, 0].scatter(x1, x2)
+
+axes[0, 1].set_title("Weakly positively correlated")
+axes[0, 1].scatter(x1, x1 + x2)
+
+axes[1, 0].set_title("Weakly negatively correlated")
+axes[1, 0].scatter(x1, -x1 + x2)
+
+axes[1, 1].set_title("Strongly correlated")
+axes[1, 1].scatter(x1, x1 + 0.15 * x2)
+
+axes[1, 1].set_xlabel("x")
+axes[1, 0].set_xlabel("x")
+axes[0, 0].set_ylabel("y")
+axes[1, 0].set_ylabel("y")
+
+plt.subplots_adjust(left=0.1, right=0.95, bottom=0.1, top=0.95, wspace=0.1, hspace=0.2)
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (20)](https://user-images.githubusercontent.com/52376448/65266739-9b3e6380-db4e-11e9-92af-ed2c702dad1c.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+
+
+
 The twinx command creates a new Axes object that shares the x-axis.
 ```python
 %matplotlib inline
