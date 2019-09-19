@@ -228,10 +228,10 @@ plt.show()
 <summary class='jb-small' style="color:blue">Arrow options</summary>
 <hr class='division3'>
 <div class="jb-medium">
-- 'arrowstyle': The parameters ''<-'', ''<'', ''-'', ''wedge'', ''simple'', and "fancy" control the style of the arrow <br>
-- 'facecolor': This is the color used for the arrow. It will be used to set the background and the edge color <br>
-- 'edgecolor': This is the color used for the edges of the arrow's shape <br>
-- 'alpha': This is used to set the transparency level so that the arrow blends with the background <br>
+- <strong>'arrowstyle'</strong>: The parameters ''<-'', ''<'', ''-'', ''wedge'', ''simple'', and "fancy" control the style of the arrow <br>
+- <strong>'facecolor'</strong>: This is the color used for the arrow. It will be used to set the background and the edge color <br>
+- <strong>'edgecolor'</strong>: This is the color used for the edges of the arrow's shape <br>
+- <strong>'alpha'</strong>: This is used to set the transparency level so that the arrow blends with the background <br>
 </div>
 <hr class='division3'>
 </details>
