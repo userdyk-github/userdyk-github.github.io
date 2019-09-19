@@ -2387,7 +2387,225 @@ title_and_labels(axes[2], "contour")
 
 ---
 
-### ***Working with 3D Figures***
+### ***Creating 3D scatter plots***
+
+```python
+import numpy as np
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.pyplot as plt
+%matplotlib inline
+
+# Dataset generation
+a, b, c = 10., 28., 8. / 3.
+def lorenz_map(X, dt = 1e-2):
+     X_dt = np.array([a * (X[1] - X[0]),
+     X[0] * (b - X[2]) - X[1],
+     X[0] * X[1] - c * X[2]])
+     return X + dt * X_dt
+points = np.zeros((2000, 3))
+X = np.array([.1, .0, .0])
+for i in range(points.shape[0]):
+     points[i], X = X, lorenz_map(X)
+# Plotting
+fig = plt.figure()
+ax = fig.gca(projection = '3d')
+ax.set_xlabel('X axis')
+ax.set_ylabel('Y axis')
+ax.set_zlabel('Z axis')
+ax.set_title('Lorenz Attractor a=%0.2f b=%0.2f c=%0.2f' % (a, b, c))
+ax.scatter(points[:, 0], points[:, 1], points[:, 2], zdir = 'y', c = 'k')
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드](https://user-images.githubusercontent.com/52376448/65270600-7d74fc80-db56-11e9-800e-3ef26624800c.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+### ***Creating 3D curve plots***
+
+```python
+import numpy as np
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.pyplot as plt
+a, b, c = 10., 28., 8. / 3.
+def lorenz_map(X, dt = 1e-2):
+     X_dt = np.array([a * (X[1] - X[0]),
+     X[0] * (b - X[2]) - X[1],
+     X[0] * X[1] - c * X[2]])
+     return X + dt * X_dt
+points = np.zeros((10000, 3))
+X = np.array([.1, .0, .0])
+for i in range(points.shape[0]):
+     points[i], X = X, lorenz_map(X)
+fig = plt.figure()
+ax = fig.gca(projection = '3d')
+ax.plot(points[:, 0], points[:, 1], points[:, 2], c = 'k')
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (1)](https://user-images.githubusercontent.com/52376448/65270601-7d74fc80-db56-11e9-9f79-09802e22bf3b.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+### ***Plotting a scalar field in 3D***
+
+```python
+import numpy as np
+from matplotlib import cm
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.pyplot as plt
+x = np.linspace(-3, 3, 256)
+y = np.linspace(-3, 3, 256)
+X, Y = np.meshgrid(x, y)
+Z = np.sinc(np.sqrt(X ** 2 + Y ** 2))
+fig = plt.figure()
+ax = fig.gca(projection = '3d')
+ax.plot_surface(X, Y, Z, cmap=cm.gray)
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (2)](https://user-images.githubusercontent.com/52376448/65270603-7e0d9300-db56-11e9-9316-fb0dcea7ce19.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+### ***Plotting a parametric 3D surface***
+
+```python
+import numpy as np
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.pyplot as plt
+# Generate torus mesh
+angle = np.linspace(0, 2 * np.pi, 32)
+theta, phi = np.meshgrid(angle, angle)
+r, R = .25, 1.
+X = (R + r * np.cos(phi)) * np.cos(theta)
+Y = (R + r * np.cos(phi)) * np.sin(theta)
+Z = r * np.sin(phi)
+# Display the mesh
+fig = plt.figure()
+ax = fig.gca(projection = '3d')
+ax.set_xlim3d(-1, 1)
+ax.set_ylim3d(-1, 1)
+ax.set_zlim3d(-1, 1)
+ax.plot_surface(X, Y, Z, color = 'w', rstride = 1, cstride = 1)
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (3)](https://user-images.githubusercontent.com/52376448/65270604-7e0d9300-db56-11e9-8925-d0f474522be3.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+### ***Embedding 2D figures in a 3D figure***
+
+```python
+import numpy as np
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.pyplot as plt
+x = np.linspace(-3, 3, 256)
+y = np.linspace(-3, 3, 256)
+X, Y = np.meshgrid(x, y)
+Z = np.exp(-(X ** 2 + Y ** 2))
+u = np.exp(-(x ** 2))
+fig = plt.figure()
+ax = fig.gca(projection = '3d')
+ax.set_zlim3d(0, 3)
+ax.plot(x, u, zs=3, zdir='y', lw = 2, color = '.75')
+ax.plot(x, u, zs=-3, zdir='x', lw = 2., color = 'k')
+ax.plot_surface(X, Y, Z, color = 'w')
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (4)](https://user-images.githubusercontent.com/52376448/65270605-7e0d9300-db56-11e9-98c3-04357429de55.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+
+```python
+import numpy as np
+from matplotlib import cm
+import matplotlib.colors as col
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.pyplot as plt
+# Data generation
+alpha = 1. / np.linspace(1, 8, 5)
+t = np.linspace(0, 5, 16)
+T, A = np.meshgrid(t, alpha)
+data = np.exp(-T * A)
+# Plotting
+fig = plt.figure()
+ax = fig.gca(projection = '3d')
+cmap = cm.ScalarMappable(col.Normalize(0, len(alpha)), cm.gray)
+for i, row in enumerate(data):
+     ax.bar(4 * t, row, zs=i, zdir='y', alpha=0.8, color=cmap.to_rgba(i))
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (5)](https://user-images.githubusercontent.com/52376448/65270607-7ea62980-db56-11e9-9cfb-9e7c4ce9060e.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+### ***Creating a 3D bar plot***
+
+```python
+import numpy as np
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.pyplot as plt
+# Data generation
+alpha = np.linspace(1, 8, 5)
+t = np.linspace(0, 5, 16)
+T, A = np.meshgrid(t, alpha)
+data = np.exp(-T * (1. / A))
+# Plotting
+fig = plt.figure()
+ax = fig.gca(projection = '3d')
+Xi = T.flatten()
+Yi = A.flatten()
+Zi = np.zeros(data.size)
+dx = .25 * np.ones(data.size)
+dy = .25 * np.ones(data.size)
+dz = data.flatten()
+ax.set_xlabel('T')
+ax.set_ylabel('Alpha')
+ax.bar3d(Xi, Yi, Zi, dx, dy, dz, color = 'w')
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (6)](https://user-images.githubusercontent.com/52376448/65270599-7d74fc80-db56-11e9-90ab-fd358d7d2c43.png)
+<hr class='division3'>
+</details>
+<br><br><br>
 
 <hr class="division2">
 
