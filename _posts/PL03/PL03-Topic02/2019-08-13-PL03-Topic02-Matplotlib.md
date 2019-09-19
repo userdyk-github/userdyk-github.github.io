@@ -898,31 +898,7 @@ plt.show()
 
 
 
-```python
-%matplotlib inline
-import matplotlib.pyplot as plt
-import numpy as np
 
-# numpy plot
-# axes tick set(2) : Latex
-x = np.linspace(-np.pi, np.pi, 50)
-y = np.cos(x)
-
-plt.title("Plot")
-plt.plot(x, y, 'rs--')
-plt.xticks([-np.pi, -np.pi / 2, 0, np.pi / 2, np.pi],
-           [r'$-\pi$', r'$-\pi/2$', r'$0$', r'$+\pi/2$', r'$+\pi$'])
-plt.yticks([-1, 0, 1], ["Low", "Zero", "High"])
-
-plt.show()
-```
-<details open markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-![다운로드 (20)](https://user-images.githubusercontent.com/52376448/64471430-a1b2ff80-d18c-11e9-82bd-a20fae4a9dd0.png)
-<hr class='division3'>
-</details>
-<br><br><br>
 
 ```python
 %matplotlib inline
@@ -1851,6 +1827,7 @@ plt.show()
 
 #### Axis ticks, tick labels, and grids
 
+**Common ticks**
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
@@ -1872,6 +1849,28 @@ plt.show()
 </details>
 <br><br><br>
 
+**Latex ticks**
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(-np.pi, np.pi, 50)
+y = np.cos(x)
+
+plt.plot(x, y)
+plt.xticks([-np.pi, -np.pi / 2, 0, np.pi / 2, np.pi],
+           [r'$-\pi$', r'$-\pi/2$', r'$0$', r'$+\pi/2$', r'$+\pi$'])
+plt.yticks([-1, 0, 1], ["Low", "Zero", "High"])
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (18)](https://user-images.githubusercontent.com/52376448/65263932-878ffe80-db48-11e9-9838-4a478f625b4c.png)
+<hr class='division3'>
+</details>
+<br><br><br>
 
 
 ```python
