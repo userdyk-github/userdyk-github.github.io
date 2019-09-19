@@ -54,8 +54,11 @@ rsol = sympy.solve(Area_r.diff(r))[0]
 rsol
 ```
 `OUTPUT` : <span style="font-size: 70%;">$$\frac{2^{\frac{2}{3}}}{2 \sqrt[3]{\pi}}$$</span>
-
-
+```python
+_.evalf()
+```
+`OUTPUT` : <span style="font-size: 70%;">0.541926070139289<span>
+  
 <br><br><br>
 <hr class="division2">
 
