@@ -161,7 +161,7 @@ x = A.solve(b)
 
 print(x)
 ```
-
+`OUTPUT` : Matrix([[-1], [2]])
 
 <span class='frame2'>Main code : method1</span>
 ```python
@@ -174,6 +174,8 @@ x = la.solve(A,b)
 
 print(x)
 ```
+`OUTPUT` : [-1.  2.]
+
 <br><br><br>
 
 
