@@ -228,12 +228,42 @@ plt.show()
 ## **Optimization process using **
 
 ```python
+from scipy import optimize
+import sympy
+sympy.init_printing()
+import numpy as np
 
+x1, x2 = sympy.symbols("x_1, x_2") 
+
+# Object function
+f_sym = (x1-1)**4 + 5 * (x2-1)**2 - 2*x1*x2 
+# Gradient
+fprime_sym = [f_sym.diff(x_) for x_ in (x1, x2)]
+
+# Convert sympy function to numpy function
+f_lmbda = sympy.lambdify((x1, x2), f_sym, 'numpy') 
+fprime_lmbda = sympy.lambdify((x1, x2), fprime_sym, 'numpy')
+
+# Unpacking for multivariate function
+def func_XY_to_X_Y(f):    
+    '''Wrapper for f(X) -> f(X[0], X[1])'''
+    return lambda X: np.array(f(X[0], X[1])) 
+f = func_XY_to_X_Y(f_lmbda) 
+fprime = func_XY_to_X_Y(fprime_lmbda) 
+
+# Optimization
+optimize.fmin_cg(f, (0, 0), fprime=fprime)
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
+Optimization terminated successfully.
+         Current function value: -3.867223
+         Iterations: 8
+         Function evaluations: 18
+         Gradient evaluations: 18
+array([1.88292612, 1.37658523])
 ```
 <hr class='division3'>
 </details>
@@ -245,20 +275,29 @@ Gradient
 sympy.Matrix(fprime_sym)
 ```
 `OUTPUT` :
-<span style="font-size: 70%;"></span><br>
-Hessian
-```
-sympy.Matrix(fhess_sym)
-```
-`OUTPUT` :
-<span style="font-size: 70%;"></span>
+<span style="font-size: 70%;">$$\left[\begin{matrix}- 2 x_{2} + 4 \left(x_{1} - 1\right)^{3}\\- 2 x_{1} + 10 x_{2} - 10\end{matrix}\right]$$</span>
 <hr class='division3'>
 </details>
 <details markdown="1">
 <summary class='jb-small' style="color:blue">VISUALLIZATION</summary>
 <hr class='division3'>
 ```python
+import matplotlib.pyplot as plt
+
+x_opt = optimize.fmin_cg(f, (0, 0), fprime=fprime)
+x_ = y_ = np.linspace(-1, 4, 100)  
+X, Y = np.meshgrid(x_, y_)
+
+fig, ax = plt.subplots(figsize=(6, 4)) 
+c = ax.contour(X, Y, f_lmbda(X, Y), 100)   
+plt.colorbar(c, ax=ax)
+
+ax.plot(x_opt[0], x_opt[1], 'r*', markersize=15)   
+ax.set_xlabel(r"$x_1$", fontsize=18)   
+ax.set_ylabel(r"$x_2$", fontsize=18)    
+plt.show()
 ```
+![다운로드 (10)](https://user-images.githubusercontent.com/52376448/65286094-54199800-db79-11e9-9877-1e639502119b.png)
 <hr class='division3'>
 </details>
 <br><br><br>
