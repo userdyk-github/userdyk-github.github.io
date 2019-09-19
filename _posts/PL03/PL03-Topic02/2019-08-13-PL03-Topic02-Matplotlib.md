@@ -672,6 +672,43 @@ Figure(432x288) 2045494563280
 
 ### ***A variety of plot***
 
+#### Point plot
+
+**Single point plot**
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+
+plt.plot(1,1,marker="o")
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (7)](https://user-images.githubusercontent.com/52376448/65250077-edbc5780-db2f-11e9-81d1-38e55e3579dd.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+**Multiple point plot**
+
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+
+plt.plot([1,2,3],[10,5,8],marker="o", lw=0)
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (8)](https://user-images.githubusercontent.com/52376448/65250284-4c81d100-db30-11e9-993f-b55485e6dabf.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
 #### Line plot
 
 ```python
