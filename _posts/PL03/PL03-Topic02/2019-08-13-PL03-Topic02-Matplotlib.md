@@ -1072,6 +1072,10 @@ plt.show()
 <br><br><br>
 
 **Using custom colors for scatter plots**
+<div class='jb-medium'>
+<strong>Common color for all the dots</strong>: If the color parameter is a valid matplotlib color definition, then all the dots will appear in that color.<br>
+<strong>Individual color for each dot</strong>: If the color parameter is a sequence of a valid matplotlib color definition, the ith dot will appear in the ith color. Of course, we have to give the required colors for each dot.<br>
+</div>
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
