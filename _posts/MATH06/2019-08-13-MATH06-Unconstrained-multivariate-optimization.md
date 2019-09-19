@@ -397,15 +397,51 @@ plt.show()
 import numpy as np
 from scipy import optimize 
 
+# the objective function
 def f(X): 
     x, y = X   
     return (4 * np.sin(np.pi * x) + 6 * np.sin(np.pi * y)) +  (x - 1)**2 + (y - 1)**2
 
+# find starting point
 optimize.brute(f, (slice(-3, 5, 0.5),  slice(-3, 5, 0.5)), finish=None) 
 ```
 `OUTPUT` : <span style="font-size: 70%;">$$Suitable\ starting\ point\ :\ (x,y) = (1.5,1.5)$$</span>
 
+<br><br><br>
 
+### ***Optimization process from suitable starting point***
+
+```python
+import numpy as np
+from scipy import optimize
+
+# the objective function
+def f(X):
+    x, y = X
+    return (4 * np.sin(np.pi * x) + 6 * np.sin(np.pi * y)) +  (x - 1)**2 + (y - 1)**2
+    
+# find starting point
+x_start = optimize.brute(f, (slice(-3, 5, 0.5),  slice(-3, 5, 0.5)), finish=None)
+
+# optimization
+optimize.fmin_bfgs(f, x_start)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+Optimization terminated successfully.
+         Current function value: -9.520229
+         Iterations: 4
+         Function evaluations: 28
+         Gradient evaluations: 7
+array([1.47586906, 1.48365787])
+```
+<span style="font-size: 70%;">$$Optimal\ point\ :\ (x,y) = (1.47586906,1.48365787)$$</span>
+<hr class='division3'>
+</details>
+
+<br><br><br>
 
 <hr class="division1">
 
