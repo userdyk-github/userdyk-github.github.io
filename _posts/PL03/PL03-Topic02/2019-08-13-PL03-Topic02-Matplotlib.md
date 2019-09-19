@@ -386,7 +386,7 @@ plt.axis('scaled')
 plt.show()
 ```
 <details open markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<summary class='jb-small' style="color:blue">Shape options</summary>
 <hr class='division3'>
 <div class='jb-small'>
 - Circle: This takes the coordinates of its center and the radius as the parameters<br>
