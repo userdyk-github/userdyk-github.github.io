@@ -1069,7 +1069,6 @@ Z = np.sin(4 * R) / R
 norm = mpl.colors.Normalize(-abs(Z).max(), abs(Z).max())  
 
 p =  axes[0].plot_surface(X, Y, Z, rstride=1, cstride=1, linewidth=0, antialiased=False, norm=norm, cmap=mpl.cm.Blues)   
-
 cb = fig.colorbar(p, ax=axes[0], shrink=0.6)  
 title_and_labels(axes[0], "plot_surface")  
 
