@@ -120,7 +120,7 @@ sympy.Matrix(fhess_sym)
 <details markdown="1">
 <summary class='jb-small' style="color:blue">VISUALLIZATION</summary>
 <hr class='division3'>
-![다운로드 (8)](https://user-images.githubusercontent.com/52376448/65281038-97213e80-db6c-11e9-83c2-7d37bb8502ec.png)
+![다운로드 (8)](https://user-images.githubusercontent.com/52376448/65281242-1747a400-db6d-11e9-9be4-635a88f95011.png)
 <hr class='division3'>
 </details>
 
