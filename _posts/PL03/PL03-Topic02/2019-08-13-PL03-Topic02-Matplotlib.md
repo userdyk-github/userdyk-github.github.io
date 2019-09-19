@@ -897,54 +897,6 @@ plt.show()
 <br><br><br>
 
 
-```python
-%matplotlib inline
-import matplotlib.pyplot as plt
-import numpy as np
-
-# numpy plot
-# simple decoration
-# style : color/marker/line
-x = np.linspace(-np.pi, np.pi, 50)
-y = np.cos(x)
-
-plt.title("Plot")
-plt.plot(x, y, 'rs--')
-
-plt.show()
-```
-<details open markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-![다운로드 (18)](https://user-images.githubusercontent.com/52376448/64471398-5698ec80-d18c-11e9-813c-bf64699f5d93.png)
-<hr class='division3'>
-</details>
-<br><br><br>
-
-```python
-%matplotlib inline
-import matplotlib.pyplot as plt
-import numpy as np
-
-# numpy plot
-# axes tick set(1)
-x = np.linspace(-np.pi, np.pi, 50)
-y = np.cos(x)
-
-plt.title("Plot")
-plt.plot(x, y, 'rs--')
-plt.xticks([-np.pi, -np.pi / 2, 0, np.pi / 2, np.pi])
-plt.yticks([-1, 0, +1])
-
-plt.show()
-```
-<details open markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-![다운로드 (19)](https://user-images.githubusercontent.com/52376448/64471421-8647f480-d18c-11e9-980b-d240678848a2.png)
-<hr class='division3'>
-</details>
-<br><br><br>
 
 ```python
 %matplotlib inline
@@ -1898,6 +1850,29 @@ plt.show()
 
 
 #### Axis ticks, tick labels, and grids
+
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(-np.pi, np.pi, 50)
+y = np.cos(x)
+
+plt.plot(x, y)
+plt.xticks([-3.14, -3.14/2, 0, 3.14/2, 3.14])
+plt.yticks([-1, 0, +1])
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (17)](https://user-images.githubusercontent.com/52376448/65263585-e5701680-db47-11e9-88a0-32fe87068c4f.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+
 
 ```python
 import numpy as np
