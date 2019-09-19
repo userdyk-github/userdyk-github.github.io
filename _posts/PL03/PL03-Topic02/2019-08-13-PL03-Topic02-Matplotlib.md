@@ -726,14 +726,12 @@ plt.show()
 
 #### Line plot
 
+**list plot : [0,1,2,3] -> [1,4,9,16]**
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
 
-# list plot : [0,1,2,3] -> [1,4,9,16]
-plt.title('Plot')
 plt.plot([1,4,9,16])
-
 plt.show()
 ```
 <details open markdown="1">
@@ -744,14 +742,12 @@ plt.show()
 </details>
 <br><br><br>
 
+**list plot : [10,20,30,40] -> [1,4,9,16]**
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
 
-# list plot : [10,20,30,40] -> [1,4,9,16]
-plt.title('Plot')
 plt.plot([10,20,30,40],[1,4,9,16])
-
 plt.show()
 ```
 <details open markdown="1">
@@ -762,15 +758,13 @@ plt.show()
 </details>
 <br><br><br>
 
+**list plot : [10,20,30,40] -> [1,4,9,16]** <br>
+**style(simple decoration) : color/marker/line**
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
 
-# list plot : [10,20,30,40] -> [1,4,9,16]
-# style(simple decoration) : color/marker/line
-plt.title("Plot")
 plt.plot([10, 20, 30, 40], [1, 4, 9, 16], 'rs--')
-
 plt.show()
 ```
 <details open markdown="1">
@@ -781,33 +775,32 @@ plt.show()
 </details>
 <br><br><br>
 
-
+**list plot : [10,20,30,40] -> [1,4,9,16]**<br>
+**details decoration**<br>
 Style strings are specified in the order of color, marker, and line style. If some of these are omitted, the default value is applied. <br>
 - <a href="https://matplotlib.org/examples/color/named_colors.html" target="blank">color ref</a><br>
 - <a href="https://matplotlib.org/examples/lines_bars_and_markers/marker_reference.html" target="blank">marker ref</a><br>
 - <a href="https://matplotlib.org/examples/lines_bars_and_markers/line_styles_reference.html" target="blank">line style ref</a><br>
 
+<div class="jb-medium">
+ 
+|color           | c|
+|linesidth       | lw |
+|linestyle       | ls|
+|marker          | marker|
+|markersize      | ms|
+|markeredgecolor | mec|
+|markeredgewidth | mew|
+|markerfacecolor | mfc|
 
+</div>
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
 
-# list plot : [10,20,30,40] -> [1,4,9,16]
-# details decoration
-plt.title("Plot")
 plt.plot([10, 20, 30, 40], [1, 4, 9, 16], c="b",
          lw=5, ls="--", marker="o", ms=15, mec="g", mew=5, mfc="r")
-
 plt.show()
-
-# color           : c        : 선 색깔
-# linesidth       : lw       : 선 굵기
-# linestyle       : ls       : 선 스타일
-# marker          : marker   : 마커 종류
-# markersize      : ms       : 마커 크기
-# markeredgecolor : mec      : 마커 선 색깔
-# markeredgewidth : mew      : 마커 선 굵기
-# markerfacecolor : mfc      : 마커 내부 색깔
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">EXAMPLES</summary>
