@@ -444,7 +444,33 @@ array([1.47586906, 1.48365787])
 <span style="font-size: 70%;">$$Optimal\ point\ :\ (x,y) = (1.47586906,1.48365787)$$</span>
 <hr class='division3'>
 </details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">VISUALLIZATION</summary>
+<hr class='division3'>
+```python
+import matplotlib.pyplot as plt
 
+x_opt = optimize.fmin_bfgs(f, x_start)
+
+def func_X_Y_to_XY(f, X, Y):   
+    """  
+    Wrapper for f(X, Y) -> f([X, Y])   
+    """   
+    s = np.shape(X)    
+    return f(np.vstack([X.ravel(), Y.ravel()])).reshape(*s)
+    
+fig, ax = plt.subplots(figsize=(6, 4))  
+x_ = y_ = np.linspace(-3, 5, 100)  
+X, Y = np.meshgrid(x_, y_)   
+c = ax.contour(X, Y, func_X_Y_to_XY(f, X, Y), 25)  
+plt.colorbar(c, ax=ax)
+ax.plot(x_opt[0], x_opt[1], 'r*', markersize=15)   
+ax.set_xlabel(r"$x_1$", fontsize=18)  
+ax.set_ylabel(r"$x_2$", fontsize=18)  
+```    
+![다운로드 (12)](https://user-images.githubusercontent.com/52376448/65289030-1a01c380-db84-11e9-8c47-cb50f4ef9cf5.png)
+<hr class='division3'>
+</details>
 <br><br><br>
 
 <hr class="division1">
