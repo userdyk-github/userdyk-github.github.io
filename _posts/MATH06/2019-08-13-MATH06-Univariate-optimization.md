@@ -64,7 +64,7 @@ _.evalf()
 </details>
 
 <details markdown="1">
-<summary class='jb-small' style="color:blue">VERIFICATION</summary>
+<summary class='jb-small' style="color:blue">Verification</summary>
 <hr class='division3'>
 ```python
 Area_r.diff(r, 2).subs(r, rsol)
