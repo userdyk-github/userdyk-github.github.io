@@ -1849,7 +1849,7 @@ plt.show()
 </details>
 <br><br><br>
 
-**Latex ticks**
+**Ticks that corresponds to the numeric values**
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
