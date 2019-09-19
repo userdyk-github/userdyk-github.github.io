@@ -21,8 +21,59 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## Gradient and Hessian
+## **Optimization process**
+
 <div style="font-size: 70%; text-align:center;"> $$the\ objective\ function\ :\ f(x) = (x_{1} - 1)^{4} + 5(x_{2} - 1)^{2} - 2x_{1}x_{2}$$</div>
+
+```python
+import sympy
+sympy.init_printing()
+
+x1, x2 = sympy.symbols("x_1, x_2") 
+
+# Object function
+f_sym = (x1-1)**4 + 5 * (x2-1)**2 - 2*x1*x2 
+# Gradient
+fprime_sym = [f_sym.diff(x_) for x_ in (x1, x2)]
+# Hessian  
+fhess_sym = [[f_sym.diff(x1_, x2_) for x1_ in (x1, x2)] for x2_ in (x1, x2)] 
+
+
+f_lmbda = sympy.lambdify((x1, x2), f_sym, 'numpy') 
+fprime_lmbda = sympy.lambdify((x1, x2), fprime_sym, 'numpy')
+fhess_lmbda = sympy.lambdify((x1, x2), fhess_sym, 'numpy')
+
+def func_XY_to_X_Y(f):    
+    """    
+    Wrapper for f(X) -> f(X[0], X[1])  
+    """    
+    return lambda X: np.array(f(X[0], X[1])) 
+
+f = func_XY_to_X_Y(f_lmbda) 
+fprime = func_XY_to_X_Y(fprime_lmbda) 
+fhess = func_XY_to_X_Y(fhess_lmbda)
+
+optimize.fmin_ncg(f, (0, 0), fprime=fprime, fhess=fhess)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+Optimization terminated successfully.
+         Current function value: -3.867223
+         Iterations: 8
+         Function evaluations: 10
+         Gradient evaluations: 17
+         Hessian evaluations: 8
+array([1.88292613, 1.37658523])
+```
+<hr class='division3'>
+</details>
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+Gradient and Hessian
 ```python
 import sympy
 sympy.init_printing()
@@ -42,6 +93,8 @@ print(Gradient, '\n', Hessian)
 ```
 `OUTPUT` :
 <span style="font-size: 70%;"> $$\left[\begin{matrix}- 2 x_{2} + 4 \left(x_{1} - 1\right)^{3}\\- 2 x_{1} + 10 x_{2} - 10\end{matrix}\right] ,\ \left[\begin{matrix}12 \left(x_{1} - 1\right)^{2} & -2\\-2 & 10\end{matrix}\right]$$</span>
+<hr class='division3'>
+</details>
 
 <br><br><br>
 <hr class="division2">
@@ -70,76 +123,3 @@ Reference
 
 ---
 
-Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
-
-[Link to another page](another-page).
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-* * *
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-
-![](https://assets-cdn.github.com/images/icons/emoji/octocat.png)
-![](https://guides.github.com/activities/hello-world/branching.png)
-
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-<hr class='division3'>
-</details>
