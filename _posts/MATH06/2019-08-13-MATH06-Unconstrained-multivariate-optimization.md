@@ -54,6 +54,7 @@ print(Gradient, '\n', Hessian)
 <div style="font-size: 70%; text-align:center;"> $$the\ objective\ function\ :\ f(x) = (x_{1} - 1)^{4} + 5(x_{2} - 1)^{2} - 2x_{1}x_{2}$$</div>
 
 ```python
+from scipy import optimize
 import sympy
 sympy.init_printing()
 
