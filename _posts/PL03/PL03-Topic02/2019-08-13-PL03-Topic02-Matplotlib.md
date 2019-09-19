@@ -150,6 +150,17 @@ plt.show()
 
 #### Adding text
 
+The vertical alignment options are as follows:
+- 'center': This is relative to the center of the textbox
+- 'top': This is relative to the upper side of the textbox
+- 'bottom': This is relative to the lower side of the textbox
+- 'baseline': This is relative to the text's baseline
+
+The horizontal alignment options are as follows:
+- 'center': This is relative to the center of the textbox
+- 'left': This is relative to the left side of the textbox
+- 'right': This is relative to the right-hand side of the textbox
+
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
