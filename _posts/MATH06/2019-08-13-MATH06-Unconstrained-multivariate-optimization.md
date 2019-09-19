@@ -117,6 +117,13 @@ sympy.Matrix(fhess_sym)
 <hr class='division3'>
 </details>
 
+<details markdown="1">
+<summary class='jb-small' style="color:blue">VISUALLIZATION</summary>
+<hr class='division3'>
+![다운로드 (8)](https://user-images.githubusercontent.com/52376448/65281038-97213e80-db6c-11e9-83c2-7d37bb8502ec.png)
+<hr class='division3'>
+</details>
+
 <br><br><br>
 <hr class="division2">
 
