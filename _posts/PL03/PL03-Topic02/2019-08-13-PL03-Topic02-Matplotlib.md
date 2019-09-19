@@ -1514,7 +1514,7 @@ plt.show()
 
 ---
 
-#### Some more pltos
+#### Some more plots
 
 ```python
 %matplotlib inline
