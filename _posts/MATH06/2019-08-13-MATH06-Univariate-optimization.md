@@ -154,9 +154,6 @@ plt.show()
 
 
 <br><br><br>
-<hr class="division2">
-
-## title3
 
 <hr class="division1">
 
