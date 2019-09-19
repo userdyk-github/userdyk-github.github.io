@@ -1575,6 +1575,48 @@ plt.show()
 </details>
 <br><br><br>
 
+#### Insets
+
+```python
+import matplotlib.pyplot as plt
+import matplotlib as mpl
+import numpy as np
+
+fig = plt.figure(figsize=(8, 4))
+
+def f(x):
+    return 1 / (1 + x ** 2) + 0.1 / (1 + ((3 - x) / 0.1) ** 2)
+
+def plot_and_format_axes(ax, x, f, fontsize):
+    ax.plot(x, f(x), linewidth=2)
+    ax.xaxis.set_major_locator(mpl.ticker.MaxNLocator(5))
+    ax.yaxis.set_major_locator(mpl.ticker.MaxNLocator(4))
+    ax.set_xlabel(r"$x$", fontsize=fontsize)
+    ax.set_ylabel(r"$f(x)$", fontsize=fontsize)
+
+# main graph
+ax = fig.add_axes([0.1, 0.15, 0.8, 0.8], facecolor="#f5f5f5")
+x = np.linspace(-4, 14, 1000)
+plot_and_format_axes(ax, x, f, 18)
+
+# inset
+x0, x1 = 2.5, 3.5
+ax.axvline(x0, ymax=0.3, color="grey", linestyle=":")
+ax.axvline(x1, ymax=0.3, color="grey", linestyle=":")
+ax_insert = fig.add_axes([0.5, 0.5, 0.38, 0.42], facecolor='none')
+x = np.linspace(x0, x1, 1000)
+plot_and_format_axes(ax_insert, x, f, 14)
+
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (2)](https://user-images.githubusercontent.com/52376448/65268742-bf03a880-db52-11e9-9778-e3b4ccccf514.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
 
 ---
 
@@ -2225,23 +2267,6 @@ plt.show()
 
 <hr class="division2">
 
-## **Advanced Axes Layouts**
-
-### ***Insets***
-
----
-
-### ***Subplots***
-
----
-
-### ***Subplot2grid***
-
----
-
-### ***GridSpec***
-
-<hr class="division2">
 
 ## **Colormap Plots**
 
