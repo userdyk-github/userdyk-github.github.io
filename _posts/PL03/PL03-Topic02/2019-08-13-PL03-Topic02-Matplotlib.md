@@ -91,6 +91,7 @@ plt.show()
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드](https://user-images.githubusercontent.com/52376448/65243246-f6f2f780-db22-11e9-913d-a3b06d49784c.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -113,6 +114,7 @@ plt.show()
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드 (1)](https://user-images.githubusercontent.com/52376448/65243291-0a05c780-db23-11e9-87b0-93686192b74f.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -138,6 +140,7 @@ plt.show()
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드 (2)](https://user-images.githubusercontent.com/52376448/65243394-3b7e9300-db23-11e9-8824-809e1553cb84.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -161,6 +164,7 @@ plt.show()
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드 (3)](https://user-images.githubusercontent.com/52376448/65243396-3b7e9300-db23-11e9-9409-4f3eec095428.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -185,6 +189,7 @@ plt.show()
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드 (4)](https://user-images.githubusercontent.com/52376448/65243397-3b7e9300-db23-11e9-8e20-ca041b05ebf6.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -212,6 +217,7 @@ plt.show()
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드 (5)](https://user-images.githubusercontent.com/52376448/65243398-3c172980-db23-11e9-8a1a-bef087ffee25.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -239,6 +245,7 @@ plt.show()
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드 (6)](https://user-images.githubusercontent.com/52376448/65243393-3ae5fc80-db23-11e9-8bdf-4c6cdae87e0c.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -262,6 +269,7 @@ plt.show()
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드 (7)](https://user-images.githubusercontent.com/52376448/65243487-65d05080-db23-11e9-84c8-ac2c4d9f2844.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -285,6 +293,7 @@ plt.show()
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드 (8)](https://user-images.githubusercontent.com/52376448/65243488-65d05080-db23-11e9-9435-91613caecef4.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -324,6 +333,7 @@ plt.show()
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드 (9)](https://user-images.githubusercontent.com/52376448/65243489-6668e700-db23-11e9-8927-e11104bd8333.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -345,6 +355,7 @@ plt.show()
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드 (10)](https://user-images.githubusercontent.com/52376448/65243490-6668e700-db23-11e9-882c-34f229ba0e51.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -369,6 +380,7 @@ plt.show()
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드 (11)](https://user-images.githubusercontent.com/52376448/65243492-67017d80-db23-11e9-974c-43340698804e.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -395,6 +407,7 @@ plt.show()
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드 (12)](https://user-images.githubusercontent.com/52376448/65243494-67017d80-db23-11e9-840b-1012419b80f6.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -417,6 +430,7 @@ plt.show()
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드 (13)](https://user-images.githubusercontent.com/52376448/65243495-67017d80-db23-11e9-85f5-c465da6da3d2.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -445,6 +459,7 @@ plt.show()
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드 (14)](https://user-images.githubusercontent.com/52376448/65243496-67017d80-db23-11e9-8b44-ad5dff89dc19.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -465,6 +480,7 @@ plt.show()
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드 (15)](https://user-images.githubusercontent.com/52376448/65243498-679a1400-db23-11e9-8ddb-b26927d67c6a.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -489,6 +505,7 @@ plt.show()
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드 (16)](https://user-images.githubusercontent.com/52376448/65243499-679a1400-db23-11e9-940f-78c299e4302f.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -517,6 +534,7 @@ plt.show()
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드 (17)](https://user-images.githubusercontent.com/52376448/65243501-679a1400-db23-11e9-94f5-c1168b57281c.png)
 <hr class='division3'>
 </details>
 <br><br><br>
