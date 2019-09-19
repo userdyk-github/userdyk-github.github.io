@@ -1454,8 +1454,25 @@ plt.show()
 </details>
 <br><br><br>
 
+**Using custom colors for pie charts**
 
+```python
+import numpy as np
+import matplotlib.pyplot as plt
 
+values = np.random.rand(8)
+color_set = ('.00', '.25', '.50', '.75')
+
+plt.pie(values, colors = color_set)
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (6)](https://user-images.githubusercontent.com/52376448/65248862-da0ff180-db2d-11e9-8e65-e999f470cae7.png)
+<hr class='division3'>
+</details>
+<br><br><br>
 
 ---
 
