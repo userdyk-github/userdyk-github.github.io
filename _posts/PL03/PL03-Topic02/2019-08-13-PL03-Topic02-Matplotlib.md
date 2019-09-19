@@ -78,6 +78,15 @@ plt.show()
 #### Adding a title
 
 ```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+X = np.linspace(-4, 4, 1024)
+Y = .25 * (X + 4.) * (X + 1.) * (X - 2.)
+
+plt.title('A polynomial')
+plt.plot(X, Y, c = 'k')
+plt.show()
 ```
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -91,6 +100,15 @@ plt.show()
 #### Using LaTeX-style notations
 
 ```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+X = np.linspace(-4, 4, 1024)
+Y = .25 * (X + 4.) * (X + 1.) * (X - 2.)
+
+plt.title('$f(x)=\\frac{1}{4}(x+4)(x+1)(x-2)$')
+plt.plot(X, Y, c = 'k')
+plt.show()
 ```
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -105,6 +123,17 @@ plt.show()
 #### Adding a label to each axis
 
 ```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+X = np.linspace(-4, 4, 1024)
+Y = .25 * (X + 4.) * (X + 1.) * (X - 2.)
+
+plt.title('Power curve for airfoil KV873')
+plt.xlabel('Air speed')
+plt.ylabel('Total drag')
+plt.plot(X, Y, c = 'k')
+plt.show()
 ```
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -119,6 +148,39 @@ plt.show()
 #### Adding text
 
 ```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+X = np.linspace(-4, 4, 1024)
+Y = .25 * (X + 4.) * (X + 1.) * (X - 2.)
+
+plt.text(-0.5, -0.25, 'Brackmard minimum')
+plt.plot(X, Y, c = 'k')
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+```python
+# Bounding box control
+import numpy as np
+import matplotlib.pyplot as plt
+
+X = np.linspace(-4, 4, 1024)
+Y = .25 * (X + 4.) * (X + 1.) * (X - 2.)
+
+box = {
+ 'facecolor' : '.75',
+ 'edgecolor' : 'k',
+ 'boxstyle' : 'round'
+}
+plt.text(-0.5, -0.20, 'Brackmard minimum', bbox = box)
+plt.plot(X, Y, c='k')
+plt.show()
 ```
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -133,6 +195,19 @@ plt.show()
 #### Adding arrows
 
 ```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+X = np.linspace(-4, 4, 1024)
+Y = .25 * (X + 4.) * (X + 1.) * (X - 2.)
+
+plt.annotate('Brackmard minimum',
+ha = 'center', va = 'bottom',
+xytext = (-1.5, 3.),
+xy = (0.75, -2.7),
+arrowprops = { 'facecolor' : 'black', 'shrink' : 0.05 })
+plt.plot(X, Y)
+plt.show()
 ```
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -147,6 +222,19 @@ plt.show()
 #### Adding a legend
 
 ```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+X = np.linspace(0, 6, 1024)
+Y1 = np.sin(X)
+Y2 = np.cos(X)
+
+plt.xlabel('X')
+plt.ylabel('Y')
+plt.plot(X, Y1, c = 'k', lw = 3., label = 'sin(X)')
+plt.plot(X, Y2, c = '.5', lw = 3., ls = '--', label = 'cos(X)')
+plt.legend()
+plt.show()
 ```
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -161,6 +249,15 @@ plt.show()
 #### Adding a grid
 
 ```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+X = np.linspace(-4, 4, 1024)
+Y = .25 * (X + 4.) * (X + 1.) * (X - 2.)
+
+plt.plot(X, Y, c = 'k')
+plt.grid(True, lw = 2, ls = '--', c = '.75')
+plt.show()
 ```
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -175,6 +272,15 @@ plt.show()
 #### Adding lines
 
 ```python
+import matplotlib.pyplot as plt
+
+N = 16
+for i in range(N):
+     plt.gca().add_line(plt.Line2D((0, i), (N - i, 0), color = '.75'))
+     
+plt.grid(True)
+plt.axis('scaled')
+plt.show()
 ```
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -189,6 +295,76 @@ plt.show()
 #### Adding shapes
 
 ```python
+import matplotlib.patches as patches
+import matplotlib.pyplot as plt
+
+# Circle
+shape = patches.Circle((0, 0), radius = 1., color = '.75')
+plt.gca().add_patch(shape)
+
+# Rectangle
+shape = patches.Rectangle((2.5, -.5), 2., 1., color = '.75')
+plt.gca().add_patch(shape)
+
+# Ellipse
+shape = patches.Ellipse((0, -2.), 2., 1., angle = 45., color =
+ '.75')
+plt.gca().add_patch(shape)
+
+# Fancy box
+shape = patches.FancyBboxPatch((2.5, -2.5), 2., 1., boxstyle =
+ 'sawtooth', color = '.75')
+plt.gca().add_patch(shape)
+
+# Display all
+plt.grid(True)
+plt.axis('scaled')
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+```python
+# Working with polygons
+import numpy as np
+import matplotlib.patches as patches
+import matplotlib.pyplot as plt
+
+theta = np.linspace(0, 2 * np.pi, 8)
+points = np.vstack((np.cos(theta), np.sin(theta))).transpose()
+
+plt.gca().add_patch(patches.Polygon(points, color = '.75'))
+plt.grid(True)
+plt.axis('scaled')
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+```python
+# Working with path attributes
+import numpy as np
+import matplotlib.patches as patches
+import matplotlib.pyplot as plt
+
+theta = np.linspace(0, 2 * np.pi, 6)
+points = np.vstack((np.cos(theta), np.sin(theta))).transpose()
+
+plt.gca().add_patch(plt.Circle((0, 0), radius = 1., color =
+ '.75'))
+plt.gca().add_patch(plt.Polygon(points, closed=None, fill=None,
+ lw = 3., ls = 'dashed', edgecolor = 'k'))
+plt.grid(True)
+plt.axis('scaled')
+plt.show()
 ```
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -203,6 +379,40 @@ plt.show()
 #### Controlling tick spacing
 
 ```python
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.ticker as ticker
+
+X = np.linspace(-15, 15, 1024)
+Y = np.sinc(X)
+
+ax = plt.axes()
+ax.xaxis.set_major_locator(ticker.MultipleLocator(5))
+ax.xaxis.set_minor_locator(ticker.MultipleLocator(1))
+plt.plot(X, Y, c = 'k')
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.ticker as ticker
+
+X = np.linspace(-15, 15, 1024)
+Y = np.sinc(X)
+
+ax = plt.axes()
+ax.xaxis.set_major_locator(ticker.MultipleLocator(5))
+ax.xaxis.set_minor_locator(ticker.MultipleLocator(1))
+plt.grid(True, which='both')
+plt.plot(X, Y)
+plt.show()
 ```
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -217,6 +427,20 @@ plt.show()
 #### Controlling tick labeling
 
 ```python
+import numpy as np
+import matplotlib.ticker as ticker
+import matplotlib.pyplot as plt
+
+name_list = ('Omar', 'Serguey', 'Max', 'Zhou', 'Abidin')
+value_list = np.random.randint(0, 99, size = len(name_list))
+pos_list = np.arange(len(name_list))
+
+ax = plt.axes()
+ax.xaxis.set_major_locator(ticker.FixedLocator((pos_list)))
+ax.xaxis.set_major_formatter(ticker.FixedFormatter((name_list)))
+
+plt.bar(pos_list, value_list, color = '.75', align = 'center')
+plt.show()
 ```
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -225,6 +449,77 @@ plt.show()
 </details>
 <br><br><br>
 
+```python
+# A simpler way to create bar charts with fixed labels
+import numpy as np
+import matplotlib.pyplot as plt
+
+name_list = ('Omar', 'Serguey', 'Max', 'Zhou', 'Abidin')
+value_list = np.random.randint(0, 99, size = len(name_list))
+pos_list = np.arange(len(name_list))
+
+plt.bar(pos_list, value_list, color = '.75', align = 'center')
+plt.xticks(pos_list, name_list, rotation=30)
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+```python
+# Advanced label generation
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.ticker as ticker
+
+X = np.linspace(0, 1, 256)
+
+def make_label(value, pos):
+     return '%0.1f%%' % (100. * value)
+     
+ax = plt.axes()
+ax.xaxis.set_major_formatter(ticker.FuncFormatter(make_label))
+plt.plot(X, np.exp(-10 * X), c ='k')
+plt.plot(X, np.exp(-5 * X), c= 'k', ls = '--')
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+```python
+import numpy as np
+import datetime
+import matplotlib.pyplot as plt
+import matplotlib.ticker as ticker
+
+X = np.linspace(0, 1, 256)
+start_date = datetime.datetime(1998, 1, 1)
+
+def make_label(value, pos):
+     time = start_date + datetime.timedelta(days = 365 * value)
+     return time.strftime('%b %y')
+     
+ax = plt.axes()
+ax.xaxis.set_major_formatter(ticker.FuncFormatter(make_label))
+plt.plot(X, np.exp(-10 * X), c = 'k')
+plt.plot(X, np.exp(-5 * X), c = 'k', ls = '--')
+labels = ax.get_xticklabels()
+plt.setp(labels, rotation = 30.)
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
 
 <hr class="division2">
 
