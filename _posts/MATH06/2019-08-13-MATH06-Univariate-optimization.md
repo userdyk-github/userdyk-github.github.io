@@ -131,7 +131,23 @@ optimize.minimize_scalar(f, bracket=(0.1, 4))
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Visualization</summary>
 <hr class='division3'>
+```python
+import matplotlib.pyplot as plt
+import numpy as np
 
+# main graph
+r = np.linspace(0.1,2,100)
+y = 2*np.pi*r**2 + 2/r
+plt.plot(r,y)
+plt.ylim([0,30])
+
+# optimization point
+plt.plot(0.5419260772557135, 5.535810445932086, marker='*', ms=15, mec='r')
+plt.annotate("Optimization point", fontsize=14, family="serif", xy=(0.5419260772557135, 5.535810445932086), xycoords="data", xytext=(+20, +50), textcoords="offset points", arrowprops=dict(arrowstyle="->", connectionstyle="arc3, rad=.5"))
+
+plt.show()
+```
+![다운로드 (7)](https://user-images.githubusercontent.com/52376448/65272947-08f08c80-db5b-11e9-8260-a2e75271c595.png)
 <hr class='division3'>
 </details>
 
