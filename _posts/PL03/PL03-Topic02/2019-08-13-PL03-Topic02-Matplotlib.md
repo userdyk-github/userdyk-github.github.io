@@ -806,124 +806,6 @@ plt.show()
 <br><br><br>
 
 
-**style(simple decoration) : color/marker/line**
-```python
-%matplotlib inline
-import matplotlib.pyplot as plt
-
-plt.plot([10, 20, 30, 40], [1, 4, 9, 16], 'rs--')
-plt.show()
-```
-<details open markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-![다운로드 (14)](https://user-images.githubusercontent.com/52376448/65261796-fcad0500-db43-11e9-9c55-d146b22da65a.png)
-<hr class='division3'>
-</details>
-<br><br><br>
-
-**details decoration**<br>
-<span class="medium">Style strings are specified in the order of color, marker, and line style. If some of these are omitted, the default value is applied.</span> <br>
-
-```python
-%matplotlib inline
-import matplotlib.pyplot as plt
-
-plt.plot([10, 20, 30, 40], [1, 4, 9, 16],
-         c="b",
-         lw=5, 
-         ls="--",
-         marker="o", 
-         ms=15, 
-         mec="g",
-         mew=5,
-         mfc="r")
-plt.show()
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
-<hr class='division3'>
-- <a href="https://matplotlib.org/examples/color/named_colors.html" target="blank">color ref</a><br>
-- <a href="https://matplotlib.org/examples/lines_bars_and_markers/marker_reference.html" target="blank">marker ref</a><br>
-- <a href="https://matplotlib.org/examples/lines_bars_and_markers/line_styles_reference.html" target="blank">line style ref</a><br>
-
-|color           | c|
-|linesidth       | lw |
-|linestyle       | ls|
-|marker          | marker|
-|markersize      | ms|
-|markeredgecolor | mec|
-|markeredgewidth | mew|
-|markerfacecolor | mfc|
-
-<hr class='division3'>
-</details>
-
-<details markdown="1">
-<summary class='jb-small' style="color:blue">EXAMPLES</summary>
-<hr class='division3'>
-```python
-import numpy as np
-import matplotlib.pyplot as plt
-
-x = np.linspace(-5, 5, 5)
-y = np.ones_like(x)
-
-def axes_settings(fig, ax, title, ymax):
-    ax.set_xticks([])
-    ax.set_yticks([])
-    ax.set_ylim(0, ymax + 1)
-    ax.set_title(title)
-
-fig, axes = plt.subplots(1, 4, figsize=(16, 3))
-
-# Line width
-linewidths = [0.5, 1.0, 2.0, 4.0]
-for n, linewidth in enumerate(linewidths):
-    axes[0].plot(x, y + n, color="blue", linewidth=linewidth)
-axes_settings(fig, axes[0], "linewidth", len(linewidths))
-
-# Line style
-linestyles = ['-', '-.', ':']
-for n, linestyle in enumerate(linestyles):
-    axes[1].plot(x, y + n, color="blue", lw=2, linestyle=linestyle)
-# custom dash style
-line, = axes[1].plot(x, y + 3, color="blue", lw=2)
-length1, gap1, length2, gap2 = 10, 7, 20, 7
-line.set_dashes([length1, gap1, length2, gap2])
-axes_settings(fig, axes[1], "linetypes", len(linestyles) + 1)
-
-# marker types
-markers = ['+', 'o', '*', 's', '.', '1', '2', '3', '4']
-for n, marker in enumerate(markers):
-    # lw = shorthand for linewidth, ls = shorthand for linestyle
-    axes[2].plot(x, y + n, color="blue", lw=2, ls=':', marker=marker)
-axes_settings(fig, axes[2], "markers", len(markers))
-
-# marker size and color
-markersizecolors = [(4, "white"), (8, "red"), (12, "yellow"), (16, "lightgreen")]
-for n, (markersize, markerfacecolor) in enumerate(markersizecolors):
-    axes[3].plot(x, y + n, color="blue", lw=1, ls='-',
-                 marker='o', markersize=markersize,
-                 markerfacecolor=markerfacecolor, markeredgewidth=2)
-axes_settings(fig, axes[3], "marker size/color", len(markersizecolors))
-
-plt.show()
-```
-![다운로드 (1)](https://user-images.githubusercontent.com/52376448/65255648-388e9d00-db39-11e9-8bb9-6ab95b74a035.png)
-
-<hr class='division3'>
-</details>
-<details open markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-![다운로드 (15)](https://user-images.githubusercontent.com/52376448/65261831-0d5d7b00-db44-11e9-939f-113b438e8bf1.png)
-<hr class='division3'>
-</details>
-
-<br><br><br>
-
-
 
 ---
 
@@ -1710,9 +1592,124 @@ plt.show()
 
 ### ***Line properties***
 
----
+#### Simple decoration
+**color/marker/line**
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
 
-### ***Text formatting and annotations***
+plt.plot([10, 20, 30, 40], [1, 4, 9, 16], 'rs--')
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (14)](https://user-images.githubusercontent.com/52376448/65261796-fcad0500-db43-11e9-9c55-d146b22da65a.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+#### Details decoration
+
+<span class="medium">Style strings are specified in the order of color, marker, and line style. If some of these are omitted, the default value is applied.</span> <br>
+
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+
+plt.plot([10, 20, 30, 40], [1, 4, 9, 16],
+         c="b",
+         lw=5, 
+         ls="--",
+         marker="o", 
+         ms=15, 
+         mec="g",
+         mew=5,
+         mfc="r")
+plt.show()
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+- <a href="https://matplotlib.org/examples/color/named_colors.html" target="blank">color ref</a><br>
+- <a href="https://matplotlib.org/examples/lines_bars_and_markers/marker_reference.html" target="blank">marker ref</a><br>
+- <a href="https://matplotlib.org/examples/lines_bars_and_markers/line_styles_reference.html" target="blank">line style ref</a><br>
+
+|color           | c|
+|linesidth       | lw |
+|linestyle       | ls|
+|marker          | marker|
+|markersize      | ms|
+|markeredgecolor | mec|
+|markeredgewidth | mew|
+|markerfacecolor | mfc|
+
+<hr class='division3'>
+</details>
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">EXAMPLES</summary>
+<hr class='division3'>
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(-5, 5, 5)
+y = np.ones_like(x)
+
+def axes_settings(fig, ax, title, ymax):
+    ax.set_xticks([])
+    ax.set_yticks([])
+    ax.set_ylim(0, ymax + 1)
+    ax.set_title(title)
+
+fig, axes = plt.subplots(1, 4, figsize=(16, 3))
+
+# Line width
+linewidths = [0.5, 1.0, 2.0, 4.0]
+for n, linewidth in enumerate(linewidths):
+    axes[0].plot(x, y + n, color="blue", linewidth=linewidth)
+axes_settings(fig, axes[0], "linewidth", len(linewidths))
+
+# Line style
+linestyles = ['-', '-.', ':']
+for n, linestyle in enumerate(linestyles):
+    axes[1].plot(x, y + n, color="blue", lw=2, linestyle=linestyle)
+# custom dash style
+line, = axes[1].plot(x, y + 3, color="blue", lw=2)
+length1, gap1, length2, gap2 = 10, 7, 20, 7
+line.set_dashes([length1, gap1, length2, gap2])
+axes_settings(fig, axes[1], "linetypes", len(linestyles) + 1)
+
+# marker types
+markers = ['+', 'o', '*', 's', '.', '1', '2', '3', '4']
+for n, marker in enumerate(markers):
+    # lw = shorthand for linewidth, ls = shorthand for linestyle
+    axes[2].plot(x, y + n, color="blue", lw=2, ls=':', marker=marker)
+axes_settings(fig, axes[2], "markers", len(markers))
+
+# marker size and color
+markersizecolors = [(4, "white"), (8, "red"), (12, "yellow"), (16, "lightgreen")]
+for n, (markersize, markerfacecolor) in enumerate(markersizecolors):
+    axes[3].plot(x, y + n, color="blue", lw=1, ls='-',
+                 marker='o', markersize=markersize,
+                 markerfacecolor=markerfacecolor, markeredgewidth=2)
+axes_settings(fig, axes[3], "marker size/color", len(markersizecolors))
+
+plt.show()
+```
+![다운로드 (1)](https://user-images.githubusercontent.com/52376448/65255648-388e9d00-db39-11e9-8bb9-6ab95b74a035.png)
+
+<hr class='division3'>
+</details>
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (15)](https://user-images.githubusercontent.com/52376448/65261831-0d5d7b00-db44-11e9-939f-113b438e8bf1.png)
+<hr class='division3'>
+</details>
+
+<br><br><br>
 
 ---
 
