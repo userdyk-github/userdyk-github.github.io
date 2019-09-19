@@ -1403,6 +1403,27 @@ plt.show()
 </details>
 <br><br><br>
 
+**Using colormaps for bar charts**
+```python
+import numpy as np
+import matplotlib.cm as cm
+import matplotlib.colors as col
+import matplotlib.pyplot as plt
+
+values = np.random.random_integers(99, size = 50)
+
+cmap = cm.ScalarMappable(col.Normalize(0, 99), cm.binary)
+
+plt.bar(np.arange(len(values)), values, color = cmap.to_rgba(values))
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (5)](https://user-images.githubusercontent.com/52376448/65248691-8dc4b180-db2d-11e9-8390-c720e20eec5a.png)
+<hr class='division3'>
+</details>
+<br><br><br>
 
 ---
 
