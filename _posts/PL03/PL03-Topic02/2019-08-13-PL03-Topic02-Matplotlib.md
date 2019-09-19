@@ -626,7 +626,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 np.random.seed(0)
-f1 = plt.figure(figsize=(10, 2))    # Simultaneously resize graph while defining objects
+plt.figure(figsize=(10, 2))    # Simultaneously resize graph while defining objects
 
 plt.title("Plot")
 plt.plot(np.random.randn(100))
