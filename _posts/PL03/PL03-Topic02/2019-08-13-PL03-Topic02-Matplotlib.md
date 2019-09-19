@@ -76,16 +76,154 @@ plt.show()
 ### ***Working with Annotations***
 
 #### Adding a title
+
+```python
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
 #### Using LaTeX-style notations
+
+```python
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+
 #### Adding a label to each axis
+
+```python
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+
 #### Adding text
+
+```python
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+
 #### Adding arrows
+
+```python
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+
 #### Adding a legend
+
+```python
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+
 #### Adding a grid
+
+```python
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+
 #### Adding lines
+
+```python
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+
 #### Adding shapes
+
+```python
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+
 #### Controlling tick spacing
+
+```python
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+
 #### Controlling tick labeling
+
+```python
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
 
 
 <hr class="division2">
