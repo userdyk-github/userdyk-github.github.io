@@ -1815,28 +1815,43 @@ plt.show()
 
 ### ***Axis propertires***
 
-**Axis labels and titles**
+#### Axis labels and titles
 
 <br><br><br>
 
-**Axis range**
+---
+
+#### Axis range
 
 <br><br><br>
 
-**Axis ticks, tick labels, and grids**
+---
+
+
+#### Axis ticks, tick labels, and grids
 
 <br><br><br>
 
-**Log plots**
+---
+
+
+#### Log plots
 
 <br><br><br>
 
-**Twin axes**
+---
+
+
+#### Twin axes
 
 <br><br><br>
 
-**Spines**
+---
 
+
+#### Spines
+
+<br><br><br>
 
 <hr class="division2">
 
