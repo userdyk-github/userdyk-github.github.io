@@ -25,13 +25,13 @@ List of posts to read before reading this article
 
 ### ***Bracketing methods***
 
-####
+#### Bisection method
 
 <br><br><br>
 
 ---
 
-####
+#### False position (regula falsi)
 
 <br><br><br>
 
@@ -47,25 +47,25 @@ List of posts to read before reading this article
 
 ### ***Iterative methods***
 
-####
+#### Newton's method (and similar derivative-based methods)
 
 <br><br><br>
 
 ---
 
-####
+#### Secant method
 
 <br><br><br>
 
 ---
 
-####
+#### Steffensen's method
 
 <br><br><br>
 
 ---
 
-####
+#### Inverse interpolation
 
 <br><br><br>
 
@@ -73,8 +73,7 @@ List of posts to read before reading this article
 
 ### ***Combinations of methods***
 
-####
-
+#### Brent's method
 <br><br><br>
 
 ---
@@ -83,37 +82,37 @@ List of posts to read before reading this article
 
 ### ***Roots of polynomials***
 
-####
+#### Finding one root
 
 <br><br><br>
 
 ---
 
-####
+#### Finding roots in pairs
 
 <br><br><br>
 
 ---
 
-####
+#### Finding all roots at once
 
 <br><br><br>
 
 ---
 
-####
+#### Exclusion and enclosure methods
 
 <br><br><br>
 
 ---
 
-####
+#### Real-root isolation
 
 <br><br><br>
 
 ---
 
-####
+#### Finding multiple roots of polynomials
 
 <br><br><br>
 
