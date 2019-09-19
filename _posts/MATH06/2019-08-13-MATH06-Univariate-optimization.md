@@ -38,10 +38,6 @@ The classic optimization problem: Minimize the area of a cylinder with unit volu
 </div>
 
 ```python
-from scipy import optimize
-import numpy as np                     # after executing numpy, and then execute cvxopt!
-import cvxopt                          # Just add path 'C:\Python36\Library\bin' to PATH environment variable
-import matplotlib.pyplot as plt 
 import sympy 
 sympy.init_printing()
 
@@ -84,6 +80,13 @@ _.evalf()
 
 ## **Implementation with scipy for more realistic problems**
 
+```python
+from scipy import optimize
+import numpy as np                     # after executing numpy, and then execute cvxopt!
+import cvxopt                          # Just add path 'C:\Python36\Library\bin' to PATH environment variable
+import matplotlib.pyplot as plt 
+```
+<br><br><br>
 <hr class="division2">
 
 ## title3
