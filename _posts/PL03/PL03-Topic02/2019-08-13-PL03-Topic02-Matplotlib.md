@@ -1863,12 +1863,28 @@ ax.set_title("axis labels and title example", fontsize=16, fontname='serif', col
 
 #### Axis range
 
+```python
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 ---
 
 
 #### Axis ticks, tick labels, and grids
+
+```python
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
@@ -1877,6 +1893,15 @@ ax.set_title("axis labels and title example", fontsize=16, fontname='serif', col
 
 #### Log plots
 
+```python
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
+
 <br><br><br>
 
 ---
@@ -1884,12 +1909,30 @@ ax.set_title("axis labels and title example", fontsize=16, fontname='serif', col
 
 #### Twin axes
 
+```python
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
+
 <br><br><br>
 
 ---
 
 
 #### Spines
+
+```python
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
 
 <br><br><br>
 
