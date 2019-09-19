@@ -22,6 +22,9 @@ List of posts to read before reading this article
 <hr class="division1">
 
 ## **Gradient and Hessian**
+
+<div style="font-size: 70%; text-align:center;"> $$the\ objective\ function\ :\ f(x) = (x_{1} + 10)^{2} + 5(x_{2} - 9)^{2} - 2x_{1}x_{2}$$</div>
+
 ```python
 import sympy
 sympy.init_printing()
