@@ -393,6 +393,8 @@ plt.show()
 
 ## **Suitable starting point for optimization**
 
+<div style="font-size: 70%; text-align:center;"> $$the\ objective\ function\ :\ f(x,y) = 4sin(x \pi) + 6sin(y \pi) + (x-1)^{2} + (y-1)^{2}$$</div>
+
 ```python
 import numpy as np
 from scipy import optimize 
@@ -410,6 +412,8 @@ optimize.brute(f, (slice(-3, 5, 0.5),  slice(-3, 5, 0.5)), finish=None)
 <br><br><br>
 
 ### ***Optimization process from suitable starting point***
+
+<div style="font-size: 70%; text-align:center;"> $$the\ objective\ function\ :\ f(x,y) = 4sin(x \pi) + 6sin(y \pi) + (x-1)^{2} + (y-1)^{2}$$</div>
 
 ```python
 import numpy as np
