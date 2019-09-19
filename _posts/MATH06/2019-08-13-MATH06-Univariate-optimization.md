@@ -95,11 +95,15 @@ import numpy as np                     # after executing numpy, and then execute
 import cvxopt                          # Just add path 'C:\Python36\Library\bin' to PATH environment variable
 import matplotlib.pyplot as plt 
 
+# object function
 def f(r):   
     return 2 * np.pi * r**2 + 2 / r
+
+# optimization
 r_min = optimize.brent(f, brack=(0.1, 4)) 
-r_min 
+r_min, f(r_min)
 ```
+`OUTPUT` : <span style="font-size: 70%;">$$\left ( 0.5419260772557135, \quad 5.535810445932086\right )$$</span>
 <br><br><br>
 <hr class="division2">
 
