@@ -957,7 +957,7 @@ plt.show()
 # plt.hold(False)  # <- This code is required in version 1, 5
 
 # color           : c        : 선 색깔
-# linesidth       : lw       : 선 굵기
+# linewidth       : lw       : 선 굵기
 # linestyle       : ls       : 선 스타일
 # marker          : marker   : 마커 종류
 # markersize      : ms       : 마커 크기
