@@ -107,6 +107,13 @@ r_min, f(r_min)
 ```
 `OUTPUT` : <span style="font-size: 70%;">$$\left ( 0.5419260772557135, \quad 5.535810445932086\right )$$</span>
 <br><br><br>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+**brack keyword argument** specify a starting interval for the algorithm
+<hr class='division3'>
+</details>
+
 
 <span class="frame2">Method2</span>
 ```python
@@ -172,8 +179,4 @@ Reference
 ---
 
 
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-<hr class='division3'>
-</details>
+
