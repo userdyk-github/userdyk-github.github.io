@@ -42,8 +42,10 @@ import sympy
 sympy.init_printing()
 
 r, h = sympy.symbols("r, h") 
+
 Area = 2 * sympy.pi * r**2 + 2 * sympy.pi * r * h 
 Volume = sympy.pi * r**2 * h 
+
 h_r = sympy.solve(Volume - 1)[0]
 Area_r = Area.subs(h_r)
 rsol = sympy.solve(Area_r.diff(r))[0] 
@@ -85,6 +87,11 @@ from scipy import optimize
 import numpy as np                     # after executing numpy, and then execute cvxopt!
 import cvxopt                          # Just add path 'C:\Python36\Library\bin' to PATH environment variable
 import matplotlib.pyplot as plt 
+
+def f(r):   
+    return 2 * np.pi * r**2 + 2 / r
+r_min = optimize.brent(f, brack=(0.1, 4)) 
+r_min 
 ```
 <br><br><br>
 <hr class="division2">
