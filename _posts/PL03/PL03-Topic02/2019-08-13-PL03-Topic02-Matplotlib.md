@@ -75,6 +75,17 @@ plt.show()
 
 ### ***Working with Annotations***
 
+#### Adding a title
+#### Using LaTeX-style notations
+#### Adding a label to each axis
+#### Adding text
+#### Adding arrows
+#### Adding a legend
+#### Adding a grid
+#### Adding lines
+#### Adding shapes
+#### Controlling tick spacing
+#### Controlling tick labeling
 
 
 <hr class="division2">
@@ -991,27 +1002,27 @@ plt.show()
 
 ### ***Axis propertires***
 
-#### Axis labels and titles
+**Axis labels and titles**
 
----
+<br><br><br>
 
-#### Axis range
+**Axis range**
 
----
+<br><br><br>
 
-#### Axis ticks, tick labels, and grids
+**Axis ticks, tick labels, and grids**
 
----
+<br><br><br>
 
-#### Log plots
+**Log plots**
 
----
+<br><br><br>
 
-#### Twin axes
+**Twin axes**
 
----
+<br><br><br>
 
-#### Spines
+**Spines**
 
 
 <hr class="division2">
