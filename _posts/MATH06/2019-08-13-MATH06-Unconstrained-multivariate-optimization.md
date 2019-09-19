@@ -307,37 +307,62 @@ plt.show()
 ## **Optimization process using **
 
 ```python
+from scipy import optimize
+import sympy
+sympy.init_printing()
+import numpy as np
 
+x1, x2 = sympy.symbols("x_1, x_2") 
+
+# Object function
+f_sym = (x1-1)**4 + 5 * (x2-1)**2 - 2*x1*x2 
+
+# Convert sympy function to numpy function
+f_lmbda = sympy.lambdify((x1, x2), f_sym, 'numpy') 
+
+# Unpacking for multivariate function
+def func_XY_to_X_Y(f):    
+    '''Wrapper for f(X) -> f(X[0], X[1])'''
+    return lambda X: np.array(f(X[0], X[1])) 
+f = func_XY_to_X_Y(f_lmbda) 
+
+# Optimization
+optimize.fmin_bfgs(f, (0, 0))
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
+Optimization terminated successfully.
+         Current function value: -3.867223
+         Iterations: 9
+         Function evaluations: 52
+         Gradient evaluations: 13
+array([1.88292645, 1.37658596])
 ```
 <hr class='division3'>
 </details>
-<details markdown="1">
-<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
-<hr class='division3'>
-Gradient
-```
-sympy.Matrix(fprime_sym)
-```
-`OUTPUT` :
-<span style="font-size: 70%;"></span><br>
-Hessian
-```
-sympy.Matrix(fhess_sym)
-```
-`OUTPUT` :
-<span style="font-size: 70%;"></span>
-<hr class='division3'>
-</details>
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">VISUALLIZATION</summary>
 <hr class='division3'>
 ```python
+import matplotlib.pyplot as plt
+
+x_opt = optimize.fmin_bfgs(f, (0, 0))
+x_ = y_ = np.linspace(-1, 4, 100)  
+X, Y = np.meshgrid(x_, y_)
+
+fig, ax = plt.subplots(figsize=(6, 4)) 
+c = ax.contour(X, Y, f_lmbda(X, Y), 100)   
+plt.colorbar(c, ax=ax)
+
+ax.plot(x_opt[0], x_opt[1], 'r*', markersize=15)   
+ax.set_xlabel(r"$x_1$", fontsize=18)   
+ax.set_ylabel(r"$x_2$", fontsize=18)    
+plt.show()
 ```
+![다운로드 (11)](https://user-images.githubusercontent.com/52376448/65286198-a5c22280-db79-11e9-8dbf-bd764dd63a48.png)
 <hr class='division3'>
 </details>
 <br><br><br>
