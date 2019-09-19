@@ -1413,7 +1413,7 @@ plt.show()
 
 ### ***Working with Figures***
 
-**Multiple plot, all at once**
+#### Multiple plot, all at once
 
 ```python
 %matplotlib inline
