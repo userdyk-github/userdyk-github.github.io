@@ -128,6 +128,12 @@ optimize.minimize_scalar(f, bracket=(0.1, 4))
  success: True
        x: 0.5419260772557135
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Visualization</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
 
 
 
