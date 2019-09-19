@@ -1836,6 +1836,27 @@ plt.show()
 
 #### Axis labels and titles
 
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(0, 50, 500)
+y = np.sin(x) * np.exp(-x/10)
+
+fig, ax = plt.subplots(figsize=(8, 2), subplot_kw={'facecolor': "#ebf5ff"})
+
+ax.plot(x, y, lw=2)
+
+ax.set_xlabel ("x", labelpad=5, fontsize=18, fontname='serif', color="blue")
+ax.set_ylabel ("f(x)", labelpad=15, fontsize=18, fontname='serif', color="blue")
+ax.set_title("axis labels and title example", fontsize=16, fontname='serif', color="blue")
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (3)](https://user-images.githubusercontent.com/52376448/65258127-53631080-db3d-11e9-91b0-950a29c79f52.png)
+<hr class='division3'>
+</details>
 <br><br><br>
 
 ---
