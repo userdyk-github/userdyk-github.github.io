@@ -92,6 +92,7 @@ _.evalf()
 <div style="font-size: 70%; text-align: center;">
   $$the\ objective\ function\ :\ f (r) = 2πr^{2} + \frac{2}{r}$$
 </div>
+<span class="frame2">Method1</span>
 ```python
 from scipy import optimize
 import numpy as np                     # after executing numpy, and then execute cvxopt!
@@ -107,6 +108,32 @@ r_min = optimize.brent(f, brack=(0.1, 4))
 r_min, f(r_min)
 ```
 `OUTPUT` : <span style="font-size: 70%;">$$\left ( 0.5419260772557135, \quad 5.535810445932086\right )$$</span>
+<br><br><br>
+
+<span class="frame2">Method2</span>
+```python
+from scipy import optimize
+import numpy as np                     # after executing numpy, and then execute cvxopt!
+import cvxopt                          # Just add path 'C:\Python36\Library\bin' to PATH environment variable
+import matplotlib.pyplot as plt 
+
+# object function
+def f(r):   
+    return 2 * np.pi * r**2 + 2 / r
+    
+optimize.minimize_scalar(f, bracket=(0.1, 4))
+```
+`OUTPUT` :
+```
+     fun: 5.535810445932086
+    nfev: 19
+     nit: 15
+ success: True
+       x: 0.5419260772557135
+```
+
+
+
 <br><br><br>
 <hr class="division2">
 
