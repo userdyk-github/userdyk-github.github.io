@@ -1514,6 +1514,38 @@ plt.show()
 
 ---
 
+#### Some more pltos
+
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+
+x = np.linspace(-5, 2, 20)
+y =  x**3 + 5*x**2 + 10
+
+fig, axes = plt.subplots(3,2)
+axes[0, 0].step(x, y)
+axes[0, 1].bar(x, y)
+axes[1, 0].fill_between(x, y)
+axes[1, 1].scatter(x, y)
+axes[2, 0].quiver(x, y)
+axes[2, 1].errorbar(x, y)
+
+plt.tight_layout()
+plt.show()
+```
+`SUPPLEMENT` : Refer to [here](https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-Matplotlib.html#axes) about exes
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드](https://user-images.githubusercontent.com/52376448/65252887-af756700-db34-11e9-8091-888e27546f61.png)
+<hr class='division3'>
+</details>
+
+<br><br><br>
+
+---
+
 ### ***Working with Figures***
 
 ---
