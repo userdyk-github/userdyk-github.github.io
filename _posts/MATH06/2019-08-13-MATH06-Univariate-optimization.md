@@ -32,6 +32,11 @@ List of posts to read before reading this article
 
 ## **The classic optimization problem: Minimize the area of a cylinder with unit volume**
 
+<div style="font-size: 70%; text-align: center;">
+  $$the objective function : f ([r,h]) = 2πr^{2} + 2πrh$$
+  $$the equality constraint : g([r,h]) = πr^{2}h − 1 = 0$$
+</div>
+
 ```python
 from scipy import optimize
 import numpy as np                     # after executing numpy, and then execute cvxopt!
