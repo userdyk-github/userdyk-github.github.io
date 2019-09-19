@@ -1850,6 +1850,7 @@ ax.plot(x, y, lw=2)
 ax.set_xlabel ("x", labelpad=5, fontsize=18, fontname='serif', color="blue")
 ax.set_ylabel ("f(x)", labelpad=15, fontsize=18, fontname='serif', color="blue")
 ax.set_title("axis labels and title example", fontsize=16, fontname='serif', color="blue")
+plt.show()
 ```
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -1864,10 +1865,33 @@ ax.set_title("axis labels and title example", fontsize=16, fontname='serif', col
 #### Axis range
 
 ```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(0, 30, 500)
+y = np.sin(x) * np.exp(-x/10)
+
+fig, axes = plt.subplots(1, 3, figsize=(9, 3), subplot_kw={'facecolor': "#ebf5ff"})
+
+axes[0].plot(x, y, lw=2)
+axes[0].set_xlim(-5, 35)
+axes[0].set_ylim(-1, 1)
+axes[0].set_title("set_xlim / set_y_lim")
+
+axes[1].plot(x, y, lw=2)
+axes[1].axis('tight')
+axes[1].set_title("axis('tight')")
+
+axes[2].plot(x, y, lw=2)
+axes[2].axis('equal')
+axes[2].set_title("axis('equal')")
+
+plt.show()
 ```
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드 (4)](https://user-images.githubusercontent.com/52376448/65258517-fa47ac80-db3d-11e9-895f-d5637963b14b.png)
 <hr class='division3'>
 </details>
 
@@ -1879,15 +1903,127 @@ ax.set_title("axis labels and title example", fontsize=16, fontname='serif', col
 #### Axis ticks, tick labels, and grids
 
 ```python
+import numpy as np
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+
+x = np.linspace(-2 * np.pi, 2 * np.pi, 500)
+y = np.sin(x) * np.exp(-x**2/20)
+
+fig, axes = plt.subplots(1, 4, figsize=(12, 3))
+
+axes[0].plot(x, y, lw=2)
+axes[0].set_title("default ticks")
+
+axes[1].plot(x, y, lw=2)
+axes[1].set_title("set_xticks")
+axes[1].set_yticks([-1, 0, 1])
+axes[1].set_xticks([-5, 0, 5])
+
+axes[2].plot(x, y, lw=2)
+axes[2].set_title("set_major_locator")
+axes[2].xaxis.set_major_locator(mpl.ticker.MaxNLocator(4))
+axes[2].yaxis.set_major_locator(mpl.ticker.FixedLocator([-1, 0, 1]))
+axes[2].xaxis.set_minor_locator(mpl.ticker.MaxNLocator(8))
+axes[2].yaxis.set_minor_locator(mpl.ticker.MaxNLocator(8))
+
+axes[3].plot(x, y, lw=2)
+axes[3].set_title("set_xticklabels")
+axes[3].set_yticks([-1, 0, 1])
+axes[3].set_xticks([-2 * np.pi, -np.pi, 0, np.pi, 2 * np.pi])
+axes[3].set_xticklabels([r'$-2\pi$', r'$-\pi$', 0, r'$\pi$',   r'$2\pi$'])
+x_minor_ticker = mpl.ticker.FixedLocator([-3 * np.pi / 2,  -np.pi / 2, 0,
+                                          
+np.pi / 2, 3 * np.pi / 2])
+axes[3].xaxis.set_minor_locator(x_minor_ticker)
+axes[3].yaxis.set_minor_locator(mpl.ticker.MaxNLocator(4))
+
+plt.show()
 ```
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드 (5)](https://user-images.githubusercontent.com/52376448/65258741-62968e00-db3e-11e9-8e82-5deec42e8f4f.png)
 <hr class='division3'>
 </details>
 
 <br><br><br>
 
+
+```python
+import numpy as np
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+
+fig, axes = plt.subplots(1, 3, figsize=(12, 4))
+
+x_major_ticker = mpl.ticker.MultipleLocator(4)
+x_minor_ticker = mpl.ticker.MultipleLocator(1)
+y_major_ticker = mpl.ticker.MultipleLocator(0.5)
+y_minor_ticker = mpl.ticker.MultipleLocator(0.25)
+
+for ax in axes:
+    ax.plot(x, y, lw=2)
+    ax.xaxis.set_major_locator(x_major_ticker)
+    ax.yaxis.set_major_locator(y_major_ticker)
+    ax.xaxis.set_minor_locator(x_minor_ticker)
+    ax.yaxis.set_minor_locator(y_minor_ticker)
+
+axes[0].set_title("default grid")
+axes[0].grid()
+
+axes[1].set_title("major/minor grid")
+axes[1].grid(color="blue", which="both", linestyle=':', linewidth=0.5)
+
+axes[2].set_title("individual x/y major/minor grid")
+axes[2].grid(color="grey", which="major", axis='x', linestyle='-', linewidth=0.5)
+axes[2].grid(color="grey", which="minor", axis='x', linestyle=':', linewidth=0.25)
+axes[2].grid(color="grey", which="major", axis='y', linestyle='-', linewidth=0.5)
+
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (6)](https://user-images.githubusercontent.com/52376448/65258959-d042ba00-db3e-11e9-8fd1-e5be4ae044e9.png)
+<hr class='division3'>
+</details>
+
+<br><br><br>
+
+
+```python
+import numpy as np
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+
+fig, axes = plt.subplots(1, 2, figsize=(8, 3))
+
+x = np.linspace(0, 1e5, 100)
+y = x ** 2
+
+axes[0].plot(x, y, 'b.')
+axes[0].set_title("default labels", loc='right')
+
+axes[1].plot(x, y, 'b')
+axes[1].set_title("scientific notation labels", loc='right')
+
+formatter = mpl.ticker.ScalarFormatter(useMathText=True)
+formatter.set_scientific(True)
+formatter.set_powerlimits((-1,1))
+axes[1].xaxis.set_major_formatter(formatter)
+axes[1].yaxis.set_major_formatter(formatter)
+
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (7)](https://user-images.githubusercontent.com/52376448/65258960-d20c7d80-db3e-11e9-9db4-05414e7a3349.png)
+<hr class='division3'>
+</details>
+
+<br><br><br>
 ---
 
 
