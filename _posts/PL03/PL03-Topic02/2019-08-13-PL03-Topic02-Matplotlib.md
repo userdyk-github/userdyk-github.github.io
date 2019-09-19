@@ -150,17 +150,6 @@ plt.show()
 
 #### Adding text
 
-The vertical alignment options are as follows:
-- 'center': This is relative to the center of the textbox
-- 'top': This is relative to the upper side of the textbox
-- 'bottom': This is relative to the lower side of the textbox
-- 'baseline': This is relative to the text's baseline
-
-The horizontal alignment options are as follows:
-- 'center': This is relative to the center of the textbox
-- 'left': This is relative to the left side of the textbox
-- 'right': This is relative to the right-hand side of the textbox
-
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -172,6 +161,7 @@ plt.text(-0.5, -0.25, 'Brackmard minimum')
 plt.plot(X, Y, c = 'k')
 plt.show()
 ```
+
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
@@ -197,6 +187,18 @@ plt.text(-0.5, -0.20, 'Brackmard minimum', bbox = box)
 plt.plot(X, Y, c='k')
 plt.show()
 ```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">box options</summary>
+<hr class='division3'>
+<div class="jb-medium">
+'facecolor': This is the color used for the box. It will be used to set the background and the edge color
+'edgecolor': This is the color used for the edges of the box's shape
+'alpha': This is used to set the transparency level so that the box blends with the background
+'boxstyle': This sets the style of the box, which can either be 'round' or 'square'
+'pad': If 'boxstyle' is set to 'square', it defines the amount of padding between the text and the box's sides
+</div>
+<hr class='division3'>
+</details>
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
