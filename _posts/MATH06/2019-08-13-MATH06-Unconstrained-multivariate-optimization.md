@@ -145,7 +145,126 @@ plt.show()
 
 <br><br><br>
 
-## title2
+## **Optimization process using **
+
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+```
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+Gradient
+```
+sympy.Matrix(fprime_sym)
+```
+`OUTPUT` :
+<span style="font-size: 70%;"></span><br>
+Hessian
+```
+sympy.Matrix(fhess_sym)
+```
+`OUTPUT` :
+<span style="font-size: 70%;"></span>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">VISUALLIZATION</summary>
+<hr class='division3'>
+```python
+```
+<hr class='division3'>
+</details>
+<br><br><br>
+
+<hr class="division2">
+
+## **Optimization process using **
+
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+```
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+Gradient
+```
+sympy.Matrix(fprime_sym)
+```
+`OUTPUT` :
+<span style="font-size: 70%;"></span><br>
+Hessian
+```
+sympy.Matrix(fhess_sym)
+```
+`OUTPUT` :
+<span style="font-size: 70%;"></span>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">VISUALLIZATION</summary>
+<hr class='division3'>
+```python
+```
+<hr class='division3'>
+</details>
+<br><br><br>
+
+<hr class="division2">
+
+## **Optimization process using **
+
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+```
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+Gradient
+```
+sympy.Matrix(fprime_sym)
+```
+`OUTPUT` :
+<span style="font-size: 70%;"></span><br>
+Hessian
+```
+sympy.Matrix(fhess_sym)
+```
+`OUTPUT` :
+<span style="font-size: 70%;"></span>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">VISUALLIZATION</summary>
+<hr class='division3'>
+```python
+```
+<hr class='division3'>
+</details>
+<br><br><br>
 
 <hr class="division2">
 
