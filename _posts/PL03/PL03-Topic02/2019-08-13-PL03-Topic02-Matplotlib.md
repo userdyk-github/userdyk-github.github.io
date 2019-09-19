@@ -191,11 +191,11 @@ plt.show()
 <summary class='jb-small' style="color:blue">box options</summary>
 <hr class='division3'>
 <div class="jb-medium">
-'facecolor': This is the color used for the box. It will be used to set the background and the edge color
-'edgecolor': This is the color used for the edges of the box's shape
-'alpha': This is used to set the transparency level so that the box blends with the background
-'boxstyle': This sets the style of the box, which can either be 'round' or 'square'
-'pad': If 'boxstyle' is set to 'square', it defines the amount of padding between the text and the box's sides
+- 'facecolor': This is the color used for the box. It will be used to set the background and the edge color
+- 'edgecolor': This is the color used for the edges of the box's shape
+- 'alpha': This is used to set the transparency level so that the box blends with the background
+- 'boxstyle': This sets the style of the box, which can either be 'round' or 'square'
+- 'pad': If 'boxstyle' is set to 'square', it defines the amount of padding between the text and the box's sides
 </div>
 <hr class='division3'>
 </details>
@@ -227,6 +227,19 @@ arrowprops = { 'facecolor' : 'black', 'shrink' : 0.05 })
 plt.plot(X, Y)
 plt.show()
 ```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">box options</summary>
+<hr class='division3'>
+<div class="jb-medium">
+- 'arrowstyle': The parameters ''<-'', ''<'', ''-'', ''wedge'', ''simple'', and "fancy" control the style of the arrow
+- 'facecolor': This is the color used for the arrow. It will be used to set the background and the edge color
+- 'edgecolor': This is the color used for the edges of the arrow's shape
+- 'alpha': This is used to set the transparency level so that the arrow blends with the background
+</div>
+<hr class='division3'>
+</details>
+
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
