@@ -927,87 +927,7 @@ plt.show()
 
 
 
-```python
-%matplotlib inline
-import matplotlib.pyplot as plt
-import numpy as np
 
-# numpy plot
-# multi-plot(1) : can be expressed with 1 plot
-t = np.arange(0., 5., 0.2)
-
-plt.title("Plot")
-plt.plot(t, t, 'r--', t, 0.5 * t**2, 'bs:', t, 0.2 * t**3, 'g^-')
-
-plt.show()
-```
-<details open markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-![다운로드 (22)](https://user-images.githubusercontent.com/52376448/64471458-e3dc4100-d18c-11e9-8ee7-ae1969b8eaf7.png)
-<hr class='division3'>
-</details>
-<br><br><br>
-
-```python
-%matplotlib inline
-import matplotlib.pyplot as plt
-import numpy as np
-
-# list plot
-# multi-plot(2) : using several plots
-plt.title("Plot")
-plt.plot([1, 4, 9, 16],
-         c="b", lw=5, ls="--", marker="o", ms=15, mec="g", mew=5, mfc="r")
-plt.plot([9, 16, 4, 1],
-         c="k", lw=3, ls=":", marker="s", ms=10, mec="m", mew=5, mfc="c")
-
-plt.show()
-
-# plt.hold(True)   # <- This code is required in version 1, 5
-# plt.hold(False)  # <- This code is required in version 1, 5
-
-# color           : c        : 선 색깔
-# linewidth       : lw       : 선 굵기
-# linestyle       : ls       : 선 스타일
-# marker          : marker   : 마커 종류
-# markersize      : ms       : 마커 크기
-# markeredgecolor : mec      : 마커 선 색깔
-# markeredgewidth : mew      : 마커 선 굵기
-# markerfacecolor : mfc      : 마커 내부 색깔
-```
-<details open markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-![다운로드 (23)](https://user-images.githubusercontent.com/52376448/64471485-30278100-d18d-11e9-89fe-3854563aeab7.png)
-<hr class='division3'>
-</details>
-<br><br><br>
-
-```python
-%matplotlib inline
-import matplotlib.pyplot as plt
-import numpy as np
-
-# numpy plot
-# setting legend 
-X = np.linspace(-np.pi, np.pi, 256)
-C, S = np.cos(X), np.sin(X)
-
-plt.title("Plot")
-plt.plot(X, C, ls="--", label="cosine")    # setting legend using label
-plt.plot(X, S, ls=":", label="sine")       # setting legend using label
-plt.legend(loc=2)                          # lov value means a position of legend in figure
-
-plt.show()
-```
-<details open markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-![다운로드 (24)](https://user-images.githubusercontent.com/52376448/64471500-7381ef80-d18d-11e9-82ef-cb3c32753779.png)
-<hr class='division3'>
-</details>
-<br><br><br>
 
 ```python
 %matplotlib inline
@@ -1521,6 +1441,91 @@ plt.show()
 ---
 
 ### ***Working with Figures***
+
+**Multiple plot, all at once**
+
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
+# numpy plot
+# multi-plot(1) : can be expressed with 1 plot
+t = np.arange(0., 5., 0.2)
+
+plt.title("Plot")
+plt.plot(t, t, 'r--', t, 0.5 * t**2, 'bs:', t, 0.2 * t**3, 'g^-')
+
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (22)](https://user-images.githubusercontent.com/52376448/64471458-e3dc4100-d18c-11e9-8ee7-ae1969b8eaf7.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
+# list plot
+# multi-plot(2) : using several plots
+plt.title("Plot")
+plt.plot([1, 4, 9, 16],
+         c="b", lw=5, ls="--", marker="o", ms=15, mec="g", mew=5, mfc="r")
+plt.plot([9, 16, 4, 1],
+         c="k", lw=3, ls=":", marker="s", ms=10, mec="m", mew=5, mfc="c")
+
+plt.show()
+
+# plt.hold(True)   # <- This code is required in version 1, 5
+# plt.hold(False)  # <- This code is required in version 1, 5
+
+# color           : c        : 선 색깔
+# linewidth       : lw       : 선 굵기
+# linestyle       : ls       : 선 스타일
+# marker          : marker   : 마커 종류
+# markersize      : ms       : 마커 크기
+# markeredgecolor : mec      : 마커 선 색깔
+# markeredgewidth : mew      : 마커 선 굵기
+# markerfacecolor : mfc      : 마커 내부 색깔
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (23)](https://user-images.githubusercontent.com/52376448/64471485-30278100-d18d-11e9-89fe-3854563aeab7.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
+# numpy plot
+# setting legend 
+X = np.linspace(-np.pi, np.pi, 256)
+C, S = np.cos(X), np.sin(X)
+
+plt.title("Plot")
+plt.plot(X, C, ls="--", label="cosine")    # setting legend using label
+plt.plot(X, S, ls=":", label="sine")       # setting legend using label
+plt.legend(loc=2)                          # lov value means a position of legend in figure
+
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (24)](https://user-images.githubusercontent.com/52376448/64471500-7381ef80-d18d-11e9-82ef-cb3c32753779.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
 
 ---
 
