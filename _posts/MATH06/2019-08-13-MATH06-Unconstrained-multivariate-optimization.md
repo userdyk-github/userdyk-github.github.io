@@ -50,7 +50,7 @@ print(Gradient, '\n', Hessian)
 <hr class="division2">
 
 
-## **Optimization process**
+## **Optimization process using the Newton-CG method**
 
 <div style="font-size: 70%; text-align:center;"> $$the\ objective\ function\ :\ f(x) = (x_{1} - 1)^{4} + 5(x_{2} - 1)^{2} - 2x_{1}x_{2}$$</div>
 
