@@ -21,6 +21,31 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
+## **Gradient and Hessian**
+```python
+import sympy
+sympy.init_printing()
+
+x1, x2 = sympy.symbols("x_1, x_2") 
+f_sym = (x1-1)**4 + 5 * (x2-1)**2 - 2*x1*x2 
+
+# Gradient
+fprime_sym = [f_sym.diff(x_) for x_ in (x1, x2)]
+Gradient = sympy.Matrix(fprime_sym)
+
+# Hessian  
+fhess_sym = [[f_sym.diff(x1_, x2_) for x1_ in (x1, x2)] for x2_ in (x1, x2)] 
+Hessian = sympy.Matrix(fhess_sym)
+
+print(Gradient, '\n', Hessian)
+```
+`OUTPUT` :
+<span style="font-size: 70%;"> $$\left[\begin{matrix}- 2 x_{2} + 4 \left(x_{1} - 1\right)^{3}\\- 2 x_{1} + 10 x_{2} - 10\end{matrix}\right] ,\ \left[\begin{matrix}12 \left(x_{1} - 1\right)^{2} & -2\\-2 & 10\end{matrix}\right]$$</span>
+
+<br><br><br>
+<hr class="division2">
+
+
 ## **Optimization process**
 
 <div style="font-size: 70%; text-align:center;"> $$the\ objective\ function\ :\ f(x) = (x_{1} - 1)^{4} + 5(x_{2} - 1)^{2} - 2x_{1}x_{2}$$</div>
