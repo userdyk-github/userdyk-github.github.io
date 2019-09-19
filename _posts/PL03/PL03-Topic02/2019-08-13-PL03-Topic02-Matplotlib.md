@@ -710,7 +710,6 @@ plt.show()
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
-import numpy as np
 
 # list plot : [0,1,2,3] -> [1,4,9,16]
 plt.title('Plot')
@@ -729,7 +728,6 @@ plt.show()
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
-import numpy as np
 
 # list plot : [10,20,30,40] -> [1,4,9,16]
 plt.title('Plot')
@@ -748,7 +746,6 @@ plt.show()
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
-import numpy as np
 
 # list plot : [10,20,30,40] -> [1,4,9,16]
 # style(simple decoration) : color/marker/line
@@ -775,7 +772,6 @@ Style strings are specified in the order of color, marker, and line style. If so
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
-import numpy as np
 
 # list plot : [10,20,30,40] -> [1,4,9,16]
 # details decoration
@@ -861,7 +857,6 @@ plt.show()
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
-import numpy as np
 
 # list plot : [10,20,30,40] -> [1,4,9,16]
 # 그래프 척도(scale, size) 설정 : lim
