@@ -139,7 +139,7 @@ plt.show()
 ![다운로드 (8)](https://user-images.githubusercontent.com/52376448/65281242-1747a400-db6d-11e9-9be4-635a88f95011.png)
 <hr class='division3'>
 </details>
-
+<div class='jb-medium'>If both the gradient and the Hessian are known, then Newton’s method is the method with <strong>the fastest convergence in general.</strong></div> 
 <br><br><br>
 <hr class="division2">
 
@@ -221,6 +221,7 @@ plt.show()
 ![다운로드 (9)](https://user-images.githubusercontent.com/52376448/65285866-b3c37380-db78-11e9-84b2-f00ef7001f7c.png)
 <hr class='division3'>
 </details>
+<div class="medium">although the BFGS and the conjugate gradient methods theoretically have slower convergence than Newton’s method, they can sometimes offer improved stability and can therefore be preferable. </div>
 <br><br><br>
 
 <hr class="division2">
@@ -300,6 +301,7 @@ plt.show()
 ![다운로드 (10)](https://user-images.githubusercontent.com/52376448/65286094-54199800-db79-11e9-9877-1e639502119b.png)
 <hr class='division3'>
 </details>
+<div class="medium">although the BFGS and the conjugate gradient methods theoretically have slower convergence than Newton’s method, they can sometimes offer improved stability and can therefore be preferable. </div>
 <br><br><br>
 
 <hr class="division2">
@@ -365,6 +367,8 @@ plt.show()
 ![다운로드 (11)](https://user-images.githubusercontent.com/52376448/65286198-a5c22280-db79-11e9-8dbf-bd764dd63a48.png)
 <hr class='division3'>
 </details>
+<div class='jb-medium'>In general, the BFGS method is often a good first approach to try, in particular if neither the gradient nor the Hessian is known. If only the gradient is known, then the BFGS method is still the generally recommended method to use, although the conjugate gradient method is often a competitive alternative to the BFGS method.</div>
+
 <br><br><br>
 
 <hr class="division2">
