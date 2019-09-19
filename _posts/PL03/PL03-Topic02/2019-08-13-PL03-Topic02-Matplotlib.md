@@ -1070,6 +1070,78 @@ plt.show()
 </details>
 <br><br><br>
 
+**Using custom colors for scatter plots**
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+A = np.random.standard_normal((100, 2))
+A += np.array((-1, -1)) # Center the distrib. at <-1, -1>
+
+B = np.random.standard_normal((100, 2))
+B += np.array((1, 1)) # Center the distrib. at <1, 1>
+
+plt.scatter(A[:,0], A[:,1], color = '.25')
+plt.scatter(B[:,0], B[:,1], color = '.75')
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드](https://user-images.githubusercontent.com/52376448/65246096-d9289100-db28-11e9-9c49-4becaeddee8e.png)
+<hr class='division3'>
+</details>
+<br>
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+label_set = (
+ b'Iris-setosa',
+ b'Iris-versicolor',
+ b'Iris-virginica',
+)
+
+def read_label(label):
+     return label_set.index(label)
+
+data = np.loadtxt('iris.data.txt',
+                  delimiter = ',',
+                  converters = { 4 : read_label })
+
+color_set = ('.00', '.50', '.75')
+color_list = [color_set[int(label)] for label in data[:,4]]
+
+plt.scatter(data[:,0], data[:,1], color = color_list)
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (1)](https://user-images.githubusercontent.com/52376448/65246097-d9289100-db28-11e9-8a5e-c863cbb317fd.png)
+<hr class='division3'>
+</details>
+<br>
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+data = np.random.standard_normal((100, 2))
+
+plt.scatter(data[:,0], data[:,1], color = '1.0', edgecolor='0.0')
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (2)](https://user-images.githubusercontent.com/52376448/65246098-d9289100-db28-11e9-89b6-8ce6c1bf24e3.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+
+**Using colormaps for scatter plots**
 ```python
 %matplotlib inline
 import matplotlib.cm as cm
