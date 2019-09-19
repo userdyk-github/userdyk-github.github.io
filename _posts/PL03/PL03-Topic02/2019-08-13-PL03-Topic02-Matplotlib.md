@@ -1300,6 +1300,10 @@ plt.show()
 
 ## **Axes**
 
+### ***Empty axes***
+
+#### Subplots
+
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
@@ -1313,6 +1317,28 @@ fig, axes = plt.subplots(nrows=3, ncols=2)
 <hr class='division3'>
 </details>
 <br><br><br>
+
+#### Subplot2grid
+
+```python
+import matplotlib.pyplot as plt
+
+ax0 = plt.subplot2grid((3, 3), (0, 0))
+ax1 = plt.subplot2grid((3, 3), (0, 1))
+ax2 = plt.subplot2grid((3, 3), (1, 0), colspan=2)
+ax3 = plt.subplot2grid((3, 3), (2, 0), colspan=3)
+ax4 = plt.subplot2grid((3, 3), (0, 2), rowspan=2)
+
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (21)](https://user-images.githubusercontent.com/52376448/65268133-7a2b4200-db51-11e9-8ef4-b52f208c7a1d.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
 
 ---
 
