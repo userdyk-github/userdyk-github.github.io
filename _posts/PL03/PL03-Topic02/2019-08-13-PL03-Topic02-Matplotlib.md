@@ -1443,7 +1443,7 @@ plt.show()
 <br><br><br>
 
 
-<details open markdown="1">
+<details markdown="1">
 <summary class='jb-small' style="color:blue">EXPLAINATION</summary>
 <hr class='division3'>
 <p>
