@@ -261,8 +261,7 @@ List of posts followed by this article
 ---
 
 Reference
-- [post1](https://userdyk-github.github.io/)
-- <a href='https://userdyk-github.github.io/'>post2</a>
+- <a href='https://en.wikipedia.org/wiki/List_of_algorithms' target="_blank">List of algorithms</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
