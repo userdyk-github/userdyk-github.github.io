@@ -925,35 +925,6 @@ plt.show()
 
 
 
-
-
-
-
-```python
-%matplotlib inline
-import matplotlib.pyplot as plt
-import numpy as np
-
-# numpy plot
-# naming axis
-X = np.linspace(-np.pi, np.pi, 256)
-C, S = np.cos(X), np.sin(X)
-
-plt.title("Cosine Plot")
-plt.plot(X, C, label="cosine")
-plt.xlabel("time")                # naming x-axis
-plt.ylabel("amplitude")           # naming x-axis
-
-plt.show()
-```
-<details open markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-![다운로드 (25)](https://user-images.githubusercontent.com/52376448/64471505-8268a200-d18d-11e9-841f-c5317ecd1864.png)
-<hr class='division3'>
-</details>
-<br><br><br>
-
 ---
 
 #### Scatter plot
@@ -1748,6 +1719,32 @@ plt.show()
 ### ***Axis propertires***
 
 #### Axis labels and titles
+
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
+# numpy plot
+# naming axis
+X = np.linspace(-np.pi, np.pi, 256)
+C, S = np.cos(X), np.sin(X)
+
+plt.title("Cosine Plot")
+plt.plot(X, C, label="cosine")
+plt.xlabel("time")                # naming x-axis
+plt.ylabel("amplitude")           # naming x-axis
+
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (25)](https://user-images.githubusercontent.com/52376448/64471505-8268a200-d18d-11e9-841f-c5317ecd1864.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
 
 ```python
 import numpy as np
