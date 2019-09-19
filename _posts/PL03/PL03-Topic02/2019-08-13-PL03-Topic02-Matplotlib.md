@@ -845,8 +845,8 @@ XX, YY = np.meshgrid(x, y)
 ZZ = f(XX, YY)
 
 plt.title("Contour plots")
-plt.contourf(XX, YY, ZZ, alpha=.75, cmap='jet')
-plt.contour(XX, YY, ZZ, colors='black')
+plt.contourf(XX, YY, ZZ, alpha=.75, cmap='jet')   # inside color
+plt.contour(XX, YY, ZZ, colors='black')           # boundary line
 plt.show()
 ```
 <details open markdown="1">
