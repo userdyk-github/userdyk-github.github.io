@@ -1339,6 +1339,45 @@ plt.show()
 </details>
 <br><br><br>
 
+#### GridSpec
+
+```python
+import matplotlib.pyplot as plt
+import matplotlib as mpl
+
+fig = plt.figure(figsize=(6, 4))
+gs = mpl.gridspec.GridSpec(4, 4)
+ax0 = fig.add_subplot(gs[0, 0])
+ax1 = fig.add_subplot(gs[1, 1])
+ax2 = fig.add_subplot(gs[2, 2])
+ax3 = fig.add_subplot(gs[3, 3])
+ax4 = fig.add_subplot(gs[0, 1:])
+ax5 = fig.add_subplot(gs[1:, 0])
+ax6 = fig.add_subplot(gs[1, 2:])
+ax7 = fig.add_subplot(gs[2:, 1])
+ax8 = fig.add_subplot(gs[2, 3])
+ax9 = fig.add_subplot(gs[3, 2])
+fig = plt.figure(figsize=(4, 4))
+gs =  mpl.gridspec.GridSpec( 2, 2,  width_ratios=[4, 1],  height_ratios=[1, 4],  wspace=0.05, hspace=0.05)
+
+ax0 = fig.add_subplot(gs[1, 0])
+ax1 = fig.add_subplot(gs[0, 0])
+ax2 = fig.add_subplot(gs[1, 1])
+
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드](https://user-images.githubusercontent.com/52376448/65268340-e7d76e00-db51-11e9-9e33-66fcd42302e6.png)
+![다운로드 (1)](https://user-images.githubusercontent.com/52376448/65268341-e7d76e00-db51-11e9-9518-ae2b1cad6ebb.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+
+
+
 
 ---
 
