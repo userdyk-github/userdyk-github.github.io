@@ -1257,6 +1257,39 @@ plt.show()
 <br><br><br>
 
 
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+fig, ax1 = plt.subplots(figsize=(8, 4))
+
+r = np.linspace(0, 5, 100)
+a = 4 * np.pi * r ** 2        # area
+v = (4 * np.pi / 3) * r ** 3  # volume
+
+ax1.set_title("surface area and volume of a sphere", fontsize=16)
+ax1.set_xlabel("radius [m]", fontsize=16)
+
+ax1.plot(r, a, lw=2, color="blue")
+ax1.set_ylabel(r"surface area ($m^2$)", fontsize=16, color="blue")
+for label in ax1.get_yticklabels():
+    label.set_color("blue")
+    
+ax2 = ax1.twinx()
+ax2.plot(r, v, lw=2, color="red")
+ax2.set_ylabel(r"volume ($m^3$)", fontsize=16, color="red")
+for label in ax2.get_yticklabels():
+    label.set_color("red")
+
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (9)](https://user-images.githubusercontent.com/52376448/65259796-3976fd00-db40-11e9-980b-5b72f8ac5f90.png)
+<hr class='division3'>
+</details>
+<br><br><br>
 
 ---
 
@@ -2073,45 +2106,6 @@ plt.show()
 </details>
 
 
-<br><br><br>
-
----
-
-
-#### Twin axes
-
-```python
-import numpy as np
-import matplotlib.pyplot as plt
-
-fig, ax1 = plt.subplots(figsize=(8, 4))
-
-r = np.linspace(0, 5, 100)
-a = 4 * np.pi * r ** 2        # area
-v = (4 * np.pi / 3) * r ** 3  # volume
-
-ax1.set_title("surface area and volume of a sphere", fontsize=16)
-ax1.set_xlabel("radius [m]", fontsize=16)
-
-ax1.plot(r, a, lw=2, color="blue")
-ax1.set_ylabel(r"surface area ($m^2$)", fontsize=16, color="blue")
-for label in ax1.get_yticklabels():
-    label.set_color("blue")
-    
-ax2 = ax1.twinx()
-ax2.plot(r, v, lw=2, color="red")
-ax2.set_ylabel(r"volume ($m^3$)", fontsize=16, color="red")
-for label in ax2.get_yticklabels():
-    label.set_color("red")
-
-plt.show()
-```
-<details open markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-![다운로드 (9)](https://user-images.githubusercontent.com/52376448/65259796-3976fd00-db40-11e9-980b-5b72f8ac5f90.png)
-<hr class='division3'>
-</details>
 
 
 <br><br><br>
