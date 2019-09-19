@@ -188,14 +188,14 @@ plt.plot(X, Y, c='k')
 plt.show()
 ```
 <details markdown="1">
-<summary class='jb-small' style="color:blue">box options</summary>
+<summary class='jb-small' style="color:blue">Box options</summary>
 <hr class='division3'>
 <div class="jb-medium">
-- 'facecolor': This is the color used for the box. It will be used to set the background and the edge color
-- 'edgecolor': This is the color used for the edges of the box's shape
-- 'alpha': This is used to set the transparency level so that the box blends with the background
-- 'boxstyle': This sets the style of the box, which can either be 'round' or 'square'
-- 'pad': If 'boxstyle' is set to 'square', it defines the amount of padding between the text and the box's sides
+- 'facecolor': This is the color used for the box. It will be used to set the background and the edge color <br>
+- 'edgecolor': This is the color used for the edges of the box's shape <br>
+- 'alpha': This is used to set the transparency level so that the box blends with the background <br>
+- 'boxstyle': This sets the style of the box, which can either be 'round' or 'square' <br>
+- 'pad': If 'boxstyle' is set to 'square', it defines the amount of padding between the text and the box's sides <br>
 </div>
 <hr class='division3'>
 </details>
@@ -229,13 +229,13 @@ plt.show()
 ```
 
 <details markdown="1">
-<summary class='jb-small' style="color:blue">box options</summary>
+<summary class='jb-small' style="color:blue">Arrow options</summary>
 <hr class='division3'>
 <div class="jb-medium">
-- 'arrowstyle': The parameters ''<-'', ''<'', ''-'', ''wedge'', ''simple'', and "fancy" control the style of the arrow
-- 'facecolor': This is the color used for the arrow. It will be used to set the background and the edge color
-- 'edgecolor': This is the color used for the edges of the arrow's shape
-- 'alpha': This is used to set the transparency level so that the arrow blends with the background
+- 'arrowstyle': The parameters ''<-'', ''<'', ''-'', ''wedge'', ''simple'', and "fancy" control the style of the arrow <br>
+- 'facecolor': This is the color used for the arrow. It will be used to set the background and the edge color <br>
+- 'edgecolor': This is the color used for the edges of the arrow's shape <br>
+- 'alpha': This is used to set the transparency level so that the arrow blends with the background <br>
 </div>
 <hr class='division3'>
 </details>
@@ -268,6 +268,20 @@ plt.plot(X, Y2, c = '.5', lw = 3., ls = '--', label = 'cos(X)')
 plt.legend()
 plt.show()
 ```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Legend options</summary>
+<hr class='division3'>
+<div class="jb-medium">
+- 'loc': This is the location of the legend. The default value is 'best', which will place it automatically. Other valid values are 'upper left', 'lower left', 'lower right', 'right', 'center left', 'center right', 'lower center', 'upper center', and 'center'.<br>
+- 'shadow': This can be either True or False, and it renders the legend with a shadow effect.<br>
+- 'fancybox': This can be either True or False and renders the legend with a rounded box.<br>
+- 'title': This renders the legend with the title passed as a parameter.<br>
+- 'ncol': This forces the passed value to be the number of columns for the legend<br>
+</div>
+<hr class='division3'>
+</details>
+
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
@@ -356,6 +370,18 @@ plt.grid(True)
 plt.axis('scaled')
 plt.show()
 ```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<div class='jb-small'>
+- Circle: This takes the coordinates of its center and the radius as the parameters<br>
+- Rectangle: This takes the coordinates of its lower-left corner and its size as the parameters<br>
+- Ellipse: This takes the coordinates of its center and the half-length of its two axes as the parameters<br>
+- FancyBox: This is like a rectangle but takes an additional boxstyle parameter (either 'larrow', 'rarrow', 'round', 'round4', 'roundtooth', 'sawtooth', or 'square')<br>
+</div>
+<hr class='division3'>
+</details>
+
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
