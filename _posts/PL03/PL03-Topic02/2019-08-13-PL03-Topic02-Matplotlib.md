@@ -1579,6 +1579,33 @@ plt.show()
 #### Insets
 
 ```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+# main graph
+X = np.linspace(-6, 6, 1024)
+Y = np.sinc(X)
+plt.plot(X, Y, c = 'k')
+
+# inset
+X_detail = np.linspace(-3, 3, 1024)
+Y_detail = np.sinc(X_detail)
+sub_axes = plt.axes([.6, .6, .25, .25])
+sub_axes.plot(X_detail, Y_detail, c = 'k')
+plt.setp(sub_axes)
+plt.show()
+```
+
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (4)](https://user-images.githubusercontent.com/52376448/65269882-01c68000-db55-11e9-908e-441f1168a8ee.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+
+```python
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 import numpy as np
