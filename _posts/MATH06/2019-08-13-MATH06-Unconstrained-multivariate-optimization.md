@@ -50,7 +50,7 @@ print(Gradient, '\n', Hessian)
 <hr class="division2">
 
 
-## **Optimization process using the Newton-CG method**
+## **Optimization process using the Newton-CG method with Gradient&Hessian**
 
 <div style="font-size: 70%; text-align:center;"> $$the\ objective\ function\ :\ f(x) = (x_{1} - 1)^{4} + 5(x_{2} - 1)^{2} - 2x_{1}x_{2}$$</div>
 
@@ -145,7 +145,7 @@ plt.show()
 
 <br><br><br>
 
-## **Optimization process using the BFGS algorithm**
+## **Optimization process using the BFGS algorithm with Gradient**
 
 ```python
 from scipy import optimize
@@ -225,7 +225,7 @@ plt.show()
 
 <hr class="division2">
 
-## **Optimization process using a nonlinear conjugate gradient algorithm**
+## **Optimization process using a nonlinear conjugate gradient algorithm with Gradient**
 
 ```python
 from scipy import optimize
@@ -304,7 +304,7 @@ plt.show()
 
 <hr class="division2">
 
-## **Optimization process using the BFGS algorithm**
+## **Optimization process using the BFGS algorithm without Gradient&Hessian**
 
 ```python
 from scipy import optimize
