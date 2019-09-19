@@ -157,7 +157,7 @@ plt.plot(X, Y, c = 'k')
 plt.text(-0.5, -0.25, 'Brackmard minimum')
 plt.show()
 ```
-<details open markdown="1">
+<details markdown="1">
 <summary class='jb-small' style="color:blue">Annotate</summary>
 <hr class='division3'>
 ```python
