@@ -1226,6 +1226,37 @@ plt.show()
 </details>
 <br><br><br>
 
+#### Twinx command
+
+The twinx command creates a new Axes object that shares the x-axis.
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
+fig, ax0 = plt.subplots()
+ax0.set_title("Plot")
+ax0.plot([10, 5, 2, 9, 7], 'r-', label="y0")
+ax0.set_xlabel("sharing x-axis")
+ax0.set_ylabel("y0")
+ax0.grid(False)
+
+ax1 = ax0.twinx()
+ax1.plot([100, 200, 220, 180, 120], 'g:', label="y1")
+ax1.set_ylabel("y1")
+ax1.grid(False)
+
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (2)](https://user-images.githubusercontent.com/52376448/65256122-fade4400-db39-11e9-936d-c17e751340ca.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+
 
 ---
 
@@ -1254,7 +1285,7 @@ fig, axes = plt.subplots(nrows=3, ncols=2)
 
 ### ***Axes object and subplot commands***
 
-**Axes object**
+#### Axes object
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
@@ -1282,6 +1313,9 @@ plt.show()
 
 <br><br><br>
 
+---
+
+#### Multiple Axes objects
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">EXPLAINATION</summary>
@@ -1443,36 +1477,6 @@ plt.show()
 </details>
 <br><br><br>
 
-
-
-
-The twinx command creates a new Axes object that shares the x-axis.
-```python
-%matplotlib inline
-import matplotlib.pyplot as plt
-import numpy as np
-
-fig, ax0 = plt.subplots()
-ax0.set_title("Plot")
-ax0.plot([10, 5, 2, 9, 7], 'r-', label="y0")
-ax0.set_xlabel("sharing x-axis")
-ax0.set_ylabel("y0")
-ax0.grid(False)
-
-ax1 = ax0.twinx()
-ax1.plot([100, 200, 220, 180, 120], 'g:', label="y1")
-ax1.set_ylabel("y1")
-ax1.grid(False)
-
-plt.show()
-```
-<details open markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-![다운로드 (2)](https://user-images.githubusercontent.com/52376448/65256122-fade4400-db39-11e9-936d-c17e751340ca.png)
-<hr class='division3'>
-</details>
-<br><br><br>
 
 ---
 
