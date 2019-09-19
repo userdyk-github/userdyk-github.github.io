@@ -22,7 +22,7 @@ List of posts to read before reading this article
 <hr class="division1">
 
 ## Gradient and Hessian
-
+<div style="font-size: 70%; text-align:center;"> $$f(x) = (x_{1} - 1)^{4} + 5(x_{2} - 1)^{2} - 2x_{1}x_{2}$$</div>
 ```python
 import sympy
 sympy.init_printing()
