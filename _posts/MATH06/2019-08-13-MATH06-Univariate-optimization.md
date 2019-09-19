@@ -48,12 +48,8 @@ Area_r = Area.subs(h_r)
 rsol = sympy.solve(Area_r.diff(r))[0] 
 rsol
 ```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-$$\frac{2^{\frac{2}{3}}}{2 \sqrt[3]{\pi}}$$
-<hr class='division3'>
-</details>
+`OUTPUT` : <span style="font-size: 70%;">$$\frac{2^{\frac{2}{3}}}{2 \sqrt[3]{\pi}}$$</span>
+
 
 <br><br><br>
 <hr class="division2">
@@ -81,4 +77,8 @@ Reference
 ---
 
 
-
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
