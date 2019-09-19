@@ -99,6 +99,7 @@ Optimization terminated successfully.
          Hessian evaluations: 8
 array([1.88292613, 1.37658523])
 ```
+<span style="font-size: 70%;">$$Optimal\ point\ :\ (x_{1},x_{2})=(1.88292613,1.37658523)$$</span>
 <hr class='division3'>
 </details>
 
@@ -193,6 +194,7 @@ Optimization terminated successfully.
          Gradient evaluations: 13
 array([1.88292645, 1.37658596])
 ```
+<span style="font-size: 70%;">$$Optimal\ point\ :\ (x_{1},x_{2})=(1.88292645,1.37658596)$$</span>
 <hr class='division3'>
 </details>
 <details markdown="1">
@@ -278,6 +280,7 @@ Optimization terminated successfully.
          Gradient evaluations: 18
 array([1.88292612, 1.37658523])
 ```
+<span style="font-size: 70%;">$$Optimal\ point\ :\ (x_{1},x_{2})=(1.88292612,1.37658523)$$</span>
 <hr class='division3'>
 </details>
 <details markdown="1">
@@ -357,6 +360,7 @@ Optimization terminated successfully.
          Gradient evaluations: 13
 array([1.88292645, 1.37658596])
 ```
+<span style="font-size: 70%;">$$Optimal\ point\ :\ (x_{1},x_{2})=(1.88292645,1.37658596)$$</span>
 <hr class='division3'>
 </details>
 
@@ -399,7 +403,7 @@ def f(X):
 
 optimize.brute(f, (slice(-3, 5, 0.5),  slice(-3, 5, 0.5)), finish=None) 
 ```
-`OUTPUT` : <span style="font-size: 70%;">$$starting\ point\ :\ (x,y) = (1.5,1.5)$$</span>
+`OUTPUT` : <span style="font-size: 70%;">$$Suitable\ starting\ point\ :\ (x,y) = (1.5,1.5)$$</span>
 
 
 
