@@ -2031,10 +2031,31 @@ plt.show()
 #### Log plots
 
 ```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+fig, axes = plt.subplots(1, 3, figsize=(12, 3))
+
+x = np.linspace(0, 1e3, 100)
+y1, y2 = x**3, x**4
+
+axes[0].set_title('loglog')
+axes[0].loglog(x, y1, 'b', x, y2, 'r')
+
+axes[1].set_title('semilogy')
+axes[1].semilogy(x, y1, 'b', x, y2, 'r')
+
+axes[2].set_title('plot / set_xscale / set_yscale')
+axes[2].plot(x, y1, 'b', x, y2, 'r')
+axes[2].set_xscale('log')
+axes[2].set_yscale('log')
+
+plt.show()
 ```
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드 (8)](https://user-images.githubusercontent.com/52376448/65259794-3976fd00-db40-11e9-8d01-c833b1e290ad.png)
 <hr class='division3'>
 </details>
 
@@ -2047,10 +2068,35 @@ plt.show()
 #### Twin axes
 
 ```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+fig, ax1 = plt.subplots(figsize=(8, 4))
+
+r = np.linspace(0, 5, 100)
+a = 4 * np.pi * r ** 2        # area
+v = (4 * np.pi / 3) * r ** 3  # volume
+
+ax1.set_title("surface area and volume of a sphere", fontsize=16)
+ax1.set_xlabel("radius [m]", fontsize=16)
+
+ax1.plot(r, a, lw=2, color="blue")
+ax1.set_ylabel(r"surface area ($m^2$)", fontsize=16, color="blue")
+for label in ax1.get_yticklabels():
+    label.set_color("blue")
+    
+ax2 = ax1.twinx()
+ax2.plot(r, v, lw=2, color="red")
+ax2.set_ylabel(r"volume ($m^3$)", fontsize=16, color="red")
+for label in ax2.get_yticklabels():
+    label.set_color("red")
+
+plt.show()
 ```
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드 (9)](https://user-images.githubusercontent.com/52376448/65259796-3976fd00-db40-11e9-980b-5b72f8ac5f90.png)
 <hr class='division3'>
 </details>
 
@@ -2063,10 +2109,42 @@ plt.show()
 #### Spines
 
 ```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(-10, 10, 500)
+y = np.sin(x) / x
+
+fig, ax = plt.subplots(figsize=(8, 4))
+
+ax.plot(x, y, linewidth=2)
+
+# remove top and right spines
+
+ax.spines['right'].set_color('none')
+ax.spines['top'].set_color('none')
+
+# remove top and right spine ticks
+ax.xaxis.set_ticks_position('bottom')
+ax.yaxis.set_ticks_position('left')
+
+# move bottom and left spine to x = 0 and y = 0
+ax.spines['bottom'].set_position(('data', 0))
+ax.spines['left'].set_position(('data', 0))
+
+ax.set_xticks([-10, -5, 5, 10])
+ax.set_yticks([0.5, 1])
+
+#  give each label a solid background of white, to not overlap with the plot line
+for label in ax.get_xticklabels() + ax.get_yticklabels():
+    label.set_bbox({'facecolor': 'white', 'edgecolor': 'white'})
+
+plt.show()
 ```
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![다운로드 (10)](https://user-images.githubusercontent.com/52376448/65259797-3976fd00-db40-11e9-972b-0fc15b2a18bb.png)
 <hr class='division3'>
 </details>
 
