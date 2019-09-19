@@ -1034,6 +1034,7 @@ import numpy as np
 np.random.seed(0)
 X = np.random.normal(0, 1, 100)
 Y = np.random.normal(0, 1, 100)
+
 plt.title("Scatter Plot")
 plt.scatter(X, Y)
 plt.show()
@@ -1065,6 +1066,30 @@ plt.show()
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (1)](https://user-images.githubusercontent.com/52376448/64471578-77fad800-d18e-11e9-8dc2-aa0658dd64b8.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+```python
+%matplotlib inline
+import matplotlib.cm as cm
+import matplotlib.pyplot as plt
+import numpy as np
+
+N = 256
+angle = np.linspace(0, 8 * 2 * np.pi, N)
+radius = np.linspace(.5, 1., N)
+
+X = radius * np.cos(angle)
+Y = radius * np.sin(angle)
+
+plt.scatter(X, Y, c = angle, cmap = cm.hsv)
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (18)](https://user-images.githubusercontent.com/52376448/65245812-425bd480-db28-11e9-8c5c-f9268073c446.png)
 <hr class='division3'>
 </details>
 <br><br><br>
