@@ -89,18 +89,23 @@
     background-image: linear-gradient(to right, #333, #CCC, #333);
     }
     .division3 {
-    overflow: visible; /* For IE */
-    padding: 0;
-    border: none;
-    border-top: medium double #093BD5;
-    color: #093BD5;
-    text-align: center;
+    border: 0;
+    height: 0; /* Firefox... */
+    box-shadow: 0 0 1.5px 1px blue;
     }
     .division4 {
     border: 0;
     height: 1px;
     background: #CCC;
     background-image: linear-gradient(to right, #333, #CCC, #CCC);
+    }
+    .division5 {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #093BD5;
+    color: #093BD5;
+    text-align: center;
     }
     .mainbg {
     padding: 20px;
