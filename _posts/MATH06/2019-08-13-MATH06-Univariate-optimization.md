@@ -58,6 +58,22 @@ rsol
 _.evalf()
 ```
 `OUTPUT` : <span style="font-size: 70%;">0.541926070139289<span>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">VERIFICATION</summary>
+<hr class='division3'>
+```
+>>> Area_r.diff(r, 2).subs(r, rsol)
+12π
+  
+>>> Area_r.subs(r, rsol)  
+3 23 p
+
+>>> _.evalf()
+  
+```
+<hr class='division3'>
+</details>
+  
   
 <br><br><br>
 <hr class="division2">
