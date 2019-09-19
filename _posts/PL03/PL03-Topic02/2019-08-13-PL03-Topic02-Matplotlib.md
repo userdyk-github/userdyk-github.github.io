@@ -412,7 +412,7 @@ plt.grid(True)
 plt.axis('scaled')
 plt.show()
 ```
-<details open markdown="1">
+<details markdown="1">
 <summary class='jb-small' style="color:blue">Shape options</summary>
 <hr class='division3'>
 <div class='jb-small'>
