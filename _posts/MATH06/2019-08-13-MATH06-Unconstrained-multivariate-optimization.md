@@ -122,7 +122,8 @@ sympy.Matrix(fhess_sym)
 <hr class='division3'>
 ```python
 import matplotlib.pyplot as plt
-  
+
+x_opt = optimize.fmin_ncg(f, (0, 0), fprime=fprime, fhess=fhess)  
 x_ = y_ = np.linspace(-1, 4, 100)  
 X, Y = np.meshgrid(x_, y_)
 
