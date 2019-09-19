@@ -153,11 +153,30 @@ import matplotlib.pyplot as plt
 X = np.linspace(-4, 4, 1024)
 Y = .25 * (X + 4.) * (X + 1.) * (X - 2.)
 
-plt.text(-0.5, -0.25, 'Brackmard minimum')
 plt.plot(X, Y, c = 'k')
+plt.text(-0.5, -0.25, 'Brackmard minimum')
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">Annotate</summary>
+<hr class='division3'>
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+X = np.linspace(-4, 4, 1024)
+Y = .25 * (X + 4.) * (X + 1.) * (X - 2.)
+
+plt.plot(X, Y, c = 'k')
+plt.text(-0.5, -0.25, 'Brackmard minimum')
+plt.annotate("Annotation", fontsize=14, family="serif", xy=(1, 1), xycoords="data", xytext=(+20, +50), textcoords="offset points", arrowprops=dict(arrowstyle="->", connectionstyle="arc3, rad=.5"))
+
 plt.show()
 ```
 
+
+<hr class='division3'>
+</details>
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
