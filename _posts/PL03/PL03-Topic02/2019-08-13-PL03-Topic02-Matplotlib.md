@@ -758,7 +758,7 @@ plt.show()
 </details>
 <br><br><br>
 
-**numpy array plot : $$[-\pi + \pi] \to cos(x)$$**
+**numpy array plot : <span style="font-size: 70%;">$$[-\pi + \pi] \to cos(x)$$ </span>**
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
