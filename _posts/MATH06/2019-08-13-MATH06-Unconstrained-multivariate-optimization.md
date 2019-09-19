@@ -42,7 +42,7 @@ Hessian = sympy.Matrix(fhess_sym)
 print(Gradient, '\n', Hessian)
 ```
 `OUTPUT` :
-<span style="font-size: 70%;"> $$\left[\begin{matrix}- 2 x_{2} + 4 \left(x_{1} - 1\right)^{3}\\- 2 x_{1} + 10 x_{2} - 10\end{matrix}\right]$$, $$\left[\begin{matrix}12 \left(x_{1} - 1\right)^{2} & -2\\-2 & 10\end{matrix}\right]$$</span>
+<span style="font-size: 70%;"> $$\left[\begin{matrix}- 2 x_{2} + 4 \left(x_{1} - 1\right)^{3}\\- 2 x_{1} + 10 x_{2} - 10\end{matrix}\right] ,\ \left[\begin{matrix}12 \left(x_{1} - 1\right)^{2} & -2\\-2 & 10\end{matrix}\right]$$</span>
 
 <hr class="division2">
 
