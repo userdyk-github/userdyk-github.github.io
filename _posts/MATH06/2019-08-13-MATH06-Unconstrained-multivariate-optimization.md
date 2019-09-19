@@ -7,8 +7,8 @@ tags : [MATH06]
 ---
 [Back to the previous page](https://userdyk-github.github.io/Study.html) <br>
 List of posts to read before reading this article
+- <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-Matplotlib.html' target="_blank">Matplotlib</a>
 - <a href='https://userdyk-github.github.io/math06/MATH06-Univariate-optimization.html'>Univariate optimization</a>
-- <a href='https://userdyk-github.github.io/'>post2</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
