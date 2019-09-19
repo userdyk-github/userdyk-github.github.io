@@ -31,9 +31,8 @@ List of posts to read before reading this article
 <hr class="division2">
 
 ## **Implementation with sympy for simple case**
-
+The classic optimization problem: Minimize the area of a cylinder with unit volume
 <div style="font-size: 70%; text-align: center;">
-  The classic optimization problem: Minimize the area of a cylinder with unit volume
   $$the objective function : f ([r,h]) = 2πr^{2} + 2πrh$$
   $$the equality constraint : g([r,h]) = πr^{2}h − 1 = 0$$
 </div>
