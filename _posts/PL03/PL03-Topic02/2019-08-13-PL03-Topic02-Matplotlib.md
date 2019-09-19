@@ -777,7 +777,7 @@ plt.show()
 
 **list plot : [10,20,30,40] -> [1,4,9,16]**<br>
 **details decoration**<br>
-Style strings are specified in the order of color, marker, and line style. If some of these are omitted, the default value is applied. <br>
+<span class="medium">Style strings are specified in the order of color, marker, and line style. If some of these are omitted, the default value is applied.</span> <br>
 - <a href="https://matplotlib.org/examples/color/named_colors.html" target="blank">color ref</a><br>
 - <a href="https://matplotlib.org/examples/lines_bars_and_markers/marker_reference.html" target="blank">marker ref</a><br>
 - <a href="https://matplotlib.org/examples/lines_bars_and_markers/line_styles_reference.html" target="blank">line style ref</a><br>
