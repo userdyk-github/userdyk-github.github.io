@@ -30,7 +30,7 @@ List of posts to read before reading this article
 <br><br><br>
 <hr class="division2">
 
-## **Implementation with sympy**
+## **Implementation with sympy for simple case**
 
 <div style="font-size: 70%; text-align: center;">
   The classic optimization problem: Minimize the area of a cylinder with unit volume
@@ -83,7 +83,7 @@ _.evalf()
 <br><br><br>
 <hr class="division2">
 
-## title2
+## **Implementation with scipy for more realistic problems**
 
 <hr class="division2">
 
