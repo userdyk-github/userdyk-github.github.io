@@ -758,7 +758,6 @@ plt.show()
 </details>
 <br><br><br>
 
-**list plot : [10,20,30,40] -> [1,4,9,16]** <br>
 **style(simple decoration) : color/marker/line**
 ```python
 %matplotlib inline
@@ -775,7 +774,6 @@ plt.show()
 </details>
 <br><br><br>
 
-**list plot : [10,20,30,40] -> [1,4,9,16]**<br>
 **details decoration**<br>
 <span class="medium">Style strings are specified in the order of color, marker, and line style. If some of these are omitted, the default value is applied.</span> <br>
 - <a href="https://matplotlib.org/examples/color/named_colors.html" target="blank">color ref</a><br>
@@ -870,27 +868,6 @@ plt.show()
 
 <br><br><br>
 
-```python
-%matplotlib inline
-import matplotlib.pyplot as plt
-
-# list plot : [10,20,30,40] -> [1,4,9,16]
-# 그래프 척도(scale, size) 설정 : lim
-plt.title("Plot")
-plt.plot([10, 20, 30, 40], [1, 4, 9, 16],
-         c="b", lw=5, ls="--", marker="o", ms=15, mec="g", mew=5, mfc="r")
-plt.xlim(0, 50)
-plt.ylim(-10, 30)
-
-plt.show()
-```
-<details open markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-![다운로드 (16)](https://user-images.githubusercontent.com/52376448/64471381-218c9a00-d18c-11e9-9feb-b0fc459a908e.png)
-<hr class='division3'>
-</details>
-<br><br><br>
 
 ```python
 %matplotlib inline
@@ -1860,6 +1837,23 @@ plt.show()
 ---
 
 #### Axis range
+
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+
+plt.plot([10, 20, 30, 40], [1, 4, 9, 16])
+plt.xlim(-20, 70)
+plt.ylim(-10, 30)
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (11)](https://user-images.githubusercontent.com/52376448/65261631-a6d85d00-db43-11e9-86cd-28c7b5399d1f.png)
+<hr class='division3'>
+</details>
+<br><br><br>
 
 ```python
 import numpy as np
