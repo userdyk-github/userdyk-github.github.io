@@ -1365,6 +1365,46 @@ plt.show()
 <br><br><br>
 
 
+**Using custom colors for bar charts**
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+women_pop = np.array([5., 30., 45., 22.])
+men_pop = np.array([5., 25., 50., 20.])
+X = np.arange(4)
+
+plt.barh(X, women_pop, color = '.25')
+plt.barh(X, -men_pop, color = '.75')
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (3)](https://user-images.githubusercontent.com/52376448/65248179-b5674a00-db2c-11e9-940a-d431275e15f4.png)
+<hr class='division3'>
+</details>
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+values = np.random.random_integers(99, size = 50)
+
+color_set = ('.00', '.25', '.50', '.75')
+color_list = [color_set[(len(color_set) * val) // 100] for val in values]
+
+plt.bar(np.arange(len(values)), values, color = color_list)
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (4)](https://user-images.githubusercontent.com/52376448/65248181-b5674a00-db2c-11e9-99c9-120122ea0f9f.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+
 ---
 
 #### Pie chart
