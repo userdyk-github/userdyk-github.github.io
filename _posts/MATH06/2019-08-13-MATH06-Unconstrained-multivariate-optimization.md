@@ -52,6 +52,8 @@ print(Gradient, '\n', Hessian)
 
 ## **Optimization process using the Newton-CG method with Gradient&Hessian**
 
+<div class='jb-medium'>If both the gradient and the Hessian are known, then Newton’s method is the method with <strong>the fastest convergence in general.</strong></div> 
+
 <div style="font-size: 70%; text-align:center;"> $$the\ objective\ function\ :\ f(x) = (x_{1} - 1)^{4} + 5(x_{2} - 1)^{2} - 2x_{1}x_{2}$$</div>
 
 ```python
@@ -84,6 +86,7 @@ fhess = func_XY_to_X_Y(fhess_lmbda)
 # Optimization
 optimize.fmin_ncg(f, (0, 0), fprime=fprime, fhess=fhess)
 ```
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
@@ -139,13 +142,14 @@ plt.show()
 ![다운로드 (8)](https://user-images.githubusercontent.com/52376448/65281242-1747a400-db6d-11e9-9be4-635a88f95011.png)
 <hr class='division3'>
 </details>
-<div class='jb-medium'>If both the gradient and the Hessian are known, then Newton’s method is the method with <strong>the fastest convergence in general.</strong></div> 
 <br><br><br>
 <hr class="division2">
 
 <br><br><br>
 
 ## **Optimization process using the BFGS algorithm with Gradient**
+
+<div class="medium">Although the BFGS and the conjugate gradient methods theoretically have slower convergence than Newton’s method, they can sometimes offer <strong>improved stability</strong> and can therefore be preferable. </div>
 
 ```python
 from scipy import optimize
@@ -174,6 +178,7 @@ fprime = func_XY_to_X_Y(fprime_lmbda)
 # Optimization
 optimize.fmin_bfgs(f, (0, 0), fprime=fprime)
 ```
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
@@ -221,12 +226,13 @@ plt.show()
 ![다운로드 (9)](https://user-images.githubusercontent.com/52376448/65285866-b3c37380-db78-11e9-84b2-f00ef7001f7c.png)
 <hr class='division3'>
 </details>
-<div class="medium">although the BFGS and the conjugate gradient methods theoretically have slower convergence than Newton’s method, they can sometimes offer improved stability and can therefore be preferable. </div>
 <br><br><br>
 
 <hr class="division2">
 
 ## **Optimization process using a nonlinear conjugate gradient algorithm with Gradient**
+
+<div class="medium">Although the BFGS and the conjugate gradient methods theoretically have slower convergence than Newton’s method, they can sometimes offer <strong>improved stability</strong> and can therefore be preferable. </div>
 
 ```python
 from scipy import optimize
@@ -255,6 +261,7 @@ fprime = func_XY_to_X_Y(fprime_lmbda)
 # Optimization
 optimize.fmin_cg(f, (0, 0), fprime=fprime)
 ```
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
@@ -301,12 +308,13 @@ plt.show()
 ![다운로드 (10)](https://user-images.githubusercontent.com/52376448/65286094-54199800-db79-11e9-9877-1e639502119b.png)
 <hr class='division3'>
 </details>
-<div class="medium">although the BFGS and the conjugate gradient methods theoretically have slower convergence than Newton’s method, they can sometimes offer improved stability and can therefore be preferable. </div>
 <br><br><br>
 
 <hr class="division2">
 
 ## **Optimization process using the BFGS algorithm without Gradient&Hessian**
+
+<div class='jb-medium'>In general, the BFGS method is often a good first approach to try, in particular if neither the gradient nor the Hessian is known. If only the gradient is known, then the BFGS method is still <strong>the generally recommended method</strong> to use, although the conjugate gradient method is often a competitive alternative to the BFGS method.</div>
 
 ```python
 from scipy import optimize
@@ -367,7 +375,6 @@ plt.show()
 ![다운로드 (11)](https://user-images.githubusercontent.com/52376448/65286198-a5c22280-db79-11e9-8dbf-bd764dd63a48.png)
 <hr class='division3'>
 </details>
-<div class='jb-medium'>In general, the BFGS method is often a good first approach to try, in particular if neither the gradient nor the Hessian is known. If only the gradient is known, then the BFGS method is still the generally recommended method to use, although the conjugate gradient method is often a competitive alternative to the BFGS method.</div>
 
 <br><br><br>
 
