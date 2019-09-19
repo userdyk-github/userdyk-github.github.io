@@ -794,7 +794,7 @@ plt.show()
 # markeredgewidth : mew      : 마커 선 굵기
 # markerfacecolor : mfc      : 마커 내부 색깔
 ```
-<details open markdown="1">
+<details markdown="1">
 <summary class='jb-small' style="color:blue">EXAMPLES</summary>
 <hr class='division3'>
 ```python
