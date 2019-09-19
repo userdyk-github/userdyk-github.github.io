@@ -187,7 +187,7 @@ plt.text(-0.5, -0.20, 'Brackmard minimum', bbox = box)
 plt.plot(X, Y, c='k')
 plt.show()
 ```
-<details open markdown="1">
+<details markdown="1">
 <summary class='jb-small' style="color:blue">box options</summary>
 <hr class='division3'>
 <div class="jb-medium">
