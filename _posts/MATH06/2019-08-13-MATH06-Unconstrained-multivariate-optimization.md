@@ -49,8 +49,8 @@ print(Gradient, '\n', Hessian)
 <br><br><br>
 <hr class="division2">
 
-
-## **Optimization process using the Newton-CG method with Gradient&Hessian**
+## **Optimization process**
+### ***The Newton-CG method with Gradient&Hessian***
 
 <div class='jb-medium'>If both the gradient and the Hessian are known, then Newton’s method is the method with <strong>the fastest convergence in general.</strong></div> 
 
@@ -143,11 +143,12 @@ plt.show()
 <hr class='division3'>
 </details>
 <br><br><br>
-<hr class="division2">
+
+---
 
 <br><br><br>
 
-## **Optimization process using the BFGS algorithm with Gradient**
+### ***The BFGS algorithm with Gradient***
 
 <div class="medium">Although the BFGS and the conjugate gradient methods theoretically have slower convergence than Newton’s method, they can sometimes offer <strong>improved stability</strong> and can therefore be preferable. </div>
 
@@ -230,9 +231,9 @@ plt.show()
 </details>
 <br><br><br>
 
-<hr class="division2">
+---
 
-## **Optimization process using a nonlinear conjugate gradient algorithm with Gradient**
+### ***A nonlinear conjugate gradient algorithm with Gradient***
 
 <div class="medium">Although the BFGS and the conjugate gradient methods theoretically have slower convergence than Newton’s method, they can sometimes offer <strong>improved stability</strong> and can therefore be preferable. </div>
 
@@ -314,9 +315,9 @@ plt.show()
 </details>
 <br><br><br>
 
-<hr class="division2">
+---
 
-## **Optimization process using the BFGS algorithm without Gradient&Hessian**
+### ***the BFGS algorithm without Gradient&Hessian***
 
 <div class='jb-medium'>In general, the BFGS method is often a good first approach to try, in particular if neither the gradient nor the Hessian is known. If only the gradient is known, then the BFGS method is still <strong>the generally recommended method</strong> to use, although the conjugate gradient method is often a competitive alternative to the BFGS method.</div>
 
