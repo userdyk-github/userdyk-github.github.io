@@ -1524,6 +1524,20 @@ plt.show()
 
 ## **Axes**
 
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+
+fig, axes = plt.subplots(nrows=3, ncols=2)
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (9)](https://user-images.githubusercontent.com/52376448/65250814-26a8fc00-db31-11e9-9305-95ad79512ce5.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
 ---
 
 ### ***Axes object and subplot commands***
