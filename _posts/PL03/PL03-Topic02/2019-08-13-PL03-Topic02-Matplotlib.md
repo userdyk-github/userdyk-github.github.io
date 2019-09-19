@@ -770,7 +770,7 @@ plt.show()
 <br><br><br>
 
 
-**Style strings are specified in the order of color, marker, and line style. If some of these are omitted, the default value is applied.** <br>
+Style strings are specified in the order of color, marker, and line style. If some of these are omitted, the default value is applied. <br>
 - <a href="https://matplotlib.org/examples/color/named_colors.html" target="blank">color ref</a><br>
 - <a href="https://matplotlib.org/examples/lines_bars_and_markers/marker_reference.html" target="blank">marker ref</a><br>
 - <a href="https://matplotlib.org/examples/lines_bars_and_markers/line_styles_reference.html" target="blank">line style ref</a><br>
@@ -1096,6 +1096,7 @@ x = np.random.rand(N)
 y1 = np.random.rand(N)
 y2 = np.random.rand(N)
 y3 = np.pi * (15 * np.random.rand(N))**2
+
 plt.title("Bubble Chart")
 plt.scatter(x, y1, c=y2, s=y3)   # s : size, c : color
 plt.show()
