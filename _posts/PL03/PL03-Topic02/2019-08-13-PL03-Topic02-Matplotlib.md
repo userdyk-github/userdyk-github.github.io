@@ -770,10 +770,10 @@ plt.show()
 <br><br><br>
 
 
-Style strings are specified in the order of color, marker, and line style. If some of these are omitted, the default value is applied.<br>
-<a href="https://matplotlib.org/examples/color/named_colors.html" target="blank">color ref</a><br>
-<a href="https://matplotlib.org/examples/lines_bars_and_markers/marker_reference.html" target="blank">marker ref</a><br>
-<a href="https://matplotlib.org/examples/lines_bars_and_markers/line_styles_reference.html" target="blank">line style ref</a><br>
+**Style strings are specified in the order of color, marker, and line style. If some of these are omitted, the default value is applied.** <br>
+- <a href="https://matplotlib.org/examples/color/named_colors.html" target="blank">color ref</a><br>
+- <a href="https://matplotlib.org/examples/lines_bars_and_markers/marker_reference.html" target="blank">marker ref</a><br>
+- <a href="https://matplotlib.org/examples/lines_bars_and_markers/line_styles_reference.html" target="blank">line style ref</a><br>
 
 
 ```python
