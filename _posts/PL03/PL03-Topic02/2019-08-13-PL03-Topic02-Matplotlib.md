@@ -1534,7 +1534,7 @@ axes[2, 1].errorbar(x, y)
 plt.tight_layout()
 plt.show()
 ```
-`SUPPLEMENT` : Refer to [here](https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-Matplotlib.html#axes) about exes
+`SUPPLEMENT` : <span class="jb-medium">Refer to [here](https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-Matplotlib.html#axes) about exes</span>
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
