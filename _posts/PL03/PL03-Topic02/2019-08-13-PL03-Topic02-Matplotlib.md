@@ -782,8 +782,6 @@ Style strings are specified in the order of color, marker, and line style. If so
 - <a href="https://matplotlib.org/examples/lines_bars_and_markers/marker_reference.html" target="blank">marker ref</a><br>
 - <a href="https://matplotlib.org/examples/lines_bars_and_markers/line_styles_reference.html" target="blank">line style ref</a><br>
 
-<div class="jb-medium">
- 
 |color           | c|
 |linesidth       | lw |
 |linestyle       | ls|
@@ -793,7 +791,6 @@ Style strings are specified in the order of color, marker, and line style. If so
 |markeredgewidth | mew|
 |markerfacecolor | mfc|
 
-</div>
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
