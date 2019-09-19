@@ -89,6 +89,9 @@ _.evalf()
 
 ## **Implementation with scipy for more realistic problems**
 
+<div style="font-size: 70%; text-align: center;">
+  $$the\ objective\ function\ :\ f (r) = 2πr^{2} + \frac{2}{r}$$
+</div>
 ```python
 from scipy import optimize
 import numpy as np                     # after executing numpy, and then execute cvxopt!
