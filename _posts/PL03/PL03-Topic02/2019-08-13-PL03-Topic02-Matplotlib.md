@@ -479,110 +479,6 @@ plt.show()
 </details>
 <br><br><br>
 
----
-
-
-
-#### Controlling tick labeling
-
-```python
-import numpy as np
-import matplotlib.ticker as ticker
-import matplotlib.pyplot as plt
-
-name_list = ('Omar', 'Serguey', 'Max', 'Zhou', 'Abidin')
-value_list = np.random.randint(0, 99, size = len(name_list))
-pos_list = np.arange(len(name_list))
-
-ax = plt.axes()
-ax.xaxis.set_major_locator(ticker.FixedLocator((pos_list)))
-ax.xaxis.set_major_formatter(ticker.FixedFormatter((name_list)))
-
-plt.bar(pos_list, value_list, color = '.75', align = 'center')
-plt.show()
-```
-<details open markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-![다운로드 (14)](https://user-images.githubusercontent.com/52376448/65243496-67017d80-db23-11e9-8b44-ad5dff89dc19.png)
-<hr class='division3'>
-</details>
-<br><br><br>
-
-```python
-# A simpler way to create bar charts with fixed labels
-import numpy as np
-import matplotlib.pyplot as plt
-
-name_list = ('Omar', 'Serguey', 'Max', 'Zhou', 'Abidin')
-value_list = np.random.randint(0, 99, size = len(name_list))
-pos_list = np.arange(len(name_list))
-
-plt.bar(pos_list, value_list, color = '.75', align = 'center')
-plt.xticks(pos_list, name_list, rotation=30)
-plt.show()
-```
-<details open markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-![다운로드 (15)](https://user-images.githubusercontent.com/52376448/65243498-679a1400-db23-11e9-8ddb-b26927d67c6a.png)
-<hr class='division3'>
-</details>
-<br><br><br>
-
-```python
-# Advanced label generation
-import numpy as np
-import matplotlib.pyplot as plt
-import matplotlib.ticker as ticker
-
-X = np.linspace(0, 1, 256)
-
-def make_label(value, pos):
-     return '%0.1f%%' % (100. * value)
-     
-ax = plt.axes()
-ax.xaxis.set_major_formatter(ticker.FuncFormatter(make_label))
-plt.plot(X, np.exp(-10 * X), c ='k')
-plt.plot(X, np.exp(-5 * X), c= 'k', ls = '--')
-plt.show()
-```
-<details open markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-![다운로드 (16)](https://user-images.githubusercontent.com/52376448/65243499-679a1400-db23-11e9-940f-78c299e4302f.png)
-<hr class='division3'>
-</details>
-<br><br><br>
-
-```python
-import numpy as np
-import datetime
-import matplotlib.pyplot as plt
-import matplotlib.ticker as ticker
-
-X = np.linspace(0, 1, 256)
-start_date = datetime.datetime(1998, 1, 1)
-
-def make_label(value, pos):
-     time = start_date + datetime.timedelta(days = 365 * value)
-     return time.strftime('%b %y')
-     
-ax = plt.axes()
-ax.xaxis.set_major_formatter(ticker.FuncFormatter(make_label))
-plt.plot(X, np.exp(-10 * X), c = 'k')
-plt.plot(X, np.exp(-5 * X), c = 'k', ls = '--')
-labels = ax.get_xticklabels()
-plt.setp(labels, rotation = 30.)
-plt.show()
-```
-<details open markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-![다운로드 (17)](https://user-images.githubusercontent.com/52376448/65243501-679a1400-db23-11e9-94f5-c1168b57281c.png)
-<hr class='division3'>
-</details>
-<br><br><br>
 
 <hr class="division2">
 
@@ -1799,9 +1695,9 @@ plt.show()
 </details>
 <br><br><br>
 
----
 
-#### Tick spacing
+
+**Tick spacing**
 
 ```python
 import numpy as np
@@ -1848,7 +1744,7 @@ plt.show()
 </details>
 <br><br><br>
 
----
+
 
 **Tick labeling**
 ```python
@@ -1962,6 +1858,106 @@ plt.show()
 </details>
 
 <br><br><br>
+
+```python
+import numpy as np
+import matplotlib.ticker as ticker
+import matplotlib.pyplot as plt
+
+name_list = ('Omar', 'Serguey', 'Max', 'Zhou', 'Abidin')
+value_list = np.random.randint(0, 99, size = len(name_list))
+pos_list = np.arange(len(name_list))
+
+ax = plt.axes()
+ax.xaxis.set_major_locator(ticker.FixedLocator((pos_list)))
+ax.xaxis.set_major_formatter(ticker.FixedFormatter((name_list)))
+
+plt.bar(pos_list, value_list, color = '.75', align = 'center')
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (14)](https://user-images.githubusercontent.com/52376448/65243496-67017d80-db23-11e9-8b44-ad5dff89dc19.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+```python
+# A simpler way to create bar charts with fixed labels
+import numpy as np
+import matplotlib.pyplot as plt
+
+name_list = ('Omar', 'Serguey', 'Max', 'Zhou', 'Abidin')
+value_list = np.random.randint(0, 99, size = len(name_list))
+pos_list = np.arange(len(name_list))
+
+plt.bar(pos_list, value_list, color = '.75', align = 'center')
+plt.xticks(pos_list, name_list, rotation=30)
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (15)](https://user-images.githubusercontent.com/52376448/65243498-679a1400-db23-11e9-8ddb-b26927d67c6a.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+```python
+# Advanced label generation
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.ticker as ticker
+
+X = np.linspace(0, 1, 256)
+
+def make_label(value, pos):
+     return '%0.1f%%' % (100. * value)
+     
+ax = plt.axes()
+ax.xaxis.set_major_formatter(ticker.FuncFormatter(make_label))
+plt.plot(X, np.exp(-10 * X), c ='k')
+plt.plot(X, np.exp(-5 * X), c= 'k', ls = '--')
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (16)](https://user-images.githubusercontent.com/52376448/65243499-679a1400-db23-11e9-940f-78c299e4302f.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+```python
+import numpy as np
+import datetime
+import matplotlib.pyplot as plt
+import matplotlib.ticker as ticker
+
+X = np.linspace(0, 1, 256)
+start_date = datetime.datetime(1998, 1, 1)
+
+def make_label(value, pos):
+     time = start_date + datetime.timedelta(days = 365 * value)
+     return time.strftime('%b %y')
+     
+ax = plt.axes()
+ax.xaxis.set_major_formatter(ticker.FuncFormatter(make_label))
+plt.plot(X, np.exp(-10 * X), c = 'k')
+plt.plot(X, np.exp(-5 * X), c = 'k', ls = '--')
+labels = ax.get_xticklabels()
+plt.setp(labels, rotation = 30.)
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (17)](https://user-images.githubusercontent.com/52376448/65243501-679a1400-db23-11e9-94f5-c1168b57281c.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
 
 
 ```python
