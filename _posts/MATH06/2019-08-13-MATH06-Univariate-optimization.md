@@ -120,7 +120,8 @@ import matplotlib.pyplot as plt
 # object function
 def f(r):   
     return 2 * np.pi * r**2 + 2 / r
-    
+
+# optimization
 optimize.minimize_scalar(f, bracket=(0.1, 4))
 ```
 `OUTPUT` :
