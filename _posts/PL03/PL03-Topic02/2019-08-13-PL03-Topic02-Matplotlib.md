@@ -482,55 +482,6 @@ plt.show()
 ---
 
 
-#### Controlling tick spacing
-
-```python
-import numpy as np
-import matplotlib.pyplot as plt
-import matplotlib.ticker as ticker
-
-X = np.linspace(-15, 15, 1024)
-Y = np.sinc(X)
-
-ax = plt.axes()
-ax.xaxis.set_major_locator(ticker.MultipleLocator(5))
-ax.xaxis.set_minor_locator(ticker.MultipleLocator(1))
-plt.plot(X, Y, c = 'k')
-plt.show()
-```
-<details open markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-![다운로드 (12)](https://user-images.githubusercontent.com/52376448/65243494-67017d80-db23-11e9-840b-1012419b80f6.png)
-<hr class='division3'>
-</details>
-<br><br><br>
-
-```python
-import numpy as np
-import matplotlib.pyplot as plt
-import matplotlib.ticker as ticker
-
-X = np.linspace(-15, 15, 1024)
-Y = np.sinc(X)
-
-ax = plt.axes()
-ax.xaxis.set_major_locator(ticker.MultipleLocator(5))
-ax.xaxis.set_minor_locator(ticker.MultipleLocator(1))
-plt.grid(True, which='both')
-plt.plot(X, Y)
-plt.show()
-```
-<details open markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-![다운로드 (13)](https://user-images.githubusercontent.com/52376448/65243495-67017d80-db23-11e9-85f5-c465da6da3d2.png)
-<hr class='division3'>
-</details>
-<br><br><br>
-
----
-
 
 #### Controlling tick labeling
 
@@ -1826,7 +1777,7 @@ plt.show()
 
 #### Axis ticks, tick labels, and grids
 
-**Common ticks**
+**Base tick**
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
@@ -1848,7 +1799,58 @@ plt.show()
 </details>
 <br><br><br>
 
-**Ticks that corresponds to the numeric values**
+---
+
+#### Tick spacing
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.ticker as ticker
+
+X = np.linspace(-15, 15, 1024)
+Y = np.sinc(X)
+
+ax = plt.axes()
+ax.xaxis.set_major_locator(ticker.MultipleLocator(5))
+ax.xaxis.set_minor_locator(ticker.MultipleLocator(1))
+plt.plot(X, Y, c = 'k')
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (12)](https://user-images.githubusercontent.com/52376448/65243494-67017d80-db23-11e9-840b-1012419b80f6.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.ticker as ticker
+
+X = np.linspace(-15, 15, 1024)
+Y = np.sinc(X)
+
+ax = plt.axes()
+ax.xaxis.set_major_locator(ticker.MultipleLocator(5))
+ax.xaxis.set_minor_locator(ticker.MultipleLocator(1))
+plt.grid(True, which='both')
+plt.plot(X, Y)
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (13)](https://user-images.githubusercontent.com/52376448/65243495-67017d80-db23-11e9-85f5-c465da6da3d2.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+**Tick labeling**
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
