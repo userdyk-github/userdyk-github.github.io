@@ -66,10 +66,10 @@ _.evalf()
 12π
   
 >>> Area_r.subs(r, rsol)  
-3 23 p
+$$3 \sqrt[3]{2} \sqrt[3]{\pi}$$
 
 >>> _.evalf()
-  
+$$5.53581044593209$$  
 ```
 <hr class='division3'>
 </details>
