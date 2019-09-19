@@ -51,7 +51,7 @@ rsol
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-$$\displaystyle \frac{2^{\frac{2}{3}}}{2 \sqrt[3]{\pi}}$$
+$$\frac{2^{\frac{2}{3}}}{2 \sqrt[3]{\pi}}$$
 <hr class='division3'>
 </details>
 
