@@ -387,7 +387,21 @@ plt.show()
 
 <hr class="division2">
 
-## title3
+## **Suitable starting point for optimization**
+
+```python
+import numpy as np
+from scipy import optimize 
+
+def f(X): 
+    x, y = X   
+    return (4 * np.sin(np.pi * x) + 6 * np.sin(np.pi * y)) +  (x - 1)**2 + (y - 1)**2
+
+optimize.brute(f, (slice(-3, 5, 0.5),  slice(-3, 5, 0.5)), finish=None) 
+```
+`OUTPUT` : <span style="font-size: 70%;">$$starting\ point\ :\ (x,y) = (1.5,1.5)$$</span>
+
+
 
 <hr class="division1">
 
