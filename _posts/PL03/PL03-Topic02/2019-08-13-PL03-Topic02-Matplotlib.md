@@ -797,18 +797,6 @@ plt.show()
 
 **details decoration**<br>
 <span class="medium">Style strings are specified in the order of color, marker, and line style. If some of these are omitted, the default value is applied.</span> <br>
-- <a href="https://matplotlib.org/examples/color/named_colors.html" target="blank">color ref</a><br>
-- <a href="https://matplotlib.org/examples/lines_bars_and_markers/marker_reference.html" target="blank">marker ref</a><br>
-- <a href="https://matplotlib.org/examples/lines_bars_and_markers/line_styles_reference.html" target="blank">line style ref</a><br>
-
-|color           | c|
-|linesidth       | lw |
-|linestyle       | ls|
-|marker          | marker|
-|markersize      | ms|
-|markeredgecolor | mec|
-|markeredgewidth | mew|
-|markerfacecolor | mfc|
 
 ```python
 %matplotlib inline
@@ -825,6 +813,25 @@ plt.plot([10, 20, 30, 40], [1, 4, 9, 16],
          mfc="r")
 plt.show()
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+- <a href="https://matplotlib.org/examples/color/named_colors.html" target="blank">color ref</a><br>
+- <a href="https://matplotlib.org/examples/lines_bars_and_markers/marker_reference.html" target="blank">marker ref</a><br>
+- <a href="https://matplotlib.org/examples/lines_bars_and_markers/line_styles_reference.html" target="blank">line style ref</a><br>
+
+|color           | c|
+|linesidth       | lw |
+|linestyle       | ls|
+|marker          | marker|
+|markersize      | ms|
+|markeredgecolor | mec|
+|markeredgewidth | mew|
+|markerfacecolor | mfc|
+
+<hr class='division3'>
+</details>
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">EXAMPLES</summary>
 <hr class='division3'>
