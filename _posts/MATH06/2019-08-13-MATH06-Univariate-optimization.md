@@ -23,11 +23,100 @@ List of posts to read before reading this article
 
 ## **Method for root finding**
 
-|bisection method||
-|Newton’s method||
-|hybrid method||
+### ***Bracketing methods***
+
+####
 
 <br><br><br>
+
+---
+
+####
+
+<br><br><br>
+
+---
+
+
+### ***Interpolation***
+
+<br><br><br>
+
+---
+
+
+### ***Iterative methods***
+
+####
+
+<br><br><br>
+
+---
+
+####
+
+<br><br><br>
+
+---
+
+####
+
+<br><br><br>
+
+---
+
+####
+
+<br><br><br>
+
+---
+
+### ***Combinations of methods***
+
+####
+
+<br><br><br>
+
+---
+
+
+
+### ***Roots of polynomials***
+
+####
+
+<br><br><br>
+
+---
+
+####
+
+<br><br><br>
+
+---
+
+####
+
+<br><br><br>
+
+---
+
+####
+
+<br><br><br>
+
+---
+
+####
+
+<br><br><br>
+
+---
+
+####
+
+<br><br><br>
+
 <hr class="division2">
 
 ## **Implementation with sympy for simple case**
