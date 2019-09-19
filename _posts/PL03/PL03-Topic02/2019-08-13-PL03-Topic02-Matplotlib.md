@@ -1801,7 +1801,7 @@ plt.show()
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-![다운로드 (11)](https://user-images.githubusercontent.com/52376448/64471189-374c9000-d189-11e9-97d9-d7c37cfa8a26.png)
+![다운로드 (2)](https://user-images.githubusercontent.com/52376448/65256122-fade4400-db39-11e9-936d-c17e751340ca.png)
 <hr class='division3'>
 </details>
 <br><br><br>
