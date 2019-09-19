@@ -8,8 +8,9 @@ tags : [MATH06]
 [Back to the previous page](https://userdyk-github.github.io/Study.html) <br>
 List of posts to read before reading this article
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-Matplotlib.html' target="_blank">Matplotlib</a>
-- <a href='https://userdyk-github.github.io/'>post2</a>
-- <a href='https://userdyk-github.github.io/'>post3</a>
+- <a href='https://en.wikipedia.org/wiki/List_of_algorithms' target="_blank">List of algorithms</a>
+- <a href='https://en.wikipedia.org/wiki/Mathematical_optimization' target="_blank">Mathematical optimization</a>
+
 
 ---
 
@@ -261,7 +262,7 @@ List of posts followed by this article
 ---
 
 Reference
-- <a href='https://en.wikipedia.org/wiki/List_of_algorithms' target="_blank">List of algorithms</a>
+- <a href='https://userdyk-github.github.io/'>post2</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
