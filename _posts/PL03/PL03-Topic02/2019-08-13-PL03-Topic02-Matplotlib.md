@@ -1096,7 +1096,6 @@ plt.show()
 ![다운로드](https://user-images.githubusercontent.com/52376448/65246096-d9289100-db28-11e9-9c49-4becaeddee8e.png)
 <hr class='division3'>
 </details>
-<br>
 
 ```python
 import numpy as np
@@ -1127,7 +1126,7 @@ plt.show()
 ![다운로드 (1)](https://user-images.githubusercontent.com/52376448/65246097-d9289100-db28-11e9-8a5e-c863cbb317fd.png)
 <hr class='division3'>
 </details>
-<br>
+
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
