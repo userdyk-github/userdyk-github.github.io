@@ -795,8 +795,15 @@ plt.show()
 %matplotlib inline
 import matplotlib.pyplot as plt
 
-plt.plot([10, 20, 30, 40], [1, 4, 9, 16], c="b",
-         lw=5, ls="--", marker="o", ms=15, mec="g", mew=5, mfc="r")
+plt.plot([10, 20, 30, 40], [1, 4, 9, 16],
+         c="b",
+         lw=5, 
+         ls="--",
+         marker="o", 
+         ms=15, 
+         mec="g",
+         mew=5,
+         mfc="r")
 plt.show()
 ```
 <details markdown="1">
