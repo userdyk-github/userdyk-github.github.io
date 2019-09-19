@@ -187,11 +187,11 @@ plt.show()
 <summary class='jb-small' style="color:blue">Box options</summary>
 <hr class='division3'>
 <div class="jb-medium">
-- 'facecolor': This is the color used for the box. It will be used to set the background and the edge color <br>
-- 'edgecolor': This is the color used for the edges of the box's shape <br>
-- 'alpha': This is used to set the transparency level so that the box blends with the background <br>
-- 'boxstyle': This sets the style of the box, which can either be 'round' or 'square' <br>
-- 'pad': If 'boxstyle' is set to 'square', it defines the amount of padding between the text and the box's sides <br>
+- <strong>'facecolor'</strong>: This is the color used for the box. It will be used to set the background and the edge color <br>
+- <strong>'edgecolor'</strong>: This is the color used for the edges of the box's shape <br>
+- <strong>'alpha'</strong>: This is used to set the transparency level so that the box blends with the background <br>
+- <strong>'boxstyle'</strong>: This sets the style of the box, which can either be 'round' or 'square' <br>
+- <strong>'pad'</strong>: If 'boxstyle' is set to 'square', it defines the amount of padding between the text and the box's sides <br>
 </div>
 <hr class='division3'>
 </details>
