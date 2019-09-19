@@ -120,6 +120,21 @@ sympy.Matrix(fhess_sym)
 <details markdown="1">
 <summary class='jb-small' style="color:blue">VISUALLIZATION</summary>
 <hr class='division3'>
+```python
+import matplotlib.pyplot as plt
+  
+x_ = y_ = np.linspace(-1, 4, 100)  
+X, Y = np.meshgrid(x_, y_)
+
+fig, ax = plt.subplots(figsize=(6, 4)) 
+c = ax.contour(X, Y, f_lmbda(X, Y), 100)   
+plt.colorbar(c, ax=ax)
+
+ax.plot(x_opt[0], x_opt[1], 'r*', markersize=15)   
+ax.set_xlabel(r"$x_1$", fontsize=18)   
+ax.set_ylabel(r"$x_2$", fontsize=18)    
+plt.show()
+```
 ![다운로드 (8)](https://user-images.githubusercontent.com/52376448/65281242-1747a400-db6d-11e9-9be4-635a88f95011.png)
 <hr class='division3'>
 </details>
