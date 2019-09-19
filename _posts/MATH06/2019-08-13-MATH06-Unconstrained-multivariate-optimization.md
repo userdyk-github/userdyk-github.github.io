@@ -24,7 +24,7 @@ List of posts to read before reading this article
 
 ## **Gradient and Hessian**
 
-<div style="font-size: 70%; text-align:center;"> $$the\ objective\ function\ :\ f(x) = (x_{1} + 10)^{2} + 5(x_{2} - 9)^{2} - 2x_{1}x_{2}$$</div>
+<div style="font-size: 70%; text-align:center;"> $$the\ objective\ function\ :\ f(x_{1},x_{2}) = (x_{1} + 10)^{2} + 5(x_{2} - 9)^{2} - 2x_{1}x_{2}$$</div>
 
 ```python
 import sympy
@@ -54,7 +54,7 @@ print(Gradient, '\n', Hessian)
 
 <div class='jb-medium'>If both the gradient and the Hessian are known, then Newton’s method is the method with <strong>the fastest convergence in general.</strong></div> 
 
-<div style="font-size: 70%; text-align:center;"> $$the\ objective\ function\ :\ f(x) = (x_{1} - 1)^{4} + 5(x_{2} - 1)^{2} - 2x_{1}x_{2}$$</div>
+<div style="font-size: 70%; text-align:center;"> $$the\ objective\ function\ :\ f(x_{1},x_{2}) = (x_{1} - 1)^{4} + 5(x_{2} - 1)^{2} - 2x_{1}x_{2}$$</div>
 
 ```python
 from scipy import optimize
@@ -153,7 +153,7 @@ plt.show()
 
 <div class="medium">Although the BFGS and the conjugate gradient methods theoretically have slower convergence than Newton’s method, they can sometimes offer <strong>improved stability</strong> and can therefore be preferable. </div>
 
-<div style="font-size: 70%; text-align:center;"> $$the\ objective\ function\ :\ f(x) = (x_{1} - 1)^{4} + 5(x_{2} - 1)^{2} - 2x_{1}x_{2}$$</div>
+<div style="font-size: 70%; text-align:center;"> $$the\ objective\ function\ :\ f(x_{1},x_{2}) = (x_{1} - 1)^{4} + 5(x_{2} - 1)^{2} - 2x_{1}x_{2}$$</div>
 
 ```python
 from scipy import optimize
@@ -239,7 +239,7 @@ plt.show()
 
 <div class="medium">Although the BFGS and the conjugate gradient methods theoretically have slower convergence than Newton’s method, they can sometimes offer <strong>improved stability</strong> and can therefore be preferable. </div>
 
-<div style="font-size: 70%; text-align:center;"> $$the\ objective\ function\ :\ f(x) = (x_{1} - 1)^{4} + 5(x_{2} - 1)^{2} - 2x_{1}x_{2}$$</div>
+<div style="font-size: 70%; text-align:center;"> $$the\ objective\ function\ :\ f(x_{1},x_{2}) = (x_{1} - 1)^{4} + 5(x_{2} - 1)^{2} - 2x_{1}x_{2}$$</div>
 
 ```python
 from scipy import optimize
@@ -324,7 +324,7 @@ plt.show()
 
 <div class='jb-medium'>In general, the BFGS method is often a good first approach to try, in particular if neither the gradient nor the Hessian is known. If only the gradient is known, then the BFGS method is still <strong>the generally recommended method</strong> to use, although the conjugate gradient method is often a competitive alternative to the BFGS method.</div>
 
-<div style="font-size: 70%; text-align:center;"> $$the\ objective\ function\ :\ f(x) = (x_{1} - 1)^{4} + 5(x_{2} - 1)^{2} - 2x_{1}x_{2}$$</div>
+<div style="font-size: 70%; text-align:center;"> $$the\ objective\ function\ :\ f(x_{1},x_{2}) = (x_{1} - 1)^{4} + 5(x_{2} - 1)^{2} - 2x_{1}x_{2}$$</div>
 
 ```python
 from scipy import optimize
