@@ -34,7 +34,6 @@ f_sym = (x1-1)**4 + 5 * (x2-1)**2 - 2*x1*x2
 fprime_sym = [f_sym.diff(x_) for x_ in (x1, x2)]
 Gradient = sympy.Matrix(fprime_sym)
 
-
 # Hessian  
 fhess_sym = [[f_sym.diff(x1_, x2_) for x1_ in (x1, x2)] for x2_ in (x1, x2)] 
 Hessian = sympy.Matrix(fhess_sym)
