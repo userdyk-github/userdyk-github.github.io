@@ -145,7 +145,7 @@ plt.show()
 
 <br><br><br>
 
-## **Optimization process using **
+## **Optimization process using the BFGS algorithm**
 
 ```python
 from scipy import optimize
@@ -225,7 +225,7 @@ plt.show()
 
 <hr class="division2">
 
-## **Optimization process using **
+## **Optimization process using a nonlinear conjugate gradient algorithm**
 
 ```python
 from scipy import optimize
@@ -304,7 +304,7 @@ plt.show()
 
 <hr class="division2">
 
-## **Optimization process using **
+## **Optimization process using the BFGS algorithm**
 
 ```python
 from scipy import optimize
