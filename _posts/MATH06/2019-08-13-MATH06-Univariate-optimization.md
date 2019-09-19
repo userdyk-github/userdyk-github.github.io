@@ -95,9 +95,7 @@ _.evalf()
 <span class="frame2">Method1</span>
 ```python
 from scipy import optimize
-import numpy as np                     # after executing numpy, and then execute cvxopt!
-import cvxopt                          # Just add path 'C:\Python36\Library\bin' to PATH environment variable
-import matplotlib.pyplot as plt 
+import numpy as np
 
 # object function
 def f(r):   
@@ -113,9 +111,7 @@ r_min, f(r_min)
 <span class="frame2">Method2</span>
 ```python
 from scipy import optimize
-import numpy as np                     # after executing numpy, and then execute cvxopt!
-import cvxopt                          # Just add path 'C:\Python36\Library\bin' to PATH environment variable
-import matplotlib.pyplot as plt 
+import numpy as np
 
 # object function
 def f(r):   
