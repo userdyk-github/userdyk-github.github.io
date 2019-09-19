@@ -151,6 +151,8 @@ plt.show()
 
 <div class="medium">Although the BFGS and the conjugate gradient methods theoretically have slower convergence than Newton’s method, they can sometimes offer <strong>improved stability</strong> and can therefore be preferable. </div>
 
+<div style="font-size: 70%; text-align:center;"> $$the\ objective\ function\ :\ f(x) = (x_{1} - 1)^{4} + 5(x_{2} - 1)^{2} - 2x_{1}x_{2}$$</div>
+
 ```python
 from scipy import optimize
 import sympy
@@ -234,6 +236,8 @@ plt.show()
 
 <div class="medium">Although the BFGS and the conjugate gradient methods theoretically have slower convergence than Newton’s method, they can sometimes offer <strong>improved stability</strong> and can therefore be preferable. </div>
 
+<div style="font-size: 70%; text-align:center;"> $$the\ objective\ function\ :\ f(x) = (x_{1} - 1)^{4} + 5(x_{2} - 1)^{2} - 2x_{1}x_{2}$$</div>
+
 ```python
 from scipy import optimize
 import sympy
@@ -315,6 +319,8 @@ plt.show()
 ## **Optimization process using the BFGS algorithm without Gradient&Hessian**
 
 <div class='jb-medium'>In general, the BFGS method is often a good first approach to try, in particular if neither the gradient nor the Hessian is known. If only the gradient is known, then the BFGS method is still <strong>the generally recommended method</strong> to use, although the conjugate gradient method is often a competitive alternative to the BFGS method.</div>
+
+<div style="font-size: 70%; text-align:center;"> $$the\ objective\ function\ :\ f(x) = (x_{1} - 1)^{4} + 5(x_{2} - 1)^{2} - 2x_{1}x_{2}$$</div>
 
 ```python
 from scipy import optimize
