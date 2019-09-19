@@ -61,16 +61,20 @@ _.evalf()
 <details markdown="1">
 <summary class='jb-small' style="color:blue">VERIFICATION</summary>
 <hr class='division3'>
+```python
+Area_r.diff(r, 2).subs(r, rsol)
 ```
->>> Area_r.diff(r, 2).subs(r, rsol)
-12π
-  
->>> Area_r.subs(r, rsol)  
-$$3 \sqrt[3]{2} \sqrt[3]{\pi}$$
+`OUTPUT` : <span style="font-size:70%;">12π</span>
 
->>> _.evalf()
-$$5.53581044593209$$  
+```python
+Area_r.subs(r, rsol)  
 ```
+`OUTPUT` : <span style="font-size:70%;">$$3 \sqrt[3]{2} \sqrt[3]{\pi}$$</span>
+
+```python
+_.evalf()
+```
+`OUTPUT` : <span style="font-size:70%;">$$5.53581044593209$$</span>
 <hr class='division3'>
 </details>
   
