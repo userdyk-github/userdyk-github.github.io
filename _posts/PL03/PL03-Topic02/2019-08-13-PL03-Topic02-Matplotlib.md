@@ -758,6 +758,27 @@ plt.show()
 </details>
 <br><br><br>
 
+**numpy array plot : $$[-\pi + \pi] -> cos(x)$$**
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(-np.pi, np.pi, 50)
+y = np.cos(x)
+
+plt.plot(x, y)
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![다운로드 (16)](https://user-images.githubusercontent.com/52376448/65262213-cae86e00-db44-11e9-99a8-d772d598bd2b.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+
 **style(simple decoration) : color/marker/line**
 ```python
 %matplotlib inline
@@ -868,28 +889,6 @@ plt.show()
 
 <br><br><br>
 
-
-```python
-%matplotlib inline
-import matplotlib.pyplot as plt
-import numpy as np
-
-# numpy plot
-x = np.linspace(-np.pi, np.pi, 50)
-y = np.cos(x)
-
-plt.title("Plot")
-plt.plot(x, y)
-
-plt.show()
-```
-<details open markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-![다운로드 (17)](https://user-images.githubusercontent.com/52376448/64471392-3e28d200-d18c-11e9-8e12-274db830c086.png)
-<hr class='division3'>
-</details>
-<br><br><br>
 
 ```python
 %matplotlib inline
