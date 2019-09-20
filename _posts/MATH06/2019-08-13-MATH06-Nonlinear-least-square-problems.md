@@ -7,7 +7,7 @@ tags : [MATH06]
 ---
 [Back to the previous page](https://userdyk-github.github.io/Study.html) <br>
 List of posts to read before reading this article
-- <a href='https://userdyk-github.github.io/math05/MATH05-Curve-fitting.html' target="_blank"'>Curve fitting</a>
+- <a href='https://userdyk-github.github.io/math05/MATH05-Curve-fitting.html' target="_blank">Curve fitting</a>
 - <a href='https://userdyk-github.github.io/'>post2</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
@@ -59,15 +59,25 @@ ax.set_ylabel(r"$f(x, \beta)$", fontsize=18)
 ax.legend()
 plt.show()
 ```
+![다운로드 (13)](https://user-images.githubusercontent.com/52376448/65291248-66053600-db8d-11e9-85b5-36d1b8d32770.png)
 
-<hr class="division2">
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+```python
+beta_opt
+```
+`OUTPUT` : <span style="font-size: 70%;">$$[0.24852741, 0.77109938, 0.49358439]$$</span>
 
-## title2
+```python
+beta_cov
+```
+`OUTPUT` : <span style="font-size: 70%;">$$1$$</span>
 
-<hr class="division2">
+<hr class='division3'>
+</details>
 
-## title3
-
+<br><br><br>
 <hr class="division1">
 
 List of posts followed by this article
@@ -83,9 +93,3 @@ Reference
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
-
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-<hr class='division3'>
-</details>
