@@ -21,8 +21,8 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
-
+## Nonlinear least square problems as optimization problem
+In general, a least square problem can be viewed as an optimization problem with the objective function
 ```python
 import numpy as np
 from scipy import optimize
