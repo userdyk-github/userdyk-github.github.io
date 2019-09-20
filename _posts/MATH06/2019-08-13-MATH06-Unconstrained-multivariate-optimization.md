@@ -473,6 +473,27 @@ ax.set_ylabel(r"$x_2$", fontsize=18)
 </details>
 <br><br><br>
 
+
+<hr class="division2">
+
+## **Optimization code in general as the following code makes it easier to switch between different solvers**
+
+<div style="font-size: 70%; text-align:center;"> $$the\ objective\ function\ :\ f(x,y) = 4sin(x \pi) + 6sin(y \pi) + (x-1)^{2} + (y-1)^{2}$$</div>
+
+```python
+import numpy as np
+from scipy import optimize
+
+def f(X):
+    x, y = X
+    return (4 * np.sin(np.pi * x) + 6 * np.sin(np.pi * y)) +  (x - 1)**2 + (y - 1)**2
+
+x_start = optimize.brute(f, (slice(-3, 5, 0.5),  slice(-3, 5, 0.5)), finish=None)
+result = optimize.minimize(f, x_start, method= 'BFGS')  # can be easily change 'method'
+result.x
+```
+`OUTPUT` : <span style="font-size: 70%;">$$Optimal\ point\ :\ (x,y) = (1.47586906,1.48365787)$$</span>
+
 <hr class="division1">
 
 List of posts followed by this article
