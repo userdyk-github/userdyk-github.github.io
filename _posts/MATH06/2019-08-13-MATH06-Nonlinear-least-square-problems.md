@@ -22,7 +22,9 @@ List of posts to read before reading this article
 <hr class="division1">
 
 ## the Levenberg-Marquardt method for nonlinear least square problems
-In general, a least square problem can be viewed as an optimization problem with the objective function
+In general, a least square problem can be viewed as an optimization problem with the objective function. Nonlinear least square optimization problem has a specific structure, and several methods that are tailored to solve this particular optimization problem have
+been developed. One example, **the Levenberg-Marquardt method is based on the idea of successive linearizations of the problem in each iteration.**
+
 ```python
 import numpy as np
 from scipy import optimize
