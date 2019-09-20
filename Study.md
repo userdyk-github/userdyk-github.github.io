@@ -290,7 +290,7 @@ Mass Point</a><br>
 > <a href='https://userdyk-github.github.io/math06/MATH06-Interpolation.html'>Interpolation</a><br>
 > <a href='https://userdyk-github.github.io/math06/MATH06-Univariate-optimization.html'>Univariate optimization</a><br>
 > <a href='https://userdyk-github.github.io/math06/MATH06-Unconstrained-multivariate-optimization.html'>Unconstrained multivariate optimization</a><br>
-> <a href='https://userdyk-github.github.io/math06/MATH06-Unconstrained-nonlinear.html'>Unconstrained nonlinear</a><br>
+> <a href='https://userdyk-github.github.io/math06/MATH06-Nonlinear-least-square-problems.html'>Nonlinear least square problems</a><br>
 > <a href='https://userdyk-github.github.io/math06/MATH06-Constrained-nonlinear.html'>Constrained nonlinear</a><br>
 > <a href='https://userdyk-github.github.io/math06/MATH06-Convex-optimization.html'>Convex optimization</a><br>
 > <a href='https://userdyk-github.github.io/math06/MATH06-Combinatorial.html'>Combinatorial</a><br>
