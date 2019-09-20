@@ -7,7 +7,7 @@ tags : [MATH06]
 ---
 [Back to the previous page](https://userdyk-github.github.io/Study.html) <br>
 List of posts to read before reading this article
-- <a href='https://userdyk-github.github.io/math05/MATH05-Curve-fitting.html target="_blank"'>Curve fitting</a>
+- <a href='https://userdyk-github.github.io/math05/MATH05-Curve-fitting.html' target="_blank"'>Curve fitting</a>
 - <a href='https://userdyk-github.github.io/'>post2</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
