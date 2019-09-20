@@ -21,7 +21,7 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## Nonlinear least square problems as optimization problem
+## the Levenberg-Marquardt method for nonlinear least square problems
 In general, a least square problem can be viewed as an optimization problem with the objective function
 ```python
 import numpy as np
@@ -40,7 +40,7 @@ y = f(xdata, *beta)
 # input data : ydata
 ydata = y + 0.05 * np.random.randn(len(xdata))
 
-# deviation : g(beta) = ydata - f(xdata, *beta)
+# residual(deviation) : g(beta) = ydata - f(xdata, *beta)
 def g(beta):
     return ydata - f(xdata, *beta)
 
