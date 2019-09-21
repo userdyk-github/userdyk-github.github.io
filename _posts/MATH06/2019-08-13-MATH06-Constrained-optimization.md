@@ -157,7 +157,7 @@ constraint = dict(type='eq', fun=g)
 optimize.minimize(f, [0.5, 1, 1.5], method='SLSQP', constraints=[constraint]).x
 ```
 <details markdown="1">
-<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 `OUTPUT` : <span style="font-size: 70%;">$$[0.40824188, 0.40825127, 0.40825165]$$</span>
 <hr class='division3'>
@@ -185,9 +185,45 @@ constraints = [dict(type='ineq', fun=g)]
 optimize.minimize(f, (0, 0), method='SLSQP', constraints=constraints).x
 ```
 <details markdown="1">
-<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 `OUTPUT` : <span style="font-size: 70%;">$$[0.96857656, 1.75228252]$$</span>
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">VISULALIZATION</summary>
+<hr class='division3'>
+```python
+from scipy import optimize
+import numpy as np
+import matplotlib.pyplot as plt
+
+def f(X):  
+    return (X[0] - 1)**2 + (X[1] - 1)**2
+def g(X):  
+    return X[1] - 1.75 - (X[0] - 0.75)**4 
+  
+constraints = [dict(type='ineq', fun=g)]
+x_opt = optimize.minimize(f, (0, 0), method='BFGS').x 
+x_cons_opt = optimize.minimize(f, (0, 0), method='SLSQP', constraints=constraints).x
+
+
+x_ = y_ = np.linspace(-1, 3, 100)   
+X, Y = np.meshgrid(x_, y_)  
+
+fig, ax = plt.subplots(figsize=(6, 4)) 
+c = ax.contour(X, Y, func_X_Y_to_XY(f, X, Y), 50)   
+ax.plot(x_opt[0], x_opt[1], 'b*', markersize=15)  
+ax.plot(x_, 1.75 + (x_-0.75)**4, 'k-', markersize=15)  
+ax.fill_between(x_, 1.75 + (x_-0.75)**4, 3, color='grey')   
+ax.plot(x_cons_opt[0], x_cons_opt[1], 'r*', markersize=15) 
+
+ax.set_ylim(-1, 3) 
+ax.set_xlabel(r"$x_0$", fontsize=18)   
+ax.set_ylabel(r"$x_1$", fontsize=18)   
+plt.colorbar(c, ax=ax)
+```
+![다운로드 (1)](https://user-images.githubusercontent.com/52376448/65371853-ebc6d580-dca2-11e9-8dd2-0512e6374b04.png)
 <hr class='division3'>
 </details>
 <br><br><br>
