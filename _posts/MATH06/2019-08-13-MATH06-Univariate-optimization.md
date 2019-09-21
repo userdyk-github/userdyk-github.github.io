@@ -2,7 +2,7 @@
 layout : post
 title : MATH06, Univariate optimization
 categories: [MATH06]
-comments : true
+comments : false
 tags : [MATH06]
 ---
 [Back to the previous page](https://userdyk-github.github.io/Study.html)｜[](https://userdyk-github.github.io/math06/MATH06-Contents.html)<br>
