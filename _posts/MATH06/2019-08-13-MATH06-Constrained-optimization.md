@@ -65,8 +65,9 @@ ax.set_xlabel(r"$x_1$", fontsize=18)
 ax.set_ylabel(r"$x_2$", fontsize=18) 
 plt.colorbar(c, ax=ax)
 ```
+![다운로드](https://user-images.githubusercontent.com/52376448/65370629-0f375380-dc96-11e9-9e79-aba55cae09ee.png)
 
-
+<br><br><br>
 <hr class="division2">
 
 ## title2
