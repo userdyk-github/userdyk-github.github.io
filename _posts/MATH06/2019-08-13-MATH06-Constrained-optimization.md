@@ -98,6 +98,10 @@ plt.colorbar(c, ax=ax)
 
 ## **Optimization problem using Lagrange multipliers**
 Using the Lagrange multipliers, it is possible to convert a constrained optimization problem to an unconstrained problem by introducing additional variables. 
+<div style="font-size: 70%; text-align: center;">
+    $$the\ objective\ function\ :\ f(x) = x_{1}x_{2}x_{3}$$
+    $$s.t. \qquad g(x) = 2x_{1}x_{2} +2x_{0}x_{2}+2x_{1}x_{0}-1=0$$
+</div>
 ```python
 import sympy 
 sympy.init_printing()
