@@ -7,8 +7,8 @@ tags : [MATH01]
 ---
 [Back to the previous page](https://userdyk-github.github.io/Study.html) <br>
 List of posts to read before reading this article
+- <a href='https://en.wikipedia.org/wiki/Numerical_linear_algebra'>Numerical linear algebra</a>
 - <a href='https://userdyk-github.github.io/math01/MATH01-Basic-concepts.html'>Basic concepts</a>
-- <a href='https://userdyk-github.github.io/'>post2</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
