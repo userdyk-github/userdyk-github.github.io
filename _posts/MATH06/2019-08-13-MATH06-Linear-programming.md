@@ -22,7 +22,7 @@ List of posts to read before reading this article
 <hr class="division1">
 
 ## title1
-
+The solution to a linear optimization problem must necessarily lie on a constraint boundary, so it is sufficient to search the vertices of the intersections of the linear constraint functions.
 <hr class="division2">
 
 ## title2
