@@ -114,7 +114,7 @@ sympy.solve(grad_L)
 <div style="font-size: 70%;">
     $$optimal\ point\ with\ constraints\ using\ Lagrange\ multipliers$$
     $$\left [ \left \{ \lambda : - \frac{\sqrt{6}}{24}, \quad x_{0} : \frac{\sqrt{6}}{6}, \quad x_{1} : \frac{\sqrt{6}}{6}, \quad x_{2} : \frac{\sqrt{6}}{6}\right \}, $$
-    $$\left \{ \lambda : \frac{\sqrt{6}}{24}, \quad x_{0} : - \frac{\sqrt{6}}{6}, \quad x_{1} : - \frac{\sqrt{6}}{6}, \quad x_{2} : - \frac{\sqrt{6}}{6}\right \}\right ]$$
+    $$ \{ \lambda : \frac{\sqrt{6}}{24}, \quad x_{0} : - \frac{\sqrt{6}}{6}, \quad x_{1} : - \frac{\sqrt{6}}{6}, \quad x_{2} : - \frac{\sqrt{6}}{6}\right \} ]$$
 </div>
 
 <br><br><br>
