@@ -220,6 +220,10 @@ Mass Point</a><br>
 > <a href='https://userdyk-github.github.io/math01/MATH01-Nonlinear-equations.html'>Nonlinear equations</a><br>
 > <a href='https://userdyk-github.github.io/math01/MATH01-Singular-value-decomposition.html'>Singular value decomposition</a><br>
 > <a href='https://userdyk-github.github.io/math01/MATH01-Sparse-matrices.html'>Sparse matrices</a><br>
+> <a href='https://userdyk-github.github.io/math01/MATH01-.html'>Polynomials</a><br>
+> <a href='https://userdyk-github.github.io/math01/MATH01-.html'>Polynomial interpolation </a><br>
+> <a href='https://userdyk-github.github.io/math01/MATH01-.html'>Spline interpolation</a><br>
+> <a href='https://userdyk-github.github.io/math01/MATH01-.html'>Multivariate interpolation</a><br>
 
 
 
@@ -235,6 +239,11 @@ Mass Point</a><br>
 > <a href='https://userdyk-github.github.io/math02/MATH02-Vector-calculus.html'>Vector calculus</a><br>
 > <a href='https://userdyk-github.github.io/math02/MATH02-Special-functions-and-numbers.html'>Special functions and numbers</a><br>
 > <a href='https://userdyk-github.github.io/math02/MATH02-Variations.html'>Variations</a><br>
+> <a href='https://userdyk-github.github.io/math02/MATH02-.html'>Numerical integration Methods</a><br>
+> <a href='https://userdyk-github.github.io/math02/MATH02-.html'>Numerical integration with SciPy</a><br>
+> <a href='https://userdyk-github.github.io/math02/MATH02-.html'>Multiple integration</a><br>
+> <a href='https://userdyk-github.github.io/math02/MATH02-.html'>Symbolic and arbitrary-precision integration</a><br>
+> <a href='https://userdyk-github.github.io/math02/MATH02-.html'>Integral transforms</a><br>
 
 
 ---
@@ -285,9 +294,7 @@ Mass Point</a><br>
 
 ---
 
-## _MATH06 : Numerical methods_
-
-### Optimization
+## _MATH06 : Optimization_
 
 > <a href='https://userdyk-github.github.io/math06/MATH06-Univariate-optimization.html'>Univariate optimization</a><br>
 > <a href='https://userdyk-github.github.io/math06/MATH06-Unconstrained-multivariate-optimization.html'>Unconstrained multivariate optimization</a><br>
@@ -297,12 +304,6 @@ Mass Point</a><br>
 > <a href='https://userdyk-github.github.io/math06/MATH06-Combinatorial.html'>Combinatorial</a><br>
 > <a href='https://userdyk-github.github.io/math06/MATH06-Metaheuristics.html'>Metaheuristics</a><br>
 
-### Interpolation
-
-> <a href='https://userdyk-github.github.io/math06/MATH06-Interpolation.html'>Interpolation</a><br>
-
-
-### Integration
 
 
 
