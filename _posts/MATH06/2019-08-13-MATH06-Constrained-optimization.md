@@ -153,6 +153,7 @@ def f(X):
 def g(X):   
     return 2 * (X[0]*X[1] + X[1] * X[2] + X[2] * X[0]) - 1
 
+# optimization
 constraint = dict(type='eq', fun=g) 
 optimize.minimize(f, [0.5, 1, 1.5], method='SLSQP', constraints=[constraint]).x
 ```
@@ -177,10 +178,11 @@ from scipy import optimize
 def f(X):  
     return (X[0] - 1)**2 + (X[1] - 1)**2
     
+# constraints
 def g(X):  
     return X[1] - 1.75 - (X[0] - 0.75)**4 
-
-# constraints
+    
+# optimization
 constraints = [dict(type='ineq', fun=g)]
 optimize.minimize(f, (0, 0), method='SLSQP', constraints=constraints).x
 ```
@@ -198,16 +200,20 @@ from scipy import optimize
 import numpy as np
 import matplotlib.pyplot as plt
 
+# objective function
 def f(X):  
     return (X[0] - 1)**2 + (X[1] - 1)**2
+    
+# constraints    
 def g(X):  
     return X[1] - 1.75 - (X[0] - 0.75)**4 
-  
+    
+# optimization  
 constraints = [dict(type='ineq', fun=g)]
 x_opt = optimize.minimize(f, (0, 0), method='BFGS').x 
 x_cons_opt = optimize.minimize(f, (0, 0), method='SLSQP', constraints=constraints).x
 
-
+# visualization
 x_ = y_ = np.linspace(-1, 3, 100)   
 X, Y = np.meshgrid(x_, y_)  
 
