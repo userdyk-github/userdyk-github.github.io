@@ -32,7 +32,7 @@ The solution to a linear optimization problem must necessarily lie on a constrai
 <div style="text-align: center;">standard form for linear programming</div>
 <div style="font-size: 70%; text-align: center;">
   
-  $$min_{x}c^{T}x$$
+  $$min_{x}c^{T}x \qquad where\ Ax\ ≤\ b\ and\ x\ ≥\ 0$$
   $$A = \begin{pmatrix}
 1  & 1  & 0 \\
 -1 & 3  & 0 \\
