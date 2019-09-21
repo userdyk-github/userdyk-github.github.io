@@ -139,8 +139,8 @@ f.subs(sols[0])
 ## **Sequential least square programming(SLSQP) to handle inequality constraints**  
 `Equality constraints`
 <div style="font-size: 70%; text-align: center;">
-    $$the\ objective\ function\ :\ f(x) = (x_{0}-1)**2 + (x_{1}-1)**2$$
-    $$s.t. \qquad g(x) = x_{1}-1.75-(x_{0}-0.75)**4 \ge 0$$
+    $$the\ objective\ function\ :\ f(x) = -x_{0}x_{1}x_{2}$$
+    $$s.t. \qquad g(x) = 2(x_{0}x_{1}+x{1}x{2}+x{2}x{0})-1 = 0$$
 </div>
 ```python
 from scipy import optimize
