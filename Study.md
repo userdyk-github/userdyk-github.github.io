@@ -285,9 +285,10 @@ Mass Point</a><br>
 
 ---
 
-## _MATH06 : Optimization_
+## _MATH06 : Numerical methods_
 
-> <a href='https://userdyk-github.github.io/math06/MATH06-Interpolation.html'>Interpolation</a><br>
+### Optimization
+
 > <a href='https://userdyk-github.github.io/math06/MATH06-Univariate-optimization.html'>Univariate optimization</a><br>
 > <a href='https://userdyk-github.github.io/math06/MATH06-Unconstrained-multivariate-optimization.html'>Unconstrained multivariate optimization</a><br>
 > <a href='https://userdyk-github.github.io/math06/MATH06-Nonlinear-least-square-problems.html'>Nonlinear least square problems</a><br>
@@ -295,6 +296,13 @@ Mass Point</a><br>
 > <a href='https://userdyk-github.github.io/math06/MATH06-Linear-programming.html'>Linear programming</a><br>
 > <a href='https://userdyk-github.github.io/math06/MATH06-Combinatorial.html'>Combinatorial</a><br>
 > <a href='https://userdyk-github.github.io/math06/MATH06-Metaheuristics.html'>Metaheuristics</a><br>
+
+### Interpolation
+
+> <a href='https://userdyk-github.github.io/math06/MATH06-Interpolation.html'>Interpolation</a><br>
+
+
+### Integration
 
 
 
