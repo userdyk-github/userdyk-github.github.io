@@ -41,7 +41,7 @@ bnd_x1, bnd_x2 = (2, 3), (0, 2)
 optimize.minimize(f, [1, 1], method='L-BFGS-B', 
                   bounds=[bnd_x1, bnd_x2]).x 
 ```
-`OUTPUT` : <span style="font-size: 70%;">$$optimal\ point\ with\ constraints\ :\ (2., 1.)$$<>
+`OUTPUT` : <span style="font-size: 70%;">$$optimal\ point\ with\ constraints\ :\ (2., 1.)$$</span>
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">VISUALIZATION</summary>
@@ -98,6 +98,19 @@ plt.colorbar(c, ax=ax)
 
 ## **Optimization problem using Lagrange multipliers**
 Using the Lagrange multipliers, it is possible to convert a constrained optimization problem to an unconstrained problem by introducing additional variables. 
+```python
+import sympy 
+sympy.init_printing()
+
+x = x0, x1, x2, l = sympy.symbols("x_0, x_1, x_2, lambda") 
+f = x0 * x1 * x2 
+g = 2 * (x0 * x1 + x1 * x2 + x2 * x0) - 1
+L = f + l * g 
+
+grad_L = [sympy.diff(L, x_) for x_ in x]
+sympy.solve(grad_L) 
+```
+`OUTPUT` : <span style="font-size: 70%;">$$\left [ \left \{ \lambda : - \frac{\sqrt{6}}{24}, \quad x_{0} : \frac{\sqrt{6}}{6}, \quad x_{1} : \frac{\sqrt{6}}{6}, \quad x_{2} : \frac{\sqrt{6}}{6}\right \}, \quad \left \{ \lambda : \frac{\sqrt{6}}{24}, \quad x_{0} : - \frac{\sqrt{6}}{6}, \quad x_{1} : - \frac{\sqrt{6}}{6}, \quad x_{2} : - \frac{\sqrt{6}}{6}\right \}\right ]$$</span>
 
 <br><br><br>
 <hr class="division2">
