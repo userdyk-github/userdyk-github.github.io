@@ -140,7 +140,7 @@ f.subs(sols[0])
 `Equality constraints`
 <div style="font-size: 70%; text-align: center;">
     $$the\ objective\ function\ :\ f(x) = -x_{0}x_{1}x_{2}$$
-    $$s.t. \qquad g(x) = 2(x_{0}x_{1}+x{1}x{2}+x{2}x{0})-1 = 0$$
+    $$s.t. \qquad g(x) = 2(x_{0}x_{1}+x_{1}x_{2}+x_{2}x_{0})-1 = 0$$
 </div>
 ```python
 from scipy import optimize
