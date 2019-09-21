@@ -120,7 +120,7 @@ sympy.solve(grad_L)
     $$\left [ \left \{ \lambda : - \frac{\sqrt{6}}{24}, \quad x_{0} : \frac{\sqrt{6}}{6}, \quad x_{1} : \frac{\sqrt{6}}{6}, \quad x_{2} : \frac{\sqrt{6}}{6}\right \}, \quad \left \{ \lambda : \frac{\sqrt{6}}{24}, \quad x_{0} : - \frac{\sqrt{6}}{6}, \quad x_{1} : - \frac{\sqrt{6}}{6}, \quad x_{2} : - \frac{\sqrt{6}}{6}\right \}\right ]$$
 </div>
 <details markdown="1">
-<summary class='jb-small' style="color:blue">VISUALIZATION</summary>
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
 <hr class='division3'>
 ```python
 g.subs(sols[0])
@@ -155,6 +155,8 @@ optimize.minimize(f, [0.5, 1, 1.5], method='SLSQP', constraints=[constraint]).x
 ```
 `OUTPUT` : <span style="font-size: 70%;">$$[0.40824188, 0.40825127, 0.40825165]$$</span>
 
+
+<br><br><br>
 <hr class="division1">
 
 List of posts followed by this article
