@@ -292,7 +292,7 @@ Mass Point</a><br>
 > <a href='https://userdyk-github.github.io/math06/MATH06-Unconstrained-multivariate-optimization.html'>Unconstrained multivariate optimization</a><br>
 > <a href='https://userdyk-github.github.io/math06/MATH06-Nonlinear-least-square-problems.html'>Nonlinear least square problems</a><br>
 > <a href='https://userdyk-github.github.io/math06/MATH06-Constrained-optimization.html'>Constrained optimization</a><br>
-> <a href='https://userdyk-github.github.io/math06/MATH06-Convex-optimization.html'>Convex optimization</a><br>
+> <a href='https://userdyk-github.github.io/math06/MATH06-Linear-programming.html'>Linear programming</a><br>
 > <a href='https://userdyk-github.github.io/math06/MATH06-Combinatorial.html'>Combinatorial</a><br>
 > <a href='https://userdyk-github.github.io/math06/MATH06-Metaheuristics.html'>Metaheuristics</a><br>
 
