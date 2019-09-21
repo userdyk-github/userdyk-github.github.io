@@ -51,16 +51,19 @@ def func_X_Y_to_XY(f, X, Y):
     return f(np.vstack([X.ravel(), Y.ravel()])).reshape(*s) 
 
 
+# contour plot
 x_ = y_ = np.linspace(-1, 3, 100)   
 X, Y = np.meshgrid(x_, y_)
-
 fig, ax = plt.subplots(figsize=(6, 4))   
 c = ax.contour(X, Y, func_X_Y_to_XY(f, X, Y), 50)   
 ax.plot(x_opt[0], x_opt[1], 'b*', markersize=15)   
 ax.plot(x_cons_opt[0], x_cons_opt[1], 'r*', markersize=15)  
+
+# adding shade region of constraints
 bound_rect = plt.Rectangle((bnd_x1[0], bnd_x2[0]),    
                            bnd_x1[1] - bnd_x1[0], bnd_x2[1] -  bnd_x2[0], facecolor="grey")   
 ax.add_patch(bound_rect)    
+
 ax.set_xlabel(r"$x_1$", fontsize=18)    
 ax.set_ylabel(r"$x_2$", fontsize=18) 
 plt.colorbar(c, ax=ax)
