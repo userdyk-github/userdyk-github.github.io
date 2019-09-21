@@ -136,7 +136,8 @@ f.subs(sols[0])
 <br><br><br>
 <hr class="division2">
 
-## **Sequential least square programming(SLSQP) to handle inequality constraints**
+## **Sequential least square programming(SLSQP) to handle inequality constraints**  
+`Equality constraints`
 <div style="font-size: 70%; text-align: center;">
     $$the\ objective\ function\ :\ f(x) = (x_{0}-1)**2 + (x_{1}-1)**2$$
     $$s.t. \qquad g(x) = x_{1}-1.75-(x_{0}-0.75)**4 \ge 0$$
@@ -144,9 +145,11 @@ f.subs(sols[0])
 ```python
 from scipy import optimize
 
+# objective function
 def f(X):   
     return -X[0] * X[1] * X[2] 
-  
+
+# constraints
 def g(X):   
     return 2 * (X[0]*X[1] + X[1] * X[2] + X[2] * X[0]) - 1
 
@@ -154,7 +157,28 @@ constraint = dict(type='eq', fun=g)
 optimize.minimize(f, [0.5, 1, 1.5], method='SLSQP', constraints=[constraint]).x
 ```
 `OUTPUT` : <span style="font-size: 70%;">$$[0.40824188, 0.40825127, 0.40825165]$$</span>
+<br>
 
+`Inequality constraints`
+<div style="font-size: 70%; text-align: center;">
+    $$the\ objective\ function\ :\ f(x) = (x_{0}-1)**2 + (x_{1}-1)**2$$
+    $$s.t. \qquad g(x) = x_{1}-1.75-(x_{0}-0.75)**4 \ge 0$$
+</div>
+```python
+from scipy import optimize
+
+# objective function
+def f(X):  
+    return (X[0] - 1)**2 + (X[1] - 1)**2
+    
+def g(X):  
+    return X[1] - 1.75 - (X[0] - 0.75)**4 
+
+# constraints
+constraints = [dict(type='ineq', fun=g)]
+optimize.minimize(f, (0, 0), method='SLSQP', constraints=constraints).x
+```
+`OUTPUT` : <span style="font-size: 70%;">$$[0.96857656, 1.75228252]$$</span>
 
 <br><br><br>
 <hr class="division1">
