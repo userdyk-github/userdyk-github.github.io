@@ -40,6 +40,7 @@ c_ = cvxopt.matrix(c)
 
 cvxopt.solvers.lp(c_, A_, b_)
 ```
+`OUTPUT`
 ```
 Optimal solution found.
 {'dual infeasibility': 1.4835979218054372e-16,
@@ -60,7 +61,7 @@ Optimal solution found.
  'z': <3x1 matrix, tc='d'>}
 ```
 <details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
 <hr class='division3'>
 `INPUT`
 ```python
