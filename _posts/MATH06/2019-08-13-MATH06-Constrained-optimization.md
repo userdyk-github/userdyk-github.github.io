@@ -156,7 +156,13 @@ def g(X):
 constraint = dict(type='eq', fun=g) 
 optimize.minimize(f, [0.5, 1, 1.5], method='SLSQP', constraints=[constraint]).x
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
 `OUTPUT` : <span style="font-size: 70%;">$$[0.40824188, 0.40825127, 0.40825165]$$</span>
+<hr class='division3'>
+</details>
+
 <br>
 
 `Inequality constraints`
@@ -178,8 +184,12 @@ def g(X):
 constraints = [dict(type='ineq', fun=g)]
 optimize.minimize(f, (0, 0), method='SLSQP', constraints=constraints).x
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
 `OUTPUT` : <span style="font-size: 70%;">$$[0.96857656, 1.75228252]$$</span>
-
+<hr class='division3'>
+</details>
 <br><br><br>
 <hr class="division1">
 
