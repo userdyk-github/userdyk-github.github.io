@@ -5,7 +5,7 @@ categories: [MATH06]
 comments : false
 tags : [MATH06]
 ---
-[Back to the previous page](https://userdyk-github.github.io/Study.html)｜[MATH06](https://userdyk-github.github.io/math06/MATH06-Contents.html)<br>
+[Back to the previous page](https://userdyk-github.github.io/Study.html)｜[Optimization](https://userdyk-github.github.io/math06/MATH06-Contents.html)<br>
 List of posts to read before reading this article
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-Matplotlib.html' target="_blank">Matplotlib</a>
 - <a href='https://en.wikipedia.org/wiki/List_of_algorithms' target="_blank">List of algorithms</a>
