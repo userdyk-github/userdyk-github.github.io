@@ -168,8 +168,8 @@ optimize.minimize(f, [0.5, 1, 1.5], method='SLSQP', constraints=[constraint]).x
 
 `Inequality constraints`
 <div style="font-size: 70%; text-align: center;">
-    $$the\ objective\ function\ :\ f(x) = (x_{0}-1)**2 + (x_{1}-1)**2$$
-    $$s.t. \qquad g(x) = x_{1}-1.75-(x_{0}-0.75)**4 \ge 0$$
+    $$the\ objective\ function\ :\ f(x) = (x_{0}-1)^{2} + (x_{1}-1)^{2}$$
+    $$s.t. \qquad g(x) = x_{1}-1.75-(x_{0}-0.75)^{4} \ge 0$$
 </div>
 ```python
 from scipy import optimize
