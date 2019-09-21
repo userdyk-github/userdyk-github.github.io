@@ -22,7 +22,10 @@ List of posts to read before reading this article
 <hr class="division1">
 
 ## **Bounded optimization problem with the L-BFGS-B solver**
-
+<div style="font-size: 70%; text-align: center;">
+    $$the objective\ function\ :\ f(x) = (x_{1}-1)^{2}-(x_{2}-1)^{2}$$
+    $$s.t. 2<x_{1}<3,\ 0 \le x_{2} \le 2$$
+</div>
 ```python
 # objective function
 def f(X):   
