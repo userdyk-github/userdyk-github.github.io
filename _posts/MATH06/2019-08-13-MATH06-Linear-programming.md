@@ -21,7 +21,7 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
+## Linear programming
 The solution to a linear optimization problem must necessarily lie on a constraint boundary, so it is sufficient to search the vertices of the intersections of the linear constraint functions.
 - Simplex algorithm
 <div style="font-size: 70%; text-align: center;">standard form for linear programming : $$min_{x}c^{T}x$$</div>
@@ -88,13 +88,6 @@ sol['primal objective']
 </details>
 
 <br><br><br>
-<hr class="division2">
-
-## title2
-
-<hr class="division2">
-
-## title3
 
 <hr class="division1">
 
