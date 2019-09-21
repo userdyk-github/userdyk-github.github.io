@@ -119,6 +119,19 @@ sympy.solve(grad_L)
     $$optimal\ point\ with\ constraints\ using\ Lagrange\ multipliers$$
     $$\left [ \left \{ \lambda : - \frac{\sqrt{6}}{24}, \quad x_{0} : \frac{\sqrt{6}}{6}, \quad x_{1} : \frac{\sqrt{6}}{6}, \quad x_{2} : \frac{\sqrt{6}}{6}\right \}, \quad \left \{ \lambda : \frac{\sqrt{6}}{24}, \quad x_{0} : - \frac{\sqrt{6}}{6}, \quad x_{1} : - \frac{\sqrt{6}}{6}, \quad x_{2} : - \frac{\sqrt{6}}{6}\right \}\right ]$$
 </div>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">VISUALIZATION</summary>
+<hr class='division3'>
+```python
+g.subs(sols[0])
+```
+`OUTPUT` : <span style="font-size: 70%;">$$0$$</span>
+```python
+f.subs(sols[0])
+```
+`OUTPUT` : <span style="font-size: 70%;">$$\frac{\sqrt{6}}{36}$$</span>
+<hr class='division3'>
+</details>
 
 <br><br><br>
 <hr class="division2">
