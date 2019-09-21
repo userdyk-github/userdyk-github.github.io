@@ -41,9 +41,10 @@ bnd_x1, bnd_x2 = (2, 3), (0, 2)
 optimize.minimize(f, [1, 1], method='L-BFGS-B', 
                   bounds=[bnd_x1, bnd_x2]).x 
 ```
+`OUTPUT` : <span style="font-size: 70%;">$$optimal\ point\ with\ constraints\ :\ (2., 1.)$$<>
 
 <details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<summary class='jb-small' style="color:blue">VISUALIZATION</summary>
 <hr class='division3'>
 ```python
 from scipy import optimize
