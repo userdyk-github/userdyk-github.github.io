@@ -29,7 +29,7 @@ The solution to a linear optimization problem must necessarily lie on a constrai
     $$s.t. \qquad x_{0}+x_{1} \le 1,\ -x_{0}+3x_{1} \le 2,\ -x_{1}+x_{2} \le 3$$
     $$\ $$
 </div>
-<div style="text-align: center;">standard form for linear programming</div>
+<div style="text-align: center;">$$standard\ form\ for\ linear\ programming$$</div>
 <div style="font-size: 70%; text-align: center;">
   
   $$min_{x}c^{T}x \qquad where\ Ax\ ≤\ b\ and\ x\ ≥\ 0$$
