@@ -110,7 +110,11 @@ L = f + l * g
 grad_L = [sympy.diff(L, x_) for x_ in x]
 sympy.solve(grad_L) 
 ```
-`OUTPUT` : <span style="font-size: 70%;">$$\left [ \left \{ \lambda : - \frac{\sqrt{6}}{24}, \quad x_{0} : \frac{\sqrt{6}}{6}, \quad x_{1} : \frac{\sqrt{6}}{6}, \quad x_{2} : \frac{\sqrt{6}}{6}\right \}, \quad \left \{ \lambda : \frac{\sqrt{6}}{24}, \quad x_{0} : - \frac{\sqrt{6}}{6}, \quad x_{1} : - \frac{\sqrt{6}}{6}, \quad x_{2} : - \frac{\sqrt{6}}{6}\right \}\right ]$$</span>
+`OUTPUT` : 
+<div style="font-size: 70%;">
+    $$optimal point with constraints using Lagrange multipliers$$
+    $$\left [ \left \{ \lambda : - \frac{\sqrt{6}}{24}, \quad x_{0} : \frac{\sqrt{6}}{6}, \quad x_{1} : \frac{\sqrt{6}}{6}, \quad x_{2} : \frac{\sqrt{6}}{6}\right \}, \quad \left \{ \lambda : \frac{\sqrt{6}}{24}, \quad x_{0} : - \frac{\sqrt{6}}{6}, \quad x_{1} : - \frac{\sqrt{6}}{6}, \quad x_{2} : - \frac{\sqrt{6}}{6}\right \}\right ]$$
+</div>
 
 <br><br><br>
 <hr class="division2">
