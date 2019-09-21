@@ -5,7 +5,7 @@ categories: [MATH06]
 comments : true
 tags : [MATH06]
 ---
-[Back to the previous page](https://userdyk-github.github.io/Study.html)｜[MATH06](https://userdyk-github.github.io/math06/MATH06-Contents.html)<br>
+[Back to the previous page](https://userdyk-github.github.io/Study.html)｜[Optimization](https://userdyk-github.github.io/math06/MATH06-Contents.html)<br>
 List of posts to read before reading this article
 - <a href='https://userdyk-github.github.io/math05/MATH05-Curve-fitting.html' target="_blank">Curve fitting</a>
 - <a href='https://userdyk-github.github.io/'>post2</a>
