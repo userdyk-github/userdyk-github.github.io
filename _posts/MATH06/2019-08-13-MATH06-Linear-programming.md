@@ -37,12 +37,12 @@ The solution to a linear optimization problem must necessarily lie on a constrai
 1  & 1  & 0 \\
 -1 & 3  & 0 \\
 0  & -1 & 1
-\end{pmatrix},
+\end{pmatrix},\ 
 b = \begin{pmatrix}
 1 \\
 2 \\
 3
-\end{pmatrix},
+\end{pmatrix},\ 
 c = \begin{pmatrix}
 -1 \\
 -2 \\
