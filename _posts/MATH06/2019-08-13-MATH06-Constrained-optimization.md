@@ -96,8 +96,10 @@ plt.colorbar(c, ax=ax)
 <br><br><br>
 <hr class="division2">
 
-## title2
+## **Optimization problem using Lagrange multipliers**
+Using the Lagrange multipliers, it is possible to convert a constrained optimization problem to an unconstrained problem by introducing additional variables. 
 
+<br><br><br>
 <hr class="division2">
 
 ## title3
