@@ -253,7 +253,7 @@ List of posts to read before reading this article
 ---
 
 
-### ***Implementing a RNN for Regression Problems ***
+### ***Implementing a RNN for Regression Problems***
 
 ```python
 ```
@@ -379,7 +379,7 @@ List of posts to read before reading this article
 ---
 
 
-### ***Embedding Layers in RNN ***
+### ***Embedding Layers in RNN***
 
 ```python
 ```
