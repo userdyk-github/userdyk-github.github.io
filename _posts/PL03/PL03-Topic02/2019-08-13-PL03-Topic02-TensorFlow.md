@@ -23,7 +23,7 @@ List of posts to read before reading this article
 
 ## **Mathematical Foundations**
 
-### ******
+### ***Linear Algebra***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -34,7 +34,7 @@ List of posts to read before reading this article
 
 ---
 
-### ******
+### ***Calculus***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -45,7 +45,7 @@ List of posts to read before reading this article
 
 ---
 
-### ******
+### ***Probability***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -56,7 +56,7 @@ List of posts to read before reading this article
 
 ---
 
-### ******
+### ***Formulation of Machine-Learning Algorithm and Optimization Techniques***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -67,7 +67,7 @@ List of posts to read before reading this article
 
 ---
 
-### ******
+### ***A Few Important Topics in Machine Learning***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -81,7 +81,7 @@ List of posts to read before reading this article
 
 ## **Deep-Learning Concepts**
 
-### ******
+### ***Deep Learning and Its Evolution***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -92,7 +92,7 @@ List of posts to read before reading this article
 
 ---
 
-### ******
+### ***Perceptrons and Perceptron Learning Algorithm***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -103,7 +103,7 @@ List of posts to read before reading this article
 
 ---
 
-### ******
+### ***TensorFlow***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -114,7 +114,7 @@ List of posts to read before reading this article
 
 ---
 
-### ******
+### ***GPU***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -128,7 +128,7 @@ List of posts to read before reading this article
 
 ## **Convolutional Neural Networks**
 
-### ******
+### ***Convolution Operation***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -139,7 +139,7 @@ List of posts to read before reading this article
 
 ---
 
-### ******
+### ***Analog and Digital Signals***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -150,7 +150,7 @@ List of posts to read before reading this article
 
 ---
 
-### ******
+### ***2D Convolution***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -161,7 +161,7 @@ List of posts to read before reading this article
 
 ---
 
-### ******
+### ***Common Image-Processing Filters***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -172,7 +172,7 @@ List of posts to read before reading this article
 
 ---
 
-### ******
+### ***Convolution Neural Networks***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -183,7 +183,7 @@ List of posts to read before reading this article
 
 ---
 
-### ******
+### ***Components of Convolution Neural Networks***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -194,7 +194,7 @@ List of posts to read before reading this article
 
 ---
 
-### ******
+### ***Backpropagation Through the Convolutional Layer***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -205,7 +205,7 @@ List of posts to read before reading this article
 
 ---
 
-### ******
+### ***Backpropagation Through the Pooling Layers***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -216,7 +216,7 @@ List of posts to read before reading this article
 
 ---
 
-### ******
+### ***Weight Sharing Through Convolution and Its Advantages***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -227,7 +227,7 @@ List of posts to read before reading this article
 
 ---
 
-### ******
+### ***Translation Equivariance***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -238,7 +238,7 @@ List of posts to read before reading this article
 
 ---
 
-### ******
+### ***Translation Invariance Due to Pooling***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -249,7 +249,7 @@ List of posts to read before reading this article
 
 ---
 
-### ******
+### ***Dropout Layers and Regularization***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -260,7 +260,7 @@ List of posts to read before reading this article
 
 ---
 
-### ******
+### ***Convolutional Neural Network for Digit Recognition on the MNIST Dataset***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -271,7 +271,7 @@ List of posts to read before reading this article
 
 ---
 
-### ******
+### ***Convolutional Neural Network for Solving Real-World Problems***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -282,7 +282,7 @@ List of posts to read before reading this article
 
 ---
 
-### ******
+### ***Batch Normalization***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -293,7 +293,7 @@ List of posts to read before reading this article
 
 ---
 
-### ******
+### ***Different Architectures in Convolutional Neural Networks***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -304,7 +304,7 @@ List of posts to read before reading this article
 
 ---
 
-### ******
+### ***Transfer Learning***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -318,7 +318,7 @@ List of posts to read before reading this article
 
 ## **Natural Language Processing Using Recurrent Neural Networks**
 
-### ******
+### ***Vector Space Model (VSM)***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -329,7 +329,7 @@ List of posts to read before reading this article
 
 ---
 
-### ******
+### ***Vector Representation of Words***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -340,7 +340,7 @@ List of posts to read before reading this article
 
 ---
 
-### ******
+### ***Word2Vec***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -351,7 +351,7 @@ List of posts to read before reading this article
 
 ---
 
-### ******
+### ***Introduction to Recurrent Neural Networks***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -365,7 +365,7 @@ List of posts to read before reading this article
 
 ## **Unsupervised Learning with Restricted Boltzmann Machines and Auto-encoders**
 
-### ******
+### ***Boltzmann Distribution***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -376,7 +376,7 @@ List of posts to read before reading this article
 
 ---
 
-### ******
+### ***Bayesian Inference: Likelihood, Priors, and Posterior Probability Distribution***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -387,7 +387,7 @@ List of posts to read before reading this article
 
 ---
 
-### ******
+### ***Markov Chain Monte Carlo Methods for Sampling***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -398,7 +398,7 @@ List of posts to read before reading this article
 
 ---
 
-### ******
+### ***Restricted Boltzmann Machines***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -409,7 +409,7 @@ List of posts to read before reading this article
 
 ---
 
-### ******
+### ***Auto-encoders***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -420,7 +420,7 @@ List of posts to read before reading this article
 
 ---
 
-### ******
+### ***PCA and ZCA Whitening***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -434,7 +434,7 @@ List of posts to read before reading this article
 
 ## **Advanced Neural Networks**
 
-### ******
+### ***Image Segmentation***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -445,7 +445,7 @@ List of posts to read before reading this article
 
 ---
 
-### ******
+### ***Image Classification and Localization Network***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -456,7 +456,7 @@ List of posts to read before reading this article
 
 ---
 
-### ******
+### ***Object Detection***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -467,7 +467,7 @@ List of posts to read before reading this article
 
 ---
 
-### ******
+### ***Generative Adversarial Networks***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -478,7 +478,7 @@ List of posts to read before reading this article
 
 ---
 
-### ******
+### ***TensorFlow Models’ Deployment in Production***
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
