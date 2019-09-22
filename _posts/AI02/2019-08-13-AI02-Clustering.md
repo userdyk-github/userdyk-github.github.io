@@ -59,6 +59,12 @@ array([[50,  0,  0],
 <hr class='division3'>
 </details>
 <details markdown="1">
+<summary class='jb-small' style="color:blue">VISUALIZATION</summary>
+![다운로드](https://user-images.githubusercontent.com/52376448/65384803-a74e3f00-dd61-11e9-80a5-99210099d636.png)
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<details markdown="1">
 <summary class='jb-small' style="color:blue">Details code[1]</summary>
 <hr class='division3'>
 **iris dataset**
@@ -157,6 +163,7 @@ y[::8]
 On the above confusion matrix matrix, **the diagonals** correspond to the number of samples that are correctly classified for each level of the category variable, and **the off-diagonal elements** are the number of incorrectly classified samples. More specifically, the element of the confusion matrix C is the number of samples of category i that were categorized as j. 
 <hr class='division3'>
 </details>
+<br><br><br>
 
 <hr class="division2">
 
