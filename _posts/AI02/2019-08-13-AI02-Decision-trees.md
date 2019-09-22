@@ -1,6 +1,6 @@
 ---
 layout : post
-title : AI02, Decision tree
+title : AI02, Decision trees
 categories: [AI02]
 comments : true
 tags : [AI02]
