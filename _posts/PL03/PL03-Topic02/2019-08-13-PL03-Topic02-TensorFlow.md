@@ -25,23 +25,23 @@ List of posts to read before reading this article
 
 <hr class="division2">
 
-## ****
+## **Deep-Learning Concepts**
 
 <hr class="division2">
 
-## ****
+## **Convolutional Neural Networks**
 
 <hr class="division2">
 
-## ****
+## **Natural Language Processing Using Recurrent Neural Networks**
 
 <hr class="division2">
 
-## ****
+## **Unsupervised Learning with Restricted Boltzmann Machines and Auto-encoders**
 
 <hr class="division2">
 
-## ****
+## **Advanced Neural Networks**
 
 <hr class="division1">
 
