@@ -60,6 +60,46 @@ array([[50,  0,  0],
 </details>
 <details markdown="1">
 <summary class='jb-small' style="color:blue">VISUALIZATION</summary>
+```python
+# [0] : importing modules
+from sklearn import datasets
+from sklearn import metrics
+from sklearn import cluster
+import numpy as np
+import matplotlib.pyplot as plt
+
+# [1] : loading dataset
+iris = datasets.load_iris()
+X, y = iris.data, iris.target
+
+# [2] : clustering
+n_clusters = 3
+clustering = cluster.KMeans(n_clusters)
+clustering.fit(X)
+y_pred = clustering.predict(X)
+
+# [3] : correction assigned different integer values to the groups
+idx_0, idx_1, idx_2 = (np.where(y_pred == n) for n in range(3))
+y_pred[idx_0], y_pred[idx_1], y_pred[idx_2] = 2, 0, 1
+
+# [4] : summarize the overlaps between the supervised and unsupervised classification
+metrics.confusion_matrix(y, y_pred)
+
+
+# Visualization
+N = X.shape[1]
+fig, axes = plt.subplots(N, N, figsize=(12, 12), sharex=True, sharey=True)  
+colors = ["coral", "blue", "green"]    
+markers = ["^", "v", "o"]   
+for m in range(N):   
+    for n in range(N):   
+        for p in range(n_clusters):  
+            mask = y_pred == p   
+            axes[m, n].scatter(X[:, m][mask], X[:, n][mask], s=30, marker=markers[p], color=colors[p], alpha=0.25)   
+             
+    axes[N-1, m].set_xlabel(iris.feature_names[m], fontsize=16)   
+    axes[m, 0].set_ylabel(iris.feature_names[m], fontsize=16)
+```
 ![다운로드](https://user-images.githubusercontent.com/52376448/65384803-a74e3f00-dd61-11e9-80a5-99210099d636.png)
 <hr class='division3'>
 <hr class='division3'>
