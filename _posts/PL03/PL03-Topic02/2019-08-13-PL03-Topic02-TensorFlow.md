@@ -25,6 +25,9 @@ List of posts to read before reading this article
 
 ### ***Linear Algebra***
 
+```python
+```
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
@@ -35,6 +38,9 @@ List of posts to read before reading this article
 ---
 
 ### ***Calculus***
+
+```python
+```
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -47,6 +53,9 @@ List of posts to read before reading this article
 
 ### ***Probability***
 
+```python
+```
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
@@ -58,6 +67,9 @@ List of posts to read before reading this article
 
 ### ***Formulation of Machine-Learning Algorithm and Optimization Techniques***
 
+```python
+```
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
@@ -68,6 +80,9 @@ List of posts to read before reading this article
 ---
 
 ### ***A Few Important Topics in Machine Learning***
+
+```python
+```
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -83,6 +98,9 @@ List of posts to read before reading this article
 
 ### ***Deep Learning and Its Evolution***
 
+```python
+```
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
@@ -93,6 +111,9 @@ List of posts to read before reading this article
 ---
 
 ### ***Perceptrons and Perceptron Learning Algorithm***
+
+```python
+```
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -105,6 +126,9 @@ List of posts to read before reading this article
 
 ### ***TensorFlow***
 
+```python
+```
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
@@ -115,6 +139,9 @@ List of posts to read before reading this article
 ---
 
 ### ***GPU***
+
+```python
+```
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -130,6 +157,9 @@ List of posts to read before reading this article
 
 ### ***Convolution Operation***
 
+```python
+```
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
@@ -140,6 +170,9 @@ List of posts to read before reading this article
 ---
 
 ### ***Analog and Digital Signals***
+
+```python
+```
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -152,6 +185,9 @@ List of posts to read before reading this article
 
 ### ***2D Convolution***
 
+```python
+```
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
@@ -162,6 +198,9 @@ List of posts to read before reading this article
 ---
 
 ### ***Common Image-Processing Filters***
+
+```python
+```
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -174,6 +213,9 @@ List of posts to read before reading this article
 
 ### ***Convolution Neural Networks***
 
+```python
+```
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
@@ -184,6 +226,9 @@ List of posts to read before reading this article
 ---
 
 ### ***Components of Convolution Neural Networks***
+
+```python
+```
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -196,6 +241,9 @@ List of posts to read before reading this article
 
 ### ***Backpropagation Through the Convolutional Layer***
 
+```python
+```
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
@@ -206,6 +254,9 @@ List of posts to read before reading this article
 ---
 
 ### ***Backpropagation Through the Pooling Layers***
+
+```python
+```
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -218,6 +269,9 @@ List of posts to read before reading this article
 
 ### ***Weight Sharing Through Convolution and Its Advantages***
 
+```python
+```
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
@@ -228,6 +282,9 @@ List of posts to read before reading this article
 ---
 
 ### ***Translation Equivariance***
+
+```python
+```
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -240,6 +297,9 @@ List of posts to read before reading this article
 
 ### ***Translation Invariance Due to Pooling***
 
+```python
+```
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
@@ -250,6 +310,9 @@ List of posts to read before reading this article
 ---
 
 ### ***Dropout Layers and Regularization***
+
+```python
+```
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -262,6 +325,9 @@ List of posts to read before reading this article
 
 ### ***Convolutional Neural Network for Digit Recognition on the MNIST Dataset***
 
+```python
+```
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
@@ -272,6 +338,9 @@ List of posts to read before reading this article
 ---
 
 ### ***Convolutional Neural Network for Solving Real-World Problems***
+
+```python
+```
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -284,6 +353,9 @@ List of posts to read before reading this article
 
 ### ***Batch Normalization***
 
+```python
+```
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
@@ -295,6 +367,9 @@ List of posts to read before reading this article
 
 ### ***Different Architectures in Convolutional Neural Networks***
 
+```python
+```
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
@@ -305,6 +380,9 @@ List of posts to read before reading this article
 ---
 
 ### ***Transfer Learning***
+
+```python
+```
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -320,6 +398,9 @@ List of posts to read before reading this article
 
 ### ***Vector Space Model (VSM)***
 
+```python
+```
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
@@ -330,6 +411,9 @@ List of posts to read before reading this article
 ---
 
 ### ***Vector Representation of Words***
+
+```python
+```
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -342,6 +426,9 @@ List of posts to read before reading this article
 
 ### ***Word2Vec***
 
+```python
+```
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
@@ -352,6 +439,9 @@ List of posts to read before reading this article
 ---
 
 ### ***Introduction to Recurrent Neural Networks***
+
+```python
+```
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -367,6 +457,9 @@ List of posts to read before reading this article
 
 ### ***Boltzmann Distribution***
 
+```python
+```
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
@@ -377,6 +470,9 @@ List of posts to read before reading this article
 ---
 
 ### ***Bayesian Inference: Likelihood, Priors, and Posterior Probability Distribution***
+
+```python
+```
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -389,6 +485,9 @@ List of posts to read before reading this article
 
 ### ***Markov Chain Monte Carlo Methods for Sampling***
 
+```python
+```
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
@@ -399,6 +498,9 @@ List of posts to read before reading this article
 ---
 
 ### ***Restricted Boltzmann Machines***
+
+```python
+```
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -411,6 +513,9 @@ List of posts to read before reading this article
 
 ### ***Auto-encoders***
 
+```python
+```
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
@@ -421,6 +526,9 @@ List of posts to read before reading this article
 ---
 
 ### ***PCA and ZCA Whitening***
+
+```python
+```
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -436,6 +544,9 @@ List of posts to read before reading this article
 
 ### ***Image Segmentation***
 
+```python
+```
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
@@ -446,6 +557,9 @@ List of posts to read before reading this article
 ---
 
 ### ***Image Classification and Localization Network***
+
+```python
+```
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -458,6 +572,9 @@ List of posts to read before reading this article
 
 ### ***Object Detection***
 
+```python
+```
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
@@ -469,6 +586,9 @@ List of posts to read before reading this article
 
 ### ***Generative Adversarial Networks***
 
+```python
+```
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
@@ -479,6 +599,9 @@ List of posts to read before reading this article
 ---
 
 ### ***TensorFlow Models’ Deployment in Production***
+
+```python
+```
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
