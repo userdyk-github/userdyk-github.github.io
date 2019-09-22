@@ -23,7 +23,7 @@ List of posts to read before reading this article
 
 ## **Tensor & Tensor operations**
 
-### ******
+### ***Using Tensors***
 
 ```python
 ```
@@ -41,7 +41,7 @@ List of posts to read before reading this article
 
 ## **Probability Distributions**
 
-### ******
+### ***Sampling Tensors***
 
 ```python
 ```
@@ -55,7 +55,7 @@ List of posts to read before reading this article
 ---
 
 
-### ******
+### ***Variable Tensors***
 
 ```python
 ```
@@ -69,7 +69,7 @@ List of posts to read before reading this article
 ---
 
 
-### ******
+### ***Basic Statistics***
 
 ```python
 ```
@@ -83,7 +83,7 @@ List of posts to read before reading this article
 ---
 
 
-### ******
+### ***Gradient Computation***
 
 ```python
 ```
@@ -97,7 +97,7 @@ List of posts to read before reading this article
 ---
 
 
-### ******
+### ***Tensor Operations***
 
 ```python
 ```
@@ -111,7 +111,7 @@ List of posts to read before reading this article
 ---
 
 
-### ******
+### ***Tensor Operations***
 
 ```python
 ```
@@ -125,7 +125,7 @@ List of posts to read before reading this article
 ---
 
 
-### ******
+### ***Distributions***
 
 ```python
 ```
@@ -135,15 +135,13 @@ List of posts to read before reading this article
 <hr class='division3'>
 <hr class='division3'>
 </details>
-
----
 
 
 <hr class="division2">
 
 ## **CNN and RNN**
 
-### ******
+### ***Setting Up a Loss Function***
 
 ```python
 ```
@@ -157,7 +155,7 @@ List of posts to read before reading this article
 ---
 
 
-### ******
+### ***Estimating the Derivative of the Loss Function***
 
 ```python
 ```
@@ -171,7 +169,7 @@ List of posts to read before reading this article
 ---
 
 
-### ******
+### ***Fine-Tuning a Model***
 
 ```python
 ```
@@ -185,7 +183,7 @@ List of posts to read before reading this article
 ---
 
 
-### ******
+### ***Selecting an Optimization Function***
 
 ```python
 ```
@@ -199,7 +197,7 @@ List of posts to read before reading this article
 ---
 
 
-### ******
+### ***Further Optimizing the Function***
 
 ```python
 ```
@@ -213,7 +211,7 @@ List of posts to read before reading this article
 ---
 
 
-### ******
+### ***Implementing a Convolutional Neural Network (CNN)***
 
 ```python
 ```
@@ -227,7 +225,7 @@ List of posts to read before reading this article
 ---
 
 
-### ******
+### ***Reloading a Model***
 
 ```python
 ```
@@ -241,7 +239,7 @@ List of posts to read before reading this article
 ---
 
 
-### ******
+### ***Implementing a Recurrent Neural Network (RNN)***
 
 ```python
 ```
@@ -255,7 +253,7 @@ List of posts to read before reading this article
 ---
 
 
-### ******
+### ***Implementing a RNN for Regression Problems ***
 
 ```python
 ```
@@ -269,7 +267,7 @@ List of posts to read before reading this article
 ---
 
 
-### ******
+### ***Using PyTorch Built-in Functions***
 
 ```python
 ```
@@ -283,7 +281,7 @@ List of posts to read before reading this article
 ---
 
 
-### ******
+### ***Working with Autoencoders***
 
 ```python
 ```
@@ -297,7 +295,7 @@ List of posts to read before reading this article
 ---
 
 
-### ******
+### ***Fine-Tuning Results Using Autoencoder***
 
 ```python
 ```
@@ -311,7 +309,7 @@ List of posts to read before reading this article
 ---
 
 
-### ******
+### ***Visualizing the Encoded Data in a 3D Plot***
 
 ```python
 ```
@@ -325,7 +323,7 @@ List of posts to read before reading this article
 ---
 
 
-### ******
+### ***Restricting Model Overfitting***
 
 ```python
 ```
@@ -339,7 +337,7 @@ List of posts to read before reading this article
 ---
 
 
-### ******
+### ***Visualizing the Model Overfit***
 
 ```python
 ```
@@ -353,7 +351,7 @@ List of posts to read before reading this article
 ---
 
 
-### ******
+### ***Initializing Weights in the Dropout Rate***
 
 ```python
 ```
@@ -367,7 +365,7 @@ List of posts to read before reading this article
 ---
 
 
-### ******
+### ***Adding Math Operations***
 
 ```python
 ```
@@ -381,7 +379,7 @@ List of posts to read before reading this article
 ---
 
 
-### ******
+### ***Embedding Layers in RNN ***
 
 ```python
 ```
@@ -399,7 +397,7 @@ List of posts to read before reading this article
 
 ## **Neural Networks**
 
-### ******
+### ***Working with Activation Functions***
 
 ```python
 ```
@@ -413,7 +411,7 @@ List of posts to read before reading this article
 ---
 
 
-### ******
+### ***Visualizing the Shape of Activation Functions***
 
 ```python
 ```
@@ -427,7 +425,7 @@ List of posts to read before reading this article
 ---
 
 
-### ******
+### ***Basic Neural Network Model***
 
 ```python
 ```
@@ -441,7 +439,7 @@ List of posts to read before reading this article
 ---
 
 
-### ******
+### ***Tensor Differentiation***
 
 ```python
 ```
@@ -459,7 +457,7 @@ List of posts to read before reading this article
 
 ## **Supervised Learning**
 
-### ******
+### ***Data Preparation for the Supervised Model***
 
 ```python
 ```
@@ -473,7 +471,7 @@ List of posts to read before reading this article
 ---
 
 
-### ******
+### ***Forward and Backward Propagation***
 
 ```python
 ```
@@ -487,7 +485,7 @@ List of posts to read before reading this article
 ---
 
 
-### ******
+### ***Optimization and Gradient Computation***
 
 ```python
 ```
@@ -501,7 +499,7 @@ List of posts to read before reading this article
 ---
 
 
-### ******
+### ***Viewing Predictions***
 
 ```python
 ```
@@ -515,7 +513,7 @@ List of posts to read before reading this article
 ---
 
 
-### ******
+### ***Supervised Model Logistic Regression***
 
 ```python
 ```
@@ -533,7 +531,7 @@ List of posts to read before reading this article
 
 ## **Fine-Tuning Deep Learning Models**
 
-### ******
+### ***Building Sequential Neural Networks***
 
 ```python
 ```
@@ -547,7 +545,7 @@ List of posts to read before reading this article
 ---
 
 
-### ******
+### ***Deciding the Batch Size***
 
 ```python
 ```
@@ -561,7 +559,7 @@ List of posts to read before reading this article
 ---
 
 
-### ******
+### ***Deciding the Learning Rate***
 
 ```python
 ```
@@ -575,7 +573,7 @@ List of posts to read before reading this article
 ---
 
 
-### ******
+### ***Performing Parallel Training***
 
 ```python
 ```
@@ -593,7 +591,7 @@ List of posts to read before reading this article
 
 ## **Natural Language Processing**
 
-### ******
+### ***Word Embedding***
 
 ```python
 ```
@@ -607,7 +605,7 @@ List of posts to read before reading this article
 ---
 
 
-### ******
+### ***CBOW Model in PyTorch***
 
 ```python
 ```
@@ -621,7 +619,7 @@ List of posts to read before reading this article
 ---
 
 
-### ******
+### ***LSTM Model***
 
 ```python
 ```
