@@ -21,7 +21,9 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## Clustering with sklearn
+## **Implement with sklearn**
+
+### ***Clustering through K-Means algorithm***
 
 ```python
 # [0] : importing modules
