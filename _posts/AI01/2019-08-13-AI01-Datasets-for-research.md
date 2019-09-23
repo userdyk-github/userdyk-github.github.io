@@ -14,5 +14,5 @@ tags : [AI01]
 - <a href="https://registry.opendata.aws/" target="_blank">Amazon Web Service Datasets</a>
 - <a href="https://toolbox.google.com/datasetsearch" target="_blank">Google Dataset Search</a>
 - <a href="https://archive.ics.uci.edu/ml/" target="_blank">UCI ML Repository</a>
-- <a href="https://www.data.go.kr/" target="_blank">공공데이터포탈</a>
+- <a href="https://www.data.go.kr/" target="_blank">Open Data potal</a>
 - <a href="http://kosis.kr/index/index.do" target="_blank">kosis</a>
