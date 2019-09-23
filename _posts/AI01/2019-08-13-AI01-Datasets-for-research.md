@@ -6,8 +6,7 @@ comments : true
 tags : [AI01]
 ---
 [Back to the previous page](https://userdyk-github.github.io/Study.html) <br>
-
-- <a href='https://en.wikipedia.org/wiki/List_of_datasets_for_machine-learning_research' target="_blank">List of datasets for machine-learning research</a>
+<a href='https://en.wikipedia.org/wiki/List_of_datasets_for_machine-learning_research' target="_blank">List of datasets for machine-learning research</a>
 
 <br>
 
