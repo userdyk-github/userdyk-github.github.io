@@ -155,9 +155,39 @@ List of posts to read before reading this article
 
 #### TensorFlow Basics for Development
 
+<span class="frame2">Create list</span>
+
+```
+
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
+<span class="frame2">Create array</span>
+
+```
+
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
+
 <span class="frame2">Create tensor</span>
 
-```python
+```
+
 ```
 
 <details markdown="1">
