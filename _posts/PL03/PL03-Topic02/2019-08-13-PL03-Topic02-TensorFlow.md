@@ -25,57 +25,69 @@ List of posts to read before reading this article
 
 ### ***Linear Algebra***
 
-```python
-```
-
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-
-<hr class='division3'>
-</details>
+- Vector
+- Scalar
+- Matrix
+- Tensor
+- Matrix Operations and Manipulations
+- Linear Independence of Vectors
+- Rank of a Matrix
+- Identity Matrix or Operator
+- Determinant of a Matrix
+- Inverse of a Matrix
+- Norm of a Vector
+- Pseudo Inverse of a Matrix
+- Unit Vector in the Direction of a Speciﬁc Vector
+- Projection of a Vector in the Direction of Another Vector
+- Eigen Vectors
 
 ---
 
 ### ***Calculus***
 
-```python
-```
-
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-
-<hr class='division3'>
-</details>
+- Differentiation
+- Gradient of a Function
+- Successive Partial Derivatives
+- Hessian Matrix of a Function
+- Maxima and Minima of Functions
+- Local Minima and Global Minima
+- Positive Semi-Deﬁnite and Positive Deﬁnite
+- Convex Set
+- Convex Function
+- Non-convex Function
+- Multivariate Convex and Non-convex Functions Examples
+- Taylor Series
 
 ---
 
 ### ***Probability***
 
-```python
-```
-
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-
-<hr class='division3'>
-</details>
+- Unions, Intersection, and Conditional Probability
+- Chain Rule of Probability for Intersection of Event
+- Mutually Exclusive Events
+- Independence of Events
+- Conditional Independence of Event
+- Bayes Rule
+- Probability Mass Function
+- Probability Density Function
+- Expectation of a Random Variable
+- Variance of a Random Variable
+- Skewness and Kurtosis
+- Covariance
+- Correlation Coefﬁcient
+- Some Common Probability Distribution
+- Likelihood Function
+- Maximum Likelihood Estimate
+- Hypothesis Testing and p Value
 
 ---
 
 ### ***Formulation of Machine-Learning Algorithm and Optimization Techniques***
 
-```python
-```
-
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-
-<hr class='division3'>
-</details>
+- Supervised Learning
+- Unsupervised Learning
+- Optimization Techniques for Machine Learning
+- Constrained Optimization Problem
 
 ---
 
