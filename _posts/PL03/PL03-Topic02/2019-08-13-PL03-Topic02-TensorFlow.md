@@ -81,15 +81,9 @@ List of posts to read before reading this article
 
 ### ***A Few Important Topics in Machine Learning***
 
-```python
-```
-
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-
-<hr class='division3'>
-</details>
+- Dimensionality Reduction Methods
+- Regularization
+- Regularization Viewed as a Constraint Optimization Problem
 
 
 <hr class="division2">
