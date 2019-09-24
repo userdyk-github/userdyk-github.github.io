@@ -174,17 +174,33 @@ List of posts to read before reading this article
 
 ```
 >>> import numpy as np
+
+# convert dtype
 >>> arr1 = np.array([1,2,3])
 >>> arr1
 array([1, 2, 3])
 >>> arr1.shape
 (3,)
+>>> arr1.astype(np.uint8)
+array([1, 2, 3], dtype=uint8)
 
->>> arr2 = np.array([[1,2,3],[4,5,6]])
+# with dtype format : ''
+>>> arr2 = np.array([1,2,3], dtype='float32')
 >>> arr2
+array([1, 2, 3], dtype=float32)
+
+# with dtype format : np.
+>>> arr3 = np.array([1,2,3], dtype=np.float32)
+>>> arr3
+array([1, 2, 3], dtype=float32)
+>>> arr3.shape
+(3,)
+
+>>> arr4 = np.array([[1,2,3],[4,5,6]])
+>>> arr4
 array([[1, 2, 3],
        [4, 5, 6]])
->>> arr2.shape
+>>> arr4.shape
 (2, 3)
 ```
 
@@ -197,36 +213,47 @@ array([[1, 2, 3],
 >>> import numpy as np
 >>> import tensorflow as tf
 
+# list > tensor
 >>> tf.constant([1,2,3])
 <tf.Tensor 'Const:0' shape=(3,) dtype=int32>
 
+>>> tf.constant([1,2,3], dtype="float32")
+<tf.Tensor 'Const_1:0' shape=(3,) dtype=float32>
+
+>>> tf.constant([1,2,3], dtype=tf.float32)
+<tf.Tensor 'Const_2:0' shape=(3,) dtype=float32>
+
+>>> tensor = tf.constant([1,2,3], dtype="float32")
+>>> tf.cast(tensor, dtype="uint8")
+<tf.Tensor 'Cast:0' shape=(3,) dtype=uint8>
+
+
+# tuple > tensor
 >>> tf.constant((1,2,3))
-<tf.Tensor 'Const_1:0' shape=(3,) dtype=int32>
+<tf.Tensor 'Const_3:0' shape=(3,) dtype=int32>
 
+
+# array > tensor
 >>> tf.constant(np.array([1,2,3]))
-<tf.Tensor 'Const_2:0' shape=(3,) dtype=int64>
+<tf.Tensor 'Const_4:0' shape=(3,) dtype=int64>
+
+# tensor > array
+>>>
+
+>>>
+
 ```
 
 <details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<summary class='jb-small' style="color:blue">Verification</summary>
 <hr class='division3'>
+```
 
+```
 <hr class='division3'>
 </details>
 <br><br><br>
 
-<span class="frame2">Verify tensor</span>
-
-```python
-```
-
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-
-<hr class='division3'>
-</details>
-<br><br><br>
 
 
 <span class="frame2">Generate random numbers</span>
