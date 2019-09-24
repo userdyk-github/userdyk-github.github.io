@@ -154,7 +154,11 @@ List of posts to read before reading this article
 
 ### ***TensorFlow***
 
-#### TensorFlow Basics for Development
+#### TensorFlow(1.*) Basics for Development
+
+<br><br><br>
+
+#### TensorFlow(2.0) Basics for Development
 
 <span class="frame2">Create list</span>
 
