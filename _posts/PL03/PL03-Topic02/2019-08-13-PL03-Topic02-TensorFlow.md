@@ -96,18 +96,16 @@ List of posts to read before reading this article
   - Stochastic Gradient Descent
   - Newton’s Method
 - Constrained Optimization Problem
-  - Principal Component Analysis
-    - When Will PCA Be Useful in Data Reduction?
-    - How Do You Know How Much Variance Is Retained by the Selected Principal Components?
-  - Singular Value Decomposition
-  - Regularization
-  - Regularization Viewed as a Constraint Optimization Problem
   
 ---
 
 ### ***A Few Important Topics in Machine Learning***
 
 - Dimensionality Reduction Methods
+  - Principal Component Analysis
+    - When Will PCA Be Useful in Data Reduction?
+    - How Do You Know How Much Variance Is Retained by the Selected Principal Components?
+  - Singular Value Decomposition  
 - Regularization
 - Regularization Viewed as a Constraint Optimization Problem
 
