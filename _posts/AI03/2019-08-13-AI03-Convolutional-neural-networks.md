@@ -80,6 +80,8 @@ List of posts to read before reading this article
 </details>
 <br><br><br>
 
+---
+
 ### ***Median Filter***
 
 ```python
@@ -92,6 +94,8 @@ List of posts to read before reading this article
 <hr class='division3'>
 </details>
 <br><br><br>
+
+---
 
 ### ***Gaussian Filter***
 
@@ -106,6 +110,8 @@ List of posts to read before reading this article
 </details>
 <br><br><br>
 
+---
+
 ### ***Gradient-based Filters*** 
 
 ```python
@@ -118,6 +124,8 @@ List of posts to read before reading this article
 <hr class='division3'>
 </details>
 <br><br><br>
+
+---
 
 ### ***Sobel Edge-Detection Filter*** 
 
@@ -148,6 +156,9 @@ List of posts to read before reading this article
 <hr class='division3'>
 </details>
 <br><br><br>
+
+---
+
 
 ### ***Pooling Layer***
 
@@ -319,6 +330,8 @@ List of posts to read before reading this article
 </details>
 <br><br><br>
 
+---
+
 ### ***AlexNet***
 
 ```python
@@ -332,6 +345,8 @@ List of posts to read before reading this article
 </details>
 <br><br><br>
 
+---
+
 ### ***VGG16***
 
 ```python
@@ -344,6 +359,8 @@ List of posts to read before reading this article
 <hr class='division3'>
 </details>
 <br><br><br>
+
+---
 
 ### ***ResNet***
 
@@ -375,6 +392,8 @@ List of posts to read before reading this article
 </details>
 <br><br><br>
 
+---
+
 ### ***Transfer Learning with Google’s InceptionV3***
 
 ```python
@@ -387,6 +406,8 @@ List of posts to read before reading this article
 <hr class='division3'>
 </details>
 <br><br><br>
+
+---
 
 ### ***Transfer Learning with Pre-trained VGG16***
 
