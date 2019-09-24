@@ -56,7 +56,15 @@ title: STUDY
 
 ---
 
-## _AI05 : Computer vision_
+<br>
+
+<hr class='division4'>
+
+<br>
+
+---
+
+## _AAI01 : Computer vision_
 
 > <a href='https://userdyk-github.github.io/ai05/AI05-Basic-image-processing.html'>Basic image processing</a><br>
 > <a href='https://userdyk-github.github.io/ai05/AI05-.html'>Image classification</a><br>
@@ -68,13 +76,13 @@ title: STUDY
 
 ---
 
-## _AI06 : Natural language processing_
+## _AAI02 : Natural language processing_
 
-> <a href='https://userdyk-github.github.io/ai06/AI06-.html'>Topic</a><br>
-> <a href='https://userdyk-github.github.io/ai06/AI06-.html'>Topic</a><br>
-> <a href='https://userdyk-github.github.io/ai06/AI06-.html'>Topic</a><br>
-> <a href='https://userdyk-github.github.io/ai06/AI06-.html'>Topic</a><br>
-> <a href='https://userdyk-github.github.io/ai06/AI06-.html'>Topic</a><br>
+> <a href='https://userdyk-github.github.io/aai02/AAI02-.html'>Topic</a><br>
+> <a href='https://userdyk-github.github.io/aai02/AAI02-.html'>Topic</a><br>
+> <a href='https://userdyk-github.github.io/aai02/AAI02-.html'>Topic</a><br>
+> <a href='https://userdyk-github.github.io/aai02/AAI02-.html'>Topic</a><br>
+> <a href='https://userdyk-github.github.io/aai02/AAI02-.html'>Topic</a><br>
 
 <br>
 
