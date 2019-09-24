@@ -103,8 +103,6 @@ List of posts to read before reading this article
 
 - Dimensionality Reduction Methods
   - Principal Component Analysis
-    - When Will PCA Be Useful in Data Reduction?
-    - How Do You Know How Much Variance Is Retained by the Selected Principal Components?
   - Singular Value Decomposition  
 - Regularization
 - Regularization Viewed as a Constraint Optimization Problem
