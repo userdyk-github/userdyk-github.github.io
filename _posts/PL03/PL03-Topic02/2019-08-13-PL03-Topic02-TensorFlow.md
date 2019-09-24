@@ -805,11 +805,28 @@ List of posts to read before reading this article
 
 <hr class='division3'>
 </details>
+<br><br><br>
+
+#### Metropolis Algorithm
+
+```python
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
 
 ---
 
 ### ***Restricted Boltzmann Machines***
 
+#### A Restricted Boltzmann Implementation in TensorFlow
+
 ```python
 ```
 
@@ -819,11 +836,28 @@ List of posts to read before reading this article
 
 <hr class='division3'>
 </details>
+<br><br><br>
+
+#### Deep Belief Networks (DBNs)
+
+```python
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
 
 ---
 
 ### ***Auto-encoders***
 
+#### Sparse Auto-Encoder Implementation in TensorFlow
+
 ```python
 ```
 
@@ -833,6 +867,20 @@ List of posts to read before reading this article
 
 <hr class='division3'>
 </details>
+<br><br><br>
+
+#### Denoising Auto-Encoder
+
+```python
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
 
 ---
 
