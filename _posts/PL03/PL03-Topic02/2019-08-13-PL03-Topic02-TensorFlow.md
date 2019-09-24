@@ -130,6 +130,17 @@ List of posts to read before reading this article
 
 ### ***Perceptrons and Perceptron Learning Algorithm***
 
+- Geometrical Interpretation of Perceptron Learning
+- Limitations of Perceptron Learning
+- Need for Non-linearity 
+- Hidden Layer Perceptrons’ Activation Function for Non-linearity
+- Different Activation Functions for a Neuron/Perceptron
+- Learning Rule for Multi-Layer Perceptrons Network
+- Backpropagation for Gradient Computation
+- Generalizing the Backpropagation Method for Gradient Computation
+
+<br><br><br>
+
 ```python
 ```
 
