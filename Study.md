@@ -48,7 +48,7 @@ title: STUDY
 
 ## _AI04 : Reinforcement learning_
 
-> <a href='https://userdyk-github.github.io/ai04/AI04-.html'>The Markov Decision Process and Dynamic Programming</a><br>
+> <a href='https://userdyk-github.github.io/ai04/AI04-The-markov-decision-process-and-dynamic-programming.html'>The Markov Decision Process and Dynamic Programming</a><br>
 > <a href='https://userdyk-github.github.io/ai04/AI04-.html'>Gaming with Monte Carlo Methods</a><br>
 > <a href='https://userdyk-github.github.io/ai04/AI04-.html'>Temporal Difference Learning</a><br>
 > <a href='https://userdyk-github.github.io/ai04/AI04-.html'>Multi-Armed Bandit Problem</a><br>
