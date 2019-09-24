@@ -62,8 +62,6 @@ title: STUDY
 
 <br>
 
----
-
 ## _AAI01 : Computer vision_
 
 > <a href='https://userdyk-github.github.io/ai05/AI05-Basic-image-processing.html'>Basic image processing</a><br>
