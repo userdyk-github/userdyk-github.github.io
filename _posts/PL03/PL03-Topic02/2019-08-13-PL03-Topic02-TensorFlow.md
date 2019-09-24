@@ -667,6 +667,8 @@ List of posts to read before reading this article
 
 ### ***Word2Vec***
 
+#### Continuous Bag of Words Implementation in TensorFlow
+
 ```python
 ```
 
@@ -676,6 +678,59 @@ List of posts to read before reading this article
 
 <hr class='division3'>
 </details>
+<br><br><br>
+
+#### Skip-gram Implementation in TensorFlow
+
+```python
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
+#### Global Co-occurrence Statistics–based Word Vectors
+
+```python
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
+#### GloVe
+
+```python
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
+#### Word Analogy with Word Vectors
+
+```python
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
 
 ---
 
