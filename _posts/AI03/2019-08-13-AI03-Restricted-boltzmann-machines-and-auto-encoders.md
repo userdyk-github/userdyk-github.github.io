@@ -34,7 +34,8 @@ List of posts to read before reading this article
 <hr class='division3'>
 </details>
 
----
+<hr class="division2">
+
 
 ## **Bayesian Inference: Likelihood, Priors, and Posterior Probability Distribution**
 
@@ -48,7 +49,7 @@ List of posts to read before reading this article
 <hr class='division3'>
 </details>
 
----
+<hr class="division2">
 
 ## **Markov Chain Monte Carlo Methods for Sampling**
 
@@ -77,7 +78,7 @@ List of posts to read before reading this article
 <br><br><br>
 
 
----
+<hr class="division2">
 
 ## **Restricted Boltzmann Machines**
 
@@ -94,6 +95,8 @@ List of posts to read before reading this article
 </details>
 <br><br><br>
 
+---
+
 ### ***Deep Belief Networks (DBNs)***
 
 ```python
@@ -108,7 +111,7 @@ List of posts to read before reading this article
 <br><br><br>
 
 
----
+<hr class="division2">
 
 ## **Auto-encoders**
 
@@ -125,22 +128,9 @@ List of posts to read before reading this article
 </details>
 <br><br><br>
 
-### ***Denoising Auto-Encoder***
-
-```python
-```
-
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-
-<hr class='division3'>
-</details>
-<br><br><br>
-
 ---
 
-## **PCA and ZCA Whitening**
+### ***Denoising Auto-Encoder***
 
 ```python
 ```
@@ -155,9 +145,18 @@ List of posts to read before reading this article
 
 <hr class="division2">
 
+## **PCA and ZCA Whitening**
 
+```python
+```
 
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
 
+<hr class='division3'>
+</details>
+<br><br><br>
 
 <hr class="division1">
 
