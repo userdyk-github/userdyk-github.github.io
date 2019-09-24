@@ -37,7 +37,7 @@ title: STUDY
 ## _AI03 : Deep learning_
 
 > <a href='https://userdyk-github.github.io/ai03/AI03-Fundamental-of-deep-learning.html'>Fundamental of deep learning</a><br>
-> <a href='https://userdyk-github.github.io/ai03/AI03-.html'>Convolutional neural networks</a><br>
+> <a href='https://userdyk-github.github.io/ai03/AI03-Convolutional-neural-networks.html'>Convolutional neural networks</a><br>
 > <a href='https://userdyk-github.github.io/ai03/AI03-.html'>Recurrent neural networks</a><br>
 > <a href='https://userdyk-github.github.io/ai03/AI03-.html'>Generative adversarial networks</a><br>
 > <a href='https://userdyk-github.github.io/ai03/AI03-.html'>Auto-encoders</a><br>
@@ -84,7 +84,7 @@ title: STUDY
 
 > <a href='https://userdyk-github.github.io/aai02/AAI02-What-is-natural-language-processing.html'>What Is Natural Language Processing</a><br>
 > <a href='https://userdyk-github.github.io/aai02/AAI02-.html'>Review of Deep Learning</a><br>
-> <a href='https://userdyk-github.github.io/aai02/AAI02-.html'>Working with  Raw Text</a><br>
+> <a href='https://userdyk-github.github.io/aai02/AAI02-.html'>Working with Raw Text</a><br>
 > <a href='https://userdyk-github.github.io/aai02/AAI02-.html'>Topic Modeling and Word Embeddings</a><br>
 > <a href='https://userdyk-github.github.io/aai02/AAI02-.html'>Text Generation, Machine Translation, and Other
 Recurrent Language Modeling Tasks</a><br>
