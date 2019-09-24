@@ -33,7 +33,7 @@ List of posts to read before reading this article
 <hr class='division3'>
 </details>
 
----
+<hr class="division2">
 
 ## **Vector Representation of Words**
 
@@ -47,7 +47,7 @@ List of posts to read before reading this article
 <hr class='division3'>
 </details>
 
----
+<hr class="division2">
 
 ## **Word2Vec**
 
@@ -64,6 +64,8 @@ List of posts to read before reading this article
 </details>
 <br><br><br>
 
+---
+
 ### ***Skip-gram Implementation in TensorFlow***
 
 ```python
@@ -76,6 +78,8 @@ List of posts to read before reading this article
 <hr class='division3'>
 </details>
 <br><br><br>
+
+---
 
 ### ***Global Co-occurrence Statistics–based Word Vectors***
 
@@ -90,6 +94,8 @@ List of posts to read before reading this article
 </details>
 <br><br><br>
 
+---
+
 ### ***GloVe***
 
 ```python
@@ -102,6 +108,8 @@ List of posts to read before reading this article
 <hr class='division3'>
 </details>
 <br><br><br>
+
+---
 
 ### ***Word Analogy with Word Vectors***
 
@@ -116,7 +124,7 @@ List of posts to read before reading this article
 </details>
 <br><br><br>
 
----
+<hr class="division2">
 
 ## **Introduction to Recurrent Neural Networks**
 
@@ -133,6 +141,8 @@ List of posts to read before reading this article
 </details>
 <br><br><br>
 
+---
+
 ### ***Next-Word Prediction and Sentence Completion in TensorFlow Using Recurrent Neural Networks***
 
 ```python
@@ -145,8 +155,6 @@ List of posts to read before reading this article
 <hr class='division3'>
 </details>
 <br><br><br>
-
-<hr class="division2">
 
 
 <hr class="division1">
