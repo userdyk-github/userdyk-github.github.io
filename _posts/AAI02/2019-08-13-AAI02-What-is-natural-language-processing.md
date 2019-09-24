@@ -41,7 +41,7 @@ List of posts followed by this article
 ---
 
 Reference
-- <a href='https://wikidocs.net/book/2155'>딥 러닝을 이용한 자연어 처리 입문</a>
+- <a href='https://wikidocs.net/book/2155' target="_blank">딥 러닝을 이용한 자연어 처리 입문</a>
 - [post1](https://userdyk-github.github.io/)
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
