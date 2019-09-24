@@ -115,6 +115,7 @@ List of posts to read before reading this article
 ### ***Deep Learning and Its Evolution***
 
 ```python
+
 ```
 
 <details markdown="1">
@@ -158,36 +159,52 @@ List of posts to read before reading this article
 <span class="frame2">Create list</span>
 
 ```
+>>> l1 = [1,2,3]
+>>> l1
+[1,2,3]
 
+>>> l2 = [[1,2,3], [4,5,6]]
+>>> l2
+[[1,2,3], [4,5,6]]
 ```
 
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-
-<hr class='division3'>
-</details>
 <br><br><br>
 
 <span class="frame2">Create array</span>
 
 ```
+>>> import numpy as np
+>>> arr1 = np.array([1,2,3])
+>>> arr1
+array([1, 2, 3])
+>>> arr1.shape
+(3,)
 
+>>> arr2 = np.array([[1,2,3],[4,5,6]])
+>>> arr2
+array([[1, 2, 3],
+       [4, 5, 6]])
+>>> arr2.shape
+(2, 3)
 ```
 
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-
-<hr class='division3'>
-</details>
 <br><br><br>
 
 
 <span class="frame2">Create tensor</span>
 
 ```
+>>> import numpy as np
+>>> import tensorflow as tf
 
+>>> tf.constant([1,2,3])
+<tf.Tensor 'Const:0' shape=(3,) dtype=int32>
+
+>>> tf.constant((1,2,3))
+<tf.Tensor 'Const_1:0' shape=(3,) dtype=int32>
+
+>>> tf.constant(np.array([1,2,3]))
+<tf.Tensor 'Const_2:0' shape=(3,) dtype=int64>
 ```
 
 <details markdown="1">
