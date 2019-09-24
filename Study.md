@@ -38,7 +38,7 @@ title: STUDY
 
 > <a href='https://userdyk-github.github.io/ai03/AI03-Fundamental-of-deep-learning.html'>Fundamental of deep learning</a><br>
 > <a href='https://userdyk-github.github.io/ai03/AI03-Convolutional-neural-networks.html'>Convolutional neural networks</a><br>
-> <a href='https://userdyk-github.github.io/ai03/AI03-.html'>Recurrent neural networks</a><br>
+> <a href='https://userdyk-github.github.io/ai03/AI03-Recurrent-neural-networks.html'>Recurrent neural networks</a><br>
 > <a href='https://userdyk-github.github.io/ai03/AI03-.html'>Generative adversarial networks</a><br>
 > <a href='https://userdyk-github.github.io/ai03/AI03-.html'>Auto-encoders</a><br>
 > <a href='https://userdyk-github.github.io/ai03/AI03-.html'>Variational autoencoder</a><br>
