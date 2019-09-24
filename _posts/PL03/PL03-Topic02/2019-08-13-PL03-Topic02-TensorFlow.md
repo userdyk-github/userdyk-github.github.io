@@ -237,21 +237,18 @@ array([[1, 2, 3],
 >>> tf.constant(np.array([1,2,3]))
 <tf.Tensor 'Const_4:0' shape=(3,) dtype=int64>
 
-# tensor > array
->>>
 
->>>
+# format1 : tensor > array
+>>> tensor = tf.constant(np.array([1,2,3]))
+>>> tensor.numpy()
+array([1, 2, 3])
 
+# format2 : tensor > array
+>>> tensor = tf.constant(np.array([1,2,3]))
+>>> np.array(tensor)
+array([1, 2, 3])
 ```
 
-<details markdown="1">
-<summary class='jb-small' style="color:blue">Verification</summary>
-<hr class='division3'>
-```
-
-```
-<hr class='division3'>
-</details>
 <br><br><br>
 
 
@@ -261,12 +258,6 @@ array([[1, 2, 3],
 ```python
 ```
 
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-
-<hr class='division3'>
-</details>
 <br><br><br>
 
 
