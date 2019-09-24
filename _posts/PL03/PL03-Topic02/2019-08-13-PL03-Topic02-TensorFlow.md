@@ -895,13 +895,15 @@ List of posts to read before reading this article
 
 <hr class='division3'>
 </details>
-
+<br><br><br>
 
 <hr class="division2">
 
 ## **Advanced Neural Networks**
 
 ### ***Image Segmentation***
+
+#### Otsu’s Method
 
 ```python
 ```
@@ -912,6 +914,48 @@ List of posts to read before reading this article
 
 <hr class='division3'>
 </details>
+<br><br><br>
+
+#### Watershed Algorithm for Image Segmentation
+
+```python
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
+#### Image Segmentation Using K-means Clustering
+
+```python
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
+#### Semantic Segmentation in TensorFlow with Fully Connected Neural Networks
+
+```python
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
+
 
 ---
 
@@ -945,6 +989,7 @@ List of posts to read before reading this article
 
 ### ***Generative Adversarial Networks***
 
+#### TensorFlow Implementation of a GAN Network
 ```python
 ```
 
