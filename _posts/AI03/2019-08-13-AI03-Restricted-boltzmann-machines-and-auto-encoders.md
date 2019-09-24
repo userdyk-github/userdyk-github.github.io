@@ -21,15 +21,143 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
+
+## **Boltzmann Distribution**
+
+```python
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+
+---
+
+## **Bayesian Inference: Likelihood, Priors, and Posterior Probability Distribution**
+
+```python
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+
+---
+
+## **Markov Chain Monte Carlo Methods for Sampling**
+
+```python
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
+### ***Metropolis Algorithm***
+
+```python
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
+
+---
+
+## **Restricted Boltzmann Machines**
+
+### ***A Restricted Boltzmann Implementation in TensorFlow***
+
+```python
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
+### ***Deep Belief Networks (DBNs)***
+
+```python
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
+
+---
+
+## **Auto-encoders**
+
+### ***Sparse Auto-Encoder Implementation in TensorFlow***
+
+```python
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
+### ***Denoising Auto-Encoder***
+
+```python
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+## **PCA and ZCA Whitening**
+
+```python
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
 
 <hr class="division2">
 
-## title2
 
-<hr class="division2">
 
-## title3
+
 
 <hr class="division1">
 
