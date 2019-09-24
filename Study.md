@@ -66,6 +66,16 @@ title: STUDY
 > <a href='https://userdyk-github.github.io/ai05/AI05-.html'>Motion analysis</a><br>
 > <a href='https://userdyk-github.github.io/ai05/AI05-.html'>Image restoration</a><br>
 
+---
+
+## _AI06 : Natural language processing_
+
+> <a href='https://userdyk-github.github.io/ai06/AI06-.html'>Topic</a><br>
+> <a href='https://userdyk-github.github.io/ai06/AI06-.html'>Topic</a><br>
+> <a href='https://userdyk-github.github.io/ai06/AI06-.html'>Topic</a><br>
+> <a href='https://userdyk-github.github.io/ai06/AI06-.html'>Topic</a><br>
+> <a href='https://userdyk-github.github.io/ai06/AI06-.html'>Topic</a><br>
+
 <br>
 
 <hr class='division4'>
