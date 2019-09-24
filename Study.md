@@ -48,11 +48,17 @@ title: STUDY
 
 ## _AI04 : Reinforcement learning_
 
-> <a href='https://userdyk-github.github.io/ai04/AI04-.html'>Topic</a><br>
-> <a href='https://userdyk-github.github.io/ai04/AI04-.html'>Topic</a><br>
-> <a href='https://userdyk-github.github.io/ai04/AI04-.html'>Topic</a><br>
-> <a href='https://userdyk-github.github.io/ai04/AI04-.html'>Topic</a><br>
-> <a href='https://userdyk-github.github.io/ai04/AI04-.html'>Topic</a><br>
+> <a href='https://userdyk-github.github.io/ai04/AI04-.html'>The Markov Decision Process and Dynamic Programming</a><br>
+> <a href='https://userdyk-github.github.io/ai04/AI04-.html'>Gaming with Monte Carlo Methods</a><br>
+> <a href='https://userdyk-github.github.io/ai04/AI04-.html'>Temporal Difference Learning</a><br>
+> <a href='https://userdyk-github.github.io/ai04/AI04-.html'>Multi-Armed Bandit Problem</a><br>
+> <a href='https://userdyk-github.github.io/ai04/AI04-.html'>Deep Learning Fundamentals</a><br>
+> <a href='https://userdyk-github.github.io/ai04/AI04-.html'>Atari Games with Deep Q Network</a><br>
+> <a href='https://userdyk-github.github.io/ai04/AI04-.html'>Playing Doom with a Deep Recurrent Q Network</a><br>
+> <a href='https://userdyk-github.github.io/ai04/AI04-.html'>The Asynchronous Advantage Actor Critic Network</a><br>
+> <a href='https://userdyk-github.github.io/ai04/AI04-.html'>Policy Gradients and Optimization</a><br>
+> <a href='https://userdyk-github.github.io/ai04/AI04-.html'>Car Racing Using DQN</a><br>
+> <a href='https://userdyk-github.github.io/ai04/AI04-.html'>Recent Advancements and Next Steps</a><br>
 
 
 
