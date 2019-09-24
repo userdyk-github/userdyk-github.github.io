@@ -368,6 +368,8 @@ List of posts to read before reading this article
 
 ### ***Convolution Neural Networks***
 
+#### Convolution Layer
+
 ```python
 ```
 
@@ -377,6 +379,20 @@ List of posts to read before reading this article
 
 <hr class='division3'>
 </details>
+<br><br><br>
+
+#### Pooling Layer
+
+```python
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
 
 ---
 
