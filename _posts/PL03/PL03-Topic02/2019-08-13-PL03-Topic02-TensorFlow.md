@@ -86,10 +86,23 @@ List of posts to read before reading this article
 
 - Supervised Learning
   - Linear Regression as a Supervised Learning Method
+  - Linear Regression Through Vector Space Approach
+  - Hyperplanes and Linear Classifiers
 - Unsupervised Learning
 - Optimization Techniques for Machine Learning
+  - Gradient Descent
+  - Gradient Descent for a Multivariate Cost Function
+  - Steepest Descent
+  - Stochastic Gradient Descent
+  - Newton’s Method
 - Constrained Optimization Problem
-
+  - Principal Component Analysis
+    - When Will PCA Be Useful in Data Reduction?
+    - How Do You Know How Much Variance Is Retained by the Selected Principal Components?
+  - Singular Value Decomposition
+  - Regularization
+  - Regularization Viewed as a Constraint Optimization Problem
+  
 ---
 
 ### ***A Few Important Topics in Machine Learning***
