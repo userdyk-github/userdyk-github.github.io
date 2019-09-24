@@ -283,6 +283,8 @@ List of posts to read before reading this article
 
 ### ***2D Convolution***
 
+#### 2D Convolution of an Image to Different LSI System Responses
+
 ```python
 ```
 
@@ -297,6 +299,8 @@ List of posts to read before reading this article
 
 ### ***Common Image-Processing Filters***
 
+#### Mean Filter
+
 ```python
 ```
 
@@ -306,6 +310,59 @@ List of posts to read before reading this article
 
 <hr class='division3'>
 </details>
+<br><br><br>
+
+#### Median Filter
+
+```python
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
+#### Gaussian Filter 
+
+```python
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
+#### Gradient-based Filters 
+
+```python
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
+#### Sobel Edge-Detection Filter 
+
+```python
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
 
 ---
 
