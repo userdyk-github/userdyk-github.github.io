@@ -339,20 +339,6 @@ List of posts to read before reading this article
 <hr class='division3'>
 </details>
 
----
-
-### ***Generative Adversarial Networks***
-
-#### TensorFlow Implementation of a GAN Network
-```python
-```
-
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-
-<hr class='division3'>
-</details>
 
 ---
 
