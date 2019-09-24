@@ -736,6 +736,8 @@ List of posts to read before reading this article
 
 ### ***Introduction to Recurrent Neural Networks***
 
+#### MNIST Digit Identification in TensorFlow Using Recurrent Neural Networks
+
 ```python
 ```
 
@@ -745,7 +747,20 @@ List of posts to read before reading this article
 
 <hr class='division3'>
 </details>
+<br><br><br>
 
+#### Next-Word Prediction and Sentence Completion in TensorFlow Using Recurrent Neural Networks
+
+```python
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
 
 <hr class="division2">
 
