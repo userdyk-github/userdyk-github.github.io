@@ -18,7 +18,7 @@ title: STUDY
 
 ## _AI02 : Machine learning_
 
-> <a href='https://userdyk-github.github.io/ai02/AI02-.html'>Dimensionality reduction</a><br>
+> <a href='https://userdyk-github.github.io/ai02/AI02-Dimensionality-reduction.html'>Dimensionality reduction</a><br>
 > <a href='https://userdyk-github.github.io/ai02/AI02-Regression.html'>Regression</a><br>
 > <a href='https://userdyk-github.github.io/ai02/AI02-Classification.html'>Classification</a><br>
 > <a href='https://userdyk-github.github.io/ai02/AI02-Clustering.html'>Clustering</a><br>
