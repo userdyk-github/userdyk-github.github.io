@@ -156,6 +156,131 @@ List of posts to read before reading this article
 
 #### TensorFlow(1.*) Basics for Development
 
+```
+# Import TensorFlow and Numpy Library
+>>> import tensorflow as tf 
+>>> import numpy as np
+
+# Activate a TensorFlow Interactive Session
+>>> tf.InteractiveSession()
+
+# Define Tensors
+>>> a = tf.zeros((2,2)); 
+>>> b = tf.ones((2,2))
+
+# Sum the Elements of the Matrix (2D Tensor) Across the Horizontal Axis
+>>> tf.reduce_sum(b,reduction_indices = 1).eval()
+array([2., 2.], dtype=float32)
+
+# verify tensor values
+>>> sess = tf.Session()
+...    print(sess.run(b))
+...    print(sess.run(tf.reduce_sum(b)))
+[[1. 1.]
+ [1. 1.]]
+4.0
+
+# Check the Shape of the Tensor
+>>> a.get_shape()
+TensorShape([Dimension(2), Dimension(2)])
+
+# Reshape a Tensor
+>>> tf.reshape(a,(1,4)).eval()
+array([[0., 0., 0., 0.]], dtype=float32)
+
+
+# Explicit Evaluation in TensorFlow and Difference with Numpy
+>>> ta = tf.zeros((2,2))
+>>> print(ta)
+Tensor("zeros_3:0", shape=(2, 2), dtype=float32)
+
+>>> print(ta.eval())
+[[0. 0.]
+ [0. 0.]]
+
+
+>>> a = np.zeros((2,2))
+>>> print(a)
+[[0. 0.]
+ [0. 0.]]
+
+# Define TensorFlow Constants
+>>> a = tf.constant(1) 
+>>> b = tf.constant(5) 
+>>> c= a*b
+>>> with tf.Session() as sess:   
+...    print(c.eval())  
+...    print(sess.run(c))
+
+
+# Define TensorFlow Variables
+>>> w = tf.Variable(tf.ones(2,2),name='weights')
+
+# Initialize the Variables After Invoking the Session
+>>> with tf.Session() as sess: 
+...    sess.run(tf.global_variables_initializer())  
+...    print(sess.run(w))
+[1. 1.]
+
+
+# Define the TensorFlow Variable with Random Initial Values from Standard Normal Distribution
+>>> rw = tf.Variable(tf.random_normal((2,2)),name='random_weights')
+
+# Invoke Session and Display the Initial State of the Variable
+>>> with tf.Session() as sess:   
+...    sess.run(tf.global_variables_initializer()) 
+...    print(sess.run(rw))
+[[-1.0602931  -0.20061749]
+ [-1.1879984   2.0883346 ]]
+
+
+# TensorFlow Variable State Update
+>>> var_1 = tf.Variable(0,name='var_1')
+>>> add_op = tf.add(var_1,tf.constant(1)) 
+>>> upd_op = tf.assign(var_1,add_op) 
+>>> with tf.Session() as sess:  
+...        sess.run(tf.global_variables_initializer())   
+...        for i in range(5):      
+...            print(sess.run(upd_op))
+1
+2
+3
+4
+5
+
+
+# Display the TensorFlow Variable State
+>>> x = tf.constant(1) 
+>>> y = tf.constant(5) 
+>>> z = tf.constant(7)
+
+>>> mul_x_y = x*y
+>>> final_op = mul_x_y + z
+
+>>> with tf.Session() as sess:  
+...     print(sess.run([mul_x_y,final_op]))
+[5, 12]
+
+
+# Convert a Numpy Array to Tensor
+>>>a = np.ones((3,3)) 
+>>>b = tf.convert_to_tensor(a)
+>>>with tf.Session() as sess:  
+...     print(sess.run(b))
+[[1. 1. 1.]
+ [1. 1. 1.]
+ [1. 1. 1.]]
+
+
+# Placeholders and Feed Dictionary
+>>> inp1 = tf.placeholder(tf.float32,shape=(1,2)) 
+>>> inp2 = tf.placeholder(tf.float32,shape=(2,1)) 
+>>> output = tf.matmul(inp1,inp2) 
+
+>>> with tf.Session() as sess:
+...     print(sess.run([output],feed_dict={inp1:[[1.,3.]],inp2:[[1],[3]]}))
+[array([[10.]], dtype=float32)]
+```
 <br><br><br>
 
 #### TensorFlow(2.0) Basics for Development
