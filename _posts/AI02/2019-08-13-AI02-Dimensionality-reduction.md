@@ -21,15 +21,20 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
+## **Principal Component Analysis**
+
+### ***When Will PCA Be Useful in Data Reduction?***
+
+### ***How Do You Know How Much Variance Is Retained by the Selected Principal Components?***
+    
+    
+<hr class="division2">
+
+## **Singular Value Decomposition**
 
 <hr class="division2">
 
-## title2
-
-<hr class="division2">
-
-## title3
+## ****
 
 <hr class="division1">
 
