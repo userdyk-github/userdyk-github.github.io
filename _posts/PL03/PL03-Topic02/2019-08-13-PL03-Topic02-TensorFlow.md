@@ -85,6 +85,7 @@ List of posts to read before reading this article
 ### ***Formulation of Machine-Learning Algorithm and Optimization Techniques***
 
 - Supervised Learning
+  - Linear Regression as a Supervised Learning Method
 - Unsupervised Learning
 - Optimization Techniques for Machine Learning
 - Constrained Optimization Problem
