@@ -155,6 +155,8 @@ List of posts to read before reading this article
 
 #### TensorFlow Basics for Development
 
+<span class="frame2">Create tensor</span>
+
 ```python
 ```
 
@@ -165,6 +167,35 @@ List of posts to read before reading this article
 <hr class='division3'>
 </details>
 <br><br><br>
+
+<span class="frame2">Verify tensor</span>
+
+```python
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
+
+<span class="frame2">Generate random numbers</span>
+
+```python
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
+
 
 #### Optimizers in TensorFlow
 
