@@ -451,7 +451,12 @@ print('Final Prediction', sess.run(pred, feed_dict={x_: XOR_X, y_: XOR_Y}))
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-
+```
+Final Prediction [[0.04043783]
+ [0.9463439 ]
+ [0.94631964]
+ [0.08983095]]
+```
 <hr class='division3'>
 </details>
 <br><br><br>
