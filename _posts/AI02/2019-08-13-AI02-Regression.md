@@ -231,6 +231,21 @@ array([5.20371122, 6.07617745, 7.77126507, 5.35615965, 7.44019585,
 ```
 <hr class='division3'>
 </details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Curve fitting</summary>
+<hr class='division3'>
+```python
+import matplotlib.pyplot as plt
+
+plt.plot(x, f(x,a,b), 'x', lw=0, label="data")
+plt.plot(x, 3*x + 5, label='result')            # from fitted_model.params
+plt.ylim(0,10)
+plt.legend()
+plt.show()
+```
+![다운로드 (2)](https://user-images.githubusercontent.com/52376448/65609675-24d8b000-dfeb-11e9-85a8-6313e236843b.png)
+<hr class='division3'>
+</details>
 <br><br><br>
 
 ---
