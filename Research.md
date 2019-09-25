@@ -145,5 +145,5 @@ title: RESEARCH
 > <a href='' target="_blank"></a>
 
 > SKKU | <a href='https://sci-cube.skku.edu/sci-cube/professor/faculty_research_science.do' target="_blank">URL</a><br>
->> <a href='https://mindlab-skku.github.io/' target="_blank">Taesup Moon</a> | <br>
+>> <a href='https://mindlab-skku.github.io/' target="_blank">Taesup Moon</a> | <a href='http://statphys.skku.ac.kr/' target="_blank">Beom Jun Kim</a> | <br>
 > <a href='' target="_blank"></a><br>
