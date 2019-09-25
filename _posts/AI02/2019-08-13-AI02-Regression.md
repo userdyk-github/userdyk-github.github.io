@@ -342,16 +342,52 @@ constant_input = sm.add_constant(Input, has_constant='add')
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Data : Input</summary>
 <hr class='division3'>
+```python
+Input.head()
+```
+`OUTPUT`
+```
+	input1		input2	        input3
+0	0.091340	0.987591	0.831199
+1	0.183175	0.233331	0.083727
+2	0.602820	0.291993	0.755167
+3	0.652662	0.340463	0.264041
+4	0.942365	0.948254	0.688881
+```
 <hr class='division3'>
 </details>
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Data : Constant_input</summary>
 <hr class='division3'>
+```python
+constant_input.head()
+```
+`OUTPUT`
+```
+	const	input1		input2		input3
+0	1.0	0.091340	0.987591	0.831199
+1	1.0	0.183175	0.233331	0.083727
+2	1.0	0.602820	0.291993	0.755167
+3	1.0	0.652662	0.340463	0.264041
+4	1.0	0.942365	0.948254	0.688881
+```
 <hr class='division3'>
 </details>
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Data : Target</summary>
 <hr class='division3'>
+```python
+Target.head()
+```
+`OUTPUT`
+```
+0    60.024760
+1    18.916136
+2    34.942227
+3    34.924657
+4    74.082178
+Name: target, dtype: float64
+```
 <hr class='division3'>
 </details>
 <br>
