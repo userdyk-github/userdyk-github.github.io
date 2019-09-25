@@ -180,7 +180,7 @@ dtype: float64
 <hr class='division3'>
 </details>
 <details markdown="1">
-<summary class='jb-small' style="color:blue">Estimated values v.s. Original values</summary>
+<summary class='jb-small' style="color:blue">Estimated values v.s. Original values for target</summary>
 <hr class='division3'>
 `Estimated values` : 
 <span style="font-size: 70%;">$$ \hat{y} = \hat{a}x + \hat{b} \to A\vec{X}$$</span>
