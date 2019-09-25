@@ -44,6 +44,10 @@ List of posts to read before reading this article
 <br><br><br>
 
 ### ***Model performance indicators for training dataset***
+- <a href='https://en.wikipedia.org/wiki/Mean_squared_error' target="_blank" class="frame2">Mean squared error (MSE)</a>
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e258221518869aa1c6561bb75b99476c4734108e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:24.729ex; height:6.843ex;" alt="{\displaystyle \operatorname {MSE} ={\frac {1}{n}}\sum _{i=1}^{n}(Y_{i}-{\hat {Y_{i}}})^{2}.}">
+- <a href='https://en.wikipedia.org/wiki/Mean_absolute_percentage_error' target="_blank" class="frame2">Mean absolute percentage error (MAPE)</a>
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4cf2158513b0345211300fe585cc88a05488b451" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:26.512ex; height:6.843ex;" alt="{\displaystyle {\mbox{M}}={\frac {100\%}{n}}\sum _{t=1}^{n}\left|{\frac {A_{t}-F_{t}}{A_{t}}}\right|,}">
 - <a href="https://en.wikipedia.org/wiki/Coefficient_of_determination#Adjusted_R2" target="_blank" class="frame2">Adjusted R-squared</a>
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/16a082d105dfbb4339e40cf7898950ce748743e8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:28.793ex; height:5.676ex;" alt="{\displaystyle {\bar {R}}^{2}=1-(1-R^{2}){n-1 \over n-p-1}}">
 - <a href="https://en.wikipedia.org/wiki/Akaike_information_criterion" target="_blank" class="frame2">Akaike information criterion (AIC)</a>
@@ -75,6 +79,20 @@ List of posts to read before reading this article
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/46cf247a57b181c36165a0b6ae5ede6bdc1a24a3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:19.765ex; height:3.343ex;" alt="{\displaystyle {\hat {\boldsymbol {\beta }}}=(\mathbf {X} ^{\rm {T}}\mathbf {X} )^{-1}\mathbf {X} ^{\rm {T}}\mathbf {y} .}">
 <hr class='division3'>
 </details>
+
+<br><br><br>
+
+### ***Model performance indicators for training dataset***
+- <a href='https://en.wikipedia.org/wiki/Mean_squared_error' target="_blank" class="frame2">Mean squared error (MSE)</a>
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e258221518869aa1c6561bb75b99476c4734108e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:24.729ex; height:6.843ex;" alt="{\displaystyle \operatorname {MSE} ={\frac {1}{n}}\sum _{i=1}^{n}(Y_{i}-{\hat {Y_{i}}})^{2}.}">
+- <a href='https://en.wikipedia.org/wiki/Mean_absolute_percentage_error' target="_blank" class="frame2">Mean absolute percentage error (MAPE)</a>
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4cf2158513b0345211300fe585cc88a05488b451" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:26.512ex; height:6.843ex;" alt="{\displaystyle {\mbox{M}}={\frac {100\%}{n}}\sum _{t=1}^{n}\left|{\frac {A_{t}-F_{t}}{A_{t}}}\right|,}">
+- <a href="https://en.wikipedia.org/wiki/Coefficient_of_determination#Adjusted_R2" target="_blank" class="frame2">Adjusted R-squared</a>
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/16a082d105dfbb4339e40cf7898950ce748743e8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:28.793ex; height:5.676ex;" alt="{\displaystyle {\bar {R}}^{2}=1-(1-R^{2}){n-1 \over n-p-1}}">
+- <a href="https://en.wikipedia.org/wiki/Akaike_information_criterion" target="_blank" class="frame2">Akaike information criterion (AIC)</a>
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fe67d436d9064a370cbe800b24b05ee8a68d491b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:20.229ex; height:3.343ex;" alt="{\displaystyle \mathrm {AIC} \,=\,2k-2\ln({\hat {L}})}">
+- <a href="https://en.wikipedia.org/wiki/Bayesian_information_criterion" target="_blank" class="frame2">Bayesian information criterion (BIC)</a>
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ed4064ea6babc6e374a149840c19f0ae7396d7d3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:24.952ex; height:3.343ex;" alt="{\displaystyle \mathrm {BIC} =\ln(n)k-2\ln({\widehat {L}}).\ }">
 
 <br><br><br>
 
@@ -115,6 +133,20 @@ Multicollinearity refers to a situation in which two or more explanatory variabl
 <hr class='division3'>
 <hr class='division3'>
 </details>
+
+
+
+### ***Model performance indicators***
+
+- <a href='https://en.wikipedia.org/wiki/Mean_squared_error' target="_blank" class="frame2">Mean squared error (MSE)</a>
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e258221518869aa1c6561bb75b99476c4734108e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:24.729ex; height:6.843ex;" alt="{\displaystyle \operatorname {MSE} ={\frac {1}{n}}\sum _{i=1}^{n}(Y_{i}-{\hat {Y_{i}}})^{2}.}">
+- <a href='https://en.wikipedia.org/wiki/Mean_absolute_percentage_error' target="_blank" class="frame2">Mean absolute percentage error (MAPE)</a>
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4cf2158513b0345211300fe585cc88a05488b451" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:26.512ex; height:6.843ex;" alt="{\displaystyle {\mbox{M}}={\frac {100\%}{n}}\sum _{t=1}^{n}\left|{\frac {A_{t}-F_{t}}{A_{t}}}\right|,}">
+- <a href="https://en.wikipedia.org/wiki/Confusion_matrix" target="_blank" class="frame2">Confusion matrix</a>
+- <a href="https://en.wikipedia.org/wiki/Receiver_operating_characteristic" target="_blank" class="frame2">Receiver operating characteristic curve, or ROC curve</a>
+- <a href="https://en.wikipedia.org/wiki/Receiver_operating_characteristic#Area_under_the_curve" target="_blank" class="frame2">Area under the curve, or AUC</a>
+
+
 
 <br><br><br>
 <hr class="division2">
