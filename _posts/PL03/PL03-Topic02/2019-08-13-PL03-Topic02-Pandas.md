@@ -24,6 +24,11 @@ List of posts to read before reading this article
 
 ## **Data Load/Save**
 
+```python
+import pandas as pd
+pd.read_csv('file_path')
+```
+
 <br><br><br>
 <hr class="division2">
 
