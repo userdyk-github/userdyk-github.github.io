@@ -418,9 +418,18 @@ input3     7.0
 dtype: float64
 ```
 `Verification`
-<div style="font-size: 70%;">$$ \hat{s} = \hat{a}x + \hat{b}y + \hat{c}z + \hat{r} \to \hat{S}=\hat{A}X$$</div>
-<div style="font-size: 70%;">$$ \hat{S} X^{-1} = \hat{A} $$</div>
 
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/46cf247a57b181c36165a0b6ae5ede6bdc1a24a3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:19.765ex; height:3.343ex;" alt="{\displaystyle {\hat {\boldsymbol {\beta }}}=(\mathbf {X} ^{\rm {T}}\mathbf {X} )^{-1}\mathbf {X} ^{\rm {T}}\mathbf {y} .}">
+
+```python
+from numpy import linalg
+
+B = linalg.inv(np.dot(constant_input.T, constant_input))
+np.dot(np.dot(B, constant_input.T),target)
+```
+```
+array([ 3., 20., 50.,  7.])
+```
 <hr class='division3'>
 </details>
 <details markdown="1">
