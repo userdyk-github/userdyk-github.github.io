@@ -69,6 +69,23 @@ List of posts to read before reading this article
 </details>
 
 <br><br><br>
+
+### ***Multicollinearity***
+
+
+Multicollinearity refers to a situation in which two or more explanatory variables in a multiple regression model are highly linearly related. <br>
+
+**Detection of multicollinearity** : Variance inflation factor (VIF)
+**Way to relieve multicollinearity**
+
+- with eliminatation of any variables
+	- Feature Selection
+- without eliminatation of any variables
+	- AutoEncoder
+	- PCA
+	- Ridge
+
+<br><br><br>
 <hr class="division2">
 
 
