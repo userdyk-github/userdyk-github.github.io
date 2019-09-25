@@ -34,7 +34,34 @@ List of posts to read before reading this article
 
 <hr class="division2">
 
-## ****
+## **Non-negative matrix factorization (NMF)**
+
+<hr class="division2">
+
+
+## **Kernel PCA**
+
+<hr class="division2">
+
+
+## **Graph-based kernel PCA**
+
+<hr class="division2">
+
+
+
+## **Linear discriminant analysis (LDA)**
+
+<hr class="division2">
+
+
+## **Generalized discriminant analysis (GDA)**
+
+<hr class="division2">
+
+
+## **Autoencoder**
+
 
 <hr class="division1">
 
