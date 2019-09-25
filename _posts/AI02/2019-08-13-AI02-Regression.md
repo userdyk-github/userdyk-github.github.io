@@ -76,10 +76,19 @@ List of posts to read before reading this article
 Multicollinearity refers to a situation in which two or more explanatory variables in a multiple regression model are highly linearly related. <br>
 
 **Detection of multicollinearity** : Variance inflation factor (VIF)
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9ece9d349f82af412b94fcdd2e81c1c6de926936" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:15.656ex; height:6.343ex;" alt="{\displaystyle \mathrm {VIF} _{i}={\frac {1}{1-R_{i}^{2}}}}">
+
+
+<br>
+
 **Way to relieve multicollinearity**
 
-- with eliminatation of any variables
-	- Feature Selection
+- with eliminatation of any variables(Feature Selection)
+	- considering correlation coefficient
+	- Lasso
+	- Stepwise
+	- etc
+	
 - without eliminatation of any variables
 	- AutoEncoder
 	- PCA
