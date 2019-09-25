@@ -52,8 +52,18 @@ List of posts to read before reading this article
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c4b08d888086d1e0948f9019afec8ecec4a83151" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -6.838ex; width:80.728ex; height:14.843ex;" alt="{\displaystyle \mathbf {y} ={\begin{pmatrix}y_{1}\\y_{2}\\\vdots \\y_{n}\end{pmatrix}},\quad \mathbf {X} ={\begin{pmatrix}\mathbf {x} _{1}^{\rm {T}}\\\mathbf {x} _{2}^{\rm {T}}\\\vdots \\\mathbf {x} _{n}^{\rm {T}}\end{pmatrix}}={\begin{pmatrix}x_{11}&amp;\cdots &amp;x_{1p}\\x_{21}&amp;\cdots &amp;x_{2p}\\\vdots &amp;\ddots &amp;\vdots \\x_{n1}&amp;\cdots &amp;x_{np}\end{pmatrix}},\quad {\boldsymbol {\beta }}={\begin{pmatrix}\beta _{1}\\\beta _{2}\\\vdots \\\beta _{p}\end{pmatrix}},\quad {\boldsymbol {\varepsilon }}={\begin{pmatrix}\varepsilon _{1}\\\varepsilon _{2}\\\vdots \\\varepsilon _{n}\end{pmatrix}}.}">
 </div>
 <details markdown="1">
+<summary class='jb-small' style="color:blue">DERIVING</summary>
+<hr class='division3'>
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bf227a8af979e716d08f7c82dd95b17440e33a15" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.838ex; width:18.045ex; height:5.343ex;" alt="{\hat {\boldsymbol {\beta }}}={\underset {\boldsymbol {\beta }}{\operatorname {arg\,min} }}\,S({\boldsymbol {\beta }}),">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f607606c60752eff21a8fd43c12ced695975b61e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.338ex; width:43.109ex; height:7.343ex;" alt="{\displaystyle S({\boldsymbol {\beta }})=\sum _{i=1}^{n}{\bigl |}y_{i}-\sum _{j=1}^{p}X_{ij}\beta _{j}{\bigr |}^{2}={\bigl \|}\mathbf {y} -\mathbf {X} {\boldsymbol {\beta }}{\bigr \|}^{2}.}">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d2a206e40a6dfbda414d6faf32c3c6e2d2165a64" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:17.432ex; height:3.343ex;" alt="(\mathbf {X} ^{\rm {T}}\mathbf {X} ){\hat {\boldsymbol {\beta }}}=\mathbf {X} ^{\rm {T}}\mathbf {y} .">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/46cf247a57b181c36165a0b6ae5ede6bdc1a24a3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:19.765ex; height:3.343ex;" alt="{\displaystyle {\hat {\boldsymbol {\beta }}}=(\mathbf {X} ^{\rm {T}}\mathbf {X} )^{-1}\mathbf {X} ^{\rm {T}}\mathbf {y} .}">
+<hr class='division3'>
+</details>
+<details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/46cf247a57b181c36165a0b6ae5ede6bdc1a24a3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:19.765ex; height:3.343ex;" alt="{\displaystyle {\hat {\boldsymbol {\beta }}}=(\mathbf {X} ^{\rm {T}}\mathbf {X} )^{-1}\mathbf {X} ^{\rm {T}}\mathbf {y} .}">
 <hr class='division3'>
 </details>
 
