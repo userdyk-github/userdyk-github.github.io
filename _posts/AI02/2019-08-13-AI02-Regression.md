@@ -172,7 +172,7 @@ penalty
 
 ### ***Regression with statsmodel***
 
-<span class="frame2">Simple linear regression</span>
+#### Simple linear regression
 
 `Data preprocessing`
 ```python
@@ -379,7 +379,7 @@ plt.show()
 
 
 
-<span class="frame2">Multiple linear regression</span>
+#### Multiple linear regression
 
 `Data preprocessing`
 ```python
