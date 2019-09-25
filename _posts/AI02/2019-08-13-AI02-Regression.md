@@ -54,9 +54,20 @@ List of posts to read before reading this article
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fe67d436d9064a370cbe800b24b05ee8a68d491b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:20.229ex; height:3.343ex;" alt="{\displaystyle \mathrm {AIC} \,=\,2k-2\ln({\hat {L}})}">
 - <a href="https://en.wikipedia.org/wiki/Bayesian_information_criterion" target="_blank" class="frame2">Bayesian information criterion (BIC)</a>
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ed4064ea6babc6e374a149840c19f0ae7396d7d3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:24.952ex; height:3.343ex;" alt="{\displaystyle \mathrm {BIC} =\ln(n)k-2\ln({\widehat {L}}).\ }">
+<br><br><br>
+
+### ***Diagnosis for regression***
+
+- Residuals Scatter plot
+- Normal Q-Q Plot
+- Residual vs Fitted plot
 
 <br><br><br>
 <hr class="division2">
+
+
+
+
 
 ## **Multiple linear regression**
 <div class="frame1">
@@ -95,6 +106,16 @@ List of posts to read before reading this article
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ed4064ea6babc6e374a149840c19f0ae7396d7d3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:24.952ex; height:3.343ex;" alt="{\displaystyle \mathrm {BIC} =\ln(n)k-2\ln({\widehat {L}}).\ }">
 
 <br><br><br>
+
+
+### ***Diagnosis for regression***
+
+- Residuals Scatter plot
+- Normal Q-Q Plot
+- Residual vs Fitted plot
+
+<br><br><br>
+
 
 ### ***Multicollinearity***
 
@@ -149,8 +170,16 @@ Multicollinearity refers to a situation in which two or more explanatory variabl
 
 
 <br><br><br>
+
+### ***Diagnosis for regression***
+
+- Residuals Scatter plot
+- Normal Q-Q Plot
+- Residual vs Fitted plot
+
+<br><br><br>
+
 <hr class="division2">
-penalty
 
 
 ## **Penalty of regression model**
