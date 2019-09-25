@@ -21,19 +21,33 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## ****
+## **Basic linear regression**
+
 ```python
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
 
 <br><br><br>
 <hr class="division2">
 
 
-## Regression with statsmodel
 
-<hr class="division2">
 
-## Regression with sklearn
+
+
+## **Implementation with a variety of library**
+
+### ***Regression with statsmodel***
+
+<br><br><br>
+
+---
+
+### ***Regression with sklearn***
 
 ```python
 from sklearn import datasets
@@ -84,13 +98,16 @@ fig, ax = plot_residuals_and_coeff(resid_train, resid_test,  model.coef_)
 
 <br><br><br>
 
-<hr class="division2">
+---
 
-## Regression with tensorflow
 
-<hr class="division2">
+### ***Regression with tensorflow***
 
-## Regression with pytorch
+<br><br><br>
+
+---
+
+### ***Regression with pytorch***
 
 <hr class="division1">
 
