@@ -7,7 +7,7 @@ tags : [AI03-Topic01]
 ---
 [Back to the previous page](https://userdyk-github.github.io/ai03/AI03-Fundamental-of-deep-learning.html) <br>
 List of posts to read before reading this article
-- <a href='https://userdyk-github.github.io/'>post1</a>
+- <a href='https://userdyk-github.github.io/pl03/PL03-Libraries.html' target="_blank">Python Libraries</a>
 - <a href='https://userdyk-github.github.io/'>post2</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
