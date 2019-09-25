@@ -75,7 +75,7 @@ List of posts followed by this article
 Reference
 - [post1](https://userdyk-github.github.io/)
 - <a href='https://ratsgo.github.io/machine%20learning/2017/04/24/PCA/' target="_blank">PCA</a>
-- <a href='https://userdyk-github.github.io/'>post3</a>
+- <a href='https://datascienceschool.net/view-notebook/f10aad8a34a4489697933f77c5d58e3a/' target="_blank">PCA</a>
 
 ---
 
