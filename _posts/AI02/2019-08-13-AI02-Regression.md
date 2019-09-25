@@ -98,8 +98,8 @@ Multicollinearity refers to a situation in which two or more explanatory variabl
 	- etc
 	
 - without eliminatation of any variables
-	- AutoEncoder
-	- PCA
+	- <a href="https://userdyk-github.github.io/ai03/AI03-Restricted-boltzmann-machines-and-auto-encoders.html" target="_blank">AutoEncoder</a>
+	- [PCA](https://userdyk-github.github.io/ai02/AI02-Dimensionality-reduction.html)
 	- Ridge
 
 <br><br><br>
