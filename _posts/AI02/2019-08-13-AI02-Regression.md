@@ -531,7 +531,7 @@ array([47.18460385, 29.42685672, 45.34542694, 21.18367219, 60.83667819,
 <hr class='division3'>
 <hr class='division3'>
 </details>
-
+<br><br><br>
 
 
 
