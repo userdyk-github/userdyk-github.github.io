@@ -183,6 +183,7 @@ dtype: float64
 <summary class='jb-small' style="color:blue">Estimated values v.s. Original values</summary>
 <hr class='division3'>
 `Estimated values`
+<span style="font-size: 70%;">$$ \hat{y} = \hat{a}x + \hat{b} \to A\vec{X}$$</span>
 ```python
 np.dot(constant_input, fitted_model.params)
 ```
@@ -194,6 +195,7 @@ array([7.49049949, 6.62884716, 6.07305033, 7.0648904 , 6.93690197,
        5.77773424, 5.99074449, 6.12113732, 6.13392177, 6.92979226])
 ```
 `Original values`
+<span style="font-size: 70%;">$$ y = ax + b$$</span>
 ```python
 target
 ```
