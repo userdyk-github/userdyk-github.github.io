@@ -135,6 +135,7 @@ Name: target, dtype: float64
 ```
 <hr class='division3'>
 </details>
+<br>
 `Regression analysis`
 ```python
 import statsmodels.api as sm
