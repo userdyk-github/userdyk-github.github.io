@@ -26,14 +26,6 @@ List of posts to read before reading this article
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/968be557dd22b1a2e536b8d22369cfdb37f58703" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:18.197ex; height:2.509ex;" alt=" y_i = \alpha + \beta x_i + \varepsilon_i.">
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/944e96221f03e99dbd57290c328b205b0f04c803" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -12.171ex; width:27.556ex; height:25.509ex;" alt="{\displaystyle {\begin{aligned}{\widehat {\alpha }}&amp;={\bar {y}}-{\widehat {\beta }}\,{\bar {x}},\\[5pt]{\widehat {\beta }}&amp;={\frac {\sum _{i=1}^{n}(x_{i}-{\bar {x}})(y_{i}-{\bar {y}})}{\sum _{i=1}^{n}(x_{i}-{\bar {x}})^{2}}}\\[6pt]&amp;={\frac {s_{x,y}}{s_{x}^{2}}}\\[5pt]&amp;=r_{xy}{\frac {s_{y}}{s_{x}}}.\\[6pt]\end{aligned}}}">
 
-```python
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-<hr class='division3'>
-</details>
-
 <br><br><br>
 <hr class="division2">
 
@@ -43,13 +35,6 @@ List of posts to read before reading this article
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8119b3ed1259aa8ff15166488548104b50a0f92e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:13.128ex; height:2.509ex;" alt="{\displaystyle \mathbf {y} =X{\boldsymbol {\beta }}+{\boldsymbol {\varepsilon }},\,}">
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c4b08d888086d1e0948f9019afec8ecec4a83151" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -6.838ex; width:80.728ex; height:14.843ex;" alt="{\displaystyle \mathbf {y} ={\begin{pmatrix}y_{1}\\y_{2}\\\vdots \\y_{n}\end{pmatrix}},\quad \mathbf {X} ={\begin{pmatrix}\mathbf {x} _{1}^{\rm {T}}\\\mathbf {x} _{2}^{\rm {T}}\\\vdots \\\mathbf {x} _{n}^{\rm {T}}\end{pmatrix}}={\begin{pmatrix}x_{11}&amp;\cdots &amp;x_{1p}\\x_{21}&amp;\cdots &amp;x_{2p}\\\vdots &amp;\ddots &amp;\vdots \\x_{n1}&amp;\cdots &amp;x_{np}\end{pmatrix}},\quad {\boldsymbol {\beta }}={\begin{pmatrix}\beta _{1}\\\beta _{2}\\\vdots \\\beta _{p}\end{pmatrix}},\quad {\boldsymbol {\varepsilon }}={\begin{pmatrix}\varepsilon _{1}\\\varepsilon _{2}\\\vdots \\\varepsilon _{n}\end{pmatrix}}.}">
 
-```python
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-<hr class='division3'>
-</details>
 
 <br><br><br>
 <hr class="division2">
