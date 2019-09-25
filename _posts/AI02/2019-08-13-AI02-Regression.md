@@ -759,4 +759,4 @@ Reference
 
 ---
 
-[1]:{{ site.url }}/download/AI02/boston_house.txt
+[1]:{{ site.url }}/download/AI02/boston_house.csv
