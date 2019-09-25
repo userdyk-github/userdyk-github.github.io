@@ -21,12 +21,14 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
+## **Sample mean**
 
+<br><br><br>
 <hr class="division2">
 
-## title2
+## **Sample variance**
 
+<br><br><br>
 <hr class="division2">
 
 ## title3
