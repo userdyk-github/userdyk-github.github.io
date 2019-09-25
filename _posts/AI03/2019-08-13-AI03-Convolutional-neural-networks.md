@@ -734,14 +734,12 @@ plt.imshow(G,cmap='gray')
 ### ***Convolution Layer***
 
 ```python
+def conv2d(x,W,b,strides=1):  
+    x = tf.nn.conv2d(x,W,strides=[1,strides,strides,1],padding='SAME') 
+    x = tf.nn.bias_add(x,b)   
+    return tf.nn.relu(x)
 ```
 
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-
-<hr class='division3'>
-</details>
 <br><br><br>
 
 ---
@@ -750,14 +748,10 @@ plt.imshow(G,cmap='gray')
 ### ***Pooling Layer***
 
 ```python
+def maxpool2d(x,stride=2): 
+    return tf.nn.max_pool(x,ksize=[1,stride,stride,1],strides=[1,stride,stride,1], padding='SAME')
 ```
 
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-
-<hr class='division3'>
-</details>
 <br><br><br>
 
 <hr class="division2">
