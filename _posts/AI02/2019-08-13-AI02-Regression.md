@@ -75,7 +75,7 @@ List of posts to read before reading this article
 
 Multicollinearity refers to a situation in which two or more explanatory variables in a multiple regression model are highly linearly related. <br>
 
-**Detection of multicollinearity** : Variance inflation factor (VIF)
+**Detection of multicollinearity** : Variance inflation factor(<a href='https://en.wikipedia.org/wiki/Variance_inflation_factor#Calculation_and_analysis' target="_blank">VIF</a>)
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9ece9d349f82af412b94fcdd2e81c1c6de926936" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:15.656ex; height:6.343ex;" alt="{\displaystyle \mathrm {VIF} _{i}={\frac {1}{1-R_{i}^{2}}}}">
 
 
