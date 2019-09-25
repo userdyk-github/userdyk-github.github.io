@@ -648,6 +648,7 @@ array([47.18460385, 29.42685672, 45.34542694, 21.18367219, 60.83667819,
 
 
 #### Multiple linear regression about dataset on real world
+[Dataset download][1]
 
 <br><br><br>
 
@@ -731,3 +732,5 @@ Reference
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
+
+[1]:{{ site.url }}/download/AI02/boston_house.csv
