@@ -104,7 +104,7 @@ Target = df['target']
 constant_input = sm.add_constant(Input, has_constant='add')
 ```
 <details markdown="1">
-<summary class='jb-small' style="color:blue">Input</summary>
+<summary class='jb-small' style="color:blue">Data : Input</summary>
 <hr class='division3'>
 ```python
 Input.head()
@@ -122,7 +122,7 @@ Name: input, dtype: float64
 </details>
 
 <details markdown="1">
-<summary class='jb-small' style="color:blue">Constant_input</summary>
+<summary class='jb-small' style="color:blue">Data : Constant_input</summary>
 <hr class='division3'>
 ```python
 constant_input.head()
@@ -140,7 +140,7 @@ constant_input.head()
 </details>
 
 <details markdown="1">
-<summary class='jb-small' style="color:blue">Target</summary>
+<summary class='jb-small' style="color:blue">Data : Target</summary>
 <hr class='division3'>
 ```python
 Target.head()
