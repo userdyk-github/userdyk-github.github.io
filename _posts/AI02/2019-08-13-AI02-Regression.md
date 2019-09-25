@@ -81,6 +81,8 @@ penalty
 
 ### ***Regression with statsmodel***
 
+<span class="frame2">Basic linear regression</span>
+
 `Data preprocessing`
 ```python
 import numpy as np
@@ -281,6 +283,11 @@ plt.show()
 <hr class='division3'>
 </details>
 <br><br><br>
+
+
+<span class="frame2">Multiple linear regression</span>
+
+
 
 ---
 
