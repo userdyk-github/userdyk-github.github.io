@@ -20,9 +20,11 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## **Basic linear regression**
+## **Simple linear regression**
 
-<img _fckfakelement="true" _fck_mw_math="Y=\beta_0+\beta_1{x}+\epsilon\,\!" src="/images/math/d/c/a/dca1e8af0a8c44631ce4ab67c0cc441c.png">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bf2c1cac7c1e6c9a426d92e9adad6ff4d8b4152e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:11.89ex; height:2.509ex;" alt="y=\alpha +\beta x,">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/968be557dd22b1a2e536b8d22369cfdb37f58703" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:18.197ex; height:2.509ex;" alt=" y_i = \alpha + \beta x_i + \varepsilon_i.">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/944e96221f03e99dbd57290c328b205b0f04c803" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -12.171ex; width:27.556ex; height:25.509ex;" alt="{\displaystyle {\begin{aligned}{\widehat {\alpha }}&amp;={\bar {y}}-{\widehat {\beta }}\,{\bar {x}},\\[5pt]{\widehat {\beta }}&amp;={\frac {\sum _{i=1}^{n}(x_{i}-{\bar {x}})(y_{i}-{\bar {y}})}{\sum _{i=1}^{n}(x_{i}-{\bar {x}})^{2}}}\\[6pt]&amp;={\frac {s_{x,y}}{s_{x}^{2}}}\\[5pt]&amp;=r_{xy}{\frac {s_{y}}{s_{x}}}.\\[6pt]\end{aligned}}}">
 
 ```python
 ```
@@ -87,7 +89,7 @@ penalty
 
 ### ***Regression with statsmodel***
 
-<span class="frame2">Basic linear regression</span>
+<span class="frame2">Simple linear regression</span>
 
 `Data preprocessing`
 ```python
