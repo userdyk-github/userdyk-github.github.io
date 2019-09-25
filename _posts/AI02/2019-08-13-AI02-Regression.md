@@ -513,7 +513,12 @@ Length: 100, dtype: float64
 ```
 `Visualization for residue`
 ```python
+import matplotlib.pyplot as plt
+
+fitted_model.resid.plot()
+plt.show()
 ```
+![다운로드 (4)](https://user-images.githubusercontent.com/52376448/65626087-ed2c3100-e007-11e9-9073-7983f8d3984c.png)
 <hr class='division3'>
 </details>
 <details markdown="1">
