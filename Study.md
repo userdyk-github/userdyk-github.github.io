@@ -305,14 +305,13 @@ Mass Point</a><br>
 > <a href='https://userdyk-github.github.io/math05/MATH05-Distribution.html'>Distribution</a><br>
 > <a href='https://userdyk-github.github.io/math05/MATH05-Curve-fitting.html'>Curve fitting</a><br>
 > <a href='https://userdyk-github.github.io/math05/MATH05-Specific-tests.html'>Specific tests</a><br>
-> <a href='https://userdyk-github.github.io/math05/MATH05-Frequentist-inference.html'>Frequentist inference</a><br>
+> <a href='https://userdyk-github.github.io/math05/MATH05-Categorical-data.html'>Categorical data</a><br>
 > <a href='https://userdyk-github.github.io/math05/MATH05-Bayesian-inference.html'>Bayesian inference</a><br>
 > <a href='https://userdyk-github.github.io/math05/MATH05-Correlation.html'>Correlation</a><br>
 > <a href='https://userdyk-github.github.io/math05/MATH05-Regression-analysis.html'>Regression analysis</a><br>
-> <a href='https://userdyk-github.github.io/math05/MATH05-Partition-of-variance.html'>Partition of variance</a><br>
+> <a href='https://userdyk-github.github.io/math05/MATH05-Analysis of variance.html'>Analysis of variance</a><br>
 > <a href='https://userdyk-github.github.io/math05/MATH05-Non-parametric-tests.html'>Non-parametric tests</a><br>
 > <a href='https://userdyk-github.github.io/math05/MATH05-Time-series.html'>Time series</a><br>
-> <a href='https://userdyk-github.github.io/math05/MATH05-Sparse-Principal-component-analysis.html'>Principal component analysis</a><br>
 
 
 
