@@ -310,7 +310,11 @@ plt.show()
 <br><br><br>
 
 
+
+
+
 <span class="frame2">Multiple linear regression</span>
+
 `Data preprocessing`
 ```python
 import numpy as np
