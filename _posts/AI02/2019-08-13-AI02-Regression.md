@@ -311,6 +311,84 @@ plt.show()
 
 
 <span class="frame2">Multiple linear regression</span>
+`Data preprocessing`
+```python
+import numpy as np
+import pandas as pd
+import statsmodels.api as sm
+
+def f(x,y,z,a,b,c,r):
+    return a*x + b*y + c*z + r
+
+x = np.random.random(100)
+y = np.random.random(100)
+z = np.random.random(100)
+a = 20
+b = 50
+c = 7
+r = 3
+
+target = f(x,y,z,a,b,c,r)
+df_input1 = pd.DataFrame(x)
+df_input2 = pd.DataFrame(y)
+df_input3 = pd.DataFrame(z)
+df_target = pd.DataFrame(target)
+df = pd.concat([df_input1, df_input2, df_input3, df_target], axis=1)
+df.columns = ['input1', 'input2', 'input3', 'target']
+Input = df[['input1', 'input2', 'input3']]
+Target = df['target']
+constant_input = sm.add_constant(Input, has_constant='add')
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Data : Input</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Data : Constant_input</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Data : Target</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br>
+`Regression analysis`
+```python
+model = sm.OLS(Target, constant_input)
+fitted_model = model.fit()
+fitted_model.summary()
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT : Regression coefficients etc</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Estimated values v.s. Original values for target</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Residual analysis</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Prediction for new dataset</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Curve fitting</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
+
+
 
 
 
