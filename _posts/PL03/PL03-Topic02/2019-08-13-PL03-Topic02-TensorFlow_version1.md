@@ -428,7 +428,7 @@ MSE in training: 21.928276
 <hr class='division3'>
 </details>
 <details markdown="1">
-<summary class='jb-small' style="color:blue">Cost visualization</summary>
+<summary class='jb-small' style="color:blue">Visualization of Cost</summary>
 <hr class='division3'>
 ```python
 # Linear Regression Cost Plot over Epochs or Iterations
@@ -439,6 +439,24 @@ plt.show()
 ```
 `OUTPUT`
 ![Figure_1](https://user-images.githubusercontent.com/52376448/65562411-4c932e00-df81-11e9-9530-6a2b4b79c294.png)
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Visualization of Prediction</summary>
+<hr class='division3'>
+```python
+# Linear Regression Actual House Price Versus Predicted House Price
+# Plot the Predicted House Prices vs the Actual House Prices
+import matplotlib.pyplot as plt
+
+fig, ax = plt.subplots()
+plt.scatter(Y_input,pred_)
+ax.set_xlabel('Actual House price')
+ax.set_ylabel('Predicted House price')
+plt.show()
+```
+`OUTPUT`
+![Figure_1](https://user-images.githubusercontent.com/52376448/65562640-0c807b00-df82-11e9-8360-b96213765971.png)
 <hr class='division3'>
 </details>
 
