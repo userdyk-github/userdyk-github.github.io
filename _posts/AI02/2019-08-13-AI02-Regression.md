@@ -34,8 +34,47 @@ List of posts to read before reading this article
 <br><br><br>
 <hr class="division2">
 
+## **Multiple linear regression**
+
+```python
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
+<br><br><br>
+<hr class="division2">
 
 
+## **Logistic regression model**
+
+```python
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
+<br><br><br>
+<hr class="division2">
+penalty
+
+
+## **Penalty of regression model **
+
+```python
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
+<br><br><br>
+<hr class="division2">
 
 
 
