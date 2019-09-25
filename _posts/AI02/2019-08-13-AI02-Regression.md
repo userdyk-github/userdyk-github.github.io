@@ -201,7 +201,7 @@ Multicollinearity refers to a situation in which two or more explanatory variabl
 
 ### ***Regression with statsmodel***
 
-#### Simple linear regression
+#### Simple linear regression about artificial dataset
 
 `Data preprocessing`
 ```python
@@ -408,7 +408,7 @@ plt.show()
 
 
 
-#### Multiple linear regression
+#### Multiple linear regression about artificial dataset
 
 `Data preprocessing`
 ```python
@@ -647,7 +647,9 @@ array([47.18460385, 29.42685672, 45.34542694, 21.18367219, 60.83667819,
 <br><br><br>
 
 
+#### Multiple linear regression about dataset on real world
 
+<br><br><br>
 
 
 ---
