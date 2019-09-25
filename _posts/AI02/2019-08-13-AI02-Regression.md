@@ -169,6 +169,7 @@ fitted_model.summary()
 ![캡처](https://user-images.githubusercontent.com/52376448/65604433-7597db00-dfe2-11e9-8141-dc5126370fb1.JPG)
 <br>
 ```python
+# Regression coefficients
 fitted_model.params
 ```
 `OUTPUT`
@@ -176,6 +177,31 @@ fitted_model.params
 const    5.0
 input    3.0
 dtype: float64
+```
+<br>
+```python
+# residue
+fitted_model.resid
+```
+`OUTPUT`
+```
+0     -1.776357e-15
+1     -2.664535e-15
+2     -2.664535e-15
+...
+...
+998   -3.552714e-15
+999   -1.776357e-15
+Length: 1000, dtype: float64
+```
+<br>
+```python
+# residual summation
+np.sum(fitted_model.resid)
+```
+`OUTPUT`
+```
+-2.652988939644274e-12
 ```
 <hr class='division3'>
 </details>
