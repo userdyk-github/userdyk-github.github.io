@@ -178,31 +178,6 @@ const    5.0
 input    3.0
 dtype: float64
 ```
-<br>
-```python
-# residue
-fitted_model.resid
-```
-`OUTPUT`
-```
-0     -1.776357e-15
-1     -2.664535e-15
-2     -2.664535e-15
-...
-...
-998   -3.552714e-15
-999   -1.776357e-15
-Length: 1000, dtype: float64
-```
-<br>
-```python
-# residual summation
-np.sum(fitted_model.resid)
-```
-`OUTPUT`
-```
--2.652988939644274e-12
-```
 <hr class='division3'>
 </details>
 <details markdown="1">
@@ -234,6 +209,41 @@ array([7.49049949, 6.62884716, 6.07305033, 7.0648904 , 6.93690197,
 ```
 <hr class='division3'>
 </details>
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Residual analysis</summary>
+<hr class='division3'>
+`Residue`
+```python
+fitted_model.resid
+```
+`OUTPUT`
+```
+0     -1.776357e-15
+1     -2.664535e-15
+2     -2.664535e-15
+...
+...
+998   -3.552714e-15
+999   -1.776357e-15
+Length: 1000, dtype: float64
+```
+`Residual summation`
+```python
+np.sum(fitted_model.resid)
+```
+`OUTPUT`
+```
+-2.652988939644274e-12
+```
+`Visualization for residue`
+```python
+
+```
+![다운로드 (3)](https://user-images.githubusercontent.com/52376448/65611092-4a66b900-dfed-11e9-8b83-44d5737fef70.png)
+<hr class='division3'>
+</details>
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Prediction for new dataset</summary>
 <hr class='division3'>
