@@ -81,6 +81,102 @@ penalty
 
 ### ***Regression with statsmodel***
 
+`Data preprocessing`
+```python
+import numpy as np
+import pandas as pd
+
+def f(x,a,b):
+    return a*x + b
+
+x = np.random.random(1000)
+a = 3
+b = 5
+
+target = f(x,a,b)
+df_input = pd.DataFrame(x)
+df_target = pd.DataFrame(target)
+df = pd.concat([df_input, df_target], axis=1)
+df.columns = ['input','target']
+Input = df['input']
+Target = df['target']
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Input</summary>
+<hr class='division3'>
+```python
+Input.head()
+```
+`OUTPUT`
+```
+0    0.830166
+1    0.542949
+2    0.357683
+3    0.688297
+4    0.645634
+Name: input, dtype: float64
+```
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Target</summary>
+<hr class='division3'>
+```python
+Target.head()
+```
+`OUTPUT`
+```
+0    7.490499
+1    6.628847
+2    6.073050
+3    7.064890
+4    6.936902
+Name: target, dtype: float64
+```
+<hr class='division3'>
+</details>
+`Regression analysis`
+```python
+import statsmodels.api as sm
+
+constant_input = sm.add_constant(Input, has_constant='add')
+model = sm.OLS(Target, constant_input)
+fitted_model = model.fit()
+fitted_model.summary()
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![캡처](https://user-images.githubusercontent.com/52376448/65604433-7597db00-dfe2-11e9-8141-dc5126370fb1.JPG)
+<br>
+```python
+fitted_model.params
+```
+`OUTPUT`
+```
+const    5.0
+input    3.0
+dtype: float64
+```
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Constant_input</summary>
+<hr class='division3'>
+```python
+constant_input.head()
+```
+`OUTPUT`
+```
+	const	input
+0	1.0	0.830166
+1	1.0	0.542949
+2	1.0	0.357683
+3	1.0	0.688297
+4	1.0	0.645634
+```
+<hr class='division3'>
+</details>
 <br><br><br>
 
 ---
