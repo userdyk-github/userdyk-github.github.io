@@ -182,7 +182,7 @@ dtype: float64
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Estimated values v.s. Original values</summary>
 <hr class='division3'>
-`Estimated values`
+`Estimated values` : 
 <span style="font-size: 70%;">$$ \hat{y} = \hat{a}x + \hat{b} \to A\vec{X}$$</span>
 ```python
 np.dot(constant_input, fitted_model.params)
@@ -194,10 +194,10 @@ array([7.49049949, 6.62884716, 6.07305033, 7.0648904 , 6.93690197,
        5.74719815, 6.58978836, 6.25943715, 5.88547536, 7.40743629,
        5.77773424, 5.99074449, 6.12113732, 6.13392177, 6.92979226])
 ```
-`Original values`
+`Original values` : 
 <span style="font-size: 70%;">$$ y = ax + b$$</span>
 ```python
-target
+f(x,a,b)
 ```
 ```
 array([7.49049949, 6.62884716, 6.07305033, 7.0648904 , 6.93690197,
@@ -205,6 +205,29 @@ array([7.49049949, 6.62884716, 6.07305033, 7.0648904 , 6.93690197,
        ...
        5.74719815, 6.58978836, 6.25943715, 5.88547536, 7.40743629,
        5.77773424, 5.99074449, 6.12113732, 6.13392177, 6.92979226])
+```
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Prediction</summary>
+<hr class='division3'>
+`Prediction`
+```python
+sample = np.random.random(10)
+constant_sample = sm.add_constant(sample, has_constant='add')
+fitted_model.predict(constant_sample)
+```
+```
+array([5.20371122, 6.07617745, 7.77126507, 5.35615965, 7.44019585,
+       5.94592521, 5.94306959, 6.56256376, 6.09420242, 6.39866773])
+```
+`Verification`
+```python
+f(sample,a,b)
+```
+```
+array([5.20371122, 6.07617745, 7.77126507, 5.35615965, 7.44019585,
+       5.94592521, 5.94306959, 6.56256376, 6.09420242, 6.39866773])
 ```
 <hr class='division3'>
 </details>
