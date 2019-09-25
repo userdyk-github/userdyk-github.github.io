@@ -7,7 +7,7 @@ tags : [MATH06]
 ---
 [Back to the previous page](https://userdyk-github.github.io/Study.html)｜[Optimization](https://userdyk-github.github.io/math06/MATH06-Contents.html) <br>
 List of posts to read before reading this article
-- <a href='https://userdyk-github.github.io/'>post1</a>
+- <a href='https://userdyk-github.github.io/pl03/PL03-Libraries.html' target="_blank">Python Libraries</a>
 - <a href='https://userdyk-github.github.io/'>post2</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
