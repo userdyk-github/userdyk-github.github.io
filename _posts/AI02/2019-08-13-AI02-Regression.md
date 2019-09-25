@@ -213,7 +213,7 @@ dtype: float64
 `Estimated values` : 
 <span style="font-size: 70%;">$$ \hat{y} = \hat{a}x + \hat{b} \to A\vec{X}$$</span>
 ```python
-np.dot(constant_input, fitted_model.params)
+np.dot(fitted_model.params, constant_input)
 ```
 ```
 array([7.49049949, 6.62884716, 6.07305033, 7.0648904 , 6.93690197,
@@ -424,7 +424,7 @@ dtype: float64
 <hr class='division3'>
 `Estimated values` : <span style="font-size: 70%;">$$ \hat{s} = \hat{a}x + \hat{b}y + \hat{c}z + r \to A\vec{X}$$</span>
 ```python
-np.dot(constant_input, fitted_model.params)
+np.dot(fitted_model.params, constant_input)
 ```
 ```
 array([38.38830915, 55.94154925, 28.96956111, 16.13232006, 45.71464433,
