@@ -422,7 +422,7 @@ dtype: float64
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Estimated values v.s. Original values for target</summary>
 <hr class='division3'>
-`Estimated values` : <span style="font-size: 70%;">$$ \hat{s} = \hat{a}x + \hat{b}y + \hat{c}z + r \to A\vec{X}$$</span>
+`Estimated values` : <span style="font-size: 70%;">$$ \hat{s} = \hat{a}x + \hat{b}y + \hat{c}z + \hat{r} \to A\vec{X}$$</span>
 ```python
 np.dot(fitted_model.params, constant_input)
 ```
