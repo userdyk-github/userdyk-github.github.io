@@ -41,7 +41,12 @@ List of posts to read before reading this article
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3d570a1ea8bb90927e92f82d3864e4ade0447024" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:16.784ex; height:6.843ex;" alt="{\displaystyle {\overline {xy}}={\frac {1}{n}}\sum _{i=1}^{n}x_{i}y_{i}.}">
 <hr class='division3'>
 </details>
+<br><br><br>
 
+### ***Model performance indicators for training dataset***
+<a href="https://en.wikipedia.org/wiki/Coefficient_of_determination#Adjusted_R2" target="_blank">Adjusted R-squared</a>
+<a href="https://en.wikipedia.org/wiki/Akaike_information_criterion" target="_blank">Akaike information criterion (AIC)</a>
+<a href="https://en.wikipedia.org/wiki/Bayesian_information_criterion" target="_blank">Bayesian information criterion (BIC)</a>
 
 <br><br><br>
 <hr class="division2">
