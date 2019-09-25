@@ -22,6 +22,8 @@ List of posts to read before reading this article
 
 ## **Basic linear regression**
 
+<img _fckfakelement="true" _fck_mw_math="Y=\beta_0+\beta_1{x}+\epsilon\,\!" src="/images/math/d/c/a/dca1e8af0a8c44631ce4ab67c0cc441c.png">
+
 ```python
 ```
 <details markdown="1">
