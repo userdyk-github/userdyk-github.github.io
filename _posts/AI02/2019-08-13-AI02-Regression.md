@@ -30,10 +30,12 @@ List of posts to read before reading this article
 <hr class='division3'>
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/91acaa000421826a90ecc40210890584d2d303ea" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:18.47ex; height:2.676ex;" alt="{\displaystyle {\widehat {\varepsilon }}_{i}=y_{i}-\alpha -\beta x_{i}.}">
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5b3f79816862a7a29272130d3d75e87ed5cfeaa4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:64.456ex; height:6.843ex;" alt="{\displaystyle {\text{Find }}\min _{\alpha ,\,\beta }Q(\alpha ,\beta ),\quad {\text{for }}Q(\alpha ,\beta )=\sum _{i=1}^{n}{\widehat {\varepsilon }}_{i}^{\,2}=\sum _{i=1}^{n}(y_{i}-\alpha -\beta x_{i})^{2}\ .}">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/944e96221f03e99dbd57290c328b205b0f04c803" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -12.171ex; width:27.556ex; height:25.509ex;" alt="{\displaystyle {\begin{aligned}{\widehat {\alpha }}&amp;={\bar {y}}-{\widehat {\beta }}\,{\bar {x}},\\[5pt]{\widehat {\beta }}&amp;={\frac {\sum _{i=1}^{n}(x_{i}-{\bar {x}})(y_{i}-{\bar {y}})}{\sum _{i=1}^{n}(x_{i}-{\bar {x}})^{2}}}\\[6pt]&amp;={\frac {s_{x,y}}{s_{x}^{2}}}\\[5pt]&amp;=r_{xy}{\frac {s_{y}}{s_{x}}}.\\[6pt]\end{aligned}}}">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1f21324fcf481023ee5fafea8f4846f602c9c8f9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -6.005ex; width:31.131ex; height:9.676ex;" alt="{\displaystyle r_{xy}={\frac {{\overline {xy}}-{\bar {x}}{\bar {y}}}{\sqrt {\left({\overline {x^{2}}}-{\bar {x}}^{2}\right)\left({\overline {y^{2}}}-{\bar {y}}^{2}\right)}}}.}">
 <hr class='division3'>
 </details>
 <details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<summary class='jb-small' style="color:blue">RESULTS</summary>
 <hr class='division3'>
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/944e96221f03e99dbd57290c328b205b0f04c803" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -12.171ex; width:27.556ex; height:25.509ex;" alt="{\displaystyle {\begin{aligned}{\widehat {\alpha }}&amp;={\bar {y}}-{\widehat {\beta }}\,{\bar {x}},\\[5pt]{\widehat {\beta }}&amp;={\frac {\sum _{i=1}^{n}(x_{i}-{\bar {x}})(y_{i}-{\bar {y}})}{\sum _{i=1}^{n}(x_{i}-{\bar {x}})^{2}}}\\[6pt]&amp;={\frac {s_{x,y}}{s_{x}^{2}}}\\[5pt]&amp;=r_{xy}{\frac {s_{y}}{s_{x}}}.\\[6pt]\end{aligned}}}">
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1f21324fcf481023ee5fafea8f4846f602c9c8f9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -6.005ex; width:31.131ex; height:9.676ex;" alt="{\displaystyle r_{xy}={\frac {{\overline {xy}}-{\bar {x}}{\bar {y}}}{\sqrt {\left({\overline {x^{2}}}-{\bar {x}}^{2}\right)\left({\overline {y^{2}}}-{\bar {y}}^{2}\right)}}}.}">
@@ -61,7 +63,7 @@ List of posts to read before reading this article
 <hr class='division3'>
 </details>
 <details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<summary class='jb-small' style="color:blue">RESULTS</summary>
 <hr class='division3'>
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/46cf247a57b181c36165a0b6ae5ede6bdc1a24a3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:19.765ex; height:3.343ex;" alt="{\displaystyle {\hat {\boldsymbol {\beta }}}=(\mathbf {X} ^{\rm {T}}\mathbf {X} )^{-1}\mathbf {X} ^{\rm {T}}\mathbf {y} .}">
 <hr class='division3'>
