@@ -465,12 +465,120 @@ plt.show()
 #### Multi-class Classification with SoftMax Function Using Full-Batch Gradient Descent
 
 ```python
+# Multi-class Classification with Softmax Function Using Full-Batch Gradient Descent
+# Import the required libraries 
+import tensorflow as tf
+import numpy as np
+from sklearn import datasets 
+from tensorflow.examples.tutorials.mnist import input_data
+
+# Function to read the MNIST dataset along with the labels
+def read_infile():  
+    mnist = input_data.read_data_sets("MNIST_data/", one_hot=True)  
+    train_X, train_Y,test_X, test_Y = mnist.train.images, mnist.train.labels, mnist.test.images, mnist.test.labels   
+    return train_X, train_Y,test_X, test_Y
+
+#  Define the weights and biases for the neural network 
+def weights_biases_placeholder(n_dim,n_classes):  
+    X = tf.placeholder(tf.float32,[None,n_dim])    
+    Y = tf.placeholder(tf.float32,[None,n_classes])  
+    w = tf.Variable(tf.random_normal([n_dim,n_classes],stddev=0.01),name='weights') 
+    b = tf.Variable(tf.random_normal([n_classes]),name='weights')  
+    return X,Y,w,b
+
+# Define the forward pass
+def forward_pass(w,b,X):  
+    out = tf.matmul(X,w) + b
+    return out
+
+# Define the cost function for the SoftMax unit
+def multiclass_cost(out,Y):  
+    cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=out,labels=Y)) 
+    return cost
+
+# Define the initialization op
+def init():
+    return tf.global_variables_initializer()
+
+# Define the training op
+def train_op(learning_rate,cost): 
+    op_train = tf.train.GradientDescentOptimizer(learning_rate).minimize(cost)   
+    return op_train
+train_X, train_Y,test_X, test_Y = read_infile()
+X,Y,w,b = weights_biases_placeholder(train_X.shape[1],train_Y.shape[1])
+out = forward_pass(w,b,X)
+cost = multiclass_cost(out,Y)
+learning_rate,epochs = 0.01,1000 
+op_train = train_op(learning_rate,cost) 
+init = init() 
+loss_trace = [] 
+accuracy_trace = []
+
+# Activate the TensorFlow session and execute the stochastic gradient descent 
+with tf.Session() as sess:   
+    sess.run(init)
+    for i in range(epochs):    
+        sess.run(op_train,feed_dict={X:train_X,Y:train_Y})  
+        loss_ = sess.run(cost,feed_dict={X:train_X,Y:train_Y})  
+        accuracy_ = np.mean(np.argmax(sess.run(out,feed_dict={X:train_X,Y:train_Y}),axis=1) == np.argmax(train_Y,axis=1))       
+        loss_trace.append(loss_)      
+        accuracy_trace.append(accuracy_)   
+        if (((i+1) >= 100) and ((i+1) % 100 == 0 )) :   
+            print('Epoch:',(i+1),'loss:',loss_,'accuracy:',accuracy_)
+            
+    print('Final training result:','loss:',loss_,'accuracy:',accuracy_)   
+    loss_test = sess.run(cost,feed_dict={X:test_X,Y:test_Y})  
+    test_pred = np.argmax(sess.run(out,feed_dict={X:test_X,Y:test_Y}),axis=1)  
+    accuracy_test = np.mean(test_pred == np.argmax(test_Y,axis=1))  
+    print('Results on test dataset:','loss:',loss_test,'accuracy:',accuracy_test)
 ```
 
 <details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<summary class='jb-small' style="color:blue">Training</summary>
 <hr class='division3'>
+```
+Extracting MNIST_data/train-images-idx3-ubyte.gz
+Extracting MNIST_data/train-labels-idx1-ubyte.gz
+Extracting MNIST_data/t10k-images-idx3-ubyte.gz
+Extracting MNIST_data/t10k-labels-idx1-ubyte.gz
+Epoch: 100 loss: 1.5383416 accuracy: 0.7381636363636364
+Epoch: 200 loss: 1.184439 accuracy: 0.7911454545454546
+Epoch: 300 loss: 0.9936375 accuracy: 0.8137818181818182
+Epoch: 400 loss: 0.8766257 accuracy: 0.8260363636363637
+Epoch: 500 loss: 0.7975932 accuracy: 0.8344363636363636
+Epoch: 600 loss: 0.74041194 accuracy: 0.8407818181818182
+Epoch: 700 loss: 0.6969224 accuracy: 0.8461818181818181
+Epoch: 800 loss: 0.6625869 accuracy: 0.8504363636363637
+Epoch: 900 loss: 0.6346859 accuracy: 0.8542909090909091
+Epoch: 1000 loss: 0.6114902 accuracy: 0.8569272727272728
+Final training result: loss: 0.6114902 accuracy: 0.8569272727272728
+Results on test dataset: loss: 0.584958 accuracy: 0.869
+```
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Training</summary>
+<hr class='division3'>
+```python
+# Display the Actual Digits Versus the Predicted Digits Along with the Images of the Actual Digits
+import matplotlib.pyplot as plt 
+%matplotlib inline
 
+f, a = plt.subplots(1, 10, figsize=(10, 2))
+print('Actual digits:   ', np.argmax(test_Y[0:10],axis=1))
+print('Predicted digits:',test_pred[0:10])
+print('Actual images of the digits follow:')
+
+for i in range(10):      
+    a[i].imshow(np.reshape(test_X[i],(28, 28)))
+```
+`OUTPUT`
+```
+Actual digits:    [7 2 1 0 4 1 4 9 5 9]
+Predicted digits: [7 2 1 0 4 1 4 9 2 9]
+Actual images of the digits follow:
+```
+![다운로드](https://user-images.githubusercontent.com/52376448/65567285-99cacc00-df90-11e9-8baa-79cf95760a71.png)
 <hr class='division3'>
 </details>
 <br><br><br>
