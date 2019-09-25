@@ -21,6 +21,14 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
+## ****
+```python
+```
+
+<br><br><br>
+<hr class="division2">
+
+
 ## Regression with statsmodel
 
 <hr class="division2">
