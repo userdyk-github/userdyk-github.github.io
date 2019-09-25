@@ -582,12 +582,34 @@ print(image_out)
 ### ***Mean Filter***
 
 ```python
+# Convolution of an Image with Mean Filter
+import matplotlib.pyplot as plt
+import numpy as np
+from scipy.signal import convolve2d
+import cv2
+
+img = cv2.imread('monalisa.jpg')
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) 
+plt.imshow(gray,cmap='gray')
+mean = 0
+var = 100
+sigma = var**0.5
+row,col = 650,442 
+gauss = np.random.normal(mean,sigma,(row,col))
+gauss = gauss.reshape(row,col) 
+gray_noisy = gray + gauss
+plt.imshow(gray_noisy,cmap='gray') 
+
+## Mean filter
+Hm = np.array([[1,1,1],[1,1,1],[1,1,1]])/float(9)
+Gm = convolve2d(gray_noisy,Hm,mode='same')
+plt.imshow(Gm,cmap='gray')
 ```
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-
+![다운로드 (2)](https://user-images.githubusercontent.com/52376448/65568030-4e65ed00-df93-11e9-90a9-fc5b9e1db35c.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -597,12 +619,44 @@ print(image_out)
 ### ***Median Filter***
 
 ```python
+## Generate random integers from 0 to 20 
+## If the value is zero we will replace the image pixel with a low value of 0 that corresponds to a black pixel
+## If the value is 20 we will replace the image pixel with a high value of 255 that corresponds to a white pixel
+## We have taken 20 integers, out of which we will only tag integers 1 and 20 as salt and pepper noise 
+## Hence, approximately 10% of the overall pixels are salt and pepper noise. If we want to reduce it
+## to 5% we can take integers from 0 to 40 and then treat 0 as an indicator for a black pixel and 40 as an indicator for a white pixel.
+np.random.seed(0)
+gray_sp = gray*1 
+sp_indices = np.random.randint(0,21,[row,col]) 
+for i in range(row):    
+    for j in range(col):    
+        if sp_indices[i,j] == 0:
+            gray_sp[i,j] = 0  
+        if sp_indices[i,j] == 20:     
+            gray_sp[i,j] = 255 
+plt.imshow(gray_sp,cmap='gray')
+                
+## Now we want to remove the salt and pepper noise through a Median filter.
+## Using the opencv Median filter for the same
+gray_sp_removed = cv2.medianBlur(gray_sp,3)
+plt.imshow(gray_sp_removed,cmap='gray')
+
+##Implementation of the 3x3 Median filter without using opencv
+gray_sp_removed_exp = gray*1 
+for i in range(row):  
+    for j in range(col):   
+        local_arr = []      
+        for k in range(np.max([0,i-1]),np.min([i+2,row])):    
+            for l in range(np.max([0,j-1]),np.min([j+2,col])):  
+                local_arr.append(gray_sp[k,l])     
+        gray_sp_removed_exp[i,j] = np.median(local_arr) 
+plt.imshow(gray_sp_removed_exp,cmap='gray')
 ```
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-
+![다운로드 (3)](https://user-images.githubusercontent.com/52376448/65568096-7ead8b80-df93-11e9-8f9d-404cf4ce5599.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -612,12 +666,22 @@ print(image_out)
 ### ***Gaussian Filter***
 
 ```python
+Hg = np.zeros((20,20)) 
+for i in range(20):   
+    for j in range(20):   
+        Hg[i,j] = np.exp(-((i-10)**2 + (j-10)**2)/10)
+plt.imshow(Hg,cmap='gray')
+gray_blur = convolve2d(gray,Hg,mode='same') 
+plt.imshow(gray_blur,cmap='gray')
+gray_high = 0.1
+gray_enhanced = gray + 0.025 * gray_high
+plt.imshow(gray_enhanced,cmap='gray')
 ```
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-
+![다운로드 (4)](https://user-images.githubusercontent.com/52376448/65568118-8ff69800-df93-11e9-8380-69e072681c53.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -642,12 +706,23 @@ print(image_out)
 ### ***Sobel Edge-Detection Filter*** 
 
 ```python
+# Convolution Using a Sobel Filter
+Hx = np.array([[ 1,0, -1],[2,0,-2],[1,0,-1]],dtype=np.float32)
+Gx = convolve2d(gray,Hx,mode='same') 
+plt.imshow(Gx,cmap='gray')
+
+Hy = np.array([[ -1,-2, -1],[0,0,0],[1,2,1]],dtype=np.float32) 
+Gy = convolve2d(gray,Hy,mode='same') 
+plt.imshow(Gy,cmap='gray')
+
+G = (Gx*Gx + Gy*Gy)**0.5 
+plt.imshow(G,cmap='gray')
 ```
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-
+![다운로드 (5)](https://user-images.githubusercontent.com/52376448/65568145-a3a1fe80-df93-11e9-9048-c943cb039fc9.png)
 <hr class='division3'>
 </details>
 <br><br><br>
