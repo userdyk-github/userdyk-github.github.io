@@ -417,12 +417,16 @@ input2    50.0
 input3     7.0
 dtype: float64
 ```
+`Verification`
+<div style="font-size: 70%;">$$ \hat{s} = \hat{a}x + \hat{b}y + \hat{c}z + \hat{r} \to \hat{S}=\hat{A}X$$</div>
+<div style="font-size: 70%;">$$ \hat{S} X^{-1} = \hat{A} $$</div>
+
 <hr class='division3'>
 </details>
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Estimated values v.s. Original values for target</summary>
 <hr class='division3'>
-`Estimated values` : <span style="font-size: 70%;">$$ \hat{s} = \hat{a}x + \hat{b}y + \hat{c}z + \hat{r} \to A\vec{X}$$</span>
+`Estimated values` : <span style="font-size: 70%;">$$ \hat{s} = \hat{a}x + \hat{b}y + \hat{c}z + \hat{r} \to \hat{S}=\hat{A}X$$</span>
 ```python
 np.dot(constant_input, fitted_model.params)
 ```
