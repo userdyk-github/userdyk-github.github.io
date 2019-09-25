@@ -84,7 +84,7 @@ Multicollinearity refers to a situation in which two or more explanatory variabl
 **Way to relieve multicollinearity**
 
 - with eliminatation of any variables(Feature Selection)
-	- considering correlation coefficient
+	- Correlation coefficient
 	- Lasso
 	- Stepwise
 	- etc
