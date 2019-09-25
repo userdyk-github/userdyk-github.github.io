@@ -209,7 +209,7 @@ array([7.49049949, 6.62884716, 6.07305033, 7.0648904 , 6.93690197,
 <hr class='division3'>
 </details>
 <details markdown="1">
-<summary class='jb-small' style="color:blue">Prediction</summary>
+<summary class='jb-small' style="color:blue">Prediction for new dataset</summary>
 <hr class='division3'>
 `Prediction`
 ```python
