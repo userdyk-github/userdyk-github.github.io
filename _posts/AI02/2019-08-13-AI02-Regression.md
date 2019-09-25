@@ -63,7 +63,7 @@ List of posts to read before reading this article
 penalty
 
 
-## **Penalty of regression model **
+## **Penalty of regression model**
 
 ```python
 ```
