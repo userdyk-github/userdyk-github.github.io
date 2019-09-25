@@ -52,7 +52,7 @@ tags : [PL03]
   - <a href='https://pandas.pydata.org/pandas-docs/stable/reference/style.html' target="_blank"><span class='jb-small'>https://pandas.pydata.org/pandas-docs/stable/reference/style.html</span></a>
   - <a href='https://pandas.pydata.org/pandas-docs/stable/reference/window.html' target="_blank"><span class='jb-small'>https://pandas.pydata.org/pandas-docs/stable/reference/window.html</span></a>
   
-- <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-TensorFlow_version1.html'>TensorFlow(1.*)</a> ｜ <a href='https://cdn-images-1.medium.com/max/2000/1*dtOZSuYDonyyBvEULpJALw.png' target="_blank">Cheat Sheet</a>
+- <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-TensorFlow_version1.html'>TensorFlow(1.*)</a> ｜ <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-TensorFlow_version2.html'>TensorFlow(2.*)</a>｜<a href='https://cdn-images-1.medium.com/max/2000/1*dtOZSuYDonyyBvEULpJALw.png' target="_blank">Cheat Sheet</a>
   - <a href='https://www.tensorflow.org/api_docs/python/tf' target="_blank"><span class='jb-small'>https://www.tensorflow.org/api_docs/python/tf</span></a>
   
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-Keras.html'>Keras</a> ｜ <a href='https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Keras_Cheat_Sheet_Python.pdf' target="_blank">Cheat Sheet</a>
