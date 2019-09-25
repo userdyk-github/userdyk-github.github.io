@@ -1498,9 +1498,40 @@ df = pd.DataFrame({"Population": [909976, 8615246, 2872086, 2273305,123234,12344
                    "State": ["Sweden", "United Kingdom", "Italy","Seoul","Suwon", "France","Korea", "Japan"],
                    "Alphabet" : ["a","b","x","d","a","a","b","c"],
                    "rank" : [1,2,3,4,6,5,7,8]})
-df = df.set_index(["Alphabet","rank"]).sort_index()
+df
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+	Population	State	          Alphabet	rank
+0	909976	    Sweden	        a	        1
+1	8615246	    United Kingdom	b	        2
+2	2872086   	Italy	          x       	3
+3	2273305   	Seoul	          d       	4
+4	123234	    Suwon	          a       	6
+5	123444	    France	        a       	5
+6	23333	      Korea	          b       	7
+7	343434	    Japan	          c       	8
+```
+<hr class='division3'>
+</details>
 ```python
+df.corr()
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+	          Population	rank
+Population	 1.000000  	-0.573738
+rank	      -0.573738    1.000000
+```
+<hr class='division3'>
+</details>
+
+```python
+df = df.set_index(["Alphabet","rank"]).sort_index()
 df
 ```
 <details markdown="1">
@@ -1532,7 +1563,13 @@ df.loc['a'].std()
 ```
 <hr class='division3'>
 </details>
+
 <br><br><br>
+
+
+
+
+
 
 ---
 
