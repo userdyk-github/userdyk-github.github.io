@@ -217,7 +217,6 @@ array([7.49049949, 6.62884716, 6.07305033, 7.0648904 , 6.93690197,
 ```python
 fitted_model.resid
 ```
-`OUTPUT`
 ```
 0     -1.776357e-15
 1     -2.664535e-15
@@ -232,13 +231,12 @@ Length: 1000, dtype: float64
 ```python
 np.sum(fitted_model.resid)
 ```
-`OUTPUT`
 ```
 -2.652988939644274e-12
 ```
 `Visualization for residue`
 ```python
-
+fitted_model.resid.plot()
 ```
 ![다운로드 (3)](https://user-images.githubusercontent.com/52376448/65611092-4a66b900-dfed-11e9-8b83-44d5737fef70.png)
 <hr class='division3'>
