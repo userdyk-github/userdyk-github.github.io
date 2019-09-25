@@ -85,6 +85,7 @@ penalty
 ```python
 import numpy as np
 import pandas as pd
+import statsmodels.api as sm
 
 def f(x,a,b):
     return a*x + b
@@ -100,6 +101,7 @@ df = pd.concat([df_input, df_target], axis=1)
 df.columns = ['input','target']
 Input = df['input']
 Target = df['target']
+constant_input = sm.add_constant(Input, has_constant='add')
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Input</summary>
@@ -118,6 +120,25 @@ Name: input, dtype: float64
 ```
 <hr class='division3'>
 </details>
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Constant_input</summary>
+<hr class='division3'>
+```python
+constant_input.head()
+```
+`OUTPUT`
+```
+	const	input
+0	1.0	0.830166
+1	1.0	0.542949
+2	1.0	0.357683
+3	1.0	0.688297
+4	1.0	0.645634
+```
+<hr class='division3'>
+</details>
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Target</summary>
 <hr class='division3'>
@@ -138,9 +159,6 @@ Name: target, dtype: float64
 <br>
 `Regression analysis`
 ```python
-import statsmodels.api as sm
-
-constant_input = sm.add_constant(Input, has_constant='add')
 model = sm.OLS(Target, constant_input)
 fitted_model = model.fit()
 fitted_model.summary()
@@ -158,23 +176,6 @@ fitted_model.params
 const    5.0
 input    3.0
 dtype: float64
-```
-<hr class='division3'>
-</details>
-<details markdown="1">
-<summary class='jb-small' style="color:blue">Constant_input</summary>
-<hr class='division3'>
-```python
-constant_input.head()
-```
-`OUTPUT`
-```
-	const	input
-0	1.0	0.830166
-1	1.0	0.542949
-2	1.0	0.357683
-3	1.0	0.688297
-4	1.0	0.645634
 ```
 <hr class='division3'>
 </details>
