@@ -179,6 +179,33 @@ dtype: float64
 ```
 <hr class='division3'>
 </details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Estimated values v.s. Original values</summary>
+<hr class='division3'>
+`Estimated values`
+```python
+np.dot(constant_input, fitted_model.params)
+```
+```
+array([7.49049949, 6.62884716, 6.07305033, 7.0648904 , 6.93690197,
+       6.04064573, 6.5576149 , 6.74231639, 6.73183572, 7.07796106,
+       ...
+       5.74719815, 6.58978836, 6.25943715, 5.88547536, 7.40743629,
+       5.77773424, 5.99074449, 6.12113732, 6.13392177, 6.92979226])
+```
+`Original values`
+```python
+target
+```
+```
+array([7.49049949, 6.62884716, 6.07305033, 7.0648904 , 6.93690197,
+       6.04064573, 6.5576149 , 6.74231639, 6.73183572, 7.07796106,
+       ...
+       5.74719815, 6.58978836, 6.25943715, 5.88547536, 7.40743629,
+       5.77773424, 5.99074449, 6.12113732, 6.13392177, 6.92979226])
+```
+<hr class='division3'>
+</details>
 <br><br><br>
 
 ---
