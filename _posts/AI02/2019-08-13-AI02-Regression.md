@@ -69,7 +69,7 @@ List of posts to read before reading this article
 
 
 
-## **Multiple linear regression**
+## **multivariate linear regression**
 <div class="frame1">
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e8fe92790a76066af5556c62f5230bcc0bdf9f38" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:58.966ex; height:3.176ex;" alt="{\displaystyle y_{i}=\beta _{1}x_{i1}+\cdots +\beta _{p}x_{ip}+\varepsilon _{i}=\mathbf {x} _{i}^{\rm {T}}{\boldsymbol {\beta }}+\varepsilon _{i},\qquad i=1,\ldots ,n,}">
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8119b3ed1259aa8ff15166488548104b50a0f92e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:13.128ex; height:2.509ex;" alt="{\displaystyle \mathbf {y} =X{\boldsymbol {\beta }}+{\boldsymbol {\varepsilon }},\,}">
@@ -148,6 +148,7 @@ Multicollinearity refers to a situation in which two or more explanatory variabl
 <hr class="division2">
 
 
+
 ## **Logistic regression model**
 
 ```python
@@ -183,6 +184,12 @@ Multicollinearity refers to a situation in which two or more explanatory variabl
 <br><br><br>
 
 <hr class="division2">
+
+## **Nonlinear regression**
+
+<br><br><br>
+<hr class="division2">
+
 
 
 ## **Penalty of regression model**
@@ -405,7 +412,7 @@ plt.show()
 
 
 
-#### Multiple linear regression about artificial dataset
+#### multivariate linear regression about artificial dataset
 
 `Data preprocessing`
 ```python
