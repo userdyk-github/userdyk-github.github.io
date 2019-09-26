@@ -206,7 +206,7 @@ List of posts followed by this article
 ---
 
 Reference
-- <a href='https://github.com/TheAlgorithms/Python'>TheAlgorithms</a>
+- <a href='https://github.com/TheAlgorithms/Python' target="_blank">TheAlgorithms</a>
 - <a href='http://mai1408.github.io/index.html' target="_blank">Visualizing Algorithms through animation</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
