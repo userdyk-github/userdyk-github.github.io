@@ -117,7 +117,7 @@ List of posts to read before reading this article
 <br><br><br>
 
 
-### ***Multicollinearity***
+#### Multicollinearity
 
 
 Multicollinearity refers to a situation in which two or more explanatory variables in a multiple regression model are highly linearly related. <br>
