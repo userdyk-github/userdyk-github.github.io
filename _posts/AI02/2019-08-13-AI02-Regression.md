@@ -690,7 +690,6 @@ fitted_model_L = model_L.fit()
 ```python
 fitted_model_s.summary()
 ```
-<br>
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT : Regression coefficients etc</summary>
 <hr class='division3'>
