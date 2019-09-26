@@ -677,6 +677,29 @@ constant_Input_L = sm.add_constant(Input_L, has_constant='add')
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Data : Input</summary>
 <hr class='division3'>
+```python
+constant_Input_s.head()
+```
+```
+	const	CRIM	RM	LSTAT
+0	1.0	0.00632	6.575	4.98
+1	1.0	0.02731	6.421	9.14
+2	1.0	0.02729	7.185	4.03
+3	1.0	0.03237	6.998	2.94
+4	1.0	0.06905	7.147	5.33
+```
+<br>
+```python
+constant_Input_L.head()
+```
+```
+	const	CRIM	RM	LSTAT	B	TAX	AGE	ZN	NOX	INDUS
+0	1.0	0.00632	6.575	4.98	396.90	296	65.2	18.0	0.538	2.31
+1	1.0	0.02731	6.421	9.14	396.90	242	78.9	0.0	0.469	7.07
+2	1.0	0.02729	7.185	4.03	392.83	242	61.1	0.0	0.469	7.07
+3	1.0	0.03237	6.998	2.94	394.63	222	45.8	0.0	0.458	2.18
+4	1.0	0.06905	7.147	5.33	396.90	222	54.2	0.0	0.458	2.18
+```
 <hr class='division3'>
 </details>
 <br>
@@ -828,6 +851,34 @@ fitted_model = model.fit()
 fitted_model1 = model1.fit()
 fitted_model2 = model2.fit()
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Data : Input</summary>
+<hr class='division3'>
+```python
+constant_Input1.head()
+```
+```
+	const	CRIM	RM	LSTAT	B	TAX	AGE	ZN	INDUS
+0	1.0	0.00632	6.575	4.98	396.90	296	65.2	18.0	2.31
+1	1.0	0.02731	6.421	9.14	396.90	242	78.9	0.0	7.07
+2	1.0	0.02729	7.185	4.03	392.83	242	61.1	0.0	7.07
+3	1.0	0.03237	6.998	2.94	394.63	222	45.8	0.0	2.18
+4	1.0	0.06905	7.147	5.33	396.90	222	54.2	0.0	2.18
+```
+<br>
+```python
+constant_Input2.head()
+```
+```
+	const	CRIM	LSTAT	B	TAX	AGE	ZN	INDUS
+0	1.0	0.00632	4.98	396.90	296	65.2	18.0	2.31
+1	1.0	0.02731	9.14	396.90	242	78.9	0.0	7.07
+2	1.0	0.02729	4.03	392.83	242	61.1	0.0	7.07
+3	1.0	0.03237	2.94	394.63	222	45.8	0.0	2.18
+4	1.0	0.06905	5.33	396.90	222	54.2	0.0	2.18
+```
+<hr class='division3'>
+</details>
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT : Regression coefficients etc</summary>
 <hr class='division3'>
