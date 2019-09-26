@@ -748,12 +748,7 @@ plt.show()
 ![다운로드 (1)](https://user-images.githubusercontent.com/52376448/65658872-68bbcb80-e064-11e9-82ca-b8c0f7dc0f69.png)
 <hr class='division3'>
 </details>
-<details markdown="1">
-<summary class='jb-small' style="color:blue">Model performance</summary>
-<hr class='division3'>
 
-<hr class='division3'>
-</details>
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Diagnosis</summary>
 <hr class='division3'>
@@ -813,9 +808,92 @@ plt.show()
 <br>
 `Modify regression model`
 ```python
+from sklearn.model_selection import train_test_split
 
+# Data preprocessing
+constant_Input1 = constant_Input_L.drop('NOX', axis=1)
+constant_Input2 = constant_Input_L.drop(['NOX','RM'], axis=1)
+X = constant_Input_L
+X1 = constant_Input1
+X2 = constant_Input2
+y = Target
+
+train_x, test_x, train_y, test_y = train_test_split(X, y, train_size=0.7, test_size=0.3, random_state = 1)
+train_x1, test_x1, train_y1, test_y1 = train_test_split(X1, y, train_size=0.7, test_size=0.3, random_state = 1)
+train_x2, test_x2, train_y2, test_y2 = train_test_split(X2, y, train_size=0.7, test_size=0.3, random_state = 1)
+
+# Regression analysis
+model = sm.OLS(train_y, train_x)
+model1 = sm.OLS(train_y1, train_x1)
+model2 = sm.OLS(train_y2, train_x2)
+
+fitted_model = model.fit()
+fitted_model1 = model1.fit()
+fitted_model2 = model2.fit()
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT : Regression coefficients etc</summary>
+<hr class='division3'>
+```python
+fitted_model.summary()
+```
+![캡처](https://user-images.githubusercontent.com/52376448/65662631-b12cb680-e06f-11e9-9d53-ab8bcf12aad6.JPG)
+```python
+fitted_model1.summary()
+```
+![캡처](https://user-images.githubusercontent.com/52376448/65662654-c275c300-e06f-11e9-9536-b19450689907.JPG)
+```python
+fitted_model2.summary()
+```
+![캡처](https://user-images.githubusercontent.com/52376448/65662687-d91c1a00-e06f-11e9-9e74-0f03b0f1df1b.JPG)
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Model prediction</summary>
+<hr class='division3'>
+```python
+plt.plot(np.array(fitted_model.predict(test_x)), label="model with full variables")
+plt.plot(np.array(fitted_model1.predict(test_x1)), label="model1 eliminated 1 variable")
+plt.plot(np.array(fitted_model2.predict(test_x2)), label="model2 eliminated 2 variables")
+plt.plot(np.array(test_y), label="true")
+plt.legend()
+plt.show()
+```
+![다운로드 (4)](https://user-images.githubusercontent.com/52376448/65662871-4a5bcd00-e070-11e9-934e-72160199bde1.png)
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Model diagonosis</summary>
+<hr class='division3'>
+`Residual analysis`
+```python
+plt.plot(np.array(test_y.values-fitted_model.predict(test_x)),label='residual of model')
+plt.plot(np.array(test_y.values-fitted_model1.predict(test_x1)),label='residual of model1')
+plt.plot(np.array(test_y.values-fitted_model2.predict(test_x2)),label='residual; of model2')
+plt.legend()
+plt.show()
+```
+![다운로드 (5)](https://user-images.githubusercontent.com/52376448/65662921-6e1f1300-e070-11e9-9d2c-f6d38eb8a57d.png)
 
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Model performance</summary>
+<hr class='division3'>
+```python
+from sklearn.metrics import mean_squared_error
+
+print(mean_squared_error(y_true=test_y.values, y_pred=fitted_model.predict(test_x)))
+print(mean_squared_error(y_true=test_y.values, y_pred=fitted_model1.predict(test_x1)))
+print(mean_squared_error(y_true=test_y.values, y_pred=fitted_model2.predict(test_x2)))
+```
+```
+26.148631468819843
+26.14006260984654
+38.788453179128304
+```
+<hr class='division3'>
+</details>
 <br><br><br>
 
 
