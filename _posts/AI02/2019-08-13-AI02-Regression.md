@@ -796,7 +796,18 @@ ZN	-0.200469	0.311991	-0.412995	0.175520	-0.314563	-0.569537	1.000000	-0.516604	
 NOX	0.420972	-0.302188	0.590879	-0.380051	0.668023	0.731470	-0.516604	1.000000	0.763651
 INDUS	0.406583	-0.391676	0.603800	-0.356977	0.720760	0.644779	-0.533828	0.763651	1.000000
 ```
-
+```python
+import seaborn as sns
+cmap = sns.light_palette('darkgray', as_cmap=True)
+sns.heatmap(Input_L.corr(), annot=True, cmap=cmap)
+plt.show()
+```
+![다운로드 (2)](https://user-images.githubusercontent.com/52376448/65659538-f993a680-e066-11e9-87b2-7a2b2ab1069c.png)
+```python
+sns.pairplot(Input_L)
+plt.show()
+```
+![다운로드 (3)](https://user-images.githubusercontent.com/52376448/65659569-129c5780-e067-11e9-98de-68bb15197a09.png)
 <hr class='division3'>
 </details>
 <br>
