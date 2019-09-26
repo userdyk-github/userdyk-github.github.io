@@ -838,10 +838,12 @@ fitted_model2 = model2.fit()
 fitted_model.summary()
 ```
 ![캡처](https://user-images.githubusercontent.com/52376448/65662631-b12cb680-e06f-11e9-9d53-ab8bcf12aad6.JPG)
+<br>
 ```python
 fitted_model1.summary()
 ```
 ![캡처](https://user-images.githubusercontent.com/52376448/65662654-c275c300-e06f-11e9-9536-b19450689907.JPG)
+<br>
 ```python
 fitted_model2.summary()
 ```
