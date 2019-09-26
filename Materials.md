@@ -105,3 +105,11 @@ title: MATERIALS
 - <a href='https://www.youtube.com/playlist?list=PLlMkM4tgfjnJhhd4wn5aj8fVTYJwIpWkS'>Deep learning paper seminar</a>, <a href='https://www.youtube.com/playlist?list=PL0oFI08O71gKEXITQ7OG2SCCXkrtid7Fq'>Talk for deep learning</a>, <a href='https://www.youtube.com/playlist?list=PLhGeMZBOfrVxy65faz3tsoixEJforU2e-'>SK talk on seminar</a>, <a href='https://www.youtube.com/playlist?list=PLPZxAIaT7oTjX6FtwoOylYjiOTsb8HXje'>Future for deep learning</a>
 
 
+
+<br>
+
+<hr class='division2'>
+
+<br>
+
+# REFERENCES
