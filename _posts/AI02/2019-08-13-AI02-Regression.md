@@ -807,7 +807,15 @@ fitted_model_s.summary()
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT : Regression coefficients etc</summary>
 <hr class='division3'>
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
 ![캡처](https://user-images.githubusercontent.com/52376448/65658719-d3203c00-e063-11e9-8fc5-4cf3ad12393d.JPG)
+<hr class='division3_1'>
+</details>
+
+
+
 <br>
 ```python
 fitted_model_s.params
@@ -828,7 +836,15 @@ fitted_model_L.summary()
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT : Regression coefficients etc</summary>
 <hr class='division3'>
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
 ![캡처](https://user-images.githubusercontent.com/52376448/65658743-ed5a1a00-e063-11e9-9238-7473a57981cd.JPG)
+<hr class='division3_1'>
+</details>
+
+
+
 <br>
 ```python
 fitted_model_L.params
@@ -956,17 +972,35 @@ pd.concat([vif,vif1,vif2], axis=1)
 ```python
 fitted_model.summary()
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
 ![캡처](https://user-images.githubusercontent.com/52376448/65662631-b12cb680-e06f-11e9-9d53-ab8bcf12aad6.JPG)
+<hr class='division3_1'>
+</details>
+
 <br>
 ```python
 fitted_model1.summary()
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
 ![캡처](https://user-images.githubusercontent.com/52376448/65662654-c275c300-e06f-11e9-9536-b19450689907.JPG)
+<hr class='division3_1'>
+</details>
+
 <br>
 ```python
 fitted_model2.summary()
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
 ![캡처](https://user-images.githubusercontent.com/52376448/65662687-d91c1a00-e06f-11e9-9e74-0f03b0f1df1b.JPG)
+<hr class='division3_1'>
+</details>
+
 <hr class='division3'>
 </details>
 <details markdown="1">
