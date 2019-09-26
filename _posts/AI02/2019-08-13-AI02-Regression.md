@@ -303,7 +303,7 @@ fitted_model = model.fit()
 fitted_model.summary()
 ```
 <details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT : Regression coefficients etc</summary>
+<summary class='jb-small' style="color:blue">OUTPUT : Model results</summary>
 <hr class='division3'>
 <details markdown="1">
 <summary class='jb-small' style="color:red">OUTPUT</summary>
@@ -514,7 +514,7 @@ fitted_model = model.fit()
 fitted_model.summary()
 ```
 <details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT : Regression coefficients etc</summary>
+<summary class='jb-small' style="color:blue">OUTPUT : Model results</summary>
 <hr class='division3'>
 <details markdown="1">
 <summary class='jb-small' style="color:red">OUTPUT</summary>
@@ -805,7 +805,7 @@ fitted_model_L = model_L.fit()
 fitted_model_s.summary()
 ```
 <details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT : Regression coefficients etc</summary>
+<summary class='jb-small' style="color:blue">OUTPUT : Model results</summary>
 <hr class='division3'>
 <details markdown="1">
 <summary class='jb-small' style="color:red">OUTPUT</summary>
@@ -834,7 +834,7 @@ dtype: float64
 fitted_model_L.summary()
 ```
 <details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT : Regression coefficients etc</summary>
+<summary class='jb-small' style="color:blue">OUTPUT : Model results</summary>
 <hr class='division3'>
 <details markdown="1">
 <summary class='jb-small' style="color:red">OUTPUT</summary>
@@ -967,7 +967,7 @@ pd.concat([vif,vif1,vif2], axis=1)
 <hr class='division3'>
 </details>
 <details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT : Regression coefficients etc</summary>
+<summary class='jb-small' style="color:blue">OUTPUT : Model results</summary>
 <hr class='division3'>
 ```python
 fitted_model.summary()
