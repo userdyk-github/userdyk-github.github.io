@@ -1057,3 +1057,4 @@ Reference
 ---
 
 [1]:{{ site.url }}/download/AI02/boston_house.csv
+[2]:{{ site.url }}/download/AI02/ToyotaCorolla.csv
