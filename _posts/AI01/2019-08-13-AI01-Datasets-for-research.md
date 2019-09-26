@@ -17,3 +17,11 @@ tags : [AI01]
 - <a href="https://archive.ics.uci.edu/ml/" target="_blank">UCI ML Repository</a>
 - <a href="https://www.data.go.kr/" target="_blank">Open Data potal</a>
 - <a href="http://kosis.kr/index/index.do" target="_blank">kosis</a>
+
+---
+
+Reference
+
+- <a href='https://lionbridge.ai/datasets/20-best-image-datasets-for-computer-vision/' target="_blank">20 Free Image Datasets for Computer Vision</a>
+
+---
