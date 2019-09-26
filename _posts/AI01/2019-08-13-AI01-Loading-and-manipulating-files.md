@@ -1,6 +1,6 @@
 ---
 layout : post
-title : AI01, Loading and manipulating csv
+title : AI01, Loading and manipulating files
 categories: [AI01]
 comments : true
 tags : [AI01]
@@ -21,15 +21,17 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## **Load .csv files**
+## **CSV**
+
+### ***Load .csv files***
 
 <hr class="division2">
 
-## **Save to .csv files**
+### ***Save to .csv files***
 
 <hr class="division2">
 
-## title3
+## **TXT**
 
 <hr class="division1">
 
