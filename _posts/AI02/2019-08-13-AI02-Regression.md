@@ -327,9 +327,9 @@ array([7.49049949, 6.62884716, 6.07305033, 7.0648904 , 6.93690197,
 </details>
 
 <details markdown="1">
-<summary class='jb-small' style="color:blue">Residual analysis</summary>
+<summary class='jb-small' style="color:blue">Model diagnosis</summary>
 <hr class='division3'>
-`Residue`
+`Residual`
 ```python
 fitted_model.resid
 ```
@@ -575,9 +575,9 @@ array([38.38830915, 55.94154925, 28.96956111, 16.13232006, 45.71464433,
 <hr class='division3'>
 </details>
 <details markdown="1">
-<summary class='jb-small' style="color:blue">Residual analysis</summary>
+<summary class='jb-small' style="color:blue">Model diagnosis</summary>
 <hr class='division3'>
-`Residue`
+`Residual`
 ```python
 fitted_model.resid
 ```
@@ -734,20 +734,6 @@ dtype: float64
 ```
 <hr class='division3'>
 </details>
-<details markdown="1">
-<summary class='jb-small' style="color:blue">Residual analysis</summary>
-<hr class='division3'>
-```python
-import matplotlib.pyplot as plt
-
-fitted_model_s.resid.plot(label="base")
-fitted_model_L.resid.plot(label="full")
-plt.legend()
-plt.show()
-```
-![다운로드 (1)](https://user-images.githubusercontent.com/52376448/65658872-68bbcb80-e064-11e9-82ca-b8c0f7dc0f69.png)
-<hr class='division3'>
-</details>
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Model diagnosis</summary>
@@ -803,6 +789,17 @@ sns.pairplot(Input_L)
 plt.show()
 ```
 ![다운로드 (3)](https://user-images.githubusercontent.com/52376448/65659569-129c5780-e067-11e9-98de-68bb15197a09.png)
+<br>
+`Residual analysis`
+```python
+import matplotlib.pyplot as plt
+
+fitted_model_s.resid.plot(label="base")
+fitted_model_L.resid.plot(label="full")
+plt.legend()
+plt.show()
+```
+![다운로드 (1)](https://user-images.githubusercontent.com/52376448/65658872-68bbcb80-e064-11e9-82ca-b8c0f7dc0f69.png)
 <hr class='division3'>
 </details>
 <br>
@@ -865,7 +862,7 @@ plt.show()
 <hr class='division3'>
 </details>
 <details markdown="1">
-<summary class='jb-small' style="color:blue">Model diagonosis</summary>
+<summary class='jb-small' style="color:blue">Model diagnosis</summary>
 <hr class='division3'>
 `Multicollinearity` : Variance inflation factor(VIF)
 ```python
