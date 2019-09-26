@@ -21,15 +21,43 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
+## **Hash**
 
 <hr class="division2">
 
-## title2
+## **Stack/Queue**
 
 <hr class="division2">
 
-## title3
+## **Heap**
+
+<hr class="division2">
+
+## **Sort**
+
+<hr class="division2">
+
+## **Full search**
+
+<hr class="division2">
+
+## **Greedy**
+
+<hr class="division2">
+
+## **Dynamic programming**
+
+<hr class="division2">
+
+## **DFS/BFS**
+
+<hr class="division2">
+
+## **Binary search**
+
+<hr class="division2">
+
+## **Graph**
 
 <hr class="division1">
 
