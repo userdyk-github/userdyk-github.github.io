@@ -516,12 +516,17 @@ fitted_model.summary()
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT : Regression coefficients etc</summary>
 <hr class='division3'>
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
 ![캡처](https://user-images.githubusercontent.com/52376448/65622909-a0ddf280-e001-11e9-8824-2113afe162bd.JPG)
+<hr class='division3_1'>
+</details>
+<br>
 ```python
 # Regression coefficients
 fitted_model.params
 ```
-`OUTPUT`
 ```
 const      3.0
 input1    20.0
