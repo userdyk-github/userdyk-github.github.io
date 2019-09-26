@@ -305,12 +305,12 @@ fitted_model.summary()
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT : Regression coefficients etc</summary>
 <hr class='division3'>
-	<details markdown="1">
-	<summary class='jb-small' style="color:red">OUTPUT</summary>
-	<hr class='division3_1'>
-	![캡처](https://user-images.githubusercontent.com/52376448/65604433-7597db00-dfe2-11e9-8141-dc5126370fb1.JPG)
-	<hr class='division3_1'>
-	</details>
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+![캡처](https://user-images.githubusercontent.com/52376448/65604433-7597db00-dfe2-11e9-8141-dc5126370fb1.JPG)
+<hr class='division3_1'>
+</details>
 
 <br>
 ```python
