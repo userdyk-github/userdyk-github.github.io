@@ -725,6 +725,65 @@ constant_Input_L.head()
 ```
 <hr class='division3'>
 </details>
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Data diagnosis</summary>
+<hr class='division3'>
+`Multicollinearity` : Variance inflation factor(VIF)
+
+```python
+from statsmodels.stats.outliers_influence import variance_inflation_factor
+
+vif = pd.DataFrame()
+vif['VIF Factor'] = [variance_inflation_factor(Input_L.values, i) for i in range(Input_L.shape[1])]
+vif['features'] = Input_L.columns
+vif
+```
+```
+	VIF Factor	features
+0	1.917332	CRIM
+1	46.535369	RM
+2	8.844137	LSTAT
+3	16.856737	B
+4	19.923044	TAX
+5	18.457503	AGE
+6	2.086502	ZN
+7	72.439753	NOX
+8	12.642137	INDUS
+```
+<br>
+`Multicollinearity` : Correlation coefficient
+```python
+Input_L.corr()
+```
+```
+	CRIM		RM		LSTAT		B		TAX		AGE		ZN		NOX		INDUS
+CRIM	1.000000	-0.219247	0.455621	-0.385064	0.582764	0.352734	-0.200469	0.420972	0.406583
+RM	-0.219247	1.000000	-0.613808	0.128069	-0.292048	-0.240265	0.311991	-0.302188	-0.391676
+LSTAT	0.455621	-0.613808	1.000000	-0.366087	0.543993	0.602339	-0.412995	0.590879	0.603800
+B	-0.385064	0.128069	-0.366087	1.000000	-0.441808	-0.273534	0.175520	-0.380051	-0.356977
+TAX	0.582764	-0.292048	0.543993	-0.441808	1.000000	0.506456	-0.314563	0.668023	0.720760
+AGE	0.352734	-0.240265	0.602339	-0.273534	0.506456	1.000000	-0.569537	0.731470	0.644779
+ZN	-0.200469	0.311991	-0.412995	0.175520	-0.314563	-0.569537	1.000000	-0.516604	-0.533828
+NOX	0.420972	-0.302188	0.590879	-0.380051	0.668023	0.731470	-0.516604	1.000000	0.763651
+INDUS	0.406583	-0.391676	0.603800	-0.356977	0.720760	0.644779	-0.533828	0.763651	1.000000
+```
+```python
+import seaborn as sns
+cmap = sns.light_palette('darkgray', as_cmap=True)
+sns.heatmap(Input_L.corr(), annot=True, cmap=cmap)
+plt.show()
+```
+![다운로드 (2)](https://user-images.githubusercontent.com/52376448/65659538-f993a680-e066-11e9-87b2-7a2b2ab1069c.png)
+```python
+sns.pairplot(Input_L)
+plt.show()
+```
+![다운로드 (3)](https://user-images.githubusercontent.com/52376448/65659569-129c5780-e067-11e9-98de-68bb15197a09.png)
+<hr class='division3'>
+</details>
+
+
 <br>
 `Regression analysis`
 ```python
@@ -784,58 +843,6 @@ dtype: float64
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Model diagnosis</summary>
 <hr class='division3'>
-`Multicollinearity` : Variance inflation factor(VIF)
-
-```python
-from statsmodels.stats.outliers_influence import variance_inflation_factor
-
-vif = pd.DataFrame()
-vif['VIF Factor'] = [variance_inflation_factor(Input_L.values, i) for i in range(Input_L.shape[1])]
-vif['features'] = Input_L.columns
-vif
-```
-```
-	VIF Factor	features
-0	1.917332	CRIM
-1	46.535369	RM
-2	8.844137	LSTAT
-3	16.856737	B
-4	19.923044	TAX
-5	18.457503	AGE
-6	2.086502	ZN
-7	72.439753	NOX
-8	12.642137	INDUS
-```
-<br>
-`Multicollinearity` : Correlation coefficient
-```python
-Input_L.corr()
-```
-```
-	CRIM		RM		LSTAT		B		TAX		AGE		ZN		NOX		INDUS
-CRIM	1.000000	-0.219247	0.455621	-0.385064	0.582764	0.352734	-0.200469	0.420972	0.406583
-RM	-0.219247	1.000000	-0.613808	0.128069	-0.292048	-0.240265	0.311991	-0.302188	-0.391676
-LSTAT	0.455621	-0.613808	1.000000	-0.366087	0.543993	0.602339	-0.412995	0.590879	0.603800
-B	-0.385064	0.128069	-0.366087	1.000000	-0.441808	-0.273534	0.175520	-0.380051	-0.356977
-TAX	0.582764	-0.292048	0.543993	-0.441808	1.000000	0.506456	-0.314563	0.668023	0.720760
-AGE	0.352734	-0.240265	0.602339	-0.273534	0.506456	1.000000	-0.569537	0.731470	0.644779
-ZN	-0.200469	0.311991	-0.412995	0.175520	-0.314563	-0.569537	1.000000	-0.516604	-0.533828
-NOX	0.420972	-0.302188	0.590879	-0.380051	0.668023	0.731470	-0.516604	1.000000	0.763651
-INDUS	0.406583	-0.391676	0.603800	-0.356977	0.720760	0.644779	-0.533828	0.763651	1.000000
-```
-```python
-import seaborn as sns
-cmap = sns.light_palette('darkgray', as_cmap=True)
-sns.heatmap(Input_L.corr(), annot=True, cmap=cmap)
-plt.show()
-```
-![다운로드 (2)](https://user-images.githubusercontent.com/52376448/65659538-f993a680-e066-11e9-87b2-7a2b2ab1069c.png)
-```python
-sns.pairplot(Input_L)
-plt.show()
-```
-![다운로드 (3)](https://user-images.githubusercontent.com/52376448/65659569-129c5780-e067-11e9-98de-68bb15197a09.png)
-<br>
 `Residual analysis`
 ```python
 import matplotlib.pyplot as plt
