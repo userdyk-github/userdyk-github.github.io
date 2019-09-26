@@ -364,6 +364,7 @@ Mass Point</a><br>
 > <a href='https://userdyk-github.github.io/pl03/PL03-Syntax-and-semantics.html'>Syntax and semantics</a><br>
 > <a href='https://userdyk-github.github.io/pl03/PL03-Libraries.html'>Libraries</a><br>
 > <a href='https://userdyk-github.github.io/pl03/PL03-Algorithm.html'>Algorithm</a><br>
+> <a href='https://userdyk-github.github.io/pl03/PL03-Exercises.html'>Exercises</a><br>
 
 ---
 
