@@ -77,7 +77,7 @@ tags : [PL03]
 ---
 
 Reference
-
+- <a href='https://github.com/TheAlgorithms/Python'>TheAlgorithms</a>
 - <a href='https://en.wikipedia.org/wiki/List_of_Python_software' target="_blank">List of python libraries</a><br>
 - <a href='https://www.datacamp.com/community/data-science-cheatsheets' target="_blank">List of python libraries cheat sheet for data science</a><br>
 
