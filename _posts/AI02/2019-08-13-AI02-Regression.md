@@ -767,7 +767,7 @@ dtype: float64
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 
 vif = pd.DataFrame()
-vif['VIF Factor'] = [variance_inflation_factor(constant_Input_L.values, i) for i in range(Input_L.shape[1])]
+vif['VIF Factor'] = [variance_inflation_factor(Input_L.values, i) for i in range(Input_L.shape[1])]
 vif['features'] = Input_L.columns
 vif
 ```
