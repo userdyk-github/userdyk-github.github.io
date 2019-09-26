@@ -867,6 +867,30 @@ plt.show()
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Model diagonosis</summary>
 <hr class='division3'>
+`Multicollinearity` : Variance inflation factor(VIF)
+```python
+vif1 = pd.DataFrame()
+vif2 = pd.DataFrame()
+vif1['VIF1 Factor'] = [variance_inflation_factor(constant_Input1.values, i) for i in range(constant_Input1.shape[1])]
+vif2['VIF2 Factor'] = [variance_inflation_factor(constant_Input2.values, i) for i in range(constant_Input2.shape[1])]
+vif1['features1'] = constant_Input1.columns
+vif2['features2'] = constant_Input2.columns
+pd.concat([vif,vif1,vif2], axis=1)
+```
+```
+	VIF Factor	features	VIF1 Factor	features1	VIF2 Factor	features2
+0	1.917332	CRIM		225.103139	const		47.459923	const
+1	46.535369	RM		1.636734	CRIM		1.635178	CRIM
+2	8.844137	LSTAT		1.800231	RM		1.967286	LSTAT
+3	16.856737	B		2.907267	LSTAT		1.306961	B
+4	19.923044	TAX		1.326318	B		2.786404	TAX
+5	18.457503	AGE		2.788687	TAX		2.191731	AGE
+6	2.086502	ZN		2.384410	AGE		1.635963	ZN
+7	72.439753	NOX		1.675944	ZN		3.059316	INDUS
+8	12.642137	INDUS		3.106211	INDUS		NaN		NaN
+```
+
+<br><br><br>
 `Residual analysis`
 ```python
 plt.plot(np.array(test_y.values-fitted_model.predict(test_x)),label='residual of model')
