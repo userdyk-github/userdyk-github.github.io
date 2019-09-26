@@ -1,6 +1,6 @@
 ---
 layout : post
-title : PL03
+title : PL03, Exercises
 categories: [PL03]
 comments : true
 tags : [PL03]
