@@ -475,10 +475,10 @@ Input.head()
 3	0.500052	0.056861	0.041176
 4	0.267245	0.639603	0.769945
 ```
+<br>
 ```python
 constant_input.head()
 ```
-`OUTPUT`
 ```
 	const	input1		input2		input3
 0	1.0	0.957632	0.276408	0.345041
@@ -496,7 +496,6 @@ constant_input.head()
 ```python
 Target.head()
 ```
-`OUTPUT`
 ```
 0    38.388309
 1    55.941549
