@@ -803,7 +803,7 @@ plt.show()
 <hr class='division3'>
 </details>
 <br>
-`Modify regression model`
+`Modify regression model(based on backward elimination)`
 ```python
 from sklearn.model_selection import train_test_split
 
