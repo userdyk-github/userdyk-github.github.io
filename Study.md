@@ -7,7 +7,7 @@ title: STUDY
 ## _AI01 : Data science analysis_
 
 > <a href='https://userdyk-github.github.io/ai01/AI01-Datasets-for-research.html'>Datasets for research</a><br>
-> <a href='https://userdyk-github.github.io/ai01/AI01-Loading-and-manipulating-csv.html'>Loading and manipulating csv</a><br>
+> <a href='https://userdyk-github.github.io/ai01/AI01-Loading-and-manipulating-files.html'>Loading and manipulating files</a><br>
 > <a href='https://userdyk-github.github.io/ai01/AI01-Loading-and-manipulating-images.html'>Loading and manipulating images</a><br>
 > <a href='https://userdyk-github.github.io/ai01/AI01-Manually-scaling-image-pixel-data.html'>Manually scaling image pixel data</a><br>
 > <a href='https://userdyk-github.github.io/ai01/AI01-Loading-and-manipulating-images-with-keras.html'>Loading and manipulating images with keras</a><br>
