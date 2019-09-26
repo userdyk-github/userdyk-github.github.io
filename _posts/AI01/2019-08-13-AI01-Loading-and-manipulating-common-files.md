@@ -1,6 +1,6 @@
 ---
 layout : post
-title : AI01, Loading and manipulating files
+title : AI01, Loading and manipulating common files
 categories: [AI01]
 comments : true
 tags : [AI01]
