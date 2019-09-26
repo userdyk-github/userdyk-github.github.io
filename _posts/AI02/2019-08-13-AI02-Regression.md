@@ -911,6 +911,36 @@ constant_Input2.head()
 ```
 <hr class='division3'>
 </details>
+
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Data diagnosis</summary>
+<hr class='division3'>
+`Multicollinearity` : Variance inflation factor(VIF)
+```python
+vif1 = pd.DataFrame()
+vif2 = pd.DataFrame()
+vif1['VIF1 Factor'] = [variance_inflation_factor(Input1.values, i) for i in range(Input1.shape[1])]
+vif2['VIF2 Factor'] = [variance_inflation_factor(Input2.values, i) for i in range(Input2.shape[1])]
+vif1['features1'] = Input1.columns
+vif2['features2'] = Input2.columns
+pd.concat([vif,vif1,vif2], axis=1)
+```
+```
+	VIF Factor	features	VIF1 Factor	features1	VIF2 Factor	features2
+0	1.917332	CRIM		1.916648	CRIM		1.907517	CRIM
+1	46.535369	RM		30.806301	RM		7.933529	LSTAT
+2	8.844137	LSTAT		8.171214	LSTAT		7.442569	B
+3	16.856737	B		16.735751	B		16.233237	TAX
+4	19.923044	TAX		18.727105	TAX		13.765377	AGE
+5	18.457503	AGE		16.339792	AGE		1.820070	ZN
+6	2.086502	ZN		2.074500	ZN		11.116823	INDUS
+7	72.439753	NOX		11.217461	INDUS		NaN		NaN
+8	12.642137	INDUS		NaN		NaN		NaN		NaN
+```
+
+<hr class='division3'>
+</details>
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT : Regression coefficients etc</summary>
 <hr class='division3'>
@@ -947,30 +977,6 @@ plt.show()
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Model diagnosis</summary>
 <hr class='division3'>
-`Multicollinearity` : Variance inflation factor(VIF)
-```python
-vif1 = pd.DataFrame()
-vif2 = pd.DataFrame()
-vif1['VIF1 Factor'] = [variance_inflation_factor(Input1.values, i) for i in range(Input1.shape[1])]
-vif2['VIF2 Factor'] = [variance_inflation_factor(Input2.values, i) for i in range(Input2.shape[1])]
-vif1['features1'] = Input1.columns
-vif2['features2'] = Input2.columns
-pd.concat([vif,vif1,vif2], axis=1)
-```
-```
-	VIF Factor	features	VIF1 Factor	features1	VIF2 Factor	features2
-0	1.917332	CRIM		1.916648	CRIM		1.907517	CRIM
-1	46.535369	RM		30.806301	RM		7.933529	LSTAT
-2	8.844137	LSTAT		8.171214	LSTAT		7.442569	B
-3	16.856737	B		16.735751	B		16.233237	TAX
-4	19.923044	TAX		18.727105	TAX		13.765377	AGE
-5	18.457503	AGE		16.339792	AGE		1.820070	ZN
-6	2.086502	ZN		2.074500	ZN		11.116823	INDUS
-7	72.439753	NOX		11.217461	INDUS		NaN		NaN
-8	12.642137	INDUS		NaN		NaN		NaN		NaN
-```
-
-<br><br><br>
 `Residual analysis`
 ```python
 plt.plot(np.array(test_y.values-fitted_model.predict(test_x)),label='residual of model')
