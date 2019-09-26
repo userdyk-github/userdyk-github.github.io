@@ -26,6 +26,7 @@ Email(sending only) : userdyk@naver.com <br>
 
 ### GitHub | [URL](https://github.com/aglipthhau/)
 ### LinkedIn | [URL](https://www.linkedin.com/in/userdyk/)
+### Twitter | [URL](https://twitter.com/DongmyeongL)
 ### ResearchGate | [URL](https://www.researchgate.net/profile/Dongmyeong_Lee2)
 ### Google Scholar | [URL]()
 ### Resume | 
