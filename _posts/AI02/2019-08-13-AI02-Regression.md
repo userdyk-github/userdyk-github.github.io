@@ -240,12 +240,6 @@ Input.head()
 4    0.645634
 Name: input, dtype: float64
 ```
-<hr class='division3'>
-</details>
-
-<details markdown="1">
-<summary class='jb-small' style="color:blue">Data : Constant_input</summary>
-<hr class='division3'>
 ```python
 constant_input.head()
 ```
@@ -453,11 +447,6 @@ Input.head()
 3	0.500052	0.056861	0.041176
 4	0.267245	0.639603	0.769945
 ```
-<hr class='division3'>
-</details>
-<details markdown="1">
-<summary class='jb-small' style="color:blue">Data : Constant_input</summary>
-<hr class='division3'>
 ```python
 constant_input.head()
 ```
@@ -472,6 +461,7 @@ constant_input.head()
 ```
 <hr class='division3'>
 </details>
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Data : Target</summary>
 <hr class='division3'>
@@ -671,9 +661,67 @@ array([47.18460385, 29.42685672, 45.34542694, 21.18367219, 60.83667819,
 <hr class='division3'>
 </details>
 
+`Data preprocessing`
 ```python
+import pandas as pd
+import numpy as np
+import statsmodels.api as sm
 
+boston = pd.read_csv(r'C:\Users\userd\Desktop\dataset\boston_house.csv')
+Input_s = boston[['CRIM', 'RM', 'LSTAT']]
+Input_L = boston[['CRIM', 'RM', 'LSTAT', 'B', 'TAX', 'AGE', 'ZN', 'NOX', 'INDUS']]
+Target = boston['MEDV']
+constant_Input_s = sm.add_constant(Input_s, has_constant='add')
+constant_Input_L = sm.add_constant(Input_L, has_constant='add')
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Data : Input</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+`Regression analysis`
+```python
+model_s = sm.OLS(Target, constant_Input_s)
+model_L = sm.OLS(Target, constant_Input_L)
+fitted_model_s = model_s.fit()
+fitted_model_L = model_L.fit()
+```
+```python
+fitted_model_s.summary()
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+```python
+fitted_model_L.summary()
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Residual analysis</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Model performance</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Diagnosis</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
 
 
 <br><br><br>
