@@ -30,11 +30,7 @@ List of posts to read before reading this article
     
 <hr class="division2">
 
-## **Singular Value Decomposition**
-
-<hr class="division2">
-
-## **Non-negative matrix factorization (NMF)**
+## **Multilinear Principal Component Analysis**
 
 <hr class="division2">
 
@@ -45,6 +41,15 @@ List of posts to read before reading this article
 
 
 ## **Graph-based kernel PCA**
+
+<hr class="division2">
+
+
+## **Singular Value Decomposition**
+
+<hr class="division2">
+
+## **Non-negative matrix factorization (NMF)**
 
 <hr class="division2">
 
