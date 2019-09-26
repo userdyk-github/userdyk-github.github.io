@@ -690,24 +690,60 @@ fitted_model_L = model_L.fit()
 fitted_model_s.summary()
 ```
 <details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<summary class='jb-small' style="color:blue">OUTPUT : Regression coefficients etc</summary>
 <hr class='division3'>
-
+![캡처](https://user-images.githubusercontent.com/52376448/65658719-d3203c00-e063-11e9-8fc5-4cf3ad12393d.JPG)
+<br>
+```python
+fitted_model_s.params
+```
+```
+const   -2.562251
+CRIM    -0.102941
+RM       5.216955
+LSTAT   -0.578486
+dtype: float64
+```
 <hr class='division3'>
 </details>
 ```python
 fitted_model_L.summary()
 ```
 <details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<summary class='jb-small' style="color:blue">OUTPUT : Regression coefficients etc</summary>
 <hr class='division3'>
-
+![캡처](https://user-images.githubusercontent.com/52376448/65658743-ed5a1a00-e063-11e9-9238-7473a57981cd.JPG)
+<br>
+```python
+fitted_model_L.params
+```
+```
+const   -7.108827
+CRIM    -0.045293
+RM       5.092238
+LSTAT   -0.565133
+B        0.008974
+TAX     -0.006025
+AGE      0.023619
+ZN       0.029377
+NOX      3.483832
+INDUS    0.029270
+dtype: float64
+```
 <hr class='division3'>
 </details>
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Residual analysis</summary>
 <hr class='division3'>
+```python
+import matplotlib.pyplot as plt
 
+fitted_model_s.resid.plot(label="base")
+fitted_model_L.resid.plot(label="full")
+plt.legend()
+plt.show()
+```
+![다운로드 (1)](https://user-images.githubusercontent.com/52376448/65658872-68bbcb80-e064-11e9-82ca-b8c0f7dc0f69.png)
 <hr class='division3'>
 </details>
 <details markdown="1">
@@ -722,7 +758,10 @@ fitted_model_L.summary()
 
 <hr class='division3'>
 </details>
+`Modify regression model`
+```python
 
+```
 
 <br><br><br>
 
