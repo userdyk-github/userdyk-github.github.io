@@ -359,7 +359,7 @@ fitted_model.resid.plot()
 </details>
 
 <details markdown="1">
-<summary class='jb-small' style="color:blue">Prediction for new dataset</summary>
+<summary class='jb-small' style="color:blue">Model prediction</summary>
 <hr class='division3'>
 `Prediction`
 ```python
@@ -607,7 +607,7 @@ plt.show()
 <hr class='division3'>
 </details>
 <details markdown="1">
-<summary class='jb-small' style="color:blue">Prediction for new dataset</summary>
+<summary class='jb-small' style="color:blue">Model prediction</summary>
 <hr class='division3'>
 `Prediction`
 ```python
@@ -750,7 +750,7 @@ plt.show()
 </details>
 
 <details markdown="1">
-<summary class='jb-small' style="color:blue">Diagnosis</summary>
+<summary class='jb-small' style="color:blue">Model diagnosis</summary>
 <hr class='division3'>
 `Multicollinearity` : Variance inflation factor(VIF)
 
