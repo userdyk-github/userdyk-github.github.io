@@ -679,6 +679,7 @@ constant_Input_L = sm.add_constant(Input_L, has_constant='add')
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br>
 `Regression analysis`
 ```python
 model_s = sm.OLS(Target, constant_Input_s)
@@ -689,6 +690,7 @@ fitted_model_L = model_L.fit()
 ```python
 fitted_model_s.summary()
 ```
+<br>
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT : Regression coefficients etc</summary>
 <hr class='division3'>
@@ -706,6 +708,7 @@ dtype: float64
 ```
 <hr class='division3'>
 </details>
+<br>
 ```python
 fitted_model_L.summary()
 ```
@@ -758,6 +761,7 @@ plt.show()
 
 <hr class='division3'>
 </details>
+<br>
 `Modify regression model`
 ```python
 
