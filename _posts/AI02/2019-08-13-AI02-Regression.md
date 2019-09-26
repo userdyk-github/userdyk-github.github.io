@@ -317,7 +317,6 @@ fitted_model.summary()
 # Regression coefficients
 fitted_model.params
 ```
-`OUTPUT`
 ```
 const    5.0
 input    3.0
