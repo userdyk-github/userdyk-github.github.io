@@ -669,7 +669,7 @@ array([47.18460385, 29.42685672, 45.34542694, 21.18367219, 60.83667819,
 <br><br><br>
 
 
-#### Multiple linear regression about dataset on real world
+#### Multivariate linear regression about dataset on real world
 
 [Dataset download][1] ｜ <a href="https://www.kaggle.com/prasadperera/the-boston-housing-dataset/data" target="_blank">URL</a>
 
@@ -1050,6 +1050,12 @@ print(mean_squared_error(y_true=test_y.values, y_pred=fitted_model2.predict(test
 <hr class='division3'>
 </details>
 <br><br><br>
+
+
+#### Multivariate nonlinear regression about dataset on real world
+
+[Dataset download][2] ｜ <a href="https://www.kaggle.com/klkwak/toyotacorollacsv/version/1#ToyotaCorolla.csv" target="_blank">URL</a>
+
 
 
 ---
