@@ -1,6 +1,6 @@
 ---
 layout : post
-title : AI01, Loading and manipulating common files
+title : AI01, Manipulating common files
 categories: [AI01]
 comments : true
 tags : [AI01]
@@ -25,13 +25,19 @@ List of posts to read before reading this article
 
 ### ***Load .csv files***
 
-<hr class="division2">
+---
 
 ### ***Save to .csv files***
 
 <hr class="division2">
 
 ## **TXT**
+
+### ***Load .csv files***
+
+---
+
+### ***Save to .csv files***
 
 <hr class="division1">
 
