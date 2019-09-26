@@ -21,51 +21,56 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## **Principal Component Analysis**
+## **Feature selection**
 
-### ***When Will PCA Be Useful in Data Reduction?***
+<hr class="division2">
 
-### ***How Do You Know How Much Variance Is Retained by the Selected Principal Components?***
+## **Feature extraction**
+
+### ***Principal Component Analysis***
+
+#### When Will PCA Be Useful in Data Reduction?
+
+#### How Do You Know How Much Variance Is Retained by the Selected Principal Components?
     
     
-<hr class="division2">
 
-## **Multilinear Principal Component Analysis**
+---
 
-<hr class="division2">
+### ***Multilinear Principal Component Analysis***
 
-
-## **Kernel PCA**
-
-<hr class="division2">
+---
 
 
-## **Graph-based kernel PCA**
+### ***Kernel PCA***
 
-<hr class="division2">
-
-
-## **Singular Value Decomposition**
-
-<hr class="division2">
-
-## **Non-negative matrix factorization (NMF)**
-
-<hr class="division2">
+---
 
 
+### ***Graph-based kernel PCA***
 
-## **Linear discriminant analysis (LDA)**
-
-<hr class="division2">
-
-
-## **Generalized discriminant analysis (GDA)**
-
-<hr class="division2">
+---
 
 
-## **Autoencoder**
+### ***Singular Value Decomposition***
+
+---
+
+### ***Non-negative matrix factorization (NMF)***
+
+---
+
+
+### ***Linear discriminant analysis (LDA)***
+
+---
+
+
+### ***Generalized discriminant analysis (GDA)***
+
+---
+
+### ***Autoencoder***
 
 
 <hr class="division1">
