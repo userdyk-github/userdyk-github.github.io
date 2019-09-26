@@ -21,23 +21,18 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## **CSV**
+## **File Input/Output**
 
-### ***Load .csv files***
+### ***Input/Output .csv files***
 
 ---
 
-### ***Save to .csv files***
+### ***Input/Output .txt files***
 
 <hr class="division2">
 
-## **TXT**
+## **Data preprocessing**
 
-### ***Load .csv files***
-
----
-
-### ***Save to .csv files***
 
 <hr class="division1">
 
