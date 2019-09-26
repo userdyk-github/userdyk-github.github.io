@@ -209,7 +209,7 @@ List of posts to read before reading this article
 <hr class="division1">
 
 List of posts followed by this article
-- [post1](https://userdyk-github.github.io/)
+- <a href='https://github.com/TheAlgorithms/Python'>TheAlgorithms</a>
 - <a href='https://userdyk-github.github.io/'>post2</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
