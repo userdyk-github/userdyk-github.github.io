@@ -757,6 +757,28 @@ plt.show()
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Diagnosis</summary>
 <hr class='division3'>
+`Multicollinearity` : Variance inflation factor(VIF)
+```python
+from statsmodels.stats.outliers_influence import variance_inflation_factor
+
+vif = pd.DataFrame()
+vif['VIF Factor'] = [variance_inflation_factor(Input_L.values, i) for i in range(Input_L.shape[1])]
+vif['features'] = Input_L.columns
+vif
+```
+```
+	VIF Factor	features
+0	1.917332	CRIM
+1	46.535369	RM
+2	8.844137	LSTAT
+3	16.856737	B
+4	19.923044	TAX
+5	18.457503	AGE
+6	2.086502	ZN
+7	72.439753	NOX
+8	12.642137	INDUS
+```
+
 
 <hr class='division3'>
 </details>
