@@ -186,6 +186,19 @@ Multicollinearity refers to a situation in which two or more explanatory variabl
 <hr class="division2">
 
 ## **Nonlinear regression**
+<div class="frame1">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7e1ed763761f312a68f66dd0c7c37cbdf0ca9d65" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:11.576ex; height:2.843ex;" alt="{\displaystyle \mathbf {y} \sim f(\mathbf {x} ,{\boldsymbol {\beta }})}">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d2d3e51114f731925c32dd44daa47103bff0e17f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.338ex; width:29.873ex; height:5.843ex;" alt="{\displaystyle f(x_{i},{\boldsymbol {\beta }})\approx f(x_{i},0)+\sum _{j}J_{ij}\beta _{j}}">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/32e16aa7490c3f8c5885d467ddeeaded77f1f032" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:15.805ex; height:6.509ex;" alt="{\displaystyle J_{ij}={\frac {\partial f(x_{i},{\boldsymbol {\beta }})}{\partial \beta _{j}}}}">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b9a506569aaa2fdb4c0e6d690a6b5ccc1cac8c5c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:18.688ex; height:3.343ex;" alt="{\hat  {{\boldsymbol  {\beta }}}}\approx {\mathbf  {(J^{T}J)^{{-1}}J^{T}y}}.">
+</div>
+<br><br><br>
+
+### ***Linearization***
+<div class="frame1">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/88162961396e4f8edc14ac210d5303c405d03a22" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; margin-right: -0.387ex; width:10.615ex; height:3.009ex;" alt="y=ae^{{bx}}U\,\!">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e44ab255511d24d3076303dad10ed53f1f7979d5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; margin-right: -0.387ex; width:24.127ex; height:2.843ex;" alt="\ln {(y)}=\ln {(a)}+bx+u,\,\!">
+</div>
 
 <br><br><br>
 <hr class="division2">
