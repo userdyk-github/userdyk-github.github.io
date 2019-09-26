@@ -831,8 +831,10 @@ plt.show()
 from sklearn.model_selection import train_test_split
 
 # Data preprocessing
-constant_Input1 = constant_Input_L.drop('NOX', axis=1)
-constant_Input2 = constant_Input_L.drop(['NOX','RM'], axis=1)
+Input1 = Input_L.drop('NOX', axis=1)
+Input2 = Input_L.drop(['NOX','RM'], axis=1)
+constant_Input1 = sm.add_constant(Input1, has_constant='add')
+constant_Input2 = sm.add_constant(Input2, has_constant='add')
 X = constant_Input_L
 X1 = constant_Input1
 X2 = constant_Input2
