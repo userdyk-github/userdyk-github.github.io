@@ -123,6 +123,9 @@ app.exec()
 ```
 pyuic5 -x main.ui -o main.py
 ```
+```
+pyinstaller main.py
+```
 
 <br><br><br>
 
