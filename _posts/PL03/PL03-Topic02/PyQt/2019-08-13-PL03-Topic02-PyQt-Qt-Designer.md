@@ -129,16 +129,15 @@ pyuic5 -x main.ui -o main.py
 <hr class="division1">
 
 List of posts followed by this article
-- [post1](https://userdyk-github.github.io/)
 - <a href='https://userdyk-github.github.io/'>post2</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
 
 Reference
+- <a href="http://codetorial.net/" target="_blank">PyQt5 Tutorial</a>
 - <a href='https://www.youtube.com/playlist?list=PLuTktZ8WcEGTdId-Kjbj6gsZTk65yudJh' target="_blank">Youtube Lecture about Qt designer</a>
 - <a href='https://www.youtube.com/watch?v=qiPS70TSvBk' target="_blank">Building .exe file</a>
-
 ---
 
 
