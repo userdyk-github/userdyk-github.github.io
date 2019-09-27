@@ -135,6 +135,7 @@ List of posts followed by this article
 ---
 
 Reference
+- <a href='https://www.tutorialspoint.com/pyqt/index.htm' target="_blank">PyQt Tutorial(official)</a>
 - <a href="http://codetorial.net/" target="_blank">PyQt5 Tutorial</a>
 - <a href='https://www.youtube.com/playlist?list=PLuTktZ8WcEGTdId-Kjbj6gsZTk65yudJh' target="_blank">Youtube Lecture about Qt designer</a>
 - <a href='https://www.youtube.com/watch?v=qiPS70TSvBk' target="_blank">Building .exe file</a>
