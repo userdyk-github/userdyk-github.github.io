@@ -23,18 +23,39 @@ List of posts to read before reading this article
 
 ## **Researcher**
 
+> LeCun ｜ Hinton ｜ Fei-Fei Li ｜ Krizhevsky ｜｜｜｜｜｜
+
+<br><br><br>
 <hr class="division2">
 
 ## **Framework**
 
+Past
+> Caffe2 ｜ MatConvNet
+
+<br>
+
+Present
+> Tensorflw ｜ Pytorch
+
+<br><br><br>
 <hr class="division2">
 
 ## **Cloud Platform**
 
+> AWS ｜ Google Cloud Platform ｜ Microsoft Azure
+
+Enterprise IT(legacy IT) > Infrastructure(as a Service, IaaS) > Platform(as a Service, PaaS) > Software(as a Service, SaaS)
+
+
+<br><br><br>
 <hr class="division2">
 
 ## **Hardware**
 
+> NVIDIA(GTX, Titan, TESLA)
+  
+<br><br><br>
 <hr class="division1">
 
 List of posts followed by this article
