@@ -928,6 +928,22 @@ def maxpool2d(x,stride=2):
 
 ---
 
+
+### ***GoogLeNet(Inception)***
+
+```python
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
 ### ***VGG16***
 
 ```python
@@ -956,6 +972,35 @@ def maxpool2d(x,stride=2):
 </details>
 <br><br><br>
 
+---
+
+### ***GoogLeNet-v4(Inception-v4)***
+
+```python
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+### ***SENet***
+
+```python
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
 <hr class="division2">
 
 ## **Transfer Learning**
