@@ -745,6 +745,19 @@ array([1, 2, 1, 0], dtype=int64)
 <br><br><br>
 
 
+<hr class="division2">
+
+## **Reference Codes**
+
+### ******
+```python
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
 
 <hr class="division1">
 
