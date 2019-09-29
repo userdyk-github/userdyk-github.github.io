@@ -345,6 +345,8 @@ def test_step(model, images, labels, loss_object, test_loss, test_accuracy):
 ```python
 import tensorflow as tf
 
+
+# Define network architecture
 class MyModel(tf.keras.Model):
     def __init__(self):
         super(MyModel, self).__init__()
@@ -358,6 +360,7 @@ class MyModel(tf.keras.Model):
         return self.d2(x)
 
 
+# Implement training loop
 @tf.function
 def train_step(model, images, labels, loss_object, optimizer, train_loss, train_accuracy):
     with tf.GradientTape() as tape:
@@ -370,6 +373,7 @@ def train_step(model, images, labels, loss_object, optimizer, train_loss, train_
     train_accuracy(labels, predictions)
 
 
+# Implement algorithm test
 @tf.function
 def test_step(model, images, labels, loss_object, test_loss, test_accuracy):
     predictions = model(images)
@@ -378,7 +382,8 @@ def test_step(model, images, labels, loss_object, test_loss, test_accuracy):
     test_loss(t_loss)
     test_accuracy(labels, predictions)
     
-
+    
+# Import and organize dataset
 mnist = tf.keras.datasets.mnist
 
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
