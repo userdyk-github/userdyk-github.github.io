@@ -162,15 +162,12 @@ array([[0.86863124, 0.38861847, 0.7144052 , 0.07352793],
 >>> dataset_with_channel = np.expand_dims(train_x, 0)
 >>> dataset_with_channel.shape
 (1, 60000, 28, 28)
-
 >>> dataset_with_channel = np.expand_dims(train_x, 1)
 >>> dataset_with_channel.shape
 (60000, 1, 28, 28)
-
 >>> dataset_with_channel = np.expand_dims(train_x, 2)
 >>> dataset_with_channel.shape
 (60000, 28, 1, 28)
-
 >>> dataset_with_channel = np.expand_dims(train_x, -1)
 >>> dataset_with_channel.shape
 (60000, 28, 28, 1)
@@ -184,6 +181,15 @@ TensorShape([60000, 28, 28, 1])
 >>> dataset_with_channel = train_x[..., tf.newaxis]
 >>> dataset_with_channel.shape
 (60000, 28, 28, 1)
+>>> dataset_with_channel = train_x[tf.newaxis, ...]
+>>> dataset_with_channel.shape
+(1, 60000, 28, 28)
+>>> dataset_with_channel = train_x[tf.newaxis, tf.newaxis, ...]
+>>> dataset_with_channel.shape
+(1, 1, 60000, 28, 28)
+>>> dataset_with_channel = train_x[..., tf.newaxis, tf.newaxis]
+>>> dataset_with_channel.shape
+(60000, 28, 28, 1, 1)
 
 # (4) : expand dimension by tensorflow
 >>> dataset_with_channel = train_x.reshape([60000, 28, 28, 1])
@@ -240,6 +246,10 @@ array([0., 0., 0., 1., 0., 0., 0., 0., 0., 0.], dtype=float32)
 
 ## **Layer and Parameters**
 
+```
+```
+
+<br><br><br>
 <hr class="division2">
 
 ## **Optimizaer and Training**
