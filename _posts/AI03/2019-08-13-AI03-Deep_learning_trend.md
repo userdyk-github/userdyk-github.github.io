@@ -21,15 +21,19 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
+## **Researcher**
 
 <hr class="division2">
 
-## title2
+## **Framework**
 
 <hr class="division2">
 
-## title3
+## **Cloud Platform**
+
+<hr class="division2">
+
+## **Hardware**
 
 <hr class="division1">
 
