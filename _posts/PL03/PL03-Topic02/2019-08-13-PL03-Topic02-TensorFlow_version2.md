@@ -110,6 +110,26 @@ array([[0.86863124, 0.38861847, 0.7144052 , 0.07352793],
 
 ## **Load Dataset**
 
+### ***Load data***
+
+---
+
+### ***Image dataset***
+
+---
+
+### ***Channel***
+
+---
+
+### ***Label dataset***
+
+---
+
+### ***OneHot Encoding***
+
+
+<br><br><br>
 <hr class="division2">
 
 ## **Layer and Parameters**
