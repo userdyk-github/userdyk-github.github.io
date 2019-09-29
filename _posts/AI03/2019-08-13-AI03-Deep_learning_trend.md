@@ -23,7 +23,7 @@ List of posts to read before reading this article
 
 ## **Researcher**
 
-> LeCun ｜ Hinton ｜ Fei-Fei Li ｜ Krizhevsky ｜｜｜｜｜｜
+> LeCun ｜ Hinton ｜ Fei-Fei Li ｜ Krizhevsky
 
 <br><br><br>
 <hr class="division2">
@@ -71,16 +71,3 @@ Reference
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
-
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-    <details markdown="1">
-    <summary class='jb-small' style="color:red">OUTPUT</summary>
-    <hr class='division3_1'>
-    <hr class='division3_1'>
-    </details>
-<hr class='division3'>
-</details>
-
-
