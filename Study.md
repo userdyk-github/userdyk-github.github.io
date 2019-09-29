@@ -49,6 +49,7 @@ title: STUDY
 > <a href='https://userdyk-github.github.io/ai03/AI03-Generative-adversarial-networks.html'>Generative adversarial networks</a><br>
 > <a href='https://userdyk-github.github.io/ai03/AI03-Restricted-boltzmann-machines-and-auto-encoders.html'>Restricted boltzmann machines and auto-encoders</a><br>
 > <a href='https://userdyk-github.github.io/ai03/AI03-.html'>Variational autoencoder</a><br>
+> <a href='https://userdyk-github.github.io/ai03/AI03-Deep_learning_trend.html'>Deep learning trend</a><br>
 
 
 ---
