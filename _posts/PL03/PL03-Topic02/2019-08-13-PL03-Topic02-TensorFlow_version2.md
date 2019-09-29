@@ -21,7 +21,7 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## **Basic Framework**
+## **Tensor operation**
 
 ### ***Create Tensor***
 
@@ -257,6 +257,11 @@ array([0., 0., 0., 1., 0., 0., 0., 0., 0., 0.], dtype=float32)
 <hr class="division2">
 
 ## **Evaluating and Predicting**
+
+<hr class="division2">
+
+## **Basic Framework**
+
 
 <hr class="division1">
 
