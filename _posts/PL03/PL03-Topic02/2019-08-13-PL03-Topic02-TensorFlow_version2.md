@@ -26,12 +26,34 @@ List of posts to read before reading this article
 ### ***Create Tensor***
 
 ```
+>>> import numpy as np
+>>> import tensorflow as tf
+
+# list -> tensor
+>>> tf.constant([1, 2, 3])
+
+# tuple -> tensor
+>>> tf.constant((1,2,3), (1,2,3))
+
+# array -> tensor
+>>> tf.constant(np.array([1,2,3]))
 
 ```
 
 ---
 
 ### ***Confirm the information about tensor***
+
+```
+>>> import numpy as np
+>>> import tensorflow as tf
+
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+```
 
 ---
 
@@ -70,4 +92,13 @@ Reference
 
 ---
 
-
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+    <details markdown="1">
+    <summary class='jb-small' style="color:red">OUTPUT</summary>
+    <hr class='division3_1'>
+    <hr class='division3_1'>
+    </details>
+<hr class='division3'>
+</details>
