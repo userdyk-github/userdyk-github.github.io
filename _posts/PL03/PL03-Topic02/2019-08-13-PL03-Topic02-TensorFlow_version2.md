@@ -158,7 +158,6 @@ array([[0.86863124, 0.38861847, 0.7144052 , 0.07352793],
 # check dataset shape
 >>> train_x.shape
 
-
 # (1) : expand dimension by numpy
 >>> dataset_with_channel = np.expand_dims(train_x, 0)
 >>> dataset_with_channel.shape
@@ -216,12 +215,25 @@ TensorShape([60000, 28, 28, 1])
 
 ---
 
-### ***Label dataset***
-
----
-
 ### ***OneHot Encoding***
 
+```
+>>> from tensorflow.keras.utils import to_categorical
+>>> to_categorical(1,8)
+array([0., 1., 0., 0., 0., 0., 0., 0.], dtype=float32)
+
+>>> to_categorical(1,9)
+array([0., 1., 0., 0., 0., 0., 0., 0., 0.], dtype=float32)
+
+>>> to_categorical(1,10)
+array([0., 1., 0., 0., 0., 0., 0., 0., 0., 0.], dtype=float32)
+
+>>> to_categorical(2,10)
+array([0., 0., 1., 0., 0., 0., 0., 0., 0., 0.], dtype=float32)
+
+>>> to_categorical(3,10)
+array([0., 0., 0., 1., 0., 0., 0., 0., 0., 0.], dtype=float32)
+```
 
 <br><br><br>
 <hr class="division2">
