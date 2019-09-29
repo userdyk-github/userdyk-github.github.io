@@ -331,6 +331,7 @@ test_loss = tf.keras.metrics.Mean(name='test_loss')
 test_accuracy = tf.keras.metrics.SparseCategoricalAccuracy(name="test_accuracy")
 
 # do training loop and test
+EPOCHS = 5
 for epoch in range(EPOCHS):
     for images, labels in train_ds:
         train_step(model, images, labels, loss_object, optimizer, train_loss, train_accuracy)
