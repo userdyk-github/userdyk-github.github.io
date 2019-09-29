@@ -39,6 +39,7 @@ List of posts to read before reading this article
 >>> tf.constant(np.array([1,2,3]))
 
 ```
+<br><br><br>
 
 ---
 
@@ -48,17 +49,45 @@ List of posts to read before reading this article
 >>> import numpy as np
 >>> import tensorflow as tf
 
->>> 
->>> 
->>> 
->>> 
->>> 
+# check shape
+>>> tensor = tf.constant(np.array([1,2,3]))
+>>> tensor.shape
+
+# check data type
+>>> tensor.dtype
+
+# define data type
+>>> tf.constant([1,2,3], dtype=tf.float32)
+
+# convert data type
+>>> tensor = tf.constant([1,2,3], dtype=tf.float32)
+>>> tf.cast(tensor, dtype=tf.unit8)
+
+# (1) : tensor -> numpy
+>>> tensor.numpy()
+
+# (2) : tensor -> numpy
+>>> np.array(tensor)
+
 ```
+<br><br><br>
 
 ---
 
 ### ***Generate random numbers***
 
+```
+>>> import tensorflow as tf
+
+# normal distribution
+>>> tf.random.normal([3,3])
+
+# uniform distribution
+>>> tf.random.uniform([4,4])
+
+```
+
+<br><br><br>
 
 <hr class="division2">
 
