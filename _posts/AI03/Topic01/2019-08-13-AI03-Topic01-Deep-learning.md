@@ -196,6 +196,8 @@ class DeepConvNet:
 </details>
 <br><br><br>
 
+---
+
 ### ***half_float_network.py***
 ```python
 # coding: utf-8
@@ -233,6 +235,8 @@ print(network.accuracy(x_test, t_test))
 <hr class='division3'>
 </details>
 <br><br><br>
+
+---
 
 ### ***misclassified_mnist.py***
 ```python
@@ -304,6 +308,8 @@ plt.show()
 </details>
 <br><br><br>
 
+---
+
 ### ***train_deepnet.py***
 ```python
 # coding: utf-8
@@ -334,6 +340,10 @@ print("Saved Network Parameters!")
 <hr class='division3'>
 </details>
 <br><br><br>
+
+---
+
+### ******
 
 <hr class="division1">
 
