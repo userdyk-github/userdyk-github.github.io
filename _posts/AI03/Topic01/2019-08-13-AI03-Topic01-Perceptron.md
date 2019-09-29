@@ -200,6 +200,19 @@ def OR(x1,x2):
 
 ## **From NAND to Computer**
 
+<hr class="division2">
+
+## **Reference Codes**
+
+### ******
+```python
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
 <hr class="division1">
 
 List of posts followed by this article
