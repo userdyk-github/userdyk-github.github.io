@@ -23,7 +23,20 @@ List of posts to read before reading this article
 
 ## **Basic Framework**
 
-### ***Linear Algebra***
+### ***Create Tensor***
+
+```
+
+```
+
+---
+
+### ***Confirm the information about tensor***
+
+---
+
+### ***Generate random numbers***
+
 
 <hr class="division2">
 
