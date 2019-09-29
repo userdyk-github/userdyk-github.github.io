@@ -112,9 +112,34 @@ array([[0.86863124, 0.38861847, 0.7144052 , 0.07352793],
 
 ### ***Load data***
 
+```
+>>> from tensorflow.keras import datasets
+>>> mnist = datasets.mnist
+>>> (train_x, train_y), (test_x, test_y) = mnist.load_data()
+>>> train_x.shape
+(60000, 28, 28)
+```
+
 ---
 
 ### ***Image dataset***
+
+```
+>>> from tensorflow.keras import datasets
+>>> mnist = datasets.mnist
+>>> (train_x, train_y), (test_x, test_y) = mnist.load_data()
+
+# extract one data
+>>> image = train_x[0]
+>>> image.shape
+(28, 28)
+
+>>> plt.imshow(image, 'gray')
+>>> plt.show()
+```
+![다운로드](https://user-images.githubusercontent.com/52376448/65838278-7ca14f00-e33c-11e9-9b03-9b6225d30600.png)
+
+<br><br><br>
 
 ---
 
