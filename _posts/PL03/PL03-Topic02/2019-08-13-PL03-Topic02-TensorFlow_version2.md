@@ -129,7 +129,7 @@ array([[0.86863124, 0.38861847, 0.7144052 , 0.07352793],
 >>> mnist = datasets.mnist
 >>> (train_x, train_y), (test_x, test_y) = mnist.load_data()
 
-# extract one data
+# extract and check one data
 >>> image = train_x[0]
 >>> image.shape
 (28, 28)
@@ -144,6 +144,53 @@ array([[0.86863124, 0.38861847, 0.7144052 , 0.07352793],
 ---
 
 ### ***Channel***
+
+```
+>>> from tensorflow.keras import datasets
+>>> import matplotlib.pyplot as plt
+>>> mnist = datasets.mnist
+>>> (train_x, train_y), (test_x, test_y) = mnist.load_data()
+
+
+# check dataset shape
+>>> train_x.shape
+
+
+# (1) : expand dimension by numpy
+>>> np.expand_dims(train_x, 0)
+
+>>> np.expand_dims(train_x, 1)
+
+>>> np.expand_dims(train_x, 2)
+
+>>> np.expand_dims(train_x, -1)
+
+# (2) : expand dimension by tensorflow
+>>> tf.expand_dims(train_x, -1)
+
+# (3) : expand dimension by tensorflow
+>>> train_x[..., tf.newaxis].shape
+
+
+# (4) : expand dimension by tensorflow
+>>> train_x.reshape([60000, 28, 28, 1])
+
+
+# shrink dimension(1)
+>>> new_train_x = train_x.reshape([60000, 28, 28, 1])
+>>> np.squeeze(new_train_x)
+
+# shrink dimension(1)
+>>> new_train_x = train_x.reshape([60000, 28, 28, 1])
+>>> new_train_x[:, :, :, 0]
+
+# visualization
+>>> new_train_x = train_x.reshape([60000, 28, 28, 1])
+>>> disp = new_train_x[:, :, :, 0]
+>>> plt.imshow(disp, 'gray')
+>>> plt.show()
+```
+<br><br><br>
 
 ---
 
