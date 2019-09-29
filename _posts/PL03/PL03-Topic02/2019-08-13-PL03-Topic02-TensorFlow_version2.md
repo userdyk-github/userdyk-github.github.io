@@ -119,6 +119,7 @@ array([[0.86863124, 0.38861847, 0.7144052 , 0.07352793],
 >>> train_x.shape
 (60000, 28, 28)
 ```
+<br><br><br>
 
 ---
 
@@ -146,6 +147,8 @@ array([[0.86863124, 0.38861847, 0.7144052 , 0.07352793],
 ### ***Channel***
 
 ```
+>>> import numpy as np
+>>> import tensorflow as tf
 >>> from tensorflow.keras import datasets
 >>> import matplotlib.pyplot as plt
 >>> mnist = datasets.mnist
@@ -157,39 +160,58 @@ array([[0.86863124, 0.38861847, 0.7144052 , 0.07352793],
 
 
 # (1) : expand dimension by numpy
->>> np.expand_dims(train_x, 0)
+>>> dataset_with_channel = np.expand_dims(train_x, 0)
+>>> dataset_with_channel.shape
+(1, 60000, 28, 28)
 
->>> np.expand_dims(train_x, 1)
+>>> dataset_with_channel = np.expand_dims(train_x, 1)
+>>> dataset_with_channel.shape
+(60000, 1, 28, 28)
 
->>> np.expand_dims(train_x, 2)
+>>> dataset_with_channel = np.expand_dims(train_x, 2)
+>>> dataset_with_channel.shape
+(60000, 28, 1, 28)
 
->>> np.expand_dims(train_x, -1)
+>>> dataset_with_channel = np.expand_dims(train_x, -1)
+>>> dataset_with_channel.shape
+(60000, 28, 28, 1)
 
 # (2) : expand dimension by tensorflow
->>> tf.expand_dims(train_x, -1)
+>>> dataset_with_channel = tf.expand_dims(train_x, -1)
+>>> dataset_with_channel.shape
+TensorShape([60000, 28, 28, 1])
 
 # (3) : expand dimension by tensorflow
->>> train_x[..., tf.newaxis].shape
-
+>>> dataset_with_channel = train_x[..., tf.newaxis]
+>>> dataset_with_channel.shape
+(60000, 28, 28, 1)
 
 # (4) : expand dimension by tensorflow
->>> train_x.reshape([60000, 28, 28, 1])
-
-
-# shrink dimension(1)
->>> new_train_x = train_x.reshape([60000, 28, 28, 1])
->>> np.squeeze(new_train_x)
+>>> dataset_with_channel = train_x.reshape([60000, 28, 28, 1])
+>>> dataset_with_channel.shape
+(60000, 28, 28, 1)
 
 # shrink dimension(1)
->>> new_train_x = train_x.reshape([60000, 28, 28, 1])
->>> new_train_x[:, :, :, 0]
+>>> dataset_with_channel = train_x.reshape([60000, 28, 28, 1])
+>>> dataset_without_channel = np.squeeze(dataset_with_channel)
+>>> dataset_without_channel.shape
+(60000, 28, 28)
+
+# shrink dimension(2)
+>>> dataset_with_channel = train_x.reshape([60000, 28, 28, 1])
+>>> dataset_without_channel = dataset_with_channel[:, :, :, 0]
+>>> dataset_without_channel.shape
+(60000, 28, 28)
 
 # visualization
->>> new_train_x = train_x.reshape([60000, 28, 28, 1])
->>> disp = new_train_x[:, :, :, 0]
+>>> dataset_with_channel = train_x.reshape([60000, 28, 28, 1])
+>>> disp = dataset_with_channel[0, :, :, 0]
 >>> plt.imshow(disp, 'gray')
 >>> plt.show()
 ```
+![다운로드](https://user-images.githubusercontent.com/52376448/65838278-7ca14f00-e33c-11e9-9b03-9b6225d30600.png)
+
+
 <br><br><br>
 
 ---
