@@ -749,6 +749,18 @@ array([1, 2, 1, 0], dtype=int64)
 
 ## **Multi-classification**
 
+<details markdown="1">
+<summary class='jb-small' style="color:blue">ADVANCDED PREPERATION</summary>
+<hr class='division3'>
+[ch2_dataset.npz][4] <br>
+[ch2_parameters.npz][5] <br>
+
+
+[4]:{{ site.url }}/download/AI03/AI03-Topic01/ch2_dataset.npz
+[5]:{{ site.url }}/download/AI03/AI03-Topic01/ch2_parameters.npz
+<hr class='division3'>
+</details>
+
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
