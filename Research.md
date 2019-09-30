@@ -118,6 +118,7 @@ title: RESEARCH
 
 > NAVER 
 >> <a href='https://clova.ai/ko/research/research-areas.html' target="_blank">research</a>|<br>
+>> <a href='https://sanghyukchun.github.io/home/' target="_blank">Sanghyuk Chun</a>|<br>
 > <a href='' target="_blank"></a>
 
 > KAKAO
