@@ -76,6 +76,8 @@ for key in grad_numerical.keys():
 </details>
 <br><br><br>
 
+---
+
 ### ***batch_norm_test.py***
 ```python
 # coding: utf-8
@@ -173,6 +175,8 @@ plt.show()
 </details>
 <br><br><br>
 
+---
+
 ### ***hyperparameter_optimization.py***
 ```python
 # coding: utf-8
@@ -260,6 +264,8 @@ plt.show()
 </details>
 <br><br><br>
 
+---
+
 ### ***optimizer_compare_mnist.py***
 ```python
 # coding: utf-8
@@ -335,6 +341,8 @@ plt.show()
 <hr class='division3'>
 </details>
 <br><br><br>
+
+---
 
 ### ***optimizer_compare_naive.py***
 ```python
@@ -416,6 +424,8 @@ plt.show()
 </details>
 <br><br><br>
 
+---
+
 ### ***overfit_dropout.py***
 ```python
 # coding: utf-8
@@ -465,6 +475,8 @@ plt.show()
 <hr class='division3'>
 </details>
 <br><br><br>
+
+---
 
 ### ***overfit_weight_decay.py***
 ```python
@@ -544,6 +556,8 @@ plt.show()
 </details>
 <br><br><br>
 
+---
+
 ### ***weight_init_activation_histogram.py***
 ```python
 # coding: utf-8
@@ -606,6 +620,8 @@ plt.show()
 <hr class='division3'>
 </details>
 <br><br><br>
+
+---
 
 ### ***weight_init_compare.py***
 ```python
