@@ -341,9 +341,6 @@ print("Saved Network Parameters!")
 </details>
 <br><br><br>
 
----
-
-### ******
 
 <hr class="division1">
 
