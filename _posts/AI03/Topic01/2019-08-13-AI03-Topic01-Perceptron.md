@@ -232,6 +232,8 @@ if __name__ == '__main__':
 </details>
 <br><br><br>
 
+---
+
 ### ***nand_gate.py***
 ```python
 # coding: utf-8
@@ -260,6 +262,8 @@ if __name__ == '__main__':
 </details>
 <br><br><br>
 
+---
+
 ### ***or_gate.py***
 ```python
 # coding: utf-8
@@ -287,6 +291,8 @@ if __name__ == '__main__':
 <hr class='division3'>
 </details>
 <br><br><br>
+
+---
 
 ### ***xor_gate.py***
 ```python
