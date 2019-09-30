@@ -361,7 +361,7 @@ print(diff)
 
 
 
-## **Implement Learning Algorithms**
+## **Implement Learning Algorithms with numpy**
 
 ### ***Implement two layer neural network class***
 
@@ -410,6 +410,127 @@ print(diff)
 <br><br><br>
 
 
+<hr class="division2">
+
+## **Implement Learning Algorithms with tensorflow**
+
+```python
+import tensorflow as tf
+import numpy as np
+
+# Define network architecture
+class MyModel(tf.keras.Model):
+    def __init__(self):
+        super(MyModel, self).__init__()
+        self.d1 = tf.keras.layers.Dense(128, input_dim=2, activation='sigmoid')
+        self.d2 = tf.keras.layers.Dense(10, activation='softmax')
+            
+    def call(self, x, training=None, mask=None):
+        x = self.d1(x)
+        return self.d2(x)
+        
+# Implement training loop        
+@tf.function
+def train_step(model, inputs, labels, loss_object, optimizer, train_loss, train_metric):
+    with tf.GradientTape() as tape:
+        predictions = model(inputs)
+        loss = loss_object(labels, predictions)
+    gradients = tape.gradient(loss, model.trainable_variables) # df(x)/dx
+    
+    optimizer.apply_gradients(zip(gradients, model.trainable_variables))
+    train_loss(loss)
+    train_metric(labels, predictions)
+    
+# Import and organize dataset    
+np.random.seed(0)
+
+pts = list()
+labels = list()
+center_pts = np.random.uniform(-8.0, 8.0, (10, 2))
+for label, center_pt in enumerate(center_pts):
+    for _ in range(100):
+        pts.append(center_pt + np.random.randn(*center_pt.shape))
+        labels.append(label)
+
+pts = np.stack(pts, axis=0).astype(np.float32)
+labels = np.stack(labels, axis=0)
+
+train_ds = tf.data.Dataset.from_tensor_slices((pts, labels)).shuffle(1000).batch(32)
+
+
+# create model
+model = MyModel()
+
+# define loss and optimizer
+loss_object = tf.keras.losses.SparseCategoricalCrossentropy()
+optimizer = tf.keras.optimizers.Adam()
+
+# Define performance metrics
+train_loss = tf.keras.metrics.Mean(name='train_loss')
+train_accuracy = tf.keras.metrics.SparseCategoricalAccuracy(name='train_accuracy')
+
+# do training loop and test
+EPOCHS = 1000
+for epoch in range(EPOCHS):
+    for x, label in train_ds:
+        train_step(model, x, label, loss_object, optimizer, train_loss, train_accuracy)
+        
+    template = 'Epoch {}, Loss: {}, Accuracy: {}'
+    print(template.format(epoch + 1,
+                          train_loss.result(),
+                          train_accuracy.result() * 100))
+    train_loss.reset_states()
+    train_accuracy.reset_states()
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+Epoch 1, Loss: 2.2050864696502686, Accuracy: 23.299999237060547
+Epoch 2, Loss: 1.8474318981170654, Accuracy: 51.79999923706055
+Epoch 3, Loss: 1.6150718927383423, Accuracy: 55.29999542236328
+Epoch 4, Loss: 1.446712613105774, Accuracy: 63.0
+Epoch 5, Loss: 1.3001761436462402, Accuracy: 71.69999694824219
+Epoch 6, Loss: 1.2056496143341064, Accuracy: 72.89999389648438
+Epoch 7, Loss: 1.1280295848846436, Accuracy: 75.80000305175781
+Epoch 8, Loss: 1.0488293170928955, Accuracy: 79.69999694824219
+Epoch 9, Loss: 0.9811602830886841, Accuracy: 78.89999389648438
+Epoch 10, Loss: 0.9269685745239258, Accuracy: 85.0999984741211
+...
+...
+...
+Epoch 991, Loss: 0.24664713442325592, Accuracy: 89.80000305175781
+Epoch 992, Loss: 0.24172385036945343, Accuracy: 90.20000457763672
+Epoch 993, Loss: 0.24257495999336243, Accuracy: 89.80000305175781
+Epoch 994, Loss: 0.242522731423378, Accuracy: 90.0
+Epoch 995, Loss: 0.24358901381492615, Accuracy: 89.70000457763672
+Epoch 996, Loss: 0.24744541943073273, Accuracy: 90.5999984741211
+Epoch 997, Loss: 0.2455950230360031, Accuracy: 90.0
+Epoch 998, Loss: 0.255244642496109, Accuracy: 90.30000305175781
+Epoch 999, Loss: 0.26216936111450195, Accuracy: 90.0
+Epoch 1000, Loss: 0.24371500313282013, Accuracy: 90.20000457763672
+```
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Save Parameters</summary>
+<hr class='division3'>
+```python
+np.savez_compressed('ch2_dataset.npz', inputs=pts, labels=labels)
+
+W_h, b_h = model.d1.get_weights()
+W_o, b_o = model.d2.get_weights()
+W_h = np.transpose(W_h)
+W_o = np.transpose(W_o)
+np.savez_compressed('ch2_parameters.npz',
+                    W_h=W_h,
+                    b_h=b_h,
+                    W_o=W_o,
+                    b_o=b_o)
+```
+<hr class='division3'>
+</details>
+<br><br><br>
 <hr class="division2">
 
 ## **Reference Codes**
