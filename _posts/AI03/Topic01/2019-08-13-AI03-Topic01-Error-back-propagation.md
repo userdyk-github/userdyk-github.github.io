@@ -85,6 +85,8 @@ print("dTax:", dtax)
 </details>
 <br><br><br>
 
+---
+
 ### ***buy_apple_orange.py***
 ```python
 # coding: utf-8
@@ -129,6 +131,8 @@ print("dTax:", dtax)
 </details>
 <br><br><br>
 
+---
+
 ### ***gradient_check.py***
 ```python
 # coding: utf-8
@@ -159,6 +163,8 @@ for key in grad_numerical.keys():
 <hr class='division3'>
 </details>
 <br><br><br>
+
+---
 
 ### ***layer_naive.py***
 ```python
@@ -205,6 +211,8 @@ class AddLayer:
 <hr class='division3'>
 </details>
 <br><br><br>
+
+---
 
 ### ***train_neuralnet.py***
 ```python
@@ -261,6 +269,8 @@ for i in range(iters_num):
 <hr class='division3'>
 </details>
 <br><br><br>
+
+---
 
 ### ***two_layer_net.py***
 ```python
