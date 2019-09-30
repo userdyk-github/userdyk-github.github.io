@@ -782,6 +782,8 @@ img_show(img)
 </details>
 <br><br><br>
 
+---
+
 ### ***neuralnet_mnist.py***
 ```python
 # coding: utf-8
@@ -835,6 +837,8 @@ print("Accuracy:" + str(float(accuracy_cnt) / len(x)))
 <hr class='division3'>
 </details>
 <br><br><br>
+
+---
 
 ### ***neuralnet_mnist_batch.py***
 ```python
@@ -893,6 +897,8 @@ print("Accuracy:" + str(float(accuracy_cnt) / len(x)))
 </details>
 <br><br><br>
 
+---
+
 ### ***relu.py***
 ```python
 # coding: utf-8
@@ -915,6 +921,8 @@ plt.show()
 <hr class='division3'>
 </details>
 <br><br><br>
+
+---
 
 ### ***sig_step_compare.py***
 ```python
@@ -946,6 +954,8 @@ plt.show()
 </details>
 <br><br><br>
 
+---
+
 ### ***sigmoid.py***
 ```python
 # coding: utf-8
@@ -968,6 +978,8 @@ plt.show()
 <hr class='division3'>
 </details>
 <br><br><br>
+
+---
 
 ### ***step_function.py***
 ```python
