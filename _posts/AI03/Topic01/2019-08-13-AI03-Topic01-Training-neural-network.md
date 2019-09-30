@@ -455,6 +455,8 @@ plt.show()
 </details>
 <br><br><br>
 
+---
+
 ### ***gradient_2d.py***
 ```python
 # coding: utf-8
@@ -535,6 +537,8 @@ if __name__ == '__main__':
 </details>
 <br><br><br>
 
+---
+
 ### ***gradient_method.py***
 ```python
 # coding: utf-8
@@ -582,6 +586,8 @@ plt.show()
 </details>
 <br><br><br>
 
+---
+
 ### ***gradient_simplenet.py***
 ```python
 # coding: utf-8
@@ -622,6 +628,8 @@ print(dW)
 <hr class='division3'>
 </details>
 <br><br><br>
+
+---
 
 ### ***train_neuralnet.py***
 ```python
@@ -689,6 +697,8 @@ plt.show()
 <hr class='division3'>
 </details>
 <br><br><br>
+
+---
 
 ### ***two_layer_net.py***
 ```python
