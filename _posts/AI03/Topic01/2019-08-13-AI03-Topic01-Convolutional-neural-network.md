@@ -115,6 +115,8 @@ plt.show()
 </details>
 <br><br><br>
 
+---
+
 ### ***gradient_check.py***
 ```python
 # coding: utf-8
@@ -140,6 +142,8 @@ for key, val in grad_num.items():
 <hr class='division3'>
 </details>
 <br><br><br>
+
+---
 
 ### ***simple_convnet.py***
 ```python
@@ -311,6 +315,8 @@ class SimpleConvNet:
 </details>
 <br><br><br>
 
+---
+
 ### ***train_convnet.py***
 ```python
 # coding: utf-8
@@ -362,6 +368,8 @@ plt.show()
 <hr class='division3'>
 </details>
 <br><br><br>
+
+---
 
 ### ***visualize_filter.py***
 ```python
