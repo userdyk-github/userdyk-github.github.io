@@ -169,6 +169,19 @@ import numpy as np
 def relu(x):
     return np.maximum(0,x)
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Visualization</summary>
+<hr class='division3'>
+```python
+import matplotlib.pyplot as plt
+
+x = np.linspace(-10,10,100)
+y = relu(x)
+plt.plot(x,y)
+```
+![다운로드](https://user-images.githubusercontent.com/52376448/66086346-bf6a5d80-e5ae-11e9-97b7-8045680ac513.png)
+<hr class='division3'>
+</details>
 <br><br><br>
 
 <hr class="division2">
