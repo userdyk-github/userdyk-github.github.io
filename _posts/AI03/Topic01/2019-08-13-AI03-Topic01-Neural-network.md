@@ -295,7 +295,7 @@ array([[22, 28],
 
 ### ***Matrix multiplication in Neural Networks***
 
-![캡처](https://user-images.githubusercontent.com/52376448/66088430-06a81c80-e5b6-11e9-9af0-697cd2d2ff4d.JPG)
+![캡처](https://user-images.githubusercontent.com/52376448/66088569-81713780-e5b6-11e9-86aa-95ea59177ed6.JPG)
 
 ```python
 import numpy as np
