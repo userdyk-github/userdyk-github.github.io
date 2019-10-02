@@ -122,25 +122,32 @@ array([-5., -4., -3., -2., -1.,  0.,  1.,  2.,  3.,  4.])
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9537e778e229470d85a68ee0b099c08298a1a3f6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.171ex; width:26.95ex; height:5.509ex;" alt="{\displaystyle S(x)={\frac {1}{1+e^{-x}}}={\frac {e^{x}}{e^{x}+1}}.}">
 ```python
 import numpy as np
-import matplotlib.pylab as plt
 
 def sigmoid(x):
   return 1/(1 + np.exp(-x))
 
 a = np.array([-1.0, 1.0, 2.0])
 print(sigmoid(a))
-
-x = np.arange(-5.0, 5.0, 0.1)
-y = sigmoid(x)
-plt.plot(x, y)
-plt.ylim(-0.1, 1.1)
-plt.show()
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
 [0.26894142 0.73105858 0.88079708]
+```
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Visualization</summary>
+<hr class='division3'>
+```python
+import matplotlib.pylab as plt
+
+x = np.arange(-5.0, 5.0, 0.1)
+y = sigmoid(x)
+plt.plot(x, y)
+plt.ylim(-0.1, 1.1)
+plt.show()
 ```
 ![다운로드 (5)](https://user-images.githubusercontent.com/52376448/63809030-44cd7300-c95c-11e9-9ef3-58ecac07ea93.png)
 <hr class='division3'>
