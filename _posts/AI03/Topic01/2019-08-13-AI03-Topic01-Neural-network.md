@@ -191,10 +191,24 @@ plt.plot(x,y)
 ### ***Multidimensional array***
 
 ```python
+import numpy as np
+
+A = np.array([1,2,3,4])
+print(A)
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+```python
+>>> np.ndim(A)
+1
+
+>>> A.shape
+(4,)
+
+>>> A.shape[0]
+4
+```
 <hr class='division3'>
 </details>
 <br><br><br>
