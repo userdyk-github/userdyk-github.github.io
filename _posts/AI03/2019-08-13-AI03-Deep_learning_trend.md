@@ -63,12 +63,12 @@ Enterprise IT(legacy IT) > Infrastructure(as a Service, IaaS) > Platform(as a Se
 
 ### ***Present situation of	CUDA and deep learning framework***
 
-CUDA/cuDNN을 사용하기 위한 병렬처리 개념과 프로그래밍 모델, 그래픽 카드 하드웨어 모델 등을 이해하고 병렬처리 개념을 소개합니다. 배운 내용들이 Caffe, Caffe2, Tensorflow에서 어떻게 쓰이고 있는지 소개합니다.
+Multiprocessing system and programming model concept for using CUDA/cuDNN, by grasping graphics card and hardware model in relation to Caffe, Caffe2, Tensorflow.
 
-[실습] CUDA DeviceInfo
-[실습] CUDA 기반 1차원/2차원 행렬 합,곱
-[실습] 중첩 Reduce 연산 테크닉
-[실습] Caffe, Caffe2, Tensorflow 코드 리뷰
+- CUDA DeviceInfo
+- 1D/2D Matrix sum, product based on CUDA
+- Optimizing parallel reduction
+- Code review for Caffe, Caffe2, Tensorflow
 
 <br><br><br>
 
@@ -76,12 +76,13 @@ CUDA/cuDNN을 사용하기 위한 병렬처리 개념과 프로그래밍 모델,
 
 ### ***GPU Memory usage***
 
-CPU-GPU 간 데이터 복사가 이뤄지는 원리와, GPU 가 사용하는 여러 메모리 종류들의 특성들을 깊이있게 이해하고, 이를 바탕으로 효율적인 메모리 활용 테크닉을 학습하여 CUDA로 구현해봅니다.
+Deep understanding of the principle of copying data between CPU and GPUs, and the characteristics of the different kinds of memory used by GPUs, and we learn efficient memory utilization techniques and implement them into CUDA.
 
-[실습] 메모리 동기/비동기 복사
-[실습] 공유 메모리/고정 메모리 복사
-[실습] 글로벌 메모리/Zero-Copy 메모리 복사
-[실습] 통합 메모리 복사
+
+메모리 동기/비동기 복사
+공유 메모리/고정 메모리 복사
+글로벌 메모리/Zero-Copy 메모리 복사
+통합 메모리 복사
 
 <br><br><br>
 
@@ -89,12 +90,12 @@ CPU-GPU 간 데이터 복사가 이뤄지는 원리와, GPU 가 사용하는 여
 
 ### ***GPU Memory and stream usage***	
 
-GPU의 리소스 활용을 최대화하기 위한 액세스 테크닉과 스트림의 개념을 이해하고 CUDA로 구현해봅니다.
+Stream concept and access technique for maximizing resource utlization of GPU, with implementation.
 
-[실습] 메모리 정합/정렬 액세스
-[실습] 메모리 뱅크 충돌과 패딩 회피
-[실습] 데이터 전송 스트림과 이벤트 구현
-[실습] 스트림 동기화 구현
+메모리 정합/정렬 액세스
+메모리 뱅크 충돌과 패딩 회피
+데이터 전송 스트림과 이벤트 구현
+스트림 동기화 구현
 
 <br><br><br>
 
