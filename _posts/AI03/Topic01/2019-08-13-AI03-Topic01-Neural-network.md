@@ -269,6 +269,7 @@ array([[19, 22],
 ```
 <hr class='division3'>
 </details>
+<br>
 `Example 2`
 ```python
 import numpy as np
