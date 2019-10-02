@@ -74,6 +74,13 @@ cross_entropy_error(y,t)
 
 ### ***Mini batch training***
 
+<details markdown="1">
+<summary class='jb-small' style="color:blue">ADVANCDED PREPERATION</summary>
+<hr class='division3'>
+[dataset.zip][1]
+<hr class='division3'>
+</details>
+
 ```python
 
 ```
@@ -1973,3 +1980,5 @@ Reference
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
+
+{{site.url}}
