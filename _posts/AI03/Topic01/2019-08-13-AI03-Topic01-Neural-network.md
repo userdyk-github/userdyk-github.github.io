@@ -125,13 +125,14 @@ import numpy as np
 
 def sigmoid(x):
   return 1/(1 + np.exp(-x))
-
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Example</summary>
+<hr class='division3'>
+```python
 a = np.array([-1.0, 1.0, 2.0])
 print(sigmoid(a))
 ```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
 ```
 [0.26894142 0.73105858 0.88079708]
 ```
