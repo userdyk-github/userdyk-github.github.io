@@ -477,7 +477,7 @@ def gradient_descent(network, x, y, loss_obj, alpha=0.01):
     return loss
 
 
-# test loss
+# operation
 x = np.random.normal(0.0, 1.0, (10,))
 y = np.random.normal(0.0, 1.0, (2,))
 
