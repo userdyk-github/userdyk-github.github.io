@@ -76,7 +76,7 @@ Multiprocessing system and programming model concept for using CUDA/cuDNN, by gr
 
 ### ***GPU Memory usage***
 
-Deep understanding of the principle of copying data between CPU and GPUs, and the characteristics of the different kinds of memory used by GPUs, and we learn efficient memory utilization techniques and implement them into CUDA.
+Deep understanding of the principle of data transfer between CPU and GPUs, and the characteristics of the different kinds of memory used by GPUs, and we learn efficient memory utilization techniques and implement them into CUDA.
 
 
 메모리 동기/비동기 복사
