@@ -215,7 +215,7 @@ B = np.array([[1,2],[3,4],[5,6]])
 <hr class='division3'>
 </details>
 <details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT : A</summary>
+<summary class='jb-small' style="color:blue">OUTPUT : B</summary>
 <hr class='division3'>
 ```python
 >>> print(B)
@@ -244,6 +244,7 @@ B = np.array([[1,2],[3,4],[5,6]])
 ### ***Matrix multiplication***
 
 ```python
+
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -255,12 +256,40 @@ B = np.array([[1,2],[3,4],[5,6]])
 ---
 
 ### ***Matrix multiplication in Neural Networks***
-
+`Example 1`
 ```python
+import numpy as np
+
+A = np.array([[1,2],[3,4]])
+B = np.array([[5,6],[7,8]])
+
+np.dot(A,B)
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+```
+array([[19, 22],
+       [43, 50]])
+```
+<hr class='division3'>
+</details>
+`Example 2`
+```python
+import numpy as np
+
+A = np.array([[1,2,3],[4,5,6]])
+B = np.array([[1,2],[3,4],[5,6]])
+
+np.dot(A,B)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+array([[22, 28],
+       [49, 64]])
+```
 <hr class='division3'>
 </details>
 <br><br><br>
