@@ -151,13 +151,24 @@ plt.show()
 
 ### ***ReLU function***
 
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e9c5f17dbc2be5cb379c1894b3a43561f296cf5c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:23.763ex; height:3.009ex;" alt="{\displaystyle f(x)=x^{+}=\max(0,x),}">
+
+`method 1`
 ```python
+def relu(x):
+    if x > 0:
+        return x
+    elif x <= 0:
+        return 0
 ```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-<hr class='division3'>
-</details>
+
+`method 2`
+```python
+import numpy as np
+
+def relu(x):
+    return np.maximum(0,x)
+```
 <br><br><br>
 
 <hr class="division2">
