@@ -295,12 +295,21 @@ array([[22, 28],
 
 ### ***Matrix multiplication in Neural Networks***
 
-```python
+![캡처](https://user-images.githubusercontent.com/52376448/66088096-dca22a80-e5b4-11e9-84df-2c9390c479b4.JPG)
 
+```python
+import numpy as np
+
+X = np.array([1,2])
+W = np.array([[1,3,5],[2,4,6]])
+np.dot(X,W)
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+```
+array([ 5, 11, 17])
+```
 <hr class='division3'>
 </details>
 
