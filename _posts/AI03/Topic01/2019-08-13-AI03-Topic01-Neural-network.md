@@ -312,7 +312,22 @@ array([ 5, 11, 17])
 ```
 <hr class='division3'>
 </details>
+<br>
+```python
+import numpy as np
 
+X = np.array([1,2])
+W = np.array([[1,3,5],[2,4,6]])
+np.dot(W.T,X)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+array([ 5, 11, 17])
+```
+<hr class='division3'>
+</details>
 <br><br><br>
 
 
