@@ -61,7 +61,7 @@ Enterprise IT(legacy IT) > Infrastructure(as a Service, IaaS) > Platform(as a Se
 
 ## **CUDA(Compute Unified Device Architecture) Programming**
 
-### ***1	CUDA와 딥러닝 프레임워크 현***
+### ***Present situation of	CUDA and deep learning framework***
 
 CUDA/cuDNN을 사용하기 위한 병렬처리 개념과 프로그래밍 모델, 그래픽 카드 하드웨어 모델 등을 이해하고 병렬처리 개념을 소개합니다. 배운 내용들이 Caffe, Caffe2, Tensorflow에서 어떻게 쓰이고 있는지 소개합니다.
 
@@ -74,7 +74,7 @@ CUDA/cuDNN을 사용하기 위한 병렬처리 개념과 프로그래밍 모델,
 
 ---
 
-### ***2	GPU 메모리활용 1***
+### ***GPU Memory usage***
 
 CPU-GPU 간 데이터 복사가 이뤄지는 원리와, GPU 가 사용하는 여러 메모리 종류들의 특성들을 깊이있게 이해하고, 이를 바탕으로 효율적인 메모리 활용 테크닉을 학습하여 CUDA로 구현해봅니다.
 
@@ -87,7 +87,7 @@ CPU-GPU 간 데이터 복사가 이뤄지는 원리와, GPU 가 사용하는 여
 
 ---
 
-### ***3	GPU 메모리 활용 2/ 스트림 활용***	
+### ***GPU Memory and stream usage***	
 
 GPU의 리소스 활용을 최대화하기 위한 액세스 테크닉과 스트림의 개념을 이해하고 CUDA로 구현해봅니다.
 
@@ -100,7 +100,7 @@ GPU의 리소스 활용을 최대화하기 위한 액세스 테크닉과 스트�
 
 ---
 
-### ***4	CUDA 디버깅과 프로파일링, cuDNN 활용***
+### ***CUDA debugging profiling, cuDNN usage***
 CUDA 프로그램을 실질적으로 디버깅하거나 성능 최적화하는 방법을 이해하고 이때 사용하는 도구들을 활용해봅니다. 병렬처리 성능을 극대화시키기 위해cuDNN 을 학습한 다음, 효율적인 Convolution연산을 위한 GEMM(General Matrix Multiplication) 알고리즘을 학습하고 직접 구현해봅니다.
 
 [실습] CUDA 디버깅 도구 활용
@@ -112,7 +112,7 @@ CUDA 프로그램을 실질적으로 디버깅하거나 성능 최적화하는 �
 
 ---
 
-### ***5	CUDA 딥러닝 구현***	
+### ***Implement of deep learning with CUDA***	
 CUDA및 cuDNN을 활용해서 MaxPooling, Activation, FC 레이어 등을 구현해보고, 이들을 통합해서 Object Detection을 위한 YOLO v2를 구현해봅니다.
 
 [실습] CUDA/cuDNN 기반 MaxPooling Layer
@@ -124,7 +124,7 @@ CUDA및 cuDNN을 활용해서 MaxPooling, Activation, FC 레이어 등을 구현
 
 ---
 
-### ***6	딥러닝 프레임워크의 커스텀레이어 구현***
+### ***Implement of custom layers based on CUDA/cuDNN***
 
 CUDA/cuDNN 구현 테크닉들을 기반으로, Caffe/Caffe2/Tensorflow에서 각각 적용해볼 수 있는 자신만의 사용자 정의 레이어를 구현해봅니다.
 
