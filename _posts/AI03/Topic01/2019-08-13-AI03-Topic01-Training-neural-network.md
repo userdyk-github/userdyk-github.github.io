@@ -363,6 +363,167 @@ print(diff)
 
 ## **Implement Learning Algorithms with numpy**
 
+```python
+# import libraries
+import time
+import numpy as np
+
+
+# set hyperparmeter
+epsilon = 0.0001
+
+
+# utlility function
+def _t(x):
+    return np.transpose(x)
+def _m(A, B):
+    return np.matmul(A, B)
+def sigmoid(x):
+    return 1 / (1 + np.exp(-x))
+def mean_squared_error(h, y):
+    return 1 / 2 * np.mean(np.square(h - y))
+
+
+# define neuron
+class Neuron:
+    def __init__(self, W, b, a):
+        # Model Parameter
+        self.W = W
+        self.b = b
+        self.a = a
+        
+        # Gradients
+        self.dW = np.zeros_like(self.W)
+        self.db = np.zeros_like(self.b)
+
+    def __call__(self, x):
+        return self.a(_m(_t(self.W), x) + self.b) # activation((W^T)x + b)
+
+
+# define deep neural network
+class DNN:
+    def __init__(self, hidden_depth, num_neuron, num_input, num_output, activation=sigmoid):
+        def init_var(i, o):
+            return np.random.normal(0.0, 0.01, (i, o)), np.zeros((o,))
+
+        self.sequence = list()
+        # First hidden layer
+        W, b = init_var(num_input, num_neuron)
+        self.sequence.append(Neuron(W, b, activation))
+        
+        # Hidden layers
+        for _ in range(hidden_depth - 1):
+            W, b = init_var(num_neuron, num_neuron)
+            self.sequence.append(Neuron(W, b, activation))
+
+        # Output layer
+        W, b = init_var(num_neuron, num_output)
+        self.sequence.append(Neuron(W, b, activation))
+
+    def __call__(self, x):
+        for layer in self.sequence:
+            x = layer(x)
+        return x
+
+    def calc_gradient(self, x, y, loss_func):
+        def get_new_sequence(layer_index, new_neuron):
+            new_sequence = list()
+            for i, layer in enumerate(self.sequence):
+                if i == layer_index:
+                    new_sequence.append(new_neuron)
+                else:
+                    new_sequence.append(layer)
+            return new_sequence
+        
+        def eval_sequence(x, sequence):
+            for layer in sequence:
+                x = layer(x)
+            return x
+        
+        loss = loss_func(self(x), y)
+        
+        for layer_id, layer in enumerate(self.sequence): # iterate layer
+            for w_i, w in enumerate(layer.W): # iterate W (row)
+                for w_j, ww in enumerate(w): # iterate W (col)
+                    W = np.copy(layer.W)
+                    W[w_i][w_j] = ww + epsilon
+                    
+                    new_neuron = Neuron(W, layer.b, layer.a)
+                    new_seq = get_new_sequence(layer_id, new_neuron)
+                    h = eval_sequence(x, new_seq)
+                    
+                    num_grad = (loss_func(h, y) - loss) / epsilon  # (f(x+eps) - f(x)) / epsilon
+                    layer.dW[w_i][w_j] = num_grad
+            
+                for b_i, bb in enumerate(layer.b): # iterate b
+                    b = np.copy(layer.b)
+                    b[b_i] = bb + epsilon
+                    
+                    new_neuron = Neuron(layer.W, b, layer.a)
+                    new_seq = get_new_sequence(layer_id, new_neuron)
+                    h = eval_sequence(x, new_seq)
+                    
+                    num_grad = (loss_func(h, y) - loss) / epsilon  # (f(x+eps) - f(x)) / epsilon
+                    layer.db[b_i] = num_grad
+        return loss
+        
+
+# define gradient descent
+def gradient_descent(network, x, y, loss_obj, alpha=0.01):
+    loss = network.calc_gradient(x, y, loss_obj)
+    for layer in network.sequence:
+        layer.W += -alpha * layer.dW
+        layer.b += -alpha * layer.db
+    return loss
+
+
+# test loss
+x = np.random.normal(0.0, 1.0, (10,))
+y = np.random.normal(0.0, 1.0, (2,))
+
+dnn = DNN(hidden_depth=5, num_neuron=32, num_input=10, num_output=2, activation=sigmoid)
+
+t = time.time()
+for epoch in range(100):
+    loss = gradient_descent(dnn, x, y, mean_squared_error, 0.01)
+    print('Epoch {}: Test loss {}'.format(epoch, loss))
+print('{} seconds elapsed.'.format(time.time() - t))    
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+Epoch 0: Test loss 0.5788407666374237
+Epoch 1: Test loss 0.5755734143209582
+Epoch 2: Test loss 0.5723271009377402
+Epoch 3: Test loss 0.5691025121018389
+Epoch 4: Test loss 0.565900303856321
+Epoch 5: Test loss 0.5627211022628145
+Epoch 6: Test loss 0.5595655030828444
+Epoch 7: Test loss 0.5564340715483467
+Epoch 8: Test loss 0.5533273422196228
+Epoch 9: Test loss 0.5502458189274984
+Epoch 10: Test loss 0.5471899747975388
+...
+...
+...
+Epoch 91: Test loss 0.3874385796049036
+Epoch 92: Test loss 0.38632830347838176
+Epoch 93: Test loss 0.3852320899123199
+Epoch 94: Test loss 0.38414972218996524
+Epoch 95: Test loss 0.38308098674951835
+Epoch 96: Test loss 0.3820256731742948
+Epoch 97: Test loss 0.3809835741802311
+Epoch 98: Test loss 0.3799544856008311
+Epoch 99: Test loss 0.37893820636984105
+47.71986770629883 seconds elapsed.
+```
+<hr class='division3'>
+</details>
+
+
+<br><br><br>
+
 ### ***Implement two layer neural network class***
 
 ```python
