@@ -194,12 +194,15 @@ plt.plot(x,y)
 import numpy as np
 
 A = np.array([1,2,3,4])
-print(A)
+B = np.array([[1,2],[3,4],[5,6]])
 ```
 <details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<summary class='jb-small' style="color:blue">OUTPUT : A</summary>
 <hr class='division3'>
 ```python
+>>> print(A)
+[1 2 3 4]
+
 >>> np.ndim(A)
 1
 
@@ -208,6 +211,29 @@ print(A)
 
 >>> A.shape[0]
 4
+```
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT : A</summary>
+<hr class='division3'>
+```python
+>>> print(B)
+[[1 2]
+ [3 4]
+ [5 6]]
+
+>>> np.ndim(B)
+2
+
+>>> B.shape
+(3, 2)
+
+>>> B.shape[0]
+3
+
+>>> B.shape[1]
+2
 ```
 <hr class='division3'>
 </details>
