@@ -88,7 +88,7 @@ cross_entropy_error(y,t)
 
 ---
 
-### ***Implement cross entropy error***
+### ***Implement cross entropy error for batch***
 
 ```python
 
