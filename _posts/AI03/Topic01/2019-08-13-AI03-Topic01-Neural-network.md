@@ -250,19 +250,6 @@ B = np.array([[1,2],[3,4],[5,6]])
 
 ### ***Matrix multiplication***
 
-```python
-
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-<hr class='division3'>
-</details>
-<br><br><br>
-
----
-
-### ***Matrix multiplication in Neural Networks***
 `Example 1`
 ```python
 import numpy as np
@@ -299,6 +286,22 @@ array([[22, 28],
 ```
 <hr class='division3'>
 </details>
+
+<br><br><br>
+
+---
+
+### ***Matrix multiplication in Neural Networks***
+
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 
