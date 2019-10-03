@@ -923,7 +923,6 @@ labels = dataset['labels']
 
 # [4] : Create Model
 model = ShallowNN(2, 128, 10)
-
 weights = np.load('ch2_parameters.npz')
 model.W_h = weights['W_h']
 model.b_h = weights['b_h']
@@ -1087,8 +1086,26 @@ array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 >>> labels.shape
 (1000,)
 ```
+<hr class='division3'>
+</details>
 
 
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT[4]</summary>
+<hr class='division3'>
+```
+weights['W_h'].shape
+(128, 2)
+
+weights['b_h'].shape
+(128,)
+
+weights['W_o'].shape
+(10, 128)
+
+weights['b_o'].shape
+(10,)
+```
 <hr class='division3'>
 </details>
 
