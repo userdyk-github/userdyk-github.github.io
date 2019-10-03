@@ -681,6 +681,64 @@ Epoch 1000, Loss: 0.24371500313282013, Accuracy: 90.20000457763672
 ```
 <hr class='division3'>
 </details>
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT : [3]</summary>
+<hr class='division3'>
+```python
+np.random.seed(0)
+
+pts = list()
+labels = list()
+center_pts = np.random.uniform(-8.0, 8.0, (10, 2))
+for label, center_pt in enumerate(center_pts):
+    for _ in range(100):
+        pts.append(center_pt + np.random.randn(*center_pt.shape))
+        labels.append(label)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">SUPPLEMENT</summary>
+<hr class='division3_1'>
+```
+# randn : Gaussian(standard normal distribution)
+>>> import numpy as np
+>>> np.random.randn(10)      # 10 random numbers in range : (-oo,oo)
+array([ 0.58711644,  0.04700508, -1.10859032, -0.78977472,  2.64137167,
+       -0.01833935,  0.03531587, -1.72592648,  0.66461845, -0.36460468])
+
+>>> np.random.randn(3, 5)    # 15=3*5 random numbers in range : (-oo,oo)
+array([[-0.99387193,  0.71975003, -0.719061  , -0.51130777, -0.18149095],
+       [-0.95578814,  0.23776812, -1.80650151,  0.86778844, -1.12507707],
+       [-0.88193264,  2.44759966, -0.27246929,  1.8909227 , -1.21857409]])
+```
+<hr class='division3_1'>
+</details>
+```python
+pts = np.stack(pts, axis=0).astype(np.float32)
+labels = np.stack(labels, axis=0)
+
+train_ds = tf.data.Dataset.from_tensor_slices((pts, labels)).shuffle(1000).batch(32)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">SUPPLEMENT</summary>
+<hr class='division3_1'>
+```
+>>> import numpy as np
+>>> a = np.array([1,2])
+>>> b = np.array([3,4])
+>>> list = [a,b]
+>>> list
+[array([1, 2]), array([3, 4])]
+
+>>> np.stack(list)
+array([[1, 2],
+       [3, 4]])
+```
+<hr class='division3_1'>
+</details>
+<hr class='division3'>
+</details>
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Save Parameters</summary>
 <hr class='division3'>
