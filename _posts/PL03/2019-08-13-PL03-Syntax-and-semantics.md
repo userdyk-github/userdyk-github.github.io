@@ -119,6 +119,11 @@ List of posts to read before reading this article
 
 ### ***Module***
 
+```python
+if __name__ == "__main__":
+    pass
+```
+
 <br><br><br>
 
 ---
