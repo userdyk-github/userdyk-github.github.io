@@ -699,8 +699,8 @@ for label, center_pt in enumerate(center_pts):
 <details markdown="1">
 <summary class='jb-small' style="color:red">SUPPLEMENT</summary>
 <hr class='division3_1'>
+randn : Gaussian(standard normal distribution)
 ```
-# randn : Gaussian(standard normal distribution)
 >>> import numpy as np
 >>> np.random.randn(10)      # 10 random numbers in range : (-oo,oo)
 array([ 0.58711644,  0.04700508, -1.10859032, -0.78977472,  2.64137167,
