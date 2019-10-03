@@ -583,10 +583,11 @@ Epoch 99: Test loss 0.37893820636984105
 ## **Implement Learning Algorithms with tensorflow**
 
 ```python
+# [0] : import libraries
 import tensorflow as tf
 import numpy as np
 
-# Define network architecture
+# [1] : Define network architecture
 class MyModel(tf.keras.Model):
     def __init__(self):
         super(MyModel, self).__init__()
@@ -597,7 +598,7 @@ class MyModel(tf.keras.Model):
         x = self.d1(x)
         return self.d2(x)
         
-# Implement training loop        
+# [2] : Implement training loop        
 @tf.function
 def train_step(model, inputs, labels, loss_object, optimizer, train_loss, train_metric):
     with tf.GradientTape() as tape:
@@ -609,7 +610,7 @@ def train_step(model, inputs, labels, loss_object, optimizer, train_loss, train_
     train_loss(loss)
     train_metric(labels, predictions)
     
-# Import and organize dataset    
+# [3] : Import and organize dataset    
 np.random.seed(0)
 
 pts = list()
@@ -626,18 +627,18 @@ labels = np.stack(labels, axis=0)
 train_ds = tf.data.Dataset.from_tensor_slices((pts, labels)).shuffle(1000).batch(32)
 
 
-# create model
+# [4] : create model
 model = MyModel()
 
-# define loss and optimizer
+# [5] : define loss and optimizer
 loss_object = tf.keras.losses.SparseCategoricalCrossentropy()
 optimizer = tf.keras.optimizers.Adam()
 
-# Define performance metrics
+# [6] : Define performance metrics
 train_loss = tf.keras.metrics.Mean(name='train_loss')
 train_accuracy = tf.keras.metrics.SparseCategoricalAccuracy(name='train_accuracy')
 
-# do training loop and test
+# [7] : do training loop and test
 EPOCHS = 1000
 for epoch in range(EPOCHS):
     for x, label in train_ds:
