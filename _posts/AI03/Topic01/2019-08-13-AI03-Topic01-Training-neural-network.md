@@ -713,6 +713,7 @@ array([[-0.99387193,  0.71975003, -0.719061  , -0.51130777, -0.18149095],
 ```
 <hr class='division3_1'>
 </details>
+<br>
 ```python
 pts = np.stack(pts, axis=0).astype(np.float32)
 labels = np.stack(labels, axis=0)
