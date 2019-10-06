@@ -1112,11 +1112,11 @@ corolla.head()
 ```
 ```
 	Id	Model						Price	Age_08_04	Mfg_Month	Mfg_Year	KM	Fuel_Type	HP	Met_Color	...	Central_Lock	Powered_Windows	Power_Steering	Radio	Mistlamps	Sport_Model	Backseat_Divider	Metallic_Rim	Radio_cassette	Tow_Bar
-0	1	TOYOTA Corolla 2.0 D4D HATCHB TERRA 2/3-Doors	13500	23		10		2002		46986	Diesel		90	1		...	1	1	1	0	0	0	1	0	0	0
-1	2	TOYOTA Corolla 2.0 D4D HATCHB TERRA 2/3-Doors	13750	23		10		2002		72937	Diesel		90	1		...	1	0	1	0	0	0	1	0	0	0
-2	3	?TOYOTA Corolla 2.0 D4D HATCHB TERRA 2/3-Doors	13950	24		9		2002		41711	Diesel		90	1		...	0	0	1	0	0	0	1	0	0	0
-3	4	TOYOTA Corolla 2.0 D4D HATCHB TERRA 2/3-Doors	14950	26		7		2002		48000	Diesel		90	0		...	0	0	1	0	0	0	1	0	0	0
-4	5	TOYOTA Corolla 2.0 D4D HATCHB SOL 2/3-Doors	13750	30		3		2002		38500	Diesel		90	0		...	1	1	1	0	1	0	1	0	0	0
+0	1	TOYOTA Corolla 2.0 D4D HATCHB TERRA 2/3-Doors	13500	23		10		2002		46986	Diesel		90	1		...	1		1		1		0		0		0		1		0		0		0
+1	2	TOYOTA Corolla 2.0 D4D HATCHB TERRA 2/3-Doors	13750	23		10		2002		72937	Diesel		90	1		...	1		0		1		0		0		0		1		0		0		0
+2	3	?TOYOTA Corolla 2.0 D4D HATCHB TERRA 2/3-Doors	13950	24		9		2002		41711	Diesel		90	1		...	0		0		1		0		0		0		1		0		0		0
+3	4	TOYOTA Corolla 2.0 D4D HATCHB TERRA 2/3-Doors	14950	26		7		2002		48000	Diesel		90	0		...	0		0		1		0		0		0		1		0		0		0
+4	5	TOYOTA Corolla 2.0 D4D HATCHB SOL 2/3-Doors	13750	30		3		2002		38500	Diesel		90	0		...	1		1		1		0		1		0		1		0		0		0
 5 rows × 37 columns
 ```
 
