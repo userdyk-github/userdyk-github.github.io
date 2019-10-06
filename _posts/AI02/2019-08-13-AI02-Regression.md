@@ -1488,6 +1488,7 @@ def getBest(X,y,k):
 
 print(getBest(X=train_x, y=train_y,k=2))
 ```
+
 ```
 Processed  630 models on 2 predictors in 1.8201320171356201 seconds.
 AIC                                                17516.6
@@ -1521,8 +1522,8 @@ for combo in itertools.combinations(X.columns.difference(['const']), 2):
     print((list(combo)+['const']))
 ```
 <details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
 ```
 ['ABS', 'Age_08_04', 'const']
 ['ABS', 'Airbag_1', 'const']
@@ -2155,9 +2156,29 @@ for combo in itertools.combinations(X.columns.difference(['const']), 2):
 ['Tow_Bar', 'cc', 'const']
 ['Weight', 'cc', 'const']
 ```
+<hr class='division3_1'>
+</details>
 <hr class='division3'>
 </details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Measure training time</summary>
+<hr class='division3'>
+```python
+# 변수 선택에 따른 학습시간과 저장
+models = pd.DataFrame(columns=["AIC", "model"])
+tic = time.time()
+for i in range(1,4):
+    models.loc[i] = getBest(X=train_x,y=train_y,k=i)
+toc = time.time()
+print("Total elapsed time:", (toc-tic), "seconds.")
+```
 
+```
+Processed  36 models on 1 predictors in 0.09873557090759277 seconds.
+Processed  630 models on 2 predictors in 1.3473966121673584 seconds.
+Processed  7140 models on 3 predictors in 17.01948356628418 seconds.
+Total elapsed time: 18.805707454681396 seconds.
+```
 <hr class='division3'>
 </details>
 <br><br><br>
