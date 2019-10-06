@@ -1122,6 +1122,9 @@ corolla.head()
 4	5	TOYOTA Corolla 2.0 D4D HATCHB SOL 2/3-Doors	13750	30		3		2002		38500	Diesel	90	0	...	1	1	1	0	1	0	1	0	0	0
 5 rows × 37 columns
 ```
+
+<hr class='division3_1'>
+</details>
 <br>
 ```python
 print('nCar: %d' % nCar, 'nVar: %d' % nVar )
@@ -1129,10 +1132,6 @@ print('nCar: %d' % nCar, 'nVar: %d' % nVar )
 ```
 nCar: 1436 nVar: 37
 ```
-<hr class='division3_1'>
-</details>
-
-
 
 
 
