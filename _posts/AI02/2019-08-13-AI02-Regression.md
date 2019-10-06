@@ -1058,20 +1058,20 @@ print(mean_squared_error(y_true=test_y.values, y_pred=fitted_model2.predict(test
 
 `Data preprocessing`
 ```python
-## Load libraries
+## [0] : Load libraries
 import pandas as pd
 import numpy as np
 import statsmodels.api as sm
 from sklearn.model_selection import train_test_split
 
 
-## Load dataset
+## [1] : Load dataset
 corolla = pd.read_csv(r'C:\Users\userd\Desktop\dataset\ToyotaCorolla.csv')
 nCar = corolla.shape[0]
 nVar = corolla.shape[1]
 
 
-## categorical data-type > binary data-type
+## [2] : categorical data-type > binary data-type
 # Create dummy variables
 dummy_p = np.repeat(0,nCar)
 dummy_d = np.repeat(0,nCar)
@@ -1088,24 +1088,24 @@ dummy_d[d_idx] = 1  # Diesel
 dummy_c[c_idx] = 1  # CNG
 
 
-## Eliminate unnecessary variables and add dummy variables
+## [3] : Eliminate unnecessary variables and add dummy variables
 Fuel = pd.DataFrame({'Petrol': dummy_p, 'Diesel': dummy_d, 'CNG': dummy_c})
 corolla_ = corolla.dropna().drop(['Id','Model','Fuel_Type'], axis=1, inplace=False)
 mlr_data = pd.concat((corolla_, Fuel), 1)
 
 
-## Add bias
+## [4] : Add bias
 mlr_data = sm.add_constant(mlr_data, has_constant='add')
 
 
-## Divide into input data and output data
+## [5] : Divide into input data and output data
 feature_columns = list(mlr_data.columns.difference(['Price']))
 X = mlr_data[feature_columns]
 y = mlr_data.Price
 train_x, test_x, train_y, test_y = train_test_split(X, y, train_size=0.7, test_size=0.3)
 ```
 <details markdown="1">
-<summary class='jb-small' style="color:blue">Data : Input</summary>
+<summary class='jb-small' style="color:blue">[1] Data : Input</summary>
 <hr class='division3'>
 ```python
 corolla.head()
@@ -1121,6 +1121,13 @@ corolla.head()
 3	4	TOYOTA Corolla 2.0 D4D HATCHB TERRA 2/3-Doors	14950	26	7	2002	48000	Diesel	90	0	...	0	0	1	0	0	0	1	0	0	0
 4	5	TOYOTA Corolla 2.0 D4D HATCHB SOL 2/3-Doors	13750	30	3	2002	38500	Diesel	90	0	...	1	1	1	0	1	0	1	0	0	0
 5 rows × 37 columns
+```
+<br>
+```python
+print('nCar: %d' % nCar, 'nVar: %d' % nVar )
+```
+```
+nCar: 1436 nVar: 37
 ```
 <hr class='division3_1'>
 </details>
