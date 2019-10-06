@@ -263,8 +263,8 @@ Mass Point</a><br>
 
 ## _MATH02 : Calulus_
 
-> <a href='https://userdyk-github.github.io/math02/MATH02-Limits.html'>Limits</a><br>
-> <a href='https://userdyk-github.github.io/math02/MATH02-Series.html'>Series</a><br>
+> <a href='https://userdyk-github.github.io/math02/MATH02-Permutation-and-combination.html'>Permutation and combination</a><br>
+> <a href='https://userdyk-github.github.io/math02/MATH02-Limits-and-series.html'>Limits and series</a><br>
 > <a href='https://userdyk-github.github.io/math02/MATH02-Sums-and-products.html'>Sums and products</a><br>
 > <a href='https://userdyk-github.github.io/math02/MATH02-Derivative-calculus.html'>Derivative calculus</a><br>
 > <a href='https://userdyk-github.github.io/math02/MATH02-Integral-calculus.html'>Integral calculus</a><br>
