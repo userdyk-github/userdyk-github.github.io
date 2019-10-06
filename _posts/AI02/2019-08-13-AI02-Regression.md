@@ -1268,8 +1268,32 @@ mlr_data.head()
 ```
 <hr class='division3'>
 </details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">[5] Data : Input</summary>
+<hr class='division3'>
+```python
+mlr_data.columns.difference(['Price'])
+```
+```
+Index(['ABS', 'Age_08_04', 'Airbag_1', 'Airbag_2', 'Airco', 'Automatic',
+       'Automatic_airco', 'BOVAG_Guarantee', 'Backseat_Divider',
+       'Boardcomputer', 'CD_Player', 'CNG', 'Central_Lock', 'Cylinders',
+       'Diesel', 'Doors', 'Gears', 'Guarantee_Period', 'HP', 'KM', 'Met_Color',
+       'Metallic_Rim', 'Mfg_Month', 'Mfg_Year', 'Mfr_Guarantee', 'Mistlamps',
+       'Petrol', 'Power_Steering', 'Powered_Windows', 'Quarterly_Tax', 'Radio',
+       'Radio_cassette', 'Sport_Model', 'Tow_Bar', 'Weight', 'cc', 'const'],
+      dtype='object')
+```
+<br>
+```
+>>> print(X.shape, y.shape)
+(1436, 37), (1436,)
 
-
+>>> print(train_x.shape, test_x.shape, train_y.shape, test_y.shape)
+(1005, 37) (431, 37) (1005,) (431,)
+```
+<hr class='division3'>
+</details>
 
 <br>
 
