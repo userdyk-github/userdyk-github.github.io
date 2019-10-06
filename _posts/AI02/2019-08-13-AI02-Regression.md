@@ -1370,7 +1370,21 @@ fitted_full_model.summary()
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Model diagnosis</summary>
 <hr class='division3'>
-`Residuals Scatter plot`
+`Normal Q-Q Plot`
+```python
+import matplotlib.pyplot as plt
+
+# checking residual
+res = fitted_full_model.resid  # residual
+
+# q-q plot
+fig = sm.qqplot(res, fit=True, line='45')
+```
+![다운로드](https://user-images.githubusercontent.com/52376448/66272429-91ce2e80-e8a4-11e9-91ca-4589b85342d6.png)
+<br><br><br>
+
+
+`Residual vs Fitted plot`
 ```python
 import matplotlib.pyplot as plt
 
@@ -1385,19 +1399,6 @@ plt.ylabel('Residual')
 ```
 ![다운로드 (1)](https://user-images.githubusercontent.com/52376448/66272430-91ce2e80-e8a4-11e9-9939-f1a54811d148.png)
 
-<br><br><br>
-`Normal Q-Q Plot`
-```python
-import matplotlib.pyplot as plt
-
-# checking residual
-res = fitted_full_model.resid  # residual
-
-# q-q plot
-fig = sm.qqplot(res, fit=True, line='45')
-```
-
-![다운로드](https://user-images.githubusercontent.com/52376448/66272429-91ce2e80-e8a4-11e9-91ca-4589b85342d6.png)
 <hr class='division3'>
 </details>
 
