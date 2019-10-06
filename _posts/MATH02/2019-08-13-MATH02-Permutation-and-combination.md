@@ -1,6 +1,6 @@
 ---
 layout : post
-title : MATH02, Series
+title : MATH02, Permutation and combination
 categories: [MATH02]
 comments : true
 tags : [MATH02]
