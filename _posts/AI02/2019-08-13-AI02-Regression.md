@@ -1294,7 +1294,61 @@ Index(['ABS', 'Age_08_04', 'Airbag_1', 'Airbag_2', 'Airco', 'Automatic',
 ```
 <hr class='division3'>
 </details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Data diagnosis</summary>
+<hr class='division3'>
+`Multicollinearity` : Variance inflation factor(VIF)
+```python
+from statsmodels.stats.outliers_influence import variance_inflation_factor
 
+vif = pd.DataFrame()
+vif["VIF Factor"] = [variance_inflation_factor(mlr_data.values, i) for i in range(mlr_data.shape[1])]
+vif["features"] = mlr_data.columns
+vif
+```
+```
+	VIF Factor	features
+0	0.000000	const
+1	10.953474	Price
+2	inf		Age_08_04
+3	inf		Mfg_Month
+4	inf		Mfg_Year
+5	2.400334	KM
+6	2.621514	HP
+7	1.143778	Met_Color
+8	1.121303	Automatic
+9	1.258641	cc
+10	1.352288	Doors
+11	0.000000	Cylinders
+12	1.271814	Gears
+13	5.496805	Quarterly_Tax
+14	4.487491	Weight
+15	1.210815	Mfr_Guarantee
+16	1.392485	BOVAG_Guarantee
+17	1.573026	Guarantee_Period
+18	2.276617	ABS
+19	1.612758	Airbag_1
+20	3.106933	Airbag_2
+21	1.846429	Airco
+22	2.009866	Automatic_airco
+23	2.647036	Boardcomputer
+24	1.564446	CD_Player
+25	4.593157	Central_Lock
+26	4.676311	Powered_Windows
+27	1.582829	Power_Steering
+28	62.344621	Radio
+29	2.076846	Mistlamps
+30	1.510131	Sport_Model
+31	2.702141	Backseat_Divider
+32	1.349642	Metallic_Rim
+33	62.172860	Radio_cassette
+34	1.153760	Tow_Bar
+35	inf		Petrol
+36	inf		Diesel
+37	inf		CNG
+```
+<hr class='division3'>
+</details>
 <br>
 
 `Regression analysis`
@@ -1305,7 +1359,7 @@ fitted_full_model = full_model.fit()
 fitted_full_model.summary()
 ```
 <details markdown="1">
-<summary class='jb-small' style="color:blue">Model performance</summary>
+<summary class='jb-small' style="color:blue">OUTPUT : Model results</summary>
 <hr class='division3'>
 <span class="jb-medium">R2 is high, a majority of variables is meaningful</span>
 ![1](https://user-images.githubusercontent.com/52376448/66271015-5461a500-e894-11e9-8101-4138ae77a0cb.JPG)
@@ -1313,6 +1367,69 @@ fitted_full_model.summary()
 ![3](https://user-images.githubusercontent.com/52376448/66271017-5461a500-e894-11e9-86c7-3b2b03013b85.JPG)
 <hr class='division3'>
 </details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Model diagnosis</summary>
+<hr class='division3'>
+`Residuals Scatter plot`
+```python
+import matplotlib.pyplot as plt
+
+# checking residual
+res = fitted_full_model.resid  # residual
+
+# q-q plot
+fig = sm.qqplot(res, fit=True, line='45')
+```
+![다운로드 (1)](https://user-images.githubusercontent.com/52376448/66272430-91ce2e80-e8a4-11e9-9939-f1a54811d148.png)
+
+<br><br><br>
+`Normal Q-Q Plot`
+```python
+import matplotlib.pyplot as plt
+
+pred_y=fitted_full_model.predict(train_x)
+res = fitted_full_model.resid  # residual
+
+fig = plt.scatter(pred_y,res, s=4)
+plt.xlim(4000,30000)
+plt.xlim(4000,30000)
+plt.xlabel('Fitted values')
+plt.ylabel('Residual')
+```
+![다운로드](https://user-images.githubusercontent.com/52376448/66272429-91ce2e80-e8a4-11e9-91ca-4589b85342d6.png)
+<hr class='division3'>
+</details>
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Model prediction</summary>
+<hr class='division3'>
+```python
+import matplotlib.pyplot as plt
+
+pred_y = fitted_full_model.predict(test_x) ## 검증 데이터에 대한 예측 
+plt.plot(np.array(test_y-pred_y),label="pred_full")
+plt.legend()
+plt.show()
+```
+![다운로드 (2)](https://user-images.githubusercontent.com/52376448/66272471-2a64ae80-e8a5-11e9-9166-01b2c6bb326c.png)
+
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Model performance</summary>
+<hr class='division3'>
+```python
+from sklearn.metrics import mean_squared_error
+
+pred_y = fitted_full_model.predict(test_x)
+mean_squared_error(y_true= test_y, y_pred= pred_y)
+```
+<span class='jb-medium'>1441488.811437499</span>
+
+<hr class='division3'>
+</details>
+
+
 
 
 <br><br><br>
