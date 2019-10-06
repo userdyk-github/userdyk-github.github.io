@@ -1127,10 +1127,52 @@ print('nCar: %d' % nCar, 'nVar: %d' % nVar )
 ```
 nCar: 1436 nVar: 37
 ```
-
-
-
-
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">[2] Data : Input</summary>
+<hr class='division3'>
+```python
+dummy_p
+```
+```
+array([0, 0, 0, ..., 0, 0, 0])
+```
+<br>
+```python
+dummy_d
+```
+```
+array([0, 0, 0, ..., 0, 0, 0])
+```
+<br>
+```python
+dummy_c
+```
+```
+array([0, 0, 0, ..., 0, 0, 0])
+```
+<br><br>
+```python
+p_idx
+```
+```
+array([False, False, False, ...,  True,  True,  True])
+```
+<br>
+```python
+d_idx
+```
+```
+array([ True,  True,  True, ..., False, False, False])
+```
+<br>
+```python
+c_idx
+```
+```
+array([False, False, False, ..., False, False, False])
+```
 <hr class='division3'>
 </details>
 
