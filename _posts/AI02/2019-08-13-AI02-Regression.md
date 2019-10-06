@@ -1110,9 +1110,6 @@ train_x, test_x, train_y, test_y = train_test_split(X, y, train_size=0.7, test_s
 ```python
 corolla.head()
 ```
-<details markdown="1">
-<summary class='jb-small' style="color:red">OUTPUT</summary>
-<hr class='division3_1'>
 ```
 	Id	Model						Price	Age_08_04	Mfg_Month	Mfg_Year	KM	Fuel_Type	HP	Met_Color	...	Central_Lock	Powered_Windows	Power_Steering	Radio	Mistlamps	Sport_Model	Backseat_Divider	Metallic_Rim	Radio_cassette	Tow_Bar
 0	1	TOYOTA Corolla 2.0 D4D HATCHB TERRA 2/3-Doors	13500	23		10		2002		46986	Diesel		90	1	...	1	1	1	0	0	0	1	0	0	0
@@ -1123,8 +1120,6 @@ corolla.head()
 5 rows × 37 columns
 ```
 
-<hr class='division3_1'>
-</details>
 <br>
 ```python
 print('nCar: %d' % nCar, 'nVar: %d' % nVar )
