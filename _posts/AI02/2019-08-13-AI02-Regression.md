@@ -1058,7 +1058,42 @@ print(mean_squared_error(y_true=test_y.values, y_pred=fitted_model2.predict(test
 
 `Data preprocessing`
 ```python
+import pandas as pd
+import numpy as np
 
+# 데이터 불러오기
+corolla = pd.read_csv(r'C:\Users\userd\Desktop\dataset\ToyotaCorolla.csv')
+nCar = corolla.shape[0]
+nVar = corolla.shape[1]
+
+# 가변수 생성
+dummy_p = np.repeat(0,nCar)
+dummy_d = np.repeat(0,nCar)
+dummy_c = np.repeat(0,nCar)
+
+# 연료타입에 대한 위치 인덱스를 저장  
+p_idx = np.array(corolla.Fuel_Type == "Petrol")
+d_idx = np.array(corolla.Fuel_Type == "Diesel")
+c_idx = np.array(corolla.Fuel_Type == "CNG")
+
+# 인덱스 슬라이싱 후 (binary = 1) 대입
+dummy_p[p_idx] = 1  # Petrol
+dummy_d[d_idx] = 1  # Diesel
+dummy_c[c_idx] = 1  # CNG
+
+# np or dict to DF
+Fuel = pd.DataFrame({'Petrol': dummy_p, 'Diesel': dummy_d, 'CNG': dummy_c})
+
+# column slice
+corolla_ = corolla.dropna().drop(['Id','Model','Fuel_Type'], axis=1, inplace=False)
+mlr_data = pd.concat((corolla_, Fuel), 1)
+
+mlr_data = sm.add_constant(mlr_data, has_constant='add')
+
+feature_columns = list(mlr_data.columns.difference(['Price']))
+X = mlr_data[feature_columns]
+y = mlr_data.Price
+train_x, test_x, train_y, test_y = train_test_split(X, y, train_size=0.7, test_size=0.3)
 ```
 
 <br>
