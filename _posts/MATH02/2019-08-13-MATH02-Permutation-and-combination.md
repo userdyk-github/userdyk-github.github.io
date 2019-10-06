@@ -48,15 +48,31 @@ def permute(arr):
 import itertools
 
 pool = ['A', 'B', 'C']
-print(list(map(''.join, itertools.permutations(pool)))) # progression through 3 elements
-print(list(map(''.join, itertools.permutations(pool, 2)))) # progression through 2 elements
+print(list(map(''.join, itertools.permutations(pool, r=3)))) # progression through 3 elements
+print(list(map(''.join, itertools.permutations(pool, r=2)))) # progression through 2 elements
+```
+```
+['ABC', 'ACB', 'BAC', 'BCA', 'CAB', 'CBA']
+['AB', 'AC', 'BA', 'BC', 'CA', 'CB']
 ```
 <br><br><br>
 <hr class="division2">
 
 ## **Combination**
 
+```python
+import itertools
 
+pool = ['A', 'B', 'C']
+print(list(map(''.join, itertools.combinations(pool, r=3)))) # progression through 3 elements
+print(list(map(''.join, itertools.combinations(pool, r=2)))) # progression through 2 elements
+```
+```
+['ABC']
+['AB', 'AC', 'BC']
+```
+
+<br><br><br>
 <hr class="division1">
 
 List of posts followed by this article
