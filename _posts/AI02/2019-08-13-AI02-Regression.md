@@ -1109,8 +1109,20 @@ train_x, test_x, train_y, test_y = train_test_split(X, y, train_size=0.7, test_s
 
 `Regression analysis`
 ```python
-
+# Train the MLR(fitting regression model)
+full_model = sm.OLS(train_y, train_x)
+fitted_full_model = full_model.fit()
+fitted_full_model.summary()
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Model performance</summary>
+<hr class='division3'>
+<span class="jb-medium">R2 is high, a majority of variables is meaningful</span>
+![1](https://user-images.githubusercontent.com/52376448/66271015-5461a500-e894-11e9-8101-4138ae77a0cb.JPG)
+![2](https://user-images.githubusercontent.com/52376448/66271016-5461a500-e894-11e9-93e5-e5afa748c16b.JPG)
+![3](https://user-images.githubusercontent.com/52376448/66271017-5461a500-e894-11e9-86c7-3b2b03013b85.JPG)
+<hr class='division3'>
+</details>
 
 
 <br><br><br>
