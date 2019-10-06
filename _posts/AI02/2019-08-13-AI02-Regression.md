@@ -1173,6 +1173,28 @@ c_idx
 ```
 array([False, False, False, ..., False, False, False])
 ```
+<br><br>
+
+```python
+dummy_p
+```
+```
+array([0, 0, 0, ..., 1, 1, 1])
+```
+<br>
+```python
+dummy_d
+```
+```
+array([1, 1, 1, ..., 0, 0, 0])
+```
+<br>
+```python
+dummy_c
+```
+```
+array([0, 0, 0, ..., 0, 0, 0])
+```
 <hr class='division3'>
 </details>
 
