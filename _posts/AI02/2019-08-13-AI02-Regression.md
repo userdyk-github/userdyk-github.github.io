@@ -1056,6 +1056,18 @@ print(mean_squared_error(y_true=test_y.values, y_pred=fitted_model2.predict(test
 
 [Dataset download][2] ｜ <a href="https://www.kaggle.com/klkwak/toyotacorollacsv/version/1#ToyotaCorolla.csv" target="_blank">URL</a>
 
+`Data preprocessing`
+```python
+
+```
+
+<br>
+
+`Regression analysis`
+```python
+
+```
+
 
 <br><br><br>
 
