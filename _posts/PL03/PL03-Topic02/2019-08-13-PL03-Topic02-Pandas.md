@@ -1715,10 +1715,67 @@ df.drop_duplicates('phone',keep='last')
 
 <br><br><br>
 
+`dropna`
+```python
+import pandas as pd
+import numpy as np
+
+df = pd.DataFrame({'1C':[None, -0.738247,  0.598380,  0.727832],
+                   '2C':[None,  0.073079,  1.182290, -0.138224],
+                   '3C':[0.554677, -0.530208, -0.397182,  0.990026],
+                   '4C':[-0.332384, -1.979684,  0.560655,  0.833487]})
+df
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+	1C		2C		3C		4C
+0	NaN		NaN		0.554677	-0.332384
+1	-0.738247	0.073079	-0.530208	-1.979684
+2	0.598380	1.182290	-0.397182	0.560655
+3	0.727832	-0.138224	0.990026	0.833487
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python
+df.dropna(axis=0)
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+	1C		2C		3C		4C
+1	-0.738247	0.073079	-0.530208	-1.979684
+2	0.598380	1.182290	-0.397182	0.560655
+3	0.727832	-0.138224	0.990026	0.833487
+```
+<hr class='division3'>
+</details>
+<br>
+```python
+df.dropna(axis=1)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+	3C		4C
+0	0.554677	-0.332384
+1	-0.530208	-1.979684
+2	-0.397182	0.560655
+3	0.990026	0.833487
+```
+<hr class='division3'>
+</details>
 
 
 
 
+<br><br><br>
 
 
 ---
