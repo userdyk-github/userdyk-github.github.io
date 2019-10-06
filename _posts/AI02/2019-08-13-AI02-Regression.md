@@ -1430,9 +1430,11 @@ mean_squared_error(y_true= test_y, y_pred= pred_y)
 
 <hr class='division3'>
 </details>
+<br>
 
-
-
+`Modify regression model`
+```python
+```
 
 <br><br><br>
 
