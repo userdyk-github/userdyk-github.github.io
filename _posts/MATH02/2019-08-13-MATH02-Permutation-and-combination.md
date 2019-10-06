@@ -21,19 +21,51 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
+## **Permutation**
+`Method 1 : by Built-in function`
+```python
+def permute(arr):
+    result = [arr[:]]
+    c = [0] * len(arr)
+    i = 0
+    while i < len(arr):
+        if c[i] < i:
+            if i % 2 == 0:
+                arr[0], arr[i] = arr[i], arr[0]
+            else:
+                arr[c[i]], arr[i] = arr[i], arr[c[i]]
+            result.append(arr[:])
+            c[i] += 1
+            i = 0
+        else:
+            c[i] = 0
+            i += 1
+    return result
+```
+<br><br><br>
+`Method 2 : by itertools module`
+```python
+import itertools
+
+pool = ['A', 'B', 'C']
+print(list(map(''.join, itertools.permutations(pool)))) # progression through 3 elements
+print(list(map(''.join, itertools.permutations(pool, 2)))) # progression through 2 elements
+```
+<br><br><br>
+<hr class="division2">
+
+## **Combination**
 
 
 <hr class="division1">
 
 List of posts followed by this article
-- [post1](https://userdyk-github.github.io/)
-- <a href='https://userdyk-github.github.io/'>post2</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
 
 Reference
-- [post1](https://userdyk-github.github.io/)
+- <a href='https://programmers.co.kr/learn/courses/4008/lessons/12836'>programmers</a>
 - <a href='https://userdyk-github.github.io/'>post2</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
