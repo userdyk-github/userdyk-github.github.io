@@ -1,6 +1,6 @@
 ---
 layout : post
-title : MATH02, Limits
+title : MATH02, Limits and series
 categories: [MATH02]
 comments : true
 tags : [MATH02]
