@@ -1741,6 +1741,21 @@ df
 <br>
 
 ```python
+df.dropna()
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+	1C		2C		3C		4C
+1	-0.738247	0.073079	-0.530208	-1.979684
+2	0.598380	1.182290	-0.397182	0.560655
+3	0.727832	-0.138224	0.990026	0.833487
+```
+<hr class='division3'>
+</details>
+<br>
+```python
 df.dropna(axis=0)
 ```
 
