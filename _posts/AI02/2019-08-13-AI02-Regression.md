@@ -1251,6 +1251,26 @@ mlr_data.shape
 ```
 <hr class='division3'>
 </details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">[4] Data : Input</summary>
+<hr class='division3'>
+```python
+mlr_data.head()
+```
+```
+	Price	Age_08_04	Mfg_Month	Mfg_Year	KM	HP	Met_Color	Automatic	cc	Doors	...	Radio	Mistlamps	Sport_Model	Backseat_Divider	Metallic_Rim	Radio_cassette	Tow_Bar	Petrol	Diesel	CNG
+0	13500	23		10		2002		46986	90	1		0		2000	3	...	0	0		0		1			0		0		0	0	1	0
+1	13750	23		10		2002		72937	90	1		0		2000	3	...	0	0		0		1			0		0		0	0	1	0
+2	13950	24		9		2002		41711	90	1		0		2000	3	...	0	0		0		1			0		0		0	0	1	0
+3	14950	26		7		2002		48000	90	0		0		2000	3	...	0	0		0		1			0		0		0	0	1	0
+4	13750	30		3		2002		38500	90	0		0		2000	3	...	0	1		0		1			0		0		0	0	1	0
+5 rows × 37 columns
+```
+<hr class='division3'>
+</details>
+
+
+
 <br>
 
 `Regression analysis`
