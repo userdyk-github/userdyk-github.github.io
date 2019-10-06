@@ -1285,6 +1285,31 @@ Index(['ABS', 'Age_08_04', 'Airbag_1', 'Airbag_2', 'Airco', 'Automatic',
       dtype='object')
 ```
 <br>
+```python
+X.head()
+```
+```
+	ABS	Age_08_04	Airbag_1	Airbag_2	Airco	Automatic	Automatic_airco	BOVAG_Guarantee			Backseat_Divider	Boardcomputer	...	Power_Steering	Powered_Windows	Quarterly_Tax	Radio	Radio_cassette		Sport_Model	Tow_Bar	Weight	cc	const
+0	1	23		1		1		0	0		0		1				1			1		...	1		1		210		0	0			0		0	1165	2000	1.0
+1	1	23		1		1		1	0		0		1				1			1		...	1		0		210		0	0			0		0	1165	2000	1.0
+2	1	24		1		1		0	0		0		1				1			1		...	1		0		210		0	0			0		0	1165	2000	1.0
+3	1	26		1		1		0	0		0		1				1			1		...	1		0		210		0	0			0		0	1165	2000	1.0
+4	1	30		1		1		1	0		0		1				1			1		...	1		1		210		0	0			0		0	1170	2000	1.0
+5 rows × 37 columns
+```
+```python
+y.head()
+```
+```
+0    13500
+1    13750
+2    13950
+3    14950
+4    13750
+Name: Price, dtype: int64
+```
+
+<br>
 ```
 >>> print(X.shape, y.shape)
 (1436, 37), (1436,)
