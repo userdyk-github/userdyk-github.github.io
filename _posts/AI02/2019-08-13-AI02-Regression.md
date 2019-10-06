@@ -430,7 +430,7 @@ plt.show()
 
 
 
-#### multivariate linear regression about artificial dataset
+#### Multivariate linear regression about artificial dataset
 
 `Data preprocessing`
 ```python
