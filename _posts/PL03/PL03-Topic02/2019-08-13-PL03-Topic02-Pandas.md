@@ -686,6 +686,20 @@ Index(['Stockholm', 'London', 'Rome', 'Paris'], dtype='object', name='index')
 ```
 <hr class='division3'>
 </details>
+
+<br>
+
+```python
+df.index.difference(['Stockholm'])
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+Index(['London', 'Paris', 'Rome'], dtype='object')
+```
+<hr class='division3'>
+</details>
 <br>
 
 ```python
@@ -700,6 +714,20 @@ Index(['Population', 'State'], dtype='object')
 ```
 <hr class='division3'>
 </details>
+<br>
+
+```python
+df.columns.difference(['Population'])
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+Index(['State'], dtype='object')
+```
+<hr class='division3'>
+</details>
+
 <br>
 
 **Searching row or values of row**
