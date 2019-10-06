@@ -1975,8 +1975,29 @@ C1 Stockholm2          NaN     909976.0         NaN     Sweden2
 
 #### Merging
 
+<br><br><br>
+
 ---
 
+
+#### Analysis
+
+```python
+import pandas as pd
+idx1 = pd.Index([2, 1, 3, 4])
+idx2 = pd.Index([3, 4, 5, 6])
+```
+```python
+idx1.difference(idx2)
+```
+<span class='jb-medium'>Int64Index([1, 2], dtype='int64')</span>
+```python
+idx1.difference(idx2, sort=False)
+```
+<span class='jb-medium'>Int64Index([2, 1], dtype='int64')</span>
+
+
+<br><br><br>
 
 <hr class="division2">
 
