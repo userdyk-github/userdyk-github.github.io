@@ -1058,38 +1058,47 @@ print(mean_squared_error(y_true=test_y.values, y_pred=fitted_model2.predict(test
 
 `Data preprocessing`
 ```python
+## Load libraries
 import pandas as pd
 import numpy as np
+import statsmodels.api as sm
+from sklearn.model_selection import train_test_split
 
-# 데이터 불러오기
+
+## Load dataset
 corolla = pd.read_csv(r'C:\Users\userd\Desktop\dataset\ToyotaCorolla.csv')
 nCar = corolla.shape[0]
 nVar = corolla.shape[1]
 
-# 가변수 생성
+
+## categorical data-type > binary data-type
+# Create dummy variables
 dummy_p = np.repeat(0,nCar)
 dummy_d = np.repeat(0,nCar)
 dummy_c = np.repeat(0,nCar)
 
-# 연료타입에 대한 위치 인덱스를 저장  
+# Save index for 'Fuel_Type'
 p_idx = np.array(corolla.Fuel_Type == "Petrol")
 d_idx = np.array(corolla.Fuel_Type == "Diesel")
 c_idx = np.array(corolla.Fuel_Type == "CNG")
 
-# 인덱스 슬라이싱 후 (binary = 1) 대입
+# Substitute binary = 1 after slicing
 dummy_p[p_idx] = 1  # Petrol
 dummy_d[d_idx] = 1  # Diesel
 dummy_c[c_idx] = 1  # CNG
 
-# np or dict to DF
-Fuel = pd.DataFrame({'Petrol': dummy_p, 'Diesel': dummy_d, 'CNG': dummy_c})
 
-# column slice
+## Eliminate unnecessary variables and add dummy variables
+Fuel = pd.DataFrame({'Petrol': dummy_p, 'Diesel': dummy_d, 'CNG': dummy_c})
 corolla_ = corolla.dropna().drop(['Id','Model','Fuel_Type'], axis=1, inplace=False)
 mlr_data = pd.concat((corolla_, Fuel), 1)
 
+
+## Add bias
 mlr_data = sm.add_constant(mlr_data, has_constant='add')
 
+
+## Divide into input data and output data
 feature_columns = list(mlr_data.columns.difference(['Price']))
 X = mlr_data[feature_columns]
 y = mlr_data.Price
