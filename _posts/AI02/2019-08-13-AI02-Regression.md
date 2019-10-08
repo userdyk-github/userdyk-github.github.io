@@ -3146,8 +3146,41 @@ model AIC:  482.69329
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Model performance</summary>
 <hr class='division3'>
+```python
+def cut_off(y,threshold):
+    Y = y.copy() # copy함수를 사용하여 이전의 y값이 변화지 않게 함
+    Y[Y>threshold]=1
+    Y[Y<=threshold]=0
+    return(Y.astype(int))
 
+pred_y = results.predict(test_x)
+pred_Y = cut_off(pred_y,0.5)
 
+cfmat = confusion_matrix(test_y,pred_Y)
+def acc(cfmat) :
+    acc=(cfmat[0,0]+cfmat[1,1])/np.sum(cfmat) ## accuracy
+    return(acc)
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:red">Accuracy</summary>
+<hr class='division3_1'>
+```python
+print(cfmat)
+```
+```
+[[660  13]
+ [ 29  48]]
+```
+<br>
+```python
+(cfmat[0,0]+cfmat[1,1])/np.sum(cfmat) ## accuracy
+```
+```
+0.944
+```
+<hr class='division3_1'>
+</details>
 <hr class='division3'>
 </details>
 
