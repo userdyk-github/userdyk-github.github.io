@@ -2281,6 +2281,463 @@ plt.ylabel('BIC')
 
 <hr class='division3'>
 </details>
+
+<br>
+
+`Modify regression model(Feedforward selection)`
+```python
+########전진선택법(step=1)
+
+def forward(X, y, predictors):
+    # 데이터 변수들이 미리정의된 predictors에 있는지 없는지 확인 및 분류
+    remaining_predictors = [p for p in X.columns.difference(['const']) if p not in predictors]
+    tic = time.time()
+    results = []
+    for p in remaining_predictors:
+        results.append(processSubset(X=X, y= y, feature_set=predictors+[p]+['const']))
+    # 데이터프레임으로 변환
+    models = pd.DataFrame(results)
+
+    # AIC가 가장 낮은 것을 선택
+    best_model = models.loc[models['AIC'].argmin()] # index
+    toc = time.time()
+    print("Processed ", models.shape[0], "models on", len(predictors)+1, "predictors in", (toc-tic))
+    print('Selected predictors:',best_model['model'].model.exog_names,' AIC:',best_model[0] )
+    return best_model
+
+
+#### 전진선택법 모델
+
+def forward_model(X,y):
+    Fmodels = pd.DataFrame(columns=["AIC", "model"])
+    tic = time.time()
+    # 미리 정의된 데이터 변수
+    predictors = []
+    # 변수 1~10개 : 0~9 -> 1~10
+    for i in range(1, len(X.columns.difference(['const'])) + 1):
+        Forward_result = forward(X=X,y=y,predictors=predictors)
+        if i > 1:
+            if Forward_result['AIC'] > Fmodel_before:
+                break
+        Fmodels.loc[i] = Forward_result
+        predictors = Fmodels.loc[i]["model"].model.exog_names
+        Fmodel_before = Fmodels.loc[i]["AIC"]
+        predictors = [ k for k in predictors if k != 'const']
+    toc = time.time()
+    print("Total elapsed time:", (toc - tic), "seconds.")
+
+    return(Fmodels['model'][len(Fmodels['model'])])
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```python
+Forward_best_model = forward_model(X=train_x, y= train_y)
+```
+```
+Processed  36 models on 1 predictors in 0.08973240852355957
+Selected predictors: ['Mfg_Year', 'const']  AIC: 17755.072760646137
+Processed  35 models on 2 predictors in 0.09027957916259766
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'const']  AIC: 17504.57948159159
+Processed  34 models on 3 predictors in 0.06283736228942871
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'const']  AIC: 17398.182235131313
+Processed  33 models on 4 predictors in 0.06283116340637207
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'const']  AIC: 17150.1641103143
+Processed  32 models on 5 predictors in 0.07981634140014648
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'const']  AIC: 17091.096715621316
+Processed  31 models on 6 predictors in 0.0840911865234375
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'const']  AIC: 17055.57896394218
+Processed  30 models on 7 predictors in 0.0738370418548584
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'const']  AIC: 17033.36951099978
+Processed  29 models on 8 predictors in 0.06878113746643066
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'const']  AIC: 17019.85679678918
+Processed  28 models on 9 predictors in 0.09375500679016113
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'const']  AIC: 16995.322287055787
+Processed  27 models on 10 predictors in 0.10174226760864258
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'const']  AIC: 16983.818299485778
+Processed  26 models on 11 predictors in 0.10377311706542969
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'const']  AIC: 16964.290655626864
+Processed  25 models on 12 predictors in 0.11771559715270996
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'const']  AIC: 16928.537083027266
+Processed  24 models on 13 predictors in 0.12260055541992188
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'const']  AIC: 16921.374043681804
+Processed  23 models on 14 predictors in 0.12865686416625977
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'const']  AIC: 16918.48093923768
+Processed  22 models on 15 predictors in 0.16057229042053223
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'const']  AIC: 16916.04018485048
+Processed  21 models on 16 predictors in 0.18660974502563477
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'const']  AIC: 16912.806529494097
+Processed  20 models on 17 predictors in 0.11269783973693848
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'const']  AIC: 16909.805620763276
+Processed  19 models on 18 predictors in 0.10549688339233398
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'const']  AIC: 16907.82736115733
+Processed  18 models on 19 predictors in 0.10871052742004395
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'const']  AIC: 16907.14151076706
+Processed  17 models on 20 predictors in 0.11475992202758789
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'Mfg_Month', 'const']  AIC: 16906.91814803349
+Processed  16 models on 21 predictors in 0.1306447982788086
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'Mfg_Month', 'Gears', 'const']  AIC: 16906.641600994546
+Processed  15 models on 22 predictors in 0.11366558074951172
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'Mfg_Month', 'Gears', 'Age_08_04', 'const']  AIC: 16906.641600994557
+Total elapsed time: 2.4412221908569336 seconds.
+```
+<br>
+
+```python
+Forward_best_model.aic
+```
+```
+16906.641600994546
+```
+<hr class='division3'>
+</details>
+
+
+
+
+<br>
+
+`Modify regression model(Backward selection)`
+```python
+######## 후진선택법(step=1)
+def backward(X,y,predictors):
+    tic = time.time()
+    results = []
+    # 데이터 변수들이 미리정의된 predictors 조합 확인
+    for combo in itertools.combinations(predictors, len(predictors) - 1):
+        results.append(processSubset(X=X, y= y,feature_set=list(combo)+['const']))
+    models = pd.DataFrame(results)
+    # 가장 낮은 AIC를 가진 모델을 선택
+    best_model = models.loc[models['AIC'].argmin()]
+    toc = time.time()
+    print("Processed ", models.shape[0], "models on", len(predictors) - 1, "predictors in",
+          (toc - tic))
+    print('Selected predictors:',best_model['model'].model.exog_names,' AIC:',best_model[0] )
+    return best_model
+    
+
+# 후진 소거법 모델
+def backward_model(X, y):
+    Bmodels = pd.DataFrame(columns=["AIC", "model"], index = range(1,len(X.columns)))
+    tic = time.time()
+    predictors = X.columns.difference(['const'])
+    Bmodel_before = processSubset(X,y,predictors)['AIC']
+    while (len(predictors) > 1):
+        Backward_result = backward(X=train_x, y= train_y, predictors = predictors)
+        if Backward_result['AIC'] > Bmodel_before:
+            break
+        Bmodels.loc[len(predictors) - 1] = Backward_result
+        predictors = Bmodels.loc[len(predictors) - 1]["model"].model.exog_names
+        Bmodel_before = Backward_result['AIC']
+        predictors = [ k for k in predictors if k != 'const']
+
+    toc = time.time()
+    print("Total elapsed time:", (toc - tic), "seconds.")
+    return (Bmodels['model'].dropna().iloc[0])
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```python
+Backward_best_model = backward_model(X=train_x,y=train_y)
+```
+```
+Processed  36 models on 35 predictors in 0.5307836532592773
+Selected predictors: ['ABS', 'Age_08_04', 'Airbag_1', 'Airbag_2', 'Airco', 'Automatic', 'Automatic_airco', 'BOVAG_Guarantee', 'Backseat_Divider', 'Boardcomputer', 'CD_Player', 'CNG', 'Central_Lock', 'Cylinders', 'Diesel', 'Doors', 'Gears', 'Guarantee_Period', 'HP', 'KM', 'Met_Color', 'Metallic_Rim', 'Mfg_Month', 'Mfg_Year', 'Mfr_Guarantee', 'Petrol', 'Power_Steering', 'Powered_Windows', 'Quarterly_Tax', 'Radio', 'Radio_cassette', 'Sport_Model', 'Tow_Bar', 'Weight', 'cc', 'const']  AIC: 16919.554953086037
+Processed  35 models on 34 predictors in 0.5086104869842529
+Selected predictors: ['ABS', 'Age_08_04', 'Airbag_1', 'Airbag_2', 'Airco', 'Automatic', 'Automatic_airco', 'BOVAG_Guarantee', 'Backseat_Divider', 'Boardcomputer', 'CD_Player', 'CNG', 'Central_Lock', 'Cylinders', 'Diesel', 'Doors', 'Gears', 'Guarantee_Period', 'HP', 'KM', 'Metallic_Rim', 'Mfg_Month', 'Mfg_Year', 'Mfr_Guarantee', 'Petrol', 'Power_Steering', 'Powered_Windows', 'Quarterly_Tax', 'Radio', 'Radio_cassette', 'Sport_Model', 'Tow_Bar', 'Weight', 'cc', 'const']  AIC: 16917.56065836032
+Processed  34 models on 33 predictors in 0.47121691703796387
+Selected predictors: ['ABS', 'Age_08_04', 'Airbag_2', 'Airco', 'Automatic', 'Automatic_airco', 'BOVAG_Guarantee', 'Backseat_Divider', 'Boardcomputer', 'CD_Player', 'CNG', 'Central_Lock', 'Cylinders', 'Diesel', 'Doors', 'Gears', 'Guarantee_Period', 'HP', 'KM', 'Metallic_Rim', 'Mfg_Month', 'Mfg_Year', 'Mfr_Guarantee', 'Petrol', 'Power_Steering', 'Powered_Windows', 'Quarterly_Tax', 'Radio', 'Radio_cassette', 'Sport_Model', 'Tow_Bar', 'Weight', 'cc', 'const']  AIC: 16915.573733838028
+Processed  33 models on 32 predictors in 0.3795206546783447
+Selected predictors: ['ABS', 'Age_08_04', 'Airco', 'Automatic', 'Automatic_airco', 'BOVAG_Guarantee', 'Backseat_Divider', 'Boardcomputer', 'CD_Player', 'CNG', 'Central_Lock', 'Cylinders', 'Diesel', 'Doors', 'Gears', 'Guarantee_Period', 'HP', 'KM', 'Metallic_Rim', 'Mfg_Month', 'Mfg_Year', 'Mfr_Guarantee', 'Petrol', 'Power_Steering', 'Powered_Windows', 'Quarterly_Tax', 'Radio', 'Radio_cassette', 'Sport_Model', 'Tow_Bar', 'Weight', 'cc', 'const']  AIC: 16913.747808225216
+Processed  32 models on 31 predictors in 0.33935022354125977
+Selected predictors: ['ABS', 'Age_08_04', 'Airco', 'Automatic', 'Automatic_airco', 'BOVAG_Guarantee', 'Backseat_Divider', 'Boardcomputer', 'CD_Player', 'CNG', 'Central_Lock', 'Cylinders', 'Diesel', 'Gears', 'Guarantee_Period', 'HP', 'KM', 'Metallic_Rim', 'Mfg_Month', 'Mfg_Year', 'Mfr_Guarantee', 'Petrol', 'Power_Steering', 'Powered_Windows', 'Quarterly_Tax', 'Radio', 'Radio_cassette', 'Sport_Model', 'Tow_Bar', 'Weight', 'cc', 'const']  AIC: 16912.053646583932
+Processed  31 models on 30 predictors in 0.29421567916870117
+Selected predictors: ['ABS', 'Age_08_04', 'Airco', 'Automatic', 'Automatic_airco', 'BOVAG_Guarantee', 'Backseat_Divider', 'Boardcomputer', 'CD_Player', 'CNG', 'Central_Lock', 'Cylinders', 'Diesel', 'Gears', 'Guarantee_Period', 'HP', 'KM', 'Metallic_Rim', 'Mfg_Month', 'Mfg_Year', 'Mfr_Guarantee', 'Petrol', 'Power_Steering', 'Powered_Windows', 'Quarterly_Tax', 'Radio_cassette', 'Sport_Model', 'Tow_Bar', 'Weight', 'cc', 'const']  AIC: 16910.726801088837
+Processed  30 models on 29 predictors in 0.29419445991516113
+Selected predictors: ['ABS', 'Age_08_04', 'Airco', 'Automatic', 'Automatic_airco', 'BOVAG_Guarantee', 'Backseat_Divider', 'Boardcomputer', 'CD_Player', 'CNG', 'Central_Lock', 'Cylinders', 'Diesel', 'Gears', 'Guarantee_Period', 'HP', 'KM', 'Metallic_Rim', 'Mfg_Month', 'Mfg_Year', 'Mfr_Guarantee', 'Petrol', 'Power_Steering', 'Powered_Windows', 'Quarterly_Tax', 'Radio_cassette', 'Sport_Model', 'Tow_Bar', 'Weight', 'const']  AIC: 16909.60778490872
+Processed  29 models on 28 predictors in 0.25033020973205566
+Selected predictors: ['ABS', 'Age_08_04', 'Airco', 'Automatic', 'Automatic_airco', 'BOVAG_Guarantee', 'Backseat_Divider', 'Boardcomputer', 'CD_Player', 'CNG', 'Central_Lock', 'Cylinders', 'Diesel', 'Gears', 'Guarantee_Period', 'HP', 'KM', 'Metallic_Rim', 'Mfg_Month', 'Mfg_Year', 'Mfr_Guarantee', 'Petrol', 'Powered_Windows', 'Quarterly_Tax', 'Radio_cassette', 'Sport_Model', 'Tow_Bar', 'Weight', 'const']  AIC: 16908.55343667602
+Processed  28 models on 27 predictors in 0.2254021167755127
+Selected predictors: ['ABS', 'Age_08_04', 'Airco', 'Automatic', 'Automatic_airco', 'BOVAG_Guarantee', 'Backseat_Divider', 'Boardcomputer', 'CD_Player', 'CNG', 'Central_Lock', 'Cylinders', 'Diesel', 'Gears', 'Guarantee_Period', 'HP', 'KM', 'Mfg_Month', 'Mfg_Year', 'Mfr_Guarantee', 'Petrol', 'Powered_Windows', 'Quarterly_Tax', 'Radio_cassette', 'Sport_Model', 'Tow_Bar', 'Weight', 'const']  AIC: 16907.502655808014
+Processed  27 models on 26 predictors in 0.20220327377319336
+Selected predictors: ['ABS', 'Age_08_04', 'Airco', 'Automatic_airco', 'BOVAG_Guarantee', 'Backseat_Divider', 'Boardcomputer', 'CD_Player', 'CNG', 'Central_Lock', 'Cylinders', 'Diesel', 'Gears', 'Guarantee_Period', 'HP', 'KM', 'Mfg_Month', 'Mfg_Year', 'Mfr_Guarantee', 'Petrol', 'Powered_Windows', 'Quarterly_Tax', 'Radio_cassette', 'Sport_Model', 'Tow_Bar', 'Weight', 'const']  AIC: 16906.70136854976
+Processed  26 models on 25 predictors in 0.20789861679077148
+Selected predictors: ['ABS', 'Age_08_04', 'Airco', 'Automatic_airco', 'BOVAG_Guarantee', 'Backseat_Divider', 'Boardcomputer', 'CD_Player', 'CNG', 'Cylinders', 'Diesel', 'Gears', 'Guarantee_Period', 'HP', 'KM', 'Mfg_Month', 'Mfg_Year', 'Mfr_Guarantee', 'Petrol', 'Powered_Windows', 'Quarterly_Tax', 'Radio_cassette', 'Sport_Model', 'Tow_Bar', 'Weight', 'const']  AIC: 16906.676844492846
+Processed  25 models on 24 predictors in 0.18823885917663574
+Selected predictors: ['ABS', 'Age_08_04', 'Airco', 'Automatic_airco', 'BOVAG_Guarantee', 'Backseat_Divider', 'Boardcomputer', 'CNG', 'Cylinders', 'Diesel', 'Gears', 'Guarantee_Period', 'HP', 'KM', 'Mfg_Month', 'Mfg_Year', 'Mfr_Guarantee', 'Petrol', 'Powered_Windows', 'Quarterly_Tax', 'Radio_cassette', 'Sport_Model', 'Tow_Bar', 'Weight', 'const']  AIC: 16906.641600994557
+Processed  24 models on 23 predictors in 0.1715404987335205
+Selected predictors: ['ABS', 'Age_08_04', 'Airco', 'Automatic_airco', 'BOVAG_Guarantee', 'Backseat_Divider', 'Boardcomputer', 'CNG', 'Cylinders', 'Diesel', 'Gears', 'Guarantee_Period', 'HP', 'KM', 'Mfg_Month', 'Mfg_Year', 'Mfr_Guarantee', 'Powered_Windows', 'Quarterly_Tax', 'Radio_cassette', 'Sport_Model', 'Tow_Bar', 'Weight', 'const']  AIC: 16906.641600994557
+Processed  23 models on 22 predictors in 0.15358972549438477
+Selected predictors: ['ABS', 'Age_08_04', 'Airco', 'Automatic_airco', 'BOVAG_Guarantee', 'Backseat_Divider', 'Boardcomputer', 'CNG', 'Cylinders', 'Diesel', 'Gears', 'Guarantee_Period', 'HP', 'KM', 'Mfg_Month', 'Mfr_Guarantee', 'Powered_Windows', 'Quarterly_Tax', 'Radio_cassette', 'Sport_Model', 'Tow_Bar', 'Weight', 'const']  AIC: 16906.641600994557
+Processed  22 models on 21 predictors in 0.1326441764831543
+Selected predictors: ['ABS', 'Age_08_04', 'Airco', 'Automatic_airco', 'BOVAG_Guarantee', 'Backseat_Divider', 'Boardcomputer', 'CNG', 'Diesel', 'Gears', 'Guarantee_Period', 'HP', 'KM', 'Mfg_Month', 'Mfr_Guarantee', 'Powered_Windows', 'Quarterly_Tax', 'Radio_cassette', 'Sport_Model', 'Tow_Bar', 'Weight', 'const']  AIC: 16906.64160099456
+Total elapsed time: 4.432608604431152 seconds.
+```
+<br>
+
+```python
+Backward_best_model.aic
+```
+```
+16906.641600994557
+```
+<hr class='division3'>
+</details>
+
+
+<br>
+`Modify regression model(Stepwise)`
+```python
+def Stepwise_model(X,y):
+    Stepmodels = pd.DataFrame(columns=["AIC", "model"])
+    tic = time.time()
+    predictors = []
+    Smodel_before = processSubset(X,y,predictors+['const'])['AIC']
+    # 변수 1~10개 : 0~9 -> 1~10
+    for i in range(1, len(X.columns.difference(['const'])) + 1):
+        Forward_result = forward(X=X, y=y, predictors=predictors) # constant added
+        print('forward')
+        Stepmodels.loc[i] = Forward_result
+        predictors = Stepmodels.loc[i]["model"].model.exog_names
+        predictors = [ k for k in predictors if k != 'const']
+        Backward_result = backward(X=X, y=y, predictors=predictors)
+        if Backward_result['AIC']< Forward_result['AIC']:
+            Stepmodels.loc[i] = Backward_result
+            predictors = Stepmodels.loc[i]["model"].model.exog_names
+            Smodel_before = Stepmodels.loc[i]["AIC"]
+            predictors = [ k for k in predictors if k != 'const']
+            print('backward')
+        if Stepmodels.loc[i]['AIC']> Smodel_before:
+            break
+        else:
+            Smodel_before = Stepmodels.loc[i]["AIC"]
+    toc = time.time()
+    print("Total elapsed time:", (toc - tic), "seconds.")
+    return (Stepmodels['model'][len(Stepmodels['model'])])
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```python
+Stepwise_best_model=Stepwise_model(X=train_x,y=train_y)
+```
+```
+Processed  36 models on 1 predictors in 0.09873390197753906
+Selected predictors: ['Mfg_Year', 'const']  AIC: 17755.072760646137
+forward
+Processed  1 models on 0 predictors in 0.009046554565429688
+Selected predictors: ['const']  AIC: 19355.08856819785
+Processed  35 models on 2 predictors in 0.130143404006958
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'const']  AIC: 17504.57948159159
+forward
+Processed  2 models on 1 predictors in 0.015958309173583984
+Selected predictors: ['Mfg_Year', 'const']  AIC: 17755.072760646137
+Processed  34 models on 3 predictors in 0.1465761661529541
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'const']  AIC: 17398.182235131313
+forward
+Processed  3 models on 2 predictors in 0.016946792602539062
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'const']  AIC: 17504.57948159159
+Processed  33 models on 4 predictors in 0.1317136287689209
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'const']  AIC: 17150.1641103143
+forward
+Processed  4 models on 3 predictors in 0.015963077545166016
+Selected predictors: ['Mfg_Year', 'Weight', 'KM', 'const']  AIC: 17306.79774531549
+Processed  32 models on 5 predictors in 0.08627820014953613
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'const']  AIC: 17091.096715621316
+forward
+Processed  5 models on 4 predictors in 0.011969327926635742
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'const']  AIC: 17150.1641103143
+Processed  31 models on 6 predictors in 0.07229804992675781
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'const']  AIC: 17055.57896394218
+forward
+Processed  6 models on 5 predictors in 0.016991615295410156
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'const']  AIC: 17091.096715621316
+Processed  30 models on 7 predictors in 0.05830645561218262
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'const']  AIC: 17033.36951099978
+forward
+Processed  7 models on 6 predictors in 0.01599907875061035
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'const']  AIC: 17055.57896394218
+Processed  29 models on 8 predictors in 0.06846237182617188
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'const']  AIC: 17019.85679678918
+forward
+Processed  8 models on 7 predictors in 0.017005205154418945
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'const']  AIC: 17033.36951099978
+Processed  28 models on 9 predictors in 0.11175131797790527
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'const']  AIC: 16995.322287055787
+forward
+Processed  9 models on 8 predictors in 0.01898479461669922
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Guarantee_Period', 'BOVAG_Guarantee', 'const']  AIC: 17012.519514899912
+Processed  27 models on 10 predictors in 0.1047210693359375
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'const']  AIC: 16983.818299485778
+forward
+Processed  10 models on 9 predictors in 0.03191518783569336
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'const']  AIC: 16995.322287055787
+Processed  26 models on 11 predictors in 0.10965585708618164
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'const']  AIC: 16964.290655626864
+forward
+Processed  11 models on 10 predictors in 0.04288458824157715
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'CNG', 'Quarterly_Tax', 'const']  AIC: 16978.68338783714
+Processed  25 models on 12 predictors in 0.15957117080688477
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'const']  AIC: 16928.537083027266
+forward
+Processed  12 models on 11 predictors in 0.08481073379516602
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'Quarterly_Tax', 'Petrol', 'const']  AIC: 16932.104261902947
+Processed  24 models on 13 predictors in 0.17156600952148438
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'const']  AIC: 16921.374043681804
+forward
+Processed  13 models on 12 predictors in 0.09979891777038574
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'const']  AIC: 16924.75355369365
+Processed  23 models on 14 predictors in 0.17253684997558594
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'const']  AIC: 16918.48093923768
+forward
+Processed  14 models on 13 predictors in 0.08875823020935059
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'const']  AIC: 16921.374043681804
+Processed  22 models on 15 predictors in 0.15457653999328613
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'const']  AIC: 16916.04018485048
+forward
+Processed  15 models on 14 predictors in 0.10401105880737305
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'const']  AIC: 16918.48093923768
+Processed  21 models on 16 predictors in 0.15857505798339844
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'const']  AIC: 16912.806529494097
+forward
+Processed  16 models on 15 predictors in 0.11768555641174316
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'const']  AIC: 16916.04018485048
+Processed  20 models on 17 predictors in 0.13663506507873535
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'const']  AIC: 16909.805620763276
+forward
+Processed  17 models on 16 predictors in 0.08477330207824707
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Airco', 'ABS', 'Sport_Model', 'const']  AIC: 16912.187005800086
+Processed  19 models on 18 predictors in 0.10272526741027832
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'const']  AIC: 16907.82736115733
+forward
+Processed  18 models on 17 predictors in 0.1127007007598877
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'const']  AIC: 16908.531987499395
+Processed  18 models on 19 predictors in 0.11521244049072266
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'const']  AIC: 16907.14151076706
+forward
+Processed  19 models on 18 predictors in 0.15088891983032227
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'const']  AIC: 16907.82736115733
+Processed  17 models on 20 predictors in 0.16663289070129395
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'Mfg_Month', 'const']  AIC: 16906.91814803349
+forward
+Processed  20 models on 19 predictors in 0.2127993106842041
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'const']  AIC: 16907.14151076706
+Processed  16 models on 21 predictors in 0.10770010948181152
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'Mfg_Month', 'Gears', 'const']  AIC: 16906.641600994546
+forward
+Processed  21 models on 20 predictors in 0.1256864070892334
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'Mfg_Month', 'const']  AIC: 16906.91814803349
+Processed  15 models on 22 predictors in 0.10097765922546387
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'Mfg_Month', 'Gears', 'Age_08_04', 'const']  AIC: 16906.641600994557
+forward
+Processed  22 models on 21 predictors in 0.17354369163513184
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'Gears', 'Age_08_04', 'const']  AIC: 16906.641600994506
+backward
+Processed  15 models on 22 predictors in 0.15059447288513184
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'Gears', 'Age_08_04', 'Diesel', 'const']  AIC: 16906.64160099451
+forward
+Processed  22 models on 21 predictors in 0.19049072265625
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'Gears', 'Age_08_04', 'const']  AIC: 16906.641600994506
+backward
+Processed  15 models on 22 predictors in 0.1495981216430664
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'Gears', 'Age_08_04', 'Diesel', 'const']  AIC: 16906.64160099451
+forward
+Processed  22 models on 21 predictors in 0.13814973831176758
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'Gears', 'Age_08_04', 'const']  AIC: 16906.641600994506
+backward
+Processed  15 models on 22 predictors in 0.11270356178283691
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'Gears', 'Age_08_04', 'Diesel', 'const']  AIC: 16906.64160099451
+forward
+Processed  22 models on 21 predictors in 0.15808415412902832
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'Gears', 'Age_08_04', 'const']  AIC: 16906.641600994506
+backward
+Processed  15 models on 22 predictors in 0.09469938278198242
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'Gears', 'Age_08_04', 'Diesel', 'const']  AIC: 16906.64160099451
+forward
+Processed  22 models on 21 predictors in 0.14464545249938965
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'Gears', 'Age_08_04', 'const']  AIC: 16906.641600994506
+backward
+Processed  15 models on 22 predictors in 0.1326456069946289
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'Gears', 'Age_08_04', 'Diesel', 'const']  AIC: 16906.64160099451
+forward
+Processed  22 models on 21 predictors in 0.1595752239227295
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'Gears', 'Age_08_04', 'const']  AIC: 16906.641600994506
+backward
+Processed  15 models on 22 predictors in 0.11668825149536133
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'Gears', 'Age_08_04', 'Diesel', 'const']  AIC: 16906.64160099451
+forward
+Processed  22 models on 21 predictors in 0.13965892791748047
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'Gears', 'Age_08_04', 'const']  AIC: 16906.641600994506
+backward
+Processed  15 models on 22 predictors in 0.17457914352416992
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'Gears', 'Age_08_04', 'Diesel', 'const']  AIC: 16906.64160099451
+forward
+Processed  22 models on 21 predictors in 0.19448089599609375
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'Gears', 'Age_08_04', 'const']  AIC: 16906.641600994506
+backward
+Processed  15 models on 22 predictors in 0.10567355155944824
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'Gears', 'Age_08_04', 'Diesel', 'const']  AIC: 16906.64160099451
+forward
+Processed  22 models on 21 predictors in 0.15602421760559082
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'Gears', 'Age_08_04', 'const']  AIC: 16906.641600994506
+backward
+Processed  15 models on 22 predictors in 0.09773826599121094
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'Gears', 'Age_08_04', 'Diesel', 'const']  AIC: 16906.64160099451
+forward
+Processed  22 models on 21 predictors in 0.1266651153564453
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'Gears', 'Age_08_04', 'const']  AIC: 16906.641600994506
+backward
+Processed  15 models on 22 predictors in 0.0937490463256836
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'Gears', 'Age_08_04', 'Diesel', 'const']  AIC: 16906.64160099451
+forward
+Processed  22 models on 21 predictors in 0.12469983100891113
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'Gears', 'Age_08_04', 'const']  AIC: 16906.641600994506
+backward
+Processed  15 models on 22 predictors in 0.11266231536865234
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'Gears', 'Age_08_04', 'Diesel', 'const']  AIC: 16906.64160099451
+forward
+Processed  22 models on 21 predictors in 0.14760518074035645
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'Gears', 'Age_08_04', 'const']  AIC: 16906.641600994506
+backward
+Processed  15 models on 22 predictors in 0.10172867774963379
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'Gears', 'Age_08_04', 'Diesel', 'const']  AIC: 16906.64160099451
+forward
+Processed  22 models on 21 predictors in 0.19098138809204102
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'Gears', 'Age_08_04', 'const']  AIC: 16906.641600994506
+backward
+Processed  15 models on 22 predictors in 0.14887738227844238
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'Gears', 'Age_08_04', 'Diesel', 'const']  AIC: 16906.64160099451
+forward
+Processed  22 models on 21 predictors in 0.15437889099121094
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'Gears', 'Age_08_04', 'const']  AIC: 16906.641600994506
+backward
+Processed  15 models on 22 predictors in 0.10134077072143555
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'Gears', 'Age_08_04', 'Diesel', 'const']  AIC: 16906.64160099451
+forward
+Processed  22 models on 21 predictors in 0.14920735359191895
+Selected predictors: ['Mfg_Year', 'Automatic_airco', 'Weight', 'KM', 'Powered_Windows', 'HP', 'Mfr_Guarantee', 'Guarantee_Period', 'BOVAG_Guarantee', 'CNG', 'Quarterly_Tax', 'Petrol', 'Tow_Bar', 'Boardcomputer', 'Airco', 'ABS', 'Sport_Model', 'Backseat_Divider', 'Radio_cassette', 'Gears', 'Age_08_04', 'const']  AIC: 16906.641600994506
+backward
+Total elapsed time: 8.44080114364624 seconds.
+```
+<br>
+
+```python
+Stepwise_best_model.aic
+```
+```
+16906.641600994506
+```
+<hr class='division3'>
+</details>
+
+
+
+
+
+
 <br><br><br>
 
 
