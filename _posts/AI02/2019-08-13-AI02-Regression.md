@@ -1095,13 +1095,13 @@ mlr_data = pd.concat((corolla_, Fuel), 1)
 
 
 ## [4] : Add bias
-mlr_data = sm.add_constant(mlr_data, has_constant='add')
+constant_mlr_data = sm.add_constant(mlr_data, has_constant='add')
 
 
 ## [5] : Divide into input data and output data
-feature_columns = list(mlr_data.columns.difference(['Price']))
-X = mlr_data[feature_columns]
-y = mlr_data.Price
+feature_columns = list(constant_mlr_data.columns.difference(['Price']))
+X = constant_mlr_data[feature_columns]
+y = constant_mlr_data.Price
 train_x, test_x, train_y, test_y = train_test_split(X, y, train_size=0.7, test_size=0.3)
 ```
 <details markdown="1">
@@ -1255,7 +1255,7 @@ mlr_data.shape
 <summary class='jb-small' style="color:blue">[4] Data : Input</summary>
 <hr class='division3'>
 ```python
-mlr_data.head()
+constant_mlr_data.head()
 ```
 ```
 	const	Price	Age_08_04	Mfg_Month	Mfg_Year	KM	HP	Met_Color	Automatic	cc	...	Radio	Mistlamps	Sport_Model	Backseat_Divider	Metallic_Rim	Radio_cassette	Tow_Bar	Petrol	Diesel	CNG
@@ -1334,9 +1334,9 @@ vif
 ```
 	VIF Factor	features
 0	10.953474	Price
-1	inf	Age_08_04
-2	inf	Mfg_Month
-3	inf	Mfg_Year
+1	inf		Age_08_04
+2	inf		Mfg_Month
+3	inf		Mfg_Year
 4	2.400334	KM
 5	2.621514	HP
 6	1.143778	Met_Color
@@ -1367,9 +1367,9 @@ vif
 31	1.349642	Metallic_Rim
 32	62.172860	Radio_cassette
 33	1.153760	Tow_Bar
-34	inf	Petrol
-35	inf	Diesel
-36	inf	CNG
+34	inf		Petrol
+35	inf		Diesel
+36	inf		CNG
 ```
 <hr class='division3'>
 </details>
