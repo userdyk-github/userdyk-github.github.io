@@ -2824,7 +2824,7 @@ print(len(Stepwise_best_model.params))
 
 #### Logistic regression about dataset on real world
 
-[Dataset download][1] ｜ <a href="https://www.kaggle.com/prasadperera/the-boston-housing-dataset/data" target="_blank">URL</a>
+[Dataset download][3] 
 
 
 <details markdown="1">
