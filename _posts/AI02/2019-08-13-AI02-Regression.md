@@ -224,6 +224,16 @@ Multicollinearity refers to a situation in which two or more explanatory variabl
 
 ### ***Regression with statsmodel***
 
+|STEP|PROCESS|
+|:-|:-|
+|1|Data preprocessing|
+|2|Regression analysis|
+|3|Modify regression model|
+
+
+
+<br><br><br>
+
 #### Simple linear regression about artificial dataset
 
 `Data preprocessing`
