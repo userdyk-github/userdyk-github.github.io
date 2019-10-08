@@ -2183,6 +2183,102 @@ Processed  630 models on 2 predictors in 1.3473966121673584 seconds.
 Processed  7140 models on 3 predictors in 17.01948356628418 seconds.
 Total elapsed time: 18.805707454681396 seconds.
 ```
+
+<br>
+
+```python
+models
+```
+```
+	AIC		model
+1	17824.309811	<statsmodels.regression.linear_model.Regressio...
+2	17579.120147	<statsmodels.regression.linear_model.Regressio...
+3	17351.640619	<statsmodels.regression.linear_model.Regressio...
+```
+
+<br>
+
+```python
+models.loc[3, "model"].summary()
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+![캡처](https://user-images.githubusercontent.com/52376448/66407947-07630780-ea29-11e9-9169-4e8736394d67.JPG)
+<hr class='division3_1'>
+</details>
+
+<br>
+
+```python
+# 모든 변수들 모델링 한것과 비교 
+print("full model Rsquared: ","{:.5f}".format(fitted_full_model.rsquared))
+print("full model AIC: ","{:.5f}".format(fitted_full_model.aic))
+print("full model MSE: ","{:.5f}".format(fitted_full_model.mse_total))
+print("selected model Rsquared: ","{:.5f}".format(models.loc[3, "model"].rsquared))
+print("selected model AIC: ","{:.5f}".format(models.loc[3, "model"].aic))
+print("selected model MSE: ","{:.5f}".format(models.loc[3, "model"].mse_total))
+```
+```
+full model Rsquared:  0.91141
+full model AIC:  16960.68542
+full model MSE:  13196639.65991
+selected model Rsquared:  0.86124
+selected model AIC:  17351.64062
+selected model MSE:  13196639.65991
+```
+
+<br>
+
+```python
+# Plot the result
+plt.figure(figsize=(20,10))
+plt.rcParams.update({'font.size': 18, 'lines.markersize': 10})
+
+## Mallow Cp
+plt.subplot(2, 2, 1)
+Cp= models.apply(lambda row: (row[1].params.shape[0]+(row[1].mse_total-
+                               fitted_full_model.mse_total)*(train_x.shape[0]-
+                                row[1].params.shape[0])/fitted_full_model.mse_total
+                               ), axis=1)
+plt.plot(Cp)
+plt.plot(Cp.argmin(), Cp.min(), "or")
+plt.xlabel('# Predictors')
+plt.ylabel('Cp')
+
+# adj-rsquared plot
+# adj-rsquared = Explained variation / Total variation
+adj_rsquared = models.apply(lambda row: row[1].rsquared_adj, axis=1)
+plt.subplot(2, 2, 2)
+plt.plot(adj_rsquared)
+plt.plot(adj_rsquared.argmax(), adj_rsquared.max(), "or")
+plt.xlabel('# Predictors')
+plt.ylabel('adjusted rsquared')
+
+# aic
+aic = models.apply(lambda row: row[1].aic, axis=1)
+plt.subplot(2, 2, 3)
+plt.plot(aic)
+plt.plot(aic.argmin(), aic.min(), "or")
+plt.xlabel('# Predictors')
+plt.ylabel('AIC')
+
+# bic
+bic = models.apply(lambda row: row[1].bic, axis=1)
+plt.subplot(2, 2, 4)
+plt.plot(bic)
+plt.plot(bic.argmin(), bic.min(), "or")
+plt.xlabel(' # Predictors')
+plt.ylabel('BIC')
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+![다운로드](https://user-images.githubusercontent.com/52376448/66408285-aa1b8600-ea29-11e9-9cbf-dbcc71d6d81a.png)
+<hr class='division3_1'>
+</details>
+
 <hr class='division3'>
 </details>
 <br><br><br>
