@@ -3144,19 +3144,21 @@ model AIC:  482.69329
 <hr class='division3'>
 </details>
 <details markdown="1">
-<summary class='jb-small' style="color:blue">Model performance</summary>
+<summary class='jb-small' style="color:blue">Model performance(1)</summary>
 <hr class='division3'>
 ```python
+pred_y = results.predict(test_x)
+
 def cut_off(y,threshold):
     Y = y.copy() # copy함수를 사용하여 이전의 y값이 변화지 않게 함
     Y[Y>threshold]=1
     Y[Y<=threshold]=0
     return(Y.astype(int))
 
-pred_y = results.predict(test_x)
 pred_Y = cut_off(pred_y,0.5)
 
 cfmat = confusion_matrix(test_y,pred_Y)
+
 def acc(cfmat) :
     acc=(cfmat[0,0]+cfmat[1,1])/np.sum(cfmat) ## accuracy
     return(acc)
@@ -3181,6 +3183,90 @@ print(cfmat)
 ```
 <hr class='division3_1'>
 </details>
+
+<br>
+`Performance based on cut-off values`
+```python
+def cut_off(y,threshold):
+    Y = y.copy() # copy함수를 사용하여 이전의 y값이 변화지 않게 함
+    Y[Y>threshold]=1
+    Y[Y<=threshold]=0
+    return(Y.astype(int))
+
+def acc(cfmat) :
+    acc=(cfmat[0,0]+cfmat[1,1])/np.sum(cfmat) ## accuracy
+    return(acc)
+    
+pred_y = results.predict(test_x)    
+pred_Y = cut_off(pred_y,0.5)
+cfmat = confusion_matrix(test_y,pred_Y)
+
+threshold = np.arange(0,1,0.1)
+table = pd.DataFrame(columns=['ACC'])
+for i in threshold:
+    pred_Y = cut_off(pred_y,i)
+    cfmat = confusion_matrix(test_y, pred_Y)
+    table.loc[i] = acc(cfmat)
+table.index.name='threshold'
+table.columns.name='performance'
+table
+```
+```
+performance	ACC
+threshold	
+0.0	0.102667
+0.1	0.908000
+0.2	0.922667
+0.3	0.932000
+0.4	0.936000
+0.5	0.944000
+0.6	0.949333
+0.7	0.946667
+0.8	0.941333
+0.9	0.937333
+```
+
+<hr class='division3'>
+</details>
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Model performance(2)</summary>
+<hr class='division3'>
+```python
+# sklearn ROC 패키지 제공
+pred_y = results.predict(test_x)    
+fpr, tpr, thresholds = metrics.roc_curve(test_y, pred_y, pos_label=1)
+
+# Print ROC curve
+plt.plot(fpr,tpr)
+
+# Print AUC
+auc = np.trapz(tpr,fpr)
+print('AUC:', auc)
+```
+```
+AUC: 0.9463923891858513
+```
+![다운로드 (6)](https://user-images.githubusercontent.com/52376448/66439278-1a49fc00-ea6a-11e9-8afa-30f544e5a4a4.png)
+<hr class='division3'>
+</details>
+
+<br>
+`Modify regression model`
+```python
+feature_columns = list(ploan_processed.columns.difference(["Personal Loan","Experience",  "Mortgage"]))
+X = ploan_processed[feature_columns]
+y = ploan_processed['Personal Loan'] # 대출여부: 1 or 0
+
+train_x2, test_x2, train_y, test_y = train_test_split(X, y, stratify=y,train_size=0.7,test_size=0.3,random_state=42)
+model = sm.Logit(train_y, train_x2)
+results2 = model.fit(method='newton')
+results2.summary()
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT : Model results</summary>
+<hr class='division3'>
+![캡처](https://user-images.githubusercontent.com/52376448/66439427-92b0bd00-ea6a-11e9-915b-e3a4c9bf5182.JPG)
 <hr class='division3'>
 </details>
 
