@@ -3264,11 +3264,186 @@ results2 = model.fit(method='newton')
 results2.summary()
 ```
 <details markdown="1">
+<summary class='jb-small' style="color:blue">Data : Input</summary>
+<hr class='division3'>
+```python
+print(train_x.shape, test_x.shape, train_y.shape, test_y.shape)
+```
+```
+(1750, 12) (750, 12) (1750,) (750,)
+```
+<hr class='division3'>
+</details>
+
+<details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT : Model results</summary>
 <hr class='division3'>
 ![캡처](https://user-images.githubusercontent.com/52376448/66439427-92b0bd00-ea6a-11e9-915b-e3a4c9bf5182.JPG)
 <hr class='division3'>
 </details>
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Model prediction</summary>
+<hr class='division3'>
+```python
+def cut_off(y,threshold):
+    Y = y.copy() # copy함수를 사용하여 이전의 y값이 변화지 않게 함
+    Y[Y>threshold]=1
+    Y[Y<=threshold]=0
+    return(Y.astype(int))
+
+pred_y = results2.predict(test_x2)
+pred_Y = cut_off(pred_y,0.5)
+pred_Y
+```
+```
+1065    0
+487     0
+2157    0
+1765    0
+525     0
+1573    0
+2103    0
+1601    0
+1329    0
+970     0
+875     0
+661     0
+1356    0
+1454    0
+838     0
+2042    0
+1401    0
+2025    0
+1475    0
+969     0
+2268    0
+456     0
+1685    0
+1702    0
+102     0
+1712    0
+1280    0
+2470    1
+2433    0
+2326    0
+       ..
+1120    0
+689     0
+70      0
+2483    0
+1067    1
+1123    0
+1166    0
+1572    0
+227     1
+1127    0
+812     0
+2184    1
+998     0
+828     0
+2104    0
+1135    0
+2434    0
+451     0
+1286    0
+1364    0
+1827    0
+2093    0
+168     0
+2062    0
+107     0
+277     0
+914     1
+542     0
+32      0
+2360    0
+Length: 750, dtype: int32
+```
+<hr class='division3'>
+</details>
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Model performance</summary>
+<hr class='division3'>
+```python
+def cut_off(y,threshold):
+    Y = y.copy() # copy함수를 사용하여 이전의 y값이 변화지 않게 함
+    Y[Y>threshold]=1
+    Y[Y<=threshold]=0
+    return(Y.astype(int))
+    
+pred_y = results2.predict(test_x2)
+pred_Y = cut_off(pred_y,0.5)
+cfmat = confusion_matrix(test_y,pred_Y)
+
+def acc(cfmat) :
+    acc=(cfmat[0,0]+cfmat[1,1])/np.sum(cfmat) ## accuracy
+    return(acc)
+
+acc(cfmat)   ## accuracy
+```
+```
+0.944
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">Confusion matrix</summary>
+<hr class='division3_1'>
+```python
+print(cfmat)
+```
+```
+[[660  13]
+ [ 29  48]]
+```
+<hr class='division3_1'>
+</details>
+
+
+<hr class='division3'>
+</details>
+
+<br>
+`Performance based on cut-off values`
+```python
+def cut_off(y,threshold):
+    Y = y.copy() # copy함수를 사용하여 이전의 y값이 변화지 않게 함
+    Y[Y>threshold]=1
+    Y[Y<=threshold]=0
+    return(Y.astype(int))
+    
+def acc(cfmat) :
+    acc=(cfmat[0,0]+cfmat[1,1])/np.sum(cfmat) ## accuracy
+    return(acc)
+
+pred_y = results2.predict(test_x2)
+pred_Y = cut_off(pred_y,0.5)
+cfmat = confusion_matrix(test_y,pred_Y)
+
+threshold = np.arange(0,1,0.1)
+table = pd.DataFrame(columns=['ACC'])
+for i in threshold:
+    pred_Y = cut_off(pred_y,i)
+    cfmat = confusion_matrix(test_y, pred_Y)
+    table.loc[i] = acc(cfmat)
+table.index.name='threshold'
+table.columns.name='performance'
+table
+```
+```
+performance	ACC
+threshold	
+0.0	0.102667
+0.1	0.908000
+0.2	0.922667
+0.3	0.932000
+0.4	0.936000
+0.5	0.944000
+0.6	0.949333
+0.7	0.946667
+0.8	0.941333
+0.9	0.937333
+```
 
 <br><br><br>
 
