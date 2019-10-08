@@ -2283,6 +2283,29 @@ plt.ylabel('BIC')
 </details>
 <br><br><br>
 
+
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<details markdown="1">
+<summary class='jb-small' style="color:green">OUTPUT</summary>
+<hr class='division3_2'>
+
+<hr class='division3_2'>
+</details>
+<hr class='division3_1'>
+</details>
+<hr class='division3'>
+</details>
+
+
+
+
+
 ---
 
 ### ***Regression with sklearn***
