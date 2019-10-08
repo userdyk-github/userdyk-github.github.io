@@ -3364,7 +3364,7 @@ Length: 750, dtype: int32
 </details>
 
 <details markdown="1">
-<summary class='jb-small' style="color:blue">Model performance</summary>
+<summary class='jb-small' style="color:blue">Model performance(1)</summary>
 <hr class='division3'>
 ```python
 def cut_off(y,threshold):
@@ -3397,10 +3397,6 @@ print(cfmat)
  [ 29  48]]
 ```
 <hr class='division3_1'>
-</details>
-
-
-<hr class='division3'>
 </details>
 
 <br>
@@ -3444,6 +3440,32 @@ threshold
 0.8	0.941333
 0.9	0.937333
 ```
+
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Model performance(2)</summary>
+<hr class='division3'>
+```python
+# sklearn ROC 패키지 제공
+pred_y = results2.predict(test_x2)
+fpr, tpr, thresholds = metrics.roc_curve(test_y, pred_y, pos_label=1)
+
+# Print ROC curve
+plt.plot(fpr,tpr)
+
+# Print AUC
+auc = np.trapz(tpr,fpr)
+print('AUC:', auc)
+```
+```
+AUC: 0.9465467667547905
+```
+![다운로드 (7)](https://user-images.githubusercontent.com/52376448/66440192-271c1f00-ea6d-11e9-91f2-cfa979444695.png)
+
+<hr class='division3'>
+</details>
+
 
 <br><br><br>
 
