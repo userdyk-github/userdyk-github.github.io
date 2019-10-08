@@ -3623,6 +3623,837 @@ cfmat_forward = confusion_matrix(test_y, pred_Y_forward)
 cfmat_backward = confusion_matrix(test_y, pred_Y_backward)
 cfmat_stepwise = confusion_matrix(test_y, pred_Y_stepwise)
 ```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Selected model</summary>
+<hr class='division3'>
+```python
+Forward_best_model = forward_model(X=train_x, y= train_y)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+```
+Optimization terminated successfully.
+         Current function value: 0.329986
+         Iterations 6
+Optimization terminated successfully.
+         Current function value: 0.284217
+         Iterations 7
+Optimization terminated successfully.
+         Current function value: 0.296731
+         Iterations 6
+Optimization terminated successfully.
+         Current function value: 0.330062
+         Iterations 6
+Optimization terminated successfully.
+         Current function value: 0.322763
+         Iterations 7
+Optimization terminated successfully.
+         Current function value: 0.329995
+         Iterations 6
+Optimization terminated successfully.
+         Current function value: 0.327824
+         Iterations 6
+Optimization terminated successfully.
+         Current function value: 0.205738
+         Iterations 8
+Optimization terminated successfully.
+         Current function value: 0.324953
+         Iterations 6
+Optimization terminated successfully.
+         Current function value: 0.329912
+         Iterations 6
+Optimization terminated successfully.
+         Current function value: 0.330059
+         Iterations 6
+Processed  11 models on 1 predictors in 0.06183505058288574
+Selected predictors: ['Income', 'const']  AIC: 724.0825012461598
+Optimization terminated successfully.
+         Current function value: 0.205431
+         Iterations 8
+Optimization terminated successfully.
+         Current function value: 0.205682
+         Iterations 8
+Optimization terminated successfully.
+         Current function value: 0.185721
+         Iterations 8
+Optimization terminated successfully.
+         Current function value: 0.205517
+         Iterations 8
+Optimization terminated successfully.
+         Current function value: 0.169107
+         Iterations 8
+Optimization terminated successfully.
+         Current function value: 0.205563
+         Iterations 8
+Optimization terminated successfully.
+         Current function value: 0.182286
+         Iterations 8
+Optimization terminated successfully.
+         Current function value: 0.205735
+         Iterations 8
+Optimization terminated successfully.
+         Current function value: 0.205561
+         Iterations 8
+Optimization terminated successfully.
+         Current function value: 0.205167
+         Iterations 8
+Processed  10 models on 2 predictors in 0.05884265899658203
+Selected predictors: ['Income', 'Education', 'const']  AIC: 597.8752580578658
+Optimization terminated successfully.
+         Current function value: 0.168881
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.168679
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.152041
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.168833
+         Iterations 8
+Optimization terminated successfully.
+         Current function value: 0.168897
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.154924
+         Iterations 9
+Optimization terminated successfully.
+C:\ProgramData\Anaconda3\lib\site-packages\ipykernel_launcher.py:21: FutureWarning: 'argmin' is deprecated, use 'idxmin' instead. The behavior of 'argmin'
+will be corrected to return the positional minimum in the future.
+Use 'series.values.argmin' to get the position of the minimum now.
+
+         Current function value: 0.169073
+         Iterations 8
+Optimization terminated successfully.
+         Current function value: 0.169052
+         Iterations 8
+Optimization terminated successfully.
+         Current function value: 0.168642
+         Iterations 9
+Processed  9 models on 3 predictors in 0.07081055641174316
+Selected predictors: ['Income', 'Education', 'CD Account', 'const']  AIC: 540.1423230958794
+Optimization terminated successfully.
+         Current function value: 0.152028
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.151411
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.148163
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.152036
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.139352
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.152015
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.151151
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.150075
+         Iterations 9
+Processed  8 models on 4 predictors in 0.057845115661621094
+Selected predictors: ['Income', 'Education', 'CD Account', 'Family', 'const']  AIC: 497.73316075623126
+Optimization terminated successfully.
+         Current function value: 0.138887
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.138758
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.136599
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.138901
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.139349
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.138959
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.137180
+         Iterations 9
+Processed  7 models on 5 predictors in 0.053856849670410156
+Selected predictors: ['Income', 'Education', 'CD Account', 'Family', 'CreditCard', 'const']  AIC: 490.0954047541096
+Optimization terminated successfully.
+         Current function value: 0.136127
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.135996
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.136142
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.136574
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.135928
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.133263
+         Iterations 9
+Processed  6 models on 6 predictors in 0.056847572326660156
+Selected predictors: ['Income', 'Education', 'CD Account', 'Family', 'CreditCard', 'Securities Account', 'const']  AIC: 480.41892123708624
+Optimization terminated successfully.
+         Current function value: 0.132630
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.132650
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.132646
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.133238
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.132361
+         Iterations 9
+Processed  5 models on 7 predictors in 0.03989291191101074
+Selected predictors: ['Income', 'Education', 'CD Account', 'Family', 'CreditCard', 'Securities Account', 'Online', 'const']  AIC: 479.2643543252462
+Optimization terminated successfully.
+         Current function value: 0.131791
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.131772
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.131803
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.132343
+         Iterations 9
+Processed  4 models on 8 predictors in 0.03989434242248535
+Selected predictors: ['Income', 'Education', 'CD Account', 'Family', 'CreditCard', 'Securities Account', 'Online', 'CCAvg', 'const']  AIC: 479.2012205305657
+Optimization terminated successfully.
+         Current function value: 0.131062
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.131077
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.131771
+         Iterations 9
+Processed  3 models on 9 predictors in 0.02792525291442871
+Selected predictors: ['Income', 'Education', 'CD Account', 'Family', 'CreditCard', 'Securities Account', 'Online', 'CCAvg', 'Age', 'const']  AIC: 478.7181848799073
+Optimization terminated successfully.
+         Current function value: 0.131061
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.131057
+         Iterations 9
+Processed  2 models on 10 predictors in 0.02393651008605957
+Selected predictors: ['Income', 'Education', 'CD Account', 'Family', 'CreditCard', 'Securities Account', 'Online', 'CCAvg', 'Age', 'Mortgage', 'const']  AIC: 480.6980587902294
+Total elapsed time: 0.5485327243804932 seconds.
+```
+<hr class='division3_1'>
+</details>
+<br>
+```python
+Backward_best_model = backward_model(X=train_x,y=train_y)
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+```
+Optimization terminated successfully.
+         Current function value: 0.137663
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.134821
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.131859
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.131061
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.214795
+         Iterations 8
+Optimization terminated successfully.
+         Current function value: 0.142500
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.131057
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.154241
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.135440
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.152443
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.131753
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.131072
+         Iterations 9
+Processed  11 models on 10 predictors in 0.12366890907287598
+Selected predictors: ['Age', 'CCAvg', 'CD Account', 'CreditCard', 'Education', 'Family', 'Income', 'Mortgage', 'Online', 'Securities Account', 'const']  AIC: 480.6980587902294
+Optimization terminated successfully.
+         Current function value: 0.134824
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.131862
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.131062
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.215827
+         Iterations 8
+Optimization terminated successfully.
+         Current function value: 0.142665
+         Iterations 9
+Optimization terminated successfully.
+C:\ProgramData\Anaconda3\lib\site-packages\ipykernel_launcher.py:61: FutureWarning: 'argmin' is deprecated, use 'idxmin' instead. The behavior of 'argmin'
+will be corrected to return the positional minimum in the future.
+Use 'series.values.argmin' to get the position of the minimum now.
+
+         Current function value: 0.155447
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.135443
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.152478
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.131755
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.131771
+         Iterations 9
+Processed  10 models on 9 predictors in 0.0967409610748291
+Selected predictors: ['Age', 'CCAvg', 'CD Account', 'CreditCard', 'Education', 'Family', 'Income', 'Online', 'Securities Account', 'const']  AIC: 478.7181848799073
+Optimization terminated successfully.
+         Current function value: 0.134831
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.131871
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.218281
+         Iterations 8
+Optimization terminated successfully.
+         Current function value: 0.142684
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.155797
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.135444
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.152482
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.131791
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.131772
+         Iterations 9
+Processed  9 models on 8 predictors in 0.07679510116577148
+Selected predictors: ['CCAvg', 'CD Account', 'CreditCard', 'Education', 'Family', 'Income', 'Online', 'Securities Account', 'const']  AIC: 479.2012205305657
+Total elapsed time: 0.3181488513946533 seconds.
+```
+<hr class='division3_1'>
+</details>
+
+<br>
+```python
+Stepwise_best_model = Stepwise_model(X=train_x,y=train_y)
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+```
+Optimization terminated successfully.
+         Current function value: 0.330076
+         Iterations 6
+Optimization terminated successfully.
+         Current function value: 0.329986
+         Iterations 6
+Optimization terminated successfully.
+         Current function value: 0.284217
+         Iterations 7
+Optimization terminated successfully.
+         Current function value: 0.296731
+         Iterations 6
+Optimization terminated successfully.
+         Current function value: 0.330062
+         Iterations 6
+Optimization terminated successfully.
+         Current function value: 0.322763
+         Iterations 7
+Optimization terminated successfully.
+         Current function value: 0.329995
+         Iterations 6
+Optimization terminated successfully.
+         Current function value: 0.327824
+         Iterations 6
+Optimization terminated successfully.
+         Current function value: 0.205738
+         Iterations 8
+Optimization terminated successfully.
+         Current function value: 0.324953
+         Iterations 6
+Optimization terminated successfully.
+         Current function value: 0.329912
+         Iterations 6
+Optimization terminated successfully.
+         Current function value: 0.330059
+         Iterations 6
+Processed  11 models on 1 predictors in 0.06789159774780273
+Selected predictors: ['Income', 'const']  AIC: 724.0825012461598
+forward
+Optimization terminated successfully.
+         Current function value: 0.330076
+         Iterations 6
+Processed  1 models on 0 predictors in 0.008976459503173828
+Selected predictors: ['const']  AIC: 1157.267296321307
+Optimization terminated successfully.
+         Current function value: 0.205431
+         Iterations 8
+Optimization terminated successfully.
+         Current function value: 0.205682
+         Iterations 8
+Optimization terminated successfully.
+         Current function value: 0.185721
+         Iterations 8
+Optimization terminated successfully.
+         Current function value: 0.205517
+         Iterations 8
+Optimization terminated successfully.
+         Current function value: 0.169107
+         Iterations 8
+Optimization terminated successfully.
+         Current function value: 0.205563
+         Iterations 8
+Optimization terminated successfully.
+         Current function value: 0.182286
+         Iterations 8
+Optimization terminated successfully.
+         Current function value: 0.205735
+         Iterations 8
+Optimization terminated successfully.
+         Current function value: 0.205561
+         Iterations 8
+Optimization terminated successfully.
+         Current function value: 0.205167
+         Iterations 8
+Processed  10 models on 2 predictors in 0.07081007957458496
+Selected predictors: ['Income', 'Education', 'const']  AIC: 597.8752580578658
+forward
+Optimization terminated successfully.
+         Current function value: 0.205738
+         Iterations 8
+Optimization terminated successfully.
+         Current function value: 0.322763
+         Iterations 7
+Processed  2 models on 1 predictors in 0.017953157424926758
+Selected predictors: ['Income', 'const']  AIC: 724.0825012461598
+Optimization terminated successfully.
+         Current function value: 0.168881
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.168679
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.152041
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.168833
+         Iterations 8
+Optimization terminated successfully.
+C:\ProgramData\Anaconda3\lib\site-packages\ipykernel_launcher.py:21: FutureWarning: 'argmin' is deprecated, use 'idxmin' instead. The behavior of 'argmin'
+will be corrected to return the positional minimum in the future.
+Use 'series.values.argmin' to get the position of the minimum now.
+C:\ProgramData\Anaconda3\lib\site-packages\ipykernel_launcher.py:61: FutureWarning: 'argmin' is deprecated, use 'idxmin' instead. The behavior of 'argmin'
+will be corrected to return the positional minimum in the future.
+Use 'series.values.argmin' to get the position of the minimum now.
+
+         Current function value: 0.168897
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.154924
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.169073
+         Iterations 8
+Optimization terminated successfully.
+         Current function value: 0.169052
+         Iterations 8
+Optimization terminated successfully.
+         Current function value: 0.168642
+         Iterations 9
+Processed  9 models on 3 predictors in 0.06981372833251953
+Selected predictors: ['Income', 'Education', 'CD Account', 'const']  AIC: 540.1423230958794
+forward
+Optimization terminated successfully.
+         Current function value: 0.169107
+         Iterations 8
+Optimization terminated successfully.
+         Current function value: 0.185721
+         Iterations 8
+Optimization terminated successfully.
+         Current function value: 0.288940
+         Iterations 7
+Processed  3 models on 2 predictors in 0.02293872833251953
+Selected predictors: ['Income', 'Education', 'const']  AIC: 597.8752580578658
+Optimization terminated successfully.
+         Current function value: 0.152028
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.151411
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.148163
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.152036
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.139352
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.152015
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.151151
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.150075
+         Iterations 9
+Processed  8 models on 4 predictors in 0.06681990623474121
+Selected predictors: ['Income', 'Education', 'CD Account', 'Family', 'const']  AIC: 497.73316075623126
+forward
+Optimization terminated successfully.
+         Current function value: 0.152041
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.154924
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.164270
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.287431
+         Iterations 7
+Processed  4 models on 3 predictors in 0.04787254333496094
+Selected predictors: ['Income', 'Education', 'CD Account', 'const']  AIC: 540.1423230958794
+Optimization terminated successfully.
+         Current function value: 0.138887
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.138758
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.136599
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.138901
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.139349
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.138959
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.137180
+         Iterations 9
+Processed  7 models on 5 predictors in 0.06382942199707031
+Selected predictors: ['Income', 'Education', 'CD Account', 'Family', 'CreditCard', 'const']  AIC: 490.0954047541096
+forward
+Optimization terminated successfully.
+         Current function value: 0.139352
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.148163
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.154854
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.160828
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.282426
+         Iterations 7
+Processed  5 models on 4 predictors in 0.04089093208312988
+Selected predictors: ['Income', 'Education', 'CD Account', 'Family', 'const']  AIC: 497.73316075623126
+Optimization terminated successfully.
+         Current function value: 0.136127
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.135996
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.136142
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.136574
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.135928
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.133263
+         Iterations 9
+Processed  6 models on 6 predictors in 0.06083846092224121
+Selected predictors: ['Income', 'Education', 'CD Account', 'Family', 'CreditCard', 'Securities Account', 'const']  AIC: 480.41892123708624
+forward
+Optimization terminated successfully.
+         Current function value: 0.136599
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.137180
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.144927
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.154299
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.157364
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.273321
+         Iterations 7
+Processed  6 models on 5 predictors in 0.042886972427368164
+Selected predictors: ['Income', 'Education', 'CD Account', 'Family', 'CreditCard', 'const']  AIC: 490.0954047541096
+Optimization terminated successfully.
+         Current function value: 0.132630
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.132650
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.132646
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.133238
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.132361
+         Iterations 9
+Processed  5 models on 7 predictors in 0.05186176300048828
+Selected predictors: ['Income', 'Education', 'CD Account', 'Family', 'CreditCard', 'Securities Account', 'Online', 'const']  AIC: 479.2643543252462
+forward
+Optimization terminated successfully.
+         Current function value: 0.133263
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.135928
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.136688
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.143335
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.154141
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.156593
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.271509
+         Iterations 7
+Processed  7 models on 6 predictors in 0.07081055641174316
+Selected predictors: ['Income', 'Education', 'CD Account', 'Family', 'CreditCard', 'Securities Account', 'const']  AIC: 480.41892123708624
+Optimization terminated successfully.
+         Current function value: 0.131791
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.131772
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.131803
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.132343
+         Iterations 9
+Processed  4 models on 8 predictors in 0.03690147399902344
+Selected predictors: ['Income', 'Education', 'CD Account', 'Family', 'CreditCard', 'Securities Account', 'Online', 'CCAvg', 'const']  AIC: 479.2012205305657
+forward
+Optimization terminated successfully.
+         Current function value: 0.132361
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.132650
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.135373
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.136112
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.142716
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.153670
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.156410
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.218291
+         Iterations 8
+Processed  8 models on 7 predictors in 0.07579731941223145
+Selected predictors: ['Income', 'Education', 'CD Account', 'Family', 'CreditCard', 'Securities Account', 'Online', 'const']  AIC: 479.2643543252462
+Optimization terminated successfully.
+         Current function value: 0.131062
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.131077
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.131771
+         Iterations 9
+Processed  3 models on 9 predictors in 0.029920101165771484
+Selected predictors: ['Income', 'Education', 'CD Account', 'Family', 'CreditCard', 'Securities Account', 'Online', 'CCAvg', 'Age', 'const']  AIC: 478.7181848799073
+forward
+Optimization terminated successfully.
+         Current function value: 0.131772
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.131791
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.131871
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.134831
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.135444
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.142684
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.152482
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.155797
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.218281
+         Iterations 8
+Processed  9 models on 8 predictors in 0.07579827308654785
+Selected predictors: ['Income', 'Education', 'CD Account', 'Family', 'CreditCard', 'Securities Account', 'Online', 'CCAvg', 'const']  AIC: 479.2012205305657
+Optimization terminated successfully.
+         Current function value: 0.131061
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.131057
+         Iterations 9
+Processed  2 models on 10 predictors in 0.03091716766357422
+Selected predictors: ['Income', 'Education', 'CD Account', 'Family', 'CreditCard', 'Securities Account', 'Online', 'CCAvg', 'Age', 'Mortgage', 'const']  AIC: 480.6980587902294
+forward
+Optimization terminated successfully.
+         Current function value: 0.131062
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.131771
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.131755
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.131862
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.134824
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.135443
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.142665
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.152478
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.155447
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.215827
+         Iterations 8
+Processed  10 models on 9 predictors in 0.08178138732910156
+Selected predictors: ['Income', 'Education', 'CD Account', 'Family', 'CreditCard', 'Securities Account', 'Online', 'CCAvg', 'Age', 'const']  AIC: 478.7181848799073
+backward
+Optimization terminated successfully.
+         Current function value: 0.131061
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.131057
+         Iterations 9
+Processed  2 models on 10 predictors in 0.029919862747192383
+Selected predictors: ['Income', 'Education', 'CD Account', 'Family', 'CreditCard', 'Securities Account', 'Online', 'CCAvg', 'Age', 'Mortgage', 'const']  AIC: 480.6980587902294
+forward
+Optimization terminated successfully.
+         Current function value: 0.131062
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.131771
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.131755
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.131862
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.134824
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.135443
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.142665
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.152478
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.155447
+         Iterations 9
+Optimization terminated successfully.
+         Current function value: 0.215827
+         Iterations 8
+Processed  10 models on 9 predictors in 0.08776473999023438
+Selected predictors: ['Income', 'Education', 'CD Account', 'Family', 'CreditCard', 'Securities Account', 'Online', 'CCAvg', 'Age', 'const']  AIC: 478.7181848799073
+backward
+Total elapsed time: 1.2626218795776367 seconds.
+```
+<hr class='division3_1'>
+</details>
+
+<hr class='division3'>
+</details>
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Model performance(1)</summary>
 <hr class='division3'>
@@ -3710,7 +4541,6 @@ print(len(Stepwise_best_model.model.exog_names))
 10
 10
 ```
-
 <hr class='division3'>
 </details>
 
