@@ -2812,6 +2812,10 @@ print(len(Stepwise_best_model.params))
 <br><br><br>
 
 
+#### Logistic regression about dataset on real world
+
+
+<br><br><br>
 
 
 ---
@@ -2867,10 +2871,6 @@ fig, ax = plot_residuals_and_coeff(resid_train, resid_test,  model.coef_)
 
 <br><br><br>
 
-#### Logistic regression about dataset on real world
-
-
-<br><br><br>
 
 ---
 
