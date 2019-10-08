@@ -1487,13 +1487,18 @@ def getBest(X,y,k):
 
 print(getBest(X=train_x, y=train_y,k=2))
 ```
-
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
 ```
 Processed  630 models on 2 predictors in 1.8201320171356201 seconds.
 AIC                                                17516.6
 model    <statsmodels.regression.linear_model.Regressio...
 Name: 211, dtype: object
 ```
+<hr class='division3'>
+</details>
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">SUPPLEMENT [1]</summary>
 <hr class='division3'>
