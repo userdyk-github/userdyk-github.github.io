@@ -2824,6 +2824,118 @@ print(len(Stepwise_best_model.params))
 
 #### Logistic regression about dataset on real world
 
+[Dataset download][1] ｜ <a href="https://www.kaggle.com/prasadperera/the-boston-housing-dataset/data" target="_blank">URL</a>
+
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Dataset Description</summary>
+<hr class='division3'>
+```
+Experience 경력
+Income 수입
+Famliy 가족단위
+CCAvg 월 카드사용량 
+Education 교육수준 (1: undergrad; 2, Graduate; 3; Advance )
+Mortgage 가계대출
+Securities account 유가증권계좌유무
+CD account 양도예금증서 계좌 유무
+Online 온라인계좌유무
+CreidtCard 신용카드유무 
+```
+<hr class='division3'>
+</details>
+`Data preprocessing`
+```python
+# 분석에 필요한 패키지 불러오기
+import os
+import numpy as np
+import pandas as pd
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import train_test_split
+from sklearn import metrics
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score, roc_auc_score, roc_curve
+import statsmodels.api as sm
+import matplotlib.pyplot as plt
+import itertools
+import time
+
+# 의미없는 변수 제거
+ploan = pd.read_csv(r'C:\Users\userd\Desktop\dataset\Personal_Loan.csv')
+ploan_processed = ploan.dropna().drop(['ID','ZIP Code'], axis=1, inplace=False)
+ploan_processed = sm.add_constant(ploan_processed, has_constant='add')
+
+# split into train and test
+feature_columns = list(ploan_processed.columns.difference(["Personal Loan"]))
+X = ploan_processed[feature_columns]
+y = ploan_processed['Personal Loan'] # 대출여부: 1 or 0
+train_x, test_x, train_y, test_y = train_test_split(X, y, stratify=y,train_size=0.7,test_size=0.3,random_state=42)
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Data : Input</summary>
+<hr class='division3'>
+```python
+ploan
+```
+```
+'\nExperience 경력\nIncome 수입\nFamliy 가족단위\nCCAvg 월 카드사용량 \nEducation 교육수준 (1: undergrad; 2, Graduate; 3; Advance )\nMortgage 가계대출\nSecurities account 유가증권계좌유무\nCD account 양도예금증서 계좌 유무\nOnline 온라인계좌유무\nCreidtCard 신용카드유무 \n\n'
+```
+<br>
+
+```python
+ploan_processed
+```
+```
+	Age	Experience	Income	Family	CCAvg	Education	Mortgage	Personal Loan	Securities Account	CD Account	Online	CreditCard
+0	25	1		49	4	1.6	1		0		0		1			0		0	0
+1	45	19		34	3	1.5	1		0		0		1			0		0	0
+2	39	15		11	1	1.0	1		0		0		0			0		0	0
+3	35	9		100	1	2.7	2		0		0		0			0		0	0
+4	35	8		45	4	1.0	2		0		0		0			0		0	1
+...	...	...	...	...	...	...	...	...	...	...	...	...
+2495	46	22		70	4	1.9	1		212		0		0			0		0	1
+2496	63	37		32	3	0.7	2		141		0		0			0		0	0
+2497	33	9		14	3	0.9	3		114		0		0			0		0	0
+2498	38	14		111	2	6.1	1		326		0		0			0		0	0
+2499	53	27		38	4	2.8	2		144		0		1			0		1	0
+2500 rows × 12 columns
+```
+<br>
+```python
+constant_ploan_processed
+```
+```
+	const	Age	Experience	Income	Family	CCAvg	Education	Mortgage	Personal Loan	Securities Account	CD Account	Online	CreditCard
+0	1.0	25	1		49	4	1.6	1		0		0		1			0		0	0
+1	1.0	45	19		34	3	1.5	1		0		0		1			0		0	0
+2	1.0	39	15		11	1	1.0	1		0		0		0			0		0	0
+3	1.0	35	9		100	1	2.7	2		0		0		0			0		0	0
+4	1.0	35	8		45	4	1.0	2		0		0		0			0		0	1
+...	...	...	...	...	...	...	...	...	...	...	...	...	...
+2495	1.0	46	22		70	4	1.9	1		212		0		0			0		0	1
+2496	1.0	63	37		32	3	0.7	2		141		0		0			0		0	0
+2497	1.0	33	9		14	3	0.9	3		114		0		0			0		0	0
+2498	1.0	38	14		111	2	6.1	1		326		0		0			0		0	0
+2499	1.0	53	27		38	4	2.8	2		144		0		1			0		1	0
+2500 rows × 13 columns
+```
+<br>
+```python
+print(train_x.shape, test_x.shape, train_y.shape, test_y.shape)
+```
+```
+(1750, 12) (750, 12) (1750,) (750,)
+```
+
+<hr class='division3'>
+</details>
+<br>
+`Regression analysis`
+```python
+
+```
+
 
 <br><br><br>
 
@@ -2911,3 +3023,4 @@ Reference
 
 [1]:{{ site.url }}/download/AI02/boston_house.csv
 [2]:{{ site.url }}/download/AI02/ToyotaCorolla.csv
+[3]:{{ site.url }}/download/AI02/Personal_Loan.csv
