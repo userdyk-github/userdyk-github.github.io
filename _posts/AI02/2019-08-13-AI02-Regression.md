@@ -3466,6 +3466,256 @@ AUC: 0.9465467667547905
 <hr class='division3'>
 </details>
 
+<br>
+`Modify regression model(Variables selection)`
+```python
+feature_columns = list(ploan_processed.columns.difference(["Personal Loan"]))
+X = ploan_processed[feature_columns]
+y = ploan_processed['Personal Loan'] # 대출여부: 1 or 0
+
+train_x, test_x, train_y, test_y = train_test_split(X, y, stratify=y,train_size=0.7,test_size=0.3,random_state=42)
+
+def processSubset(X,y, feature_set):
+            model = sm.Logit(y,X[list(feature_set)])
+            regr = model.fit()
+            AIC = regr.aic
+            return {"model":regr, "AIC":AIC}
+        
+'''
+전진선택법
+'''
+def forward(X, y, predictors):
+    # 데이터 변수들이 미리정의된 predictors에 있는지 없는지 확인 및 분류
+    remaining_predictors = [p for p in X.columns.difference(['const']) if p not in predictors]
+    tic = time.time()
+    results = []
+    for p in remaining_predictors:
+        results.append(processSubset(X=X, y= y, feature_set=predictors+[p]+['const']))
+    # 데이터프레임으로 변환
+    models = pd.DataFrame(results)
+
+    # AIC가 가장 낮은 것을 선택
+    best_model = models.loc[models['AIC'].argmin()] # index
+    toc = time.time()
+    print("Processed ", models.shape[0], "models on", len(predictors)+1, "predictors in", (toc-tic))
+    print('Selected predictors:',best_model['model'].model.exog_names,' AIC:',best_model[0] )
+    return best_model
+
+def forward_model(X,y):
+    Fmodels = pd.DataFrame(columns=["AIC", "model"])
+    tic = time.time()
+    # 미리 정의된 데이터 변수
+    predictors = []
+    # 변수 1~10개 : 0~9 -> 1~10
+    for i in range(1, len(X.columns.difference(['const'])) + 1):
+        Forward_result = forward(X=X,y=y,predictors=predictors)
+        if i > 1:
+            if Forward_result['AIC'] > Fmodel_before:
+                break
+        Fmodels.loc[i] = Forward_result
+        predictors = Fmodels.loc[i]["model"].model.exog_names
+        Fmodel_before = Fmodels.loc[i]["AIC"]
+        predictors = [ k for k in predictors if k != 'const']
+    toc = time.time()
+    print("Total elapsed time:", (toc - tic), "seconds.")
+
+    return(Fmodels['model'][len(Fmodels['model'])])
+
+
+'''
+후진소거법
+'''
+def backward(X,y,predictors):
+    tic = time.time()
+    results = []
+    
+    # 데이터 변수들이 미리정의된 predictors 조합 확인
+    for combo in itertools.combinations(predictors, len(predictors) - 1):
+        results.append(processSubset(X=X, y= y,feature_set=list(combo)+['const']))
+    models = pd.DataFrame(results)
+    
+    # 가장 낮은 AIC를 가진 모델을 선택
+    best_model = models.loc[models['AIC'].argmin()]
+    toc = time.time()
+    print("Processed ", models.shape[0], "models on", len(predictors) - 1, "predictors in",
+          (toc - tic))
+    print('Selected predictors:',best_model['model'].model.exog_names,' AIC:',best_model[0] )
+    return best_model
+
+
+def backward_model(X, y):
+    Bmodels = pd.DataFrame(columns=["AIC", "model"], index = range(1,len(X.columns)))
+    tic = time.time()
+    predictors = X.columns.difference(['const'])
+    Bmodel_before = processSubset(X,y,predictors)['AIC']
+    while (len(predictors) > 1):
+        Backward_result = backward(X=train_x, y= train_y, predictors = predictors)
+        if Backward_result['AIC'] > Bmodel_before:
+            break
+        Bmodels.loc[len(predictors) - 1] = Backward_result
+        predictors = Bmodels.loc[len(predictors) - 1]["model"].model.exog_names
+        Bmodel_before = Backward_result['AIC']
+        predictors = [ k for k in predictors if k != 'const']
+
+    toc = time.time()
+    print("Total elapsed time:", (toc - tic), "seconds.")
+    return (Bmodels['model'].dropna().iloc[0])
+
+
+'''
+단계적 선택법
+'''
+def Stepwise_model(X,y):
+    Stepmodels = pd.DataFrame(columns=["AIC", "model"])
+    tic = time.time()
+    predictors = []
+    Smodel_before = processSubset(X,y,predictors+['const'])['AIC']
+    # 변수 1~10개 : 0~9 -> 1~10
+    for i in range(1, len(X.columns.difference(['const'])) + 1):
+        Forward_result = forward(X=X, y=y, predictors=predictors) # constant added
+        print('forward')
+        Stepmodels.loc[i] = Forward_result
+        predictors = Stepmodels.loc[i]["model"].model.exog_names
+        predictors = [ k for k in predictors if k != 'const']
+        Backward_result = backward(X=X, y=y, predictors=predictors)
+        if Backward_result['AIC']< Forward_result['AIC']:
+            Stepmodels.loc[i] = Backward_result
+            predictors = Stepmodels.loc[i]["model"].model.exog_names
+            Smodel_before = Stepmodels.loc[i]["AIC"]
+            predictors = [ k for k in predictors if k != 'const']
+            print('backward')
+        if Stepmodels.loc[i]['AIC']> Smodel_before:
+            break
+        else:
+            Smodel_before = Stepmodels.loc[i]["AIC"]
+    toc = time.time()
+    print("Total elapsed time:", (toc - tic), "seconds.")
+    return (Stepmodels['model'][len(Stepmodels['model'])])
+    
+    
+def cut_off(y,threshold):
+    Y = y.copy() # copy함수를 사용하여 이전의 y값이 변화지 않게 함
+    Y[Y>threshold]=1
+    Y[Y<=threshold]=0
+    return(Y.astype(int))
+    
+def acc(cfmat) :
+    acc=(cfmat[0,0]+cfmat[1,1])/np.sum(cfmat) ## accuracy
+    return(acc)
+    
+    
+Forward_best_model = forward_model(X=train_x, y= train_y)
+Backward_best_model = backward_model(X=train_x,y=train_y)
+Stepwise_best_model = Stepwise_model(X=train_x,y=train_y)
+
+pred_y_full = results2.predict(test_x2) # full model
+pred_y_forward = Forward_best_model.predict(test_x[Forward_best_model.model.exog_names])
+pred_y_backward = Backward_best_model.predict(test_x[Backward_best_model.model.exog_names])
+pred_y_stepwise = Stepwise_best_model.predict(test_x[Stepwise_best_model.model.exog_names])
+
+pred_Y_full= cut_off(pred_y_full,0.5)
+pred_Y_forward = cut_off(pred_y_forward,0.5)
+pred_Y_backward = cut_off(pred_y_backward,0.5)
+pred_Y_stepwise = cut_off(pred_y_stepwise,0.5)
+
+cfmat_full = confusion_matrix(test_y, pred_Y_full)
+cfmat_forward = confusion_matrix(test_y, pred_Y_forward)
+cfmat_backward = confusion_matrix(test_y, pred_Y_backward)
+cfmat_stepwise = confusion_matrix(test_y, pred_Y_stepwise)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Model performance(1)</summary>
+<hr class='division3'>
+```python
+print(acc(cfmat_full))
+print(acc(cfmat_forward))
+print(acc(cfmat_backward))
+print(acc(cfmat_stepwise))
+```
+```
+0.944
+0.944
+0.944
+0.944
+```
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Model performance(2)</summary>
+<hr class='division3'>
+```python
+fpr, tpr, thresholds = metrics.roc_curve(test_y, pred_y_full, pos_label=1)
+# Print ROC curve
+plt.plot(fpr,tpr)
+# Print AUC
+auc = np.trapz(tpr,fpr)
+print('AUC:', auc)
+```
+```
+AUC: 0.9465467667547905
+```
+![다운로드 (1)](https://user-images.githubusercontent.com/52376448/66440951-df4ac700-ea6f-11e9-9911-cd0c99e5c960.png)
+
+<br>
+```python
+fpr, tpr, thresholds = metrics.roc_curve(test_y, pred_y_forward, pos_label=1)
+# Print ROC curve
+plt.plot(fpr,tpr)
+# Print AUC
+auc = np.trapz(tpr,fpr)
+print('AUC:', auc)
+```
+```
+AUC: 0.9465467667547905
+```
+![다운로드 (2)](https://user-images.githubusercontent.com/52376448/66440952-df4ac700-ea6f-11e9-90d0-03a0ceae51c0.png)
+
+<br>
+```python
+fpr, tpr, thresholds = metrics.roc_curve(test_y, pred_y_backward, pos_label=1)
+# Print ROC curve
+plt.plot(fpr,tpr)
+# Print AUC
+auc = np.trapz(tpr,fpr)
+print('AUC:', auc)
+```
+```
+AUC: 0.9465467667547905
+```
+![다운로드 (3)](https://user-images.githubusercontent.com/52376448/66440953-dfe35d80-ea6f-11e9-80b0-3a23661588c9.png)
+
+<br>
+```python
+fpr, tpr, thresholds = metrics.roc_curve(test_y, pred_y_stepwise, pos_label=1)
+# Print ROC curve
+plt.plot(fpr,tpr)
+# Print AUC
+auc = np.trapz(tpr,fpr)
+print('AUC:', auc)
+```
+```
+AUC: 0.9465467667547905
+```
+![다운로드 (4)](https://user-images.githubusercontent.com/52376448/66440954-dfe35d80-ea6f-11e9-81b9-e7325d10991d.png)
+
+<br>
+```python
+###성능면에서는 네 모델이 큰 차이가 없음
+print(len(Forward_best_model.model.exog_names))
+print(len(Backward_best_model.model.exog_names))
+print(len(Stepwise_best_model.model.exog_names))
+```
+```
+10
+10
+10
+```
+
+<hr class='division3'>
+</details>
+
+
+
 
 <br><br><br>
 
@@ -3520,6 +3770,7 @@ def plot_residuals_and_coeff(resid_train, resid_test, coeff):
 fig, ax = plot_residuals_and_coeff(resid_train, resid_test,  model.coef_)
 ```
 ![Figure_1](https://user-images.githubusercontent.com/52376448/65573279-5cbd0480-dfa5-11e9-8b36-c315e0f9653f.png)
+
 
 <br><br><br>
 
