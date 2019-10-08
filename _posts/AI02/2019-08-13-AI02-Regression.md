@@ -2933,9 +2933,223 @@ print(train_x.shape, test_x.shape, train_y.shape, test_y.shape)
 <br>
 `Regression analysis`
 ```python
+model = sm.Logit(train_y, train_x)
+results = model.fit(method='newton')
+results.summary()
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT : Model results</summary>
+<hr class='division3'>
+![캡처](https://user-images.githubusercontent.com/52376448/66438062-8460a200-ea66-11e9-9070-3be9eba8b14b.JPG)
+<br>
 
+```python
+results.params
+```
+```
+Age                    0.024471
+CCAvg                  0.098468
+CD Account             4.372577
+CreditCard            -1.237447
+Education              1.520329
+Experience            -0.007032
+Family                 0.757911
+Income                 0.054695
+Mortgage              -0.000133
+Online                -0.440746
+Securities Account    -1.852006
+const                -13.920298
+dtype: float64
+```
+<br>
+
+```python
+np.exp(results.params)
+```
+```
+Age                   1.024773e+00
+CCAvg                 1.103479e+00
+CD Account            7.924761e+01
+CreditCard            2.901239e-01
+Education             4.573729e+00
+Experience            9.929928e-01
+Family                2.133814e+00
+Income                1.056218e+00
+Mortgage              9.998665e-01
+Online                6.435563e-01
+Securities Account    1.569221e-01
+const                 9.005163e-07
+dtype: float64
+```
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Model prediction</summary>
+<hr class='division3'>
+```python
+pred_y = results.predict(test_x)
+pred_y
+```
+```
+1065    0.012968
+487     0.023841
+2157    0.001210
+1765    0.196245
+525     0.006610
+1573    0.241812
+2103    0.060656
+1601    0.339803
+1329    0.002238
+970     0.003269
+875     0.004334
+661     0.000976
+1356    0.001064
+1454    0.084981
+838     0.026756
+2042    0.010442
+1401    0.038788
+2025    0.006997
+1475    0.091474
+969     0.032079
+2268    0.004988
+456     0.004391
+1685    0.017692
+1702    0.014201
+102     0.005766
+1712    0.001604
+1280    0.141404
+2470    0.612456
+2433    0.435395
+2326    0.015946
+          ...   
+1120    0.001546
+689     0.000588
+70      0.004755
+2483    0.001897
+1067    0.561103
+1123    0.472680
+1166    0.145754
+1572    0.002263
+227     0.836443
+1127    0.000111
+812     0.036772
+2184    0.977346
+998     0.016186
+828     0.000613
+2104    0.063208
+1135    0.000021
+2434    0.003421
+451     0.008169
+1286    0.001812
+1364    0.009835
+1827    0.010325
+2093    0.073346
+168     0.000349
+2062    0.046096
+107     0.000239
+277     0.019982
+914     0.959460
+542     0.005239
+32      0.011344
+2360    0.084464
+Length: 750, dtype: float64
+```
+<br>
+```python
+def cut_off(y,threshold):
+    Y = y.copy() # copy함수를 사용하여 이전의 y값이 변화지 않게 함
+    Y[Y>threshold]=1
+    Y[Y<=threshold]=0
+    return(Y.astype(int))
+
+pred_Y = cut_off(pred_y,0.5)
+pred_Y
+```
+```
+1065    0
+487     0
+2157    0
+1765    0
+525     0
+1573    0
+2103    0
+1601    0
+1329    0
+970     0
+875     0
+661     0
+1356    0
+1454    0
+838     0
+2042    0
+1401    0
+2025    0
+1475    0
+969     0
+2268    0
+456     0
+1685    0
+1702    0
+102     0
+1712    0
+1280    0
+2470    1
+2433    0
+2326    0
+       ..
+1120    0
+689     0
+70      0
+2483    0
+1067    1
+1123    0
+1166    0
+1572    0
+227     1
+1127    0
+812     0
+2184    1
+998     0
+828     0
+2104    0
+1135    0
+2434    0
+451     0
+1286    0
+1364    0
+1827    0
+2093    0
+168     0
+2062    0
+107     0
+277     0
+914     1
+542     0
+32      0
+2360    0
+Length: 750, dtype: int32
+```
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Model diagnosis</summary>
+<hr class='division3'>
+```python
+print("model AIC: ","{:.5f}".format(results.aic))
+```
+```
+model AIC:  482.69329
 ```
 
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Model performance</summary>
+<hr class='division3'>
+
+
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
