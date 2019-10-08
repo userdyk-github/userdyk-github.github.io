@@ -2732,9 +2732,80 @@ Stepwise_best_model.aic
 ```
 <hr class='division3'>
 </details>
+<br>
 
+`Model performance`
+```python
+# 모델에 의해 예측된/추정된 값 <->  test_y
+pred_y_full = fitted_full_model.predict(test_x)
+pred_y_forward = Forward_best_model.predict(test_x[Forward_best_model.model.exog_names])
+pred_y_backward = Backward_best_model.predict(test_x[Backward_best_model.model.exog_names])
+pred_y_stepwise = Stepwise_best_model.predict(test_x[Stepwise_best_model.model.exog_names])
 
+perf_mat = pd.DataFrame(columns=["ALL", "FORWARD", "BACKWARD", "STEPWISE"],
+                        index =['MSE', 'RMSE','MAE', 'MAPE'])
+			
+def mean_absolute_percentage_error(y_true, y_pred):
+    y_true, y_pred = np.array(y_true), np.array(y_pred)
+    return np.mean(np.abs((y_true - y_pred) / y_true)) * 100
+from sklearn import metrics
 
+# 성능지표
+perf_mat.loc['MSE']['ALL'] = metrics.mean_squared_error(test_y,pred_y_full)
+perf_mat.loc['MSE']['FORWARD'] = metrics.mean_squared_error(test_y,pred_y_forward)
+perf_mat.loc['MSE']['BACKWARD'] = metrics.mean_squared_error(test_y,pred_y_backward)
+perf_mat.loc['MSE']['STEPWISE'] = metrics.mean_squared_error(test_y,pred_y_stepwise)
+
+perf_mat.loc['RMSE']['ALL'] = np.sqrt(metrics.mean_squared_error(test_y, pred_y_full))
+perf_mat.loc['RMSE']['FORWARD'] = np.sqrt(metrics.mean_squared_error(test_y, pred_y_forward))
+perf_mat.loc['RMSE']['BACKWARD'] = np.sqrt(metrics.mean_squared_error(test_y, pred_y_backward))
+perf_mat.loc['RMSE']['STEPWISE'] = np.sqrt(metrics.mean_squared_error(test_y, pred_y_stepwise))
+
+perf_mat.loc['MAE']['ALL'] = metrics.mean_absolute_error(test_y, pred_y_full)
+perf_mat.loc['MAE']['FORWARD'] = metrics.mean_absolute_error(test_y, pred_y_forward)
+perf_mat.loc['MAE']['BACKWARD'] = metrics.mean_absolute_error(test_y, pred_y_backward)
+perf_mat.loc['MAE']['STEPWISE'] = metrics.mean_absolute_error(test_y, pred_y_stepwise)
+
+perf_mat.loc['MAPE']['ALL'] = mean_absolute_percentage_error(test_y, pred_y_full)
+perf_mat.loc['MAPE']['FORWARD'] = mean_absolute_percentage_error(test_y, pred_y_forward)
+perf_mat.loc['MAPE']['BACKWARD'] = mean_absolute_percentage_error(test_y, pred_y_backward)
+perf_mat.loc['MAPE']['STEPWISE'] = mean_absolute_percentage_error(test_y, pred_y_stepwise)
+
+print(perf_mat)
+```
+```
+              ALL      FORWARD     BACKWARD     STEPWISE
+MSE   1.44149e+06  1.46142e+06  1.46142e+06  1.46142e+06
+RMSE      1200.62      1208.89      1208.89      1208.89
+MAE       853.494      863.524      863.524      863.524
+MAPE      8.48549      8.59054      8.59054      8.59054
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">The number of params</summary>
+<hr class='division3'>
+```python
+print(Forward_best_model.params.shape, Backward_best_model.params.shape, Stepwise_best_model.params.shape)
+```
+```
+(24,) (24,) (24,)
+```
+
+<br>
+```python
+print(len(fitted_full_model.params))
+print(len(Forward_best_model.params))
+print(len(Backward_best_model.params))
+print(len(Stepwise_best_model.params))
+```
+```
+37
+24
+24
+24
+```
+
+<hr class='division3'>
+</details>
 
 
 
