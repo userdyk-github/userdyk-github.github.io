@@ -107,6 +107,24 @@ def fact(n):
 
 <br><br><br>
 
+---
+
+### ***simpson_rule***
+
+```python
+```
+
+<br><br><br>
+
+---
+
+### ***trapezoidal_rule***
+
+```python
+```
+
+<br><br><br>
+
 <hr class="division1">
 
 List of posts followed by this article
