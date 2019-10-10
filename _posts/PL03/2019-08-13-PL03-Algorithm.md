@@ -199,7 +199,6 @@ List of posts to read before reading this article
 <hr class="division1">
 
 List of posts followed by this article
-- [Additional algorithms](https://userdyk-github.github.io/pl03-topic03/PL03-Topic03-Additional-algorithms.html)
 - <a href='https://userdyk-github.github.io/'>post2</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
