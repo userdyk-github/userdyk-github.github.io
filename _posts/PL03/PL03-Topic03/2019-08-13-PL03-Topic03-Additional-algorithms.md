@@ -23,6 +23,16 @@ List of posts to read before reading this article
 
 ## **maths**
 
+### ***abs***
+
+```python
+def abs_val(num):
+    return -num if num < 0 else num
+```
+<br><br><br>
+
+---
+
 ### ***factorial_recursive***
 
 ```python
