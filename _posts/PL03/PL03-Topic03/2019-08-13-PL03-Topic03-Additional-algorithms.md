@@ -63,6 +63,14 @@ List of posts to read before reading this article
 def abs_val(num):
     return -num if num < 0 else num
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+
+```
+<hr class='division3'>
+</details>
 <br><br><br>
 
 #### abs_max
@@ -77,11 +85,33 @@ def abs_max(x: List[int]) -> int:
             j = i
     return j
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+>>> abs_max([0,5,1,11])
+11
+>>> abs_max([3,-10,-2])
+-10
+```
+<hr class='division3'>
+</details>
+<br>
 ```python
 def abs_max_sort(x):
     return sorted(x, key=abs)[-1]
 ```
-
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+>>> abs_max_sort([0,5,1,11])
+11
+>>> abs_max_sort([3,-10,-2])
+-10
+```
+<hr class='division3'>
+</details>
 <br><br><br>
 
 #### abs_min
@@ -120,6 +150,7 @@ def median(nums):
         med = sorted_list[mid_index]
     return med
 ```
+
 <br><br><br>
 
 ---
@@ -184,11 +215,9 @@ Reference
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-    <details markdown="1">
-    <summary class='jb-small' style="color:red">OUTPUT</summary>
-    <hr class='division3_1'>
-    <hr class='division3_1'>
-    </details>
+```
+
+```
 <hr class='division3'>
 </details>
 
