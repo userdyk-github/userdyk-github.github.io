@@ -279,7 +279,7 @@ List of posts followed by this article
 Reference
 - <a href='https://github.com/TheAlgorithms/Python' target="_blank">TheAlgorithms</a>
 - <a href='https://wikidocs.net/book/1' target="_blank">Jump to Python</a>
-- <a href='https://suwoni-codelab.com/category/#/Python%20%EA%B8%B0%EB%B3%B8'>suwoni codelab</a>
+- <a href='https://suwoni-codelab.com/category/#/Python%20%EA%B8%B0%EB%B3%B8' target="_blank">suwoni codelab</a>
 
 ---
 
