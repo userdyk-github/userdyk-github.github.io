@@ -68,6 +68,18 @@ def abs_val(num):
 #### abs_max
 
 ```python
+from typing import List
+
+def abs_max(x: List[int]) -> int:
+    j = x[0]
+    for i in x:
+        if abs(i) > abs(j):
+            j = i
+    return j
+```
+```python
+def abs_max_sort(x):
+    return sorted(x, key=abs)[-1]
 ```
 
 <br><br><br>
@@ -85,10 +97,29 @@ def abs_val(num):
 
 #### average_mean
 
+```python
+def average(nums):
+    avg = sum(nums) / len(nums)
+    return avg
+```
+
 <br><br><br>
 
 #### average_median
 
+```python
+def median(nums):
+    sorted_list = sorted(nums)
+    med = None
+    if len(sorted_list) % 2 == 0:
+        mid_index_1 = len(sorted_list) // 2
+        mid_index_2 = (len(sorted_list) // 2) - 1
+        med = (sorted_list[mid_index_1] + sorted_list[mid_index_2]) / float(2)
+    else:
+        mid_index = (len(sorted_list) - 1) // 2
+        med = sorted_list[mid_index]
+    return med
+```
 <br><br><br>
 
 ---
