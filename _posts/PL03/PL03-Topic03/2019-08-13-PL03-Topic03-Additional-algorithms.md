@@ -37,6 +37,12 @@ List of posts to read before reading this article
 #### find_max
 
 ```python
+def find_max(nums):
+    max = nums[0]
+    for x in nums:
+        if x > max:
+            max = x
+    print(max)
 ```
 
 <br><br><br>
@@ -45,11 +51,43 @@ List of posts to read before reading this article
 #### find_min
 
 ```python
+def find_min(x):
+    min_num = x[0]
+    for i in x:
+        if min_num > i:
+            min_num = i
+    return min_num
 ```
 
 <br><br><br>
 
 #### find_lcm
+
+```python
+def find_lcm(num_1, num_2):
+    if num_1 >= num_2:
+        max_num = num_1
+    else:
+        max_num = num_2
+
+    lcm = max_num
+    while True:
+        if (lcm % num_1 == 0) and (lcm % num_2 == 0):
+            break
+        lcm += max_num
+    return lcm
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+>>> find_lcm(5,2)
+10
+>>> find_lcm(12,76)
+228
+```
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
@@ -120,7 +158,27 @@ def abs_max_sort(x):
 #### abs_min
 
 ```python
+from .abs import abs_val
+
+def absMin(x):
+    j = x[0]
+    for i in x:
+        if abs_val(i) < abs_val(j):
+            j = i
+    return j
 ```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+>>> absMin([0,5,1,11])
+0
+>>> absMin([3,-10,-2])
+-2
+```
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
