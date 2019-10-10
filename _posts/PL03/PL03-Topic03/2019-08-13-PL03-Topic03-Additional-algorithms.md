@@ -21,16 +21,16 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
+## **maths**
 
-<hr class="division2">
+### ***factorial_recursive***
 
-## title2
+```python
+def fact(n):
+    return 1 if n <= 1 else n*fact(n-1)
+```
 
-<hr class="division2">
-
-## title3
-
+<br><br><br>
 <hr class="division1">
 
 List of posts followed by this article
