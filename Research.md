@@ -73,6 +73,11 @@ title: RESEARCH
 >> <a href='https://damo.alibaba.com/labs/' target="_blank">damo research</a>|<a href='https://damo.alibaba.com/careers/?goto=1' target="_blank">careers</a>|<br> 
 > <a href='' target="_blank"></a> 
 
+> TENCENT
+>> <a href='https://ai.tencent.com/ailab/en/index/' target="_blank">research</a>|<a href='https://ai.tencent.com/ailab/en/recruit' target="_blank">careers</a>|<br> 
+> <a href='' target="_blank"></a> 
+
+
 
 > DEEPMIND 
 >> <a href='https://deepmind.com/research' target="_blank">research</a>|<a href='https://deepmind.com/careers/jobs' target="_blank">careers</a>|<br> 
