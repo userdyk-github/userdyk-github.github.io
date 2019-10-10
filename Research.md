@@ -46,7 +46,9 @@ title: RESEARCH
 ## _Research trends_
 
 ### _NEWS_
+> <a href='https://artificialintelligence-news.com/' target="_blank">AINEWS</a><br>
 > <a href='http://www.aitimes.kr' target="_blank">인공지능신문</a><br>
+
 
 <br><br><br>
 
