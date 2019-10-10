@@ -23,6 +23,42 @@ List of posts to read before reading this article
 
 ## **maths**
 
+### ***basic_maths***
+
+<br><br><br>
+
+---
+
+### ***fibonacci***
+
+<br><br><br>
+
+---
+
+
+### ***find***
+
+#### find_max
+
+```python
+```
+
+<br><br><br>
+
+
+#### find_min
+
+```python
+```
+
+<br><br><br>
+
+#### find_lcm
+
+<br><br><br>
+
+---
+
 ### ***abs***
 
 #### abs
@@ -35,10 +71,24 @@ def abs_val(num):
 
 #### abs_max
 
+```python
+```
+
 <br><br><br>
 
 #### abs_min
 
+```python
+```
+
+<br><br><br>
+
+---
+
+### ***Gaussian***
+
+```python
+```
 
 <br><br><br>
 
