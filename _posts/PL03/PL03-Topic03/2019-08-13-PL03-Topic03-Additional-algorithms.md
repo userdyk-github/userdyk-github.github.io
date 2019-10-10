@@ -29,11 +29,7 @@ List of posts to read before reading this article
 
 ---
 
-### ***fibonacci***
 
-<br><br><br>
-
----
 
 
 ### ***find***
@@ -85,14 +81,7 @@ def abs_val(num):
 
 ---
 
-### ***Gaussian***
 
-```python
-```
-
-<br><br><br>
-
----
 
 ### ***factorial_recursive***
 
@@ -102,6 +91,22 @@ def fact(n):
 ```
 
 <br><br><br>
+
+---
+
+### ***fibonacci***
+
+<br><br><br>
+
+---
+
+### ***Gaussian***
+
+```python
+```
+
+<br><br><br>
+
 <hr class="division1">
 
 List of posts followed by this article
