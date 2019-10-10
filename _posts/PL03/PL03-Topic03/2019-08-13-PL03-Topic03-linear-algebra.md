@@ -1,6 +1,6 @@
 ---
 layout : post
-title : PL03-Topic03
+title : PL03-Topic03, linear algebra
 categories: [PL03-Topic03]
 comments : true
 tags : [PL03-Topic03]
