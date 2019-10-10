@@ -25,10 +25,21 @@ List of posts to read before reading this article
 
 ### ***abs***
 
+#### abs
+
 ```python
 def abs_val(num):
     return -num if num < 0 else num
 ```
+<br><br><br>
+
+#### abs_max
+
+<br><br><br>
+
+#### abs_min
+
+
 <br><br><br>
 
 ---
