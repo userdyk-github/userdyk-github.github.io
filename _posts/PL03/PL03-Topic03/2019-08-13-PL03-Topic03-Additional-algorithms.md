@@ -187,7 +187,9 @@ def fact(n):
 
 ---
 
-### ***Gaussian***
+### ***basic function***
+
+#### Gaussian
 
 ```python
 from numpy import pi, sqrt, exp
@@ -216,22 +218,45 @@ array([3.98942280e-01, 2.41970725e-01, 5.39909665e-02, 4.43184841e-03,
            
 >>> gaussian(15)
 5.530709549844416e-50
->>> gaussian([1,2, 'string'])
-Traceback (most recent call last):
-    ...
-TypeError: unsupported operand type(s) for -: 'list' and 'float'
->>> gaussian('hello world')
-Traceback (most recent call last):
-    ...
-TypeError: unsupported operand type(s) for -: 'str' and 'float'
+
 >>> gaussian(10**234) # doctest: +IGNORE_EXCEPTION_DETAIL
 Traceback (most recent call last):
     ...
 OverflowError: (34, 'Result too large')
+
 >>> gaussian(10**-326)
 0.3989422804014327
+
 >>> gaussian(2523, mu=234234, sigma=3425)
 0.0
+```
+<hr class='division3'>
+</details>
+
+<br><br><br>
+
+#### softmax
+
+```python
+def softmax(vector):
+    exponentVector = np.exp(vector)
+    sumOfExponents = np.sum(exponentVector)
+    softmax_vector = exponentVector / sumOfExponents
+    return softmax_vector
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+>>> np.ceil(np.sum(softmax([1,2,3,4])))
+1.0
+
+>>> vec = np.array([5,5])
+>>> softmax(vec)
+array([0.5, 0.5])
+
+>>> softmax([0])
+array([1.])
 ```
 <hr class='division3'>
 </details>
