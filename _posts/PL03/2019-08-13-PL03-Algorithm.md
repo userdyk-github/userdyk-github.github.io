@@ -199,8 +199,27 @@ List of posts to read before reading this article
 <hr class="division1">
 
 List of posts followed by this article
-- <a href='https://userdyk-github.github.io/'>post2</a>
-- <a href='https://userdyk-github.github.io/'>post3</a>
+- <a href='https://userdyk-github.github.io/pl03-topic03/PL03-Topic03-arithmetic-analysis.html' class='jb-medium'>arithmetic analysis</a>
+- <a href='https://userdyk-github.github.io/pl03-topic03/PL03-Topic03-backtracking.html' class='jb-medium'>backtracking</a>
+- <a href='https://userdyk-github.github.io/pl03-topic03/PL03-Topic03-blockchain.html' class='jb-medium'>blockchain</a>
+- <a href='https://userdyk-github.github.io/pl03-topic03/PL03-Topic03-boolean-algebra.html' class='jb-medium'>boolean algebra</a>
+- <a href='https://userdyk-github.github.io/pl03-topic03/PL03-Topic03-ciphers.html' class='jb-medium'>ciphers</a>
+- <a href='https://userdyk-github.github.io/pl03-topic03/PL03-Topic03-compression.html' class='jb-medium'>compression</a>
+- <a href='https://userdyk-github.github.io/pl03-topic03/PL03-Topic03-conversions.html' class='jb-medium'>conversions</a>
+- <a href='https://userdyk-github.github.io/pl03-topic03/PL03-Topic03-digital-image-processing.html' class='jb-medium'>digital image processing</a>
+- <a href='https://userdyk-github.github.io/pl03-topic03/PL03-Topic03-divide-and-conquer.html' class='jb-medium'>divide and conquer</a>
+- <a href='https://userdyk-github.github.io/pl03-topic03/PL03-Topic03-dynamic-programming.html' class='jb-medium'>dynamic programming</a>
+- <a href='https://userdyk-github.github.io/pl03-topic03/PL03-Topic03-file-transfer.html' class='jb-medium'>file transfer</a>
+- <a href='https://userdyk-github.github.io/pl03-topic03/PL03-Topic03-linear-algebra.html' class='jb-medium'>linear algebra</a>
+- <a href='https://userdyk-github.github.io/pl03-topic03/PL03-Topic03-machine-learning.html' class='jb-medium'>machine learning</a>
+- <a href='https://userdyk-github.github.io/pl03-topic03/PL03-Topic03-maths.html' class='jb-medium'>maths</a>
+- <a href='https://userdyk-github.github.io/pl03-topic03/PL03-Topic03-matrix.html' class='jb-medium'>matrix</a>
+- <a href='https://userdyk-github.github.io/pl03-topic03/PL03-Topic03-networking-flow.html' class='jb-medium'>networking-flow</a>
+- <a href='https://userdyk-github.github.io/pl03-topic03/PL03-Topic03-neural-network.html' class='jb-medium'>neural-network</a>
+- <a href='https://userdyk-github.github.io/pl03-topic03/PL03-Topic03-other.html' class='jb-medium'>other</a>
+- <a href='https://userdyk-github.github.io/pl03-topic03/PL03-Topic03-strings.html' class='jb-medium'>strings</a>
+- <a href='https://userdyk-github.github.io/pl03-topic03/PL03-Topic03-traversals.html' class='jb-medium'>traversals</a>
+
 
 ---
 
