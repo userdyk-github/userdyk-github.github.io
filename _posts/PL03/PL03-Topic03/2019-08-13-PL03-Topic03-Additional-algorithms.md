@@ -323,7 +323,7 @@ array([1.])
 
 ---
 
-### **derivative**
+### **integral**
 
 #### simpson_rule
 
