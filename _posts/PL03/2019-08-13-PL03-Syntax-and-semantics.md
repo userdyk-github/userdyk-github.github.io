@@ -57,7 +57,7 @@ List of posts to read before reading this article
 
 ```python
 s = {1, 2, 3}
-s.add(4)
+s |= {4}
 s
 ```
 <span class="jb-medium">{1, 2, 3, 4}</span><br>
@@ -77,7 +77,7 @@ s
 
 ```python
 s = {1, 2, 3}
-s.update([4, 5, 6])
+s |= {4,5,6}
 s
 ```
 <span class="jb-medium">{1, 2, 3, 4, 5, 6}</span><br>
