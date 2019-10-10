@@ -81,7 +81,17 @@ def abs_val(num):
 
 ---
 
+### ***aggregation_function***
 
+#### average_mean
+
+<br><br><br>
+
+#### average_median
+
+<br><br><br>
+
+---
 
 ### ***factorial_recursive***
 
@@ -109,16 +119,16 @@ def fact(n):
 
 ---
 
-### ***simpson_rule***
+### **derivative**
+
+#### simpson_rule
 
 ```python
 ```
 
 <br><br><br>
 
----
-
-### ***trapezoidal_rule***
+#### trapezoidal_rule
 
 ```python
 ```
