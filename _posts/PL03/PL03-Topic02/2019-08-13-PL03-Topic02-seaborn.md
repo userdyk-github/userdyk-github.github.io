@@ -51,6 +51,22 @@ List of posts to read before reading this article
 
 ## **Multi-plot grids**
 
+### ***Facet grids***
+
+<br><br><br>
+
+---
+
+### ***Pair grids***
+
+<br><br><br>
+
+---
+
+
+### ***Joint grids***
+
+
 <br><br><br>
 <hr class="division2">
 
