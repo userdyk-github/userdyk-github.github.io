@@ -2647,31 +2647,49 @@ plt.show()
 <hr class='division3'>
 `model fitting`
 ```python
+from scipy import stats
+import seaborn as sns
 
+X = stats.weibull_max(c=1,loc=1, scale=1) 
+sns.distplot(X.rvs(100), fit=stats.weibull_max, kde=False)
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:red">OUTPUT</summary>
 <hr class='division3_1'>
+![download](https://user-images.githubusercontent.com/52376448/66649588-83e42900-ec69-11e9-9048-0decb6ea59a9.png)
 <hr class='division3_1'>
 </details>
 <br>
 `data fitting`
 ```python
+from scipy import stats
+import seaborn as sns
 
+X = stats.weibull_max(c=1,loc=1, scale=1) 
+sns.distplot(X.rvs(100))
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:red">OUTPUT</summary>
 <hr class='division3_1'>
+![download (1)](https://user-images.githubusercontent.com/52376448/66649589-83e42900-ec69-11e9-9e02-5075def8a812.png)
 <hr class='division3_1'>
 </details>
 <br>
 `PDF`
 ```python
+import numpy as np
+from scipy import stats
+import matplotlib.pyplot as plt
 
+X = stats.weibull_max(c=1,loc=1, scale=1) 
+x = np.linspace(*X.interval(0.999), num=100) 
+
+plt.plot(x, X.pdf(x))
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:red">OUTPUT</summary>
 <hr class='division3_1'>
+![download (2)](https://user-images.githubusercontent.com/52376448/66649591-847cbf80-ec69-11e9-9559-42bc8235e012.png)
 <hr class='division3_1'>
 </details>
 <hr class='division3'>
