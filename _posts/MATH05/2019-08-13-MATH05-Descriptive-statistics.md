@@ -23,40 +23,120 @@ List of posts to read before reading this article
 
 ## **count**
 
+```python
+import numpy as np
+
+x = np.array([18,   5,  10,  23,  19,  -8,  10,   0,   0,   5,   2,  15,   8,
+              2,   5,   4,  15,  -1,   4,  -7, -24,   7,   9,  -6,  23, -13])
+len(x) 
+```
+<span class="jb-medium">26</span>
 <br><br><br>
 <hr class="division2">
 
 ## **mean, average**
 
+```python
+import numpy as np
+
+x = np.array([18,   5,  10,  23,  19,  -8,  10,   0,   0,   5,   2,  15,   8,
+              2,   5,   4,  15,  -1,   4,  -7, -24,   7,   9,  -6,  23, -13])
+np.mean(x)
+```
 <br><br><br>
 <hr class="division2">
 
 ## **variance**
 
+```python
+import numpy as np
+
+x = np.array([18,   5,  10,  23,  19,  -8,  10,   0,   0,   5,   2,  15,   8,
+              2,   5,   4,  15,  -1,   4,  -7, -24,   7,   9,  -6,  23, -13])
+np.var(x), np.var(x, ddof=1)
+```
+<span class="jb-medium">(115.23224852071006, 119.84153846153846)</span>
 <br><br><br>
 <hr class="division2">
 
 ## **standard deviation**
 
+```python
+import numpy as np
+
+x = np.array([18,   5,  10,  23,  19,  -8,  10,   0,   0,   5,   2,  15,   8,
+              2,   5,   4,  15,  -1,   4,  -7, -24,   7,   9,  -6,  23, -13])
+np.std(x)
+```
+<span class="jb-medium">10.734628476137871</span>
+
 <br><br><br>
 <hr class="division2">
 
-## **maximum**
+## **maximum, minimum**
 
-<br><br><br>
-<hr class="division2">
+```python
+import numpy as np
 
-## **minimum**
+x = np.array([18,   5,  10,  23,  19,  -8,  10,   0,   0,   5,   2,  15,   8,
+              2,   5,   4,  15,  -1,   4,  -7, -24,   7,   9,  -6,  23, -13])
+np.max(x), np.min(x)
+```
+<span class="jb-medium">(23, -24)</span>
 
 <br><br><br>
 <hr class="division2">
 
 ## **median**
 
+```python
+import numpy as np
+
+x = np.array([18,   5,  10,  23,  19,  -8,  10,   0,   0,   5,   2,  15,   8,
+              2,   5,   4,  15,  -1,   4,  -7, -24,   7,   9,  -6,  23, -13])
+np.median(x)
+```
+<span class="jb-medium">5.0</span>
+
 <br><br><br>
 <hr class="division2">
 
 ## **quartile**
+
+```python
+import numpy as np
+
+x = np.array([18,   5,  10,  23,  19,  -8,  10,   0,   0,   5,   2,  15,   8,
+              2,   5,   4,  15,  -1,   4,  -7, -24,   7,   9,  -6,  23, -13])
+
+print(np.percentile(x, 0),
+      np.percentile(x, 25),
+      np.percentile(x, 50),
+      np.percentile(x, 75),
+      np.percentile(x, 100))
+```
+```
+-24.0
+0.0
+5.0
+10.0
+23.0
+```
+<br><br><br>
+
+<hr class="division2">
+
+## **Describe all at once**
+
+```python
+import numpy as np
+from scipy.stats import describe
+
+x = np.array([18,   5,  10,  23,  19,  -8,  10,   0,   0,   5,   2,  15,   8,
+              2,   5,   4,  15,  -1,   4,  -7, -24,   7,   9,  -6,  23, -13])
+describe(x)
+```
+<span class="jb-medium">DescribeResult(nobs=26, minmax=(-24, 23), mean=4.8076923076923075, variance=119.84153846153846, skewness=-0.4762339485461929, kurtosis=0.37443381660038977)</span>
 
 <br><br><br>
 <hr class="division1">
