@@ -23,15 +23,106 @@ List of posts to read before reading this article
 
 ## **Relational plots**
 
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
 <br><br><br>
 <hr class="division2">
 
 ## **Categorical plots**
 
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+
 <br><br><br>
 <hr class="division2">
 
 ## **Distribution plots**
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
 
 <br><br><br>
 <hr class="division2">
@@ -39,11 +130,35 @@ List of posts to read before reading this article
 
 ## **Regression plots**
 
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+
 <br><br><br>
 <hr class="division2">
 
 
 ## **Matrix plots**
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
 
 <br><br><br>
 <hr class="division2">
@@ -53,11 +168,48 @@ List of posts to read before reading this article
 
 ### ***Facet grids***
 
+####
+
+<br><br><br>
+
+####
+
+<br><br><br>
+
+####
+
 <br><br><br>
 
 ---
 
 ### ***Pair grids***
+
+####
+
+<br><br><br>
+
+
+####
+
+<br><br><br>
+
+
+####
+
+<br><br><br>
+
+
+####
+
+<br><br><br>
+
+
+####
+
+<br><br><br>
+
+
+####
 
 <br><br><br>
 
@@ -66,6 +218,23 @@ List of posts to read before reading this article
 
 ### ***Joint grids***
 
+####
+
+<br><br><br>
+
+
+####
+
+<br><br><br>
+
+
+####
+
+<br><br><br>
+
+
+####
+
 
 <br><br><br>
 <hr class="division2">
@@ -73,11 +242,125 @@ List of posts to read before reading this article
 
 ## **Style control**
 
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+
 <br><br><br>
 <hr class="division2">
 
 
 ## **Color palettes**
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
 
 <br><br><br>
 <hr class="division2">
@@ -85,11 +368,65 @@ List of posts to read before reading this article
 
 ## **Palette widgets**
 
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+
 <br><br><br>
 <hr class="division2">
 
 
 ## **Utility functions**
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
+<br><br><br>
+
+---
+
+### ******
+
 
 <br><br><br>
 <hr class="division1">
