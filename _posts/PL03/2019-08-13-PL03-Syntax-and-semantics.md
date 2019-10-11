@@ -116,6 +116,7 @@ type(123.456e-3)   # 0.123456
 <span class="jb-medium">0.3</span>
 <hr class='division3'>
 </details>
+<br>
 ```python
 round(0.1 + 0.2, 5) == round(0.3, 5)
 ```
