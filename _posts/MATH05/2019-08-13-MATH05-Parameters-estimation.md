@@ -21,15 +21,15 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
+## **method of moment**
 
 <hr class="division2">
 
-## title2
+## **likelihood function**
 
 <hr class="division2">
 
-## title3
+## **Bayesian estimation**
 
 <hr class="division1">
 
