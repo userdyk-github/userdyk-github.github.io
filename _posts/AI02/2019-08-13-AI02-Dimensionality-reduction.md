@@ -31,7 +31,19 @@ List of posts to read before reading this article
 
 `Data preprocessing`
 ```python
+from sklearn import datasets
+from sklearn.decomposition import PCA
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
 
+iris=datasets.load_iris()
+X=iris.data[:,[0,2]]
+y=iris.target
+feature_names=[iris.feature_names[0],iris.feature_names[2]]
+df_X=pd.DataFrame(X)
+df_Y=pd.DataFrame(y)
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -42,7 +54,20 @@ List of posts to read before reading this article
 
 `The meaning of output through PCA`
 ```python
+pca=PCA(n_components=2)
+pca.fit(X)
+PCscore=pca.transform(X)
+eigens_v=pca.components_.transpose()
 
+mX=np.matrix(X)
+for i in range(X.shape[1]):
+    mX[:,i]=mX[:,i]-np.mean(X[:,i])
+dfmX=pd.DataFrame(mX)
+
+plt.scatter(dfmX[0],dfmX[1])
+origin = [0], [0] # origin point
+plt.quiver(*origin, eigens_v[0,:], eigens_v[1,:], color=['r','b'], scale=3)
+plt.show()
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -53,7 +78,18 @@ List of posts to read before reading this article
 
 `Regression with PC scores`
 ```python
+X2 = iris.data
+pca2 = PCA(n_components=4)
+pca2.fit(X2)
+pca2.explained_variance_
+PCs=pca2.transform(X2)[:,0:2]
 
+
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import confusion_matrix
+
+clf2 = LogisticRegression(solver="sag",multi_class="multinomial").fit(PCs,y)
+confusion_matrix(y,clf2.predict(PCs))
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
