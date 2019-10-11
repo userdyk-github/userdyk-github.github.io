@@ -29,6 +29,13 @@ List of posts to read before reading this article
 
 ### ***Principal Component Analysis***
 
+`Data preprocessing`
+```python
+
+```
+<br>
+```python
+```
 #### When Will PCA Be Useful in Data Reduction?
 
 #### How Do You Know How Much Variance Is Retained by the Selected Principal Components?
