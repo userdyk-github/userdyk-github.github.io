@@ -134,13 +134,63 @@ from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 
 X = np.array([[-1, -1], [-2, -1], [-3, -2], [1, 1], [2, 1], [3, 2]])
 y = np.array([1, 1, 1, 2, 2, 2])
+
 clf=LinearDiscriminantAnalysis()
 clf.fit(X,y)
+print(clf.predict([[-0.8, -1]]))
 ```
+<span class="jb-medium">[1]</span>
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Performance</summary>
+<hr class='division3'>
+```python
+from sklearn.metrics import confusion_matrix
+
+y_pred=clf.predict(X)
+confusion_matrix(y,y_pred) 
+```
+```
+array([[3, 0],
+       [0, 3]], dtype=int64)
+```
+<hr class='division3'>
+</details>
+<br><br><br>
+
 
 ---
 
 ### ***Quadratic discriminant analysis (QDA)***
+
+```python
+import numpy as np
+from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis
+
+X = np.array([[-1, -1], [-2, -1], [-3, -2], [1, 1], [2, 1], [3, 2]])
+y = np.array([1, 1, 1, 2, 2, 2])
+
+clf2=QuadraticDiscriminantAnalysis()
+clf2.fit(X,y)
+print(clf2.predict([[-0.8, -1]]))
+```
+<span class="jb-medium">[1]</span>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Performance</summary>
+<hr class='division3'>
+```python
+from sklearn.metrics import confusion_matrix
+
+y_pred2=clf2.predict(X)
+confusion_matrix(y,y_pred2)  
+```
+```
+array([[3, 0],
+       [0, 3]], dtype=int64)
+```
+<hr class='division3'>
+</details>
+<br><br><br>
 
 ---
 
