@@ -2633,9 +2633,9 @@ List of posts followed by this article
 ---
 
 Reference
-- [post1](https://userdyk-github.github.io/)
-- <a href='https://userdyk-github.github.io/'>post2</a>
-- <a href='https://userdyk-github.github.io/'>post3</a>
+- <a href='https://matplotlib.org/examples/color/named_colors.html' target="_blank">color ref</a>
+- <a href='https://matplotlib.org/examples/lines_bars_and_markers/marker_reference.html' target="_blank">marker ref</a>
+- <a href='https://matplotlib.org/examples/lines_bars_and_markers/line_styles_reference.html' target="_blank">line style ref</a>
 
 ---
 
