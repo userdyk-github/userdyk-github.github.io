@@ -8,7 +8,7 @@ tags : [MATH05]
 [Back to the previous page](https://userdyk-github.github.io/Study.html) <br>
 List of posts to read before reading this article
 - <a href='https://userdyk-github.github.io/'>post1</a>
-- <a href='https://userdyk-github.github.io/'>post2</a>
+- <a href='https://en.wikipedia.org/wiki/List_of_probability_distributions'>List of probability distributions</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
