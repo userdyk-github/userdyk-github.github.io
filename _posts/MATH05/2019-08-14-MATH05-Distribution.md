@@ -328,31 +328,49 @@ plt.show()
 <hr class='division3'>
 `model fitting`
 ```python
+from scipy import stats
+import seaborn as sns
 
+X = stats.chi2(df=1,loc=1, scale=1)      # df : parameter k
+sns.distplot(X.rvs(100), fit=stats.chi2, kde=False)
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:red">OUTPUT</summary>
 <hr class='division3_1'>
+![download](https://user-images.githubusercontent.com/52376448/66646937-898a4080-ec62-11e9-897c-571bb0231320.png)
 <hr class='division3_1'>
 </details>
 <br>
 `data fitting`
 ```python
+from scipy import stats
+import seaborn as sns
 
+X = stats.chi2(df=1,loc=1, scale=1)      # df : parameter k
+sns.distplot(X.rvs(100))  
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:red">OUTPUT</summary>
 <hr class='division3_1'>
+![download (1)](https://user-images.githubusercontent.com/52376448/66646939-8a22d700-ec62-11e9-886b-6d5e5fe0726f.png)
 <hr class='division3_1'>
 </details>
 <br>
 `PDF`
 ```python
+import numpy as np
+from scipy import stats
+import matplotlib.pyplot as plt
 
+X = stats.chi2(df=1,loc=1, scale=1)      # df : parameter k
+x = np.linspace(*X.interval(0.999), num=100) 
+
+plt.plot(x, X.pdf(x))
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:red">OUTPUT</summary>
 <hr class='division3_1'>
+![download (2)](https://user-images.githubusercontent.com/52376448/66646940-8a22d700-ec62-11e9-8670-b8c58db34e91.png)
 <hr class='division3_1'>
 </details>
 <hr class='division3'>
