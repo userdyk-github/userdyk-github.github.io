@@ -21,39 +21,42 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## **Sample mean**
+## **count**
 
 <br><br><br>
 <hr class="division2">
 
-## **Sample variance**
+## **mean, average**
 
 <br><br><br>
 <hr class="division2">
 
-## **Sample variance**
+## **variance**
 
 <br><br><br>
 <hr class="division2">
 
-## **Sample variance**
+## **standard deviation**
 
 <br><br><br>
 <hr class="division2">
 
-## **Sample variance**
+## **maximum**
 
 <br><br><br>
 <hr class="division2">
 
-## **Sample variance**
+## **minimum**
 
 <br><br><br>
 <hr class="division2">
 
-## **Sample variance**
+## **median**
 
+<br><br><br>
+<hr class="division2">
 
+## **quartile**
 
 <br><br><br>
 <hr class="division1">
