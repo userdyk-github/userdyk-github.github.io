@@ -125,6 +125,7 @@ sns.distplot(X.rvs(100), fit=stats.beta, kde=False)
 <details markdown="1">
 <summary class='jb-small' style="color:red">OUTPUT</summary>
 <hr class='division3_1'>
+![download](https://user-images.githubusercontent.com/52376448/66646479-32d03700-ec61-11e9-9b60-a3e9b6dc8964.png)
 <hr class='division3_1'>
 </details>
 <br>
@@ -139,6 +140,7 @@ sns.distplot(X.rvs(100))
 <details markdown="1">
 <summary class='jb-small' style="color:red">OUTPUT</summary>
 <hr class='division3_1'>
+![download (1)](https://user-images.githubusercontent.com/52376448/66646501-48ddf780-ec61-11e9-809b-f356675eae4f.png)
 <hr class='division3_1'>
 </details>
 <br>
@@ -156,6 +158,7 @@ plt.plot(x, X.pdf(x))
 <details markdown="1">
 <summary class='jb-small' style="color:red">OUTPUT</summary>
 <hr class='division3_1'>
+![download (2)](https://user-images.githubusercontent.com/52376448/66646528-5d21f480-ec61-11e9-9c71-1ff932e3d536.png)
 <hr class='division3_1'>
 </details>
 <hr class='division3'>
