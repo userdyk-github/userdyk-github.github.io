@@ -2019,31 +2019,49 @@ plt.show()
 <hr class='division3'>
 `model fitting`
 ```python
+from scipy import stats
+import seaborn as sns
 
+X = stats.t(df=4,loc=1, scale=1) 
+sns.distplot(X.rvs(100), fit=stats.t, kde=False)
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:red">OUTPUT</summary>
 <hr class='division3_1'>
+![download](https://user-images.githubusercontent.com/52376448/66649104-4206b300-ec68-11e9-972b-bf5c20dc1bde.png)
 <hr class='division3_1'>
 </details>
 <br>
 `data fitting`
 ```python
+from scipy import stats
+import seaborn as sns
 
+X = stats.t(df=4,loc=1, scale=1) 
+sns.distplot(X.rvs(100))
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:red">OUTPUT</summary>
 <hr class='division3_1'>
+![download (1)](https://user-images.githubusercontent.com/52376448/66649105-4206b300-ec68-11e9-927d-743bd28c30fa.png)
 <hr class='division3_1'>
 </details>
 <br>
 `PDF`
 ```python
+import numpy as np
+from scipy import stats
+import matplotlib.pyplot as plt
 
+X = stats.t(df=4,loc=1, scale=1) 
+x = np.linspace(*X.interval(0.999), num=100) 
+
+plt.plot(x, X.pdf(x))
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:red">OUTPUT</summary>
 <hr class='division3_1'>
+![download (2)](https://user-images.githubusercontent.com/52376448/66649107-429f4980-ec68-11e9-8242-6c2743443bb3.png)
 <hr class='division3_1'>
 </details>
 <hr class='division3'>
