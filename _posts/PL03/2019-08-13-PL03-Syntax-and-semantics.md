@@ -82,6 +82,10 @@ type(123.456e-3)   # 0.123456
 
 `floating point error`
 ```python
+0.1
+```
+<span class="jb-medium">0.1</span>
+```python
 # method1
 %precision 55   
 0.1
