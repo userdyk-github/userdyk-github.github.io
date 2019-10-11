@@ -91,6 +91,18 @@ type(123.456e-3)   # 0.123456
 0.1
 ```
 <span class="jb-medium">0.1000000000000000055511151231257827021181583404541015625</span>
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">back to origin</summary>
+<hr class='division3'>
+```python
+%precision %r
+0.1
+```
+<span class="jb-medium">0.1</span>
+<hr class='division3'>
+</details>
+<br>
 ```python
 # method2
 '%.55f'%0.1
