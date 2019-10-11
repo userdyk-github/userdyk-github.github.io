@@ -156,6 +156,26 @@ float(1)
 <br><br><br>
 
 
+#### NaN and inf
+
+```python
+float("NaN")
+```
+<span class="jb-medium">nan</span>
+<br>
+
+```python
+float("Inf")
+```
+<span class="jb-medium">inf</span>
+<br>
+
+```python
+float("-Inf")
+```
+<span class="jb-medium">-inf</span>
+<br>
+
 ---
 
 ### ***String***
