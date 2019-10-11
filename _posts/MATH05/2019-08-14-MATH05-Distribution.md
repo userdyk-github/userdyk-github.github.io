@@ -116,7 +116,11 @@ plt.show()
 <hr class='division3'>
 `model fitting`
 ```python
+from scipy import stats
+import seaborn as sns
 
+X = stats.beta(a=5, b=0.1,loc=1, scale=1)
+sns.distplot(X.rvs(100), fit=stats.beta, kde=False)
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:red">OUTPUT</summary>
@@ -126,7 +130,11 @@ plt.show()
 <br>
 `data fitting`
 ```python
+from scipy import stats
+import seaborn as sns
 
+X = stats.beta(a=5, b=0.1,loc=1, scale=1)
+sns.distplot(X.rvs(100))
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:red">OUTPUT</summary>
@@ -136,7 +144,14 @@ plt.show()
 <br>
 `PDF`
 ```python
+import numpy as np
+from scipy import stats
+import matplotlib.pyplot as plt
 
+X = stats.beta(a=5, b=0.1,loc=1, scale=1)
+x = np.linspace(*X.interval(0.999), num=100)
+
+plt.plot(x, X.pdf(x))
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:red">OUTPUT</summary>
