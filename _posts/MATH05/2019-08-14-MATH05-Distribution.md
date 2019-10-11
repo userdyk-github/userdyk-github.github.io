@@ -104,6 +104,12 @@ ax[2].set_title("PDF")
 plt.tight_layout()
 plt.show()
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
 
   
 <div>
@@ -153,6 +159,11 @@ ax[2].set_title("PDF")
 plt.tight_layout()
 plt.show()
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
 
 <div>
 $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </div>
@@ -203,6 +214,11 @@ ax[2].set_title("PDF")
 plt.tight_layout()
 plt.show()
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
 
 <div>
 $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </div>
@@ -251,6 +267,11 @@ ax[2].set_title("PDF")
 plt.tight_layout()
 plt.show()
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
 
 <div>
 $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </div>
@@ -306,6 +327,11 @@ ax[2].set_title("PDF")
 plt.tight_layout()
 plt.show()
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
 
 <div>
 $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </div>
@@ -351,6 +377,11 @@ ax[2].set_title("PDF")
 plt.tight_layout()
 plt.show()
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
 
 <div>
 $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </div>
@@ -401,6 +432,11 @@ ax[2].set_title("PDF")
 plt.tight_layout()
 plt.show()
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
 
 <div>
 $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </div>
@@ -449,6 +485,11 @@ ax[2].set_title("PDF")
 plt.tight_layout()
 plt.show()
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
 
 <div>
 $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </div>
@@ -498,6 +539,11 @@ ax[2].set_title("PDF")
 plt.tight_layout()
 plt.show()
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
 
 <div>
 $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </div>
@@ -548,6 +594,11 @@ ax[2].set_title("PDF")
 plt.tight_layout()
 plt.show()
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
 
 <div>
 $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </div>
@@ -596,6 +647,11 @@ ax[2].set_title("PDF")
 plt.tight_layout()
 plt.show()
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
 
 <div>
 $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </div>
@@ -645,6 +701,11 @@ ax[2].set_title("PDF")
 plt.tight_layout()
 plt.show()
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
 
 <div>
 $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </div>
@@ -690,6 +751,11 @@ ax[2].set_title("PDF")
 plt.tight_layout()
 plt.show()
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
 
 <div>
 $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </div>
@@ -735,6 +801,11 @@ ax[2].set_title("PDF")
 plt.tight_layout()
 plt.show()
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
 
 <div>
 $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </div>
