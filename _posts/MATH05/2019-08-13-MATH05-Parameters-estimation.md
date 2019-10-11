@@ -1,6 +1,6 @@
 ---
 layout : post
-title : MATH05
+title : MATH05, Parameters estimation
 categories: [MATH05]
 comments : true
 tags : [MATH05]
