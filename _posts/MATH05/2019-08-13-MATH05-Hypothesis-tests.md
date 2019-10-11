@@ -26,11 +26,11 @@ List of posts to read before reading this article
 
 <hr class="division2">
 
-## title2
+## with python
 
 <hr class="division2">
 
-## title3
+## with R
 
 <hr class="division1">
 
