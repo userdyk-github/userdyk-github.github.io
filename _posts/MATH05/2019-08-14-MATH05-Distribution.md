@@ -110,6 +110,43 @@ plt.show()
 ![download](https://user-images.githubusercontent.com/52376448/66644314-9bb4b080-ec5b-11e9-8e18-6b1ec4a3348e.png)
 <hr class='division3'>
 </details>
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+`model fitting`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<br>
+`data fitting`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<br>
+`PDF`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<hr class='division3'>
+</details>
+
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Sub-code</summary>
 <hr class='division3'>
@@ -267,6 +304,43 @@ plt.show()
 ![download (1)](https://user-images.githubusercontent.com/52376448/66644359-b555f800-ec5b-11e9-83a9-1e9023d324ff.png)
 <hr class='division3'>
 </details>
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+`model fitting`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<br>
+`data fitting`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<br>
+`PDF`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<hr class='division3'>
+</details>
+
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Sub-code</summary>
 <hr class='division3'>
@@ -424,6 +498,43 @@ plt.show()
 ![download (2)](https://user-images.githubusercontent.com/52376448/66644397-cdc61280-ec5b-11e9-8542-a2758b4d07a6.png)
 <hr class='division3'>
 </details>
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+`model fitting`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<br>
+`data fitting`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<br>
+`PDF`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<hr class='division3'>
+</details>
+
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Sub-code</summary>
 <hr class='division3'>
@@ -579,6 +690,43 @@ plt.show()
 ![download (3)](https://user-images.githubusercontent.com/52376448/66644437-e6362d00-ec5b-11e9-8056-ee5151681803.png)
 <hr class='division3'>
 </details>
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+`model fitting`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<br>
+`data fitting`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<br>
+`PDF`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<hr class='division3'>
+</details>
+
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Sub-code</summary>
 <hr class='division3'>
@@ -741,6 +889,43 @@ plt.show()
 ![download (4)](https://user-images.githubusercontent.com/52376448/66644491-0534bf00-ec5c-11e9-9b78-3a9fab9b7676.png)
 <hr class='division3'>
 </details>
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+`model fitting`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<br>
+`data fitting`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<br>
+`PDF`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<hr class='division3'>
+</details>
+
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Sub-code</summary>
 <hr class='division3'>
@@ -893,6 +1078,43 @@ plt.show()
 ![download (5)](https://user-images.githubusercontent.com/52376448/66644532-1da4d980-ec5c-11e9-8705-a00ff7def32a.png)
 <hr class='division3'>
 </details>
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+`model fitting`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<br>
+`data fitting`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<br>
+`PDF`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<hr class='division3'>
+</details>
+
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Sub-code</summary>
 <hr class='division3'>
@@ -1050,6 +1272,43 @@ plt.show()
 ![download (6)](https://user-images.githubusercontent.com/52376448/66644555-331a0380-ec5c-11e9-8d5d-7d455be77a51.png)
 <hr class='division3'>
 </details>
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+`model fitting`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<br>
+`data fitting`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<br>
+`PDF`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<hr class='division3'>
+</details>
+
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Sub-code</summary>
 <hr class='division3'>
@@ -1205,6 +1464,43 @@ plt.show()
 ![download (7)](https://user-images.githubusercontent.com/52376448/66644599-49c05a80-ec5c-11e9-930c-d5785220f0ff.png)
 <hr class='division3'>
 </details>
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+`model fitting`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<br>
+`data fitting`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<br>
+`PDF`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<hr class='division3'>
+</details>
+
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Sub-code</summary>
 <hr class='division3'>
@@ -1361,6 +1657,43 @@ plt.show()
 ![download (8)](https://user-images.githubusercontent.com/52376448/66644638-6197de80-ec5c-11e9-85d9-b6ebdd9de800.png)
 <hr class='division3'>
 </details>
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+`model fitting`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<br>
+`data fitting`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<br>
+`PDF`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<hr class='division3'>
+</details>
+
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Sub-code</summary>
 <hr class='division3'>
@@ -1518,6 +1851,43 @@ plt.show()
 ![download (9)](https://user-images.githubusercontent.com/52376448/66644670-783e3580-ec5c-11e9-9ca1-e5d58dda59c3.png)
 <hr class='division3'>
 </details>
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+`model fitting`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<br>
+`data fitting`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<br>
+`PDF`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<hr class='division3'>
+</details>
+
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Sub-code</summary>
 <hr class='division3'>
@@ -1673,6 +2043,43 @@ plt.show()
 ![download (10)](https://user-images.githubusercontent.com/52376448/66644705-91df7d00-ec5c-11e9-988f-d1d8c10ec0a9.png)
 <hr class='division3'>
 </details>
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+`model fitting`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<br>
+`data fitting`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<br>
+`PDF`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<hr class='division3'>
+</details>
+
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Sub-code</summary>
 <hr class='division3'>
@@ -1829,6 +2236,43 @@ plt.show()
 ![download (11)](https://user-images.githubusercontent.com/52376448/66644739-a885d400-ec5c-11e9-89db-8792deacb1b2.png)
 <hr class='division3'>
 </details>
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+`model fitting`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<br>
+`data fitting`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<br>
+`PDF`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<hr class='division3'>
+</details>
+
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Sub-code</summary>
 <hr class='division3'>
@@ -1981,6 +2425,43 @@ plt.show()
 ![download (12)](https://user-images.githubusercontent.com/52376448/66644780-c05d5800-ec5c-11e9-8652-11c53f8fc38c.png)
 <hr class='division3'>
 </details>
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+`model fitting`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<br>
+`data fitting`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<br>
+`PDF`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<hr class='division3'>
+</details>
+
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Sub-code</summary>
 <hr class='division3'>
@@ -2133,6 +2614,43 @@ plt.show()
 ![download (13)](https://user-images.githubusercontent.com/52376448/66644816-d79c4580-ec5c-11e9-88ff-b6b7991dc19f.png)
 <hr class='division3'>
 </details>
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+`model fitting`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<br>
+`data fitting`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<br>
+`PDF`
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
+<hr class='division3'>
+</details>
+
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Sub-code</summary>
 <hr class='division3'>
