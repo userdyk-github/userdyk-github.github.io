@@ -128,8 +128,21 @@ confusion_matrix(y,clf2.predict(PCs))
 
 ### ***Linear discriminant analysis (LDA)***
 
+```python
+import numpy as np
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+
+X = np.array([[-1, -1], [-2, -1], [-3, -2], [1, 1], [2, 1], [3, 2]])
+y = np.array([1, 1, 1, 2, 2, 2])
+clf=LinearDiscriminantAnalysis()
+clf.fit(X,y)
+```
+
 ---
 
+### ***Quadratic discriminant analysis (QDA)***
+
+---
 
 ### ***Generalized discriminant analysis (GDA)***
 
