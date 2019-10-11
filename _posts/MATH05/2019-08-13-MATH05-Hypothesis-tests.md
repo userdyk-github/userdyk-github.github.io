@@ -23,7 +23,9 @@ List of posts to read before reading this article
 
 ## with Excel
 
+[download dataset][1]
 
+<br><br><br>
 <hr class="division2">
 
 ## with python
@@ -47,6 +49,9 @@ Reference
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
+
+[1]:{{ site.url }}/download/MATH05/test_with_excel.zip
+
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
