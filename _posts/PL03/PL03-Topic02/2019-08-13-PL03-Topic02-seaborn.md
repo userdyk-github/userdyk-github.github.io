@@ -24,18 +24,21 @@ List of posts to read before reading this article
 ## **Relational plots**
 
 ### ***relplot***
+[API homepage]()
 
 <br><br><br>
 
 ---
 
 ### ***scatterplot***
+[API homepage]()
 
 <br><br><br>
 
 ---
 
 ### ***lineplot***
+[API homepage]()
 
 <br><br><br>
 <hr class="division2">
@@ -43,30 +46,35 @@ List of posts to read before reading this article
 ## **Categorical plots**
 
 ### ***catplot***
+[API homepage]()
 
 <br><br><br>
 
 ---
 
 ### ***stripplot***
+[API homepage]()
 
 <br><br><br>
 
 ---
 
 ### ***swarmplot***
+[API homepage]()
 
 <br><br><br>
 
 ---
 
 ### ***boxplot***
+[API homepage]()
 
 <br><br><br>
 
 ---
 
 ### ***violinplot***
+[API homepage]()
 
 <br><br><br>
 
