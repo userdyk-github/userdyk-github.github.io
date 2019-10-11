@@ -68,6 +68,18 @@ type(123e2)    # 12300.0
 ```
 <span class="jb-medium">float</span>
 <br>
+```python
+type(123e-2)   # 1.23
+```
+<span class="jb-medium">float</span>
+<br>
+```python
+type(123.456e-3)   # 0.123456
+```
+<span class="jb-medium">float</span>
+
+<br><br>
+
 `floating point error`
 ```python
 ```
