@@ -289,6 +289,7 @@ for ds in datasets:
 figure.subplots_adjust(left=.02, right=.98)
 plt.show()
 ```
+![download](https://user-images.githubusercontent.com/52376448/66628471-e0c7eb00-ec39-11e9-8039-795e0d74feb9.png)
 
 <br><br><br>
 
