@@ -23,6 +23,23 @@ List of posts to read before reading this article
 
 ## **method of moment**
 
+### ***estimate for beta distribution***
+```python
+from scipy import stats
+import numpy as np
+
+def estimate_beta(x):
+    x_bar = x.mean()
+    s2 = x.var()
+    a = x_bar * (x_bar * (1 - x_bar) / s2 - 1)
+    b = (1 - x_bar) * (x_bar * (1 - x_bar) / s2 - 1)
+    return a, b
+    
+np.random.seed(0)
+x = stats.beta(15, 12).rvs(10000)
+estimate_beta(x)
+```
+<span class="jb-medium">(15.346682046700685, 12.2121537049535)</span>
 <hr class="division2">
 
 ## **likelihood function**
