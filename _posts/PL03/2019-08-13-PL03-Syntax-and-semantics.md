@@ -96,10 +96,58 @@ type(123.456e-3)   # 0.123456
 '%.55f'%0.1
 ```
 <span class="jb-medium">0.1000000000000000055511151231257827021181583404541015625</span>
+<br><br>
+`comparsion of floating point numbers`
+```python
+0.1 + 0.2 == 0.3
+```
+<span class="jb-medium">False</span>
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">CAUTION</summary>
+<hr class='division3'>
+```python
+0.1 + 0.2
+```
+<span class="jb-medium">0.30000000000000004</span>
+```python
+0.3
+```
+<span class="jb-medium">0.3</span>
+<hr class='division3'>
+</details>
+```python
+round(0.1 + 0.2, 5) == round(0.3, 5)
+```
+<span class="jb-medium">True</span>
 
 <br><br><br>
 
 #### Cast
+`float->int`
+```python
+int(1.0)
+```
+<span class="jb-medium">1</span>
+```python
+int(3.14)
+```
+<span class="jb-medium">3</span>
+```python
+int(3.9)
+```
+<span class="jb-medium">3</span>
+```python
+int(-3.9)
+```
+<span class="jb-medium">-3</span>
+
+<br>
+`int->float`
+```python
+float(1) 
+```
+<span class="jb-medium">1.0</span>
 
 
 <br><br><br>
@@ -364,11 +412,6 @@ Reference
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-    <details markdown="1">
-    <summary class='jb-small' style="color:red">OUTPUT</summary>
-    <hr class='division3_1'>
-    <hr class='division3_1'>
-    </details>
 <hr class='division3'>
 </details>
 
