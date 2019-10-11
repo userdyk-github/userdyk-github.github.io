@@ -29,7 +29,14 @@ List of posts to read before reading this article
 
 `int`
 ```python
+type(10)
 ```
+<span class="jb-medium">int</span>
+<br>
+```python
+type(10 * 5)
+```
+<span class="jb-medium">int</span>
 
 <br><br><br>
 
@@ -37,7 +44,30 @@ List of posts to read before reading this article
 
 `float`
 ```python
+type(10.0)
 ```
+<span class="jb-medium">float</span>
+<br>
+```python
+type(0.1)
+```
+<span class="jb-medium">float</span>
+<br>
+```python
+type(10.0 * 5)
+```
+<span class="jb-medium">float</span>
+<br>
+```python
+type(10 / 5)
+```
+<span class="jb-medium">float</span>
+<br>
+```python
+type(123e2)    # 12300.0
+```
+<span class="jb-medium">float</span>
+<br>
 `floating point error`
 ```python
 ```
