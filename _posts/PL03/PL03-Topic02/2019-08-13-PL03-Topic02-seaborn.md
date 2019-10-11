@@ -23,74 +23,74 @@ List of posts to read before reading this article
 
 ## **Relational plots**
 
-### ******
+### ***relplot***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***scatterplot***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***lineplot***
 
 <br><br><br>
 <hr class="division2">
 
 ## **Categorical plots**
 
-### ******
+### ***catplot***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***stripplot***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***swarmplot***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***boxplot***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***violinplot***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***boxenplot***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***pointplot***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***barplot***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***countplot***
 
 
 <br><br><br>
@@ -98,31 +98,31 @@ List of posts to read before reading this article
 
 ## **Distribution plots**
 
-### ******
+### ***jointplot***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***pairplot***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***distplot***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***kdeplot***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***rugplot***
 
 <br><br><br>
 <hr class="division2">
@@ -130,19 +130,19 @@ List of posts to read before reading this article
 
 ## **Regression plots**
 
-### ******
+### ***lmplot***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***regplot***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***residplot***
 
 
 <br><br><br>
@@ -151,13 +151,13 @@ List of posts to read before reading this article
 
 ## **Matrix plots**
 
-### ******
+### ***heatmap***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***clustermap***
 
 
 <br><br><br>
@@ -168,15 +168,15 @@ List of posts to read before reading this article
 
 ### ***Facet grids***
 
-####
+#### FacetGrid
 
 <br><br><br>
 
-####
+#### FacetGrid.map
 
 <br><br><br>
 
-####
+#### FacetGrid.map_dataframe
 
 <br><br><br>
 
@@ -184,32 +184,32 @@ List of posts to read before reading this article
 
 ### ***Pair grids***
 
-####
+#### PairGrid
 
 <br><br><br>
 
 
-####
+#### PairGrid.map
 
 <br><br><br>
 
 
-####
+#### PairGrid.map_diag
 
 <br><br><br>
 
 
-####
+#### PairGrid.map_offdiag
 
 <br><br><br>
 
 
-####
+#### PairGrid.map_lower
 
 <br><br><br>
 
 
-####
+#### PairGrid.map_upper
 
 <br><br><br>
 
@@ -218,22 +218,22 @@ List of posts to read before reading this article
 
 ### ***Joint grids***
 
-####
+#### JointGrid
 
 <br><br><br>
 
 
-####
+#### JointGrid.plot
 
 <br><br><br>
 
 
-####
+#### JointGrid.plot_joint
 
 <br><br><br>
 
 
-####
+#### JointGrid.plot_marginals
 
 
 <br><br><br>
@@ -242,49 +242,49 @@ List of posts to read before reading this article
 
 ## **Style control**
 
-### ******
+### ***set***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***axes_style***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***set_style***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***plotting_context***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***set_context***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***set_color_codes***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***reset_default***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***reset_orig***
 
 
 <br><br><br>
@@ -293,73 +293,73 @@ List of posts to read before reading this article
 
 ## **Color palettes**
 
-### ******
+### ***set_palette***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***color_palette***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***husl_palette***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***hls_palette***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***cubehelix_palette***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***dark_palette***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***light_palette***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***diverging_palette***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***blend_palette***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***xkcd_palette***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***crayon_palette***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***mpl_palette***
 
 
 <br><br><br>
@@ -368,31 +368,31 @@ List of posts to read before reading this article
 
 ## **Palette widgets**
 
-### ******
+### ***choose_colorbrewer_palette***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***choose_cubehelix_palette***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***choose_light_palette***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***choose_dark_palette***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***choose_diverging_palette***
 
 
 <br><br><br>
@@ -401,31 +401,31 @@ List of posts to read before reading this article
 
 ## **Utility functions**
 
-### ******
+### ***load_dataset***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***despine***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***desaturate***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***saturate***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***set_hls_values***
 
 
 <br><br><br>
