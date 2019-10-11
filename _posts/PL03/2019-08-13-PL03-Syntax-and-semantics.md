@@ -25,7 +25,31 @@ List of posts to read before reading this article
 
 ### ***Number***
 
+#### Integer
+
+`int`
+```python
+```
+
 <br><br><br>
+
+#### floating point number
+
+`float`
+```python
+```
+`floating point error`
+```python
+```
+
+
+<br><br><br>
+
+#### Cast
+
+
+<br><br><br>
+
 
 ---
 
