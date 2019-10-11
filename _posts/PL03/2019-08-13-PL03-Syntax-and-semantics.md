@@ -96,7 +96,9 @@ type(123.456e-3)   # 0.123456
 '%.55f'%0.1
 ```
 <span class="jb-medium">0.1000000000000000055511151231257827021181583404541015625</span>
+
 <br><br>
+
 `comparsion of floating point numbers`
 ```python
 0.1 + 0.2 == 0.3
