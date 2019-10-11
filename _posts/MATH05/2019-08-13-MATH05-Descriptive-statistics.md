@@ -31,8 +31,31 @@ List of posts to read before reading this article
 <br><br><br>
 <hr class="division2">
 
-## title3
+## **Sample variance**
 
+<br><br><br>
+<hr class="division2">
+
+## **Sample variance**
+
+<br><br><br>
+<hr class="division2">
+
+## **Sample variance**
+
+<br><br><br>
+<hr class="division2">
+
+## **Sample variance**
+
+<br><br><br>
+<hr class="division2">
+
+## **Sample variance**
+
+
+
+<br><br><br>
 <hr class="division1">
 
 List of posts followed by this article
