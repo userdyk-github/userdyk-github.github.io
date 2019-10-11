@@ -312,6 +312,7 @@ Mass Point</a><br>
 > <a href='https://userdyk-github.github.io/math05/MATH05-Descriptive-statistics.html'>Descriptive statistics</a><br>
 > <a href='https://userdyk-github.github.io/math05/MATH05-Distribution.html'>Distribution</a><br>
 > <a href='https://userdyk-github.github.io/math05/MATH05-Curve-fitting.html'>Curve fitting</a><br>
+> <a href='https://userdyk-github.github.io/math05/MATH05-Parameters-estimation.html'>Parameters estimation</a><br>
 > <a href='https://userdyk-github.github.io/math05/MATH05-Hypothesis-tests.html'>Hypothesis tests</a><br>
 > <a href='https://userdyk-github.github.io/math05/MATH05-Categorical-data.html'>Categorical data</a><br>
 > <a href='https://userdyk-github.github.io/math05/MATH05-Bayesian-inference.html'>Bayesian inference</a><br>
