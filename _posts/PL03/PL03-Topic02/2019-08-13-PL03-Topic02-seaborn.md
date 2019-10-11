@@ -24,21 +24,21 @@ List of posts to read before reading this article
 ## **Relational plots**
 
 ### ***relplot***
-[API homepage]()
+[API homepage](https://seaborn.pydata.org/generated/seaborn.relplot.html#seaborn.relplot)
 
 <br><br><br>
 
 ---
 
 ### ***scatterplot***
-[API homepage]()
+[API homepage](https://seaborn.pydata.org/generated/seaborn.scatterplot.html#seaborn.scatterplot)
 
 <br><br><br>
 
 ---
 
 ### ***lineplot***
-[API homepage]()
+[API homepage](https://seaborn.pydata.org/generated/seaborn.lineplot.html#seaborn.lineplot)
 
 <br><br><br>
 <hr class="division2">
@@ -46,59 +46,63 @@ List of posts to read before reading this article
 ## **Categorical plots**
 
 ### ***catplot***
-[API homepage]()
+[API homepage](https://seaborn.pydata.org/generated/seaborn.catplot.html#seaborn.catplot)
 
 <br><br><br>
 
 ---
 
 ### ***stripplot***
-[API homepage]()
+[API homepage](https://seaborn.pydata.org/generated/seaborn.stripplot.html#seaborn.stripplot)
 
 <br><br><br>
 
 ---
 
 ### ***swarmplot***
-[API homepage]()
+[API homepage](https://seaborn.pydata.org/generated/seaborn.swarmplot.html#seaborn.swarmplot)
 
 <br><br><br>
 
 ---
 
 ### ***boxplot***
-[API homepage]()
+[API homepage](https://seaborn.pydata.org/generated/seaborn.boxplot.html#seaborn.boxplot)
 
 <br><br><br>
 
 ---
 
 ### ***violinplot***
-[API homepage]()
+[API homepage](https://seaborn.pydata.org/generated/seaborn.violinplot.html#seaborn.violinplot)
 
 <br><br><br>
 
 ---
 
 ### ***boxenplot***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.boxenplot.html#seaborn.boxenplot)
 
 <br><br><br>
 
 ---
 
 ### ***pointplot***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.pointplot.html#seaborn.pointplot)
 
 <br><br><br>
 
 ---
 
 ### ***barplot***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.barplot.html#seaborn.barplot)
 
 <br><br><br>
 
 ---
 
 ### ***countplot***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.countplot.html#seaborn.countplot)
 
 
 <br><br><br>
@@ -107,30 +111,35 @@ List of posts to read before reading this article
 ## **Distribution plots**
 
 ### ***jointplot***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.jointplot.html#seaborn.jointplot)
 
 <br><br><br>
 
 ---
 
 ### ***pairplot***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.pairplot.html#seaborn.pairplot)
 
 <br><br><br>
 
 ---
 
 ### ***distplot***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.distplot.html#seaborn.distplot)
 
 <br><br><br>
 
 ---
 
 ### ***kdeplot***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.kdeplot.html#seaborn.kdeplot)
 
 <br><br><br>
 
 ---
 
 ### ***rugplot***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.rugplot.html#seaborn.rugplot)
 
 <br><br><br>
 <hr class="division2">
@@ -139,18 +148,21 @@ List of posts to read before reading this article
 ## **Regression plots**
 
 ### ***lmplot***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.lmplot.html#seaborn.lmplot)
 
 <br><br><br>
 
 ---
 
 ### ***regplot***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.regplot.html#seaborn.regplot)
 
 <br><br><br>
 
 ---
 
 ### ***residplot***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.residplot.html#seaborn.residplot)
 
 
 <br><br><br>
@@ -160,12 +172,14 @@ List of posts to read before reading this article
 ## **Matrix plots**
 
 ### ***heatmap***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.heatmap.html#seaborn.heatmap)
 
 <br><br><br>
 
 ---
 
 ### ***clustermap***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.clustermap.html#seaborn.clustermap)
 
 
 <br><br><br>
@@ -177,14 +191,17 @@ List of posts to read before reading this article
 ### ***Facet grids***
 
 #### FacetGrid
+[API homepage](https://seaborn.pydata.org/generated/seaborn.FacetGrid.html#seaborn.FacetGrid)
 
 <br><br><br>
 
 #### FacetGrid.map
+[API homepage](https://seaborn.pydata.org/generated/seaborn.FacetGrid.map.html#seaborn.FacetGrid.map)
 
 <br><br><br>
 
 #### FacetGrid.map_dataframe
+[API homepage](https://seaborn.pydata.org/generated/seaborn.FacetGrid.map_dataframe.html#seaborn.FacetGrid.map_dataframe)
 
 <br><br><br>
 
@@ -193,31 +210,37 @@ List of posts to read before reading this article
 ### ***Pair grids***
 
 #### PairGrid
+[API homepage](https://seaborn.pydata.org/generated/seaborn.PairGrid.html#seaborn.PairGrid)
 
 <br><br><br>
 
 
 #### PairGrid.map
+[API homepage](https://seaborn.pydata.org/generated/seaborn.PairGrid.map.html#seaborn.PairGrid.map)
 
 <br><br><br>
 
 
 #### PairGrid.map_diag
+[API homepage](https://seaborn.pydata.org/generated/seaborn.PairGrid.map_diag.html#seaborn.PairGrid.map_diag)
 
 <br><br><br>
 
 
 #### PairGrid.map_offdiag
+[API homepage](https://seaborn.pydata.org/generated/seaborn.PairGrid.map_offdiag.html#seaborn.PairGrid.map_offdiag)
 
 <br><br><br>
 
 
 #### PairGrid.map_lower
+[API homepage](https://seaborn.pydata.org/generated/seaborn.PairGrid.map_lower.html#seaborn.PairGrid.map_lower)
 
 <br><br><br>
 
 
 #### PairGrid.map_upper
+[API homepage](https://seaborn.pydata.org/generated/seaborn.PairGrid.map_upper.html#seaborn.PairGrid.map_upper)
 
 <br><br><br>
 
@@ -227,21 +250,25 @@ List of posts to read before reading this article
 ### ***Joint grids***
 
 #### JointGrid
+[API homepage](https://seaborn.pydata.org/generated/seaborn.JointGrid.html#seaborn.JointGrid)
 
 <br><br><br>
 
 
 #### JointGrid.plot
+[API homepage](https://seaborn.pydata.org/generated/seaborn.JointGrid.plot.html#seaborn.JointGrid.plot)
 
 <br><br><br>
 
 
 #### JointGrid.plot_joint
+[API homepage](https://seaborn.pydata.org/generated/seaborn.JointGrid.plot_joint.html#seaborn.JointGrid.plot_joint)
 
 <br><br><br>
 
 
 #### JointGrid.plot_marginals
+[API homepage](https://seaborn.pydata.org/generated/seaborn.JointGrid.plot_marginals.html#seaborn.JointGrid.plot_marginals)
 
 
 <br><br><br>
@@ -251,48 +278,56 @@ List of posts to read before reading this article
 ## **Style control**
 
 ### ***set***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.set.html#seaborn.set)
 
 <br><br><br>
 
 ---
 
 ### ***axes_style***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.axes_style.html#seaborn.axes_style)
 
 <br><br><br>
 
 ---
 
 ### ***set_style***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.set_style.html#seaborn.set_style)
 
 <br><br><br>
 
 ---
 
 ### ***plotting_context***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.plotting_context.html#seaborn.plotting_context)
 
 <br><br><br>
 
 ---
 
 ### ***set_context***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.set_context.html#seaborn.set_context)
 
 <br><br><br>
 
 ---
 
 ### ***set_color_codes***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.set_color_codes.html#seaborn.set_color_codes)
 
 <br><br><br>
 
 ---
 
 ### ***reset_default***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.reset_defaults.html#seaborn.reset_defaults)
 
 <br><br><br>
 
 ---
 
 ### ***reset_orig***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.reset_orig.html#seaborn.reset_orig)
 
 
 <br><br><br>
@@ -302,72 +337,84 @@ List of posts to read before reading this article
 ## **Color palettes**
 
 ### ***set_palette***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.set_palette.html#seaborn.set_palette)
 
 <br><br><br>
 
 ---
 
 ### ***color_palette***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.color_palette.html#seaborn.color_palette)
 
 <br><br><br>
 
 ---
 
 ### ***husl_palette***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.husl_palette.html#seaborn.husl_palette)
 
 <br><br><br>
 
 ---
 
 ### ***hls_palette***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.hls_palette.html#seaborn.hls_palette)
 
 <br><br><br>
 
 ---
 
 ### ***cubehelix_palette***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.cubehelix_palette.html#seaborn.cubehelix_palette)
 
 <br><br><br>
 
 ---
 
 ### ***dark_palette***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.dark_palette.html#seaborn.dark_palette)
 
 <br><br><br>
 
 ---
 
 ### ***light_palette***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.light_palette.html#seaborn.light_palette)
 
 <br><br><br>
 
 ---
 
 ### ***diverging_palette***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.diverging_palette.html#seaborn.diverging_palette)
 
 <br><br><br>
 
 ---
 
 ### ***blend_palette***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.blend_palette.html#seaborn.blend_palette)
 
 <br><br><br>
 
 ---
 
 ### ***xkcd_palette***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.xkcd_palette.html#seaborn.xkcd_palette)
 
 <br><br><br>
 
 ---
 
 ### ***crayon_palette***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.crayon_palette.html#seaborn.crayon_palette)
 
 <br><br><br>
 
 ---
 
 ### ***mpl_palette***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.mpl_palette.html#seaborn.mpl_palette)
 
 
 <br><br><br>
@@ -377,30 +424,35 @@ List of posts to read before reading this article
 ## **Palette widgets**
 
 ### ***choose_colorbrewer_palette***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.choose_colorbrewer_palette.html#seaborn.choose_colorbrewer_palette)
 
 <br><br><br>
 
 ---
 
 ### ***choose_cubehelix_palette***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.choose_cubehelix_palette.html#seaborn.choose_cubehelix_palette)
 
 <br><br><br>
 
 ---
 
 ### ***choose_light_palette***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.choose_light_palette.html#seaborn.choose_light_palette)
 
 <br><br><br>
 
 ---
 
 ### ***choose_dark_palette***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.choose_dark_palette.html#seaborn.choose_dark_palette)
 
 <br><br><br>
 
 ---
 
 ### ***choose_diverging_palette***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.choose_diverging_palette.html#seaborn.choose_diverging_palette)
 
 
 <br><br><br>
@@ -410,30 +462,35 @@ List of posts to read before reading this article
 ## **Utility functions**
 
 ### ***load_dataset***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.load_dataset.html#seaborn.load_dataset)
 
 <br><br><br>
 
 ---
 
 ### ***despine***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.despine.html#seaborn.despine)
 
 <br><br><br>
 
 ---
 
 ### ***desaturate***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.desaturate.html#seaborn.desaturate)
 
 <br><br><br>
 
 ---
 
 ### ***saturate***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.saturate.html#seaborn.saturate)
 
 <br><br><br>
 
 ---
 
 ### ***set_hls_values***
+[API homepage](https://seaborn.pydata.org/generated/seaborn.set_hls_values.html#seaborn.set_hls_values)
 
 
 <br><br><br>
