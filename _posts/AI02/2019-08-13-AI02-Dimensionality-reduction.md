@@ -194,6 +194,8 @@ array([[3, 0],
 
 ---
 
+
+
 ### ***Generalized discriminant analysis (GDA)***
 
 ---
