@@ -33,17 +33,33 @@ List of posts to read before reading this article
 ```python
 
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
 <br>
+
 `The meaning of output through PCA`
 ```python
 
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
 <br>
+
 `Regression with PC scores`
 ```python
 
 ```
-
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
 
 <br><br><br>
     
