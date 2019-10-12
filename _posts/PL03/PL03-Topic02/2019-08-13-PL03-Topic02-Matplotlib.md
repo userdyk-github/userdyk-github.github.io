@@ -2348,6 +2348,196 @@ plt.show()
 
 ## **Basic 3D Plots**
 
+### ***3D Line plot***
+
+```python
+import matplotlib as mpl
+from mpl_toolkits.mplot3d import Axes3D
+import numpy as np
+import matplotlib.pyplot as plt
+
+mpl.rcParams['legend.fontsize'] = 10
+
+fig = plt.figure()
+ax = fig.gca(projection='3d')
+theta = np.linspace(-4 * np.pi, 4 * np.pi, 100)
+z = np.linspace(-2, 2, 100)
+r = z**2 + 1
+x = r * np.sin(theta)
+y = r * np.cos(theta)
+ax.plot(x, y, z, label='parametric curve')
+ax.legend()
+
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download](https://user-images.githubusercontent.com/52376448/66693776-c64c4b00-ece7-11e9-9851-37659ac8e2c2.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+### ***3D ***
+```python
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+
+### ***3D ***
+```python
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+
+### ***3D ***
+```python
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+
+### ***3D ***
+```python
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+
+### ***3D ***
+```python
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+
+### ***3D ***
+```python
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+
+### ***3D ***
+```python
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+
+### ***3D ***
+```python
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+
+### ***3D ***
+```python
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+
+### ***3D ***
+```python
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+
+### ***3D ***
+```python
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+
+### ***3D ***
+```python
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+
+
+
 
 <br><br><br>
 <hr class="division2">
