@@ -48,7 +48,7 @@ estimate_beta(x)
 <hr class="division2">
 
 ## **likelihood function**
-
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b187aa258305f940d2de38a22c9135ffa574c766" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:41.853ex; height:7.509ex;" alt="{\displaystyle f(x\mid \mu ,\sigma ^{2})={\frac {1}{{\sqrt {2\pi \sigma ^{2}}}\ }}\exp \left(-{\frac {(x-\mu )^{2}}{2\sigma ^{2}}}\right),}">
 ```python
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
