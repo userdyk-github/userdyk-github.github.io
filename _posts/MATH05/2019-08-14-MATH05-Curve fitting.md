@@ -5,9 +5,8 @@ categories: [MATH05]
 comments : true
 tags : [MATH05]
 ---
-[Back to the previous page](https://userdyk-github.github.io/Study.html) <br>
+[Back to the previous page](https://userdyk-github.github.io/math05/MATH05-Distribution.html) <br>
 List of posts to read before reading this article
-- <a href='https://userdyk-github.github.io/math05/MATH05-Curve-fitting.html'>Curve fitting</a>
 - <a href='https://userdyk-github.github.io/'>post2</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
