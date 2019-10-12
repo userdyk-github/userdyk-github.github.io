@@ -35,13 +35,12 @@ List of posts to read before reading this article
 
 List of posts followed by this article
 - [post1](https://userdyk-github.github.io/)
-- <a href='https://userdyk-github.github.io/'>post2</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
 
 Reference
-- [post1](https://userdyk-github.github.io/)
+- <a href='https://datascienceschool.net/view-notebook/9987e98ec60946c79a8a7f37cb7ae9cc/' target="_blank">Time series</a>
 - <a href='https://userdyk-github.github.io/'>post2</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
