@@ -331,6 +331,28 @@ s
 
 ### ***Class***
 
+#### hasattr(object, name)
+
+> object - object whose named attribute is to be checked
+> name - name of the attribute to be searched
+> return
+>> True, if object has the given named attribute
+>> False, if object has no given named attribute
+
+```python
+class Person:
+    age = 23
+    name = 'Adam'
+
+person = Person()
+
+print('Person has age?:', hasattr(person, 'age'))
+print('Person has salary?:', hasattr(person, 'salary'))
+```
+```
+Person has age?: True
+Person has salary?: False
+```
 <br><br><br>
 
 ---
