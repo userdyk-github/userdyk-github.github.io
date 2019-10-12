@@ -175,9 +175,11 @@ plt.plot([165.76, 165.76], [0, 30], label="mean")
 plt.plot([165.0, 165.0], [0, 30], label="median")
 plt.legend()
 ```
-
+![download (10)](https://user-images.githubusercontent.com/52376448/66707638-78365680-ed7e-11e9-83ed-324cfb777927.png)
 <hr class='division3'>
 </details>
+
+
 <br><br><br>
 <hr class="division2">
 
