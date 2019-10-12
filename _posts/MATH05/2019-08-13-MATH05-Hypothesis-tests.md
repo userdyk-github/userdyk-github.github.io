@@ -21,7 +21,7 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## with Excel
+## basic hypothesis tests with Excel
 
 [download dataset][1]
 
@@ -45,8 +45,8 @@ List of posts followed by this article
 
 Reference
 - [post1](https://userdyk-github.github.io/)
-- <a href='https://userdyk-github.github.io/'>post2</a>
-- <a href='https://userdyk-github.github.io/'>post3</a>
+- <a href='https://datascienceschool.net/view-notebook/37a330dfc8de45e9ba475cbbd201ab53/'>statistical hypothesis testing and p-value</a>
+- <a href='https://datascienceschool.net/view-notebook/14bde0cc05514b2cae2088805ef9ed52/'>parameter testing</a>
 
 ---
 
