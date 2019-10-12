@@ -97,7 +97,7 @@ def objective(mu, sigma2=1):
 optimize.brent(objective, brack=(0,1))
 ```
 <span class="jb-medium">optimal point for mu = -0.6666666665981932</span>
-
+<br><br><br>
 <hr class="division2">
 
 ## **method of moment**
