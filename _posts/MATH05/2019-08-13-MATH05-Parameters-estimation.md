@@ -49,7 +49,7 @@ estimate_beta(x)
 
 ## **Maximum Likelihood Estimation(MLE)**
 
-### ***likelihood for normal distribution***
+### ***likelihood for normal distribution about single sample data***
 
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4abaca87a10ecfa77b5a205056523706fe6c9c3f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.838ex; width:29.801ex; height:7.176ex;" alt="{\displaystyle f(x\mid \mu ,\sigma ^{2})={\frac {1}{\sqrt {2\pi \sigma ^{2}}}}e^{-{\frac {(x-\mu )^{2}}{2\sigma ^{2}}}}}">
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fa485e7acf98b3a0ce236ce7293f63dd89f84b96" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:27.746ex; height:2.843ex;" alt="{\displaystyle L_{n}(\theta )=L_{n}(\theta ;\mathbf {y} )=f_{n}(\mathbf {y} ;\theta )}">
@@ -97,6 +97,14 @@ plt.show()
 <hr class='division3'>
 </details>
 <br><br><br>
+
+### ***likelihood for normal distribution about multi-sample data***
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1b75a50d0a600772fcca460d04f1e3673f2a3c1f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:78.984ex; height:7.509ex;" alt="{\displaystyle f(x_{1},\ldots ,x_{n}\mid \mu ,\sigma ^{2})=\prod _{i=1}^{n}f(x_{i}\mid \mu ,\sigma ^{2})=\left({\frac {1}{2\pi \sigma ^{2}}}\right)^{n/2}\exp \left(-{\frac {\sum _{i=1}^{n}(x_{i}-\mu )^{2}}{2\sigma ^{2}}}\right).}">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fa485e7acf98b3a0ce236ce7293f63dd89f84b96" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:27.746ex; height:2.843ex;" alt="{\displaystyle L_{n}(\theta )=L_{n}(\theta ;\mathbf {y} )=f_{n}(\mathbf {y} ;\theta )}">
+```python
+
+```
+
 <hr class="division2">
 
 ## **Bayesian estimation**
