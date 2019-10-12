@@ -370,6 +370,20 @@ plt.show()
 
 ```python
 import matplotlib.pyplot as plt
+import numpy as np
+
+X = np.linspace(-4, 4, 1024)
+Y = .25 * (X + 4.) * (X + 1.) * (X - 2.)
+
+plt.plot(X, Y, c = 'k')
+plt.gca().add_line(plt.Line2D((0, 0), (16, 0)))
+plt.grid()
+```
+![download (6)](https://user-images.githubusercontent.com/52376448/66707219-fc391000-ed77-11e9-8e6c-7788247d2eef.png)
+
+<br><br><br>
+```python
+import matplotlib.pyplot as plt
 
 N = 16
 for i in range(N):
