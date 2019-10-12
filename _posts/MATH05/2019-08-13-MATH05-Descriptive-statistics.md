@@ -30,7 +30,7 @@ List of posts to read before reading this article
 <br><br><br>
 <hr class="division2">
 
-## **count**
+## **Count**
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Generating random number</summary>
@@ -128,7 +128,7 @@ sns.distplot(x, bins=10, kde=False)
 
 <hr class="division2">
 
-## **mean(average), median**
+## **Mean(average), median**
 
 ```python
 import numpy as np
@@ -145,7 +145,7 @@ x.mean(), x.median()
 <br><br><br>
 <hr class="division2">
 
-## **variance**
+## **Variance**
 
 ```python
 import numpy as np
@@ -162,7 +162,7 @@ x.var(), x.var(ddof=1)
 <br><br><br>
 <hr class="division2">
 
-## **standard deviation**
+## **Standard deviation**
 
 ```python
 import numpy as np
@@ -179,7 +179,7 @@ x.std(), x.std(ddof=1)
 <br><br><br>
 <hr class="division2">
 
-## **maximum, minimum**
+## **Maximum, minimum**
 
 ```python
 import numpy as np
@@ -197,7 +197,7 @@ x.max(), x.min()
 <hr class="division2">
 
 
-## **quartile**
+## **Quartile**
 
 ```python
 import numpy as np
