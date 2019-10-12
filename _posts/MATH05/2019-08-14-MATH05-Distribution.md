@@ -9,7 +9,7 @@ tags : [MATH05]
 List of posts to read before reading this article
 - <a href='https://userdyk-github.github.io/pl03/PL03-Libraries.html' target="_blank">Python Libraries</a>
 - <a href='https://en.wikipedia.org/wiki/List_of_probability_distributions' target="_blank">List of probability distributions</a>
-- <a href='https://userdyk-github.github.io/'>post3</a>
+- <a href='https://userdyk-github.github.io/math05/MATH05-Curve-fitting.html'>Curve fitting</a>
 
 ---
 
