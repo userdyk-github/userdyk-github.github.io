@@ -907,7 +907,9 @@ import numpy as np
 np.random.seed(0)
 x = np.random.randn(1000)
 plt.title("Histogram")
-arrays, bins, patches = plt.hist(x, bins=10)   # bins : Interval to aggregate data
+arrays, bins, patches = plt.hist(x, bins=10)   
+   # arrays is the count in each bin, 
+   # bins is the lower-limit of the bin(Interval to aggregate data)
 plt.show()
 ```
 <details open markdown="1">
