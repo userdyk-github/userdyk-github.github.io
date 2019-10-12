@@ -139,9 +139,9 @@ List of posts followed by this article
 ---
 
 Reference
-- [post1](https://userdyk-github.github.io/)
-- <a href='https://userdyk-github.github.io/'>post2</a>
-- <a href='https://userdyk-github.github.io/'>post3</a>
+- <a href='https://datascienceschool.net/view-notebook/864a2cc43df44531be32e3fa48769501/' target="_blank">likelihood function</a>
+- <a href='https://datascienceschool.net/view-notebook/87b67dafd7544e3380af278ff4f22d77/' target="_blank">method of moment</a>
+- <a href='https://datascienceschool.net/view-notebook/ae35a40deb884cf88e85135b4b5a1130/' target="_blank">Bayesian estimation</a>
 
 ---
 
