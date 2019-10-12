@@ -1,6 +1,6 @@
 ---
 layout : post
-title : MATH05
+title : MATH05, Regression analysis
 categories: [MATH05]
 comments : true
 tags : [MATH05]
@@ -41,8 +41,7 @@ List of posts followed by this article
 ---
 
 Reference
-- [post1](https://userdyk-github.github.io/)
-- <a href='https://userdyk-github.github.io/'>post2</a>
+- <a href='https://datascienceschool.net/view-notebook/9987e98ec60946c79a8a7f37cb7ae9cc/' target="_blank">Regression analysis</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
