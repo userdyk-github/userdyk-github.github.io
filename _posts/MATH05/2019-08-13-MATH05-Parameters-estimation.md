@@ -21,7 +21,6 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## **method of moment**
 
 ## **Maximum Likelihood Estimation(MLE)**
 
@@ -101,6 +100,7 @@ optimize.brent(objective, brack=(0,1))
 
 <hr class="division2">
 
+## **method of moment**
 
 ### ***estimate for beta distribution***
 
