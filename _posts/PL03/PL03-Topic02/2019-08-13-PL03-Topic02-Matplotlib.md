@@ -2348,6 +2348,9 @@ plt.show()
 
 ## **Basic 3D Plots**
 
+<a href="https://matplotlib.org/mpl_toolkits/mplot3d/tutorial.html" target="_blank">3D Plot API</a>
+<br><br><br>
+
 ### ***3D Line plot***
 
 ```python
@@ -3107,7 +3110,6 @@ plt.show()
 
 ## **Actual 3D Plots**
 
-<a href="https://matplotlib.org/mpl_toolkits/mplot3d/tutorial.html" target="_blank">3D Plot API</a>
 
 ```python
 %matplotlib inline
