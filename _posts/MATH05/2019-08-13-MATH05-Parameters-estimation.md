@@ -44,6 +44,7 @@ x = stats.beta(15, 12).rvs(10000)
 estimate_beta(x)
 ```
 <span class="jb-medium">(15.346682046700685, 12.2121537049535)</span>
+<br><br><br>
 <hr class="division2">
 
 ## **likelihood function**
