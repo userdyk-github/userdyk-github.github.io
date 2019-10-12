@@ -2348,6 +2348,8 @@ plt.show()
 
 ## **3D Plots**
 
+<a href="https://matplotlib.org/mpl_toolkits/mplot3d/tutorial.html#d-plots-in-3d" target="_blank">3D Plot API</a>
+
 ```python
 %matplotlib inline
 import matplotlib as mpl
