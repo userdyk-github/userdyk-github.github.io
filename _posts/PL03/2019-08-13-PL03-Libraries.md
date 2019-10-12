@@ -30,7 +30,7 @@ tags : [PL03]
   - <a href='https://www.statsmodels.org/devel/py-modindex.html' target="_blank"><span class='jb-small'>https://www.statsmodels.org/devel/py-modindex.html</span></a>
   
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-seaborn.html'>seaborn</a> ｜ <a href='https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Python_Seaborn_Cheat_Sheet.pdf' target="_blank">Cheat Sheet</a>
-  - <a href='https://seaborn.pydata.org/api.html#distribution-api' target="_blank"><span class='jb-small'>https://seaborn.pydata.org/api.html#distribution-api</span></a>
+  - <a href='https://seaborn.pydata.org/api.html#' target="_blank"><span class='jb-small'>https://seaborn.pydata.org/api.html#</span></a>
   
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-scikit-learn.html'>scikit-learn</a> ｜ <a href='https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Scikit_Learn_Cheat_Sheet_Python.pdf' target="_blank">Cheat Sheet</a>
   - <a href='https://scikit-learn.org/stable/modules/classes.html' target="_blank"><span class='jb-small'>https://scikit-learn.org/stable/modules/classes.html</span></a>
