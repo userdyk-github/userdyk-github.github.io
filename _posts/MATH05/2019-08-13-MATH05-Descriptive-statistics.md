@@ -48,9 +48,9 @@ x = np.array([165., 180., 190., 188., 163., 178., 177., 172., 164., 182., 143.,
 len(x)
 ```
 <span class="jb-medium">100</span>
-<br><br><br>
-
-<span class="frame3">visualization</span>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">visualization</summary>
+<hr class='division3'>
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -72,8 +72,8 @@ plt.hist(x)
 ```
 ![download (2)](https://user-images.githubusercontent.com/52376448/66706005-c93b5000-ed68-11e9-8490-3e4dbdd16a17.png)
 <details markdown="1">
-<summary class='jb-small' style="color:blue">Another method</summary>
-<hr class='division3'>
+<summary class='jb-small' style="color:red">Another method</summary>
+<hr class='division3_1'>
 ```python
 import seaborn as sns
 import numpy as np
@@ -93,9 +93,10 @@ sns.set();
 sns.distplot(x, bins=10, kde=False)
 ```
 ![download](https://user-images.githubusercontent.com/52376448/66705895-93e23280-ed67-11e9-8d22-e2b2285e740f.png)
+<hr class='division3_1'>
+</details>
 <hr class='division3'>
 </details>
-
 
 
 <br><br><br>
