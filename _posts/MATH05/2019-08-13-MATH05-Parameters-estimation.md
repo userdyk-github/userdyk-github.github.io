@@ -23,7 +23,9 @@ List of posts to read before reading this article
 
 ## **Method of moment**
 <div style="font-size: 70%; text-align: center;">
-    Asumption : parameter is determined by sample statistic(population moment = sample moment)
+    Asumption : parameter is determined by sample statistic(population moment = sample moment)<br>
+    Weekness : it is difficult to determine whether a parameter is accurate<br>
+    Weekness : it's hard to figure out the confidence level and interval<br>
 </div>
 <br><br><br>
 
@@ -55,7 +57,8 @@ estimate_beta(x)
 
 ## **Maximum Likelihood Estimation(MLE)**
 <div style="font-size: 70%; text-align: center;">
-    Caution : parameter ≠ random variable
+    Caution : parameter ≠ random variable<br>
+    Weekness : it's hard to figure out the confidence level and interval<br>
 </div>
 <br><br><br>
 
