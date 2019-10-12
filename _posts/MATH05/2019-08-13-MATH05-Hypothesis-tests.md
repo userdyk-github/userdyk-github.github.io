@@ -45,8 +45,8 @@ List of posts followed by this article
 
 Reference
 - [post1](https://userdyk-github.github.io/)
-- <a href='https://datascienceschool.net/view-notebook/37a330dfc8de45e9ba475cbbd201ab53/'>statistical hypothesis testing and p-value</a>
-- <a href='https://datascienceschool.net/view-notebook/14bde0cc05514b2cae2088805ef9ed52/'>parameter testing</a>
+- <a href='https://datascienceschool.net/view-notebook/37a330dfc8de45e9ba475cbbd201ab53/' target="_blank">statistical hypothesis testing and p-value</a>
+- <a href='https://datascienceschool.net/view-notebook/14bde0cc05514b2cae2088805ef9ed52/' target="_blank">parameter testing</a>
 
 ---
 
