@@ -77,7 +77,7 @@ plt.show()
 ---
 
 ### ***Working with Annotations***
-<a href="https://matplotlib.org/3.1.1/tutorials/text/annotations.html" target="_blank" class="jb-medium">annotations API </a><a href="https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-Matplotlib-Annotation.html" class="jb-medium">Annotation</a>
+<a href="https://matplotlib.org/3.1.1/tutorials/text/annotations.html" target="_blank" class="jb-medium">annotations API </a> ｜ <a href="https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-Matplotlib-Annotation.html" class="jb-medium">Annotation</a>
 
 <br><br><br>
 
