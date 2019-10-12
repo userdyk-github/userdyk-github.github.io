@@ -112,8 +112,16 @@ plt.show()
     $$likelihood\ :\ L(\theta = \mu ;x) = \frac{1}{(\sqrt{2 \pi \sigma})^{3/2}}e^{-\frac{3(\mu+\frac{2}{3})^{2}+\frac{26}{3}}{2\sigma^{2}}}$$
 </div>
 ```python
+import numpy as np
+from scipy import optimize
 
+def objective(mu, sigma2=1):
+    return - (2 * np.pi * sigma2) ** (3 / 2) * np.exp(-(3 * mu ** 2 + 4 * mu + 10) / (2 * sigma2))
+
+# optimize
+optimize.brent(objective, brack=(0,1))
 ```
+<span class="jb-medium">optimal point for mu = -0.6666666665981932</span>
 
 <hr class="division2">
 
