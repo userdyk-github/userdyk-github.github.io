@@ -72,6 +72,12 @@ List of posts to read before reading this article
 ---
 
 ### Beta
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Another programming language code</summary>
+<hr class='division3'>
+[mathematica code, Beta.nb][1]
+<hr class='division3'>
+</details>
 
 <div style="color:black; font-size: 80%; text-align: center;">
   $$f(x; a, b) = \frac{\Gamma(a+b) x^{a-1} (1-x)^{b-1}}{\Gamma(a) \Gamma(b)}\qquad for\ 0\le x \le 1,\ \ \ \ a>0,\ b>0$$
@@ -287,6 +293,12 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
 ---
 
 ### ChiSquared
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Another programming language code</summary>
+<hr class='division3'>
+[mathematica code, ChiSquared.nb][2]
+<hr class='division3'>
+</details>
 
 <div style="color:black; font-size: 80%; text-align: center;">
   $$f(x; k) = \frac{1}{2^{k/2} \Gamma \left( k/2 \right)}x^{k/2-1} \exp \left( -x/2 \right)\qquad for\ x>0\ and\ k>0$$
@@ -498,7 +510,12 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
 
 ### Exponential
 
-
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Another programming language code</summary>
+<hr class='division3'>
+[mathematica code, Exponential.nb][3]
+<hr class='division3'>
+</details>
 <div style="color:black; font-size: 80%; text-align: center;">
   $$f(x) = \lambda*\exp(-\lambda*x)\qquad for\ x\ge0$$
   $$scale\ =\ 1/\lambda$$
@@ -709,7 +726,12 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
 ---
 
 ### FDistribution
-
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Another programming language code</summary>
+<hr class='division3'>
+[mathematica code, FDistribution.nb][4]
+<hr class='division3'>
+</details>
 <div style="color:black; font-size: 80%; text-align: center;">
   $$f(x; df_1, df_2) = \frac{df_2^{df_2/2} df_1^{df_1/2} x^{df_1 / 2-1}}{(df_2+df_1 x)^{(df_1+df_2)/2}B(df_1/2, df_2/2)}\qquad for\ x>0$$
 </div>
@@ -920,13 +942,23 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
 ---
 
 ### FisherZ
-
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Another programming language code</summary>
+<hr class='division3'>
+[mathematica code, FisherZ.nb][5]
+<hr class='division3'>
+</details>
 <br><br><br>
 
 ---
 
 ### Gamma
-
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Another programming language code</summary>
+<hr class='division3'>
+[mathematica code, Gamma.nb][6]
+<hr class='division3'>
+</details>
 <div style="color:black; font-size: 80%; text-align: center;">
   $$f(x; a) = \frac{x^{a-1} \exp(-x)}{\Gamma(a)}\qquad for\ x\ge0,\ a>0$$
 </div>
@@ -1133,7 +1165,12 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
 <br><br><br>
 
 ### Laplace
-
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Another programming language code</summary>
+<hr class='division3'>
+[mathematica code, Laplace.nb][7]
+<hr class='division3'>
+</details>
 <div style="color:black; font-size: 80%; text-align: center;">
   $$f(x) = \frac{1}{2} \exp(-|x|)\qquad for\ a\ real\ number\ x$$
 </div>
@@ -1345,7 +1382,12 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
 ---
 
 ### Logistic
-
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Another programming language code</summary>
+<hr class='division3'>
+[mathematica code, Logistic.nb][8]
+<hr class='division3'>
+</details>
 <div style="color:black; font-size: 80%; text-align: center;">
   $$f(x) = \frac{\exp(-x)}{(1+\exp(-x))^2}$$
 </div>
@@ -1555,7 +1597,12 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
 ---
 
 ### LogNormal
-
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Another programming language code</summary>
+<hr class='division3'>
+[mathematica code, LogNormal.nb][9]
+<hr class='division3'>
+</details>
 <div style="color:black; font-size: 80%; text-align: center;">
   $$f(x; s) = \frac{1}{s x \sqrt{2\pi}}\exp\left(-\frac{\log^2(x)}{2s^2}\right)\qquad for\ x>0,\ s>0$$
 </div>
@@ -1766,7 +1813,12 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
 ---
 
 ### Normal
-
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Another programming language code</summary>
+<hr class='division3'>
+[mathematica code, Normal.nb][10]
+<hr class='division3'>
+</details>
 <div style="color:black; font-size: 80%; text-align: center;">
   $$f(x;\mu,\sigma) = \frac{\exp(-(x-\mu)^2/2)}{\sqrt{2\pi\sigma}}\qquad for\ a\ real\ number\ x$$
 </div>
@@ -1977,7 +2029,12 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
 ---
 
 ### StudentT
-
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Another programming language code</summary>
+<hr class='division3'>
+[mathematica code, StudentT.nb][11]
+<hr class='division3'>
+</details>
 <div style="color:black; font-size: 80%; text-align: center;">
   $$f(x; \nu) = \frac{\Gamma((\nu+1)/2)}{\sqrt{\pi \nu} \Gamma(\nu)}(1+x^2/\nu)^{-(\nu+1)/2}$$
   $$ where\ x\ is\ a\ real\ number\ and\ degrees\ of\ freedom\ parameter\ \nu>0$$
@@ -2188,7 +2245,12 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
 ---
 
 ### Uniform
-
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Another programming language code</summary>
+<hr class='division3'>
+[mathematica code, Uniform.nb][12]
+<hr class='division3'>
+</details>
 <div style="color:black; font-size: 80%; text-align: center;">
   $$ [𝑙𝑜𝑐,𝑙𝑜𝑐 + 𝑠𝑐𝑎𝑙𝑒] $$
 </div>
@@ -2399,7 +2461,12 @@ $$ random\ variable\ :\ X \xrightarrow{function} distribution\ :\ X.pdf(x) $$ </
 ---
 
 ### Weibull
-
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Another programming language code</summary>
+<hr class='division3'>
+[mathematica code, Weibull.nb][13]
+<hr class='division3'>
+</details>
 <div style="color:black; font-size: 80%; text-align: center;">
   $$Weibull\ min\ :\ f(x; c) = c x^{c-1} \exp(-x^c)\qquad for\ x\ge0,\ c>0$$
 </div>
@@ -3036,4 +3103,20 @@ Reference
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
+
+
+[1]:{{ site.url }}/download/MATH05/Beta.nb
+[2]:{{ site.url }}/download/MATH05/ChiSquared.nb
+[3]:{{ site.url }}/download/MATH05/Exponential.nb
+[4]:{{ site.url }}/download/MATH05/FDistribution.nb
+[5]:{{ site.url }}/download/MATH05/FisherZ.nb
+[6]:{{ site.url }}/download/MATH05/Gamma.nb
+[7]:{{ site.url }}/download/MATH05/Laplace.nb
+[8]:{{ site.url }}/download/MATH05/Logistic.nb
+[9]:{{ site.url }}/download/MATH05/LogNormal.nb
+[10]:{{ site.url }}/download/MATH05/Normal.nb
+[11]:{{ site.url }}/download/MATH05/StudentT.nb
+[12]:{{ site.url }}/download/MATH05/Uniform.nb
+[13]:{{ site.url }}/download/MATH05/Weibull.nb
+
 
