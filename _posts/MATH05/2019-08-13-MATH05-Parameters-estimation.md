@@ -49,6 +49,33 @@ estimate_beta(x)
 
 ## **likelihood function**
 
+```python
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+import numpy as np
+
+# range of mu and sigma^2 at x = 0
+x = 0
+mus = np.linspace(-5, 5, 1000)
+sigma2s = np.linspace(0.1, 10, 1000)
+MU, SIGMA2 = np.meshgrid(mus, sigma2s)
+
+# likelihood
+L = np.exp(-(MU-x) ** 2 / (2 * SIGMA2)) / np.sqrt(2 * np.pi * SIGMA2)
+
+# plot
+fig = plt.figure()
+ax = Axes3D(fig)
+ax = fig.gca(projection='3d')
+ax.plot_surface(MU, SIGMA2, L, linewidth=0.1)
+plt.xlabel('$\mu$')
+plt.ylabel('$\sigma^2$')
+plt.title('likelihood $L(\mu, \sigma^2)$')
+plt.show()
+```
+![download](https://user-images.githubusercontent.com/52376448/66691348-9f364f00-ecd0-11e9-8d18-074f932e3776.png)
+
+<br><br><br>
 <hr class="division2">
 
 ## **Bayesian estimation**
