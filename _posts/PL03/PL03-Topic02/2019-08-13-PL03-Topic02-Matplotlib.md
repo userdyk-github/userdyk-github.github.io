@@ -634,7 +634,7 @@ import matplotlib.pyplot as plt
 plt.plot([1,4,9,16])
 plt.show()
 ```
-<details open markdown="1">
+<details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (12)](https://user-images.githubusercontent.com/52376448/65261714-cec7c080-db43-11e9-86a3-4d0c68207254.png)
@@ -650,7 +650,7 @@ import matplotlib.pyplot as plt
 plt.plot([10,20,30,40],[1,4,9,16])
 plt.show()
 ```
-<details open markdown="1">
+<details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (13)](https://user-images.githubusercontent.com/52376448/65261757-e8690800-db43-11e9-93a6-e811b0ed3580.png)
@@ -670,7 +670,7 @@ y = np.cos(x)
 plt.plot(x, y)
 plt.show()
 ```
-<details open markdown="1">
+<details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (16)](https://user-images.githubusercontent.com/52376448/65262213-cae86e00-db44-11e9-99a8-d772d598bd2b.png)
