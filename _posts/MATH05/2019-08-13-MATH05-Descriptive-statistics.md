@@ -150,9 +150,12 @@ List of posts followed by this article
 ---
 
 Reference
-- [post1](https://userdyk-github.github.io/)
-- <a href='https://userdyk-github.github.io/'>post2</a>
-- <a href='https://userdyk-github.github.io/'>post3</a>
+- <a href='https://datascienceschool.net/view-notebook/8c39a71b453e43d9bd1000f38638e937/' target="_blank">deterministic and stochastic data, random variable</a>
+- <a href='https://datascienceschool.net/view-notebook/dd6a7633d69f401bb00409b9ae8806e8/' target="_blank">expectation and transform of random variable</a>
+- <a href='https://datascienceschool.net/view-notebook/b9dcd289a49546ffacfdc5f5bc9a2fc0/' target="_blank">(standard) variance</a>
+- <a href='https://datascienceschool.net/view-notebook/e5c379559a4a4fe9a9d8eeace69da425/' target="_blank">multivariate random variables</a>
+- <a href='https://datascienceschool.net/view-notebook/4cab41c0d9cd4eafaff8a45f590592c5/' target="_blank">covariance and correlation</a>
+- <a href='https://datascienceschool.net/view-notebook/88867007c4cf4f5b96e3d07afa83206f/' target="_blank">conditional expectation, prediction</a>
 
 ---
 
