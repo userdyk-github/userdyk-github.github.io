@@ -1002,6 +1002,7 @@ def cghist(x, bins=None):
         color = plt.cm.viridis(norm(thisfrac))
         thispatch.set_facecolor(color)
     plt.grid()
+    plt.show()
     
 np.random.seed(0)
 x = np.random.randn(1000)
