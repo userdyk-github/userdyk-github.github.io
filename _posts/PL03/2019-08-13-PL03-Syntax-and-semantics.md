@@ -333,11 +333,11 @@ s
 
 #### hasattr(object, name)
 
-> object - object whose named attribute is to be checked
-> name - name of the attribute to be searched
-> return
->> True, if object has the given named attribute
->> False, if object has no given named attribute
+> object - object whose named attribute is to be checked<br>
+> name - name of the attribute to be searched<br>
+> return<br>
+>> True, if object has the given named attribute<br>
+>> False, if object has no given named attribute<br>
 
 ```python
 class Person:
