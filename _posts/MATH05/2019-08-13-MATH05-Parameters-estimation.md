@@ -53,6 +53,22 @@ estimate_beta(x)
 
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4abaca87a10ecfa77b5a205056523706fe6c9c3f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.838ex; width:29.801ex; height:7.176ex;" alt="{\displaystyle f(x\mid \mu ,\sigma ^{2})={\frac {1}{\sqrt {2\pi \sigma ^{2}}}}e^{-{\frac {(x-\mu )^{2}}{2\sigma ^{2}}}}}">
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fa485e7acf98b3a0ce236ce7293f63dd89f84b96" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:27.746ex; height:2.843ex;" alt="{\displaystyle L_{n}(\theta )=L_{n}(\theta ;\mathbf {y} )=f_{n}(\mathbf {y} ;\theta )}">
+`for mu`
+```python
+import numpy as np
+from scipy import optimize
+
+# likelihood(objective function)
+def likelihood(MU, SIGMA2=1, x=0):
+    return - np.exp(-(MU-x) ** 2 / (2 * SIGMA2)) / np.sqrt(2 * np.pi * SIGMA2)
+
+# optimize
+optimize.brent(likelihood, brack=(-10,10))
+```
+<span class="jb-medium">optimal point for mu = 1.3008039364016205e-11</span>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Visualization</summary>
+<hr class='division3'>
 ```python
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
@@ -78,7 +94,8 @@ plt.title('likelihood $L(\mu, \sigma^2)$')
 plt.show()
 ```
 ![download](https://user-images.githubusercontent.com/52376448/66691348-9f364f00-ecd0-11e9-8d18-074f932e3776.png)
-
+<hr class='division3'>
+</details>
 <br><br><br>
 <hr class="division2">
 
