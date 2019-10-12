@@ -77,6 +77,9 @@ plt.show()
 ---
 
 ### ***Working with Annotations***
+<a href="https://matplotlib.org/3.1.1/tutorials/text/annotations.html" target="_blank">annotations API</a>
+
+<br><br><br>
 
 #### Adding a title
 
