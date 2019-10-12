@@ -2343,10 +2343,16 @@ plt.show()
 ---
 
 ### ***Working with Maps***
-
+<br><br><br>
 <hr class="division2">
 
-## **3D Plots**
+## **Basic 3D Plots**
+
+
+<br><br><br>
+<hr class="division2">
+
+## **Actual 3D Plots**
 
 <a href="https://matplotlib.org/mpl_toolkits/mplot3d/tutorial.html" target="_blank">3D Plot API</a>
 
@@ -2393,37 +2399,6 @@ title_and_labels(axes[2], "contour")
 </details>
 <br><br><br>
 
-### 3D Line plot
-
-```python
-import matplotlib as mpl
-from mpl_toolkits.mplot3d import Axes3D
-import numpy as np
-import matplotlib.pyplot as plt
-
-mpl.rcParams['legend.fontsize'] = 10
-
-fig = plt.figure()
-ax = fig.gca(projection='3d')
-theta = np.linspace(-4 * np.pi, 4 * np.pi, 100)
-z = np.linspace(-2, 2, 100)
-r = z**2 + 1
-x = r * np.sin(theta)
-y = r * np.cos(theta)
-ax.plot(x, y, z, label='parametric curve')
-ax.legend()
-
-plt.show()
-```
-<details open markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-![download](https://user-images.githubusercontent.com/52376448/66693776-c64c4b00-ece7-11e9-9851-37659ac8e2c2.png)
-<hr class='division3'>
-</details>
-<br><br><br>
-
----
 
 ### ***Creating 3D scatter plots***
 
