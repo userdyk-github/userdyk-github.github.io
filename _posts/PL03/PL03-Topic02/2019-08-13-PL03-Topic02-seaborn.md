@@ -279,6 +279,15 @@ List of posts to read before reading this article
 
 ### ***set***
 [API homepage](https://seaborn.pydata.org/generated/seaborn.set.html#seaborn.set)
+```python
+import seaborn as sns
+
+sns.set(style='darkgrid')
+sns.set(style='whitegrid')
+sns.set(style='dark')
+sns.set(style='white')
+sns.set(style='ticks')
+```
 
 <br><br><br>
 
@@ -293,7 +302,15 @@ List of posts to read before reading this article
 
 ### ***set_style***
 [API homepage](https://seaborn.pydata.org/generated/seaborn.set_style.html#seaborn.set_style)
+```python
+import seaborn as sns
 
+sns.set_style("darkgrid")
+sns.set_style("whitegrid")
+sns.set_style("dark")
+sns.set_style("white")
+sns.set_style("ticks")
+```
 <br><br><br>
 
 ---
