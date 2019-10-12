@@ -208,7 +208,7 @@ plt.show()
 <hr class="division1">
 
 List of posts followed by this article
-- [post1](https://userdyk-github.github.io/)
+- [Distribution](https://userdyk-github.github.io/math05/MATH05-Distribution.html)
 - <a href='https://userdyk-github.github.io/'>post2</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
