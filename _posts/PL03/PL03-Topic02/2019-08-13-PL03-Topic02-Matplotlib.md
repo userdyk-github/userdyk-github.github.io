@@ -676,6 +676,24 @@ plt.show()
 ![다운로드 (16)](https://user-images.githubusercontent.com/52376448/65262213-cae86e00-db44-11e9-99a8-d772d598bd2b.png)
 <hr class='division3'>
 </details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Custumizing graph color</summary>
+<hr class='division3'>
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(-np.pi, np.pi, 50)
+y = np.cos(x)
+
+plt.plot(x, y, c = '.5')
+plt.show()
+```
+![download (7)](https://user-images.githubusercontent.com/52376448/66707334-c3019f80-ed79-11e9-93e3-e0d9aac1212b.png)
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 
