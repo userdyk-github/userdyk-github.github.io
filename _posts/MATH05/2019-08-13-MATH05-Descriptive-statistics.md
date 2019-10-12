@@ -24,6 +24,8 @@ List of posts to read before reading this article
 ## **Review : Descriptive statistics**
 
 ![descriptive_statistics](https://user-images.githubusercontent.com/52376448/66703405-4f499d80-ed4d-11e9-8cc7-c33dbbfec77c.JPG)
+![covariance_analysis](https://user-images.githubusercontent.com/52376448/66703416-51136100-ed4d-11e9-85c1-1861caf05537.JPG)
+![correlation_analysis](https://user-images.githubusercontent.com/52376448/66703414-51136100-ed4d-11e9-8acd-093dec33923f.JPG)
 
 <br><br><br>
 <hr class="division2">
