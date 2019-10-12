@@ -47,7 +47,7 @@ estimate_beta(x)
 <br><br><br>
 <hr class="division2">
 
-## **likelihood function**
+## **Maximum Likelihood Estimation(MLE)**
 
 ### ***likelihood for normal distribution***
 
