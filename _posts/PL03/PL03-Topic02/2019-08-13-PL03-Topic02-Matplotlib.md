@@ -898,7 +898,7 @@ plt.show()
 ---
 
 #### Histogram
-
+<a href="https://matplotlib.org/3.1.1/gallery/statistics/hist.html" target="_blank" class="jb-medium">Histogram API</a>
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
