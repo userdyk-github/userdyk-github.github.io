@@ -32,6 +32,31 @@ List of posts to read before reading this article
 
 ## **count**
 
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Generating random number</summary>
+<hr class='division3'>
+```python
+import numpy as np
+
+np.random.seed(2019)
+rv = np.random.RandomState(2019)
+np.round(rv.normal(168,15,(100,)))
+```
+```
+array([165., 180., 190., 188., 163., 178., 177., 172., 164., 182., 143.,
+       163., 168., 160., 172., 165., 208., 175., 181., 160., 154., 169.,
+       120., 184., 180., 175., 174., 175., 160., 155., 156., 161., 184.,
+       171., 150., 154., 153., 177., 184., 172., 156., 153., 145., 150.,
+       175., 165., 190., 156., 196., 161., 185., 159., 153., 155., 173.,
+       173., 191., 162., 152., 158., 190., 136., 171., 173., 146., 158.,
+       158., 159., 169., 145., 193., 178., 160., 153., 142., 143., 172.,
+       170., 130., 165., 177., 190., 164., 167., 172., 160., 184., 158.,
+       152., 175., 158., 156., 171., 164., 165., 160., 162., 140., 172.,
+       148.])
+```
+<hr class='division3'>
+</details>
+
 ```python
 import numpy as np
 
@@ -49,7 +74,7 @@ len(x)
 ```
 <span class="jb-medium">100</span>
 <details markdown="1">
-<summary class='jb-small' style="color:blue">visualization</summary>
+<summary class='jb-small' style="color:blue">Visualization</summary>
 <hr class='division3'>
 ```python
 import numpy as np
