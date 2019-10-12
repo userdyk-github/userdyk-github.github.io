@@ -984,6 +984,30 @@ plt.grid()
 ```
 ![download (4)](https://user-images.githubusercontent.com/52376448/66706756-cee96380-ed71-11e9-954c-5fec1d5027d6.png)
 
+<br><br><br>
+
+`All at once`
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib import colors
+
+# hist with color, grid
+def cghist(x, bins=None):
+    arrays, bins, patches = plt.hist(x, bins=bins)
+    fracs = arrays / arrays.max()
+    norm = colors.Normalize(fracs.min(), fracs.max())
+    for thisfrac, thispatch in zip(fracs, patches):
+        color = plt.cm.viridis(norm(thisfrac))
+        thispatch.set_facecolor(color)
+    plt.grid()
+    
+np.random.seed(0)
+x = np.random.randn(1000)
+cghist(x, 10)
+```
+![download (4)](https://user-images.githubusercontent.com/52376448/66706756-cee96380-ed71-11e9-954c-5fec1d5027d6.png)
 <hr class='division3'>
 </details>
 
