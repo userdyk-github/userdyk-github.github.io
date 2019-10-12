@@ -21,8 +21,43 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
+## **Method of moment**
+<div style="font-size: 70%; text-align: center;">
+    Asumption : parameter is determined by sample statistic(population moment = sample moment)
+</div>
+<br><br><br>
+
+### ***estimate for beta distribution***
+
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5fc18388353b219c482e8e35ca4aae808ab1be81" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -14.049ex; margin-bottom: -0.289ex; width:38.853ex; height:29.843ex;" alt="{\displaystyle {\begin{aligned}f(x;\alpha ,\beta )&amp;=\mathrm {constant} \cdot x^{\alpha -1}(1-x)^{\beta -1}\\[3pt]&amp;={\frac {x^{\alpha -1}(1-x)^{\beta -1}}{\displaystyle \int _{0}^{1}u^{\alpha -1}(1-u)^{\beta -1}\,du}}\\[6pt]&amp;={\frac {\Gamma (\alpha +\beta )}{\Gamma (\alpha )\Gamma (\beta )}}\,x^{\alpha -1}(1-x)^{\beta -1}\\[6pt]&amp;={\frac {1}{\mathrm {B} (\alpha ,\beta )}}x^{\alpha -1}(1-x)^{\beta -1}\end{aligned}}}">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e03c03f31b903a1bc73ea8b637e3134b110a85a2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:36.574ex; height:7.343ex;" alt="\operatorname{E}[X^k]= \frac{\alpha^{(k)}}{(\alpha + \beta)^{(k)}} = \prod_{r=0}^{k-1} \frac{\alpha+r}{\alpha+\beta+r}">
+
+```python
+from scipy import stats
+import numpy as np
+
+def estimate_beta(x):
+    x_bar = x.mean()
+    s2 = x.var()
+    a = x_bar * (x_bar * (1 - x_bar) / s2 - 1)
+    b = (1 - x_bar) * (x_bar * (1 - x_bar) / s2 - 1)
+    return a, b
+    
+np.random.seed(0)
+x = stats.beta(15, 12).rvs(10000)
+estimate_beta(x)
+```
+<span class="jb-medium">(15.346682046700685, 12.2121537049535)</span>
+<br><br><br>
+<hr class="division2">
+
+
 
 ## **Maximum Likelihood Estimation(MLE)**
+<div style="font-size: 70%; text-align: center;">
+    Caution : parameter ≠ random variable
+</div>
+<br><br><br>
 
 ### ***likelihood for normal distribution about single sample data***
 
@@ -100,35 +135,13 @@ optimize.brent(objective, brack=(0,1))
 <br><br><br>
 <hr class="division2">
 
-## **Method of moment**
 
-### ***estimate for beta distribution***
-
-<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5fc18388353b219c482e8e35ca4aae808ab1be81" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -14.049ex; margin-bottom: -0.289ex; width:38.853ex; height:29.843ex;" alt="{\displaystyle {\begin{aligned}f(x;\alpha ,\beta )&amp;=\mathrm {constant} \cdot x^{\alpha -1}(1-x)^{\beta -1}\\[3pt]&amp;={\frac {x^{\alpha -1}(1-x)^{\beta -1}}{\displaystyle \int _{0}^{1}u^{\alpha -1}(1-u)^{\beta -1}\,du}}\\[6pt]&amp;={\frac {\Gamma (\alpha +\beta )}{\Gamma (\alpha )\Gamma (\beta )}}\,x^{\alpha -1}(1-x)^{\beta -1}\\[6pt]&amp;={\frac {1}{\mathrm {B} (\alpha ,\beta )}}x^{\alpha -1}(1-x)^{\beta -1}\end{aligned}}}">
-<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e03c03f31b903a1bc73ea8b637e3134b110a85a2" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:36.574ex; height:7.343ex;" alt="\operatorname{E}[X^k]= \frac{\alpha^{(k)}}{(\alpha + \beta)^{(k)}} = \prod_{r=0}^{k-1} \frac{\alpha+r}{\alpha+\beta+r}">
-
-```python
-from scipy import stats
-import numpy as np
-
-def estimate_beta(x):
-    x_bar = x.mean()
-    s2 = x.var()
-    a = x_bar * (x_bar * (1 - x_bar) / s2 - 1)
-    b = (1 - x_bar) * (x_bar * (1 - x_bar) / s2 - 1)
-    return a, b
-    
-np.random.seed(0)
-x = stats.beta(15, 12).rvs(10000)
-estimate_beta(x)
-```
-<span class="jb-medium">(15.346682046700685, 12.2121537049535)</span>
-<br><br><br>
-<hr class="division2">
 
 
 ## **Bayesian estimation**
-
+<div style="font-size: 70%; text-align: center;">
+    Asumption : parameter = random variable
+</div>
 <hr class="division1">
 
 List of posts followed by this article
@@ -139,8 +152,8 @@ List of posts followed by this article
 ---
 
 Reference
-- <a href='https://datascienceschool.net/view-notebook/864a2cc43df44531be32e3fa48769501/' target="_blank">likelihood function</a>
 - <a href='https://datascienceschool.net/view-notebook/87b67dafd7544e3380af278ff4f22d77/' target="_blank">method of moment</a>
+- <a href='https://datascienceschool.net/view-notebook/864a2cc43df44531be32e3fa48769501/' target="_blank">likelihood function</a>
 - <a href='https://datascienceschool.net/view-notebook/ae35a40deb884cf88e85135b4b5a1130/' target="_blank">Bayesian estimation</a>
 
 ---
