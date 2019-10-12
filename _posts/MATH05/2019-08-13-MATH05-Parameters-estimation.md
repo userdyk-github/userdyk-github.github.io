@@ -94,7 +94,6 @@ plt.title('likelihood $L(\mu, \sigma^2)$')
 plt.show()
 ```
 ![download](https://user-images.githubusercontent.com/52376448/66691348-9f364f00-ecd0-11e9-8d18-074f932e3776.png)
-<span class="jb-medium">plot error : z range</span>
 <hr class='division3'>
 </details>
 <br><br><br>
