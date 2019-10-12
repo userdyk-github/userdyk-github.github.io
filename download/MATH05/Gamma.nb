@@ -1,0 +1,498 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     15895,        490]
+NotebookOptionsPosition[     14173,        423]
+NotebookOutlinePosition[     14519,        438]
+CellTagsIndexPosition[     14476,        435]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Gamma", "Title",
+ CellChangeTimes->{{3.7726449685264997`*^9, 3.772644971540628*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"dist", "=", 
+  RowBox[{"GammaDistribution", "[", 
+   RowBox[{"\[Alpha]", ",", "\[Lambda]"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7726464745699153`*^9, 3.7726464867134457`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"GammaDistribution", "[", 
+  RowBox[{"\[Alpha]", ",", "\[Lambda]"}], "]"}]], "Output",
+ CellChangeTimes->{3.7726464883659687`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PDF", "[", 
+  RowBox[{"dist", ",", "z"}], "]"}]], "Input",
+ CellChangeTimes->{{3.77264649019711*^9, 3.772646504556614*^9}}],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\[Piecewise]", GridBox[{
+       {
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["\[ExponentialE]", 
+           RowBox[{"-", 
+            FractionBox["z", "\[Lambda]"]}]], " ", 
+          SuperscriptBox["z", 
+           RowBox[{
+            RowBox[{"-", "1"}], "+", "\[Alpha]"}]], " ", 
+          SuperscriptBox["\[Lambda]", 
+           RowBox[{"-", "\[Alpha]"}]]}], 
+         RowBox[{"Gamma", "[", "\[Alpha]", "]"}]], 
+        RowBox[{"z", ">", "0"}]},
+       {"0", 
+        TagBox["True",
+         "PiecewiseDefault",
+         AutoDelete->True]}
+      },
+      AllowedDimensions->{2, Automatic},
+      Editable->True,
+      GridBoxAlignment->{
+       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+        "RowsIndexed" -> {}},
+      GridBoxItemSize->{
+       "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+        "RowsIndexed" -> {}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.84]}, 
+          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}, "RowsIndexed" -> {}},
+      Selectable->True]}
+   },
+   GridBoxAlignment->{
+    "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+     "RowsIndexed" -> {}},
+   GridBoxItemSize->{
+    "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+     "RowsIndexed" -> {}},
+   GridBoxSpacings->{"Columns" -> {
+       Offset[0.27999999999999997`], {
+        Offset[0.35]}, 
+       Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+       Offset[0.2], {
+        Offset[0.4]}, 
+       Offset[0.2]}, "RowsIndexed" -> {}}],
+  "Piecewise",
+  DeleteWithContents->True,
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.7726465053045764`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"PDF", "[", 
+      RowBox[{
+       RowBox[{"GammaDistribution", "[", 
+        RowBox[{"\[Alpha]", ",", "\[Lambda]"}], "]"}], ",", "x"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", "20"}], "}"}], ",", 
+     RowBox[{"Filling", "\[Rule]", "Axis"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[Alpha]", ",", "1", ",", "6"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[Lambda]", ",", "2", ",", "6"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.772646606846963*^9, 3.7726466918695965`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{Parallel`Palette`Private`\[Alpha]$$ = 5.18, 
+    Parallel`Palette`Private`\[Lambda]$$ = 4.855, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[Parallel`Palette`Private`\[Alpha]$$], 1, 6}, {
+      Hold[Parallel`Palette`Private`\[Lambda]$$], 2, 6}}, Typeset`size$$ = {
+    360., {106., 112.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, 
+    Parallel`Palette`Private`\[Alpha]$187270$$ = 0, 
+    Parallel`Palette`Private`\[Lambda]$187271$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {
+       Parallel`Palette`Private`\[Alpha]$$ = 1, 
+        Parallel`Palette`Private`\[Lambda]$$ = 2}, "ControllerVariables" :> {
+        Hold[
+        Parallel`Palette`Private`\[Alpha]$$, 
+         Parallel`Palette`Private`\[Alpha]$187270$$, 0], 
+        Hold[
+        Parallel`Palette`Private`\[Lambda]$$, 
+         Parallel`Palette`Private`\[Lambda]$187271$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Plot[
+        PDF[
+         GammaDistribution[
+         Parallel`Palette`Private`\[Alpha]$$, 
+          Parallel`Palette`Private`\[Lambda]$$], 
+         Parallel`Palette`Private`x], {Parallel`Palette`Private`x, 0, 20}, 
+        Filling -> Axis], 
+      "Specifications" :> {{Parallel`Palette`Private`\[Alpha]$$, 1, 6}, {
+        Parallel`Palette`Private`\[Lambda]$$, 2, 6}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{411., {167., 173.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.772646683341374*^9, 3.772646693480229*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Table", "[", 
+       RowBox[{
+        RowBox[{"PDF", "[", 
+         RowBox[{
+          RowBox[{"GammaDistribution", "[", 
+           RowBox[{"\[Alpha]", ",", "\[Lambda]"}], "]"}], ",", "x"}], "]"}], 
+        ",", 
+        RowBox[{"{", 
+         RowBox[{"\[Alpha]", ",", 
+          RowBox[{"{", 
+           RowBox[{"1", ",", "4", ",", "6"}], "}"}]}], "}"}]}], "]"}], "//", 
+      "Evaluate"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", "20"}], "}"}], ",", 
+     RowBox[{"Filling", "\[Rule]", "Axis"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[Lambda]", ",", "2", ",", "6"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7726467619079113`*^9, 3.772646835982643*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{Parallel`Palette`Private`\[Lambda]$$ = 2., 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
+      Hold[Parallel`Palette`Private`\[Lambda]$$], 2, 6}}, Typeset`size$$ = {
+    360., {106., 112.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, 
+    Parallel`Palette`Private`\[Lambda]$193694$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {Parallel`Palette`Private`\[Lambda]$$ = 2}, 
+      "ControllerVariables" :> {
+        Hold[
+        Parallel`Palette`Private`\[Lambda]$$, 
+         Parallel`Palette`Private`\[Lambda]$193694$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Plot[
+        Evaluate[
+         Table[
+          PDF[
+           GammaDistribution[
+           Parallel`Palette`Private`\[Alpha], 
+            Parallel`Palette`Private`\[Lambda]$$], 
+           Parallel`Palette`Private`x], {
+          Parallel`Palette`Private`\[Alpha], {1, 4, 6}}]], {
+        Parallel`Palette`Private`x, 0, 20}, Filling -> Axis], 
+      "Specifications" :> {{Parallel`Palette`Private`\[Lambda]$$, 2, 6}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{411., {153., 159.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.7726468366897078`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Table", "[", 
+       RowBox[{
+        RowBox[{"PDF", "[", 
+         RowBox[{
+          RowBox[{"GammaDistribution", "[", 
+           RowBox[{"\[Alpha]", ",", "\[Lambda]"}], "]"}], ",", "x"}], "]"}], 
+        ",", 
+        RowBox[{"{", 
+         RowBox[{"\[Lambda]", ",", 
+          RowBox[{"{", 
+           RowBox[{"2", ",", "4", ",", "6"}], "}"}]}], "}"}]}], "]"}], "//", 
+      "Evaluate"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", "20"}], "}"}], ",", 
+     RowBox[{"Filling", "\[Rule]", "Axis"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[Alpha]", ",", "1", ",", "6"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7726468513746614`*^9, 3.7726469350821686`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{Parallel`Palette`Private`\[Alpha]$$ = 4.67, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
+      Hold[Parallel`Palette`Private`\[Alpha]$$], 1, 6}}, Typeset`size$$ = {
+    360., {106., 112.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, 
+    Parallel`Palette`Private`\[Alpha]$196607$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {Parallel`Palette`Private`\[Alpha]$$ = 1}, 
+      "ControllerVariables" :> {
+        Hold[
+        Parallel`Palette`Private`\[Alpha]$$, 
+         Parallel`Palette`Private`\[Alpha]$196607$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Plot[
+        Evaluate[
+         Table[
+          PDF[
+           GammaDistribution[
+           Parallel`Palette`Private`\[Alpha]$$, 
+            Parallel`Palette`Private`\[Lambda]], 
+           Parallel`Palette`Private`x], {
+          Parallel`Palette`Private`\[Lambda], {2, 4, 6}}]], {
+        Parallel`Palette`Private`x, 0, 20}, Filling -> Axis], 
+      "Specifications" :> {{Parallel`Palette`Private`\[Alpha]$$, 1, 6}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{411., {153., 159.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.7726469364953656`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Mean", "[", "dist", "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"\[Alpha]", " ", "\[Lambda]"}]], "Output",
+ CellChangeTimes->{3.7726467143673697`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Median", "[", "dist", "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"\[Lambda]", " ", 
+  RowBox[{"InverseGammaRegularized", "[", 
+   RowBox[{"\[Alpha]", ",", "0", ",", 
+    FractionBox["1", "2"]}], "]"}]}]], "Output",
+ CellChangeTimes->{3.7726467218763103`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Variance", "[", "dist", "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"\[Alpha]", " ", 
+  SuperscriptBox["\[Lambda]", "2"]}]], "Output",
+ CellChangeTimes->{3.7726467286531672`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"StandardDeviation", "[", "dist", "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  SqrtBox["\[Alpha]"], " ", "\[Lambda]"}]], "Output",
+ CellChangeTimes->{3.7726467341803923`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Skewness", "[", "dist", "]"}]], "Input"],
+
+Cell[BoxData[
+ FractionBox["2", 
+  SqrtBox["\[Alpha]"]]], "Output",
+ CellChangeTimes->{3.772646738305352*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Kurtosis", "[", "dist", "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"3", "+", 
+  FractionBox["6", "\[Alpha]"]}]], "Output",
+ CellChangeTimes->{3.7726467427953496`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CharacteristicFunction", "[", 
+  RowBox[{"dist", ",", "t"}], "]"}]], "Input"],
+
+Cell[BoxData[
+ SuperscriptBox[
+  RowBox[{"(", 
+   RowBox[{"1", "-", 
+    RowBox[{"\[ImaginaryI]", " ", "t", " ", "\[Lambda]"}]}], ")"}], 
+  RowBox[{"-", "\[Alpha]"}]]], "Output",
+ CellChangeTimes->{3.7726467472474566`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Random", "[", 
+  RowBox[{"GammaDistribution", "[", 
+   RowBox[{"1", ",", "1"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7726480052265096`*^9, 3.7726480102152185`*^9}}],
+
+Cell[BoxData["1.4411213632877617`"], "Output",
+ CellChangeTimes->{3.7726467517703466`*^9, 3.7726480106181035`*^9}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{852, 462},
+WindowMargins->{{Automatic, -7}, {Automatic, 0}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 90, 1, 101, "Title"],
+Cell[CellGroupData[{
+Cell[695, 27, 205, 4, 47, "Input"],
+Cell[903, 33, 153, 3, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1093, 41, 147, 3, 47, "Input"],
+Cell[1243, 46, 1934, 56, 67, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3214, 107, 622, 16, 68, "Input"],
+Cell[3839, 125, 2355, 50, 357, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6231, 180, 811, 23, 84, "Input"],
+Cell[7045, 205, 2050, 45, 329, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9132, 255, 813, 23, 84, "Input"],
+Cell[9948, 280, 2046, 45, 329, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12031, 330, 60, 1, 47, "Input"],
+Cell[12094, 333, 109, 2, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12240, 340, 62, 1, 47, "Input"],
+Cell[12305, 343, 216, 5, 45, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12558, 353, 64, 1, 47, "Input"],
+Cell[12625, 356, 133, 3, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12795, 364, 73, 1, 47, "Input"],
+Cell[12871, 367, 121, 3, 33, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13029, 375, 64, 1, 47, "Input"],
+Cell[13096, 378, 109, 3, 51, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13242, 386, 64, 1, 47, "Input"],
+Cell[13309, 389, 122, 3, 45, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13468, 397, 101, 2, 47, "Input"],
+Cell[13572, 401, 222, 6, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13831, 412, 197, 4, 47, "Input"],
+Cell[14031, 418, 114, 1, 62, "Output"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

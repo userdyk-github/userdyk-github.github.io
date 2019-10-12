@@ -1,0 +1,1733 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     57309,       1725]
+NotebookOptionsPosition[     55453,       1654]
+NotebookOutlinePosition[     55799,       1669]
+CellTagsIndexPosition[     55756,       1666]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["FisherZ", "Title",
+ CellChangeTimes->{{3.772644939705216*^9, 3.772644949840514*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"dist", "=", 
+  RowBox[{"FisherZDistribution", "[", 
+   RowBox[{"n", ",", "m"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7726481289051976`*^9, 3.772648145497901*^9}}],
+
+Cell[BoxData[
+ RowBox[{"FisherZDistribution", "[", 
+  RowBox[{"n", ",", "m"}], "]"}]], "Output",
+ CellChangeTimes->{3.7726481461610785`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PDF", "[", 
+  RowBox[{"dist", ",", "z"}], "]"}]], "Input",
+ CellChangeTimes->{{3.772648147748828*^9, 3.772648155562932*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"2", " ", 
+   SuperscriptBox["\[ExponentialE]", 
+    RowBox[{"n", " ", "z"}]], " ", 
+   SuperscriptBox["m", 
+    RowBox[{"m", "/", "2"}]], " ", 
+   SuperscriptBox["n", 
+    RowBox[{"n", "/", "2"}]], " ", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"m", "+", 
+      RowBox[{
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{"2", " ", "z"}]], " ", "n"}]}], ")"}], 
+    RowBox[{
+     FractionBox["1", "2"], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", "m"}], "-", "n"}], ")"}]}]]}], 
+  RowBox[{"Beta", "[", 
+   RowBox[{
+    FractionBox["n", "2"], ",", 
+    FractionBox["m", "2"]}], "]"}]]], "Output",
+ CellChangeTimes->{3.772648156179282*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CDF", "[", 
+  RowBox[{"dist", ",", "z"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7726481586517153`*^9, 3.7726481620287027`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"BetaRegularized", "[", 
+  RowBox[{
+   FractionBox[
+    RowBox[{
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{"2", " ", "z"}]], " ", "n"}], 
+    RowBox[{"m", "+", 
+     RowBox[{
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{"2", " ", "z"}]], " ", "n"}]}]], ",", 
+   FractionBox["n", "2"], ",", 
+   FractionBox["m", "2"]}], "]"}]], "Output",
+ CellChangeTimes->{3.772648162307897*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"PDF", "[", 
+      RowBox[{
+       RowBox[{"FisherZDistribution", "[", 
+        RowBox[{"n", ",", "m"}], "]"}], ",", "x"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"0", "-", "3"}], ",", "3"}], "}"}], ",", 
+     RowBox[{"Filling", "\[Rule]", "Axis"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"n", ",", "0.5", ",", "10"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"m", ",", "0.5", ",", "10"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.772648168030589*^9, 3.7726482615117054`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{Parallel`Palette`Private`m$$ = 9.44, 
+    Parallel`Palette`Private`n$$ = 6.93, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[Parallel`Palette`Private`n$$], 0.5, 10}, {
+      Hold[Parallel`Palette`Private`m$$], 0.5, 10}}, Typeset`size$$ = {
+    360., {111., 117.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, Parallel`Palette`Private`n$255999$$ = 0, 
+    Parallel`Palette`Private`m$256000$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {
+       Parallel`Palette`Private`m$$ = 0.5, Parallel`Palette`Private`n$$ = 
+        0.5}, "ControllerVariables" :> {
+        Hold[
+        Parallel`Palette`Private`n$$, Parallel`Palette`Private`n$255999$$, 0], 
+        Hold[
+        Parallel`Palette`Private`m$$, Parallel`Palette`Private`m$256000$$, 
+         0]}, "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Plot[
+        PDF[
+         FisherZDistribution[
+         Parallel`Palette`Private`n$$, Parallel`Palette`Private`m$$], 
+         Parallel`Palette`Private`x], {Parallel`Palette`Private`x, 0 - 3, 3}, 
+        Filling -> Axis], 
+      "Specifications" :> {{Parallel`Palette`Private`n$$, 0.5, 10}, {
+        Parallel`Palette`Private`m$$, 0.5, 10}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{411., {172., 178.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.7726482538691*^9, 3.7726482626156983`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Table", "[", 
+       RowBox[{
+        RowBox[{"PDF", "[", 
+         RowBox[{
+          RowBox[{"FisherZDistribution", "[", 
+           RowBox[{"n", ",", "m"}], "]"}], ",", "x"}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"n", ",", 
+          RowBox[{"{", 
+           RowBox[{"0.5", ",", "1.5", ",", "10"}], "}"}]}], "}"}]}], "]"}], "//",
+       "Evaluate"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"0", "-", "3"}], ",", "3"}], "}"}], ",", 
+     RowBox[{"Filling", "\[Rule]", "Axis"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"m", ",", "0.5", ",", "10"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.772648279592309*^9, 3.7726483048607273`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{Parallel`Palette`Private`m$$ = 9.24, Typeset`show$$ = 
+    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[Parallel`Palette`Private`m$$], 0.5, 10}}, Typeset`size$$ = {
+    360., {111., 117.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, Parallel`Palette`Private`m$261720$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {Parallel`Palette`Private`m$$ = 0.5}, 
+      "ControllerVariables" :> {
+        Hold[
+        Parallel`Palette`Private`m$$, Parallel`Palette`Private`m$261720$$, 
+         0]}, "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Plot[
+        Evaluate[
+         Table[
+          PDF[
+           FisherZDistribution[
+           Parallel`Palette`Private`n, Parallel`Palette`Private`m$$], 
+           Parallel`Palette`Private`x], {
+          Parallel`Palette`Private`n, {0.5, 1.5, 10}}]], {
+        Parallel`Palette`Private`x, 0 - 3, 3}, Filling -> Axis], 
+      "Specifications" :> {{Parallel`Palette`Private`m$$, 0.5, 10}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{411., {158., 164.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.772648305829136*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Table", "[", 
+       RowBox[{
+        RowBox[{"PDF", "[", 
+         RowBox[{
+          RowBox[{"FisherZDistribution", "[", 
+           RowBox[{"n", ",", "m"}], "]"}], ",", "x"}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"m", ",", 
+          RowBox[{"{", 
+           RowBox[{"0.5", ",", "1.5", ",", "10"}], "}"}]}], "}"}]}], "]"}], "//",
+       "Evaluate"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"0", "-", "3"}], ",", "3"}], "}"}], ",", 
+     RowBox[{"Filling", "\[Rule]", "Axis"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"n", ",", "0.5", ",", "10"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7726483256730657`*^9, 3.7726483868753057`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{Parallel`Palette`Private`n$$ = 9.85, Typeset`show$$ = 
+    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[Parallel`Palette`Private`n$$], 0.5, 10}}, Typeset`size$$ = {
+    360., {111., 117.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, Parallel`Palette`Private`n$270489$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {Parallel`Palette`Private`n$$ = 0.5}, 
+      "ControllerVariables" :> {
+        Hold[
+        Parallel`Palette`Private`n$$, Parallel`Palette`Private`n$270489$$, 
+         0]}, "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Plot[
+        Evaluate[
+         Table[
+          PDF[
+           FisherZDistribution[
+           Parallel`Palette`Private`n$$, Parallel`Palette`Private`m], 
+           Parallel`Palette`Private`x], {
+          Parallel`Palette`Private`m, {0.5, 1.5, 10}}]], {
+        Parallel`Palette`Private`x, 0 - 3, 3}, Filling -> Axis], 
+      "Specifications" :> {{Parallel`Palette`Private`n$$, 0.5, 10}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{411., {158., 164.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.772648387158549*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Mean", "[", "dist", "]"}]], "Input"],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   FractionBox[
+    RowBox[{"2", " ", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       FractionBox["m", "n"], ")"}], 
+      RowBox[{"m", "/", "2"}]], " ", 
+     RowBox[{"HypergeometricPFQ", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         FractionBox["m", "2"], ",", 
+         FractionBox["m", "2"], ",", 
+         RowBox[{
+          FractionBox["m", "2"], "+", 
+          FractionBox["n", "2"]}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"1", "+", 
+          FractionBox["m", "2"]}], ",", 
+         RowBox[{"1", "+", 
+          FractionBox["m", "2"]}]}], "}"}], ",", 
+       RowBox[{"-", 
+        FractionBox["m", "n"]}]}], "]"}]}], 
+    SuperscriptBox["m", "2"]], "-", 
+   FractionBox[
+    RowBox[{"2", " ", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       FractionBox["m", "n"], ")"}], 
+      RowBox[{
+       RowBox[{"-", "n"}], "/", "2"}]], " ", 
+     RowBox[{"HypergeometricPFQ", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+          FractionBox["m", "2"], "+", 
+          FractionBox["n", "2"]}], ",", 
+         FractionBox["n", "2"], ",", 
+         FractionBox["n", "2"]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"1", "+", 
+          FractionBox["n", "2"]}], ",", 
+         RowBox[{"1", "+", 
+          FractionBox["n", "2"]}]}], "}"}], ",", 
+       RowBox[{"-", 
+        FractionBox["n", "m"]}]}], "]"}]}], 
+    SuperscriptBox["n", "2"]]}], 
+  RowBox[{"Beta", "[", 
+   RowBox[{
+    FractionBox["n", "2"], ",", 
+    FractionBox["m", "2"]}], "]"}]]], "Output",
+ CellChangeTimes->{3.7726484070852566`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Median", "[", "dist", "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["1", "2"], " ", 
+  RowBox[{"Log", "[", 
+   FractionBox[
+    RowBox[{"m", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", "1"}], "+", 
+       FractionBox["1", 
+        RowBox[{"InverseBetaRegularized", "[", 
+         RowBox[{"1", ",", 
+          RowBox[{"-", 
+           FractionBox["1", "2"]}], ",", 
+          FractionBox["m", "2"], ",", 
+          FractionBox["n", "2"]}], "]"}]]}], ")"}]}], "n"], "]"}]}]], "Output",
+ CellChangeTimes->{3.772648411344866*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Variance", "[", "dist", "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"-", 
+   FractionBox[
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{
+       FractionBox[
+        RowBox[{"2", " ", 
+         SuperscriptBox[
+          RowBox[{"(", 
+           FractionBox["m", "n"], ")"}], 
+          RowBox[{"m", "/", "2"}]], " ", 
+         RowBox[{"HypergeometricPFQ", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             FractionBox["m", "2"], ",", 
+             FractionBox["m", "2"], ",", 
+             RowBox[{
+              FractionBox["m", "2"], "+", 
+              FractionBox["n", "2"]}]}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"1", "+", 
+              FractionBox["m", "2"]}], ",", 
+             RowBox[{"1", "+", 
+              FractionBox["m", "2"]}]}], "}"}], ",", 
+           RowBox[{"-", 
+            FractionBox["m", "n"]}]}], "]"}]}], 
+        SuperscriptBox["m", "2"]], "-", 
+       FractionBox[
+        RowBox[{"2", " ", 
+         SuperscriptBox[
+          RowBox[{"(", 
+           FractionBox["m", "n"], ")"}], 
+          RowBox[{
+           RowBox[{"-", "n"}], "/", "2"}]], " ", 
+         RowBox[{"HypergeometricPFQ", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{
+              FractionBox["m", "2"], "+", 
+              FractionBox["n", "2"]}], ",", 
+             FractionBox["n", "2"], ",", 
+             FractionBox["n", "2"]}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"1", "+", 
+              FractionBox["n", "2"]}], ",", 
+             RowBox[{"1", "+", 
+              FractionBox["n", "2"]}]}], "}"}], ",", 
+           RowBox[{"-", 
+            FractionBox["n", "m"]}]}], "]"}]}], 
+        SuperscriptBox["n", "2"]]}], ")"}], "2"], 
+    SuperscriptBox[
+     RowBox[{"Beta", "[", 
+      RowBox[{
+       FractionBox["n", "2"], ",", 
+       FractionBox["m", "2"]}], "]"}], "2"]]}], "+", 
+  RowBox[{
+   FractionBox["1", 
+    RowBox[{"Beta", "[", 
+     RowBox[{
+      FractionBox["n", "2"], ",", 
+      FractionBox["m", "2"]}], "]"}]], 
+   RowBox[{"4", " ", 
+    SuperscriptBox["m", 
+     RowBox[{"m", "/", "2"}]], " ", 
+    SuperscriptBox["n", 
+     RowBox[{"n", "/", "2"}]], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      FractionBox[
+       RowBox[{
+        SuperscriptBox["n", 
+         RowBox[{
+          FractionBox["1", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", "m"}], "-", "n"}], ")"}]}]], " ", 
+        RowBox[{"HypergeometricPFQ", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            FractionBox["m", "2"], ",", 
+            FractionBox["m", "2"], ",", 
+            FractionBox["m", "2"], ",", 
+            RowBox[{
+             FractionBox["m", "2"], "+", 
+             FractionBox["n", "2"]}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"1", "+", 
+             FractionBox["m", "2"]}], ",", 
+            RowBox[{"1", "+", 
+             FractionBox["m", "2"]}], ",", 
+            RowBox[{"1", "+", 
+             FractionBox["m", "2"]}]}], "}"}], ",", 
+          RowBox[{"-", 
+           FractionBox["m", "n"]}]}], "]"}]}], 
+       SuperscriptBox["m", "3"]], "+", 
+      FractionBox[
+       RowBox[{
+        SuperscriptBox["m", 
+         RowBox[{
+          FractionBox["1", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", "m"}], "-", "n"}], ")"}]}]], " ", 
+        RowBox[{"HypergeometricPFQ", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{
+             FractionBox["m", "2"], "+", 
+             FractionBox["n", "2"]}], ",", 
+            FractionBox["n", "2"], ",", 
+            FractionBox["n", "2"], ",", 
+            FractionBox["n", "2"]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"1", "+", 
+             FractionBox["n", "2"]}], ",", 
+            RowBox[{"1", "+", 
+             FractionBox["n", "2"]}], ",", 
+            RowBox[{"1", "+", 
+             FractionBox["n", "2"]}]}], "}"}], ",", 
+          RowBox[{"-", 
+           FractionBox["n", "m"]}]}], "]"}]}], 
+       SuperscriptBox["n", "3"]]}], ")"}]}]}]}]], "Output",
+ CellChangeTimes->{3.772648416723481*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"StandardDeviation", "[", "dist", "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"\[Sqrt]", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"-", 
+     FractionBox[
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{
+         FractionBox[
+          RowBox[{"2", " ", 
+           SuperscriptBox[
+            RowBox[{"(", 
+             FractionBox["m", "n"], ")"}], 
+            RowBox[{"m", "/", "2"}]], " ", 
+           RowBox[{"HypergeometricPFQ", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{
+               FractionBox["m", "2"], ",", 
+               FractionBox["m", "2"], ",", 
+               RowBox[{
+                FractionBox["m", "2"], "+", 
+                FractionBox["n", "2"]}]}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"1", "+", 
+                FractionBox["m", "2"]}], ",", 
+               RowBox[{"1", "+", 
+                FractionBox["m", "2"]}]}], "}"}], ",", 
+             RowBox[{"-", 
+              FractionBox["m", "n"]}]}], "]"}]}], 
+          SuperscriptBox["m", "2"]], "-", 
+         FractionBox[
+          RowBox[{"2", " ", 
+           SuperscriptBox[
+            RowBox[{"(", 
+             FractionBox["m", "n"], ")"}], 
+            RowBox[{
+             RowBox[{"-", "n"}], "/", "2"}]], " ", 
+           RowBox[{"HypergeometricPFQ", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{
+                FractionBox["m", "2"], "+", 
+                FractionBox["n", "2"]}], ",", 
+               FractionBox["n", "2"], ",", 
+               FractionBox["n", "2"]}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"1", "+", 
+                FractionBox["n", "2"]}], ",", 
+               RowBox[{"1", "+", 
+                FractionBox["n", "2"]}]}], "}"}], ",", 
+             RowBox[{"-", 
+              FractionBox["n", "m"]}]}], "]"}]}], 
+          SuperscriptBox["n", "2"]]}], ")"}], "2"], 
+      SuperscriptBox[
+       RowBox[{"Beta", "[", 
+        RowBox[{
+         FractionBox["n", "2"], ",", 
+         FractionBox["m", "2"]}], "]"}], "2"]]}], "+", 
+    RowBox[{
+     FractionBox["1", 
+      RowBox[{"Beta", "[", 
+       RowBox[{
+        FractionBox["n", "2"], ",", 
+        FractionBox["m", "2"]}], "]"}]], 
+     RowBox[{"4", " ", 
+      SuperscriptBox["m", 
+       RowBox[{"m", "/", "2"}]], " ", 
+      SuperscriptBox["n", 
+       RowBox[{"n", "/", "2"}]], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["n", 
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "m"}], "-", "n"}], ")"}]}]], " ", 
+          RowBox[{"HypergeometricPFQ", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              FractionBox["m", "2"], ",", 
+              FractionBox["m", "2"], ",", 
+              FractionBox["m", "2"], ",", 
+              RowBox[{
+               FractionBox["m", "2"], "+", 
+               FractionBox["n", "2"]}]}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"1", "+", 
+               FractionBox["m", "2"]}], ",", 
+              RowBox[{"1", "+", 
+               FractionBox["m", "2"]}], ",", 
+              RowBox[{"1", "+", 
+               FractionBox["m", "2"]}]}], "}"}], ",", 
+            RowBox[{"-", 
+             FractionBox["m", "n"]}]}], "]"}]}], 
+         SuperscriptBox["m", "3"]], "+", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["m", 
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "m"}], "-", "n"}], ")"}]}]], " ", 
+          RowBox[{"HypergeometricPFQ", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{
+               FractionBox["m", "2"], "+", 
+               FractionBox["n", "2"]}], ",", 
+              FractionBox["n", "2"], ",", 
+              FractionBox["n", "2"], ",", 
+              FractionBox["n", "2"]}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"1", "+", 
+               FractionBox["n", "2"]}], ",", 
+              RowBox[{"1", "+", 
+               FractionBox["n", "2"]}], ",", 
+              RowBox[{"1", "+", 
+               FractionBox["n", "2"]}]}], "}"}], ",", 
+            RowBox[{"-", 
+             FractionBox["n", "m"]}]}], "]"}]}], 
+         SuperscriptBox["n", "3"]]}], ")"}]}]}]}], ")"}]}]], "Output",
+ CellChangeTimes->{3.772648421569536*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Skewness", "[", "dist", "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(", 
+   RowBox[{
+    FractionBox[
+     RowBox[{"2", " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{
+         FractionBox[
+          RowBox[{"2", " ", 
+           SuperscriptBox[
+            RowBox[{"(", 
+             FractionBox["m", "n"], ")"}], 
+            RowBox[{"m", "/", "2"}]], " ", 
+           RowBox[{"HypergeometricPFQ", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{
+               FractionBox["m", "2"], ",", 
+               FractionBox["m", "2"], ",", 
+               RowBox[{
+                FractionBox["m", "2"], "+", 
+                FractionBox["n", "2"]}]}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"1", "+", 
+                FractionBox["m", "2"]}], ",", 
+               RowBox[{"1", "+", 
+                FractionBox["m", "2"]}]}], "}"}], ",", 
+             RowBox[{"-", 
+              FractionBox["m", "n"]}]}], "]"}]}], 
+          SuperscriptBox["m", "2"]], "-", 
+         FractionBox[
+          RowBox[{"2", " ", 
+           SuperscriptBox[
+            RowBox[{"(", 
+             FractionBox["m", "n"], ")"}], 
+            RowBox[{
+             RowBox[{"-", "n"}], "/", "2"}]], " ", 
+           RowBox[{"HypergeometricPFQ", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{
+                FractionBox["m", "2"], "+", 
+                FractionBox["n", "2"]}], ",", 
+               FractionBox["n", "2"], ",", 
+               FractionBox["n", "2"]}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"1", "+", 
+                FractionBox["n", "2"]}], ",", 
+               RowBox[{"1", "+", 
+                FractionBox["n", "2"]}]}], "}"}], ",", 
+             RowBox[{"-", 
+              FractionBox["n", "m"]}]}], "]"}]}], 
+          SuperscriptBox["n", "2"]]}], ")"}], "3"]}], 
+     SuperscriptBox[
+      RowBox[{"Beta", "[", 
+       RowBox[{
+        FractionBox["n", "2"], ",", 
+        FractionBox["m", "2"]}], "]"}], "3"]], "-", 
+    RowBox[{
+     FractionBox["1", 
+      SuperscriptBox[
+       RowBox[{"Beta", "[", 
+        RowBox[{
+         FractionBox["n", "2"], ",", 
+         FractionBox["m", "2"]}], "]"}], "2"]], 
+     RowBox[{"12", " ", 
+      SuperscriptBox["m", 
+       RowBox[{"m", "/", "2"}]], " ", 
+      SuperscriptBox["n", 
+       RowBox[{"n", "/", "2"}]], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         RowBox[{"2", " ", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            FractionBox["m", "n"], ")"}], 
+           RowBox[{"m", "/", "2"}]], " ", 
+          RowBox[{"HypergeometricPFQ", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              FractionBox["m", "2"], ",", 
+              FractionBox["m", "2"], ",", 
+              RowBox[{
+               FractionBox["m", "2"], "+", 
+               FractionBox["n", "2"]}]}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"1", "+", 
+               FractionBox["m", "2"]}], ",", 
+              RowBox[{"1", "+", 
+               FractionBox["m", "2"]}]}], "}"}], ",", 
+            RowBox[{"-", 
+             FractionBox["m", "n"]}]}], "]"}]}], 
+         SuperscriptBox["m", "2"]], "-", 
+        FractionBox[
+         RowBox[{"2", " ", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            FractionBox["m", "n"], ")"}], 
+           RowBox[{
+            RowBox[{"-", "n"}], "/", "2"}]], " ", 
+          RowBox[{"HypergeometricPFQ", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{
+               FractionBox["m", "2"], "+", 
+               FractionBox["n", "2"]}], ",", 
+              FractionBox["n", "2"], ",", 
+              FractionBox["n", "2"]}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"1", "+", 
+               FractionBox["n", "2"]}], ",", 
+              RowBox[{"1", "+", 
+               FractionBox["n", "2"]}]}], "}"}], ",", 
+            RowBox[{"-", 
+             FractionBox["n", "m"]}]}], "]"}]}], 
+         SuperscriptBox["n", "2"]]}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["n", 
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "m"}], "-", "n"}], ")"}]}]], " ", 
+          RowBox[{"HypergeometricPFQ", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              FractionBox["m", "2"], ",", 
+              FractionBox["m", "2"], ",", 
+              FractionBox["m", "2"], ",", 
+              RowBox[{
+               FractionBox["m", "2"], "+", 
+               FractionBox["n", "2"]}]}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"1", "+", 
+               FractionBox["m", "2"]}], ",", 
+              RowBox[{"1", "+", 
+               FractionBox["m", "2"]}], ",", 
+              RowBox[{"1", "+", 
+               FractionBox["m", "2"]}]}], "}"}], ",", 
+            RowBox[{"-", 
+             FractionBox["m", "n"]}]}], "]"}]}], 
+         SuperscriptBox["m", "3"]], "+", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["m", 
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "m"}], "-", "n"}], ")"}]}]], " ", 
+          RowBox[{"HypergeometricPFQ", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{
+               FractionBox["m", "2"], "+", 
+               FractionBox["n", "2"]}], ",", 
+              FractionBox["n", "2"], ",", 
+              FractionBox["n", "2"], ",", 
+              FractionBox["n", "2"]}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"1", "+", 
+               FractionBox["n", "2"]}], ",", 
+              RowBox[{"1", "+", 
+               FractionBox["n", "2"]}], ",", 
+              RowBox[{"1", "+", 
+               FractionBox["n", "2"]}]}], "}"}], ",", 
+            RowBox[{"-", 
+             FractionBox["n", "m"]}]}], "]"}]}], 
+         SuperscriptBox["n", "3"]]}], ")"}]}]}], "+", 
+    RowBox[{
+     FractionBox["1", 
+      RowBox[{"Beta", "[", 
+       RowBox[{
+        FractionBox["n", "2"], ",", 
+        FractionBox["m", "2"]}], "]"}]], 
+     RowBox[{"12", " ", 
+      SuperscriptBox["m", 
+       RowBox[{"m", "/", "2"}]], " ", 
+      SuperscriptBox["n", 
+       RowBox[{"n", "/", "2"}]], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["n", 
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "m"}], "-", "n"}], ")"}]}]], " ", 
+          RowBox[{"HypergeometricPFQ", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              FractionBox["m", "2"], ",", 
+              FractionBox["m", "2"], ",", 
+              FractionBox["m", "2"], ",", 
+              FractionBox["m", "2"], ",", 
+              RowBox[{
+               FractionBox["m", "2"], "+", 
+               FractionBox["n", "2"]}]}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"1", "+", 
+               FractionBox["m", "2"]}], ",", 
+              RowBox[{"1", "+", 
+               FractionBox["m", "2"]}], ",", 
+              RowBox[{"1", "+", 
+               FractionBox["m", "2"]}], ",", 
+              RowBox[{"1", "+", 
+               FractionBox["m", "2"]}]}], "}"}], ",", 
+            RowBox[{"-", 
+             FractionBox["m", "n"]}]}], "]"}]}], 
+         SuperscriptBox["m", "4"]], "-", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["m", 
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "m"}], "-", "n"}], ")"}]}]], " ", 
+          RowBox[{"HypergeometricPFQ", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{
+               FractionBox["m", "2"], "+", 
+               FractionBox["n", "2"]}], ",", 
+              FractionBox["n", "2"], ",", 
+              FractionBox["n", "2"], ",", 
+              FractionBox["n", "2"], ",", 
+              FractionBox["n", "2"]}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"1", "+", 
+               FractionBox["n", "2"]}], ",", 
+              RowBox[{"1", "+", 
+               FractionBox["n", "2"]}], ",", 
+              RowBox[{"1", "+", 
+               FractionBox["n", "2"]}], ",", 
+              RowBox[{"1", "+", 
+               FractionBox["n", "2"]}]}], "}"}], ",", 
+            RowBox[{"-", 
+             FractionBox["n", "m"]}]}], "]"}]}], 
+         SuperscriptBox["n", "4"]]}], ")"}]}]}]}], ")"}], "/", 
+  SuperscriptBox[
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"-", 
+      FractionBox[
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{
+          FractionBox[
+           RowBox[{"2", " ", 
+            SuperscriptBox[
+             RowBox[{"(", 
+              FractionBox["m", "n"], ")"}], 
+             RowBox[{"m", "/", "2"}]], " ", 
+            RowBox[{"HypergeometricPFQ", "[", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{
+                FractionBox["m", "2"], ",", 
+                FractionBox["m", "2"], ",", 
+                RowBox[{
+                 FractionBox["m", "2"], "+", 
+                 FractionBox["n", "2"]}]}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"1", "+", 
+                 FractionBox["m", "2"]}], ",", 
+                RowBox[{"1", "+", 
+                 FractionBox["m", "2"]}]}], "}"}], ",", 
+              RowBox[{"-", 
+               FractionBox["m", "n"]}]}], "]"}]}], 
+           SuperscriptBox["m", "2"]], "-", 
+          FractionBox[
+           RowBox[{"2", " ", 
+            SuperscriptBox[
+             RowBox[{"(", 
+              FractionBox["m", "n"], ")"}], 
+             RowBox[{
+              RowBox[{"-", "n"}], "/", "2"}]], " ", 
+            RowBox[{"HypergeometricPFQ", "[", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{
+                 FractionBox["m", "2"], "+", 
+                 FractionBox["n", "2"]}], ",", 
+                FractionBox["n", "2"], ",", 
+                FractionBox["n", "2"]}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"1", "+", 
+                 FractionBox["n", "2"]}], ",", 
+                RowBox[{"1", "+", 
+                 FractionBox["n", "2"]}]}], "}"}], ",", 
+              RowBox[{"-", 
+               FractionBox["n", "m"]}]}], "]"}]}], 
+           SuperscriptBox["n", "2"]]}], ")"}], "2"], 
+       SuperscriptBox[
+        RowBox[{"Beta", "[", 
+         RowBox[{
+          FractionBox["n", "2"], ",", 
+          FractionBox["m", "2"]}], "]"}], "2"]]}], "+", 
+     RowBox[{
+      FractionBox["1", 
+       RowBox[{"Beta", "[", 
+        RowBox[{
+         FractionBox["n", "2"], ",", 
+         FractionBox["m", "2"]}], "]"}]], 
+      RowBox[{"4", " ", 
+       SuperscriptBox["m", 
+        RowBox[{"m", "/", "2"}]], " ", 
+       SuperscriptBox["n", 
+        RowBox[{"n", "/", "2"}]], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         FractionBox[
+          RowBox[{
+           SuperscriptBox["n", 
+            RowBox[{
+             FractionBox["1", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "m"}], "-", "n"}], ")"}]}]], " ", 
+           RowBox[{"HypergeometricPFQ", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{
+               FractionBox["m", "2"], ",", 
+               FractionBox["m", "2"], ",", 
+               FractionBox["m", "2"], ",", 
+               RowBox[{
+                FractionBox["m", "2"], "+", 
+                FractionBox["n", "2"]}]}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"1", "+", 
+                FractionBox["m", "2"]}], ",", 
+               RowBox[{"1", "+", 
+                FractionBox["m", "2"]}], ",", 
+               RowBox[{"1", "+", 
+                FractionBox["m", "2"]}]}], "}"}], ",", 
+             RowBox[{"-", 
+              FractionBox["m", "n"]}]}], "]"}]}], 
+          SuperscriptBox["m", "3"]], "+", 
+         FractionBox[
+          RowBox[{
+           SuperscriptBox["m", 
+            RowBox[{
+             FractionBox["1", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "m"}], "-", "n"}], ")"}]}]], " ", 
+           RowBox[{"HypergeometricPFQ", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{
+                FractionBox["m", "2"], "+", 
+                FractionBox["n", "2"]}], ",", 
+               FractionBox["n", "2"], ",", 
+               FractionBox["n", "2"], ",", 
+               FractionBox["n", "2"]}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"1", "+", 
+                FractionBox["n", "2"]}], ",", 
+               RowBox[{"1", "+", 
+                FractionBox["n", "2"]}], ",", 
+               RowBox[{"1", "+", 
+                FractionBox["n", "2"]}]}], "}"}], ",", 
+             RowBox[{"-", 
+              FractionBox["n", "m"]}]}], "]"}]}], 
+          SuperscriptBox["n", "3"]]}], ")"}]}]}]}], ")"}], 
+   RowBox[{"3", "/", "2"}]]}]], "Output",
+ CellChangeTimes->{3.7726484275445423`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Kurtosis", "[", "dist", "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"-", 
+     FractionBox[
+      RowBox[{"3", " ", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{
+          FractionBox[
+           RowBox[{"2", " ", 
+            SuperscriptBox[
+             RowBox[{"(", 
+              FractionBox["m", "n"], ")"}], 
+             RowBox[{"m", "/", "2"}]], " ", 
+            RowBox[{"HypergeometricPFQ", "[", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{
+                FractionBox["m", "2"], ",", 
+                FractionBox["m", "2"], ",", 
+                RowBox[{
+                 FractionBox["m", "2"], "+", 
+                 FractionBox["n", "2"]}]}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"1", "+", 
+                 FractionBox["m", "2"]}], ",", 
+                RowBox[{"1", "+", 
+                 FractionBox["m", "2"]}]}], "}"}], ",", 
+              RowBox[{"-", 
+               FractionBox["m", "n"]}]}], "]"}]}], 
+           SuperscriptBox["m", "2"]], "-", 
+          FractionBox[
+           RowBox[{"2", " ", 
+            SuperscriptBox[
+             RowBox[{"(", 
+              FractionBox["m", "n"], ")"}], 
+             RowBox[{
+              RowBox[{"-", "n"}], "/", "2"}]], " ", 
+            RowBox[{"HypergeometricPFQ", "[", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{
+                 FractionBox["m", "2"], "+", 
+                 FractionBox["n", "2"]}], ",", 
+                FractionBox["n", "2"], ",", 
+                FractionBox["n", "2"]}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"1", "+", 
+                 FractionBox["n", "2"]}], ",", 
+                RowBox[{"1", "+", 
+                 FractionBox["n", "2"]}]}], "}"}], ",", 
+              RowBox[{"-", 
+               FractionBox["n", "m"]}]}], "]"}]}], 
+           SuperscriptBox["n", "2"]]}], ")"}], "4"]}], 
+      SuperscriptBox[
+       RowBox[{"Beta", "[", 
+        RowBox[{
+         FractionBox["n", "2"], ",", 
+         FractionBox["m", "2"]}], "]"}], "4"]]}], "+", 
+    RowBox[{
+     FractionBox["1", 
+      SuperscriptBox[
+       RowBox[{"Beta", "[", 
+        RowBox[{
+         FractionBox["n", "2"], ",", 
+         FractionBox["m", "2"]}], "]"}], "3"]], 
+     RowBox[{"24", " ", 
+      SuperscriptBox["m", 
+       RowBox[{"m", "/", "2"}]], " ", 
+      SuperscriptBox["n", 
+       RowBox[{"n", "/", "2"}]], " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{
+         FractionBox[
+          RowBox[{"2", " ", 
+           SuperscriptBox[
+            RowBox[{"(", 
+             FractionBox["m", "n"], ")"}], 
+            RowBox[{"m", "/", "2"}]], " ", 
+           RowBox[{"HypergeometricPFQ", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{
+               FractionBox["m", "2"], ",", 
+               FractionBox["m", "2"], ",", 
+               RowBox[{
+                FractionBox["m", "2"], "+", 
+                FractionBox["n", "2"]}]}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"1", "+", 
+                FractionBox["m", "2"]}], ",", 
+               RowBox[{"1", "+", 
+                FractionBox["m", "2"]}]}], "}"}], ",", 
+             RowBox[{"-", 
+              FractionBox["m", "n"]}]}], "]"}]}], 
+          SuperscriptBox["m", "2"]], "-", 
+         FractionBox[
+          RowBox[{"2", " ", 
+           SuperscriptBox[
+            RowBox[{"(", 
+             FractionBox["m", "n"], ")"}], 
+            RowBox[{
+             RowBox[{"-", "n"}], "/", "2"}]], " ", 
+           RowBox[{"HypergeometricPFQ", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{
+                FractionBox["m", "2"], "+", 
+                FractionBox["n", "2"]}], ",", 
+               FractionBox["n", "2"], ",", 
+               FractionBox["n", "2"]}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"1", "+", 
+                FractionBox["n", "2"]}], ",", 
+               RowBox[{"1", "+", 
+                FractionBox["n", "2"]}]}], "}"}], ",", 
+             RowBox[{"-", 
+              FractionBox["n", "m"]}]}], "]"}]}], 
+          SuperscriptBox["n", "2"]]}], ")"}], "2"], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["n", 
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "m"}], "-", "n"}], ")"}]}]], " ", 
+          RowBox[{"HypergeometricPFQ", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              FractionBox["m", "2"], ",", 
+              FractionBox["m", "2"], ",", 
+              FractionBox["m", "2"], ",", 
+              RowBox[{
+               FractionBox["m", "2"], "+", 
+               FractionBox["n", "2"]}]}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"1", "+", 
+               FractionBox["m", "2"]}], ",", 
+              RowBox[{"1", "+", 
+               FractionBox["m", "2"]}], ",", 
+              RowBox[{"1", "+", 
+               FractionBox["m", "2"]}]}], "}"}], ",", 
+            RowBox[{"-", 
+             FractionBox["m", "n"]}]}], "]"}]}], 
+         SuperscriptBox["m", "3"]], "+", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["m", 
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "m"}], "-", "n"}], ")"}]}]], " ", 
+          RowBox[{"HypergeometricPFQ", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{
+               FractionBox["m", "2"], "+", 
+               FractionBox["n", "2"]}], ",", 
+              FractionBox["n", "2"], ",", 
+              FractionBox["n", "2"], ",", 
+              FractionBox["n", "2"]}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"1", "+", 
+               FractionBox["n", "2"]}], ",", 
+              RowBox[{"1", "+", 
+               FractionBox["n", "2"]}], ",", 
+              RowBox[{"1", "+", 
+               FractionBox["n", "2"]}]}], "}"}], ",", 
+            RowBox[{"-", 
+             FractionBox["n", "m"]}]}], "]"}]}], 
+         SuperscriptBox["n", "3"]]}], ")"}]}]}], "-", 
+    RowBox[{
+     FractionBox["1", 
+      SuperscriptBox[
+       RowBox[{"Beta", "[", 
+        RowBox[{
+         FractionBox["n", "2"], ",", 
+         FractionBox["m", "2"]}], "]"}], "2"]], 
+     RowBox[{"48", " ", 
+      SuperscriptBox["m", 
+       RowBox[{"m", "/", "2"}]], " ", 
+      SuperscriptBox["n", 
+       RowBox[{"n", "/", "2"}]], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         RowBox[{"2", " ", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            FractionBox["m", "n"], ")"}], 
+           RowBox[{"m", "/", "2"}]], " ", 
+          RowBox[{"HypergeometricPFQ", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              FractionBox["m", "2"], ",", 
+              FractionBox["m", "2"], ",", 
+              RowBox[{
+               FractionBox["m", "2"], "+", 
+               FractionBox["n", "2"]}]}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"1", "+", 
+               FractionBox["m", "2"]}], ",", 
+              RowBox[{"1", "+", 
+               FractionBox["m", "2"]}]}], "}"}], ",", 
+            RowBox[{"-", 
+             FractionBox["m", "n"]}]}], "]"}]}], 
+         SuperscriptBox["m", "2"]], "-", 
+        FractionBox[
+         RowBox[{"2", " ", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            FractionBox["m", "n"], ")"}], 
+           RowBox[{
+            RowBox[{"-", "n"}], "/", "2"}]], " ", 
+          RowBox[{"HypergeometricPFQ", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{
+               FractionBox["m", "2"], "+", 
+               FractionBox["n", "2"]}], ",", 
+              FractionBox["n", "2"], ",", 
+              FractionBox["n", "2"]}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"1", "+", 
+               FractionBox["n", "2"]}], ",", 
+              RowBox[{"1", "+", 
+               FractionBox["n", "2"]}]}], "}"}], ",", 
+            RowBox[{"-", 
+             FractionBox["n", "m"]}]}], "]"}]}], 
+         SuperscriptBox["n", "2"]]}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["n", 
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "m"}], "-", "n"}], ")"}]}]], " ", 
+          RowBox[{"HypergeometricPFQ", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              FractionBox["m", "2"], ",", 
+              FractionBox["m", "2"], ",", 
+              FractionBox["m", "2"], ",", 
+              FractionBox["m", "2"], ",", 
+              RowBox[{
+               FractionBox["m", "2"], "+", 
+               FractionBox["n", "2"]}]}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"1", "+", 
+               FractionBox["m", "2"]}], ",", 
+              RowBox[{"1", "+", 
+               FractionBox["m", "2"]}], ",", 
+              RowBox[{"1", "+", 
+               FractionBox["m", "2"]}], ",", 
+              RowBox[{"1", "+", 
+               FractionBox["m", "2"]}]}], "}"}], ",", 
+            RowBox[{"-", 
+             FractionBox["m", "n"]}]}], "]"}]}], 
+         SuperscriptBox["m", "4"]], "-", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["m", 
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "m"}], "-", "n"}], ")"}]}]], " ", 
+          RowBox[{"HypergeometricPFQ", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{
+               FractionBox["m", "2"], "+", 
+               FractionBox["n", "2"]}], ",", 
+              FractionBox["n", "2"], ",", 
+              FractionBox["n", "2"], ",", 
+              FractionBox["n", "2"], ",", 
+              FractionBox["n", "2"]}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"1", "+", 
+               FractionBox["n", "2"]}], ",", 
+              RowBox[{"1", "+", 
+               FractionBox["n", "2"]}], ",", 
+              RowBox[{"1", "+", 
+               FractionBox["n", "2"]}], ",", 
+              RowBox[{"1", "+", 
+               FractionBox["n", "2"]}]}], "}"}], ",", 
+            RowBox[{"-", 
+             FractionBox["n", "m"]}]}], "]"}]}], 
+         SuperscriptBox["n", "4"]]}], ")"}]}]}], "+", 
+    RowBox[{
+     FractionBox["1", 
+      RowBox[{"Beta", "[", 
+       RowBox[{
+        FractionBox["n", "2"], ",", 
+        FractionBox["m", "2"]}], "]"}]], 
+     RowBox[{"48", " ", 
+      SuperscriptBox["m", 
+       RowBox[{"m", "/", "2"}]], " ", 
+      SuperscriptBox["n", 
+       RowBox[{"n", "/", "2"}]], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["n", 
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "m"}], "-", "n"}], ")"}]}]], " ", 
+          RowBox[{"HypergeometricPFQ", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              FractionBox["m", "2"], ",", 
+              FractionBox["m", "2"], ",", 
+              FractionBox["m", "2"], ",", 
+              FractionBox["m", "2"], ",", 
+              FractionBox["m", "2"], ",", 
+              RowBox[{
+               FractionBox["m", "2"], "+", 
+               FractionBox["n", "2"]}]}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"1", "+", 
+               FractionBox["m", "2"]}], ",", 
+              RowBox[{"1", "+", 
+               FractionBox["m", "2"]}], ",", 
+              RowBox[{"1", "+", 
+               FractionBox["m", "2"]}], ",", 
+              RowBox[{"1", "+", 
+               FractionBox["m", "2"]}], ",", 
+              RowBox[{"1", "+", 
+               FractionBox["m", "2"]}]}], "}"}], ",", 
+            RowBox[{"-", 
+             FractionBox["m", "n"]}]}], "]"}]}], 
+         SuperscriptBox["m", "5"]], "+", 
+        FractionBox[
+         RowBox[{
+          SuperscriptBox["m", 
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "m"}], "-", "n"}], ")"}]}]], " ", 
+          RowBox[{"HypergeometricPFQ", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{
+               FractionBox["m", "2"], "+", 
+               FractionBox["n", "2"]}], ",", 
+              FractionBox["n", "2"], ",", 
+              FractionBox["n", "2"], ",", 
+              FractionBox["n", "2"], ",", 
+              FractionBox["n", "2"], ",", 
+              FractionBox["n", "2"]}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"1", "+", 
+               FractionBox["n", "2"]}], ",", 
+              RowBox[{"1", "+", 
+               FractionBox["n", "2"]}], ",", 
+              RowBox[{"1", "+", 
+               FractionBox["n", "2"]}], ",", 
+              RowBox[{"1", "+", 
+               FractionBox["n", "2"]}], ",", 
+              RowBox[{"1", "+", 
+               FractionBox["n", "2"]}]}], "}"}], ",", 
+            RowBox[{"-", 
+             FractionBox["n", "m"]}]}], "]"}]}], 
+         SuperscriptBox["n", "5"]]}], ")"}]}]}]}], ")"}], "/", 
+  SuperscriptBox[
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"-", 
+      FractionBox[
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{
+          FractionBox[
+           RowBox[{"2", " ", 
+            SuperscriptBox[
+             RowBox[{"(", 
+              FractionBox["m", "n"], ")"}], 
+             RowBox[{"m", "/", "2"}]], " ", 
+            RowBox[{"HypergeometricPFQ", "[", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{
+                FractionBox["m", "2"], ",", 
+                FractionBox["m", "2"], ",", 
+                RowBox[{
+                 FractionBox["m", "2"], "+", 
+                 FractionBox["n", "2"]}]}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"1", "+", 
+                 FractionBox["m", "2"]}], ",", 
+                RowBox[{"1", "+", 
+                 FractionBox["m", "2"]}]}], "}"}], ",", 
+              RowBox[{"-", 
+               FractionBox["m", "n"]}]}], "]"}]}], 
+           SuperscriptBox["m", "2"]], "-", 
+          FractionBox[
+           RowBox[{"2", " ", 
+            SuperscriptBox[
+             RowBox[{"(", 
+              FractionBox["m", "n"], ")"}], 
+             RowBox[{
+              RowBox[{"-", "n"}], "/", "2"}]], " ", 
+            RowBox[{"HypergeometricPFQ", "[", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{
+                 FractionBox["m", "2"], "+", 
+                 FractionBox["n", "2"]}], ",", 
+                FractionBox["n", "2"], ",", 
+                FractionBox["n", "2"]}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"1", "+", 
+                 FractionBox["n", "2"]}], ",", 
+                RowBox[{"1", "+", 
+                 FractionBox["n", "2"]}]}], "}"}], ",", 
+              RowBox[{"-", 
+               FractionBox["n", "m"]}]}], "]"}]}], 
+           SuperscriptBox["n", "2"]]}], ")"}], "2"], 
+       SuperscriptBox[
+        RowBox[{"Beta", "[", 
+         RowBox[{
+          FractionBox["n", "2"], ",", 
+          FractionBox["m", "2"]}], "]"}], "2"]]}], "+", 
+     RowBox[{
+      FractionBox["1", 
+       RowBox[{"Beta", "[", 
+        RowBox[{
+         FractionBox["n", "2"], ",", 
+         FractionBox["m", "2"]}], "]"}]], 
+      RowBox[{"4", " ", 
+       SuperscriptBox["m", 
+        RowBox[{"m", "/", "2"}]], " ", 
+       SuperscriptBox["n", 
+        RowBox[{"n", "/", "2"}]], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         FractionBox[
+          RowBox[{
+           SuperscriptBox["n", 
+            RowBox[{
+             FractionBox["1", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "m"}], "-", "n"}], ")"}]}]], " ", 
+           RowBox[{"HypergeometricPFQ", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{
+               FractionBox["m", "2"], ",", 
+               FractionBox["m", "2"], ",", 
+               FractionBox["m", "2"], ",", 
+               RowBox[{
+                FractionBox["m", "2"], "+", 
+                FractionBox["n", "2"]}]}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"1", "+", 
+                FractionBox["m", "2"]}], ",", 
+               RowBox[{"1", "+", 
+                FractionBox["m", "2"]}], ",", 
+               RowBox[{"1", "+", 
+                FractionBox["m", "2"]}]}], "}"}], ",", 
+             RowBox[{"-", 
+              FractionBox["m", "n"]}]}], "]"}]}], 
+          SuperscriptBox["m", "3"]], "+", 
+         FractionBox[
+          RowBox[{
+           SuperscriptBox["m", 
+            RowBox[{
+             FractionBox["1", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "m"}], "-", "n"}], ")"}]}]], " ", 
+           RowBox[{"HypergeometricPFQ", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{
+                FractionBox["m", "2"], "+", 
+                FractionBox["n", "2"]}], ",", 
+               FractionBox["n", "2"], ",", 
+               FractionBox["n", "2"], ",", 
+               FractionBox["n", "2"]}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"1", "+", 
+                FractionBox["n", "2"]}], ",", 
+               RowBox[{"1", "+", 
+                FractionBox["n", "2"]}], ",", 
+               RowBox[{"1", "+", 
+                FractionBox["n", "2"]}]}], "}"}], ",", 
+             RowBox[{"-", 
+              FractionBox["n", "m"]}]}], "]"}]}], 
+          SuperscriptBox["n", "3"]]}], ")"}]}]}]}], ")"}], "2"]}]], "Output",
+ CellChangeTimes->{3.7726484371169424`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CharacteristicFunction", "[", 
+  RowBox[{"dist", ",", "t"}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"CharacteristicFunction", "[", 
+  RowBox[{
+   RowBox[{"FisherZDistribution", "[", 
+    RowBox[{"n", ",", "m"}], "]"}], ",", "t"}], "]"}]], "Output",
+ CellChangeTimes->{3.7726484446537857`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Random", "[", 
+  RowBox[{"FisherZDistribution", "[", 
+   RowBox[{"1", ",", "2"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7726484534692616`*^9, 3.772648499774417*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Random", "[", 
+  RowBox[{"FisherZDistribution", "[", 
+   RowBox[{"1", ",", "2"}], "]"}], "]"}]], "Output",
+ CellChangeTimes->{{3.7726484629329157`*^9, 3.7726485005293837`*^9}}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{852, 462},
+WindowMargins->{{Automatic, -7}, {Automatic, 0}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 90, 1, 101, "Title"],
+Cell[CellGroupData[{
+Cell[695, 27, 190, 4, 47, "Input"],
+Cell[888, 33, 140, 3, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1065, 41, 148, 3, 47, "Input"],
+Cell[1216, 46, 708, 24, 64, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1961, 75, 152, 3, 47, "Input"],
+Cell[2116, 80, 424, 13, 50, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2577, 98, 627, 17, 68, "Input"],
+Cell[3207, 117, 2222, 46, 367, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5466, 168, 809, 23, 84, "Input"],
+Cell[6278, 193, 1958, 41, 339, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8273, 239, 811, 23, 84, "Input"],
+Cell[9087, 264, 1958, 41, 339, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11082, 310, 60, 1, 47, "Input"],
+Cell[11145, 313, 1659, 56, 71, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12841, 374, 62, 1, 47, "Input"],
+Cell[12906, 377, 511, 16, 66, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13454, 398, 64, 1, 47, "Input"],
+Cell[13521, 401, 4235, 132, 212, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17793, 538, 73, 1, 47, "Input"],
+Cell[17869, 541, 4543, 134, 239, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22449, 680, 64, 1, 47, "Input"],
+Cell[22516, 683, 13603, 397, 725, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[36156, 1085, 64, 1, 47, "Input"],
+Cell[36223, 1088, 18409, 533, 974, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[54669, 1626, 101, 2, 47, "Input"],
+Cell[54773, 1630, 215, 5, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[55025, 1640, 197, 4, 47, "Input"],
+Cell[55225, 1646, 200, 4, 30, "Output"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
