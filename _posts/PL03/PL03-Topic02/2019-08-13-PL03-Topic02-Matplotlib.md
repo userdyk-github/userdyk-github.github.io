@@ -690,6 +690,7 @@ y = np.cos(x)
 plt.plot(x, y, c = '.5')
 plt.show()
 ```
+<span class="jb-medium">c='x', x ∈ [0(black), 1(white)] </span>
 ![download (7)](https://user-images.githubusercontent.com/52376448/66707334-c3019f80-ed79-11e9-93e3-e0d9aac1212b.png)
 <hr class='division3'>
 </details>
