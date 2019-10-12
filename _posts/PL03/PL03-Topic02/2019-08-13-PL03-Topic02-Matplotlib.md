@@ -1011,7 +1011,27 @@ cghist(x, 10)
 ![download (4)](https://user-images.githubusercontent.com/52376448/66706756-cee96380-ed71-11e9-954c-5fec1d5027d6.png)
 <hr class='division3'>
 </details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Format the y-axis to display percentage</summary>
+<hr class='division3'>
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+from matplotlib.ticker import PercentFormatter
+import numpy as np
 
+np.random.seed(0)
+x = np.random.randn(1000)
+
+fig, axes = plt.subplots(1, 3, tight_layout=True)
+axes[0].hist(x, bins=10)
+axes[1].hist(x, bins=10, density=True)
+axes[2].hist(x, bins=10, density=True)
+axes[2].yaxis.set_major_formatter(PercentFormatter(xmax=1))
+```
+![download (5)](https://user-images.githubusercontent.com/52376448/66707158-4077e080-ed77-11e9-95b6-611655570d45.png)
+<hr class='division3'>
+</details>
 <br>
 
 ```python
