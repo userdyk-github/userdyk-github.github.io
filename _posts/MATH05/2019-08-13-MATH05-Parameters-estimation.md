@@ -53,6 +53,11 @@ estimate_beta(x)
 
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4abaca87a10ecfa77b5a205056523706fe6c9c3f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.838ex; width:29.801ex; height:7.176ex;" alt="{\displaystyle f(x\mid \mu ,\sigma ^{2})={\frac {1}{\sqrt {2\pi \sigma ^{2}}}}e^{-{\frac {(x-\mu )^{2}}{2\sigma ^{2}}}}}">
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fa485e7acf98b3a0ce236ce7293f63dd89f84b96" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:27.746ex; height:2.843ex;" alt="{\displaystyle L_{n}(\theta )=L_{n}(\theta ;\mathbf {y} )=f_{n}(\mathbf {y} ;\theta )}">
+<div style="font-size: 70%; text-align: center;">
+    $$given\ dataset\ x\ :\ {0}$$
+    $$given\ parameter\ \sigma \ =\ 1$$
+    $$likelihood\ :\ f(\mu ;x) = \frac{1}{\sqrt{2 \pi \sigma}}$$
+</div>
 `for mu`
 ```python
 import numpy as np
