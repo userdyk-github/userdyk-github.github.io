@@ -2766,11 +2766,51 @@ plt.show()
 
 ### ***3D Filled contour plots***
 ```python
+from mpl_toolkits.mplot3d import axes3d
+import matplotlib.pyplot as plt
+from matplotlib import cm
+
+fig = plt.figure()
+ax = fig.gca(projection='3d')
+X, Y, Z = axes3d.get_test_data(0.05)
+cset = ax.contourf(X, Y, Z, cmap=cm.coolwarm)
+ax.clabel(cset, fontsize=9, inline=1)
+
+plt.show()
 ```
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![download (1)](https://user-images.githubusercontent.com/52376448/66694208-f8f84280-eceb-11e9-8f4c-73eb9b686797.png)
+<hr class='division3'>
+</details>
+<br>
+```python
+from mpl_toolkits.mplot3d import axes3d
+import matplotlib.pyplot as plt
+from matplotlib import cm
 
+fig = plt.figure()
+ax = fig.gca(projection='3d')
+X, Y, Z = axes3d.get_test_data(0.05)
+ax.plot_surface(X, Y, Z, rstride=8, cstride=8, alpha=0.3)
+cset = ax.contourf(X, Y, Z, zdir='z', offset=-100, cmap=cm.coolwarm)
+cset = ax.contourf(X, Y, Z, zdir='x', offset=-40, cmap=cm.coolwarm)
+cset = ax.contourf(X, Y, Z, zdir='y', offset=40, cmap=cm.coolwarm)
+
+ax.set_xlabel('X')
+ax.set_xlim(-40, 40)
+ax.set_ylabel('Y')
+ax.set_ylim(-40, 40)
+ax.set_zlabel('Z')
+ax.set_zlim(-100, 100)
+
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download](https://user-images.githubusercontent.com/52376448/66694209-f8f84280-eceb-11e9-9b9c-d7a7de7536a2.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -2780,11 +2820,46 @@ plt.show()
 
 ### ***3D Polygon plots***
 ```python
+from mpl_toolkits.mplot3d import Axes3D
+from matplotlib.collections import PolyCollection
+import matplotlib.pyplot as plt
+from matplotlib import colors as mcolors
+import numpy as np
+
+
+fig = plt.figure()
+ax = fig.gca(projection='3d')
+
+
+def cc(arg):
+    return mcolors.to_rgba(arg, alpha=0.6)
+
+xs = np.arange(0, 10, 0.4)
+verts = []
+zs = [0.0, 1.0, 2.0, 3.0]
+for z in zs:
+    ys = np.random.rand(len(xs))
+    ys[0], ys[-1] = 0, 0
+    verts.append(list(zip(xs, ys)))
+
+poly = PolyCollection(verts, facecolors=[cc('r'), cc('g'), cc('b'),
+                                         cc('y')])
+poly.set_alpha(0.7)
+ax.add_collection3d(poly, zs=zs, zdir='y')
+
+ax.set_xlabel('X')
+ax.set_xlim3d(0, 10)
+ax.set_ylabel('Y')
+ax.set_ylim3d(-1, 4)
+ax.set_zlabel('Z')
+ax.set_zlim3d(0, 1)
+
+plt.show()
 ```
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-
+![download](https://user-images.githubusercontent.com/52376448/66694234-4aa0cd00-ecec-11e9-9d44-718d803cba1d.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -2794,11 +2869,33 @@ plt.show()
 
 ### ***3D Bar plots***
 ```python
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.pyplot as plt
+import numpy as np
+
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+for c, z in zip(['r', 'g', 'b', 'y'], [30, 20, 10, 0]):
+    xs = np.arange(20)
+    ys = np.random.rand(20)
+
+    # You can provide either a single color or an array. To demonstrate this,
+    # the first bar of each set will be colored cyan.
+    cs = [c] * len(xs)
+    cs[0] = 'c'
+    ax.bar(xs, ys, zs=z, zdir='y', color=cs, alpha=0.8)
+
+ax.set_xlabel('X')
+ax.set_ylabel('Y')
+ax.set_zlabel('Z')
+
+plt.show()
+
 ```
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-
+![download (1)](https://user-images.githubusercontent.com/52376448/66694235-4b396380-ecec-11e9-8f0f-870654fd2b79.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -2808,11 +2905,32 @@ plt.show()
 
 ### ***3D Quiver***
 ```python
+from mpl_toolkits.mplot3d import axes3d
+import matplotlib.pyplot as plt
+import numpy as np
+
+fig = plt.figure()
+ax = fig.gca(projection='3d')
+
+# Make the grid
+x, y, z = np.meshgrid(np.arange(-0.8, 1, 0.2),
+                      np.arange(-0.8, 1, 0.2),
+                      np.arange(-0.8, 1, 0.8))
+
+# Make the direction data for the arrows
+u = np.sin(np.pi * x) * np.cos(np.pi * y) * np.cos(np.pi * z)
+v = -np.cos(np.pi * x) * np.sin(np.pi * y) * np.cos(np.pi * z)
+w = (np.sqrt(2.0 / 3.0) * np.cos(np.pi * x) * np.cos(np.pi * y) *
+     np.sin(np.pi * z))
+
+ax.quiver(x, y, z, u, v, w, length=0.1, normalize=True)
+
+plt.show()
 ```
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-
+![download](https://user-images.githubusercontent.com/52376448/66694276-d4509a80-ecec-11e9-8ccb-bdeaa1a01ed6.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -2836,11 +2954,44 @@ plt.show()
 
 ### ***3D Text***
 ```python
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.pyplot as plt
+
+
+fig = plt.figure()
+ax = fig.gca(projection='3d')
+
+# Demo 1: zdir
+zdirs = (None, 'x', 'y', 'z', (1, 1, 0), (1, 1, 1))
+xs = (1, 4, 4, 9, 4, 1)
+ys = (2, 5, 8, 10, 1, 2)
+zs = (10, 3, 8, 9, 1, 8)
+
+for zdir, x, y, z in zip(zdirs, xs, ys, zs):
+    label = '(%d, %d, %d), dir=%s' % (x, y, z, zdir)
+    ax.text(x, y, z, label, zdir)
+
+# Demo 2: color
+ax.text(9, 0, 0, "red", color='red')
+
+# Demo 3: text2D
+# Placement 0, 0 would be the bottom left, 1, 1 would be the top right.
+ax.text2D(0.05, 0.95, "2D Text", transform=ax.transAxes)
+
+# Tweaking display region and labels
+ax.set_xlim(0, 10)
+ax.set_ylim(0, 10)
+ax.set_zlim(0, 10)
+ax.set_xlabel('X axis')
+ax.set_ylabel('Y axis')
+ax.set_zlabel('Z axis')
+
+plt.show()
 ```
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-
+![download (1)](https://user-images.githubusercontent.com/52376448/66694277-d4509a80-ecec-11e9-9b28-7583a03a1284.png)
 <hr class='division3'>
 </details>
 <br><br><br>
@@ -2850,14 +3001,105 @@ plt.show()
 
 ### ***3D Subplotting***
 ```python
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d.axes3d import Axes3D, get_test_data
+from matplotlib import cm
+import numpy as np
+
+
+# set up a figure twice as wide as it is tall
+fig = plt.figure(figsize=plt.figaspect(0.5))
+
+#===============
+#  First subplot
+#===============
+# set up the axes for the first plot
+ax = fig.add_subplot(1, 2, 1, projection='3d')
+
+# plot a 3D surface like in the example mplot3d/surface3d_demo
+X = np.arange(-5, 5, 0.25)
+Y = np.arange(-5, 5, 0.25)
+X, Y = np.meshgrid(X, Y)
+R = np.sqrt(X**2 + Y**2)
+Z = np.sin(R)
+surf = ax.plot_surface(X, Y, Z, rstride=1, cstride=1, cmap=cm.coolwarm,
+                       linewidth=0, antialiased=False)
+ax.set_zlim(-1.01, 1.01)
+fig.colorbar(surf, shrink=0.5, aspect=10)
+
+#===============
+# Second subplot
+#===============
+# set up the axes for the second plot
+ax = fig.add_subplot(1, 2, 2, projection='3d')
+
+# plot a 3D wireframe like in the example mplot3d/wire3d_demo
+X, Y, Z = get_test_data(0.05)
+ax.plot_wireframe(X, Y, Z, rstride=10, cstride=10)
+
+plt.show()
 ```
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-
+![download](https://user-images.githubusercontent.com/52376448/66694315-18dc3600-eced-11e9-8819-4bfb8bb81f5f.png)
 <hr class='division3'>
 </details>
+<br>
+```python
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.pyplot as plt
+import numpy as np
 
+
+def f(t):
+    s1 = np.cos(2*np.pi*t)
+    e1 = np.exp(-t)
+    return np.multiply(s1, e1)
+
+
+################
+# First subplot
+################
+t1 = np.arange(0.0, 5.0, 0.1)
+t2 = np.arange(0.0, 5.0, 0.02)
+t3 = np.arange(0.0, 2.0, 0.01)
+
+# Twice as tall as it is wide.
+fig = plt.figure(figsize=plt.figaspect(2.))
+fig.suptitle('A tale of 2 subplots')
+ax = fig.add_subplot(2, 1, 1)
+l = ax.plot(t1, f(t1), 'bo',
+            t2, f(t2), 'k--', markerfacecolor='green')
+ax.grid(True)
+ax.set_ylabel('Damped oscillation')
+
+
+#################
+# Second subplot
+#################
+ax = fig.add_subplot(2, 1, 2, projection='3d')
+X = np.arange(-5, 5, 0.25)
+xlen = len(X)
+Y = np.arange(-5, 5, 0.25)
+ylen = len(Y)
+X, Y = np.meshgrid(X, Y)
+R = np.sqrt(X**2 + Y**2)
+Z = np.sin(R)
+
+surf = ax.plot_surface(X, Y, Z, rstride=1, cstride=1,
+                       linewidth=0, antialiased=False)
+
+ax.set_zlim3d(-1, 1)
+
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download (1)](https://user-images.githubusercontent.com/52376448/66694316-18dc3600-eced-11e9-9fc5-45bf3b48a97c.png)
+<hr class='division3'>
+</details>
 
 
 <br><br><br>
