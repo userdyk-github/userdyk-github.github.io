@@ -59,11 +59,11 @@ import numpy as np
 from scipy import optimize
 
 # objective function(= -likelihood)
-def likelihood(MU, SIGMA2=1, x=0):
+def objective(MU, SIGMA2=1, x=0):
     return - np.exp(-(MU-x) ** 2 / (2 * SIGMA2)) / np.sqrt(2 * np.pi * SIGMA2)
 
 # optimize
-optimize.brent(likelihood, brack=(-10,10))
+optimize.brent(objective, brack=(-10,10))
 ```
 <span class="jb-medium">optimal point for mu = 1.3008039364016205e-11</span>
 <details markdown="1">
