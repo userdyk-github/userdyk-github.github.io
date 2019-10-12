@@ -100,7 +100,7 @@ optimize.brent(objective, brack=(0,1))
 <br><br><br>
 <hr class="division2">
 
-## **method of moment**
+## **Method of moment**
 
 ### ***estimate for beta distribution***
 
