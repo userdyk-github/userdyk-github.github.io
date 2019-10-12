@@ -2691,13 +2691,74 @@ plt.show()
 
 ### ***3D Contour plots***
 ```python
+from mpl_toolkits.mplot3d import axes3d
+import matplotlib.pyplot as plt
+from matplotlib import cm
+
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+X, Y, Z = axes3d.get_test_data(0.05)
+cset = ax.contour(X, Y, Z, cmap=cm.coolwarm)
+ax.clabel(cset, fontsize=9, inline=1)
+
+plt.show()
 ```
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-
+![download](https://user-images.githubusercontent.com/52376448/66694161-a28b0400-eceb-11e9-988e-6d18f6af4e08.png)
 <hr class='division3'>
 </details>
+<br>
+```python
+from mpl_toolkits.mplot3d import axes3d
+import matplotlib.pyplot as plt
+from matplotlib import cm
+
+fig = plt.figure()
+ax = fig.gca(projection='3d')
+X, Y, Z = axes3d.get_test_data(0.05)
+cset = ax.contour(X, Y, Z, extend3d=True, cmap=cm.coolwarm)
+ax.clabel(cset, fontsize=9, inline=1)
+
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download(1)](https://user-images.githubusercontent.com/52376448/66694162-a28b0400-eceb-11e9-9e0d-20e19e2f1241.png)
+<hr class='division3'>
+</details>
+<br>
+```python
+from mpl_toolkits.mplot3d import axes3d
+import matplotlib.pyplot as plt
+from matplotlib import cm
+
+fig = plt.figure()
+ax = fig.gca(projection='3d')
+X, Y, Z = axes3d.get_test_data(0.05)
+ax.plot_surface(X, Y, Z, rstride=8, cstride=8, alpha=0.3)
+cset = ax.contour(X, Y, Z, zdir='z', offset=-100, cmap=cm.coolwarm)
+cset = ax.contour(X, Y, Z, zdir='x', offset=-40, cmap=cm.coolwarm)
+cset = ax.contour(X, Y, Z, zdir='y', offset=40, cmap=cm.coolwarm)
+
+ax.set_xlabel('X')
+ax.set_xlim(-40, 40)
+ax.set_ylabel('Y')
+ax.set_ylim(-40, 40)
+ax.set_zlabel('Z')
+ax.set_zlim(-100, 100)
+
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download (2)](https://user-images.githubusercontent.com/52376448/66694163-a3239a80-eceb-11e9-8733-db374c002b52.png)
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 ---
