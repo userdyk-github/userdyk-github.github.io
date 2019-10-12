@@ -916,6 +916,12 @@ plt.show()
 ![다운로드 (5)](https://user-images.githubusercontent.com/52376448/64471612-b0021b00-d18e-11e9-918e-97aa64133e62.png)
 <hr class='division3'>
 </details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Customizing</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
 
 <br>
 
