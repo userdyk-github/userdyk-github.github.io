@@ -912,7 +912,7 @@ arrays, bins, patches = plt.hist(x, bins=10)
    # bins is the lower-limit of the bin(Interval to aggregate data)
 plt.show()
 ```
-<details open markdown="1">
+<details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (5)](https://user-images.githubusercontent.com/52376448/64471612-b0021b00-d18e-11e9-918e-97aa64133e62.png)
@@ -1015,9 +1015,9 @@ cghist(x, 10)
 <br>
 
 ```python
-arrays
+arrays    # arrays is the count in each bin
 ```
-<details open markdown="1">
+<details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
@@ -1029,9 +1029,9 @@ array([  9.,  20.,  70., 146., 217., 239., 160.,  86.,  38.,  15.])
 <br>
 
 ```python
-bins
+bins    # bins is the lower-limit of the bin
 ```
-<details open markdown="1">
+<details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
