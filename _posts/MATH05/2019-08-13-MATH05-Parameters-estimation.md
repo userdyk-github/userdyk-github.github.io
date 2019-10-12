@@ -58,7 +58,7 @@ estimate_beta(x)
 import numpy as np
 from scipy import optimize
 
-# likelihood(objective function)
+# objective function(= -likelihood)
 def likelihood(MU, SIGMA2=1, x=0):
     return - np.exp(-(MU-x) ** 2 / (2 * SIGMA2)) / np.sqrt(2 * np.pi * SIGMA2)
 
