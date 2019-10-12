@@ -21,6 +21,13 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
+## **Review : Descriptive statistics**
+
+![descriptive_statistics](https://user-images.githubusercontent.com/52376448/66703405-4f499d80-ed4d-11e9-8cc7-c33dbbfec77c.JPG)
+
+<br><br><br>
+<hr class="division2">
+
 ## **count**
 
 ```python
