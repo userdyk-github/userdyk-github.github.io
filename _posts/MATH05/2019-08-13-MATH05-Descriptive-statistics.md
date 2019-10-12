@@ -190,11 +190,11 @@ import numpy as np
 
 x = np.array([18,   5,  10,  23,  19,  -8,  10,   0,   0,   5,   2,  15,   8,
               2,   5,   4,  15,  -1,   4,  -7, -24,   7,   9,  -6,  23, -13])
-np.var(x), np.var(x, ddof=1)
+np.var(x), np.var(x, ddof=1)    # for population
 ```
 <span class="jb-medium">(115.23224852071006, 119.84153846153846)</span>
 ```python
-x.var(), x.var(ddof=1)
+x.var(), x.var(ddof=1)    # for population
 ```
 <span class="jb-medium">(115.23224852071006, 119.84153846153846)</span>
 <br><br><br>
@@ -207,11 +207,11 @@ import numpy as np
 
 x = np.array([18,   5,  10,  23,  19,  -8,  10,   0,   0,   5,   2,  15,   8,
               2,   5,   4,  15,  -1,   4,  -7, -24,   7,   9,  -6,  23, -13])
-np.std(x), np.std(x, ddof=1)
+np.std(x), np.std(x, ddof=1)    # for population
 ```
 <span class="jb-medium">(10.734628476137871, 10.947216014199157)</span>
 ```python
-x.std(), x.std(ddof=1) 
+x.std(), x.std(ddof=1)    # for population
 ```
 <span class="jb-medium">(10.734628476137871, 10.947216014199157)</span>
 <br><br><br>
