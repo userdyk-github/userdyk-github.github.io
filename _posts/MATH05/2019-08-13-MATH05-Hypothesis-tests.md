@@ -37,7 +37,7 @@ List of posts to read before reading this article
 <hr class="division2">
 
 ## **One-sample z-Test**
-
+![test_z](https://user-images.githubusercontent.com/52376448/66703410-507aca80-ed4d-11e9-9438-0e2d0024579c.JPG)
 <br><br><br>
 <hr class="division2">
 
@@ -47,17 +47,18 @@ List of posts to read before reading this article
 <hr class="division2">
 
 ## **Independent two-sample t-Test**
-
+![test_t_for_mean_under_unknown_different_variances_of_two_group_with_large_samples](https://user-images.githubusercontent.com/52376448/66703408-4fe23400-ed4d-11e9-9c49-c07d5dd666f4.JPG)
+![test_t_for_mean_under_unknown_equivalent_variances_of_two_group_with_small_samples](https://user-images.githubusercontent.com/52376448/66703409-4fe23400-ed4d-11e9-86d9-37a1e2d54ee7.JPG)
 <br><br><br>
 <hr class="division2">
 
 ## **Paired two-sample t-Test**
-
+![test_t_for_mean_of_paired_sample](https://user-images.githubusercontent.com/52376448/66703407-4fe23400-ed4d-11e9-96d5-3155b3e80002.JPG)
 <br><br><br>
 <hr class="division2">
 
 ## **Equal-variance Test**
-
+![test_F_for_variance_rate_of_two_group](https://user-images.githubusercontent.com/52376448/66703406-4fe23400-ed4d-11e9-99f6-cb0906916be8.JPG)
 <br><br><br>
 <hr class="division2">
 
