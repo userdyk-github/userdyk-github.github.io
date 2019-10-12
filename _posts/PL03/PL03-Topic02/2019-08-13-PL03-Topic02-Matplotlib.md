@@ -918,9 +918,71 @@ plt.show()
 ![다운로드 (5)](https://user-images.githubusercontent.com/52376448/64471612-b0021b00-d18e-11e9-918e-97aa64133e62.png)
 <hr class='division3'>
 </details>
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Customizing</summary>
 <hr class='division3'>
+`STEP1`
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
+np.random.seed(0)
+x = np.random.randn(1000)
+plt.hist(x, bins=10)
+```
+![download (2)](https://user-images.githubusercontent.com/52376448/66706754-cee96380-ed71-11e9-8081-2549102397a2.png)
+<br>
+`STEP2 : color`
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib import colors
+
+np.random.seed(0)
+x = np.random.randn(1000)
+arrays, bins, patches = plt.hist(x, bins=10)    # arrays is the count in each bin, 
+                                                # bins is the lower-limit of the bin(Interval to aggregate data)
+   
+# We'll color code by height, but you could use any scalar
+fracs = arrays / arrays.max()
+
+# we need to normalize the data to 0..1 for the full range of the colormap
+norm = colors.Normalize(fracs.min(), fracs.max())
+
+# Now, we'll loop through our objects and set the color of each accordingly
+for thisfrac, thispatch in zip(fracs, patches):
+    color = plt.cm.viridis(norm(thisfrac))
+    thispatch.set_facecolor(color)
+```
+![download (3)](https://user-images.githubusercontent.com/52376448/66706755-cee96380-ed71-11e9-9074-3f20a25a0e56.png)
+<br>
+`STEP3 : grid`
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib import colors
+
+np.random.seed(0)
+x = np.random.randn(1000)
+arrays, bins, patches = plt.hist(x, bins=10)
+
+# We'll color code by height, but you could use any scalar
+fracs = arrays / arrays.max()
+
+# we need to normalize the data to 0..1 for the full range of the colormap
+norm = colors.Normalize(fracs.min(), fracs.max())
+
+# Now, we'll loop through our objects and set the color of each accordingly
+for thisfrac, thispatch in zip(fracs, patches):
+    color = plt.cm.viridis(norm(thisfrac))
+    thispatch.set_facecolor(color)
+plt.grid()
+```
+![download (4)](https://user-images.githubusercontent.com/52376448/66706756-cee96380-ed71-11e9-954c-5fec1d5027d6.png)
 
 <hr class='division3'>
 </details>
