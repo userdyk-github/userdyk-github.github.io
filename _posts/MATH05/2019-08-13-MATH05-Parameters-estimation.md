@@ -21,7 +21,7 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## **Method of moment**
+## **Point estimation : Method of moment**
 <div style="font-size: 70%; text-align: center;">
     Asumption : parameter is determined by sample statistic(population moment = sample moment)<br>
     Weekness : it is difficult to determine whether a parameter is accurate<br>
@@ -55,7 +55,7 @@ estimate_beta(x)
 
 
 
-## **Maximum Likelihood Estimation(MLE)**
+## **Point estimation : Maximum Likelihood Estimation(MLE)**
 <div style="font-size: 70%; text-align: center;">
     Caution : parameter ≠ random variable<br>
     Weekness : it's hard to figure out the confidence level and interval<br>
@@ -141,7 +141,7 @@ optimize.brent(objective, brack=(0,1))
 
 
 
-## **Bayesian estimation**
+## **Interval estimation : Bayesian estimation**
 <div style="font-size: 70%; text-align: center;">
     Asumption : parameter = random variable
 </div>
