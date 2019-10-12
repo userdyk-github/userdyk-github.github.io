@@ -64,8 +64,8 @@ import numpy as np
 from scipy import optimize
 
 # objective function(= -likelihood)
-def objective(MU, SIGMA2=1, x=0):
-    return - np.exp(-(MU-x) ** 2 / (2 * SIGMA2)) / np.sqrt(2 * np.pi * SIGMA2)
+def objective(MU, SIGMA2=1):
+    return - np.exp(-(MU) ** 2 / (2 * SIGMA2)) / np.sqrt(2 * np.pi * SIGMA2)
 
 # optimize
 optimize.brent(objective, brack=(-10,10))
