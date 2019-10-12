@@ -56,7 +56,7 @@ estimate_beta(x)
 <div style="font-size: 70%; text-align: center;">
     $$given\ dataset\ x\ :\ \{0\}$$
     $$given\ parameter\ \sigma \ =\ 1$$
-    $$likelihood\ :\ f(\mu ;x) = \frac{1}{\sqrt{2 \pi \sigma}}e^{\frac{(\mu-x)^{2}}{2\sigma^{2}}}$$
+    $$likelihood\ :\ L(\theta = \mu ;x) = \frac{1}{\sqrt{2 \pi \sigma}}e^{-\frac{(\mu-x)^{2}}{2\sigma^{2}}}$$
 </div>
 `for mu`
 ```python
