@@ -376,13 +376,13 @@ X = np.linspace(-4, 4, 1024)
 Y = .25 * (X + 4.) * (X + 1.) * (X - 2.)
 
 plt.plot(X, Y, c = 'k')
-plt.gca().add_line(plt.Line2D((0, 0), (16, 0)))
+plt.gca().add_line(plt.Line2D((0, 0), (16, 0), c='.5'))
 plt.grid()
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-![download (6)](https://user-images.githubusercontent.com/52376448/66707219-fc391000-ed77-11e9-8e6c-7788247d2eef.png)
+![download (8)](https://user-images.githubusercontent.com/52376448/66707396-d95c2b00-ed7a-11e9-8559-33f3eff43206.png)
 <hr class='division3'>
 </details>
 
