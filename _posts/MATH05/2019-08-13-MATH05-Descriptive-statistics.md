@@ -54,7 +54,6 @@ len(x)
 ```python
 import seaborn as sns
 import numpy as np
-import matplotlib.pyplot as plt
 
 x = np.array([165., 180., 190., 188., 163., 178., 177., 172., 164., 182., 143.,
               163., 168., 160., 172., 165., 208., 175., 181., 160., 154., 169.,
