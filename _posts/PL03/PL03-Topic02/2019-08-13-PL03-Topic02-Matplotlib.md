@@ -379,7 +379,12 @@ plt.plot(X, Y, c = 'k')
 plt.gca().add_line(plt.Line2D((0, 0), (16, 0)))
 plt.grid()
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
 ![download (6)](https://user-images.githubusercontent.com/52376448/66707219-fc391000-ed77-11e9-8e6c-7788247d2eef.png)
+<hr class='division3'>
+</details>
 
 <br><br><br>
 ```python
@@ -393,7 +398,7 @@ plt.grid(True)
 plt.axis('scaled')
 plt.show()
 ```
-<details open markdown="1">
+<details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (8)](https://user-images.githubusercontent.com/52376448/65243488-65d05080-db23-11e9-9435-91613caecef4.png)
