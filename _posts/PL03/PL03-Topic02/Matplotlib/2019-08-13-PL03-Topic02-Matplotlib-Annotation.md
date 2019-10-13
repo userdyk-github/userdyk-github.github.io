@@ -35,10 +35,8 @@ fig, ax = plt.subplots()
 ax.plot(x,y)
 
 ax.annotate('local max',
-            xy=(3, 1),
-            xycoords='data',
-            xytext=(0.8, 0.95),
-            textcoords='axes fraction',
+            xy=(3, 1), xycoords='data',
+            xytext=(0.8, 0.95), textcoords='axes fraction',
             arrowprops=dict(facecolor='black', shrink=0.05),
             horizontalalignment='right',
             verticalalignment='top')
