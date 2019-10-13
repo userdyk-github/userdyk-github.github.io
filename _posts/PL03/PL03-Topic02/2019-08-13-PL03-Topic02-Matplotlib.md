@@ -978,6 +978,26 @@ plt.show()
 </details>
 <br><br><br>
 
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+data = np.random.rand(1024, 2)
+
+plt.scatter(data[:,0], data[:,1])
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download (7)](https://user-images.githubusercontent.com/52376448/66709967-e3e1e900-eda9-11e9-831c-254164302b81.png)
+<hr class='division3'>
+</details>
+
+
+<br><br><br>
+
 **Using custom colors for scatter plots**
 <div class='jb-medium'>
 <strong>Common color for all the dots</strong>: If the color parameter is a valid matplotlib color definition, then all the dots will appear in that color.<br>
@@ -1335,6 +1355,21 @@ array([-3.04614305, -2.46559324, -1.88504342, -1.3044936 , -0.72394379,
 
 #### Bar chart
 
+```python
+import matplotlib.pyplot as plt
+
+data = [5., 25., 50., 20.]
+plt.bar(range(len(data)), data)
+plt.show()
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download](https://user-images.githubusercontent.com/52376448/66709977-20154980-edaa-11e9-9d97-3b5f28138fe8.png)
+<hr class='division3'>
+</details>
+
+<br><br><br>
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
