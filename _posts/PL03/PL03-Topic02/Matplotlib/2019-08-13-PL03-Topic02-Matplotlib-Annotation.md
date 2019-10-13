@@ -21,28 +21,72 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## Execute the ui-file by python
+## **Annotations**
 
 
 <br><br><br>
 
 <hr class="division2">
 
-## Convert(1)
+## **Basic annotation**
 
 <br><br><br>
 
 <hr class="division2">
 
-## Convert(2)
+## **Advanced Annotation**
 
 <br><br><br>
 
 <hr class="division2">
 
-## Building .exe file
+### ***Annotating with Text with Box***
 
 <br><br><br>
+
+---
+
+### ***Annotating with Arrow***
+
+<br><br><br>
+
+---
+
+### ***Placing Artist at the anchored location of the Axes***
+
+<br><br><br>
+
+---
+
+### ***Using Complex Coordinates with Annotations***
+
+<br><br><br>
+
+---
+
+### ***Using ConnectionPatch***
+
+<br><br><br>
+
+
+#### Advanced Topics
+
+<br><br><br>
+
+
+---
+
+### ***Zoom effect between Axes***
+
+<br><br><br>
+
+---
+
+### ***Define Custom BoxStyle***
+
+<br><br><br>
+
+
 
 <hr class="division1">
 
