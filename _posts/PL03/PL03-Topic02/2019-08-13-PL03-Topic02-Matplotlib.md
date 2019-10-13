@@ -1761,6 +1761,26 @@ plt.show()
 
 #### Some more plots
 
+**Plotting triangulations**
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.tri as tri
+
+data = np.random.rand(100, 2)
+triangles = tri.Triangulation(data[:,0], data[:,1])
+
+plt.triplot(triangles)
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download (12)](https://user-images.githubusercontent.com/52376448/66710203-b0ee2400-edae-11e9-8b12-31e09d7839b9.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
