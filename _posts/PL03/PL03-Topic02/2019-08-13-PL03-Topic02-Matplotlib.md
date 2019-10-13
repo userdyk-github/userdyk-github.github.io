@@ -423,6 +423,29 @@ plt.show()
 <br><br><br>
 
 ```python
+import matplotlib.pyplot as plt
+
+fig, ax = plt.subplots(1,1)
+ax.text(0.05, 0.05, 
+        "hello\nhello", 
+        transform=ax.transAxes, 
+        fontsize=10,
+        horizontalalignment='left',
+        verticalalignment='bottom',
+        bbox=dict(boxstyle='round',
+                  facecolor='wheat',
+                  alpha=0.5))
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download (9)](https://user-images.githubusercontent.com/52376448/66713914-13fdac00-edeb-11e9-8a90-e92cf728c886.png)
+<hr class='division3'>
+</details>
+
+<br><br><br>
+
+```python
 # Bounding box control
 import numpy as np
 import matplotlib.pyplot as plt
