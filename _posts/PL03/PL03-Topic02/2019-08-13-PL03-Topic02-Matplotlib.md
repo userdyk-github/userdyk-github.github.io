@@ -914,6 +914,7 @@ plt.show()
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Customizing the Color and Styles</summary>
 <hr class='division3'>
+<span class="frame3">Defining your own colors</span>
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
@@ -928,8 +929,9 @@ plt.show()
 <span class="jb-medium">c='x', x ∈ [0(black), 1(white)] </span>
 ![download (7)](https://user-images.githubusercontent.com/52376448/66707334-c3019f80-ed79-11e9-93e3-e0d9aac1212b.png)
 
-
 <br>
+
+<span class="frame3">Controlling a line pattern and thickness</span>
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -994,6 +996,8 @@ plt.show()
 ![download (16)](https://user-images.githubusercontent.com/52376448/66710417-b64d6d80-edb2-11e9-8102-422e612b5a7c.png)
 <br>
 
+
+<span class="frame3">Controlling a marker's style</span>
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -1010,6 +1014,7 @@ plt.show()
 
 <br>
 
+<span class="frame3">Getting more control over markers</span>
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
