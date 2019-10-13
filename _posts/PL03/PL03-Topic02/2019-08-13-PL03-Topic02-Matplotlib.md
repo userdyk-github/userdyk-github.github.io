@@ -3362,6 +3362,259 @@ plt.show()
 ---
 
 ### ***Working with Maps***
+
+#### Visualizing the content of a 2D array
+
+```python
+import numpy as np
+import matplotlib.cm as cm
+from matplotlib import pyplot as plt
+def iter_count(C, max_iter):
+    X = C
+    for n in range(max_iter):
+        if abs(X) > 2.:
+            return n
+        X = X ** 2 + C
+    return max_iter
+N = 512
+max_iter = 64
+xmin, xmax, ymin, ymax = -2.2, .8, -1.5, 1.5
+X = np.linspace(xmin, xmax, N)
+Y = np.linspace(ymin, ymax, N)
+Z = np.empty((N, N))
+for i, y in enumerate(Y):
+    for j, x in enumerate(X):
+        Z[i, j] = iter_count(complex(x, y), max_iter)
+plt.imshow(Z, cmap = cm.gray)
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download](https://user-images.githubusercontent.com/52376448/66710780-f06e3d80-edb9-11e9-9def-be9e888f6531.png)
+<br>
+```python
+import matplotlib.cm as cm
+plt.imshow(Z, cmap = cm.binary, extent=(xmin, xmax, ymin, ymax))
+```
+![download (1)](https://user-images.githubusercontent.com/52376448/66710781-f06e3d80-edb9-11e9-8973-0d4788698150.png)
+<br>
+```python
+plt.imshow(Z, cmap = cm.binary, interpolation = 'nearest', extent=(xmin, xmax, ymin, ymax))
+```
+![download (2)](https://user-images.githubusercontent.com/52376448/66710782-f06e3d80-edb9-11e9-9af2-842841fa8c39.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+#### Adding a colormap legend to a figure
+
+```python
+import numpy as np
+from matplotlib import pyplot as plt
+import matplotlib.cm as cm
+def iter_count(C, max_iter):
+    X = C
+    for n in range(max_iter):
+        if abs(X) > 2.:
+            return n
+        X = X ** 2 + C
+    return max_iter
+N = 512
+max_iter = 64
+xmin, xmax, ymin, ymax = -2.2, .8, -1.5, 1.5
+X = np.linspace(xmin, xmax, N)
+Y = np.linspace(ymin, ymax, N)
+Z = np.empty((N, N))
+for i, y in enumerate(Y):
+    for j, x in enumerate(X):
+        Z[i, j] = iter_count(complex(x, y), max_iter)
+plt.imshow(Z,
+           cmap = cm.binary,
+           interpolation = 'bicubic',
+           extent=(xmin, xmax, ymin, ymax)) 
+cb = plt.colorbar(orientation='horizontal', shrink=.75)
+cb.set_label('iteration count')
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download](https://user-images.githubusercontent.com/52376448/66710792-15fb4700-edba-11e9-93d7-0b0366200deb.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+#### Visualizing a 2D scalar field
+
+```python
+import numpy as np
+from matplotlib import pyplot as plt
+import matplotlib.cm as cm 
+
+n = 256
+x = np.linspace(-3., 3., n)
+y = np.linspace(-3., 3., n)
+X, Y = np.meshgrid(x, y)
+Z = X * np.sinc(X ** 2 + Y ** 2)
+plt.pcolormesh(X, Y, Z, cmap = cm.gray)
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download (1)](https://user-images.githubusercontent.com/52376448/66710797-28758080-edba-11e9-98d1-d8d2118c3492.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+#### Visualizing contour lines
+
+```python
+import numpy as np
+from matplotlib import pyplot as plt
+import matplotlib.cm as cm
+def iter_count(C, max_iter):
+     X = C
+     for n in range(max_iter):
+         if abs(X) > 2.:
+             return n
+         X = X ** 2 + C
+     return max_iter
+N = 512
+max_iter = 64 
+xmin, xmax, ymin, ymax = -0.32, -0.22, 0.8, 0.9
+X = np.linspace(xmin, xmax, N)
+Y = np.linspace(ymin, ymax, N)
+Z = np.empty((N, N))
+for i, y in enumerate(Y):
+     for j, x in enumerate(X):
+         Z[i, j] = iter_count(complex(x, y), max_iter)
+plt.imshow(Z,
+           cmap = cm.binary,
+           interpolation = 'bicubic',
+           origin = 'lower',
+           extent=(xmin, xmax, ymin, ymax))
+levels = [8, 12, 16, 20]
+ct = plt.contour(X, Y, Z, levels, cmap = cm.gray)
+plt.clabel(ct, fmt='%d')
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download (2)](https://user-images.githubusercontent.com/52376448/66710800-42af5e80-edba-11e9-87bc-1583f5a7b427.png)
+
+<br>
+
+```python
+import numpy as np
+from matplotlib import pyplot as plt
+import matplotlib.cm as cm
+def iter_count(C, max_iter):
+     X = C
+     for n in range(max_iter):
+         if abs(X) > 2.:
+             return n
+         X = X ** 2 + C
+     return max_iter
+N = 512
+max_iter = 64
+xmin, xmax, ymin, ymax = -0.32, -0.22, 0.8, 0.9
+X = np.linspace(xmin, xmax, N)
+Y = np.linspace(ymin, ymax, N)
+Z = np.empty((N, N))
+for i, y in enumerate(Y):
+     for j, x in enumerate(X):
+         Z[i, j] = iter_count(complex(x, y), max_iter) 
+levels = [0, 8, 12, 16, 20, 24, 32]
+plt.contourf(X, Y, Z, levels, cmap = cm.gray, antialiased = True)
+plt.show()
+```
+![download (3)](https://user-images.githubusercontent.com/52376448/66710801-42af5e80-edba-11e9-858c-a2d9cbcc424d.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+#### Visualizing a 2D vector field
+
+```python
+import numpy as np
+import sympy
+from sympy.abc import x, y
+from matplotlib import pyplot as plt
+import matplotlib.patches as patches
+def cylinder_stream_function(U = 1, R = 1):
+     r = sympy.sqrt(x ** 2 + y ** 2)
+     theta = sympy.atan2(y, x)
+     return U * (r - R ** 2 / r) * sympy.sin(theta)
+def velocity_field(psi):
+     u = sympy.lambdify((x, y), psi.diff(y), 'numpy')
+     v = sympy.lambdify((x, y), -psi.diff(x), 'numpy')
+     return u, v
+U_func, V_func = velocity_field(cylinder_stream_function() )
+xmin, xmax, ymin, ymax = -2.5, 2.5, -2.5, 2.5
+Y, X = np.ogrid[ymin:ymax:16j, xmin:xmax:16j]
+U, V = U_func(X, Y), V_func(X, Y)
+M = (X ** 2 + Y ** 2) < 1.
+U = np.ma.masked_array(U, mask = M)
+V = np.ma.masked_array(V, mask = M)
+shape = patches.Circle((0, 0), radius = 1., lw = 2., fc = 'w', ec = 'k', zorder = 0)
+plt.gca().add_patch(shape)
+plt.quiver(X, Y, U, V, zorder = 1)
+plt.axes().set_aspect('equal')
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download (4)](https://user-images.githubusercontent.com/52376448/66710806-61155a00-edba-11e9-9e30-2756fc7f2bef.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+#### Visualizing the streamlines of a 2D vector field
+
+```python
+import numpy as np
+import sympy
+from sympy.abc import x, y
+from matplotlib import pyplot as plt
+import matplotlib.patches as patches
+def cylinder_stream_function(U = 1, R = 1):
+     r = sympy.sqrt(x ** 2 + y ** 2)
+     theta = sympy.atan2(y, x)
+     return U * (r - R ** 2 / r) * sympy.sin(theta)
+def velocity_field(psi):
+     u = sympy.lambdify((x, y), psi.diff(y), 'numpy')
+     v = sympy.lambdify((x, y), -psi.diff(x), 'numpy')
+     return u, v
+psi = cylinder_stream_function()
+U_func, V_func = velocity_field(psi)
+xmin, xmax, ymin, ymax = -3, 3, -3, 3
+Y, X = np.ogrid[ymin:ymax:128j, xmin:xmax:128j]
+U, V = U_func(X, Y), V_func(X, Y)
+M = (X ** 2 + Y ** 2) < 1.
+U = np.ma.masked_array(U, mask = M)
+V = np.ma.masked_array(V, mask = M) 
+shape = patches.Circle((0, 0), radius = 1., lw = 2., fc = 'w', ec = 'k', zorder = 0)
+plt.gca().add_patch(shape)
+plt.streamplot(X, Y, U, V, color = 'k')
+plt.axes().set_aspect('equal')
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download (5)](https://user-images.githubusercontent.com/52376448/66710810-77231a80-edba-11e9-8e8c-72ae6a1f38d8.png)
+<br>
+```python
+plt.streamplot(X, Y, U, V, color = U ** 2 + V ** 2, cmap = cm.binary)
+```
+![download (6)](https://user-images.githubusercontent.com/52376448/66710811-77bbb100-edba-11e9-9568-afc77d5444b2.png)
+<hr class='division3'>
+</details>
+
 <br><br><br>
 <hr class="division2">
 
