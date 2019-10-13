@@ -228,6 +228,8 @@ x = np.array([165., 180., 190., 188., 163., 178., 177., 172., 164., 182., 143.,
               152., 175., 158., 156., 171., 164., 165., 160., 162., 140., 172.,
               148.])
 
+print(x.mean(), x.var(), x.std())
+
 plt.scatter(range(len(x)), x)
 plt.plot([0, 100], [165.76, 165.76], c ="k", label="mean")
 plt.annotate('',
@@ -245,12 +247,8 @@ plt.annotate('',
 plt.text(55, 170, 'Standard Deviation', c='red')
 plt.legend()
 ```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">Visualization</summary>
-<hr class='division3'>
+<span class="jb-medium">(165.76, 224.16240000000002, 14.972053967308561)</span>
 ![download (10)](https://user-images.githubusercontent.com/52376448/66714258-883a4e80-edef-11e9-8fef-59a8d43fcbe8.png)
-<hr class='division3'>
-</details>
 
 
 <br><br><br>
