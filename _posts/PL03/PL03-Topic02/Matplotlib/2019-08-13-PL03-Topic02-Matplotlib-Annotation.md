@@ -121,7 +121,7 @@ from matplotlib import offsetbox
 
 fig, ax = plt.subplots(1,1)
 textstr = "hello\nhello"
-textbox = offsetbox.AnchoredText(textstr, loc=1)
+textbox = offsetbox.AnchoredText(textstr, loc=1)    # loc : auto-align
 ax.add_artist(textbox)
 ```
 ![download (8)](https://user-images.githubusercontent.com/52376448/66713790-23c8c080-edea-11e9-98db-d9e9390e2998.png)
