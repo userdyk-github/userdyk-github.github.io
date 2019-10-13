@@ -76,7 +76,7 @@ ax.text(0, 0, "Direction",
 ```
 ![download](https://user-images.githubusercontent.com/52376448/66709336-a6c32a00-ed9c-11e9-8459-23c897402abc.png)
 <details markdown="1">
-<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<summary class='jb-small' style="color:blue">SUPPLEMENT : boxstyle</summary>
 <hr class='division3'>
 ![캡처](https://user-images.githubusercontent.com/52376448/66709352-09b4c100-ed9d-11e9-89b6-4f9137c10bf2.JPG)
 <hr class='division3'>
