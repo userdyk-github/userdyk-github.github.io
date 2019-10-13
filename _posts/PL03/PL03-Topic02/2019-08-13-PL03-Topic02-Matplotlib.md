@@ -499,7 +499,12 @@ plt.show()
 ![download (10)](https://user-images.githubusercontent.com/52376448/66714019-20363900-edec-11e9-911e-2b89c032c7f6.png)
 <hr class='division3'>
 </details>
-
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">CAUTION</summary>
+<hr class='division3'>
+![캡처](https://user-images.githubusercontent.com/52376448/66714205-e87cc080-edee-11e9-84cc-b65272e41c20.JPG)
+<hr class='division3'>
+</details>
 <br><br><br>
 ```python
 import numpy as np
