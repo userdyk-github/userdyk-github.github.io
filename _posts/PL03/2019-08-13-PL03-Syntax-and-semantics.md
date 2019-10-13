@@ -210,6 +210,21 @@ float("-Inf")
 
 ### ***Dictionary***
 
+```python
+numbers = dict(x=5, y=0)
+print('numbers =', numbers)
+print(type(numbers))
+
+empty = dict()
+print('empty =', empty)
+print(type(empty))
+```
+```
+numbers = {'y': 0, 'x': 5}
+<class 'dict'>
+empty = {}
+<class 'dict'>
+```
 <br><br><br>
 
 ---
