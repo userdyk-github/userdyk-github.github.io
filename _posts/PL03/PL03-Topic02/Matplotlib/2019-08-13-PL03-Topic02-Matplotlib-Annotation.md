@@ -158,10 +158,7 @@ List of posts followed by this article
 ---
 
 Reference
-- <a href='' target="_blank"></a>
-- <a href="" target="_blank"></a>
-- <a href='' target="_blank"></a>
-- <a href='' target="_blank"></a>
+- <a href='https://matplotlib.org/3.1.1/tutorials/text/annotations.html' target="_blank">annotations</a>
 
 ---
 
