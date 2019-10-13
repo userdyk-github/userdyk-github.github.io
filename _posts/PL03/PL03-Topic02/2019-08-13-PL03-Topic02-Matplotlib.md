@@ -24,6 +24,7 @@ List of posts to read before reading this article
 
 ## **Data Load/Save**
 ### ***Plotting curves from file data***
+[my_data.txt][1]
 ```python
 import matplotlib.pyplot as plt
 X, Y = [], []
@@ -44,6 +45,7 @@ plt.show()
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Another example</summary>
 <hr class='division3'>
+[my_data.txt][1]
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -55,6 +57,7 @@ plt.show()
 ```
 ![download (1)](https://user-images.githubusercontent.com/52376448/66709787-5355d980-eda6-11e9-9234-d67bd26aa425.png)
 <br>
+[my_data2.txt][2]
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -3599,6 +3602,9 @@ Reference
 - <a href='https://matplotlib.org/examples/lines_bars_and_markers/line_styles_reference.html' target="_blank">line style ref</a>
 
 ---
+
+[1]:{{ site.url }}/download/PL03/my_data.txt
+[2]:{{ site.url }}/download/PL03/my_data2.txt
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
