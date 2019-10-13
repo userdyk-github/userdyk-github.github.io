@@ -1660,6 +1660,23 @@ plt.show()
 #### Pie chart
 
 ```python
+import matplotlib.pyplot as plt
+
+data = [5, 25, 50, 20]
+
+plt.pie(data)
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download (9)](https://user-images.githubusercontent.com/52376448/66710160-dc244380-edad-11e9-95ba-9b0426de87cf.png)
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Another pie chart</summary>
+<hr class='division3'>
+```python
 %matplotlib inline
 import matplotlib.pyplot as plt
 import numpy as np
@@ -1676,12 +1693,10 @@ plt.pie(sizes, explode=explode, labels=labels, colors=colors,
 plt.axis('equal')
 plt.show()
 ```
-<details open markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
 ![다운로드 (8)](https://user-images.githubusercontent.com/52376448/64471621-c6a87200-d18e-11e9-93a0-a1a16c66c922.png)
 <hr class='division3'>
 </details>
+
 <br><br><br>
 
 **Using custom colors for pie charts**
@@ -1706,6 +1721,43 @@ plt.show()
 
 ---
 
+#### Boxplot
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+data = np.random.randn(100)
+
+plt.boxplot(data)
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download (10)](https://user-images.githubusercontent.com/52376448/66710175-450bbb80-edae-11e9-913e-e217fd826425.png)
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Another boxplot</summary>
+<hr class='division3'>
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+data = np.random.randn(100, 5)
+
+plt.boxplot(data)
+plt.show()
+```
+![download (11)](https://user-images.githubusercontent.com/52376448/66710177-463ce880-edae-11e9-9a5f-27fa70c1a95f.png)
+<hr class='division3'>
+</details>
+
+
+<br><br><br>
+
+---
 
 #### Some more plots
 
