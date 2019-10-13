@@ -1369,17 +1369,17 @@ data = [5., 25., 50., 20.]
 plt.bar(range(len(data)), data)
 plt.show()
 ```
-<details markdown="1">
+<details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![download](https://user-images.githubusercontent.com/52376448/66709977-20154980-edaa-11e9-9d97-3b5f28138fe8.png)
 <hr class='division3'>
 </details>
 <details markdown="1">
-<summary class='jb-small' style="color:blue">The thickness of a bar</summary>
+<summary class='jb-small' style="color:blue">Another bar chart</summary>
 <hr class='division3'>
+`The thickness of a bar`
 ```python
-# The thickness of a bar
 import matplotlib.pyplot as plt
 
 data = [5., 25., 50., 20.]
@@ -1388,10 +1388,8 @@ plt.bar(range(len(data)), data, width = 1.)
 plt.show()
 ```
 ![download (1)](https://user-images.githubusercontent.com/52376448/66710002-a598f980-edaa-11e9-94a8-8e4c16abb050.png)
-<hr class='division3'>
-</details>
-
-<br><br><br>
+<br>
+`Labeled bar chart`
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
@@ -1408,12 +1406,10 @@ plt.xlabel("abc")
 plt.ylabel("frequency")
 plt.show()
 ```
-<details open markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
 ![다운로드 (6)](https://user-images.githubusercontent.com/52376448/64471623-c6a87200-d18e-11e9-8932-e4a3ee3dd8cc.png)
 <hr class='division3'>
 </details>
+
 <br><br><br>
 
 
