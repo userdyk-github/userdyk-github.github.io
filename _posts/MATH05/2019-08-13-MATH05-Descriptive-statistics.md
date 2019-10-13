@@ -183,7 +183,7 @@ plt.legend()
 <br><br><br>
 <hr class="division2">
 
-## **Variance**
+## **Variance and Standard deviation**
 
 ```python
 import numpy as np
@@ -197,11 +197,7 @@ np.var(x), np.var(x, ddof=1)    # for population
 x.var(), x.var(ddof=1)    # for population
 ```
 <span class="jb-medium">(115.23224852071006, 119.84153846153846)</span>
-<br><br><br>
-<hr class="division2">
-
-## **Standard deviation**
-
+<br><br>
 ```python
 import numpy as np
 
@@ -213,7 +209,50 @@ np.std(x), np.std(x, ddof=1)    # for population
 ```python
 x.std(), x.std(ddof=1)    # for population
 ```
-<span class="jb-medium">(10.734628476137871, 10.947216014199157)</span>
+<span class="jb-medium">(10.734628476137871, 10.947216014199157)</span><br>
+<br><br><br><br>
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+x = np.array([165., 180., 190., 188., 163., 178., 177., 172., 164., 182., 143.,
+              163., 168., 160., 172., 165., 208., 175., 181., 160., 154., 169.,
+              120., 184., 180., 175., 174., 175., 160., 155., 156., 161., 184.,
+              171., 150., 154., 153., 177., 184., 172., 156., 153., 145., 150.,
+              175., 165., 190., 156., 196., 161., 185., 159., 153., 155., 173.,
+              173., 191., 162., 152., 158., 190., 136., 171., 173., 146., 158.,
+              158., 159., 169., 145., 193., 178., 160., 153., 142., 143., 172.,
+              170., 130., 165., 177., 190., 164., 167., 172., 160., 184., 158.,
+              152., 175., 158., 156., 171., 164., 165., 160., 162., 140., 172.,
+              148.])
+
+plt.scatter(range(len(x)), x)
+plt.plot([0, 100], [165.76, 165.76], c ="k", label="mean")
+plt.annotate('',
+             xytext = (50, 165.76),
+             xy = (50, 180.73205396730856),
+             arrowprops = {'facecolor' : 'red', 
+                           'edgecolor' : 'red', 
+                           'shrink' : 0.05})
+plt.annotate('',
+             xytext = (50, 165.76),
+             xy = (50, 150.78794603269142),
+             arrowprops = {'facecolor' : 'red',
+                           'edgecolor' : 'red',
+                           'shrink' : 0.05 })
+plt.text(55, 170, 'Standard Deviation', c='red')
+plt.legend()
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Visualization</summary>
+<hr class='division3'>
+![download (10)](https://user-images.githubusercontent.com/52376448/66714258-883a4e80-edef-11e9-8fef-59a8d43fcbe8.png)
+<hr class='division3'>
+</details>
+
+
 <br><br><br>
 <hr class="division2">
 
