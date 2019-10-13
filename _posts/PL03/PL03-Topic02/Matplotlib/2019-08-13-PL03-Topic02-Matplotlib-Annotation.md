@@ -21,14 +21,29 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## **Annotations**
-
-
-<br><br><br>
-
-<hr class="division2">
 
 ## **Basic annotation**
+
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(-5,10, 1000)
+y = np.sin(x-np.pi/2)
+
+fig, ax = plt.subplots()
+ax.plot(x,y)
+
+ax.annotate('local max',
+            xy=(3, 1),
+            xycoords='data',
+            xytext=(0.8, 0.95),
+            textcoords='axes fraction',
+            arrowprops=dict(facecolor='black', shrink=0.05),
+            horizontalalignment='right',
+            verticalalignment='top')
+```
+![download](https://user-images.githubusercontent.com/52376448/66709324-754a5e80-ed9c-11e9-8c1b-e271e0c5dfda.png)
 
 <br><br><br>
 
@@ -41,6 +56,28 @@ List of posts to read before reading this article
 <hr class="division2">
 
 ### ***Annotating with Text with Box***
+
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(-5,10, 1000)
+y = np.sin(x-np.pi/2)
+
+fig, ax = plt.subplots()
+ax.plot(x,y)
+ax.text(0, 0, "Direction",
+        ha="center",
+        va="center",
+        rotation=45,
+        size=15,
+        bbox={'boxstyle':"rarrow,pad=.1", 
+              'fc':"cyan", 
+              'ec':"b", 
+              'lw':2})
+```
+![download](https://user-images.githubusercontent.com/52376448/66709336-a6c32a00-ed9c-11e9-8459-23c897402abc.png)
+
 
 <br><br><br>
 
