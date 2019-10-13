@@ -912,7 +912,7 @@ plt.show()
 <hr class='division3'>
 </details>
 <details markdown="1">
-<summary class='jb-small' style="color:blue">Custumizing graph color</summary>
+<summary class='jb-small' style="color:blue">Customizing the Color and Styles</summary>
 <hr class='division3'>
 ```python
 %matplotlib inline
@@ -4067,7 +4067,7 @@ Reference
 [2]:{{ site.url }}/download/PL03/my_data2.txt
 
 <details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<summary class='jb-small' style="color:blue">Customizing the Color and Styles</summary>
 <hr class='division3'>
 <hr class='division3'>
 </details>
