@@ -2677,11 +2677,11 @@ plt.show()
 #### Simple decoration
 <span class="frame3">color/marker/line</span>
 
-> <strong>Triplets</strong>: These colors can be described as a real value triplet—the red, blue, and green components of a color. The components have to be in the [0, 1] interval. Thus, the Python syntax (1.0, 0.0, 0.0) will code a pure, bright red, while (1.0, 0.0, 1.0) appears as a strong pink.
-> <strong>Quadruplets</strong>: These work as triplets, and the fourth component defines a transparency value. This value should also be in the [0, 1] interval. When rendering a figure to a picture file, using transparent colors allows for making figures that blend with a background. This is especially useful when making figures that will slide or end up on a web page.
-> <strong>Predefined names</strong>: matplotlib will interpret standard HTML color names as an actual color. For instance, the string red will be accepted as a color and will be interpreted as a bright red. A few colors have a one-letter alias, which is shown in the following table:
-> <strong>HTML color strings</strong>: matplotlib can interpret HTML color strings as actual colors. Such strings are defined as #RRGGBB where RR, GG, and BB are the 8-bit values for the red, green, and blue components in hexadecimal.
-> <strong>Gray-level strings</strong>: matplotlib will interpret a string representation of a floating point value as a shade of gray, such as 0.75 for a medium light gray.
+> <strong>Triplets</strong>: These colors can be described as a real value triplet—the red, blue, and green components of a color. The components have to be in the [0, 1] interval. Thus, the Python syntax (1.0, 0.0, 0.0) will code a pure, bright red, while (1.0, 0.0, 1.0) appears as a strong pink.<br>
+> <strong>Quadruplets</strong>: These work as triplets, and the fourth component defines a transparency value. This value should also be in the [0, 1] interval. When rendering a figure to a picture file, using transparent colors allows for making figures that blend with a background. This is especially useful when making figures that will slide or end up on a web page.<br>
+> <strong>Predefined names</strong>: matplotlib will interpret standard HTML color names as an actual color. For instance, the string red will be accepted as a color and will be interpreted as a bright red. A few colors have a one-letter alias, which is shown in the following table:<br>
+> <strong>HTML color strings</strong>: matplotlib can interpret HTML color strings as actual colors. Such strings are defined as #RRGGBB where RR, GG, and BB are the 8-bit values for the red, green, and blue components in hexadecimal.<br>
+> <strong>Gray-level strings</strong>: matplotlib will interpret a string representation of a floating point value as a shade of gray, such as 0.75 for a medium light gray.<br>
 
 ```python
 %matplotlib inline
