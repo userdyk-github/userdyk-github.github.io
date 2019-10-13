@@ -547,7 +547,9 @@ plt.annotate('Brackmard minimum',
              ha = 'center', va = 'bottom',
              xytext = (-1.5, 3.),
              xy = (0.75, -2.7),
-             arrowprops = { 'facecolor' : 'black', 'shrink' : 0.05 })
+             arrowprops = { 'facecolor' : 'black', 
+                            'edgecolor' : 'black',
+                            'shrink' : 0.05 })
 plt.plot(X, Y)
 plt.show()
 ```
