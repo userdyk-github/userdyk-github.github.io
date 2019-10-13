@@ -486,7 +486,7 @@ plt.show()
 
 
 #### Adding arrows
-
+<span class="frame3">with arrowstyle</span>
 ```python
 import matplotlib.pyplot as plt
 
@@ -534,6 +534,8 @@ Defaults to None.<br>
 <hr class='division3'>
 </details>
 <br><br><br>
+
+<span class="frame3">without arrowstyle</span>
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
