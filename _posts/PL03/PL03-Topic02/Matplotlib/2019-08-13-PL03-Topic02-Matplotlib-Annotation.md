@@ -86,6 +86,17 @@ ax.text(0, 0, "Direction",
 ---
 
 ### ***Annotating with Arrow***
+```python
+import matplotlib.pyplot as plt
+
+fig, ax = plt.subplots()
+ax.annotate("",
+            xy=(0.2, 0.2), xycoords='data',
+            xytext=(0.8, 0.8), textcoords='data',
+            arrowprops=dict(arrowstyle="->",
+                            connectionstyle="arc3"))
+```
+![download (1)](https://user-images.githubusercontent.com/52376448/66709378-e2aabf00-ed9d-11e9-8eb1-5fca9341c4ad.png)
 
 <br><br><br>
 
