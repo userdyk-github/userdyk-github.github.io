@@ -499,13 +499,14 @@ plt.show()
 ![download (10)](https://user-images.githubusercontent.com/52376448/66714019-20363900-edec-11e9-911e-2b89c032c7f6.png)
 <hr class='division3'>
 </details>
-<details open markdown="1">
+<details markdown="1">
 <summary class='jb-small' style="color:blue">CAUTION 1 : arrowstyle</summary>
 <hr class='division3'>
+<strong>If arrowstyle is used, another keys are fobbiden</strong>
 ![캡처](https://user-images.githubusercontent.com/52376448/66714205-e87cc080-edee-11e9-84cc-b65272e41c20.JPG)
 <hr class='division3'>
 </details>
-<details open markdown="1">
+<details markdown="1">
 <summary class='jb-small' style="color:blue">CAUTION 2 : annotation_clip</summary>
 <hr class='division3'>
 ```python
