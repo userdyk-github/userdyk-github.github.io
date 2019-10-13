@@ -2055,10 +2055,6 @@ plt.show()
 </details>
 <br><br><br>
 
----
-
-### ***Working with a File Output***
-
 
 <hr class="division2">
 
