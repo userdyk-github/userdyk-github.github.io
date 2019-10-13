@@ -1576,7 +1576,7 @@ plt.show()
 
 <br><br><br>
 
-**Using custom colors for bar charts**
+**Plotting back-to-back bar charts**
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -1595,6 +1595,28 @@ plt.show()
 ![다운로드 (3)](https://user-images.githubusercontent.com/52376448/65248179-b5674a00-db2c-11e9-940a-d431275e15f4.png)
 <hr class='division3'>
 </details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Another back-to-back bar chart</summary>
+<hr class='division3'>
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+women_pop = np.array([5., 30., 45., 22.])
+men_pop = np.array( [5., 25., 50., 20.])
+X = np.arange(4)
+
+plt.barh(X, women_pop, color = 'r')
+plt.barh(X, -men_pop, color = 'b')
+plt.show()
+```
+![download (8)](https://user-images.githubusercontent.com/52376448/66710115-f578c000-edac-11e9-899d-7f5e6384d7da.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+**Using custom colors for bar charts**
+
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
