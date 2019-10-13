@@ -744,7 +744,8 @@ plt.show()
 
 ### ***Figure object and plot commands***
 
-**Graphs plot in general**
+<span class="frame3">Graphs plot in general</span>
+
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
@@ -764,7 +765,8 @@ plt.show()
 </details>
 <br><br><br>
 
-**Graphs plot in principle**
+
+<span class="frame3">Graphs plot in principle</span>
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
@@ -785,7 +787,7 @@ plt.show()
 </details>
 <br><br><br>
 
-**Identification for the currently allocated figure object**
+<span class="frame3">Identification for the currently allocated figure object</span>
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
@@ -819,7 +821,7 @@ Figure(432x288) 2045494563280
 
 #### Point plot
 
-**Single point plot**
+<span class="frame3">Single point plot</span>
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
@@ -835,7 +837,7 @@ plt.show()
 </details>
 <br><br><br>
 
-**Multiple point plot**
+<span class="frame3">Multiple point plot</span>
 
 ```python
 %matplotlib inline
@@ -856,7 +858,8 @@ plt.show()
 
 #### Line plot
 
-**list plot : [0,1,2,3] -> [1,4,9,16]**
+<span class="frame3">list plot : [0,1,2,3] → [1,4,9,16]</span>
+
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
@@ -872,7 +875,8 @@ plt.show()
 </details>
 <br><br><br>
 
-**list plot : [10,20,30,40] -> [1,4,9,16]**
+
+<span class="frame3">list plot : [10,20,30,40] → [1,4,9,16]</span>
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
@@ -888,7 +892,8 @@ plt.show()
 </details>
 <br><br><br>
 
-**numpy array plot : <span style="font-size: 70%;">$$[-\pi + \pi] \to cos(x)$$ </span>**
+<span class="frame3">numpy array plot : $$[-\pi + \pi] \to cos(x)$$ </span>
+
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
@@ -933,7 +938,7 @@ plt.show()
 
 #### Scatter plot
 
-**Plotting points**
+<span class="frame3">Plotting points</span>
 
 ```python
 import numpy as np
@@ -1003,7 +1008,7 @@ plt.show()
 
 <br><br><br>
 
-**Using custom colors for scatter plots**
+<span class="frame3">Using custom colors for scatter plots</span>
 <div class='jb-medium'>
 <strong>Common color for all the dots</strong>: If the color parameter is a valid matplotlib color definition, then all the dots will appear in that color.<br>
 <strong>Individual color for each dot</strong>: If the color parameter is a sequence of a valid matplotlib color definition, the ith dot will appear in the ith color. Of course, we have to give the required colors for each dot.<br>
@@ -1076,8 +1081,7 @@ plt.show()
 </details>
 <br><br><br>
 
-
-**Using colormaps for scatter plots**
+<span class="frame3">Using colormaps for scatter plots</span>
 ```python
 %matplotlib inline
 import matplotlib.cm as cm
@@ -1360,7 +1364,7 @@ array([-3.04614305, -2.46559324, -1.88504342, -1.3044936 , -0.72394379,
 
 #### Bar chart
 
-**Plotting bar charts**
+<span class="frame3">Plotting bar charts</span>
 
 ```python
 import matplotlib.pyplot as plt
@@ -1413,8 +1417,7 @@ plt.show()
 <br><br><br>
 
 
-
-**Horizontal bar charts**
+<span class="frame3">Horizontal bar charts</span>
 
 ```python
 # Horizontal bars
@@ -1458,8 +1461,8 @@ plt.show()
 
 <br><br><br>
 
-**Plotting multiple bar charts**
 
+<span class="frame3">Plotting multiple bar charts</span>
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -1507,8 +1510,8 @@ plt.show()
 <br><br><br>
 
 
-**Plotting stacked bar charts**
 
+<span class="frame3">Plotting stacked bar charts</span>
 ```python
 import matplotlib.pyplot as plt
 
@@ -1572,7 +1575,7 @@ plt.show()
 
 <br><br><br>
 
-**Plotting back-to-back bar charts**
+<span class="frame3">Plotting back-to-back bar charts</span>
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -1611,7 +1614,7 @@ plt.show()
 </details>
 <br><br><br>
 
-**Using custom colors for bar charts**
+<span class="frame3">Using custom colors for bar charts</span>
 
 ```python
 import numpy as np
@@ -1633,7 +1636,7 @@ plt.show()
 </details>
 <br><br><br>
 
-**Using colormaps for bar charts**
+<span class="frame3">Using colormaps for bar charts</span>
 ```python
 import numpy as np
 import matplotlib.cm as cm
@@ -1699,8 +1702,8 @@ plt.show()
 
 <br><br><br>
 
-**Using custom colors for pie charts**
 
+<span class="frame3">Using custom colors for pie charts</span>
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -1761,7 +1764,7 @@ plt.show()
 
 #### Some more plots
 
-**Plotting triangulations**
+<span class="frame3">Plotting triangulations</span>
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -2323,7 +2326,7 @@ plt.show()
 ### ***Line properties***
 
 #### Simple decoration
-**color/marker/line**
+<span class="frame3">color/marker/line</span>
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
@@ -2556,7 +2559,7 @@ plt.show()
 
 #### Axis ticks, tick labels, and grids
 
-**Base tick**
+<span class="frame3">Base tick</span>
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
@@ -2580,8 +2583,7 @@ plt.show()
 
 
 
-**Tick spacing**
-
+<span class="frame3">Tick spacing</span>
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -2628,8 +2630,7 @@ plt.show()
 <br><br><br>
 
 
-
-**Tick labeling**
+<span class="frame3">Tick labeling</span>
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
@@ -2841,8 +2842,7 @@ plt.show()
 </details>
 <br><br><br>
 
-**Scientific notation labels**
-
+<span class="frame3">Scientific notation labels</span>
 ```python
 import numpy as np
 import matplotlib as mpl
