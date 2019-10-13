@@ -23,7 +23,7 @@ List of posts to read before reading this article
 
 
 ## **Data Load/Save**
-### ***Plotting curves from file data***
+### ***Load : Plotting curves from file data***
 [my_data.txt][1]
 ```python
 import matplotlib.pyplot as plt
@@ -72,6 +72,182 @@ plt.show()
 </details>
 
 <br><br><br>
+
+---
+
+### ***Save***
+
+#### Generating a PNG picture file
+
+```python
+import numpy as np
+from matplotlib import pyplot as plt
+
+X = np.linspace(-10, 10, 1024)
+Y = np.sinc(X)
+
+plt.plot(X, Y)
+plt.show()
+plt.savefig('sinc.png', c = 'k')
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download](https://user-images.githubusercontent.com/52376448/66709915-edb71c80-eda8-11e9-9427-c43d5ccfcd39.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+#### Handling transparency
+
+```python
+# Rendering a figure to a PNG file with a transparent background
+import numpy as np
+import matplotlib.pyplot as plt
+X = np.linspace(-10, 10, 1024)
+Y = np.sinc(X)
+plt.plot(X, Y, c = 'k')
+plt.savefig('sinc.png', transparent = True)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download (1)](https://user-images.githubusercontent.com/52376448/66709916-ee4fb300-eda8-11e9-901f-ffc0665ddf55.png)
+<hr class='division3'>
+</details>
+<br>
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+name_list = ('Omar', 'Serguey', 'Max', 'Zhou', 'Abidin')
+value_list = np.random.randint(99, size=len(name_list))
+pos_list = np.arange(len(name_list))
+
+plt.bar(pos_list, value_list, alpha = .75, color = '.75', align ='center')
+plt.xticks(pos_list, name_list)
+plt.savefig('bar.png', transparent = True)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download (2)](https://user-images.githubusercontent.com/52376448/66709917-ee4fb300-eda8-11e9-9ab0-4a28866b6f40.png)
+<hr class='division3'>
+</details>
+
+
+<br><br><br>
+
+
+#### Controlling the output resolution
+
+```python
+import numpy as np
+from matplotlib import pyplot as plt
+
+X = np.linspace(-10, 10, 1024)
+Y = np.sinc(X)
+
+plt.plot(X, Y)
+plt.savefig('sinc.png', dpi = 300)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download (3)](https://user-images.githubusercontent.com/52376448/66709918-ee4fb300-eda8-11e9-8693-d96aa4c29bce.png)
+<hr class='division3'>
+</details>
+<br>
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+theta = np.linspace(0, 2 * np.pi, 8)
+points = np.vstack((np.cos(theta), np.sin(theta))).transpose()
+
+plt.figure(figsize=(4., 4.))
+plt.gca().add_patch(plt.Polygon(points, color = '.75'))
+plt.grid(True)
+plt.axis('scaled')
+plt.savefig('polygon.png', dpi = 128)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download (4)](https://user-images.githubusercontent.com/52376448/66709919-ee4fb300-eda8-11e9-9c0f-d21f14e9de08.png)
+<hr class='division3'>
+</details>
+
+
+<br><br><br>
+
+
+#### Generating PDF or SVG documents
+
+```python
+import numpy as np
+from matplotlib import pyplot as plt
+
+X = np.linspace(-10, 10, 1024)
+Y = np.sinc(X)
+
+plt.plot(X, Y)
+plt.savefig('sinc.pdf')
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download (5)](https://user-images.githubusercontent.com/52376448/66709920-eee84980-eda8-11e9-9023-69bdef1d1c05.png)
+<hr class='division3'>
+</details>
+
+<br><br><br>
+
+
+#### Handling multiple-page PDF documents
+
+```python
+import numpy as np
+from matplotlib import pyplot as plt
+from matplotlib.backends.backend_pdf import PdfPages
+
+# Generate the data
+data = np.random.randn(15, 1024)
+
+# The PDF document
+pdf_pages = PdfPages('barcharts.pdf')
+
+# Generate the pages
+plots_count = data.shape[0]
+plots_per_page = 5
+pages_count = int(np.ceil(plots_count / float(plots_per_page)))
+grid_size = (plots_per_page, 1)
+for i, samples in enumerate(data):
+    # Create a figure instance (ie. a new page) if needed
+    if i % plots_per_page == 0:
+        fig = plt.figure(figsize=(8.27, 11.69), dpi=100)
+    # Plot one bar chart
+    plt.subplot2grid(grid_size, (i % plots_per_page, 0))
+    plt.hist(samples, 32, normed=1, facecolor='.5', alpha=0.75)
+    # Close the page if needed
+    if (i + 1) % plots_per_page == 0 or (i + 1) == plots_count:
+        plt.tight_layout()
+        pdf_pages.savefig(fig)
+        
+# Write the PDF document to the disk
+pdf_pages.close()
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download (6)](https://user-images.githubusercontent.com/52376448/66709921-eee84980-eda8-11e9-9210-b3ebc44575a8.png)
+<hr class='division3'>
+</details>
+
+
+<br><br><br>
+
+
 <hr class="division2">
 
 
