@@ -77,8 +77,12 @@ ax.text(0, 0, "Direction",
               'lw':2})
 ```
 ![download](https://user-images.githubusercontent.com/52376448/66709336-a6c32a00-ed9c-11e9-8459-23c897402abc.png)
-
-
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+![캡처](https://user-images.githubusercontent.com/52376448/66709352-09b4c100-ed9d-11e9-89b6-4f9137c10bf2.JPG)
+<hr class='division3'>
+</details>
 <br><br><br>
 
 ---
@@ -134,13 +138,23 @@ List of posts followed by this article
 ---
 
 Reference
-- <a href='https://www.tutorialspoint.com/pyqt/index.htm' target="_blank">PyQt Tutorial(official)</a>
-- <a href="http://codetorial.net/" target="_blank">PyQt5 Tutorial</a>
-- <a href='https://www.youtube.com/playlist?list=PLuTktZ8WcEGTdId-Kjbj6gsZTk65yudJh' target="_blank">Youtube Lecture about Qt designer</a>
-- <a href='https://www.youtube.com/watch?v=qiPS70TSvBk' target="_blank">Building .exe file</a>
+- <a href='' target="_blank"></a>
+- <a href="" target="_blank"></a>
+- <a href='' target="_blank"></a>
+- <a href='' target="_blank"></a>
 
 ---
 
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+    <details markdown="1">
+    <summary class='jb-small' style="color:red">OUTPUT</summary>
+    <hr class='division3_1'>
+    <hr class='division3_1'>
+    </details>
+<hr class='division3'>
+</details>
 
 
 
