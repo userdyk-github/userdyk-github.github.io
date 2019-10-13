@@ -2068,6 +2068,226 @@ plt.show()
 <br><br><br>
 
 
+#### Compositing multiple figures
+
+```python
+import numpy as np
+from matplotlib import pyplot as plt
+
+T = np.linspace(-np.pi, np.pi, 1024)
+grid_size = (4, 2)
+plt.subplot2grid(grid_size, (0, 0), rowspan = 3, colspan = 1)
+plt.plot(np.sin(2 * T), np.cos(0.5 * T), c = 'k')
+plt.subplot2grid(grid_size, (0, 1), rowspan = 3, colspan = 1)
+plt.plot(np.cos(3 * T), np.sin(T), c = 'k')
+plt.subplot2grid(grid_size, (3, 0), rowspan=1, colspan=3)
+plt.plot(np.cos(5 * T), np.sin(7 * T), c= 'k')
+plt.tight_layout()
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download (19)](https://user-images.githubusercontent.com/52376448/66710526-64f2ad80-edb5-11e9-903f-b93bf6a5ee6a.png)
+
+<br>
+```python
+# An alternative way to composite figures
+import numpy as np
+from matplotlib import pyplot as plt
+
+T = np.linspace(-np.pi, np.pi, 1024)
+fig, (ax0, ax1) = plt.subplots(ncols =2)
+ax0.plot(np.sin(2 * T), np.cos(0.5 * T), c = 'k')
+ax1.plot(np.cos(3 * T), np.sin(T), c = 'k')
+plt.show()
+```
+![download (21)](https://user-images.githubusercontent.com/52376448/66710551-fc580080-edb5-11e9-8a3b-0a2fac3b47f5.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+#### Scaling both the axes equally
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+T = np.linspace(0, 2 * np.pi, 1024)
+plt.plot(2. * np.cos(T), np.sin(T), c = 'k', lw = 3.)
+plt.axes().set_aspect('equal')
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download (22)](https://user-images.githubusercontent.com/52376448/66710567-44772300-edb6-11e9-93e3-e7aab4ea50f5.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+
+#### Setting an axis range
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+X = np.linspace(-6, 6, 1024)
+plt.ylim(-.5, 1.5)
+plt.plot(X, np.sinc(X), c = 'k')
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download (23)](https://user-images.githubusercontent.com/52376448/66710576-6ffa0d80-edb6-11e9-815e-548ebccd344e.png)
+<hr class='division3'>
+</details>
+
+<br><br><br>
+
+#### Setting the aspect ratio
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+X = np.linspace(-6, 6, 1024)
+Y1, Y2 = np.sinc(X), np.cos(X)
+plt.figure(figsize=(10.24, 2.56))
+plt.plot(X, Y1, c='k', lw = 3.)
+plt.plot(X, Y2, c='.75', lw = 3.)
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download (24)](https://user-images.githubusercontent.com/52376448/66710584-928c2680-edb6-11e9-8da5-b9e6423e7af6.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+
+#### Inserting subfigures
+
+```python
+import numpy as np
+from matplotlib import pyplot as plt
+
+X = np.linspace(-6, 6, 1024)
+Y = np.sinc(X)
+X_detail = np.linspace(-3, 3, 1024)
+Y_detail = np.sinc(X_detail)
+plt.plot(X, Y, c = 'k')
+sub_axes = plt.axes([.6, .6, .25, .25])
+sub_axes.plot(X_detail, Y_detail, c = 'k')
+plt.setp(sub_axes)
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download (25)](https://user-images.githubusercontent.com/52376448/66710593-d0894a80-edb6-11e9-9dab-a0fd8db1dcb4.png)
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+```python
+sub_axes = plt.axes([.6, .6, .25, .25])
+```
+![download (26)](https://user-images.githubusercontent.com/52376448/66710600-f282cd00-edb6-11e9-8eba-180f635b9cd5.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+#### Using a logarithmic scale
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+X = np.linspace(1, 10, 1024)
+plt.yscale('log')
+plt.plot(X, X, c = 'k', lw = 2., label = r'$f(x)=x$')
+plt.plot(X, 10 ** X, c = '.75', ls = '--', lw = 2., label=r'$f(x)=e^x$')
+plt.plot(X, np.log(X), c = '.75', lw = 2., label = r'$f(x)=\log(x)$')
+plt.legend()
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download (27)](https://user-images.githubusercontent.com/52376448/66710610-3a095900-edb7-11e9-98df-ccbe39862303.png)
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+```python
+plt.xscale('log')
+plt.yscale('log')
+```
+![download (28)](https://user-images.githubusercontent.com/52376448/66710611-3a095900-edb7-11e9-81d0-ff0e73fe9455.png)
+<hr class='division3'>
+</details>
+<br>
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+X = np.linspace(-100, 100, 4096)
+plt.xscale('symlog', linthreshx=6.)
+plt.plot(X, np.sinc(X), c = 'k')
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download (29)](https://user-images.githubusercontent.com/52376448/66710612-3a095900-edb7-11e9-912a-aaa2322528b8.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+#### Using polar coordinates
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+T = np.linspace(0 , 2 * np.pi, 1024)
+plt.axes(polar = True)
+plt.plot(T, 1. + .25 * np.sin(16 * T), c= 'k')
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download (30)](https://user-images.githubusercontent.com/52376448/66710645-af752980-edb7-11e9-9e62-d3190b16e60b.png)
+<hr class='division3'>
+</details>
+<br>
+```python
+import numpy as np
+import matplotlib.patches as patches
+import matplotlib.pyplot as plt
+
+ax = plt.axes(polar = True)
+theta = np.linspace(0, 2 * np.pi, 8, endpoint = False)
+radius = .25 + .75 * np.random.random(size = len(theta))
+points = np.vstack((theta, radius)).transpose()
+plt.gca().add_patch(patches.Polygon(points, color = '.75'))
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download (31)](https://user-images.githubusercontent.com/52376448/66710646-af752980-edb7-11e9-8a32-663054676823.png)
+<hr class='division3'>
+</details>
+
+
+<br><br><br>
 <hr class="division2">
 
 ## **Axes**
@@ -2107,6 +2327,37 @@ plt.show()
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![다운로드 (21)](https://user-images.githubusercontent.com/52376448/65268133-7a2b4200-db51-11e9-8ef4-b52f208c7a1d.png)
+<hr class='division3'>
+</details>
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">Example</summary>
+<hr class='division3'>
+```python
+import numpy as np
+from matplotlib import pyplot as plt
+
+def get_radius(T, params):
+    m, n_1, n_2, n_3 = params
+    U = (m * T) / 4
+    return (np.fabs(np.cos(U)) ** n_2 + np.fabs(np.sin(U)) ** n_3) ** (-1. / n_1)
+
+grid_size = (3, 4)
+T = np.linspace(0, 2 * np.pi, 1024)
+
+for i in range(grid_size[0]):
+    for j in range(grid_size[1]):
+        params = np.random.random_integers(1, 20, size = 4)
+        R = get_radius(T, params)
+        axes = plt.subplot2grid(grid_size, (i, j), rowspan=1, colspan=1)
+        axes.get_xaxis().set_visible(False)
+        axes.get_yaxis().set_visible(False)
+        plt.plot(R * np.cos(T), R * np.sin(T), c = 'k')
+        plt.title('%d, %d, %d, %d' % tuple(params), fontsize = 'small')
+    
+plt.tight_layout()
+plt.show()
+```
+![download (20)](https://user-images.githubusercontent.com/52376448/66710544-d0d51600-edb5-11e9-9444-e55db11b26ba.png)
 <hr class='division3'>
 </details>
 <br><br><br>
