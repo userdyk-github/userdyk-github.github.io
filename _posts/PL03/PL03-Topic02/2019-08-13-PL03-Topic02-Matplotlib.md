@@ -500,9 +500,36 @@ plt.show()
 <hr class='division3'>
 </details>
 <details open markdown="1">
-<summary class='jb-small' style="color:blue">CAUTION</summary>
+<summary class='jb-small' style="color:blue">CAUTION 1 : arrowstyle</summary>
 <hr class='division3'>
 ![캡처](https://user-images.githubusercontent.com/52376448/66714205-e87cc080-edee-11e9-84cc-b65272e41c20.JPG)
+<hr class='division3'>
+</details>
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">CAUTION 2 : annotation_clip</summary>
+<hr class='division3'>
+```python
+import matplotlib.pyplot as plt
+
+plt.plot([0,1,2,3,4],[0,3,1,4,5])
+plt.annotate(s='',
+             xy = (5,.5),
+             xytext = (0,0),
+             arrowprops=dict(arrowstyle='<->'),
+             annotation_clip=False)
+plt.show()
+```
+<div class="jb-medium">
+<strong>annotation_clip</strong> : bool or None, optional<br>
+Whether to draw the annotation when the annotation point xy is outside the axes area.<br><br>
+
+If <strong>True</strong>, the annotation will only be drawn when xy is within the axes.<br>
+If <strong>False</strong>, the annotation will always be drawn.<br>
+If <strong>None</strong>, the annotation will only be drawn when xy is within the axes and xycoords is 'data'.<br>
+Defaults to None.<br>
+</div>
+
+![download (13)](https://user-images.githubusercontent.com/52376448/66714452-0ac40d80-edf2-11e9-9489-2f8e73a6b15f.png)
 <hr class='division3'>
 </details>
 <br><br><br>
