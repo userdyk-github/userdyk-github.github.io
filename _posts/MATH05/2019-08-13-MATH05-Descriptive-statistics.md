@@ -248,8 +248,7 @@ plt.text(55, 170, 'Standard Deviation', c='red')
 plt.legend()
 ```
 <span class="jb-medium">(165.76, 224.16240000000002, 14.972053967308561)</span>
-![download (10)](https://user-images.githubusercontent.com/52376448/66714258-883a4e80-edef-11e9-8fef-59a8d43fcbe8.png)
-
+![download (12)](https://user-images.githubusercontent.com/52376448/66714305-29290980-edf0-11e9-8362-df630c5a1a5d.png)
 
 <br><br><br>
 <hr class="division2">
