@@ -23,6 +23,50 @@ List of posts to read before reading this article
 
 
 ## **Data Load/Save**
+### ***Plotting curves from file data***
+```python
+import matplotlib.pyplot as plt
+X, Y = [], []
+for line in open('my_data.txt', 'r'):
+     values = [float(s) for s in line.split()]
+     X.append(values[0])
+     Y.append(values[1])
+        
+plt.plot(X, Y)
+plt.show()
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download](https://user-images.githubusercontent.com/52376448/66709786-5355d980-eda6-11e9-9ac0-5bdeed37f5ee.png)
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Another example</summary>
+<hr class='division3'>
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+data = np.loadtxt('my_data.txt')
+
+plt.plot(data[:,0], data[:,1])
+plt.show()
+```
+![download (1)](https://user-images.githubusercontent.com/52376448/66709787-5355d980-eda6-11e9-9234-d67bd26aa425.png)
+<br>
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+data = np.loadtxt('my_data2.txt')
+for column in data.T:
+     plt.plot(data[:,0], column)
+plt.show()
+```
+![download (2)](https://user-images.githubusercontent.com/52376448/66709788-5355d980-eda6-11e9-850f-3a1cdb70af56.png)
+<hr class='division3'>
+</details>
 
 <br><br><br>
 <hr class="division2">
