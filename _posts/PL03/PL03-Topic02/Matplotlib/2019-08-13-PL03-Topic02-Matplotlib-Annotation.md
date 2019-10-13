@@ -97,7 +97,18 @@ ax.annotate("",
                             connectionstyle="arc3"))
 ```
 ![download (1)](https://user-images.githubusercontent.com/52376448/66709378-e2aabf00-ed9d-11e9-8eb1-5fca9341c4ad.png)
-
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT : connectionstyle</summary>
+<hr class='division3'>
+![s](https://user-images.githubusercontent.com/52376448/66709402-767c8b00-ed9e-11e9-9571-8941b00a2e1b.JPG)
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT : arrowstyle</summary>
+<hr class='division3'>
+![캡처](https://user-images.githubusercontent.com/52376448/66709410-8d22e200-ed9e-11e9-9b9a-52039699c165.JPG)
+<hr class='division3'>
+</details>
 <br><br><br>
 
 ---
@@ -157,11 +168,6 @@ Reference
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-    <details markdown="1">
-    <summary class='jb-small' style="color:red">OUTPUT</summary>
-    <hr class='division3_1'>
-    <hr class='division3_1'>
-    </details>
 <hr class='division3'>
 </details>
 
