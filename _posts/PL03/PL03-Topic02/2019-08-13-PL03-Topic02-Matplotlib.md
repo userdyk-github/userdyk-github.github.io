@@ -927,6 +927,106 @@ plt.show()
 ```
 <span class="jb-medium">c='x', x ∈ [0(black), 1(white)] </span>
 ![download (7)](https://user-images.githubusercontent.com/52376448/66707334-c3019f80-ed79-11e9-93e3-e0d9aac1212b.png)
+
+
+<br>
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+def pdf(X, mu, sigma):
+     a = 1. / (sigma * np.sqrt(2. * np.pi))
+     b = -1. / (2. * sigma ** 2)
+     return a * np.exp(b * (X - mu) ** 2)
+X = np.linspace(-6, 6, 1000)
+
+for i in range(5):
+     samples = np.random.standard_normal(50)
+     mu, sigma = np.mean(samples), np.std(samples)
+     plt.plot(X, pdf(X, mu, sigma), color = '.75')
+        
+plt.plot(X, pdf(X, 0., 1.), color = 'k')
+plt.show()
+```
+![download (14)](https://user-images.githubusercontent.com/52376448/66710405-8d2cdd00-edb2-11e9-8dfc-2d822b96461d.png)
+<br>
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+def pdf(X, mu, sigma):
+     a = 1. / (sigma * np.sqrt(2. * np.pi))
+     b = -1. / (2. * sigma ** 2)
+     return a * np.exp(b * (X - mu) ** 2)
+
+X = np.linspace(-6, 6, 1024)
+
+plt.plot(X, pdf(X, 0., 1.), color = 'k', linestyle = 'solid')
+plt.plot(X, pdf(X, 0., .5), color = 'k', linestyle = 'dashed')
+plt.plot(X, pdf(X, 0., .25), color = 'k', linestyle = 'dashdot')
+
+plt.show()
+```
+![download (15)](https://user-images.githubusercontent.com/52376448/66710408-a33a9d80-edb2-11e9-8816-aee993addcd9.png)
+
+<br>
+
+```python
+# The line width
+import numpy as np
+import matplotlib.pyplot as plt
+
+def pdf(X, mu, sigma):
+     a = 1. / (sigma * np.sqrt(2. * np.pi))
+     b = -1. / (2. * sigma ** 2)
+     return a * np.exp(b * (X - mu) ** 2)
+
+X = np.linspace(-6, 6, 1024)
+for i in range(64):
+    samples = np.random.standard_normal(50)
+    mu, sigma = np.mean(samples), np.std(samples)
+    plt.plot(X, pdf(X, mu, sigma), color = '.75', linewidth = .5)
+    
+plt.plot(X, pdf(X, 0., 1.), color = 'y', linewidth = 3.)
+plt.show()
+```
+![download (16)](https://user-images.githubusercontent.com/52376448/66710417-b64d6d80-edb2-11e9-8102-422e612b5a7c.png)
+<br>
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+X = np.linspace(-6, 6, 1024)
+Y1 = np.sinc(X)
+Y2 = np.sinc(X) + 1
+
+plt.plot(X, Y1, marker = 'o', color = '.75')
+plt.plot(X, Y2, marker = 'o', color = 'k', markevery = 32)
+plt.show()
+```
+![download (17)](https://user-images.githubusercontent.com/52376448/66710423-c49b8980-edb2-11e9-9ead-240e6408ae4f.png)
+
+<br>
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+X = np.linspace(-6, 6, 1024)
+Y = np.sinc(X)
+plt.plot(X, Y,
+    linewidth = 3.,
+    color = 'k',
+    markersize = 9,
+    markeredgewidth = 1.5,
+    markerfacecolor = '.75',
+    markeredgecolor = 'k',
+    marker = 'o',
+    markevery = 32)
+plt.show()
+```
+![download (18)](https://user-images.githubusercontent.com/52376448/66710426-d3823c00-edb2-11e9-8908-809187e90857.png)
 <hr class='division3'>
 </details>
 
