@@ -1368,6 +1368,21 @@ plt.show()
 ![download](https://user-images.githubusercontent.com/52376448/66709977-20154980-edaa-11e9-9d97-3b5f28138fe8.png)
 <hr class='division3'>
 </details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">The thickness of a bar</summary>
+<hr class='division3'>
+```python
+# The thickness of a bar
+import matplotlib.pyplot as plt
+
+data = [5., 25., 50., 20.]
+
+plt.bar(range(len(data)), data, width = 1.)
+plt.show()
+```
+![download (1)](https://user-images.githubusercontent.com/52376448/66710002-a598f980-edaa-11e9-94a8-8e4c16abb050.png)
+<hr class='division3'>
+</details>
 
 <br><br><br>
 ```python
@@ -1394,6 +1409,28 @@ plt.show()
 </details>
 <br><br><br>
 
+
+
+**Horizontal bar charts**
+
+```python
+# Horizontal bars
+import matplotlib.pyplot as plt
+
+data = [5., 25., 50., 20.]
+
+plt.barh(range(len(data)), data)
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download (2)](https://user-images.githubusercontent.com/52376448/66710028-0de7db00-edab-11e9-8ed9-f91cbc2ecaaf.png)
+<hr class='division3'>
+</details>
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">Another horizontalbar chart</summary>
+<hr class='division3'>
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
@@ -1412,12 +1449,10 @@ plt.yticks(y_pos, people)
 plt.xlabel('x label')
 plt.show()
 ```
-<details open markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
 ![다운로드 (7)](https://user-images.githubusercontent.com/52376448/64471622-c6a87200-d18e-11e9-90b0-bafe3d85d707.png)
 <hr class='division3'>
 </details>
+
 <br><br><br>
 
 
