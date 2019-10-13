@@ -488,6 +488,20 @@ plt.show()
 #### Adding arrows
 
 ```python
+import matplotlib.pyplot as plt
+
+plt.annotate(s='', xy=(1,1), xytext=(0,0), arrowprops=dict(arrowstyle='<->'))
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download (10)](https://user-images.githubusercontent.com/52376448/66714019-20363900-edec-11e9-911e-2b89c032c7f6.png)
+<hr class='division3'>
+</details>
+
+<br><br><br>
+```python
 import numpy as np
 import matplotlib.pyplot as plt
 
