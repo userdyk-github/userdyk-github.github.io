@@ -4669,6 +4669,7 @@ Reference
 - <a href='https://matplotlib.org/examples/color/named_colors.html' target="_blank">color ref</a>
 - <a href='https://matplotlib.org/examples/lines_bars_and_markers/marker_reference.html' target="_blank">marker ref</a>
 - <a href='https://matplotlib.org/examples/lines_bars_and_markers/line_styles_reference.html' target="_blank">line style ref</a>
+- <a href='https://zzsza.github.io/development/2018/08/24/data-visualization-in-python/' target="_blank">snugyun</a>
 
 ---
 
