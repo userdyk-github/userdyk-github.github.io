@@ -23,7 +23,11 @@ List of posts to read before reading this article
 
 
 ## **Data Load/Save**
-### ***Load : Plotting curves from file data***
+
+### ***Load***
+
+#### Plotting curves from file data
+
 [my_data.txt][1]
 ```python
 import matplotlib.pyplot as plt
