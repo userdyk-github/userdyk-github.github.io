@@ -964,6 +964,7 @@ def pdf(X, mu, sigma):
 
 X = np.linspace(-6, 6, 1024)
 
+# linestyle : Solid, Dashed, Dotted, Dashdot
 plt.plot(X, pdf(X, 0., 1.), color = 'k', linestyle = 'solid')
 plt.plot(X, pdf(X, 0., .5), color = 'k', linestyle = 'dashed')
 plt.plot(X, pdf(X, 0., .25), color = 'k', linestyle = 'dashdot')
@@ -998,6 +999,12 @@ plt.show()
 
 
 <span class="frame3">Controlling a marker's style</span>
+
+> <strong>Predefined markers</strong>: They can be predefined shapes, represented as a number in the [0, 8] range, or some strings
+> <strong>Vertices list</strong>: This is a list of value pairs, used as coordinates for the path of a shape
+> <strong>Regular polygon</strong>: It represents a triplet (N, 0, angle) for an N sided regular polygon, with a rotation of angle degrees
+> <strong>Start polygon</strong>: It represents a triplet (N, 1, angle) for an N sided regular star, with a rotation of angle degrees
+
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -2418,6 +2425,13 @@ plt.show()
 
 #### Simple decoration
 <span class="frame3">color/marker/line</span>
+
+> <strong>Triplets</strong>: These colors can be described as a real value triplet—the red, blue, and green components of a color. The components have to be in the [0, 1] interval. Thus, the Python syntax (1.0, 0.0, 0.0) will code a pure, bright red, while (1.0, 0.0, 1.0) appears as a strong pink.
+> <strong>Quadruplets</strong>: These work as triplets, and the fourth component defines a transparency value. This value should also be in the [0, 1] interval. When rendering a figure to a picture file, using transparent colors allows for making figures that blend with a background. This is especially useful when making figures that will slide or end up on a web page.
+> <strong>Predefined names</strong>: matplotlib will interpret standard HTML color names as an actual color. For instance, the string red will be accepted as a color and will be interpreted as a bright red. A few colors have a one-letter alias, which is shown in the following table:
+> <strong>HTML color strings</strong>: matplotlib can interpret HTML color strings as actual colors. Such strings are defined as #RRGGBB where RR, GG, and BB are the 8-bit values for the red, green, and blue components in hexadecimal.
+> <strong>Gray-level strings</strong>: matplotlib will interpret a string representation of a floating point value as a shade of gray, such as 0.75 for a medium light gray.
+
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
