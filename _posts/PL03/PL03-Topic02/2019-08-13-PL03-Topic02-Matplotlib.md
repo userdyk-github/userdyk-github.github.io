@@ -955,8 +955,9 @@ plt.show()
 ![download (7)](https://user-images.githubusercontent.com/52376448/66709967-e3e1e900-eda9-11e9-831c-254164302b81.png)
 <hr class='division3'>
 </details>
-
-<br><br><br>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Another scatter plot</summary>
+<hr class='division3'>
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
@@ -970,14 +971,8 @@ plt.title("Scatter Plot")
 plt.scatter(X, Y)
 plt.show()
 ```
-<details open markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
 ![다운로드](https://user-images.githubusercontent.com/52376448/64471579-78936e80-d18e-11e9-9887-08883fe4f740.png)
-<hr class='division3'>
-</details>
-<br><br><br>
-
+<br>
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
@@ -994,14 +989,9 @@ plt.title("Bubble Chart")
 plt.scatter(x, y1, c=y2, s=y3)   # s : size, c : color
 plt.show()
 ```
-<details open markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
 ![다운로드 (1)](https://user-images.githubusercontent.com/52376448/64471578-77fad800-d18e-11e9-8dc2-aa0658dd64b8.png)
 <hr class='division3'>
 </details>
-<br><br><br>
-
 
 
 
