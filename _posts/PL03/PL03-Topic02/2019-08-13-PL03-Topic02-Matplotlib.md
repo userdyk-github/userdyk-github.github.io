@@ -933,6 +933,25 @@ plt.show()
 
 #### Scatter plot
 
+**Plotting points**
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+data = np.random.rand(1024, 2)
+
+plt.scatter(data[:,0], data[:,1])
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download (7)](https://user-images.githubusercontent.com/52376448/66709967-e3e1e900-eda9-11e9-831c-254164302b81.png)
+<hr class='division3'>
+</details>
+
+<br><br><br>
 ```python
 %matplotlib inline
 import matplotlib.pyplot as plt
@@ -979,21 +998,7 @@ plt.show()
 <br><br><br>
 
 
-```python
-import numpy as np
-import matplotlib.pyplot as plt
 
-data = np.random.rand(1024, 2)
-
-plt.scatter(data[:,0], data[:,1])
-plt.show()
-```
-<details open markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-![download (7)](https://user-images.githubusercontent.com/52376448/66709967-e3e1e900-eda9-11e9-831c-254164302b81.png)
-<hr class='division3'>
-</details>
 
 
 <br><br><br>
@@ -1355,6 +1360,8 @@ array([-3.04614305, -2.46559324, -1.88504342, -1.3044936 , -0.72394379,
 
 #### Bar chart
 
+**Plotting bar charts**
+
 ```python
 import matplotlib.pyplot as plt
 
@@ -1428,7 +1435,7 @@ plt.show()
 ![download (2)](https://user-images.githubusercontent.com/52376448/66710028-0de7db00-edab-11e9-8ed9-f91cbc2ecaaf.png)
 <hr class='division3'>
 </details>
-<details open markdown="1">
+<details markdown="1">
 <summary class='jb-small' style="color:blue">Another horizontalbar chart</summary>
 <hr class='division3'>
 ```python
@@ -1455,6 +1462,119 @@ plt.show()
 
 <br><br><br>
 
+**Plotting multiple bar charts**
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+data = [[5., 25., 50., 20.],
+ [4., 23., 51., 17.],
+ [6., 22., 52., 19.]]
+X = np.arange(4)
+
+plt.bar(X + 0.00, data[0], color = 'b', width = 0.25)
+plt.bar(X + 0.25, data[1], color = 'g', width = 0.25)
+plt.bar(X + 0.50, data[2], color = 'r', width = 0.25)
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download (3)](https://user-images.githubusercontent.com/52376448/66710058-0c6ae280-edac-11e9-9177-7581700b1f99.png)
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Another multibple bar chart</summary>
+<hr class='division3'>
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+data = [[5., 25., 50., 20.],
+ [4., 23., 51., 17.],
+ [6., 22., 52., 19.]]
+
+color_list = ['b', 'g', 'r']
+gap = .8 / len(data)
+for i, row in enumerate(data):
+     X = np.arange(len(row))
+     plt.bar(X + i * gap, row,
+     width = gap,
+     color = color_list[i % len(color_list)])
+    
+plt.show()
+```
+![download (4)](https://user-images.githubusercontent.com/52376448/66710059-0c6ae280-edac-11e9-9be5-80b5e4c27cd0.png)
+<hr class='division3'>
+</details>
+<br><br><br>
+
+
+**Plotting stacked bar charts**
+
+```python
+import matplotlib.pyplot as plt
+
+A = [5., 30., 45., 22.]
+B = [5., 25., 50., 20.]
+X = range(4)
+
+plt.bar(X, A, color = 'b')
+plt.bar(X, B, color = 'r', bottom = A)
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download (5)](https://user-images.githubusercontent.com/52376448/66710084-61a6f400-edac-11e9-936c-e087171db83e.png)
+<hr class='division3'>
+</details>
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">Another stacked bar chart</summary>
+<hr class='division3'>
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+A = np.array([5., 30., 45., 22.])
+B = np.array([5., 25., 50., 20.])
+C = np.array([1., 2., 1., 1.])
+X = np.arange(4)
+
+plt.bar(X, A, color = 'b')
+plt.bar(X, B, color = 'g', bottom = A)
+plt.bar(X, C, color = 'r', bottom = A + B)
+plt.show()
+```
+![download (6)](https://user-images.githubusercontent.com/52376448/66710086-623f8a80-edac-11e9-8c73-5d2a0a4e7c07.png)
+<br>
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+data = np.array([[5., 30., 45., 22.],
+ [5., 25., 50., 20.],
+ [1., 2., 1., 1.]])
+                
+color_list = ['b', 'g', 'r']
+                
+X = np.arange(data.shape[1])
+for i in range(data.shape[0]):
+    plt.bar(X, data[i],
+    bottom = np.sum(data[:i], axis = 0),
+    color = color_list[i % len(color_list)])
+                
+plt.show()
+```
+![download (7)](https://user-images.githubusercontent.com/52376448/66710087-623f8a80-edac-11e9-9cec-2cf47333eab6.png)
+<hr class='division3'>
+</details>
+
+
+
+
+<br><br><br>
 
 **Using custom colors for bar charts**
 ```python
