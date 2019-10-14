@@ -128,7 +128,9 @@ sns.distplot(x, rug=True, bins=10, kde=False)
 
 <hr class="division2">
 
-## **Mean(average), median**
+## **Arithmetic mean(average), median**
+
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4e3313161244f8ab61d897fb6e5fbf6647e1d5f5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:39.094ex; height:7.509ex;" alt="{\displaystyle {\bar {x}}={\frac {1}{n}}\left(\sum _{i=1}^{n}{x_{i}}\right)={\frac {x_{1}+x_{2}+\cdots +x_{n}}{n}}}">
 
 > If the distribution is symmetrical with respect to the sample mean, the sample median is equal to the sample mean.<br>
 > If the distribution is symmetrical and has only one extreme value(uni-modal), the sample peak value is the same as the sample mean.<br>
@@ -190,6 +192,7 @@ plt.legend()
 <hr class="division2">
 
 ## **Variance and Standard deviation**
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2577f2b00102ca127d8867a756b85e17d97eab5f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:27.977ex; height:6.843ex;" alt="\operatorname {Var} (X)=\sum _{i=1}^{n}p_{i}\cdot (x_{i}-\mu )^{2},">
 
 ```python
 import numpy as np
@@ -197,15 +200,15 @@ import numpy as np
 x = np.array([18,   5,  10,  23,  19,  -8,  10,   0,   0,   5,   2,  15,   8,
               2,   5,   4,  15,  -1,   4,  -7, -24,   7,   9,  -6,  23, -13])
               
-# np.var(x)         : for population(biased)
-# np.var(x, ddof=1) : for sample(unbiased)               
-np.var(x), np.var(x, ddof=1)    # for population
+# np.var(x)         : for population variance(biased sample variance)
+# np.var(x, ddof=1) : for unbiased sample variance
+np.var(x), np.var(x, ddof=1)
 ```
 <span class="jb-medium">(115.23224852071006, 119.84153846153846)</span>
 ```python
-# x.var()       : for population(biased)
-# x.var(ddof=1) : for sample(unbiased) 
-x.var(), x.var(ddof=1)    # for population
+# x.var()       : for population standard deviation(biased sample standard deviation)
+# x.var(ddof=1) : for unbiased sample standard deviation
+x.var(), x.var(ddof=1)
 ```
 <span class="jb-medium">(115.23224852071006, 119.84153846153846)</span>
 <br><br>
@@ -215,8 +218,8 @@ import numpy as np
 x = np.array([18,   5,  10,  23,  19,  -8,  10,   0,   0,   5,   2,  15,   8,
               2,   5,   4,  15,  -1,   4,  -7, -24,   7,   9,  -6,  23, -13])
               
-# np.std(x)         : for population(biased)
-# np.std(x, ddof=1) : for sample(unbiased)              
+# np.std(x)         : for population standard deviation(biased sample standard deviation)
+# np.std(x, ddof=1) : for unbiased sample standard deviation
 np.std(x), np.std(x, ddof=1)
 ```
 <span class="jb-medium">(10.734628476137871, 10.947216014199157)</span>
