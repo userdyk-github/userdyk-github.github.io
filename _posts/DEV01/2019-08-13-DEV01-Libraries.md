@@ -41,9 +41,15 @@ List of posts followed by this article
 ---
 
 Reference
-- [post1](https://userdyk-github.github.io/)
-- <a href='https://userdyk-github.github.io/'>post2</a>
-- <a href='https://userdyk-github.github.io/'>post3</a>
+
+- <a href='https://www.arduino.cc/reference/en/' target="_blank">Language</a>
+- <a href='https://www.arduino.cc/en/Reference/Libraries' target="_blank">Libraries</a>
+- <a href='https://store.arduino.cc/usa/arduino/boards-modules' target="_blank">boards-modules</a>
+- <a href='https://store.arduino.cc/usa/arduino/shields' target="_blank">shields</a>
+- <a href='https://store.arduino.cc/usa/arduino/arduino-kits' target="_blank">arduino-kits</a>
+- <a href='https://store.arduino.cc/usa/arduino/arduino-accessories' target="_blank">arduino-accessories</a>
+- <a href='https://store.arduino.cc/usa/spare-parts' target="_blank">spare-parts</a>
+- <a href='https://store.arduino.cc/usa/arduino/retired' target="_blank">retired</a>
 
 ---
 
