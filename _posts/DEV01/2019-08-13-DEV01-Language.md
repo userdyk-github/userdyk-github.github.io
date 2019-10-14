@@ -21,15 +21,15 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
+## **FUNCTIONS**
 
 <hr class="division2">
 
-## title2
+## **VARIABLES**
 
 <hr class="division2">
 
-## title3
+## **STRUCTURE**
 
 <hr class="division1">
 
