@@ -343,18 +343,33 @@ print(np.percentile(x, 0),
 <hr class="division2">
 
 ## **Skewness and Kurtosis**
-<span class="frame3">Skewness</span>
+<span class="frame3">Pearson's moment coefficient of skewness</span>
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7c090ae95df78e4fe8d3984b5a67c0238fc95491" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.505ex; width:55.95ex; height:7.843ex;" alt="{\displaystyle \gamma _{1}=\operatorname {E} \left[\left({\frac {X-\mu }{\sigma }}\right)^{3}\right]={\frac {\mu _{3}}{\sigma ^{3}}}={\frac {\operatorname {E} \left[(X-\mu )^{3}\right]}{(\operatorname {E} \left[(X-\mu )^{2}\right])^{3/2}}}={\frac {\kappa _{3}}{\kappa _{2}^{3/2}}}}">
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9fa2a6ebc4d719d3f4f3e3cad52120d578551ce1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -12.505ex; width:41.59ex; height:26.176ex;" alt="{\displaystyle {\begin{aligned}\gamma _{1}&amp;=\operatorname {E} \left[\left({\frac {X-\mu }{\sigma }}\right)^{3}\right]\\&amp;={\frac {\operatorname {E} [X^{3}]-3\mu \operatorname {E} [X^{2}]+3\mu ^{2}\operatorname {E} [X]-\mu ^{3}}{\sigma ^{3}}}\\&amp;={\frac {\operatorname {E} [X^{3}]-3\mu (\operatorname {E} [X^{2}]-\mu \operatorname {E} [X])-\mu ^{3}}{\sigma ^{3}}}\\&amp;={\frac {\operatorname {E} [X^{3}]-3\mu \sigma ^{2}-\mu ^{3}}{\sigma ^{3}}}.\end{aligned}}}">
+```python
 
+```
+<span class="jb-medium"></span>
+<br><br><br>
+
+
+
+<span class="frame3">Sample skewness</span>
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5c599dcc37f25418e0dd6161b67d34bc0887ba22" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -5.005ex; width:64.72ex; height:9.343ex;" alt="{\displaystyle b_{1}={\frac {m_{3}}{s^{3}}}={\frac {{\tfrac {1}{n}}\sum _{i=1}^{n}(x_{i}-{\overline {x}})^{3}}{{\sqrt {{\tfrac {1}{n-1}}\sum _{i=1}^{n}(x_{i}-{\overline {x}})^{2}}}^{\,3}}}={\frac {{\tfrac {1}{n}}\sum _{i=1}^{n}(x_{i}-{\overline {x}})^{3}}{\left[{\tfrac {1}{n-1}}\sum _{i=1}^{n}(x_{i}-{\overline {x}})^{2}\right]^{3/2}}}\ ,}">
+```python
+
+```
+<span class="jb-medium"></span>
 
 
 
 <br><br><br>
 <span class="frame3">Kurtosis</span>
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/89bc1d05929bb9c2c62cb88e895eda2733a7b2d6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:52.914ex; height:7.509ex;" alt="{\displaystyle \operatorname {Kurt} [X]=\operatorname {E} \left[\left({\frac {X-\mu }{\sigma }}\right)^{4}\right]={\frac {\mu _{4}}{\sigma ^{4}}}={\frac {\operatorname {E} [(X-\mu )^{4}]}{(\operatorname {E} [(X-\mu )^{2}])^{2}}},}">
+```python
 
-
+```
+<span class="jb-medium"></span>
 
 
 
