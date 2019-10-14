@@ -237,7 +237,7 @@ Reference
 - <a href='https://store.arduino.cc/usa/arduino/arduino-kits' target="_blank">arduino-kits</a>
 - <a href='https://store.arduino.cc/usa/arduino/arduino-accessories' target="_blank">arduino-accessories</a>
 - <a href='https://store.arduino.cc/usa/spare-parts' target="_blank">spare-parts</a>
-- <a href='https://store.arduino.cc/usa/arduino/retired' target="_blank">RETIRED</a>
+- <a href='https://store.arduino.cc/usa/arduino/retired' target="_blank">retired</a>
 
 ---
 
