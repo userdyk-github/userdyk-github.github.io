@@ -343,9 +343,10 @@ Mass Point</a><br>
 
 <br>
 
-## _PL00_
+## _PL00_ : OS
 
 > <a href='https://userdyk-github.github.io/pl00/PL00-Linux.html'>Linux</a><br>
+
 
 ---
 
