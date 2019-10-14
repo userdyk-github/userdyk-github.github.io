@@ -216,8 +216,10 @@ x.var(), x.var(ddof=1)
 <br><br><br><br>
 
 <span class="frame3">Standard deviation</span>
+<!--
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4c98cfcd7dc201f65aa452ed555666f1b23bf477" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:44.119ex; height:8.009ex;" alt="\sigma ={\sqrt {\sum _{i=1}^{N}p_{i}(x_{i}-\mu )^{2}}},{\rm {\ \ where\ \ }}\mu =\sum _{i=1}^{N}p_{i}x_{i}.">
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/067067e579e43b39ca1e57d9be52bda5b80cd284" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:27.097ex; height:8.009ex;" alt="{\displaystyle s={\sqrt {{\frac {1}{N-1}}\sum _{i=1}^{N}(x_{i}-{\bar {x}})^{2}}},}">
+-->
 ```python
 import numpy as np
 
