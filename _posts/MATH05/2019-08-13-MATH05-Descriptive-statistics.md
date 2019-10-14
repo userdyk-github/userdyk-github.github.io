@@ -355,7 +355,6 @@ print(np.percentile(x, 0),
 
 
 <span class="frame3">Sample skewness</span>
-<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5c599dcc37f25418e0dd6161b67d34bc0887ba22" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -5.005ex; width:64.72ex; height:9.343ex;" alt="{\displaystyle b_{1}={\frac {m_{3}}{s^{3}}}={\frac {{\tfrac {1}{n}}\sum _{i=1}^{n}(x_{i}-{\overline {x}})^{3}}{{\sqrt {{\tfrac {1}{n-1}}\sum _{i=1}^{n}(x_{i}-{\overline {x}})^{2}}}^{\,3}}}={\frac {{\tfrac {1}{n}}\sum _{i=1}^{n}(x_{i}-{\overline {x}})^{3}}{\left[{\tfrac {1}{n-1}}\sum _{i=1}^{n}(x_{i}-{\overline {x}})^{2}\right]^{3/2}}}\ ,}">
 ```python
 
 ```
