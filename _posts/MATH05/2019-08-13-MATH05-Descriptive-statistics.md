@@ -193,7 +193,7 @@ plt.legend()
 
 ## **Variance and Standard deviation**
 <span class="frame3">Variance</span>
-
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2577f2b00102ca127d8867a756b85e17d97eab5f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:27.977ex; height:6.843ex;" alt="\operatorname {Var} (X)=\sum _{i=1}^{n}p_{i}\cdot (x_{i}-\mu )^{2},">
 ```python
 import numpy as np
 
