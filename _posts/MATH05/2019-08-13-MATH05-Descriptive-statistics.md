@@ -350,7 +350,7 @@ print(np.percentile(x, 0),
 
 <br><br><br>
 <span class="frame3">Kurtosis</span>
-
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/89bc1d05929bb9c2c62cb88e895eda2733a7b2d6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:52.914ex; height:7.509ex;" alt="{\displaystyle \operatorname {Kurt} [X]=\operatorname {E} \left[\left({\frac {X-\mu }{\sigma }}\right)^{4}\right]={\frac {\mu _{4}}{\sigma ^{4}}}={\frac {\operatorname {E} [(X-\mu )^{4}]}{(\operatorname {E} [(X-\mu )^{2}])^{2}}},}">
 
 
 
