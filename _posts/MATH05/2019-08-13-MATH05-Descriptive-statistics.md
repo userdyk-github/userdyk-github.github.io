@@ -389,6 +389,15 @@ stats.kurtosis(x)
 ## **Moment**
 
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c1bbc8f08ad7d8f9e00b3bbc27767cdae4d622d7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:26.831ex; height:6.009ex;" alt="{\displaystyle \mu _{n}=\int _{-\infty }^{\infty }(x-c)^{n}\,f(x)\,\mathrm {d} x.}">
+```python
+from scipy import stats
+import numpy as np
+
+x = np.array([18,   5,  10,  23,  19,  -8,  10,   0,   0,   5,   2,  15,   8,
+              2,   5,   4,  15,  -1,   4,  -7, -24,   7,   9,  -6,  23, -13])
+stats.moment(x, 1), stats.moment(x, 2), stats.moment(x, 3), stats.moment(x, 4)
+```
+<span class="jb-medium">(0.0, 115.23224852071006, -589.0896677287208, 44807.32190968453)</span>
 
 
 ## **Describe all at once**
