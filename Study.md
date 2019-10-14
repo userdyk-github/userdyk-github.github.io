@@ -414,14 +414,14 @@ Mass Point</a><br>
 
 ## _DEV01 : Arduino_
 
-> <a href='https://userdyk-github.github.io/dev01/DEV01-Syntax.html'>Syntax</a><br>
+> <a href='https://userdyk-github.github.io/dev01/DEV01-Reference.html'>Reference</a><br>
 > <a href='https://userdyk-github.github.io/dev01/DEV01-Libraries.html'>Libraries</a><br>
 
 ---
 
 ## _DEV02 : Raspberry Pi_
 
-> <a href='https://userdyk-github.github.io/dev02/DEV02-Syntax.html'>Syntax</a><br>
+> <a href='https://userdyk-github.github.io/dev02/DEV02-Reference.html'>Reference</a><br>
 > <a href='https://userdyk-github.github.io/dev02/DEV02-Libraries.html'>Libraries</a><br>
 
 
