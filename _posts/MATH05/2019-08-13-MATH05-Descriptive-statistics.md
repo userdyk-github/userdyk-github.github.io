@@ -115,9 +115,9 @@ x = np.array([165., 180., 190., 188., 163., 178., 177., 172., 164., 182., 143.,
               148.])
 
 sns.set();
-sns.distplot(x, bins=10, kde=False)
+sns.distplot(x, rug=True, bins=10, kde=False)
 ```
-![download](https://user-images.githubusercontent.com/52376448/66705895-93e23280-ed67-11e9-8d22-e2b2285e740f.png)
+![download (6)](https://user-images.githubusercontent.com/52376448/66740682-b9c61f00-eeae-11e9-863a-98d5efe53b54.png)
 <hr class='division3_1'>
 </details>
 <hr class='division3'>
