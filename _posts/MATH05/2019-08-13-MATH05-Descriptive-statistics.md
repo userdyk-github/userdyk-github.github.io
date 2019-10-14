@@ -342,7 +342,8 @@ print(np.percentile(x, 0),
 
 ## **Skewness and Kurtosis**
 <span class="frame3">Skewness</span>
-
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7c090ae95df78e4fe8d3984b5a67c0238fc95491" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.505ex; width:55.95ex; height:7.843ex;" alt="{\displaystyle \gamma _{1}=\operatorname {E} \left[\left({\frac {X-\mu }{\sigma }}\right)^{3}\right]={\frac {\mu _{3}}{\sigma ^{3}}}={\frac {\operatorname {E} \left[(X-\mu )^{3}\right]}{(\operatorname {E} \left[(X-\mu )^{2}\right])^{3/2}}}={\frac {\kappa _{3}}{\kappa _{2}^{3/2}}}}">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9fa2a6ebc4d719d3f4f3e3cad52120d578551ce1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -12.505ex; width:41.59ex; height:26.176ex;" alt="{\displaystyle {\begin{aligned}\gamma _{1}&amp;=\operatorname {E} \left[\left({\frac {X-\mu }{\sigma }}\right)^{3}\right]\\&amp;={\frac {\operatorname {E} [X^{3}]-3\mu \operatorname {E} [X^{2}]+3\mu ^{2}\operatorname {E} [X]-\mu ^{3}}{\sigma ^{3}}}\\&amp;={\frac {\operatorname {E} [X^{3}]-3\mu (\operatorname {E} [X^{2}]-\mu \operatorname {E} [X])-\mu ^{3}}{\sigma ^{3}}}\\&amp;={\frac {\operatorname {E} [X^{3}]-3\mu \sigma ^{2}-\mu ^{3}}{\sigma ^{3}}}.\end{aligned}}}">
 
 
 
