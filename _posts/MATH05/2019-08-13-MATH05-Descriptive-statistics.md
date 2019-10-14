@@ -194,8 +194,7 @@ plt.legend()
 ## **Variance and Standard deviation**
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2577f2b00102ca127d8867a756b85e17d97eab5f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:27.977ex; height:6.843ex;" alt="\operatorname {Var} (X)=\sum _{i=1}^{n}p_{i}\cdot (x_{i}-\mu )^{2},">
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bd2e4161a60cffb12e219f479b2bbbb2ebfab48f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:69.479ex; height:7.509ex;" alt="{\displaystyle s^{2}={\frac {n}{n-1}}\sigma _{Y}^{2}={\frac {n}{n-1}}\left({\frac {1}{n}}\sum _{i=1}^{n}\left(Y_{i}-{\overline {Y}}\right)^{2}\right)={\frac {1}{n-1}}\sum _{i=1}^{n}\left(Y_{i}-{\overline {Y}}\right)^{2}}">
-<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4c98cfcd7dc201f65aa452ed555666f1b23bf477" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:44.119ex; height:8.009ex;" alt="\sigma ={\sqrt {\sum _{i=1}^{N}p_{i}(x_{i}-\mu )^{2}}},{\rm {\ \ where\ \ }}\mu =\sum _{i=1}^{N}p_{i}x_{i}.">
-<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/067067e579e43b39ca1e57d9be52bda5b80cd284" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:27.097ex; height:8.009ex;" alt="{\displaystyle s={\sqrt {{\frac {1}{N-1}}\sum _{i=1}^{N}(x_{i}-{\bar {x}})^{2}}},}">
+
 ```python
 import numpy as np
 
@@ -208,12 +207,14 @@ np.var(x), np.var(x, ddof=1)
 ```
 <span class="jb-medium">(115.23224852071006, 119.84153846153846)</span>
 ```python
-# x.var()       : for population standard deviation(biased sample standard deviation)
-# x.var(ddof=1) : for unbiased sample standard deviation
+# x.var()       : for population variance(biased sample variance)
+# x.var(ddof=1) : for unbiased sample variance
 x.var(), x.var(ddof=1)
 ```
 <span class="jb-medium">(115.23224852071006, 119.84153846153846)</span>
-<br><br>
+<br><br><br><br>
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4c98cfcd7dc201f65aa452ed555666f1b23bf477" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:44.119ex; height:8.009ex;" alt="\sigma ={\sqrt {\sum _{i=1}^{N}p_{i}(x_{i}-\mu )^{2}}},{\rm {\ \ where\ \ }}\mu =\sum _{i=1}^{N}p_{i}x_{i}.">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/067067e579e43b39ca1e57d9be52bda5b80cd284" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:27.097ex; height:8.009ex;" alt="{\displaystyle s={\sqrt {{\frac {1}{N-1}}\sum _{i=1}^{N}(x_{i}-{\bar {x}})^{2}}},}">
 ```python
 import numpy as np
 
@@ -226,8 +227,8 @@ np.std(x), np.std(x, ddof=1)
 ```
 <span class="jb-medium">(10.734628476137871, 10.947216014199157)</span>
 ```python
-# x.std()       : for population(biased)
-# x.std(ddof=1) : for sample(unbiased)
+# x.std()       : for population standard deviation(biased sample standard deviation)
+# x.std(ddof=1) : for unbiased sample standard deviation
 x.std(), x.std(ddof=1)
 ```
 <span class="jb-medium">(10.734628476137871, 10.947216014199157)</span><br>
