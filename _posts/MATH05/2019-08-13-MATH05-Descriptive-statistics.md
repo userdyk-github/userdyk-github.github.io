@@ -355,6 +355,7 @@ print(np.percentile(x, 0),
 
 
 <span class="frame3">Sample skewness</span>
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/219794ebb3cc0511f30e7a537688f2107e2e4145" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.838ex; width:36.326ex; height:8.176ex;" alt="{\displaystyle g_{1}={\frac {m_{3}}{m_{2}^{3/2}}}={\frac {{\frac {1}{n}}\sum _{i=1}^{n}(x_{i}-{\bar {x}})^{3}}{\left({\frac {1}{n}}\sum _{i=1}^{n}(x_{i}-{\bar {x}})^{2}\right)^{3/2}}}}">
 ```python
 
 ```
