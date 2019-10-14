@@ -171,11 +171,11 @@ x = np.array([165., 180., 190., 188., 163., 178., 177., 172., 164., 182., 143.,
 
 sns.set();
 plt.hist(x)
-plt.plot([165.76, 165.76], [0, 30], label="mean")
-plt.plot([165.0, 165.0], [0, 30], label="median")
+plt.axvline(x=165.76, ls="--", c="r", linewidth=2, label="sample mean")
+plt.axvline(x=165, ls="--", c="y", linewidth=2, label="sample median")
 plt.legend()
 ```
-![download (10)](https://user-images.githubusercontent.com/52376448/66707638-78365680-ed7e-11e9-83ed-324cfb777927.png)
+![download (5)](https://user-images.githubusercontent.com/52376448/66740445-33114200-eeae-11e9-80a8-70dffe9ed062.png)
 <hr class='division3'>
 </details>
 
