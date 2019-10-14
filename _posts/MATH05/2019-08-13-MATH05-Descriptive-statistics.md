@@ -402,7 +402,7 @@ x = np.array([18,   5,  10,  23,  19,  -8,  10,   0,   0,   5,   2,  15,   8,
 stats.moment(x, 1), stats.moment(x, 2), stats.moment(x, 3), stats.moment(x, 4)
 ```
 <span class="jb-medium">(0.0, 115.23224852071006, -589.0896677287208, 44807.32190968453)</span>
-<br><br><br>
+<br><br><br><br>
 
 ## **Describe all at once**
 
