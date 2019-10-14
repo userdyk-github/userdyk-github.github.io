@@ -356,12 +356,15 @@ print(np.percentile(x, 0),
 
 <span class="frame3">Sample skewness</span>
 ![캡처](https://user-images.githubusercontent.com/52376448/66758607-8fd62200-eed9-11e9-9791-79b1ca73dd30.JPG)
-
-
 ```python
+from scipy import stats
+import numpy as np
 
+x = np.array([18,   5,  10,  23,  19,  -8,  10,   0,   0,   5,   2,  15,   8,
+              2,   5,   4,  15,  -1,   4,  -7, -24,   7,   9,  -6,  23, -13])
+stats.skew(x)
 ```
-<span class="jb-medium"></span>
+<span class="jb-medium">-0.4762339485461929</span>
 
 
 
@@ -369,9 +372,14 @@ print(np.percentile(x, 0),
 <span class="frame3">Kurtosis</span>
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/89bc1d05929bb9c2c62cb88e895eda2733a7b2d6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:52.914ex; height:7.509ex;" alt="{\displaystyle \operatorname {Kurt} [X]=\operatorname {E} \left[\left({\frac {X-\mu }{\sigma }}\right)^{4}\right]={\frac {\mu _{4}}{\sigma ^{4}}}={\frac {\operatorname {E} [(X-\mu )^{4}]}{(\operatorname {E} [(X-\mu )^{2}])^{2}}},}">
 ```python
+from scipy import stats
+import numpy as np
 
+x = np.array([18,   5,  10,  23,  19,  -8,  10,   0,   0,   5,   2,  15,   8,
+              2,   5,   4,  15,  -1,   4,  -7, -24,   7,   9,  -6,  23, -13])
+stats.kurtosis(x)
 ```
-<span class="jb-medium"></span>
+<span class="jb-medium">0.37443381660038977</span>
 
 
 
