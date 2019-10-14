@@ -23,13 +23,147 @@ List of posts to read before reading this article
 
 ## **FUNCTIONS**
 
+### ******
+
+<br><br><br>
+
+---
+
+
+### ******
+
+<br><br><br>
+
+---
+
+
+### ******
+
+<br><br><br>
+
+---
+
+
+### ******
+
+<br><br><br>
+
+---
+
+
+### ******
+
+<br><br><br>
+
+---
+
+
+### ******
+
+<br><br><br>
+
+---
+
+
+### ******
+
+<br><br><br>
+
+---
+
+
+### ******
+
+<br><br><br>
+
+---
+
+
+### ******
+
+<br><br><br>
+
+---
+
+
+### ******
+
+<br><br><br>
+
+---
+
+
+### ******
+
+<br><br><br>
+
+---
+
+
+### ******
+
+<br><br><br>
+
+---
+
+
+### ******
+
+<br><br><br>
+
+---
+
+
+### ******
+
+<br><br><br>
+
+
 <hr class="division2">
 
 ## **VARIABLES**
 
+
+### ******
+
+<br><br><br>
+
+---
+
+
+### ******
+
+<br><br><br>
+
+---
+
+
+### ******
+
+<br><br><br>
+
 <hr class="division2">
 
 ## **STRUCTURE**
+
+### ******
+
+<br><br><br>
+
+---
+
+
+### ******
+
+<br><br><br>
+
+---
+
+
+### ******
+
+<br><br><br>
+
 
 <hr class="division1">
 
