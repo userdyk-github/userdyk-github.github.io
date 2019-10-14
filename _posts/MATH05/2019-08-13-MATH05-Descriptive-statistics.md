@@ -404,11 +404,11 @@ stats.moment(x, 1), stats.moment(x, 2), stats.moment(x, 3), stats.moment(x, 4)
 
 ```python
 import numpy as np
-from scipy.stats import describe
+from scipy import stats
 
 x = np.array([18,   5,  10,  23,  19,  -8,  10,   0,   0,   5,   2,  15,   8,
               2,   5,   4,  15,  -1,   4,  -7, -24,   7,   9,  -6,  23, -13])
-describe(x)
+stats.describe(x)
 ```
 <span class="jb-medium">DescribeResult(nobs=26, minmax=(-24, 23), mean=4.8076923076923075, variance=119.84153846153846, skewness=-0.4762339485461929, kurtosis=0.37443381660038977)</span>
 
