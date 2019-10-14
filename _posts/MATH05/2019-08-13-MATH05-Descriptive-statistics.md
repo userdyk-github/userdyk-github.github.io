@@ -386,6 +386,10 @@ stats.kurtosis(x)
 <br><br><br>
 <hr class="division2">
 
+## **Moment**
+
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c1bbc8f08ad7d8f9e00b3bbc27767cdae4d622d7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:26.831ex; height:6.009ex;" alt="{\displaystyle \mu _{n}=\int _{-\infty }^{\infty }(x-c)^{n}\,f(x)\,\mathrm {d} x.}">
+
 
 ## **Describe all at once**
 
