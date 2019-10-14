@@ -309,11 +309,11 @@ Mass Point</a><br>
 
 ## _MATH05 : Statistics_
 
+> <a href='https://userdyk-github.github.io/math05/MATH05-Probability.html'>Probability</a><br>
 > <a href='https://userdyk-github.github.io/math05/MATH05-Descriptive-statistics.html'>Descriptive statistics</a><br>
 > <a href='https://userdyk-github.github.io/math05/MATH05-Distribution.html'>Distribution</a><br>
 > <a href='https://userdyk-github.github.io/math05/MATH05-Parameters-estimation.html'>Parameters estimation</a><br>
 > <a href='https://userdyk-github.github.io/math05/MATH05-Hypothesis-tests.html'>Hypothesis tests</a><br>
-> <a href='https://userdyk-github.github.io/math05/MATH05-Categorical-data.html'>Categorical data</a><br>
 > <a href='https://userdyk-github.github.io/math05/MATH05-Correlation.html'>Correlation</a><br>
 > <a href='https://userdyk-github.github.io/math05/MATH05-Regression-analysis.html'>Regression analysis</a><br>
 > <a href='https://userdyk-github.github.io/math05/MATH05-Analysis of variance.html'>Analysis of variance</a><br>
@@ -401,6 +401,28 @@ Mass Point</a><br>
 
 > <a href='https://userdyk-github.github.io/pl07/PL07-Syntax.html'>Syntax</a><br>
 > <a href='https://userdyk-github.github.io/pl07/PL07-Packages.html'>Packages</a><br>
+
+
+
+
+
+<br>
+
+<hr class='division4'>
+
+<br>
+
+## _DEV01 : Arduino_
+
+> <a href='https://userdyk-github.github.io/dev01/DEV01-Syntax.html'>Syntax</a><br>
+> <a href='https://userdyk-github.github.io/dev01/DEV01-Libraries.html'>Libraries</a><br>
+
+---
+
+## _DEV02 : Raspberry Pi_
+
+> <a href='https://userdyk-github.github.io/dev02/DEV02-Syntax.html'>Syntax</a><br>
+> <a href='https://userdyk-github.github.io/dev02/DEV02-Libraries.html'>Libraries</a><br>
 
 
 
