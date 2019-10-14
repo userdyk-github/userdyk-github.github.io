@@ -130,9 +130,9 @@ sns.distplot(x, rug=True, bins=10, kde=False)
 
 ## **Mean(average), median**
 
-> If the distribution is symmetrical with respect to the sample mean, the sample median is equal to the sample mean.
-> If the distribution is symmetrical and has only one extreme value(uni-modal), the sample peak value is the same as the sample mean.
-> When data is added that makes the symmetric distribution asymmetrical, the sample mean is most affected and the sample mode is least affected.
+> If the distribution is symmetrical with respect to the sample mean, the sample median is equal to the sample mean.<br>
+> If the distribution is symmetrical and has only one extreme value(uni-modal), the sample peak value is the same as the sample mean.<br>
+> When data is added that makes the symmetric distribution asymmetrical, the sample mean is most affected and the sample mode is least affected.<br>
 
 
 
