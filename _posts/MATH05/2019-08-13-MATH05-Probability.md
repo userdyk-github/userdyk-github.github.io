@@ -272,10 +272,37 @@ C    0.00
 D    0.02
 E    0.04
 F    0.02
-Name: F, dtype: float64 
+Name: F, dtype: float64
 ```
 <hr class='division3'>
 </details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Visualization</summary>
+<hr class='division3'>
+<span class="frame3">conditional_x</span>
+```python
+import string
+
+pmf = scores / scores.values.sum()
+
+x = np.arange(6)
+for i, y in enumerate(string.ascii_uppercase[:6]):
+    ax = plt.subplot(6, 1, i + 1)
+    ax.tick_params(labelleft=False)
+    plt.bar(x, pmf.iloc[i, :])
+    plt.ylabel("p(x, y={})".format(y), rotation=0, labelpad=30)
+    plt.ylim(0, 0.15)
+    plt.xticks(range(6), ['A', 'B', 'C', 'D', 'E', 'F'])
+
+plt.suptitle("given y, cross section of joint probability mass function", y=1.05)
+plt.tight_layout()
+plt.show()
+```
+![download (1)](https://user-images.githubusercontent.com/52376448/66947330-aae99300-f08d-11e9-9e4b-7a7950caf612.png)
+<hr class='division3'>
+</details>
+
+
 ```python
 for i in range(1, pmf.shape[1]+1):
     print("conditional_y(x=%d)\n"%(i),conditional_y(i), "\n")
@@ -349,29 +376,25 @@ Name: F, dtype: float64
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Visualization</summary>
 <hr class='division3'>
-<span class="frame3">conditional_x</span>
 ```python
 import string
-
-pmf = scores / scores.values.sum()
 
 x = np.arange(6)
 for i, y in enumerate(string.ascii_uppercase[:6]):
     ax = plt.subplot(6, 1, i + 1)
     ax.tick_params(labelleft=False)
-    plt.bar(x, pmf.iloc[i, :])
-    plt.ylabel("p(x, y={})".format(y), rotation=0, labelpad=30)
+    plt.bar(x, pmf.iloc[:, i])
+    plt.ylabel("p(x={}, y)".format(y), rotation=0, labelpad=30)
     plt.ylim(0, 0.15)
     plt.xticks(range(6), ['A', 'B', 'C', 'D', 'E', 'F'])
 
-plt.suptitle("given y, cross section of joint probability mass function", y=1.05)
+plt.suptitle("given x, cross section of joint probability mass function", y=1.05)
 plt.tight_layout()
 plt.show()
 ```
-![download (1)](https://user-images.githubusercontent.com/52376448/66947330-aae99300-f08d-11e9-9e4b-7a7950caf612.png)
+![download (2)](https://user-images.githubusercontent.com/52376448/66952434-96aa9380-f097-11e9-8ec6-b47d569511ff.png)
 <hr class='division3'>
 </details>
-
 <br><br><br>
 
 <hr class="division2">
