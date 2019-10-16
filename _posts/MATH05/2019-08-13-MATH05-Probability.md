@@ -200,11 +200,13 @@ F	0	0	0	1	2	1
 <span class="frame3">conditional probability mass function</span>
 ```python
 pmf = scores / scores.values.sum()
+pmf_marginal_x = pmf.sum(axis=0)
+pmf_marginal_y = pmf.sum(axis=1)
 
 def conditional_x(y):
-    return pmf.iloc[y-1, :]
+    return pmf.iloc[y-1, :]/pmf_marginal_y[i-1]
 def conditional_y(x):
-    return pmf.iloc[:, x-1]
+    return pmf.iloc[:, x-1]/pmf_marginal_x[i-1]
 ```
 ```python
 for i in range(1, pmf.shape[0]+1):
@@ -216,9 +218,9 @@ for i in range(1, pmf.shape[0]+1):
 ```
 conditional_x(y=1)
  X
-A    0.02
-B    0.04
-C    0.02
+A    0.25
+B    0.50
+C    0.25
 D    0.00
 E    0.00
 F    0.00
@@ -226,42 +228,42 @@ Name: A, dtype: float64
 
 conditional_x(y=2)
  X
-A    0.00
-B    0.04
-C    0.06
-D    0.02
-E    0.00
-F    0.00
+A    0.000000
+B    0.333333
+C    0.500000
+D    0.166667
+E    0.000000
+F    0.000000
 Name: B, dtype: float64 
 
 conditional_x(y=3)
  X
-A    0.00
-B    0.08
-C    0.14
-D    0.08
-E    0.02
-F    0.00
+A    0.0000
+B    0.2500
+C    0.4375
+D    0.2500
+E    0.0625
+F    0.0000
 Name: C, dtype: float64 
 
 conditional_x(y=4)
  X
-A    0.00
-B    0.02
-C    0.08
-D    0.10
-E    0.08
-F    0.00
+A    0.000000
+B    0.071429
+C    0.285714
+D    0.357143
+E    0.285714
+F    0.000000
 Name: D, dtype: float64 
 
 conditional_x(y=5)
  X
-A    0.00
-B    0.00
-C    0.02
-D    0.06
-E    0.04
-F    0.00
+A    0.000000
+B    0.000000
+C    0.166667
+D    0.500000
+E    0.333333
+F    0.000000
 Name: E, dtype: float64 
 
 conditional_x(y=6)
@@ -269,10 +271,10 @@ conditional_x(y=6)
 A    0.00
 B    0.00
 C    0.00
-D    0.02
-E    0.04
-F    0.02
-Name: F, dtype: float64
+D    0.25
+E    0.50
+F    0.25
+Name: F, dtype: float64 
 ```
 <hr class='division3'>
 </details>
@@ -313,62 +315,62 @@ for i in range(1, pmf.shape[1]+1):
 ```
 conditional_y(x=1)
  Y
-A    0.02
-B    0.00
-C    0.00
-D    0.00
-E    0.00
-F    0.00
+A    1.0
+B    0.0
+C    0.0
+D    0.0
+E    0.0
+F    0.0
 Name: A, dtype: float64 
 
 conditional_y(x=2)
  Y
-A    0.04
-B    0.04
-C    0.08
-D    0.02
-E    0.00
-F    0.00
+A    0.222222
+B    0.222222
+C    0.444444
+D    0.111111
+E    0.000000
+F    0.000000
 Name: B, dtype: float64 
 
 conditional_y(x=3)
  Y
-A    0.02
-B    0.06
-C    0.14
-D    0.08
-E    0.02
-F    0.00
+A    0.0625
+B    0.1875
+C    0.4375
+D    0.2500
+E    0.0625
+F    0.0000
 Name: C, dtype: float64 
 
 conditional_y(x=4)
  Y
-A    0.00
-B    0.02
-C    0.08
-D    0.10
-E    0.06
-F    0.02
+A    0.000000
+B    0.071429
+C    0.285714
+D    0.357143
+E    0.214286
+F    0.071429
 Name: D, dtype: float64 
 
 conditional_y(x=5)
  Y
-A    0.00
-B    0.00
-C    0.02
-D    0.08
-E    0.04
-F    0.04
+A    0.000000
+B    0.000000
+C    0.111111
+D    0.444444
+E    0.222222
+F    0.222222
 Name: E, dtype: float64 
 
 conditional_y(x=6)
  Y
-A    0.00
-B    0.00
-C    0.00
-D    0.00
-E    0.00
-F    0.02
+A    0.0
+B    0.0
+C    0.0
+D    0.0
+E    0.0
+F    1.0
 Name: F, dtype: float64 
 ```
 <hr class='division3'>
