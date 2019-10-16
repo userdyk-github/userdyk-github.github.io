@@ -376,6 +376,7 @@ Name: F, dtype: float64
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Visualization</summary>
 <hr class='division3'>
+<span class="frame3">conditional_y</span>
 ```python
 import string
 
