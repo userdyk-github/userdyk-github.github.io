@@ -199,6 +199,18 @@ F	0	0	0	1	2	1
 <br>
 <span class="frame3">conditional probability mass function</span>
 ```python
+pmf = scores / scores.values.sum()
+
+def conditional_x(y):
+    return pmf.iloc[y-1, :]
+def conditional_y(x):
+    return pmf.iloc[:, x-1]
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Visualization</summary>
+<hr class='division3'>
+<span class="frame3">conditional_x</span>
+```python
 import string
 
 pmf = scores / scores.values.sum()
@@ -217,6 +229,8 @@ plt.tight_layout()
 plt.show()
 ```
 ![download (1)](https://user-images.githubusercontent.com/52376448/66947330-aae99300-f08d-11e9-9e4b-7a7950caf612.png)
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
