@@ -179,8 +179,8 @@ x = np.array([165., 180., 190., 188., 163., 178., 177., 172., 164., 182., 143.,
 
 sns.set();
 plt.hist(x)
-plt.axvline(x=165.76, ls="--", c="r", linewidth=2, label="sample mean")
-plt.axvline(x=165, ls="--", c="y", linewidth=2, label="sample median")
+plt.axvline(x=np.mean(x), ls="--", c="r", linewidth=2, label="sample mean")
+plt.axvline(x=np.median(x), ls="--", c="y", linewidth=2, label="sample median")
 plt.legend()
 ```
 ![download (5)](https://user-images.githubusercontent.com/52376448/66740445-33114200-eeae-11e9-80a8-70dffe9ed062.png)
