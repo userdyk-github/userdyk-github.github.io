@@ -96,6 +96,70 @@ plt.show()
 ### ***marginal probability mass function***
 <div class="frame1">
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1139c2f18bfaccfd669eaafb58cacec22bbec926" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.338ex; width:72.207ex; height:5.843ex;" alt="{\displaystyle \Pr(X=x)=\sum _{y}\Pr(X=x,Y=y)=\sum _{y}\Pr(X=x\mid Y=y)\Pr(Y=y),}"></div>
+<br>
+<span class="frame3">Dataset</span>
+```python
+import pandas as pd
+import numpy as np
+
+grades = ["A", "B", "C", "D", "E", "F"]
+scores = pd.DataFrame(
+    [[1, 2, 1, 0, 0, 0],
+     [0, 2, 3, 1, 0, 0],
+     [0, 4, 7, 4, 1, 0],
+     [0, 1, 4, 5, 4, 0],
+     [0, 0, 1, 3, 2, 0],
+     [0, 0, 0, 1, 2, 1]], 
+    columns=grades, index=grades)
+scores.index.name = "Y"
+scores.columns.name = "X"
+scores
+```
+```
+X	A	B	C	D	E	F
+Y						
+A	1	2	1	0	0	0
+B	0	2	3	1	0	0
+C	0	4	7	4	1	0
+D	0	1	4	5	4	0
+E	0	0	1	3	2	0
+F	0	0	0	1	2	1
+```
+<br>
+<span class="frame3">marginal probability mass function</span>
+```python
+pmf = scores / scores.values.sum()
+pmf_marginal_x = pmf.sum(axis=0)
+pmf_marginal_y = pmf.sum(axis=1)
+```
+```python
+pmf_marginal_x
+#pmf_marginal_x[np.newaxis, :]
+```
+```
+X
+A    0.02
+B    0.18
+C    0.32
+D    0.28
+E    0.18
+F    0.02
+dtype: float64
+```
+```python
+pmf_marginal_y
+#pmf_marginal_y[:, np.newaxis]
+```
+```
+Y
+A    0.08
+B    0.12
+C    0.32
+D    0.28
+E    0.12
+F    0.08
+dtype: float64
+```
 <br><br><br>
 
 ---
