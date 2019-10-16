@@ -26,6 +26,7 @@ List of posts to read before reading this article
 ### ***joint probability mass function***
 <div class="frame1">
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8203262cf269dbc408cef23390b9a658a4cc4141" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; margin-left: -0.089ex; width:33.766ex; height:3.009ex;" alt="{\displaystyle p_{X,Y}(x,y)=\mathrm {P} (X=x\ \mathrm {and} \ Y=y)}"></div>
+<br>
 <span class="frame3">Dataset</span>
 ```python
 import pandas as pd
