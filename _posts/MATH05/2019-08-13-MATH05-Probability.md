@@ -26,6 +26,68 @@ List of posts to read before reading this article
 ### ***joint probability mass function***
 <div class="frame1">
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8203262cf269dbc408cef23390b9a658a4cc4141" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; margin-left: -0.089ex; width:33.766ex; height:3.009ex;" alt="{\displaystyle p_{X,Y}(x,y)=\mathrm {P} (X=x\ \mathrm {and} \ Y=y)}"></div>
+<span class="frame3">Dataset</span>
+```python
+import pandas as pd
+
+grades = ["A", "B", "C", "D", "E", "F"]
+scores = pd.DataFrame(
+    [[1, 2, 1, 0, 0, 0],
+     [0, 2, 3, 1, 0, 0],
+     [0, 4, 7, 4, 1, 0],
+     [0, 1, 4, 5, 4, 0],
+     [0, 0, 1, 3, 2, 0],
+     [0, 0, 0, 1, 2, 1]], 
+    columns=grades, index=grades)
+scores.index.name = "Y"
+scores.columns.name = "X"
+scores
+```
+```
+X	A	B	C	D	E	F
+Y						
+A	1	2	1	0	0	0
+B	0	2	3	1	0	0
+C	0	4	7	4	1	0
+D	0	1	4	5	4	0
+E	0	0	1	3	2	0
+F	0	0	0	1	2	1
+```
+<br>
+<span class="frame3">joint probability mass function</span>
+```python
+pmf = scores / scores.values.sum()
+pmf
+```
+```
+X	A   	B   	C	    D	    E   	F
+Y						
+A	0.02	0.04	0.02	0.00	0.00	0.00
+B	0.00	0.04	0.06	0.02	0.00	0.00
+C	0.00	0.08	0.14	0.08	0.02	0.00
+D	0.00	0.02	0.08	0.10	0.08	0.00
+E	0.00	0.00	0.02	0.06	0.04	0.00
+F	0.00	0.00	0.00	0.02	0.04	0.02
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Visualization</summary>
+<hr class='division3'>
+```python
+import seaborn as sns
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+
+sns.heatmap(pmf, cmap=mpl.cm.bone_r, annot=True,
+            xticklabels=['A', 'B', 'C', 'D', 'E', 'F'],
+            yticklabels=['A', 'B', 'C', 'D', 'E', 'F'])
+plt.title("joint probability density function p(x,y)")
+plt.tight_layout()
+plt.show()
+```
+![download](https://user-images.githubusercontent.com/52376448/66946102-344b9600-f08b-11e9-9df4-e57393387530.png)
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 ---
@@ -97,11 +159,7 @@ Reference
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-    <details markdown="1">
-    <summary class='jb-small' style="color:red">OUTPUT</summary>
-    <hr class='division3_1'>
-    <hr class='division3_1'>
-    </details>
+
 <hr class='division3'>
 </details>
 
