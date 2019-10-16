@@ -315,9 +315,10 @@ ax.lines[0].set_linestyle(":")
 plt.legend()
 plt.show()
 ```
+![download (2)](https://user-images.githubusercontent.com/52376448/66739569-fa706900-eeab-11e9-8d9a-188c1c4acb7b.png)
+
 <hr class='division3'>
 </details>
-![download (2)](https://user-images.githubusercontent.com/52376448/66739569-fa706900-eeab-11e9-8d9a-188c1c4acb7b.png)
 <br><br><br>
 <hr class="division2">
 
