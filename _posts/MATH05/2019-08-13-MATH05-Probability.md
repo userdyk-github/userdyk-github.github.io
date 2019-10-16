@@ -281,7 +281,7 @@ Name: F, dtype: float64
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Visualization</summary>
 <hr class='division3'>
-<span class="frame3">conditional_x</span>
+<span class="frame3">given y, cross section of joint probability mass function</span>
 ```python
 import string
 
@@ -378,7 +378,7 @@ Name: F, dtype: float64
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Visualization</summary>
 <hr class='division3'>
-<span class="frame3">conditional_y</span>
+<span class="frame3">given x, cross section of joint probability mass function</span>
 ```python
 import string
 
