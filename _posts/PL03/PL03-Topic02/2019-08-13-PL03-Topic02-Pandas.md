@@ -1522,14 +1522,48 @@ df
 <hr class='division3'>
 ```
 	Population	State	          Alphabet	rank
-0	909976	    Sweden	        a	        1
-1	8615246	    United Kingdom	b	        2
+0	909976	  	Sweden	          a	        1
+1	8615246	        United Kingdom	  b	        2
 2	2872086   	Italy	          x       	3
 3	2273305   	Seoul	          d       	4
-4	123234	    Suwon	          a       	6
-5	123444	    France	        a       	5
-6	23333	      Korea	          b       	7
-7	343434	    Japan	          c       	8
+4	123234	    	Suwon	          a       	6
+5	123444	  	France	          a       	5
+6	23333	    	Korea	          b       	7
+7	343434	        Japan	          c       	8
+```
+<hr class='division3'>
+</details>
+```python
+df.count(axis=0)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+Population    8
+State         8
+Alphabet      8
+rank          8
+dtype: int64
+```
+<hr class='division3'>
+</details>
+```python
+df.count(axis=1)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+0    4
+1    4
+2    4
+3    4
+4    4
+5    4
+6    4
+7    4
+dtype: int64
 ```
 <hr class='division3'>
 </details>
