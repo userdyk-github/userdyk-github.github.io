@@ -30,7 +30,7 @@ List of posts to read before reading this article
 ---
 
 ### ***marginal probability mass function***
-
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1139c2f18bfaccfd669eaafb58cacec22bbec926" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.338ex; width:72.207ex; height:5.843ex;" alt="{\displaystyle \Pr(X=x)=\sum _{y}\Pr(X=x,Y=y)=\sum _{y}\Pr(X=x\mid Y=y)\Pr(Y=y),}">
 <br><br><br>
 
 ---
@@ -50,7 +50,7 @@ List of posts to read before reading this article
 ---
 
 ### ***marginal probability density function***
-
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/243911724de0d94b5b041482401c4c1e067cdf3e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; margin-left: -0.089ex; width:50.596ex; height:6.009ex;" alt="{\displaystyle p_{X}(x)=\int _{y}p_{X,Y}(x,y)\,\mathrm {d} y=\int _{y}p_{X\mid Y}(x\mid y)\,p_{Y}(y)\,\mathrm {d} y,}">
 <br><br><br>
 
 ---
