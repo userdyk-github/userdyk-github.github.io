@@ -167,6 +167,57 @@ dtype: float64
 ### ***conditional probability mass function***
 <div class="frame1">
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9a1bf9c7af083e400a87dbbd646c508bf5de6ec0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; margin-left: -0.089ex; width:59.017ex; height:6.509ex;" alt="{\displaystyle p_{Y|X}(y\mid x)\triangleq P(Y=y\mid X=x)={\frac {P(\{X=x\}\cap \{Y=y\})}{P(X=x)}}}"></div>
+<br>
+<span class="frame3">Dataset</span>
+```python
+import pandas as pd
+import numpy as np
+
+grades = ["A", "B", "C", "D", "E", "F"]
+scores = pd.DataFrame(
+    [[1, 2, 1, 0, 0, 0],
+     [0, 2, 3, 1, 0, 0],
+     [0, 4, 7, 4, 1, 0],
+     [0, 1, 4, 5, 4, 0],
+     [0, 0, 1, 3, 2, 0],
+     [0, 0, 0, 1, 2, 1]], 
+    columns=grades, index=grades)
+scores.index.name = "Y"
+scores.columns.name = "X"
+scores
+```
+```
+X	A	B	C	D	E	F
+Y						
+A	1	2	1	0	0	0
+B	0	2	3	1	0	0
+C	0	4	7	4	1	0
+D	0	1	4	5	4	0
+E	0	0	1	3	2	0
+F	0	0	0	1	2	1
+```
+<br>
+<span class="frame3">conditional probability mass function</span>
+```python
+import string
+
+pmf = scores / scores.values.sum()
+
+x = np.arange(6)
+for i, y in enumerate(string.ascii_uppercase[:6]):
+    ax = plt.subplot(6, 1, i + 1)
+    ax.tick_params(labelleft=False)
+    plt.bar(x, pmf.iloc[i, :])
+    plt.ylabel("p(x, y={})".format(y), rotation=0, labelpad=30)
+    plt.ylim(0, 0.15)
+    plt.xticks(range(6), ['A', 'B', 'C', 'D', 'E', 'F'])
+
+plt.suptitle("given y, cross section of joint probability mass function", y=1.05)
+plt.tight_layout()
+plt.show()
+```
+![download (1)](https://user-images.githubusercontent.com/52376448/66947330-aae99300-f08d-11e9-9e4b-7a7950caf612.png)
+
 <br><br><br>
 
 <hr class="division2">
