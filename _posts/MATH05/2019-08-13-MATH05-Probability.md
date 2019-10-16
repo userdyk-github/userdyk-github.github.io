@@ -68,7 +68,8 @@ List of posts to read before reading this article
 ---
 
 ### ***independent***
-
+<div class="frame1">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c3fee81720676c2887e6304414377aecb51e5579" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:22.872ex; height:2.843ex;" alt="\mathrm{P}(A \cap B) = \mathrm{P}(A)\mathrm{P}(B)"></div>
 <br><br><br>
 
 
