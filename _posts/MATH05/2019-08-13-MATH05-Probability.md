@@ -21,7 +21,7 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## **Multi-variate random variable**
+## **Mass : Multi-variate random variable**
 
 ### ***joint probability mass function***
 
@@ -39,7 +39,9 @@ List of posts to read before reading this article
 
 <br><br><br>
 
----
+<hr class="division2">
+
+## **Density : Multi-variate random variable**
 
 ### ***joint probability density function***
 
