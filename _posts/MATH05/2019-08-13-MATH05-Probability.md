@@ -65,9 +65,9 @@ List of posts to read before reading this article
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b2e16052d580d418e683bb220a41c2c895227945" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:24.46ex; height:6.509ex;" alt="{\displaystyle f_{Y\mid X}(y\mid x)={\frac {f_{X,Y}(x,y)}{f_{X}(x)}}}"></div>
 <br><br><br>
 
----
+<hr class="division2">
 
-### ***independent***
+## **Independent**
 <div class="frame1">
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c3fee81720676c2887e6304414377aecb51e5579" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:22.872ex; height:2.843ex;" alt="\mathrm{P}(A \cap B) = \mathrm{P}(A)\mathrm{P}(B)"></div>
 <br><br><br>
@@ -75,9 +75,6 @@ List of posts to read before reading this article
 
 <hr class="division2">
 
-## title2
-
-<hr class="division2">
 
 ## title3
 
