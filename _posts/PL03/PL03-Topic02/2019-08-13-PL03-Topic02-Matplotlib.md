@@ -3797,10 +3797,15 @@ z =[2,3,3,3,5,7,9,11,9,10]
 ax.scatter(x, y, z, c='r', marker='o')
 plt.show()
 ```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
 ![download (1)](https://user-images.githubusercontent.com/52376448/66933082-7ff24580-f073-11e9-8738-0dbe93b07f35.png)
-
-
-<br><br><br>
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Another scatter 3d plot</summary>
+<hr class='division3'>
 ```python
 from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
@@ -3833,12 +3838,15 @@ ax.set_zlabel('Z Label')
 
 plt.show()
 ```
-<details open markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
 ![download](https://user-images.githubusercontent.com/52376448/66693969-cc432b80-ece9-11e9-8a5e-fcbd14471d71.png)
 <hr class='division3'>
 </details>
+
+
+
+
+
+
 <br><br><br>
 
 ---
