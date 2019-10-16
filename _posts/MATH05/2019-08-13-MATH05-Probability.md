@@ -206,6 +206,146 @@ def conditional_x(y):
 def conditional_y(x):
     return pmf.iloc[:, x-1]
 ```
+```python
+for i in range(1, pmf.shape[0]+1):
+    print("conditional_x(y=%d)\n"%(i),conditional_x(i), "\n")
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+conditional_x(y=1)
+ X
+A    0.02
+B    0.04
+C    0.02
+D    0.00
+E    0.00
+F    0.00
+Name: A, dtype: float64 
+
+conditional_x(y=2)
+ X
+A    0.00
+B    0.04
+C    0.06
+D    0.02
+E    0.00
+F    0.00
+Name: B, dtype: float64 
+
+conditional_x(y=3)
+ X
+A    0.00
+B    0.08
+C    0.14
+D    0.08
+E    0.02
+F    0.00
+Name: C, dtype: float64 
+
+conditional_x(y=4)
+ X
+A    0.00
+B    0.02
+C    0.08
+D    0.10
+E    0.08
+F    0.00
+Name: D, dtype: float64 
+
+conditional_x(y=5)
+ X
+A    0.00
+B    0.00
+C    0.02
+D    0.06
+E    0.04
+F    0.00
+Name: E, dtype: float64 
+
+conditional_x(y=6)
+ X
+A    0.00
+B    0.00
+C    0.00
+D    0.02
+E    0.04
+F    0.02
+Name: F, dtype: float64 
+```
+<hr class='division3'>
+</details>
+```python
+for i in range(1, pmf.shape[1]+1):
+    print("conditional_y(x=%d)\n"%(i),conditional_y(i), "\n")
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+conditional_y(x=1)
+ Y
+A    0.02
+B    0.00
+C    0.00
+D    0.00
+E    0.00
+F    0.00
+Name: A, dtype: float64 
+
+conditional_y(x=2)
+ Y
+A    0.04
+B    0.04
+C    0.08
+D    0.02
+E    0.00
+F    0.00
+Name: B, dtype: float64 
+
+conditional_y(x=3)
+ Y
+A    0.02
+B    0.06
+C    0.14
+D    0.08
+E    0.02
+F    0.00
+Name: C, dtype: float64 
+
+conditional_y(x=4)
+ Y
+A    0.00
+B    0.02
+C    0.08
+D    0.10
+E    0.06
+F    0.02
+Name: D, dtype: float64 
+
+conditional_y(x=5)
+ Y
+A    0.00
+B    0.00
+C    0.02
+D    0.08
+E    0.04
+F    0.04
+Name: E, dtype: float64 
+
+conditional_y(x=6)
+ Y
+A    0.00
+B    0.00
+C    0.00
+D    0.00
+E    0.00
+F    0.02
+Name: F, dtype: float64 
+```
+<hr class='division3'>
+</details>
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Visualization</summary>
 <hr class='division3'>
