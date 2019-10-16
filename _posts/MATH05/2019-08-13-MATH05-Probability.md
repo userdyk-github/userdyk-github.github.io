@@ -24,19 +24,22 @@ List of posts to read before reading this article
 ## **Mass : Multi-variate random variable**
 
 ### ***joint probability mass function***
-<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8203262cf269dbc408cef23390b9a658a4cc4141" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; margin-left: -0.089ex; width:33.766ex; height:3.009ex;" alt="{\displaystyle p_{X,Y}(x,y)=\mathrm {P} (X=x\ \mathrm {and} \ Y=y)}">
+<div class="frame1">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8203262cf269dbc408cef23390b9a658a4cc4141" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; margin-left: -0.089ex; width:33.766ex; height:3.009ex;" alt="{\displaystyle p_{X,Y}(x,y)=\mathrm {P} (X=x\ \mathrm {and} \ Y=y)}"></div>
 <br><br><br>
 
 ---
 
 ### ***marginal probability mass function***
-<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1139c2f18bfaccfd669eaafb58cacec22bbec926" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.338ex; width:72.207ex; height:5.843ex;" alt="{\displaystyle \Pr(X=x)=\sum _{y}\Pr(X=x,Y=y)=\sum _{y}\Pr(X=x\mid Y=y)\Pr(Y=y),}">
+<div class="frame1">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1139c2f18bfaccfd669eaafb58cacec22bbec926" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.338ex; width:72.207ex; height:5.843ex;" alt="{\displaystyle \Pr(X=x)=\sum _{y}\Pr(X=x,Y=y)=\sum _{y}\Pr(X=x\mid Y=y)\Pr(Y=y),}"></div>
 <br><br><br>
 
 ---
 
 ### ***conditional probability mass function***
-<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9a1bf9c7af083e400a87dbbd646c508bf5de6ec0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; margin-left: -0.089ex; width:59.017ex; height:6.509ex;" alt="{\displaystyle p_{Y|X}(y\mid x)\triangleq P(Y=y\mid X=x)={\frac {P(\{X=x\}\cap \{Y=y\})}{P(X=x)}}}">
+<div class="frame1">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9a1bf9c7af083e400a87dbbd646c508bf5de6ec0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; margin-left: -0.089ex; width:59.017ex; height:6.509ex;" alt="{\displaystyle p_{Y|X}(y\mid x)\triangleq P(Y=y\mid X=x)={\frac {P(\{X=x\}\cap \{Y=y\})}{P(X=x)}}}"></div>
 <br><br><br>
 
 <hr class="division2">
@@ -44,19 +47,22 @@ List of posts to read before reading this article
 ## **Density : Multi-variate random variable**
 
 ### ***joint probability density function***
-<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/58f7f825cb219d7e826edc68dd99f75de9f626d0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:26.31ex; height:6.509ex;" alt="{\displaystyle f_{X,Y}(x,y)={\frac {\partial ^{2}F_{X,Y}(x,y)}{\partial x\partial y}}}">
+<div class="frame1">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/58f7f825cb219d7e826edc68dd99f75de9f626d0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:26.31ex; height:6.509ex;" alt="{\displaystyle f_{X,Y}(x,y)={\frac {\partial ^{2}F_{X,Y}(x,y)}{\partial x\partial y}}}"></div>
 <br><br><br>
 
 ---
 
 ### ***marginal probability density function***
-<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/243911724de0d94b5b041482401c4c1e067cdf3e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; margin-left: -0.089ex; width:50.596ex; height:6.009ex;" alt="{\displaystyle p_{X}(x)=\int _{y}p_{X,Y}(x,y)\,\mathrm {d} y=\int _{y}p_{X\mid Y}(x\mid y)\,p_{Y}(y)\,\mathrm {d} y,}">
+<div class="frame1">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/243911724de0d94b5b041482401c4c1e067cdf3e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; margin-left: -0.089ex; width:50.596ex; height:6.009ex;" alt="{\displaystyle p_{X}(x)=\int _{y}p_{X,Y}(x,y)\,\mathrm {d} y=\int _{y}p_{X\mid Y}(x\mid y)\,p_{Y}(y)\,\mathrm {d} y,}"></div>
 <br><br><br>
 
 ---
 
 ### ***conditional probability density function***
-<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b2e16052d580d418e683bb220a41c2c895227945" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:24.46ex; height:6.509ex;" alt="{\displaystyle f_{Y\mid X}(y\mid x)={\frac {f_{X,Y}(x,y)}{f_{X}(x)}}}">
+<div class="frame1">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b2e16052d580d418e683bb220a41c2c895227945" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:24.46ex; height:6.509ex;" alt="{\displaystyle f_{Y\mid X}(y\mid x)={\frac {f_{X,Y}(x,y)}{f_{X}(x)}}}"></div>
 <br><br><br>
 
 ---
