@@ -21,7 +21,48 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
+## **Multi-variate random variable**
+
+### ***joint probability mass function***
+
+<br><br><br>
+
+---
+
+### ***marginal probability mass function***
+
+<br><br><br>
+
+---
+
+### ***conditional probability mass function***
+
+<br><br><br>
+
+---
+
+### ***joint probability density function***
+
+<br><br><br>
+
+---
+
+### ***marginal probability density function***
+
+<br><br><br>
+
+---
+
+### ***conditional probability density function***
+
+<br><br><br>
+
+---
+
+### ***independent***
+
+<br><br><br>
+
 
 <hr class="division2">
 
