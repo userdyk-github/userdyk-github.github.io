@@ -36,7 +36,7 @@ List of posts to read before reading this article
 ---
 
 ### ***conditional probability mass function***
-
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9a1bf9c7af083e400a87dbbd646c508bf5de6ec0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; margin-left: -0.089ex; width:59.017ex; height:6.509ex;" alt="{\displaystyle p_{Y|X}(y\mid x)\triangleq P(Y=y\mid X=x)={\frac {P(\{X=x\}\cap \{Y=y\})}{P(X=x)}}}">
 <br><br><br>
 
 <hr class="division2">
@@ -56,7 +56,7 @@ List of posts to read before reading this article
 ---
 
 ### ***conditional probability density function***
-
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b2e16052d580d418e683bb220a41c2c895227945" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:24.46ex; height:6.509ex;" alt="{\displaystyle f_{Y\mid X}(y\mid x)={\frac {f_{X,Y}(x,y)}{f_{X}(x)}}}">
 <br><br><br>
 
 ---
