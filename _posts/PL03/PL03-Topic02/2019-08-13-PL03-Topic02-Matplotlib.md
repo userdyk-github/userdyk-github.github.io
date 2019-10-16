@@ -671,7 +671,31 @@ plt.show()
 
 
 #### Adding lines
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
 
+x = np.array([165., 180., 190., 188., 163., 178., 177., 172., 164., 182., 143.,
+              163., 168., 160., 172., 165., 208., 175., 181., 160., 154., 169.,
+              120., 184., 180., 175., 174., 175., 160., 155., 156., 161., 184.,
+              171., 150., 154., 153., 177., 184., 172., 156., 153., 145., 150.,
+              175., 165., 190., 156., 196., 161., 185., 159., 153., 155., 173.,
+              173., 191., 162., 152., 158., 190., 136., 171., 173., 146., 158.,
+              158., 159., 169., 145., 193., 178., 160., 153., 142., 143., 172.,
+              170., 130., 165., 177., 190., 164., 167., 172., 160., 184., 158.,
+              152., 175., 158., 156., 171., 164., 165., 160., 162., 140., 172.,
+              148.])
+
+sns.set();
+plt.hist(x)
+plt.axhline(y=5, ls="--", c="r", linewidth=2, label="Quartile 50%")
+plt.axvline(x=165, ls="--", c="y", linewidth=2, label="sample median")
+plt.legend()
+```
+![download](https://user-images.githubusercontent.com/52376448/66928038-bf1c9880-f06b-11e9-81f2-a7be6593deea.png)
+
+<br><br><br>
 ```python
 import matplotlib.pyplot as plt
 import numpy as np
