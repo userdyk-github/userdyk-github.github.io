@@ -254,7 +254,7 @@ axes[1].plot(x, X.pdf(x) - Y.pdf(x), label="error")
 axes[1].legend()
 ```
 ![download (22)](https://user-images.githubusercontent.com/52376448/66985061-f84e1a80-f0f6-11e9-8707-960c9cc6edca.png)
-
+<br><br><br>
 <hr class="division2">
 
 
