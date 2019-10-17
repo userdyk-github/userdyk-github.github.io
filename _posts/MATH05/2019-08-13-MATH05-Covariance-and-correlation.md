@@ -36,7 +36,7 @@ List of posts to read before reading this article
 
 ## **covariance and correlation**
 <span class="frame3">covariance</span>
-
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/435d5740798f0ec6c3fdf5cf70c82fa78c2e0f77" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:33.229ex; height:2.843ex;" alt="{\displaystyle \operatorname {Cov} (X,Y)=\operatorname {E} \left((X-\mu )(Y-\nu )\right)\,}">
 ```python
 from sklearn.datasets import load_iris
 from scipy import stats
