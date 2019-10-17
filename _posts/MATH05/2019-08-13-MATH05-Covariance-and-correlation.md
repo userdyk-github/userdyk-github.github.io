@@ -153,10 +153,47 @@ plt.show()
 <hr class="division2">
 
 ## **Frank Anscombe data**
+```python
+import statsmodels.api as sm
 
+data = sm.datasets.get_rdataset("anscombe")
+df = data.data
+df[["x1", "y1", "x2", "y2", "x3", "y3", "x4", "y4"]]
+```
+```
+	x1	y1	    x2	y2	    x3	y3	    x4	y4
+0	10	8.04	10	9.14	10	7.46	8	6.58
+1	8	6.95	8	8.14	8	6.77	8	5.76
+2	13	7.58	13	8.74	13	12.74	8	7.71
+3	9	8.81	9	8.77	9	7.11	8	8.84
+4	11	8.33	11	9.26	11	7.81	8	8.47
+5	14	9.96	14	8.10	14	8.84	8	7.04
+6	6	7.24	6	6.13	6	6.08	8	5.25
+7	4	4.26	4	3.10	4	5.39	19	12.50
+8	12	10.84	12	9.13	12	8.15	8	5.56
+9	7	4.82	7	7.26	7	6.42	8	7.91
+10	5	5.68	5	4.74	5	5.73	8	6.89
+```
+<br>
+```python
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+plt.subplot(221)
+sns.regplot(x="x1", y="y1", data=df)
+plt.subplot(222)
+sns.regplot(x="x2", y="y2", data=df)
+plt.subplot(223)
+sns.regplot(x="x3", y="y3", data=df)
+plt.subplot(224)
+sns.regplot(x="x4", y="y4", data=df)
+plt.tight_layout()
+plt.subplots_adjust(top=0.9)
+plt.suptitle("Frank Anscombe data")
+plt.show()
+```
+![download (19)](https://user-images.githubusercontent.com/52376448/66981414-9ab5d000-f0ee-11e9-8677-3ee65a43d69e.png)
 <br><br><br>
-
-
 <hr class="division1">
 
 List of posts followed by this article
