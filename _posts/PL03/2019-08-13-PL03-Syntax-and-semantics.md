@@ -399,79 +399,142 @@ if __name__ == "__main__":
 
 #### abs
 ```python
-
+abs(3)
 ```
 ```
-
+3
+```
+<br>
+```python
+abs(-3)
+```
+```
+3
+```
+<br>
+```python
+abs(-1.2)
+```
+```
+1.2
 ```
 <br>
 
 #### all
 ```python
-
+all([1, 2, 3])
 ```
 ```
-
+True
+```
+<br>
+```python
+all([1, 2, 3, 0])
+```
+```
+False
 ```
 <br>
 
-
 #### any
 ```python
-
+any([1, 2, 3, 0])
 ```
 ```
-
+True
+```
+<br>
+```python
+any([0, ""])
+```
+```
+False
 ```
 <br>
 
 
 #### chr
 ```python
-
+chr(97)
 ```
 ```
-
+'a'
+```
+```python
+chr(48)
+```
+```
+'0'
 ```
 <br>
 
 
 #### dir
 ```python
-
+dir([1, 2, 3])
 ```
 ```
-
+['append', 'count', 'extend', 'index', 'insert', 'pop',...]
+```
+<br>
+```python
+dir({'1':'a'})
+```
+```
+['clear', 'copy', 'get', 'has_key', 'items', 'keys',...]
 ```
 <br>
 
-
 #### divmod
 ```python
-
+divmod(7, 3)
 ```
 ```
-
+(2, 1)
+```
+<br>
+```
+7 // 3, 7 % 3
+```
+```
+(2, 1)
 ```
 <br>
 
 
 #### enumerate
 ```python
-
+for i, name in enumerate(['body', 'foo', 'bar']):
+    print(i, name)
 ```
 ```
-
+0 body
+1 foo
+2 bar
 ```
 <br>
 
 
 #### eval
 ```python
-
+eval('1+2')
 ```
 ```
-
+3
+```
+<br>
+```python
+eval("'hi' + 'a'")
+```
+```
+'hia'
+```
+<br>
+```python
+eval('divmod(4, 3)')
+```
+```
+(1, 1)
 ```
 <br>
 
@@ -488,220 +551,444 @@ if __name__ == "__main__":
 
 #### hex
 ```python
-
+hex(234)
 ```
 ```
-
+'0xea'
+```
+<br>
+```python
+hex(3)
+```
+```
+'0x3'
 ```
 <br>
 
 
 #### id
 ```python
-
+>>> a = 3
+>>> id(3)
 ```
 ```
-
+135072304
+```
+<br>
+```python
+id(a)
+```
+```
+135072304
+```
+<br>
+```python
+b = a
+id(b)
+```
+```
+135072304
 ```
 <br>
 
  
 #### input
 ```python
+>>> a = input()
+hi
+>>> a
+'hi'
 
-```
-```
-
+>>> b = input("Enter: ")
+Enter: hi
+>>> b
+'hi'
 ```
 <br>
 
 
 #### int
 ```python
-
+int('3')
 ```
 ```
-
+3
+```
+<br>
+```python
+int(3.4)
+```
+```
+3
 ```
 <br>
 
 
 #### isinstance
 ```python
+class Person: pass
 
+a = Person()
+isinstance(a, Person)
 ```
 ```
-
+True
+```
+<br>
+```python
+b = 3
+isinstance(b, Person)
+```
+```
+False
 ```
 <br>
 
 
 #### len
 ```python
-
+len("python")
 ```
 ```
-
+6
+```
+<br>
+```python
+len([1,2,3])
+```
+```
+3
+```
+<br>
+```python
+len((1, 'a'))
+```
+```
+2
 ```
 <br>
 
 
 #### list
 ```python
-
+list("python")
 ```
 ```
-
+['p', 'y', 't', 'h', 'o', 'n']
+```
+<br>
+```python
+list((1,2,3))
+```
+```
+[1, 2, 3]
 ```
 <br>
 
 
 #### map
 ```python
+# two_times.py
+def two_times(numberList):
+    result = [ ]
+    for number in numberList:
+        result.append(number*2)
+    return result
 
+result = two_times([1, 2, 3, 4])
+print(result)
 ```
 ```
-
+[2, 4, 6, 8]
 ```
 <br>
+```python
+def two_times(x): 
+    return x*2
 
+list(map(two_times, [1, 2, 3, 4]))
+```
+```
+[2, 4, 6, 8]
+```
 
 #### max
 ```python
-
+max([1, 2, 3])
 ```
 ```
-
+3
+```
+<br>
+```python
+max("python")
+```
+```
+'y'
 ```
 <br>
 
 
 #### min
 ```python
-
+min([1, 2, 3])
 ```
 ```
-
+1
+```
+<br>
+```python
+min("python")
+```
+```
+'h'
 ```
 <br>
 
 
 #### oct
 ```python
-
+oct(34)
 ```
 ```
-
+'0o42'
+```
+<br>
+```python
+oct(12345)
+```
+```
+'0o30071'
 ```
 <br>
 
 
 #### open
+
+|mode|description|
+|:-|:-|
+|w|write|
+|r|read|
+|a|append|
+|b|binary|
+
 ```python
-
+f = open("binary_file", "rb")
 ```
+```python
+fread = open("read_mode.txt", 'r')
+fread2 = open("read_mode.txt")
 ```
-
+```python
+fappend = open("append_mode.txt", 'a')
 ```
 <br>
 
 
 #### ord
 ```python
-
+ord('a')
 ```
 ```
-
+97
+```
+<br>
+```python
+ord('0')
+```
+```
+48
 ```
 <br>
 
 
 #### pow
 ```python
-
+pow(2, 4)
 ```
 ```
-
+16
+```
+<br>
+```python
+pow(3, 3)
+```
+```
+27
 ```
 <br>
 
 
 #### range
 ```python
-
+list(range(5))
 ```
 ```
-
+[0, 1, 2, 3, 4]
+```
+<br>
+```python
+list(range(5, 10))
+```
+```
+[5, 6, 7, 8, 9]
+```
+<br>
+```python
+list(range(1, 10, 2))
+```
+```
+[1, 3, 5, 7, 9]
+```
+<br>
+```python
+list(range(0, -10, -1))
+```
+```
+[0, -1, -2, -3, -4, -5, -6, -7, -8, -9]
 ```
 <br>
 
 
 #### round
 ```python
-
+round(4.6)
 ```
 ```
-
+5
 ```
 <br>
-
-
-####
 ```python
-
+round(4.2)
 ```
 ```
-
+4
 ```
 <br>
-
+```python
+round(5.678, 2)
+```
+```
+5.68
+```
+<br>
 
 #### sorted
 ```python
-
+sorted([3, 1, 2])
 ```
 ```
-
+[1, 2, 3]
+```
+<br>
+```python
+sorted(['a', 'c', 'b'])
+```
+```
+['a', 'b', 'c']
+```
+<br>
+```python
+sorted("zero")
+```
+```
+['e', 'o', 'r', 'z']
+```
+<br>
+```python
+sorted((3, 2, 1))
+```
+```
+[1, 2, 3]
 ```
 <br>
 
 
 #### str
 ```python
-
+str(3)
 ```
 ```
-
+'3'
+```
+<br>
+```python
+str('hi')
+```
+```
+'hi'
+```
+<br>
+```python
+str('hi'.upper())
+```
+```
+'HI'
 ```
 <br>
 
 
 #### sum
 ```python
-
+sum([1,2,3])
 ```
 ```
-
+6
+```
+<br>
+```python
+sum((4,5,6))
+```
+```
+15
 ```
 <br>
 
 
 #### tuple
 ```python
-
+tuple("abc")
 ```
 ```
-
+('a', 'b', 'c')
+```
+<br>
+```python
+tuple([1, 2, 3])
+```
+```
+(1, 2, 3)
+```
+<br>
+```python
+tuple((1, 2, 3))
+```
+```
+(1, 2, 3)
 ```
 <br>
 
 
 #### type
 ```python
-
+type("abc")
 ```
 ```
-
+<class 'str'>
+```
+<br>
+```python
+type([ ])
+```
+```
+<class 'list'>
+```
+<br>
+```python
+type(open("test", 'w'))
+```
+```
+<class '_io.TextIOWrapper'>
 ```
 <br>
 
@@ -712,12 +999,14 @@ list(zip([1, 2, 3], [4, 5, 6]))
 ```
 [(1, 4), (2, 5), (3, 6)]
 ```
+<br>
 ```python
 list(zip([1, 2, 3], [4, 5, 6], [7, 8, 9]))
 ```
 ```
 [(1, 4, 7), (2, 5, 8), (3, 6, 9)]
 ```
+<br>
 ```python
 list(zip("abc", "def"))
 ```
