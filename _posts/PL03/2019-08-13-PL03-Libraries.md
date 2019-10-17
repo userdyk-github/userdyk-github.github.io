@@ -12,7 +12,7 @@ tags : [PL03]
 
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-NumPy.html'>NumPy</a> ｜ <a href=' https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Numpy_Python_Cheat_Sheet.pdf' target="_blank">Cheat Sheet</a>
   - <a href='https://docs.scipy.org/doc/numpy/genindex.html' target="_blank"><span class='jb-small'>https://docs.scipy.org/doc/numpy/genindex.html</span></a>
-<a href='https://docs.scipy.org/doc/numpy/contents.html' target="_blank"><span class='jb-small'>https://docs.scipy.org/doc/numpy/contents.html</span></a>
+  - <a href='https://docs.scipy.org/doc/numpy/contents.html' target="_blank"><span class='jb-small'>https://docs.scipy.org/doc/numpy/contents.html</span></a>
 
 
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-Matplotlib.html'>Matplotlib</a> ｜ <a href='https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Python_Matplotlib_Cheat_Sheet.pdf' target="_blank">Cheat Sheet</a>
