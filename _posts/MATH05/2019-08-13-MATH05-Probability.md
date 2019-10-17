@@ -21,6 +21,17 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
+## **Mass : Uni-variate random variable**
+
+<br><br><br>
+<hr class="division2">
+
+## **Density : Uni-variate random variable**
+
+<br><br><br>
+<hr class="division2">
+
+
 ## **Mass : Multi-variate random variable**
 
 ### ***joint probability mass function***
