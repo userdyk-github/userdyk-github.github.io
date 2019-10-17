@@ -602,7 +602,7 @@ plt.title("two variable - the product of \n joint probability mass function")
 plt.tight_layout()
 plt.show()
 ```
-![download (12)](https://user-images.githubusercontent.com/52376448/66979065-23c90900-f0e7-11e9-91a2-a67303ad8c9e.png)
+![download (13)](https://user-images.githubusercontent.com/52376448/66979066-23c90900-f0e7-11e9-82ec-5fefae6027ac.png)
 <br><br><br>
 <span class="frame3">two variable</span>
 ```python
@@ -633,7 +633,7 @@ plt.title("two variable - the product of \n joint probability mass function")
 plt.tight_layout()
 plt.show()
 ```
-![download (13)](https://user-images.githubusercontent.com/52376448/66979066-23c90900-f0e7-11e9-82ec-5fefae6027ac.png)
+![download (14)](https://user-images.githubusercontent.com/52376448/66979137-67237780-f0e7-11e9-8809-7ce8456989f4.png)
 <hr class="division2">
 
 
