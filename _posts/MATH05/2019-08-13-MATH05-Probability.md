@@ -635,11 +635,6 @@ plt.show()
 ```
 ![download (14)](https://user-images.githubusercontent.com/52376448/66979137-67237780-f0e7-11e9-8809-7ce8456989f4.png)
 <br><br><br>
-<hr class="division2">
-
-
-
-## title3
 
 <hr class="division1">
 
@@ -651,8 +646,7 @@ List of posts followed by this article
 ---
 
 Reference
-- [post1](https://userdyk-github.github.io/)
-- <a href='https://userdyk-github.github.io/'>post2</a>
+- <a href='https://datascienceschool.net/view-notebook/e5c379559a4a4fe9a9d8eeace69da425/' target="_blank">multi-variate random number</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
