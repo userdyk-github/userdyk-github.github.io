@@ -20,7 +20,9 @@ List of posts to read before reading this article
 {:toc}
 
 <hr class="division1">
+![download](https://user-images.githubusercontent.com/52376448/66982315-ba4df800-f0f0-11e9-8157-89b03fda950b.jpg)
 
+<br><br><br>
 ## **Binomial Test**
 
 ```python
