@@ -31,6 +31,7 @@ tags : [PL03]
 
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-StatsModel.html'>StatsModel</a>
   - <a href="https://www.statsmodels.org/stable/index.html" target="_blank">https://www.statsmodels.org/stable/index.html</a>
+  - <a href="https://www.statsmodels.org/stable/py-modindex.html" target="_blank">https://www.statsmodels.org/stable/py-modindex.html</a>
   - <a href="https://www.statsmodels.org/devel/index.html" target="_blank">https://www.statsmodels.org/devel/index.html</a>
   - <a href='https://www.statsmodels.org/devel/py-modindex.html' target="_blank"><span class='jb-small'>https://www.statsmodels.org/devel/py-modindex.html</span></a>
   
