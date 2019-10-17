@@ -392,7 +392,7 @@ Mass Point</a><br>
 
 ## _PL06 : MATLAB_
 
-> <a href='https://userdyk-github.github.io/pl06/PL06-Syntax.html'>Syntax</a><br>
+> <a href='https://userdyk-github.github.io/pl06/PL06-Numerical-methods.html'>Numerical methods</a><br>
 > <a href='https://userdyk-github.github.io/pl06/PL06-Toolboxes.html'>Toolboxes</a><br>
 
 ---
