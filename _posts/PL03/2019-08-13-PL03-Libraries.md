@@ -30,9 +30,9 @@ tags : [PL03]
   - <a href='https://pyomo.readthedocs.io/en/stable/' target="_blank"><span class='jb-small'>https://pyomo.readthedocs.io/en/stable/</span></a>
 
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-StatsModel.html'>StatsModel</a>
-  - <a href="https://www.statsmodels.org/stable/index.html" target="_blank">https://www.statsmodels.org/stable/index.html</a>
-  - <a href="https://www.statsmodels.org/stable/py-modindex.html" target="_blank">https://www.statsmodels.org/stable/py-modindex.html</a>
-  - <a href="https://www.statsmodels.org/devel/index.html" target="_blank">https://www.statsmodels.org/devel/index.html</a>
+  - <a href="https://www.statsmodels.org/stable/index.html" target="_blank" class='jb-small'>https://www.statsmodels.org/stable/index.html</a>
+  - <a href="https://www.statsmodels.org/stable/py-modindex.html" target="_blank" class='jb-small'>https://www.statsmodels.org/stable/py-modindex.html</a>
+  - <a href="https://www.statsmodels.org/devel/index.html" target="_blank" class='jb-small'>https://www.statsmodels.org/devel/index.html</a>
   - <a href='https://www.statsmodels.org/devel/py-modindex.html' target="_blank"><span class='jb-small'>https://www.statsmodels.org/devel/py-modindex.html</span></a>
   
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-seaborn.html'>seaborn</a> ｜ <a href='https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Python_Seaborn_Cheat_Sheet.pdf' target="_blank">Cheat Sheet</a>
