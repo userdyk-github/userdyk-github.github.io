@@ -27,7 +27,7 @@ List of posts to read before reading this article
 ### ***One-column***
 
 #### Creating and searching
-<span class="frame3">CREATING METHOD1 : sperately</span>
+<span class="frame3">METHOD 1, Creating Series : sperately</span>
 ```python
 import pandas as pd
 
@@ -92,7 +92,7 @@ type(s.index)
 
 
 <br><br><br>
-<span class="frame3">CREATING METHOD2 : all at once</span>
+<span class="frame3">METHOD2, Creating Series : all at once</span>
 ```python
 import pandas as pd
 
@@ -556,7 +556,7 @@ Stockholm3        NaN        NaN   909976.0
 ### ***One-dataframe***
 
 #### Creating and searching
-<span class="frame3">Creating method1 based on row</span>
+<span class="frame3">METHOD 1, Creating frame based on row</span>
 ```python
 import pandas as pd
 
@@ -585,7 +585,7 @@ Paris         2273305          France
 <br><br><br>
 
 
-<span class="frame3">Creating method2 based on row</span>
+<span class="frame3">METHOD 2, Creating frame based on row</span>
 ```python
 import pandas as pd
 
@@ -614,7 +614,7 @@ Paris         2273305          France
 <br><br><br>
 
 
-<span class="frame3">Creating method3 based on row, all at once</span>
+<span class="frame3">METHOD 3, Creating frame based on row, all at once</span>
 ```python
 import pandas as pd
 
@@ -644,7 +644,7 @@ Paris         2273305          France
 
 
 
-<span class="frame3">Creating method1 based on columns, all at once</span>
+<span class="frame3">METHOD 1, Creating frame based on columns, all at once</span>
 ```python
 import pandas as pd
 
@@ -1176,7 +1176,7 @@ method4 searching single value
 
 
 
-<span class="frame3">Creating method2 based on columns</span>
+<span class="frame3">METHOD 2, Creating frame based on columns</span>
 ```python
 import pandas as pd
 
@@ -1201,8 +1201,27 @@ Paris         2273305          France
 ```
 <hr class='division3'>
 </details>
-
-
+<br>
+```python
+df.iloc[0,:]
+```
+```
+Population    909976
+State         Sweden
+Name: Stockholm, dtype: object
+```
+<br>
+```python
+df.iloc[:,0]
+```
+```
+index
+Stockholm     909976
+London       8615246
+Rome         2872086
+Paris        2273305
+Name: Population, dtype: int64
+```
 <br><br><br>
 
 
