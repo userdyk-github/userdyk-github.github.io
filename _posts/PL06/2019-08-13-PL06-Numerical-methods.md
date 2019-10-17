@@ -44,7 +44,7 @@ List of posts followed by this article
 Reference
 - <a href='https://kr.mathworks.com/?s_tid=gn_logo' target="_blank">matlab</a>
 - <a href='https://kr.mathworks.com/help/index.html' target="_blank">matlab, document</a>
-- <a href='https://userdyk-github.github.io/'>post3</a>
+- Dr. Abdelwahab Kharab, Professor Ronald B. Guenther, An Introduction to Numerical Methods
 
 ---
 
