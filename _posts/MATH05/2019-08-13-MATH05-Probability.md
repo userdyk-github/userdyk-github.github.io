@@ -284,6 +284,7 @@ Name: F, dtype: float64
 <span class="frame3">given y, cross section of joint probability mass function</span>
 ```python
 import string
+import matplotlib.pyplot as plt
 
 pmf = scores / scores.values.sum()
 
@@ -291,16 +292,17 @@ x = np.arange(6)
 for i, y in enumerate(string.ascii_uppercase[:6]):
     ax = plt.subplot(6, 1, i + 1)
     ax.tick_params(labelleft=False)
-    plt.bar(x, pmf.iloc[i, :])
-    plt.ylabel("p(x, y={})".format(y), rotation=0, labelpad=30)
-    plt.ylim(0, 0.15)
+    plt.bar(x, conditional_x(i+1))
+    plt.ylabel("p(x, y=%s)/p(x)"%y, rotation=0, labelpad=40)
+    plt.ylim(0, 1)
     plt.xticks(range(6), ['A', 'B', 'C', 'D', 'E', 'F'])
 
-plt.suptitle("given y, cross section of joint probability mass function", y=1.05)
+plt.suptitle("given y, conditional probability mass function(x)", x=0.55 ,y=1.05)
 plt.tight_layout()
+
 plt.show()
 ```
-![download (1)](https://user-images.githubusercontent.com/52376448/66947330-aae99300-f08d-11e9-9e4b-7a7950caf612.png)
+![download (3)](https://user-images.githubusercontent.com/52376448/66972239-f4a69d80-f0ce-11e9-89ce-8d12f5989cd3.png)
 <hr class='division3'>
 </details>
 <br>
@@ -381,21 +383,25 @@ Name: F, dtype: float64
 <span class="frame3">given x, cross section of joint probability mass function</span>
 ```python
 import string
+import matplotlib.pyplot as plt
+
+pmf = scores / scores.values.sum()
 
 x = np.arange(6)
 for i, y in enumerate(string.ascii_uppercase[:6]):
     ax = plt.subplot(6, 1, i + 1)
     ax.tick_params(labelleft=False)
-    plt.bar(x, pmf.iloc[:, i])
-    plt.ylabel("p(x={}, y)".format(y), rotation=0, labelpad=30)
-    plt.ylim(0, 0.15)
+    plt.bar(x, conditional_y(i+1))
+    plt.ylabel("p(x=%s, y)/p(y)"%y, rotation=0, labelpad=40)
+    plt.ylim(0, 1)
     plt.xticks(range(6), ['A', 'B', 'C', 'D', 'E', 'F'])
 
-plt.suptitle("given x, cross section of joint probability mass function", y=1.05)
+plt.suptitle("given x, conditional probability mass function(y)", x=0.55 ,y=1.05)
 plt.tight_layout()
+
 plt.show()
 ```
-![download (2)](https://user-images.githubusercontent.com/52376448/66952434-96aa9380-f097-11e9-8ec6-b47d569511ff.png)
+![download (4)](https://user-images.githubusercontent.com/52376448/66972263-0a1bc780-f0cf-11e9-80e1-0d05a76407c6.png)
 <hr class='division3'>
 </details>
 <br><br><br>
