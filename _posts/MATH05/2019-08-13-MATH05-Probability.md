@@ -413,6 +413,27 @@ plt.show()
 ### ***joint probability density function***
 <div class="frame1">
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/58f7f825cb219d7e826edc68dd99f75de9f626d0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:26.31ex; height:6.509ex;" alt="{\displaystyle f_{X,Y}(x,y)={\frac {\partial ^{2}F_{X,Y}(x,y)}{\partial x\partial y}}}"></div>
+```python
+from scipy import stats 
+import matplotlib.pyplot as plt
+
+# x:weight, y:height
+mu = [70, 170]
+cov = [[150, 140], [140, 300]]
+rv = stats.multivariate_normal(mu, cov)
+
+xx = np.linspace(20, 120, 100)
+yy = np.linspace(100, 250, 100)
+XX, YY = np.meshgrid(xx, yy)
+ZZ = rv.pdf(np.dstack([XX, YY]))
+
+plt.contour(XX, YY, ZZ)
+plt.xlabel("x")
+plt.ylabel("y")
+plt.title("joint probability density function p(x,y)")
+plt.show()
+```
+![download (9)](https://user-images.githubusercontent.com/52376448/66976410-d34cae00-f0dc-11e9-9553-4c4cfb49523d.png)
 <br><br><br>
 
 ---
@@ -420,6 +441,57 @@ plt.show()
 ### ***marginal probability density function***
 <div class="frame1">
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/243911724de0d94b5b041482401c4c1e067cdf3e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; margin-left: -0.089ex; width:50.596ex; height:6.009ex;" alt="{\displaystyle p_{X}(x)=\int _{y}p_{X,Y}(x,y)\,\mathrm {d} y=\int _{y}p_{X\mid Y}(x\mid y)\,p_{Y}(y)\,\mathrm {d} y,}"></div>
+```python
+from matplotlib.ticker import NullFormatter
+from matplotlib import transforms
+from scipy.integrate import simps  # 심슨법칙(Simpson's rule)을 사용한 적분 계산
+
+xx = np.linspace(20, 120, 100)
+yy = np.linspace(100, 250, 100)
+XX, YY = np.meshgrid(xx, yy)
+ZZ = rv.pdf(np.dstack([XX, YY]))
+fx = [simps(Z, yy) for Z in ZZ.T]
+fy = [simps(Z, xx) for Z in ZZ]
+
+plt.figure(figsize=(6, 6))
+
+left, width = 0.1, 0.65
+bottom, height = 0.1, 0.65
+bottom_h = left_h = left + width + 0.05
+
+rect1 = [left, bottom, width, height]
+rect2 = [left, bottom_h, width, 0.2]
+rect3 = [left_h, bottom, 0.2, height]
+
+ax1 = plt.axes(rect1)
+ax2 = plt.axes(rect2)
+ax3 = plt.axes(rect3)
+
+ax2.xaxis.set_major_formatter(NullFormatter())
+ax3.yaxis.set_major_formatter(NullFormatter())
+
+ax1.contour(XX, YY, ZZ)
+ax1.set_title("joint probability density function $p_{XY}(x, y)$")
+ax1.set_xlabel("x")
+ax1.set_ylabel("y")
+
+ax2.plot(xx, fx)
+ax2.set_title("marginal probability \n density function $p_X(x)$")
+
+base = ax3.transData
+rot = transforms.Affine2D().rotate_deg(-90)
+plt.plot(-yy, fy, transform=rot + base)
+plt.title("marginal probability \n density function $p_Y(y)$")
+
+ax1.set_xlim(38, 102)
+ax1.set_ylim(120, 220)
+ax2.set_xlim(38, 102)
+ax3.set_xlim(0, 0.025)
+ax3.set_ylim(120, 220)
+
+plt.show()
+```
+![download (10)](https://user-images.githubusercontent.com/52376448/66976438-e95a6e80-f0dc-11e9-94ca-9f0fc0167c3d.png)
 <br><br><br>
 
 ---
@@ -427,6 +499,72 @@ plt.show()
 ### ***conditional probability density function***
 <div class="frame1">
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b2e16052d580d418e683bb220a41c2c895227945" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:24.46ex; height:6.509ex;" alt="{\displaystyle f_{Y\mid X}(y\mid x)={\frac {f_{X,Y}(x,y)}{f_{X}(x)}}}"></div>
+<span class="frame3">Cross section of joint probability density function</span>
+```python
+from matplotlib.collections import PolyCollection
+from matplotlib import colors as mcolors
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.pyplot as plt
+import numpy as np
+
+xx = np.linspace(20, 120, 100)
+yy = np.linspace(100, 250, 16)
+XX, YY = np.meshgrid(xx, yy)
+ZZ = rv.pdf(np.dstack([XX, YY]))
+
+fig = plt.figure(dpi=150)
+ax = fig.gca(projection='3d')
+
+xs = np.hstack([0, xx, 0])
+zs = np.zeros_like(xs)
+verts = []
+for i, y in enumerate(yy):
+    zs[1:-1] = ZZ[i]
+    verts.append(list(zip(xx, zs)))
+
+poly = PolyCollection(verts)
+poly.set_alpha(0.5)
+ax.add_collection3d(poly, zs=yy, zdir='y')
+
+ax.set_xlabel('x')
+ax.set_ylabel('y')
+ax.set_xlim(20, 120)
+ax.set_ylim(100, 250)
+ax.set_zlim3d(0, 0.0007)
+ax.view_init(20, -50)
+plt.title("cross section of joint probability density function")
+plt.show()
+```
+![download (11)](https://user-images.githubusercontent.com/52376448/66976497-258dcf00-f0dd-11e9-9a54-b82207ca5a5d.png)
+<br>
+```python
+from scipy.integrate import simps  # 심슨법칙(Simpson's rule)을 사용한 적분 계산
+import matplotlib.pyplot as plt
+import numpy as np
+
+mag = 10 # 확대 비율
+xx = np.linspace(20, 120, 100)
+yy = np.linspace(100, 250, 16)
+XX, YY = np.meshgrid(xx, yy)
+ZZ = rv.pdf(np.dstack([XX, YY]))
+plt.figure(figsize=(8, 6))
+for i, j in enumerate(range(9, 4, -1)):
+    ax = plt.subplot(5, 1, i + 1)
+    ax.tick_params(labelleft=False)
+    plt.plot(xx, ZZ[j, :] * mag, 'r--', lw=2, label="cross section of joint probability density function")
+    marginal = simps(ZZ[j, :], xx)
+    plt.plot(xx, ZZ[j, :] / marginal, 'b-', lw=2, label="conditional probability density function")
+    plt.ylim(0, 0.05)
+    ax.xaxis.set_ticklabels([])
+    plt.ylabel("p(x, y={:.0f})".format(yy[j]), rotation=0, labelpad=40)
+    if i == 0: 
+        plt.legend(loc=2)
+plt.xlabel("x")
+plt.tight_layout()
+plt.show()
+```
+![download (12)](https://user-images.githubusercontent.com/52376448/66976569-51a95000-f0dd-11e9-996b-90bb39db06f5.png)
+
 <br><br><br>
 
 <hr class="division2">
