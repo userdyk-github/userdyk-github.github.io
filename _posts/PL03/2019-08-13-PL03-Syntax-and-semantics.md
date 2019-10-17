@@ -1021,6 +1021,56 @@ list(zip("abc", "def"))
 
 ### ***External function***
 
+#### sys
+```python
+```
+<br>
+
+#### pickle
+```python
+```
+<br>
+
+#### os
+```python
+```
+<br>
+
+#### shutil
+```python
+```
+<br>
+
+#### glob
+```python
+```
+<br>
+
+#### tempfile
+```python
+```
+<br>
+
+#### time
+```python
+```
+<br>
+
+#### calendar
+```python
+```
+<br>
+
+#### random
+```python
+```
+<br>
+
+#### webbrowser
+```python
+```
+
+
 <br><br><br>
 <hr class="division2">
 
