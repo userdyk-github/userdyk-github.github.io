@@ -34,7 +34,7 @@ List of posts to read before reading this article
 
 <hr class="division2">
 
-## **covariance ans correlation**
+## **covariance and correlation**
 <span class="frame3">covariance</span>
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7120384a1c843727d9589e2b33dbc33901d14f42" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:40.233ex; height:3.176ex;" alt="{\displaystyle \operatorname {cov} (X,Y)=\operatorname {E} {{\big [}(X-\operatorname {E} [X])(Y-\operatorname {E} [Y]){\big ]}},}">
 ```python
