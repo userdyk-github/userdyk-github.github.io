@@ -327,6 +327,23 @@ plt.show()
 ![다운로드](https://user-images.githubusercontent.com/52376448/65243246-f6f2f780-db22-11e9-913d-a3b06d49784c.png)
 <hr class='division3'>
 </details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">title position</summary>
+<hr class='division3'>
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+X = np.linspace(-4, 4, 1024)
+Y = .25 * (X + 4.) * (X + 1.) * (X - 2.)
+
+plt.title('A polynomial', x=1, y=1)
+plt.plot(X, Y, c = 'k')
+plt.show()
+```
+![download (6)](https://user-images.githubusercontent.com/52376448/66973042-a9da5500-f0d1-11e9-8b31-998267c3d680.png)
+<hr class='division3'>
+</details>
 <br><br><br>
 
 ---
