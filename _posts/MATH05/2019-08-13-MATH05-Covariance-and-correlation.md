@@ -56,6 +56,27 @@ stats.pearsonr(x1, x3)[0]
 
 <span class="frame3">correlation</span>
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/93185aed3047ef42fa0f1b6e389a4e89a5654afa" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.171ex; width:57.998ex; height:6.009ex;" alt="{\displaystyle \rho _{X,Y}=\operatorname {corr} (X,Y)={\operatorname {cov} (X,Y) \over \sigma _{X}\sigma _{Y}}={\operatorname {E} [(X-\mu _{X})(Y-\mu _{Y})] \over \sigma _{X}\sigma _{Y}}}">
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+np.random.seed(0)
+corrs = [1, 0.7, 0.3, 0, -0.3, -0.7, -1]
+plt.figure(figsize=(len(corrs), 2))
+for i, r in enumerate(corrs):
+    x, y = np.random.multivariate_normal([0, 0], [[1, r], [r, 1]], 1000).T
+    plt.subplot(1, len(corrs), i + 1)
+    plt.plot(x, y, 'ro', ms=1)
+    plt.axis('equal')
+    plt.xticks([])
+    plt.yticks([])
+    plt.title(r"$\rho$={}".format(r))
+
+plt.suptitle("scatter plot about correlation", y=1.1)
+plt.tight_layout()
+plt.show()
+```
+![download (15)](https://user-images.githubusercontent.com/52376448/66980870-17e04580-f0ed-11e9-87a5-559f785ebccf.png)
 <br><br><br>
 
 <hr class="division2">
