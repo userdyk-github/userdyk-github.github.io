@@ -211,21 +211,21 @@ List of posts to read before reading this article
 
 ## **The Method of Least-Squares**
 
-### ******
+### ***LINEAR LEAST-SQUARES***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***LEAST-SQUARES POLYNOMIAL***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***NONLINEAR LEAST-SQUARES***
 
 <br><br><br>
 
@@ -233,21 +233,21 @@ List of posts to read before reading this article
 
 ## **Numerical Optimization**
 
-### ******
+### ***ANALYSIS OF SINGLE-VARIABLE FUNCTIONS***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***LINE SEARCH METHODS***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***MINIMIZATION USING DERIVATIVES***
 
 <br><br><br>
 
@@ -255,161 +255,161 @@ List of posts to read before reading this article
 
 ## **Numerical Differentiation**
 
-### ******
+### ***NUMERICAL DIFFERENTIATION***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***RICHARDSON’S FORMULA***
 
 <br><br><br>
 <hr class="division2">
 
 ## **Numerical Integration**
 
-### ******
+### ***TRAPEZOIDAL RULE***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***SIMPSON’S RULE***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***ROMBERG ALGORITHM***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***GAUSSIAN QUADRATURE***
 
 <br><br><br>
 <hr class="division2">
 
 ## **Numerical Methods for Linear Integral Equations**
 
-### ******
+### ***INTRODUCTION***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***QUADRATURE RULES***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***THE SUCCESSIVE APPROXIMATION METHOD***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***SCHMIDT’s METHOD***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***VOLTERRA-TYPE INTEGRAL EQUATIONS***
 
 <br><br><br>
 <hr class="division2">
 
 ## **Numerical Methods for Differential Equations**
 
-### ******
+### ***EULER’S METHOD***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***ERROR ANALYSIS***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***HIGHER-ORDER TAYLOR SERIES METHODS***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***RUNGE-KUTTA METHODS***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***MULTISTEP METHODS***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***ADAMS-BASHFORTH METHODS***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***PREDICTOR-CORRECTOR METHODS***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***ADAMS-MOULTON METHODS***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***NUMERICAL STABILITY***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***HIGHER-ORDER EQUATIONS AND SYSTEMS OF DIFFERENTIAL EQUATIONS***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***IMPLICIT METHODS AND STIFF SYSTEMS***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***PHASE PLANE ANALYSIS: CHAOTIC DIFFERENTIAL EQUATIONS***
 
 <br><br><br>
 
@@ -417,14 +417,14 @@ List of posts to read before reading this article
 
 ## **Boundary-Value Problems**
 
-### ******
+### ***FINITE-DIFFERENCE METHODS***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***SHOOTING METHODS***
 
 <br><br><br>
 
@@ -432,35 +432,35 @@ List of posts to read before reading this article
 
 ## **Eigenvalues and Eigenvectors**
 
-### ******
+### ***BASIC THEORY***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***THE POWER METHOD***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***THE QUADRATIC METHOD***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***EIGENVALUES FOR BOUNDARY-VALUE PROBLEMS***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***BIFURCATIONS IN DIFFERENTIAL EQUATIONS***
 
 <br><br><br>
 
@@ -468,35 +468,35 @@ List of posts to read before reading this article
 
 ## **Dynamical Systems and Chaos**
 
-### ******
+### ***A REVIEW OF LINEAR ORDINARY DIFFERENTIAL EQUATIONS***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***DEFINITIONS AND THEORETICAL CONSIDERATIONS***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***TWO-DIMENSIONAL SYSTEMS***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***CHAOS***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***LAGRANGIAN DYNAMICS***
 
 <br><br><br>
 
@@ -504,35 +504,35 @@ List of posts to read before reading this article
 
 ## **Partial Differential Equations**
 
-### ******
+### ***PARABOLIC EQUATIONS***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***HYPERBOLIC EQUATIONS***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***ELLIPTIC EQUATIONS***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***NONLINEAR PARTIAL DIFFERENTIAL EQUATIONS***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***INTRODUCTION TO FINITE-ELEMENT METHOD***
 
 <br><br><br>
 
