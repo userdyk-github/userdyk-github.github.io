@@ -297,12 +297,12 @@ for i, y in enumerate(string.ascii_uppercase[:6]):
     plt.ylim(0, 1)
     plt.xticks(range(6), ['A', 'B', 'C', 'D', 'E', 'F'])
 
-plt.suptitle("given y, conditional probability mass function(x)", x=0.55 ,y=1.05)
+plt.suptitle("given y and $p(x)=\sum_{y} p(x,y)$, conditional probability mass function(x)", x=0.55 ,y=1.09)
 plt.tight_layout()
 
 plt.show()
 ```
-![download (3)](https://user-images.githubusercontent.com/52376448/66972239-f4a69d80-f0ce-11e9-89ce-8d12f5989cd3.png)
+![download (7)](https://user-images.githubusercontent.com/52376448/66974513-43a40100-f0d6-11e9-8f86-4d0b30305561.png)
 <hr class='division3'>
 </details>
 <br>
@@ -396,12 +396,12 @@ for i, y in enumerate(string.ascii_uppercase[:6]):
     plt.ylim(0, 1)
     plt.xticks(range(6), ['A', 'B', 'C', 'D', 'E', 'F'])
 
-plt.suptitle("given x, conditional probability mass function(y)", x=0.55 ,y=1.05)
+plt.suptitle("given x and $p(y)=\sum_{x} p(x,y)$, conditional probability mass function(y)", x=0.55 ,y=1.09)
 plt.tight_layout()
 
 plt.show()
 ```
-![download (4)](https://user-images.githubusercontent.com/52376448/66972263-0a1bc780-f0cf-11e9-80e1-0d05a76407c6.png)
+![download (8)](https://user-images.githubusercontent.com/52376448/66974514-43a40100-f0d6-11e9-951a-e794949e0fbd.png)
 <hr class='division3'>
 </details>
 <br><br><br>
