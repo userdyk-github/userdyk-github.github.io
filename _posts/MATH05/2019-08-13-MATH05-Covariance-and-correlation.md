@@ -42,7 +42,18 @@ sample_covariance(rv)
 ```
 0.004201816972783285
 ```
-
+<details markdown="1">
+<summary class='jb-small' style="color:blue">np.cov</summary>
+<hr class='division3'>
+```python
+np.cov(rv[:,0],rv[:,1])
+```
+```
+array([[0.98179804, 0.00420182],
+       [0.00420182, 1.03103471]])
+```
+<hr class='division3'>
+</details>
 <br><br><br>
 <hr class="division2">
 
@@ -231,3 +242,9 @@ Reference
 
 ---
 
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
