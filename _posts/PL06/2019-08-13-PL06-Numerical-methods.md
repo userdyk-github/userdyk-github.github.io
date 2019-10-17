@@ -1,6 +1,6 @@
 ---
 layout : post
-title : PL06, Syntax
+title : PL06, Numerical methods
 categories: [PL06]
 comments : true
 tags : [PL06]
