@@ -2073,8 +2073,8 @@ idx1.difference(idx2, sort=False)
 
 <hr class="division2">
 
-## **Load dataset**
-
+## **Input/Output**
+<span class="frame3">Input dataset</span>
 ```python
 import pandas as pd
 
@@ -2131,8 +2131,18 @@ df.head()
 </details>
 
 <br><br><br>
+<span class="frame3">Output dataset</span>
+```python
+import pandas as pd
 
+df = pd.DataFrame([[4.78232104, 5.82145535],
+                   [6.48127781, 6.33186404],
+                   [4.63813463, 5.68560883]])
 
+#saving in excel format
+filepath = 'pixel_values.xlsx'
+df.to_excel(filepath, index=False)  
+```
 
 <hr class="division2">
 
