@@ -1081,9 +1081,29 @@ print(data)
 
 #### os
 ```python
+import os
+
+os.environ
+```
+```
+environ({'PROGRAMFILES': 'C:\\Program Files', 'APPDATA': … 생략 …})
 ```
 <br>
+```python
+import os
 
+os.chdir("C:\WINDOWS")
+```
+<br>
+```python
+import os
+
+os.getcwd()
+```
+```
+'C:\WINDOWS'
+```
+<br>
 #### shutil
 ```python
 ```
