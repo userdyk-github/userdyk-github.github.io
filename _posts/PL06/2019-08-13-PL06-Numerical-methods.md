@@ -24,20 +24,20 @@ List of posts to read before reading this article
 
 ## **Introduction**
 
-### ******
+### ***ABOUT MATLAB and MATLAB GUI (Graphical User Interface)***
 
 <br><br><br>
 
 ---
 
-### ******
+### ***AN INTRODUCTION TO MATLAB***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***TAYLOR SERIES***
 
 <br><br><br>
 
@@ -45,28 +45,28 @@ List of posts to read before reading this article
 
 ## **Number System and Errors**
 
-### ******
+### ***FLOATING-POINT ARITHMETIC***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***ROUND-OFF ERRORS***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***TRUNCATION ERROR***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***INTERVAL ARITHMETIC***
 
 <br><br><br>
 
@@ -74,49 +74,49 @@ List of posts to read before reading this article
 
 ## **Roots of Equations**
 
-### ******
+### ***THE BISECTION METHOD***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***FIXED POINT ITERATION***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***THE SECANT METHOD***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***NEWTON’S METHOD***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***CONVERGENCE OF THE NEWTON AND SECANT METHODS***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***MULTIPLE ROOTS AND THE MODIFIED NEWTON METHOD***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***NEWTON’S METHOD FOR NONLINEAR SYSTEMS***
 
 <br><br><br>
 
@@ -124,35 +124,35 @@ List of posts to read before reading this article
 
 ## **System of Linear Equations**
 
-### ******
+### ***MATRICES AND MATRIX OPERATIONS***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***NAIVE GAUSSIAN ELIMINATION***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***GAUSSIAN ELIMINATION WITH SCALED PARTIAL PIVOTING***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***LU DECOMPOSITION***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***ITERATIVE METHODS***
 
 <br><br><br>
 
@@ -160,28 +160,28 @@ List of posts to read before reading this article
 
 ## **Interpolation**
 
-### ******
+### ***POLYNOMIAL INTERPOLATION THEORY***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***NEWTON’S DIVIDED-DIFFERENCE INTERPOLATING POLYNOMIAL***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***THE ERROR OF THE INTERPOLATING POLYNOMIAL***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***LAGRANGE INTERPOLATING POLYNOMIAL***
 
 <br><br><br>
 
@@ -189,21 +189,21 @@ List of posts to read before reading this article
 
 ## **Interpolation with Spline Functions**
 
-### ******
+### ***PIECEWISE LINEAR INTERPOLATION***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***QUADRATIC SPLINE***
 
 <br><br><br>
 
 ---
 
 
-### ******
+### ***NATURAL CUBIC SPLINES***
 
 <br><br><br>
 
