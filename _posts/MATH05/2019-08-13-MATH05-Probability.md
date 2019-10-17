@@ -634,10 +634,8 @@ plt.tight_layout()
 plt.show()
 ```
 ![download (14)](https://user-images.githubusercontent.com/52376448/66979137-67237780-f0e7-11e9-8809-7ce8456989f4.png)
-<hr class="division2">
-
 <br><br><br>
-
+<hr class="division2">
 
 
 
