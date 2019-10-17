@@ -1,6 +1,6 @@
 ---
 layout : post
-title : PL08, Application
+title : PL08, Applications
 categories: [PL08]
 comments : true
 tags : [PL08]
