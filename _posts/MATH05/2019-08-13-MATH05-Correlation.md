@@ -21,15 +21,34 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
+## **sample covariance**
 
 <hr class="division2">
 
-## title2
+## **sample correlation coefficient**
 
 <hr class="division2">
 
-## title3
+## **covariance ans correlation**
+
+<hr class="division2">
+
+## **non-linear correlation**
+
+<hr class="division2">
+
+## **Frank Anscombe data**
+
+<hr class="division2">
+
+## **Sample Covariance**
+
+<hr class="division2">
+
+## **Covariance of multi-variate random number**
+
+<hr class="division2">
+
 
 <hr class="division1">
 
@@ -46,15 +65,4 @@ Reference
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
-
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-    <details markdown="1">
-    <summary class='jb-small' style="color:red">OUTPUT</summary>
-    <hr class='division3_1'>
-    <hr class='division3_1'>
-    </details>
-<hr class='division3'>
-</details>
 
