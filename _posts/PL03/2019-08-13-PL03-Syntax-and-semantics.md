@@ -1023,6 +1023,35 @@ list(zip("abc", "def"))
 
 #### sys
 ```python
+import sys
+print(sys.argv)
+```
+```dos
+C:/doit/Mymod>python argv_test.py you need python
+```
+```
+['argv_test.py', 'you', 'need', 'python']
+```
+<br>
+```python
+sys.exit()
+```
+<br>
+```python
+import sys
+
+sys.path
+```
+```
+['', 'C:\\Windows\\SYSTEM32\\python37.zip', 'c:\\Python37\\DLLs', 
+'c:\\Python37\\lib', 'c:\\Python37', 'c:\\Python37\\lib\\site-packages']
+```
+
+<br>
+```python
+# path_append.py
+import sys
+sys.path.append("C:/doit/mymod")
 ```
 <br>
 
