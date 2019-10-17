@@ -23,6 +23,25 @@ List of posts to read before reading this article
 
 ## **sample covariance**
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4d158b1ec5a3c6d1de84b9d59f604d8170a51407" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:38.104ex; height:7.343ex;" alt=" q_{jk}=\frac{1}{N-1}\sum_{i=1}^{N}\left(  x_{ij}-\bar{x}_j \right)  \left( x_{ik}-\bar{x}_k \right), ">
+```python
+import numpy as np
+
+def sample_covariance(rv):
+    Cov = 0
+    for i in range(rv.shape[0]):
+        Cov = Cov + (rv[i][0]-rv[:,0].mean())*(rv[i][1]-rv[:,1].mean())
+    Cov = Cov/(rv.shape[0]-1)
+    return Cov
+
+
+np.random.seed(2019)
+rv = np.random.RandomState(2019)
+rv = rv.normal(5,1,size=(5000,2))
+sample_covariance(rv)
+```
+```
+0.004201816972783285
+```
 
 <br><br><br>
 <hr class="division2">
