@@ -144,6 +144,8 @@ y4 = (x4**2 + np.random.uniform(0, 0.1, n)) * \
 plt.scatter(x4, y4)
 r4 = stats.pearsonr(x4, y4)[0]
 plt.title(r"non-linear correlation 4: r={:3.1f}".format(r4))
+
+
 plt.tight_layout()
 plt.show()
 ```
