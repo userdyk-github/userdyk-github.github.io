@@ -37,6 +37,21 @@ List of posts to read before reading this article
 ## **covariance ans correlation**
 <span class="frame3">covariance</span>
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7120384a1c843727d9589e2b33dbc33901d14f42" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:40.233ex; height:3.176ex;" alt="{\displaystyle \operatorname {cov} (X,Y)=\operatorname {E} {{\big [}(X-\operatorname {E} [X])(Y-\operatorname {E} [Y]){\big ]}},}">
+```python
+from sklearn.datasets import load_iris
+from scipy import stats
+
+X = load_iris().data
+x1 = X[:, 0]  # 꽃받침의 길이
+x2 = X[:, 1]  # 꽃받침의 폭
+x3 = X[:, 2]  # 꽃잎의 길이
+x4 = X[:, 3]  # 꽃잎의 폭
+
+stats.pearsonr(x1, x3)[0]
+```
+```
+0.8717537758865832
+```
 <br><br><br>
 
 <span class="frame3">correlation</span>
