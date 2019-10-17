@@ -27,8 +27,7 @@ List of posts to read before reading this article
 ### ***One-column***
 
 #### Creating and searching
-
-`CREATING METHOD1 : sperately`
+<span class="frame3">CREATING METHOD1 : sperately</span>
 ```python
 import pandas as pd
 
@@ -93,7 +92,7 @@ type(s.index)
 
 
 <br><br><br>
-`CREATING METHOD2 : all at once`
+<span class="frame3">CREATING METHOD2 : all at once</span>
 ```python
 import pandas as pd
 
@@ -557,8 +556,7 @@ Stockholm3        NaN        NaN   909976.0
 ### ***One-dataframe***
 
 #### Creating and searching
-
-`Creating method1 based on row`
+<span class="frame3">Creating method1 based on row</span>
 ```python
 import pandas as pd
 
@@ -587,8 +585,7 @@ Paris         2273305          France
 <br><br><br>
 
 
-
-`Creating method2 based on row`
+<span class="frame3">Creating method2 based on row</span>
 ```python
 import pandas as pd
 
@@ -617,8 +614,7 @@ Paris         2273305          France
 <br><br><br>
 
 
-
-`Creating method3 based on row, all at once`
+<span class="frame3">Creating method3 based on row, all at once</span>
 ```python
 import pandas as pd
 
@@ -648,8 +644,7 @@ Paris         2273305          France
 
 
 
-
-`Creating method1 based on columns, all at once`
+<span class="frame3">Creating method1 based on columns, all at once</span>
 ```python
 import pandas as pd
 
@@ -1181,8 +1176,7 @@ method4 searching single value
 
 
 
-
-`Creating method2 based on columns`
+<span class="frame3">Creating method2 based on columns</span>
 ```python
 import pandas as pd
 
@@ -1215,7 +1209,7 @@ Paris         2273305          France
 ---
 
 #### Arrangement
-`STEP1`
+<span class="frame3">STEP1</span>
 ```python
 import pandas as pd
 
@@ -1243,7 +1237,7 @@ df
 <hr class='division3'>
 </details>
 <br>
-`STEP2`
+<span class="frame3">STEP2</span>
 ```python
 df = df.sort_index(axis=1)
 df
@@ -1265,7 +1259,7 @@ df
 <hr class='division3'>
 </details>
 <br>
-`STEP3`
+<span class="frame3">STEP3</span>
 ```python
 df = df.set_index(['Alphabet','rank'])
 df
@@ -1288,7 +1282,7 @@ c        8         343434           Japan
 <hr class='division3'>
 </details>
 <br>
-`STEP4`
+<span class="frame3">STEP4</span>
 ```python
 df = df.sort_index()
 df
@@ -1311,7 +1305,7 @@ x        3        2872086           Italy
 <hr class='division3'>
 </details>
 <br>
-`Based on rank`
+<span class="frame3">Based on rank</span>
 ```python
 df.sort_values("rank", ascending=False)
 ```
@@ -1333,7 +1327,7 @@ a        1         909976          Sweden
 <hr class='division3'>
 </details>
 <br>
-`Based on Population`
+<span class="frame3">Based on Population</span>
 ```python
 df.sort_values("Population", ascending=False)
 ```
@@ -1355,7 +1349,7 @@ b        7          23333           Korea
 <hr class='division3'>
 </details>
 <br>
-`Based on State`
+<span class="frame3">Based on State</span>
 ```python
 df.sort_values("State", ascending=False)
 ```
@@ -1377,7 +1371,7 @@ a        5         123444          France
 <hr class='division3'>
 </details>
 <br>
-`Based on Alphabet`
+<span class="frame3">Based on Alphabet</span>
 ```python
 df = df.sort_values("Alphabet", ascending=False)
 df
@@ -1627,8 +1621,7 @@ df.loc['a'].std()
 ### ***Several dataframes***
 
 #### Deleting
-
-`drop`
+<span class="frame3">drop</span>
 ```python
 import pandas as pd
 import numpy as np
@@ -1715,8 +1708,7 @@ df.drop([1,2], axis=0)
 </details>
 <br><br><br>
 
-
-`drop_duplicates`
+<span class="frame3">drop_duplicates</span>
 ```python
 import pandas as pd
 
@@ -1776,8 +1768,7 @@ df.drop_duplicates('phone',keep='last')
 </details>
 
 <br><br><br>
-
-`dropna`
+<span class="frame3">dropna</span>
 ```python
 import pandas as pd
 import numpy as np
@@ -1898,7 +1889,7 @@ Paris2          2273305          France2
 <hr class='division3'>
 </details>
 <br>
-`Concat for left and right`
+<span class="frame3">Concat for left and right</span>
 ```python
 df = pd.concat([df1, df2], axis=1)
 df
@@ -1965,7 +1956,7 @@ Stockholm2         NaN              NaN    909976.0          Sweden2
 <hr class='division3'>
 </details>
 <br>
-`Concat for up and down`
+<span class="frame3">Concat for up and down</span>
 ```python
 df = pd.concat([df1, df2], axis=0)
 df
