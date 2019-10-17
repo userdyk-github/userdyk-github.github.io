@@ -78,7 +78,32 @@ plt.show()
 ```
 ![download (15)](https://user-images.githubusercontent.com/52376448/66980870-17e04580-f0ed-11e9-87a5-559f785ebccf.png)
 <br><br><br>
+```python
+import numpy as np
+import matplotlib.pyplot as plt
 
+np.random.seed(1)
+slope = [1, 0.7, 0.3, 0, -0.3, -0.7, -1]
+plt.figure(figsize=(len(slope), 2))
+for i, s in enumerate(slope):
+    plt.subplot(1, len(slope), i + 1)
+    x, y = np.random.multivariate_normal([0, 0], [[1, 1], [1, 1]], 100).T
+    y2 = s * y
+    plt.plot(x, y2, 'ro', ms=1)
+    plt.axis('equal')
+    plt.xticks([])
+    plt.yticks([])
+    if s > 0:
+        plt.title(r"$\rho$=1")
+    if s < 0:
+        plt.title(r"$\rho$=-1")
+
+plt.suptitle("correlation and slope are independent", y=1.1)
+plt.tight_layout()
+plt.show()
+```
+![download (17)](https://user-images.githubusercontent.com/52376448/66980997-76a5bf00-f0ed-11e9-8069-17c62022109c.png)
+<br><br><br>
 <hr class="division2">
 
 ## **non-linear correlation**
