@@ -1,6 +1,6 @@
 ---
 layout : post
-title : PL06, Toolbox
+title : PL06, Toolboxes
 categories: [PL06]
 comments : true
 tags : [PL06]
