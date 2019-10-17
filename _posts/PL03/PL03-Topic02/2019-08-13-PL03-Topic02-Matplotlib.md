@@ -376,6 +376,26 @@ plt.show()
 ![다운로드 (2)](https://user-images.githubusercontent.com/52376448/65243394-3b7e9300-db23-11e9-8824-809e1553cb84.png)
 <hr class='division3'>
 </details>
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">Rotation, labelpad</summary>
+<hr class='division3'>
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+X = np.linspace(-4, 4, 1024)
+Y = .25 * (X + 4.) * (X + 1.) * (X - 2.)
+
+plt.title('Power curve for airfoil KV873', rotation=10)
+plt.xlabel('Air speed', rotation=10 ,labelpad=50)
+plt.ylabel('Total drag', rotation=10 ,labelpad=50)
+plt.plot(X, Y, c = 'k')
+plt.show()
+```
+![download (5)](https://user-images.githubusercontent.com/52376448/66972916-23be0e80-f0d1-11e9-81c3-8d1577b5310f.png)
+
+<hr class='division3'>
+</details>
 <br><br><br>
 
 ---
