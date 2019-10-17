@@ -112,7 +112,21 @@ title: MATERIALS
 
 <br>
 
-# REFERENCES
+# REFERENCES 01
 
 
 - <a href="https://insights.stackoverflow.com/" target="_blank">stackoverflow insights</a>
+
+
+<br>
+
+<hr class='division4'>
+
+<br>
+
+# REFERENCES 02
+
+- <a href="https://www.youtube.com/user/egoing2/playlists" target="_blank">생활코딩</a>
+- <a href="https://www.youtube.com/channel/UChflhu32f5EUHlY7_SetNWw/playlists" target="_blank">동빈나</a>
+- <a href="https://www.youtube.com/channel/UCLR3sD0KB_dWpvcsrLP0aUg/playlists" target="_blank">todaycode오늘코드</a>
+
