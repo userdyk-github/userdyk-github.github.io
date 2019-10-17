@@ -204,9 +204,9 @@ pmf_marginal_x = pmf.sum(axis=0)
 pmf_marginal_y = pmf.sum(axis=1)
 
 def conditional_x(y):
-    return pmf.iloc[y-1, :]/pmf_marginal_y[i-1]
+    return pmf.iloc[y-1, :]/pmf_marginal_y[y-1]
 def conditional_y(x):
-    return pmf.iloc[:, x-1]/pmf_marginal_x[i-1]
+    return pmf.iloc[:, x-1]/pmf_marginal_x[x-1]
 ```
 ```python
 for i in range(1, pmf.shape[0]+1):
