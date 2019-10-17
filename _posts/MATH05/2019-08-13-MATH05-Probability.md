@@ -31,6 +31,11 @@ List of posts to read before reading this article
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/13827ff57e01b13cceff9cf50cd9542cd4b7db70" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:36.004ex; height:2.843ex;" alt="{\displaystyle \operatorname {P} (X\in S)=\operatorname {P} (\{\omega \in \Omega \mid X(\omega )\in S\})}">
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f81c05aba576a12b4e05ee3f4cba709dd16139c7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:19.165ex; height:2.843ex;" alt="F_{X}(x)=\operatorname {P} (X\leq x)">
 <br><br><br>
+### ***Normal distribution***
+```python
+
+```
+<br><br><br>
 <hr class="division2">
 
 
