@@ -33,8 +33,96 @@ List of posts to read before reading this article
 <br><br><br>
 ### ***Normal distribution***
 ```python
+from scipy import stats
 
+X = stats.norm(1,.5)
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Descript statistic</summary>
+<hr class='division3'>
+```python
+X.mean()
+```
+```
+1
+```
+<br>
+```python
+X.median() 
+```
+```
+1.0
+```
+<br>
+```python
+X.std()
+```
+```
+0.5
+```
+
+<br>
+```python
+X.var()
+```
+```
+0.25
+```
+
+<br>
+```python
+[X.moment(n) for n in range(5)] 
+```
+```
+[1.0, 1.0, 1.25, 1.75, 2.6875]
+```
+
+<br>
+```python
+X.stats()
+```
+```
+(array(1.), array(0.25))
+```
+
+<br>
+```python
+X.pdf([0, 1, 2]) 
+```
+```
+array([0.10798193, 0.79788456, 0.10798193])
+```
+
+<br>
+```python
+X.cdf([0, 1, 2]) 
+```
+```
+array([0.02275013, 0.5       , 0.97724987])
+```
+
+<br>
+```python
+X.interval(0.95)
+```
+```
+(0.020018007729972975, 1.979981992270027)
+```
+
+<br>
+```python
+X.interval(0.99) 
+```
+```
+(-0.2879146517744502, 2.28791465177445)
+```
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Visualization</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
 <br><br><br>
 <hr class="division2">
 
