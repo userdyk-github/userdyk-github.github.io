@@ -1056,7 +1056,26 @@ sys.path.append("C:/doit/mymod")
 <br>
 
 #### pickle
+<span class="frame3">Save</span>
 ```python
+import pickle
+
+f = open("test.txt", 'wb')
+data = {1: 'python', 2: 'you need'}
+pickle.dump(data, f)
+f.close()
+```
+<br>
+<span class="frame3">Load</span>
+```python
+import pickle
+
+f = open("test.txt", 'rb')
+data = pickle.load(f)
+print(data)
+```
+```
+{2:'you need', 1:'python'}
 ```
 <br>
 
