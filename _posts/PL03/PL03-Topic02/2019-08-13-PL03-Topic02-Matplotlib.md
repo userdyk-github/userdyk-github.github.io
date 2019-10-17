@@ -376,7 +376,7 @@ plt.show()
 ![다운로드 (2)](https://user-images.githubusercontent.com/52376448/65243394-3b7e9300-db23-11e9-8824-809e1553cb84.png)
 <hr class='division3'>
 </details>
-<details open markdown="1">
+<details markdown="1">
 <summary class='jb-small' style="color:blue">Rotation, labelpad</summary>
 <hr class='division3'>
 ```python
