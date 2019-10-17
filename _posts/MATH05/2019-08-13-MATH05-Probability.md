@@ -41,6 +41,14 @@ X = stats.norm(1,.5)
 <summary class='jb-small' style="color:blue">Descript statistic</summary>
 <hr class='division3'>
 ```python
+X.rvs(10)
+```
+```
+array([0.5903325 , 1.29429924, 1.00703009, 1.21073729, 1.51287354,
+       0.76989052, 0.96913931, 2.03268324, 0.65025789, 0.15307278])
+```
+<br>
+```python
 X.mean()
 ```
 ```
@@ -80,6 +88,8 @@ X.var()
 <br>
 ```python
 X.stats()
+# stats.norm.stats(loc=1, scale=0.5) 
+# stats.norm(loc=1, scale=0.5).stats()
 ```
 ```
 (array(1.), array(0.25))
@@ -121,6 +131,54 @@ X.interval(0.99)
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Visualization</summary>
 <hr class='division3'>
+```python
+from scipy import stats
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+sns.set(style="whitegrid")
+
+def plot_rv_distribution(X, axes=None):   
+    """Plot the PDF or PMF, CDF, SF and PPF of a given random variable"""   
+    if axes is None:   
+        fig, axes = plt.subplots(1, 3, figsize=(12, 3))   
+        
+    x_min_999, x_max_999 = X.interval(0.999)  
+    x999 = np.linspace(x_min_999, x_max_999, 1000)  
+    x_min_95, x_max_95 = X.interval(0.95)    
+    x95 = np.linspace(x_min_95, x_max_95, 1000)    
+    
+    if hasattr(X.dist, "pdf"):    
+        axes[0].plot(x999, X.pdf(x999), label="PDF")   
+        axes[0].fill_between(x95, X.pdf(x95), alpha=0.25)
+    else:    
+        # discrete random variables do not have a pdf method, instead we use pmf:  
+        x999_int = np.unique(x999.astype(int))  
+        axes[0].bar(x999_int, X.pmf(x999_int), label="PMF")  
+    axes[1].plot(x999, X.cdf(x999), label="CDF")   
+    axes[1].plot(x999, X.sf(x999), label="SF")   
+    axes[2].plot(x999, X.ppf(x999), label="PPF")  
+                                                                        
+    for ax in axes:
+        ax.legend()
+        
+        
+fig, axes = plt.subplots(3, 3, figsize=(12, 9))   
+
+X = stats.norm()   
+plot_rv_distribution(X, axes=axes[0, :]) 
+axes[0, 0].set_ylabel("Normal dist.") 
+
+X = stats.f(2, 50)    
+plot_rv_distribution(X, axes=axes[1, :]) 
+axes[1, 0].set_ylabel("F dist.")  
+
+X = stats.poisson(5)  
+plot_rv_distribution(X, axes=axes[2, :])
+axes[2, 0].set_ylabel("Poisson dist.")        
+```
+![download (20)](https://user-images.githubusercontent.com/52376448/66984484-c25c6680-f0f5-11e9-8eca-0730f046e00e.png)
 <hr class='division3'>
 </details>
 <br><br><br>
