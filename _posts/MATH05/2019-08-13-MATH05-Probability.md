@@ -604,7 +604,7 @@ plt.show()
 ```
 ![download (13)](https://user-images.githubusercontent.com/52376448/66979066-23c90900-f0e7-11e9-82ec-5fefae6027ac.png)
 <br><br><br>
-<span class="frame3">two variable</span>
+<span class="frame3">dependent two variable</span>
 ```python
 import matplotlib.pyplot as plt
 import seaborn as sns
