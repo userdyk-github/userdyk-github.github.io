@@ -572,9 +572,68 @@ plt.show()
 ## **Independent**
 <div class="frame1">
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c3fee81720676c2887e6304414377aecb51e5579" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:22.872ex; height:2.843ex;" alt="\mathrm{P}(A \cap B) = \mathrm{P}(A)\mathrm{P}(B)"></div>
+<span class="frame3">independent two variable</span>
+```python
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+
+pmf1 = np.array([[1, 2,  4, 2, 1],
+                 [2, 4,  8, 4, 2],
+                 [4, 8, 16, 8, 4],
+                 [2, 4,  8, 4, 2],
+                 [1, 2,  4, 2, 1]])
+pmf1 = pmf1/pmf1.sum()
+
+pmf1_marginal_x = np.round(pmf1.sum(axis=0), 2)
+pmf1_marginal_y = np.round(pmf1.sum(axis=1), 2)
+pmf1x = pmf1_marginal_x * pmf1_marginal_y[:, np.newaxis]
+
+plt.subplot(121)
+sns.heatmap(pmf1, cmap=mpl.cm.bone_r, annot=True, square=True, linewidth=1, linecolor="k",
+            cbar=False, xticklabels=pmf1_marginal_x, yticklabels=pmf1_marginal_y)
+plt.title("independent two variable - \n joint probability mass function")
+
+plt.subplot(122)
+pmf1x = pmf1_marginal_x * pmf1_marginal_y[:, np.newaxis]
+sns.heatmap(pmf1x, cmap=mpl.cm.bone_r, annot=True, square=True, linewidth=1, linecolor="k",
+            cbar=False, xticklabels=pmf1_marginal_x, yticklabels=pmf1_marginal_y)
+plt.title("two variable - the product of \n joint probability mass function")
+plt.tight_layout()
+plt.show()
+```
+![download (12)](https://user-images.githubusercontent.com/52376448/66979065-23c90900-f0e7-11e9-91a2-a67303ad8c9e.png)
 <br><br><br>
+<span class="frame3">two variable</span>
+```python
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
 
+pmf2 = np.array([[0, 0,  0, 5, 5],
+                 [0, 5,  5, 5, 5],
+                 [0, 5, 30, 5, 0],
+                 [5, 5,  5, 5, 0],
+                 [5, 5,  0, 0, 0]])
+pmf2 = pmf2/pmf2.sum()
 
+pmf2_marginal_x = np.round(pmf2.sum(axis=0), 2)
+pmf2_marginal_y = np.round(pmf2.sum(axis=1), 2)
+
+plt.subplot(121)
+sns.heatmap(pmf2, cmap=mpl.cm.bone_r, annot=True, square=True, linewidth=1, linecolor="k",
+            cbar=False, xticklabels=pmf2_marginal_x, yticklabels=pmf2_marginal_y)
+plt.title("dependent two variable - \n joint probability mass function")
+
+plt.subplot(122)
+pmf2x = pmf2_marginal_x * pmf2_marginal_y[:, np.newaxis]
+sns.heatmap(pmf2x, cmap=mpl.cm.bone_r, annot=True, square=True, linewidth=1, linecolor="k",
+            cbar=False, xticklabels=pmf2_marginal_x, yticklabels=pmf2_marginal_y)
+plt.title("two variable - the product of \n joint probability mass function")
+plt.tight_layout()
+plt.show()
+```
+![download (13)](https://user-images.githubusercontent.com/52376448/66979066-23c90900-f0e7-11e9-82ec-5fefae6027ac.png)
 <hr class="division2">
 
 
