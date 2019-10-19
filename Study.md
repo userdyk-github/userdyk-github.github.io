@@ -344,10 +344,10 @@ Mass Point</a><br>
 
 <br>
 
-## _PL00_ : OS
+## _PL00_ : Computer Engineering
 
 > <a href='https://userdyk-github.github.io/pl00/PL00-Linux.html'>Linux</a><br>
-
+> <a href='https://userdyk-github.github.io/pl00/PL00-MySQL.html'>MySQL</a><br>
 
 ---
 
