@@ -118,8 +118,7 @@ title: MATERIALS
 - <a href="https://insights.stackoverflow.com/" target="_blank">stackoverflow insights</a>
 - <a href="https://db-engines.com/en/ranking" target="_blank">db-engines ranking</a>
 - <a href="https://repl.it/" target="_blank">Implementation with programming language on web</a>
-
-
+- <a href="https://repl.it/" target="_blank">http://www.gnu.org/home.en.html</a>
 
 <br>
 
