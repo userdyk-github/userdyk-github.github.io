@@ -34,6 +34,17 @@ List of posts to read before reading this article
 
 <br><br><br>
 
+---
+
+### ***Regression F-test and ANOVA Relationship***
+
+<br><br><br>
+
+---
+
+### ***Coefficient of Determination and Correlation Coefficient***
+
+<br><br><br>
 <hr class="division2">
 
 ## **Two-way analysis of variance**
