@@ -23,19 +23,21 @@ List of posts to read before reading this article
 
 ## **One-way analysis of variance**
 ![ANOVA_oneway](https://user-images.githubusercontent.com/52376448/66703411-507aca80-ed4d-11e9-8ae9-db644dd8b89f.JPG)
+
+<br><br><br>
 <hr class="division2">
 
 ## **Two-way analysis of variance**
-![ANOVA_twoway_with_repetition](https://user-images.githubusercontent.com/52376448/66703412-507aca80-ed4d-11e9-9dcb-66728cfe44ae.JPG)
 
 ### ***Two-way ANOVA with repetition***
-![ANOVA_twoway_without_repetition](https://user-images.githubusercontent.com/52376448/66703413-507aca80-ed4d-11e9-8801-e7f73c9e9fee.JPG)
+![ANOVA_twoway_with_repetition](https://user-images.githubusercontent.com/52376448/66703412-507aca80-ed4d-11e9-9dcb-66728cfe44ae.JPG)
 
 <br><br><br>
 
 ---
 
 ### ***Two-way ANOVA without repetition***
+![ANOVA_twoway_without_repetition](https://user-images.githubusercontent.com/52376448/66703413-507aca80-ed4d-11e9-8801-e7f73c9e9fee.JPG)
 
 <br><br><br>
 <hr class="division2">
