@@ -24,7 +24,7 @@ List of posts to read before reading this article
 ## **One-way analysis of variance**
 ![ANOVA_oneway](https://user-images.githubusercontent.com/52376448/66703411-507aca80-ed4d-11e9-8ae9-db644dd8b89f.JPG)
 
-### ***Coefficient of Determination***
+### ***Coefficient of Determination(R2)***
 
 <br><br><br>
 
@@ -42,10 +42,52 @@ List of posts to read before reading this article
 
 ---
 
-### ***Coefficient of Determination and Correlation Coefficient***
+### ***Coefficient of Determination(R2) and Correlation Coefficient***
 
 <br><br><br>
+
+---
+
+### ***Model without constant***
+
+<br><br><br>
+
+---
+
+### ***Comparing Model Using F Test***
+
+<br><br><br>
+
+---
+
+### ***Comparison of importance of variables using F test***
+
+<br><br><br>
+
+---
+
+### ***Adjusted Coefficient of Determination(Adjusted R2)***
+
+<br><br><br>
+
+---
+
+### ***Information Criterion***
+
+<br><br><br>
+
+---
+
 <hr class="division2">
+
+
+
+
+
+
+
+
+
 
 ## **Two-way analysis of variance**
 
