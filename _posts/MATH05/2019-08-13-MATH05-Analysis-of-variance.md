@@ -75,7 +75,7 @@ List of posts followed by this article
 ---
 
 Reference
-- <a href='https://userdyk-github.github.io/' target="_blank">https://datascienceschool.net/view-notebook/a60e97ad90164e07ad236095ca74e657/</a>
+- <a href='https://datascienceschool.net/view-notebook/a60e97ad90164e07ad236095ca74e657/' target="_blank">분산 분석과 모형 성능</a>
 
 ---
 
