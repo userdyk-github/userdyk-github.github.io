@@ -26,8 +26,14 @@ List of posts to read before reading this article
 
 ### ***Coefficient of Determination***
 
+<br><br><br>
+
+---
+
+### ***The hypothesis test***
 
 <br><br><br>
+
 <hr class="division2">
 
 ## **Two-way analysis of variance**
