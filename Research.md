@@ -11,8 +11,9 @@ title: RESEARCH
 
 ---
 
-- <a href='https://scholar.google.com/citations?view_op=top_venues' target="_blank">https://scholar.google.com/citations?view_op=top_venues</a>
-- <a href='https://cmt3.research.microsoft.com/Conference/Recent' target="_blank">https://cmt3.research.microsoft.com/Conference/Recent</a>
+- <a href='https://scholar.google.com/citations?view_op=top_venues' target="_blank">Google Scholar Citations</a>
+- <a href='https://cmt3.research.microsoft.com/Conference/Recent' target="_blank">Recent Conference</a>
+> <a href='https://www.sharelatex.com/templates' target="_blank">Latex templates</a><br>
 > <a href='https://en.wikipedia.org/wiki/Help:Displaying_a_formula' target="_blank">Help:Displaying a formula</a><br>
 
 
