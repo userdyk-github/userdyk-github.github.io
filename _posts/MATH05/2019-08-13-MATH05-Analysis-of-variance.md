@@ -44,6 +44,7 @@ List of posts to read before reading this article
 
 ## **Multivariate analysis of variance (MANOVA)**
 
+<br><br><br>
 <hr class="division1">
 
 List of posts followed by this article
