@@ -352,25 +352,23 @@ Mass Point</a><br>
 > <a href='https://userdyk-github.github.io/pl00/PL00-Windows.html'>Windows</a><br>
 > <a href='https://userdyk-github.github.io/pl00/PL00-Docker.html'>Docker</a><br>
 
-
 ### _Network_
 
 > <a href='https://userdyk-github.github.io/pl00/PL00-WEB.html'>WEB</a><br>
 > <a href='https://userdyk-github.github.io/pl00/PL00-APP.html'>APP</a><br>
 > <a href='https://userdyk-github.github.io/pl00/PL00-Jenkins.html'>Jenkins</a><br>
 
-#### _Cloud Computing_
-
-> <a href='https://userdyk-github.github.io/pl00/PL00-AWS.html'>AWS</a><br>
-> <a href='https://userdyk-github.github.io/pl00/PL00-GCP.html'>GCP</a><br>
-> <a href='https://userdyk-github.github.io/pl00/PL00-Azure.html'>Azure</a><br>
-
-
 ### _DataBase_
 
 > <a href='https://userdyk-github.github.io/pl00/PL00-DataBase.html'>DataBase</a><br>
 > <a href='https://userdyk-github.github.io/pl00/PL00-MySQL.html'>MySQL</a><br>
 > <a href='https://userdyk-github.github.io/pl00/PL00-Hadoop.html'>Hadoop</a><br>
+
+### _Cloud Computing_
+
+> <a href='https://userdyk-github.github.io/pl00/PL00-AWS.html'>AWS</a><br>
+> <a href='https://userdyk-github.github.io/pl00/PL00-GCP.html'>GCP</a><br>
+> <a href='https://userdyk-github.github.io/pl00/PL00-Azure.html'>Azure</a><br>
 
 
 ### _Atlassian_
