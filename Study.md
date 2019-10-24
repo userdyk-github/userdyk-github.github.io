@@ -460,13 +460,3 @@ Mass Point</a><br>
 > <a href='https://userdyk-github.github.io/dev02/DEV02-Libraries.html'>Libraries</a><br>
 
 
-<br>
-
-<hr class='division1'>
-
-<br>
-
-## _Reference_
-
-> <a href='https://en.wikipedia.org/wiki/Help:Displaying_a_formula' target="_blank">Help:Displaying a formula</a><br>
-
