@@ -357,8 +357,14 @@ Mass Point</a><br>
 
 > <a href='https://userdyk-github.github.io/pl00/PL00-WEB.html'>WEB</a><br>
 > <a href='https://userdyk-github.github.io/pl00/PL00-APP.html'>APP</a><br>
-> <a href='https://userdyk-github.github.io/pl00/PL00-AWS.html'>AWS</a><br>
 > <a href='https://userdyk-github.github.io/pl00/PL00-Jenkins.html'>Jenkins</a><br>
+
+#### _Cloud Computing_
+
+> <a href='https://userdyk-github.github.io/pl00/PL00-AWS.html'>AWS</a><br>
+> <a href='https://userdyk-github.github.io/pl00/PL00-GCP.html'>GCP</a><br>
+> <a href='https://userdyk-github.github.io/pl00/PL00-Azure.html'>Azure</a><br>
+
 
 ### _DataBase_
 
