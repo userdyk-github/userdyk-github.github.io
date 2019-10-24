@@ -158,7 +158,9 @@ vocabulary continuous speech recognition｜ <a href='http://www.cs.cmu.edu/afs/c
 - <span class="jb-medium">An efficient method for the computation of legendre moments. ｜ <a href='http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.886.8468&rep=rep1&type=pdf' target="_blank">PDF</a></span>
 
 
+<br><br><br>
 
+### ***Image Classification*** 
 
 
 
@@ -166,6 +168,87 @@ vocabulary continuous speech recognition｜ <a href='http://www.cs.cmu.edu/afs/c
 <br><br><br>
 
 ---
+
+### ***Text to image mapping***
+
+<br><br><br>
+
+---
+
+### ***Semantic Segmentation***
+
+<br><br><br>
+
+---
+
+
+### ***Object Detection***
+
+<br><br><br>
+
+---
+
+### ***Pose Estimation***
+
+<br><br><br>
+
+---
+
+
+### ***Facial Recognition and Modelling***
+
+<br><br><br>
+
+---
+
+
+### ***Object Recognition***
+
+<br><br><br>
+
+
+---
+
+
+### ***Image Captioning***
+
+<br><br><br>
+
+
+---
+
+
+### ***Emotion Recognition***
+
+<br><br><br>
+
+
+---
+
+
+### ***Object Classification***
+
+<br><br><br>
+
+
+---
+
+
+
+### ***Text to image mapping***
+
+<br><br><br>
+
+---
+
+
+### ***3D Object Generation***
+
+<br><br><br>
+
+
+<hr class="division4">
+
 
 ## _Etc_
 
