@@ -24,6 +24,9 @@ List of posts to read before reading this article
 ## **One-way analysis of variance**
 ![ANOVA_oneway](https://user-images.githubusercontent.com/52376448/66703411-507aca80-ed4d-11e9-8ae9-db644dd8b89f.JPG)
 
+### ***Coefficient of Determination***
+
+
 <br><br><br>
 <hr class="division2">
 
@@ -55,9 +58,7 @@ List of posts followed by this article
 ---
 
 Reference
-- [post1](https://userdyk-github.github.io/)
-- <a href='https://userdyk-github.github.io/'>post2</a>
-- <a href='https://userdyk-github.github.io/'>post3</a>
+- <a href='https://userdyk-github.github.io/' target="_blank">https://datascienceschool.net/view-notebook/a60e97ad90164e07ad236095ca74e657/</a>
 
 ---
 
