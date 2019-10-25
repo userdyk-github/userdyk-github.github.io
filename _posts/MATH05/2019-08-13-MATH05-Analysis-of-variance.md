@@ -134,7 +134,14 @@ plt.show()
 </details>
 <br><br><br>
 
-### ***Coefficient of Determination(R2) and Correlation Coefficient***
+### ******
+```python
+
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Visualization : Coefficient of Determination(R2) and Correlation Coefficient</summary>
+<hr class='division3'>
 <span class="frame3">Coefficient of Determination(R2)</span>
 <div class="frame1">
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/44a8b57e2a4335f02faa2bd5003d94979af4f408" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:12.7ex; height:6.843ex;" alt="{\bar {y}}={\frac {1}{n}}\sum _{i=1}^{n}y_{i}">
@@ -143,6 +150,7 @@ plt.show()
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2669c9340581d55b274d3b8ea67a7deb2225510b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:30.579ex; height:5.509ex;" alt="{\displaystyle SS_{\text{res}}=\sum _{i}(y_{i}-f_{i})^{2}=\sum _{i}e_{i}^{2}\,}">
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0ab5cc13b206a34cc713e153b192f93b685fa875" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:16.401ex; height:5.843ex;" alt="{\displaystyle R^{2}\equiv 1-{SS_{\rm {res}} \over SS_{\rm {tot}}}\,}">  
 </div>
+<br>
 
 <span class="frame3">Correlation Coefficient</span>
 <div class="frame1">
@@ -151,14 +159,15 @@ For a Population,
 For a Sample,
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/332ae9dcde34d03f30ed6e1880af8b43327dd49c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -7.338ex; width:59.755ex; height:14.343ex;" alt="{\displaystyle r_{xy}\quad {\overset {\underset {\mathrm {def} }{}}{=}}\quad {\frac {\sum \limits _{i=1}^{n}(x_{i}-{\bar {x}})(y_{i}-{\bar {y}})}{(n-1)s_{x}s_{y}}}={\frac {\sum \limits _{i=1}^{n}(x_{i}-{\bar {x}})(y_{i}-{\bar {y}})}{\sqrt {\sum \limits _{i=1}^{n}(x_{i}-{\bar {x}})^{2}\sum \limits _{i=1}^{n}(y_{i}-{\bar {y}})^{2}}}},}">
 </div>
+
 ```python
+import seaborn as sns
+import matplotlib.pyplot as plt
 
+sns.jointplot(result.fittedvalues, y)
+plt.show()
 ```
-
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-
+![download (1)](https://user-images.githubusercontent.com/52376448/67597855-1d055a80-f7a7-11e9-9411-c0235633160b.png)
 <hr class='division3'>
 </details>
 
