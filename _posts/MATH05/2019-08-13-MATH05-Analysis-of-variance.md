@@ -25,54 +25,135 @@ List of posts to read before reading this article
 ![ANOVA_oneway](https://user-images.githubusercontent.com/52376448/66703411-507aca80-ed4d-11e9-8ae9-db644dd8b89f.JPG)
 
 ### ***Coefficient of Determination(R2)***
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
 ---
 
 ### ***The hypothesis test***
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
 ---
 
 ### ***Regression F-test and ANOVA Relationship***
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
 ---
 
 ### ***Coefficient of Determination(R2) and Correlation Coefficient***
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
 ---
 
 ### ***Model without constant***
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
 ---
 
 ### ***Comparing Model Using F Test***
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
 ---
 
 ### ***Comparison of importance of variables using F test***
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
 ---
 
 ### ***Adjusted Coefficient of Determination(Adjusted R2)***
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
 ---
 
 ### ***Information Criterion***
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
@@ -124,11 +205,7 @@ Reference
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-    <details markdown="1">
-    <summary class='jb-small' style="color:red">OUTPUT</summary>
-    <hr class='division3_1'>
-    <hr class='division3_1'>
-    </details>
+
 <hr class='division3'>
 </details>
 
