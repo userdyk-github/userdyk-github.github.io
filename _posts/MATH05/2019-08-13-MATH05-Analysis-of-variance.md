@@ -71,9 +71,9 @@ R squared =  0.6473091780922585
 sm.stats.anova_lm(result)
 ```
 ```
-	        df	  sum_sq	      mean_sq	      F	          PR(>F)
-X	        1.0	  188589.613492	188589.613492	179.863766	6.601482e-24
-Residual	98.0	102754.337551	1048.513648	  NaN	        NaN
+	        df	  sum_sq	      mean_sq	      F	                PR(>F)
+X	        1.0	  188589.613492	      188589.613492   179.863766	6.601482e-24
+Residual	98.0	  102754.337551	      1048.513648     NaN	        NaN
 ```
 <br>
 ```python
