@@ -165,15 +165,6 @@ plt.show()
 </details>
 <br><br><br>
 
-### ******
-```python
-
-```
-
-
-
-<br><br><br>
-
 ---
 
 ### ***Model without constant***
