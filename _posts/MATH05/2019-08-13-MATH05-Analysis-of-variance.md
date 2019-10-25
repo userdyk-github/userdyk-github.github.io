@@ -44,8 +44,14 @@ print("ESS + RSS = ", result.mse_model + result.ssr)
 print("R squared = ", result.rsquared)
 ```
 <details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<summary class='jb-small' style="color:blue">OUTPUT 1</summary>
 <hr class='division3'>
+<div class="frame1">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/44a8b57e2a4335f02faa2bd5003d94979af4f408" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:12.7ex; height:6.843ex;" alt="{\bar {y}}={\frac {1}{n}}\sum _{i=1}^{n}y_{i}">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/aec2d91094ee54fbf0f7912d329706ff016ec1bd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:21.303ex; height:5.509ex;" alt="SS_{\text{tot}}=\sum _{i}(y_{i}-{\bar {y}})^{2},">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/107a9fb71364b9db3cf481e956ad2af11cba10a1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:21.398ex; height:5.509ex;" alt="SS_{\text{reg}}=\sum _{i}(f_{i}-{\bar {y}})^{2},">  
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2669c9340581d55b274d3b8ea67a7deb2225510b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:30.579ex; height:5.509ex;" alt="{\displaystyle SS_{\text{res}}=\sum _{i}(y_{i}-f_{i})^{2}=\sum _{i}e_{i}^{2}\,}">
+</div>
 ```
 TSS =  291345.7578983061
 ESS =  188589.61349210917
@@ -55,6 +61,53 @@ R squared =  0.6473091780922585
 ```
 <hr class='division3'>
 </details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT 2</summary>
+<hr class='division3'>
+![캡처](https://user-images.githubusercontent.com/52376448/67594520-79fd1280-f79f-11e9-8a55-6f8fede7c13a.JPG)
+
+```python
+sm.stats.anova_lm(result)
+```
+```
+	        df	  sum_sq	      mean_sq	      F	          PR(>F)
+X	        1.0	  188589.613492	188589.613492	179.863766	6.601482e-24
+Residual	98.0	102754.337551	1048.513648	  NaN	        NaN
+```
+<br>
+```python
+print(result.summary())
+```
+```
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                      Y   R-squared:                       0.647
+Model:                            OLS   Adj. R-squared:                  0.644
+Method:                 Least Squares   F-statistic:                     179.9
+Date:                Fri, 25 Oct 2019   Prob (F-statistic):           6.60e-24
+Time:                        19:14:57   Log-Likelihood:                -488.64
+No. Observations:                 100   AIC:                             981.3
+Df Residuals:                      98   BIC:                             986.5
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept     -2.4425      3.244     -0.753      0.453      -8.880       3.995
+X             43.0873      3.213     13.411      0.000      36.712      49.463
+==============================================================================
+Omnibus:                        3.523   Durbin-Watson:                   1.984
+Prob(Omnibus):                  0.172   Jarque-Bera (JB):                2.059
+Skew:                          -0.073   Prob(JB):                        0.357
+Kurtosis:                       2.312   Cond. No.                         1.06
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+```
+<hr class='division3'>
+</details>
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Visualization</summary>
 <hr class='division3'>
@@ -92,24 +145,6 @@ plt.show()
 
 ```
 
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-
-<hr class='division3'>
-</details>
-
-<br><br><br>
-
----
-
-### ***ANOVA Table***
-
-![캡처](https://user-images.githubusercontent.com/52376448/67594520-79fd1280-f79f-11e9-8a55-6f8fede7c13a.JPG)
-
-```python
-
-```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
