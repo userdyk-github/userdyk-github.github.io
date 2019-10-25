@@ -63,6 +63,30 @@ R squared =  0.6473091780922585
 <hr class='division3'>
 </details>
 <details markdown="1">
+<summary class='jb-small' style="color:blue">Visualization</summary>
+<hr class='division3'>
+```python
+import seaborn as sns
+import matplotlib.pyplot as plt
+from scipy import stats
+
+sns.distplot(y,
+             kde=False, fit=stats.norm, hist_kws={"color": "r", "alpha": 0.2}, fit_kws={"color": "r"},
+             label="TSS")
+sns.distplot(result.fittedvalues,
+             kde=False, hist_kws={"color": "g", "alpha": 0.2}, fit=stats.norm, fit_kws={"color": "g"},
+             label="ESS")
+sns.distplot(result.resid,
+             kde=False, hist_kws={"color": "b", "alpha": 0.2}, fit=stats.norm, fit_kws={"color": "b"},
+             label="RSS")
+plt.legend()
+plt.show()
+```
+![download](https://user-images.githubusercontent.com/52376448/67594401-37d3d100-f79f-11e9-8052-d02248ab7dcb.png)
+<hr class='division3'>
+</details>
+
+<details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT 2 : Regression F-test and ANOVA Relationship</summary>
 <hr class='division3'>
 ![캡처](https://user-images.githubusercontent.com/52376448/67594520-79fd1280-f79f-11e9-8a55-6f8fede7c13a.JPG)
@@ -108,37 +132,6 @@ Warnings:
 ```
 <hr class='division3'>
 </details>
-
-<details markdown="1">
-<summary class='jb-small' style="color:blue">Visualization</summary>
-<hr class='division3'>
-```python
-import seaborn as sns
-import matplotlib.pyplot as plt
-from scipy import stats
-
-sns.distplot(y,
-             kde=False, fit=stats.norm, hist_kws={"color": "r", "alpha": 0.2}, fit_kws={"color": "r"},
-             label="TSS")
-sns.distplot(result.fittedvalues,
-             kde=False, hist_kws={"color": "g", "alpha": 0.2}, fit=stats.norm, fit_kws={"color": "g"},
-             label="ESS")
-sns.distplot(result.resid,
-             kde=False, hist_kws={"color": "b", "alpha": 0.2}, fit=stats.norm, fit_kws={"color": "b"},
-             label="RSS")
-plt.legend()
-plt.show()
-```
-![download](https://user-images.githubusercontent.com/52376448/67594401-37d3d100-f79f-11e9-8052-d02248ab7dcb.png)
-<hr class='division3'>
-</details>
-<br><br><br>
-
-### ******
-```python
-
-```
-
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Visualization : Coefficient of Determination(R2) and Correlation Coefficient</summary>
 <hr class='division3'>
@@ -170,6 +163,14 @@ plt.show()
 ![download (1)](https://user-images.githubusercontent.com/52376448/67597855-1d055a80-f7a7-11e9-9411-c0235633160b.png)
 <hr class='division3'>
 </details>
+<br><br><br>
+
+### ******
+```python
+
+```
+
+
 
 <br><br><br>
 
