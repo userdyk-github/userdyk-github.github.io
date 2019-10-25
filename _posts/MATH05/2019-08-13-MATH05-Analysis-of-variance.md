@@ -51,6 +51,7 @@ print("R squared = ", result.rsquared)
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/aec2d91094ee54fbf0f7912d329706ff016ec1bd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:21.303ex; height:5.509ex;" alt="SS_{\text{tot}}=\sum _{i}(y_{i}-{\bar {y}})^{2},">
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/107a9fb71364b9db3cf481e956ad2af11cba10a1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:21.398ex; height:5.509ex;" alt="SS_{\text{reg}}=\sum _{i}(f_{i}-{\bar {y}})^{2},">  
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2669c9340581d55b274d3b8ea67a7deb2225510b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:30.579ex; height:5.509ex;" alt="{\displaystyle SS_{\text{res}}=\sum _{i}(y_{i}-f_{i})^{2}=\sum _{i}e_{i}^{2}\,}">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0ab5cc13b206a34cc713e153b192f93b685fa875" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:16.401ex; height:5.843ex;" alt="{\displaystyle R^{2}\equiv 1-{SS_{\rm {res}} \over SS_{\rm {tot}}}\,}">
 </div>
 ```
 TSS =  291345.7578983061
