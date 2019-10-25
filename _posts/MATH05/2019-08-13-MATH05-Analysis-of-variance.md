@@ -37,9 +37,9 @@ df = pd.concat([dfX, dfy], axis=1)
 model = sm.OLS.from_formula("Y ~ X", data=df)
 result = model.fit()
 
-print("TSS = ", result.uncentered_tss)
-print("ESS = ", result.mse_model)
-print("RSS = ", result.ssr)
+print("TSS = ", result.uncentered_tss)       # TSS: total sum of square
+print("ESS = ", result.mse_model)            # ESS: explained sum of squares
+print("RSS = ", result.ssr)                  # RSS: residual sum of squares
 print("ESS + RSS = ", result.mse_model + result.ssr)
 print("R squared = ", result.rsquared)
 ```
