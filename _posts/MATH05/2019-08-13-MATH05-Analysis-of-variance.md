@@ -63,7 +63,7 @@ R squared =  0.6473091780922585
 <hr class='division3'>
 </details>
 <details markdown="1">
-<summary class='jb-small' style="color:blue">Visualization</summary>
+<summary class='jb-small' style="color:blue">Visualization for OUTPUT 1</summary>
 <hr class='division3'>
 ```python
 import seaborn as sns
