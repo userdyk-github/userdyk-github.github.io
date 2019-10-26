@@ -118,7 +118,7 @@ title: MATERIALS
 - <a href="https://insights.stackoverflow.com/" target="_blank">stackoverflow insights</a>
 - <a href="https://db-engines.com/en/ranking" target="_blank">db-engines ranking</a>
 - <a href="https://repl.it/" target="_blank">Implementation with programming language on web</a>
-- <a href="https://repl.it/" target="_blank">http://www.gnu.org/home.en.html</a>
+- <a href="http://www.gnu.org/home.en.html" target="_blank">gnu</a>
 
 <br>
 
@@ -128,6 +128,8 @@ title: MATERIALS
 
 # REFERENCES 02
 
+- <a href="http://www.kmooc.kr/" target="_blank">kmooc</a>
+- <a href="http://www.kocw.net/home/index.do" target="_blank">kocw</a>
 - <a href="https://www.youtube.com/user/egoing2/playlists" target="_blank">생활코딩</a>
 - <a href="https://www.youtube.com/channel/UChflhu32f5EUHlY7_SetNWw/playlists" target="_blank">동빈나</a>
 - <a href="https://www.youtube.com/channel/UCLR3sD0KB_dWpvcsrLP0aUg/playlists" target="_blank">todaycode오늘코드</a>
