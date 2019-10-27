@@ -40,16 +40,93 @@ The data show red cell folate levels for the three groups after 24h' ventilation
 <hr class='division3'>
 </details>
 
-<span class="frame3">Data Preprocessing</span>
+<span class="frame3">Load Dataset</span>
 ```python
+import urllib
 
+# Get the data
+inFile = 'altman_910.txt'
+url_base = 'https://raw.githubusercontent.com/thomas-haslwanter/statsintro_python/master/ipynb/Data/data_altman/'
+
+url = url_base + inFile
+data = genfromtxt(urllib.request.urlopen(url), delimiter=',')
+
+# Sort them into groups, according to column 1
+group1 = data[data[:,1]==1,0]
+group2 = data[data[:,1]==2,0]
+group3 = data[data[:,1]==3,0]
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br>
 
-<span class="frame3">One-way ANOVA</span>
+<span class="frame3">Levene test for equal-variance</span>
+```
+# check if the variances are equal with the "Levene"-test
+from scipy import stats
+
+(W,p) = stats.levene(group1, group2, group3)
+if p<0.05:
+    
+    print('Warning: the p-value of the Levene test is <0.05: p={0}'.format(p))
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+Warning: the p-value of the Levene test is <0.05: p=0.045846812634186246
+```
+<hr class='division3'>
+</details>
+<br>
+
+<span class="frame3">One-way ANOVA with scipy</span>
 ```python
+F_statistic, pVal = stats.f_oneway(group1, group2, group3)
 
+print('The results from the one-way ANOVA, with the data from Altman 910: F={0:.1f}, p={1:.5f}'.format(F_statistic, pVal))
+if pVal < 0.05:
+    print('One of the groups is significantly different.')
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+The results from the one-way ANOVA, with the data from Altman 910: F=3.7, p=0.04359
+One of the groups is significantly different.
+```
+<hr class='division3'>
+</details>
+<br>
 
+<span class="frame3">One-way ANOVA with statsmodel</span>
+```python
+import pandas as pd
+from statsmodels.formula.api import ols
+from statsmodels.stats.anova import anova_lm
+
+# move dataset to dataframe of pandas
+df = pd.DataFrame(data, columns=['value', 'treatment'])    
+
+# the "C" indicates categorical data
+model = ols('value ~ C(treatment)', df).fit()
+
+print(anova_lm(model))
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+                df        sum_sq      mean_sq         F    PR(>F)
+C(treatment)   2.0  15515.766414  7757.883207  3.711336  0.043589
+Residual      19.0  39716.097222  2090.320906       NaN       NaN
+```
+<hr class='division3'>
+</details>
+<br><br><br>
 
 ---
 
