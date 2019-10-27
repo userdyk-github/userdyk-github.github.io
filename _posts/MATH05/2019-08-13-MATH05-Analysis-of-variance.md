@@ -23,6 +23,22 @@ List of posts to read before reading this article
 
 ## **One-way analysis of variance**
 ![ANOVA_oneway](https://user-images.githubusercontent.com/52376448/66703411-507aca80-ed4d-11e9-8ae9-db644dd8b89f.JPG)
+
+<span class="frame3">Data Preprocessing</span>
+```python
+
+```
+
+<span class="frame3">One-way ANOVA</span>
+```python
+
+```
+
+
+---
+
+### ***One-way ANOVA for regression analysis***
+
 ```python
 import pandas as pd
 import statsmodels.api as sm
