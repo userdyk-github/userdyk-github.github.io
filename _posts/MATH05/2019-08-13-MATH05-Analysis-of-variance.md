@@ -370,12 +370,12 @@ df = pd.concat([dfX, dfy], axis=1)
 
 model2 = sm.OLS.from_formula("Y ~ X + 0", data=df)
 result2 = model2.fit()
-result2.rsquared
+result2.summary()
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-
+![캡처](https://user-images.githubusercontent.com/52376448/67632432-88a21180-f8e6-11e9-8c56-31ceadba9821.JPG)
 <hr class='division3'>
 </details>
 
