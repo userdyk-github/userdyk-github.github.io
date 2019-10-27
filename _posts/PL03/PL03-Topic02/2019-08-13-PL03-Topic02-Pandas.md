@@ -1417,227 +1417,6 @@ a        1         909976          Sweden
 
 ---
 
-#### Analysis
-
-```python
-import pandas as pd
-df = pd.DataFrame({"Population": [909976, 8615246, 2872086, 2273305,123234,123444,23333,343434],
-                   "State": ["Sweden", "United Kingdom", "Italy","Seoul","Suwon", "France","Korea", "Japan"],
-                   "Alphabet" : ["a","b","x","d","a","a","b","c"],
-                   "rank" : [1,2,3,4,6,5,7,8]})
-```
-```python
-df
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-```
-   Population           State Alphabet  rank
-0      909976          Sweden        a     1
-1     8615246  United Kingdom        b     2
-2     2872086           Italy        x     3
-3     2273305           Seoul        d     4
-4      123234           Suwon        a     6
-5      123444          France        a     5
-6       23333           Korea        b     7
-7      343434           Japan        c     8
-```
-<hr class='division3'>
-</details>
-<br>
-
-```python
-df.shape
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-```
-(8, 4)
-```
-<hr class='division3'>
-</details>
-<br>
-
-```python
-df.columns
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-```
-Index(['Population', 'State', 'Alphabet', 'rank'], dtype='object')
-```
-<hr class='division3'>
-</details>
-<br>
-
-```python
-df.index
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-```
-RangeIndex(start=0, stop=8, step=1)
-```
-<hr class='division3'>
-</details>
-<br>
-
-```python
-df['Alphabet'].unique()
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-```
-array(['a', 'b', 'x', 'd', 'c'], dtype=object)
-```
-<hr class='division3'>
-</details>
-<br>
-
-```python
-df['Alphabet'].value_counts()
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-```
-a    3
-b    2
-c    1
-x    1
-d    1
-Name: Alphabet, dtype: int64
-```
-<hr class='division3'>
-</details>
-<br><br><br>
-
----
-
-#### Statistics
-
-```python
-import pandas as pd
-
-df = pd.DataFrame({"Population": [909976, 8615246, 2872086, 2273305,123234,123444,23333,343434],
-                   "State": ["Sweden", "United Kingdom", "Italy","Seoul","Suwon", "France","Korea", "Japan"],
-                   "Alphabet" : ["a","b","x","d","a","a","b","c"],
-                   "rank" : [1,2,3,4,6,5,7,8]})
-df
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-```
-	Population	State	          Alphabet	rank
-0	909976	  	Sweden	          a	        1
-1	8615246	        United Kingdom	  b	        2
-2	2872086   	Italy	          x       	3
-3	2273305   	Seoul	          d       	4
-4	123234	    	Suwon	          a       	6
-5	123444	  	France	          a       	5
-6	23333	    	Korea	          b       	7
-7	343434	        Japan	          c       	8
-```
-<hr class='division3'>
-</details>
-```python
-df.count(axis=0)
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-```
-Population    8
-State         8
-Alphabet      8
-rank          8
-dtype: int64
-```
-<hr class='division3'>
-</details>
-```python
-df.count(axis=1)
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-```
-0    4
-1    4
-2    4
-3    4
-4    4
-5    4
-6    4
-7    4
-dtype: int64
-```
-<hr class='division3'>
-</details>
-```python
-df.corr()
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-```
-	          Population	rank
-Population	 1.000000  	-0.573738
-rank	      -0.573738    1.000000
-```
-<hr class='division3'>
-</details>
-
-```python
-df = df.set_index(["Alphabet","rank"]).sort_index()
-df
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-```
-               Population           State
-Alphabet rank                            
-a        1         909976          Sweden
-         5         123444          France
-         6         123234           Suwon
-b        2        8615246  United Kingdom
-         7          23333           Korea
-c        8         343434           Japan
-d        4        2273305           Seoul
-x        3        2872086           Italy
-```
-<hr class='division3'>
-</details>
-<br>
-```python
-df.loc['a'].std()
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-```
-[454165.09584217647]
-```
-<hr class='division3'>
-</details>
-
-<br><br><br>
-
-
-
-
-
-
----
-
-### ***Several dataframes***
 
 #### Deleting
 <span class="frame3">drop</span>
@@ -1866,6 +1645,231 @@ df.dropna(axis=1)
 
 
 ---
+
+
+
+#### Analysis
+
+```python
+import pandas as pd
+df = pd.DataFrame({"Population": [909976, 8615246, 2872086, 2273305,123234,123444,23333,343434],
+                   "State": ["Sweden", "United Kingdom", "Italy","Seoul","Suwon", "France","Korea", "Japan"],
+                   "Alphabet" : ["a","b","x","d","a","a","b","c"],
+                   "rank" : [1,2,3,4,6,5,7,8]})
+```
+```python
+df
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+   Population           State Alphabet  rank
+0      909976          Sweden        a     1
+1     8615246  United Kingdom        b     2
+2     2872086           Italy        x     3
+3     2273305           Seoul        d     4
+4      123234           Suwon        a     6
+5      123444          France        a     5
+6       23333           Korea        b     7
+7      343434           Japan        c     8
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python
+df.shape
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+(8, 4)
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python
+df.columns
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+Index(['Population', 'State', 'Alphabet', 'rank'], dtype='object')
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python
+df.index
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+RangeIndex(start=0, stop=8, step=1)
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python
+df['Alphabet'].unique()
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+array(['a', 'b', 'x', 'd', 'c'], dtype=object)
+```
+<hr class='division3'>
+</details>
+<br>
+
+```python
+df['Alphabet'].value_counts()
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+a    3
+b    2
+c    1
+x    1
+d    1
+Name: Alphabet, dtype: int64
+```
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+#### Statistics
+
+```python
+import pandas as pd
+
+df = pd.DataFrame({"Population": [909976, 8615246, 2872086, 2273305,123234,123444,23333,343434],
+                   "State": ["Sweden", "United Kingdom", "Italy","Seoul","Suwon", "France","Korea", "Japan"],
+                   "Alphabet" : ["a","b","x","d","a","a","b","c"],
+                   "rank" : [1,2,3,4,6,5,7,8]})
+df
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+	Population	State	          Alphabet	rank
+0	909976	  	Sweden	          a	        1
+1	8615246	        United Kingdom	  b	        2
+2	2872086   	Italy	          x       	3
+3	2273305   	Seoul	          d       	4
+4	123234	    	Suwon	          a       	6
+5	123444	  	France	          a       	5
+6	23333	    	Korea	          b       	7
+7	343434	        Japan	          c       	8
+```
+<hr class='division3'>
+</details>
+```python
+df.count(axis=0)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+Population    8
+State         8
+Alphabet      8
+rank          8
+dtype: int64
+```
+<hr class='division3'>
+</details>
+```python
+df.count(axis=1)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+0    4
+1    4
+2    4
+3    4
+4    4
+5    4
+6    4
+7    4
+dtype: int64
+```
+<hr class='division3'>
+</details>
+```python
+df.corr()
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+	          Population	rank
+Population	 1.000000  	-0.573738
+rank	      -0.573738    1.000000
+```
+<hr class='division3'>
+</details>
+
+```python
+df = df.set_index(["Alphabet","rank"]).sort_index()
+df
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+               Population           State
+Alphabet rank                            
+a        1         909976          Sweden
+         5         123444          France
+         6         123234           Suwon
+b        2        8615246  United Kingdom
+         7          23333           Korea
+c        8         343434           Japan
+d        4        2273305           Seoul
+x        3        2872086           Italy
+```
+<hr class='division3'>
+</details>
+<br>
+```python
+df.loc['a'].std()
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+[454165.09584217647]
+```
+<hr class='division3'>
+</details>
+
+<br><br><br>
+
+
+
+
+
+
+---
+
+### ***Several dataframes***
+
 
 #### Concatenating
 
