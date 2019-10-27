@@ -24,6 +24,8 @@ List of posts to read before reading this article
 ## **One-way analysis of variance**
 ![ANOVA_oneway](https://user-images.githubusercontent.com/52376448/66703411-507aca80-ed4d-11e9-8ae9-db644dd8b89f.JPG)
 
+
+<span class="frame3">Load Dataset</span><br>
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Dataset description</summary>
 <hr class='division3'>
@@ -40,7 +42,6 @@ The data show red cell folate levels for the three groups after 24h' ventilation
 <hr class='division3'>
 </details>
 
-<span class="frame3">Load Dataset</span>
 ```python
 import urllib
 
