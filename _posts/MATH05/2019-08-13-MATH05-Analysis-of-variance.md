@@ -24,6 +24,22 @@ List of posts to read before reading this article
 ## **One-way analysis of variance**
 ![ANOVA_oneway](https://user-images.githubusercontent.com/52376448/66703411-507aca80-ed4d-11e9-8ae9-db644dd8b89f.JPG)
 
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Dataset description</summary>
+<hr class='division3'>
+<b>Get and sort sample data</b><br>
+
+Twenty-two patients undergoing cardiac bypass surgery were randomized to one of three ventilation groups:
+
+- Group I: Patients received 50% nitrous oxide and 50% oxygen mixture continuously for 24 h.
+- Group II: Patients received a 50% nitrous oxide and 50% oxygen mixture only dirng the operation.
+- Group III: Patients received no nitrous oxide but received 35-50% oxygen for 24 h.
+
+The data show red cell folate levels for the three groups after 24h' ventilation.
+
+<hr class='division3'>
+</details>
+
 <span class="frame3">Data Preprocessing</span>
 ```python
 
