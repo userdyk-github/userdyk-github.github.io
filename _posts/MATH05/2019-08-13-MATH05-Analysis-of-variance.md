@@ -136,7 +136,7 @@ array([241., 258., 270., 293., 328.])
 <br>
 
 <span class="frame3">Levene test for equal-variance</span>
-```
+```python
 # check if the variances are equal with the "Levene"-test
 from scipy import stats
 
