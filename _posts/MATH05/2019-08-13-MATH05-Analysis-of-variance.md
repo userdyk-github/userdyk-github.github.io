@@ -358,7 +358,19 @@ plt.show()
 ### ***One-way ANOVA for regression analysis, model without constant***
 
 ```python
+import pandas as pd
+import statsmodels.api as sm
+from sklearn.datasets import make_regression
 
+X0, y, coef = make_regression(
+    n_samples=100, n_features=1, noise=30, bias=100, coef=True, random_state=0)
+dfX = pd.DataFrame(X0, columns=["X"])
+dfy = pd.DataFrame(y, columns=["Y"])
+df = pd.concat([dfX, dfy], axis=1)
+
+model2 = sm.OLS.from_formula("Y ~ X + 0", data=df)
+result2 = model2.fit()
+result2.rsquared
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
