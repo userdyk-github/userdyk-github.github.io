@@ -230,7 +230,7 @@ print("ESS + RSS = ", result.mse_model + result.ssr)
 print("R squared = ", result.rsquared)
 ```
 <details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT 1</summary>
+<summary class='jb-small' style="color:blue">OUTPUT 1 : ANOVA table for fixed model, single factor</summary>
 <hr class='division3'>
 <div class="frame1">
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/44a8b57e2a4335f02faa2bd5003d94979af4f408" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:12.7ex; height:6.843ex;" alt="{\bar {y}}={\frac {1}{n}}\sum _{i=1}^{n}y_{i}">
