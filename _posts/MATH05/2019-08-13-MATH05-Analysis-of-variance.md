@@ -37,7 +37,7 @@ List of posts to read before reading this article
 
 ---
 
-### ***One-way ANOVA for regression analysis***
+### ***One-way ANOVA for regression analysis, model with constant***
 
 ```python
 import pandas as pd
@@ -185,7 +185,8 @@ plt.show()
 
 ---
 
-### ***Model without constant***
+### ***One-way ANOVA for regression analysis, model without constant***
+
 ```python
 
 ```
