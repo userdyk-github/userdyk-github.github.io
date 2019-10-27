@@ -57,8 +57,79 @@ group2 = data[data[:,1]==2,0]
 group3 = data[data[:,1]==3,0]
 ```
 <details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<summary class='jb-small' style="color:blue">Data</summary>
 <hr class='division3'>
+```python
+data
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+```
+array([[243.,   1.],
+       [251.,   1.],
+       [275.,   1.],
+       [291.,   1.],
+       [347.,   1.],
+       [354.,   1.],
+       [380.,   1.],
+       [392.,   1.],
+       [206.,   2.],
+       [210.,   2.],
+       [226.,   2.],
+       [249.,   2.],
+       [255.,   2.],
+       [273.,   2.],
+       [285.,   2.],
+       [295.,   2.],
+       [309.,   2.],
+       [241.,   3.],
+       [258.,   3.],
+       [270.,   3.],
+       [293.,   3.],
+       [328.,   3.]])
+```
+<hr class='division3_1'>
+</details>
+
+<br>
+```python
+group1
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+```
+array([243., 251., 275., 291., 347., 354., 380., 392.])
+```
+<hr class='division3_1'>
+</details>
+
+<br>
+```python
+group2
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+```
+array([206., 210., 226., 249., 255., 273., 285., 295., 309.])
+```
+<hr class='division3_1'>
+</details>
+
+<br>
+```python
+group3
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+```
+array([241., 258., 270., 293., 328.])
+```
+<hr class='division3_1'>
+</details>
 <hr class='division3'>
 </details>
 <br>
@@ -129,6 +200,11 @@ Residual      19.0  39716.097222  2090.320906       NaN       NaN
 <br><br><br>
 
 ---
+
+
+
+
+
 
 ### ***One-way ANOVA for regression analysis, model with constant***
 
