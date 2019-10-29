@@ -7,7 +7,7 @@ tags : [MATH05]
 ---
 [Back to the previous page](https://userdyk-github.github.io/Study.html)  ｜ <a href="https://userdyk-github.github.io/math05/MATH05-Contents.html" target="_blank">Statistics</a><br>
 List of posts to read before reading this article
-- <a href='https://userdyk-github.github.io/'>post1</a>
+- <a href='https://userdyk-github.github.io/pl03/PL03-Libraries.html' target="_blank">Python Libraries</a>
 - <a href='https://userdyk-github.github.io/'>post2</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
@@ -21,8 +21,19 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
+## **Ordinary Least Squares**
 
+```python
+import statsmodels.api as sm
+
+X = range(1,8)
+X = sm.add_constant(X)
+Y = [1,3,4,5,2,3,4]
+
+model = sm.OLS(Y,X)
+results = model.fit()
+results.summary()
+```
 <hr class="division2">
 
 ## title2
