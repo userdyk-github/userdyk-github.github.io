@@ -34,6 +34,16 @@ model = sm.OLS(Y,X)
 results = model.fit()
 results.summary()
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![image](https://user-images.githubusercontent.com/52376448/67741410-5e726000-fa5c-11e9-8c65-a95a041fe96c.png)
+<hr class='division3'>
+</details>
+
+
+
+<br><br><br>
 <hr class="division2">
 
 ## title2
@@ -60,11 +70,6 @@ Reference
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-    <details markdown="1">
-    <summary class='jb-small' style="color:red">OUTPUT</summary>
-    <hr class='division3_1'>
-    <hr class='division3_1'>
-    </details>
 <hr class='division3'>
 </details>
 
