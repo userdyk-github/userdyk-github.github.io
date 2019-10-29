@@ -35,9 +35,46 @@ results = model.fit()
 results.summary()
 ```
 <details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<summary class='jb-small' style="color:blue">OUTPUT 1</summary>
 <hr class='division3'>
 ![image](https://user-images.githubusercontent.com/52376448/67741410-5e726000-fa5c-11e9-8c65-a95a041fe96c.png)
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT 2</summary>
+<hr class='division3'>
+<a href="https://www.statsmodels.org/devel/generated/statsmodels.regression.linear_model.RegressionResults.html#statsmodels.regression.linear_model.RegressionResults
+" target="_blank">RegressionResults</a>
+<br><br><br>
+```python
+results.tvalues
+```
+```
+array([ 1.87867287,  0.98019606])
+```
+<br>
+```python
+results.t_test([1, 0])
+```
+```
+<class 'statsmodels.stats.contrast.ContrastResults'>
+                             Test for Constraints                             
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+c0             2.1429      1.141      1.879      0.119      -0.789       5.075
+==============================================================================
+```
+<br>
+```python
+import numpy as np
+
+results.f_test(np.identity(2))
+```
+```
+<class 'statsmodels.stats.contrast.ContrastResults'>
+<F test: F=array([[19.46078431]]), p=0.004372505910945688, df_denom=5, df_num=2>
+```
 <hr class='division3'>
 </details>
 
