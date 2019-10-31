@@ -82,12 +82,24 @@ cross_entropy_error(y,t)
 </details>
 
 ```python
+import numpy as np
+from mnist import load_mnist
 
+(x_train,t_train),(x_test,t_test) = load_mnist(normalize=True, one_hot_label=True)
+
+train_size = x_train.shape[0]
+batch_szie = 10
+
+batch_mask = np.random.choice(train_size, batch_size)
+
+x_batch = x_train[batch_mask]
+t_batch = t_train[batch_mask]
 ```
 <details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
 <hr class='division3'>
-```
+```python
+
 ```
 <hr class='division3'>
 </details>
