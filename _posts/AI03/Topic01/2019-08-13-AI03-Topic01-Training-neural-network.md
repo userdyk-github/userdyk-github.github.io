@@ -250,6 +250,7 @@ cross_entropy_error(y,t)
 ## **Neumerical derivative**
 
 ### ***Derivative***
+
 ```python
 import numpy as np
 
@@ -278,6 +279,10 @@ def numerical_diff2(f, x):
 ---
 
 ### ***Example for numerical derivative***
+<div style="font-size: 70%; text-align: center;">
+  $$function\ :\ f (x) = 0.01x^{2}+0.1x$$
+  $$derivative\ :\ f'(x) = 0.02x+0.1$$
+</div>
 
 ```python
 import numpy as np
@@ -413,7 +418,11 @@ numerical_diff(f, x)
 ---
 
 ### ***Partial derivative***
-
+<div style="font-size: 70%; text-align: center;">
+  $$function\ :\ f (x_{0},x_{1}) = x_{0}^{2}+x_{1}^{2}$$
+  $$derivative\ :\ f_{x_{0}}(x_{0},x_{1}) = 2x_{0}$$
+  $$derivative\ :\ f_{x_{1}}(x_{0},x_{1}) = 2x_{1}$$
+</div>
 ```python
 ```
 <details markdown="1">
@@ -434,7 +443,11 @@ numerical_diff(f, x)
 ## **Gradient**
 
 ### ***Gradient descent method***
-
+<div style="font-size: 70%; text-align: center;">
+  $$function\ :\ f (x_{0},x_{1}) = x_{0}^{2}+x_{1}^{2}$$
+  $$derivative\ :\ f_{x_{0}}(x_{0},x_{1}) = 2x_{0}$$
+  $$derivative\ :\ f_{x_{1}}(x_{0},x_{1}) = 2x_{1}$$
+</div>
 ```python
 import numpy as np
 
