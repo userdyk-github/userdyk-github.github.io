@@ -425,7 +425,7 @@ numerical_diff(f, x)
 </div>
 ```python
 # definition of derivative
-def numerical_diff(variable,x0,x1):
+def numerical_diff(f,variable,x0,x1):
     h = 1e-7
     
     if variable == 0 :
@@ -438,7 +438,7 @@ def numerical_diff(variable,x0,x1):
 # test
 f = lambda x0,x1: (x0)**2 + (x1)**2
 
-numerical_diff(1,1,2)
+numerical_diff(f,1,1,2)
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
