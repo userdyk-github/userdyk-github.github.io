@@ -199,16 +199,47 @@ array([2, 3, 0, 1, 3, 2, 2, 1, 2, 0])
 
 ### ***Implement cross entropy error for batch***
 
+<span class="frame3">when labels type are one-hot(binary) format</span>
+```python
+def cross_entropy_error(y,t):
+    
+    # 1d array > 2d array
+    # ex) [.1,.05,.6,.0,.05,.1,.0,.1,.0,.0] > [[.1,.05,.6,.0,.05,.1,.0,.1,.0,.0]]
+    if y.ndim == 1:
+        t = t.reshape(1, t.size)
+        y = y.reshape(1, y.size)
+    
+    batch_size = y.shape[0]
+    return -np.sum(t*np.log(y + 1e-7))/batch_size
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```python
+y = np.array([.1,.05,.6,.0,.05,.1,.0,.1,.0,.0])
+t = np.array([0,0,1,0,0,0,0,0,0,0])
+
+cross_entropy_error(y,t)
+```
+```
+0.510825457099338
+```
+<hr class='division3'>
+</details>
+<br>
+<span class="frame3">when labels type are not one-hot format</span>
 ```python
 
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-```
+```python
+
 ```
 <hr class='division3'>
 </details>
+
 <br><br><br>
 
 <hr class="division2">
