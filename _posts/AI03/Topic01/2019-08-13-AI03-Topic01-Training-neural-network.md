@@ -424,11 +424,28 @@ numerical_diff(f, x)
   $$derivative\ :\ f_{x_{1}}(x_{0},x_{1}) = 2x_{1}$$
 </div>
 ```python
+# definition of derivative
+def numerical_diff(variable,x0,x1):
+    h = 1e-7
+    
+    if variable == 0 :
+        print('derivative for x0 :')
+        return (f(x0+h,x1)-f(x0-h,x1))/(2*h)
+    if variable == 1 :
+        print('derivative for x1 :')
+        return (f(x0,x1+h)-f(x0,x1-h))/(2*h)
+    
+# test
+f = lambda x0,x1: (x0)**2 + (x1)**2
+
+numerical_diff(1,1,2)
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
+derivative for x1 :
+3.9999999978945766
 ```
 <hr class='division3'>
 </details>
