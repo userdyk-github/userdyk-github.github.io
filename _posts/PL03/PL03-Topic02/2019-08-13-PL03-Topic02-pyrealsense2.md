@@ -44,7 +44,7 @@ Reference
 
 - <a href='https://repl.it/languages/python' target="_blank">Implementation with python2 on web</a>
 - <a href='https://repl.it/languages/python3' target="_blank">Implementation with python3 on web</a>
-- <a href='https://userdyk-github.github.io/'>post2</a>
+- <a href='https://intelrealsense.github.io/librealsense/python_docs/_generated/pyrealsense2.html#module-pyrealsense2' target="_blank">pyrealsense2 API</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
