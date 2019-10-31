@@ -81,6 +81,10 @@ tags : [PL03]
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-pyrealsense2.html'>pyrealsense2</a>
   - <a href='https://intelrealsense.github.io/librealsense/python_docs/_generated/pyrealsense2.html#module-pyrealsense2' target="_blank"><span class='jb-small'>https://intelrealsense.github.io/librealsense/python_docs/_generated/pyrealsense2.html#module-pyrealsense2</span></a>
 
+- <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-OpenCV.html'>OpenCV</a>
+  - <a href='https://opencv.org/' target="_blank"><span class='jb-small'>https://opencv.org/</span></a>
+
+
 <br><br><br>
 
 ---
