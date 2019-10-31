@@ -78,6 +78,9 @@ tags : [PL03]
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-Tkinter.html'>Tkinter</a>
   - <a href='https://tkdocs.com/tutorial/index.html' target="_blank"><span class='jb-small'>https://tkdocs.com/tutorial/index.html</span></a>
 
+- <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-pyrealsense2.html'>pyrealsense2</a>
+  - <a href='https://intelrealsense.github.io/librealsense/python_docs/_generated/pyrealsense2.html#module-pyrealsense2' target="_blank"><span class='jb-small'>https://intelrealsense.github.io/librealsense/python_docs/_generated/pyrealsense2.html#module-pyrealsense2</span></a>
+
 <br><br><br>
 
 ---
