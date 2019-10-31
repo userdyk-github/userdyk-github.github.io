@@ -199,7 +199,7 @@ array([2, 3, 0, 1, 3, 2, 2, 1, 2, 0])
 
 ### ***Implement cross entropy error for batch***
 
-<span class="frame3">when labels type are one-hot(binary) format</span>
+<span class="frame3">when type of labels is one-hot(binary) format</span>
 ```python
 def cross_entropy_error(y,t):
     
@@ -227,7 +227,7 @@ cross_entropy_error(y,t)
 <hr class='division3'>
 </details>
 <br>
-<span class="frame3">when labels type are not one-hot format</span>
+<span class="frame3">when type of labels is not one-hot format</span>
 ```python
 
 ```
