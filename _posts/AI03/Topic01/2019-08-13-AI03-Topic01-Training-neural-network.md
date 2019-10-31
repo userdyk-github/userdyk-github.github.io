@@ -96,6 +96,20 @@ x_batch = x_train[batch_mask]
 t_batch = t_train[batch_mask]
 ```
 <details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```python
+print(x_batch)
+print(t_batch)
+```
+```
+(10, 784)
+(10, 10)
+```
+<hr class='division3'>
+</details>
+
+<details markdown="1">
 <summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
 <hr class='division3'>
 ```python
