@@ -79,6 +79,7 @@ title: STUDY
 
 ## _AAI01 : Computer vision_
 
+> <a href='https://userdyk-github.github.io/aai01/AAI01-Intel-realsense.html'>Intel realsense</a><br>
 > <a href='https://userdyk-github.github.io/aai01/AAI01-Basic-image-processing.html'>Basic image processing</a><br>
 > <a href='https://userdyk-github.github.io/aai01/AAI01-.html'>Image classification</a><br>
 > <a href='https://userdyk-github.github.io/aai01/AAI01-.html'>Object detection</a><br>
