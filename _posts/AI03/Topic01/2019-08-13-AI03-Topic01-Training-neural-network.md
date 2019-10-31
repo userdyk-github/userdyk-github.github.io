@@ -99,8 +99,84 @@ t_batch = t_train[batch_mask]
 <summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
 <hr class='division3'>
 ```python
-
+print(x_train.shape,
+      t_train.shape,
+      x_test.shape,
+      t_test.shape)
 ```
+```
+(60000, 784) (60000, 10) (10000, 784) (10000, 10)
+```
+<br>
+```python
+for i in range(x_train.shape[0]):
+    print(x_train[i].shape)
+```
+```
+(784,)
+(784,)
+(784,)
+...
+...
+(784,)
+(784,)
+(784,)
+```
+<br>
+```python
+for i in range(t_train.shape[0]):
+    print(t_train[i].shape)
+```
+```
+(10,)
+(10,)
+(10,)
+...
+...
+(10,)
+(10,)
+(10,)
+```
+<br>
+```python
+for i in range(x_test.shape[0]):
+    print(x_test[i].shape)
+```
+```
+(784,)
+(784,)
+(784,)
+...
+...
+(784,)
+(784,)
+(784,)
+```
+<br>
+```python
+for i in range(t_test.shape[0]):
+    print(t_test[i].shape)
+```
+```
+(10,)
+(10,)
+(10,)
+...
+...
+(10,)
+(10,)
+(10,)
+```
+<br><br><br>
+```python
+np.random.choice(4,10)
+```
+```
+array([2, 3, 0, 1, 3, 2, 2, 1, 2, 0])
+```
+<br>
+
+
 <hr class='division3'>
 </details>
 <br><br><br>
