@@ -250,7 +250,6 @@ cross_entropy_error(y,t)
 ## **Neumerical derivative**
 
 ### ***Derivative***
-
 ```python
 import numpy as np
 
