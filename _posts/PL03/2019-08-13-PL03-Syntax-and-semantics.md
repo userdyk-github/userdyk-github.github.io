@@ -1039,7 +1039,6 @@ sys.exit()
 <br>
 ```python
 import sys
-
 sys.path
 ```
 ```
