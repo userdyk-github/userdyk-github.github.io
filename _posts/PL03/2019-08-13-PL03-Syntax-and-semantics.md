@@ -1034,7 +1034,18 @@ C:/doit/Mymod>python argv_test.py you need python
 ```
 <br>
 ```python
+import sys
+
+print('hello1')
 sys.exit()
+print('hello2')
+```
+```dos
+C:/doit/Mymod>python argv_test.py you need python
+```
+```
+hello1
+['argv_test.py', 'you', 'need', 'python']
 ```
 <br>
 ```python
