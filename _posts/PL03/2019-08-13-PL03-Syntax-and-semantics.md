@@ -1065,11 +1065,11 @@ import sys
 sys.path.append('C:/doit/mymod')
 print(sys.path)
 ```
+```
 ['', 'C:\\Windows\\SYSTEM32\\python37.zip', 'c:\\Python37\\DLLs', 
 'c:\\Python37\\lib', 'c:\\Python37', 'c:\\Python37\\lib\\site-packages', 'C:/doit/mymod']
 ```
 
-```
 <br>
 
 #### pickle
