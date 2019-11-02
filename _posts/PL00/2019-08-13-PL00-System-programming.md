@@ -246,6 +246,10 @@ $ [command] >> [file_name]       # add text of stdout at the end
 $ [command] 1>> [file_name]      # add text of stdout at the end
 $ [command] 2>> [file_name]      # add text of stderr at the end
 
+$ [command] 1>&2                 # stdout to stderr
+$ [command] 2>&1                 # stderr to stdout
+$ [command] >& [file_name]       # overwrite with stdout and stderr
+
 $ [command] < [file_name] 
 $ [command] < [file_name_1] > [file_name_2]
 ```
