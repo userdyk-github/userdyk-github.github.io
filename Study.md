@@ -349,6 +349,8 @@ Mass Point</a><br>
 
 ### _Operating System_
 
+> <a href='https://userdyk-github.github.io/pl00/PL00-Operating-system.html'>Operating system</a><br>
+> <a href='https://userdyk-github.github.io/pl00/PL00-System-programming.html'>System programming</a><br>
 > <a href='https://userdyk-github.github.io/pl00/PL00-Linux.html'>Linux</a><br>
 > <a href='https://userdyk-github.github.io/pl00/PL00-Windows.html'>Windows</a><br>
 > <a href='https://userdyk-github.github.io/pl00/PL00-Docker.html'>Docker</a><br>
