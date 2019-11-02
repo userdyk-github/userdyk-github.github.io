@@ -186,8 +186,11 @@ $ chmod -R 765 [folder_name]
 <span class="frame3_1">for file</span><br>
 ```bash
 $ chown [owner:owner_group] [file_name]
+
 $ chown [owner:] [file_name]
+
 $ chown [:owner_group] [file_name]
+$ chgrp [owner_group] [file_name]
 ```
 <br>
 <span class="frame3_1">for folder</span><br>
@@ -200,6 +203,9 @@ $ chown -R [owner:] [folder_name]
 
 $ chown [:owner_group] [folder_name]
 $ chown -R [:owner_group] [folder_name]
+$ chgrp [owner_group] [folder_name]
+$ chgrp -R [owner_group] [folder_name]
+
 ```
 
 
