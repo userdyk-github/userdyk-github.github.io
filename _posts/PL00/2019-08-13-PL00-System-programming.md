@@ -163,7 +163,7 @@ $ ls host?
 hosts
 ```
 <hr class='division3'>
-</details><br>
+</details>
 ```bash
 $ grep -i [pattern] [file_or_folder_name]      # search pattern in file_or_folder_name, regardless of capital and small letter
 $ grep -v [pattern] [file_or_folder_name]      # search pattern in file_or_folder_name, except for consistant line
@@ -172,6 +172,14 @@ $ grep -l [pattern] [file_or_folder_name]      # search pattern in file_or_folde
 $ grep -c [pattern] [file_or_folder_name]      # search pattern in file_or_folder_name, number of consistant line 
 $ grep -r [pattern] [file_or_folder_name]      # search pattern in file_or_folder_name, including sub-directory
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">grep example</summary>
+<hr class='division3'>
+<a href="https://recipes4dev.tistory.com/157" target="_blank">URL</a>
+<hr class='division3'>
+</details>
+
+
 ```bash
 $ find 
 ```
