@@ -144,6 +144,13 @@ $ ls -l
 $ ls -a
 $ ls -al
 ```
+```bash
+$ cat [file_name]
+$ head [file_name]
+$ more [file_name]      # spacebar : next page
+                        # enter : next line
+$ tail [file_name]
+```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">ls wildcard example</summary>
 <hr class='division3'>
