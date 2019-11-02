@@ -368,7 +368,14 @@ auto-start : linking
 
 ### ***File System***
 
-
+```bash
+$ copy [origin_file_name] [new_file_name]       # copy : different inode for origin file,
+                                                #        be live after deleting origin file
+$ ln [origin_file_name] [new_file_name]         # hard : equal inode for origin file,
+                                                #        be live after deleting origin file
+$ ln -s [origin_file_name] [new_file_name]      # soft : different inode for origin file,
+                                                #        be die after deleting origin file
+```
 
 
 <br><br><br>
