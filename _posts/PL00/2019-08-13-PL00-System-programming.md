@@ -343,7 +343,9 @@ $ ps aux         # frequently used(-a, -u, -x)
 $ ps -e          # displaying environment variables of process
 $ ps -f          # displaying relationship about process
 ```
-
+```bash
+$ kill -9 [pid]
+```
 <hr class="division2">
 
 ## **Key factors on system programming**
