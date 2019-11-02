@@ -222,9 +222,9 @@ $ chgrp -R [owner_group] [folder_name]
 
 ### ***Standard Stream***
 
-- <b>stdin</b> : standard input stream from keyboard
-- <b>stdout</b> : standard output stream to screen
-- <b>stderr</b> : standard error stream to screen
+- <b>0 : stdin</b> : standard input stream from keyboard
+- <b>1 : stdout</b> : standard output stream to screen
+- <b>2 : stderr</b> : standard error stream to screen
 
 ```bash
 $ echo [arbitary_stdout]
