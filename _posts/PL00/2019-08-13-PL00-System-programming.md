@@ -247,6 +247,8 @@ $ chgrp -R [owner_group] [folder_name]
 
 <br><br><br>
 
+---
+
 ### ***Standard Stream***
 
 <a href="https://en.wikipedia.org/wiki/Redirection_(computing)" target="_blank" style="font-size: 70%;">URL</a>
@@ -297,6 +299,18 @@ $ [command] < [file_name_1] > [file_name_2]
 issue
 issue.net
 ```
+<br><br><br>
+
+---
+
+### ***Process and Binary***
+
+#### background
+
+<br><br><br>
+
+#### foreground
+
 <br><br><br>
 <hr class="division2">
 
