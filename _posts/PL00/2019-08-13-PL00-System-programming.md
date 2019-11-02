@@ -58,7 +58,7 @@ whoami
 passwd
 ```
 <details markdown="1">
-<summary class='jb-small' style="color:blue">error</summary>
+<summary class='jb-small' style="color:blue">when error</summary>
 <hr class='division3'>
 <a href="https://www.codevoila.com/post/26/fix-authentication-token-manipulation-error-when-changing-user-password-in-ubuntu" target="_blank">https://www.codevoila.com/post/26/fix-authentication-token-manipulation-error-when-changing-user-password-in-ubuntu</a>
 ```bash
@@ -79,25 +79,29 @@ $ ls -l /etc/shadow
 </details>
 <br>
 ```bash
-passwd
+$ passwd
 ```
 <hr class='division3'>
 </details>
 <br>
 <span class="frame3">create another user id on linux</span>
 ```bash
-adduser [user_name]
+$ adduser [user_name]
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">If you concretely create user id, setting details of user</summary>
 <hr class='division3'>
 ```bash
-useradd [user_name]
+$ useradd [user_name]
 ```
 <hr class='division3'>
 </details>
 <br>
-
+<span class="frame3">change user</span>
+```bash
+$ su [user_name]        # change id including my present .bashrc, .profile files.
+$ su -[user_name]       # change id excluding my present .bashrc, .profile files.
+```
 
 
 
