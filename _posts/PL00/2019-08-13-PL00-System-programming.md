@@ -222,6 +222,9 @@ $ chgrp -R [owner_group] [folder_name]
 
 ### ***Standard Stream***
 
+- <b>stdin</b> : standard input stream
+- <b>stdout</b> : standard output stream
+- <b>stderr</b> : standard error stream
 
 <br><br><br>
 <hr class="division2">
