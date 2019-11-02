@@ -222,6 +222,8 @@ $ chgrp -R [owner_group] [folder_name]
 
 ### ***Standard Stream***
 
+<a href="https://en.wikipedia.org/wiki/Redirection_(computing)" target="_blank" style="font-size: 70%;">URL</a>
+
 - <b>0 : stdin</b> : standard input stream from keyboard
 - <b>1 : stdout</b> : standard output stream to screen
 - <b>2 : stderr</b> : standard error stream to screen
