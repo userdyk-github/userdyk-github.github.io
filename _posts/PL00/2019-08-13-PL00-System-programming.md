@@ -352,11 +352,14 @@ $ kill -9 [pid]
 <br><br><br>
 
 #### deamon process
-<span class="frame3">/etc/init.d</span>
+<span class="frame3">/etc/init.d/</span><br>
 ```bash
 $ service [process] start
 $ service [process] stop
 ```
+<br>
+<span class="frame3">/etc/rc3.d/</span><br>
+auto-start : link
 <br><br><br>
 <hr class="division2">
 
