@@ -167,7 +167,11 @@ hosts
 <br><br><br>
 
 <span class="frame3">file permission</span>
-
+<a href="https://en.wikipedia.org/wiki/Chmod" target="_blank" class="jb-medium">URL</a>
+```bash
+$ chmod u=rwx, g=rw, o=rx test.c
+$ chmod 765 test.c
+```
 
 <br><br><br>
 
