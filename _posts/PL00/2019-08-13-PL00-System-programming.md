@@ -165,12 +165,12 @@ hosts
 <hr class='division3'>
 </details><br>
 ```bash
-$ grep -i [pattern] [file_or_folder_name]      # search pattern in file_or_folder_name
-$ grep -v [pattern] [file_or_folder_name]      # search pattern in file_or_folder_name
-$ grep -n [pattern] [file_or_folder_name]      # search pattern in file_or_folder_name
-$ grep -l [pattern] [file_or_folder_name]      # search pattern in file_or_folder_name
-$ grep -c [pattern] [file_or_folder_name]      # search pattern in file_or_folder_name
-$ grep -r [pattern] [file_or_folder_name]      # search pattern in file_or_folder_name
+$ grep -i [pattern] [file_or_folder_name]      # search pattern in file_or_folder_name, regardless of capital and small letter
+$ grep -v [pattern] [file_or_folder_name]      # search pattern in file_or_folder_name, except for consistant line
+$ grep -n [pattern] [file_or_folder_name]      # search pattern in file_or_folder_name, numbering line on results for searching
+$ grep -l [pattern] [file_or_folder_name]      # search pattern in file_or_folder_name, file name
+$ grep -c [pattern] [file_or_folder_name]      # search pattern in file_or_folder_name, number of consistant line 
+$ grep -r [pattern] [file_or_folder_name]      # search pattern in file_or_folder_name, including sub-directory
 ```
 ```bash
 $ find 
