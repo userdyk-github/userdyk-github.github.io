@@ -227,6 +227,15 @@ $ chgrp -R [owner_group] [folder_name]
 - <b>stderr</b> : standard error stream
 
 <br><br><br>
+
+#### Redirection
+
+
+<br><br><br>
+
+#### Pipe
+
+<br><br><br>
 <hr class="division2">
 
 ## **Key factors on system programming**
