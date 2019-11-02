@@ -339,6 +339,7 @@ $ ps -l          # displaying details about process
 $ ps -x          # displaying deamon process
 $ ps aux         # frequently used(-a, -u, -x)
                  # ps aux | more
+                 # ps aux | grep [pattern]
 $ ps -e          # displaying environment variables of process
 $ ps -f          # displaying relationship about process
 ```
