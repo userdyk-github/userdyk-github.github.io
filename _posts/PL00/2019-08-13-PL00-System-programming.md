@@ -167,12 +167,16 @@ hosts
 <br><br><br>
 
 <span class="frame3">file permission</span> ｜ <a href="https://en.wikipedia.org/wiki/Chmod" target="_blank" class="jb-medium">URL</a>
-
+<span class="frame3_1">for file</span>
 ```bash
-$ chmod u=rwx, g=rw, o=rx test.c
-$ chmod 765 test.c
+$ chmod u=rwx, g=rw, o=rx [file_name]
+$ chmod 765 [file_name]
 ```
-
+<span class="frame3_1">for folder</span>
+```bash
+$ chmod -R u=rwx, g=rw, o=rx [folder_name]
+$ chmod -R 765 [folder_name]
+```
 <br><br><br>
 
 <hr class="division2">
