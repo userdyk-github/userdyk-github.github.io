@@ -48,14 +48,14 @@ List of posts to read before reading this article
 
 ### ***Multiuser system***
 
-<span class="frame3">user name</span>
+<span class="frame3">current user name accessed on linux</span>
 ```bash
 whoami
 ```
 <br>
 <span class="frame3">set password</span>
 ```bash
-passwd [user_name]
+passwd
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">error</summary>
@@ -74,6 +74,24 @@ $ ls -l /etc/shadow
 ```
 <hr class='division3'>
 </details>
+<br>
+<span class="frame3">create another user id on linux</span>
+```bash
+adduser [user_name]
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">If you concretely create user id, setting details of user</summary>
+<hr class='division3'>
+```bash
+useradd [user_name]
+```
+<hr class='division3'>
+</details>
+<br>
+
+
+
+
 
 <br><br><br>
 
