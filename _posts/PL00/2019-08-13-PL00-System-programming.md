@@ -151,6 +151,10 @@ $ more [file_name]      # spacebar : next page
                         # enter : next line
 $ tail [file_name]
 ```
+```bash
+$ rm [file_name]
+$ rm -rf [folder_name]
+```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">ls wildcard example</summary>
 <hr class='division3'>
@@ -212,7 +216,6 @@ $ chown [:owner_group] [folder_name]
 $ chown -R [:owner_group] [folder_name]
 $ chgrp [owner_group] [folder_name]
 $ chgrp -R [owner_group] [folder_name]
-
 ```
 
 
