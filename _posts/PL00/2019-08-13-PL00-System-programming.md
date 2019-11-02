@@ -143,6 +143,7 @@ $ ls
 $ ls -l
 $ ls -a
 $ ls -al
+$ ls | grep [pattern]
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">ls wildcard example</summary>
