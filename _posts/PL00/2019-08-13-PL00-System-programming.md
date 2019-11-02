@@ -165,20 +165,20 @@ hosts
 <hr class='division3'>
 </details>
 ```bash
-$ grep [pattern] [file_name]         # search conformable pattern(string) in file_name
+$ grep [pattern] [file_name]         # search conformable pattern(string) in file
 $ grep [pattern] *                   # search conformable pattern(string) only in present directory
 
-$ grep -i [pattern] [file_name]      # search conformable pattern(string) in file_name, regardless of capital and small letter
-$ grep -v [pattern] [file_name]      # search unconformable pattern(string) in file_name
-$ grep -n [pattern] [file_name]      # search conformable pattern(string) in file_name, numbering line on results for searching
-$ grep -l [pattern] [file_name]      # search conformable pattern(string) in file_name, displaying only file name including pattern
+$ grep -i [pattern] [file_name]      # search conformable pattern(string) in file, regardless of capital and small letter
+$ grep -v [pattern] [file_name]      # search unconformable pattern(string) in file
+$ grep -n [pattern] [file_name]      # search conformable pattern(string) in file, numbering line on results for searching
+$ grep -l [pattern] [file_name]      # search conformable pattern(string) in file, displaying only file name including pattern
 
-$ grep -c [pattern] [file_name]      # search conformable pattern(string) in file_name, displaying the number of consistant pattern line on a file 
-$ grep -c [pattern] *                # search conformable pattern(string) in file_name, displaying the number of consistant pattern line on present directory 
-$ grep -c [pattern] [folder_name]    # search conformable pattern(string) in file_name, displaying the number of consistant pattern line per file on a folder
-
+$ grep -c [pattern] [file_name]      # search conformable pattern(string) in file, displaying the number of consistant pattern line on a file 
+$ grep -c [pattern] *                # search conformable pattern(string) in file, displaying the number of consistant pattern line on present directory 
+$ grep -c [pattern] [folder_name]    # search conformable pattern(string) in file, displaying the number of consistant pattern line per file on a folder
 
 $ grep -r [pattern] *                # search conformable pattern(string) in present directory including sub-directory
+$ grep -E "[pattern_1]|[pattern_2]|[pattern_3]" [file_name]        # search pattern 1 or pattern 2 or pattern 3 in file
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">grep example</summary>
