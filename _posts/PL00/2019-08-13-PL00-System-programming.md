@@ -218,6 +218,10 @@ $ chgrp [owner_group] [folder_name]
 $ chgrp -R [owner_group] [folder_name]
 ```
 
+<br><br><br>
+
+### ***Standard Stream***
+
 
 <br><br><br>
 <hr class="division2">
