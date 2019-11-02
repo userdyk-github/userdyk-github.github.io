@@ -238,6 +238,9 @@ arbitary_stdout
 <br><br><br>
 
 #### Redirection
+
+<div style="font-size: 70%;">redirection(>,<) change stream's direction for a process</div>
+
 ```bash
 $ [command] > [file_name]        # overwrite with stdout
 $ [command] 1> [file_name]       # overwrite with stdout
@@ -258,6 +261,8 @@ $ [command] < [file_name_1] > [file_name_2]
 <br><br><br>
 
 #### Pipe
+
+<div style="font-size: 70%;">pipe(|) connect a process to another process</div>
 
 <br><br><br>
 <hr class="division2">
