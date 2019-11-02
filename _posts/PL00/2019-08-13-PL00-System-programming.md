@@ -21,15 +21,67 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## **title1**
+## **Introduction**
 
 <br><br><br>
 
 <hr class="division2">
 
-## **title2**
+## **Shell**
 
 <br><br><br>
+
+<hr class="division2">
+
+## **Key factors on system programming**
+
+### ***System call***
+
+<br><br><br>
+
+---
+
+### ***API***
+
+<br><br><br>
+
+---
+
+### ***ABI and Standard***
+
+<br><br><br>
+
+<hr class="division2">
+
+## **Management of process**
+
+<br><br><br>
+
+<hr class="division2">
+
+## **IPC**
+
+<br><br><br>
+
+<hr class="division2">
+
+## **Shell script**
+
+<br><br><br>
+
+<hr class="division2">
+
+## **Thread**
+
+<br><br><br>
+
+<hr class="division2">
+
+## **System programming**
+
+<br><br><br>
+
+<hr class="division2">
 
 <hr class="division1">
 
