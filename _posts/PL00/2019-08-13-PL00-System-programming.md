@@ -121,6 +121,9 @@ $ useradd [user_name]
 $ su [user_name]        # change id including my present .bashrc, .profile files.
 $ su - [user_name]       # change id excluding my present .bashrc, .profile files.
 ```
+```bash
+$ exit
+```
 <br><br><br>
 
 <span class="frame3">authorize user</span>
