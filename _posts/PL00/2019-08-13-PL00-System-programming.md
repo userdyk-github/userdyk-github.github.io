@@ -360,7 +360,7 @@ $ service [process] stop
 ```
 <br>
 <span class="frame3">/etc/rc3.d/</span><br>
-auto-start : link
+auto-start : linking
 <br><br><br>
 
 ---
