@@ -165,7 +165,12 @@ hosts
 <hr class='division3'>
 </details><br>
 ```bash
-$ grep 
+$ grep -i [pattern] [file_or_folder_name]      # search pattern in file_or_folder_name
+$ grep -v [pattern] [file_or_folder_name]      # search pattern in file_or_folder_name
+$ grep -n [pattern] [file_or_folder_name]      # search pattern in file_or_folder_name
+$ grep -l [pattern] [file_or_folder_name]      # search pattern in file_or_folder_name
+$ grep -c [pattern] [file_or_folder_name]      # search pattern in file_or_folder_name
+$ grep -r [pattern] [file_or_folder_name]      # search pattern in file_or_folder_name
 ```
 ```bash
 $ find 
