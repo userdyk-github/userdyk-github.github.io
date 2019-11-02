@@ -130,8 +130,6 @@ root    ALL=(ALL:ALL) ALL
 <br><br><br>
 
 <span class="frame3">working directory</span><br>
-<span class="frame3_1">working directory</span><br>
-<span class="frame3_2">working directory</span><br>
 ```bash
 $ pwd
 ```
