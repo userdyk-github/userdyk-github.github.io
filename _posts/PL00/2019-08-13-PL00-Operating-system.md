@@ -21,13 +21,55 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## **title1**
+## **Introduction**
 
 <br><br><br>
 
 <hr class="division2">
 
-## **title2**
+## **Key factors on OS**
+
+<br><br><br>
+
+<hr class="division2">
+
+## **Process and Scheduling**
+
+<br><br><br>
+
+<hr class="division2">
+
+## **Thread**
+
+<br><br><br>
+
+<hr class="division2">
+
+## **Virtual memory**
+
+<br><br><br>
+
+<hr class="division2">
+
+## **File system**
+
+<br><br><br>
+
+<hr class="division2">
+
+## **Booting**
+
+<br><br><br>
+
+<hr class="division2">
+
+## **Virtual machine**
+
+<br><br><br>
+
+<hr class="division2">
+
+## **contemporary OS**
 
 <br><br><br>
 
