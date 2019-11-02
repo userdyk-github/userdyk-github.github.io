@@ -24,7 +24,7 @@ List of posts to read before reading this article
 ## **Introduction**
 
 ### ***File on Linux***
-
+<a href="https://linuxhandbook.com/linux-directory-structure/" target="_blank">Linux directory structure</a>
 <br><br><br>
 
 ### ***Process on Linux***
