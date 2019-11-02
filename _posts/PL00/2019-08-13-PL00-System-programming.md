@@ -311,7 +311,7 @@ issue.net
 $ ./[file_name] &                       # execute on background
 $ jobs                                  # list of process
 $ bg                                    # re-execute last stoped process on background
-$ bg [number_of_stoped_process]         # re-execute stoped process on background
+$ bg [job_number_of_stoped_process]     # re-execute stoped process on background
 $ kill -9 %[number_of_process]          # terminate process  
 ```
 <br><br><br>
@@ -330,6 +330,8 @@ $ fg %[number_of_process]            # execute process corresponding number on f
 <br><br><br>
 
 #### management of process
+
+<a href="https://www.techonthenet.com/linux/commands/ps.php" taraget="_blank">URL</a>
 
 ```bash
 $ ps             # displaying list of process for me
