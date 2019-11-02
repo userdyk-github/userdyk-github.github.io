@@ -57,6 +57,23 @@ whoami
 ```bash
 passwd [user_name]
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">error</summary>
+<hr class='division3'>
+<a href="https://www.codevoila.com/post/26/fix-authentication-token-manipulation-error-when-changing-user-password-in-ubuntu" target="_blank">https://www.codevoila.com/post/26/fix-authentication-token-manipulation-error-when-changing-user-password-in-ubuntu</a>
+```bash
+$ mount -rw -o remount /
+# or
+$ mount -o remount,rw /
+```
+```bash
+$ ls -l /etc/shadow
+```
+```
+-rw-r----- 1 root shadow 1025 Feb  11 22:11 /etc/shadow
+```
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
@@ -136,11 +153,7 @@ Reference
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-    <details markdown="1">
-    <summary class='jb-small' style="color:red">OUTPUT</summary>
-    <hr class='division3_1'>
-    <hr class='division3_1'>
-    </details>
+
 <hr class='division3'>
 </details>
 
