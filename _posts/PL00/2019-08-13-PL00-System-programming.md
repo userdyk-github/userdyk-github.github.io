@@ -165,11 +165,14 @@ hosts
 <hr class='division3'>
 </details>
 ```bash
+$ grep [pattern] [file_name]         # search conformable pattern(string) in file_name
+$ grep [pattern] *                   # search conformable pattern(string) only in present directory
+
 $ grep -i [pattern] [file_name]      # search conformable pattern(string) in file_name, regardless of capital and small letter
 $ grep -v [pattern] [file_name]      # search unconformable pattern(string) in file_name
 $ grep -n [pattern] [file_name]      # search conformable pattern(string) in file_name, numbering line on results for searching
 $ grep -l [pattern] [file_name]      # search conformable pattern(string) in file_name, displaying only file name including pattern
-$ grep -c [pattern] [file_name]      # search conformable pattern(string) in file_name, displaying numbers of consistant pattern line 
+$ grep -c [pattern] [file_name]      # search conformable pattern(string) in file_name, displaying the number of consistant pattern line on a file 
 $ grep -r [pattern] *                # search conformable pattern(string) in present directory including sub-directory
 ```
 <details markdown="1">
