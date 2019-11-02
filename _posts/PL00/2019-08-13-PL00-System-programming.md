@@ -226,6 +226,12 @@ $ chgrp -R [owner_group] [folder_name]
 - <b>stdout</b> : standard output stream to screen
 - <b>stderr</b> : standard error stream to screen
 
+```bash
+$ echo [arbitary_stdout]
+```
+```
+arbitary_stdout
+```
 <br><br><br>
 
 #### Redirection
