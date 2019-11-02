@@ -165,12 +165,12 @@ hosts
 <hr class='division3'>
 </details>
 ```bash
-$ grep -i [pattern] [file_or_folder_name]      # search pattern in file_or_folder_name, regardless of capital and small letter
-$ grep -v [pattern] [file_or_folder_name]      # search pattern in file_or_folder_name, except for consistant line
-$ grep -n [pattern] [file_or_folder_name]      # search pattern in file_or_folder_name, numbering line on results for searching
-$ grep -l [pattern] [file_or_folder_name]      # search pattern in file_or_folder_name, file name
-$ grep -c [pattern] [file_or_folder_name]      # search pattern in file_or_folder_name, number of consistant line 
-$ grep -r [pattern] [file_or_folder_name]      # search pattern in file_or_folder_name, including sub-directory
+$ grep -i [pattern] [file_name]      # search conformable pattern(string) in file_name, regardless of capital and small letter
+$ grep -v [pattern] [file_name]      # search unconformable pattern(string) in file_name
+$ grep -n [pattern] [file_name]      # search conformable pattern(string) in file_name, numbering line on results for searching
+$ grep -l [pattern] [file_name]      # search conformable pattern(string) in file_name, displaying only file name including pattern
+$ grep -c [pattern] [file_name]      # search conformable pattern(string) in file_name, displaying numbers of consistant pattern line 
+$ grep -r [pattern] *                # search conformable pattern(string) in present directory including sub-directory
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">grep example</summary>
