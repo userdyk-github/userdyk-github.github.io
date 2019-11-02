@@ -144,17 +144,6 @@ $ ls -l
 $ ls -a
 $ ls -al
 ```
-```bash
-$ cat [file_name]
-$ head [file_name]
-$ more [file_name]      # spacebar : next page
-                        # enter : next line
-$ tail [file_name]
-```
-```bash
-$ rm [file_name]
-$ rm -rf [folder_name]
-```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">ls wildcard example</summary>
 <hr class='division3'>
@@ -174,7 +163,19 @@ $ ls host?
 hosts
 ```
 <hr class='division3'>
-</details>
+</details><br>
+
+```bash
+$ cat [file_name]
+$ head [file_name]
+$ more [file_name]      # spacebar : next page
+                        # enter : next line
+$ tail [file_name]
+```
+```bash
+$ rm [file_name]
+$ rm -rf [folder_name]
+```
 <br><br><br>
 
 <span class="frame3">file permission</span> ｜ <a href="https://en.wikipedia.org/wiki/Chmod" target="_blank" class="jb-medium">URL</a><br>
