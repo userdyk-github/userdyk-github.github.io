@@ -52,7 +52,8 @@ List of posts to read before reading this article
 ```bash
 whoami
 ```
-<br>
+<br><br><br>
+
 <span class="frame3">set password</span>
 ```bash
 passwd [user_name]
@@ -83,7 +84,8 @@ $ passwd
 ```
 <hr class='division3'>
 </details>
-<br>
+<br><br><br>
+
 <span class="frame3">create another user id on linux</span>
 ```bash
 $ adduser [user_name]
@@ -96,13 +98,15 @@ $ useradd [user_name]
 ```
 <hr class='division3'>
 </details>
-<br>
+<br><br><br>
+
 <span class="frame3">change user</span>
 ```bash
 $ su [user_name]        # change id including my present .bashrc, .profile files.
 $ su - [user_name]       # change id excluding my present .bashrc, .profile files.
 ```
-<br>
+<br><br><br>
+
 <span class="frame3">authorize user</span>
 ```bash
 :~$ cd /etc
@@ -123,7 +127,43 @@ root    ALL=(ALL:ALL) ALL
 ![image](https://user-images.githubusercontent.com/52376448/68069219-a9fc7500-fda0-11e9-98c7-8c3c07f60cc2.png)
 <hr class='division3'>
 </details>
+<br><br><br>
 
+<span class="frame3">working directory</span>
+```bash
+$ pwd
+```
+```bash
+$ cd ~     # move user directory
+$ cd /     # move root directory
+$ cd -     # move previous working directory
+```
+```bash
+$ ls
+$ ls -l
+$ ls -a
+$ ls -al
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">ls wildcard example</summary>
+<hr class='division3'>
+![image](https://user-images.githubusercontent.com/52376448/68069411-2bed9d80-fda3-11e9-873a-478c2625db18.png)
+
+```bash
+$ ls host*
+```
+```
+host.conf  hostname  hosts  hosts.allow  hosts.deny
+```
+<br>
+```bash
+$ ls host?
+```
+```
+hosts
+```
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
