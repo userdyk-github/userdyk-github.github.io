@@ -36,7 +36,7 @@ List of posts to read before reading this article
 - OS manages permissions of users and resources
 - Linux manages permissions with users and groups
 - root is super user(manager)
-- On each files, for owner, owner group, and all users
+- On each files, for owner, owner group, and others(all users)
     - management of 'read', 'write', 'execute'
     - save access authority information in data structure of inode
 
@@ -72,7 +72,7 @@ $ id
 
 <span class="frame3">change password</span>
 ```bash
-$ passwd [user_name]
+$ passwd [user_name]         # change or create
 $ passwd -d [user_name]      # delete
 $ passwd -u [user_name]      # unlock
 $ passwd -l [user_name]      # lock
