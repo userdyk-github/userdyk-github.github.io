@@ -229,7 +229,12 @@ $ chgrp -R [owner_group] [folder_name]
 <br><br><br>
 
 #### Redirection
-
+```bash
+$ [command] > [file_name]        # overwrite
+$ [command] >> [file_name]       # add text at the end
+$ [command] < [file_name] 
+$ [command] < [file_name_1] > [file_name_2]
+```
 
 <br><br><br>
 
