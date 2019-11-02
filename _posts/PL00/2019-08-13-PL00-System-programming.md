@@ -50,7 +50,7 @@ List of posts to read before reading this article
 
 <span class="frame3">current user name accessed on linux</span>
 ```bash
-whoami
+$ whoami
 ```
 <br><br><br>
 
@@ -291,7 +291,11 @@ $ [command] < [file_name_1] > [file_name_2]
 <div style="font-size: 70%;">pipe(|) connect a process to another process</div>
 
 ```bash
-
+:/etc$ ls | grep issue
+```
+```
+issue
+issue.net
 ```
 <br><br><br>
 <hr class="division2">
