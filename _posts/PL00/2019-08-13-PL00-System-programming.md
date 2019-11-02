@@ -102,8 +102,27 @@ $ useradd [user_name]
 $ su [user_name]        # change id including my present .bashrc, .profile files.
 $ su - [user_name]       # change id excluding my present .bashrc, .profile files.
 ```
+<br>
+<span class="frame3">authorize user</span>
+```bash
+:~$ cd /etc
+:/etc$ vim sudoers       # change id excluding my present .bashrc, .profile files.
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Edit</summary>
+<hr class='division3'>
+```vim
+root    ALL=(ALL:ALL) ALL
+```
+![image](https://user-images.githubusercontent.com/52376448/68069209-833e3e80-fda0-11e9-8279-47d6d5ee45a4.png)
 
-
+```vim
+root    ALL=(ALL:ALL) ALL
+[username]    ALL=(ALL:ALL) ALL
+```
+![image](https://user-images.githubusercontent.com/52376448/68069219-a9fc7500-fda0-11e9-98c7-8c3c07f60cc2.png)
+<hr class='division3'>
+</details>
 
 
 <br><br><br>
