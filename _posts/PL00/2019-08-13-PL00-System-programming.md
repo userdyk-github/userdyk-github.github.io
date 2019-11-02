@@ -32,6 +32,14 @@ List of posts to read before reading this article
 <br><br><br>
 
 ### ***Authority on Linux***
+
+- OS manages permissions of users and resources
+- Linux manages permissions with users and groups
+- root is super user(manager)
+- on each files, for owner, owner group, and all users
+    - management of 'read', 'write', 'execute'
+    - save access authority information in data structure of inode
+
 <br><br><br>
 
 <hr class="division2">
