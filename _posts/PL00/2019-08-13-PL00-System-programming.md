@@ -70,9 +70,12 @@ $ id
 
 <br><br><br>
 
-<span class="frame3">set password</span>
+<span class="frame3">change password</span>
 ```bash
-passwd [user_name]
+$ passwd [user_name]
+$ passwd -d [user_name]      # delete
+$ passwd -u [user_name]      # unlock
+$ passwd -l [user_name]      # lock
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">when error</summary>
