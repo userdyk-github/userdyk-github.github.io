@@ -411,7 +411,7 @@ List of posts followed by this article
 ---
 
 Reference
-- <a href='' target="_blank"></a>
+- <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMBT57a9dvEtd6OuWpugF9SH' target="_blank">생활코딩</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
