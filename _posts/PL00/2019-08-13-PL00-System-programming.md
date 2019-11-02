@@ -129,14 +129,17 @@ $ exit
 ```
 <br><br><br>
 
-<span class="frame3">authorize user</span>
+<span class="frame3">authorize superuser to user </span>
+```bash
+$ usermod -a -G sudo [user_name]
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Another way: Edit</summary>
+<hr class='division3'>
 ```bash
 :~$ cd /etc
 :/etc$ vim sudoers       # change id excluding my present .bashrc, .profile files.
 ```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">Edit</summary>
-<hr class='division3'>
 ```vim
 root    ALL=(ALL:ALL) ALL
 ```
