@@ -362,6 +362,15 @@ $ service [process] stop
 <span class="frame3">/etc/rc3.d/</span><br>
 auto-start : link
 <br><br><br>
+
+---
+
+### ***File System***
+
+
+
+
+<br><br><br>
 <hr class="division2">
 
 ## **Key factors on system programming**
