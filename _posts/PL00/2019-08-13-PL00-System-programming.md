@@ -164,6 +164,10 @@ hosts
 ```
 <hr class='division3'>
 </details>
+<br><br><br>
+
+<span class="frame3">file permission</span>
+
 
 <br><br><br>
 
