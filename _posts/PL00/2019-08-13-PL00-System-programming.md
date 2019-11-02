@@ -172,7 +172,12 @@ $ grep -i [pattern] [file_name]      # search conformable pattern(string) in fil
 $ grep -v [pattern] [file_name]      # search unconformable pattern(string) in file_name
 $ grep -n [pattern] [file_name]      # search conformable pattern(string) in file_name, numbering line on results for searching
 $ grep -l [pattern] [file_name]      # search conformable pattern(string) in file_name, displaying only file name including pattern
+
 $ grep -c [pattern] [file_name]      # search conformable pattern(string) in file_name, displaying the number of consistant pattern line on a file 
+$ grep -c [pattern] *                # search conformable pattern(string) in file_name, displaying the number of consistant pattern line on present directory 
+$ grep -c [pattern] [folder_name]    # search conformable pattern(string) in file_name, displaying the number of consistant pattern line per file on a folder
+
+
 $ grep -r [pattern] *                # search conformable pattern(string) in present directory including sub-directory
 ```
 <details markdown="1">
