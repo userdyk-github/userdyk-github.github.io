@@ -164,7 +164,12 @@ hosts
 ```
 <hr class='division3'>
 </details><br>
-
+```bash
+$ grep 
+```
+```bash
+$ find 
+```
 ```bash
 $ cat [file_name]
 $ head [file_name]
@@ -264,6 +269,9 @@ $ [command] < [file_name_1] > [file_name_2]
 
 <div style="font-size: 70%;">pipe(|) connect a process to another process</div>
 
+```bash
+
+```
 <br><br><br>
 <hr class="division2">
 
