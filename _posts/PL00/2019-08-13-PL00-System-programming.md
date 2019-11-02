@@ -379,7 +379,8 @@ $ ln -s [origin_file_name] [new_file_name]      # soft : different inode for ori
 ```
 <br><br><br>
 
-#### device
+#### Specific files
+<span class="frame3">device</span><br>
 
 - block device
 - character device
