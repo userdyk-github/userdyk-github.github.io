@@ -308,9 +308,11 @@ issue.net
 #### background
 
 ```bash
-$ ./[file_name] &
-$ jobs
-$ bg [number_of_stoped_process]     # execute stoped process
+$ ./[file_name] &                       # execute on background
+$ jobs                                  # list of process
+$ bg                                    # re-execute last stoped process on background
+$ bg [number_of_stoped_process]         # re-execute stoped process on background
+$ kill -9 %[number_of_process]          # terminate process  
 ```
 <br><br><br>
 
@@ -319,7 +321,28 @@ $ bg [number_of_stoped_process]     # execute stoped process
 - <b>ctrl + c</b> : terminate process
 - <b>ctrl + z</b> : puase process
 
+```bash
+$ jobs
+$ fg                                 # execute process denoted '+' on foreground
+$ fg %[number_of_process]            # execute process corresponding number on foreground
+```
+
 <br><br><br>
+
+#### management of process
+
+```bash
+$ ps             # displaying list of process for me
+$ ps -a          # displaying list of process for all users
+$ ps -u          # displaying details about owner of process
+$ ps -l          # displaying details about process
+$ ps -x          # displaying deamon process
+$ ps aux         # frequently used(-a, -u, -x)
+                 # ps aux | more
+$ ps -e          # displaying environment variables of process
+$ ps -f          # displaying relationship about process
+```
+
 <hr class="division2">
 
 ## **Key factors on system programming**
