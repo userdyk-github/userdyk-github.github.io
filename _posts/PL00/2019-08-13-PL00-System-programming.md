@@ -69,8 +69,17 @@ $ mount -o remount,rw /
 ```bash
 $ ls -l /etc/shadow
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
 ```
 -rw-r----- 1 root shadow 1025 Feb  11 22:11 /etc/shadow
+```
+<hr class='division3_1'>
+</details>
+<br>
+```bash
+passwd
 ```
 <hr class='division3'>
 </details>
