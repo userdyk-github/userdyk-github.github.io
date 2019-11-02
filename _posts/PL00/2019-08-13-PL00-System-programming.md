@@ -174,11 +174,36 @@ $ chmod 765 [file_name]
 ```
 <span class="frame3_1">for folder</span>
 ```bash
+$ chmod u=rwx, g=rw, o=rx [folder_name]
 $ chmod -R u=rwx, g=rw, o=rx [folder_name]
+
+$ chmod 765 [folder_name]
 $ chmod -R 765 [folder_name]
 ```
 <br><br><br>
 
+<span class="frame3">change owner</span><br>
+<span class="frame3_1">for file</span><br>
+```bash
+$ chown [owner:owner_group] [file_name]
+$ chown [owner:] [file_name]
+$ chown [:owner_group] [file_name]
+```
+<br>
+<span class="frame3_1">for folder</span><br>
+```bash
+$ chown [owner:owner_group] [folder_name]
+$ chown -R [owner:owner_group] [folder_name]
+
+$ chown [owner:] [folder_name]
+$ chown -R [owner:] [folder_name]
+
+$ chown [:owner_group] [folder_name]
+$ chown -R [:owner_group] [folder_name]
+```
+
+
+<br><br><br>
 <hr class="division2">
 
 ## **Key factors on system programming**
