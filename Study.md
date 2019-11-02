@@ -389,6 +389,7 @@ Mass Point</a><br>
 > <a href='https://userdyk-github.github.io/pl01/PL01-Syntax.html'>Syntax</a><br>
 > <a href='https://userdyk-github.github.io/pl01/PL01-Libraries.html'>Libraries</a><br>
 > <a href='https://userdyk-github.github.io/pl01/PL01-Algorithm.html'>Algorithm</a><br>
+> <a href='https://userdyk-github.github.io/pl01/PL01-Numerical-methods.html'>Numerical methods</a><br>
 
 ---
 
