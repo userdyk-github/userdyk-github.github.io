@@ -100,7 +100,7 @@ $ useradd [user_name]
 <span class="frame3">change user</span>
 ```bash
 $ su [user_name]        # change id including my present .bashrc, .profile files.
-$ su -[user_name]       # change id excluding my present .bashrc, .profile files.
+$ su - [user_name]       # change id excluding my present .bashrc, .profile files.
 ```
 
 
