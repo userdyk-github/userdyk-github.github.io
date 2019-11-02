@@ -238,8 +238,14 @@ arbitary_stdout
 
 #### Redirection
 ```bash
-$ [command] > [file_name]        # overwrite
-$ [command] >> [file_name]       # add text at the end
+$ [command] > [file_name]        # overwrite with stdout
+$ [command] 1> [file_name]       # overwrite with stdout
+$ [command] 2> [file_name]       # overwrite with stderr
+
+$ [command] >> [file_name]       # add text of stdout at the end
+$ [command] 1>> [file_name]      # add text of stdout at the end
+$ [command] 2>> [file_name]      # add text of stderr at the end
+
 $ [command] < [file_name] 
 $ [command] < [file_name_1] > [file_name_2]
 ```
