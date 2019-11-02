@@ -310,7 +310,7 @@ issue.net
 ```bash
 $ ./[file_name] &
 $ jobs
-$ bg [number_of_stoped_process]
+$ bg [number_of_stoped_process]     # execute stoped process
 ```
 <br><br><br>
 
