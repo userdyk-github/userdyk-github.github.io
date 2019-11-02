@@ -48,10 +48,26 @@ List of posts to read before reading this article
 
 ### ***Multiuser system***
 
-<span class="frame3">current user name accessed on linux</span>
+<span class="frame3">all user name currently accessed on linux</span>
+```bash
+$ who
+```
+<br><br><br>
+
+
+<span class="frame3">my user name currently accessed on linux</span>
 ```bash
 $ whoami
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">detail</summary>
+<hr class='division3'>
+```bash
+$ id
+```
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 <span class="frame3">set password</span>
