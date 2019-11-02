@@ -46,6 +46,18 @@ List of posts to read before reading this article
 
 ## **Shell**
 
+### ***Multiuser system***
+
+<span class="frame3">user name</span>
+```bash
+whoami
+```
+<br>
+<span class="frame3">set password</span>
+```bash
+passwd [user_name]
+```
+
 <br><br><br>
 
 <hr class="division2">
