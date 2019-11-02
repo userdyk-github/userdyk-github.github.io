@@ -55,7 +55,7 @@ whoami
 <br>
 <span class="frame3">set password</span>
 ```bash
-passwd
+passwd [user_name]
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">when error</summary>
