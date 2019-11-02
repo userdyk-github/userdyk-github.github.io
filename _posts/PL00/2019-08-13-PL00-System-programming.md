@@ -23,7 +23,15 @@ List of posts to read before reading this article
 
 ## **Introduction**
 
-### ***authority on Linux***
+### ***File on Linux***
+
+<br><br><br>
+
+### ***Process on Linux***
+
+<br><br><br>
+
+### ***Authority on Linux***
 <br><br><br>
 
 <hr class="division2">
