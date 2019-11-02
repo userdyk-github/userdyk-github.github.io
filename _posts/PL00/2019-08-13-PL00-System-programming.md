@@ -351,7 +351,7 @@ $ kill -9 [pid]
 <br><br><br>
 
 #### deamon process
-
+<span class="frame3">/etc/init.d</span>
 ```bash
 $ service [process] start
 $ service [process] stop
