@@ -311,6 +311,9 @@ issue.net
 
 #### foreground
 
+- <b>ctrl + c</b> : terminate process
+- <b>ctrl + z</b> : puase process
+
 <br><br><br>
 <hr class="division2">
 
