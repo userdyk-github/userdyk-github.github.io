@@ -348,6 +348,15 @@ $ ps -f          # displaying relationship about process
 ```bash
 $ kill -9 [pid]
 ```
+<br><br><br>
+
+#### deamon process
+
+```bash
+$ service [process] start
+$ service [process] stop
+```
+<br><br><br>
 <hr class="division2">
 
 ## **Key factors on system programming**
