@@ -307,6 +307,11 @@ issue.net
 
 #### background
 
+```bash
+$ ./[file_name] &
+$ jobs
+$ bg [number_of_stoped_process]
+```
 <br><br><br>
 
 #### foreground
