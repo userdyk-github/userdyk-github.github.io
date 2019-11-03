@@ -72,7 +72,7 @@ tags : [PL03]
   - <a href='https://www.crummy.com/software/BeautifulSoup/bs4/doc/#' target="_blank"><span class='jb-small'>https://www.crummy.com/software/BeautifulSoup/bs4/doc/#</span></a>
   
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-requests.html'>requests</a>
-  - <a href='https://realpython.com/python-requests/' target="_blank"><span class='jb-small'>https://realpython.com/python-requests/</span></a>
+  - <a href='https://requests.kennethreitz.org//en/v1.1.0/api/' target="_blank"><span class='jb-small'>https://requests.kennethreitz.org//en/v1.1.0/api/</span></a>
 
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-PyQt.html'>PyQt</a>
   - <a href='https://www.tutorialspoint.com/pyqt/index.htm' target="_blank"><span class='jb-small'>https://www.tutorialspoint.com/pyqt/index.htm</span></a>
