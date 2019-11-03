@@ -356,7 +356,7 @@ p1 = Person()
 p2 = Person()
 ```
 <details markdown="1">
-<summary class='jb-small' style="color:blue">Type</summary>
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```python
 print(type(p1))
@@ -386,7 +386,7 @@ p2.name = 'cathy'
 p2.age = 25
 ```
 <details markdown="1">
-<summary class='jb-small' style="color:blue">Type</summary>
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```python
 print(p1)
@@ -410,8 +410,45 @@ cathy
 </details>
 <br><br><br>
 
-#### 
+#### Setter method
 
+```python
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+p1 = Person('bob', 21)
+p1.name
+p1.age
+
+p2 = Person('cathy', 25)
+p2.name
+p2.age
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```python
+print(p1)
+print(p1.name)
+print(p1.age)
+
+print(p2)
+print(p2.name)
+print(p2.age)
+```
+```
+<__main__.Person object at 0x000001C352867978>
+bob
+21
+
+<__main__.Person object at 0x000001C352867358>
+cathy
+25
+```
+<hr class='division3'>
+</details>
 <br><br><br>
 
 
