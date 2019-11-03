@@ -346,7 +346,41 @@ s
 
 ### ***Class***
 
-#### hasattr(object, name)
+#### Declare Class
+
+```python
+class Person:
+    pass
+
+bob = Person()
+cathy = Person()
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Type</summary>
+<hr class='division3'>
+```python
+print(type(bob))
+print(type(cathy))
+```
+```
+<class '__main__.Person'>
+<class '__main__.Person'>
+```
+<hr class='division3'>
+</details>
+
+<br><br><br>
+
+#### 
+
+<br><br><br>
+
+#### 
+
+<br><br><br>
+
+
+<span class="frame3">hasattr(object, name)</span><br>
 
 > <strong>object</strong> - object whose named attribute is to be checked<br>
 > <strong>name</strong> - name of the attribute to be searched<br>
