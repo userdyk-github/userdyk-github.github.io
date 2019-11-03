@@ -383,6 +383,7 @@ $ kill -9 [pid]
 ```bash
 $ service [process] start
 $ service [process] stop
+$ service [process] restart
 ```
 <br>
 <span class="frame3">/etc/rc3.d/</span><br>
