@@ -71,6 +71,9 @@ tags : [PL03]
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-BeautifulSoup.html'>BeautifulSoup</a> ｜ <a href='' target="_blank">Cheat Sheet</a>
   - <a href='https://www.crummy.com/software/BeautifulSoup/bs4/doc/#' target="_blank"><span class='jb-small'>https://www.crummy.com/software/BeautifulSoup/bs4/doc/#</span></a>
   
+- <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-requests.html'>requests</a>
+  - <a href='https://realpython.com/python-requests/' target="_blank"><span class='jb-small'>https://realpython.com/python-requests/</span></a>
+
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-PyQt.html'>PyQt</a>
   - <a href='https://www.tutorialspoint.com/pyqt/index.htm' target="_blank"><span class='jb-small'>https://www.tutorialspoint.com/pyqt/index.htm</span></a>
   - <a href='https://wikidocs.net/book/2165' target="_blank"><span class='jb-small'>https://wikidocs.net/book/2165</span></a>
