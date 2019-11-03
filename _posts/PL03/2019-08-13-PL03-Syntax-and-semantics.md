@@ -374,37 +374,37 @@ print(type(p2))
 ```python
 class Person:
     def __init__(self):
-        self.age = 0
         self.name = ""
+        self.age = 0
 
 p1 = Person()
-p1.age = 21
 p1.name = 'bob'
+p1.age = 21
 
 p2 = Person()
-p2.age = 25
 p2.name = 'cathy'
+p2.age = 25
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Type</summary>
 <hr class='division3'>
 ```python
 print(p1)
-print(p1.age)
 print(p1.name)
+print(p1.age)
 
 print(p2)
-print(p2.age)
 print(p2.name)
+print(p2.age)
 ```
 ```
 <__main__.Person object at 0x000001C35285EDD8>
-21
 bob
+21
 
 <__main__.Person object at 0x000001C35285ED30>
-25
 cathy
+25
 ```
 <hr class='division3'>
 </details>
