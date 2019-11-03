@@ -352,15 +352,15 @@ s
 class Person:
     pass
 
-bob = Person()
-cathy = Person()
+p1 = Person()
+p2 = Person()
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Type</summary>
 <hr class='division3'>
 ```python
-print(type(bob))
-print(type(cathy))
+print(type(p1))
+print(type(p2))
 ```
 ```
 <class '__main__.Person'>
