@@ -24,9 +24,89 @@ tags : [AI01]
 ## **From sklearn**
 
 ```python
+from sklearn.datasets import load_diabetes
+loaded_dataset = load_diabetes()
 
+print(loaded_dataset.data.shape)
+print(loaded_dataset.target.shape)
 ```
+```
+(442, 10)
+(442,)
+```
+<br>
+```python
+from sklearn.datasets import load_boston
+load_boston = load_boston()
 
+print(loaded_dataset.data.shape)
+print(loaded_dataset.target.shape)
+```
+```
+(506, 13)
+(506,)
+```
+<br>
+```python
+from sklearn.datasets import load_breast_cancer
+loaded_dataset = load_breast_cancer()
+
+print(loaded_dataset.data.shape)
+print(loaded_dataset.target.shape)
+```
+```
+(569, 30)
+(569,)
+```
+<br>
+```python
+from sklearn.datasets import load_digits
+loaded_dataset = load_digits()
+
+print(loaded_dataset.data.shape)
+print(loaded_dataset.target.shape)
+```
+```
+(1797, 64)
+(1797,)
+```
+<br>
+```python
+from sklearn.datasets import load_iris
+loaded_dataset = load_iris()
+
+print(loaded_dataset.data.shape)
+print(loaded_dataset.target.shape)
+```
+```
+(150, 4)
+(150,)
+```
+<br>
+```python
+from sklearn.datasets import load_linnerud
+loaded_dataset = load_linnerud()
+
+print(loaded_dataset.data.shape)
+print(loaded_dataset.target.shape)
+```
+```
+(20, 3)
+(20, 3)
+```
+<br>
+```python
+from sklearn.datasets import load_wine
+loaded_dataset = load_wine()
+
+print(loaded_dataset.data.shape)
+print(loaded_dataset.target.shape)
+```
+```
+(178, 13)
+(178,)
+```
+<br><br><br>
 <hr class="division1">
 
 Reference
