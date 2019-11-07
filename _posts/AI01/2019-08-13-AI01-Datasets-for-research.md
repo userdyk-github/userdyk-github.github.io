@@ -1,6 +1,6 @@
 ---
 layout : post
-title : AI01
+title : AI01, Datasets for research
 categories: [AI01]
 comments : true
 tags : [AI01]
