@@ -152,6 +152,11 @@ title: RESEARCH
 ### _Academic research trend_
 
 #### _International_
+
+> STANDFORD | <a href='https://cims.nyu.edu/' target="_blank">URL</a><br>
+>> <a href='https://cims.nyu.edu/~bruna/' target="_blank">Joan Bruna</a><br>
+> <a href='' target="_blank"></a>
+
 > STANDFORD | <a href='http://ai.stanford.edu/' target="_blank">URL</a><br>
 >> <a href='http://physbam.stanford.edu/~fedkiw/' target="_blank">Ron Fedkiw</a><br>
 > <a href='' target="_blank"></a>
