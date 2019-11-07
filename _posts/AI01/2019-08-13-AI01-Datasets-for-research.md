@@ -19,6 +19,14 @@ tags : [AI01]
 - <a href="https://www.data.go.kr/" target="_blank">Open Data potal</a>
 - <a href="http://kosis.kr/index/index.do" target="_blank">kosis</a>
 
+<hr class="division2">
+
+## **From sklearn**
+
+```python
+
+```
+
 <hr class="division1">
 
 Reference
