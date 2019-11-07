@@ -34,6 +34,14 @@ print(loaded_dataset.target.shape)
 (442, 10)
 (442,)
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Visualization</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+
+
 <br>
 ```python
 from sklearn.datasets import load_boston
@@ -46,6 +54,14 @@ print(loaded_dataset.target.shape)
 (506, 13)
 (506,)
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Visualization</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+
+
 <br>
 ```python
 from sklearn.datasets import load_breast_cancer
@@ -58,6 +74,14 @@ print(loaded_dataset.target.shape)
 (569, 30)
 (569,)
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Visualization</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+
+
 <br>
 ```python
 from sklearn.datasets import load_digits
@@ -70,6 +94,14 @@ print(loaded_dataset.target.shape)
 (1797, 64)
 (1797,)
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Visualization</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+
+
 <br>
 ```python
 from sklearn.datasets import load_iris
@@ -82,6 +114,14 @@ print(loaded_dataset.target.shape)
 (150, 4)
 (150,)
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Visualization</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+
+
 <br>
 ```python
 from sklearn.datasets import load_linnerud
@@ -94,6 +134,14 @@ print(loaded_dataset.target.shape)
 (20, 3)
 (20, 3)
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Visualization</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+
+
 <br>
 ```python
 from sklearn.datasets import load_wine
@@ -106,6 +154,14 @@ print(loaded_dataset.target.shape)
 (178, 13)
 (178,)
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Visualization</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+
+
 <br><br><br>
 <hr class="division1">
 
