@@ -138,6 +138,14 @@ np.std(rv, ddof=1)
 ```
 
 ```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">np.std</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 <hr class="division2">
