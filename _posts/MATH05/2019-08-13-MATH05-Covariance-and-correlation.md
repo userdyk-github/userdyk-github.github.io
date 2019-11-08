@@ -51,7 +51,7 @@ sample_variance(rv)
 np.var(rv, ddof=1)
 ```
 ```
-9966.136705715846
+10066.80475325
 ```
 <hr class='division3'>
 </details>
