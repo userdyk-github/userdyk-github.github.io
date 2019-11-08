@@ -21,6 +21,21 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
+## **Installation**
+### ***For linux***
+```bash
+$ 
+```
+<br><br><br>
+
+### ***For windows***
+```dos
+
+```
+<br><br><br>
+<hr class="division2">
+
+
 ## **Relational plots**
 
 ### ***relplot***
