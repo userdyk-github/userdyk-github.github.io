@@ -118,7 +118,7 @@ sample_correlation(rv)
 ```
 
 <details markdown="1">
-<summary class='jb-small' style="color:blue">np.cov</summary>
+<summary class='jb-small' style="color:blue">np.std</summary>
 <hr class='division3'>
 ```python
 np.std(rv)
