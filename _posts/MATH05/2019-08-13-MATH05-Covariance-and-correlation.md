@@ -27,18 +27,18 @@ List of posts to read before reading this article
 ```python
 import numpy as np
 
-def sample_covariance(rv):
-    Cov = 0
+def sample_variance(rv):
+    s_var = 0
     for i in range(rv.shape[0]):
-        Cov = Cov + (rv[i]-rv.mean())**2
-    Cov = Cov/(rv.shape[0]-1)
-    return Cov
+        s_var = s_var + (rv[i]-rv.mean())**2
+    s_var = s_var/(rv.shape[0]-1)
+    return s_var
 
 np.random.seed(2019)
 rv = np.random.RandomState(2019)
 rv = rv.normal(10,100,(100,1))
 
-sample_covariance(rv)
+sample_variance(rv)
 ```
 ```
 10066.80475325
@@ -100,18 +100,18 @@ array([[ 9.99728326e+01, -6.32980673e-02],
 ```python
 import numpy as np
 
-def sample_correlation(rv):
-    Corr = 0
+def sample_std(rv):
+    s_std = 0
     for i in range(rv.shape[0]):
-        Corr = Corr + (rv[i]-rv.mean())**2
-    Corr = np.sqrt(Corr/(rv.shape[0]-1))
-    return Corr
-
+        s_std = s_std + (rv[i]-rv.mean())**2
+    s_std = np.sqrt(s_std/(rv.shape[0]-1))
+    return s_std
+    
 np.random.seed(2019)
 rv = np.random.RandomState(2019)
 rv = rv.normal(10,100,(100,1))
 
-sample_correlation(rv)
+sample_std(rv)
 ```
 ```
 100.33346776
