@@ -48,7 +48,7 @@ sample_variance(rv)
 <summary class='jb-small' style="color:blue">np.var</summary>
 <hr class='division3'>
 ```python
-np.var(rv)
+np.var(rv, ddof=1)
 ```
 ```
 9966.136705715846
@@ -121,10 +121,10 @@ sample_std(rv)
 <summary class='jb-small' style="color:blue">np.std</summary>
 <hr class='division3'>
 ```python
-np.std(rv)
+np.std(rv, ddof=1)
 ```
 ```
-99.83053994502808
+100.33346776
 ```
 <hr class='division3'>
 </details>
