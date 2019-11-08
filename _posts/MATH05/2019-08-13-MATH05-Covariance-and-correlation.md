@@ -116,6 +116,19 @@ sample_correlation(rv)
 ```
 100.33346776
 ```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">np.cov</summary>
+<hr class='division3'>
+```python
+np.std(rv)
+```
+```
+99.83053994502808
+```
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 <span class="frame3">Correlation coefficient</span>
