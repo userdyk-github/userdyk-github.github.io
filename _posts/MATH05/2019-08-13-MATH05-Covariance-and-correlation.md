@@ -82,8 +82,36 @@ array([[ 9.99728326e+01, -6.32980673e-02],
 <hr class="division2">
 
 ## **sample correlation coefficient**
-<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/332ae9dcde34d03f30ed6e1880af8b43327dd49c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -7.338ex; width:59.755ex; height:14.343ex;" alt="{\displaystyle r_{xy}\quad {\overset {\underset {\mathrm {def} }{}}{=}}\quad {\frac {\sum \limits _{i=1}^{n}(x_{i}-{\bar {x}})(y_{i}-{\bar {y}})}{(n-1)s_{x}s_{y}}}={\frac {\sum \limits _{i=1}^{n}(x_{i}-{\bar {x}})(y_{i}-{\bar {y}})}{\sqrt {\sum \limits _{i=1}^{n}(x_{i}-{\bar {x}})^{2}\sum \limits _{i=1}^{n}(y_{i}-{\bar {y}})^{2}}}},}">
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/332ae9dcde34d03f30ed6e1880af8b43327dd49c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -7.338ex; width:59.755ex; height:14.343ex;" alt="{\displaystyle r_{xy}\quad {\overset {\underset {\mathrm {def} }{}}{=}}\quad {\frac {\sum \limits _{i=1}^{n}(x_{i}-{\bar {x}})(y_{i}-{\bar {y}})}{(n-1)s_{x}s_{y}}}={\frac {\sum \limits _{i=1}^{n}(x_{i}-{\bar {x}})(y_{i}-{\bar {y}})}{\sqrt {\sum \limits _{i=1}^{n}(x_{i}-{\bar {x}})^{2}\sum \limits _{i=1}^{n}(y_{i}-{\bar {y}})^{2}}}},}"><br>
+<span class="frame3">One column</span>
+```python
+import numpy as np
 
+def sample_correlation(rv):
+    Corr = 0
+    for i in range(rv.shape[0]):
+        Corr = Corr + (rv[i]-rv.mean())**2
+    Corr = np.sqrt(Corr/(rv.shape[0]-1))
+    return Corr
+
+np.random.seed(2019)
+rv = np.random.RandomState(2019)
+rv = rv.normal(10,100,(100,1))
+
+sample_correlation(rv)
+```
+```
+100.33346776
+```
+<br><br><br>
+
+<span class="frame3">Two columns</span>
+```python
+
+```
+```
+
+```
 <br><br><br>
 
 <hr class="division2">
