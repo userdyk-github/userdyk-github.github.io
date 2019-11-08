@@ -21,9 +21,9 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## **sample covariance**
+## **Sample (co)variance**
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4d158b1ec5a3c6d1de84b9d59f604d8170a51407" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:38.104ex; height:7.343ex;" alt=" q_{jk}=\frac{1}{N-1}\sum_{i=1}^{N}\left(  x_{ij}-\bar{x}_j \right)  \left( x_{ik}-\bar{x}_k \right), "><br>
-<span class="frame3">One column</span>
+<span class="frame3">Variance</span>
 ```python
 import numpy as np
 
@@ -43,9 +43,22 @@ sample_covariance(rv)
 ```
 10066.80475325
 ```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">np.cov</summary>
+<hr class='division3'>
+```python
+np.var(rv)
+```
+```
+9966.136705715846
+```
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
-<span class="frame3">Two columns</span>
+<span class="frame3">Covariance</span>
 ```python
 import numpy as np
 
@@ -81,9 +94,9 @@ array([[ 9.99728326e+01, -6.32980673e-02],
 <br><br><br>
 <hr class="division2">
 
-## **sample correlation coefficient**
+## **Sample standard deviation(correlation coefficient)**
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/332ae9dcde34d03f30ed6e1880af8b43327dd49c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -7.338ex; width:59.755ex; height:14.343ex;" alt="{\displaystyle r_{xy}\quad {\overset {\underset {\mathrm {def} }{}}{=}}\quad {\frac {\sum \limits _{i=1}^{n}(x_{i}-{\bar {x}})(y_{i}-{\bar {y}})}{(n-1)s_{x}s_{y}}}={\frac {\sum \limits _{i=1}^{n}(x_{i}-{\bar {x}})(y_{i}-{\bar {y}})}{\sqrt {\sum \limits _{i=1}^{n}(x_{i}-{\bar {x}})^{2}\sum \limits _{i=1}^{n}(y_{i}-{\bar {y}})^{2}}}},}"><br>
-<span class="frame3">One column</span>
+<span class="frame3">Standard deviation</span>
 ```python
 import numpy as np
 
@@ -105,7 +118,7 @@ sample_correlation(rv)
 ```
 <br><br><br>
 
-<span class="frame3">Two columns</span>
+<span class="frame3">Correlation coefficient</span>
 ```python
 
 ```
@@ -116,7 +129,7 @@ sample_correlation(rv)
 
 <hr class="division2">
 
-## **covariance and correlation**
+## **Real case : covariance and correlation**
 <span class="frame3">covariance</span>
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/435d5740798f0ec6c3fdf5cf70c82fa78c2e0f77" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:33.229ex; height:2.843ex;" alt="{\displaystyle \operatorname {Cov} (X,Y)=\operatorname {E} \left((X-\mu )(Y-\nu )\right)\,}">
 ```python
