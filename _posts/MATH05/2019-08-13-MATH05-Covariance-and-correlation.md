@@ -43,38 +43,6 @@ sample_covariance(rv)
 ```
 10066.80475325
 ```
-<br>
-```python
-import numpy as np
-
-def sample_covariance(rv):
-    Cov = 0
-    for i in range(rv.shape[0]):
-        Cov = Cov + (rv[i][0]-rv[:,0].mean())*(rv[i][1]-rv[:,1].mean())
-    Cov = Cov/(rv.shape[0]-1)
-    return Cov
-
-
-np.random.seed(2019)
-rv = np.random.RandomState(2019)
-rv = rv.normal(5,1,size=(5000,2))
-sample_covariance(rv)
-```
-```
-0.004201816972783285
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">np.cov</summary>
-<hr class='division3'>
-```python
-np.cov(rv[:,0],rv[:,1])
-```
-```
-array([[0.98179804, 0.00420182],
-       [0.00420182, 1.03103471]])
-```
-<hr class='division3'>
-</details>
 <br><br><br>
 
 <span class="frame3">Two columns</span>
@@ -97,6 +65,19 @@ sample_covariance(rv)
 ```
 -0.06329806730517594
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">np.cov</summary>
+<hr class='division3'>
+```python
+np.cov(rv[:,0],rv[:,1])
+```
+```
+array([[ 9.99728326e+01, -6.32980673e-02],
+       [-6.32980673e-02,  1.00853519e+02]])
+```
+<hr class='division3'>
+</details>
+
 <br><br><br>
 <hr class="division2">
 
