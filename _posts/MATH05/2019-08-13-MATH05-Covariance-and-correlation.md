@@ -98,14 +98,6 @@ sample_covariance(rv)
 -0.06329806730517594
 ```
 <br><br><br>
-
-<span class="frame3">Several columns</span>
-```python
-
-```
-```
-```
-<br><br><br>
 <hr class="division2">
 
 ## **sample correlation coefficient**
