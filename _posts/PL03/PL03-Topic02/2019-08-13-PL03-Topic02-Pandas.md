@@ -427,7 +427,9 @@ s.plot(ax=axes[3], kind='pie', title='pie')
 
 ### ***Several columns***
 
-#### Creating and concatenate
+#### Creating
+
+<span class="frame3">Concatenate</span>
 
 ```python
 import pandas as pd
@@ -570,6 +572,41 @@ Stockholm3        NaN        NaN   909976.0
 <hr class='division3'>
 </details>
 <br><br><br>
+
+<span class="frame3">get_dummies</span>
+```python
+import pandas as pd
+
+s1 = pd.Series(list('abca'))
+s2 = pd.get_dummies(s1)
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```python
+s1
+```
+```
+0    a
+1    b
+2    c
+3    a
+dtype: object
+```
+<br>
+```python
+s2
+```
+```
+	a	b	c
+0	1	0	0
+1	0	1	0
+2	0	0	1
+3	1	0	0
+```
+<hr class='division3'>
+</details>
 
 <hr class="division2">
 
