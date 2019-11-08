@@ -30,6 +30,26 @@ import numpy as np
 def sample_covariance(rv):
     Cov = 0
     for i in range(rv.shape[0]):
+        Cov = Cov + (rv[i]-rv.mean())**2
+    Cov = Cov/(rv.shape[0]-1)
+    return Cov
+
+np.random.seed(2019)
+rv = np.random.RandomState(2019)
+rv = rv.normal(10,100,(100,1))
+
+sample_covariance(rv)
+```
+```
+10066.80475325
+```
+<br>
+```python
+import numpy as np
+
+def sample_covariance(rv):
+    Cov = 0
+    for i in range(rv.shape[0]):
         Cov = Cov + (rv[i][0]-rv[:,0].mean())*(rv[i][1]-rv[:,1].mean())
     Cov = Cov/(rv.shape[0]-1)
     return Cov
