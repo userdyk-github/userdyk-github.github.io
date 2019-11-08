@@ -37,7 +37,9 @@ print(loaded_dataset.target.shape)
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Visualization</summary>
 <hr class='division3'>
+```python
 
+```
 <hr class='division3'>
 </details>
 
@@ -57,6 +59,9 @@ print(loaded_dataset.target.shape)
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Visualization</summary>
 <hr class='division3'>
+```python
+
+```
 
 <hr class='division3'>
 </details>
@@ -77,7 +82,18 @@ print(loaded_dataset.target.shape)
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Visualization</summary>
 <hr class='division3'>
+```python
+import matplotlib.pyplot as plt
 
+fig, axes = plt.subplots(3,3, figsize=(10,10))
+for i in range(3):
+    for j in range(3):
+        axes[i, j].scatter(loaded_dataset.data[:,3*i+j], loaded_dataset.target)
+        axes[i, j].set_title("%d"%(3*i+j))
+plt.tight_layout()
+plt.show()
+```
+![download](https://user-images.githubusercontent.com/52376448/68390612-000a5780-01a9-11ea-9ff1-edf2bc853663.png)
 <hr class='division3'>
 </details>
 
@@ -97,6 +113,9 @@ print(loaded_dataset.target.shape)
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Visualization</summary>
 <hr class='division3'>
+```python
+
+```
 
 <hr class='division3'>
 </details>
@@ -117,6 +136,9 @@ print(loaded_dataset.target.shape)
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Visualization</summary>
 <hr class='division3'>
+```python
+
+```
 
 <hr class='division3'>
 </details>
@@ -137,6 +159,9 @@ print(loaded_dataset.target.shape)
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Visualization</summary>
 <hr class='division3'>
+```python
+
+```
 
 <hr class='division3'>
 </details>
@@ -157,6 +182,9 @@ print(loaded_dataset.target.shape)
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Visualization</summary>
 <hr class='division3'>
+```python
+
+```
 
 <hr class='division3'>
 </details>
