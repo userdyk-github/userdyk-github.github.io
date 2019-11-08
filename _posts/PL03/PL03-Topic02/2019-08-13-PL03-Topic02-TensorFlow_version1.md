@@ -36,7 +36,9 @@ $
 
 ### ***Version Control***
 ```python
+import tensorflow as tf
 
+print(tf.__version__)
 ```
 <br><br><br>
 
