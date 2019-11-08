@@ -45,7 +45,7 @@ sample_covariance(rv)
 ```
 
 <details markdown="1">
-<summary class='jb-small' style="color:blue">np.cov</summary>
+<summary class='jb-small' style="color:blue">np.var</summary>
 <hr class='division3'>
 ```python
 np.var(rv)
