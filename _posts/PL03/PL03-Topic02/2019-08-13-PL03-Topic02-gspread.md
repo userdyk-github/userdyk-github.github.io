@@ -67,6 +67,34 @@ doc = gc.open_by_url(spreadsheet_url)
 # 시트 선택하기
 worksheet = doc.worksheet('sheet1')
 ```
+<br><br><br>
+<span class="frame3">Cell</span><br>
+```python
+cell_data = worksheet.acell('B1').value
+print(cell_data)
+```
+<span class="frame3">Row</span><br>
+```python
+row_data = worksheet.row_values(1)
+print(row_data)
+```
+<span class="frame3">Column</span><br>
+```python
+column_data = worksheet.col_values(1)
+print(column_data)
+```
+<span class="frame3">Range</span><br>
+```python
+# 범위(셀 위치 리스트) 가져오기
+range_list = worksheet.range('A1:D2')
+print(range_list)
+
+# 범위에서 각 셀 값 가져오기
+for cell in range_list:
+    print(cell.value)
+```
+
+<br><br><br>
 <hr class="division2">
 
 ## title3
