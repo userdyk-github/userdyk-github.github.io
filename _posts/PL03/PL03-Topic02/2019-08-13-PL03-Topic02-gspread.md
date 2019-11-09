@@ -45,8 +45,28 @@ pip install --upgrade oauth2client
 
 <hr class="division2">
 
-## title2
+## **Google sheets**
 
+```python
+import gspread
+from oauth2client.service_account import ServiceAccountCredentials
+
+scope = [
+'https://spreadsheets.google.com/feeds',
+'https://www.googleapis.com/auth/drive',
+]
+
+json_file_name = r'S:\Github\userdyk\yerin\emerald-cumulus-243810-93dc8ef8e5dd.json'
+credentials = ServiceAccountCredentials.from_json_keyfile_name(json_file_name, scope)
+gc = gspread.authorize(credentials)
+
+spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1AQ3GXxWGHlx55KtUTTRYqtw8AA_bfjxJ2YVvS_PDSmk/edit#gid=1267764562'
+
+# 스프레스시트 문서 가져오기 
+doc = gc.open_by_url(spreadsheet_url)
+# 시트 선택하기
+worksheet = doc.worksheet('sheet1')
+```
 <hr class="division2">
 
 ## title3
