@@ -252,13 +252,24 @@ re.search(r'[cbm]at','cat')
 ```
 <_sre.SRE_Match object; span=(0, 3), match='cat'>
 ```
-
-
-
-
-
-
-
+```python
+re.search(r'[0-9]haha','1hahah')
+```
+```
+<_sre.SRE_Match object; span=(0, 5), match='1haha'>
+```
+```python
+re.search(r'[abc.^]aron','caron')
+```
+```
+<_sre.SRE_Match object; span=(0, 5), match='caron'>
+```
+```python
+re.search(r'[^abc]aron','#caron')
+```
+```
+<_sre.SRE_Match object; span=(0, 5), match='#aron'>
+```
 <br><br><br>
 
 ---
