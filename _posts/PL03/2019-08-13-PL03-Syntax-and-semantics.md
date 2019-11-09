@@ -1633,10 +1633,12 @@ import re
 m = re.search(r'(\w+)@(.+)','test@gmail.com')
 print(m.group(1))
 print(m.group(2))
+print(m.group(0))
 ```
 ```
 test
 gmail.com
+test@gmail.com
 ```
 
 
