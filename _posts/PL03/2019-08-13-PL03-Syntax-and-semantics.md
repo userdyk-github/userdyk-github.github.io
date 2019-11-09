@@ -192,6 +192,44 @@ float("-Inf")
 
 ### ***String***
 
+#### Regular expression
+<span class="frame3">Raw string</span><br>
+```python
+print(r'abcd/n')
+```
+```
+abcd/n
+```
+<br><br><br>
+
+<span class="frame3">Search method</span><br>
+```python
+import re
+
+re.search(r'abc','abcdef')
+```
+```
+<_sre.SRE_Match object; span=(0, 3), match='abc'>
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+```python
+m = re.search(r'abc','abcdef')
+print(m.start())
+print(m.end())
+print(m.group())
+```
+```
+0
+3
+abc
+```
+<hr class='division3'>
+</details>
+
+
+
 <br><br><br>
 
 ---
