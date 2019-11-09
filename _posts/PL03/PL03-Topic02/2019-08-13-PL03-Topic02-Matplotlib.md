@@ -2722,6 +2722,30 @@ You can also create multiple Axes objects simultaneously with the subplots comma
 import matplotlib.pyplot as plt
 import numpy as np
 
+fig, axes = plt.subplots(2, 1)
+
+np.random.seed(0)
+axes[0].plot(np.random.rand(5))
+axes[0].set_title("axes 1")
+axes[1].plot(np.random.rand(5))
+axes[1].set_title("axes 2")
+
+plt.tight_layout()
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![download (1)](https://user-images.githubusercontent.com/52376448/68519525-dbab9980-02d4-11ea-8e77-aef636f1e296.png)
+<hr class='division3'>
+</details>
+
+
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+
 fig, axes = plt.subplots(2, 2)
 
 np.random.seed(0)
