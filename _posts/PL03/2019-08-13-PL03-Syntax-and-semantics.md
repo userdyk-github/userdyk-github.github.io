@@ -1571,6 +1571,12 @@ re.search(r'pi*g','pg')
 ```
 <_sre.SRE_Match object; span=(0, 2), match='pg'>
 ```
+```python
+re.search(r'httpf?','https://www.naver.com')
+```
+```
+<_sre.SRE_Match object; span=(0, 4), match='http'>
+```
 <br><br><br>
 
 ---
