@@ -1593,10 +1593,37 @@ re.search(r'httpf?','https://www.naver.com')
 </table>
 
 ```python
+import re
 
+re.search(r'b\w+a','cabana')
+```
+```
+<_sre.SRE_Match object; span=(2, 6), match='bana'>
+```
+```python
+re.search(r'^b\w+a','cabana')
+```
 ```
 
+```
+```python
+re.search(r'^b\w+a','babana')
+```
+```
+<_sre.SRE_Match object; span=(0, 6), match='babana'>
+```
+```python
+re.search(r'b\w+a$','cabana')
+```
+```
+<_sre.SRE_Match object; span=(2, 6), match='bana'>
+```
+```python
+re.search(r'b\w+a$','cabanap')
+```
+```
 
+```
 <br><br><br>
 
 ---
