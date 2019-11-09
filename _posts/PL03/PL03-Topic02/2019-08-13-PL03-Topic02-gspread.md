@@ -33,7 +33,7 @@ $ pip install gspread
 pip install gspread
 pip install --upgrade oauth2client
 ```
-<a href="" target="_blank">Google Cloud Platform(GCP), API & Services, google driver API and google sheets API</a>
+<a href="https://cloud.google.com/" target="_blank">Google Cloud Platform(GCP), API & Services, google driver API and google sheets API</a>
 
 <br><br><br>
 
