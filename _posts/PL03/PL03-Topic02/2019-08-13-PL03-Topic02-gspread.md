@@ -47,6 +47,8 @@ pip install --upgrade oauth2client
 
 ## **Google sheets**
 
+### ***Connection to sheets***
+
 ```python
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
@@ -67,22 +69,33 @@ doc = gc.open_by_url(spreadsheet_url)
 # 시트 선택하기
 worksheet = doc.worksheet('sheet1')
 ```
+
 <br><br><br>
+
+
+### ***Read***
+
 <span class="frame3">Cell</span><br>
 ```python
 cell_data = worksheet.acell('B1').value
 print(cell_data)
 ```
+<br><br><br>
+
 <span class="frame3">Row</span><br>
 ```python
 row_data = worksheet.row_values(1)
 print(row_data)
 ```
+<br><br><br>
+
 <span class="frame3">Column</span><br>
 ```python
 column_data = worksheet.col_values(1)
 print(column_data)
 ```
+<br><br><br>
+
 <span class="frame3">Range</span><br>
 ```python
 # 범위(셀 위치 리스트) 가져오기
@@ -93,8 +106,22 @@ print(range_list)
 for cell in range_list:
     print(cell.value)
 ```
-
 <br><br><br>
+
+### ***Write***
+<span class="frame3">Cell</span><br>
+```python
+worksheet.update_acell('B1', 'b1 updated')
+```
+<br><br><br>
+
+<span class="frame3">Row</span><br>
+```python
+worksheet.insert_row(['new1', 'new2', 'new3', 'new4'], 4)    # specific row
+worksheet.append_row(['new1', 'new2', 'new3', 'new4'])       # last row
+```
+<br><br><br>
+
 <hr class="division2">
 
 ## title3
