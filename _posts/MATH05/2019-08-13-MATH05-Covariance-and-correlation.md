@@ -133,18 +133,64 @@ np.std(rv, ddof=1)
 
 <span class="frame3">Correlation coefficient</span>
 ```python
+import numpy as np
 
+def s_xx(rv):
+    s_std = 0
+    for i in range(rv.shape[0]):
+        s_std = s_std + (rv[i,0]-rv[:,0].mean())**2
+    s_std = s_std/(rv.shape[0]-1)
+    return s_std
+
+def s_yy(rv):
+    s_std = 0
+    for i in range(rv.shape[0]):
+        s_std = s_std + (rv[i,1]-rv[:,1].mean())**2
+    s_std = s_std/(rv.shape[0]-1)
+    return s_std
+
+def s_xy(rv):
+    s_std = 0
+    for i in range(rv.shape[0]):
+        s_std = s_std + (rv[i,0]-rv[:,0].mean())*(rv[i,1]-rv[:,1].mean())
+    s_std = s_std/(rv.shape[0]-1)
+    return s_std
+
+def correlation(rv):
+    return s_xy(rv)/np.sqrt(s_xx(rv)*s_yy(rv))
+
+
+np.random.seed(2019)
+rv = np.random.RandomState(2019)
+rv = rv.normal(10,10,(10000,2))
+correlation(rv)
 ```
 ```
-
+-0.0008369647036742862
 ```
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">np.corrcoef</summary>
 <hr class='division3'>
 ```python
+np.corrcoef(rv[:,0], rv[:,1])
 ```
 ```
+array([[ 1.00000000e+00, -8.36964704e-04],
+       [-8.36964704e-04,  1.00000000e+00]])
+```
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">stats.pearsonr</summary>
+<hr class='division3'>
+```python
+from scipy import stats
+
+stats.pearsonr(rv[:,0], rv[:,1])
+```
+```
+(-0.0008369647036742988, 0.933306070697321)
 ```
 <hr class='division3'>
 </details>
