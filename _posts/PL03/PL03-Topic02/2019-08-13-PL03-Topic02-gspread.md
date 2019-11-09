@@ -61,7 +61,7 @@ Reference
 
 - <a href='https://repl.it/languages/python' target="_blank">Implementation with python2 on web</a>
 - <a href='https://repl.it/languages/python3' target="_blank">Implementation with python3 on web</a>
-- <a href='https://userdyk-github.github.io/'>post2</a>
+- <a href='https://console.developers.google.com/' target="_blank">post2</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
