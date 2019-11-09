@@ -23,6 +23,8 @@ List of posts to read before reading this article
 
 ## **Basis of python programming, Data structure**
 
+<a href="https://wikidocs.net/11" target="_blank">URL</a>
+
 ### ***Number***
 
 #### Integer
@@ -306,6 +308,9 @@ s
 
 ## **Build the structure of the program! Control statement**
 
+<a href="https://wikidocs.net/19" target="_blank">URL</a>
+
+
 ### ***if***
 
 #### is, ==
@@ -358,6 +363,9 @@ True
 
 ## **How to do the input and output of the program**
 
+<a href="https://wikidocs.net/23" target="_blank">URL</a>
+
+
 ### ***Function***
 
 <br><br><br>
@@ -376,6 +384,9 @@ True
 <hr class="division2">
 
 ## **Advanced python**
+
+<a href="https://wikidocs.net/27" target="_blank">URL</a>
+
 
 ### ***Class***
 
@@ -1305,6 +1316,8 @@ os.getcwd()
 
 ## **Python programming, how do I get started?**
 
+<a href="https://wikidocs.net/34" target="_blank">URL</a>
+
 ### ******
 
 <br><br><br>
@@ -1347,6 +1360,8 @@ os.getcwd()
 <hr class="division2">
 
 ## **Regular expression**
+
+<a href="https://wikidocs.net/1669" target="_blank">URL</a>
 
 ### ***Explore regular expressions***
 
