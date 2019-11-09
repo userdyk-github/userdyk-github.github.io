@@ -1368,7 +1368,7 @@ re.search(r'..\w\w','efw@#$23$@')
 ```
 <_sre.SRE_Match object; span=(4, 8), match='#$23'>
 ```
-<br><br><br>
+<br>
 
 
 <span class="frame3_1">Metacharacter</span><br>
