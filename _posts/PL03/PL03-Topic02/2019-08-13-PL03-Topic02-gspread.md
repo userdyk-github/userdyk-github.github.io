@@ -24,14 +24,17 @@ List of posts to read before reading this article
 ## **Installation**
 ### ***For linux***
 ```bash
-$ 
+$ pip install gspread
 ```
 <br><br><br>
 
 ### ***For windows***
 ```dos
-
+pip install gspread
+pip install --upgrade oauth2client
 ```
+<a href="" target="_blank">Google Cloud Platform(GCP), API & Services, google driver API and google sheets API</a>
+
 <br><br><br>
 
 ### ***Version Control***
