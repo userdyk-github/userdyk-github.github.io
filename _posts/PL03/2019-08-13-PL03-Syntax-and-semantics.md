@@ -308,6 +308,39 @@ s
 
 ### ***if***
 
+#### is, ==
+
+|is|reference|
+|==|value|
+
+```python
+a = 1
+
+print(a is 1)
+print(a == 1)
+print(id(a))
+print(id(1))
+```
+```
+True
+True
+1531412592
+1531412592
+```
+```python
+a = 257
+
+print(a is 257)
+print(a == 257)
+print(id(a))
+print(id(257))
+```
+```
+False
+True
+2396517385200
+2396517385616
+```
 <br><br><br>
 
 ---
