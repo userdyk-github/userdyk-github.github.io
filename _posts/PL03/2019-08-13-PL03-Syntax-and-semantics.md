@@ -227,6 +227,35 @@ abc
 ```
 <hr class='division3'>
 </details>
+<br>
+
+<span class="frame3_1">Examples</span><br>
+```python
+re.search(r'\d\d\d\w','efw2342efwefwef')
+```
+```
+<_sre.SRE_Match object; span=(3, 7), match='2342'>
+```
+```python
+re.search(r'..\w\w','efw@#$23$@')
+```
+```
+<_sre.SRE_Match object; span=(4, 8), match='#$23'>
+```
+<br><br><br>
+
+
+<span class="frame3_1">Metacharacter</span><br>
+```python
+re.search(r'[cbm]at','cat')
+```
+```
+<_sre.SRE_Match object; span=(0, 3), match='cat'>
+```
+
+
+
+
 
 
 
