@@ -22,6 +22,9 @@ List of posts to read before reading this article
 <hr class="division1">
 
 ## **One-way analysis of variance**
+
+![image](https://user-images.githubusercontent.com/52376448/68536347-b0887f00-0394-11ea-8889-7f91b1ed1aeb.png)
+
 ![ANOVA_oneway](https://user-images.githubusercontent.com/52376448/66703411-507aca80-ed4d-11e9-8ae9-db644dd8b89f.JPG)
 
 
