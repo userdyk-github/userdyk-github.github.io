@@ -192,96 +192,6 @@ float("-Inf")
 
 ### ***String***
 
-#### Regular expression
-<span class="frame3">Raw string</span><br>
-```python
-print(r'abcd/n')
-```
-```
-abcd/n
-```
-<br><br><br>
-
-<span class="frame3">Search method</span><br>
-```python
-import re
-
-re.search(r'abc','abcdef')
-```
-```
-<_sre.SRE_Match object; span=(0, 3), match='abc'>
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
-<hr class='division3'>
-```python
-m = re.search(r'abc','abcdef')
-print(m.start())
-print(m.end())
-print(m.group())
-```
-```
-0
-3
-abc
-```
-<hr class='division3'>
-</details>
-<br>
-
-<span class="frame3_1">Examples</span><br>
-```python
-re.search(r'\d\d\d\w','efw2342efwefwef')
-```
-```
-<_sre.SRE_Match object; span=(3, 7), match='2342'>
-```
-```python
-re.search(r'..\w\w','efw@#$23$@')
-```
-```
-<_sre.SRE_Match object; span=(4, 8), match='#$23'>
-```
-<br><br><br>
-
-
-<span class="frame3_1">Metacharacter</span><br>
-
-|Meta|Expr|
-|:--|:--|
-|[abck]|a,b,c,k|
-|[abc.^]|a,b,c,.,^|
-|[a-d]|range|
-|[0-9]|range|
-|[a-z]|range|
-|[A-Z]|range|
-|[a-zA-Z0-9]|range|
-|[^0-9]|not|
-
-```python
-re.search(r'[cbm]at','cat')
-```
-```
-<_sre.SRE_Match object; span=(0, 3), match='cat'>
-```
-```python
-re.search(r'[0-9]haha','1hahah')
-```
-```
-<_sre.SRE_Match object; span=(0, 5), match='1haha'>
-```
-```python
-re.search(r'[abc.^]aron','caron')
-```
-```
-<_sre.SRE_Match object; span=(0, 5), match='caron'>
-```
-```python
-re.search(r'[^abc]aron','#caron')
-```
-```
-<_sre.SRE_Match object; span=(0, 5), match='#aron'>
-```
 <br><br><br>
 
 ---
@@ -1406,6 +1316,100 @@ os.getcwd()
 ## **Regular expression**
 
 ### ***Explore regular expressions***
+
+#### re module
+
+<span class="frame3">Raw string</span><br>
+```python
+print(r'abcd/n')
+```
+```
+abcd/n
+```
+<br><br><br>
+
+<span class="frame3">Search method</span><br>
+```python
+import re
+
+re.search(r'abc','abcdef')
+```
+```
+<_sre.SRE_Match object; span=(0, 3), match='abc'>
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+```python
+m = re.search(r'abc','abcdef')
+print(m.start())
+print(m.end())
+print(m.group())
+```
+```
+0
+3
+abc
+```
+<hr class='division3'>
+</details>
+<br>
+
+<span class="frame3_1">Examples</span><br>
+```python
+re.search(r'\d\d\d\w','efw2342efwefwef')
+```
+```
+<_sre.SRE_Match object; span=(3, 7), match='2342'>
+```
+```python
+re.search(r'..\w\w','efw@#$23$@')
+```
+```
+<_sre.SRE_Match object; span=(4, 8), match='#$23'>
+```
+<br><br><br>
+
+
+<span class="frame3_1">Metacharacter</span><br>
+
+|Meta|Expr|
+|:--|:--|
+|[abck]|a,b,c,k|
+|[abc.^]|a,b,c,.,^|
+|[a-d]|range|
+|[0-9]|range|
+|[a-z]|range|
+|[A-Z]|range|
+|[a-zA-Z0-9]|range|
+|[^0-9]|not|
+
+```python
+re.search(r'[cbm]at','cat')
+```
+```
+<_sre.SRE_Match object; span=(0, 3), match='cat'>
+```
+```python
+re.search(r'[0-9]haha','1hahah')
+```
+```
+<_sre.SRE_Match object; span=(0, 5), match='1haha'>
+```
+```python
+re.search(r'[abc.^]aron','caron')
+```
+```
+<_sre.SRE_Match object; span=(0, 5), match='caron'>
+```
+```python
+re.search(r'[^abc]aron','#caron')
+```
+```
+<_sre.SRE_Match object; span=(0, 5), match='#aron'>
+```
+<br><br><br>
+
 
 <br><br><br>
 
