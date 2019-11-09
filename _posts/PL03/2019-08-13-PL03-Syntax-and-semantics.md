@@ -1521,6 +1521,10 @@ re.search(r'\.and','.and')
     <td>more than 0</td>
   </tr>
   <tr>
+    <td>{n}</td>
+    <td>n</td>
+  </tr>
+  <tr>
     <td>?</td>
     <td>regardless</td>
   </tr>
@@ -1570,6 +1574,12 @@ re.search(r'pi*g','pg')
 ```
 ```
 <_sre.SRE_Match object; span=(0, 2), match='pg'>
+```
+```python
+re.search(r'pi{3}g','piiig')
+```
+```
+<_sre.SRE_Match object; span=(0, 5), match='piiig'>
 ```
 ```python
 re.search(r'httpf?','https://www.naver.com')
