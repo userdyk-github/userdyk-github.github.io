@@ -487,7 +487,7 @@ if __name__ == "__main__":
 <br><br><br>
 
 ```python
-help()
+help(object)
 ```
 
 <br><br><br>
