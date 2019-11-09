@@ -246,6 +246,18 @@ re.search(r'..\w\w','efw@#$23$@')
 
 
 <span class="frame3_1">Metacharacter</span><br>
+
+|Meta|Expr|
+|:--|:--|
+|[abck]|a,b,c,k|
+|[abc.^]|a,b,c,.,^|
+|[a-d]|range|
+|[0-9]|range|
+|[a-z]|range|
+|[A-Z]|range|
+|[a-zA-Z0-9]|range|
+|[^0-9]|not|
+
 ```python
 re.search(r'[cbm]at','cat')
 ```
