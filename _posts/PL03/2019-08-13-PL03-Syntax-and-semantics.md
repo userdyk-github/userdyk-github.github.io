@@ -1401,7 +1401,7 @@ abc
 ```
 <hr class='division3'>
 </details>
-<br>
+<br><br><br>
 
 <span class="frame3_1">Examples</span><br>
 ```python
@@ -1418,7 +1418,7 @@ re.search(r'..\w\w','efw@#$23$@')
 ```
 <_sre.SRE_Match object; span=(4, 8), match='#$23'>
 ```
-<br>
+<br><br><br>
 
 
 <span class="frame3_1">Metacharacter</span><br>
@@ -1506,7 +1506,30 @@ re.search(r'\.and','.and')
 ```
 <_sre.SRE_Match object; span=(0, 4), match='.and'>
 ```
+<br><br><br>
 
+
+<span class="frame3_1">Recurrence pattern</span><br>
+
+<table style="width:100%">
+  <tr>
+    <td>+</td>
+    <td>more than 1</td>
+  </tr>
+  <tr>
+    <td>*</td>
+    <td>more than 0</td>
+  </tr>
+  <tr>
+    <td>?</td>
+    <td>regardless</td>
+  </tr>
+</table>
+
+
+```python
+
+```
 <br><br><br>
 
 ---
