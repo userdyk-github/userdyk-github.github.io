@@ -1626,6 +1626,22 @@ re.search(r'b\w+a$','cabanap')
 ```
 <br><br><br>
 
+<span class="frame3">Re</span><br>
+```python
+import re
+
+m = re.search(r'(\w+)@(.+)','test@gmail.com')
+print(m.group(1))
+print(m.group(2))
+```
+```
+test
+gmail.com
+```
+
+
+<br><br><br>
+
 ---
 
 ### ***Get started with regular expressions***
