@@ -1528,7 +1528,48 @@ re.search(r'\.and','.and')
 
 
 ```python
+import re
 
+re.search(r'a[bcd]*b','abcbcbcbccb')
+```
+```
+<_sre.SRE_Match object; span=(0, 11), match='abcbcbcbccb'>
+```
+```python
+re.search(r'b\w+a','banana')
+```
+```
+<_sre.SRE_Match object; span=(0, 6), match='banana'>
+```
+```python
+re.search(r'i+','piigiii')
+```
+```
+<_sre.SRE_Match object; span=(1, 3), match='ii'>
+```
+```python
+re.search(r'pi+g','pig')
+```
+```
+<_sre.SRE_Match object; span=(0, 3), match='pig'>
+```
+```python
+re.search(r'pi*g','pig')
+```
+```
+<_sre.SRE_Match object; span=(0, 3), match='pig'>
+```
+```python
+re.search(r'pi+g','pg')
+```
+```
+
+```
+```python
+re.search(r'pi*g','pg')
+```
+```
+<_sre.SRE_Match object; span=(0, 2), match='pg'>
 ```
 <br><br><br>
 
