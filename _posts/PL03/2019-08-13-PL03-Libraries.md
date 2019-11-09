@@ -87,6 +87,8 @@ tags : [PL03]
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-OpenCV.html'>OpenCV</a>
   - <a href='https://opencv.org/' target="_blank"><span class='jb-small'>https://opencv.org/</span></a>
 
+- <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-gspread.html'>gspread</a>
+  - <a href='https://gspread.readthedocs.io/en/latest/' target="_blank"><span class='jb-small'>https://gspread.readthedocs.io/en/latest/</span></a>
 
 <br><br><br>
 
