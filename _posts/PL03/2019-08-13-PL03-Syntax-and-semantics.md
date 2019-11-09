@@ -484,6 +484,11 @@ Person has salary?: False
 if __name__ == "__main__":
     pass
 ```
+<br><br><br>
+
+```python
+help()
+```
 
 <br><br><br>
 
