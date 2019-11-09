@@ -1405,6 +1405,8 @@ abc
 
 <span class="frame3_1">Examples</span><br>
 ```python
+import re
+
 re.search(r'\d\d\d\w','efw2342efwefwef')
 ```
 ```
@@ -1431,20 +1433,12 @@ re.search(r'..\w\w','efw@#$23$@')
 |[A-Z]|range|
 |[a-zA-Z0-9]|range|
 |[^0-9]|not|
-
-|Meta(2)|Expr|
-|:--|:--|
-|\d|[0-9]|
-|\D|[^0-9]|
-|\s|space word|
-|\S|non-space word|
-|\w|[0-9a-zA-Z]|
-|\W|[^0-9a-zA-Z]|
-|\.|.|
-|\\|\|
+|.|all of things|
 
 
 ```python
+import re
+
 re.search(r'[cbm]at','cat')
 ```
 ```
@@ -1468,8 +1462,50 @@ re.search(r'[^abc]aron','#caron')
 ```
 <_sre.SRE_Match object; span=(0, 5), match='#aron'>
 ```
+```python
+re.search(r'p.g','pig')
+```
+```
+<_sre.SRE_Match object; span=(0, 3), match='pig'>
+```
 <br><br><br>
 
+
+|Meta(2)|Expr|
+|:--|:--|
+|\d|[0-9]|
+|\D|[^0-9]|
+|\s|space word|
+|\S|non-space word|
+|\w|[0-9a-zA-Z]|
+|\W|[^0-9a-zA-Z]|
+
+```python
+import re
+
+re.search(r'\sand','apple and banana')
+```
+```
+<_sre.SRE_Match object; span=(5, 9), match=' and'>
+```
+```
+re.search(r'\Sand','apple and banana')
+```
+```
+
+```
+```python
+re.search(r'.and','pand')
+```
+```
+<_sre.SRE_Match object; span=(0, 4), match='pand'>
+```
+```python
+re.search(r'\.and','.and')
+```
+```
+<_sre.SRE_Match object; span=(0, 4), match='.and'>
+```
 
 <br><br><br>
 
