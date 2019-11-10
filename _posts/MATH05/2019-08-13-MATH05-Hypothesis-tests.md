@@ -152,7 +152,18 @@ stats.ttest_1samp(x, popmean=0)
 ![test_t_for_mean_under_unknown_different_variances_of_two_group_with_large_samples](https://user-images.githubusercontent.com/52376448/66703408-4fe23400-ed4d-11e9-9c49-c07d5dd666f4.JPG)
 ![test_t_for_mean_under_unknown_equivalent_variances_of_two_group_with_small_samples](https://user-images.githubusercontent.com/52376448/66703409-4fe23400-ed4d-11e9-86d9-37a1e2d54ee7.JPG)
 ```python
+from scipy import stats
+np.random.seed(12345678)
 
+rvs1 = stats.norm.rvs(loc=5,scale=10,size=500)
+rvs2 = stats.norm.rvs(loc=5,scale=10,size=500)
+
+stats.ttest_ind(rvs1,rvs2)
+stats.ttest_ind(rvs1,rvs2, equal_var = False)
+```
+```
+(0.26833823296239279, 0.78849443369564776)
+(0.26833823296239279, 0.78849452749500748)
 ```
 <span class="jb-medoum"></span>
 <details markdown="1">
