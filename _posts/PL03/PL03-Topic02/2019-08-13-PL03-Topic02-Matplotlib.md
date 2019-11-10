@@ -2044,8 +2044,37 @@ plt.show()
 ![download (11)](https://user-images.githubusercontent.com/52376448/66710177-463ce880-edae-11e9-9a5f-27fa70c1a95f.png)
 <hr class='division3'>
 </details>
+<br><br><br>
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
 
+rv = np.array([[1.75 , 4.125],
+               [2.   , 3.625],
+               [1.625, 3.625],
+               [2.25 , 3.125],
+               [1.875, 3.75 ],
+               [3.   , 3.875],
+               [1.75 , 3.75 ],
+               [2.125, 3.75 ],
+               [2.125, 3.75 ],
+               [3.25 , 3.375],
+               [2.   , 3.75 ],
+               [1.875, 3.375]])
 
+sns.set();
+my_pal = {0: "g", 1: "b"}
+sns.boxplot(data=rv, width=0.2, palette=my_pal)
+plt.xticks([0,1],['Tactile map','Prototype'])
+plt.ylabel("Satisfaction")
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![image](https://user-images.githubusercontent.com/52376448/68545680-a7d68e00-0412-11ea-91b0-42ce27d027fd.png)
+<hr class='division3'>
+</details>
 <br><br><br>
 
 ---
