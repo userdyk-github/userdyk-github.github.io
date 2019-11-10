@@ -268,7 +268,9 @@ MultiComp = MultiComparison(stacked_data['result'],
 
 # Show all pair-wise comparisons:
 # Print the comparisons
-print(MultiComp.tukeyhsd().summary())
+results = MultiComp.tukeyhsd()
+print(results.summary())
+results.plot_simultaneous()
 ```
 ```
  Multiple Comparison of Means - Tukey HSD,FWER=0.05 
@@ -282,6 +284,8 @@ treatment2 treatment3 -0.0322  -1.5735 1.5091 False
 treatment2 treatment4  2.355    0.8137 3.8963  True 
 treatment3 treatment4  2.3872   0.8459 3.9285  True 
 ```
+![image](https://user-images.githubusercontent.com/52376448/68547171-b37d8100-0421-11ea-8e5d-9e9cd812ebb4.png)
+
 <span class="frame3">Holm-Bonferroni Method</span><br>
 ```python
 comp = MultiComp.allpairtest(stats.ttest_rel, method='Holm')
