@@ -256,8 +256,161 @@ print (stacked_data.head(8))
 5   1  treatment2   9.436072
 6   1  treatment3  12.715509
 7   1  treatment4  15.016419
-
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+```python
+df.stack()
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+```
+0   treatment1    10.130439
+    treatment2     8.089465
+    treatment3    18.145643
+    treatment4    18.152929
+1   treatment1    11.967849
+    treatment2    15.090930
+    treatment3    16.328056
+    treatment4    15.949430
+2   treatment1     9.953008
+    treatment2    14.802174
+    treatment3    16.048117
+    treatment4     9.917037
+3   treatment1     9.994950
+    treatment2    11.442346
+    treatment3    12.059078
+    treatment4    13.461622
+4   treatment1    10.532563
+    treatment2    14.644867
+    treatment3    10.803938
+    treatment4    11.966377
+5   treatment1     7.448921
+    treatment2    11.672544
+    treatment3     9.885759
+    treatment4    11.060560
+6   treatment1     8.750608
+    treatment2    13.462668
+    treatment3     9.172649
+    treatment4     8.315324
+7   treatment1    11.423393
+    treatment2     9.432116
+                    ...    
+42  treatment3     6.160599
+    treatment4    11.738915
+43  treatment1     8.201168
+    treatment2     9.803940
+    treatment3     8.422076
+    treatment4     9.180611
+44  treatment1    10.158036
+    treatment2    11.387816
+    treatment3    10.132787
+    treatment4    15.716954
+45  treatment1     7.867300
+    treatment2     7.031535
+    treatment3     9.547684
+    treatment4    19.755411
+46  treatment1     5.016449
+    treatment2    12.700640
+    treatment3    15.266099
+    treatment4    14.259488
+47  treatment1     0.745349
+    treatment2    13.105580
+    treatment3    11.237676
+    treatment4    21.625642
+48  treatment1    11.615028
+    treatment2    11.318771
+    treatment3    15.321465
+    treatment4    15.041703
+49  treatment1     5.710994
+    treatment2    15.220437
+    treatment3    15.089208
+    treatment4    10.121185
+Length: 200, dtype: float64
+```
+<hr class='division3_1'>
+</details>
+<br>
+```python
+df.stack().reset_index()
+```
+<details markdown="1">
+<summary class='jb-small' style="color:red">OUTPUT</summary>
+<hr class='division3_1'>
+```
+	level_0	level_1		0
+0	0	treatment1	10.130439
+1	0	treatment2	8.089465
+2	0	treatment3	18.145643
+3	0	treatment4	18.152929
+4	1	treatment1	11.967849
+5	1	treatment2	15.090930
+6	1	treatment3	16.328056
+7	1	treatment4	15.949430
+8	2	treatment1	9.953008
+9	2	treatment2	14.802174
+10	2	treatment3	16.048117
+11	2	treatment4	9.917037
+12	3	treatment1	9.994950
+13	3	treatment2	11.442346
+14	3	treatment3	12.059078
+15	3	treatment4	13.461622
+16	4	treatment1	10.532563
+17	4	treatment2	14.644867
+18	4	treatment3	10.803938
+19	4	treatment4	11.966377
+20	5	treatment1	7.448921
+21	5	treatment2	11.672544
+22	5	treatment3	9.885759
+23	5	treatment4	11.060560
+24	6	treatment1	8.750608
+25	6	treatment2	13.462668
+26	6	treatment3	9.172649
+27	6	treatment4	8.315324
+28	7	treatment1	11.423393
+29	7	treatment2	9.432116
+...	...	...		...
+170	42	treatment3	6.160599
+171	42	treatment4	11.738915
+172	43	treatment1	8.201168
+173	43	treatment2	9.803940
+174	43	treatment3	8.422076
+175	43	treatment4	9.180611
+176	44	treatment1	10.158036
+177	44	treatment2	11.387816
+178	44	treatment3	10.132787
+179	44	treatment4	15.716954
+180	45	treatment1	7.867300
+181	45	treatment2	7.031535
+182	45	treatment3	9.547684
+183	45	treatment4	19.755411
+184	46	treatment1	5.016449
+185	46	treatment2	12.700640
+186	46	treatment3	15.266099
+187	46	treatment4	14.259488
+188	47	treatment1	0.745349
+189	47	treatment2	13.105580
+190	47	treatment3	11.237676
+191	47	treatment4	21.625642
+192	48	treatment1	11.615028
+193	48	treatment2	11.318771
+194	48	treatment3	15.321465
+195	48	treatment4	15.041703
+196	49	treatment1	5.710994
+197	49	treatment2	15.220437
+198	49	treatment3	15.089208
+199	49	treatment4	10.121185
+200 rows × 3 columns
+```
+<hr class='division3_1'>
+</details>
+
+<hr class='division3'>
+</details>
+<br>
+
 <span class="frame3">Tukey’s multi-comparison method</span><br>
 ```python
 from statsmodels.stats.multicomp import (pairwise_tukeyhsd, MultiComparison)
