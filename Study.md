@@ -502,18 +502,18 @@ Mass Point</a><br>
 
 ## _LAN01 : Korean_
 
-> <a href='https://userdyk-github.github.io/lan01/LAN01-Korean.html'>Korean</a><br>
+> <a href='https://userdyk-github.github.io/lan01/LAN01-Conversation.html'>Conversation</a><br>
 
 ---
 
 ## _LAN02 : English_
 
-> <a href='https://userdyk-github.github.io/lan02/LAN02-English.html'>English</a><br>
+> <a href='https://userdyk-github.github.io/lan02/LAN02-Conversation.html'>Conversation</a><br>
 
 ---
 
 ## _LAN03 : Chinese_
 
-> <a href='https://userdyk-github.github.io/lan03/LAN03-Chinese.html'>Chinese</a><br>
+> <a href='https://userdyk-github.github.io/lan03/LAN03-Conversation.html'>Conversation</a><br>
 
 
