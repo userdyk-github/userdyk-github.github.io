@@ -36,7 +36,9 @@ $
 
 ### ***Version Control***
 ```python
+import statsmodels as sm
 
+sm.__version__
 ```
 <br><br><br>
 
