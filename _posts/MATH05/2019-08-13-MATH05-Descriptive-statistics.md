@@ -421,8 +421,46 @@ stats.describe(x)
 
 ## **Statistical analysis**
 ![image](https://user-images.githubusercontent.com/52376448/68570118-3e529000-04a3-11ea-9db3-3c49e62ec249.png)
+
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Data-Preprocessing</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
 ![image](https://user-images.githubusercontent.com/52376448/68577014-9349d280-04b2-11ea-9f13-136672ea22fe.png)
 
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Dataset</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Green region</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Violet region</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Orange region</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Red region</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
 
 <hr class="division1">
 
