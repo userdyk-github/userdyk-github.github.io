@@ -421,6 +421,7 @@ stats.describe(x)
 
 ## **Statistical analysis**
 ![image](https://user-images.githubusercontent.com/52376448/68570118-3e529000-04a3-11ea-9db3-3c49e62ec249.png)
+![image](https://user-images.githubusercontent.com/52376448/68571411-44963b80-04a6-11ea-92ce-f54aa558c611.png)
 
 
 <hr class="division1">
