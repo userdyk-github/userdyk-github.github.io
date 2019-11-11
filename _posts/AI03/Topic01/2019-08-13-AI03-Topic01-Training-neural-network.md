@@ -514,7 +514,26 @@ print(diff)
 ### ***Gradient at neural network***
 
 ```python
+import sys, os
+import numpy as np
 
+# below code : functions.py, gradient.py
+from functions import softmax, cross_entropy_error
+from gradient import numerical_gradient
+
+class simpleNet:
+    def __init__(self):
+        self.W = np.random.randn(2,3)
+
+    def predict(self,x):
+        return np.dot(x,self.W)
+
+    def loss(self, x,t):
+        z = self.predict(x)
+        y = softmax(z)
+        loss = cross_entropy_error(y,t)
+
+        return loss
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
