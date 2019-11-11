@@ -30,7 +30,7 @@ List of posts to read before reading this article
 <br><br><br>
 <hr class="division2">
 
-## **Count**
+## **Counting**
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Generating random number</summary>
@@ -417,6 +417,12 @@ stats.describe(x)
 <span class="jb-medium">DescribeResult(nobs=26, minmax=(-24, 23), mean=4.8076923076923075, variance=119.84153846153846, skewness=-0.4762339485461929, kurtosis=0.37443381660038977)</span>
 
 <br><br><br>
+<hr class="division2">
+
+## **Statistical analysis**
+![image](https://user-images.githubusercontent.com/52376448/68570118-3e529000-04a3-11ea-9db3-3c49e62ec249.png)
+
+
 <hr class="division1">
 
 List of posts followed by this article
