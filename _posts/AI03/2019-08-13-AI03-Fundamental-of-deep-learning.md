@@ -15,6 +15,8 @@ tags : [AI03]
 - <a href='https://userdyk-github.github.io/ai03-topic01/AI03-Topic01-Training-skills.html'>Training skills</a>
 - <a href='https://userdyk-github.github.io/ai03-topic01/AI03-Topic01-Convolutional-neural-network.html'>Convolutional neural network</a>
 - <a href='https://userdyk-github.github.io/ai03-topic01/AI03-Topic01-Deep-learning.html'>Deep learning</a>
+- <a href='https://userdyk-github.github.io/ai03-topic01/AI03-Topic01-Summary.html'>Summary</a>
+
 
 ---
 
