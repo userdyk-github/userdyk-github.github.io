@@ -47,7 +47,7 @@ class Neuron:
                 self.w -= w_grad
                 self.b -= b_grad
 ```
-
+<br><br><br>
 
 <hr class="division2">
 
