@@ -223,6 +223,7 @@ $ cat [file_name]
 $ head [file_name]
 $ more [file_name]      # spacebar : next page
                         # enter : next line
+$ less [file_name]                        
 $ tail [file_name]
 ```
 ```bash
