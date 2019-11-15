@@ -61,6 +61,12 @@ Enterprise IT(legacy IT) > Infrastructure(as a Service, IaaS) > Platform(as a Se
 
 ## **CUDA(Compute Unified Device Architecture) Programming**
 
+### ***hayun's lecture***
+
+```bash
+$ apt install nvidia-driver-[version]
+```
+
 ### ***Present situation of	CUDA and deep learning framework***
 
 Multiprocessing system and programming model concept for using CUDA/cuDNN, by grasping graphics card and hardware model in relation to Caffe, Caffe2, Tensorflow.
