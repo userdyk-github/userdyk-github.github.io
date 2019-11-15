@@ -64,8 +64,19 @@ Enterprise IT(legacy IT) > Infrastructure(as a Service, IaaS) > Platform(as a Se
 ### ***hayun's lecture***
 
 ```bash
+$ apt update
+$ apt upgrade
 $ apt install nvidia-driver-[version]
+$ nvidia-smi                             # hardware information
+$ lsmod | grep nvidia                    # kernel module
 ```
+
+<span class="frame3">cuda</span><br>
+<a href="https://developer.nvidia.com/cuda-downloads" target="_blank">URL</a>
+
+
+<span class="frame3">cudnn</span><br>
+<a href="https://docs.nvidia.com/deeplearning/sdk/cudnn-install/index.html" target="_blank">URL</a>
 
 ### ***Present situation of	CUDA and deep learning framework***
 
