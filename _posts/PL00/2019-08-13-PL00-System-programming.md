@@ -28,6 +28,9 @@ List of posts to read before reading this article
 ```bash
 $ echo $PATH
 ```
+```bash
+$ whereis [command]
+```
 ```vim
 export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}
 ```
@@ -370,7 +373,7 @@ $ chgrp -R [owner_group] [folder_name]
 <br><br><br>
 <span class="frame3">Execute</span><br>
 ```bash
-$ [command]           # $echo $PATH : through environmental variables
+$ [command]           # $echo $PATH;whereis [command]  : through environmental variables
 $ ./[command]         # pwd : on current directory 
 ```
 
