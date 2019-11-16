@@ -97,10 +97,11 @@ $ find . -name [file_name] -size [file_size]      # from current directory
 ```bash
 $ cat [file_name]
 $ head [file_name]
-$ more [file_name]      # spacebar : next page
-                        # enter : next line
-$ less [file_name]                        
+$ head -n[number_of_lines] [file_name]
 $ tail [file_name]
+$ tail -n[number_of_lines] [file_name]
+$ more [file_name]                            # spacebar : next page, enter : next line
+$ less [file_name]                        
 ```
 ```bash
 $ rm [file_name]
