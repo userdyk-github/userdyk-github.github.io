@@ -23,6 +23,19 @@ List of posts to read before reading this article
 
 ## **Introduction**
 
+### ***Environmental variables***
+/home/user/.bashrc
+```bash
+$ echo $PATH
+```
+```vim
+export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}
+```
+<br><br><br>
+
+---
+
+
 ### ***File on Linux***
 <a href="https://linuxhandbook.com/linux-directory-structure/" target="_blank">Linux directory structure</a>
 
@@ -72,6 +85,27 @@ hosts
 <hr class='division3'>
 </details>
 ```bash
+$ rm *                    # remove all files
+$ rm [file_name]
+$ rm -rf [folder_name]
+```
+
+<br><br><br>
+
+<span class="frame3">Search contents</span><br>
+```bash
+$ cat [file_name]
+$ cat [file_name] | sort {-r}
+$ cat [file_name] | sort {-r} | grep [pattern]
+$ head [file_name]
+$ head -n[number_of_lines] [file_name]
+$ tail [file_name]
+$ tail -n[number_of_lines] [file_name]
+$ more [file_name]                            # spacebar : next page, enter : next line
+$ less [file_name]                        
+```
+
+```bash
 $ grep [pattern] [file_name]         # search conformable pattern(string) in file
 $ grep [pattern] *                   # search conformable pattern(string) only in present directory
 
@@ -93,7 +127,9 @@ $ grep -E "[pattern_1]|[pattern_2]|[pattern_3]" [file_name]        # search patt
 <a href="https://recipes4dev.tistory.com/157" target="_blank">URL</a>
 <hr class='division3'>
 </details>
+<br><br><br>
 
+<span class="frame3">Search file</span><br>
 ```bash
 $ find / -name [file_name]                        # from root directory
 $ find / -size [file_size]                        # from root directory
@@ -103,25 +139,9 @@ $ find . -size [file_size]                        # from current directory
 $ find . -name [file_name] -size [file_size]      # from current directory
 ```
 ```bash
-$ cat [file_name]
-$ cat [file_name] | sort {-r}
-$ cat [file_name] | sort {-r} | grep [pattern]
-$ head [file_name]
-$ head -n[number_of_lines] [file_name]
-$ tail [file_name]
-$ tail -n[number_of_lines] [file_name]
-$ more [file_name]                            # spacebar : next page, enter : next line
-$ less [file_name]                        
-```
-```bash
 $ cmp [file_name] [file_name]
 $ diff [file_name] [file_name]
 $ file [file_name]
-```
-```bash
-$ rm *                    # remove all files
-$ rm [file_name]
-$ rm -rf [folder_name]
 ```
 <br><br><br>
 
@@ -156,6 +176,8 @@ $ tar -zxvf [name.tar.gz]         # unzip .tar.gz
 ### ***Process on Linux***
 
 <br><br><br>
+
+---
 
 ### ***Authority on Linux***
 
@@ -348,6 +370,7 @@ $ echo [arbitary_stdout]
 arbitary_stdout
 ```
 <br><br><br>
+
 
 #### Redirection
 
