@@ -104,6 +104,11 @@ $ more [file_name]                            # spacebar : next page, enter : ne
 $ less [file_name]                        
 ```
 ```bash
+$ cmp [file_name] [file_name]
+$ diff [file_name] [file_name]
+$ file [file_name]
+```
+```bash
 $ rm [file_name]
 $ rm -rf [folder_name]
 ```
