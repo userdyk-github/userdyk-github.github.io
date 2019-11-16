@@ -96,6 +96,8 @@ $ find . -name [file_name] -size [file_size]      # from current directory
 ```
 ```bash
 $ cat [file_name]
+$ cat [file_name] | sort {-r}
+$ cat [file_name] | sort {-r} | grep [pattern]
 $ head [file_name]
 $ head -n[number_of_lines] [file_name]
 $ tail [file_name]
