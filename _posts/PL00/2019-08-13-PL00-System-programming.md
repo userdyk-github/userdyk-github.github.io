@@ -41,6 +41,12 @@ $ sudo which [command]
 export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}
 ```
 <br><br><br>
+<span class="frame3">Execute</span><br>
+```bash
+$ [command]           # $echo $PATH;whereis [command];which [command]  : through environmental variables
+$ ./[command]         # pwd : on current directory 
+```
+<br><br><br>
 
 ---
 
@@ -204,7 +210,7 @@ $ tar -zxvf [name.tar.gz]         # unzip .tar.gz
 ## **Shell**
 
 ### ***Multiuser system***
-
+#### User
 <span class="frame3">all user name currently accessed on linux</span>
 ```bash
 $ who
@@ -363,6 +369,7 @@ root    ALL=(ALL:ALL) ALL
 </details>
 <br><br><br>
 
+#### Group
 <span class="frame3">Group management</span><br>
 /etc/group
 ```bash
@@ -413,12 +420,6 @@ $ chgrp [owner_group] [folder_name]
 $ chgrp -R [owner_group] [folder_name]
 ```
 
-<br><br><br>
-<span class="frame3">Execute</span><br>
-```bash
-$ [command]           # $echo $PATH;whereis [command];which [command]  : through environmental variables
-$ ./[command]         # pwd : on current directory 
-```
 
 <br><br><br>
 
