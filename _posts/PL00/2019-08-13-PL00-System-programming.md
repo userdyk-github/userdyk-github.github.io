@@ -268,9 +268,6 @@ $ useradd [user_name]
 $ passwd [user_name]
 ```
 ```bash
-$ usermod [user_name]
-```
-```bash
 $ userdel [user_name]
 ```
 <hr class='division3'>
@@ -317,6 +314,7 @@ root    ALL=(ALL:ALL) ALL
 ```bash
 $ groupadd [group_name]                     # create group
 $ usermod -a -G [group_name] [user_name]    # add user to group
+$ groups [user_name]                        # list of groups including user
 ```
 <br><br><br>
 
