@@ -269,6 +269,13 @@ $ useradd [user_name]
 $ passwd [user_name]
 ```
 ```bash
+$ mkdir /home/[user_name]
+$ chown [user_name]:[user_name] /home/user_name
+```
+```bash
+$ usermod -a -G [group_name] [user_name]
+```
+```bash
 $ userdel [user_name]
 ```
 <hr class='division3'>
