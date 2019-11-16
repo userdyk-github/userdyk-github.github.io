@@ -31,6 +31,12 @@ $ echo $PATH
 ```bash
 $ whereis [command]
 ```
+```bash
+$ which [command]
+```
+```bash
+$ sudo which [command]
+```
 ```vim
 export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}
 ```
@@ -279,23 +285,44 @@ $ chown [user_name]:[user_name] /home/user_name
 $ usermod -a -G [group_name] [user_name]
 ```
 ```bash
-$ userdel [user_name]
+$ userdel -r [user_name]
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:red">SUPPLEMENT : delete user</summary>
+<hr class='division3_1'>
+<span>userdel</span><br>
+```bash
+$ userdel [user_name]         # only account
+$ userdel -r [user_name]      # account, home directory
+```
+<br>
+<span>deluser</span><br>
+```bash
+$ deluser [user_name]                    # only account
+$ deluser --remove [user_name]           # account, home directory
+$ deluser --remove-all-files [user_name] # account, home directory, all files
+```
+
+<hr class='division3_1'>
+</details>
+
 <br><br><br>
+
+
 <span class="frame3">script file</span><br>
 ```bash
 $ touch adduser
 $ vim adduser
 ```
 ```vim
-useraddd [user_name]
+useraddd $1
 tail -n2 /etc/passwd
-mkdir /home/[user_name]
-chown [user_name:user_name] /home/[user_name]
-echo "[user_name] user added"
+mkdir /home/$1
+chown $1:$1 /home/$1
+echo "$1 user added"
 ```
 ```bash
-$ sudo ./adduser
+$ sudo ./adduser [user_name]
 ```
 <hr class='division3'>
 </details>
@@ -389,7 +416,7 @@ $ chgrp -R [owner_group] [folder_name]
 <br><br><br>
 <span class="frame3">Execute</span><br>
 ```bash
-$ [command]           # $echo $PATH;whereis [command]  : through environmental variables
+$ [command]           # $echo $PATH;whereis [command];which [command]  : through environmental variables
 $ ./[command]         # pwd : on current directory 
 ```
 
