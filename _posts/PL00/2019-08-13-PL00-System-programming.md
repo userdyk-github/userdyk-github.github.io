@@ -61,6 +61,14 @@ $ ls host?
 ```
 hosts
 ```
+<br>
+```bash
+$ ls host[stu]
+```
+```
+hosts
+```
+
 <hr class='division3'>
 </details>
 ```bash
