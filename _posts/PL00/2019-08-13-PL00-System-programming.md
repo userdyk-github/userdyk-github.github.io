@@ -253,15 +253,25 @@ $ passwd
 </details>
 <br><br><br>
 
-<span class="frame3">create another user id on linux</span>
+<span class="frame3">create another user id on linux</span><br>
+/etc/passwd
 ```bash
 $ adduser [user_name]
 ```
 <details markdown="1">
-<summary class='jb-small' style="color:blue">If you concretely create user id, setting details of user</summary>
+<summary class='jb-small' style="color:blue">If you concretely set user id</summary>
 <hr class='division3'>
 ```bash
 $ useradd [user_name]
+```
+```bash
+$ passwd [user_name]
+```
+```bash
+$ usermod [user_name]
+```
+```bash
+$ userdel [user_name]
 ```
 <hr class='division3'>
 </details>
