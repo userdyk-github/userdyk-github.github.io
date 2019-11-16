@@ -368,6 +368,13 @@ $ chgrp -R [owner_group] [folder_name]
 ```
 
 <br><br><br>
+<span class="frame3">Execute</span><br>
+```bash
+$ [command]           # $echo $PATH : through environmental variables
+$ ./[command]         # pwd : on current directory 
+```
+
+<br><br><br>
 
 ---
 
