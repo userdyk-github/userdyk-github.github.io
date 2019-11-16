@@ -281,6 +281,22 @@ $ usermod -a -G [group_name] [user_name]
 ```bash
 $ userdel [user_name]
 ```
+<br><br><br>
+<span class="frame3">script file</span><br>
+```bash
+$ touch adduser
+$ vim adduser
+```
+```vim
+useraddd [user_name]
+tail -n2 /etc/passwd
+mkdir /home/[user_name]
+chown [user_name:user_name] /home/[user_name]
+echo "[user_name] user added"
+```
+```bash
+$ sudo ./adduser
+```
 <hr class='division3'>
 </details>
 <br><br><br>
