@@ -423,6 +423,29 @@ $ chgrp -R [owner_group] [folder_name]
 
 <br><br><br>
 
+#### Super user
+
+<span class="frame3">Password</span>
+```bash
+$ passwd root       : create password
+$ passwd -d root    : delete password
+```
+
+<br><br><br>
+
+
+<span class="frame3">Super user</span>
+```bash
+$ su
+$ su -l
+$ su --login
+$ sudo
+```
+
+<br><br><br>
+
+<br><br><br>
+
 ---
 
 ### ***Standard Stream***
