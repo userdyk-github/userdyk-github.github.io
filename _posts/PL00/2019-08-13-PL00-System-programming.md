@@ -86,9 +86,13 @@ $ grep -E "[pattern_1]|[pattern_2]|[pattern_3]" [file_name]        # search patt
 <hr class='division3'>
 </details>
 
-
 ```bash
-$ find 
+$ find / -name [file_name]                        # from root directory
+$ find / -size [file_size]                        # from root directory
+$ find / -name [file_name] -size [file_size]      # from root directory
+$ find . -name [file_name]                        # from current directory
+$ find . -size [file_size]                        # from current directory
+$ find . -name [file_name] -size [file_size]      # from current directory
 ```
 ```bash
 $ cat [file_name]
