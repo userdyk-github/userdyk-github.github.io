@@ -261,6 +261,7 @@ $ adduser [user_name]
 <details markdown="1">
 <summary class='jb-small' style="color:blue">If you concretely set user id</summary>
 <hr class='division3'>
+![image](https://user-images.githubusercontent.com/52376448/68995667-9807ef80-08d3-11ea-9a6a-cca33534e03b.png)
 ```bash
 $ useradd [user_name]
 ```
