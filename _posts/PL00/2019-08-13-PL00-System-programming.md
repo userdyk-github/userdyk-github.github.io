@@ -232,6 +232,14 @@ root    ALL=(ALL:ALL) ALL
 </details>
 <br><br><br>
 
+<span class="frame3">Group management</span><br>
+/etc/group
+```bash
+$ groupadd [group_name]                     # create group
+$ usermod -a -G [group_name] [user_name]    # add user to group
+```
+<br><br><br>
+
 <span class="frame3">file permission</span> ｜ <a href="https://en.wikipedia.org/wiki/Chmod" target="_blank" class="jb-medium">URL</a><br>
 <span class="frame3_1">for file</span>
 ```bash
