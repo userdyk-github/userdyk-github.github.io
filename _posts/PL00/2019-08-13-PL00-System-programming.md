@@ -29,6 +29,9 @@ List of posts to read before reading this article
 $ echo $PATH
 ```
 ```bash
+$ sudo echo $PATH
+```
+```bash
 $ whereis [command]
 ```
 ```bash
