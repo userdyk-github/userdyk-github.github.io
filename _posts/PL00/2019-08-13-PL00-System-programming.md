@@ -111,6 +111,7 @@ $ diff [file_name] [file_name]
 $ file [file_name]
 ```
 ```bash
+$ rm *                    # remove all files
 $ rm [file_name]
 $ rm -rf [folder_name]
 ```
