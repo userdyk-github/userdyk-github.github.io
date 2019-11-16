@@ -116,6 +116,33 @@ $ rm -rf [folder_name]
 ```
 <br><br><br>
 
+<span class="frame3">Zip, Unzip</span><br>
+```bash
+$ tar -cf [name.tar] a b c        # tie and zip a b c files 
+$ tar -zcf [name.tar.gz] a b c    # zip a b c files 
+$ tar -xvf [name.tar]             # unzip .tar
+$ tar -zxvf [name.tar.gz]         # unzip .tar.gz
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+
+- f : set name of file that will be tied 
+- c : tie files with .tar
+- x : unzip .tar(.gz) file
+- v : print list detaily
+- z : zip to gzip
+- t : print list
+- p : save authroity of files
+- C : set path
+
+<hr class='division3'>
+</details>
+
+
+
+<br><br><br>
+
 
 ### ***Process on Linux***
 
