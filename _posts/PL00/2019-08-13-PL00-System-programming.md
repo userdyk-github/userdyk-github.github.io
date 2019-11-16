@@ -25,7 +25,85 @@ List of posts to read before reading this article
 
 ### ***File on Linux***
 <a href="https://linuxhandbook.com/linux-directory-structure/" target="_blank">Linux directory structure</a>
+
+<span class="frame3">working directory</span><br>
+```bash
+$ pwd
+```
+```bash
+$ cd ~     # move user directory
+$ cd /     # move root directory
+$ cd -     # move previous working directory
+```
+```bash
+$ ls
+$ ls -l
+$ ls -a
+$ ls -al
+$ ls | grep [pattern]
+$ ls -i
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">ls wildcard example</summary>
+<hr class='division3'>
+![image](https://user-images.githubusercontent.com/52376448/68069411-2bed9d80-fda3-11e9-873a-478c2625db18.png)
+
+```bash
+$ ls host*
+```
+```
+host.conf  hostname  hosts  hosts.allow  hosts.deny
+```
+<br>
+```bash
+$ ls host?
+```
+```
+hosts
+```
+<hr class='division3'>
+</details>
+```bash
+$ grep [pattern] [file_name]         # search conformable pattern(string) in file
+$ grep [pattern] *                   # search conformable pattern(string) only in present directory
+
+$ grep -i [pattern] [file_name]      # search conformable pattern(string) in file, regardless of capital and small letter
+$ grep -v [pattern] [file_name]      # search unconformable pattern(string) in file
+$ grep -n [pattern] [file_name]      # search conformable pattern(string) in file, numbering line on results for searching
+$ grep -l [pattern] [file_name]      # search conformable pattern(string) in file, displaying only file name including pattern
+
+$ grep -c [pattern] [file_name]      # search conformable pattern(string) in file, displaying the number of consistant pattern line on a file 
+$ grep -c [pattern] *                # search conformable pattern(string) in file, displaying the number of consistant pattern line on present directory 
+$ grep -c [pattern] [folder_name]    # search conformable pattern(string) in file, displaying the number of consistant pattern line per file on a folder
+
+$ grep -r [pattern] *                # search conformable pattern(string) in present directory including sub-directory
+$ grep -E "[pattern_1]|[pattern_2]|[pattern_3]" [file_name]        # search pattern 1 or pattern 2 or pattern 3 in file
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">grep example</summary>
+<hr class='division3'>
+<a href="https://recipes4dev.tistory.com/157" target="_blank">URL</a>
+<hr class='division3'>
+</details>
+
+
+```bash
+$ find 
+```
+```bash
+$ cat [file_name]
+$ head [file_name]
+$ more [file_name]      # spacebar : next page
+                        # enter : next line
+$ less [file_name]                        
+$ tail [file_name]
+```
+```bash
+$ rm [file_name]
+$ rm -rf [folder_name]
+```
 <br><br><br>
+
 
 ### ***Process on Linux***
 
@@ -152,84 +230,6 @@ root    ALL=(ALL:ALL) ALL
 ![image](https://user-images.githubusercontent.com/52376448/68069219-a9fc7500-fda0-11e9-98c7-8c3c07f60cc2.png)
 <hr class='division3'>
 </details>
-<br><br><br>
-
-<span class="frame3">working directory</span><br>
-```bash
-$ pwd
-```
-```bash
-$ cd ~     # move user directory
-$ cd /     # move root directory
-$ cd -     # move previous working directory
-```
-```bash
-$ ls
-$ ls -l
-$ ls -a
-$ ls -al
-$ ls | grep [pattern]
-$ ls -i
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">ls wildcard example</summary>
-<hr class='division3'>
-![image](https://user-images.githubusercontent.com/52376448/68069411-2bed9d80-fda3-11e9-873a-478c2625db18.png)
-
-```bash
-$ ls host*
-```
-```
-host.conf  hostname  hosts  hosts.allow  hosts.deny
-```
-<br>
-```bash
-$ ls host?
-```
-```
-hosts
-```
-<hr class='division3'>
-</details>
-```bash
-$ grep [pattern] [file_name]         # search conformable pattern(string) in file
-$ grep [pattern] *                   # search conformable pattern(string) only in present directory
-
-$ grep -i [pattern] [file_name]      # search conformable pattern(string) in file, regardless of capital and small letter
-$ grep -v [pattern] [file_name]      # search unconformable pattern(string) in file
-$ grep -n [pattern] [file_name]      # search conformable pattern(string) in file, numbering line on results for searching
-$ grep -l [pattern] [file_name]      # search conformable pattern(string) in file, displaying only file name including pattern
-
-$ grep -c [pattern] [file_name]      # search conformable pattern(string) in file, displaying the number of consistant pattern line on a file 
-$ grep -c [pattern] *                # search conformable pattern(string) in file, displaying the number of consistant pattern line on present directory 
-$ grep -c [pattern] [folder_name]    # search conformable pattern(string) in file, displaying the number of consistant pattern line per file on a folder
-
-$ grep -r [pattern] *                # search conformable pattern(string) in present directory including sub-directory
-$ grep -E "[pattern_1]|[pattern_2]|[pattern_3]" [file_name]        # search pattern 1 or pattern 2 or pattern 3 in file
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">grep example</summary>
-<hr class='division3'>
-<a href="https://recipes4dev.tistory.com/157" target="_blank">URL</a>
-<hr class='division3'>
-</details>
-
-
-```bash
-$ find 
-```
-```bash
-$ cat [file_name]
-$ head [file_name]
-$ more [file_name]      # spacebar : next page
-                        # enter : next line
-$ less [file_name]                        
-$ tail [file_name]
-```
-```bash
-$ rm [file_name]
-$ rm -rf [folder_name]
-```
 <br><br><br>
 
 <span class="frame3">file permission</span> ｜ <a href="https://en.wikipedia.org/wiki/Chmod" target="_blank" class="jb-medium">URL</a><br>
