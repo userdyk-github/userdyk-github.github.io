@@ -596,6 +596,22 @@ $ ln -s [origin_file_name] [new_file_name]      # soft : different inode for ori
 ## **Key factors on system programming**
 
 ### ***System call***
+#### C compiler
+<span class="frame3">gcc(GNU cc) installation</span>
+```bash
+$ apt update
+$ apt upgrade
+$ apt install gcc
+$ gcc --version
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">gcc usage</summary>
+<hr class='division3'>
+```bash
+$ gcc -o [.c_file_name] [.exe_file_name]
+```
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
