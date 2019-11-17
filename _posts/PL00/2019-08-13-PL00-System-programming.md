@@ -1179,6 +1179,7 @@ fi
 <br><br><br>
 
 #### clean log file
+/var/log
 ```bash
 #!/bin/bash
 
