@@ -998,15 +998,11 @@ fi
 
 - <b>word1 == word2</b>  # word1 and word2 are same
 - <b>word1 != word2</b>  # word1 and word2 are not same
-- <b>-z word</b>         # if word is null, True
-- <b>-n word</b>         # if word is not null, True
+
 
 <details markdown="1">
 <summary class='jb-small' style="color:red">Example</summary>
 <hr class='division3_1'>
-```bash
-$ if [ -z $1 ]; then echo "Insert arguments"; fi
-```
 <hr class='division3_1'>
 </details>
 <br><br><br>
@@ -1039,6 +1035,8 @@ fi
 <br><br><br>
 <span class="frame3">Inspect files</span><br>
 
+- <b>-z word</b>            # if word is null, True
+- <b>-n word</b>            # if word is not null, True
 - <b>-e[file_name]</b>     #파일이존재하면참
 - <b>-d[file_name]</b>     #파일이디렉토리면참
 - <b>-h[file_name]</b>     #심볼릭링크파일
@@ -1061,6 +1059,10 @@ then
 fi
 ```
 ![image](https://user-images.githubusercontent.com/52376448/69011078-d243c080-09a9-11ea-80a2-4d9125271117.png)
+<br><br><br>
+```bash
+$ if [ -z $1 ]; then echo "Insert arguments"; fi
+```
 <hr class='division3_1'>
 </details>
 <br><br><br>
