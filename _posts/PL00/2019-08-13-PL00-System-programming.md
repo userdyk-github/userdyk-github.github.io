@@ -987,44 +987,44 @@ $ if [ -z $1 ]; then echo "Insert arguments"; fi
 <hr class='division3'>
 <span class="frame3">Compare words</span><br>
 
-- 문자1 == 문자2 # 문자1 과 문자2가 일치
-- 문자1 != 문자2 # 문자1 과 문자2가 일치하지 않음
-- -z 문자 # 문자가 null 이면 참
-- -n 문자 # 문자가 null 이 아니면 참
+- <b>word1 == word2</b>  # word1 and word2 are same
+- <b>word1 != word2</b>  # word1 and word2 are not same
+- <b>-z word</b>         # if word is null, True
+- <b>-n word</b>         # if word is not null, True
 
 <br><br><br>
 <span class="frame3">Compare numbers</span><br>
 
-- value1 -eq value2           # value1 = value2(equal)
-- value1 -ne value2           # value1 != value2(not equal)
-- value1 -lt value2           # value1 < value2(less than)
-- value1 -le value2           # value1 <= value2(less or equal)
-- value1 -gt value2           # value1 > value2(greater than)
-- value1 -ge value2           # value1 >= value2(greater or equal)
+- <b>value1 -eq value2</b>           # value1 = value2(equal)
+- <b>value1 -ne value2</b>           # value1 != value2(not equal)
+- <b>value1 -lt value2</b>           # value1 < value2(less than)
+- <b>value1 -le value2</b>           # value1 <= value2(less or equal)
+- <b>value1 -gt value2</b>           # value1 > value2(greater than)
+- <b>value1 -ge value2</b>           # value1 >= value2(greater or equal)
 
 <br><br><br>
 <span class="frame3">Inspect files</span><br>
 
-- -e[file_name]     #파일이존재하면참
-- -d[file_name]     #파일이디렉토리면참
-- -h[file_name]     #심볼릭링크파일
-- -f[file_name]     #파일이일반파일이면참
-- -r[file_name]     #파일이읽기가능이면참
-- -s[file_name]     #파일크기가0이아니면참
-- -u[file_name]     #파일이set-user-id가설정되면참
-- -w[file_name]     #파일이쓰기가능상태이면참
-- -x[file_name]     #파일이실행가능상태이면참
+- <b>-e[file_name]</b>     #파일이존재하면참
+- <b>-d[file_name]</b>     #파일이디렉토리면참
+- <b>-h[file_name]</b>     #심볼릭링크파일
+- <b>-f[file_name]</b>     #파일이일반파일이면참
+- <b>-r[file_name]</b>     #파일이읽기가능이면참
+- <b>-s[file_name]</b>     #파일크기가0이아니면참
+- <b>-u[file_name]</b>     #파일이set-user-id가설정되면참
+- <b>-w[file_name]</b>     #파일이쓰기가능상태이면참
+- <b>-x[file_name]</b>     #파일이실행가능상태이면참
 
 <br><br><br>
-<span class="frame3">Logical operation</span><br>
+<span class="frame3">Logical operation, C(conditional sentence)</span><br>
 
-- 조건1 -a 조건2           # AND
-- 조건1 -o 조건2           # OR
-- 조건1 && 조건2           # 양쪽 다 성립
-- 조건1 || 조건2           # 한쪽 또는 양쪽다 성립
-- !조건                    # 조건이 성립하지 않음
-- true                    # 조건이 언제나 성립
-- false                   # 조건이 언제나 성립하지 않음
+- <b>C1 -a C2</b>           # AND
+- <b>C1 -o C2</b>           # OR
+- <b>C1 && C2</b>           # 양쪽 다 성립
+- <b>C1 || C2</b>           # 한쪽 또는 양쪽다 성립
+- <b>!C</b>                    # 조건이 성립하지 않음
+- <b>true</b>                    # 조건이 언제나 성립
+- <b>false</b>                   # 조건이 언제나 성립하지 않음
 
 <hr class='division3'>
 </details>
