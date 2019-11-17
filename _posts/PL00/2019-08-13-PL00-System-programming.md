@@ -557,6 +557,7 @@ $ kill -9 [pid]
 #### deamon process
 <span class="frame3">/etc/init.d/</span><br>
 ```bash
+$ service --status-all
 $ service [process] start
 $ service [process] stop
 $ service [process] restart
