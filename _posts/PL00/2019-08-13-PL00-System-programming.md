@@ -812,6 +812,9 @@ $ kill -9 1894
 ```bash
 #!/bin/bash
 ```
+```bash
+$ chmod u+x [file_name]
+```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Example</summary>
 <hr class='division3'>
@@ -845,6 +848,8 @@ mysql_directory='/etc/mysql'
 echo $mysql_id
 echo $mysql_directory
 ```
+<b>Caution</b> : do not put space
+
 <br><br><br>
 
 
@@ -895,11 +900,60 @@ echo ${filelist[*]}            # $filelist 모든 데이터 출력
 
 <br><br><br>
 
-<span class="frame3">Operator, expr``</span><br>
+<span class="frame3">Operator, `expr`</span><br>
 ```bash
+#!/bin/bash
+
 num=`expr \( 3 \* 5 \) / 4 + 7`
 echo $num
 ```
+<br><br><br>
+
+<span class="frame3">Selection statements</span><br>
+```bash
+#!/bin/bash
+
+if [ conditional sentence ]
+then
+    command
+fi
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Conditional sentence</summary>
+<hr class='division3'>
+<span class="frame3">Compare words</span><br>
+
+- 문자1 == 문자2 # 문자1 과 문자2가 일치
+- 문자1 != 문자2 # 문자1 과 문자2가 일치하지 않음
+- -z 문자 # 문자가 null 이면 참
+- -n 문자 # 문자가 null 이 아니면 참
+
+<br><br><br>
+<span class="frame3">Compare numbers</span><br>
+
+- 값1 -eq 값2 # 값이 같음(equal)
+- 값1 -ne 값2 # 값이 같지 않음(not equal)
+- 값1 -lt 값2 # 값1이 값2보다 작음(less than)
+- 값1 -le 값2 # 값1이 값2보다 작거나 같음(less or equal)
+- 값1 -gt 값2 # 값1이 값2보다 큼(greater than)
+- 값1 -ge 값2 # 값1이 값2보다 크거나 같음(greater or equal)
+
+<br><br><br>
+<span class="frame3">Inspect files</span><br>
+
+- -e[file_name]     #파일이존재하면참
+- -d[file_name]     #파일이디렉토리면참
+- -h[file_name]     #심볼릭링크파일
+- -f[file_name]     #파일이일반파일이면참
+- -r[file_name]     #파일이읽기가능이면참
+- -s[file_name]     #파일크기가0이아니면참
+- -u[file_name]     #파일이set-user-id가설정되면참
+- -w[file_name]     #파일이쓰기가능상태이면참
+- -x[file_name]     #파일이실행가능상태이면참
+
+<hr class='division3'>
+</details>
+
 <br><br><br>
 <hr class="division2">
 
