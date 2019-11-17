@@ -644,12 +644,12 @@ Linux supports POSIX and ANSI C
 - thread
 
 <br>
-maximun of PID, usually signed 16 bit = $2^{15}$ = 32768
+maximun of PID, usually signed 16 bit = $$2^{15}$$ = 32768
 ```bash
 $ cat /proc/sys/kernel/pid_max
 ```
 <br>
-First process, PID1, init process<br>
+First process, PID1, init process(/sbin/init)<br>
 parent process(<b>ppid</b>) <-> child process(<b>pid</b>)<br>
 
 
