@@ -746,7 +746,7 @@ $ kill -l
 <hr class="division2">
 
 ## **Thread**
-
+### ***Pthread***
 <br><br><br>
 
 <hr class="division2">
