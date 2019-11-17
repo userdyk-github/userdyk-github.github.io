@@ -992,6 +992,11 @@ $ if [ -z $1 ]; then echo "Insert arguments"; fi
 - <b>-z word</b>         # if word is null, True
 - <b>-n word</b>         # if word is not null, True
 
+<details markdown="1">
+<summary class='jb-small' style="color:red">Example</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
 <br><br><br>
 <span class="frame3">Compare numbers</span><br>
 
@@ -1001,6 +1006,23 @@ $ if [ -z $1 ]; then echo "Insert arguments"; fi
 - <b>value1 -le value2</b>           # value1 <= value2(less or equal)
 - <b>value1 -gt value2</b>           # value1 > value2(greater than)
 - <b>value1 -ge value2</b>           # value1 >= value2(greater or equal)
+
+<details markdown="1">
+<summary class='jb-small' style="color:red">Example</summary>
+<hr class='division3_1'>
+```bash
+#!/bin/bash
+
+if [ $1 -gt $2 ]
+then
+        echo "$1 is greater than $2"
+        exit
+fi
+```
+![image](https://user-images.githubusercontent.com/52376448/69010987-e0451180-09a8-11ea-900e-005a65c1b3df.png)
+<hr class='division3_1'>
+</details>
+
 
 <br><br><br>
 <span class="frame3">Inspect files</span><br>
@@ -1015,6 +1037,11 @@ $ if [ -z $1 ]; then echo "Insert arguments"; fi
 - <b>-w[file_name]</b>     #파일이쓰기가능상태이면참
 - <b>-x[file_name]</b>     #파일이실행가능상태이면참
 
+<details markdown="1">
+<summary class='jb-small' style="color:red">Example</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
 <br><br><br>
 <span class="frame3">Logical operation, C(conditional sentence)</span><br>
 
@@ -1026,6 +1053,11 @@ $ if [ -z $1 ]; then echo "Insert arguments"; fi
 - <b>true</b>                    # 조건이 언제나 성립
 - <b>false</b>                   # 조건이 언제나 성립하지 않음
 
+<details markdown="1">
+<summary class='jb-small' style="color:red">Example</summary>
+<hr class='division3_1'>
+<hr class='division3_1'>
+</details>
 <hr class='division3'>
 </details>
 
