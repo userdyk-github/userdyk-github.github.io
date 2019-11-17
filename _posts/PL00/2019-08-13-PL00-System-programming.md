@@ -731,6 +731,9 @@ int main(){
 <hr class="division2">
 
 ## **Signal action**
+```bash
+$ kill -l
+```
 
 <br><br><br>
 
