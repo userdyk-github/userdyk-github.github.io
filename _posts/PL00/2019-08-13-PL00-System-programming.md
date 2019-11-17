@@ -272,8 +272,8 @@ $ passwd
 <br><br><br>
 
 <span class="frame3">create another user id on linux</span><br>
-/etc/passwd <br>
-/etc/shadow <br>
+/etc/passwd : ID <br>
+/etc/shadow : Password <br>
 ```bash
 $ adduser [user_name]
 ```
