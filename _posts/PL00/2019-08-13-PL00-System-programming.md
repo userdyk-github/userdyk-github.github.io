@@ -900,7 +900,7 @@ echo ${filelist[*]}            # $filelist 모든 데이터 출력
 
 <br><br><br>
 
-<span class="frame3">Operator, `expr`</span><br>
+<span class="frame3">Operator, \`expr\`</span><br>
 ```bash
 #!/bin/bash
 
@@ -913,11 +913,33 @@ echo $num
 ```bash
 #!/bin/bash
 
+
+# if 1
 if [ conditional sentence ]
 then
-    command
+    [command]
+fi
+
+# if 2
+if [ conditional sentence ]; then [command]; fi
+
+
+# if else
+if [ conditional sentence ]
+then
+    [command]
+else
+    [command]
 fi
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Example</summary>
+<hr class='division3'>
+```bash
+$ if [ -z $1 ]; then echo "Insert arguments"; fi
+```
+<hr class='division3'>
+</details>
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Conditional sentence</summary>
 <hr class='division3'>
@@ -951,6 +973,84 @@ fi
 - -w[file_name]     #파일이쓰기가능상태이면참
 - -x[file_name]     #파일이실행가능상태이면참
 
+<br><br><br>
+<span class="frame3">Logical operation</span><br>
+
+- 조건1 -a 조건2           # AND
+- 조건1 -o 조건2           # OR
+- 조건1 && 조건2           # 양쪽 다 성립
+- 조건1 || 조건2           # 한쪽 또는 양쪽다 성립
+- !조건                    # 조건이 성립하지 않음
+- true                    # 조건이 언제나 성립
+- false                   # 조건이 언제나 성립하지 않음
+
+<hr class='division3'>
+</details>
+
+<br><br><br>
+
+<span class="frame3">Iteration statements</span><br>
+```bash
+#!/bin/bash
+
+
+# for 1
+for [variable] in value1 value2 ...
+do
+    [command]
+done
+
+# for 2
+for [variable] in value1 value2 ...; do [command]; done
+
+
+# while
+while [ conditional sentence ]
+do
+    [command]
+done
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">for, Example</summary>
+<hr class='division3'>
+```bash
+#!/bin/bash
+
+for database in $(ls)
+do
+    echo $database
+done
+```
+```bash
+#!/bin/bash
+
+for database in $(ls); do
+    echo $database
+done
+```
+```bash
+#!/bin/bash
+
+for database in $(ls); do echo $database; done
+```
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">while, Example</summary>
+<hr class='division3'>
+```bash
+#!/bin/bash
+
+lists=$(ls)
+num=${#lists[@]}
+index=0
+while [ $num -ge 0 ]
+do
+    echo ${lists[$index]}
+    index=`expr $index + 1`
+    num=`expr $num - 1`
+done
+```
 <hr class='division3'>
 </details>
 
