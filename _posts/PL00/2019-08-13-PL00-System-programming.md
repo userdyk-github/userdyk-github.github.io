@@ -995,12 +995,12 @@ $ if [ -z $1 ]; then echo "Insert arguments"; fi
 <br><br><br>
 <span class="frame3">Compare numbers</span><br>
 
-- 값1 -eq 값2 # 값이 같음(equal)
-- 값1 -ne 값2 # 값이 같지 않음(not equal)
-- 값1 -lt 값2 # 값1이 값2보다 작음(less than)
-- 값1 -le 값2 # 값1이 값2보다 작거나 같음(less or equal)
-- 값1 -gt 값2 # 값1이 값2보다 큼(greater than)
-- 값1 -ge 값2 # 값1이 값2보다 크거나 같음(greater or equal)
+- value1 -eq value2           # value1 = value2(equal)
+- value1 -ne value2           # value1 != value2(not equal)
+- value1 -lt value2           # value1 < value2(less than)
+- value1 -le value2           # value1 <= value2(less or equal)
+- value1 -gt value2           # value1 > value2(greater than)
+- value1 -ge value2           # value1 >= value2(greater or equal)
 
 <br><br><br>
 <span class="frame3">Inspect files</span><br>
