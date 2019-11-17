@@ -859,6 +859,28 @@ echo $mysql_directory
 ```bash
 #!/bin/bash
 
+daemons=("a" 2 "2" "c")
+echo ${daemons[0]}             # a
+echo ${daemons[1]}             # 2
+echo ${daemons[2]}             # 2
+echo ${daemons[2]}             # c
+echo ${daemons[*]}             # a 2 2 c
+echo ${daemons[@]}             # a 2 2 c
+echo ${#daemons[*]}            # 4
+echo ${#daemons[@]}            # 4
+
+filelist1=( $(ls) )            # ls="file1" "file2" "" "" ...
+                               # (ls)=("file1" "file2" "" "" ...)
+                               # $(ls)=$("file1" "file2" "" "" ...)
+                               
+echo ${filelist1[*]}           # file1 file2 file3
+
+filelist2=$(ls)             
+echo ${filelist2[*]}            
+```
+```bash
+#!/bin/bash
+
 daemons=("httpd" "mysqld" "vsftpd")
 echo ${daemons[1]}             # $daemons 배열의 두 번째 인덱스에 해당하는 mysqld 출력
 echo ${daemons[@]}             # $daemons 배열의 모든 데이터 출력
@@ -875,16 +897,45 @@ echo ${filelist[*]}            # $filelist 모든 데이터 출력
 
 |Local variables|Description|
 |:--|:--|
-|$$||
-|$0 ||
-|$1~$9 ||
-|$* ||
-|$# ||
-|$? ||
+|$$|PID of shell script|
+|$0 |name of shell script|
+|$1~$9 |arguments|
+|$* |list of arguments on all of command|
+|$# |number of arguments|
+|$? |value corresponded about latest executed command|
 
 - 0(success), 1~125(error)
 - 126(not executable)
 - 128~ 255(generated signal)
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+```bash
+$ ls -al -z
+```
+
+- $0 : ls
+- $1 : -al
+- $2 : -z
+- $* : -al -z
+- $# : 2
+
+
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Example</summary>
+<hr class='division3'>
+```bash
+#!/bin/bash
+
+echo $$ $0 $1 $* $#
+```
+![image](https://user-images.githubusercontent.com/52376448/69010763-2ba9f080-09a6-11ea-9496-7cec329e813f.png)
+<hr class='division3'>
+</details>
+
 
 <br><br><br>
 
