@@ -1040,6 +1040,15 @@ fi
 <details markdown="1">
 <summary class='jb-small' style="color:red">Example</summary>
 <hr class='division3_1'>
+```bash
+#!/bin/bash
+
+if [ -e $1 ]
+then
+        echo "$1 is exist"
+fi
+```
+![image](https://user-images.githubusercontent.com/52376448/69011078-d243c080-09a9-11ea-80a2-4d9125271117.png)
 <hr class='division3_1'>
 </details>
 <br><br><br>
