@@ -896,7 +896,8 @@ num=`expr \( 3 \* 5 \) / 4 + 7`
 echo $num
 ```
 <b>Caution 1</b> : do put space among all of words, numbers, symbols<br>
-<b>Caution 2</b> : Arithmetics operator [ +, -, \\*, / ]
+<b>Caution 2</b> : Arithmetics operator [ +, -, \\*, / ] <br>
+<b>Caution 3</b> : associative symbol \(, \)
 <br><br><br>
 
 #### Selection statements
