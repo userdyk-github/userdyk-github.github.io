@@ -46,7 +46,7 @@ title: MATERIALS
 ## Computer Science
 
 ### Basic
-
+- <a href="https://www.youtube.com/playlist?list=PLRx0vPvlEmdCpDmUS-azJTey03BE76eI_" target="_blank">OS 1</a>, <a href="https://www.youtube.com/playlist?list=PLBrGAFAIyf5rby7QylRc6JxU5lzQ9c4tN" target="_blank">OS 2</a>
 - <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMBT57a9dvEtd6OuWpugF9SH' target="_blank">Linux 1</a>, <a href="https://www.youtube.com/playlist?list=PLq8wAnVUcTFU9zLWK-dHWrvTJ0PF8Y0Sf" target="_blank">Linux 2</a>, <a href="https://www.youtube.com/playlist?list=PLTJfebMjBKSLO3z11Npf2tNCfXMsHlWBu" target="_blank">Ubuntu Server</a>, <a href="https://www.youtube.com/playlist?list=PLTJfebMjBKSLoDzWovpLgkBm7L1wR0iMn" target="_blank">Ubuntu Network</a>
 - <a href='https://www.youtube.com/playlist?list=PLRx0vPvlEmdDNHeulKC6JM25MmZVS_3nT' target="_blank">C</a>, <a href='https://www.youtube.com/playlist?list=PLRx0vPvlEmdBjfCADjCc41aD4G0bmdl4R' target="_blank">Java</a>, <a href='https://www.youtube.com/playlist?list=PLGPF8gvWLYyontH0PECIUFFUdvATXWQEL' target="_blank">Python 1</a>, <a href='https://www.youtube.com/playlist?list=PLa9dKeCAyr7iWPMclcDxbnlTjQ2vjdIDD' target="_blank">Python 2</a>,<a href='' target="_blank">C++</a>, <a href='' target="_blank">C#</a>, <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMA0lO0qip6Phh6UL73TS0es' target="_blank">Python&Ruby</a>
 - <a href='https://www.youtube.com/playlist?list=PLU53e7oUT8pEbDM9pq_KiIjWwH0Y_-h4W' target="_blank">Mathematica</a>, <a href='' target="_blank">Matlab</a>, <a href='https://www.youtube.com/playlist?list=PLSEvxm6HLvZnH71B0UEWwEuUjKcAahYaz' target="_blank">R</a>
