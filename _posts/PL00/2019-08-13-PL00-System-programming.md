@@ -1055,6 +1055,45 @@ done
 </details>
 
 <br><br><br>
+
+---
+
+### ***Examples***
+#### backup
+```bash
+#!/bin/bash
+
+if [ -z $1 ]||[ -z $2 ]; then
+    echo usage: $0 sourcedir targetdir
+else
+    SRCDIR=$1
+    DSTDIR=$2
+    BACKUPFILE=backup.$(date +%y%m%d%H%M%S).tar.gz
+    if [ -d $DSTDIR ]; then
+        tar -cvzf $DSTDIR/$BACKUPFILE $SRCDIR
+    else
+        mkdir $DSTDIR
+        tar -cvzf $DSTDIR/$BACKUPFILE $SRCDIR
+    fi
+fi
+```
+<br><br><br>
+
+#### clean log file
+```bash
+#!/bin/bash
+
+LOGDIR=/var/log
+GZIPDAY=1
+DELDAY=2
+cd $LOGDIR
+echo "cd $LOGDIR"
+
+sudo find . -type f -name '*log.?' -mtime +$GZIPDAY -exec bash -c "gzip {}" \; 2> /dev/null
+sudo find . -type f -name '*.gz' -mtime +$DELDAY -exec bash -c "rm -f {}" \; 2> /
+```
+
+<br><br><br>
 <hr class="division2">
 
 ## **Thread**
