@@ -756,6 +756,7 @@ $ ./loop &
 $ ./sigkill 1806 2
 $ ps
 ```
+<br><br><br>
 
 ### ***Signal action***
 
@@ -806,9 +807,100 @@ $ kill -9 1894
 <hr class="division2">
 
 ## **Shell script**
+### ***.sh file***
+<span class="frame3">Rule</span><br>
+```bash
+#!/bin/bash
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Example</summary>
+<hr class='division3'>
+```bash
+#!/bin/bash
+
+echo "Hello bash"
+```
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
+
+
+<span class="frame3">Comment</span><br>
+```bash
+#!/bin/bash
+
+# comment
+```
+<br><br><br>
+
+<span class="frame3">$Variable</span><br>
+```bash
+#!/bin/bash
+
+mysql_id='root'
+mysql_directory='/etc/mysql'
+
+echo $mysql_id
+echo $mysql_directory
+```
+<br><br><br>
+
+
+<span class="frame3">List = ${Variable[Index]}</span><br>
+```bash
+#!/bin/bash
+
+daemons=("httpd" "mysqld" "vsftpd")
+echo ${daemons[1]}             # $daemons 배열의 두 번째 인덱스에 해당하는 mysqld 출력
+echo ${daemons[@]}             # $daemons 배열의 모든 데이터 출력
+echo ${daemons[*]}             # $daemons 배열의 모든 데이터 출력
+echo ${#daemons[@]}            # $daemons 배열 크기 출력
+
+filelist=( $(ls) )             # 해당 쉘스크립트 실행 디렉토리의 파일 리스트를 배열로 $filelist 변수에 입력
+echo ${filelist[*]}            # $filelist 모든 데이터 출력
+```
+<br><br><br>
+
+<span class="frame3">List = ${Variable[Index]}</span><br>
+```bash
+#!/bin/bash
+
+daemons=("httpd" "mysqld" "vsftpd")
+echo ${daemons[1]}             # $daemons 배열의 두 번째 인덱스에 해당하는 mysqld 출력
+echo ${daemons[@]}             # $daemons 배열의 모든 데이터 출력
+echo ${daemons[*]}             # $daemons 배열의 모든 데이터 출력
+echo ${#daemons[@]}            # $daemons 배열 크기 출력
+
+filelist=( $(ls) )             # 해당 쉘스크립트 실행 디렉토리의 파일 리스트를 배열로 $filelist 변수에 입력
+echo ${filelist[*]}            # $filelist 모든 데이터 출력
+```
+<br><br><br>
+
+<span class="frame3">Pre-defined local variables</span><br>
+
+|Local variables|Description|
+|:--|:--|
+|$$||
+|$0 ||
+|$1~$9 ||
+|$* ||
+|$# ||
+|$? ||
+
+- 0(success), 1~125(error)
+- 126(not executable)
+- 128~ 255(generated signal)
+
+<br><br><br>
+
+<span class="frame3">Operator, expr``</span><br>
+```bash
+num=`expr \( 3 \* 5 \) / 4 + 7`
+echo $num
+```
+<br><br><br>
 <hr class="division2">
 
 ## **Thread**
