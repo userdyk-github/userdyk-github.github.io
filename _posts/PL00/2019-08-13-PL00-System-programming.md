@@ -767,6 +767,7 @@ List of posts followed by this article
 ---
 
 Reference
+- <a href="https://repl.it/languages/c" target="_blank">Implementation with C on web</a>
 - <a href="https://repl.it/languages/bash" target="_blank">Implementation with bash on web</a>
 - <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMBT57a9dvEtd6OuWpugF9SH' target="_blank">생활코딩</a>
 - <a href="https://www.techonthenet.com/index.php" target="_blank">tech on the net</a>
