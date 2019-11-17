@@ -691,8 +691,8 @@ int main(){
 
 ### ***system call : fork() and exec()***
 
-- fork() : copy and paste a process space
-- exec() : overwrite TEXT, DATA, BSS on process space
+- fork() : copy and paste a process space / parent process is conserved
+- exec() : overwrite TEXT, DATA, BSS on process space / parent process dissappear
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
