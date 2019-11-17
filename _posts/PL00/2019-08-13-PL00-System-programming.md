@@ -651,7 +651,7 @@ $ cat /proc/sys/kernel/pid_max
 ```
 <br>
 First process, PID1, init process(/sbin/init)<br>
-parent process(<b>ppid</b>) <-> child process(<b>pid</b>)<br>
+parent process(<b>ppid</b>) <-> child process(<b>pid</b>)<br><br>
 <span class="frame3">origin</span><br>
 ```c
 #include <sys/types.h>
