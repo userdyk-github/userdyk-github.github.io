@@ -536,6 +536,7 @@ $ fg %[number_of_process]            # execute process corresponding number on f
 #### management of process
 
 <a href="https://www.techonthenet.com/linux/commands/ps.php" taraget="_blank">URL</a>
+![image](https://user-images.githubusercontent.com/52376448/69005885-74908380-096b-11ea-804e-a662688a0d4b.png)
 
 ```bash
 $ ps             # displaying list of process for me
