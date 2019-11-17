@@ -165,10 +165,12 @@ $ file [file_name]
 
 <span class="frame3">Zip, Unzip</span><br>
 ```bash
-$ tar -cf [name.tar] a b c        # tie and zip a b c files 
-$ tar -zcf [name.tar.gz] a b c    # zip a b c files 
-$ tar -xvf [name.tar]             # unzip .tar
-$ tar -zxvf [name.tar.gz]         # unzip .tar.gz
+$ tar -cf [file_name.tar] a b c        # tie and zip a b c files 
+$ tar -zcf [file_name.tar.gz] a b c    # zip a b c files 
+$ tar -xvf [file_name.tar]             # unzip .tar
+$ tar -zxvf [file_name.tar.gz]         # unzip .tar.gz
+$ gzip [file_name]            # file_name to file_name.gz
+$ gzip -d [file_name].gz      # file_name.gz to file_name 
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
