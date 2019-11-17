@@ -651,6 +651,27 @@ $ cat /proc/sys/kernel/pid_max
 <br>
 First process, PID1, init process(/sbin/init)<br>
 parent process(<b>ppid</b>) <-> child process(<b>pid</b>)<br>
+<span class="frame3">origin</span><br>
+```c
+#include <sys/types.h>
+#include <unistd.h>
+pid_t getpid (void);
+pid_t getppid (void);
+}
+```
+<br>
+<span class="frame3">practice</span><br>
+```c
+#include <sys/types.h>
+#include <unistd.h>
+#include <stdio.h>
+
+int main(){
+        printf("pid=%d\n", getpid());
+        printf("ppid=%d\n", getppid());
+        return 0;
+}
+```
 
 
 
