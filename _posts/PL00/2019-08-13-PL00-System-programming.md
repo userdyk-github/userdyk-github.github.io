@@ -895,6 +895,7 @@ echo ${filelist[*]}            # $filelist 모든 데이터 출력
 num=`expr \( 3 \* 5 \) / 4 + 7`
 echo $num
 ```
+<b>Caution</b> : do put space among all of words, numbers, symbols
 <br><br><br>
 
 #### Selection statements
