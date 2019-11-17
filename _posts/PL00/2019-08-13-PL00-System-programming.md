@@ -978,8 +978,17 @@ fi
 <summary class='jb-small' style="color:blue">Example</summary>
 <hr class='division3'>
 ```bash
-$ if [ -z $1 ]; then echo "Insert arguments"; fi
+#!/bin/bash
+
+ping -c 1 192.168.0.1 1> /dev/null           # option -c 1 : only 1 ping test
+if [ $? == 0 ]
+then
+        echo "ping of gateway is sucessive"
+else
+        echo "ping of gateway has been fail"
+fi
 ```
+![image](https://user-images.githubusercontent.com/52376448/69011194-459a0200-09ab-11ea-9890-6ba15b279b2a.png)
 <hr class='division3'>
 </details>
 <details markdown="1">
@@ -995,6 +1004,9 @@ $ if [ -z $1 ]; then echo "Insert arguments"; fi
 <details markdown="1">
 <summary class='jb-small' style="color:red">Example</summary>
 <hr class='division3_1'>
+```bash
+$ if [ -z $1 ]; then echo "Insert arguments"; fi
+```
 <hr class='division3_1'>
 </details>
 <br><br><br>
