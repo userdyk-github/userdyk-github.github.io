@@ -643,12 +643,8 @@ Linux supports POSIX and ANSI C
 <hr class="division2">
 
 ## **Management of process**
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-![image](https://user-images.githubusercontent.com/52376448/69005885-74908380-096b-11ea-804e-a662688a0d4b.png)
-<hr class='division3'>
-</details>
+![image](https://user-images.githubusercontent.com/52376448/69009159-14630700-0996-11ea-8024-72efeef49f4a.png)
+<br><br><br>
 
 
 
@@ -731,12 +727,82 @@ int main(){
 <hr class="division2">
 
 ## **Signal action**
+
+|signal|action|
+|:--|:--|
+|SIGKILL||
+|SIGALARM||
+|SIGSTP||
+|SIGCONT||
+|SIGINT||
+|SIGSEGV||
+
 ```bash
 $ kill -l
 ```
 
 <br><br><br>
 
+### ***Transfer signal***
+```c
+#include <sys/types.h>
+#include <signal.h>
+// pid : 프로세스의 PID
+// sig : 시그널 번호
+int kill(pid_t pid, int sig);
+```
+```bash
+$ ./loop &
+$ ./sigkill 1806 2
+$ ps
+```
+
+### ***Signal action***
+
+```c
+#include <signal.h>
+
+void (*signal(int signum, void (*handler)(int)))(int);
+
+// 예1
+// void (*handler)(int): SIG_IGN - 시그널 무시, SIG_DFL - 디폴트 동작
+signal(SIGINT, SIG_IGN);
+
+// 예2
+// SIGINT 시그널 수신 시, signal_handler 함수를 호출
+signal(SIGINT, (void *)signal_handler);
+```
+
+
+<br><br><br>
+### ***Signal handler***
+```c
+static void signal_handler (int signo) {
+    printf("Catch SIGINT!, but no stop\n");
+}
+
+int main (void) {
+    if (signal (SIGINT, signal_handler) == SIG_ERR) {
+        printf("Can't catch SIGINT!\n");
+        exit (1);
+    }
+    for (;;)
+    pause();
+    return 0;
+}
+```
+```bash
+$ ./sigloop &
+$ ./sigkill 1894 2
+$ ps
+$ kill -9 1894
+```
+<br><br><br>
+
+### ***Process PCB(Process control block)***
+![image](https://user-images.githubusercontent.com/52376448/69009194-728fea00-0996-11ea-8191-f20a9a261a1a.png)
+
+<br><br><br>
 <hr class="division2">
 
 ## **Shell script**
