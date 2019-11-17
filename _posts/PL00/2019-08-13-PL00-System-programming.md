@@ -643,6 +643,14 @@ Linux supports POSIX and ANSI C
 <hr class="division2">
 
 ## **Management of process**
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![image](https://user-images.githubusercontent.com/52376448/69005885-74908380-096b-11ea-804e-a662688a0d4b.png)
+<hr class='division3'>
+</details>
+
+
 
 ### ***Process ID***
 /proc/
@@ -689,7 +697,7 @@ int main(){
 
 ---
 
-### ***system call : fork() and exec()***
+### ***Create process(system call) 1 : fork() and exec()***
 
 - fork() : copy and paste a process space / parent process is conserved
 - exec() : overwrite TEXT, DATA, BSS on process space / parent process dissappear
@@ -700,10 +708,17 @@ int main(){
 ![image](https://user-images.githubusercontent.com/52376448/69005831-c08ef880-096a-11ea-931a-05b9165abfd4.png)
 <hr class='division3'>
 </details>
+<br><br><br>
+
+---
 
 
+### ***Create process(system call) 2 : wait() and copy()***
 
 
+---
+
+### ***Terminate process(system call) : exit()***
 
 <br><br><br>
 
