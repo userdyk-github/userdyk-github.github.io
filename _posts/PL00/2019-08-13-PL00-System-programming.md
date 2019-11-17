@@ -671,7 +671,10 @@ int main(){
         printf("ppid=%d\n", getppid());
         return 0;
 }
+
+// $ ps
 ```
+![image](https://user-images.githubusercontent.com/52376448/69005831-c08ef880-096a-11ea-931a-05b9165abfd4.png)
 
 
 
