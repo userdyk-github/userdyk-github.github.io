@@ -617,13 +617,17 @@ $ gcc -o [.c_file_name] [.exe_file_name]
 
 ---
 
-### ***API***
+### ***API and ABI(Application Binary Interface)***
 
 <br><br><br>
 
 ---
 
-### ***ABI and Standard***
+### ***Standard***
+Linux supports POSIX and ANSI C
+
+- POSIX, Portable Operating System Interface
+- ANSI C, American National Standards Institute C Language standard
 
 <br><br><br>
 
