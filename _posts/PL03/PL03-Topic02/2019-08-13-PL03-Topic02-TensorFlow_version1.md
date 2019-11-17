@@ -844,7 +844,7 @@ List of posts followed by this article
 
 Reference
 - Santanu Pattanayak, Pro Deep Learning with TensorFlow, 2017
-- <a href='https://userdyk-github.github.io/'>post2</a>
+- <a href='https://tensorflowkorea.gitbooks.io/tensorflow-kr/' target="_blank">tensorflow-kr</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
