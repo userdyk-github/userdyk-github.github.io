@@ -538,7 +538,7 @@ $ fg %[number_of_process]            # execute process corresponding number on f
 
 ```bash
 $ ps             # displaying list of process for me
-$ ps -a          # displaying list of process for all users
+$ ps -a          # displaying list of process for all users(Select all processes except both session leaders and processes not associated with a terminal.)
 $ ps -u          # displaying details about owner of process
 $ ps -l          # displaying details about process
 $ ps -x          # displaying deamon process
@@ -546,7 +546,7 @@ $ ps aux         # frequently used(-a, -u, -x)
                  # ps aux | more
                  # ps aux | grep [pattern]
                  # '$ top' or '$ htop' 
-$ ps -e          # displaying environment variables of process
+$ ps -e          # displaying list of all process
 $ ps -f          # displaying relationship about process
 ```
 ```bash
@@ -634,6 +634,25 @@ Linux supports POSIX and ANSI C
 <hr class="division2">
 
 ## **Management of process**
+
+### ***Process ID***
+/proc/
+
+- program
+- process : executing program
+- thread
+
+<br>
+maximun of PID, usually signed 16 bit = $2^{15}$ = 32768
+```bash
+$ cat /proc/sys/kernel/pid_max
+```
+<br>
+First process, PID1, init process<br>
+parent process(<b>ppid</b>) <-> child process(<b>pid</b>)<br>
+
+
+
 
 <br><br><br>
 
