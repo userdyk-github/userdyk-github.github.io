@@ -559,6 +559,7 @@ $ kill -9 [pid]
 ```bash
 $ service --status-all
 $ service [process] start
+$ service [process] status
 $ service [process] stop
 $ service [process] restart
 ```
