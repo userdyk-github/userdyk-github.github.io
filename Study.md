@@ -77,6 +77,13 @@ title: STUDY
 
 <br>
 
+## _AAI00 : Big data_
+
+> <a href='https://userdyk-github.github.io/aai00/AAI00-Spark.html'>Spark</a><br>
+> <a href='https://userdyk-github.github.io/aai00/AAI00-Hadoop.html'>Hadoop</a><br>
+
+---
+
 ## _AAI01 : Computer vision_
 
 > <a href='https://userdyk-github.github.io/aai01/AAI01-Intel-realsense.html'>Intel realsense</a><br>
