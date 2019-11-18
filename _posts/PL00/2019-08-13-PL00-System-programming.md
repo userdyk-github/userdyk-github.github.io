@@ -26,6 +26,16 @@ List of posts to read before reading this article
 ![b080063dbe7f9cf817972c558ef96e78](https://user-images.githubusercontent.com/52376448/69093736-6a1cd980-0a92-11ea-990d-b870c439742c.jpg)
 ![a476e5ac785fa192712b24316bfaf3c3](https://user-images.githubusercontent.com/52376448/69093598-1b6f3f80-0a92-11ea-9f3f-8f97853905ec.jpg)
 
+<br>
+<span class="frame3">Resource</span><br>
+
+|Management Command|Resource|
+|:--|:--|
+|htop, ps|cpu, ram|
+|df|storage|
+|netstat|network card|
+
+
 
 <br><br><br>
 ### ***Environmental variables***
