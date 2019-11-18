@@ -42,7 +42,7 @@ List of posts followed by this article
 
 Reference
 - <a href='https://repl.it/languages/c' target="_blank">Implementation with C on web</a>
-- <a href='https://userdyk-github.github.io/'>post2</a>
+- <a href='https://visualgo.net/en' target="_blank">visualgo</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
