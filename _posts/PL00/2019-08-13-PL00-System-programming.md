@@ -29,7 +29,7 @@ List of posts to read before reading this article
 <br>
 <span class="frame3">Resource</span><br>
 
-|Management Command|Resource|
+|Command|Resource Management|
 |:--|:--|
 |htop, ps|cpu, ram|
 |df|storage|
