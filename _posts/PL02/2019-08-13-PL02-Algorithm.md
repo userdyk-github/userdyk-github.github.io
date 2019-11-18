@@ -1,9 +1,9 @@
 ---
 layout : post
-title : PL01, Algorithm
-categories: [PL01]
+title : PL02, Algorithm
+categories: [PL02]
 comments : true
-tags : [PL01]
+tags : [PL02]
 ---
 [Back to the previous page](https://userdyk-github.github.io/Study.html) <br>
 List of posts to read before reading this article
