@@ -29,12 +29,13 @@ List of posts to read before reading this article
 <br>
 <span class="frame3">Resource</span><br>
 
-|Command|Resource Management|
-|:--|:--|
-|htop, ps|cpu, ram|
-|df|storage, devices|
-|netstat|network card|
-
+|Type|Command|Resource Management|Directory|
+|:--|:--|:--|:--|
+|existence|htop, ps|cpu, ram|/proc/|
+|existence|df|storage, devices|/dev/, /mnt/, /media/|
+|existence|netstat|network card||
+|interaction|~|/bin/, /sbin/, /sys/|
+|function|~|/usr/|
 
 
 <br><br><br>
