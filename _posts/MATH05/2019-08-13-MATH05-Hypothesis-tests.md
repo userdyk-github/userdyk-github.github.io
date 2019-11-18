@@ -62,6 +62,53 @@ stats.binom_test(n, N)
 <br><br><br>
 <hr class="division2">
 
+## **Normality Test**
+### ***Shapiro–Wilk test***
+### ***Anderson–Darling test***
+
+```python
+from scipy import stats
+import numpy as np
+
+
+np.random.seed(0)
+N1, N2 = 50, 100
+
+x1 = stats.norm(0, 1).rvs(N1)
+x2 = stats.norm(0.5, 1.5).rvs(N2)
+
+stats.ks_2samp(x1, x2)
+```
+<span class="jb-medoum">Ks_2sampResult(statistic=0.23000000000000004, pvalue=0.049516112814422863)</span>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Visualization</summary>
+<hr class='division3'>
+```python
+from scipy import stats
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+np.random.seed(0)
+N1, N2 = 50, 100
+
+x1 = stats.norm(0, 1).rvs(N1)
+x2 = stats.norm(0.5, 1.5).rvs(N2)
+
+ax = sns.distplot(x1, kde=False, fit=stats.norm, label="1st dataset")
+ax = sns.distplot(x2, kde=False, fit=stats.norm, label="2rd dataset")
+ax.lines[0].set_linestyle(":")
+plt.legend()
+plt.show()
+```
+![download (4)](https://user-images.githubusercontent.com/52376448/66739719-40c5c800-eeac-11e9-9912-ac6206d67193.png)
+<hr class='division3'>
+</details>
+
+<br><br><br>
+<hr class="division2">
+
+
 ## **Chi-squared Test**
 <span class="frame3">goodness of fit test</span>
 ```python
@@ -333,49 +380,7 @@ plt.show()
 <hr class='division3'>
 </details>
 <br><br><br>
-<hr class="division2">
 
-## **Normality Test**
-```python
-from scipy import stats
-import numpy as np
-
-
-np.random.seed(0)
-N1, N2 = 50, 100
-
-x1 = stats.norm(0, 1).rvs(N1)
-x2 = stats.norm(0.5, 1.5).rvs(N2)
-
-stats.ks_2samp(x1, x2)
-```
-<span class="jb-medoum">Ks_2sampResult(statistic=0.23000000000000004, pvalue=0.049516112814422863)</span>
-<details markdown="1">
-<summary class='jb-small' style="color:blue">Visualization</summary>
-<hr class='division3'>
-```python
-from scipy import stats
-import numpy as np
-import seaborn as sns
-import matplotlib.pyplot as plt
-
-np.random.seed(0)
-N1, N2 = 50, 100
-
-x1 = stats.norm(0, 1).rvs(N1)
-x2 = stats.norm(0.5, 1.5).rvs(N2)
-
-ax = sns.distplot(x1, kde=False, fit=stats.norm, label="1st dataset")
-ax = sns.distplot(x2, kde=False, fit=stats.norm, label="2rd dataset")
-ax.lines[0].set_linestyle(":")
-plt.legend()
-plt.show()
-```
-![download (4)](https://user-images.githubusercontent.com/52376448/66739719-40c5c800-eeac-11e9-9912-ac6206d67193.png)
-<hr class='division3'>
-</details>
-
-<br><br><br>
 <hr class="division1">
 
 List of posts followed by this article
