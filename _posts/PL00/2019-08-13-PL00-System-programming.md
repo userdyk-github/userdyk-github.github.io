@@ -22,7 +22,8 @@ List of posts to read before reading this article
 <hr class="division1">
 
 ## **Introduction**
-
+![Interactive+map+of+Linux+kernel](https://user-images.githubusercontent.com/52376448/69093065-0cd45880-0a91-11ea-9bf2-944321353c3b.jpg)
+<br><br><br>
 ### ***Environmental variables***
 /home/user/.bashrc
 ```bash
