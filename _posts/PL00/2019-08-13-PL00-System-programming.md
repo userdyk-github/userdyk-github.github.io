@@ -32,7 +32,7 @@ List of posts to read before reading this article
 |Command|Resource Management|
 |:--|:--|
 |htop, ps|cpu, ram|
-|df|storage|
+|df|storage, devices|
 |netstat|network card|
 
 
