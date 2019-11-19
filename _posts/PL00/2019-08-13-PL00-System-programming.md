@@ -596,6 +596,25 @@ $ kill -9 [pid]
 
 <hr class='division3'>
 </details>
+<br><br><br>
+```bash
+$ top
+```
+```top
+shift + t
+shift + p
+shift + m
+shift + a
+f
+1
+```
+<a href="https://zzsza.github.io/development/2018/07/18/linux-top/" target="_blank">URL</a>
+
+
+<br><br><br>
+```bash
+$ htop
+```
 
 <br><br><br>
 
