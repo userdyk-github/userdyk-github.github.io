@@ -579,6 +579,24 @@ $ ps -f          # displaying relationship about process
 ```bash
 $ kill -9 [pid]
 ```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">process status</summary>
+<hr class='division3'>
+
+|code|Description|
+|:--|:--|
+|D|Uninterruptible sleep (usually IO)|
+|R|Running or runnable (on run queue)|
+|S|Interruptible sleep (waiting for an event to complete)|
+|T|Stopped, either by a job control signal or because it is being traced.|
+|W|paging (not valid since the 2.6.xx kernel)|
+|X|dead (should never be seen)|
+|Z|Defunct ("zombie") process, terminated but not reaped by its parent.|
+
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 #### deamon process
