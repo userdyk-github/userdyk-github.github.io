@@ -43,7 +43,6 @@ class Neuron:
             for x_i, y_i in zip(x,y):
                 y_hat = self.forpass(x_i)
                 err = -(y_i - y_hat)
-                print(err)
                 w_grad, b_grad = self.backprop(x_i,err)
                 self.w -= learning_rate*w_grad
                 self.b -= learning_rate*b_grad
