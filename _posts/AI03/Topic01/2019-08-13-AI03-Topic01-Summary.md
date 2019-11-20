@@ -38,14 +38,15 @@ class Neuron:
         b_grad = 1*err
         return w_grad, b_grad
     
-    def fit(self,x,y,epochs=100):
+    def fit(self,x,y,epochs=100, learning_rate=0.00001):
         for _ in range(epochs):
             for x_i, y_i in zip(x,y):
                 y_hat = self.forpass(x_i)
                 err = -(y_i - y_hat)
+                print(err)
                 w_grad, b_grad = self.backprop(x_i,err)
-                self.w -= w_grad
-                self.b -= b_grad
+                self.w -= learning_rate*w_grad
+                self.b -= learning_rate*b_grad
 ```
 <br><br><br>
 
