@@ -24,6 +24,10 @@ List of posts to read before reading this article
 
 ## **Introduction**
 
+workspace <br>
+ctrl + n <br>
+
+
 ### ***ABOUT MATLAB and MATLAB GUI (Graphical User Interface)***
 
 <br><br><br>
