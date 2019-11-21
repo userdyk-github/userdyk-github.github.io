@@ -24,6 +24,7 @@ List of posts to read before reading this article
 
 ## **Regression**
 ### ***Linear regression***
+![image](https://user-images.githubusercontent.com/52376448/69369878-291a0480-0ce0-11ea-8615-28ce7d19a464.png)
 
 ```python
 class Neuron:
@@ -49,10 +50,45 @@ class Neuron:
                 self.w -= learning_rate*w_grad
                 self.b -= learning_rate*b_grad
 ```
+<br><br><br>
 
 ### ***Logistic regression***
 ```python
-
+class LogisticNeuron:
+    def __init__(self):
+        self.w = None
+        self.b = None
+        
+    def forpass(self, x):
+        z = np.sum(x*self.w) + self.b
+        return z
+    
+    def backprop(self, x, err_p):
+        w_grad = x*err_p
+        b_grad = 1*err_p
+        return w_grad, b_grad
+    
+    def activation(self, z):
+        a = 1/(1 + np.exp(-z))
+        return a
+    
+    def fit(self, x, y, epochs=100, learning_rate=0.001):
+        self.w = np.ones(x.shape[1])
+        self.b = 0
+        for i in range(x.shape[1]):
+            for x_i, y_i in zip(x,y):
+                z = self.forpass(x_i)
+                a = self.activation(z)
+                err_p = -(y_i - a)
+                w_grad, b_grad = self.backprop(x_i,err_p)
+                self.w -= learning_rate*w_grad
+                self.b -= learning_rate*b_grad
+                print("err_p :",err_p,"w :",self.w,"b :",self.b)
+    
+    def predict(self, x):
+        z = [self.forpass(x_i) for x_i in x]
+        a = self.activation(np.array(z))
+        return a > 0.5
 ```
 <br><br><br>
 
