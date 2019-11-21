@@ -85,29 +85,29 @@ List of posts to read before reading this article
 ## **Developing Our First Parallel CPU Program**
 ### ***3.1 EFFECT OF THE “PROGRAMMER” ON PERFORMANCE***
 ### ***3.2 EFFECT OF THE “CPU” ON PERFORMANCE***
-#### 3.2.1 In-Order versus Out-Of-Order Cores 55
-#### 3.2.2 Thin versus Thick Threads 57
+#### 3.2.1 In-Order versus Out-Of-Order Cores
+#### 3.2.2 Thin versus Thick Threads
 ### ***3.3 PERFORMANCE OF IMFLIPP***
 ### ***3.4 EFFECT OF THE “OS” ON PERFORMANCE***
-#### 3.4.1 Thread Creation 59
-#### 3.4.2 Thread Launch and Execution 59
-#### 3.4.3 Thread Status 60
-#### 3.4.4 Mapping Software Threads to Hardware Threads 61
-#### 3.4.5 Program Performance versus Launched Pthreads 62
+#### 3.4.1 Thread Creation
+#### 3.4.2 Thread Launch and Execution
+#### 3.4.3 Thread Status
+#### 3.4.4 Mapping Software Threads to Hardware Threads
+#### 3.4.5 Program Performance versus Launched Pthreads
 ### ***3.5 IMPROVING IMFLIPP***
-#### 3.5.1 Analyzing Memory Access Patterns in MTFlipH() 64
-#### 3.5.2 Multithreaded Memory Access of MTFlipH() 64
-#### 3.5.3 DRAM Access Rules of Thumb 66
+#### 3.5.1 Analyzing Memory Access Patterns in MTFlipH()
+#### 3.5.2 Multithreaded Memory Access of MTFlipH()
+#### 3.5.3 DRAM Access Rules of Thumb
 ### ***3.6 IMFLIPPM: OBEYING DRAM RULES OF THUMB***
-#### 3.6.1 Chaotic Memory Access Patterns of imflipP 67
-#### 3.6.2 Improving Memory Access Patterns of imflipP 68
-#### 3.6.3 MTFlipHM(): The Memory Friendly MTFlipH() 69
-#### 3.6.4 MTFlipVM(): The Memory Friendly MTFlipV() 71
+#### 3.6.1 Chaotic Memory Access Patterns of imflipP
+#### 3.6.2 Improving Memory Access Patterns of imflipP
+#### 3.6.3 MTFlipHM(): The Memory Friendly MTFlipH()
+#### 3.6.4 MTFlipVM(): The Memory Friendly MTFlipV()
 ### ***3.7 PERFORMANCE OF IMFLIPPM.C***
-#### 3.7.1 Comparing Performances of imflipP.c and imflipPM.c 72
-#### 3.7.2 Speed Improvement: MTFlipV() versus MTFlipVM() 73
-#### 3.7.3 Speed Improvement: MTFlipH() versus MTFlipHM() 73
-#### 3.7.4 Understanding the Speedup: MTFlipH() versus MTFlipHM() 73
+#### 3.7.1 Comparing Performances of imflipP.c and imflipPM.c
+#### 3.7.2 Speed Improvement: MTFlipV() versus MTFlipVM()
+#### 3.7.3 Speed Improvement: MTFlipH() versus MTFlipHM()
+#### 3.7.4 Understanding the Speedup: MTFlipH() versus MTFlipHM()
 ### ***3.8 PROCESS MEMORY MAP***
 ### ***3.9 INTEL MIC ARCHITECTURE: XEON PHI***
 ### ***3.10 WHAT ABOUT THE GPU?***
@@ -119,24 +119,168 @@ List of posts to read before reading this article
 
 ## **Improving Our First Parallel CPU Program**
 
+### ***4.1 ONCE UPON A TIME ... INTEL ...***
+### ***4.2 CPU AND MEMORY MANUFACTURERS***
+### ***4.3 DYNAMIC (DRAM) VERSUS STATIC (SRAM) MEMORY***
+#### 4.3.1 Static Random Access Memory (SRAM)
+#### 4.3.2 Dynamic Random Access Memory (DRAM)
+#### 4.3.3 DRAM Interface Standards
+#### 4.3.4 Influence of DRAM on our Program Performance
+#### 4.3.5 Influence of SRAM (Cache) on our Program Performance
+### ***4.4 IMAGE ROTATION PROGRAM: IMROTATE.C***
+#### 4.4.1 Description of the imrotate.c
+#### 4.4.2 imrotate.c: Parametric Restrictions and Simplifications
+#### 4.4.3 imrotate.c: Theory of Operation
+### ***4.5 PERFORMANCE OF IMROTATE***
+#### 4.5.1 Qualitative Analysis of Threading Efficiency
+#### 4.5.2 Quantitative Analysis: Defining Threading Efficiency
+### ***4.6 THE ARCHITECTURE OF THE COMPUTER***
+#### 4.6.1 The Cores, L1$ and L2$***
+#### 4.6.2 Internal Core Resources***
+#### 4.6.3 The Shared L3 Cache Memory (L3$)***
+#### 4.6.4 The Memory Controller***
+#### 4.6.5 The Main Memory***
+#### 4.6.6 Queue, Uncore, and I/O***
+### ***4.7 IMROTATEMC: MAKING IMROTATE MORE EFFICIENT***
+#### 4.7.1 Rotate2(): How Bad is Square Root and FP Division?
+#### 4.7.2 Rotate3() and Rotate4(): How Bad Is sin() and cos()?
+#### 4.7.3 Rotate5(): How Bad Is Integer Division/Multiplication?
+#### 4.7.4 Rotate6(): Consolidating Computations
+#### 4.7.5 Rotate7(): Consolidating More Computations
+#### 4.7.6 Overall Performance of imrotateMC
+### ***4.8 CHAPTER SUMMARY***
+
 <br><br><br>
 
 <hr class="division2">
 
 ## **Understanding the Cores and Memory**
-
+### ***5.1 EDGE DETECTION PROGRAM: IMEDGE.C***
+#### 5.1.1 Description of the imedge.c
+#### 5.1.2 imedge.c: Parametric Restrictions and Simplifications
+#### 5.1.3 imedge.c: Theory of Operation
+### ***5.2 IMEDGE.C : IMPLEMENTATION***
+#### 5.2.1 Initialization and Time-Stamping
+#### 5.2.2 Initialization Functions for Different Image Representations
+#### 5.2.3 Launching and Terminating Threads
+#### 5.2.4 Gaussian Filter
+#### 5.2.5 Sobel
+#### 5.2.6 Threshold
+### ***5.3 PERFORMANCE OF IMEDGE***
+### ***5.4 IMEDGEMC: MAKING IMEDGE MORE EFFICIENT***
+#### 5.4.1 Using Precomputation to Reduce Bandwidth
+#### 5.4.2 Storing the Precomputed Pixel Values
+#### 5.4.3 Precomputing Pixel Values
+#### 5.4.4 Reading the Image and Precomputing Pixel Values
+#### 5.4.5 PrGaussianFilter
+#### 5.4.6 PrSobel
+#### 5.4.7 PrThreshold
+### ***5.5 PERFORMANCE OF IMEDGEMC***
+### ***5.6 IMEDGEMCT: SYNCHRONIZING THREADS EFFICIENTLY***
+#### 5.6.1 Barrier Synchronization
+#### 5.6.2 MUTEX Structure for Data Sharing
+### ***5.7 IMEDGEMCT: IMPLEMENTATION***
+#### 5.7.1 Using a MUTEX: Read Image, Precompute
+#### 5.7.2 Precomputing One Row at a Time
+### ***5.8 PERFORMANCE OF IMEDGEMCT***
 <br><br><br>
 
 <hr class="division2">
 
 ## **Thread Management and Synchronization**
-
+### ***6.1 ONCE UPON A TIME ... NVIDIA ...***
+#### 6.1.1 The Birth of the GPU
+#### 6.1.2 Early GPU Architectures
+#### 6.1.3 The Birth of the GPGPU
+#### 6.1.4 Nvidia, ATI Technologies, and Intel
+### ***6.2 COMPUTE-UNIFIED DEVICE ARCHITECTURE (CUDA)***
+#### 6.2.1 CUDA, OpenCL, and Other GPU Languages
+#### 6.2.2 Device Side versus Host Side Code
+### ***6.3 UNDERSTANDING GPU PARALLELISM***
+#### 6.3.1 How Does the GPU Achieve High Performance?
+#### 6.3.2 CPU versus GPU Architectural Differences
+### ***6.4 CUDA VERSION OF THE IMAGE FLIPPER: IMFLIPG.CU***
+#### 6.4.1 imflipG.cu: Read the Image into a CPU-Side Array
+#### 6.4.2 Initialize and Query the GPUs
+#### 6.4.3 GPU-Side Time-Stamping
+#### 6.4.4 GPU-Side Memory Allocation
+#### 6.4.5 GPU Drivers and Nvidia Runtime Engine
+#### 6.4.6 CPU→GPU Data Transfer
+#### 6.4.7 Error Reporting Using Wrapper Functions
+#### 6.4.8 GPU Kernel Execution
+#### 6.4.9 Finish Executing the GPU Kernel
+#### 6.4.10 Transfer GPU Results Back to the CPU
+#### 6.4.11 Complete Time-Stamping
+#### 6.4.12 Report the Results and Cleanup
+#### 6.4.13 Reading and Writing the BMP File
+#### 6.4.14 Vflip(): The GPU Kernel for Vertical Flipping
+#### 6.4.15 What Is My Thread ID, Block ID, and Block Dimension?
+#### 6.4.16 Hflip(): The GPU Kernel for Horizontal Flipping
+#### 6.4.17 Hardware Parameters: threadIDx.x, blockIdx.x, blockDim.x
+#### 6.4.18 PixCopy(): The GPU Kernel for Copying an Image
+#### 6.4.19 CUDA Keywords
+### ***6.5 CUDA PROGRAM DEVELOPMENT IN WINDOWS***
+#### 6.5.1 Installing MS Visual Studio 2015 and CUDA Toolkit 8.0
+#### 6.5.2 Creating Project imflipG.cu in Visual Studio 2015
+#### 6.5.3 Compiling Project imflipG.cu in Visual Studio 2015
+#### 6.5.4 Running Our First CUDA Application: imflipG.exe
+#### 6.5.5 Ensuring Your Program’s Correctness
+### ***6.6 CUDA PROGRAM DEVELOPMENT ON A MAC PLATFORM***
+#### 6.6.1 Installing XCode on Your Mac
+#### 6.6.2 Installing the CUDA Driver and CUDA Toolkit
+#### 6.6.3 Compiling and Running CUDA Applications on a Mac
+### ***6.7 CUDA PROGRAM DEVELOPMENT IN A UNIX PLATFORM***
+#### 6.7.1 Installing Eclipse and CUDA Toolkit
+#### 6.7.2 ssh into a Cluster
+#### 6.7.3 Compiling and Executing Your CUDA Code
 <br><br><br>
 
 <hr class="division2">
 
 ## **Introduction to GPU Parallelism and CUDA**
-
+### ***7.1 DESIGNING YOUR PROGRAM’S PARALLELISM***
+#### 7.1.1 Conceptually Parallelizing a Task
+#### 7.1.2 What Is a Good Block Size for Vflip()?
+#### 7.1.3 imflipG.cu: Interpreting the Program Output
+#### 7.1.4 imflipG.cu: Performance Impact of Block and Image Size
+### ***7.2 KERNEL LAUNCH COMPONENTS***
+#### 7.2.1 Grids
+#### 7.2.2 Blocks
+#### 7.2.3 Threads
+#### 7.2.4 Warps and Lanes
+### ***7.3 IMFLIPG.CU: UNDERSTANDING THE KERNEL DETAILS***
+#### 7.3.1 Launching Kernels in main() and Passing Arguments to Them
+#### 7.3.2 Thread Execution Steps
+#### 7.3.3 Vflip() Kernel Details
+#### 7.3.4 Comparing Vflip() and MTFlipV()
+#### 7.3.5 Hflip() Kernel Details
+#### 7.3.6 PixCopy() Kernel Details
+### ***7.4 DEPENDENCE OF PCI EXPRESS SPEED ON THE CPU***
+### ***7.5 PERFORMANCE IMPACT OF PCI EXPRESS BUS***
+#### 7.5.1 Data Transfer Time, Speed, Latency, Throughput, and Bandwidth
+#### 7.5.2 PCIe Throughput Achieved with imflipG.cu
+### ***7.6 PERFORMANCE IMPACT OF GLOBAL MEMORY BUS***
+### ***7.7 PERFORMANCE IMPACT OF COMPUTE CAPABILITY***
+#### 7.7.1 Fermi, Kepler, Maxwell, Pascal, and Volta Families
+#### 7.7.2 Relative Bandwidth Achieved in Different Families
+#### 7.7.3 imflipG2.cu: Compute Capability 2.0 Version of imflipG.cu
+#### 7.7.4 imflipG2.cu: Changes in main()
+#### 7.7.5 The PxCC20() Kernel
+#### 7.7.6 The VfCC20() Kernel
+### ***7.8 PERFORMANCE OF IMFLIPG2.CU***
+### ***7.9 OLD-SCHOOL CUDA DEBUGGING***
+#### 7.9.1 Common CUDA Bugs
+#### 7.9.2 return Debugging
+#### 7.9.3 Comment-Based Debugging
+#### 7.9.4 printf() Debugging
+### ***7.10 BIOLOGICAL REASONS FOR SOFTWARE BUGS***
+#### 7.10.1 How Is Our Brain Involved in Writing/Debugging Code?
+#### 7.10.2 Do We Write Buggy Code When We Are Tired?
+##### 7.10.2.1 Attention
+##### 7.10.2.2 Physical Tiredness
+##### 7.10.2.3 Tiredness Due to Heavy Physical Activity
+##### 7.10.2.4 Tiredness Due to Needing Sleep
+##### 7.10.2.5 Mental Tiredness
 <br><br><br>
 
 <hr class="division2">
