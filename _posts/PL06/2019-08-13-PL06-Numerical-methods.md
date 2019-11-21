@@ -24,9 +24,9 @@ List of posts to read before reading this article
 
 ## **Introduction**
 
-workspace <br>
+workspace ｜ clear<br>
 ctrl + n <br>
-clear <br>
+clc <br>
 
 ### ***ABOUT MATLAB and MATLAB GUI (Graphical User Interface)***
 
