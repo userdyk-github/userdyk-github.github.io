@@ -344,7 +344,62 @@ List of posts to read before reading this article
 <hr class="division2">
 
 ## **Understanding GPU Hardware Architecture**
-
+### ***9.1 GPU ARCHITECTURE FAMILIES***
+#### 9.1.1 Fermi Architecture
+#### 9.1.2 Fermi SM Structure
+#### 9.1.3 Kepler Architecture
+#### 9.1.4 Kepler SMX Structure
+#### 9.1.5 Maxwell Architecture
+#### 9.1.6 Maxwell SMM Structure
+#### 9.1.7 Pascal GP100 Architecture
+#### 9.1.8 Pascal GP100 SM Structure
+#### 9.1.9 Family Comparison: Peak GFLOPS and Peak DGFLOPS
+#### 9.1.10 GPU Boost
+#### 9.1.11 GPU Power Consumption
+#### 9.1.12 Computer Power Supply
+### ***9.2 STREAMING MULTIPROCESSOR (SM) BUILDING BLOCKS***
+#### 9.2.1 GPU Cores
+#### 9.2.2 Double Precision Units (DPU)
+#### 9.2.3 Special Function Units (SFU)
+#### 9.2.4 Register File (RF)
+#### 9.2.5 Load/Store Queues (LDST)
+#### 9.2.6 L1$ and Texture Cache
+#### 9.2.7 Shared Memory
+#### 9.2.8 Constant Cache
+#### 9.2.9 Instruction Cache
+#### 9.2.10 Instruction Buffer
+#### 9.2.11 Warp Schedulers
+#### 9.2.12 Dispatch Units
+### ***9.3 PARALLEL THREAD EXECUTION (PTX) DATA TYPES***
+#### 9.3.1 INT8 : 8-bit Integer
+#### 9.3.2 INT16 : 16-bit Integer
+#### 9.3.3 24-bit Integer
+#### 9.3.4 INT32 : 32-bit Integer
+#### 9.3.5 Predicate Registers (32-bit)
+#### 9.3.6 INT64 : 64-bit Integer
+#### 9.3.7 128-bit Integer
+#### 9.3.8 FP32: Single Precision Floating Point (float)
+#### 9.3.9 FP64: Double Precision Floating Point (double)
+#### 9.3.10 FP16: Half Precision Floating Point (half)
+#### 9.3.11 What is a FLOP?
+#### 9.3.12 Fused Multiply-Accumulate (FMA) versus Multiply-Add(MAD)
+#### 9.3.13 Quad and Octo Precision Floating Point
+#### 9.3.14 Pascal GP104 Engine SM Structure
+### ***9.4 IMFLIPGC.CU: CORE-FRIENDLY IMFLIPG***
+#### 9.4.1 Hflip2(): Precomputing Kernel Parameters
+#### 9.4.2 Vflip2(): Precomputing Kernel Parameters
+#### 9.4.3 Computing Image Coordinates by a Thread
+#### 9.4.4 Block ID versus Image Row Mapping
+#### 9.4.5 Hflip3(): Using a 2D Launch Grid
+#### 9.4.6 Vflip3(): Using a 2D Launch Grid
+#### 9.4.7 Hflip4(): Computing Two Consecutive Pixels
+#### 9.4.8 Vflip4(): Computing Two Consecutive Pixels
+#### 9.4.9 Hflip5(): Computing Four Consecutive Pixels
+#### 9.4.10 Vflip5(): Computing Four Consecutive Pixels
+#### 9.4.11 PixCopy2(), PixCopy3(): Copying 2,4 Consecutive Pixels at a Time
+### ***9.5 IMEDGEGC.CU: CORE-FRIENDLY IMEDGEG 299***
+#### 9.5.1 BWKernel2(): Using Precomputed Values and 2D Blocks
+#### 9.5.2 GaussKernel2(): Using Precomputed Values and 2D Blocks
 <br><br><br>
 
 <hr class="division2">
