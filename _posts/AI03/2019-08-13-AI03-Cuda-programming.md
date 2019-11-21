@@ -23,6 +23,34 @@ List of posts to read before reading this article
 
 ## **Introduction to CPU Parallel Programming**
 
+### ***1.1 EVOLUTION OF PARALLEL PROGRAMMING***
+### ***1.2 MORE CORES, MORE PARALLELISM***
+### ***1.3 CORES VERSUS THREADS***
+#### 1.3.1 More Threads or More Cores to Parallelize?
+#### 1.3.2 Influence of Core Resource Sharing
+#### 1.3.3 Influence of Memory Resource Sharing
+### ***1.4 OUR FIRST SERIAL PROGRAM***
+#### 1.4.1 Understanding Data Transfer Speeds
+#### 1.4.2 The main() Function in imflip.c
+#### 1.4.3 Flipping Rows Vertically: FlipImageV()
+#### 1.4.4 Flipping Columns Horizontally: FlipImageH()
+### ***1.5 WRITING, COMPILING, RUNNING OUR PROGRAMS***
+#### 1.5.1 Choosing an Editor and a Compiler
+#### 1.5.2 Developing in Windows 7, 8, and Windows 10 Platforms
+#### 1.5.3 Developing in a Mac Platform
+#### 1.5.4 Developing in a Unix Platform
+### ***1.6 CRASH COURSE ON UNIX***
+#### 1.6.1 Unix Directory-Related Commands
+#### 1.6.2 Unix File-Related Commands
+### ***1.7 DEBUGGING YOUR PROGRAMS***
+#### 1.7.1 gdb
+#### 1.7.2 Old School Debugging
+#### 1.7.3 valgrind
+### ***1.8 PERFORMANCE OF OUR FIRST SERIAL PROGRAM***
+#### 1.8.1 Can We Estimate the Execution Time?
+#### 1.8.2 What Does the OS Do When Our Code Is Executing?
+#### 1.8.3 How Do We Parallelize It?
+#### 1.8.4 Thinking About the Resources
 <br><br><br>
 
 <hr class="division2">
