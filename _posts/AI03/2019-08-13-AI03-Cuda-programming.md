@@ -670,6 +670,29 @@ cublasSgemv(...);
 ---
 
 ### ***KERAS***
+```python
+from keras.models import Sequential
+from keras.layers import Dense, Activation, Conv2D, MaxPooling2D
+from keras import losses
+
+model = Sequential()
+model.add(Dense(units=..., input_dim=...))
+model.add(Activation(’relu’))
+model.add(Conv2D(..., activation=’relu’))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+model.add(Dense(..., activation=’softmax’))
+model.compile(loss=losses.mean_squared_error, optimizer=’sgd’, metrics=[’accuracy’])
+model.fit([training data input], [training data output], batch_size=..., epochs=...)
+score = model.evaluate([test data input], [test data output])
+```
+Note that if Keras is running on the TensorFlow or CNTK backends, it automatically runs on the GPU if any GPU is detected. If the backend is Theano, there are multiple methods to use the GPU. One way is manually setting the device of the Theano configuration, as follows:
+```python
+import theano
+
+theano.config.device = ’gpu’
+theano.config.floatX = ’float32’
+```
+
 <br><br><br>
 
 
