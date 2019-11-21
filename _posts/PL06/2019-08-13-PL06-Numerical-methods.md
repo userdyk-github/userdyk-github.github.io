@@ -24,9 +24,14 @@ List of posts to read before reading this article
 
 ## **Introduction**
 
-workspace ｜ clear<br>
-ctrl + n <br>
-clc <br>
+|Region|Command|
+|:--|:--|
+|workspace|workspace, clear|
+|script|ctrl + n|
+|CLI|clc|
+|current folder|filebrowser|
+
+<br><br><br>
 
 ### ***ABOUT MATLAB and MATLAB GUI (Graphical User Interface)***
 
