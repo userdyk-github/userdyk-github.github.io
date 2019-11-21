@@ -571,19 +571,21 @@ List of posts to read before reading this article
 <hr class="division2">
 
 ## **Deep Learning Using CUDA**
-### ***15.1 ARTIFICIAL NEURAL NETWORKS (ANNS)***
-#### 15.1.1 Neurons
-#### 15.1.2 Activation Functions
-### ***15.2 FULLY CONNECTED NEURAL NETWORKS***
-### ***15.3 DEEP NETWORKS/CONVOLUTIONAL NEURAL NETWORKS***
-### ***15.4 TRAINING A NETWORK***
-### ***15.5 CUDNN LIBRARY FOR DEEP LEARNING***
-#### 15.5.1 Creating a Layer
-#### 15.5.2 Creating a Network
-#### 15.5.3 Forward Propagation
-#### 15.5.4 Backpropagation
-#### 15.5.5 Using cuBLAS in the Network
-### ***15.6 KERAS***
+### ***CUDNN LIBRARY FOR DEEP LEARNING***
+<a href="https://developer.nvidia.com/" target="_blank">cuDNN Download</a>
+
+<br><br><br>
+#### Creating a Layer
+#### Creating a Network
+#### Forward Propagation
+#### Backpropagation
+#### Using cuBLAS in the Network
+
+<br><br><br>
+
+---
+
+### ***KERAS***
 <br><br><br>
 
 
