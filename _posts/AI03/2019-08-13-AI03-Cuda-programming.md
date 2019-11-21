@@ -707,7 +707,7 @@ List of posts followed by this article
 
 Reference
 - Horst Simon, GPU Parallel Program Development Using CUDA
-- <a href='https://userdyk-github.github.io/'>post2</a>
+- <a href='https://documen.tician.de/'>tician, pycuda&pyopencl</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
