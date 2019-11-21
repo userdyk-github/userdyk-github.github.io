@@ -286,6 +286,58 @@ List of posts to read before reading this article
 <hr class="division2">
 
 ## **CUDA Host/Device Programming Model**
+### ***8.1 GPU HARDWARE ARCHITECTURE***
+### ***8.2 GPU HARDWARE COMPONENTS***
+#### 8.2.1 SM: Streaming Multiprocessor
+#### 8.2.2 GPU Cores
+#### 8.2.3 Giga-Thread Scheduler
+#### 8.2.4 Memory Controllers
+#### 8.2.5 Shared Cache Memory (L2$)
+#### 8.2.6 Host Interface
+### ***8.3 NVIDIA GPU ARCHITECTURES***
+#### 8.3.1 Fermi Architecture
+#### 8.3.2 GT, GTX, and Compute Accelerators
+#### 8.3.3 Kepler Architecture
+#### 8.3.4 Maxwell Architecture
+#### 8.3.5 Pascal Architecture and NVLink
+### ***8.4 CUDA EDGE DETECTION: IMEDGEG.CU***
+#### 8.4.1 Variables to Store the Image in CPU, GPU Memory
+##### 8.4.1.1 TheImage and CopyImage
+##### 8.4.1.2 GPUImg
+##### 8.4.1.3 GPUBWImg
+##### 8.4.1.4 GPUGaussImg
+##### 8.4.1.5 GPUGradient and GPUTheta
+##### 8.4.1.6 GPUResultImg
+#### 8.4.2 Allocating Memory for the GPU Variables
+#### 8.4.3 Calling the Kernels and Time-Stamping Their Execution
+#### 8.4.4 Computing the Kernel Performance
+#### 8.4.5 Computing the Amount of Kernel Data Movement
+#### 8.4.6 Reporting the Kernel Performance
+### ***8.5 IMEDGEG: KERNELS***
+#### 8.5.1 BWKernel()
+#### 8.5.2 GaussKernel()
+#### 8.5.3 SobelKernel()
+#### 8.5.4 ThresholdKernel()
+### ***8.6 PERFORMANCE OF IMEDGEG.CU***
+#### 8.6.1 imedgeG.cu: PCIe Bus Utilization
+#### 8.6.2 imedgeG.cu: Runtime Results
+#### 8.6.3 imedgeG.cu: Kernel Performance Comparison
+### ***8.7 GPU CODE: COMPILE TIME***
+#### 8.7.1 Designing CUDA Code
+#### 8.7.2 Compiling CUDA Code
+#### 8.7.3 GPU Assembly: PTX, CUBIN
+### ***8.8 GPU CODE: LAUNCH***
+#### 8.8.1 OS Involvement and CUDA DLL File
+#### 8.8.2 GPU Graphics Driver
+#### 8.8.3 CPU←→GPU Memory Transfers
+### ***8.9 GPU CODE: EXECUTION (RUN TIME)***
+#### 8.9.1 Getting the Data
+#### 8.9.2 Getting the Code and Parameters
+#### 8.9.3 Launching Grids of Blocks
+#### 8.9.4 Giga Thread Scheduler (GTS)
+#### 8.9.5 Scheduling Blocks
+#### 8.9.6 Executing Blocks
+#### 8.9.7 Transparent Scalability
 
 <br><br><br>
 
