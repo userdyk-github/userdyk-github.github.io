@@ -21,7 +21,9 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## **Linear regression**
+
+## **Regression**
+### ***Linear regression***
 
 ```python
 class Neuron:
@@ -33,19 +35,24 @@ class Neuron:
         y_hat = x*self.w + self.b
         return y_hat
     
-    def backprop(self, x, err):
-        w_grad = x*err
-        b_grad = 1*err
+    def backprop(self, x, err_p):
+        w_grad = x*err_p
+        b_grad = 1*err_p
         return w_grad, b_grad
     
     def fit(self,x,y,epochs=100, learning_rate=0.00001):
         for _ in range(epochs):
             for x_i, y_i in zip(x,y):
                 y_hat = self.forpass(x_i)
-                err = -(y_i - y_hat)
-                w_grad, b_grad = self.backprop(x_i,err)
+                err_p = -(y_i - y_hat)
+                w_grad, b_grad = self.backprop(x_i,err_p)
                 self.w -= learning_rate*w_grad
                 self.b -= learning_rate*b_grad
+```
+
+### ***Logistic regression***
+```python
+
 ```
 <br><br><br>
 
