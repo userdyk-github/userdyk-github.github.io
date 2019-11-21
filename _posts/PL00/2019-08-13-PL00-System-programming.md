@@ -241,7 +241,7 @@ $ gzip -d [file_name].gz      # file_name.gz to file_name
 <span class="frmae3">Local</span><br>
 ~/.config/systemd/user
 ```bash
-$ systemctl –user
+$ systemctl –-user
 ```
 
 
