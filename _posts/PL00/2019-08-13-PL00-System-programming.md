@@ -231,6 +231,23 @@ $ gzip -d [file_name].gz      # file_name.gz to file_name
 ## **Shell**
 
 ### ***Multiuser system***
+#### Systemd
+<span class="frmae3">Global</span><br>
+/lib/systemd : General<br>
+/etc/systemd : Customizing<br>
+
+
+<br><br><br>
+<span class="frmae3">Local</span><br>
+~/.config/systemd/user
+```bash
+$ systemctl –user
+```
+
+
+
+<br><br><br>
+
 #### User
 <span class="frame3">all user name currently accessed on linux</span>
 ```bash
