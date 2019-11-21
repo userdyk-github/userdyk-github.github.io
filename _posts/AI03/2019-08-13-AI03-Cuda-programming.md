@@ -405,31 +405,156 @@ List of posts to read before reading this article
 <hr class="division2">
 
 ## **Understanding GPU Cores**
+### ***10.1 GLOBAL MEMORY***
+### ***10.2 L2 CACHE***
+### ***10.3 TEXTURE/L1 CACHE***
+### ***10.4 SHARED MEMORY***
+#### 10.4.1 Split versus Dedicated Shared Memory
+#### 10.4.2 Memory Resources Available Per Core
+#### 10.4.3 Using Shared Memory as Software Cache
+#### 10.4.4 Allocating Shared Memory in an SM
+### ***10.5 INSTRUCTION CACHE***
+### ***10.6 CONSTANT MEMORY***
+### ***10.7 IMFLIPGCM.CU: CORE AND MEMORY FRIENDLY IMFLIPG***
+#### 10.7.1 Hflip6(),Vflip6(): Using Shared Memory as Buffer
+#### 10.7.2 Hflip7(): Consecutive Swap Operations in Shared Memory
+#### 10.7.3 Hflip8(): Using Registers to Swap Four Pixels
+#### 10.7.4 Vflip7(): Copying 4 Bytes (int) at a Time
+#### 10.7.5 Aligned versus Unaligned Data Access in Memory
+#### 10.7.6 Vflip8(): Copying 8 Bytes at a Time
+#### 10.7.7 Vflip9(): Using Only Global Memory, 8 Bytes at a Time
+#### 10.7.8 PixCopy4(), PixCopy5(): Copying One versus 4 Bytes Using Shared Memory
+#### 10.7.9 PixCopy6(), PixCopy7(): Copying One/Two Integers Using Global Memory
+### ***10.8 IMEDGEGCM.CU: CORE- & MEMORY-FRIENDLY IMEDGEG***
+#### 10.8.1 BWKernel3(): Using Byte Manipulation to Extract RGB
+#### 10.8.2 GaussKernel3(): Using Constant Memory
+#### 10.8.3 Ways to Handle Constant Values
+#### 10.8.4 GaussKernel4(): Buffering Neighbors of 1 Pixel in Shared Memory
+#### 10.8.5 GaussKernel5(): Buffering Neighbors of 4 Pixels in Shared Memory
+#### 10.8.6 GaussKernel6(): Reading 5 Vertical Pixels into Shared Memory
+#### 10.8.7 GaussKernel7(): Eliminating the Need to Account for Edge Pixels
+#### 10.8.8 GaussKernel8(): Computing 8 Vertical Pixels
+### ***10.9 CUDA OCCUPANCY CALCULATOR***
+#### 10.9.1 Choosing the Optimum Threads/Block
+#### 10.9.2 SM-Level Resource Limitations
+#### 10.9.3 What is “Occupancy”?
+#### 10.9.4 CUDA Occupancy Calculator: Resource Computation
+#### 10.9.5 Case Study: GaussKernel7()
+#### 10.9.6 Case Study: GaussKernel8()
+
+
 
 <br><br><br>
 
 <hr class="division2">
 
 ## **Understanding GPU Memory**
+### ***11.1 WHAT IS PIPELINING?***
+#### 11.1.1 Execution Overlapping
+#### 11.1.2 Exposed versus Coalesced Runtime
+### ***11.2 MEMORY ALLOCATION***
+#### 11.2.1 Physical versus Virtual Memory
+#### 11.2.2 Physical to Virtual Address Translation
+#### 11.2.3 Pinned Memory
+#### 11.2.4 Allocating Pinned Memory with cudaMallocHost()
+### ***11.3 FAST CPU←→GPU DATA TRANSFERS***
+#### 11.3.1 Synchronous Data Transfers
+#### 11.3.2 Asynchronous Data Transfers
+### ***11.4 CUDA STREAMS***
+#### 11.4.1 CPU→GPU Transfer, Kernel Exec, GPU→CPUTransfer
+#### 11.4.2 Implementing Streaming in CUDA
+#### 11.4.3 Copy Engine
+#### 11.4.4 Kernel Execution Engine
+#### 11.4.5 Concurrent Upstream and Downstream PCIe Transfers
+#### 11.4.6 Creating CUDA Streams
+#### 11.4.7 Destroying CUDA Streams
+#### 11.4.8 Synchronizing CUDA Streams
+### ***11.5 IMGSTR.CU: STREAMING IMAGE PROCESSING***
+#### 11.5.1 Reading the Image into Pinned Memory
+#### 11.5.2 Synchronous versus Single Stream
+#### 11.5.3 Multiple Streams
+#### 11.5.4 Data Dependence Across Multiple Streams
+##### 11.5.4.1 Horizontal Flip: No Data Dependence
+##### 11.5.4.2 Edge Detection: Data Dependence
+##### 11.5.4.3 Preprocessing Overlapping Rows Synchronously
+##### 11.5.4.4 Asynchronous Processing the Non-Overlapping Rows
+### ***11.6 STREAMING HORIZONTAL FLIP KERNEL***
+### ***11.7 IMGSTR.CU: STREAMING EDGE DETECTION***
+### ***11.8 PERFORMANCE COMPARISON: IMGSTR.CU***
+#### 11.8.1 Synchronous versus Asynchronous Results
+#### 11.8.2 Randomness in the Results
+#### 11.8.3 Optimum Queuing
+#### 11.8.4 Best Case Streaming Results
+#### 11.8.5 Worst Case Streaming Results
+### ***11.9 NVIDIA VISUAL PROFILER: NVVP***
+#### 11.9.1 Installing nvvp and nvprof
+#### 11.9.2 Using nvvp
+#### 11.9.3 Using nvprof
+#### 11.9.4 imGStr Synchronous and Single-Stream Results
+#### 11.9.5 imGStr 2- and 4-Stream Results
+
 
 <br><br><br>
 
 <hr class="division2">
 
 ## **CUDA Streams**
-
+### ***12.1 cuBLAS***
+#### 12.1.1 BLAS Levels
+#### 12.1.2 cuBLAS Datatypes
+#### 12.1.3 Installing cuBLAS
+#### 12.1.4 Variable Declaration and Initialization
+#### 12.1.5 Device Memory Allocation
+#### 12.1.6 Creating Context
+#### 12.1.7 Transferring Data to the Device
+#### 12.1.8 Calling cuBLAS Functions
+#### 12.1.9 Transfer Data Back to the Host
+#### 12.1.10 Deallocating Memory
+#### 12.1.11 Example cuBLAS Program: Matrix Scalar
+### ***12.2 CUFFT***
+#### 12.2.1 cuFFT Library Characteristics
+#### 12.2.2 A Sample Complex-to-Complex Transform
+#### 12.2.3 A Sample Real-to-Complex Transform
+### ***12.3 NVIDIA PERFORMANCE PRIMITIVES (NPP)***
+### ***12.4 THRUST LIBRARY***
 <br><br><br>
 
 <hr class="division2">
 
 ## **CUDA Libraries**
-
+### ***13.1 WHAT IS OpenCL?***
+#### 13.1.1 Multiplatform
+#### 13.1.2 Queue-Based
+### ***13.2 IMAGE FLIP KERNEL IN OPENCL***
+### ***13.3 RUNNING OUR KERNEL***
+#### 13.3.1 Selecting a Device
+#### 13.3.2 Running the Kernel
+##### 13.3.2.1 Creating a Compute Context
+##### 13.3.2.2 Creating a Command Queue
+##### 13.3.2.3 Loading Kernel File
+##### 13.3.2.4 Setting Up Kernel Invocation
+#### 13.3.3 Runtimes of Our OpenCL Program
+### ***13.4 EDGE DETECTION IN OpenCL***
 <br><br><br>
 
 <hr class="division2">
 
 ## **Introduction to OpenCL**
-
+### ***14.1 GPU PROGRAMMING WITH PYTHON***
+#### 14.1.1 PyOpenCL Version of imflip
+#### 14.1.2 PyOpenCL Element-Wise Kernel
+### ***14.2 OPENGL***
+### ***14.3 OPENGL ES: OPENGL FOR EMBEDDED SYSTEMS***
+### ***14.4 VULKAN***
+### ***14.5 MICROSOFT’S HIGH-LEVEL SHADING LANGUAGE (HLSL)***
+#### 14.5.1 Shading
+#### 14.5.2 Microsoft HLSL
+### ***14.6 APPLE’S METAL API***
+### ***14.7 APPLE’S SWIFT PROGRAMMING LANGUAGE***
+### ***14.8 OPENCV***
+#### 14.8.1 Installing OpenCV and Face Recognition
+#### 14.8.2 Mobile-Cloudlet-Cloud Real-Time Face Recognition
+#### 14.8.3 Acceleration as a Service (AXaas)
 <br><br><br>
 
 <hr class="division2">
