@@ -26,7 +26,7 @@ List of posts to read before reading this article
 
 workspace <br>
 ctrl + n <br>
-
+clear <br>
 
 ### ***ABOUT MATLAB and MATLAB GUI (Graphical User Interface)***
 
