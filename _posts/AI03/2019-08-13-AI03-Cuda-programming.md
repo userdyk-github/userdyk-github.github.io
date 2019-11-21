@@ -57,11 +57,61 @@ List of posts to read before reading this article
 
 ## **Parallel Programming using CUDA C**
 
+### ***2.1 OUR FIRST PARALLEL PROGRAM***
+#### 2.1.1 The main() Function in imflipP.c
+#### 2.1.2 Timing the Execution
+#### 2.1.3 Split Code Listing for main() in imflipP.c
+#### 2.1.4 Thread Initialization
+#### 2.1.5 Thread Creation
+#### 2.1.6 Thread Launch/Execution
+#### 2.1.7 Thread Termination (Join)
+#### 2.1.8 Thread Task and Data Splitting
+### ***2.2 WORKING WITH BITMAP (BMP) FILES***
+#### 2.2.1 BMP is a Non-Lossy/Uncompressed File Format
+#### 2.2.2 BMP Image File Format
+#### 2.2.3 Header File ImageStuff.h
+#### 2.2.4 Image Manipulation Routines in ImageStuff.c
+### ***2.3 TASK EXECUTION BY THREADS***
+#### 2.3.1 Launching a Thread
+#### 2.3.2 Multithreaded Vertical Flip: MTFlipV()
+#### 2.3.3 Comparing FlipImageV() and MTFlipV()
+#### 2.3.4 Multithreaded Horizontal Flip: MTFlipH()
+### ***2.4 TESTING/TIMING THE MULTITHREADED CODE***
+
 <br><br><br>
 
 <hr class="division2">
 
 ## **Developing Our First Parallel CPU Program**
+### ***3.1 EFFECT OF THE “PROGRAMMER” ON PERFORMANCE***
+### ***3.2 EFFECT OF THE “CPU” ON PERFORMANCE***
+#### 3.2.1 In-Order versus Out-Of-Order Cores 55
+#### 3.2.2 Thin versus Thick Threads 57
+### ***3.3 PERFORMANCE OF IMFLIPP***
+### ***3.4 EFFECT OF THE “OS” ON PERFORMANCE***
+#### 3.4.1 Thread Creation 59
+#### 3.4.2 Thread Launch and Execution 59
+#### 3.4.3 Thread Status 60
+#### 3.4.4 Mapping Software Threads to Hardware Threads 61
+#### 3.4.5 Program Performance versus Launched Pthreads 62
+### ***3.5 IMPROVING IMFLIPP***
+#### 3.5.1 Analyzing Memory Access Patterns in MTFlipH() 64
+#### 3.5.2 Multithreaded Memory Access of MTFlipH() 64
+#### 3.5.3 DRAM Access Rules of Thumb 66
+### ***3.6 IMFLIPPM: OBEYING DRAM RULES OF THUMB***
+#### 3.6.1 Chaotic Memory Access Patterns of imflipP 67
+#### 3.6.2 Improving Memory Access Patterns of imflipP 68
+#### 3.6.3 MTFlipHM(): The Memory Friendly MTFlipH() 69
+#### 3.6.4 MTFlipVM(): The Memory Friendly MTFlipV() 71
+### ***3.7 PERFORMANCE OF IMFLIPPM.C***
+#### 3.7.1 Comparing Performances of imflipP.c and imflipPM.c 72
+#### 3.7.2 Speed Improvement: MTFlipV() versus MTFlipVM() 73
+#### 3.7.3 Speed Improvement: MTFlipH() versus MTFlipHM() 73
+#### 3.7.4 Understanding the Speedup: MTFlipH() versus MTFlipHM() 73
+### ***3.8 PROCESS MEMORY MAP***
+### ***3.9 INTEL MIC ARCHITECTURE: XEON PHI***
+### ***3.10 WHAT ABOUT THE GPU?***
+### ***3.11 CHAPTER SUMMARY***
 
 <br><br><br>
 
