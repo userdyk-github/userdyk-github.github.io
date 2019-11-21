@@ -21,7 +21,7 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## **Introducing CUDA and Getting Started with CUDA**
+## **Introduction to CPU Parallel Programming**
 
 <br><br><br>
 
@@ -33,63 +33,88 @@ List of posts to read before reading this article
 
 <hr class="division2">
 
-## ****
+## **Developing Our First Parallel CPU Program**
 
 <br><br><br>
 
 <hr class="division2">
 
-## ****
+## **Improving Our First Parallel CPU Program**
 
 <br><br><br>
 
 <hr class="division2">
 
-## ****
+## **Understanding the Cores and Memory**
 
 <br><br><br>
 
 <hr class="division2">
 
-## ****
+## **Thread Management and Synchronization**
 
 <br><br><br>
 
 <hr class="division2">
 
-## ****
+## **Introduction to GPU Parallelism and CUDA**
 
 <br><br><br>
 
 <hr class="division2">
 
-## ****
+## **CUDA Host/Device Programming Model**
 
 <br><br><br>
 
 <hr class="division2">
 
-## ****
+## **Understanding GPU Hardware Architecture**
 
 <br><br><br>
 
 <hr class="division2">
 
-## ****
+## **Understanding GPU Cores**
 
 <br><br><br>
 
 <hr class="division2">
 
-## ****
+## **Understanding GPU Memory**
 
 <br><br><br>
 
 <hr class="division2">
 
-## ****
+## **CUDA Streams**
 
 <br><br><br>
+
+<hr class="division2">
+
+## **CUDA Libraries**
+
+<br><br><br>
+
+<hr class="division2">
+
+## **Introduction to OpenCL**
+
+<br><br><br>
+
+<hr class="division2">
+
+## **Other GPU Programming Languages**
+
+<br><br><br>
+
+<hr class="division2">
+
+## **Deep Learning Using CUDA**
+
+<br><br><br>
+
 
 <hr class="division1">
 
