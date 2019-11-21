@@ -576,11 +576,95 @@ List of posts to read before reading this article
 
 <br><br><br>
 #### Creating a Layer
-#### Creating a Network
-#### Forward Propagation
-#### Backpropagation
-#### Using cuBLAS in the Network
+```cuda
+struct Conv_Layer
+{
+int inputs, outputs, kernelSize;
+int inputWidth, inputHeight, outputWidth, outputHeight;
+std::vector<float> convV;
+std::vector<float> biasV;
+...
+};
+struct Maxpool_Layer
+{
+int size, stride;
+...
+};
+struct Fully_Connected_Layer
+{
+int inputs, outputs;
+std::vector<float> neuronsV;
+std::vector<float> biasV;
+...
+};
+```
+<br><br><br>
 
+#### Creating a Network
+```cuda
+struct My_Network
+{
+cudnnTensorDescriptor_t dataTensorDesc, convTensorDesc;
+cudnnConvolutionDescriptor_t convDesc;
+cudnnActivationDescriptor_t lastLayerActDesc;
+cudnnFilterDescriptor_t filterDesc;
+cudnnPoolingDescriptor_t poolDesc;
+void createHandles()
+{
+//General tensors and layers used in the network.
+//These need to be initialized by a descriptor.
+cudnnCreateTensorDescriptor(&dataTensorDesc);
+cudnnCreateTensorDescriptor(&convTensorDesc);
+cudnnCreateConvolutionDescriptor(&convDesc);
+cudnnCreateActivationDescriptor(&lastLayerActDesc);
+cudnnCreateFilterDescriptor(&filterDesc);
+cudnnCreatePoolingDescriptor(&poolDesc);
+}
+void destroyHandles()
+{
+cudnnDestroyTensorDescriptor(&dataTensorDesc);
+cudnnDestroyTensorDescriptor(&convTensorDesc);
+cudnnDestroyConvolutionDescriptor(&convDesc);
+cudnnDestroyActivationDescriptor(&lastLayerActDesc);
+cudnnDestroyFilterDescriptor(&filterDesc);
+cudnnDestroyPoolingDescriptor(&poolDesc);
+}
+...
+};
+
+```
+<br><br><br>
+
+#### Forward Propagation
+```cuda
+convoluteForward(...)
+{
+cudnnSetTensor4dDescriptor(dataTensorDesc, ...);
+cudnnSetFilter4dDescriptor(filterDesc, ...);
+cudnnSetConvolution2dDescriptor(convDesc, ...);
+cudnnConvolutionForward(...);
+}
+```
+<br><br><br>
+
+#### Backpropagation
+```cuda
+cudnnActivationBackward(...)
+cudnnPoolingBackward(...)
+cudnnConvolutionBackwardBias(...)
+cudnnConvolutionBackwardFilter(...)
+```
+<br><br><br>
+
+#### Using cuBLAS in the Network
+```cuda
+fullyConenctedForward(...)
+{
+...
+cublasSgemv(...);
+...
+}
+```
 <br><br><br>
 
 ---
