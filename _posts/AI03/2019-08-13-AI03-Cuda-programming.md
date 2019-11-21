@@ -22,7 +22,6 @@ List of posts to read before reading this article
 <hr class="division1">
 
 ## **Introduction to CPU Parallel Programming**
-
 ### ***1.1 EVOLUTION OF PARALLEL PROGRAMMING***
 ### ***1.2 MORE CORES, MORE PARALLELISM***
 ### ***1.3 CORES VERSUS THREADS***
@@ -55,7 +54,7 @@ List of posts to read before reading this article
 
 <hr class="division2">
 
-## **Parallel Programming using CUDA C**
+## **Developing Our First Parallel CPU Program**
 
 ### ***2.1 OUR FIRST PARALLEL PROGRAM***
 #### 2.1.1 The main() Function in imflipP.c
@@ -82,7 +81,8 @@ List of posts to read before reading this article
 
 <hr class="division2">
 
-## **Developing Our First Parallel CPU Program**
+## **Improving Our First Parallel CPU Program**
+
 ### ***3.1 EFFECT OF THE “PROGRAMMER” ON PERFORMANCE***
 ### ***3.2 EFFECT OF THE “CPU” ON PERFORMANCE***
 #### 3.2.1 In-Order versus Out-Of-Order Cores
@@ -117,7 +117,7 @@ List of posts to read before reading this article
 
 <hr class="division2">
 
-## **Improving Our First Parallel CPU Program**
+## **Understanding the Cores and Memory**
 
 ### ***4.1 ONCE UPON A TIME ... INTEL ...***
 ### ***4.2 CPU AND MEMORY MANUFACTURERS***
@@ -154,7 +154,7 @@ List of posts to read before reading this article
 
 <hr class="division2">
 
-## **Understanding the Cores and Memory**
+## **Thread Management and Synchronization**
 ### ***5.1 EDGE DETECTION PROGRAM: IMEDGE.C***
 #### 5.1.1 Description of the imedge.c
 #### 5.1.2 imedge.c: Parametric Restrictions and Simplifications
@@ -187,7 +187,8 @@ List of posts to read before reading this article
 
 <hr class="division2">
 
-## **Thread Management and Synchronization**
+## **Introduction to GPU Parallelism and CUDA**
+
 ### ***6.1 ONCE UPON A TIME ... NVIDIA ...***
 #### 6.1.1 The Birth of the GPU
 #### 6.1.2 Early GPU Architectures
@@ -237,7 +238,8 @@ List of posts to read before reading this article
 
 <hr class="division2">
 
-## **Introduction to GPU Parallelism and CUDA**
+## **CUDA Host/Device Programming Model**
+
 ### ***7.1 DESIGNING YOUR PROGRAM’S PARALLELISM***
 #### 7.1.1 Conceptually Parallelizing a Task
 #### 7.1.2 What Is a Good Block Size for Vflip()?
@@ -285,7 +287,8 @@ List of posts to read before reading this article
 
 <hr class="division2">
 
-## **CUDA Host/Device Programming Model**
+## **Understanding GPU Hardware Architecture**
+
 ### ***8.1 GPU HARDWARE ARCHITECTURE***
 ### ***8.2 GPU HARDWARE COMPONENTS***
 #### 8.2.1 SM: Streaming Multiprocessor
@@ -343,7 +346,7 @@ List of posts to read before reading this article
 
 <hr class="division2">
 
-## **Understanding GPU Hardware Architecture**
+## **Understanding GPU Cores**
 ### ***9.1 GPU ARCHITECTURE FAMILIES***
 #### 9.1.1 Fermi Architecture
 #### 9.1.2 Fermi SM Structure
@@ -404,7 +407,15 @@ List of posts to read before reading this article
 
 <hr class="division2">
 
-## **Understanding GPU Cores**
+
+
+
+<br><br><br>
+
+<hr class="division2">
+
+## **Understanding GPU Memory**
+
 ### ***10.1 GLOBAL MEMORY***
 ### ***10.2 L2 CACHE***
 ### ***10.3 TEXTURE/L1 CACHE***
@@ -442,13 +453,11 @@ List of posts to read before reading this article
 #### 10.9.5 Case Study: GaussKernel7()
 #### 10.9.6 Case Study: GaussKernel8()
 
-
-
 <br><br><br>
 
 <hr class="division2">
 
-## **Understanding GPU Memory**
+## **CUDA Streams**
 ### ***11.1 WHAT IS PIPELINING?***
 #### 11.1.1 Execution Overlapping
 #### 11.1.2 Exposed versus Coalesced Runtime
@@ -493,12 +502,11 @@ List of posts to read before reading this article
 #### 11.9.4 imGStr Synchronous and Single-Stream Results
 #### 11.9.5 imGStr 2- and 4-Stream Results
 
-
 <br><br><br>
 
 <hr class="division2">
 
-## **CUDA Streams**
+## **CUDA Libraries**
 ### ***12.1 cuBLAS***
 #### 12.1.1 BLAS Levels
 #### 12.1.2 cuBLAS Datatypes
@@ -517,11 +525,12 @@ List of posts to read before reading this article
 #### 12.2.3 A Sample Real-to-Complex Transform
 ### ***12.3 NVIDIA PERFORMANCE PRIMITIVES (NPP)***
 ### ***12.4 THRUST LIBRARY***
+
 <br><br><br>
 
 <hr class="division2">
 
-## **CUDA Libraries**
+## **Introduction to OpenCL**
 ### ***13.1 WHAT IS OpenCL?***
 #### 13.1.1 Multiplatform
 #### 13.1.2 Queue-Based
@@ -535,11 +544,12 @@ List of posts to read before reading this article
 ##### 13.3.2.4 Setting Up Kernel Invocation
 #### 13.3.3 Runtimes of Our OpenCL Program
 ### ***13.4 EDGE DETECTION IN OpenCL***
+
 <br><br><br>
 
 <hr class="division2">
 
-## **Introduction to OpenCL**
+## **Other GPU Programming Languages**
 ### ***14.1 GPU PROGRAMMING WITH PYTHON***
 #### 14.1.1 PyOpenCL Version of imflip
 #### 14.1.2 PyOpenCL Element-Wise Kernel
@@ -555,18 +565,25 @@ List of posts to read before reading this article
 #### 14.8.1 Installing OpenCV and Face Recognition
 #### 14.8.2 Mobile-Cloudlet-Cloud Real-Time Face Recognition
 #### 14.8.3 Acceleration as a Service (AXaas)
-<br><br><br>
-
-<hr class="division2">
-
-## **Other GPU Programming Languages**
 
 <br><br><br>
 
 <hr class="division2">
 
 ## **Deep Learning Using CUDA**
-
+### ***15.1 ARTIFICIAL NEURAL NETWORKS (ANNS)***
+#### 15.1.1 Neurons
+#### 15.1.2 Activation Functions
+### ***15.2 FULLY CONNECTED NEURAL NETWORKS***
+### ***15.3 DEEP NETWORKS/CONVOLUTIONAL NEURAL NETWORKS***
+### ***15.4 TRAINING A NETWORK***
+### ***15.5 CUDNN LIBRARY FOR DEEP LEARNING***
+#### 15.5.1 Creating a Layer
+#### 15.5.2 Creating a Network
+#### 15.5.3 Forward Propagation
+#### 15.5.4 Backpropagation
+#### 15.5.5 Using cuBLAS in the Network
+### ***15.6 KERAS***
 <br><br><br>
 
 
