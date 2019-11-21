@@ -27,7 +27,7 @@ List of posts to read before reading this article
 |Region|Command|
 |:--|:--|
 |workspace|workspace, clear|
-|script|ctrl + n|
+|script|edit,ctrl + n|
 |CLI|clc|
 |current folder|filebrowser|
 
