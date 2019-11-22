@@ -59,7 +59,7 @@ class Neuron:
 class LogisticNeuron:
     def __init__(self):
         self.w = np.ones(x.shape[1])            # x.shape[1] : dimension of dataset
-        self.b = 0
+        self.b = 1
         
     def forpass(self, x):
         z = np.sum(x*self.w) + self.b
