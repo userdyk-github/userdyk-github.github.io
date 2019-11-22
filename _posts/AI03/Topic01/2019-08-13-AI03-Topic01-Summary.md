@@ -73,7 +73,7 @@ class LogisticNeuron:
         return a
     
     def fit(self, x, y, epochs=100, learning_rate=0.001):
-        self.w = np.ones(x.shape[1])
+        self.w = np.ones(x.shape[1])            # x.shape[1] : dimension of dataset
         self.b = 0
         for i in range(x.shape[1]):
             for x_i, y_i in zip(x,y):
