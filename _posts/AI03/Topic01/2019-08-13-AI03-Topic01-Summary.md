@@ -54,6 +54,15 @@ class LinearNeuron:
                 self.b -= learning_rate*b_grad
                 #print(self.w)
 ```
+```python
+import numpy as np
+
+x = np.linspace(0,100,10000).reshape(10000,1)
+y = lambda x : 3*x + 5
+
+a = LinearNeuron()
+a.fit(x,y(x))
+```
 <br><br><br>
 
 ### ***Logistic regression***
@@ -97,6 +106,16 @@ class LogisticNeuron:
         a = self.activation(np.array(z))
         return a > 0.5
 ```
+```python
+import numpy as np
+
+x = np.linspace(0,100,10000).reshape(10000,1)
+y = lambda x : 1/(1+np.exp(-3*x))
+
+a = LogisticNeuron()
+a.fit(x,y(x))
+```
+
 <br><br><br>
 
 <hr class="division2">
