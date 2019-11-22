@@ -25,6 +25,7 @@ List of posts to read before reading this article
 ## **Regression**
 ### ***Linear regression***
 ![image](https://user-images.githubusercontent.com/52376448/69369878-291a0480-0ce0-11ea-8615-28ce7d19a464.png)
+![image](https://user-images.githubusercontent.com/52376448/69403808-e0456880-0d3e-11ea-9764-7a88e0a4f342.png)
 
 ```python
 class Neuron:
@@ -54,6 +55,7 @@ class Neuron:
 
 ### ***Logistic regression***
 ![image](https://user-images.githubusercontent.com/52376448/69402086-28ae5780-0d3a-11ea-9524-632ce29de793.png)
+![image](https://user-images.githubusercontent.com/52376448/69403870-0c60e980-0d3f-11ea-95a9-96b0ce2b4cf5.png)
 
 ```python
 class LogisticNeuron:
