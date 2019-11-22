@@ -60,8 +60,8 @@ class Neuron:
 ```python
 class LogisticNeuron:
     def __init__(self):
-        self.w = np.ones(x.shape[1])            # x.shape[1] : dimension of dataset
-        self.b = 1
+        self.w = None
+        self.b = None
         
     def forpass(self, x):
         z = np.sum(x*self.w) + self.b
@@ -77,6 +77,8 @@ class LogisticNeuron:
         return a
     
     def fit(self, x, y, epochs=100, learning_rate=0.001):
+        self.w = np.ones(x.shape[1])            # x.shape[1] : dimension of dataset
+        self.b = 1
         for i in range(epochs):
             for x_i, y_i in zip(x,y):
                 z = self.forpass(x_i)
