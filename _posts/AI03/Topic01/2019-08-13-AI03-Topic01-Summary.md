@@ -28,13 +28,13 @@ List of posts to read before reading this article
 ![image](https://user-images.githubusercontent.com/52376448/69403808-e0456880-0d3e-11ea-9764-7a88e0a4f342.png)
 
 ```python
-class Neuron:
+class LinearNeuron:
     def __init__(self):
-        self.w = 1.0
-        self.b = 1.0
+        self.w = None
+        self.b = None
     
     def forpass(self, x):
-        y_hat = x*self.w + self.b
+        y_hat = np.sum(x*self.w) + self.b
         return y_hat
     
     def backprop(self, x, err_p):
@@ -43,6 +43,8 @@ class Neuron:
         return w_grad, b_grad
     
     def fit(self,x,y,epochs=100, learning_rate=0.00001):
+        self.w = np.ones(x.shape[1])            # x.shape[1] : dimension of dataset
+        self.b = 1
         for _ in range(epochs):
             for x_i, y_i in zip(x,y):
                 y_hat = self.forpass(x_i)
@@ -50,6 +52,7 @@ class Neuron:
                 w_grad, b_grad = self.backprop(x_i,err_p)
                 self.w -= learning_rate*w_grad
                 self.b -= learning_rate*b_grad
+                #print(self.w)
 ```
 <br><br><br>
 
@@ -76,10 +79,10 @@ class LogisticNeuron:
         a = 1/(1 + np.exp(-z))
         return a
     
-    def fit(self, x, y, epochs=100, learning_rate=0.001):
+    def fit(self, x, y, epochs=100, learning_rate=1):
         self.w = np.ones(x.shape[1])            # x.shape[1] : dimension of dataset
         self.b = 1
-        for i in range(epochs):
+        for i in range(epochs):    
             for x_i, y_i in zip(x,y):
                 z = self.forpass(x_i)
                 a = self.activation(z)
@@ -87,6 +90,7 @@ class LogisticNeuron:
                 w_grad, b_grad = self.backprop(x_i,err_p)
                 self.w -= learning_rate*w_grad
                 self.b -= learning_rate*b_grad
+                #print(self.w)
     
     def predict(self, x):
         z = [self.forpass(x_i) for x_i in x]
