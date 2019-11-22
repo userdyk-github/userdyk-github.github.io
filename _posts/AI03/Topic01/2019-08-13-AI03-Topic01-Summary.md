@@ -53,7 +53,7 @@ class Neuron:
 <br><br><br>
 
 ### ***Logistic regression***
-![image](https://user-images.githubusercontent.com/52376448/69401956-cead9200-0d39-11ea-8a7f-ebc2d6f01dae.png)
+![image](https://user-images.githubusercontent.com/52376448/69402086-28ae5780-0d3a-11ea-9524-632ce29de793.png)
 
 ```python
 class LogisticNeuron:
