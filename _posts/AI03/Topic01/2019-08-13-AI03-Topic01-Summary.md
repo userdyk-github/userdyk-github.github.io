@@ -34,7 +34,7 @@ class LinearNeuron:
         self.b = None
     
     def forpass(self, x):
-        y_hat = np.sum(x*self.w) + self.b
+        y_hat = x*self.w + self.b
         return y_hat
     
     def backprop(self, x, err_p):
@@ -43,8 +43,8 @@ class LinearNeuron:
         return w_grad, b_grad
     
     def fit(self,x,y,epochs=100, learning_rate=0.00001):
-        self.w = np.ones(x.shape[1])            # x.shape[1] : dimension of dataset
-        self.b = 1
+        self.w = 1.0
+        self.b = 1.0
         for _ in range(epochs):
             for x_i, y_i in zip(x,y):
                 y_hat = self.forpass(x_i)
