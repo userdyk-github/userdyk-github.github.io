@@ -40,6 +40,8 @@ print(loaded_dataset.target.shape)
 ```python
 from sklearn.model_selection import train_test_split
 
+x = loaded_dataset.data
+y = loaded_dataset.target
 x_train, x_test, y_train, y_test = train_test_split(x,y,stratify=y, test_size=0.2, random_state=42)
 ```
 <hr class='division3'>
@@ -58,7 +60,7 @@ x_train, x_test, y_train, y_test = train_test_split(x,y,stratify=y, test_size=0.
 <br>
 ```python
 from sklearn.datasets import load_boston
-load_boston = load_boston()
+loaded_dataset = load_boston()
 
 print(loaded_dataset.data.shape)
 print(loaded_dataset.target.shape)
@@ -73,6 +75,8 @@ print(loaded_dataset.target.shape)
 ```python
 from sklearn.model_selection import train_test_split
 
+x = loaded_dataset.data
+y = loaded_dataset.target
 x_train, x_test, y_train, y_test = train_test_split(x,y,stratify=y, test_size=0.2, random_state=42)
 ```
 <hr class='division3'>
@@ -107,6 +111,8 @@ print(loaded_dataset.target.shape)
 ```python
 from sklearn.model_selection import train_test_split
 
+x = loaded_dataset.data
+y = loaded_dataset.target
 x_train, x_test, y_train, y_test = train_test_split(x,y,stratify=y, test_size=0.2, random_state=42)
 ```
 <hr class='division3'>
@@ -149,6 +155,8 @@ print(loaded_dataset.target.shape)
 ```python
 from sklearn.model_selection import train_test_split
 
+x = loaded_dataset.data
+y = loaded_dataset.target
 x_train, x_test, y_train, y_test = train_test_split(x,y,stratify=y, test_size=0.2, random_state=42)
 ```
 <hr class='division3'>
@@ -183,6 +191,8 @@ print(loaded_dataset.target.shape)
 ```python
 from sklearn.model_selection import train_test_split
 
+x = loaded_dataset.data
+y = loaded_dataset.target
 x_train, x_test, y_train, y_test = train_test_split(x,y,stratify=y, test_size=0.2, random_state=42)
 ```
 <hr class='division3'>
@@ -217,6 +227,8 @@ print(loaded_dataset.target.shape)
 ```python
 from sklearn.model_selection import train_test_split
 
+x = loaded_dataset.data
+y = loaded_dataset.target
 x_train, x_test, y_train, y_test = train_test_split(x,y,stratify=y, test_size=0.2, random_state=42)
 ```
 <hr class='division3'>
@@ -251,6 +263,8 @@ print(loaded_dataset.target.shape)
 ```python
 from sklearn.model_selection import train_test_split
 
+x = loaded_dataset.data
+y = loaded_dataset.target
 x_train, x_test, y_train, y_test = train_test_split(x,y,stratify=y, test_size=0.2, random_state=42)
 ```
 <hr class='division3'>
