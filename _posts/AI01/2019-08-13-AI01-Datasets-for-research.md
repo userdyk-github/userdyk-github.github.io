@@ -35,6 +35,17 @@ print(loaded_dataset.target.shape)
 (442,)
 ```
 <details markdown="1">
+<summary class='jb-small' style="color:blue">Split dataset</summary>
+<hr class='division3'>
+```python
+from sklearn.model_selection import train_test_split
+
+x_train, x_test, y_train, y_test = train_test_split(x,y,stratify=y, test_size=0.2, random_state=42)
+```
+<hr class='division3'>
+</details>
+
+<details markdown="1">
 <summary class='jb-small' style="color:blue">Visualization</summary>
 <hr class='division3'>
 ```python
@@ -56,6 +67,17 @@ print(loaded_dataset.target.shape)
 (506, 13)
 (506,)
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Split dataset</summary>
+<hr class='division3'>
+```python
+from sklearn.model_selection import train_test_split
+
+x_train, x_test, y_train, y_test = train_test_split(x,y,stratify=y, test_size=0.2, random_state=42)
+```
+<hr class='division3'>
+</details>
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Visualization</summary>
 <hr class='division3'>
@@ -79,6 +101,17 @@ print(loaded_dataset.target.shape)
 (569, 30)
 (569,)
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Split dataset</summary>
+<hr class='division3'>
+```python
+from sklearn.model_selection import train_test_split
+
+x_train, x_test, y_train, y_test = train_test_split(x,y,stratify=y, test_size=0.2, random_state=42)
+```
+<hr class='division3'>
+</details>
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Visualization</summary>
 <hr class='division3'>
@@ -111,6 +144,17 @@ print(loaded_dataset.target.shape)
 (1797,)
 ```
 <details markdown="1">
+<summary class='jb-small' style="color:blue">Split dataset</summary>
+<hr class='division3'>
+```python
+from sklearn.model_selection import train_test_split
+
+x_train, x_test, y_train, y_test = train_test_split(x,y,stratify=y, test_size=0.2, random_state=42)
+```
+<hr class='division3'>
+</details>
+
+<details markdown="1">
 <summary class='jb-small' style="color:blue">Visualization</summary>
 <hr class='division3'>
 ```python
@@ -133,6 +177,17 @@ print(loaded_dataset.target.shape)
 (150, 4)
 (150,)
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Split dataset</summary>
+<hr class='division3'>
+```python
+from sklearn.model_selection import train_test_split
+
+x_train, x_test, y_train, y_test = train_test_split(x,y,stratify=y, test_size=0.2, random_state=42)
+```
+<hr class='division3'>
+</details>
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Visualization</summary>
 <hr class='division3'>
@@ -157,6 +212,17 @@ print(loaded_dataset.target.shape)
 (20, 3)
 ```
 <details markdown="1">
+<summary class='jb-small' style="color:blue">Split dataset</summary>
+<hr class='division3'>
+```python
+from sklearn.model_selection import train_test_split
+
+x_train, x_test, y_train, y_test = train_test_split(x,y,stratify=y, test_size=0.2, random_state=42)
+```
+<hr class='division3'>
+</details>
+
+<details markdown="1">
 <summary class='jb-small' style="color:blue">Visualization</summary>
 <hr class='division3'>
 ```python
@@ -179,6 +245,17 @@ print(loaded_dataset.target.shape)
 (178, 13)
 (178,)
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Split dataset</summary>
+<hr class='division3'>
+```python
+from sklearn.model_selection import train_test_split
+
+x_train, x_test, y_train, y_test = train_test_split(x,y,stratify=y, test_size=0.2, random_state=42)
+```
+<hr class='division3'>
+</details>
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Visualization</summary>
 <hr class='division3'>
