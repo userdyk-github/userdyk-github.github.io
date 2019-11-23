@@ -116,6 +116,57 @@ a = LogisticNeuron()
 a.fit(x,y(x))
 ```
 
+### ******
+```python
+class SingleLayer:
+    def __init__(self):
+        self.w = None
+        self.b = None
+        self.losses = []
+    
+    def forpass(self, x):
+        z = np.sum(x*self.w) + self.b
+        return z
+    
+    def backprop(self, x ,err_p):
+        w_grad = x * err_p
+        b_grad = 1 * err_p
+        return w_grad, b_grad
+    
+    def add_biad(self, x):
+        return np.c_p[np.ones((x.shape[0],1)),x]
+    
+    def activation(self, z):
+        a = 1 / (1 + np.exp(-z))
+        return a
+    
+    def fit(self, x, y, epochs=100):
+        self.w = np.ones(x.shape[1])
+        self.b = 0
+        for i in range(epochs):
+            loss = 0
+            indexes = np.random.permutation(np.arange(len(x)))
+            for i in indexes:
+                z = self.forpass(x[i])
+                a = self.activation(z)
+                err_p = -(y[i] - a)
+                w_grad, b_grad = self.backprop(x[i], err_p)
+                self.w -= w_grad
+                self.b -= b_grad
+                a = np.clip(a, 1e-10, 1 - 1e-10)
+                print(np.round(self.w, 2))
+                
+                loss += -(y[i]*np.log(a)+(1-y[i])*np.log(1-a))
+            self.losses.append(loss/len(y))
+        
+    def predict(self, x):
+        z = [self.forpass(x_i) for x_i in x]
+        return np.array() > 0
+    
+    def score(self, x, y):
+        return np.mean(self,predict(x) == y)
+```
+
 <br><br><br>
 
 <hr class="division2">
