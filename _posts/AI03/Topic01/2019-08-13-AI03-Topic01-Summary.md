@@ -185,6 +185,19 @@ layer = SingleLayer()
 layer.fit(x, y(l))
 layer.score
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">by scikit-learn</summary>
+<hr class='division3'>
+```python
+from sklearn.linear_model import SGDClassifier
+
+sgd = SGDClassifier(loss="log", max_iter=100, tol=1e-3, random_state=42)
+sgd.fit(x,y(l))
+sgd.score(x,y(l))
+```
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 <hr class="division2">
@@ -214,11 +227,6 @@ Reference
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-    <details markdown="1">
-    <summary class='jb-small' style="color:red">OUTPUT</summary>
-    <hr class='division3_1'>
-    <hr class='division3_1'>
-    </details>
 <hr class='division3'>
 </details>
 
