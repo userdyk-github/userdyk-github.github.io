@@ -116,7 +116,9 @@ a = LogisticNeuron()
 a.fit(x,y(x))
 ```
 
-### ******
+<br><br><br>
+
+### ***SingleLayer***
 ```python
 class SingleLayer:
     def __init__(self):
@@ -166,7 +168,23 @@ class SingleLayer:
     def score(self, x, y):
         return np.mean(self,predict(x) == y)
 ```
+```python
+import numpy as np
 
+rv = np.random.RandomState(120)
+x = rv.normal(0, 1, (569,30))
+w = list(range(1,31))
+l=[]
+for i in range(len(x)):
+    l.append(np.dot(x[i],w))
+l = np.array(l).reshape(569,1)
+y = lambda x : 0.5 > 1/(1+np.exp(-x))
+
+
+layer = SingleLayer()
+layer.fit(x, y(l))
+layer.score
+```
 <br><br><br>
 
 <hr class="division2">
