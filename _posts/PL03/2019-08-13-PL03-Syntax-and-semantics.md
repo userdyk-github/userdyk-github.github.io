@@ -1514,7 +1514,6 @@ print(get_min(x=10, y=20, z=30))
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Example</summary>
 <hr class='division3'>
-<span class="frame3">Decorator with arguments</span><br>
 ```python
 def is_multiple(x):
     def decorator(func):
@@ -1577,6 +1576,38 @@ world()
     world<br>
     world end
 </p>
+
+<br><br><br>
+<span class="frame3">Decorator with arguments</span><br>
+```python
+class trace:
+    def __init__(self, func):
+        self.func = func
+    
+    def __call__(self, *args, **kwargs):
+        r = self.func(*args, **kwargs)
+        print('{0}(args={1}, kwargs={2}) -> {3}'.format(self.func.__name__, args, kwargs, r))
+        return r
+        
+@trace
+def add(a, b):
+    return a + b
+
+print(add(10,20))
+print(add(a=10, b=20))
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+add(args=(10, 20), kwargs={}) -> 30
+30
+add(args=(), kwargs={'a': 10, 'b': 20}) -> 30
+30
+```
+<hr class='division3'>
+</details>
 
 <br><br><br>
 <hr class="division2">
