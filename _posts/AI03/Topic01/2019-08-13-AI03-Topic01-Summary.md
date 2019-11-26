@@ -234,12 +234,12 @@ class LogisticNeuron:
         self.w = np.ones(x.shape[1])
         self.b = 1.0
         for i in range(epochs):
-            indexes = np.random.permutation(np.arange(len(x)))        
-            for i in indexes:
-                z = self.forpass(x[i])
-                a = self.activation(z)
-                err_p = -(y[i] - a)
-                w_grad, b_grad = self.backprop(x[i], err_p)
+            indexes = np.random.permutation(np.arange(len(x))) # F3
+            for i in indexes:                                  # F3
+                z = self.forpass(x[i])                         # F3
+                a = self.activation(z)                         # F3
+                err_p = -(y[i] - a)                            # F3
+                w_grad, b_grad = self.backprop(x[i], err_p)    # F3
                 self.w -= rate_w*w_grad
                 self.b -= rate_b*b_grad
                 print(self.w, self.b)
