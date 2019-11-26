@@ -61,8 +61,8 @@ import numpy as np
 x = np.linspace(0,100,10000).reshape(10000,1)
 y = lambda x : 3*x + 5
 
-a = LinearNeuron()
-a.fit(x,y(x))
+layer = LinearNeuron()
+layer.fit(x,y(x))
 ```
 ```python
 import numpy as np
@@ -71,8 +71,8 @@ rv = np.random.RandomState(19)
 x = rv.normal(0,1,(10000,2)); x1 = x[:,0]; x2 = x[:,1]
 y = lambda x1, x2 : 3*x1 + 5*x2 + 10
 
-a = LinearNeuron()
-a.fit(x,y(x1,x2))
+layer = LinearNeuron()
+layer.fit(x,y(x1,x2))
 ```
 <br><br><br>
 
@@ -264,8 +264,8 @@ rv = np.random.RandomState(19)
 x = rv.normal(0,1,(10000,2)); x1 = x[:,0]; x2 = x[:,1]
 y = lambda x1, x2 : 1/(1+np.exp(-3*x1 -5*x2 - 10))
 
-a = LogisticNeuron()
-a.fit(x,y(x1,x2))
+layer = LogisticNeuron()
+layer.fit(x,y(x1,x2))
 ```
 <span class="frame3">Real Dataset</span><br>
 ```python
@@ -341,8 +341,8 @@ rv = np.random.RandomState(19)
 x = rv.normal(0,1,(10000,2)); x1 = x[:,0]; x2 = x[:,1]
 y = lambda x1, x2 : 1/(1+np.exp(-3*x1 -5*x2 - 10))
 
-a = SingleLayer()
-a.fit(x,y(x1,x2))
+layer = SingleLayer()
+layer.fit(x,y(x1,x2))
 ```
 <span class="frame3">Real Dataset</span><br>
 ```python
