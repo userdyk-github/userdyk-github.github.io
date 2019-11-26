@@ -4915,6 +4915,11 @@ plt.show()
 
 <hr class="division2">
 
+## **Animation**
+
+<br><br><br>
+<hr class="division2">
+
 ## **User Interface**
 
 <hr class="division2">
