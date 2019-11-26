@@ -4985,6 +4985,56 @@ axes.grid(True)
 ani = FuncAnimation(fig=fig, func=y, init_func=init, frames=100, interval=20, blit=True)
 HTML(ani.to_html5_video())
 ```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![image](https://user-images.githubusercontent.com/52376448/69661938-aff72480-10c6-11ea-9b0c-b0445b65c069.png)
+<hr class='division3'>
+</details>
+<br>
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.animation import FuncAnimation
+from IPython.display import HTML
+
+fig, axes = plt.subplots(1,2)
+line1, = axes[0].plot([],[])
+line2, = axes[1].plot([],[])
+
+def init():
+    line1.set_data([],[])
+    line2.set_data([],[])
+    
+    return line1, line2,
+
+def y(t):
+    x1 = np.linspace(0,2,1000)
+    x2 = np.linspace(0,2,1000)
+    y1 = np.sin(2*np.pi*(x1-0.01*t))
+    y2 = np.sin(4*np.pi*(x2-0.01*t))
+    line1.set_data(x1,y1)
+    line2.set_data(x2,y2)
+    
+    return line1, line2,
+
+axes[0].set_xlim((0,2))
+axes[0].set_ylim((-2,2))
+axes[0].grid(True)
+axes[1].set_xlim((0,2))
+axes[1].set_ylim((-2,2))
+axes[1].grid(True)
+
+ani = FuncAnimation(fig=fig, func=y, init_func=init, frames=100, interval=20, blit=True)
+HTML(ani.to_html5_video())
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![image](https://user-images.githubusercontent.com/52376448/69661978-c9986c00-10c6-11ea-8fd8-fdfefc119f1a.png)
+<hr class='division3'>
+</details>
+
 <br><br><br>
 <hr class="division2">
 
