@@ -1310,6 +1310,127 @@ os.getcwd()
 ```python
 ```
 
+<br><br><br>
+
+---
+
+### ***Decorator***
+#### Function Decorator
+```python
+def hello():
+    print('hello start')
+    print('hello')
+    print('hello end')
+
+def world():
+    print('hello start')
+    print('hello')
+    print('hello end')
+    
+hello()
+world()
+```
+<p>
+    hello start<br>
+    hello<br>
+    hello end<br>
+    hello start<br>
+    hello<br>
+    hello end
+</p>
+
+<br><br><br>
+
+```python
+def trace(func):
+    def wrapper():
+        print(func.__name__, 'start')
+        func()
+        print(func.__name__, 'end')
+    return wrapper
+
+def hello():
+    print('hello')
+
+def world():
+    print('hello')
+
+trace_hello = trace(hello)
+trace_hello()
+trace_world = trace(world)
+trace_world()
+```
+<p>
+    hello start<br>
+    hello<br>
+    hello end<br>
+    hello start<br>
+    hello<br>
+    hello end
+</p>
+
+<br><br><br>
+
+```python
+def trace(func):
+    def wrapper():
+        print(func.__name__, 'start')
+        func()
+        print(func.__name__, 'end')
+    return wrapper
+
+@trace
+def hello():
+    print('hello')
+
+@trace
+def world():
+    print('hello')
+
+hello()
+world()
+```
+<p>
+    hello start<br>
+    hello<br>
+    hello end<br>
+    hello start<br>
+    hello<br>
+    hello end
+</p>
+
+<br><br><br>
+
+#### Class Decorator
+```python
+class trace:
+    def __init__(self, func):
+        self.func = func
+    
+    def __call__(self):
+        print(self.func.__name__, 'start')
+        self.func()
+        print(self.func.__name__, 'end')
+
+@trace
+def hello():
+    print('hello')
+
+@trace
+def world():
+    print('hello')
+
+hello()
+world()
+```
+<p>
+    hello start<br>
+    hello<br>
+    hello end<br>
+    hello start<br>
+    hello<br>
+    hello end
+</p>
 
 <br><br><br>
 <hr class="division2">
