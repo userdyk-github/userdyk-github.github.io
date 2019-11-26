@@ -29,9 +29,10 @@ List of posts to read before reading this article
 
 ```python
 class LinearNeuron:
-    def __init__(self):
+    def __init__(self, learning_rate=0.001):
         self.w = None
         self.b = None
+        self.lr = learning_rate
     
     def forpass(self, x):
         y_hat = np.sum(x*self.w) + self.b
@@ -42,7 +43,7 @@ class LinearNeuron:
         b_grad = 1*err_p
         return w_grad, b_grad
     
-    def fit(self,x,y,epochs=100, rate_w=0.0001, rate_b=0.001):
+    def fit(self,x,y,epochs=100, rate_b=0.001):
         self.w = np.ones(x.shape[1])
         self.b = 1.0
         for _ in range(epochs):
@@ -50,7 +51,7 @@ class LinearNeuron:
                 y_hat = self.forpass(x_i)
                 err_p = -(y_i - y_hat)
                 w_grad, b_grad = self.backprop(x_i,err_p)
-                self.w -= rate_w*w_grad
+                self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
                 print(self.w, self.b)
 ```
@@ -81,9 +82,10 @@ a.fit(x,y(x1,x2))
 
 ```python
 class LogisticNeuron:
-    def __init__(self):
+    def __init__(self, learning_rate=0.001):
         self.w = None
         self.b = None
+        self.lr = learning_rate
         
     def forpass(self, x):
         z = np.sum(x*self.w) + self.b
@@ -98,16 +100,16 @@ class LogisticNeuron:
         a = 1/(1 + np.exp(-z))
         return a
     
-    def fit(self, x, y, epochs=100, rate_w=1, rate_b=1):
+    def fit(self, x, y, epochs=100, rate_b=1):
         self.w = np.ones(x.shape[1])
         self.b = 1.0
-        for i in range(epochs):    
+        for i in range(epochs):
             for x_i, y_i in zip(x,y):
                 z = self.forpass(x_i)
                 a = self.activation(z)
                 err_p = -(y_i - a)
                 w_grad, b_grad = self.backprop(x_i,err_p)
-                self.w -= rate_w*w_grad
+                self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
                 print(self.w, self.b)
     
@@ -121,9 +123,10 @@ class LogisticNeuron:
 <hr class='division3'>
 ```python
 class LogisticNeuron:
-    def __init__(self):
+    def __init__(self, learning_rate=0.001):
         self.w = None
         self.b = None
+        self.lr = learning_rate        
         self.losses = []                                       # F1
         
     def forpass(self, x):
@@ -139,7 +142,7 @@ class LogisticNeuron:
         a = 1/(1 + np.exp(-z))
         return a
     
-    def fit(self, x, y, epochs=100, rate_w=1, rate_b=1):
+    def fit(self, x, y, epochs=100, rate_b=1):
         self.w = np.ones(x.shape[1])
         self.b = 1.0
         for i in range(epochs):
@@ -149,7 +152,7 @@ class LogisticNeuron:
                 a = self.activation(z)
                 err_p = -(y_i - a)
                 w_grad, b_grad = self.backprop(x_i,err_p)
-                self.w -= rate_w*w_grad
+                self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
                 print(self.w, self.b)
                 a = np.clip(a, 1e-10, 1 - 1e-10)               # F1               
@@ -168,9 +171,10 @@ class LogisticNeuron:
 <hr class='division3'>
 ```python
 class LogisticNeuron:
-    def __init__(self):
+    def __init__(self, learning_rate=0.001):
         self.w = None
         self.b = None
+        self.lr = learning_rate        
         
     def forpass(self, x):
         z = np.sum(x*self.w) + self.b
@@ -188,7 +192,7 @@ class LogisticNeuron:
         a = 1/(1 + np.exp(-z))
         return a
     
-    def fit(self, x, y, epochs=100, rate_w=1, rate_b=1):
+    def fit(self, x, y, epochs=100, rate_b=1):
         self.w = np.ones(x.shape[1])
         self.b = 1.0
         for i in range(epochs):    
@@ -197,7 +201,7 @@ class LogisticNeuron:
                 a = self.activation(z)
                 err_p = -(y_i - a)
                 w_grad, b_grad = self.backprop(x_i,err_p)
-                self.w -= rate_w*w_grad
+                self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
                 print(self.w, self.b)
     
@@ -213,9 +217,10 @@ class LogisticNeuron:
 <hr class='division3'>
 ```python
 class LogisticNeuron:
-    def __init__(self):
+    def __init__(self, learning_rate=0.001):
         self.w = None
         self.b = None
+        self.lr = learning_rate        
         
     def forpass(self, x):
         z = np.sum(x*self.w) + self.b
@@ -230,7 +235,7 @@ class LogisticNeuron:
         a = 1/(1 + np.exp(-z))
         return a
     
-    def fit(self, x, y, epochs=100, rate_w=1, rate_b=1):
+    def fit(self, x, y, epochs=100, rate_b=1):
         self.w = np.ones(x.shape[1])
         self.b = 1.0
         for i in range(epochs):
@@ -240,7 +245,7 @@ class LogisticNeuron:
                 a = self.activation(z)                         # F3
                 err_p = -(y[i] - a)                            # F3
                 w_grad, b_grad = self.backprop(x[i], err_p)    # F3
-                self.w -= rate_w*w_grad
+                self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
                 print(self.w, self.b)
     
@@ -268,9 +273,10 @@ a.fit(x,y(x1,x2))
 ### ***SingleLayer***
 ```python
 class SingleLayer:
-    def __init__(self):
+    def __init__(self, learning_rate=0.001):
         self.w = None
         self.b = None
+        self.lr = learning_rate                
         self.losses = []
     
     def forpass(self, x):
@@ -289,7 +295,7 @@ class SingleLayer:
         a = 1 / (1 + np.exp(-z))
         return a
     
-    def fit(self, x, y, epochs=1, rate_w=1, rate_b=1):
+    def fit(self, x, y, epochs=1, rate_b=1):
         self.w = np.ones(x.shape[1])
         self.b = 0
         for i in range(epochs):
@@ -300,7 +306,7 @@ class SingleLayer:
                 a = self.activation(z)
                 err_p = -(y[i] - a)
                 w_grad, b_grad = self.backprop(x[i], err_p)
-                self.w -= rate_w*w_grad
+                self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
                 print(self.w, self.b)
                 a = np.clip(a, 1e-10, 1 - 1e-10)                
@@ -369,7 +375,48 @@ sgd.score(x_test,y_test)
 
 ### ***Version 1 : update rate according to weight history for train-dataset***
 ```python
-
+class SingleLayer:
+    def __init__(self, learning_rate=0.1):
+        self.w = None
+        self.b = None
+        self.lr = learning_rate                        
+        self.w_history = []                               # V1
+    
+    def forpass(self, x):
+        z = np.sum(x*self.w) + self.b
+        return z
+    
+    def backprop(self, x ,err_p):
+        w_grad = x * err_p
+        b_grad = 1 * err_p
+        return w_grad, b_grad
+    
+    def activation(self, z):
+        a = 1 / (1 + np.exp(-z))
+        return a
+    
+    def fit(self, x, y, epochs=1, rate_b=1):
+        self.w = np.ones(x.shape[1])
+        self.b = 0
+        self.w_history.append(self.w.copy())               # V1
+        for i in range(epochs):
+            indexes = np.random.permutation(np.arange(len(x)))            
+            for i in indexes:
+                z = self.forpass(x[i])
+                a = self.activation(z)
+                err_p = -(y[i] - a)
+                w_grad, b_grad = self.backprop(x[i], err_p)
+                self.w -= self.lr*w_grad                   # V1
+                self.b -= rate_b*b_grad
+                self.w_history.append(self.w.copy())       # V1
+                print(self.w, self.b)
+        
+    def predict(self, x):
+        z = [self.forpass(x_i) for x_i in x]
+        return np.array(z) > 0
+    
+    def score(self, x, y):
+        return np.mean(self.predict(x) == y)
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
