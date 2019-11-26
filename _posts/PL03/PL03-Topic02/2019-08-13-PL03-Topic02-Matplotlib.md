@@ -2662,8 +2662,6 @@ ax = fig.add_subplot(1, 1, 1)
 ax.plot(np.random.rand(10))
 ax.plot(np.random.rand(10))
 ax.plot(np.random.rand(10))
-
-print(ax.lines[0],ax.lines[1],ax.lines[2])
 ```
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -2693,7 +2691,6 @@ ax.plot(np.random.rand(10))
 ax.plot(np.random.rand(10))
 
 ax.lines.remove(ax.lines[0])
-plt.show()
 ```
 <details open markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
