@@ -2672,7 +2672,7 @@ print(ax.lines[0],ax.lines[1],ax.lines[2])
 ```python
 ax.lines[0],ax.lines[1],ax.lines[2]
 ```
-<p>(<matplotlib.lines.Line2D at 0x7fe4f8047208>,<br>
+<p style="font-size: 70%;">(<matplotlib.lines.Line2D at 0x7fe4f8047208>,<br>
  <matplotlib.lines.Line2D at 0x7fe4f8047198>,<br>
  <matplotlib.lines.Line2D at 0x7fe4f8047630>)</p>
 <br><br><br>
