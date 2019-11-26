@@ -4935,7 +4935,7 @@ def y(t):
     line.set_data(x,y)
     return line,
 
-ani = FuncAnimation(fig=fig, func=y, init_func=init, interval=20, blit=True)
+ani = FuncAnimation(fig=fig, func=y, init_func=init, frames=100, interval=20, blit=True)
 
 axes.set_xlim((0,2))
 axes.set_ylim((-2,2))
