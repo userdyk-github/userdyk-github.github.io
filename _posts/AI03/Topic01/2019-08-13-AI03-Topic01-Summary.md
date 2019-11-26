@@ -42,7 +42,7 @@ class LinearNeuron:
         b_grad = 1*err_p
         return w_grad, b_grad
     
-    def fit(self,x,y,epochs=100, learning_rate=0.00001):
+    def fit(self,x,y,epochs=100, rate_w=0.0001, rate_b=0.001):
         self.w = 1.0
         self.b = 1.0
         for _ in range(epochs):
@@ -50,9 +50,9 @@ class LinearNeuron:
                 y_hat = self.forpass(x_i)
                 err_p = -(y_i - y_hat)
                 w_grad, b_grad = self.backprop(x_i,err_p)
-                self.w -= learning_rate*w_grad
-                self.b -= learning_rate*b_grad
-                #print(self.w)
+                self.w -= rate_w*w_grad
+                self.b -= rate_b*b_grad
+                print(self.w, self.b)
 ```
 ```python
 import numpy as np
