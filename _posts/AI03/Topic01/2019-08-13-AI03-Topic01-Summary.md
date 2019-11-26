@@ -312,9 +312,40 @@ sgd.score(x_test,y_test)
 
 <br><br><br>
 
+---
+
+### ***Version 7 : vectorization***
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
+<br><br><br>
+
 <hr class="division2">
 
-## title3
+## **Multi Layer**
+### ***Dual Layer***
+<br><br><br>
+
+<hr class="division2">
+
+## **Classification**
+<br><br><br>
+
+<hr class="division2">
+
+## **Convolutional neural network**
+<br><br><br>
+
+<hr class="division2">
+
+## **Recurrent neural network**
+<br><br><br>
 
 <hr class="division1">
 
