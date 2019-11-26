@@ -116,6 +116,39 @@ class LogisticNeuron:
         a = self.activation(np.array(z))
         return a > 0.5
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Add : Function 1, </summary>
+<hr class='division3'>
+```python
+
+```
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Add : Function 2, </summary>
+<hr class='division3'>
+```python
+
+```
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Add : Function 3, </summary>
+<hr class='division3'>
+```python
+
+```
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Add : Function 4, </summary>
+<hr class='division3'>
+```python
+
+```
+<hr class='division3'>
+</details>
+
 ```python
 import numpy as np
 
@@ -146,7 +179,7 @@ class SingleLayer:
         b_grad = 1 * err_p
         return w_grad, b_grad
     
-    def add_biad(self, x):
+    def add_bias(self, x):
         return np.c_p[np.ones((x.shape[0],1)),x]
     
     def activation(self, z):
