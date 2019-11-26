@@ -193,7 +193,16 @@ a.fit(x,y(x1,x2))
 <summary class='jb-small' style="color:blue">by scikit-learn</summary>
 <hr class='division3'>
 ```python
+import numpy as np
 from sklearn.linear_model import SGDClassifier
+
+rv = np.random.RandomState(120)
+x = rv.normal(0, 1, (569,30))
+w = list(range(1,31))
+l=[]
+for i in range(len(x)) : l.append(np.dot(x[i],w))
+l = np.array(l).reshape(569,1)
+y = lambda x : 0.5 > 1/(1+np.exp(-x))
 
 sgd = SGDClassifier(loss="log", max_iter=100, tol=1e-3, random_state=42)
 sgd.fit(x,y(l))
