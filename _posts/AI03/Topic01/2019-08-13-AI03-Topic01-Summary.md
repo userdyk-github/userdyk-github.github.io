@@ -153,7 +153,7 @@ class SingleLayer:
         a = 1 / (1 + np.exp(-z))
         return a
     
-    def fit(self, x, y, epochs=100, rate_w=1, rate_b=1):
+    def fit(self, x, y, epochs=1, rate_w=1, rate_b=1):
         self.w = np.ones(x.shape[1])
         self.b = 0
         for i in range(epochs):
@@ -174,10 +174,10 @@ class SingleLayer:
         
     def predict(self, x):
         z = [self.forpass(x_i) for x_i in x]
-        return np.array() > 0
+        return np.array(z) > 0
     
     def score(self, x, y):
-        return np.mean(self,predict(x) == y)
+        return np.mean(self.predict(x) == y)
 ```
 ```python
 import numpy as np
@@ -189,24 +189,37 @@ y = lambda x1, x2 : 1/(1+np.exp(-3*x1 -5*x2 - 10))
 a = SingleLayer()
 a.fit(x,y(x1,x2))
 ```
+```python
+import numpy as np
+from sklearn.datasets import load_breast_cancer
+from sklearn.model_selection import train_test_split
+
+loaded_dataset = load_breast_cancer()
+x = loaded_dataset.data
+y = loaded_dataset.target
+x_train, x_test, y_train, y_test = train_test_split(x,y,stratify=y,test_size=0.2,random_state=42)
+
+layer=SingleLayer()
+layer.fit(x_train,y_train)
+layer.score(x_test,y_test)
+```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">by scikit-learn</summary>
 <hr class='division3'>
 ```python
 import numpy as np
+from sklearn.datasets import load_breast_cancer
+from sklearn.model_selection import train_test_split
 from sklearn.linear_model import SGDClassifier
 
-rv = np.random.RandomState(120)
-x = rv.normal(0, 1, (569,30))
-w = list(range(1,31))
-l=[]
-for i in range(len(x)) : l.append(np.dot(x[i],w))
-l = np.array(l).reshape(569,1)
-y = lambda x : 0.5 > 1/(1+np.exp(-x))
+loaded_dataset = load_breast_cancer()
+x = loaded_dataset.data
+y = loaded_dataset.target
+x_train, x_test, y_train, y_test = train_test_split(x,y,stratify=y,test_size=0.2,random_state=42)
 
-sgd = SGDClassifier(loss="log", max_iter=100, tol=1e-3, random_state=42)
-sgd.fit(x,y(l))
-sgd.score(x,y(l))
+sgd = SGDClassifier(loss='log', max_iter=100, tol=1e-3, random_state=42)
+sgd.fit(x_train, y_train)
+sgd.score(x_test,y_test)
 ```
 <hr class='division3'>
 </details>
