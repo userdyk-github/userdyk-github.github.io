@@ -21,8 +21,9 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
+## **Note 01**
 
+<br><br><br>
 <hr class="division2">
 
 ## title2
