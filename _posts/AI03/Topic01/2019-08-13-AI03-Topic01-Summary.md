@@ -43,7 +43,7 @@ class LinearNeuron:
         return w_grad, b_grad
     
     def fit(self,x,y,epochs=100, rate_w=0.0001, rate_b=0.001):
-        self.w = 1.0
+        self.w = np.ones(x.shape[1])
         self.b = 1.0
         for _ in range(epochs):
             for x_i, y_i in zip(x,y):
