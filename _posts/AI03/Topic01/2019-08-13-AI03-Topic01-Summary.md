@@ -164,6 +164,19 @@ class LogisticNeuron:
         a = self.activation(np.array(z))
         return a > 0.5
 ```
+```python
+import numpy as np
+
+rv = np.random.RandomState(19)
+x = rv.normal(0,1,(1000,2)); x1 = x[:,0]; x2 = x[:,1]
+y = lambda x1, x2 : 1/(1+np.exp(-3*x1 -5*x2 - 10))
+
+layer = LogisticNeuron()
+layer.fit(x,y(x1,x2))
+```
+```python
+plt.plot(layer.losses)
+```
 <hr class='division3'>
 </details>
 <details markdown="1">
