@@ -379,8 +379,8 @@ class SingleLayer:
     def __init__(self, learning_rate=0.1):
         self.w = None
         self.b = None
-        self.lr = learning_rate                        
         self.w_history = []                               # V1
+        self.lr = learning_rate
     
     def forpass(self, x):
         z = np.sum(x*self.w) + self.b
@@ -406,7 +406,7 @@ class SingleLayer:
                 a = self.activation(z)
                 err_p = -(y[i] - a)
                 w_grad, b_grad = self.backprop(x[i], err_p)
-                self.w -= self.lr*w_grad                   # V1
+                self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
                 self.w_history.append(self.w.copy())       # V1
                 print(self.w, self.b)
