@@ -1323,9 +1323,9 @@ def hello():
     print('hello end')
 
 def world():
-    print('hello start')
-    print('hello')
-    print('hello end')
+    print('world start')
+    print('world')
+    print('world end')
     
 hello()
 world()
@@ -1334,9 +1334,9 @@ world()
     hello start<br>
     hello<br>
     hello end<br>
-    hello start<br>
-    hello<br>
-    hello end
+    world start<br>
+    world<br>
+    world end
 </p>
 
 <br><br><br>
@@ -1353,7 +1353,7 @@ def hello():
     print('hello')
 
 def world():
-    print('hello')
+    print('world')
 
 trace_hello = trace(hello)
 trace_hello()
@@ -1364,9 +1364,9 @@ trace_world()
     hello start<br>
     hello<br>
     hello end<br>
-    hello start<br>
-    hello<br>
-    hello end
+    world start<br>
+    world<br>
+    world end
 </p>
 
 <br><br><br>
@@ -1385,7 +1385,7 @@ def hello():
 
 @trace
 def world():
-    print('hello')
+    print('world')
 
 hello()
 world()
@@ -1394,9 +1394,9 @@ world()
     hello start<br>
     hello<br>
     hello end<br>
-    hello start<br>
-    hello<br>
-    hello end
+    world start<br>
+    world<br>
+    world end
 </p>
 
 <br><br><br>
@@ -1412,24 +1412,24 @@ class trace:
         self.func()
         print(self.func.__name__, 'end')
 
-@trace
 def hello():
     print('hello')
 
 @trace
 def world():
-    print('hello')
+    print('world')
 
-hello()
+trace_hello = trace(hello)
+trace_hello()
 world()
 ```
 <p>
     hello start<br>
     hello<br>
     hello end<br>
-    hello start<br>
-    hello<br>
-    hello end
+    world start<br>
+    world<br>
+    world end
 </p>
 
 <br><br><br>
