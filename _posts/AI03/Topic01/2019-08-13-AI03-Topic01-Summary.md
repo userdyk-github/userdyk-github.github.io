@@ -34,7 +34,7 @@ class LinearNeuron:
         self.b = None
     
     def forpass(self, x):
-        y_hat = x*self.w + self.b
+        y_hat = np.sum(x*self.w) + self.b
         return y_hat
     
     def backprop(self, x, err_p):
@@ -62,6 +62,16 @@ y = lambda x : 3*x + 5
 
 a = LinearNeuron()
 a.fit(x,y(x))
+```
+```python
+import numpy as np
+
+rv = np.random.RandomState(19)
+x = rv.normal(0,1,(10000,2)); x1 = x[:,0]; x2 = x[:,1]
+y = lambda x1, x2 : 3*x1 + 5*x2 + 10
+
+a = LinearNeuron()
+a.fit(x,y(x1,x2))
 ```
 <br><br><br>
 
