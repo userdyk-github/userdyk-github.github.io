@@ -230,7 +230,7 @@ sgd.score(x_test,y_test)
 
 <hr class="division2">
 
-## **Single Layer**
+## **Training skills on sigle layer**
 
 ### ***Version 1 : update rate according to weight history for train-dataset***
 ```python
