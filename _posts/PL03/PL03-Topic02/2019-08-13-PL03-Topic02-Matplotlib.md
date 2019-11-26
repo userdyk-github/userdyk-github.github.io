@@ -4916,7 +4916,40 @@ plt.show()
 <hr class="division2">
 
 ## **Animation**
+### ***on Console***
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.animation import FuncAnimation
 
+fig, axes = plt.subplots()
+line, = axes.plot([],[])
+
+def init():
+    line.set_data([],[])
+    return line,
+
+def y(t):
+    x = np.linspace(0,2,1000)
+    y = np.sin(2*np.pi*(x-0.01*t))
+    line.set_data(x,y)
+    return line,
+
+ani = FuncAnimation(fig=fig, func=y, init_func=init, interval=20, blit=True)
+
+axes.set_xlim((0,2))
+axes.set_ylim((-2,2))
+axes.grid(True)
+plt.show()
+```
+<br><br><br>
+
+---
+
+### ***on HTML***
+```python
+
+```
 <br><br><br>
 <hr class="division2">
 
