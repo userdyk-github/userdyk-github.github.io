@@ -2681,6 +2681,7 @@ ax.lines[0],ax.lines[1],ax.lines[2]
      <matplotlib.lines.Line2D at 0x7fe4f8047630>)
 </p>
 
+<br><br><br>
 ```python
 import matplotlib.pyplot as plt
 
