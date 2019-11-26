@@ -4967,13 +4967,12 @@ def y(t):
     line.set_data(x,y)
     return line,
 
-ani = FuncAnimation(fig=fig, func=y, init_func=init, frames=100, interval=20, blit=True)
-HTML(ani.to_html5_video())
-
 axes.set_xlim((0,2))
 axes.set_ylim((-2,2))
 axes.grid(True)
-plt.show()
+
+ani = FuncAnimation(fig=fig, func=y, init_func=init, frames=100, interval=20, blit=True)
+HTML(ani.to_html5_video())
 ```
 <br><br><br>
 <hr class="division2">
