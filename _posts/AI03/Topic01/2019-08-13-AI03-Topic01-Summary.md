@@ -256,7 +256,7 @@ class LogisticNeuron:
 ```
 <hr class='division3'>
 </details>
-
+<span class="frame3">Artificial Dataset</span><br>
 ```python
 import numpy as np
 
@@ -267,7 +267,20 @@ y = lambda x1, x2 : 1/(1+np.exp(-3*x1 -5*x2 - 10))
 a = LogisticNeuron()
 a.fit(x,y(x1,x2))
 ```
+<span class="frame3">Real Dataset</span><br>
+```python
+import numpy as np
+from sklearn.datasets import load_breast_cancer
+from sklearn.model_selection import train_test_split
 
+loaded_dataset = load_breast_cancer()
+x = loaded_dataset.data
+y = loaded_dataset.target
+x_train, x_test, y_train, y_test = train_test_split(x,y,stratify=y,test_size=0.2,random_state=42)
+
+layer=LogisticNeuron()
+layer.fit(x_train,y_train)
+```
 <br><br><br>
 
 ### ***SingleLayer***
