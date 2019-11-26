@@ -179,6 +179,7 @@ class SingleLayer:
     def score(self, x, y):
         return np.mean(self.predict(x) == y)
 ```
+<span class="frame3">Artificial Dataset</span><br>
 ```python
 import numpy as np
 
@@ -189,6 +190,7 @@ y = lambda x1, x2 : 1/(1+np.exp(-3*x1 -5*x2 - 10))
 a = SingleLayer()
 a.fit(x,y(x1,x2))
 ```
+<span class="frame3">Real Dataset</span><br>
 ```python
 import numpy as np
 from sklearn.datasets import load_breast_cancer
