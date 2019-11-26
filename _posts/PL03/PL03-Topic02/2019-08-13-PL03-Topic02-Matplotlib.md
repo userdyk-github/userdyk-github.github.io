@@ -4949,7 +4949,31 @@ plt.show()
 ### ***on HTML***
 First of all, you should download <a href="https://ffmpeg.zeranoe.com/builds/" target="_blank">FFmpeg</a>
 ```python
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.animation import FuncAnimation
+from IPython.display import HTML
 
+fig, axes = plt.subplots()
+line, = axes.plot([],[])
+
+def init():
+    line.set_data([],[])
+    return line,
+
+def y(t):
+    x = np.linspace(0,2,1000)
+    y = np.sin(2*np.pi*(x-0.01*t))
+    line.set_data(x,y)
+    return line,
+
+ani = FuncAnimation(fig=fig, func=y, init_func=init, frames=100, interval=20, blit=True)
+HTML(ani.to_html5_video())
+
+axes.set_xlim((0,2))
+axes.set_ylim((-2,2))
+axes.grid(True)
+plt.show()
 ```
 <br><br><br>
 <hr class="division2">
