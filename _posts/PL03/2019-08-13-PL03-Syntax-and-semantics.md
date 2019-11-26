@@ -1491,7 +1491,30 @@ world()
 </p>
 
 <br><br><br>
-<span class="frame3">Decorator with parameter</span><br>
+<span class="frame3">Decorator with arguments</span><br>
+```python
+def trace(func):
+    def wrapper(*args, **kwargs):
+        r = func(*args, **kwargs)
+        print('{0}(args={1}, kwargs={2}) -> {3}'.format(func.__name__, args, kwargs, r))
+        return r
+    return wrapper
+
+@trace
+def get_max(*args):
+    return max(args)
+
+@trace
+def get_min(**kwargs):
+    return min(kwargs.values())
+
+print(get_max(10,20))
+print(get_min(x=10, y=20, z=30))
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Example</summary>
+<hr class='division3'>
+<span class="frame3">Decorator with arguments</span><br>
 ```python
 def is_multiple(x):
     def decorator(func):
@@ -1518,6 +1541,10 @@ returned value of add is multiple of 3<br>
 returned value of add is not multiple of 3<br>
 7
 </p>
+
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 #### Class Decorator
