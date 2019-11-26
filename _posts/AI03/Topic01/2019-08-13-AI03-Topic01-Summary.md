@@ -379,8 +379,8 @@ class SingleLayer:
     def __init__(self, learning_rate=0.1):
         self.w = None
         self.b = None
-        self.w_history = []                               # V1
         self.lr = learning_rate
+        self.w_history = []                               # V1
     
     def forpass(self, x):
         z = np.sum(x*self.w) + self.b
