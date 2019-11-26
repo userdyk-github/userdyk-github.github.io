@@ -88,7 +88,7 @@ class LogisticNeuron:
         a = 1/(1 + np.exp(-z))
         return a
     
-    def fit(self, x, y, epochs=100, learning_rate=1):
+    def fit(self, x, y, epochs=100, rate_w=1, rate_b=1):
         self.w = np.ones(x.shape[1])            # x.shape[1] : dimension of dataset
         self.b = 1
         for i in range(epochs):    
@@ -97,9 +97,9 @@ class LogisticNeuron:
                 a = self.activation(z)
                 err_p = -(y_i - a)
                 w_grad, b_grad = self.backprop(x_i,err_p)
-                self.w -= learning_rate*w_grad
-                self.b -= learning_rate*b_grad
-                #print(self.w)
+                self.w -= rate_w*w_grad
+                self.b -= rate_b*b_grad
+                print(self.w, self.b)
     
     def predict(self, x):
         z = [self.forpass(x_i) for x_i in x]
@@ -109,11 +109,12 @@ class LogisticNeuron:
 ```python
 import numpy as np
 
-x = np.linspace(0,100,10000).reshape(10000,1)
-y = lambda x : 1/(1+np.exp(-3*x))
+rv = np.random.RandomState(19)
+x = rv.normal(0,1,(10000,2)); x1 = x[:,0]; x2 = x[:,1]
+y = lambda x1, x2 : 1/(1+np.exp(-3*x1 -5*x2 - 10))
 
 a = LogisticNeuron()
-a.fit(x,y(x))
+a.fit(x,y(x1,x2))
 ```
 
 <br><br><br>
