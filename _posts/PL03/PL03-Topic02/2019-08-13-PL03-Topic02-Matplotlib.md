@@ -4947,7 +4947,18 @@ plt.show()
 ---
 
 ### ***on HTML***
-First of all, you should download <a href="https://ffmpeg.zeranoe.com/builds/" target="_blank">FFmpeg</a>. After installation, set your <b>environment variable</b>, refer to <a href="https://www.wikihow.com/Install-FFmpeg-on-Windows#Enabling-FFmpeg-in-the-Command-Line_sub">here</a>.
+First of all, you should download <a href="https://ffmpeg.zeranoe.com/builds/" target="_blank">FFmpeg</a> on Windows, MAX OS. After installation, set your <b>environment variable</b>, refer to <a href="https://www.wikihow.com/Install-FFmpeg-on-Windows#Enabling-FFmpeg-in-the-Command-Line_sub">here</a>. If you are user on Ubuntu, follow below reference.
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Ubuntu user Reference</summary>
+<hr class='division3'>
+<a href="https://blog.naver.com/changbab/221517219430" target="_blank">URL</a>
+```bash
+$ apt update
+$ apt upgrade
+$ apt install ffmpeg
+```
+<hr class='division3'>
+</details>
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
