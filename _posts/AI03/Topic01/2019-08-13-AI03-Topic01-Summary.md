@@ -100,7 +100,7 @@ class LogisticNeuron:
     
     def fit(self, x, y, epochs=100, rate_w=1, rate_b=1):
         self.w = np.ones(x.shape[1])
-        self.b = 1
+        self.b = 1.0
         for i in range(epochs):    
             for x_i, y_i in zip(x,y):
                 z = self.forpass(x_i)
@@ -120,7 +120,45 @@ class LogisticNeuron:
 <summary class='jb-small' style="color:blue">Add : Function 1, </summary>
 <hr class='division3'>
 ```python
-
+class LogisticNeuron:
+    def __init__(self):
+        self.w = None
+        self.b = None
+        self.losses = [] # F1
+        
+    def forpass(self, x):
+        z = np.sum(x*self.w) + self.b
+        return z
+    
+    def backprop(self, x, err_p):
+        w_grad = x*err_p
+        b_grad = 1*err_p
+        return w_grad, b_grad
+    
+    def activation(self, z):
+        a = 1/(1 + np.exp(-z))
+        return a
+    
+    def fit(self, x, y, epochs=100, rate_w=1, rate_b=1):
+        self.w = np.ones(x.shape[1])
+        self.b = 1.0
+        for i in range(epochs):
+            loss = 0 # F1
+            for x_i, y_i in zip(x,y):
+                z = self.forpass(x_i)
+                a = self.activation(z)
+                err_p = -(y_i - a)
+                w_grad, b_grad = self.backprop(x_i,err_p)
+                self.w -= rate_w*w_grad
+                self.b -= rate_b*b_grad
+                print(self.w, self.b)
+                loss += -(y[i]*np.log(a)+(1-y[i])*np.log(1-a)) # F1
+            self.losses.append(loss/len(y)) # F1
+            
+    def predict(self, x):
+        z = [self.forpass(x_i) for x_i in x]
+        a = self.activation(np.array(z))
+        return a > 0.5
 ```
 <hr class='division3'>
 </details>
@@ -128,7 +166,41 @@ class LogisticNeuron:
 <summary class='jb-small' style="color:blue">Add : Function 2, </summary>
 <hr class='division3'>
 ```python
-
+class LogisticNeuron:
+    def __init__(self):
+        self.w = None
+        self.b = None
+        
+    def forpass(self, x):
+        z = np.sum(x*self.w) + self.b
+        return z
+    
+    def backprop(self, x, err_p):
+        w_grad = x*err_p
+        b_grad = 1*err_p
+        return w_grad, b_grad
+    
+    def activation(self, z):
+        a = 1/(1 + np.exp(-z))
+        return a
+    
+    def fit(self, x, y, epochs=100, rate_w=1, rate_b=1):
+        self.w = np.ones(x.shape[1])
+        self.b = 1.0
+        for i in range(epochs):    
+            for x_i, y_i in zip(x,y):
+                z = self.forpass(x_i)
+                a = self.activation(z)
+                err_p = -(y_i - a)
+                w_grad, b_grad = self.backprop(x_i,err_p)
+                self.w -= rate_w*w_grad
+                self.b -= rate_b*b_grad
+                print(self.w, self.b)
+    
+    def predict(self, x):
+        z = [self.forpass(x_i) for x_i in x]
+        a = self.activation(np.array(z))
+        return a > 0.5
 ```
 <hr class='division3'>
 </details>
@@ -136,7 +208,41 @@ class LogisticNeuron:
 <summary class='jb-small' style="color:blue">Add : Function 3, </summary>
 <hr class='division3'>
 ```python
-
+class LogisticNeuron:
+    def __init__(self):
+        self.w = None
+        self.b = None
+        
+    def forpass(self, x):
+        z = np.sum(x*self.w) + self.b
+        return z
+    
+    def backprop(self, x, err_p):
+        w_grad = x*err_p
+        b_grad = 1*err_p
+        return w_grad, b_grad
+    
+    def activation(self, z):
+        a = 1/(1 + np.exp(-z))
+        return a
+    
+    def fit(self, x, y, epochs=100, rate_w=1, rate_b=1):
+        self.w = np.ones(x.shape[1])
+        self.b = 1.0
+        for i in range(epochs):    
+            for x_i, y_i in zip(x,y):
+                z = self.forpass(x_i)
+                a = self.activation(z)
+                err_p = -(y_i - a)
+                w_grad, b_grad = self.backprop(x_i,err_p)
+                self.w -= rate_w*w_grad
+                self.b -= rate_b*b_grad
+                print(self.w, self.b)
+    
+    def predict(self, x):
+        z = [self.forpass(x_i) for x_i in x]
+        a = self.activation(np.array(z))
+        return a > 0.5
 ```
 <hr class='division3'>
 </details>
@@ -144,7 +250,41 @@ class LogisticNeuron:
 <summary class='jb-small' style="color:blue">Add : Function 4, </summary>
 <hr class='division3'>
 ```python
-
+class LogisticNeuron:
+    def __init__(self):
+        self.w = None
+        self.b = None
+        
+    def forpass(self, x):
+        z = np.sum(x*self.w) + self.b
+        return z
+    
+    def backprop(self, x, err_p):
+        w_grad = x*err_p
+        b_grad = 1*err_p
+        return w_grad, b_grad
+    
+    def activation(self, z):
+        a = 1/(1 + np.exp(-z))
+        return a
+    
+    def fit(self, x, y, epochs=100, rate_w=1, rate_b=1):
+        self.w = np.ones(x.shape[1])
+        self.b = 1.0
+        for i in range(epochs):    
+            for x_i, y_i in zip(x,y):
+                z = self.forpass(x_i)
+                a = self.activation(z)
+                err_p = -(y_i - a)
+                w_grad, b_grad = self.backprop(x_i,err_p)
+                self.w -= rate_w*w_grad
+                self.b -= rate_b*b_grad
+                print(self.w, self.b)
+    
+    def predict(self, x):
+        z = [self.forpass(x_i) for x_i in x]
+        a = self.activation(np.array(z))
+        return a > 0.5
 ```
 <hr class='division3'>
 </details>
