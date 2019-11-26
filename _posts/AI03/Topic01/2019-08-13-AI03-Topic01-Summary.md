@@ -153,7 +153,7 @@ class SingleLayer:
         a = 1 / (1 + np.exp(-z))
         return a
     
-    def fit(self, x, y, epochs=100):
+    def fit(self, x, y, epochs=100, rate_w=1, rate_b=1):
         self.w = np.ones(x.shape[1])
         self.b = 0
         for i in range(epochs):
@@ -164,10 +164,10 @@ class SingleLayer:
                 a = self.activation(z)
                 err_p = -(y[i] - a)
                 w_grad, b_grad = self.backprop(x[i], err_p)
-                self.w -= w_grad
-                self.b -= b_grad
+                self.w -= rate_w*w_grad
+                self.b -= rate_b*b_grad
                 a = np.clip(a, 1e-10, 1 - 1e-10)
-                print(np.round(self.w, 2))
+                print(self.w, self.b)
                 
                 loss += -(y[i]*np.log(a)+(1-y[i])*np.log(1-a))
             self.losses.append(loss/len(y))
@@ -182,19 +182,12 @@ class SingleLayer:
 ```python
 import numpy as np
 
-rv = np.random.RandomState(120)
-x = rv.normal(0, 1, (569,30))
-w = list(range(1,31))
-l=[]
-for i in range(len(x)):
-    l.append(np.dot(x[i],w))
-l = np.array(l).reshape(569,1)
-y = lambda x : 0.5 > 1/(1+np.exp(-x))
+rv = np.random.RandomState(19)
+x = rv.normal(0,1,(10000,2)); x1 = x[:,0]; x2 = x[:,1]
+y = lambda x1, x2 : 1/(1+np.exp(-3*x1 -5*x2 - 10))
 
-
-layer = SingleLayer()
-layer.fit(x, y(l))
-layer.score
+a = SingleLayer()
+a.fit(x,y(x1,x2))
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">by scikit-learn</summary>
