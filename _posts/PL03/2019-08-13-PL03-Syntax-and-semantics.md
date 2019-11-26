@@ -1511,11 +1511,18 @@ def get_min(**kwargs):
 print(get_max(10,20))
 print(get_min(x=10, y=20, z=30))
 ```
+<p style="font-size: 70%;">
+get_max(args=(10, 20), kwargs={}) -> 20<br>
+20<br>
+get_min(args=(), kwargs={'x': 10, 'y': 20, 'z': 30}) -> 10<br>
+10
+</p>
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Example</summary>
 <hr class='division3'>
 ```python
-def is_multiple(x):
+def trace(x):
     def decorator(func):
         def wrapper(a,b):
             r = func(a,b)
@@ -1527,7 +1534,7 @@ def is_multiple(x):
         return wrapper
     return decorator
 
-@is_multiple(3)
+@trace(3)
 def add(a,b):
     return a + b
 
