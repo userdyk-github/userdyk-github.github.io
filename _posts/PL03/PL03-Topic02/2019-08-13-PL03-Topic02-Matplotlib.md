@@ -2508,6 +2508,38 @@ plt.show()
 ## **Axes**
 
 ### ***Empty axes***
+#### add_subplot
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+
+fig = plt.figure()
+axes = fig.add_subplot(1, 1, 1)
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![image](https://user-images.githubusercontent.com/52376448/69666084-02d4da00-10cf-11ea-8444-93e636324418.png)
+<hr class='division3'>
+</details>
+```python
+%matplotlib inline
+import matplotlib.pyplot as plt
+
+fig = plt.figure()
+ax0 = fig.add_subplot(2, 2, 1)
+ax1 = fig.add_subplot(2, 2, 2)
+ax2 = fig.add_subplot(2, 2, 3)
+ax3 = fig.add_subplot(2, 2, 4)
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![image](https://user-images.githubusercontent.com/52376448/69666311-63641700-10cf-11ea-8e13-f94be512f51a.png)
+<hr class='division3'>
+</details>
+
+<br><br><br>
 
 #### Subplots
 
