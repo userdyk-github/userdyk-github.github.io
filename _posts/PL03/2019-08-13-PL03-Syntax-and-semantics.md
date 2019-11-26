@@ -1330,7 +1330,7 @@ def world():
 hello()
 world()
 ```
-<p>
+<p style="font-size: 70%;">
     hello start<br>
     hello<br>
     hello end<br>
@@ -1360,7 +1360,7 @@ trace_hello()
 trace_world = trace(world)
 trace_world()
 ```
-<p>
+<p style="font-size: 70%;">
     hello start<br>
     hello<br>
     hello end<br>
@@ -1390,7 +1390,7 @@ def world():
 hello()
 world()
 ```
-<p>
+<p style="font-size: 70%;">
     hello start<br>
     hello<br>
     hello end<br>
@@ -1399,6 +1399,34 @@ world()
     world end
 </p>
 
+<br><br><br>
+<span class="frame3">Decorator with parameter</span><br>
+```python
+def is_multiple(x):
+    def decorator(func):
+        def wrapper(a,b):
+            r = func(a,b)
+            if r % x == 0:
+                print('returned value of {0} is multiple of {1}'.format(func.__name__, x))
+            else:
+                print('returned value of {0} is not multiple of {1}'.format(func.__name__, x))
+            return r
+        return wrapper
+    return decorator
+
+@is_multiple(3)
+def add(a,b):
+    return a + b
+
+print(add(10,20))
+print(add(2,5))
+```
+<p style="font-size: 70%;">
+returned value of add is multiple of 3<br>
+30<br>
+returned value of add is not multiple of 3<br>
+7
+</p>
 <br><br><br>
 
 #### Class Decorator
@@ -1423,7 +1451,7 @@ trace_hello = trace(hello)
 trace_hello()
 world()
 ```
-<p>
+<p style="font-size: 70%;">
     hello start<br>
     hello<br>
     hello end<br>
