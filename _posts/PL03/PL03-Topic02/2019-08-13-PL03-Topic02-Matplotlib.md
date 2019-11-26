@@ -5119,6 +5119,7 @@ HTML(ani.to_html5_video())
 <hr class="division2">
 
 ## **Interactive plot**
+
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -5172,6 +5173,20 @@ for i in range(10):
 ![image](https://user-images.githubusercontent.com/52376448/69668959-441bb880-10d4-11ea-8eaa-770f6918bced.png)
 <hr class='division3'>
 </details>
+
+<br><br><br>
+
+### ***ipywidgets***
+<span class="frame3">Installation on windows</span><br>
+```dos
+pip install ipywidgets
+```
+<span class="frame3">Installation on Linux</span><br>
+```bash
+$ pip3 install ipywidgets
+```
+<br><br><br>
+
 
 <hr class="division2">
 
