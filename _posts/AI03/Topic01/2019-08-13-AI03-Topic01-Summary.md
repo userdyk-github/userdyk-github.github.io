@@ -228,7 +228,89 @@ sgd.score(x_test,y_test)
 
 <hr class="division2">
 
-## title2
+## **Single Layer**
+
+### ***Version 1 : update rate according to weight history for train-dataset***
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
+<br><br><br>
+
+---
+
+### ***Version 2 : standardization***
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
+<br><br><br>
+
+---
+
+### ***Version 3 : update rate according to weight history for validation-dataset***
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
+<br><br><br>
+
+---
+
+### ***Version 4 : early stopping***
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
+<br><br><br>
+
+---
+
+### ***Version 5 : regularization(L1)***
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
+<br><br><br>
+
+---
+
+### ***Version 6 : regularization(L2)***
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
+<br><br><br>
 
 <hr class="division2">
 
