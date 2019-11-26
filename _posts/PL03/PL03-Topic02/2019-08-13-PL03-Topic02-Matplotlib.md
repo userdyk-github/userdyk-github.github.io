@@ -5146,7 +5146,32 @@ for i in range(3):
 ![image](https://user-images.githubusercontent.com/52376448/69665668-319e8080-10ce-11ea-9ae7-909c98bc6074.png)
 <hr class='division3'>
 </details>
+<br><br><br>
 
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+def interactive_plot():
+    if ax.lines:
+        ax.lines.remove(ax.lines[0])
+    ax.plot(np.random.rand(10), "r-")
+    plt.ion()
+    plt.show()
+    plt.pause(0.1)
+
+fig = plt.figure()
+ax = fig.add_subplot(1, 1, 1)
+
+for i in range(10):
+    interactive_plot()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![image](https://user-images.githubusercontent.com/52376448/69668959-441bb880-10d4-11ea-8eaa-770f6918bced.png)
+<hr class='division3'>
+</details>
 
 <hr class="division2">
 
