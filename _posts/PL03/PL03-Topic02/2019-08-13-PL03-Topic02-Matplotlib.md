@@ -2654,6 +2654,8 @@ plt.show()
 ### ***Axes object and subplot commands***
 #### Axes lines
 ```python
+import matplotlib.pyplot as plt
+
 fig = plt.figure()
 ax = fig.add_subplot(1, 1, 1)
 
@@ -2672,9 +2674,33 @@ print(ax.lines[0],ax.lines[1],ax.lines[2])
 ```python
 ax.lines[0],ax.lines[1],ax.lines[2]
 ```
-<p style="font-size: 70%;">(<matplotlib.lines.Line2D at 0x7fe4f8047208>,<br>
- <matplotlib.lines.Line2D at 0x7fe4f8047198>,<br>
- <matplotlib.lines.Line2D at 0x7fe4f8047630>)</p>
+
+<p style="font-size: 70%;">
+     (<matplotlib.lines.Line2D at 0x7fe4f8047208>,<br>
+     <matplotlib.lines.Line2D at 0x7fe4f8047198>,<br>
+     <matplotlib.lines.Line2D at 0x7fe4f8047630>)
+</p>
+
+```python
+import matplotlib.pyplot as plt
+
+fig = plt.figure()
+ax = fig.add_subplot(1, 1, 1)
+
+ax.plot(np.random.rand(10))
+ax.plot(np.random.rand(10))
+ax.plot(np.random.rand(10))
+
+ax.lines.remove(ax.lines[0])
+plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![image](https://user-images.githubusercontent.com/52376448/69668008-67456880-10d2-11ea-9519-90e669301b75.png)
+<hr class='division3'>
+</details>
+
 <br><br><br>
       
 #### Axes object
