@@ -5180,10 +5180,12 @@ for i in range(10):
 <span class="frame3">Installation on windows</span><br>
 ```dos
 pip install ipywidgets
+jupyter nbextension enable --py widgetsnbextension
 ```
 <span class="frame3">Installation on Linux</span><br>
 ```bash
 $ pip3 install ipywidgets
+$ jupyter nbextension enable --py widgetsnbextension
 ```
 <br><br><br>
 
