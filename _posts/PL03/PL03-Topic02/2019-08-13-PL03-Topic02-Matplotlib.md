@@ -4947,7 +4947,7 @@ plt.show()
 ---
 
 ### ***on HTML***
-First of all, you should download <a href="https://ffmpeg.zeranoe.com/builds/" target="_blank">FFmpeg</a>
+First of all, you should download <a href="https://ffmpeg.zeranoe.com/builds/" target="_blank">FFmpeg</a>. After installation, set your <b>environment variable</b>, refer to <a href="https://www.wikihow.com/Install-FFmpeg-on-Windows#Enabling-FFmpeg-in-the-Command-Line_sub">here</a>.
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
