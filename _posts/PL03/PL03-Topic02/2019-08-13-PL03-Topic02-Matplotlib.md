@@ -5189,6 +5189,122 @@ $ jupyter nbextension enable --py widgetsnbextension
 ```
 <br><br><br>
 
+#### interact
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from ipywidgets import interact
+
+def f(x):
+    plt.plot(np.arange(0,10), x*np.arange(0,10))
+    plt.ylim(-30,30)
+interact(f,x=(-3,3,0.5))
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![image](https://user-images.githubusercontent.com/52376448/69677835-3cb1da80-10e7-11ea-863f-56553ae1a458.png)
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from ipywidgets import interact
+
+def f(x):
+    if x:
+        plt.plot(np.random.rand(100), 'b')
+    else:
+        plt.plot(np.random.rand(100), 'r')
+interact(f,x=True)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![image](https://user-images.githubusercontent.com/52376448/69677948-87cbed80-10e7-11ea-9c58-d4232d5f5601.png)
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from ipywidgets import interact
+
+@interact(x='Title of plot')
+def f(x):
+    plt.title(x)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from ipywidgets import interact
+
+def f(a,b):
+    plt.plot(np.arange(0,10), a*np.power(np.arange(0,10),b))
+    plt.title("Power Law : $x=ay^b$")
+interact(f, a=1, b=3)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![image](https://user-images.githubusercontent.com/52376448/69677861-4e937d80-10e7-11ea-85b3-1b8b67e506b2.png)
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from ipywidgets import interact, fixed
+
+def f(a,b):
+    plt.plot(np.arange(0,10), a*np.power(np.arange(0,10),b))
+    plt.title("Power Law : $x=ay^b$")
+interact(f, a=1, b=fixed(2))
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![image](https://user-images.githubusercontent.com/52376448/69677873-53f0c800-10e7-11ea-83b0-83203e02661e.png)
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from ipywidgets import interact
+
+def f(colour):
+    plt.plot(np.arange(0,10), np.power(np.arange(0,10), 5), c=colour)
+    plt.title("Power Law : $x=ay^b$")
+colours=['red','green','blue']
+interact(f, colour=colours)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![image](https://user-images.githubusercontent.com/52376448/69677884-5bb06c80-10e7-11ea-9a57-47d12cfbb603.png)
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
 
 <hr class="division2">
 
