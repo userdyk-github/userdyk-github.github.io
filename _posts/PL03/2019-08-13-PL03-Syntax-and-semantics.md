@@ -367,6 +367,97 @@ True
 
 
 ### ***Function***
+#### position arguments
+```python
+def hello(a,b,c):
+    print(a)
+    print(b)
+    print(c)
+
+x = [1,2,3]
+y = (1,2,3)
+hello(*x)   # hello(*[1,2,3])
+hello(*y)   # hello(*(1,2,3))
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+1
+2
+3
+1
+2
+3
+```
+<hr class='division3'>
+</details>
+```python
+def hello(*args):
+    print(args)
+
+x = [1,2,3]
+y = (1,2,3)
+hello(*x)   # hello(*[1,2,3])
+hello(*y)   # hello(*(1,2,3))
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+1
+2
+3
+1
+2
+3
+```
+<hr class='division3'>
+</details>
+
+<br><br><br>
+
+#### keyword arguments
+```python
+def hello(name,age,address):
+    print('name',name)
+    print('age',age)
+    print('address',address)
+
+x = {'name':'ailever', 'age':27, 'address':312321}
+hello(*x)
+hello(**x)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+name name
+age age
+address address
+name ailever
+age 27
+address 312321
+```
+<hr class='division3'>
+</details>
+```python
+def hello(**kwargs):
+    print(kwargs)
+    
+x = {'name':'ailever', 'age':27, 'address':312321}
+hello(**x)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+name ailever
+age 27
+address 312321
+```
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
