@@ -5038,6 +5038,38 @@ HTML(ani.to_html5_video())
 <br><br><br>
 <hr class="division2">
 
+## **Interactive plot**
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+for i in range(3):
+    plt.plot(np.random.rand(10))
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![image](https://user-images.githubusercontent.com/52376448/69665643-25b2be80-10ce-11ea-80ea-34bed87efb2e.png)
+<hr class='division3'>
+</details>
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+for i in range(3):
+    plt.plot(np.random.rand(10))
+    plt.show()
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![image](https://user-images.githubusercontent.com/52376448/69665668-319e8080-10ce-11ea-9ae7-909c98bc6074.png)
+<hr class='division3'>
+</details>
+
+
+<hr class="division2">
+
 ## **User Interface**
 
 <hr class="division2">
