@@ -259,9 +259,8 @@ class SingleLayer:
                 w_grad, b_grad = self.backprop(x[i], err_p)
                 self.w -= rate_w*w_grad
                 self.b -= rate_b*b_grad
-                a = np.clip(a, 1e-10, 1 - 1e-10)
                 print(self.w, self.b)
-                
+                a = np.clip(a, 1e-10, 1 - 1e-10)                
                 loss += -(y[i]*np.log(a)+(1-y[i])*np.log(1-a))
             self.losses.append(loss/len(y))
         
