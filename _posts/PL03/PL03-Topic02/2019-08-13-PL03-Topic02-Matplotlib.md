@@ -2652,7 +2652,31 @@ plt.show()
 ---
 
 ### ***Axes object and subplot commands***
+#### Axes lines
+```python
+fig = plt.figure()
+ax = fig.add_subplot(1, 1, 1)
 
+ax.plot(np.random.rand(10))
+ax.plot(np.random.rand(10))
+ax.plot(np.random.rand(10))
+
+print(ax.lines[0],ax.lines[1],ax.lines[2])
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![image](https://user-images.githubusercontent.com/52376448/69667580-9e674a00-10d1-11ea-850d-904ff7db7628.png)
+<hr class='division3'>
+</details>
+```python
+ax.lines[0],ax.lines[1],ax.lines[2]
+```
+<p>(<matplotlib.lines.Line2D at 0x7fe4f8047208>,<br>
+ <matplotlib.lines.Line2D at 0x7fe4f8047198>,<br>
+ <matplotlib.lines.Line2D at 0x7fe4f8047630>)</p>
+<br><br><br>
+      
 #### Axes object
 ```python
 %matplotlib inline
