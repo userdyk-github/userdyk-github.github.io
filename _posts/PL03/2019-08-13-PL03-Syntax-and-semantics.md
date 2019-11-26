@@ -1596,18 +1596,48 @@ def add(a, b):
 print(add(10,20))
 print(add(a=10, b=20))
 ```
+<p style="font-size: 70%;">
+add(args=(10, 20), kwargs={}) -> 30<br>
+30<br>
+add(args=(), kwargs={'a': 10, 'b': 20}) -> 30<br>
+30<br>
+</p>
 
 <details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<summary class='jb-small' style="color:blue">Example</summary>
 <hr class='division3'>
+```python
+class trace:
+    def __init__(self, x):
+        self.x = x
+    
+    def __call__(self, func):
+        def wrapper(a,b):
+            r = func(a,b)
+            if r % self.x == 0:
+                print('returned value of {0} is mutiple of {1}'.format(func.__name__, self.x))
+            else:
+                print('returned value of {0} is not mutiple of {1}'.format(func.__name__, self.x))
+            return r
+        return wrapper
+    
+@trace(3)
+def add(a, b):
+    return a + b
+
+print(add(10,20))
+print(add(2, 5))
 ```
-add(args=(10, 20), kwargs={}) -> 30
-30
-add(args=(), kwargs={'a': 10, 'b': 20}) -> 30
-30
-```
+<p style="font-size:70%;">
+returned value of add is mutiple of 3<br>
+30<br>
+returned value of add is not mutiple of 3<br>
+7
+</p>
+
 <hr class='division3'>
 </details>
+
 
 <br><br><br>
 <hr class="division2">
