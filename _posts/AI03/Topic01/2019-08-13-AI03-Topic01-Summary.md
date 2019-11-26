@@ -208,6 +208,49 @@ class LogisticNeuron:
 ```
 <hr class='division3'>
 </details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Add : Function 3, Shuffle</summary>
+<hr class='division3'>
+```python
+class LogisticNeuron:
+    def __init__(self):
+        self.w = None
+        self.b = None
+        
+    def forpass(self, x):
+        z = np.sum(x*self.w) + self.b
+        return z
+    
+    def backprop(self, x, err_p):
+        w_grad = x*err_p
+        b_grad = 1*err_p
+        return w_grad, b_grad
+    
+    def activation(self, z):
+        a = 1/(1 + np.exp(-z))
+        return a
+    
+    def fit(self, x, y, epochs=100, rate_w=1, rate_b=1):
+        self.w = np.ones(x.shape[1])
+        self.b = 1.0
+        for i in range(epochs):
+            indexes = np.random.permutation(np.arange(len(x)))        
+            for i in indexes:
+                z = self.forpass(x[i])
+                a = self.activation(z)
+                err_p = -(y[i] - a)
+                w_grad, b_grad = self.backprop(x[i], err_p)
+                self.w -= rate_w*w_grad
+                self.b -= rate_b*b_grad
+                print(self.w, self.b)
+    
+    def predict(self, x):
+        z = [self.forpass(x_i) for x_i in x]
+        a = self.activation(np.array(z))
+        return a > 0.5
+```
+<hr class='division3'>
+</details>
 
 ```python
 import numpy as np
