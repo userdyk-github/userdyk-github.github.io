@@ -125,20 +125,29 @@ class LogisticNeuron:
 ```python
 class metric():
     def __init__(self):
-        """<<<F1>>>"""
+        """<<<F1[1]>>>"""
         self.losses = []
-        """<<<F1>>>"""
+        """<<<F1[1]>>>"""
         
-    """<<<F1>>>"""    
+    """<<<F1[4]>>>"""    
     def loss(self):
         plt.clf()
+        plt.grid(True)
         plt.plot(self.losses)
+        plt.xlabel('Epochs')
+        plt.ylabel('Loss')
         display.display(plt.gcf())
         display.clear_output(wait=True)
 
     def loss_save(self):
         np.savetxt('loss.txt', self.losses)
-    """<<<F1>>>"""    
+        plt.clf()
+        plt.grid(True)
+        plt.plot(self.losses)
+        plt.xlabel('Epochs')
+        plt.ylabel('Loss')
+        plt.savefig('loss.jpg')
+    """<<<F1[4]>>>"""    
         
 class LogisticNeuron(metric):
     def __init__(self, learning_rate=0.001):
@@ -164,9 +173,9 @@ class LogisticNeuron(metric):
         self.w = np.ones(x.shape[1])
         self.b = 1.0
         for i in range(epochs):
-            """<<<F1>>>"""
+            """<<<F1[2]>>>"""
             loss = 0
-            """<<<F1>>>"""
+            """<<<F1[2]>>>"""
             for x_i, y_i in zip(x,y):
                 z = self.forpass(x_i)
                 a = self.activation(z)
@@ -174,13 +183,13 @@ class LogisticNeuron(metric):
                 w_grad, b_grad = self.backprop(x_i,err_p)
                 self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
-                """<<<F1"""        
+                """<<<F1[3]"""        
                 a = np.clip(a, 1e-10, 1 - 1e-10)
                 loss += -(y[i]*np.log(a)+(1-y[i])*np.log(1-a))
             self.losses.append(loss/len(y))
             self.loss()
         self.loss_save()
-        """F1>>>"""
+        """F1[3]>>>"""
         
     def predict(self, x):
         z = [self.forpass(x_i) for x_i in x]
