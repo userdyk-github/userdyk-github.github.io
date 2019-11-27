@@ -119,7 +119,7 @@ class LogisticNeuron:
         return a > 0.5
 ```
 <details markdown="1">
-<summary class='jb-small' style="color:blue">Add : Function 1, loss history</summary>
+<summary class='jb-small' style="color:blue">Add : Function 1, traing loss history</summary>
 <hr class='division3'>
 ```python
 class metric():
@@ -541,8 +541,10 @@ class SingleLayer:
         self.w = None
         self.b = None
         self.lr = learning_rate
-        self.w_history = []                               # V1
-    
+        """<<<V1>>>"""
+        self.w_history = []
+        """<<<V1>>>"""
+        
     def forpass(self, x):
         z = np.sum(x*self.w) + self.b
         return z
@@ -559,7 +561,9 @@ class SingleLayer:
     def fit(self, x, y, epochs=1, rate_b=1):
         self.w = np.ones(x.shape[1])
         self.b = 0
-        self.w_history.append(self.w.copy())               # V1
+        """<<<V1>>>"""
+        self.w_history.append(self.w.copy())
+        """<<<V1>>>"""
         for i in range(epochs):
             indexes = np.random.permutation(np.arange(len(x)))            
             for i in indexes:
@@ -569,7 +573,9 @@ class SingleLayer:
                 w_grad, b_grad = self.backprop(x[i], err_p)
                 self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
-                self.w_history.append(self.w.copy())       # V1
+                """<<<V1>>>"""
+                self.w_history.append(self.w.copy())
+                """<<<V1>>>"""
                 print(self.w, self.b)
         
     def predict(self, x):
