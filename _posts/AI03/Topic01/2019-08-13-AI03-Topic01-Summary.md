@@ -1522,7 +1522,20 @@ sgd.score(x_test,y_test)
 
 ---
 
+### ***Version 1 : Inheritance from singlelayer***
+<br><br><br>
+
+---
+
+### ***Version 2 : mini-batch***
+<br><br><br>
+
+---
+
 ### ***Latest model of dual layer***
+```python
+
+```
 <br><br><br>
 
 ---
