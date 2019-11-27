@@ -625,7 +625,7 @@ layer.score(x_test,y_test)
 ---
 
 
-### ***Version 1 : Update rate according to weight history for train-dataset***
+### ***Version 1 : Update loss according to weight history about train-dataset***
 ```python
 class SingleLayer:
     def __init__(self, learning_rate=0.1):
@@ -777,6 +777,18 @@ y = lambda x1, x2 : 1/(1+np.exp(-3*x1 -5*x2 - 10))
 x_train_all, x_test, y_train_all, y_test = train_test_split(x, y(x1,x2), test_size=0.2, random_state=42)
 x_train, x_val, y_train, y_val = train_test_split(x_train_all, y_train_all, test_size=0.2, random_state=42)
 
+x_train_mean = np.mean(x_train, axis=0)
+x_train_std = np.std(x_train, axis=0)
+x_train_scaled = (x_train - x_train_mean)/x_train_std
+
+x_val_mean = np.mean(x_val, axis=0)
+x_val_std = np.std(x_val, axis=0)
+x_val_scaled = (x_val - x_val_mean)/x_val_std
+
+x_test_mean = np.mean(x_test, axis=0)
+x_test_std = np.std(x_test, axis=0)
+x_test_scaled = (x_test - x_test_mean)/x_test_std
+
 layer = SingleLayer()
 layer.fit(x_train,y_train)
 layer.score(x_test,y_test)
@@ -799,6 +811,18 @@ y = loaded_dataset.target
 x_train_all, x_test, y_train_all, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
 x_train, x_val, y_train, y_val = train_test_split(x_train_all, y_train_all, test_size=0.2, random_state=42)
 
+x_train_mean = np.mean(x_train, axis=0)
+x_train_std = np.std(x_train, axis=0)
+x_train_scaled = (x_train - x_train_mean)/x_train_std
+
+x_val_mean = np.mean(x_val, axis=0)
+x_val_std = np.std(x_val, axis=0)
+x_val_scaled = (x_val - x_val_mean)/x_val_std
+
+x_test_mean = np.mean(x_test, axis=0)
+x_test_std = np.std(x_test, axis=0)
+x_test_scaled = (x_test - x_test_mean)/x_test_std
+
 layer=SingleLayer()
 layer.fit(x_train,y_train)
 layer.score(x_test,y_test)
@@ -813,7 +837,7 @@ layer.score(x_test,y_test)
 
 ---
 
-### ***Version 3 : Update rate according to weight history for validation-dataset***
+### ***Version 3 : Update loss according to weight history about validation-dataset***
 ```python
 class SingleLayer:
     def __init__(self, learning_rate=0.1):
