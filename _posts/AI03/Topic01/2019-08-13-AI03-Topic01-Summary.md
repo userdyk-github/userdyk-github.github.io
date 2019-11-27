@@ -251,7 +251,7 @@ class LogisticNeuron(metric):
         a = 1/(1 + np.exp(-z))
         return a
     
-    def fit(self, x, y, epochs=300, rate_b=1):
+    def fit(self, x, y, epochs=100, rate_b=1):
         self.w = np.ones(x.shape[1])
         self.b = 1.0
         for i in range(epochs):
@@ -557,7 +557,7 @@ class SingleLayer:
         a = 1 / (1 + np.exp(-z))
         return a
     
-    def fit(self, x, y, epochs=1, rate_b=1):
+    def fit(self, x, y, epochs=100, rate_b=1):
         self.w = np.ones(x.shape[1])
         self.b = 0
         for i in range(epochs):
@@ -650,7 +650,7 @@ class SingleLayer:
         a = 1 / (1 + np.exp(-z))
         return a
     
-    def fit(self, x, y, epochs=1, rate_b=1):
+    def fit(self, x, y, epochs=100, rate_b=1):
         self.w = np.ones(x.shape[1])
         self.b = 0
         """<<<V1>>>"""
@@ -751,7 +751,7 @@ class SingleLayer:
         a = 1 / (1 + np.exp(-z))
         return a
     
-    def fit(self, x, y, epochs=1, rate_b=1):
+    def fit(self, x, y, epochs=100, rate_b=1):
         self.w = np.ones(x.shape[1])
         self.b = 0
         for i in range(epochs):
@@ -885,7 +885,7 @@ class SingleLayer:
         return a
     
     """<<<V3"""
-    def fit(self, x, y, epochs=1, rate_b=1, x_val=None, y_val=None):
+    def fit(self, x, y, epochs=100, rate_b=1, x_val=None, y_val=None):
         """V3>>>"""
         self.w = np.ones(x.shape[1])
         self.b = 0
@@ -978,7 +978,7 @@ class SingleLayer:
         a = 1 / (1 + np.exp(-z))
         return a
     
-    def fit(self, x, y, epochs=1, rate_b=1):
+    def fit(self, x, y, epochs=100, rate_b=1):
         self.w = np.ones(x.shape[1])
         self.b = 0
         for i in range(epochs):
@@ -1067,7 +1067,7 @@ class SingleLayer:
         a = 1 / (1 + np.exp(-z))
         return a
     
-    def fit(self, x, y, epochs=1, rate_b=1):
+    def fit(self, x, y, epochs=100, rate_b=1):
         self.w = np.ones(x.shape[1])
         self.b = 0
         for i in range(epochs):
@@ -1156,7 +1156,7 @@ class SingleLayer:
         a = 1 / (1 + np.exp(-z))
         return a
     
-    def fit(self, x, y, epochs=1, rate_b=1):
+    def fit(self, x, y, epochs=100, rate_b=1):
         self.w = np.ones(x.shape[1])
         self.b = 0
         for i in range(epochs):
@@ -1245,7 +1245,7 @@ class SingleLayer:
         a = 1 / (1 + np.exp(-z))
         return a
     
-    def fit(self, x, y, epochs=1, rate_b=1):
+    def fit(self, x, y, epochs=100, rate_b=1):
         self.w = np.ones(x.shape[1])
         self.b = 0
         for i in range(epochs):
