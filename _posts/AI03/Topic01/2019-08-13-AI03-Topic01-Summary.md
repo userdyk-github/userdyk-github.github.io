@@ -1273,7 +1273,102 @@ layer.score(x_test,y_test)
 ---
 
 ### ***Latest model of singleLayer***
+```python
+class SingleLayer:
+    def __init__(self, learning_rate=0.1, l1=0, l2=0):
+        self.w = None
+        self.b = None
+        self.losses = []
+        self.val_losses = []
+        self.weights = []
+        self.lr = learning_rate
+        self.l1 = l1
+        self.l2 = l2
+        
+    def forpass(self, x):
+        z = np.dot(x, self.w) + self.b
+        return z
+    
+    def backprop(self, x ,err):
+        m = len(x)
+        w_grad = np.dot(x.T, err) / m
+        b_grad = np.sum(err) / m
+        return w_grad, b_grad
+    
+    def activation(self, z):
+        a = 1 / (1 + np.exp(-z))
+        return a
+    
+    def fit(self, x, y, epochs=100, rate_b=1, x_val=None, y_val=None):
+        y = y.reshape(-1, 1)
+        y_val = y_val.reshape(-1,1)
+        m = len(x)
+        self.w = np.ones((x.shape[1],1))
+        self.b = 0
+        self.weights.append(self.w.copy())
+        for _ in range(epochs):
+            z = self.forpass(x)
+            a = self.activation(z)
+            err = -(y - a)
+            w_grad, b_grad = self.backprop(x, err)
+            w_grad += (self.l1*np.sign(self.w) + self.l2*self.w)/m
+            self.w -= self.lr*w_grad
+            self.b -= rate_b*b_grad
+            self.weights.append(self.w.copy())
+            a = np.clip(a, 1e-10, 1 - 1e-10)                
+            loss = np.sum(-(y*np.log(a) + (1-y)*np.log(1-a)))
+            self.losses.append((loss + self.reg_loss())/m)
+            self.update_val_loss(x_val, y_val)
+            
+    def predict(self, x):
+        z = self.forpass(x)
+        return z > 0
+    
+    def score(self, x, y):
+        return np.mean(self.predict(x) == y.reshape(-1,1))
+    
+    def reg_loss(self):
+        return self.l1*np.sum(np.abs(self.w)) + self.l2/2*np.sum(self.w**2)
+        
+    def update_val_loss(self, x_val, y_val):
+        z = self.forpass(x_val)
+        a = self.activation(z)
+        a = np.clip(a, 1e-10, 1-1e-10)
+        val_loss = np.sum(-(y_val*np.log(a) + (1-y_val)*np.log(1-a)))
+        self.val_losses.append((val_loss + self.reg_loss())/len(y_val))
+```
+<span class="frame3">Artificial Dataset</span><br>
+```python
+import numpy as np
 
+rv = np.random.RandomState(19)
+x = rv.normal(0,1,(10000,2)); x1 = x[:,0]; x2 = x[:,1]
+y = lambda x1, x2 : 1/(1+np.exp(-3*x1 -5*x2 - 10))
+
+x_train_all, x_test, y_train_all, y_test = train_test_split(x, y(x1,x2), test_size=0.2, random_state=42)
+x_train, x_val, y_train, y_val = train_test_split(x_train_all, y_train_all, test_size=0.2, random_state=42)
+
+layer = SingleLayer(l1=0.01,l2=0)
+layer.fit(x_train,y_train,x_val=x_val,y_val=y_val)
+layer.score(x_test,y_test)
+```
+<span class="frame3">Real Dataset</span><br>
+```python
+import numpy as np
+from sklearn.datasets import load_breast_cancer
+from sklearn.model_selection import train_test_split
+
+loaded_dataset = load_breast_cancer()
+x = loaded_dataset.data
+y = loaded_dataset.target
+
+x_train_all, x_test, y_train_all, y_test = train_test_split(x, y(x1,x2), test_size=0.2, random_state=42)
+x_train, x_val, y_train, y_val = train_test_split(x_train_all, y_train_all, test_size=0.2, random_state=42)
+
+layer=SingleLayer(l1=0.01,l2=0)
+layer.fit(x_train,y_train,x_val=x_val,y_val=y_val)
+layer.score(x_test,y_test)
+```
 
 <br><br><br>
 
