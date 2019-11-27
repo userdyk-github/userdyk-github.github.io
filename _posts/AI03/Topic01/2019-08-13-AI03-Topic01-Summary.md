@@ -55,6 +55,7 @@ class LinearNeuron:
                 self.b -= rate_b*b_grad
                 print(self.w, self.b)
 ```
+<span class="frame3">Artificial Dataset</span><br>
 ```python
 import numpy as np
 
