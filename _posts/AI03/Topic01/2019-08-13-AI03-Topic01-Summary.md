@@ -854,7 +854,23 @@ class SingleLayer:
         self.w = None
         self.b = None
         self.lr = learning_rate
-        
+        """<<<V3>>>"""
+        self.val_losses = []
+        """<<<V3>>>"""
+    
+    """<<<V3>>>"""
+    def update_val_loss(self, x_val, y_val):
+        if x_val is None:
+            return
+        val_loss = 0
+        for i in range(len(x_val)):
+            z = self.forpass(x_val[i])
+            a = self.activation(z)
+            a = np.clip(a, 1e-10, 1-1e-10)
+            val_loss += -(y_val[i]*np.log(a) + (1-y_val[i])*np.log(1-a))
+        self.val_losses.append(val_loss/len(y_val))
+    """<<<V3>>>"""
+    
     def forpass(self, x):
         z = np.sum(x*self.w) + self.b
         return z
@@ -868,7 +884,9 @@ class SingleLayer:
         a = 1 / (1 + np.exp(-z))
         return a
     
-    def fit(self, x, y, epochs=1, rate_b=1):
+    """<<<V3"""
+    def fit(self, x, y, epochs=1, rate_b=1, x_val=None, y_val=None):
+        """V3>>>"""
         self.w = np.ones(x.shape[1])
         self.b = 0
         for i in range(epochs):
@@ -880,7 +898,10 @@ class SingleLayer:
                 w_grad, b_grad = self.backprop(x[i], err_p)
                 self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
-        
+            """<<<V3>>>"""
+            self.update_val_loss(x_val, y_val)
+            """<<<V3>>>"""
+            
     def predict(self, x):
         z = [self.forpass(x_i) for x_i in x]
         return np.array(z) > 0
