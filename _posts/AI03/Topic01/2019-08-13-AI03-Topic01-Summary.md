@@ -596,6 +596,7 @@ layer.score(x_test,y_test)
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br>
 <span class="frame3">Real Dataset</span><br>
 ```python
 import numpy as np
@@ -745,6 +746,7 @@ layer.score(x_test,y_test)
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br>
 <span class="frame3">Real Dataset</span><br>
 ```python
 import numpy as np
@@ -833,6 +835,7 @@ layer.score(x_test,y_test)
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br>
 <span class="frame3">Real Dataset</span><br>
 ```python
 import numpy as np
@@ -921,6 +924,7 @@ layer.score(x_test,y_test)
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br>
 <span class="frame3">Real Dataset</span><br>
 ```python
 import numpy as np
@@ -1009,6 +1013,7 @@ layer.score(x_test,y_test)
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br>
 <span class="frame3">Real Dataset</span><br>
 ```python
 import numpy as np
@@ -1097,6 +1102,7 @@ layer.score(x_test,y_test)
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br>
 <span class="frame3">Real Dataset</span><br>
 ```python
 import numpy as np
@@ -1185,6 +1191,7 @@ layer.score(x_test,y_test)
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br>
 <span class="frame3">Real Dataset</span><br>
 ```python
 import numpy as np
