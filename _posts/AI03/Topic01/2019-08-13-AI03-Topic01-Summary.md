@@ -534,7 +534,7 @@ sgd.score(x_test,y_test)
 
 ## **Training skills on sigle layer**
 
-### ***Version 0 : Basic Model of Single Layer***
+### ***Version 0 : Basic model of single layer***
 ```python
 class SingleLayer:
     def __init__(self, learning_rate=0.1):
@@ -612,7 +612,7 @@ layer.score(x_test,y_test)
 ---
 
 
-### ***Version 1 : update rate according to weight history for train-dataset***
+### ***Version 1 : Update rate according to weight history for train-dataset***
 ```python
 class SingleLayer:
     def __init__(self, learning_rate=0.1):
@@ -673,7 +673,7 @@ class SingleLayer:
 
 ---
 
-### ***Version 2 : standardization***
+### ***Version 2 : Standardization***
 ```python
 
 ```
@@ -687,7 +687,7 @@ class SingleLayer:
 
 ---
 
-### ***Version 3 : update rate according to weight history for validation-dataset***
+### ***Version 3 : Update rate according to weight history for validation-dataset***
 ```python
 
 ```
@@ -701,7 +701,7 @@ class SingleLayer:
 
 ---
 
-### ***Version 4 : early stopping***
+### ***Version 4 : Early stopping***
 ```python
 
 ```
@@ -715,7 +715,7 @@ class SingleLayer:
 
 ---
 
-### ***Version 5 : regularization(L1)***
+### ***Version 5 : Regularization(L1)***
 ```python
 
 ```
@@ -729,7 +729,7 @@ class SingleLayer:
 
 ---
 
-### ***Version 6 : regularization(L2)***
+### ***Version 6 : Regularization(L2)***
 ```python
 
 ```
@@ -743,7 +743,7 @@ class SingleLayer:
 
 ---
 
-### ***Version 7 : vectorization***
+### ***Version 7 : Vectorization***
 ```python
 
 ```
