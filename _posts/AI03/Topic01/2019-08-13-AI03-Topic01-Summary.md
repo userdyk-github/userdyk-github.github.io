@@ -1413,6 +1413,12 @@ sgd.score(x_test,y_test)
 
 <br><br><br>
 
+---
+
+
+### ***Example***
+
+<br><br><br>
 <hr class="division2">
 
 ## **Dual Layer : multiclass classification**
@@ -1450,10 +1456,16 @@ sgd.score(x_test,y_test)
 ### ***Custumized model of multi layer***
 
 <br><br><br>
+
+---
+
+### ***Example***
+
+<br><br><br>
 <hr class="division2">
 
 
-## **Convolutional neural network**
+## **Convolutional neural network : computer vision**
 
 ### ***Basic model of CNN***
 <br><br><br>
@@ -1468,9 +1480,15 @@ sgd.score(x_test,y_test)
 ### ***Custumized model of CNN***
 <br><br><br>
 
+---
+
+### ***Example***
+
+<br><br><br>
+
 <hr class="division2">
 
-## **Recurrent neural network**
+## **Recurrent neural network : natural language processing**
 
 ### ***Basic model of RNN***
 <br><br><br>
@@ -1485,7 +1503,11 @@ sgd.score(x_test,y_test)
 ### ***Custumized model of RNN***
 <br><br><br>
 
+---
 
+### ***Example***
+
+<br><br><br>
 <hr class="division1">
 
 List of posts followed by this article
