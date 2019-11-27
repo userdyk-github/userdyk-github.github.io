@@ -534,7 +534,7 @@ sgd.score(x_test,y_test)
 
 ## **Training skills on sigle layer(binaray classification)**
 
-### ***Version 0 : Basic model of single layer***
+### ***Basic model of single layer***
 Bias(F3) + Shuffle(F4)
 
 ```python
