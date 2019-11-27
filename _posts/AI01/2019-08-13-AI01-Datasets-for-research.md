@@ -44,6 +44,18 @@ x = loaded_dataset.data
 y = loaded_dataset.target
 x_train_all, x_test, y_train_all, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
 x_train, x_val, y_train, y_val = train_test_split(x_train_all, y_train_all, test_size=0.2, random_state=42)
+
+x_train_mean = np.mean(x_train, axis=0)
+x_train_std = np.std(x_train, axis=0)
+x_train_scaled = (x_train - x_train_mean)/x_train_std
+
+x_val_mean = np.mean(x_val, axis=0)
+x_val_std = np.std(x_val, axis=0)
+x_val_scaled = (x_val - x_val_mean)/x_val_std
+
+x_test_mean = np.mean(x_test, axis=0)
+x_test_std = np.std(x_test, axis=0)
+x_test_scaled = (x_test - x_test_mean)/x_test_std
 ```
 <hr class='division3'>
 </details>
@@ -80,6 +92,18 @@ x = loaded_dataset.data
 y = loaded_dataset.target
 x_train_all, x_test, y_train_all, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
 x_train, x_val, y_train, y_val = train_test_split(x_train_all, y_train_all, test_size=0.2, random_state=42)
+
+x_train_mean = np.mean(x_train, axis=0)
+x_train_std = np.std(x_train, axis=0)
+x_train_scaled = (x_train - x_train_mean)/x_train_std
+
+x_val_mean = np.mean(x_val, axis=0)
+x_val_std = np.std(x_val, axis=0)
+x_val_scaled = (x_val - x_val_mean)/x_val_std
+
+x_test_mean = np.mean(x_test, axis=0)
+x_test_std = np.std(x_test, axis=0)
+x_test_scaled = (x_test - x_test_mean)/x_test_std
 ```
 <hr class='division3'>
 </details>
@@ -117,6 +141,18 @@ x = loaded_dataset.data
 y = loaded_dataset.target
 x_train_all, x_test, y_train_all, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
 x_train, x_val, y_train, y_val = train_test_split(x_train_all, y_train_all, test_size=0.2, random_state=42)
+
+x_train_mean = np.mean(x_train, axis=0)
+x_train_std = np.std(x_train, axis=0)
+x_train_scaled = (x_train - x_train_mean)/x_train_std
+
+x_val_mean = np.mean(x_val, axis=0)
+x_val_std = np.std(x_val, axis=0)
+x_val_scaled = (x_val - x_val_mean)/x_val_std
+
+x_test_mean = np.mean(x_test, axis=0)
+x_test_std = np.std(x_test, axis=0)
+x_test_scaled = (x_test - x_test_mean)/x_test_std
 ```
 <hr class='division3'>
 </details>
@@ -162,6 +198,18 @@ x = loaded_dataset.data
 y = loaded_dataset.target
 x_train_all, x_test, y_train_all, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
 x_train, x_val, y_train, y_val = train_test_split(x_train_all, y_train_all, test_size=0.2, random_state=42)
+
+x_train_mean = np.mean(x_train, axis=0)
+x_train_std = np.std(x_train, axis=0)
+x_train_scaled = (x_train - x_train_mean)/x_train_std
+
+x_val_mean = np.mean(x_val, axis=0)
+x_val_std = np.std(x_val, axis=0)
+x_val_scaled = (x_val - x_val_mean)/x_val_std
+
+x_test_mean = np.mean(x_test, axis=0)
+x_test_std = np.std(x_test, axis=0)
+x_test_scaled = (x_test - x_test_mean)/x_test_std
 ```
 <hr class='division3'>
 </details>
@@ -199,6 +247,18 @@ x = loaded_dataset.data
 y = loaded_dataset.target
 x_train_all, x_test, y_train_all, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
 x_train, x_val, y_train, y_val = train_test_split(x_train_all, y_train_all, test_size=0.2, random_state=42)
+
+x_train_mean = np.mean(x_train, axis=0)
+x_train_std = np.std(x_train, axis=0)
+x_train_scaled = (x_train - x_train_mean)/x_train_std
+
+x_val_mean = np.mean(x_val, axis=0)
+x_val_std = np.std(x_val, axis=0)
+x_val_scaled = (x_val - x_val_mean)/x_val_std
+
+x_test_mean = np.mean(x_test, axis=0)
+x_test_std = np.std(x_test, axis=0)
+x_test_scaled = (x_test - x_test_mean)/x_test_std
 ```
 <hr class='division3'>
 </details>
@@ -236,6 +296,18 @@ x = loaded_dataset.data
 y = loaded_dataset.target
 x_train_all, x_test, y_train_all, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
 x_train, x_val, y_train, y_val = train_test_split(x_train_all, y_train_all, test_size=0.2, random_state=42)
+
+x_train_mean = np.mean(x_train, axis=0)
+x_train_std = np.std(x_train, axis=0)
+x_train_scaled = (x_train - x_train_mean)/x_train_std
+
+x_val_mean = np.mean(x_val, axis=0)
+x_val_std = np.std(x_val, axis=0)
+x_val_scaled = (x_val - x_val_mean)/x_val_std
+
+x_test_mean = np.mean(x_test, axis=0)
+x_test_std = np.std(x_test, axis=0)
+x_test_scaled = (x_test - x_test_mean)/x_test_std
 ```
 <hr class='division3'>
 </details>
@@ -273,6 +345,18 @@ x = loaded_dataset.data
 y = loaded_dataset.target
 x_train_all, x_test, y_train_all, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
 x_train, x_val, y_train, y_val = train_test_split(x_train_all, y_train_all, test_size=0.2, random_state=42)
+
+x_train_mean = np.mean(x_train, axis=0)
+x_train_std = np.std(x_train, axis=0)
+x_train_scaled = (x_train - x_train_mean)/x_train_std
+
+x_val_mean = np.mean(x_val, axis=0)
+x_val_std = np.std(x_val, axis=0)
+x_val_scaled = (x_val - x_val_mean)/x_val_std
+
+x_test_mean = np.mean(x_test, axis=0)
+x_test_std = np.std(x_test, axis=0)
+x_test_scaled = (x_test - x_test_mean)/x_test_std
 ```
 <hr class='division3'>
 </details>
