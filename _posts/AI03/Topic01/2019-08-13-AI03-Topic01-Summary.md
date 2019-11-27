@@ -396,7 +396,7 @@ layer.fit(x_train,y_train)
 ```
 <br><br><br>
 
-### ***SingleLayer***
+### ***Latest Version SingleLayer***
 ```python
 class metric():
     def __init__(self):
