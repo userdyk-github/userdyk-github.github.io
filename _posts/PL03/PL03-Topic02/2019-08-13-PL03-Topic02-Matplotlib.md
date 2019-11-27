@@ -41,6 +41,13 @@ $
 ```
 <br><br><br>
 
+### ***ipynb usage***
+```python
+% matplotlib inline
+% matplotlib qt5
+```
+<br><br><br>
+
 
 <hr class="division2">
 
