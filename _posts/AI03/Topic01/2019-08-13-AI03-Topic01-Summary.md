@@ -922,7 +922,7 @@ x_train_all, x_test, y_train_all, y_test = train_test_split(x, y(x1,x2), test_si
 x_train, x_val, y_train, y_val = train_test_split(x_train_all, y_train_all, test_size=0.2, random_state=42)
 
 layer = SingleLayer()
-layer.fit(x_train,y_train)
+layer.fit(x_train,y_train,x_val=x_val,y_val=y_val)
 layer.score(x_test,y_test)
 ```
 <details markdown="1">
@@ -944,7 +944,7 @@ x_train_all, x_test, y_train_all, y_test = train_test_split(x, y, test_size=0.2,
 x_train, x_val, y_train, y_val = train_test_split(x_train_all, y_train_all, test_size=0.2, random_state=42)
 
 layer=SingleLayer()
-layer.fit(x_train,y_train)
+layer.fit(x_train,y_train,x_val=x_val,y_val=y_val)
 layer.score(x_test,y_test)
 ```
 <details markdown="1">
