@@ -855,8 +855,77 @@ TypeError: Can't instantiate abstract class Student with abstract methods go_to_
 <br><br><br>
 
 #### Meta Class
+<span class="frame3">Method 1</span><br>
+```python
+# class = type('name_of_class', (base_class), {property:method})
+
+Hello = type('Hello',(),{})
+h = Hello()
+h
+```
+
 <p style="font-size: 70%;">
+    <__main__.Hello at 0x7f21589b5080>
 </p>
+    
+```python
+def replace(self, old, new):
+    while old in self:
+        self[self.index(old)] = new
+
+AdvancedList = type('AdvancedList', (list,), {'desc':'improved list', 'replace':replace})
+
+x = AdvancedList([1,2,3,1,2,3,1,2,3])
+x.replace(1,100)
+print(x)
+print(x.desc)
+```
+
+<p style="font-size: 70%;">
+    [100, 2, 3, 100, 2, 3, 100, 2, 3]<br>
+improved list
+</p>
+
+<br><br><br>
+<span class="frame3">Method 2</span><br>
+```python
+class MakeCalc(type):
+    def __new__(metacls, name, bases, namespace):
+        namespace['desc'] = 'calc class'
+        namespace['add'] = lambda self, a, b : a + b
+        return type.__new__(metacls, name, bases, namespace)
+    
+Calc = MakeCalc('Calc', (), {})
+c = Calc()
+print(c.desc)
+print(c.add(1,2))
+```
+<p style="font-size: 70%;">
+    calc class<br>
+3
+</p>
+
+```python
+# Singleton
+
+class Singleton(type):
+    __instances = {}
+    def __call__(cls, *args, **kwargs):
+        if cls not in cls.__instances:
+            cls.__instances[cls] = super().__call__(*args, **kwargs)
+        return cls.__instances[cls]
+    
+class Hello(metaclass=Singleton):
+    pass
+
+a = Hello()
+b = Hello()
+print(a is b)
+```
+<p style="font-size: 70%;">
+    True
+</p>
+
 <br><br><br>
 
 
