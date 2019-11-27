@@ -1015,9 +1015,9 @@ x_train_all, x_test, y_train_all, y_test = train_test_split(x, y(x1,x2), test_si
 x_train, x_val, y_train, y_val = train_test_split(x_train_all, y_train_all, test_size=0.2, random_state=42)
 
 layer = SingleLayer()
-"""<<<V3>>>"""
+"""<<<V4>>>"""
 layer.fit(x_train,y_train, epochs=20)
-"""<<<V3>>>"""
+"""<<<V4>>>"""
 layer.score(x_test,y_test)
 ```
 <details markdown="1">
@@ -1039,9 +1039,9 @@ x_train_all, x_test, y_train_all, y_test = train_test_split(x, y, test_size=0.2,
 x_train, x_val, y_train, y_val = train_test_split(x_train_all, y_train_all, test_size=0.2, random_state=42)
 
 layer=SingleLayer()
-"""<<<V3>>>"""
+"""<<<V4>>>"""
 layer.fit(x_train,y_train, epochs=20)
-"""<<<V3>>>"""
+"""<<<V4>>>"""
 layer.score(x_test,y_test)
 ```
 <details markdown="1">
@@ -1054,7 +1054,7 @@ layer.score(x_test,y_test)
 
 ---
 
-### ***Version 5 : Regularization(L1)***
+### ***Version 5 : Regularization(L1, L2)***
 ```python
 class SingleLayer:
     def __init__(self, learning_rate=0.1):
@@ -1143,96 +1143,7 @@ layer.score(x_test,y_test)
 
 ---
 
-### ***Version 6 : Regularization(L2)***
-```python
-class SingleLayer:
-    def __init__(self, learning_rate=0.1):
-        self.w = None
-        self.b = None
-        self.lr = learning_rate
-        
-    def forpass(self, x):
-        z = np.sum(x*self.w) + self.b
-        return z
-    
-    def backprop(self, x ,err_p):
-        w_grad = x * err_p
-        b_grad = 1 * err_p
-        return w_grad, b_grad
-    
-    def activation(self, z):
-        a = 1 / (1 + np.exp(-z))
-        return a
-    
-    def fit(self, x, y, epochs=100, rate_b=1):
-        self.w = np.ones(x.shape[1])
-        self.b = 0
-        for i in range(epochs):
-            indexes = np.random.permutation(np.arange(len(x)))            
-            for i in indexes:
-                z = self.forpass(x[i])
-                a = self.activation(z)
-                err_p = -(y[i] - a)
-                w_grad, b_grad = self.backprop(x[i], err_p)
-                self.w -= self.lr*w_grad
-                self.b -= rate_b*b_grad
-        
-    def predict(self, x):
-        z = [self.forpass(x_i) for x_i in x]
-        return np.array(z) > 0
-    
-    def score(self, x, y):
-        return np.mean(self.predict(x) == y)
-```
-<span class="frame3">Artificial Dataset</span><br>
-```python
-import numpy as np
-from sklearn.model_selection import train_test_split
-
-rv = np.random.RandomState(19)
-x = rv.normal(0,1,(10000,2)); x1 = x[:,0]; x2 = x[:,1]
-y = lambda x1, x2 : 1/(1+np.exp(-3*x1 -5*x2 - 10))
-
-x_train_all, x_test, y_train_all, y_test = train_test_split(x, y(x1,x2), test_size=0.2, random_state=42)
-x_train, x_val, y_train, y_val = train_test_split(x_train_all, y_train_all, test_size=0.2, random_state=42)
-
-layer = SingleLayer()
-layer.fit(x_train,y_train)
-layer.score(x_test,y_test)
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-<hr class='division3'>
-</details>
-<br>
-<span class="frame3">Real Dataset</span><br>
-```python
-import numpy as np
-from sklearn.datasets import load_breast_cancer
-from sklearn.model_selection import train_test_split
-
-loaded_dataset = load_breast_cancer()
-x = loaded_dataset.data
-y = loaded_dataset.target
-x_train_all, x_test, y_train_all, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
-x_train, x_val, y_train, y_val = train_test_split(x_train_all, y_train_all, test_size=0.2, random_state=42)
-
-layer=SingleLayer()
-layer.fit(x_train,y_train)
-layer.score(x_test,y_test)
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-<hr class='division3'>
-</details>
-
-<br><br><br>
-
----
-
-### ***Version 7 : Vectorization***
+### ***Version 6 : Vectorization***
 ```python
 class SingleLayer:
     def __init__(self, learning_rate=0.1):
