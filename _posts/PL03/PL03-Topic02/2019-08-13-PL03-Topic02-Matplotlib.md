@@ -5157,6 +5157,32 @@ for i in range(3):
 <br><br><br>
 
 ```python
+%matplotlib inline
+
+import time
+import numpy as np
+import matplotlib.pyplot as plt
+from IPython import display
+
+for i in range(10):
+    plt.clf()
+    plt.plot(np.random.randn(100))
+    display.display(plt.gcf())
+    display.clear_output(wait=True)
+    #time.sleep(1.0)
+```
+<details open markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![image](https://user-images.githubusercontent.com/52376448/69688379-3cc2d200-1109-11ea-8508-db66bf7e0c68.png)
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
+```python
+%matplotlib qt5
+
 import numpy as np
 import matplotlib.pyplot as plt
 
