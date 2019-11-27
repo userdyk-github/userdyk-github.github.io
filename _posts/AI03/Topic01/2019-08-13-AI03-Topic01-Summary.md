@@ -124,9 +124,9 @@ class LogisticNeuron:
 ```python
 class metric():
     def __init__(self):
-        """<<<F1[1]>>>"""
+        """<<<+++F1[1]+++>>>"""
         self.losses = []
-        """<<<F1[1]>>>"""
+        """<<<+++F1[1]+++>>>"""
         
     """<<<F1[4]>>>"""    
     def loss(self):
@@ -146,7 +146,7 @@ class metric():
         plt.xlabel('Epochs')
         plt.ylabel('Loss')
         plt.savefig('loss.jpg')
-    """<<<F1[4]>>>"""    
+    """<<<+++F1[4]+++>>>"""    
         
 class LogisticNeuron(metric):
     def __init__(self, learning_rate=0.001):
@@ -172,9 +172,9 @@ class LogisticNeuron(metric):
         self.w = np.ones(x.shape[1])
         self.b = 1.0
         for i in range(epochs):
-            """<<<F1[2]>>>"""
+            """<<<+++F1[2]+++>>>"""
             loss = 0
-            """<<<F1[2]>>>"""
+            """<<<+++F1[2]+++>>>"""
             for x_i, y_i in zip(x,y):
                 z = self.forpass(x_i)
                 a = self.activation(z)
@@ -182,13 +182,13 @@ class LogisticNeuron(metric):
                 w_grad, b_grad = self.backprop(x_i,err_p)
                 self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
-                """<<<F1[3]"""        
+                """<<<+++F1[3]"""        
                 a = np.clip(a, 1e-10, 1 - 1e-10)
                 loss += -(y_i*np.log(a)+(1-y_i)*np.log(1-a))
             self.losses.append(loss/len(y))
             self.loss()
         self.loss_save()
-        """F1[3]>>>"""
+        """F1[3]+++>>>"""
         
     def predict(self, x):
         z = [self.forpass(x_i) for x_i in x]
@@ -217,18 +217,18 @@ plt.plot(layer.losses)
 ```python
 class metric():
     def __init__(self):
-        """<<<F2[1]>>>"""
+        """<<<+++F2[1]+++>>>"""
         self.weights = []
-        """<<<F2[1]>>>"""
+        """<<<+++F2[1]+++>>>"""
         
-    """<<<F2[3]>>>"""    
+    """<<<+++F2[3]+++>>>"""    
     def w_history(self):
         print(*self.w, self.b)
         display.clear_output(wait=True)
 
     def w_history_save(self):
         np.savetxt('weight.txt', self.weights)
-    """<<<F2[3]>>>"""
+    """<<<+++F2[3]+++>>>"""
 
 
 class LogisticNeuron(metric):
@@ -262,11 +262,11 @@ class LogisticNeuron(metric):
                 w_grad, b_grad = self.backprop(x_i,err_p)
                 self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
-            """<<<F2[2]"""
+            """<<<+++F2[2]"""
             self.weights.append([*self.w, self.b])
             self.w_history()
         self.w_history_save()
-        """F2[2]>>>"""
+        """F2[2]+++>>>"""
         
     def predict(self, x):
         z = [self.forpass(x_i) for x_i in x]
@@ -296,10 +296,10 @@ class LogisticNeuron:
         b_grad = 1*err_p
         return w_grad, b_grad
     
-    """<<<F3[1]>>>"""
+    """<<<+++F3[1]+++>>>"""
     def add_bias(self, x):
         return np.c_p[np.ones((x.shape[0],1)),x]
-    """<<<F3[1]>>>"""
+    """<<<+++F3[1]+++>>>"""
     
     def activation(self, z):
         a = 1/(1 + np.exp(-z))
@@ -351,7 +351,7 @@ class LogisticNeuron:
         self.w = np.ones(x.shape[1])
         self.b = 1.0
         for i in range(epochs):
-            """<<<F4[1]>>>"""
+            """<<<+++F4[1]+++>>>"""
             indexes = np.random.permutation(np.arange(len(x))) 
             for i in indexes:                                  
                 z = self.forpass(x[i])                         
@@ -360,7 +360,7 @@ class LogisticNeuron:
                 w_grad, b_grad = self.backprop(x[i], err_p)    
                 self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
-            """<<<F4[1]>>>"""
+            """<<<+++F4[1]+++>>>"""
             
     def predict(self, x):
         z = [self.forpass(x_i) for x_i in x]
@@ -632,10 +632,10 @@ class SingleLayer:
         self.w = None
         self.b = None
         self.lr = learning_rate
-        """<<<V1>>>"""
+        """<<<+++V1+++>>>"""
         self.losses = []
         self.weights = []
-        """<<<V1>>>"""
+        """<<<+++V1+++>>>"""
         
     def forpass(self, x):
         z = np.sum(x*self.w) + self.b
@@ -653,13 +653,13 @@ class SingleLayer:
     def fit(self, x, y, epochs=100, rate_b=1):
         self.w = np.ones(x.shape[1])
         self.b = 0
-        """<<<V1>>>"""
+        """<<<+++V1+++>>>"""
         self.weights.append(self.w.copy())
-        """<<<V1>>>"""
+        """<<<+++V1+++>>>"""
         for i in range(epochs):
-            """<<<V1>>>"""
+            """<<<+++V1+++>>>"""
             loss = 0
-            """<<<V1>>>"""
+            """<<<+++V1+++>>>"""
             indexes = np.random.permutation(np.arange(len(x)))            
             for i in indexes:
                 z = self.forpass(x[i])
@@ -668,12 +668,12 @@ class SingleLayer:
                 w_grad, b_grad = self.backprop(x[i], err_p)
                 self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
-                """<<<V1"""
+                """<<<+++V1"""
                 self.weights.append(self.w.copy())
                 a = np.clip(a, 1e-10, 1 - 1e-10)                
                 loss += -(y[i]*np.log(a)+(1-y[i])*np.log(1-a))
             self.losses.append(loss/len(y))
-            """V1>>>"""
+            """V1+++>>>"""
         
     def predict(self, x):
         z = [self.forpass(x_i) for x_i in x]
@@ -783,7 +783,7 @@ y = lambda x1, x2 : 1/(1+np.exp(-3*x1 -5*x2 - 10))
 x_train_all, x_test, y_train_all, y_test = train_test_split(x, y(x1,x2), test_size=0.2, random_state=42)
 x_train, x_val, y_train, y_val = train_test_split(x_train_all, y_train_all, test_size=0.2, random_state=42)
 
-"""<<<V2>>>"""
+"""<<<+++V2+++>>>"""
 x_train_mean = np.mean(x_train, axis=0)
 x_train_std = np.std(x_train, axis=0)
 x_train_scaled = (x_train - x_train_mean)/x_train_std
@@ -795,7 +795,7 @@ x_val_scaled = (x_val - x_val_mean)/x_val_std
 x_test_mean = np.mean(x_test, axis=0)
 x_test_std = np.std(x_test, axis=0)
 x_test_scaled = (x_test - x_test_mean)/x_test_std
-"""<<<V2>>>"""
+"""<<<+++V2+++>>>"""
 
 layer = SingleLayer()
 layer.fit(x_train,y_train)
@@ -819,7 +819,7 @@ y = loaded_dataset.target
 x_train_all, x_test, y_train_all, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
 x_train, x_val, y_train, y_val = train_test_split(x_train_all, y_train_all, test_size=0.2, random_state=42)
 
-"""<<<V2>>>"""
+"""<<<+++V2+++>>>"""
 x_train_mean = np.mean(x_train, axis=0)
 x_train_std = np.std(x_train, axis=0)
 x_train_scaled = (x_train - x_train_mean)/x_train_std
@@ -831,7 +831,7 @@ x_val_scaled = (x_val - x_val_mean)/x_val_std
 x_test_mean = np.mean(x_test, axis=0)
 x_test_std = np.std(x_test, axis=0)
 x_test_scaled = (x_test - x_test_mean)/x_test_std
-"""<<<V2>>>"""
+"""<<<+++V2+++>>>"""
 
 layer=SingleLayer()
 layer.fit(x_train,y_train)
@@ -854,12 +854,12 @@ class SingleLayer:
         self.w = None
         self.b = None
         self.lr = learning_rate
-        """<<<V3>>>"""
+        """<<<+++V3+++>>>"""
         self.val_losses = []
         self.weights = []
-        """<<<V3>>>"""
+        """<<<+++V3+++>>>"""
     
-    """<<<V3>>>"""
+    """<<<+++V3+++>>>"""
     def update_val_loss(self, x_val, y_val):
         if x_val is None:
             return
@@ -870,7 +870,7 @@ class SingleLayer:
             a = np.clip(a, 1e-10, 1-1e-10)
             val_loss += -(y_val[i]*np.log(a) + (1-y_val[i])*np.log(1-a))
         self.val_losses.append(val_loss/len(y_val))
-    """<<<V3>>>"""
+    """<<<+++V3+++>>>"""
     
     def forpass(self, x):
         z = np.sum(x*self.w) + self.b
@@ -885,14 +885,14 @@ class SingleLayer:
         a = 1 / (1 + np.exp(-z))
         return a
     
-    """<<<V3"""
+    """<<<+++V3"""
     def fit(self, x, y, epochs=100, rate_b=1, x_val=None, y_val=None):
-        """V3>>>"""
+        """V3+++>>>"""
         self.w = np.ones(x.shape[1])
         self.b = 0
-        """<<<V3>>>"""
+        """<<<+++V3+++>>>"""
         self.weights.append(self.w.copy())
-        """<<<V3>>>"""
+        """<<<+++V3+++>>>"""
         for i in range(epochs):
             indexes = np.random.permutation(np.arange(len(x)))            
             for i in indexes:
@@ -902,10 +902,10 @@ class SingleLayer:
                 w_grad, b_grad = self.backprop(x[i], err_p)
                 self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
-                """<<<V3"""
+                """<<<+++V3"""
                 self.weights.append(self.w.copy())
             self.update_val_loss(x_val, y_val)
-            """V3>>>"""
+            """V3+++>>>"""
             
     def predict(self, x):
         z = [self.forpass(x_i) for x_i in x]
@@ -927,9 +927,9 @@ x_train_all, x_test, y_train_all, y_test = train_test_split(x, y(x1,x2), test_si
 x_train, x_val, y_train, y_val = train_test_split(x_train_all, y_train_all, test_size=0.2, random_state=42)
 
 layer = SingleLayer()
-"""<<<V3>>>"""
+"""<<<+++V3+++>>>"""
 layer.fit(x_train,y_train,x_val=x_val,y_val=y_val)
-"""<<<V3>>>"""
+"""<<<+++V3+++>>>"""
 layer.score(x_test,y_test)
 ```
 <details markdown="1">
@@ -951,9 +951,9 @@ x_train_all, x_test, y_train_all, y_test = train_test_split(x, y, test_size=0.2,
 x_train, x_val, y_train, y_val = train_test_split(x_train_all, y_train_all, test_size=0.2, random_state=42)
 
 layer=SingleLayer()
-"""<<<V3>>>"""
+"""<<<+++V3+++>>>"""
 layer.fit(x_train,y_train,x_val=x_val,y_val=y_val)
-"""<<<V3>>>"""
+"""<<<+++V3+++>>>"""
 layer.score(x_test,y_test)
 ```
 <details markdown="1">
@@ -1020,9 +1020,9 @@ x_train_all, x_test, y_train_all, y_test = train_test_split(x, y(x1,x2), test_si
 x_train, x_val, y_train, y_val = train_test_split(x_train_all, y_train_all, test_size=0.2, random_state=42)
 
 layer = SingleLayer()
-"""<<<V4>>>"""
+"""<<<+++V4+++>>>"""
 layer.fit(x_train,y_train, epochs=20)
-"""<<<V4>>>"""
+"""<<<+++V4+++>>>"""
 layer.score(x_test,y_test)
 ```
 <details markdown="1">
@@ -1044,9 +1044,9 @@ x_train_all, x_test, y_train_all, y_test = train_test_split(x, y, test_size=0.2,
 x_train, x_val, y_train, y_val = train_test_split(x_train_all, y_train_all, test_size=0.2, random_state=42)
 
 layer=SingleLayer()
-"""<<<V4>>>"""
+"""<<<+++V4+++>>>"""
 layer.fit(x_train,y_train, epochs=20)
-"""<<<V4>>>"""
+"""<<<+++V4+++>>>"""
 layer.score(x_test,y_test)
 ```
 <details markdown="1">
@@ -1062,20 +1062,20 @@ layer.score(x_test,y_test)
 ### ***Version 5 : Regularization(L1, L2)***
 ```python
 class SingleLayer:
-    """<<<V5"""
+    """<<<+++V5"""
     def __init__(self, learning_rate=0.1, l1=0, l2=0):
-        """V5>>>"""
+        """V5+++>>>"""
         self.w = None
         self.b = None
         self.lr = learning_rate
-        """<<<V5>>>"""
+        """<<<+++V5+++>>>"""
         self.losses = []
         self.val_losses = []
         self.l1 = l1
         self.l2 = l2
-        """<<<V5>>>"""
+        """<<<+++V5+++>>>"""
         
-    """<<<V5>>>"""    
+    """<<<+++V5+++>>>"""    
     def reg_loss(self):
         return self.l1*np.sum(np.abs(self.w)) + self.l2/2*np.sum(self.w**2)
         
@@ -1089,7 +1089,7 @@ class SingleLayer:
             a = np.clip(a, 1e-10, 1-1e-10)
             val_loss += -(y_val[i]*np.log(a) + (1-y_val[i])*np.log(1-a))
         self.val_losses.append(val_loss/len(y_val) + self.reg_loss())
-    """<<<V5>>>"""
+    """<<<+++V5+++>>>"""
     
     def forpass(self, x):
         z = np.sum(x*self.w) + self.b
@@ -1108,26 +1108,26 @@ class SingleLayer:
         self.w = np.ones(x.shape[1])
         self.b = 0
         for i in range(epochs):
-            """<<<V5>>>"""
+            """<<<+++V5+++>>>"""
             loss = 0
-            """<<<V5>>>"""
+            """<<<+++V5+++>>>"""
             indexes = np.random.permutation(np.arange(len(x)))            
             for i in indexes:
                 z = self.forpass(x[i])
                 a = self.activation(z)
                 err_p = -(y[i] - a)
                 w_grad, b_grad = self.backprop(x[i], err_p)
-                """<<<V5>>>"""
+                """<<<+++V5+++>>>"""
                 w_grad += self.l1*np.sign(self.w) + self.l2*self.w
-                """<<<V5>>>"""
+                """<<<+++V5+++>>>"""
                 self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
-                """<<<V5"""
+                """<<<+++V5"""
                 a = np.clip(a, 1e-10, 1 - 1e-10)                
                 loss += -(y[i]*np.log(a)+(1-y[i])*np.log(1-a))
             self.losses.append(loss/len(y) + self.reg_loss())
             self.update_val_loss(x_val, y_val)
-            """V5>>>"""
+            """V5+++>>>"""
         
     def predict(self, x):
         z = [self.forpass(x_i) for x_i in x]
@@ -1148,10 +1148,10 @@ y = lambda x1, x2 : 1/(1+np.exp(-3*x1 -5*x2 - 10))
 x_train_all, x_test, y_train_all, y_test = train_test_split(x, y(x1,x2), test_size=0.2, random_state=42)
 x_train, x_val, y_train, y_val = train_test_split(x_train_all, y_train_all, test_size=0.2, random_state=42)
 
-"""<<<V5>>>"""
+"""<<<+++V5+++>>>"""
 layer = SingleLayer(l1=0.01,l2=0)
 layer.fit(x_train,y_train,x_val=x_val,y_val=y_val)
-"""<<<V5>>>"""
+"""<<<+++V5+++>>>"""
 layer.score(x_test,y_test)
 ```
 <details markdown="1">
@@ -1172,10 +1172,10 @@ y = loaded_dataset.target
 x_train_all, x_test, y_train_all, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
 x_train, x_val, y_train, y_val = train_test_split(x_train_all, y_train_all, test_size=0.2, random_state=42)
 
-"""<<<V5>>>"""
+"""<<<+++V5+++>>>"""
 layer=SingleLayer(l1=0.01,l2=0)
 layer.fit(x_train,y_train,x_val=x_val,y_val=y_val)
-"""<<<V5>>>"""
+"""<<<+++V5+++>>>"""
 layer.score(x_test,y_test)
 ```
 <details markdown="1">
