@@ -215,7 +215,65 @@ plt.plot(layer.losses)
 <details markdown="1">
 <summary class='jb-small' style="color:blue">Add : Function 2, Weight</summary>
 <hr class='division3'>
+```python
+class metric():
+    def __init__(self):
+        """<<<F2[1]>>>"""
+        self.w_histories = []
+        """<<<F2[1]>>>"""
+        
+    """<<<F2[3]>>>"""    
+    def w_history(self):
+        print(*self.w, self.b)
+        display.clear_output(wait=True)
 
+    def w_history_save(self):
+        np.savetxt('weight.txt', self.w_histories)
+    """<<<F2[3]>>>"""
+
+
+class LogisticNeuron(metric):
+    def __init__(self, learning_rate=0.001):
+        super().__init__()
+        self.w = None
+        self.b = None
+        self.lr = learning_rate
+        
+    def forpass(self, x):
+        z = np.sum(x*self.w) + self.b
+        return z
+    
+    def backprop(self, x, err_p):
+        w_grad = x*err_p
+        b_grad = 1*err_p
+        return w_grad, b_grad
+    
+    def activation(self, z):
+        a = 1/(1 + np.exp(-z))
+        return a
+    
+    def fit(self, x, y, epochs=300, rate_b=1):
+        self.w = np.ones(x.shape[1])
+        self.b = 1.0
+        for i in range(epochs):
+            for x_i, y_i in zip(x,y):
+                z = self.forpass(x_i)
+                a = self.activation(z)
+                err_p = -(y_i - a)
+                w_grad, b_grad = self.backprop(x_i,err_p)
+                self.w -= self.lr*w_grad
+                self.b -= rate_b*b_grad
+            """<<<F2[2]"""
+            self.w_histories.append([*self.w, self.b])
+            self.w_history()
+        self.w_history_save()
+        """F2[2]>>>"""
+        
+    def predict(self, x):
+        z = [self.forpass(x_i) for x_i in x]
+        a = self.activation(np.array(z))
+        return a > 0.5
+```
 <hr class='division3'>
 </details>
 
@@ -239,9 +297,11 @@ class LogisticNeuron:
         b_grad = 1*err_p
         return w_grad, b_grad
     
-    def add_bias(self, x):                       # F2
-        return np.c_p[np.ones((x.shape[0],1)),x] # F2
-        
+    """<<<F3[1]>>>"""
+    def add_bias(self, x):
+        return np.c_p[np.ones((x.shape[0],1)),x]
+    """<<<F3[1]>>>"""
+    
     def activation(self, z):
         a = 1/(1 + np.exp(-z))
         return a
@@ -257,7 +317,6 @@ class LogisticNeuron:
                 w_grad, b_grad = self.backprop(x_i,err_p)
                 self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
-                print(self.w, self.b)
     
     def predict(self, x):
         z = [self.forpass(x_i) for x_i in x]
@@ -293,16 +352,17 @@ class LogisticNeuron:
         self.w = np.ones(x.shape[1])
         self.b = 1.0
         for i in range(epochs):
-            indexes = np.random.permutation(np.arange(len(x))) # F3
-            for i in indexes:                                  # F3
-                z = self.forpass(x[i])                         # F3
-                a = self.activation(z)                         # F3
-                err_p = -(y[i] - a)                            # F3
-                w_grad, b_grad = self.backprop(x[i], err_p)    # F3
+            """<<<F3[1]>>>"""
+            indexes = np.random.permutation(np.arange(len(x))) 
+            for i in indexes:                                  
+                z = self.forpass(x[i])                         
+                a = self.activation(z)                         
+                err_p = -(y[i] - a)                            
+                w_grad, b_grad = self.backprop(x[i], err_p)    
                 self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
-                print(self.w, self.b)
-    
+            """<<<F3[1]>>>"""
+            
     def predict(self, x):
         z = [self.forpass(x_i) for x_i in x]
         a = self.activation(np.array(z))
