@@ -119,7 +119,7 @@ class LogisticNeuron:
         return a > 0.5
 ```
 <details markdown="1">
-<summary class='jb-small' style="color:blue">Add : Function 1, traing loss history</summary>
+<summary class='jb-small' style="color:blue">Add : Function 1, training loss history</summary>
 <hr class='division3'>
 ```python
 class metric():
@@ -218,7 +218,7 @@ plt.plot(layer.losses)
 class metric():
     def __init__(self):
         """<<<F2[1]>>>"""
-        self.w_histories = []
+        self.weights = []
         """<<<F2[1]>>>"""
         
     """<<<F2[3]>>>"""    
@@ -227,7 +227,7 @@ class metric():
         display.clear_output(wait=True)
 
     def w_history_save(self):
-        np.savetxt('weight.txt', self.w_histories)
+        np.savetxt('weight.txt', self.weights)
     """<<<F2[3]>>>"""
 
 
@@ -263,7 +263,7 @@ class LogisticNeuron(metric):
                 self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
             """<<<F2[2]"""
-            self.w_histories.append([*self.w, self.b])
+            self.weights.append([*self.w, self.b])
             self.w_history()
         self.w_history_save()
         """F2[2]>>>"""
@@ -401,7 +401,7 @@ layer.fit(x_train,y_train)
 class metric():
     def __init__(self):
         self.losses = []
-        self.w_histories = []
+        self.weights = []
         
     def loss(self):
         plt.clf()
@@ -426,7 +426,7 @@ class metric():
         display.clear_output(wait=True)
 
     def w_history_save(self):
-        np.savetxt('weight.txt', self.w_histories)
+        np.savetxt('weight.txt', self.weights)
 
 
 class SingleLayer(metric):
@@ -469,7 +469,7 @@ class SingleLayer(metric):
                 loss += -(y[i]*np.log(a)+(1-y[i])*np.log(1-a))
             self.losses.append(loss/len(y))
             self.loss()
-            self.w_histories.append([*self.w, self.b])
+            self.weights.append([*self.w, self.b])
             self.w_history()
         self.loss_save()
         self.w_history_save()
@@ -634,7 +634,7 @@ class SingleLayer:
         self.lr = learning_rate
         """<<<V1>>>"""
         self.losses = []
-        self.w_history = []
+        self.weights = []
         """<<<V1>>>"""
         
     def forpass(self, x):
@@ -654,7 +654,7 @@ class SingleLayer:
         self.w = np.ones(x.shape[1])
         self.b = 0
         """<<<V1>>>"""
-        self.w_history.append(self.w.copy())
+        self.weights.append(self.w.copy())
         """<<<V1>>>"""
         for i in range(epochs):
             """<<<V1>>>"""
@@ -669,7 +669,7 @@ class SingleLayer:
                 self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
                 """<<<V1"""
-                self.w_history.append(self.w.copy())
+                self.weights.append(self.w.copy())
                 a = np.clip(a, 1e-10, 1 - 1e-10)                
                 loss += -(y[i]*np.log(a)+(1-y[i])*np.log(1-a))
             self.losses.append(loss/len(y))
@@ -856,7 +856,7 @@ class SingleLayer:
         self.lr = learning_rate
         """<<<V3>>>"""
         self.val_losses = []
-        self.w_history = []
+        self.weights = []
         """<<<V3>>>"""
     
     """<<<V3>>>"""
@@ -891,7 +891,7 @@ class SingleLayer:
         self.w = np.ones(x.shape[1])
         self.b = 0
         """<<<V3>>>"""
-        self.w_history.append(self.w.copy())
+        self.weights.append(self.w.copy())
         """<<<V3>>>"""
         for i in range(epochs):
             indexes = np.random.permutation(np.arange(len(x)))            
@@ -903,7 +903,7 @@ class SingleLayer:
                 self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
                 """<<<V3"""
-                self.w_history.append(self.w.copy())
+                self.weights.append(self.w.copy())
             self.update_val_loss(x_val, y_val)
             """V3>>>"""
             
