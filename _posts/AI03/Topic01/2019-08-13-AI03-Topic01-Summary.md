@@ -633,6 +633,7 @@ class SingleLayer:
         self.b = None
         self.lr = learning_rate
         """<<<V1>>>"""
+        self.losses = []
         self.w_history = []
         """<<<V1>>>"""
         
@@ -656,6 +657,9 @@ class SingleLayer:
         self.w_history.append(self.w.copy())
         """<<<V1>>>"""
         for i in range(epochs):
+            """<<<V1>>>"""
+            loss = 0
+            """<<<V1>>>"""
             indexes = np.random.permutation(np.arange(len(x)))            
             for i in indexes:
                 z = self.forpass(x[i])
@@ -664,10 +668,12 @@ class SingleLayer:
                 w_grad, b_grad = self.backprop(x[i], err_p)
                 self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
-                """<<<V1>>>"""
+                """<<<V1"""
                 self.w_history.append(self.w.copy())
-                """<<<V1>>>"""
-                print(self.w, self.b)
+                a = np.clip(a, 1e-10, 1 - 1e-10)                
+                loss += -(y[i]*np.log(a)+(1-y[i])*np.log(1-a))
+            self.losses.append(loss/len(y))
+            """V1>>>"""
         
     def predict(self, x):
         z = [self.forpass(x_i) for x_i in x]
@@ -777,6 +783,7 @@ y = lambda x1, x2 : 1/(1+np.exp(-3*x1 -5*x2 - 10))
 x_train_all, x_test, y_train_all, y_test = train_test_split(x, y(x1,x2), test_size=0.2, random_state=42)
 x_train, x_val, y_train, y_val = train_test_split(x_train_all, y_train_all, test_size=0.2, random_state=42)
 
+"""<<<V2>>>"""
 x_train_mean = np.mean(x_train, axis=0)
 x_train_std = np.std(x_train, axis=0)
 x_train_scaled = (x_train - x_train_mean)/x_train_std
@@ -788,6 +795,7 @@ x_val_scaled = (x_val - x_val_mean)/x_val_std
 x_test_mean = np.mean(x_test, axis=0)
 x_test_std = np.std(x_test, axis=0)
 x_test_scaled = (x_test - x_test_mean)/x_test_std
+"""<<<V2>>>"""
 
 layer = SingleLayer()
 layer.fit(x_train,y_train)
@@ -811,6 +819,7 @@ y = loaded_dataset.target
 x_train_all, x_test, y_train_all, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
 x_train, x_val, y_train, y_val = train_test_split(x_train_all, y_train_all, test_size=0.2, random_state=42)
 
+"""<<<V2>>>"""
 x_train_mean = np.mean(x_train, axis=0)
 x_train_std = np.std(x_train, axis=0)
 x_train_scaled = (x_train - x_train_mean)/x_train_std
@@ -822,6 +831,7 @@ x_val_scaled = (x_val - x_val_mean)/x_val_std
 x_test_mean = np.mean(x_test, axis=0)
 x_test_std = np.std(x_test, axis=0)
 x_test_scaled = (x_test - x_test_mean)/x_test_std
+"""<<<V2>>>"""
 
 layer=SingleLayer()
 layer.fit(x_train,y_train)
