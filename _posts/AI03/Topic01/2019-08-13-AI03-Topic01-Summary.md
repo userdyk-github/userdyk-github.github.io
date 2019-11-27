@@ -211,8 +211,17 @@ plt.plot(layer.losses)
 ```
 <hr class='division3'>
 </details>
+
 <details markdown="1">
-<summary class='jb-small' style="color:blue">Add : Function 2, Bias</summary>
+<summary class='jb-small' style="color:blue">Add : Function 2, Weight</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Add : Function 3, Bias</summary>
 <hr class='division3'>
 ```python
 class LogisticNeuron:
@@ -258,7 +267,7 @@ class LogisticNeuron:
 <hr class='division3'>
 </details>
 <details markdown="1">
-<summary class='jb-small' style="color:blue">Add : Function 3, Shuffle</summary>
+<summary class='jb-small' style="color:blue">Add : Function 4, Shuffle</summary>
 <hr class='division3'>
 ```python
 class LogisticNeuron:
