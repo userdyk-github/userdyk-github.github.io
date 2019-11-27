@@ -25,13 +25,13 @@ List of posts to read before reading this article
 ## **Installation**
 ### ***For linux***
 ```bash
-$ 
+$ pip3 install requests
 ```
 <br><br><br>
 
 ### ***For windows***
 ```dos
-
+pip install requests
 ```
 <br><br><br>
 
