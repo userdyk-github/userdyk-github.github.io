@@ -27,52 +27,52 @@ List of posts to read before reading this article
 <hr class="division2">
 
 ## **Note 02**
-[Note 1][1]
+[Note 2][2]
 <br><br><br>
 <hr class="division2">
 
 ## **Note 03**
-[Note 1][1]
+[Note 3][3]
 <br><br><br>
 <hr class="division2">
 
 ## **Note 04**
-[Note 1][1]
+[Note 4][4]
 <br><br><br>
 <hr class="division2">
 
 ## **Note 05**
-[Note 1][1]
+[Note 5][5]
 <br><br><br>
 <hr class="division2">
 
 ## **Note 06**
-[Note 1][1]
+[Note 6][6]
 <br><br><br>
 <hr class="division2">
 
 ## **Note 07**
-[Note 1][1]
+[Note 7][7]
 <br><br><br>
 <hr class="division2">
 
 ## **Note 08**
-[Note 1][1]
+[Note 8][8]
 <br><br><br>
 <hr class="division2">
 
 ## **Note 09**
-[Note 1][1]
+[Note 9][9]
 <br><br><br>
 <hr class="division2">
 
 ## **Note 10**
-[Note 1][1]
+[Note 10][10]
 <br><br><br>
 <hr class="division2">
 
 ## **Note 11**
-[Note 1][1]
+[Note 11][11]
 <br><br><br>
 
 <hr class="division1">
