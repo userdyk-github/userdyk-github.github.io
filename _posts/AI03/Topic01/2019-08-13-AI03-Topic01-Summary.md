@@ -1288,12 +1288,26 @@ class SingleLayer:
         self.lr = learning_rate
         
     def forpass(self, x):
+        """<<<---V7--->>>
         z = np.sum(x*self.w) + self.b
+        <<<---V7--->>>"""
+        """<<<+++V7+++>>>"""
+        z = np.dot(x, self.w) + self.b
+        """<<<+++V7+++>>>"""
         return z
     
     def backprop(self, x ,err_p):
+        """<<<+++V7+++>>>"""
+        m = len(x)
+        """<<<+++V7+++>>>"""
+        """<<<---V7--->>>
         w_grad = x * err_p
         b_grad = 1 * err_p
+        <<<---V7--->>>"""
+        """<<<+++V7+++>>>"""
+        w_grad = np.dot(x.T, err) / m
+        b_grad = np.sum(err) / m
+        """<<<+++V7+++>>>"""
         return w_grad, b_grad
     
     def activation(self, z):
@@ -1301,9 +1315,19 @@ class SingleLayer:
         return a
     
     def fit(self, x, y, epochs=100, rate_b=1):
+        """<<<+++V7+++>>>"""
+        y = y.reshape(-1, 1)
+        m = len(x)
+        """<<<+++V7+++>>>"""
+        """<<<---V7--->>>
         self.w = np.ones(x.shape[1])
+        <<<---V7--->>>"""
+        """<<<+++V7+++>>>"""
+        self.w = np.ones((x.shape[1],1))
+        """<<<+++V7+++>>>"""
         self.b = 0
         for i in range(epochs):
+            """<<<---V7--->>>
             indexes = np.random.permutation(np.arange(len(x)))            
             for i in indexes:
                 z = self.forpass(x[i])
@@ -1312,13 +1336,27 @@ class SingleLayer:
                 w_grad, b_grad = self.backprop(x[i], err_p)
                 self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
-        
+            <<<---V7--->>>"""
+            """<<<+++V7+++>>>"""
+            z = self.forpass(x)
+            a = self.activation(z)
+            err = -(y - a)
+            w_grad, b_grad = self.backprop(x, err_p)
+            self.w -= self.lr*w_grad
+            self.b -= rate_b*b_grad
+            """<<<+++V7+++>>>"""
+            
     def predict(self, x):
+        """<<<---V7--->>>
         z = [self.forpass(x_i) for x_i in x]
-        return np.array(z) > 0
+        <<<---V7--->>>"""
+        """<<<+++V7+++>>>"""
+        z = self.forpass(x)
+        """<<<+++V7+++>>>"""
+        return z > 0
     
     def score(self, x, y):
-        return np.mean(self.predict(x) == y)
+        return np.mean(self.predict(x) == y.reshape(-1,1))
 ```
 <span class="frame3">Artificial Dataset</span><br>
 ```python
