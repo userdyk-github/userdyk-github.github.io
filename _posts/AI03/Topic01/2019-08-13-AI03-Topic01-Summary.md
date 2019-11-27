@@ -535,6 +535,8 @@ sgd.score(x_test,y_test)
 ## **Training skills on sigle layer**
 
 ### ***Version 0 : Basic model of single layer***
+Bias(F3) + Shuffle(F4)
+
 ```python
 class SingleLayer:
     def __init__(self, learning_rate=0.1):
