@@ -724,20 +724,7 @@ class SingleLayer:
         self.val_losses = []
         self.weights = []
         """<<<+++V3+++>>>"""
-    
-    """<<<+++V3+++>>>"""
-    def update_val_loss(self, x_val, y_val):
-        if x_val is None:
-            return
-        val_loss = 0
-        for i in range(len(x_val)):
-            z = self.forpass(x_val[i])
-            a = self.activation(z)
-            a = np.clip(a, 1e-10, 1-1e-10)
-            val_loss += -(y_val[i]*np.log(a) + (1-y_val[i])*np.log(1-a))
-        self.val_losses.append(val_loss/len(y_val))
-    """<<<+++V3+++>>>"""
-    
+        
     def forpass(self, x):
         z = np.sum(x*self.w) + self.b
         return z
@@ -779,6 +766,19 @@ class SingleLayer:
     
     def score(self, x, y):
         return np.mean(self.predict(x) == y)
+    
+        """<<<+++V3+++>>>"""
+    def update_val_loss(self, x_val, y_val):
+        if x_val is None:
+            return
+        val_loss = 0
+        for i in range(len(x_val)):
+            z = self.forpass(x_val[i])
+            a = self.activation(z)
+            a = np.clip(a, 1e-10, 1-1e-10)
+            val_loss += -(y_val[i]*np.log(a) + (1-y_val[i])*np.log(1-a))
+        self.val_losses.append(val_loss/len(y_val))
+    """<<<+++V3+++>>>"""
 ```
 <span class="frame3">Artificial Dataset</span><br>
 ```python
@@ -940,23 +940,7 @@ class SingleLayer:
         self.l1 = l1
         self.l2 = l2
         """<<<+++V5+++>>>"""
-        
-    """<<<+++V5+++>>>"""    
-    def reg_loss(self):
-        return self.l1*np.sum(np.abs(self.w)) + self.l2/2*np.sum(self.w**2)
-        
-    def update_val_loss(self, x_val, y_val):
-        if x_val is None:
-            return
-        val_loss = 0
-        for i in range(len(x_val)):
-            z = self.forpass(x_val[i])
-            a = self.activation(z)
-            a = np.clip(a, 1e-10, 1-1e-10)
-            val_loss += -(y_val[i]*np.log(a) + (1-y_val[i])*np.log(1-a))
-        self.val_losses.append(val_loss/len(y_val) + self.reg_loss())
-    """<<<+++V5+++>>>"""
-    
+            
     def forpass(self, x):
         z = np.sum(x*self.w) + self.b
         return z
@@ -1001,6 +985,22 @@ class SingleLayer:
     
     def score(self, x, y):
         return np.mean(self.predict(x) == y)
+    
+        """<<<+++V5+++>>>"""    
+    def reg_loss(self):
+        return self.l1*np.sum(np.abs(self.w)) + self.l2/2*np.sum(self.w**2)
+        
+    def update_val_loss(self, x_val, y_val):
+        if x_val is None:
+            return
+        val_loss = 0
+        for i in range(len(x_val)):
+            z = self.forpass(x_val[i])
+            a = self.activation(z)
+            a = np.clip(a, 1e-10, 1-1e-10)
+            val_loss += -(y_val[i]*np.log(a) + (1-y_val[i])*np.log(1-a))
+        self.val_losses.append(val_loss/len(y_val) + self.reg_loss())
+    """<<<+++V5+++>>>"""
 ```
 <span class="frame3">Artificial Dataset</span><br>
 ```python
