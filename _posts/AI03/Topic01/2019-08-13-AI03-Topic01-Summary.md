@@ -398,12 +398,43 @@ layer.fit(x_train,y_train)
 
 ### ***SingleLayer***
 ```python
-class SingleLayer:
+class metric():
+    def __init__(self):
+        self.losses = []
+        self.w_histories = []
+        
+    def loss(self):
+        plt.clf()
+        plt.grid(True)
+        plt.plot(self.losses)
+        plt.xlabel('Epochs')
+        plt.ylabel('Loss')
+        display.display(plt.gcf())
+        #display.clear_output(wait=True)
+
+    def loss_save(self):
+        np.savetxt('loss.txt', self.losses)
+        plt.clf()
+        plt.grid(True)
+        plt.plot(self.losses)
+        plt.xlabel('Epochs')
+        plt.ylabel('Loss')
+        plt.savefig('loss.jpg')
+        
+    def w_history(self):
+        print(*self.w, self.b)
+        display.clear_output(wait=True)
+
+    def w_history_save(self):
+        np.savetxt('weight.txt', self.w_histories)
+
+
+class SingleLayer(metric):
     def __init__(self, learning_rate=0.001):
+        super().__init__()
         self.w = None
         self.b = None
         self.lr = learning_rate                
-        self.losses = []
     
     def forpass(self, x):
         z = np.sum(x*self.w) + self.b
@@ -421,11 +452,11 @@ class SingleLayer:
         a = 1 / (1 + np.exp(-z))
         return a
     
-    def fit(self, x, y, epochs=1, rate_b=1):
+    def fit(self, x, y, epochs=100, rate_b=1):
         self.w = np.ones(x.shape[1])
-        self.b = 0
+        self.b = 1.0
         for i in range(epochs):
-            loss = 0
+            loss = 1.0
             indexes = np.random.permutation(np.arange(len(x)))
             for i in indexes:
                 z = self.forpass(x[i])
@@ -434,10 +465,14 @@ class SingleLayer:
                 w_grad, b_grad = self.backprop(x[i], err_p)
                 self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
-                print(self.w, self.b)
                 a = np.clip(a, 1e-10, 1 - 1e-10)                
                 loss += -(y[i]*np.log(a)+(1-y[i])*np.log(1-a))
             self.losses.append(loss/len(y))
+            self.loss()
+            self.w_histories.append([*self.w, self.b])
+            self.w_history()
+        self.loss_save()
+        self.w_history_save()
         
     def predict(self, x):
         z = [self.forpass(x_i) for x_i in x]
