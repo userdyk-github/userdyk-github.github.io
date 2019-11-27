@@ -38,9 +38,9 @@ class LinearNeuron:
         y_hat = np.sum(x*self.w) + self.b
         return y_hat
     
-    def backprop(self, x, err_p):
-        w_grad = x*err_p
-        b_grad = 1*err_p
+    def backprop(self, x, err):
+        w_grad = x*err
+        b_grad = 1*err
         return w_grad, b_grad
     
     def fit(self,x,y,epochs=100, rate_b=0.001):
@@ -49,8 +49,8 @@ class LinearNeuron:
         for _ in range(epochs):
             for x_i, y_i in zip(x,y):
                 y_hat = self.forpass(x_i)
-                err_p = -(y_i - y_hat)
-                w_grad, b_grad = self.backprop(x_i,err_p)
+                err = -(y_i - y_hat)
+                w_grad, b_grad = self.backprop(x_i,err)
                 self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
                 print(self.w, self.b)
@@ -92,9 +92,9 @@ class LogisticNeuron:
         z = np.sum(x*self.w) + self.b
         return z
     
-    def backprop(self, x, err_p):
-        w_grad = x*err_p
-        b_grad = 1*err_p
+    def backprop(self, x, err):
+        w_grad = x*err
+        b_grad = 1*err
         return w_grad, b_grad
     
     def activation(self, z):
@@ -108,8 +108,8 @@ class LogisticNeuron:
             for x_i, y_i in zip(x,y):
                 z = self.forpass(x_i)
                 a = self.activation(z)
-                err_p = -(y_i - a)
-                w_grad, b_grad = self.backprop(x_i,err_p)
+                err = -(y_i - a)
+                w_grad, b_grad = self.backprop(x_i,err)
                 self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
     
@@ -159,9 +159,9 @@ class LogisticNeuron(metric):
         z = np.sum(x*self.w) + self.b
         return z
     
-    def backprop(self, x, err_p):
-        w_grad = x*err_p
-        b_grad = 1*err_p
+    def backprop(self, x, err):
+        w_grad = x*err
+        b_grad = 1*err
         return w_grad, b_grad
     
     def activation(self, z):
@@ -178,8 +178,8 @@ class LogisticNeuron(metric):
             for x_i, y_i in zip(x,y):
                 z = self.forpass(x_i)
                 a = self.activation(z)
-                err_p = -(y_i - a)
-                w_grad, b_grad = self.backprop(x_i,err_p)
+                err = -(y_i - a)
+                w_grad, b_grad = self.backprop(x_i,err)
                 self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
                 """<<<+++F1[3]"""        
@@ -242,9 +242,9 @@ class LogisticNeuron(metric):
         z = np.sum(x*self.w) + self.b
         return z
     
-    def backprop(self, x, err_p):
-        w_grad = x*err_p
-        b_grad = 1*err_p
+    def backprop(self, x, err):
+        w_grad = x*err
+        b_grad = 1*err
         return w_grad, b_grad
     
     def activation(self, z):
@@ -258,8 +258,8 @@ class LogisticNeuron(metric):
             for x_i, y_i in zip(x,y):
                 z = self.forpass(x_i)
                 a = self.activation(z)
-                err_p = -(y_i - a)
-                w_grad, b_grad = self.backprop(x_i,err_p)
+                err = -(y_i - a)
+                w_grad, b_grad = self.backprop(x_i,err)
                 self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
             """<<<+++F2[2]"""
@@ -291,9 +291,9 @@ class LogisticNeuron:
         z = np.sum(x*self.w) + self.b
         return z
     
-    def backprop(self, x, err_p):
-        w_grad = x*err_p
-        b_grad = 1*err_p
+    def backprop(self, x, err):
+        w_grad = x*err
+        b_grad = 1*err
         return w_grad, b_grad
     
     """<<<+++F3[1]+++>>>"""
@@ -312,8 +312,8 @@ class LogisticNeuron:
             for x_i, y_i in zip(x,y):
                 z = self.forpass(x_i)
                 a = self.activation(z)
-                err_p = -(y_i - a)
-                w_grad, b_grad = self.backprop(x_i,err_p)
+                err = -(y_i - a)
+                w_grad, b_grad = self.backprop(x_i,err)
                 self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
     
@@ -338,9 +338,9 @@ class LogisticNeuron:
         z = np.sum(x*self.w) + self.b
         return z
     
-    def backprop(self, x, err_p):
-        w_grad = x*err_p
-        b_grad = 1*err_p
+    def backprop(self, x, err):
+        w_grad = x*err
+        b_grad = 1*err
         return w_grad, b_grad
     
     def activation(self, z):
@@ -356,8 +356,8 @@ class LogisticNeuron:
             for i in indexes:                                  
                 z = self.forpass(x[i])                         
                 a = self.activation(z)                         
-                err_p = -(y[i] - a)                            
-                w_grad, b_grad = self.backprop(x[i], err_p)    
+                err = -(y[i] - a)                            
+                w_grad, b_grad = self.backprop(x[i], err)    
                 self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
             """<<<+++F4[1]+++>>>"""
@@ -440,9 +440,9 @@ class SingleLayer(metric):
         z = np.sum(x*self.w) + self.b
         return z
     
-    def backprop(self, x ,err_p):
-        w_grad = x * err_p
-        b_grad = 1 * err_p
+    def backprop(self, x ,err):
+        w_grad = x * err
+        b_grad = 1 * err
         return w_grad, b_grad
     
     def add_bias(self, x):
@@ -461,8 +461,8 @@ class SingleLayer(metric):
             for i in indexes:
                 z = self.forpass(x[i])
                 a = self.activation(z)
-                err_p = -(y[i] - a)
-                w_grad, b_grad = self.backprop(x[i], err_p)
+                err = -(y[i] - a)
+                w_grad, b_grad = self.backprop(x[i], err)
                 self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
                 a = np.clip(a, 1e-10, 1 - 1e-10)                
@@ -548,9 +548,9 @@ class SingleLayer:
         z = np.sum(x*self.w) + self.b
         return z
     
-    def backprop(self, x ,err_p):
-        w_grad = x * err_p
-        b_grad = 1 * err_p
+    def backprop(self, x ,err):
+        w_grad = x * err
+        b_grad = 1 * err
         return w_grad, b_grad
     
     def activation(self, z):
@@ -565,8 +565,8 @@ class SingleLayer:
             for i in indexes:
                 z = self.forpass(x[i])
                 a = self.activation(z)
-                err_p = -(y[i] - a)
-                w_grad, b_grad = self.backprop(x[i], err_p)
+                err = -(y[i] - a)
+                w_grad, b_grad = self.backprop(x[i], err)
                 self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
         
@@ -641,9 +641,9 @@ class SingleLayer:
         z = np.sum(x*self.w) + self.b
         return z
     
-    def backprop(self, x ,err_p):
-        w_grad = x * err_p
-        b_grad = 1 * err_p
+    def backprop(self, x ,err):
+        w_grad = x * err
+        b_grad = 1 * err
         return w_grad, b_grad
     
     def activation(self, z):
@@ -664,8 +664,8 @@ class SingleLayer:
             for i in indexes:
                 z = self.forpass(x[i])
                 a = self.activation(z)
-                err_p = -(y[i] - a)
-                w_grad, b_grad = self.backprop(x[i], err_p)
+                err = -(y[i] - a)
+                w_grad, b_grad = self.backprop(x[i], err)
                 self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
                 """<<<+++V1"""
@@ -742,9 +742,9 @@ class SingleLayer:
         z = np.sum(x*self.w) + self.b
         return z
     
-    def backprop(self, x ,err_p):
-        w_grad = x * err_p
-        b_grad = 1 * err_p
+    def backprop(self, x ,err):
+        w_grad = x * err
+        b_grad = 1 * err
         return w_grad, b_grad
     
     def activation(self, z):
@@ -759,8 +759,8 @@ class SingleLayer:
             for i in indexes:
                 z = self.forpass(x[i])
                 a = self.activation(z)
-                err_p = -(y[i] - a)
-                w_grad, b_grad = self.backprop(x[i], err_p)
+                err = -(y[i] - a)
+                w_grad, b_grad = self.backprop(x[i], err)
                 self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
         
@@ -876,9 +876,9 @@ class SingleLayer:
         z = np.sum(x*self.w) + self.b
         return z
     
-    def backprop(self, x ,err_p):
-        w_grad = x * err_p
-        b_grad = 1 * err_p
+    def backprop(self, x ,err):
+        w_grad = x * err
+        b_grad = 1 * err
         return w_grad, b_grad
     
     def activation(self, z):
@@ -898,8 +898,8 @@ class SingleLayer:
             for i in indexes:
                 z = self.forpass(x[i])
                 a = self.activation(z)
-                err_p = -(y[i] - a)
-                w_grad, b_grad = self.backprop(x[i], err_p)
+                err = -(y[i] - a)
+                w_grad, b_grad = self.backprop(x[i], err)
                 self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
                 """<<<+++V3"""
@@ -978,9 +978,9 @@ class SingleLayer:
         z = np.sum(x*self.w) + self.b
         return z
     
-    def backprop(self, x ,err_p):
-        w_grad = x * err_p
-        b_grad = 1 * err_p
+    def backprop(self, x ,err):
+        w_grad = x * err
+        b_grad = 1 * err
         return w_grad, b_grad
     
     def activation(self, z):
@@ -995,8 +995,8 @@ class SingleLayer:
             for i in indexes:
                 z = self.forpass(x[i])
                 a = self.activation(z)
-                err_p = -(y[i] - a)
-                w_grad, b_grad = self.backprop(x[i], err_p)
+                err = -(y[i] - a)
+                w_grad, b_grad = self.backprop(x[i], err)
                 self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
         
@@ -1095,9 +1095,9 @@ class SingleLayer:
         z = np.sum(x*self.w) + self.b
         return z
     
-    def backprop(self, x ,err_p):
-        w_grad = x * err_p
-        b_grad = 1 * err_p
+    def backprop(self, x ,err):
+        w_grad = x * err
+        b_grad = 1 * err
         return w_grad, b_grad
     
     def activation(self, z):
@@ -1115,8 +1115,8 @@ class SingleLayer:
             for i in indexes:
                 z = self.forpass(x[i])
                 a = self.activation(z)
-                err_p = -(y[i] - a)
-                w_grad, b_grad = self.backprop(x[i], err_p)
+                err = -(y[i] - a)
+                w_grad, b_grad = self.backprop(x[i], err)
                 """<<<+++V5+++>>>"""
                 w_grad += self.l1*np.sign(self.w) + self.l2*self.w
                 """<<<+++V5+++>>>"""
@@ -1200,9 +1200,9 @@ class SingleLayer:
         z = np.sum(x*self.w) + self.b
         return z
     
-    def backprop(self, x ,err_p):
-        w_grad = x * err_p
-        b_grad = 1 * err_p
+    def backprop(self, x ,err):
+        w_grad = x * err
+        b_grad = 1 * err
         return w_grad, b_grad
     
     def activation(self, z):
@@ -1217,8 +1217,8 @@ class SingleLayer:
             for i in indexes:
                 z = self.forpass(x[i])
                 a = self.activation(z)
-                err_p = -(y[i] - a)
-                w_grad, b_grad = self.backprop(x[i], err_p)
+                err = -(y[i] - a)
+                w_grad, b_grad = self.backprop(x[i], err)
                 self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
         
@@ -1296,13 +1296,13 @@ class SingleLayer:
         """<<<+++V7+++>>>"""
         return z
     
-    def backprop(self, x ,err_p):
+    def backprop(self, x ,err):
         """<<<+++V7+++>>>"""
         m = len(x)
         """<<<+++V7+++>>>"""
         """<<<---V7--->>>
-        w_grad = x * err_p
-        b_grad = 1 * err_p
+        w_grad = x * err
+        b_grad = 1 * err
         <<<---V7--->>>"""
         """<<<+++V7+++>>>"""
         w_grad = np.dot(x.T, err) / m
@@ -1332,8 +1332,8 @@ class SingleLayer:
             for i in indexes:
                 z = self.forpass(x[i])
                 a = self.activation(z)
-                err_p = -(y[i] - a)
-                w_grad, b_grad = self.backprop(x[i], err_p)
+                err = -(y[i] - a)
+                w_grad, b_grad = self.backprop(x[i], err)
                 self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
             <<<---V7--->>>"""
@@ -1341,7 +1341,7 @@ class SingleLayer:
             z = self.forpass(x)
             a = self.activation(z)
             err = -(y - a)
-            w_grad, b_grad = self.backprop(x, err_p)
+            w_grad, b_grad = self.backprop(x, err)
             self.w -= self.lr*w_grad
             self.b -= rate_b*b_grad
             """<<<+++V7+++>>>"""
