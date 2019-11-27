@@ -676,6 +676,44 @@ class SingleLayer:
     def score(self, x, y):
         return np.mean(self.predict(x) == y)
 ```
+<span class="frame3">Artificial Dataset</span><br>
+```python
+import numpy as np
+from sklearn.model_selection import train_test_split
+
+rv = np.random.RandomState(19)
+x = rv.normal(0,1,(10000,2)); x1 = x[:,0]; x2 = x[:,1]
+y = lambda x1, x2 : 1/(1+np.exp(-3*x1 -5*x2 - 10))
+
+x_train_all, x_test, y_train_all, y_test = train_test_split(x, y(x1,x2), test_size=0.2, random_state=42)
+x_train, x_val, y_train, y_val = train_test_split(x_train_all, y_train_all, test_size=0.2, random_state=42)
+
+layer = SingleLayer()
+layer.fit(x_train,y_train)
+layer.score(x_test,y_test)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br>
+<span class="frame3">Real Dataset</span><br>
+```python
+import numpy as np
+from sklearn.datasets import load_breast_cancer
+from sklearn.model_selection import train_test_split
+
+loaded_dataset = load_breast_cancer()
+x = loaded_dataset.data
+y = loaded_dataset.target
+x_train_all, x_test, y_train_all, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
+x_train, x_val, y_train, y_val = train_test_split(x_train_all, y_train_all, test_size=0.2, random_state=42)
+
+layer=SingleLayer()
+layer.fit(x_train,y_train)
+layer.score(x_test,y_test)
+```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
