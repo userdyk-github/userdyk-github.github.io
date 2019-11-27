@@ -185,7 +185,7 @@ class LogisticNeuron(metric):
                 self.b -= rate_b*b_grad
                 """<<<F1[3]"""        
                 a = np.clip(a, 1e-10, 1 - 1e-10)
-                loss += -(y[i]*np.log(a)+(1-y[i])*np.log(1-a))
+                loss += -(y_i*np.log(a)+(1-y_i)*np.log(1-a))
             self.losses.append(loss/len(y))
             self.loss()
         self.loss_save()
