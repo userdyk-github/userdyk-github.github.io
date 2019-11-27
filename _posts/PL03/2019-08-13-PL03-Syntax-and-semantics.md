@@ -1977,6 +1977,41 @@ returned value of add is not mutiple of 3<br>
 ### ***Generator***
 
 #### Yeild
+```python
+# 'yield(co)' is different 'return(sub)'
+def number_generator():
+    yield 0
+    yield 1
+    yield 2
+    
+for i in number_generator():
+    print(i)
+```
+<p style="font-size: 70%;">
+    0<br>
+1<br>
+2
+</p>
+```python
+g = number_generator()
+print(g.__next__())
+print(g.__next__())
+print(g.__next__())
+print(g.__next__())
+```
+<p style="font-size: 70%;">
+0<br>
+1<br>
+2<br>
+---------------------------------------------------------------------------<br>
+StopIteration                             Traceback (most recent call last)<br>
+<ipython-input-2-694c87e3985d> in <module><br>
+      3 print(g.__next__())<br>
+      4 print(g.__next__())<br>
+----> 5 print(g.__next__())<br>
+<br>
+StopIteration: 
+</p>
 
 <br><br><br>
 
