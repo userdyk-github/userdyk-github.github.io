@@ -1516,7 +1516,7 @@ sgd.score(x_test,y_test)
 <br><br><br>
 <hr class="division2">
 
-## **Dual Layer : multiclass classification**
+## **Dual Layer**
 ### ***Basic model of dual layer***
 <br><br><br>
 
@@ -1532,7 +1532,7 @@ sgd.score(x_test,y_test)
 
 ---
 
-### ***Latest model of dual layer***
+### ***Latest model of dual layer(multiclass classification)***
 ```python
 
 ```
