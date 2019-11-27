@@ -960,8 +960,7 @@ help(object)
 ---
 
 ### ***Built-in function***
-
-#### abs
+<span class="frame3">abs</span><br>
 ```python
 abs(3)
 ```
@@ -983,8 +982,7 @@ abs(-1.2)
 1.2
 ```
 <br>
-
-#### all
+<span class="frame3">all</span><br>
 ```python
 all([1, 2, 3])
 ```
@@ -1000,7 +998,8 @@ False
 ```
 <br>
 
-#### any
+
+<span class="frame3">any</span><br>
 ```python
 any([1, 2, 3, 0])
 ```
@@ -1016,8 +1015,8 @@ False
 ```
 <br>
 
+<span class="frame3">chr</span><br>
 
-#### chr
 ```python
 chr(97)
 ```
@@ -1032,8 +1031,8 @@ chr(48)
 ```
 <br>
 
+<span class="frame3">dir</span><br>
 
-#### dir
 ```python
 dir([1, 2, 3])
 ```
@@ -1049,7 +1048,8 @@ dir({'1':'a'})
 ```
 <br>
 
-#### divmod
+<span class="frame3">divmod</span><br>
+
 ```python
 divmod(7, 3)
 ```
@@ -1065,8 +1065,8 @@ divmod(7, 3)
 ```
 <br>
 
+<span class="frame3">enumerate</span><br>
 
-#### enumerate
 ```python
 for i, name in enumerate(['body', 'foo', 'bar']):
     print(i, name)
@@ -1078,8 +1078,8 @@ for i, name in enumerate(['body', 'foo', 'bar']):
 ```
 <br>
 
+<span class="frame3">eval</span><br>
 
-#### eval
 ```python
 eval('1+2')
 ```
@@ -1102,8 +1102,8 @@ eval('divmod(4, 3)')
 ```
 <br>
 
+<span class="frame3">filter</span><br>
 
-#### filter
 ```python
 
 ```
@@ -1112,8 +1112,8 @@ eval('divmod(4, 3)')
 ```
 <br>
 
+<span class="frame3">hex</span><br>
 
-#### hex
 ```python
 hex(234)
 ```
@@ -1130,7 +1130,7 @@ hex(3)
 <br>
 
 
-#### id
+<span class="frame3">id</span><br>
 ```python
 >>> a = 3
 >>> id(3)
@@ -1156,7 +1156,7 @@ id(b)
 <br>
 
  
-#### input
+<span class="frame3">input</span><br>
 ```python
 >>> a = input()
 hi
@@ -1171,7 +1171,7 @@ Enter: hi
 <br>
 
 
-#### int
+<span class="frame3">int</span><br>
 ```python
 int('3')
 ```
@@ -1187,8 +1187,8 @@ int(3.4)
 ```
 <br>
 
+<span class="frame3">isinstance</span><br>
 
-#### isinstance
 ```python
 class Person: pass
 
@@ -1209,7 +1209,8 @@ False
 <br>
 
 
-#### len
+<span class="frame3">len</span><br>
+
 ```python
 len("python")
 ```
@@ -1233,7 +1234,9 @@ len((1, 'a'))
 <br>
 
 
-#### list
+<span class="frame3">list</span><br>
+
+
 ```python
 list("python")
 ```
@@ -1249,8 +1252,8 @@ list((1,2,3))
 ```
 <br>
 
+<span class="frame3">map</span><br>
 
-#### map
 ```python
 # two_times.py
 def two_times(numberList):
@@ -1275,8 +1278,8 @@ list(map(two_times, [1, 2, 3, 4]))
 ```
 [2, 4, 6, 8]
 ```
+<span class="frame3">max</span><br>
 
-#### max
 ```python
 max([1, 2, 3])
 ```
@@ -1292,8 +1295,8 @@ max("python")
 ```
 <br>
 
+<span class="frame3">min</span><br>
 
-#### min
 ```python
 min([1, 2, 3])
 ```
@@ -1309,8 +1312,8 @@ min("python")
 ```
 <br>
 
+<span class="frame3">oct</span><br>
 
-#### oct
 ```python
 oct(34)
 ```
@@ -1326,8 +1329,7 @@ oct(12345)
 ```
 <br>
 
-
-#### open
+<span class="frame3">open</span><br>
 
 |mode|description|
 |:-|:-|
@@ -1348,8 +1350,8 @@ fappend = open("append_mode.txt", 'a')
 ```
 <br>
 
+<span class="frame3">ord</span><br>
 
-#### ord
 ```python
 ord('a')
 ```
@@ -1365,8 +1367,7 @@ ord('0')
 ```
 <br>
 
-
-#### pow
+<span class="frame3">pow</span><br>
 ```python
 pow(2, 4)
 ```
@@ -1382,8 +1383,8 @@ pow(3, 3)
 ```
 <br>
 
+<span class="frame3">range</span><br>
 
-#### range
 ```python
 list(range(5))
 ```
@@ -1413,8 +1414,8 @@ list(range(0, -10, -1))
 ```
 <br>
 
+<span class="frame3">round</span><br>
 
-#### round
 ```python
 round(4.6)
 ```
@@ -1436,8 +1437,8 @@ round(5.678, 2)
 5.68
 ```
 <br>
+<span class="frame3">sorted</span><br>
 
-#### sorted
 ```python
 sorted([3, 1, 2])
 ```
@@ -1467,8 +1468,8 @@ sorted((3, 2, 1))
 ```
 <br>
 
+<span class="frame3">str</span><br>
 
-#### str
 ```python
 str(3)
 ```
@@ -1491,8 +1492,8 @@ str('hi'.upper())
 ```
 <br>
 
+<span class="frame3">sum</span><br>
 
-#### sum
 ```python
 sum([1,2,3])
 ```
@@ -1508,8 +1509,8 @@ sum((4,5,6))
 ```
 <br>
 
+<span class="frame3">tuple</span><br>
 
-#### tuple
 ```python
 tuple("abc")
 ```
@@ -1532,8 +1533,8 @@ tuple((1, 2, 3))
 ```
 <br>
 
+<span class="frame3">type</span><br>
 
-#### type
 ```python
 type("abc")
 ```
@@ -1555,8 +1556,8 @@ type(open("test", 'w'))
 <class '_io.TextIOWrapper'>
 ```
 <br>
+<span class="frame3">zip</span><br>
 
-#### zip
 ```python
 list(zip([1, 2, 3], [4, 5, 6]))
 ```
