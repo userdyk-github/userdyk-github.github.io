@@ -5134,7 +5134,7 @@ import matplotlib.pyplot as plt
 for i in range(3):
     plt.plot(np.random.rand(10))
 ```
-<details open markdown="1">
+<details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![image](https://user-images.githubusercontent.com/52376448/69665643-25b2be80-10ce-11ea-80ea-34bed87efb2e.png)
@@ -5148,7 +5148,7 @@ for i in range(3):
     plt.plot(np.random.rand(10))
     plt.show()
 ```
-<details open markdown="1">
+<details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![image](https://user-images.githubusercontent.com/52376448/69665668-319e8080-10ce-11ea-9ae7-909c98bc6074.png)
@@ -5171,7 +5171,7 @@ for i in range(10):
     display.clear_output(wait=True)
     #time.sleep(1.0)
 ```
-<details open markdown="1">
+<details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![image](https://user-images.githubusercontent.com/52376448/69688379-3cc2d200-1109-11ea-8508-db66bf7e0c68.png)
@@ -5200,7 +5200,7 @@ ax = fig.add_subplot(1, 1, 1)
 for i in range(10):
     interactive_plot()
 ```
-<details open markdown="1">
+<details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ![image](https://user-images.githubusercontent.com/52376448/69668959-441bb880-10d4-11ea-8eaa-770f6918bced.png)
