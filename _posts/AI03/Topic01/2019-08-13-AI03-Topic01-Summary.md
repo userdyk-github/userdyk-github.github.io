@@ -1340,6 +1340,7 @@ class SingleLayer:
 <span class="frame3">Artificial Dataset</span><br>
 ```python
 import numpy as np
+from sklearn.model_selection import train_test_split
 
 rv = np.random.RandomState(19)
 x = rv.normal(0,1,(10000,2)); x1 = x[:,0]; x2 = x[:,1]
