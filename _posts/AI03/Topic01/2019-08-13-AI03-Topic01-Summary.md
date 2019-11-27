@@ -856,6 +856,7 @@ class SingleLayer:
         self.lr = learning_rate
         """<<<V3>>>"""
         self.val_losses = []
+        self.w_history = []
         """<<<V3>>>"""
     
     """<<<V3>>>"""
@@ -889,6 +890,9 @@ class SingleLayer:
         """V3>>>"""
         self.w = np.ones(x.shape[1])
         self.b = 0
+        """<<<V3>>>"""
+        self.w_history.append(self.w.copy())
+        """<<<V3>>>"""
         for i in range(epochs):
             indexes = np.random.permutation(np.arange(len(x)))            
             for i in indexes:
@@ -898,9 +902,10 @@ class SingleLayer:
                 w_grad, b_grad = self.backprop(x[i], err_p)
                 self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
-            """<<<V3>>>"""
+                """<<<V3"""
+                self.w_history.append(self.w.copy())
             self.update_val_loss(x_val, y_val)
-            """<<<V3>>>"""
+            """V3>>>"""
             
     def predict(self, x):
         z = [self.forpass(x_i) for x_i in x]
