@@ -1148,8 +1148,8 @@ y = lambda x1, x2 : 1/(1+np.exp(-3*x1 -5*x2 - 10))
 x_train_all, x_test, y_train_all, y_test = train_test_split(x, y(x1,x2), test_size=0.2, random_state=42)
 x_train, x_val, y_train, y_val = train_test_split(x_train_all, y_train_all, test_size=0.2, random_state=42)
 
-layer = SingleLayer()
 """<<<V5>>>"""
+layer = SingleLayer(l1=0.01,l2=0)
 layer.fit(x_train,y_train,x_val=x_val,y_val=y_val)
 """<<<V5>>>"""
 layer.score(x_test,y_test)
@@ -1172,8 +1172,8 @@ y = loaded_dataset.target
 x_train_all, x_test, y_train_all, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
 x_train, x_val, y_train, y_val = train_test_split(x_train_all, y_train_all, test_size=0.2, random_state=42)
 
-layer=SingleLayer()
 """<<<V5>>>"""
+layer=SingleLayer(l1=0.01,l2=0)
 layer.fit(x_train,y_train,x_val=x_val,y_val=y_val)
 """<<<V5>>>"""
 layer.score(x_test,y_test)
