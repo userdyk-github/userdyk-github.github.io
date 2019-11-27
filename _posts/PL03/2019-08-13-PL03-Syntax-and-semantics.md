@@ -611,20 +611,252 @@ Person has salary?: False
 ```
 <br><br><br>
 
-#### Class inheritance
+#### Class Inheritance and Inclusion
+<span class="frame3">Inheritance</span><br>
+```python
+class Person:
+    def greeting(self):
+        print('hello')
+
+class Student(Person):
+    def study(self):
+        print('study')
+
+james = Student()
+james.greeting()
+james.study()
+```
+<p style="font-size: 70%;">
+hello<br>
+study
+</p>
+```python
+class Person:
+    def __init__(self):
+        print('Person')
+        self.hello = 'hello'
+    
+class Student(Person):
+    def __init__(self):
+        print('Student')
+        super().__init__()
+        self.school = 'school'
+        
+james = Student()
+print(james.school)
+print(james.hello)
+```
+<p style="font-size: 70%;">
+Student<br>
+Person<br>
+school<br>
+hello
+</p><br>
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Error</summary>
+<hr class='division3'>
+```python
+class Person:
+    def __init__(self):
+        print('Person')
+        self.hello = 'hello'
+    
+class Student(Person):
+    def __init__(self):
+        print('Student')
+        self.school = 'school'
+        
+james = Student()
+print(james.school)
+print(james.hello)
+```
+<p style="font-size: 70%;">
+---> 13 print(james.hello)<br>
+AttributeError: 'Student' object has no attribute 'hello'
+</p>
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Caution</summary>
+<hr class='division3'>
+```python
+class Person:
+    def __init__(self):
+        print('Person')
+        self.hello = 'hello'
+    
+class Student(Person):
+    pass        
+
+james = Student()
+print(james.hello)
+```
+<p style="font-size: 70%;">
+Person<br>
+hello
+</p>
+<hr class='division3'>
+</details>
+<br><br><br>
+<span class="frame3_1">Multiple Inheritance</span><br>
+```python
+class A:
+    def greeting(self):
+        print('hello, A')
+        
+class B(A):
+    def greeting(self):
+        print('hello, B')
+        
+class C(A):
+    def greeting(self):
+        print('hello, C')
+        
+class D(B,C):    # left side has a priority
+    pass
+        
+x = D()
+x.greeting()
+```
+<p style="font-size: 70%;">
+hello, B
+</p><br>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">MRO:Method Resolution Order</summary>
+<hr class='division3'>
+```python
+D.mro()
+```
+<p style="font-size: 70%;">
+[__main__.D, __main__.B, __main__.C, __main__.A, object]
+</p>
+<hr class='division3'>
+</details>
+
+
+<br><br><br>
+<span class="frame3">Inclusion</span><br>
+```python
+class Person:
+    def greeting(self):
+        print('hello')
+
+class PersonList():
+    def __init__(self):
+        self.person_list = []
+        
+    def append_person(self, person):
+        self.person_list.append(person)
+
+recode = PersonList()
+james = Person()
+recode.append_person(james)
+recode.person_list
+```
+<p style="font-size: 70%;">
+    [<__main__.Person at 0x7f2158a17e48>]
+</p>
 
 <br><br><br>
 
 #### Overiding Class
+```python
+class Person:
+    def greeting(self):
+        print('hello, Person')
 
+class Student(Person):
+    def greeting(self):
+        print('hello, Student')
+
+james = Student()
+james.greeting()
+```
+<p style="font-size: 70%;">
+hello, Student
+</p>
+
+```python
+class Person:
+    def greeting(self):
+        print('hello, Person')
+
+class Student(Person):
+    def greeting(self):
+        super().greeting()
+        print('hello, Student')
+
+james = Student()
+james.greeting()
+```
+<p style="font-size: 70%;">
+hello, Person<br>
+hello, Student
+</p>
 <br><br><br>
 
 #### Abstract Class
+```python
+from abc import *   # abc : abstract base class
+
+class StudentBase(metaclass=ABCMeta):
+    @abstractmethod
+    def study(self):
+        pass
+    
+    @abstractmethod
+    def go_to_school(self):
+        pass
+    
+class Student(StudentBase):
+    def study(self):
+        print('study')
+
+    def go_to_school(self):
+        print('go to school')
+        
+james = Student()
+james.study()
+james.go_to_school()
+```
+<p style="font-size: 70%;">
+    study<br>
+go to school
+</p><br>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Error</summary>
+<hr class='division3'>
+```python
+from abc import *   # abc : abstract base class
+
+class StudentBase(metaclass=ABCMeta):
+    @abstractmethod
+    def study(self):
+        pass
+    
+    @abstractmethod
+    def go_to_school(self):
+        pass
+    
+class Student(StudentBase):
+    def study(self):
+        print('study')
+
+james = Student()
+```
+<p style="font-size: 70%;">
+---> 16 james = Student()<br>
+TypeError: Can't instantiate abstract class Student with abstract methods go_to_school
+</p>
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
 #### Meta Class
-
+<p style="font-size: 70%;">
+</p>
 <br><br><br>
 
 
