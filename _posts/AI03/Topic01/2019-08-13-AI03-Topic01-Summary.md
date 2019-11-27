@@ -352,7 +352,7 @@ class LogisticNeuron:
         self.w = np.ones(x.shape[1])
         self.b = 1.0
         for i in range(epochs):
-            """<<<F3[1]>>>"""
+            """<<<F4[1]>>>"""
             indexes = np.random.permutation(np.arange(len(x))) 
             for i in indexes:                                  
                 z = self.forpass(x[i])                         
@@ -361,7 +361,7 @@ class LogisticNeuron:
                 w_grad, b_grad = self.backprop(x[i], err_p)    
                 self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
-            """<<<F3[1]>>>"""
+            """<<<F4[1]>>>"""
             
     def predict(self, x):
         z = [self.forpass(x_i) for x_i in x]
