@@ -611,6 +611,23 @@ Person has salary?: False
 ```
 <br><br><br>
 
+#### Class inheritance
+
+<br><br><br>
+
+#### Overiding Class
+
+<br><br><br>
+
+#### Abstract Class
+
+<br><br><br>
+
+#### Meta Class
+
+<br><br><br>
+
+
 ---
 
 ### ***Module***
