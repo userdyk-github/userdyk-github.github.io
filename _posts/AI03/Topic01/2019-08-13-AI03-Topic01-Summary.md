@@ -532,7 +532,7 @@ sgd.score(x_test,y_test)
 
 <hr class="division2">
 
-## **Training skills on sigle layer**
+## **Training skills on sigle layer(binaray classification)**
 
 ### ***Version 0 : Basic model of single layer***
 Bias(F3) + Shuffle(F4)
