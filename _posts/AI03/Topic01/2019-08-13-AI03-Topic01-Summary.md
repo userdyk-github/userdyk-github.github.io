@@ -396,143 +396,9 @@ layer.fit(x_train,y_train)
 ```
 <br><br><br>
 
-### ***Latest Version SingleLayer***
-```python
-class metric():
-    def __init__(self):
-        self.losses = []
-        self.weights = []
-        
-    def loss(self):
-        plt.clf()
-        plt.grid(True)
-        plt.plot(self.losses)
-        plt.xlabel('Epochs')
-        plt.ylabel('Loss')
-        display.display(plt.gcf())
-        #display.clear_output(wait=True)
-
-    def loss_save(self):
-        np.savetxt('loss.txt', self.losses)
-        plt.clf()
-        plt.grid(True)
-        plt.plot(self.losses)
-        plt.xlabel('Epochs')
-        plt.ylabel('Loss')
-        plt.savefig('loss.jpg')
-        
-    def w_history(self):
-        print(*self.w, self.b)
-        display.clear_output(wait=True)
-
-    def w_history_save(self):
-        np.savetxt('weight.txt', self.weights)
-
-
-class SingleLayer(metric):
-    def __init__(self, learning_rate=0.001):
-        super().__init__()
-        self.w = None
-        self.b = None
-        self.lr = learning_rate                
-    
-    def forpass(self, x):
-        z = np.sum(x*self.w) + self.b
-        return z
-    
-    def backprop(self, x ,err):
-        w_grad = x * err
-        b_grad = 1 * err
-        return w_grad, b_grad
-    
-    def add_bias(self, x):
-        return np.c_p[np.ones((x.shape[0],1)),x]
-    
-    def activation(self, z):
-        a = 1 / (1 + np.exp(-z))
-        return a
-    
-    def fit(self, x, y, epochs=100, rate_b=1):
-        self.w = np.ones(x.shape[1])
-        self.b = 1.0
-        for i in range(epochs):
-            loss = 1.0
-            indexes = np.random.permutation(np.arange(len(x)))
-            for i in indexes:
-                z = self.forpass(x[i])
-                a = self.activation(z)
-                err = -(y[i] - a)
-                w_grad, b_grad = self.backprop(x[i], err)
-                self.w -= self.lr*w_grad
-                self.b -= rate_b*b_grad
-                a = np.clip(a, 1e-10, 1 - 1e-10)                
-                loss += -(y[i]*np.log(a)+(1-y[i])*np.log(1-a))
-            self.losses.append(loss/len(y))
-            self.loss()
-            self.weights.append([*self.w, self.b])
-            self.w_history()
-        self.loss_save()
-        self.w_history_save()
-        
-    def predict(self, x):
-        z = [self.forpass(x_i) for x_i in x]
-        return np.array(z) > 0
-    
-    def score(self, x, y):
-        return np.mean(self.predict(x) == y)
-```
-<span class="frame3">Artificial Dataset</span><br>
-```python
-import numpy as np
-
-rv = np.random.RandomState(19)
-x = rv.normal(0,1,(10000,2)); x1 = x[:,0]; x2 = x[:,1]
-y = lambda x1, x2 : 1/(1+np.exp(-3*x1 -5*x2 - 10))
-
-layer = SingleLayer()
-layer.fit(x,y(x1,x2))
-```
-<span class="frame3">Real Dataset</span><br>
-```python
-import numpy as np
-from sklearn.datasets import load_breast_cancer
-from sklearn.model_selection import train_test_split
-
-loaded_dataset = load_breast_cancer()
-x = loaded_dataset.data
-y = loaded_dataset.target
-x_train, x_test, y_train, y_test = train_test_split(x,y,stratify=y,test_size=0.2,random_state=42)
-
-layer=SingleLayer()
-layer.fit(x_train,y_train)
-layer.score(x_test,y_test)
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">by scikit-learn</summary>
-<hr class='division3'>
-```python
-import numpy as np
-from sklearn.datasets import load_breast_cancer
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import SGDClassifier
-
-loaded_dataset = load_breast_cancer()
-x = loaded_dataset.data
-y = loaded_dataset.target
-x_train, x_test, y_train, y_test = train_test_split(x,y,stratify=y,test_size=0.2,random_state=42)
-
-sgd = SGDClassifier(loss='log', max_iter=100, tol=1e-3, random_state=42)
-sgd.fit(x_train, y_train)
-sgd.score(x_test,y_test)
-```
-<hr class='division3'>
-</details>
-
-<br><br><br>
-
 <hr class="division2">
 
-## **Training skills on sigle layer(binaray classification)**
+## **Sigle layer : binaray classification**
 
 ### ***Basic model of single layer***
 Bias(F3) + Shuffle(F4)
@@ -1404,26 +1270,221 @@ layer.score(x_test,y_test)
 
 <br><br><br>
 
+---
+
+### ***Latest model of singleLayer***
+
+
+<br><br><br>
+
+---
+
+### ***Custumized model of singleLayer***
+```python
+class metric():
+    def __init__(self):
+        self.losses = []
+        self.weights = []
+        
+    def loss(self):
+        plt.clf()
+        plt.grid(True)
+        plt.plot(self.losses)
+        plt.xlabel('Epochs')
+        plt.ylabel('Loss')
+        display.display(plt.gcf())
+        #display.clear_output(wait=True)
+
+    def loss_save(self):
+        np.savetxt('loss.txt', self.losses)
+        plt.clf()
+        plt.grid(True)
+        plt.plot(self.losses)
+        plt.xlabel('Epochs')
+        plt.ylabel('Loss')
+        plt.savefig('loss.jpg')
+        
+    def w_history(self):
+        print(*self.w, self.b)
+        display.clear_output(wait=True)
+
+    def w_history_save(self):
+        np.savetxt('weight.txt', self.weights)
+
+
+class SingleLayer(metric):
+    def __init__(self, learning_rate=0.001):
+        super().__init__()
+        self.w = None
+        self.b = None
+        self.lr = learning_rate                
+    
+    def forpass(self, x):
+        z = np.sum(x*self.w) + self.b
+        return z
+    
+    def backprop(self, x ,err):
+        w_grad = x * err
+        b_grad = 1 * err
+        return w_grad, b_grad
+    
+    def add_bias(self, x):
+        return np.c_p[np.ones((x.shape[0],1)),x]
+    
+    def activation(self, z):
+        a = 1 / (1 + np.exp(-z))
+        return a
+    
+    def fit(self, x, y, epochs=100, rate_b=1):
+        self.w = np.ones(x.shape[1])
+        self.b = 1.0
+        for i in range(epochs):
+            loss = 1.0
+            indexes = np.random.permutation(np.arange(len(x)))
+            for i in indexes:
+                z = self.forpass(x[i])
+                a = self.activation(z)
+                err = -(y[i] - a)
+                w_grad, b_grad = self.backprop(x[i], err)
+                self.w -= self.lr*w_grad
+                self.b -= rate_b*b_grad
+                a = np.clip(a, 1e-10, 1 - 1e-10)                
+                loss += -(y[i]*np.log(a)+(1-y[i])*np.log(1-a))
+            self.losses.append(loss/len(y))
+            self.loss()
+            self.weights.append([*self.w, self.b])
+            self.w_history()
+        self.loss_save()
+        self.w_history_save()
+        
+    def predict(self, x):
+        z = [self.forpass(x_i) for x_i in x]
+        return np.array(z) > 0
+    
+    def score(self, x, y):
+        return np.mean(self.predict(x) == y)
+```
+<span class="frame3">Artificial Dataset</span><br>
+```python
+import numpy as np
+
+rv = np.random.RandomState(19)
+x = rv.normal(0,1,(10000,2)); x1 = x[:,0]; x2 = x[:,1]
+y = lambda x1, x2 : 1/(1+np.exp(-3*x1 -5*x2 - 10))
+
+layer = SingleLayer()
+layer.fit(x,y(x1,x2))
+```
+<span class="frame3">Real Dataset</span><br>
+```python
+import numpy as np
+from sklearn.datasets import load_breast_cancer
+from sklearn.model_selection import train_test_split
+
+loaded_dataset = load_breast_cancer()
+x = loaded_dataset.data
+y = loaded_dataset.target
+x_train, x_test, y_train, y_test = train_test_split(x,y,stratify=y,test_size=0.2,random_state=42)
+
+layer=SingleLayer()
+layer.fit(x_train,y_train)
+layer.score(x_test,y_test)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">by scikit-learn</summary>
+<hr class='division3'>
+```python
+import numpy as np
+from sklearn.datasets import load_breast_cancer
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import SGDClassifier
+
+loaded_dataset = load_breast_cancer()
+x = loaded_dataset.data
+y = loaded_dataset.target
+x_train, x_test, y_train, y_test = train_test_split(x,y,stratify=y,test_size=0.2,random_state=42)
+
+sgd = SGDClassifier(loss='log', max_iter=100, tol=1e-3, random_state=42)
+sgd.fit(x_train, y_train)
+sgd.score(x_test,y_test)
+```
+<hr class='division3'>
+</details>
+
+<br><br><br>
+
+<hr class="division2">
+
+## **Dual Layer : multiclass classification**
+### ***Basic model of dual layer***
+<br><br><br>
+
+---
+
+### ***Latest model of dual layer***
+<br><br><br>
+
+---
+
+### ***Custumized model of dual layer***
+<br><br><br>
+
+---
+
+### ***Example : minist***
+<br><br><br>
+
 <hr class="division2">
 
 ## **Multi Layer**
-### ***Dual Layer***
+### ***Basic model of multi layer***
 <br><br><br>
 
-<hr class="division2">
+---
 
-## **Classification**
+### ***Latest model of multi layer***
 <br><br><br>
 
+---
+
+### ***Custumized model of multi layer***
+
+<br><br><br>
 <hr class="division2">
+
 
 ## **Convolutional neural network**
+
+### ***Basic model of CNN***
+<br><br><br>
+
+---
+
+### ***Latest model of CNN***
+<br><br><br>
+
+---
+
+### ***Custumized model of CNN***
 <br><br><br>
 
 <hr class="division2">
 
 ## **Recurrent neural network**
+
+### ***Basic model of RNN***
 <br><br><br>
+
+---
+
+### ***Latest model of RNN***
+<br><br><br>
+
+---
+
+### ***Custumized model of RNN***
+<br><br><br>
+
 
 <hr class="division1">
 
