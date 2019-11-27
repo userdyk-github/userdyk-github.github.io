@@ -121,8 +121,8 @@ X = np.linspace(-10, 10, 1024)
 Y = np.sinc(X)
 
 plt.plot(X, Y)
-plt.show()
 plt.savefig('sinc.png', c = 'k')
+plt.show()
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
