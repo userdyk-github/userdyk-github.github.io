@@ -2004,9 +2004,6 @@ print(g.__next__())
 0<br>
 1<br>
 2<br>
----------------------------------------------------------------------------<br>
-StopIteration                             Traceback (most recent call last)<br>
-<ipython-input-2-694c87e3985d> in <module><br>
       3 print(g.__next__())<br>
       4 print(g.__next__())<br>
 ----> 5 print(g.__next__())<br>
