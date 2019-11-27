@@ -112,7 +112,6 @@ class LogisticNeuron:
                 w_grad, b_grad = self.backprop(x_i,err_p)
                 self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
-                print(self.w, self.b)
     
     def predict(self, x):
         z = [self.forpass(x_i) for x_i in x]
