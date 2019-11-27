@@ -123,12 +123,29 @@ class LogisticNeuron:
 <summary class='jb-small' style="color:blue">Add : Function 1, loss history</summary>
 <hr class='division3'>
 ```python
-class LogisticNeuron:
+class metric():
+    def __init__(self):
+        """<<<F1>>>"""
+        self.losses = []
+        """<<<F1>>>"""
+        
+    """<<<F1>>>"""    
+    def loss(self):
+        plt.clf()
+        plt.plot(self.losses)
+        display.display(plt.gcf())
+        display.clear_output(wait=True)
+
+    def loss_save(self):
+        np.savetxt('loss.txt', self.losses)
+    """<<<F1>>>"""    
+        
+class LogisticNeuron(metric):
     def __init__(self, learning_rate=0.001):
+        super().__init__()
         self.w = None
         self.b = None
-        self.lr = learning_rate        
-        self.losses = []                                       # F1
+        self.lr = learning_rate
         
     def forpass(self, x):
         z = np.sum(x*self.w) + self.b
@@ -147,7 +164,9 @@ class LogisticNeuron:
         self.w = np.ones(x.shape[1])
         self.b = 1.0
         for i in range(epochs):
-            loss = 0                                           # F1
+            """<<<F1>>>"""
+            loss = 0
+            """<<<F1>>>"""
             for x_i, y_i in zip(x,y):
                 z = self.forpass(x_i)
                 a = self.activation(z)
@@ -155,11 +174,14 @@ class LogisticNeuron:
                 w_grad, b_grad = self.backprop(x_i,err_p)
                 self.w -= self.lr*w_grad
                 self.b -= rate_b*b_grad
-                print(self.w, self.b)
-                a = np.clip(a, 1e-10, 1 - 1e-10)               # F1               
-                loss += -(y[i]*np.log(a)+(1-y[i])*np.log(1-a)) # F1
-            self.losses.append(loss/len(y))                    # F1
-            
+                """<<<F1"""        
+                a = np.clip(a, 1e-10, 1 - 1e-10)
+                loss += -(y[i]*np.log(a)+(1-y[i])*np.log(1-a))
+            self.losses.append(loss/len(y))
+            self.loss()
+        self.loss_save()
+        """F1>>>"""
+        
     def predict(self, x):
         z = [self.forpass(x_i) for x_i in x]
         a = self.activation(np.array(z))
