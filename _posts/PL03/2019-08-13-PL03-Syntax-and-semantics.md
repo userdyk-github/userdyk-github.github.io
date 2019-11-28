@@ -2012,7 +2012,27 @@ StopIteration:
 </p>
 
 <br><br><br>
+```python
+def number_generator(stop):
+    n = 0
+    while n < stop :
+        yield n
+        n += 1
+        
+for i in number_generator(3):
+    print(i)
 
+for i in range(3):
+    print(i)
+```
+<p style="font-size: 70%;">
+0<br>
+1<br>
+2<br>
+0<br>
+1<br>
+2<br>
+</p>
 
 <hr class="division2">
 
