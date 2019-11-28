@@ -2081,7 +2081,8 @@ def number_generator2():
     yield from x
     
 for i in number_generator2():
-    print(i)```
+    print(i)
+```
 <p style="font-size: 70%;">
 0<br>
 1<br>
@@ -2093,6 +2094,8 @@ for i in number_generator2():
 </p>
 
 <br><br><br>
+
+
 
 <hr class="division2">
 
