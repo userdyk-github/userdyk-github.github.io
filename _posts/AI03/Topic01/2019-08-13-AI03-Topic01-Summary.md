@@ -1676,6 +1676,46 @@ class DualLayer:
 ## **Convolutional neural network : computer vision**
 
 ### ***Basic model of CNN***
+#### conv1d
+```python
+def conv1d(x,w, p=0, s=1):
+    w_rot = np.array(w[::-1])
+    x_padded = np.array(x)
+    if p > 0 :
+        zero_pad = np.zeros(shape=p)
+        x_padded = np.concatenate([zero_pad,x_padded,zero_pad])
+    res = []
+    for i in range(0, int(len(x)/s),s):
+        res.append(np.sum(x_padded[i:i+w_rot.shape[0]] * w_rot))
+        
+    return np.array(res)
+```
+
+<br><br><br>
+
+#### conv2d
+```python
+def conv2d(X,W, p=(0,0), s=(1,1)):
+    W_rot = np.array(W)[::-1,::-1]
+    X_orig = np.array(X)
+    n1 = X_orig.shape[0] + 2*p[0]
+    n2 = X_orig.shape[1] + 2*p[1]
+    X_padded = np.zeros(shape=(n1,n2))
+    X_padded[p[0]:p[0]+X_orig.shape[0],
+             p[1]:p[1]+X_orig.shape[1]] = X_orig
+    
+    res = []
+    for i in range(0, int((X_padded.shape[0]-W_rot.shape[0])/s[0])+1, s[0]):
+        res.append([])
+        for j in range(0, int((X_padded.shape[1]-W_rot.shape[1])/s[1])+1, s[1]):
+            X_sub = X_padded[i:i+W_rot.shape[0],
+                             j:j+W_rot.shape[1]]
+            res[-1].append(np.sum(X_sub*W_rot))
+    return np.array(res)
+```
+
+
+
 <br><br><br>
 
 ---
