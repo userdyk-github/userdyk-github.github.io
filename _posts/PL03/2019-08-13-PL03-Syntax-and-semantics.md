@@ -955,6 +955,10 @@ help(object)
 
 ### ***Exception handling***
 
+#### Python error hierarchy
+<a href="https://docs.python.org/3/library/exceptions.html" target="_blank">URL</a>
+![image](https://user-images.githubusercontent.com/52376448/69781536-db2a6280-11f1-11ea-8e93-86e166cf3425.png)
+
 <br><br><br>
 
 ---
