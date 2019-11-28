@@ -2031,8 +2031,24 @@ for i in range(3):
 2<br>
 0<br>
 1<br>
-2<br>
+2
 </p>
+<br><br><br>
+```python
+g = number_generator(3)
+print(next(g))
+print(next(g))
+print(next(g))
+```
+<p style="font-size: 70%;">
+0<br>
+1<br>
+2
+</p>
+<br><br><br>
+
+
+<br><br><br>
 
 <hr class="division2">
 
