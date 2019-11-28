@@ -2033,7 +2033,6 @@ for i in range(3):
 1<br>
 2
 </p>
-<br><br><br>
 ```python
 g = number_generator(3)
 print(next(g))
@@ -2046,7 +2045,25 @@ print(next(g))
 2
 </p>
 <br><br><br>
+```python
+def upper_generator(x):
+    for i in x:
+        yield i.upper()
 
+fruits = ['apple', 'pear', 'grape']
+
+for i in upper_generator(fruits):
+    print(i)
+    
+    
+for i in fruits:
+    print(i.upper())
+```
+<p style="font-size: 70%;">
+0<br>
+1<br>
+2
+</p>
 
 <br><br><br>
 
