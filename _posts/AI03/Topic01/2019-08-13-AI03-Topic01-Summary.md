@@ -1580,7 +1580,6 @@ class DualLayer:
         self.b2 = np.zeros(n_classes)
         
     def fit(self, x, y, epochs=100, x_val=None, y_val=None):
-        np.random.seed(42)
         self.init_weights(x.shape[1], y.shape[1])
         for _ in range(epochs):
             loss = 0
