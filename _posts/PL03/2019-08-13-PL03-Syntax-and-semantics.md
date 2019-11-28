@@ -955,6 +955,24 @@ help(object)
 
 ### ***Exception handling***
 
+```python
+try:
+    x = int(input('enter number : '))
+    y = 10 / x 
+except ZeroDivisionError:    # if exception is occured
+    print('cannot divide')
+else:                        # if exception is not occured
+    print(y)
+finally:                     # always
+    print('end')
+```
+<p style="font-size: 70%;">
+enter number : 2<br>
+5.0<br>
+end
+
+</p>
+<br><br><br>
 #### Python error hierarchy
 <a href="https://docs.python.org/3/library/exceptions.html" target="_blank">URL</a>
 ![image](https://user-images.githubusercontent.com/52376448/69781536-db2a6280-11f1-11ea-8e93-86e166cf3425.png)
