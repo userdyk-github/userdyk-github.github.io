@@ -2067,18 +2067,29 @@ for i in fruits:
 
 <br><br><br>
 ```python
-def number_generator():
+def number_generator1():
     x = [1,2,3]
     for i in x:
         yield i
 
-for i in number_generator():
+for i in number_generator1():
     print(i)
-```
+    
+    
+def number_generator2():
+    x = [1,2,3]
+    yield from x
+    
+for i in number_generator2():
+    print(i)```
 <p style="font-size: 70%;">
 0<br>
 1<br>
+2<br>
+0<br>
+1<br>
 2
+
 </p>
 
 <br><br><br>
