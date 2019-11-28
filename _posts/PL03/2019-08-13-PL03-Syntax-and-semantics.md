@@ -2094,7 +2094,27 @@ for i in number_generator2():
 </p>
 
 <br><br><br>
+```python
+def number_generator(stop):
+    n = 0
+    while n < stop:
+        yield n
+        n += 1
+        
+def three_generator():
+    yield from number_generator(3)
+    
+for i in three_generator():
+    print(i)
+```
+<p style="font-size: 70%;">
+0<br>
+1<br>
+2
 
+</p>
+
+<br><br><br>
 
 
 <hr class="division2">
