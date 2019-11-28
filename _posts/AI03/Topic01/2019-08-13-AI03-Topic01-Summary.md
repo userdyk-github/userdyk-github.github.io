@@ -1273,6 +1273,7 @@ layer.score(x_test,y_test)
 ---
 
 ### ***Latest model of singleLayer***
+#### Stochastic
 ```python
 class SingleLayer:
     def __init__(self, learning_rate=0.1, l1=0, l2=0):
@@ -1372,6 +1373,15 @@ layer.score(x_test,y_test)
 ```
 
 <br><br><br>
+#### Mini-batch
+
+<br><br><br>
+
+
+#### Batch
+
+<br><br><br>
+
 
 ---
 
