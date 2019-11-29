@@ -633,6 +633,7 @@ $ htop
 ```
 ```bash
 $ vmstat
+$ vmstat 1
 ```
 <br><br><br>
 
