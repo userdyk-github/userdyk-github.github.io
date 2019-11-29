@@ -628,10 +628,14 @@ f
 
 
 <br><br><br>
+<span class="frame">Summary for management of resource</span><br>
 ```bash
+$ top
 $ htop
-```
-```bash
+
+$ df -m
+$ du -sm
+
 $ vmstat
 $ vmstat 1
 ```
