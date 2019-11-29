@@ -596,7 +596,6 @@ $ ps -f          # displaying relationship about process
 ```bash
 $ kill -9 [pid]
 ```
-
 <details markdown="1">
 <summary class='jb-small' style="color:blue">process status</summary>
 <hr class='division3'>
@@ -632,7 +631,9 @@ f
 ```bash
 $ htop
 ```
-
+```bash
+$ vmstat
+```
 <br><br><br>
 
 #### deamon process
