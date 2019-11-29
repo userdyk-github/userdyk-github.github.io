@@ -632,10 +632,8 @@ f
 ```bash
 $ top
 $ htop
-
-$ df -m
-$ du -sm
-
+$ df -h
+$ du -sh
 $ vmstat
 $ vmstat 1
 ```
