@@ -82,7 +82,6 @@ title: RESEARCH
 >> <a href='https://ai.tencent.com/ailab/en/index/' target="_blank">research</a>|<a href='https://ai.tencent.com/ailab/en/recruit' target="_blank">careers</a>|<br> 
 > <a href='' target="_blank"></a> 
 
-<br><br><br>
 <span class="frame3">USA</span><br>
 
 > FACEBOOK
@@ -133,7 +132,6 @@ title: RESEARCH
 
 
 
-<br><br><br>
 
 
 #### _Domestic_
