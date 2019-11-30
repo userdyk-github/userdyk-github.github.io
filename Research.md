@@ -85,9 +85,8 @@ title: RESEARCH
 <br><br><br>
 <span class="frame3">USA</span><br>
 
-
 > FACEBOOK
->> <a href='https://research.fb.com/' target="_blank">research</a>|<a href='https://research.fb.com/careers/' target="_blank">careers</a>|<br> 
+>> <a href='https://research.fb.com/' target="_blank">research 1</a>|<a href='https://ai.facebook.com/' target="_blank">research 2</a>|<a href='https://research.fb.com/careers/' target="_blank">careers</a>|<br> 
 > <a href='' target="_blank"></a>
 
 
