@@ -11,7 +11,7 @@ tags : [AI01]
 <hr class="division1">
 
 - <a href="www.kaggle.com/" target="_blank">Kaggle</a>
-- <a href="www.data.gov/" target="_blank">US Government Open Data</a>
+- <a href="https://www.data.gov/" target="_blank">US Government Open Data</a>
 - <a href="https://data.gov.in/" target="_blank">Indian Government Open Data</a>
 - <a href="https://registry.opendata.aws/" target="_blank">Amazon Web Service Datasets</a>
 - <a href="https://toolbox.google.com/datasetsearch" target="_blank">Google Dataset Search</a>
