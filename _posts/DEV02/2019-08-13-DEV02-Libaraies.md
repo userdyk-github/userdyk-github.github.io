@@ -1,6 +1,6 @@
 ---
 layout : post
-title : DEV02, Library
+title : DEV02, Libraries
 categories: [DEV02]
 comments : true
 tags : [DEV02]
