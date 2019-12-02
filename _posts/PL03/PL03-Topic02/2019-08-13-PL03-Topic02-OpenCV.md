@@ -27,6 +27,8 @@ List of posts to read before reading this article
 <a href="https://docs.opencv.org/master/d2/de6/tutorial_py_setup_in_ubuntu.html" target="_blank">URL</a>
 ```bash
 $ apt-get install python-opencv
+$ pip install opencv-python
+$ conda install opencv
 ```
 
 <br><br><br>
