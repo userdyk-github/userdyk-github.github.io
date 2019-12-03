@@ -188,6 +188,11 @@ $ tar -zxvf [file_name.tar.gz]         # unzip .tar.gz
 $ gzip [file_name]            # file_name to file_name.gz
 $ gzip -d [file_name].gz      # file_name.gz to file_name 
 ```
+<span class="frame3">Split zip file</span><br>
+```bash
+$ cat *.tar.gz.* | tar xvfz -       # unzip .tar.gz
+$ cat *.tar.* | tar xvfz -          # unzip .tar
+```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
 <hr class='division3'>
