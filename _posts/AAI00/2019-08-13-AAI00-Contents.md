@@ -1,7 +1,11 @@
 ---
 layout : post
-title : AAI01, Contents
-categories: [AAI01]
+title : AAI00, Contents
+categories: [AAI00]
 comments : true
-tags : [AAI01]
+tags : [AAI00]
 ---
+
+- <a href='' class='jb-medium'></a>
+- <a href='' class='jb-medium'></a>
+- <a href='' class='jb-medium'></a>
