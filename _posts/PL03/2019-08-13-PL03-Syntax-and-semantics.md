@@ -1353,15 +1353,19 @@ oct(12345)
 
 <span class="frame3">open</span><br>
 
-|mode|description|
-|:-|:-|
-|w|write|
-|r|read|
-|a|append|
-|b|binary|
+|mode|description|method|
+|:-|:-|:-|
+|w|write||
+|r|read|seek,read,readline,readlines|
+|a|append||
+|b|binary||
 
 ```python
 f = open("binary_file", "rb")
+f.close()
+
+with open("binary_file","rb") as f:
+    pass
 ```
 ```python
 fread = open("read_mode.txt", 'r')
