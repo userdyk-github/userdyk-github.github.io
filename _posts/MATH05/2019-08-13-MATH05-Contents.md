@@ -6,6 +6,8 @@ comments : true
 tags : [MATH05]
 ---
 
+## _MATH05 : Statistics_
+
 - <a href="https://userdyk-github.github.io/math05/MATH05-Probability.html" class="jb-medium">Probability</a>
 - <a href="https://userdyk-github.github.io/math05/MATH05-Descriptive-statistics.html" class="jb-medium">Descriptive statistics</a>
 - <a href="https://userdyk-github.github.io/math05/MATH05-Distribution.html" class="jb-medium">Distribution</a>
