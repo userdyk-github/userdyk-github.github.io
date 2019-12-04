@@ -20,18 +20,20 @@ List of posts to read before reading this article
 {:toc}
 
 <hr class="division1">
-
-## **File Input/Output**
-
-### ***Input/Output .csv files***
-
----
-
-### ***Input/Output .txt files***
-
+## **File input/output**
+<br><br><br>
 <hr class="division2">
 
-## **Data preprocessing**
+## **txt**
+<br><br><br>
+<hr class="division2">
+## **csv**
+<br><br><br>
+<hr class="division2">
+## **xlsx**
+<br><br><br>
+
+<hr class="division2">
 
 
 <hr class="division1">
