@@ -336,6 +336,7 @@ Mass Point</a><br>
 
 ## _MATH06 : Optimization_
 
+> <a href='https://userdyk-github.github.io/math06/MATH06-Convex-analysis.html'>Convex analysis</a><br>
 > <a href='https://userdyk-github.github.io/math06/MATH06-Univariate-optimization.html'>Univariate optimization</a><br>
 > <a href='https://userdyk-github.github.io/math06/MATH06-Unconstrained-multivariate-optimization.html'>Unconstrained multivariate optimization</a><br>
 > <a href='https://userdyk-github.github.io/math06/MATH06-Nonlinear-least-square-problems.html'>Nonlinear least square problems</a><br>
