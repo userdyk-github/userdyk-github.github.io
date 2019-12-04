@@ -1146,6 +1146,161 @@ layer.score(x_test,y_test)
 
 
 ### ***Version 7 : Vectorization***
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Vectorization method</summary>
+<hr class='division3'>
+<span class="frame3">Dot product</span><br>
+```python
+# Dot product 
+import time 
+import numpy 
+import array 
+
+# 8 bytes size int 
+a = array.array('q') 
+for i in range(100000): 
+    a.append(i); 
+
+b = array.array('q') 
+for i in range(100000, 200000): 
+    b.append(i) 
+
+# classic dot product of vectors implementation 
+tic = time.process_time() 
+dot = 0.0; 
+
+for i in range(len(a)): 
+    dot += a[i] * b[i] 
+
+toc = time.process_time() 
+
+print("dot_product = "+ str(dot)); 
+print("Computation time = " + str(1000*(toc - tic )) + "ms", '\n\n') 
+
+
+
+n_tic = time.process_time() 
+n_dot_product = numpy.dot(a, b) 
+n_toc = time.process_time() 
+
+print("n_dot_product = "+str(n_dot_product)) 
+print("Computation time = "+str(1000*(n_toc - n_tic ))+"ms") 
+```
+<p>
+dot_product = 833323333350000.0<br>
+Computation time = 46.50096700000006ms<br><br> 
+
+n_dot_product = 833323333350000<br>
+Computation time = 1.0852390000000156ms
+</p>
+<br><br><br>
+<span class="frame3">Outer product</span><br>
+```python
+# Outer product 
+import time 
+import numpy 
+import array 
+
+a = array.array('i') 
+for i in range(200): 
+    a.append(i); 
+
+b = array.array('i') 
+for i in range(200, 400): 
+    b.append(i) 
+
+# classic outer product of vectors implementation 
+tic = time.process_time() 
+outer_product = numpy.zeros((200, 200)) 
+
+for i in range(len(a)): 
+    for j in range(len(b)): 
+        outer_product[i][j]= a[i]*b[j] 
+
+toc = time.process_time() 
+
+print("outer_product = "+ str(outer_product)); 
+print("Computation time = "+str(1000*(toc - tic ))+"ms", '\n\n') 
+
+
+
+n_tic = time.process_time() 
+outer_product = numpy.outer(a, b) 
+n_toc = time.process_time() 
+
+print("outer_product = "+str(outer_product)); 
+print("Computation time = "+str(1000*(n_toc - n_tic ))+"ms") 
+```
+<p>
+outer_product = [[    0.     0.     0. ...     0.     0.     0.]<br>
+ [  200.   201.   202. ...   397.   398.   399.]<br>
+ [  400.   402.   404. ...   794.   796.   798.]<br>
+ ...<br>
+ [39400. 39597. 39794. ... 78209. 78406. 78603.]<br>
+ [39600. 39798. 39996. ... 78606. 78804. 79002.]<br>
+ [39800. 39999. 40198. ... 79003. 79202. 79401.]]<br>
+Computation time = 32.9991500000002ms <br><br>
+
+
+outer_product = [[    0     0     0 ...     0     0     0]<br>
+ [  200   201   202 ...   397   398   399]<br>
+ [  400   402   404 ...   794   796   798]<br>
+ ...<br>
+ [39400 39597 39794 ... 78209 78406 78603]<br>
+ [39600 39798 39996 ... 78606 78804 79002]<br>
+ [39800 39999 40198 ... 79003 79202 79401]]<br>
+Computation time = 0.24932600000049376ms
+</p>
+<br><br><br>
+<span class="frame3">Element-wise multiplication</span><br>
+```python
+# Element-wise multiplication 
+import time 
+import numpy 
+import array 
+
+a = array.array('i') 
+for i in range(50000): 
+    a.append(i); 
+
+b = array.array('i') 
+for i in range(50000, 100000): 
+    b.append(i) 
+
+# classic element wise product of vectors implementation 
+vector = numpy.zeros((50000)) 
+
+tic = time.process_time() 
+
+for i in range(len(a)): 
+    vector[i]= a[i]*b[i] 
+
+toc = time.process_time() 
+
+print("Element wise Product = "+ str(vector)); 
+print("Computation time = "+str(1000*(toc - tic ))+"ms", '\n\n') 
+
+
+
+n_tic = time.process_time() 
+vector = numpy.multiply(a, b) 
+n_toc = time.process_time() 
+
+print("Element wise Product = "+str(vector)); 
+print("Computation time = "+str(1000*(n_toc - n_tic ))+"ms") 
+```
+<p>
+Element wise Product = [0.00000000e+00 5.00010000e+04 1.00004000e+05 ... 4.99955001e+09<br>
+ 4.99970000e+09 4.99985000e+09]<br>
+Computation time = 24.53195000000008ms<br><br>
+
+
+Element wise Product = [        0     50001    100004 ... 704582713 704732708 704882705]<br>
+Computation time = 0.7946960000007053ms
+</p>
+<hr class='division3'>
+</details>
+
 ```python
 class SingleLayer:
     def __init__(self, learning_rate=0.1):
