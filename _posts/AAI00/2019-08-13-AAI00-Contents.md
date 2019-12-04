@@ -6,6 +6,5 @@ comments : true
 tags : [AAI00]
 ---
 
-- <a href='' class='jb-medium'></a>
-- <a href='' class='jb-medium'></a>
-- <a href='' class='jb-medium'></a>
+> <a href='https://userdyk-github.github.io/aai00/AAI00-Spark.html'>Spark</a><br>
+> <a href='https://userdyk-github.github.io/aai00/AAI00-Hadoop.html'>Hadoop</a><br>
