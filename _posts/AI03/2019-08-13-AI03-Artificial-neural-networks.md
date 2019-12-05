@@ -21,16 +21,148 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
+## **Tensorflow**
+### ***Single layer***
 
+<br><br><br>
+
+---
+
+### ***Dual layer***
+
+<br><br><br>
+
+---
+
+### ***Multi layer***
+
+<br><br><br>
+
+---
+
+### ***CNN***
+
+<br><br><br>
+
+---
+
+### ***RNN***
+
+<br><br><br>
+
+---
+
+### ***GAN***
+
+<br><br><br>
 <hr class="division2">
 
-## title2
+## **Tensorflow : multi-gpu**
+### ***Single layer***
 
+<br><br><br>
+
+---
+
+### ***Dual layer***
+
+<br><br><br>
+
+---
+
+### ***Multi layer***
+
+<br><br><br>
+
+---
+
+### ***CNN***
+
+<br><br><br>
+
+---
+
+### ***RNN***
+
+<br><br><br>
+
+---
+
+### ***GAN***
+
+<br><br><br>
 <hr class="division2">
 
-## title3
+## **Pytorch**
+### ***Single layer***
 
+<br><br><br>
+
+---
+
+### ***Dual layer***
+
+<br><br><br>
+
+---
+
+### ***Multi layer***
+
+<br><br><br>
+
+---
+
+### ***CNN***
+
+<br><br><br>
+
+---
+
+### ***RNN***
+
+<br><br><br>
+
+---
+
+### ***GAN***
+
+<br><br><br>
+<hr class="division2">
+
+## **Pytorch : multi-gpu**
+### ***Single layer***
+
+<br><br><br>
+
+---
+
+### ***Dual layer***
+
+<br><br><br>
+
+---
+
+### ***Multi layer***
+
+<br><br><br>
+
+---
+
+### ***CNN***
+
+<br><br><br>
+
+---
+
+### ***RNN***
+
+<br><br><br>
+
+---
+
+### ***GAN***
+
+<br><br><br>
 <hr class="division1">
 
 List of posts followed by this article
