@@ -48,7 +48,7 @@ tags : [AI]
 
 > <a href='https://userdyk-github.github.io/ai03/AI03-Cuda-programming.html'>Cuda programming</a><br>
 > <a href='https://userdyk-github.github.io/ai03/AI03-Fundamental-of-deep-learning.html'>Fundamental of deep learning</a><br>
-> <a href='https://userdyk-github.github.io/ai03/AI03-Artifial-neural-networks.html'>Artifial neural networks</a><br>
+> <a href='https://userdyk-github.github.io/ai03/AI03-Artificial-neural-networks.html'>Artificial neural networks</a><br>
 > <a href='https://userdyk-github.github.io/ai03/AI03-Convolutional-neural-networks.html'>Convolutional neural networks</a><br>
 > <a href='https://userdyk-github.github.io/ai03/AI03-Recurrent-neural-networks.html'>Recurrent neural networks</a><br>
 > <a href='https://userdyk-github.github.io/ai03/AI03-Generative-adversarial-networks.html'>Generative adversarial networks</a><br>
