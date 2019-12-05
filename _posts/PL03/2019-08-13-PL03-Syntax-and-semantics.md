@@ -1688,6 +1688,14 @@ print(data)
 <br>
 
 #### os
+
+|method|description|
+|:--|:--|
+|os.chdir('path')|change directory|
+|os.getcwd()|get current working directory|
+|os.listdir('path')|list of files on directory|
+
+
 ```python
 import os
 
