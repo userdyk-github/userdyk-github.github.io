@@ -21,6 +21,18 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
+## **GPU Resource**
+```bash
+$ nvidia-smi   
+$ nvidia-smi -l 1
+$ watch -n 1 -d nvidia-smi
+```
+```bash
+$ python train.py | tee log.txt | less
+```
+
+<br><br><br>
+<hr class="division2">
 
 ## **Regression**
 ### ***Linear regression***
