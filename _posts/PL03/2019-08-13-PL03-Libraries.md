@@ -5,7 +5,7 @@ categories: [PL03]
 comments : false
 tags : [PL03]
 ---
-[Back to the previous page](https://userdyk-github.github.io/Study.html) ｜ <a href="https://userdyk-github.github.io/pl03/PL03-Contents.html">Python</a> <br>
+[Back to the previous page](https://userdyk-github.github.io/Study.html) ｜ <a href="https://userdyk-github.github.io/pl03/PL03-Contents.html">Python</a> ｜<a href="https://pypi.org/" target="_blank">PYPI</a><br>
 
 ---
 
