@@ -45,10 +45,13 @@ class Variable:
     def __del__(self):
         Variable.count -= 1
 
-CLA=Variable()
+CLA1=Variable()
 CLA2=Variable()
 CLA3=Variable()
-Variable.count
+print(Variable.count)
+print(CLA1.count)
+print(CLA2.count)
+print(CLA3.count)
 ```
 <br><br><br>
 
