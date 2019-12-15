@@ -45,9 +45,11 @@ class Variable:
     def __del__(self):
         Variable.count -= 1
 
+print(Variable.count)
 CLA1=Variable()
 CLA2=Variable()
 CLA3=Variable()
+
 print(Variable.count)
 print(CLA1.count)
 print(CLA2.count)
@@ -65,9 +67,12 @@ class DICT:
         self.a = a
         self.b = b
     
+print(DICT.__dict__)
+print(dir(DICT))
+
 CLA=DICT(1,2)
-CLA.__dict__
-dir(CLA)
+print(CLA.__dict__)
+print(dir(CLA))
 ```
 <br><br><br>
 
