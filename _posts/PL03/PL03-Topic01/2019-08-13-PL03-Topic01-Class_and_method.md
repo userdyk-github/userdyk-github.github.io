@@ -22,7 +22,26 @@ List of posts to read before reading this article
 <hr class="division1">
 
 ## **Class advanced**
-### ***__dict__***
+### ***__init__, __del__***
+```python
+class Variable:
+    count = 0
+    def __init(self):
+        Variable.count += 1
+    def __del__(self):
+        Variable.count -= 1
+
+CLA=Variable()
+CLA2=Variable()
+CLA3=Variable()
+Variable.count
+```
+<br><br><br>
+
+---
+
+
+### ***__dict__ & dir***
 ```python
 class DICT:
     def __init__(self, a, b):
@@ -31,19 +50,29 @@ class DICT:
     
 CLA=DICT(1,2)
 CLA.__dict__
+dir(CLA)
 ```
 <br><br><br>
 
 ---
 
-### ***__str__***
+### ***Description***
 ```python
-class STR():
+class Description():
+    """
+    Description Class
+    Author : Lee
+    Date : 2019.05.25
+    """
     def __str__(self):
-        return 'hello'
+        return 'hello, str'
+    def __repr__(self):
+        return 'hello, repr'
     
-CLA=STR()
+CLA=Description()
+print(CLA.__doc__)
 print(CLA)
+print(CLA.__repr__())
 ```
 <br><br><br>
 
