@@ -24,14 +24,27 @@ List of posts to read before reading this article
 ## **Class advanced**
 ### ***__dict__***
 ```python
-object.__dict__
+class DICT:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+    
+CLA=DICT(1,2)
+CLA.__dict__
 ```
 <br><br><br>
 
 ---
 
-### ******
-
+### ***__str__***
+```python
+class STR():
+    def __str__(self):
+        return 'hello'
+    
+CLA=STR()
+print(CLA)
+```
 <br><br><br>
 
 ---
