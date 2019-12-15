@@ -108,7 +108,35 @@ print(CLA.__repr__())
 <hr class="division2">
 
 ## **Class, Instance, Static Method**
+```python
+class vec():
+    __abc = 0
+    
+    def __init__(self,*args):
+        if len(args) == 0 :
+            self.__x, self.__y = 0,0
+        else:
+            self.__x, self.__y = args
 
+    @classmethod
+    def create(cls):
+        print('Instance have been created')
+        return cls()
+    
+    @classmethod
+    def cls_variable(cls):
+        cls.__abc += 1
+        print('cls.abc : ',cls.__abc)
+    
+    @staticmethod
+    def inst_variable(inst):
+        inst.__x += 1
+        print('inst.x : ',inst.__x)
+            
+a = vec.create()
+vec.cls_variable()
+vec.inst_variable(a)
+```
 <hr class="division1">
 
 List of posts followed by this article
