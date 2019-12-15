@@ -22,6 +22,20 @@ List of posts to read before reading this article
 <hr class="division1">
 
 ## **Class advanced**
+### ***Basic class information***
+```python
+class info:
+    pass
+
+CLA = info()
+print(CLA.__class__)
+print(which.__class__(CLA))
+```
+<br><br><br>
+
+---
+
+
 ### ***__init__, __del__***
 ```python
 class Variable:
@@ -41,7 +55,7 @@ Variable.count
 ---
 
 
-### ***__dict__ & dir***
+### ***__dict__, dir***
 ```python
 class DICT:
     def __init__(self, a, b):
