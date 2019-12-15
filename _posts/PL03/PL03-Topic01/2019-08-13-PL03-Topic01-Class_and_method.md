@@ -40,20 +40,25 @@ print(which.__class__(CLA))
 ```python
 class Variable:
     count = 0
-    def __init(self):
+    def __init__(self,a):
+        self.a = a
         Variable.count += 1
+        
+        
     def __del__(self):
         Variable.count -= 1
 
 print(Variable.count)
-CLA1=Variable()
-CLA2=Variable()
-CLA3=Variable()
+CLA1=Variable(1)
+CLA2=Variable(2)
+CLA3=Variable(3)
 
 print(Variable.count)
 print(CLA1.count)
 print(CLA2.count)
-print(CLA3.count)
+
+del CLA1
+print(Variable.count)
 ```
 <br><br><br>
 
