@@ -2519,8 +2519,12 @@ test@gmail.com
 <hr class="division1">
 
 List of posts followed by this article
-- <a href='https://userdyk-github.github.io/'>post2</a>
-- <a href='https://userdyk-github.github.io/'>post3</a>
+- <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-Class_and_method.html'>Class and method</a>
+- <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-Data-model.html'>Data model</a>
+- <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-Sequence.html'>Sequence</a>
+- <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-First-class-functions.html'>First class functions</a>
+- <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-Object-reference.html'>Object reference</a>
+- <a href='https://userdyk-github.github.io/pl03-topic01/PL03-Topic01-Concurrency.html'>Concurrency</a>
 
 ---
 
