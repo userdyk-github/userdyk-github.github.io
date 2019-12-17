@@ -5186,19 +5186,22 @@ for i in range(10):
 import numpy as np
 import matplotlib.pyplot as plt
 
-def interactive_plot():
-    if ax.lines:
-        ax.lines.remove(ax.lines[0])
-    ax.plot(np.random.rand(10), "r-")
+fig, axes = plt.subplots(2,2)
+
+for i in range(20):
+    for j in range(axes.shape[0]):
+        for k in range(axes.shape[1]):
+            if axes[j,k].lines:
+                axes[j,k].lines.remove(axes[j,k].lines[0])
+
+    axes[0,0].plot(np.random.normal(0,5,(100,)))
+    axes[0,1].plot(np.random.normal(0,5,(100,)))
+    axes[1,0].plot(np.random.normal(0,5,(100,)))
+    axes[1,1].plot(np.random.normal(0,5,(100,)))
+
     plt.ion()
     plt.show()
-    plt.pause(0.1)
-
-fig = plt.figure()
-ax = fig.add_subplot(1, 1, 1)
-
-for i in range(10):
-    interactive_plot()
+    plt.pause(0.5)
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
