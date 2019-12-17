@@ -5181,20 +5181,24 @@ for i in range(10):
 <br><br><br>
 <span class="frame3">One figure</span><br>
 ```python
+%matplotlib qt5
+
 import numpy as np
 import matplotlib.pyplot as plt
 
-x = np.linspace(-100,100,100000)
-err = np.random.normal(loc=0.0, scale=3.0)
+x = np.linspace(-10,10,100)
 
 fig = plt.figure()
 ax = fig.add_subplot(1, 1, 1)
 
 for i in range(10):
+    err = np.random.normal(loc=0.0, scale=3.0)
     y = lambda x:x
     if ax.lines:
         ax.lines.remove(ax.lines[0])
-    ax.plot(x, y(x)+i*err, lw=0, marker="o")
+    ax.plot(x, y(x)+np.sin(i)*err, lw=0, marker="o")
+    plt.xlim(-20,20)
+    plt.ylim(-20,20)
     plt.ion()
     plt.show()
     plt.pause(0.1)
