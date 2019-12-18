@@ -22,6 +22,7 @@ List of posts to read before reading this article
 <hr class="division1">
 
 ## **Installation**
+<a href="https://pytorch.org/get-started/locally/" target="_blank">URL</a>
 ### ***For linux***
 ```bash
 $ 
