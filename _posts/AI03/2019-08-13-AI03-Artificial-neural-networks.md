@@ -184,7 +184,6 @@ model = tf.keras.models.Sequential([tf.keras.layers.Flatten(input_shape=(28, 28)
                                     tf.keras.layers.Dense(1000, activation='relu'),
                                     tf.keras.layers.Dense(500, activation='relu'),
                                     tf.keras.layers.Dense(200, activation='relu'),
-                                    tf.keras.layers.Dense(100, activation='relu'),
                                     tf.keras.layers.Dense(10, activation='softmax')])
 model.compile(optimizer='adam',
              loss='sparse_categorical_crossentropy',
@@ -211,71 +210,45 @@ model.evaluate(x_test, y_test)
 
 <br><br><br>
 
-<br><br><br>
 
 ---
 
 ### ***RNN***
+#### GPU default
+
+<br><br><br>
+#### one GPU
+
+<br><br><br>
+
+#### multi-GPU
+
+<br><br><br>
+#### multi-GPU with CPUs
 
 <br><br><br>
 
 ---
 
 ### ***GAN***
+#### GPU default
 
 <br><br><br>
+#### one GPU
+
+<br><br><br>
+
+#### multi-GPU
+
+<br><br><br>
+#### multi-GPU with CPUs
+
+<br><br><br>
+
 <hr class="division2">
 
-## **Tensorflow : export**
-### ***Single layer***
-
-<br><br><br>
-
----
-
-### ***Dual layer***
-
-<br><br><br>
-
----
-
-### ***FCN***
-
-<br><br><br>
-
----
-
-### ***CNN***
-
-<br><br><br>
-
----
-
-### ***RNN***
-
-<br><br><br>
-
----
-
-### ***GAN***
-
-<br><br><br>
-<hr class="division2">
 
 ## **Pytorch**
-### ***Single layer***
-
-<br><br><br>
-
----
-
-### ***Dual layer***
-
-<br><br><br>
-
----
-
-### ***FCN***
 
 <br><br><br>
 
@@ -296,42 +269,7 @@ model.evaluate(x_test, y_test)
 ### ***GAN***
 
 <br><br><br>
-<hr class="division2">
 
-## **Pytorch : multi-gpu**
-### ***Single layer***
-
-<br><br><br>
-
----
-
-### ***Dual layer***
-
-<br><br><br>
-
----
-
-### ***FCN***
-
-<br><br><br>
-
----
-
-### ***CNN***
-
-<br><br><br>
-
----
-
-### ***RNN***
-
-<br><br><br>
-
----
-
-### ***GAN***
-
-<br><br><br>
 <hr class="division1">
 
 List of posts followed by this article
