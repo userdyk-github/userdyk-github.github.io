@@ -311,26 +311,26 @@ if gpus:
 ---
 
 ### ***CNN***
-#### GPU default
+#### One GPU default
 ```python
 
 ```
 
 <br><br><br>
-#### one GPU
+#### One GPU with CPU
 ```python
 
 ```
 
 <br><br><br>
 
-#### multi-GPU
+#### Multi-GPU
 ```python
 
 ```
 
 <br><br><br>
-#### multi-GPU with CPUs
+#### Multi-GPU with CPU
 ```python
 
 ```
@@ -341,26 +341,26 @@ if gpus:
 ---
 
 ### ***RNN***
-#### GPU default
+#### One GPU default
 ```python
 
 ```
 
 <br><br><br>
-#### one GPU
+#### One GPU with CPU
 ```python
 
 ```
 
 <br><br><br>
 
-#### multi-GPU
+#### Multi-GPU
 ```python
 
 ```
 
 <br><br><br>
-#### multi-GPU with CPUs
+#### Multi-GPU with CPU
 ```python
 
 ```
@@ -370,26 +370,26 @@ if gpus:
 ---
 
 ### ***GAN***
-#### GPU default
+#### One GPU default
 ```python
 
 ```
 
 <br><br><br>
-#### one GPU
+#### One GPU with CPU
 ```python
 
 ```
 
 <br><br><br>
 
-#### multi-GPU
+#### Multi-GPU
 ```python
 
 ```
 
 <br><br><br>
-#### multi-GPU with CPUs
+#### Multi-GPU with CPU
 ```python
 
 ```
