@@ -23,6 +23,7 @@ List of posts to read before reading this article
 
 ## **Installation**
 <a href="https://pytorch.org/get-started/locally/" target="_blank">URL</a>
+<a href="https://anaconda.org/pytorch/pytorch">anaconda url</a>
 ### ***For linux***
 ```bash
 $ 
