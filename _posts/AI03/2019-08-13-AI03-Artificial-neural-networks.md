@@ -29,6 +29,9 @@ $ watch -n 1 -d nvidia-smi
 <span class="frmae3">Deallocate memory on GPU</span>
 ```bash
 $ nvidia-smi
+$ nvidia-smi --gpu-reset -i 0
+
+# forcely
 $ kill -[PID_num] PID
 ```
 
