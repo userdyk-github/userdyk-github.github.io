@@ -197,6 +197,19 @@ model.evaluate(x_test, y_test)
 ---
 
 ### ***CNN***
+#### GPU default
+
+<br><br><br>
+#### one GPU
+
+<br><br><br>
+
+#### multi-GPU
+
+<br><br><br>
+#### multi-GPU with CPUs
+
+<br><br><br>
 
 <br><br><br>
 
