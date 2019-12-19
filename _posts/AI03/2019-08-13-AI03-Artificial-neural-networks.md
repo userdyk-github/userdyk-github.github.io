@@ -156,7 +156,7 @@ physical_device_desc: "device: XLA_GPU device"
 
 <hr class="division2">
 
-## **Tensorflow : beginner**
+## **Tensorflow**
 ### ***Perceptron***
 #### OR
 ```python
@@ -172,6 +172,7 @@ physical_device_desc: "device: XLA_GPU device"
 ---
 
 ### ***FCN***
+#### GPU default
 ```python
 import tensorflow as tf
 
@@ -193,20 +194,51 @@ model.evaluate(x_test, y_test)
 ```
 <br><br><br>
 
+#### one GPU
+```python
+
+```
+<br><br><br>
+
+#### multi-GPU
+```python
+
+```
+
+<br><br><br>
+#### multi-GPU with CPUs
+```python
+
+```
+
+<br><br><br>
+
 ---
 
 ### ***CNN***
 #### GPU default
+```python
+
+```
 
 <br><br><br>
 #### one GPU
+```python
+
+```
 
 <br><br><br>
 
 #### multi-GPU
+```python
+
+```
 
 <br><br><br>
 #### multi-GPU with CPUs
+```python
+
+```
 
 <br><br><br>
 
@@ -215,16 +247,28 @@ model.evaluate(x_test, y_test)
 
 ### ***RNN***
 #### GPU default
+```python
+
+```
 
 <br><br><br>
 #### one GPU
+```python
+
+```
 
 <br><br><br>
 
 #### multi-GPU
+```python
+
+```
 
 <br><br><br>
 #### multi-GPU with CPUs
+```python
+
+```
 
 <br><br><br>
 
@@ -232,16 +276,28 @@ model.evaluate(x_test, y_test)
 
 ### ***GAN***
 #### GPU default
+```python
+
+```
 
 <br><br><br>
 #### one GPU
+```python
+
+```
 
 <br><br><br>
 
 #### multi-GPU
+```python
+
+```
 
 <br><br><br>
 #### multi-GPU with CPUs
+```python
+
+```
 
 <br><br><br>
 
