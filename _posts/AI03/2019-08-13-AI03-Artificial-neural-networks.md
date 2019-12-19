@@ -1122,6 +1122,7 @@ for epoch in range(EPOCHS):
 
 <br><br><br>
 #### Expert mode
+[chatbot_data.csv][1]
 ```python
 import random
 import tensorflow as tf
@@ -1418,6 +1419,9 @@ Reference
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
+
+
+[1]:{{ site.url }}/download/AI03/chatbot_data.csv
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
