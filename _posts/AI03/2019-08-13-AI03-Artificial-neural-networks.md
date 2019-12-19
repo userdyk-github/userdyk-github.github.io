@@ -441,7 +441,7 @@ model.fit(train_ds, validation_data=test_ds, epochs=EPOCHS)
 
 ---
 
-### ***Transfet learning***
+### ***Transfer learning***
 #### Beginner mode
 ```python
 import tensorflow as tf
