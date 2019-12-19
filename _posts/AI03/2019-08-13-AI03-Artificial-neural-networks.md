@@ -381,6 +381,29 @@ model.fit(train_ds, validation_data=test_ds, epochs=EPOCHS)
 
 ---
 
+### ***CNN(DNN)***
+#### One GPU default
+```python
+
+```
+
+<br><br><br>
+#### One GPU with CPU
+```python
+
+```
+
+<br><br><br>
+#### Multi-GPU with CPU
+```python
+
+```
+
+<br><br><br>
+
+---
+
+
 ### ***RNN(LSTM)***
 #### One GPU default
 ```python
@@ -461,27 +484,6 @@ model.fit(train_ds, validation_data=test_ds, epochs=EPOCHS)
 
 ---
 
-### ***DNN***
-#### One GPU default
-```python
-
-```
-
-<br><br><br>
-#### One GPU with CPU
-```python
-
-```
-
-<br><br><br>
-#### Multi-GPU with CPU
-```python
-
-```
-
-<br><br><br>
-
----
 
 ### ***ResNET***
 #### One GPU default
