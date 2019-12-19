@@ -322,7 +322,45 @@ if gpus:
 ### ***CNN***
 #### One GPU default
 ```python
+import tensorflow as tf
+import numpy as np
 
+from tensorflow.keras.layers import Conv2D, MaxPool2D, Flatten, Dense
+from tensorflow.keras.models import Sequential
+
+EPOCHS = 10
+
+def MyModel():
+    return Sequential([Conv2D(32, (3, 3), padding='same', activation='relu'), # 28x28x32
+                       MaxPool2D(), # 14x14x32
+                       Conv2D(64, (3, 3), padding='same', activation='relu'), # 14x14x64
+                       MaxPool2D(), # 7x7x64
+                       Conv2D(128, (3, 3), padding='same', activation='relu'), # 7x7x128
+                       Flatten(), # 6272
+                       Dense(128, activation='relu'),
+                       Dense(10, activation='softmax')]) # 128
+
+
+fashion_mnist = tf.keras.datasets.fashion_mnist
+(x_train, y_train), (x_test, y_test) = fashion_mnist.load_data()
+x_train, x_test = x_train / 255.0, x_test / 255.0
+
+x_train = x_train.astype(np.float32)
+x_test = x_test.astype(np.float32)
+
+# NHWC
+x_train = x_train[..., np.newaxis]
+x_test = x_test[..., np.newaxis]
+
+train_ds = tf.data.Dataset.from_tensor_slices((x_train, y_train)).shuffle(10000).batch(32).prefetch(2048)
+test_ds = tf.data.Dataset.from_tensor_slices((x_test, y_test)).batch(32).prefetch(2048)
+
+
+model = MyModel()
+model.compile(optimizer='adam',
+              loss='sparse_categorical_crossentropy',
+              metrics=['accuracy'])
+model.fit(train_ds, validation_data=test_ds, epochs=EPOCHS)            
 ```
 
 <br><br><br>
@@ -343,10 +381,46 @@ if gpus:
 
 ---
 
-### ***RNN***
+### ***RNN(LSTM)***
 #### One GPU default
 ```python
+import tensorflow as tf
 
+EPOCHS = 10
+NUM_WORDS = 10000
+
+class MyModel(tf.keras.Model):
+    def __init__(self):
+        super().__init__()
+        self.emb = tf.keras.layers.Embedding(NUM_WORDS, 16)
+        self.rnn = tf.keras.layers.SimpleRNN(32)
+        self.dense = tf.keras.layers.Dense(1, activation='sigmoid')
+    
+    def call(self, x, training=None, mask=None):
+        x = self.emb(x)
+        x = self.rnn(x)
+        return self.dense(x)
+
+
+imdb = tf.keras.datasets.imdb
+(x_train, y_train), (x_test, y_test) = imdb.load_data(num_words=NUM_WORDS)
+x_train = tf.keras.preprocessing.sequence.pad_sequences(x_train,
+                                                        value=0,
+                                                        padding='pre',
+                                                        maxlen=32)
+x_test = tf.keras.preprocessing.sequence.pad_sequences(x_test,
+                                                       value=0,
+                                                       padding='pre',
+                                                       maxlen=32)
+train_ds = tf.data.Dataset.from_tensor_slices((x_train, y_train)).shuffle(1000).batch(32)
+test_ds = tf.data.Dataset.from_tensor_slices((x_test, y_test)).batch(32)
+
+
+model = MyModel()
+model.compile(optimizer='adam',
+              loss='binary_crossentropy',
+              metrics=['accuracy'])
+model.fit(train_ds, validation_data=test_ds, epochs=EPOCHS)
 ```
 
 <br><br><br>
@@ -384,7 +458,69 @@ if gpus:
 ```
 
 <br><br><br>
+### ***Transfet learning***
+#### One GPU default
+```python
+import tensorflow as tf
+import tensorflow_datasets as tfds
+import matplotlib.pyplot as plt
 
+EPOCHS = 100
+
+def MyModel():
+    feat = tf.keras.applications.MobileNetV2(input_shape=(224, 224, 3),
+                                             include_top=False)
+    feat.trainable = False
+    
+    seq = tf.keras.models.Sequential()
+    seq.add(feat) # h x w x c 
+    seq.add(tf.keras.layers.GlobalAveragePooling2D()) # c
+    seq.add(tf.keras.layers.Dense(1, activation='sigmoid'))
+    return seq
+
+split = tfds.Split.TRAIN.subsplit(weighted=(8, 2))
+dataset, meta = tfds.load('cats_vs_dogs',
+                          split=list(split),
+                          with_info=True,
+                          as_supervised=True)
+
+train_ds, test_ds = dataset
+
+l2s = meta.features['label'].int2str
+for img, label in test_ds.take(2):
+    plt.figure()
+    plt.imshow(img)
+    plt.title(l2s(label))
+
+def preprocess(img, label):
+    img = tf.cast(img, tf.float32) / 255.0
+    img = tf.image.resize(img, (224, 224))
+    return img, label
+
+train_ds = train_ds.map(preprocess).batch(32).prefetch(1024)
+test_ds = test_ds.map(preprocess).batch(32).prefetch(1024)
+
+
+model = MyModel()
+model.compile(optimizer='adam',
+              loss='binary_crossentropy',
+              metrics=['accuracy'])
+model.fit(train_ds, validation_data=test_ds, epochs=EPOCHS)
+```
+
+<br><br><br>
+#### One GPU with CPU
+```python
+
+```
+
+<br><br><br>
+#### Multi-GPU with CPU
+```python
+
+```
+
+<br><br><br>
 <hr class="division2">
 
 
