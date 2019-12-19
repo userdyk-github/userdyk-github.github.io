@@ -50,15 +50,6 @@ $ nvidia-smi
 $ watch -n 1 -d nvidia-smi
 $ fuser -v /dev/nvidia*
 ```
-<span class="frmae3">Deallocate memory on GPU</span>
-```bash
-$ nvidia-smi --gpu-reset -i 0
-```
-```
-# forcely
-$ kill -[PID_num] PID
-```
-
 ```python
 from tensorflow.python.client import device_lib
 print(device_lib.list_local_devices())
@@ -154,6 +145,16 @@ physical_device_desc: "device: XLA_GPU device"
 ```
 <hr class='division3'>
 </details>
+
+<span class="frmae3">Deallocate memory on GPU</span>
+```bash
+$ nvidia-smi --gpu-reset -i 0
+```
+```
+# forcely
+$ kill -[PID_num] PID
+```
+
 
 
 
