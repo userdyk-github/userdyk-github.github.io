@@ -22,6 +22,15 @@ List of posts to read before reading this article
 <hr class="division1">
 
 ## **Resource**
+<span class="frmae3">GPU Resource info</span>
+```bash
+$ watch -n 1 -d nvidia-smi
+```
+<span class="frmae3">Deallocate memory on GPU</span>
+```bash
+$ kill -[PID_num] PID
+```
+
 ```python
 from tensorflow.python.client import device_lib
 print(device_lib.list_local_devices())
