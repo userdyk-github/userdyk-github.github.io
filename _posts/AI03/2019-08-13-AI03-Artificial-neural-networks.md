@@ -458,6 +458,75 @@ model.fit(train_ds, validation_data=test_ds, epochs=EPOCHS)
 ```
 
 <br><br><br>
+
+---
+
+### ***DNN***
+#### One GPU default
+```python
+
+```
+
+<br><br><br>
+#### One GPU with CPU
+```python
+
+```
+
+<br><br><br>
+#### Multi-GPU with CPU
+```python
+
+```
+
+<br><br><br>
+
+---
+
+### ***ResNET***
+#### One GPU default
+```python
+
+```
+
+<br><br><br>
+#### One GPU with CPU
+```python
+
+```
+
+<br><br><br>
+#### Multi-GPU with CPU
+```python
+
+```
+
+<br><br><br>
+
+---
+
+### ***Attention Net***
+#### One GPU default
+```python
+
+```
+
+<br><br><br>
+#### One GPU with CPU
+```python
+
+```
+
+<br><br><br>
+#### Multi-GPU with CPU
+```python
+
+```
+
+<br><br><br>
+
+---
+
 ### ***Transfet learning***
 #### One GPU default
 ```python
