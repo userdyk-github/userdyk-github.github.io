@@ -24,11 +24,12 @@ List of posts to read before reading this article
 ## **Resource**
 <span class="frmae3">GPU Resource info</span>
 ```bash
+$ nvidia-smi
 $ watch -n 1 -d nvidia-smi
+$ fuser -v /dev/nvidia*
 ```
 <span class="frmae3">Deallocate memory on GPU</span>
 ```bash
-$ nvidia-smi
 $ nvidia-smi --gpu-reset -i 0
 
 # forcely
