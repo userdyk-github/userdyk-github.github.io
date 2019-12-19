@@ -196,7 +196,7 @@ $ kill -[PID_num] PID
 ---
 
 ### ***FCN***
-#### GPU default
+#### One GPU(default)
 ```python
 import tensorflow as tf
 
@@ -218,7 +218,7 @@ model.evaluate(x_test, y_test)
 ```
 <br><br><br>
 
-#### one GPU with CPU
+#### One GPU with CPU
 ```python
 import tensorflow as tf
 
@@ -248,7 +248,7 @@ except RuntimeError as e:
 ```
 <br><br><br>
 
-#### multi-GPU
+#### Multi-GPU
 ```python
 import tensorflow as tf
 
@@ -278,7 +278,7 @@ except RuntimeError as e:
 ```
 
 <br><br><br>
-#### multi-GPU with CPU
+#### Multi-GPU with CPU
 ```python
 import tensorflow as tf
 
