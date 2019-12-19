@@ -44,7 +44,7 @@ $ grep "cpu cores" /proc/cpuinfo | tail -1
 ---
 
 ### GPU
-<span class="frmae3">GPU Resource info</span>
+#### GPU Resource info
 ```bash
 $ nvidia-smi
 $ watch -n 1 -d nvidia-smi
@@ -145,8 +145,8 @@ physical_device_desc: "device: XLA_GPU device"
 ```
 <hr class='division3'>
 </details>
-
-<span class="frmae3">Deallocate memory on GPU</span>
+<br><br><br>
+#### Deallocate memory on GPU
 ```bash
 $ nvidia-smi --gpu-reset -i 0
 ```
@@ -155,6 +155,46 @@ $ nvidia-smi --gpu-reset -i 0
 $ kill -9 [PID_num]
 ```
 
+#### Allocate memory on GPU
+<span class="frmae3">tensorflow : One GPU(default)</span>
+```python
+import tensorflow as tf
+
+[Code : data preprocessing]
+[Code : data neural net model]
+```
+<span class="frmae3">tensorflow : One GPU with CPU</span>
+```python
+import tensroflow as tf
+
+tf.debugging.set_log_device_placement(True)
+
+try:
+    with tf.device('/device:CPU:0'):
+        [Code : data preprocessing]
+    with tf.device('/device:GPU:2'):
+        [Code : deep neural net model]
+        
+except RuntimeError as e:
+    print(e)
+```
+<span class="frmae3">tensorflow : Multi-GPU with CPU</span>
+```python
+import tensorflow as tf
+
+tf.debugging.set_log_device_placement(True)
+
+gpus = tf.config.experimental.list_logical_devices('GPU')
+if gpus:
+    with tf.device('/CPU:0'):
+        [Code : data preprocessing]
+
+    for gpu in gpus:
+        with tf.device(gpu.name):
+            [Code : deep neural net model]
+```
+
+<span class="frmae3">pytorch</span>
 
 
 
@@ -247,37 +287,6 @@ except RuntimeError as e:
     print(e)
 ```
 <br><br><br>
-
-#### Multi-GPU
-```python
-import tensorflow as tf
-
-tf.debugging.set_log_device_placement(True)
-
-try:
-    with tf.device('/device:CPU:0'):
-        (x_train, y_train), (x_test, y_test) = tf.keras.datasets.mnist.load_data()
-        x_train, x_test = x_train / 255.0, x_test / 255.0
-
-    with tf.device('/device:GPU:2'):
-        model = tf.keras.models.Sequential([tf.keras.layers.Flatten(input_shape=(28, 28)),
-                                            tf.keras.layers.Dense(2000, activation='relu'),
-                                            tf.keras.layers.Dropout(0.2),
-                                            tf.keras.layers.Dense(1000, activation='relu'),
-                                            tf.keras.layers.Dense(500, activation='relu'),
-                                            tf.keras.layers.Dense(200, activation='relu'),
-                                            tf.keras.layers.Dense(10, activation='softmax')])
-        model.compile(optimizer='adam',
-                loss='sparse_categorical_crossentropy',
-                metrics=['accuracy'])
-        model.fit(x_train, y_train, epochs=5)
-        model.evaluate(x_test, y_test)
-
-except RuntimeError as e:
-    print(e)
-```
-
-<br><br><br>
 #### Multi-GPU with CPU
 ```python
 import tensorflow as tf
@@ -322,12 +331,6 @@ if gpus:
 
 ```
 
-<br><br><br>
-
-#### Multi-GPU
-```python
-
-```
 
 <br><br><br>
 #### Multi-GPU with CPU
@@ -353,13 +356,6 @@ if gpus:
 ```
 
 <br><br><br>
-
-#### Multi-GPU
-```python
-
-```
-
-<br><br><br>
 #### Multi-GPU with CPU
 ```python
 
@@ -377,13 +373,6 @@ if gpus:
 
 <br><br><br>
 #### One GPU with CPU
-```python
-
-```
-
-<br><br><br>
-
-#### Multi-GPU
 ```python
 
 ```
