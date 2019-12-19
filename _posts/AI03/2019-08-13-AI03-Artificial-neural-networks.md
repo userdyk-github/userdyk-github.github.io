@@ -22,6 +22,28 @@ List of posts to read before reading this article
 <hr class="division1">
 
 ## **Resource**
+### CPU
+<span class="frmae3">CPU Resource info</span>
+```bash
+# cat /proc/cpuinfo
+```
+<span class="frmae3">Total number of CPU cores</span>
+```bash
+$ grep -c processor /proc/cpuinfo
+```
+<span class="frmae3">Number of CPUs</span>
+```bash
+$ grep "physical id" /proc/cpuinfo | sort -u | wc -l
+```
+<span class="frmae3">Number of cores per one CPU</span>
+```bash
+$ grep "cpu cores" /proc/cpuinfo | tail -1
+```
+<br><br><br>
+
+---
+
+### GPU
 <span class="frmae3">GPU Resource info</span>
 ```bash
 $ nvidia-smi
@@ -31,7 +53,8 @@ $ fuser -v /dev/nvidia*
 <span class="frmae3">Deallocate memory on GPU</span>
 ```bash
 $ nvidia-smi --gpu-reset -i 0
-
+```
+```
 # forcely
 $ kill -[PID_num] PID
 ```
