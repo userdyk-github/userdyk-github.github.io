@@ -185,8 +185,10 @@ $ tar -cf [file_name.tar] a b c        # tie and zip a b c files
 $ tar -zcf [file_name.tar.gz] a b c    # zip a b c files 
 $ tar -xvf [file_name.tar]             # unzip .tar
 $ tar -zxvf [file_name.tar.gz]         # unzip .tar.gz
-$ gzip [file_name]            # file_name to file_name.gz
-$ gzip -d [file_name].gz      # file_name.gz to file_name 
+$ gzip [file_name]                     # file_name to file_name.gz
+$ gzip -d [file_name].gz               # file_name.gz to file_name
+$ unzip [file_name].zip
+$ unzip [file_name].zip [path]
 ```
 <span class="frame3">Split zip file</span><br>
 ```bash
