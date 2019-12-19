@@ -218,21 +218,92 @@ model.evaluate(x_test, y_test)
 ```
 <br><br><br>
 
-#### one GPU
+#### one GPU with CPU
 ```python
+import tensorflow as tf
 
+tf.debugging.set_log_device_placement(True)
+
+try:
+    with tf.device('/device:CPU:0'):
+        (x_train, y_train), (x_test, y_test) = tf.keras.datasets.mnist.load_data()
+        x_train, x_test = x_train / 255.0, x_test / 255.0
+
+    with tf.device('/device:GPU:2'):
+        model = tf.keras.models.Sequential([tf.keras.layers.Flatten(input_shape=(28, 28)),
+                                            tf.keras.layers.Dense(2000, activation='relu'),
+                                            tf.keras.layers.Dropout(0.2),
+                                            tf.keras.layers.Dense(1000, activation='relu'),
+                                            tf.keras.layers.Dense(500, activation='relu'),
+                                            tf.keras.layers.Dense(200, activation='relu'),
+                                            tf.keras.layers.Dense(10, activation='softmax')])
+        model.compile(optimizer='adam',
+                loss='sparse_categorical_crossentropy',
+                metrics=['accuracy'])
+        model.fit(x_train, y_train, epochs=5)
+        model.evaluate(x_test, y_test)
+
+except RuntimeError as e:
+    print(e)
 ```
 <br><br><br>
 
 #### multi-GPU
 ```python
+import tensorflow as tf
 
+tf.debugging.set_log_device_placement(True)
+
+try:
+    with tf.device('/device:CPU:0'):
+        (x_train, y_train), (x_test, y_test) = tf.keras.datasets.mnist.load_data()
+        x_train, x_test = x_train / 255.0, x_test / 255.0
+
+    with tf.device('/device:GPU:2'):
+        model = tf.keras.models.Sequential([tf.keras.layers.Flatten(input_shape=(28, 28)),
+                                            tf.keras.layers.Dense(2000, activation='relu'),
+                                            tf.keras.layers.Dropout(0.2),
+                                            tf.keras.layers.Dense(1000, activation='relu'),
+                                            tf.keras.layers.Dense(500, activation='relu'),
+                                            tf.keras.layers.Dense(200, activation='relu'),
+                                            tf.keras.layers.Dense(10, activation='softmax')])
+        model.compile(optimizer='adam',
+                loss='sparse_categorical_crossentropy',
+                metrics=['accuracy'])
+        model.fit(x_train, y_train, epochs=5)
+        model.evaluate(x_test, y_test)
+
+except RuntimeError as e:
+    print(e)
 ```
 
 <br><br><br>
-#### multi-GPU with CPUs
+#### multi-GPU with CPU
 ```python
+import tensorflow as tf
 
+tf.debugging.set_log_device_placement(True)
+
+gpus = tf.config.experimental.list_logical_devices('GPU')
+if gpus:
+    with tf.device('/CPU:0'):
+        (x_train, y_train), (x_test, y_test) = tf.keras.datasets.mnist.load_data()
+        x_train, x_test = x_train / 255.0, x_test / 255.0
+
+    for gpu in gpus:
+        with tf.device(gpu.name):
+            model = tf.keras.models.Sequential([tf.keras.layers.Flatten(input_shape=(28, 28)),
+                                tf.keras.layers.Dense(2000, activation='relu'),
+                                tf.keras.layers.Dropout(0.2),
+                                tf.keras.layers.Dense(1000, activation='relu'),
+                                tf.keras.layers.Dense(500, activation='relu'),
+                                tf.keras.layers.Dense(200, activation='relu'),
+                                tf.keras.layers.Dense(10, activation='softmax')])
+            model.compile(optimizer='adam',
+                        loss='sparse_categorical_crossentropy',
+                        metrics=['accuracy'])
+            model.fit(x_train, y_train, epochs=5)
+            model.evaluate(x_test, y_test)
 ```
 
 <br><br><br>
