@@ -123,6 +123,19 @@ physical_device_desc: "device: XLA_GPU device"
 <br><br><br>
 <hr class="division2">
 ## **Numpy**
+### ***DNN***
+
+<br><br><br>
+
+---
+
+### ***CNN***
+
+<br><br><br>
+
+---
+
+### ***RNN***
 
 
 <br><br><br>
@@ -149,7 +162,7 @@ physical_device_desc: "device: XLA_GPU device"
 
 ---
 
-### ***Multi layer***
+### ***DNN***
 
 <br><br><br>
 
