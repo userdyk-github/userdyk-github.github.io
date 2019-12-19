@@ -152,7 +152,7 @@ $ nvidia-smi --gpu-reset -i 0
 ```
 ```
 # forcely
-$ kill -[PID_num] PID
+$ kill -9 [PID_num]
 ```
 
 
