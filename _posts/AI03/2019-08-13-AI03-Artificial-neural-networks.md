@@ -122,6 +122,12 @@ physical_device_desc: "device: XLA_GPU device"
 
 <br><br><br>
 <hr class="division2">
+## **Numpy**
+
+
+<br><br><br>
+
+<hr class="division2">
 
 ## **Tensorflow**
 
