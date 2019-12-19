@@ -596,7 +596,7 @@ model.fit(train_ds, validation_data=test_ds, epochs=EPOCHS)
 
 
 ## **Pytorch**
-
+### ***FCN***
 <br><br><br>
 
 ---
