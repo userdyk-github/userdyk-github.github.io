@@ -143,7 +143,19 @@ physical_device_desc: "device: XLA_GPU device"
 <hr class="division2">
 
 ## **Tensorflow : beginner**
+### ***Perceptron***
+#### OR
+```python
 
+```
+<br><br><br>
+
+#### XOR
+```python
+
+```
+
+---
 
 ### ***FCN***
 ```python
