@@ -1488,9 +1488,7 @@ for epoch in range(1, epochs + 1):
     print('\nTest set: Average loss: {:.4f}, Accuracy: {}/{} ({:.0f}%)\n'.format(
         test_loss, correct, len(test_loader.dataset),
         100. * correct / len(test_loader.dataset)))
-
-
-        ```
+```
 <br><br><br>
 
 ---
