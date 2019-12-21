@@ -124,14 +124,46 @@ vocabulary continuous speech recognition｜ <a href='http://www.cs.cmu.edu/afs/c
 - <span class='jb-medium'>Compressing Neural Networks with the Hashing Trick｜ <a href='http://proceedings.mlr.press/v37/chenc15.pdf' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
 - <span class='jb-medium'>Do Deep Nets Really Need to be Deep?｜ <a href='http://papers.nips.cc/paper/5484-do-deep-nets-really-need-to-be-deep' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
 - <span class='jb-medium'>Model compression｜ <a href='https://dl.acm.org/citation.cfm?id=1150464' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Algorithms for Hyper-Parameter Optimization｜ <a href='' target="_blank">PDF</a>｜<a href='http://papers.nips.cc/paper/4443-algorithms-for-hyper-parameter-optimizat' target="_blank">github</a></span>
+- <span class='jb-medium'>Making a Science of Model Search: Hyperparameter Optimization
+in Hundreds of Dimensions for Vision Architectures｜ <a href='' target="_blank">PDF</a>｜<a href='http://proceedings.mlr.press/v28/bergstra13.pdf' target="_blank">github</a></span>
+- <span class='jb-medium'>Random Search for Hyper-Parameter Optimization｜ <a href='http://www.jmlr.org/papers/v13/bergstra12a.html' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Practical Bayesian Optimization of Machine Learning Algorithms｜ <a href='http://papers.nips.cc/paper/4522-practical-bayesian-optimization' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Understanding the difficulty of training deep feedforward neural networks｜ <a href='http://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf?hc_location=ufi' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Delving Deep into Rectifiers: Surpassing Human-Level Performance on ImageNet Classification｜ <a href='https://www.cv-foundation.org/openaccess/content_iccv_2015/html/He_Delving_Deep_into_ICCV_2015_paper.html' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Deep Sparse Rectifier Neural Networks
+｜ <a href='http://proceedings.mlr.press/v15/glorot11a/glorot11a.pdf' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>｜ <a href='http://proceedings.mlr.press/v28/schaul13.pdf' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>No More Pesky Learning Rates｜ <a href='' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>On the importance of initialization and momentum in deep learning｜ <a href='http://proceedings.mlr.press/v28/sutskever13.pdf' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>On optimization methods for deep learning｜ <a href='https://dl.acm.org/citation.cfm?id=3104516' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Gradient Flow in Recurrent Nets: the Difficulty of Learning Long-Term Dependencies｜ <a href='https://www.bioinf.jku.at/publications/older/ch7.pdf' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>On the difficulty of training recurrent neural networks｜ <a href='http://proceedings.mlr.press/v28/pascanu13.pdf' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Permitted and Forbidden Sets in Symmetric Threshold-Linear Networks ｜ <a href='http://papers.nips.cc/paper/1793-permitted-and-forbidden-sets-in-symmetric-threshold-linear-networks.pdf' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>What is the best multi-stage architecture for object recognition?｜ <a href='https://ieeexplore.ieee.org/abstract/document/5459469' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Mehods od Conjugate Gradients for Solving Linear Systems｜ <a href='https://www.fing.edu.uy/inco/cursos/numerico/aln/hes_stief1952.pdf' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>An Introduction to the Conjugate Gradient Method Without the Agonizing (1994)｜ <a href='http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.206.3864' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Learning Recurrent Neural Networks with Hessian-Free Optimization｜ <a href='http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.222.6736&rep=rep1&type=pdf' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Optimizing Neural Networks with Kronecker-factored Approximate Curvature｜ <a href='http://proceedings.mlr.press/v37/martens15.pdf' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Linear and nonlinear programming｜ <a href='https://link.springer.com/content/pdf/10.1007/978-3-319-18842-3.pdf' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Improving the convergence of back-propagation learning with second order methods｜ <a href='https://www.researchgate.net/profile/Suzanna_Becker/publication/216792889_Improving_the_Convergence_of_Back-Propagation_Learning_with_Second-Order_Methods/links/00b49526e57b930da1000000.pdf' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Identifying and attacking the saddle point problem in high-dimensional non-convex optimization｜ <a href='http://papers.nips.cc/paper/5486-identifying-and-attacking-the-saddle-point-problem-in-high-dimensional-non-convex-optimization' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Exact solutions to the nonlinear dynamics of learning in deep linear neural networks｜ <a href='https://arxiv.org/abs/1312.6120' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift｜ <a href='https://arxiv.org/abs/1502.03167' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Recurrent Batch Normalization｜ <a href='https://arxiv.org/abs/1603.09025' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Layer Normalization｜ <a href='https://arxiv.org/abs/1607.06450' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Weight Normalization: A Simple Reparameterization to Accelerate Training of Deep Neural Networks｜ <a href='http://papers.nips.cc/paper/6113-weight-normalization-a-simple-reparameterization-to-accelerate-training-of-deep-neural-networks' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Deep learning with COTS HPC systems｜ <a href='http://proceedings.mlr.press/v28/coates13.pdf' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Large Scale Distributed Deep Networks｜ <a href='http://papers.nips.cc/paper/4687-large-scale-distributed-' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>One weird trick for parallelizing convolutional neural networks｜ <a href='' target="_blank">PDF</a>｜<a href='https://arxiv.org/abs/1404.5997' target="_blank">github</a></span>
+- <span class='jb-medium'>Multi-GPU Training of ConvNets｜ <a href='https://arxiv.org/abs/1312.5853' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Predicting Parameters in Deep Learning｜ <a href='http://papers.nips.cc/paper/5025-predicting-parameters-in-deep-learning' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Compressing Neural Networks with the Hashing Trick
+｜ <a href='http://proceedings.mlr.press/v37/chenc15.pdf' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
 
-- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
 
-- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
 
-- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
 
-- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
 <br><br><br>
 
 ---
