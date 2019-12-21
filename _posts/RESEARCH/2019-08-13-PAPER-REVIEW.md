@@ -94,26 +94,53 @@ vocabulary continuous speech recognition｜ <a href='http://www.cs.cmu.edu/afs/c
 
 ---
 
-### ***Optimization methods***
+### ***Training Deep Neural Networks***
 
 - <span class='jb-medium'>Hamiltonian Descent Methods｜ <a href='https://arxiv.org/pdf/1809.05042v1.pdf' target="_blank">PDF</a></span>
 
 <br><br><br>
 
-### ***Optimization methods***
+---
+
+### ***Teaching Deep Learners to Generalize***
 
 - <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
 
 <br><br><br>
 
+---
 
+### ***Convolutional Neural Networks***
 
+- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+
+<br><br><br>
+
+---
+
+### ***Recurrent Neural Networks***
+
+- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+
+<br><br><br>
+
+---
+
+### ***Advanced Topics in Deep Learning***
+
+- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+
+<br><br><br>
+
+---
+
+### ***Etc***
+
+- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+
+<br><br><br>
 
 <hr class="division4">
-
-
-
-
 
 ## **Computer Vision**
 
