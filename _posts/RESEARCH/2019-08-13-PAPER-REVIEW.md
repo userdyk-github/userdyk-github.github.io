@@ -5,7 +5,7 @@ categories: [RESEARCH]
 comments : true
 tags : [RESEARCH]
 ---
-[Back to the previous page](https://userdyk-github.github.io/Research.html) <br>
+[Back to the previous page](https://userdyk-github.github.io/Research.html) ｜<a href="" target="_blank">page management</a><br>
 
 ---
 
