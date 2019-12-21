@@ -196,7 +196,31 @@ if gpus:
 
 <span class="frmae3">pytorch</span>
 
+<br><br><br>
 
+---
+
+### ***tensorboard***
+```python
+import tensorflow as tf
+from datetime import datetime
+import os
+
+%load_ext tensorboard
+%matplotlib inline
+
+[Code : data preprocessing]
+[Code : data neural net model]
+
+tensorboard = tf.keras.callbacks.TensorBoard(
+    log_dir=os.path.join('logs',  datetime.now().strftime("%Y%m%d-%H%M%S")), 
+    write_graph=True, 
+    write_images=True,
+    histogram_freq=1
+)
+
+%tensorboard --logdir logs --port [port_num]
+```
 
 <br><br><br>
 <hr class="division2">
