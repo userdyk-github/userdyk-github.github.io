@@ -109,16 +109,31 @@ vocabulary continuous speech recognition｜ <a href='http://www.cs.cmu.edu/afs/c
 - <span class='jb-medium'>Adam: A Method for Stochastic Optimization｜ <a href='https://arxiv.org/abs/1412.6980' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
 - <span class='jb-medium'>Understanding the exploding gradient problem｜ <a href='https://pdfs.semanticscholar.org/728d/814b92a9d2c6118159bb7d9a4b3dc5eeaaeb.pdf' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
 - <span class='jb-medium'>Estimating the Hessian by Back-propagating Curvature｜ <a href='https://arxiv.org/abs/1206.6464' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Deep Learning via Hessian-free Optimization｜ <a href='http://www.cs.toronto.edu/~asamir/cifar/HFO_James.pdf' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Qualitatively characterizing neural network optimization problems｜ <a href='' target="_blank">PDF</a>｜<a href='https://arxiv.org/abs/1412.6544' target="_blank">github</a></span>
+- <span class='jb-medium'>Identifying and attacking the saddle point problem in high-dimensional non-convex optimization｜ <a href='http://papers.nips.cc/paper/5486-identifying-and-attacking-the-saddle-point-problem-in-high-dimensional-non-convex-optimization' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Exact solutions to the nonlinear dynamics of learning in deep linear neural networks｜ <a href='https://arxiv.org/abs/1312.6120' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift｜ <a href='https://arxiv.org/abs/1502.03167' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>8-Bit Approximations for Parallelism in Deep Learning｜ <a href='https://arxiv.org/abs/1511.04561' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Deep learning with COTS HPC systems｜ <a href='http://proceedings.mlr.press/v28/coates13.pdf' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Large Scale Distributed Deep Networks｜ <a href='http://papers.nips.cc/paper/4687-large-scale-distributed-' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+
+- <span class='jb-medium'>One weird trick for parallelizing convolutional neural networks｜ <a href='https://arxiv.org/abs/1404.5997' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Learning both Weights and Connections for Efficient Neural Network｜ <a href='http://papers.nips.cc/paper/5784-learning-both-weights-and-connections-for-efficient-neural-network' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>EIE: Efficient Inference Engine on Compressed Deep Neural Network｜ <a href='https://ieeexplore.ieee.org/abstract/document/7551397' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Predicting Parameters in Deep Learning｜ <a href='http://papers.nips.cc/paper/5025-predicting-parameters-in-deep-learning' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Compressing Neural Networks with the Hashing Trick｜ <a href='http://proceedings.mlr.press/v37/chenc15.pdf' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Do Deep Nets Really Need to be Deep?｜ <a href='http://papers.nips.cc/paper/5484-do-deep-nets-really-need-to-be-deep' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+
+- <span class='jb-medium'>Model compression｜ <a href='https://dl.acm.org/citation.cfm?id=1150464' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
 
 - <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
-- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
-- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
-- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
-- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
-- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
-- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+
 - <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
 
+- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+
+- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
 <br><br><br>
 
 ---
