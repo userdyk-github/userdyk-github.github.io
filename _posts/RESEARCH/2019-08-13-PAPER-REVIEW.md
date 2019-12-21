@@ -97,6 +97,27 @@ vocabulary continuous speech recognition｜ <a href='http://www.cs.cmu.edu/afs/c
 ### ***Training Deep Neural Networks***
 
 - <span class='jb-medium'>Hamiltonian Descent Methods｜ <a href='https://arxiv.org/pdf/1809.05042v1.pdf' target="_blank">PDF</a></span>
+- <span class='jb-medium'>Train faster, generalize better: Stability of stochastic gradient descent｜ <a href='http://proceedings.mlr.press/v48/hardt16.html' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Random Search for Hyper-Parameter Optimization｜ <a href='http://www.jmlr.org/papers/v13/bergstra12a.html' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Efficient BackProp｜ <a href='https://link.springer.com/chapter/10.1007/978-3-642-35289-8_3' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>A Convergence Analysis of Log-Linear Training｜ <a href='http://papers.nips.cc/paper/4421-a-convergence-analysis-of-log-linear-training' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Optimal Brain Damage｜ <a href='http://papers.nips.cc/paper/250-optimal-brain-damage.pdf' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Maxout Networks｜ <a href='http://proceedings.mlr.press/v28/goodfellow13.pdf' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Increased rates of convergence through learning rate adaptation｜ <a href='https://www.sciencedirect.com/science/article/abs/pii/0893608088900032' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Adaptive Subgradient Methods for Online Learning and Stochastic Optimization｜ <a href='http://www.jmlr.org/papers/v12/duchi11a.html' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>ADADELTA: An Adaptive Learning Rate Method｜ <a href='https://arxiv.org/abs/1212.5701' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Adam: A Method for Stochastic Optimization｜ <a href='https://arxiv.org/abs/1412.6980' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Understanding the exploding gradient problem｜ <a href='https://pdfs.semanticscholar.org/728d/814b92a9d2c6118159bb7d9a4b3dc5eeaaeb.pdf' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Estimating the Hessian by Back-propagating Curvature｜ <a href='https://arxiv.org/abs/1206.6464' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+
+- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
 
 <br><br><br>
 
