@@ -25,7 +25,7 @@ title: RESEARCH
 
 ## _Projects_
 
-> [Developing a non-visual communication interface for exhibitions of visual arts for the visually impaired and studying the parties' perspectives on expanding the rights of enjoyment of culture](https://userdyk-github.github.io/research/PROJECT01.html)
+> [Developing a non-visual communication interface for exhibitions of visual arts for the visually impaired and studying the parties' perspectives on expanding the rights of enjoyment of culture](https://userdyk-github.github.io/research/PROJECT01.html)<br>
 > [Energy prediction of electrons on graphene by deep neural net](https://userdyk-github.github.io/research/PROJECT02.html)
 
 <br><br><br>
