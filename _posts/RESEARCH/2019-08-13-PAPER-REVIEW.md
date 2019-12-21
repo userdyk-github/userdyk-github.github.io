@@ -117,14 +117,12 @@ vocabulary continuous speech recognition｜ <a href='http://www.cs.cmu.edu/afs/c
 - <span class='jb-medium'>8-Bit Approximations for Parallelism in Deep Learning｜ <a href='https://arxiv.org/abs/1511.04561' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
 - <span class='jb-medium'>Deep learning with COTS HPC systems｜ <a href='http://proceedings.mlr.press/v28/coates13.pdf' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
 - <span class='jb-medium'>Large Scale Distributed Deep Networks｜ <a href='http://papers.nips.cc/paper/4687-large-scale-distributed-' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
-
 - <span class='jb-medium'>One weird trick for parallelizing convolutional neural networks｜ <a href='https://arxiv.org/abs/1404.5997' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
 - <span class='jb-medium'>Learning both Weights and Connections for Efficient Neural Network｜ <a href='http://papers.nips.cc/paper/5784-learning-both-weights-and-connections-for-efficient-neural-network' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
 - <span class='jb-medium'>EIE: Efficient Inference Engine on Compressed Deep Neural Network｜ <a href='https://ieeexplore.ieee.org/abstract/document/7551397' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
 - <span class='jb-medium'>Predicting Parameters in Deep Learning｜ <a href='http://papers.nips.cc/paper/5025-predicting-parameters-in-deep-learning' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
 - <span class='jb-medium'>Compressing Neural Networks with the Hashing Trick｜ <a href='http://proceedings.mlr.press/v37/chenc15.pdf' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
 - <span class='jb-medium'>Do Deep Nets Really Need to be Deep?｜ <a href='http://papers.nips.cc/paper/5484-do-deep-nets-really-need-to-be-deep' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
-
 - <span class='jb-medium'>Model compression｜ <a href='https://dl.acm.org/citation.cfm?id=1150464' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
 
 - <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
