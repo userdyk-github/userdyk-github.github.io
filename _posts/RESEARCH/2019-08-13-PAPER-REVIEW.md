@@ -233,9 +233,6 @@ Overfitting｜ <a href='http://www.jmlr.org/papers/volume15/srivastava14a/srivas
 - <span class='jb-medium'>Tutorial on Variational Autoencoders｜ <a href='https://arxiv.org/abs/1606.05908' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
 - <span class='jb-medium'>Generalized Denoising Auto-Encoders as Generative Models｜ <a href='http://papers.nips.cc/paper/5023-generalized-denoising-auto-encoders-as-generative-models' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
 - <span class='jb-medium'>Adversarial Autoencoders｜ <a href='https://arxiv.org/abs/1511.05644' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
-- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
-- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
-
 
 
 
