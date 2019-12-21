@@ -170,7 +170,74 @@ in Hundreds of Dimensions for Vision Architectures｜ <a href='' target="_blank"
 
 ### ***Teaching Deep Learners to Generalize***
 
+- <span class='jb-medium'>Training with Noise is Equivalent to Tikhonov Regularization｜ <a href='https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/bishop-tikhonov-nc-95.pdf' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Outlier Detection with Autoencoder Ensembles｜ <a href='https://epubs.siam.org/doi/pdf/10.1137/1.9781611974973.11' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Dropout: A Simple Way to Prevent Neural Networks from
+Overfitting｜ <a href='http://www.jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf?utm_content=buffer79b43&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Regularization of Neural Networks using DropConnect｜ <a href='http://proceedings.mlr.press/v28/wan13.html' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Analyzing noise in autoencoders and deep networks｜ <a href='https://arxiv.org/abs/1406.1831' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Sparse Feature Learning for Deep Belief Networks｜ <a href='http://papers.nips.cc/paper/3363-sparse-feature-learning-for-deep-belief-networks' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Extracting and composing robust features with denoising autoencoders｜ <a href='http://delivery.acm.org/10.1145/1400000/1390294/p1096-vincent.pdf?ip=115.145.204.96&id=1390294&acc=ACTIVE%20SERVICE&key=0EC22F8658578FE1%2EB50D9BE1468BDDBD%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1576943596_2cee20b2d5cc5f6a3f2a2a0936e950f5' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>To recognize shapes, first learn to generate images｜ <a href='https://www.sciencedirect.com/science/article/pii/S0079612306650346' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Why Does Unsupervised Pre-training Help Deep Learning?｜ <a href='http://www.jmlr.org/papers/v11/erhan10a.html' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Greedy Layer-Wise Training of Deep Networks｜ <a href='http://papers.nips.cc/paper/3048-greedy-layer-wise-training-of-deep-networks.pdf' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Highway and Residual Networks learn Unrolled Iterative Estimation｜ <a href='https://arxiv.org/abs/1612.07771' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Highway Networks｜ <a href='https://arxiv.org/abs/1505.00387' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Deep Residual Learning for Image Recognition｜ <a href='http://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Optimization by Simulated Annealing｜ <a href='https://science.sciencemag.org/content/220/4598/671' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Contractive auto-encoders: explicit invariance during feature extraction｜ <a href='https://dl.acm.org/citation.cfm?id=3104587' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Generative Adversarial Text to Image Synthesis｜ <a href='http://proceedings.mlr.press/v48/reed16.pdf' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Bias Plus Variance Decomposition for Zero-One Loss Functions｜ <a href='http://web.cs.iastate.edu/~honavar/bias1.pdf' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Error-Correcting Output Coding Corrects Bias and Variance｜ <a href='https://www.sciencedirect.com/science/article/pii/B9781558603776500463' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Second order derivatives for network pruning: Optimal Brain Surgeon ｜ <a href='http://papers.nips.cc/paper/647-second-order-derivatives-for-network-pruning-optimal-brain-surgeon.pdf' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Optimal Brain Damage ｜ <a href='http://papers.nips.cc/paper/250-optimal-brain-damage.pdf' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Creating artificial neural networks that generalize｜ <a href='https://www.sciencedirect.com/science/article/abs/pii/0893608091900332' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Understanding deep learning requires rethinking generalization｜ <a href='https://arxiv.org/abs/1611.03530' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Solutions of ill posed problems｜ <a href='https://www.ams.org/journals/bull/1979-01-03/S0273-0979-1979-14602-0/' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Training with Noise is Equivalent to Tikhonov Regularization｜ <a href='https://www.mitpressjournals.org/doi/abs/10.1162/neco.1995.7.1.108' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Statistical learning with sparsity: the lasso and generalizations｜ <a href='https://content.taylorfrancis.com/books/download?dac=C2014-0-36089-X&isbn=9781498712170&format=googlePreviewPdf' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Improving neural networks by preventing co-adaptation of feature detectors｜ <a href='https://arxiv.org/abs/1207.0580' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>KATE: K-Competitive Autoencoder for Text｜ <a href='https://dl.acm.org/citation.cfm?id=3098017' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Sparse deep belief net model for visual area V2｜ <a href='http://papers.nips.cc/paper/3313-sparse-deep-belief-net-model-for-visual-area-v2' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Sparse autoencoder｜ <a href='https://web.stanford.edu/class/cs294a/sparseAutoencoder' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Ensemble Methods in Data Mining: Improving Accuracy Through Combining Predictions｜ <a href='https://www.morganclaypool.com/doi/abs/10.2200/S00240ED1V01Y200912DMK002' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Ensemble methods: foundations and algorithms｜ <a href='https://content.taylorfrancis.com/books/download?dac=C2009-0-15529-4&isbn=9781439830055&format=googlePreviewPdf' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Bagging predictors｜ <a href='https://link.springer.com/article/10.1007/BF00058655' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Using a Random Forest to Inspire a Neural Network and Improving on It｜ <a href='https://epubs.siam.org/doi/abs/10.1137/1.9781611974973.1' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Outlier Detection with Autoencoder Ensembles｜ <a href='https://epubs.siam.org/doi/abs/10.1137/1.9781611974973.11' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Ensembling neural networks: Many could be better than all｜ <a href='https://www.sciencedirect.com/science/article/pii/S000437020200190X' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Boosting Neural Networks｜ <a href='https://www.mitpressjournals.org/doi/abs/10.1162/089976600300015178' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Convex Neural Networks｜ <a href='http://papers.nips.cc/paper/2800-convex-neural-networks.pdf' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>SMOTE: Synthetic Minority Over-sampling Technique｜ <a href='https://arxiv.org/pdf/1106.1813.pdf' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Outlier Analysis ｜ <a href='https://link.springer.com/chapter/10.1007/978-3-319-47578-3_1' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Neural Network Ensembles｜ <a href='https://www.computer.org/csdl/journal/tp/1990/10/i0993/13rRUyv53Gg' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Deep Neural Nets as a Method for Quantitative Structure–Activity Relationships｜ <a href='https://pubs.acs.org/doi/abs/10.1021/ci500747n' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Semi-supervised Learning with Ladder Networks｜ <a href='http://papers.nips.cc/paper/5947-semi-supervised-learning-with-ladder-ne' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>From neural PCA to deep unsupervised learning｜ <a href='https://www.sciencedirect.com/science/article/pii/B9780128028063000087' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>A Theoretical Analysis of Optimization by Gaussian Continuation｜ <a href='https://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/viewPaper/9299' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Global Continuation for Distance Geometry Problems｜ <a href='https://epubs.siam.org/doi/abs/10.1137/S1052623495283024' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Learning and development in neural networks: the importance of starting small｜ <a href='https://www.sciencedirect.com/science/article/pii/0010027793900584' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Neural network learning control of robot manipulators using gradually increasing task difficulty｜ <a href='https://ieeexplore.ieee.org/abstract/document/294207' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>A SYSTEM FOR INCREMENTAL LEARNING BASED ON ALGORITHMIC PROBABILITY｜ <a href='http://world.std.com/~rjs/publications/IncLrn89.pdf' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>How Do Humans Teach: On Curriculum Learning and Teaching Dimension｜ <a href='http://papers.nips.cc/paper/4466-how-do-humans-teach-on-curriculum-learning-and-teaching-d' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Automated curriculum learning for neural networks｜ <a href='https://dl.acm.org/citation.cfm?id=3305517' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Collaborative Filtering with Stacked Denoising AutoEncoders and Sparse Inputs｜ <a href='https://hal.inria.fr/hal-01256422/' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Collaborative Denoising Auto-Encoders for Top-N Recommender Systems｜ <a href='https://dl.acm.org/citation.cfm?id=2835837' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'> Improving generalization performance using double backpropagation｜ <a href='https://www.researchgate.net/profile/Harris_Drucker/publication/5576575_Improving_generalization_performance_using_double_backpropagation/links/540754510cf2c48563b2ab7f.pdf' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>The Manifold Tangent Classifier｜ <a href='http://papers.nips.cc/paper/4409-the-manifold-tangent-classifier.pdf' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Auto-Encoding Variational Bayes｜ <a href='https://arxiv.org/abs/1312.6114' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Stochastic Backpropagation and Approximate Inference in Deep Generative Models｜ <a href='https://arxiv.org/abs/1401.4082' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Importance Weighted Autoencoders｜ <a href='https://arxiv.org/abs/1509.00519' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Learning Structured Output Representation using Deep Conditional Generative Models｜ <a href='http://papers.nips.cc/paper/5775-learning-structured-output-representation-using-deep-conditional-generati' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>An Uncertain Future: Forecasting from Static Images Using Variational Autoencoders｜ <a href='https://link.springer.com/chapter/10.1007/978-3-319-46478-7_51' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Tutorial on Variational Autoencoders｜ <a href='https://arxiv.org/abs/1606.05908' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Generalized Denoising Auto-Encoders as Generative Models｜ <a href='http://papers.nips.cc/paper/5023-generalized-denoising-auto-encoders-as-generative-models' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>Adversarial Autoencoders｜ <a href='https://arxiv.org/abs/1511.05644' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
 - <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+
+
+
 
 <br><br><br>
 
