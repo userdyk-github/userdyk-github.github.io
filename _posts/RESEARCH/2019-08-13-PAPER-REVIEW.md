@@ -100,6 +100,15 @@ vocabulary continuous speech recognition｜ <a href='http://www.cs.cmu.edu/afs/c
 
 <br><br><br>
 
+### ***Optimization methods***
+
+- <span class='jb-medium'>｜ <a href='' target="_blank">PDF</a>｜<a href='' target="_blank">github</a></span>
+
+<br><br><br>
+
+
+
+
 <hr class="division4">
 
 
