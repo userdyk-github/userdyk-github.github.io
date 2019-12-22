@@ -371,6 +371,13 @@ x_test_scaled = (x_test - x_test_mean)/x_test_std
 
 
 <br><br><br>
+
+## **From keras**
+```python
+from keras.datasets import mnist
+```
+<br><br><br>
+
 <hr class="division1">
 
 Reference
