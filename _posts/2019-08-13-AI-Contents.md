@@ -6,7 +6,7 @@ comments : true
 tags : [AI]
 ---
 
-## _AI01 : Data science analysis_
+## _AI01 : Data preprocessing_
 
 ### _General dataset_
 
