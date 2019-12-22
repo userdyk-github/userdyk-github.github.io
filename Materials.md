@@ -120,6 +120,11 @@ title: MATERIALS
 - <a href="https://repl.it/" target="_blank">Implementation with programming language on web</a>
 - <a href="http://www.gnu.org/home.en.html" target="_blank">gnu</a>
 - <a href="https://www.techonthenet.com/index.php" target="_blank">tech on the net</a>
+- <a href="https://freshrimpsushi.tistory.com/" target="_blank">freshrimpsushi</a>
+- <a href="https://dojang.io/course/index.php?categoryid=1" target="_blank">dojang</a>
+- <a href="https://www.fun-coding.org/daveblog.html" target="_blank">fun coding</a>
+
+
 
 <br>
 
@@ -137,4 +142,3 @@ title: MATERIALS
 - <a href="https://www.youtube.com/channel/UCei9IGoBLCRShZaBb_RN_IA/playlists" target="_blank">시니어코딩IndiFlex</a>
 - <a href="https://www.youtube.com/channel/UCLR3sD0KB_dWpvcsrLP0aUg/playlists" target="_blank">todaycode오늘코드</a>
 - <a href="https://www.youtube.com/channel/UCVrs4KiLQz_gvVWWK1pKR1g/playlists" target="_blank">HSM - edu 통계</a>
-- <a href="https://freshrimpsushi.tistory.com/" target="_blank">생새우초밥집</a>
