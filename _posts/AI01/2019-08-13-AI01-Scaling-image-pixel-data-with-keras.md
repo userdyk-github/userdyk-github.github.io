@@ -194,11 +194,6 @@ test batch shape=(32, 28, 28, 1), min=0.000, max=255.000, mean=36.032, std=81.37
 ```
 <hr class='division3'>
 </details>
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-<hr class='division3'>
-</details>
 <br><br><br>
 
 <hr class="division2">
