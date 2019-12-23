@@ -212,6 +212,7 @@ float("-Inf")
 
 ### ***Dictionary***
 
+#### set
 ```python
 numbers = dict(x=5, y=0)
 print('numbers =', numbers)
@@ -227,6 +228,49 @@ numbers = {'y': 0, 'x': 5}
 empty = {}
 <class 'dict'>
 ```
+<br><br><br>
+
+#### get
+```python
+a = {1:'korea',2:'USA',3:'china'}
+
+print(a.get(1), a)
+print(a[1], a)
+print(a.pop(1), a)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+a = {1:'korea',2:'USA',3:'china'}
+
+print(a.get(1), a)
+print(a[1], a)
+print(a.pop(1), a)
+```
+<hr class='division3'>
+<details>
+```python
+a = {1:'korea',2:'USA',3:'china'}
+
+print(a.popitem(), a)
+print(a.popitem(), a)
+print(a.popitem(), a)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+(3, 'china') {1: 'korea', 2: 'USA'}
+(2, 'USA') {1: 'korea'}
+(1, 'korea') {}
+```
+<hr class='division3'>
+<details>
+<br><br><br>
+
+
+#### change type to list
 ```python
 a = {1:'korea',2:'USA',3:'china'}
 
@@ -246,10 +290,8 @@ print(list(a.items()))
 ```
 <hr class='division3'>
 <details>
+     
 
-```python
-
-```     
 
 <br><br><br>
 
