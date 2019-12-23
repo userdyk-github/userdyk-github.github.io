@@ -461,6 +461,9 @@ b
 ---
 
 ### ***raise***
+![img-9-4](https://user-images.githubusercontent.com/52376448/71385391-b5df1780-262a-11ea-9b0e-33de023b4a59.png)
+<a herf="https://python.bakyeono.net/chapter-9-4.html#946-assert-%EB%AC%B8-%EB%8B%A8%EC%96%B8%ED%95%98%EA%B8%B0" target="_blank">URL</a>
+
 ```python
 class DoorException(Exception):
     pass
@@ -520,6 +523,7 @@ DoorException: being preparing
 <br><br><br>
 
 ### ***try/except***
+![img-9-4](https://user-images.githubusercontent.com/52376448/71385391-b5df1780-262a-11ea-9b0e-33de023b4a59.png)
 <a herf="https://python.bakyeono.net/chapter-9-4.html#946-assert-%EB%AC%B8-%EB%8B%A8%EC%96%B8%ED%95%98%EA%B8%B0" target="_blank">URL</a>
 ```python
 try:
