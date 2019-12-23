@@ -1857,7 +1857,7 @@ os.getcwd()
 ---
 
 ### ***Object copy***
-<span class=frame3>mutable</span>
+<span class=frame3>immutable</span>
 ```python
 import copy
 
@@ -1904,12 +1904,53 @@ c value: 1 : shallow(c = copy.copy(a))  ,
 d value: 1 : deep(d = copy.deepcopy(d)) ,
  d id: 10914496
 ```
-<span class=frame3>immutable</span>
+<span class=frame3>mutable</span>
 ```python
+import copy
 
+a = [1]
+b = a
+c = copy.copy(a)
+d = copy.deepcopy(a)
+print('a value:',a,': original(a)',
+      ',\n a id:',id(a))
+print('b value:',b,': simple(b = a)',
+      ',\n b id:',id(b))
+print('c value:',c,': shallow(c = copy.copy(a)) ',
+      ',\n c id:',id(c))
+print('d value:',d,': deep(d = copy.deepcopy(d))',
+      ',\n d id:',id(d))
+print()
+
+b[0] = 2
+print('a value:',a,': original(a)',
+      ',\n a id:',id(a))
+print('b value:',b,': simple(b = a)',
+      ',\n b id:',id(b))
+print('c value:',c,': shallow(c = copy.copy(a)) ',
+      ',\n c id:',id(c))
+print('d value:',d,': deep(d = copy.deepcopy(d))',
+      ',\n d id:',id(d))
+print()
 ```
 ```
+a value: [1] : original(a) ,
+ a id: 140282055629320
+b value: [1] : simple(b = a) ,
+ b id: 140282055629320
+c value: [1] : shallow(c = copy.copy(a))  ,
+ c id: 140282058826824
+d value: [1] : deep(d = copy.deepcopy(d)) ,
+ d id: 140282205501000
 
+a value: [2] : original(a) ,
+ a id: 140282055629320
+b value: [2] : simple(b = a) ,
+ b id: 140282055629320
+c value: [1] : shallow(c = copy.copy(a))  ,
+ c id: 140282058826824
+d value: [1] : deep(d = copy.deepcopy(d)) ,
+ d id: 140282205501000
 ```
 <br><br><br>
 
