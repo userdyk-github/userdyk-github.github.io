@@ -21,8 +21,7 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## **Data structure and algorithm**
-
+## **Data structure**
 <br><br><br>
 
 <hr class="division2">
@@ -191,7 +190,7 @@ List of posts to read before reading this article
 ---
 
 ### ***A' algorithm***
-
+## **Algorithm**
 
 
 <br><br><br>
