@@ -519,7 +519,16 @@ DoorException: being preparing
 ```
 <br><br><br>
 
-
+### ***try/except***
+```python
+try:
+    raise ZeroDivisionError()
+except ZeroDivisionError:
+    print('error')
+```
+```
+error
+```
 <br><br><br>
 <hr class="division2">
 
