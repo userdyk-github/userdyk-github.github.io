@@ -1857,6 +1857,26 @@ os.getcwd()
 ---
 
 ### ***Object copy***
+```python
+import copy
+
+a = [[1], [2]]
+b = a
+c = copy.copy(a)
+d = copy.deepcopy(a)
+print('a value:',a,', a id:',id(a),', a[0] id:',id(a[0]),', a[1] id:',id(a[1]),'original')
+print('b value:',b,', b id:',id(b),', b[0] id:',id(b[0]),', b[1] id:',id(b[1]),'simple')
+print('c value:',c,', c id:',id(c),', c[0] id:',id(c[0]),', c[1] id:',id(c[1]),'shallow')
+print('d value:',d,', d id:',id(d),', d[0] id:',id(d[0]),', d[1] id:',id(d[1]),'deep')
+```
+```
+a value: [[1], [2]] , a id: 140282059392776 , a[0] id: 140282059392200 , a[1] id: 140282059392712 original
+b value: [[1], [2]] , b id: 140282059392776 , b[0] id: 140282059392200 , b[1] id: 140282059392712 simple
+c value: [[1], [2]] , c id: 140282059392840 , c[0] id: 140282059392200 , c[1] id: 140282059392712 shallow
+d value: [[1], [2]] , d id: 140282056077576 , d[0] id: 140282056080712 , d[1] id: 140282059393224 deep
+```
+<br><br><br>
+
 #### simple copy
 <br><br><br>
 
