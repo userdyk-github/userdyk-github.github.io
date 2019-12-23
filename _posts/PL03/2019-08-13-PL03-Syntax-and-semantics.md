@@ -227,6 +227,24 @@ numbers = {'y': 0, 'x': 5}
 empty = {}
 <class 'dict'>
 ```
+```python
+a = {1:'korea',2:'USA',3:'china'}
+
+print(list(a))
+print(list(a.values()))
+print(list(a.items()))
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+[1, 2, 3]
+['korea', 'USA', 'china']
+[(1, 'korea'), (2, 'USA'), (3, 'china')]
+```
+<hr class='division3'>
+<details>
+
 <br><br><br>
 
 ---
