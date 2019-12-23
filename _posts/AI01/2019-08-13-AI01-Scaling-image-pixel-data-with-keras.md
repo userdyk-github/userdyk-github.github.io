@@ -29,7 +29,11 @@ from keras.datasets import mnist
 
 # load dataset
 (train_images, train_labels), (test_images, test_labels) = mnist.load_data()
-
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+```python
 # summarize dataset type and shape
 print(type(train_images), train_images.dtype, train_images.shape)
 print(type(train_labels), train_labels.dtype, train_labels.shape)
@@ -40,9 +44,6 @@ print(type(test_labels), test_labels.dtype, test_labels.shape)
 print('Train', train_images.min(), train_images.max(), train_images.mean(), train_images.std())
 print('Test', test_images.min(), test_images.max(), test_images.mean(), test_images.std())
 ```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
 <p>
   <class 'numpy.ndarray'> uint8 (60000, 28, 28)<br>
   <class 'numpy.ndarray'> uint8 (60000,)<br>
