@@ -348,6 +348,33 @@ True
 ```
 <br><br><br>
 
+#### comprehension
+
+```python
+a = 10
+b = {a > 0 : 1,
+     a == 0 : 0}.get(True, -1)
+b
+```
+```python
+a = 10
+
+if a > 0:
+    b = 1
+elif a == 0:
+    b = 0
+else:
+    b = -1
+    
+b
+```
+```python
+a = 10
+b = 1 if a > 0 else ( 0 if a==0 else -1)
+b
+```
+
+
 ---
 
 ### ***while***
