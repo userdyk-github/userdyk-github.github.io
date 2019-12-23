@@ -1913,45 +1913,44 @@ b = a
 c = copy.copy(a)
 d = copy.deepcopy(a)
 print('a value:',a,': original(a)',
-      ',\n a id:',id(a))
+      ',\n a id:',id(a),', a[0] id:',id(a[0]))
 print('b value:',b,': simple(b = a)',
-      ',\n b id:',id(b))
+      ',\n b id:',id(b),', b[0] id:',id(b[0]))
 print('c value:',c,': shallow(c = copy.copy(a)) ',
-      ',\n c id:',id(c))
+      ',\n c id:',id(c),', c[0] id:',id(c[0]))
 print('d value:',d,': deep(d = copy.deepcopy(d))',
-      ',\n d id:',id(d))
+      ',\n d id:',id(d),', d[0] id:',id(d[0]))
 print()
 
 b[0] = 2
 print('a value:',a,': original(a)',
-      ',\n a id:',id(a))
+      ',\n a id:',id(a),', a[0] id:',id(a[0]))
 print('b value:',b,': simple(b = a)',
-      ',\n b id:',id(b))
+      ',\n b id:',id(b),', b[0] id:',id(b[0]))
 print('c value:',c,': shallow(c = copy.copy(a)) ',
-      ',\n c id:',id(c))
+      ',\n c id:',id(c),', c[0] id:',id(c[0]))
 print('d value:',d,': deep(d = copy.deepcopy(d))',
-      ',\n d id:',id(d))
-print()
+      ',\n d id:',id(d),', d[0] id:',id(d[0]))
 ```
 ```
 a value: [1] : original(a) ,
- a id: 140282055629320
+ a id: 140282058829128 , a[0] id: 10914496
 b value: [1] : simple(b = a) ,
- b id: 140282055629320
+ b id: 140282058829128 , b[0] id: 10914496
 c value: [1] : shallow(c = copy.copy(a))  ,
- c id: 140282058826824
+ c id: 140282056137608 , c[0] id: 10914496
 d value: [1] : deep(d = copy.deepcopy(d)) ,
- d id: 140282205501000
+ d id: 140282055629320 , d[0] id: 10914496
 
 a value: [2] : original(a) ,
- a id: 140282055629320
+ a id: 140282058829128 , a[0] id: 10914528
 b value: [2] : simple(b = a) ,
- b id: 140282055629320
+ b id: 140282058829128 , b[0] id: 10914528
 c value: [1] : shallow(c = copy.copy(a))  ,
- c id: 140282058826824
+ c id: 140282056137608 , c[0] id: 10914496
 d value: [1] : deep(d = copy.deepcopy(d)) ,
- d id: 140282205501000
-```
+ d id: 140282055629320 , d[0] id: 10914496
+ ```
 <br><br><br>
 
 #### simple copy
