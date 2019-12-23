@@ -374,13 +374,177 @@ test batch shape=(32, 28, 28, 1), min=0.000, max=1.000, mean=0.130, std=0.307
 
 
 ## **How to Standardize Images With ImageDataGenerator**
-
+### ***feature-wise Standardization***
 ```python
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from tensorflow.keras.datasets import mnist
+from sklearn.model_selection import train_test_split 
 
+"""data preprocessing"""
+# load dataset
+(train_images, train_labels), (test_images, test_labels) = mnist.load_data()
+train_images, valX, train_labels, valy = train_test_split(train_images, train_labels, test_size=0.2,random_state=2018)
+
+# reshape to rank 4
+train_images = train_images.reshape(48000,28,28,1)
+valX = valX.reshape(12000,28,28,1)
+test_images = test_images.reshape(10000,28,28,1)   
+
+print('train shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (train_images.shape, train_images.min(), train_images.max(), train_images.mean(), train_images.std()))
+print('val shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (valX.shape, valX.min(), valX.max(), valX.mean(), valX.std()))
+print('test shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (test_images.shape, test_images.min(), test_images.max(), test_images.mean(), test_images.std()))
+print('--------'*10)
+
+# get batch iterator
+datagen = ImageDataGenerator(featurewise_center=True, featurewise_std_normalization=True)
+datagen.fit(train_images)
+print(datagen.mean, datagen.std)
+datagen.fit(valX)
+print(datagen.mean, datagen.std)
+datagen.fit(test_images)
+print(datagen.mean, datagen.std)
+print('--------'*10)
+
+
+
+# batch : 32
+train_iterator = datagen.flow(train_images, train_labels, batch_size=32)
+val_iterator = datagen.flow(valX, valy, batch_size=32)
+test_iterator = datagen.flow(test_images, test_labels, batch_size=32)
+
+train_batchX, train_batchy = train_iterator.next()
+val_batchX, val_batchy = val_iterator.next()
+test_batchX, test_batchy = test_iterator.next()
+
+print('train batch(32) shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (train_batchX.shape, train_batchX.min(), train_batchX.max(), train_batchX.mean(), train_batchX.std()))
+print('val batch(32) shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (val_batchX.shape, val_batchX.min(), val_batchX.max(), val_batchX.mean(), val_batchX.std()))
+print('test batch(32) shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (test_batchX.shape, test_batchX.min(), test_batchX.max(), test_batchX.mean(), test_batchX.std()))
+print('--------'*10)
+
+
+
+# batch : all
+train_iterator = datagen.flow(train_images, train_labels, batch_size=len(train_images))
+val_iterator = datagen.flow(valX, valy, batch_size=len(valX))
+test_iterator = datagen.flow(test_images, test_labels, batch_size=len(test_images))
+
+train_batchX, train_batchy = train_iterator.next()
+val_batchX, val_batchy = val_iterator.next()
+test_batchX, test_batchy = test_iterator.next()
+
+print('train batch(all) shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (train_batchX.shape, train_batchX.min(), train_batchX.max(), train_batchX.mean(), train_batchX.std()))
+print('val batch(all) shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (val_batchX.shape, val_batchX.min(), val_batchX.max(), val_batchX.mean(), val_batchX.std()))
+print('test batch(all) shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (test_batchX.shape, test_batchX.min(), test_batchX.max(), test_batchX.mean(), test_batchX.std()))
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+```
+train shape=(48000, 28, 28, 1), min=0.000, max=255.000, mean=33.298, std=78.545
+val shape=(12000, 28, 28, 1), min=0.000, max=255.000, mean=33.401, std=78.658
+test shape=(10000, 28, 28, 1), min=0.000, max=255.000, mean=33.791, std=79.172
+--------------------------------------------------------------------------------
+[[[33.29781]]] [[[78.54484]]]
+[[[33.40119]]] [[[78.65801]]]
+[[[33.79124]]] [[[79.172455]]]
+--------------------------------------------------------------------------------
+train batch(32) shape=(32, 28, 28, 1), min=-0.427, max=2.794, mean=0.004, std=1.006
+val batch(32) shape=(32, 28, 28, 1), min=-0.427, max=2.794, mean=0.029, std=1.034
+test batch(32) shape=(32, 28, 28, 1), min=-0.427, max=2.794, mean=-0.026, std=0.968
+--------------------------------------------------------------------------------
+train batch(all) shape=(48000, 28, 28, 1), min=-0.427, max=2.794, mean=-0.006, std=0.992
+val batch(all) shape=(12000, 28, 28, 1), min=-0.427, max=2.794, mean=-0.005, std=0.994
+test batch(all) shape=(10000, 28, 28, 1), min=-0.427, max=2.794, mean=-0.000, std=1.000
+```
+<hr class='division3'>
+</details>
+
+<br><br><br>
+
+---
+
+### ***sample-wise Standardization***
+```python
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from tensorflow.keras.datasets import mnist
+from sklearn.model_selection import train_test_split 
+
+"""data preprocessing"""
+# load dataset
+(train_images, train_labels), (test_images, test_labels) = mnist.load_data()
+train_images, valX, train_labels, valy = train_test_split(train_images, train_labels, test_size=0.2,random_state=2018)
+
+# reshape to rank 4
+train_images = train_images.reshape(48000,28,28,1)
+valX = valX.reshape(12000,28,28,1)
+test_images = test_images.reshape(10000,28,28,1)   
+
+print('train shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (train_images.shape, train_images.min(), train_images.max(), train_images.mean(), train_images.std()))
+print('val shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (valX.shape, valX.min(), valX.max(), valX.mean(), valX.std()))
+print('test shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (test_images.shape, test_images.min(), test_images.max(), test_images.mean(), test_images.std()))
+print('--------'*10)
+
+# get batch iterator
+datagen = ImageDataGenerator(samplewise_center=True, samplewise_std_normalization=True)
+datagen.fit(train_images)
+print(datagen.mean, datagen.std)
+datagen.fit(valX)
+print(datagen.mean, datagen.std)
+datagen.fit(test_images)
+print(datagen.mean, datagen.std)
+print('--------'*10)
+
+
+
+# batch : 32
+train_iterator = datagen.flow(train_images, train_labels, batch_size=32)
+val_iterator = datagen.flow(valX, valy, batch_size=32)
+test_iterator = datagen.flow(test_images, test_labels, batch_size=32)
+
+train_batchX, train_batchy = train_iterator.next()
+val_batchX, val_batchy = val_iterator.next()
+test_batchX, test_batchy = test_iterator.next()
+
+print('train batch(32) shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (train_batchX.shape, train_batchX.min(), train_batchX.max(), train_batchX.mean(), train_batchX.std()))
+print('val batch(32) shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (val_batchX.shape, val_batchX.min(), val_batchX.max(), val_batchX.mean(), val_batchX.std()))
+print('test batch(32) shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (test_batchX.shape, test_batchX.min(), test_batchX.max(), test_batchX.mean(), test_batchX.std()))
+print('--------'*10)
+
+
+
+# batch : all
+train_iterator = datagen.flow(train_images, train_labels, batch_size=len(train_images))
+val_iterator = datagen.flow(valX, valy, batch_size=len(valX))
+test_iterator = datagen.flow(test_images, test_labels, batch_size=len(test_images))
+
+train_batchX, train_batchy = train_iterator.next()
+val_batchX, val_batchy = val_iterator.next()
+test_batchX, test_batchy = test_iterator.next()
+
+print('train batch(all) shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (train_batchX.shape, train_batchX.min(), train_batchX.max(), train_batchX.mean(), train_batchX.std()))
+print('val batch(all) shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (val_batchX.shape, val_batchX.min(), val_batchX.max(), val_batchX.mean(), val_batchX.std()))
+print('test batch(all) shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (test_batchX.shape, test_batchX.min(), test_batchX.max(), test_batchX.mean(), test_batchX.std()))
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+train shape=(48000, 28, 28, 1), min=0.000, max=255.000, mean=33.298, std=78.545
+val shape=(12000, 28, 28, 1), min=0.000, max=255.000, mean=33.401, std=78.658
+test shape=(10000, 28, 28, 1), min=0.000, max=255.000, mean=33.791, std=79.172
+--------------------------------------------------------------------------------
+None None
+None None
+None None
+--------------------------------------------------------------------------------
+train batch(32) shape=(32, 28, 28, 1), min=-0.600, max=4.298, mean=0.000, std=1.000
+val batch(32) shape=(32, 28, 28, 1), min=-0.554, max=4.273, mean=-0.000, std=1.000
+test batch(32) shape=(32, 28, 28, 1), min=-0.585, max=4.394, mean=0.000, std=1.000
+--------------------------------------------------------------------------------
+train batch(all) shape=(48000, 28, 28, 1), min=-0.777, max=7.770, mean=-0.000, std=1.000
+val batch(all) shape=(12000, 28, 28, 1), min=-0.851, max=7.249, mean=0.000, std=1.000
+test batch(all) shape=(10000, 28, 28, 1), min=-0.732, max=7.578, mean=0.000, std=1.000
+```
 <hr class='division3'>
 </details>
 
@@ -403,73 +567,7 @@ Reference
 
 ---
 
-Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
 
-[Link to another page](another-page).
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-* * *
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-
-![](https://assets-cdn.github.com/images/icons/emoji/octocat.png)
-![](https://guides.github.com/activities/hello-world/branching.png)
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
