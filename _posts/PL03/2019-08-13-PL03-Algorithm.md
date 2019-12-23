@@ -57,7 +57,8 @@ data_queue.put(4)
 data_queue.qsize()
 ```
 <hr class='division3'>
-</details>
+</details><br>
+
 ```python
 class fifo_queue:
     def __init__(self):
