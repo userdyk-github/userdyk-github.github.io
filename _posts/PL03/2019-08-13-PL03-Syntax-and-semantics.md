@@ -457,6 +457,70 @@ b
 ### ***for***
 
 <br><br><br>
+
+---
+
+### ***raise***
+```python
+class DoorException(Exception):
+    pass
+
+class DoorOpenedException(DoorException):
+    pass
+
+class DoorClosedException(DoorException):
+    pass
+
+
+class Door:
+    def __init__(self):
+        self.is_opened = True
+    
+    def state(self):
+        raise DoorException('being preparing')
+
+    def open(self):
+        if self.is_opened:
+            raise DoorOpenedException('already opened')
+        else:
+            print('open')
+            self.is_opened = True
+
+    def close(self):
+        if not self.is_opened:
+            raise DoorClosedException('already closed')
+        else:
+            print('close')
+            self.is_opened = False
+            
+door = Door()
+door.close()
+door.open()
+door.state()
+```
+```
+close
+open
+---------------------------------------------------------------------------
+DoorException                             Traceback (most recent call last)
+<ipython-input-797-ad6705ac378e> in <module>
+     33 door.close()
+     34 door.open()
+---> 35 door.state()
+
+<ipython-input-797-ad6705ac378e> in state(self)
+     14 
+     15     def state(self):
+---> 16         raise DoorException('being preparing')
+     17 
+     18     def open(self):
+
+DoorException: being preparing
+```
+<br><br><br>
+
+
+<br><br><br>
 <hr class="division2">
 
 ## **How to do the input and output of the program**
@@ -1951,6 +2015,13 @@ c value: [1] : shallow(c = copy.copy(a))  ,
 d value: [1] : deep(d = copy.deepcopy(d)) ,
  d id: 140282055629320 , d[0] id: 10914496
  ```
+ <span class='frame3'>immutable vs mutable</span>
+```python
+
+```
+```
+
+```
 <br><br><br>
 
 #### simple copy
