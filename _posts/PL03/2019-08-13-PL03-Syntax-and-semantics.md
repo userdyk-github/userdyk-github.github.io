@@ -1857,23 +1857,59 @@ os.getcwd()
 ---
 
 ### ***Object copy***
+<span class=frame3>mutable</span>
 ```python
 import copy
 
-a = [[1], [2]]
+a = 1
 b = a
 c = copy.copy(a)
 d = copy.deepcopy(a)
-print('a value:',a,', a id:',id(a),', a[0] id:',id(a[0]),', a[1] id:',id(a[1]),'original')
-print('b value:',b,', b id:',id(b),', b[0] id:',id(b[0]),', b[1] id:',id(b[1]),'simple')
-print('c value:',c,', c id:',id(c),', c[0] id:',id(c[0]),', c[1] id:',id(c[1]),'shallow')
-print('d value:',d,', d id:',id(d),', d[0] id:',id(d[0]),', d[1] id:',id(d[1]),'deep')
+print('a value:',a,': original(a)',
+      ',\n a id:',id(a))
+print('b value:',b,': simple(b = a)',
+      ',\n b id:',id(b))
+print('c value:',c,': shallow(c = copy.copy(a)) ',
+      ',\n c id:',id(c))
+print('d value:',d,': deep(d = copy.deepcopy(d))',
+      ',\n d id:',id(d))
+print()
+
+b = 999
+print('a value:',a,': original(a)',
+      ',\n a id:',id(a))
+print('b value:',b,': simple(b = a)',
+      ',\n b id:',id(b))
+print('c value:',c,': shallow(c = copy.copy(a)) ',
+      ',\n c id:',id(c))
+print('d value:',d,': deep(d = copy.deepcopy(d))',
+      ',\n d id:',id(d))
 ```
 ```
-a value: [[1], [2]] , a id: 140282059392776 , a[0] id: 140282059392200 , a[1] id: 140282059392712 original
-b value: [[1], [2]] , b id: 140282059392776 , b[0] id: 140282059392200 , b[1] id: 140282059392712 simple
-c value: [[1], [2]] , c id: 140282059392840 , c[0] id: 140282059392200 , c[1] id: 140282059392712 shallow
-d value: [[1], [2]] , d id: 140282056077576 , d[0] id: 140282056080712 , d[1] id: 140282059393224 deep
+a value: 1 : original(a) ,
+ a id: 10914496
+b value: 1 : simple(b = a) ,
+ b id: 10914496
+c value: 1 : shallow(c = copy.copy(a))  ,
+ c id: 10914496
+d value: 1 : deep(d = copy.deepcopy(d)) ,
+ d id: 10914496
+
+a value: 1 : original(a) ,
+ a id: 10914496
+b value: 999 : simple(b = a) ,
+ b id: 140282049484528
+c value: 1 : shallow(c = copy.copy(a))  ,
+ c id: 10914496
+d value: 1 : deep(d = copy.deepcopy(d)) ,
+ d id: 10914496
+```
+<span class=frame3>immutable</span>
+```python
+
+```
+```
+
 ```
 <br><br><br>
 
@@ -2661,8 +2697,6 @@ List of posts followed by this article
 
 Reference
 
-- <a href="https://dojang.io/course/index.php?categoryid=1" target="_blank">dojang</a>
-- <a href="https://www.fun-coding.org/daveblog.html" target="_blank">fun coding</a>
 - <a href="https://deepwelloper.tistory.com/130" target="_blank">deepwelloper(python memory)</a>
 - <a href="https://docs.python.org/3/contents.html" target="_blank">python document</a>
 - <a href="https://www.youtube.com/playlist?list=PLa9dKeCAyr7iWPMclcDxbnlTjQ2vjdIDD" target="_blank">python lectures</a>
