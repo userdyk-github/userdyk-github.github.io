@@ -72,8 +72,7 @@ class fifo_queue:
         self.list.append(x)
         print(x, 'was enqueued at', id(self.list[len(self.list)-1]))
         for i,j in enumerate(self.list):
-            print(j, id(j)) if i != len(self.list)-1 elif 
-            if i == self.list[-1] : print('---'*10)
+            print(j, id(j)) if i != len(self.list)-1 else print('---'*10)
             
     def dequeue(self):
         dv = self.list[0]
