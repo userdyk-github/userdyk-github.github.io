@@ -278,26 +278,53 @@ train_images, valX, train_labels, valy = train_test_split(train_images, train_la
 # reshape to rank 4
 train_images = train_images.reshape(48000,28,28,1)
 valX = valX.reshape(12000,28,28,1)
-test_images = test_images.reshape(10000,28,28,1)
+test_images = test_images.reshape(10000,28,28,1)   
 
 print('train shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (train_images.shape, train_images.min(), train_images.max(), train_images.mean(), train_images.std()))
 print('val shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (valX.shape, valX.min(), valX.max(), valX.mean(), valX.std()))
 print('test shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (test_images.shape, test_images.min(), test_images.max(), test_images.mean(), test_images.std()))
+print('--------'*10)
 
 # get batch iterator
-datagen = ImageDataGenerator(featurewise_center=True, featurewise_std_normalization=True)
+datagen = ImageDataGenerator(featurewise_center=True)
 datagen.fit(train_images)
+print(datagen.mean, datagen.std)
 datagen.fit(valX)
+print(datagen.mean, datagen.std)
 datagen.fit(test_images)
 print(datagen.mean, datagen.std)
+print('--------'*10)
 
+
+
+# batch : 32
 train_iterator = datagen.flow(train_images, train_labels, batch_size=32)
 val_iterator = datagen.flow(valX, valy, batch_size=32)
 test_iterator = datagen.flow(test_images, test_labels, batch_size=32)
 
-print('train batch shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (train_batchX.shape, train_batchX.min(), train_batchX.max(), train_batchX.mean(), train_batchX.std()))
-print('val batch shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (val_batchX.shape, val_batchX.min(), val_batchX.max(), val_batchX.mean(), val_batchX.std()))
-print('test batch shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (test_batchX.shape, test_batchX.min(), test_batchX.max(), test_batchX.mean(), test_batchX.std()))
+train_batchX, train_batchy = train_iterator.next()
+val_batchX, val_batchy = val_iterator.next()
+test_batchX, test_batchy = test_iterator.next()
+
+print('train batch(32) shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (train_batchX.shape, train_batchX.min(), train_batchX.max(), train_batchX.mean(), train_batchX.std()))
+print('val batch(32) shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (val_batchX.shape, val_batchX.min(), val_batchX.max(), val_batchX.mean(), val_batchX.std()))
+print('test batch(32) shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (test_batchX.shape, test_batchX.min(), test_batchX.max(), test_batchX.mean(), test_batchX.std()))
+print('--------'*10)
+
+
+
+# batch : all
+train_iterator = datagen.flow(train_images, train_labels, batch_size=len(train_images))
+val_iterator = datagen.flow(valX, valy, batch_size=len(valX))
+test_iterator = datagen.flow(test_images, test_labels, batch_size=len(test_images))
+
+train_batchX, train_batchy = train_iterator.next()
+val_batchX, val_batchy = val_iterator.next()
+test_batchX, test_batchy = test_iterator.next()
+
+print('train batch(all) shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (train_batchX.shape, train_batchX.min(), train_batchX.max(), train_batchX.mean(), train_batchX.std()))
+print('val batch(all) shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (val_batchX.shape, val_batchX.min(), val_batchX.max(), val_batchX.mean(), val_batchX.std()))
+print('test batch(all) shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (test_batchX.shape, test_batchX.min(), test_batchX.max(), test_batchX.mean(), test_batchX.std()))
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -306,10 +333,18 @@ print('test batch shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (test_bat
 train shape=(48000, 28, 28, 1), min=0.000, max=255.000, mean=33.298, std=78.545
 val shape=(12000, 28, 28, 1), min=0.000, max=255.000, mean=33.401, std=78.658
 test shape=(10000, 28, 28, 1), min=0.000, max=255.000, mean=33.791, std=79.172
-[[[33.79124]]] [[[79.172455]]]
-train batch shape=(32, 28, 28, 1), min=0.000, max=1.000, mean=0.128, std=0.304
-val batch shape=(32, 28, 28, 1), min=0.000, max=1.000, mean=0.136, std=0.315
-test batch shape=(32, 28, 28, 1), min=0.000, max=1.000, mean=0.130, std=0.307
+--------------------------------------------------------------------------------
+[[[33.29781]]] None
+[[[33.40119]]] None
+[[[33.79124]]] None
+--------------------------------------------------------------------------------
+train batch(32) shape=(32, 28, 28, 1), min=-33.791, max=221.209, mean=-1.533, std=77.921
+val batch(32) shape=(32, 28, 28, 1), min=-33.791, max=221.209, mean=-2.625, std=76.458
+test batch(32) shape=(32, 28, 28, 1), min=-33.791, max=221.209, mean=-3.413, std=75.195
+--------------------------------------------------------------------------------
+train batch(all) shape=(48000, 28, 28, 1), min=-33.791, max=221.209, mean=-0.494, std=78.545
+val batch(all) shape=(12000, 28, 28, 1), min=-33.791, max=221.209, mean=-0.390, std=78.658
+test batch(all) shape=(10000, 28, 28, 1), min=-33.791, max=221.209, mean=-0.000, std=79.172
 ```
 <hr class='division3'>
 </details>
@@ -337,21 +372,48 @@ test_images = test_images.reshape(10000,28,28,1)
 print('train shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (train_images.shape, train_images.min(), train_images.max(), train_images.mean(), train_images.std()))
 print('val shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (valX.shape, valX.min(), valX.max(), valX.mean(), valX.std()))
 print('test shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (test_images.shape, test_images.min(), test_images.max(), test_images.mean(), test_images.std()))
+print('--------'*10)
 
 # get batch iterator
-datagen = ImageDataGenerator(samplewise_center=True, samplewise_std_normalization=True)
+datagen = ImageDataGenerator(samplewise_center=True)
 datagen.fit(train_images)
+print(datagen.mean, datagen.std)
 datagen.fit(valX)
+print(datagen.mean, datagen.std)
 datagen.fit(test_images)
 print(datagen.mean, datagen.std)
+print('--------'*10)
 
+
+
+# batch : 32
 train_iterator = datagen.flow(train_images, train_labels, batch_size=32)
 val_iterator = datagen.flow(valX, valy, batch_size=32)
 test_iterator = datagen.flow(test_images, test_labels, batch_size=32)
 
-print('train batch shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (train_batchX.shape, train_batchX.min(), train_batchX.max(), train_batchX.mean(), train_batchX.std()))
-print('val batch shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (val_batchX.shape, val_batchX.min(), val_batchX.max(), val_batchX.mean(), val_batchX.std()))
-print('test batch shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (test_batchX.shape, test_batchX.min(), test_batchX.max(), test_batchX.mean(), test_batchX.std()))
+train_batchX, train_batchy = train_iterator.next()
+val_batchX, val_batchy = val_iterator.next()
+test_batchX, test_batchy = test_iterator.next()
+
+print('train batch(32) shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (train_batchX.shape, train_batchX.min(), train_batchX.max(), train_batchX.mean(), train_batchX.std()))
+print('val batch(32) shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (val_batchX.shape, val_batchX.min(), val_batchX.max(), val_batchX.mean(), val_batchX.std()))
+print('test batch(32) shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (test_batchX.shape, test_batchX.min(), test_batchX.max(), test_batchX.mean(), test_batchX.std()))
+print('--------'*10)
+
+
+
+# batch : all
+train_iterator = datagen.flow(train_images, train_labels, batch_size=len(train_images))
+val_iterator = datagen.flow(valX, valy, batch_size=len(valX))
+test_iterator = datagen.flow(test_images, test_labels, batch_size=len(test_images))
+
+train_batchX, train_batchy = train_iterator.next()
+val_batchX, val_batchy = val_iterator.next()
+test_batchX, test_batchy = test_iterator.next()
+
+print('train batch(all) shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (train_batchX.shape, train_batchX.min(), train_batchX.max(), train_batchX.mean(), train_batchX.std()))
+print('val batch(all) shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (val_batchX.shape, val_batchX.min(), val_batchX.max(), val_batchX.mean(), val_batchX.std()))
+print('test batch(all) shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (test_batchX.shape, test_batchX.min(), test_batchX.max(), test_batchX.mean(), test_batchX.std()))
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -360,10 +422,18 @@ print('test batch shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (test_bat
 train shape=(48000, 28, 28, 1), min=0.000, max=255.000, mean=33.298, std=78.545
 val shape=(12000, 28, 28, 1), min=0.000, max=255.000, mean=33.401, std=78.658
 test shape=(10000, 28, 28, 1), min=0.000, max=255.000, mean=33.791, std=79.172
+--------------------------------------------------------------------------------
 None None
-train batch shape=(32, 28, 28, 1), min=0.000, max=1.000, mean=0.128, std=0.304
-val batch shape=(32, 28, 28, 1), min=0.000, max=1.000, mean=0.136, std=0.315
-test batch shape=(32, 28, 28, 1), min=0.000, max=1.000, mean=0.130, std=0.307
+None None
+None None
+--------------------------------------------------------------------------------
+train batch(32) shape=(32, 28, 28, 1), min=-54.675, max=236.723, mean=0.000, std=79.433
+val batch(32) shape=(32, 28, 28, 1), min=-60.829, max=238.736, mean=0.000, std=79.335
+test batch(32) shape=(32, 28, 28, 1), min=-62.398, max=242.120, mean=-0.000, std=77.976
+--------------------------------------------------------------------------------
+train batch(all) shape=(48000, 28, 28, 1), min=-90.477, max=248.513, mean=-0.000, std=77.764
+val batch(all) shape=(12000, 28, 28, 1), min=-101.381, max=247.806, mean=-0.000, std=77.882
+test batch(all) shape=(10000, 28, 28, 1), min=-83.435, max=247.832, mean=-0.000, std=78.383
 ```
 <hr class='division3'>
 </details>
