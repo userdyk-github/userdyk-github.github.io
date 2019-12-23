@@ -1856,6 +1856,19 @@ os.getcwd()
 
 ---
 
+### ***Object copy***
+#### simple copy
+<br><br><br>
+
+#### Sallow copy
+<br><br><br>
+
+#### deep copy
+
+<br><br><br>
+
+---
+
 ### ***Decorator***
 #### Function Decorator
 ```python
