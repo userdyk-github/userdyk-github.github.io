@@ -74,6 +74,11 @@ output = Dense(1, activation='sigmoid')(hidden1)
 model = Model(inputs=visible, outputs=output) 
 model.compile(loss=keras.losses.binary_crossentropy, optimizer=keras.optimizers.Adadelta(), metrics=['accuracy'])
 model.fit_generator(train_iterator, epochs=10,steps_per_epoch=16, validation_data=val_it, validation_steps=8)
+
+
+"""evaluation"""
+loss = model.evaluate_generator(test_iterator, steps=24)
+yhat = model.predict_generator(test_iterator, steps=24)
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
