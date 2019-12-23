@@ -48,8 +48,12 @@ data_queue.put(1)
 data_queue.put(2)
 data_queue.put(3)
 data_queue.put(4)
+data_queue.get()
+data_queue.get()
+data_queue.get()
+data_queue.get()
+data_queue.get()
 ```
-
 <details markdown="1">
 <summary class='jb-small' style="color:blue">.qsize()</summary>
 <hr class='division3'>
