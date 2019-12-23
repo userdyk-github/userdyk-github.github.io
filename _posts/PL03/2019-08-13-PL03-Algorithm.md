@@ -5,7 +5,7 @@ categories: [PL03]
 comments : true
 tags : [PL03]
 ---
-[Back to the previous page](https://userdyk-github.github.io/Study.html) ｜<a href="https://github.com/userdyk-github/userdyk-github.github.io/blob/master/_posts/PL03/2019-08-13-PL03-Algorithm.md" target="_blank">page management</a>｜ <a href="https://userdyk-github.github.io/pl03/PL03-Contents.html">Python</a>  <br>
+[Back to the previous page](https://userdyk-github.github.io/Study.html) ｜<a href="https://github.com/userdyk-github/userdyk-github.github.io/blob/master/_posts/PL03/2019-08-13-PL03-Algorithm.md" target="_blank">page management</a>｜ <a href="https://userdyk-github.github.io/pl03/PL03-Contents.html">Contents</a>  <br>
 List of posts to read before reading this article
 - <a href='https://userdyk-github.github.io/'>post1</a>
 - <a href='https://userdyk-github.github.io/'>post2</a>
@@ -58,6 +58,62 @@ data_queue.qsize()
 ```
 <hr class='division3'>
 </details>
+```python
+class fifo_queue:
+    def __init__(self):
+        self.list = list()
+    
+    def enqueue(self,x):
+        self.list.append(x)
+        print(x, 'was enqueued at', id(self.list[len(self.list)-1]))
+        for i,j in enumerate(self.list):
+            print(j, id(j)) if i != len(self.list)-1 elif 
+            if i == self.list[-1] : print('---'*10)
+            
+    def dequeue(self):
+        dv = self.list[0]
+        print('It was dequeued and present state of queue is as follow')
+        del self.list[0]
+        for i in self.list:
+            print(i, id(i))
+            if i == self.list[-1] : print('---'*10)
+        return dv
+    
+Q = fifo_queue()
+Q.enqueue(0)
+Q.enqueue(1)
+Q.enqueue(2)
+Q.dequeue()
+Q.dequeue()
+Q.dequeue()
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+0 was enqueued at 10914464
+0 10914464
+------------------------------
+1 was enqueued at 10914496
+0 10914464
+1 10914496
+------------------------------
+2 was enqueued at 10914528
+0 10914464
+1 10914496
+2 10914528
+------------------------------
+It was dequeued and present state of queue is as follow
+1 10914496
+2 10914528
+------------------------------
+It was dequeued and present state of queue is as follow
+2 10914528
+------------------------------
+It was dequeued and present state of queue is as follow
+```
+<hr class='division3'>
+<details>
 
 <br><br><br>
 #### LIFO Queue
