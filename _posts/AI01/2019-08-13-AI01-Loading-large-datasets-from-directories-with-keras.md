@@ -23,7 +23,8 @@ List of posts to read before reading this article
 
 ## **How to Progressively Load Images**
 
-<div>
+Example of proposed directory structure for the image dataset.
+<div style="font-size: 70%;">
 - data/ <br>
 - data/train/<br>
 - data/train/red/<br>
