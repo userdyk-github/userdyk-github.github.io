@@ -148,11 +148,43 @@ Test 0 255 33.791224489795916 79.17246322228644
 <hr class='division3'>
 </details>
 <details markdown="1">
+<summary class='jb-small' style="color:blue">train_images, valX, train_labels, valy = train_test_split(train_images, train_labels, test_size=0.2,random_state=2018)</summary>
+<hr class='division3'>
+```python
+from tensorflow.keras.datasets import mnist
+from sklearn.model_selection import train_test_split 
+
+# load dataset
+(train_images, train_labels), (test_images, test_labels) = mnist.load_data()
+train_images, valX, train_labels, valy = train_test_split(train_images, train_labels, test_size=0.2,random_state=2018)
+
+# summarize dataset shape, pixel values for train
+print('Train', train_images.shape, train_labels.shape)
+print('Train', train_images.min(), train_images.max(), train_images.mean(), train_images.std())
+
+# summarize dataset shape, pixel values for val
+print('Val', valX.shape, valy.shape)
+print('Val', valX.min(), valX.max(), valX.mean(), valX.std())
+
+# summarize dataset shape, pixel values for test
+print('Test', (test_images.shape, test_labels.shape))
+print('Test', test_images.min(), test_images.max(), test_images.mean(), test_images.std())
+```
+```
+Train (48000, 28, 28) (48000,)
+Train 0 255 33.29773514562075 78.54482970203107
+Val (12000, 28, 28) (12000,)
+Val 0 255 33.40116666666667 78.65801142483167
+Test ((10000, 28, 28), (10000,))
+Test 0 255 33.791224489795916 79.17246322228644
+```
+<hr class='division3'>
+</details>
+<details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 <hr class='division3'>
 </details>
-
 <br><br><br>
 
 <hr class="division2">
