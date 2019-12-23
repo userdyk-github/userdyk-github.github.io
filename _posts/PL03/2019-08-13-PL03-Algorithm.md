@@ -79,8 +79,7 @@ class fifo_queue:
         print('It was dequeued and present state of queue is as follow')
         del self.list[0]
         for i in self.list:
-            print(i, id(i))
-            if i == self.list[-1] : print('---'*10)
+            print(i, id(i)) if i != self.list[-1] else print('---'*10)
         return dv
     
 Q = fifo_queue()
