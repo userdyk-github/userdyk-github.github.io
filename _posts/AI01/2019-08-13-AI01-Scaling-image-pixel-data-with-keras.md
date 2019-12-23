@@ -31,7 +31,7 @@ from keras.datasets import mnist
 (train_images, train_labels), (test_images, test_labels) = mnist.load_data()
 ```
 <details markdown="1">
-<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<summary class='jb-small' style="color:blue">SUPPLEMENT 1</summary>
 <hr class='division3'>
 ```python
 # summarize dataset type and shape
@@ -57,13 +57,14 @@ print('Test', test_images.min(), test_images.max(), test_images.mean(), test_ima
 
 <br>
 
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT 2</summary>
+<hr class='division3'>
 ```python
 print(train_images[0].shape)
 io.imshow(train_images[0])
 ```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
+
 <p>
   (28, 28)<br>
   <matplotlib.image.AxesImage at 0x23244de4fd0>
