@@ -55,8 +55,6 @@ print('Test', test_images.min(), test_images.max(), test_images.mean(), test_ima
 <hr class='division3'>
 </details>
 
-<br>
-
 <details markdown="1">
 <summary class='jb-small' style="color:blue">SUPPLEMENT 2</summary>
 <hr class='division3'>
