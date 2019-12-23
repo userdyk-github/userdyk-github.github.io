@@ -231,6 +231,7 @@ empty = {}
 a = {1:'korea',2:'USA',3:'china'}
 
 print(list(a))
+print(list(a.keys()))
 print(list(a.values()))
 print(list(a.items()))
 ```
@@ -239,11 +240,16 @@ print(list(a.items()))
 <hr class='division3'>
 ```
 [1, 2, 3]
+[1, 2, 3]
 ['korea', 'USA', 'china']
 [(1, 'korea'), (2, 'USA'), (3, 'china')]
 ```
 <hr class='division3'>
 <details>
+
+```python
+
+```     
 
 <br><br><br>
 
