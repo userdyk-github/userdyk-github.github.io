@@ -22,8 +22,69 @@ List of posts to read before reading this article
 <hr class="division1">
 
 ## **Data structure**
+### ***array***
+#### 1d array
+```python
+data_list = [1, 2, 3, 4, 5]
+```
 <br><br><br>
 
+#### 2d array
+```python
+data_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+```
+<br><br><br>
+
+---
+
+### ***Queue***
+#### FIFO Queue
+```python
+import queue
+
+data_queue = queue.Queue()
+data_queue.put(0)
+data_queue.put(1)
+data_queue.put(2)
+data_queue.put(3)
+data_queue.put(4)
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">.qsize()</summary>
+<hr class='division3'>
+```python
+data_queue.qsize()
+```
+<hr class='division3'>
+</details>
+
+<br><br><br>
+#### LIFO Queue
+```python
+import queue
+
+data_queue = queue.LifoQueue()
+data_queue.put(0)
+data_queue.put(1)
+data_queue.put(2)
+data_queue.put(3)
+data_queue.put(4)
+```
+<br><br><br>
+#### Priority Queue
+.put((priority, data))
+```python
+import queue
+
+data_queue = queue.PriorityQueue()
+data_queue.put((7,'7th data'))
+data_queue.put((1,'1st data'))
+data_queue.put((6,'6th data'))
+data_queue.put((2,'2nd data'))
+data_queue.put((4,'4th data'))
+```
+<br><br><br>
 <hr class="division2">
 
 ## **Recursion**
@@ -44,11 +105,7 @@ List of posts to read before reading this article
 
 <hr class="division2">
 
-## **Queue**
 
-<br><br><br>
-
-<hr class="division2">
 
 ## **Recursion**
 
