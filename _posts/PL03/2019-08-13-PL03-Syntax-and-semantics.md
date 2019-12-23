@@ -1857,7 +1857,7 @@ os.getcwd()
 ---
 
 ### ***Object copy***
-<span class=frame3>immutable</span>
+<span class='frame3'>immutable</span>
 ```python
 import copy
 
@@ -1904,7 +1904,7 @@ c value: 1 : shallow(c = copy.copy(a))  ,
 d value: 1 : deep(d = copy.deepcopy(d)) ,
  d id: 10914496
 ```
-<span class=frame3>mutable</span>
+<span class='frame3'>mutable</span>
 ```python
 import copy
 
