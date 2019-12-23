@@ -215,6 +215,35 @@ train_images = train_images.reshape(48000,28,28,1)
 valX = valX.reshape(12000,28,28,1)
 test_images = test_images.reshape(10000,28,28,1)   
 
+# get batch iterator
+datagen = ImageDataGenerator(rescale=1.0/255.0)
+datagen.fit(train_images)
+datagen.fit(valX)
+datagen.fit(test_images)
+
+# batch : 32
+train_iterator = datagen.flow(train_images, train_labels, batch_size=32)
+val_iterator = datagen.flow(valX, valy, batch_size=32)
+test_iterator = datagen.flow(test_images, test_labels, batch_size=32)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+```python
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from tensorflow.keras.datasets import mnist
+from sklearn.model_selection import train_test_split 
+
+"""data preprocessing"""
+# load dataset
+(train_images, train_labels), (test_images, test_labels) = mnist.load_data()
+train_images, valX, train_labels, valy = train_test_split(train_images, train_labels, test_size=0.2,random_state=2018)
+
+# reshape to rank 4
+train_images = train_images.reshape(48000,28,28,1)
+valX = valX.reshape(12000,28,28,1)
+test_images = test_images.reshape(10000,28,28,1)   
+
 print('train shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (train_images.shape, train_images.min(), train_images.max(), train_images.mean(), train_images.std()))
 print('val shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (valX.shape, valX.min(), valX.max(), valX.mean(), valX.std()))
 print('test shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (test_images.shape, test_images.min(), test_images.max(), test_images.mean(), test_images.std()))
@@ -261,9 +290,6 @@ print('train batch(all) shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (tr
 print('val batch(all) shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (val_batchX.shape, val_batchX.min(), val_batchX.max(), val_batchX.mean(), val_batchX.std()))
 print('test batch(all) shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (test_batchX.shape, test_batchX.min(), test_batchX.max(), test_batchX.mean(), test_batchX.std()))
 ```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
 ```
 train shape=(48000, 28, 28, 1), min=0.000, max=255.000, mean=33.298, std=78.545
 val shape=(12000, 28, 28, 1), min=0.000, max=255.000, mean=33.401, std=78.658
