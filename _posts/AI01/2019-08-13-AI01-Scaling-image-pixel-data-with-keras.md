@@ -89,7 +89,6 @@ from sklearn.model_selection import train_test_split
 
 """data preprocessing"""
 # load dataset
-datagen = ImageDataGenerator()
 (train_images, train_labels), (test_images, test_labels) = mnist.load_data()
 train_images, valX, train_labels, valy = train_test_split(train_images, train_labels, test_size=0.2,random_state=2018)
 
@@ -99,6 +98,7 @@ valX = valX.reshape(12000,28,28,1)
 test_images = test_images.reshape(10000,28,28,1)   
 
 # get batch iterator
+datagen = ImageDataGenerator()
 train_iterator = datagen.flow(train_images, train_labels)
 val_iterator = datagen.flow(valX, valy)
 test_iterator = datagen.flow(test_images, test_labels)
