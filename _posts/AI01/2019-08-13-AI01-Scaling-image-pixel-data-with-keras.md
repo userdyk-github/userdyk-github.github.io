@@ -99,9 +99,9 @@ test_images = test_images.reshape(10000,28,28,1)
 
 # get batch iterator
 datagen = ImageDataGenerator()
-train_iterator = datagen.flow(train_images, train_labels)
-val_iterator = datagen.flow(valX, valy)
-test_iterator = datagen.flow(test_images, test_labels)
+train_iterator = datagen.flow(train_images, train_labels, batch_size=32)
+val_iterator = datagen.flow(valX, valy, batch_size=32)
+test_iterator = datagen.flow(test_images, test_labels, batch_size=32)
 
 
 """model design"""
