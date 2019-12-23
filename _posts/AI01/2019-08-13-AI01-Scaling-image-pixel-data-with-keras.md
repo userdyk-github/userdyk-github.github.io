@@ -84,12 +84,27 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.datasets import mnist
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
+from sklearn.model_selection import train_test_split 
 
+
+"""data preprocessing"""
+# load dataset
 datagen = ImageDataGenerator()
 (train_images, train_labels), (test_images, test_labels) = mnist.load_data()
-train_images, test_images = train_images.reshape(60000,28,28,1), test_images.reshape(10000,28,28,1)   # reshape to rank 4
-train_iterator, test_iterator = datagen.flow(train_images, train_labels), datagen.flow(test_images, test_labels)
+train_images, valX, train_labels, valy = train_test_split(train_images, train_labels, test_size=0.2,random_state=2018)
 
+# reshape to rank 4
+train_images = train_images.reshape(48000,28,28,1)
+valX = valX.reshape(12000,28,28,1)
+test_images = test_images.reshape(10000,28,28,1)   
+
+# get batch iterator
+train_iterator = datagen.flow(train_images, train_labels)
+val_iterator = datagen.flow(valX, valy)
+test_iterator = datagen.flow(test_images, test_labels)
+
+
+"""model design"""
 model = Sequential()
 model.add(Conv2D(32, (3, 3), input_shape = (28, 28, 1), activation = 'relu'))
 model.add(MaxPooling2D(pool_size = (2, 2)))
@@ -98,8 +113,18 @@ model.add(MaxPooling2D(pool_size = (2, 2)))
 model.add(Flatten())
 model.add(Dense(units = 128, activation = 'relu'))
 model.add(Dense(units = 1, activation = 'sigmoid'))
-model.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = ['accuracy'])
-model.fit_generator(train_iterator, epochs=10,steps_per_epoch=10)
+model.compile(optimizer = 'adam',
+              loss = 'binary_crossentropy',
+              metrics = ['accuracy'])
+model.fit_generator(train_iterator, validation_data=val_iterator, epochs=10, steps_per_epoch=10, validation_steps=10)
+
+
+"""evaluation"""
+# evaluate model loss on test dataset
+result = model.evaluate_generator(test_iterator, steps=10)
+for i in range(len(model.metrics_names)):  
+    print("Metric ",model.metrics_names[i],":",str(round(result[i],2)))
+    
 model.predict_generator(test_iterator)
 ```
 <details markdown="1">
