@@ -2661,6 +2661,8 @@ List of posts followed by this article
 
 Reference
 
+- <a href="https://dojang.io/course/index.php?categoryid=1" target="_blank">dojang</a>
+- <a href="https://www.fun-coding.org/daveblog.html" target="_blank">fun coding</a>
 - <a href="https://deepwelloper.tistory.com/130" target="_blank">deepwelloper(python memory)</a>
 - <a href="https://docs.python.org/3/contents.html" target="_blank">python document</a>
 - <a href="https://www.youtube.com/playlist?list=PLa9dKeCAyr7iWPMclcDxbnlTjQ2vjdIDD" target="_blank">python lectures</a>
