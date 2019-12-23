@@ -70,6 +70,8 @@ List of posts followed by this article
 
 Reference
 
+- <a href="https://dojang.io/course/index.php?categoryid=1" target="_blank">dojang</a>
+- <a href="https://www.fun-coding.org/daveblog.html" target="_blank">fun coding</a>
 - <a href='https://repl.it/languages/python' target="_blank">Implementation with python2 on web</a>
 - <a href='https://repl.it/languages/python3' target="_blank">Implementation with python3 on web</a>
 - <a href='https://github.com/TheAlgorithms/Python' target="_blank">TheAlgorithms</a>
