@@ -174,8 +174,22 @@ Test 0 255 33.791224489795916 79.17246322228644
 <hr class='division3'>
 </details>
 <details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<summary class='jb-small' style="color:blue">train_iterator, val_iterator, test_iterator</summary>
 <hr class='division3'>
+```python
+train_batchX, train_batchy = train_iterator.next()
+val_batchX, val_batchy = val_iterator.next()
+test_batchX, test_batchy = test_iterator.next()
+
+print('train batch shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (train_batchX.shape, train_batchX.min(), train_batchX.max(), train_batchX.mean(), train_batchX.std()))
+print('val batch shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (val_batchX.shape, val_batchX.min(), val_batchX.max(), val_batchX.mean(), val_batchX.std()))
+print('test batch shape=%s, min=%.3f, max=%.3f, mean=%.3f, std=%.3f' % (test_batchX.shape, test_batchX.min(), test_batchX.max(), test_batchX.mean(), test_batchX.std()))
+```
+```
+train batch shape=(32, 28, 28, 1), min=0.000, max=255.000, mean=30.790, std=75.816
+val batch shape=(32, 28, 28, 1), min=0.000, max=255.000, mean=34.835, std=80.186
+test batch shape=(32, 28, 28, 1), min=0.000, max=255.000, mean=36.032, std=81.371
+```
 <hr class='division3'>
 </details>
 <details markdown="1">
