@@ -79,20 +79,17 @@ io.imshow(train_images[0])
 ## **ImageDataGenerator Class for Pixel Scaling**
 
 ```python
-# import modules
-from keras.models import Sequential
-from keras.layers import Conv2D
-from keras.layers import MaxPooling2D
-from keras.layers import Flatten 
-from keras.layers import Dense
-from keras.datasets import mnist
-from keras.preprocessing.image import ImageDataGenerator
+# create data generator
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from tensorflow.keras.datasets import mnist
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
 
-# load dataset
-(train_images, train_labels), (test_images, test_labels) = mnist.load_data()  # load dataset
-train_images = train_images.reshape(60000,28,28,1)                            # reshape to rank 4
+datagen = ImageDataGenerator()
+(train_images, train_labels), (test_images, test_labels) = mnist.load_data()
+train_images, test_images = train_images.reshape(60000,28,28,1), test_images.reshape(10000,28,28,1)   # reshape to rank 4
+train_iterator, test_iterator = datagen.flow(train_images, train_labels), datagen.flow(test_images, test_labels)
 
-# fit model
 model = Sequential()
 model.add(Conv2D(32, (3, 3), input_shape = (28, 28, 1), activation = 'relu'))
 model.add(MaxPooling2D(pool_size = (2, 2)))
@@ -102,10 +99,8 @@ model.add(Flatten())
 model.add(Dense(units = 128, activation = 'relu'))
 model.add(Dense(units = 1, activation = 'sigmoid'))
 model.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = ['accuracy'])
-
-datagen = ImageDataGenerator()                                                # create data generator
-train_iterator = datagen.flow(train_images, train_labels)                     # get batch iterator
-model.fit_generator(train_iterator, steps_per_epoch=10)
+model.fit_generator(train_iterator, epochs=10,steps_per_epoch=10)
+model.predict_generator(test_iterator)
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
