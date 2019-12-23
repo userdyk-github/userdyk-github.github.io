@@ -230,6 +230,7 @@ empty = {}
 ```
 <br><br><br>
 
+
 #### get
 ```python
 a = {1:'korea',2:'USA',3:'china'}
@@ -238,6 +239,7 @@ print(a.get(1), a)
 print(a[1], a)
 print(a.pop(1), a)
 ```
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
@@ -249,7 +251,9 @@ print(a[1], a)
 print(a.pop(1), a)
 ```
 <hr class='division3'>
-<details>
+</details>
+
+
 ```python
 a = {1:'korea',2:'USA',3:'china'}
 
@@ -257,6 +261,7 @@ print(a.popitem(), a)
 print(a.popitem(), a)
 print(a.popitem(), a)
 ```
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
@@ -266,7 +271,7 @@ print(a.popitem(), a)
 (1, 'korea') {}
 ```
 <hr class='division3'>
-<details>
+</details>
 <br><br><br>
 
 
@@ -279,6 +284,7 @@ print(list(a.keys()))
 print(list(a.values()))
 print(list(a.items()))
 ```
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
@@ -289,8 +295,7 @@ print(list(a.items()))
 [(1, 'korea'), (2, 'USA'), (3, 'china')]
 ```
 <hr class='division3'>
-<details>
-     
+</details>
 
 
 <br><br><br>
