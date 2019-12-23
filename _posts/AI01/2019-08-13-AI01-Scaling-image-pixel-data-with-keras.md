@@ -103,11 +103,28 @@ model.fit_generator(train_iterator, epochs=10,steps_per_epoch=10)
 model.predict_generator(test_iterator)
 ```
 <details markdown="1">
+<summary class='jb-small' style="color:blue">(train_images, train_labels), (test_images, test_labels) = mnist.load_data()</summary>
+<hr class='division3'>
+```python
+# summarize dataset shape, pixel values for train
+print('Train', train_images.shape, train_labels.shape)
+print('Train', train_images.min(), train_images.max(), train_images.mean(), train_images.std())
+
+# summarize dataset shape, pixel values for test
+print('Test', (test_images.shape, test_labels.shape))
+print('Test', test_images.min(), test_images.max(), test_images.mean(), test_images.std())
+```
+```
+Train (60000, 28, 28) (60000,)
+Train 0 255 33.318421449829934 78.56748998339798
+Test ((10000, 28, 28), (10000,))
+Test 0 255 33.791224489795916 79.17246322228644
+```
+<hr class='division3'>
+</details>
+<details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-<p>
-  
-</p>
 <hr class='division3'>
 </details>
 
