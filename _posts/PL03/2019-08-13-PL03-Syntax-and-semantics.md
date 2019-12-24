@@ -3609,21 +3609,21 @@ print(sys.getsizeof( (i for i in range(1000) if i % 2)),'   for generator, iter_
 ### ***Coroutine***
 #### Main routine and Sub routine
 ```python
-def add(a,b):
+def sub_add(a,b):
     c = a + b
     print(c)
-    print('add func')
+    print('sub add func')
 
-def calc():
-    add(1,2)
-    print('calc func')
+def main_calc():
+    sub_add(1,2)
+    print('main calc func')
 
-calc()
+main_calc()
 ```
 ```
 3
-add func
-calc func
+sub add func
+main calc func
 ```
 <br><br><br>
 <hr class="division2">
