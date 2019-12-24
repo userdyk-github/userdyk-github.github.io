@@ -3062,6 +3062,7 @@ print(c(1))
 ```
 <br><br><br>
 #### decorator
+<span class="frame3" target="_blank">function decorator</span>
 ```python
 def trace(func):
     def wrapper():
@@ -3099,6 +3100,23 @@ def function(*args, **kwargs):
     pass
 
 print(function())
+```
+<br><br><br>
+<span class="frame3" target="_blank">class decorator</span>
+
+```python
+class trace:
+    def __init__(self, func):
+        self.func = func
+
+    def __call__(self):
+        return self.func()
+
+@trace
+def function():
+    pass
+
+function()
 ```
 <br><br><br>
 
