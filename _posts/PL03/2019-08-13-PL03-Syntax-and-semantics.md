@@ -3118,6 +3118,20 @@ def function():
 
 function()
 ```
+```python
+class trace:
+    def __init__(self, func):
+        self.func = func
+
+    def __call__(self, *args, **kwargs):
+        return self.func(*args, **kwargs)
+
+@trace
+def function(*args, **kwargs):
+    pass
+
+function()
+```
 <br><br><br>
 
 ---
