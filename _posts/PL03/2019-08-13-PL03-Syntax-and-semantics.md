@@ -455,6 +455,11 @@ b
 ---
 
 ### ***for***
+#### comprehension
+<span class="frame3">for</span>
+```python
+for i in range(10) : print(i)
+```
 
 <br><br><br>
 
