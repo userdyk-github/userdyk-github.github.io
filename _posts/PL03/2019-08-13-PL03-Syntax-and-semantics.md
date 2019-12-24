@@ -3766,7 +3766,8 @@ for i in range(1,101):
 co.send(None)
 ```
 ```
-5106
+55
+5050
 ```
 <br><br><br>
 <hr class="division2">
