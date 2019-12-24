@@ -2,5 +2,10 @@
 
 
 
+[1]:{{ site.url }}/download/AI01/file_name
+[1]:{{ site.url }}/download/EE01/file_name
+[1]:{{ site.url }}/download/MATH01/file_name
+[1]:{{ site.url }}/download/PHY01/file_name
+[1]:{{ site.url }}/download/PL01/file_name
 [1]:{{ site.url }}/download/RESEARCH/file_name
 
