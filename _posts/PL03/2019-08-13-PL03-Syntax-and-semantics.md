@@ -1940,6 +1940,16 @@ os.getcwd()
 
 ### ***Object copy***
 <span class='frame3'>immutable</span>
+
+|                |a|b=a|c=copy.copy(a)|d=copy.deepcopy(a)|
+|:--             |:-- |:-- |:-- |:-- |
+|origin          |1   |1   |1   |1   |
+|simple(b=100)   |1   |100 |1   |1   |
+|shallow(b=100)  |1   |1   |100 |1   |
+|deep(b=100)     |1   |1   |1   |100 |
+
+
+
 ```python
 import copy
 
@@ -2113,6 +2123,14 @@ d value: 100 : deep(d = copy.deepcopy(d)) ,
 </details><br>
 
 <span class='frame3'>mutable</span>
+
+|         |a|b=a|c=copy.copy(a)|d=copy.deepcopy(a)|
+|:--      |:-- |:-- |:-- |:-- |
+|origin   |1   |1   |1   |1   |
+|simple   |||||
+|shallow  |||||
+|deep     |||||
+
 ```python
 import copy
 
