@@ -21,7 +21,8 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## **How to Load an Image with Keras**
+## **keras**
+### ***How to Load an Image with Keras***
 
 ```python
 # example of loading an image with the Keras API
@@ -54,7 +55,7 @@ img.show()
 
 <br><br><br>
 
-### ***Argument1 : grayscale***
+#### Argument1 : grayscale
 ```python
 # example of loading an image with the Keras API
 from keras.preprocessing.image import load_img
@@ -78,7 +79,7 @@ img
 
 ---
 
-### ***Argument2 : color_mode***
+#### Argument2 : color_mode
 
 ```python
 # example of loading an image with the Keras API
@@ -101,7 +102,7 @@ img
 
 ---
 
-### ***Argument3 : target_size***
+#### Argument3 : target_size
 
 ```python
 # example of loading an image with the Keras API
@@ -126,7 +127,7 @@ img
 <hr class="division2">
 
 
-## **How to Convert an Image With Keras**
+### ***How to Convert an Image With Keras***
 
 ```python
 # example of converting an image with the Keras API
@@ -351,7 +352,7 @@ img_pil2
 <hr class="division2">
 
 
-## **How to Save an Image With Keras**
+### ***How to Save an Image With Keras***
 
 ```python
 # example of saving an image with the Keras API
@@ -392,7 +393,7 @@ img.show()
 <br><br><br>
 
 
-## **How to Progressively Load Images**
+### ***How to Progressively Load Images***
 ```python
 from keras.preprocessing.image import ImageDataGenerator
 
