@@ -22,7 +22,7 @@ List of posts to read before reading this article
 <hr class="division1">
 
 
-## **Normalize Pixel Values**
+### ***Normalize Pixel Values***
 
 `STEP 1`
 ```python
@@ -183,7 +183,7 @@ array([[[0.00339869, 0.00342945, 0.00347559, 0.00392157],
 <hr class="division2">
 
 
-## **Center Pixel Values**
+### ***Center Pixel Values***
 
 - <strong>Global Centering</strong>: Calculating and subtracting the mean pixel value <strong>across color channels</strong>. [mean:O, std:X]
 - <strong>Local Centering</strong>: Calculating and subtracting the mean pixel value <strong>per color channel</strong>. [mean:O, std:O]
@@ -191,7 +191,7 @@ array([[[0.00339869, 0.00342945, 0.00347559, 0.00392157],
 <br><br><br>
 
 
-### ***Global Centering***
+#### Global Centering
 
 `STEP1`
 ```python
@@ -351,7 +351,7 @@ array([[[ 36.49881,  38.49881,  41.49881,  70.49881],
 
 ---
 
-### ***Local Centering***
+#### Local Centering
 
 `STEP1`
 ```python
@@ -610,13 +610,13 @@ print(np.mean(a, axis=(2,1)),'\n\n')    # ([1+2]/2 + [3+4]/2)/2 = 2.5
 
 <hr class="division2">
 
-## **Standardize Pixel Values**
+### ***Standardize Pixel Values***
 
 ***For consistency of the input data***, it may make more sense to standardize images per-channel using statistics calculated per minibatch or across the training dataset, if possible.
 <br><br><br>
 
 
-### ***Global Standardization***
+#### Global Standardization
 
 ```python
 # example of global pixel standardization
@@ -655,7 +655,7 @@ print('Mean: %.3f, Standard Deviation: %.3f' % (mean, std))
 
 ---
 
-### ***Positive Global Standardization***
+#### Positive Global Standardization
 
 ```python
 # example of global pixel standardization shifted to positive domain
@@ -766,7 +766,7 @@ clip(np.array([1,2,3,4,5]),2,4)
 
 ---
 
-### ***Local Standardization***
+#### Local Standardization
 
 ```python
 # example of per-channel pixel standardization
