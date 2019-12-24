@@ -579,8 +579,9 @@ $ fg %[number_of_process]            # execute process corresponding number on f
 
 <a href="https://www.techonthenet.com/linux/commands/ps.php" taraget="_blank">URL</a><br>
 <span class="frmae3">process structure</span><br>
-![images](https://user-images.githubusercontent.com/52376448/71396446-85fd3780-265d-11ea-8be4-04b90eb4c1c8.jpg)
+![1_CtL4OiSQFvSrK8mIOkb5zQ (1)](https://user-images.githubusercontent.com/52376448/71399766-09238b00-2668-11ea-9f6c-eaf3ce75904d.png)
 ![image](https://user-images.githubusercontent.com/52376448/69005885-74908380-096b-11ea-804e-a662688a0d4b.png)
+![kernelUserMemorySplit](https://user-images.githubusercontent.com/52376448/71399768-0b85e500-2668-11ea-80a4-fbeeaac9cb1e.png)
 
 - stack
 - heap
