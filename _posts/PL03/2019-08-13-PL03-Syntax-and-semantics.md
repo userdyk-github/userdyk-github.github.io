@@ -756,50 +756,123 @@ CLASS.func()
 
 #### magic method
 <a href="https://corikachu.github.io/articles/python/python-magic-method" target="_blank">URL</a><br>
-<span class="frame3">__init(self)__</span>
+```python
+import math
+
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def __str__(self):
+        return 'x={}, y={}'.format(self.x, self.y)
+
+    def __len__(self):
+        return int(self.x**2 + self.y**2)
+
+    def __abs__(self):
+        return math.sqrt(self.x**2 + self.y**2)
+
+    def __getitem__(self, index):
+        if index == 0:
+            return self.x
+        elif index == 1:
+            return self.y
+        else:
+            return -1
+
+    def __add__(self, point):
+        new_x = self.x + point.x
+        new_y = self.y + point.y
+        return (new_x, new_y)
+
+    def __sub__(self, point):
+        new_x = self.x - point.x
+        new_y = self.y - point.y
+        return (new_x, new_y)
+
+    def __mul__(self, point):
+        if type(point) == int:
+            return Point(point*self.x, point*self.y)
+        elif type(point) == Point:
+            return self.x*point.x + self.y*point.y
+
+    def __eq__(self, point):
+        return self.x == point.x and self.y == point.y
+
+    def __ne__(self, point):
+        return not (self.x == point.x and self.y == point.y)
+
+
+p1 = Point(1.1,2.2)
+p2 = Point(4.4,5.5)
+
+print('__str__ : ',p1, p2)
+print('__len__ : ',len(p1),len(p2))
+print('__getitem__ :', p1[0],p1[1],p1[2])
+print('__add__ : ',p1 + p2)
+print('__sub__ : ',p1 - p2)
+print('__mul__ : ',p1 * 3)
+print('__mul__ : ',p1 * p2)
+print('__eq__ : ',p1 == p1, p1 == p2)
+print('__ne__ : ',p1 != p1, p1 != p2)
+print('__abs__: ', abs(p1))
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">__init__(self)</summary>
+<hr class='division3'>
 ```python
 
 ```
 ```
 
 ```
-<span class="frame3">__del(self)__</span>
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">__del__(self)</summary>
+<hr class='division3'>
 ```python
 
 ```
 ```
 
 ```
-<span class="frame3">__repr(self)__</span>
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">__repr__(self)</summary>
+<hr class='division3'>
 ```python
 
 ```
 ```
 
 ```
-<span class="frame3">__(self)__</span>
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">__str__(self)</summary>
+<hr class='division3'>
 ```python
 
 ```
 ```
 
 ```
-
-<span class="frame3">__(self)__</span>
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">____(self)</summary>
+<hr class='division3'>
 ```python
 
 ```
 ```
 
 ```
-
-<span class="frame3">__(self)__</span>
-```python
-
-```
-```
-
-```
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
