@@ -819,7 +819,7 @@ print('__ne__ : ',p1 != p1, p1 != p2)
 print('__abs__: ', abs(p1))
 ```
 <details markdown="1">
-<summary class='jb-small' style="color:blue">__init__(self)</summary>
+<summary class='jb-small' style="color:blue">__init__(self) : p = Point()</summary>
 <hr class='division3'>
 ```python
 
@@ -830,7 +830,7 @@ print('__abs__: ', abs(p1))
 <hr class='division3'>
 </details>
 <details markdown="1">
-<summary class='jb-small' style="color:blue">__del__(self)</summary>
+<summary class='jb-small' style="color:blue">__str__(self) : object = CLASS()</summary>
 <hr class='division3'>
 ```python
 
@@ -841,7 +841,7 @@ print('__abs__: ', abs(p1))
 <hr class='division3'>
 </details>
 <details markdown="1">
-<summary class='jb-small' style="color:blue">__repr__(self)</summary>
+<summary class='jb-small' style="color:blue">__del__(self) : del object</summary>
 <hr class='division3'>
 ```python
 
@@ -852,7 +852,7 @@ print('__abs__: ', abs(p1))
 <hr class='division3'>
 </details>
 <details markdown="1">
-<summary class='jb-small' style="color:blue">__str__(self)</summary>
+<summary class='jb-small' style="color:blue">__repr__(self) : </summary>
 <hr class='division3'>
 ```python
 
@@ -863,7 +863,52 @@ print('__abs__: ', abs(p1))
 <hr class='division3'>
 </details>
 <details markdown="1">
-<summary class='jb-small' style="color:blue">____(self)</summary>
+<summary class='jb-small' style="color:blue">__len__(self) : len(object)</summary>
+<hr class='division3'>
+```python
+
+```
+```
+
+```
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">__abs__(self) : abs(object)</summary>
+<hr class='division3'>
+```python
+
+```
+```
+
+```
+<hr class='division3'>
+</details>
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">__add__(self) : object1 + object2</summary>
+<hr class='division3'>
+```python
+
+```
+```
+
+```
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">__sub__(self) : object1 - object2</summary>
+<hr class='division3'>
+```python
+
+```
+```
+
+```
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">__mul__(self) : object1 * object2</summary>
 <hr class='division3'>
 ```python
 
