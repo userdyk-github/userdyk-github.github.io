@@ -77,6 +77,10 @@ pyplot.show()
 </details>
 
 <br><br><br>
+
+---
+
+
 ### ***Vertical shift***
 ```python
 from keras.preprocessing.image import ImageDataGenerator
@@ -118,12 +122,10 @@ pyplot.show()
 
 <br><br><br>
 
----
-
 <hr class="division2">
 
-## **Horizontal and Vertical Flip Augmentation**
-
+## **Flip Augmentation**
+### ***Horizontal flip***
 ```python
 
 ```
@@ -135,6 +137,19 @@ pyplot.show()
 
 <br><br><br>
 
+---
+
+### ***Vertical flip***
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
+<br><br><br>
 <hr class="division2">
 
 ## **Random Rotation Augmentation**
