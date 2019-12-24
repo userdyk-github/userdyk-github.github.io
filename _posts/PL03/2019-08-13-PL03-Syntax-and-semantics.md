@@ -755,6 +755,7 @@ CLASS.func()
 <br><br><br>
 
 #### magic method
+<a href="https://corikachu.github.io/articles/python/python-magic-method" target="_blank">URL</a><br>
 <span class="frame3">__init(self)__</span>
 ```python
 
