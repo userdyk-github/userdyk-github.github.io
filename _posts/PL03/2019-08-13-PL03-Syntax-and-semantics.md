@@ -1938,6 +1938,11 @@ os.getcwd()
 
 ---
 
+### ***Closure function***
+<br><br><br>
+
+---
+
 ### ***Object copy***
 <span class='frame3'>immutable</span>
 
