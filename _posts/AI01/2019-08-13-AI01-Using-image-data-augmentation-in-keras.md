@@ -211,11 +211,35 @@ pyplot.show()
 ## **Random Rotation Augmentation**
 
 ```python
+# example of random rotation image augmentation
+from numpy import expand_dims
+from keras.preprocessing.image import load_img
+from keras.preprocessing.image import img_to_array
+from keras.preprocessing.image import ImageDataGenerator
+from matplotlib import pyplot
 
+# load the image
+img = load_img('bird.jpg')
+data = img_to_array(img)
+samples = expand_dims(data, 0)
+
+# create image data augmentation generator
+datagen = ImageDataGenerator(rotation_range=90)
+iterator = datagen.flow(samples, batch_size=1)
+
+# generate samples and plot
+fig , axes = pyplot.subplots(3,3,figsize=(9,9))
+for i in range(3):
+    for j in range(3):
+        batch = iterator.next()
+        image = batch[0].astype('uint8')
+        axes[i,j].imshow(image)
+pyplot.show()
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![image](https://user-images.githubusercontent.com/52376448/71425812-b20fcb80-26e4-11ea-801d-831564b6aa50.png)
 <hr class='division3'>
 </details>
 
