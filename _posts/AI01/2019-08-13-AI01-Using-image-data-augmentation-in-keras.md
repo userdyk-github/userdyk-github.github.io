@@ -44,7 +44,7 @@ datagen = ImageDataGenerator(width_shift_range=0.9)
 #datagen = ImageDataGenerator(width_shift_range=[-200,200])
 ```
 ```python
-# example of vertical shift image augmentation
+# example of horizental shift image augmentation
 from numpy import expand_dims
 from keras.preprocessing.image import load_img
 from keras.preprocessing.image import img_to_array
@@ -127,11 +127,35 @@ pyplot.show()
 ## **Flip Augmentation**
 ### ***Horizontal flip***
 ```python
+# example of horizontal flip image augmentation
+from numpy import expand_dims
+from keras.preprocessing.image import load_img
+from keras.preprocessing.image import img_to_array
+from keras.preprocessing.image import ImageDataGenerator
+from matplotlib import pyplot
 
+# load the image
+img = load_img('bird.jpg')
+data = img_to_array(img)
+samples = expand_dims(data, 0)
+
+# create image data augmentation generator
+datagen = ImageDataGenerator(horizontal_flip=True)
+iterator = datagen.flow(samples, batch_size=1)
+
+# generate samples and plot
+fig , axes = pyplot.subplots(3,3,figsize=(10,10))
+for i in range(3):
+    for j in range(3):
+        batch = iterator.next()
+        image = batch[0].astype('uint8')
+        axes[i,j].imshow(image)
+pyplot.show()
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![image](https://user-images.githubusercontent.com/52376448/71425704-7d4f4480-26e3-11ea-8a95-7e36c1367c71.png)
 <hr class='division3'>
 </details>
 
@@ -141,11 +165,35 @@ pyplot.show()
 
 ### ***Vertical flip***
 ```python
+# example of vertical flip image augmentation
+from numpy import expand_dims
+from keras.preprocessing.image import load_img
+from keras.preprocessing.image import img_to_array
+from keras.preprocessing.image import ImageDataGenerator
+from matplotlib import pyplot
 
+# load the image
+img = load_img('bird.jpg')
+data = img_to_array(img)
+samples = expand_dims(data, 0)
+
+# create image data augmentation generator
+datagen = ImageDataGenerator(vertical_flip=True)
+iterator = datagen.flow(samples, batch_size=1)
+
+# generate samples and plot
+fig , axes = pyplot.subplots(3,3,figsize=(10,10))
+for i in range(3):
+    for j in range(3):
+        batch = iterator.next()
+        image = batch[0].astype('uint8')
+        axes[i,j].imshow(image)
+pyplot.show()
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![image](https://user-images.githubusercontent.com/52376448/71425719-a8399880-26e3-11ea-8a14-42d5c4d239cf.png)
 <hr class='division3'>
 </details>
 
