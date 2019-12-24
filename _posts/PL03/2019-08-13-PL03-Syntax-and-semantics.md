@@ -3605,6 +3605,7 @@ print(sys.getsizeof( (i for i in range(1000) if i % 2)),'   for generator, iter_
 ---
 
 ### ***Coroutine : send!***
+
 #### Coroutine(put signal)
 ```python
 def number_coroutine():
