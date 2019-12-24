@@ -465,67 +465,6 @@ for i in range(10) : print(i)
 
 ---
 
-### ***raise***
-<a herf="https://python.bakyeono.net/chapter-9-4.html#946-assert-%EB%AC%B8-%EB%8B%A8%EC%96%B8%ED%95%98%EA%B8%B0" target="_blank">URL</a>
-![img-9-4](https://user-images.githubusercontent.com/52376448/71385391-b5df1780-262a-11ea-9b0e-33de023b4a59.png)
-
-```python
-class DoorException(Exception):
-    pass
-
-class DoorOpenedException(DoorException):
-    pass
-
-class DoorClosedException(DoorException):
-    pass
-
-
-class Door:
-    def __init__(self):
-        self.is_opened = True
-    
-    def state(self):
-        raise DoorException('being preparing')
-
-    def open(self):
-        if self.is_opened:
-            raise DoorOpenedException('already opened')
-        else:
-            print('open')
-            self.is_opened = True
-
-    def close(self):
-        if not self.is_opened:
-            raise DoorClosedException('already closed')
-        else:
-            print('close')
-            self.is_opened = False
-            
-door = Door()
-door.close()
-door.open()
-door.state()
-```
-```
-close
-open
----------------------------------------------------------------------------
-DoorException                             Traceback (most recent call last)
-<ipython-input-797-ad6705ac378e> in <module>
-     33 door.close()
-     34 door.open()
----> 35 door.state()
-
-<ipython-input-797-ad6705ac378e> in state(self)
-     14 
-     15     def state(self):
----> 16         raise DoorException('being preparing')
-     17 
-     18     def open(self):
-
-DoorException: being preparing
-```
-<br><br><br>
 
 ### ***try/except***
 <a herf="https://python.bakyeono.net/chapter-9-4.html#946-assert-%EB%AC%B8-%EB%8B%A8%EC%96%B8%ED%95%98%EA%B8%B0" target="_blank">URL</a>
@@ -1135,7 +1074,67 @@ help(object)
 ---
 
 ### ***Exception handling***
+#### raise
+<a herf="https://python.bakyeono.net/chapter-9-4.html#946-assert-%EB%AC%B8-%EB%8B%A8%EC%96%B8%ED%95%98%EA%B8%B0" target="_blank">URL</a>
+![img-9-4](https://user-images.githubusercontent.com/52376448/71385391-b5df1780-262a-11ea-9b0e-33de023b4a59.png)
 
+```python
+class DoorException(Exception):
+    pass
+
+class DoorOpenedException(DoorException):
+    pass
+
+class DoorClosedException(DoorException):
+    pass
+
+
+class Door:
+    def __init__(self):
+        self.is_opened = True
+    
+    def state(self):
+        raise DoorException('being preparing')
+
+    def open(self):
+        if self.is_opened:
+            raise DoorOpenedException('already opened')
+        else:
+            print('open')
+            self.is_opened = True
+
+    def close(self):
+        if not self.is_opened:
+            raise DoorClosedException('already closed')
+        else:
+            print('close')
+            self.is_opened = False
+            
+door = Door()
+door.close()
+door.open()
+door.state()
+```
+```
+close
+open
+---------------------------------------------------------------------------
+DoorException                             Traceback (most recent call last)
+<ipython-input-797-ad6705ac378e> in <module>
+     33 door.close()
+     34 door.open()
+---> 35 door.state()
+
+<ipython-input-797-ad6705ac378e> in state(self)
+     14 
+     15     def state(self):
+---> 16         raise DoorException('being preparing')
+     17 
+     18     def open(self):
+
+DoorException: being preparing
+```
+#### try/except/else/finally
 ```python
 try:
     x = int(input('enter number : '))
