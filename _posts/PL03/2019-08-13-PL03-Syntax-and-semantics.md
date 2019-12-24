@@ -3064,13 +3064,13 @@ print(c(1))
 #### decorator
 ```python
 def trace(func):
-    def wrapper():
+    def wrapper(*agrs,**kwagrs):
         pass
     return wrapper
 
 @trace
-def hello():
-    pass
+def hello(*args, **kwargs):
+    print('hello')
 
 hello()
 ```
