@@ -39,6 +39,10 @@ List of posts to read before reading this article
 ## **Shift Augmentation**
 ### ***Horizontal shift***
 ```python
+from keras.preprocessing.image import ImageDataGenerator
+datagen = ImageDataGenerator(width_shift_range=0.9)
+```
+```python
 # example of vertical shift image augmentation
 from numpy import expand_dims
 from keras.preprocessing.image import load_img
@@ -72,6 +76,10 @@ pyplot.show()
 
 <br><br><br>
 ### ***Vertical shift***
+```python
+from keras.preprocessing.image import ImageDataGenerator
+datagen = ImageDataGenerator(height_shift_range=0.9)
+```
 ```python
 # example of vertical shift image augmentation
 from numpy import expand_dims
