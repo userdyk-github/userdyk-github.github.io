@@ -3770,6 +3770,68 @@ co.send(None)
 5050
 ```
 <br><br><br>
+#### StopIteration
+<span class="frame3">python - V : 3.6</span>
+```pyhon
+def accumulate():
+    total = 0
+    while True:
+        x = (yield)
+        if x is None:
+            raise StopIteration(total)
+        total += x
+
+def sum_coroutine():
+    while True:
+        total = yield from accumulate()
+        print(total)
+
+co = sum_coroutine()
+next(co)
+
+for i in range(1,11):
+    co.send(i)
+co.send(None)
+
+for i in range(1,101):
+    co.send(i)
+co.send(None)
+```
+```
+55
+5050
+```
+<span class="frame3">python - V : 3.7</span>
+```python
+def accumulate():
+    total = 0
+    while True:
+        x = (yield)
+        if x is None:
+            return total
+        total += x
+
+def sum_coroutine():
+    while True:
+        total = yield from accumulate()
+        print(total)
+
+co = sum_coroutine()
+next(co)
+
+for i in range(1,11):
+    co.send(i)
+co.send(None)
+
+for i in range(1,101):
+    co.send(i)
+co.send(None)
+```
+```
+55
+5050
+```
+<br><br><br>
 <hr class="division2">
 
 ## **Python programming, how do I get started?**
