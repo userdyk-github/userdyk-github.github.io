@@ -3605,7 +3605,7 @@ print(sys.getsizeof( (i for i in range(1000) if i % 2)),'   for generator, iter_
 ---
 
 ### ***Coroutine : send!***
-#### Main routine and Sub routine
+<span class="frame3"> Main routine and Sub routine</span>
 ```python
 def sub_add(a,b):
     c = a + b
@@ -3625,7 +3625,7 @@ main calc func
 
 <br><br><br>
 
-#### Coroutine(put signal)
+#### put signal
 ```python
 def number_coroutine():
     while True:
@@ -3644,7 +3644,7 @@ co.send(3)
 ```
 
 <br><br><br>
-#### Coroutine(get signal)
+#### get signal
 ```python
 def sum_coroutine():
     total = 0
@@ -3662,6 +3662,52 @@ print(co.send(3))
 1
 3
 6
+```
+<br><br><br>
+
+#### exit
+```python
+def number_coroutine():
+    while True:
+        x = (yield)
+        print(x, end=' ')
+
+co = number_coroutine()
+next(co)
+
+for i in range(20):
+    co.send(i)
+
+co.close()
+```
+```
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+```
+
+<br><br><br>
+
+#### error handling
+```python
+def number_coroutine():
+    try:
+        while True:
+            x = (yield)
+            print(x, end=' ')
+    except GeneratorExit:
+        print()
+        print('coroutine exit')
+
+co = number_coroutine()
+next(co)
+
+for i in range(20):
+    co.send(i)
+
+co.close()
+```
+```
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+coroutine exit
 ```
 <br><br><br>
 <hr class="division2">
