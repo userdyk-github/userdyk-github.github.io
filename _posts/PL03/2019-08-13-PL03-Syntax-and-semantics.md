@@ -1974,10 +1974,46 @@ d value: 1 : deep(d = copy.deepcopy(d)) ,
 <summary class='jb-small' style="color:blue">simple</summary>
 <hr class='division3'>
 ```python
+import copy
 
+def description(a,b,c,d):
+    print('a value:',a,': original(a)',
+          ',\n a id:',id(a))
+    print('b value:',b,': simple(b = a)',
+          ',\n b id:',id(b))
+    print('c value:',c,': shallow(c = copy.copy(a)) ',
+          ',\n c id:',id(c))
+    print('d value:',d,': deep(d = copy.deepcopy(d))',
+          ',\n d id:',id(d))
+    print()    
+
+a = 1
+b = a
+c = copy.copy(a)
+d = copy.deepcopy(a)
+description(a,b,c,d)
+
+b = 100
+description(a,b,c,d)
 ```
 ```
+a value: 1 : original(a) ,
+ a id: 10914496
+b value: 1 : simple(b = a) ,
+ b id: 10914496
+c value: 1 : shallow(c = copy.copy(a))  ,
+ c id: 10914496
+d value: 1 : deep(d = copy.deepcopy(d)) ,
+ d id: 10914496
 
+a value: 1 : original(a) ,
+ a id: 10914496
+b value: 100 : simple(b = a) ,
+ b id: 10917664
+c value: 1 : shallow(c = copy.copy(a))  ,
+ c id: 10914496
+d value: 1 : deep(d = copy.deepcopy(d)) ,
+ d id: 10914496
 ```
 <hr class='division3'>
 </details>
@@ -1985,10 +2021,46 @@ d value: 1 : deep(d = copy.deepcopy(d)) ,
 <summary class='jb-small' style="color:blue">shallow</summary>
 <hr class='division3'>
 ```python
+import copy
 
+def description(a,b,c,d):
+    print('a value:',a,': original(a)',
+          ',\n a id:',id(a))
+    print('b value:',b,': simple(b = a)',
+          ',\n b id:',id(b))
+    print('c value:',c,': shallow(c = copy.copy(a)) ',
+          ',\n c id:',id(c))
+    print('d value:',d,': deep(d = copy.deepcopy(d))',
+          ',\n d id:',id(d))
+    print()    
+
+a = 1
+b = a
+c = copy.copy(a)
+d = copy.deepcopy(a)
+description(a,b,c,d)
+
+c = 100
+description(a,b,c,d)
 ```
 ```
+a value: 1 : original(a) ,
+ a id: 10914496
+b value: 1 : simple(b = a) ,
+ b id: 10914496
+c value: 1 : shallow(c = copy.copy(a))  ,
+ c id: 10914496
+d value: 1 : deep(d = copy.deepcopy(d)) ,
+ d id: 10914496
 
+a value: 1 : original(a) ,
+ a id: 10914496
+b value: 1 : simple(b = a) ,
+ b id: 10914496
+c value: 100 : shallow(c = copy.copy(a))  ,
+ c id: 10917664
+d value: 1 : deep(d = copy.deepcopy(d)) ,
+ d id: 10914496
 ```
 <hr class='division3'>
 </details>
@@ -1996,10 +2068,46 @@ d value: 1 : deep(d = copy.deepcopy(d)) ,
 <summary class='jb-small' style="color:blue">deep</summary>
 <hr class='division3'>
 ```python
+import copy
 
+def description(a,b,c,d):
+    print('a value:',a,': original(a)',
+          ',\n a id:',id(a))
+    print('b value:',b,': simple(b = a)',
+          ',\n b id:',id(b))
+    print('c value:',c,': shallow(c = copy.copy(a)) ',
+          ',\n c id:',id(c))
+    print('d value:',d,': deep(d = copy.deepcopy(d))',
+          ',\n d id:',id(d))
+    print()    
+
+a = 1
+b = a
+c = copy.copy(a)
+d = copy.deepcopy(a)
+description(a,b,c,d)
+
+d = 100
+description(a,b,c,d)
 ```
 ```
+a value: 1 : original(a) ,
+ a id: 10914496
+b value: 1 : simple(b = a) ,
+ b id: 10914496
+c value: 1 : shallow(c = copy.copy(a))  ,
+ c id: 10914496
+d value: 1 : deep(d = copy.deepcopy(d)) ,
+ d id: 10914496
 
+a value: 1 : original(a) ,
+ a id: 10914496
+b value: 1 : simple(b = a) ,
+ b id: 10914496
+c value: 1 : shallow(c = copy.copy(a))  ,
+ c id: 10914496
+d value: 100 : deep(d = copy.deepcopy(d)) ,
+ d id: 10917664
 ```
 <hr class='division3'>
 </details><br>
@@ -2039,10 +2147,89 @@ d value: [1] : deep(d = copy.deepcopy(d)) ,
 <summary class='jb-small' style="color:blue">simple</summary>
 <hr class='division3'>
 ```python
+import copy
 
+def description(a,b,c,d):
+    print('a value:',a,': original(a)',
+          ',\n a id:',id(a),', a[0] id:',id(a[0]))
+    print('b value:',b,': simple(b = a)',
+          ',\n b id:',id(b),', b[0] id:',id(b[0]))
+    print('c value:',c,': shallow(c = copy.copy(a)) ',
+          ',\n c id:',id(c),', c[0] id:',id(c[0]))
+    print('d value:',d,': deep(d = copy.deepcopy(d))',
+          ',\n d id:',id(d),', d[0] id:',id(d[0]))
+    print()
+    
+a = [1]
+b = a
+c = copy.copy(a)
+d = copy.deepcopy(a)
+description(a,b,c,d)
+
+b[0] = 100
+description(a,b,c,d)
 ```
 ```
+a value: [1] : original(a) ,
+ a id: 140282055757896 , a[0] id: 10914496
+b value: [1] : simple(b = a) ,
+ b id: 140282055757896 , b[0] id: 10914496
+c value: [1] : shallow(c = copy.copy(a))  ,
+ c id: 140282055759112 , c[0] id: 10914496
+d value: [1] : deep(d = copy.deepcopy(d)) ,
+ d id: 140282055758152 , d[0] id: 10914496
 
+a value: [100] : original(a) ,
+ a id: 140282055757896 , a[0] id: 10917664
+b value: [100] : simple(b = a) ,
+ b id: 140282055757896 , b[0] id: 10917664
+c value: [1] : shallow(c = copy.copy(a))  ,
+ c id: 140282055759112 , c[0] id: 10914496
+d value: [1] : deep(d = copy.deepcopy(d)) ,
+ d id: 140282055758152 , d[0] id: 10914496
+```
+<br><br><br>
+```python
+import copy
+
+def description(a,b,c,d):
+    print('a value:',a,': original(a)',
+          ',\n a id:',id(a),', a[0] id:',id(a[0]))
+    print('b value:',b,': simple(b = a)',
+          ',\n b id:',id(b),', b[0] id:',id(b[0]))
+    print('c value:',c,': shallow(c = copy.copy(a)) ',
+          ',\n c id:',id(c),', c[0] id:',id(c[0]))
+    print('d value:',d,': deep(d = copy.deepcopy(d))',
+          ',\n d id:',id(d),', d[0] id:',id(d[0]))
+    print()
+    
+a = [1]
+b = a
+c = copy.copy(a)
+d = copy.deepcopy(a)
+description(a,b,c,d)
+
+b = [100]
+description(a,b,c,d)
+```
+```
+a value: [1] : original(a) ,
+ a id: 140282054944712 , a[0] id: 10914496
+b value: [1] : simple(b = a) ,
+ b id: 140282054944712 , b[0] id: 10914496
+c value: [1] : shallow(c = copy.copy(a))  ,
+ c id: 140282055640840 , c[0] id: 10914496
+d value: [1] : deep(d = copy.deepcopy(d)) ,
+ d id: 140282055757896 , d[0] id: 10914496
+
+a value: [1] : original(a) ,
+ a id: 140282054944712 , a[0] id: 10914496
+b value: [100] : simple(b = a) ,
+ b id: 140282055758152 , b[0] id: 10917664
+c value: [1] : shallow(c = copy.copy(a))  ,
+ c id: 140282055640840 , c[0] id: 10914496
+d value: [1] : deep(d = copy.deepcopy(d)) ,
+ d id: 140282055757896 , d[0] id: 10914496
 ```
 <hr class='division3'>
 </details>
@@ -2050,10 +2237,89 @@ d value: [1] : deep(d = copy.deepcopy(d)) ,
 <summary class='jb-small' style="color:blue">shallow</summary>
 <hr class='division3'>
 ```python
+import copy
 
+def description(a,b,c,d):
+    print('a value:',a,': original(a)',
+          ',\n a id:',id(a),', a[0] id:',id(a[0]))
+    print('b value:',b,': simple(b = a)',
+          ',\n b id:',id(b),', b[0] id:',id(b[0]))
+    print('c value:',c,': shallow(c = copy.copy(a)) ',
+          ',\n c id:',id(c),', c[0] id:',id(c[0]))
+    print('d value:',d,': deep(d = copy.deepcopy(d))',
+          ',\n d id:',id(d),', d[0] id:',id(d[0]))
+    print()
+    
+a = [1]
+b = a
+c = copy.copy(a)
+d = copy.deepcopy(a)
+description(a,b,c,d)
+
+c[0] = 100
+description(a,b,c,d)
 ```
 ```
+a value: [1] : original(a) ,
+ a id: 140282057630472 , a[0] id: 10914496
+b value: [1] : simple(b = a) ,
+ b id: 140282057630472 , b[0] id: 10914496
+c value: [1] : shallow(c = copy.copy(a))  ,
+ c id: 140282054944712 , c[0] id: 10914496
+d value: [1] : deep(d = copy.deepcopy(d)) ,
+ d id: 140282055758152 , d[0] id: 10914496
 
+a value: [1] : original(a) ,
+ a id: 140282057630472 , a[0] id: 10914496
+b value: [1] : simple(b = a) ,
+ b id: 140282057630472 , b[0] id: 10914496
+c value: [100] : shallow(c = copy.copy(a))  ,
+ c id: 140282054944712 , c[0] id: 10917664
+d value: [1] : deep(d = copy.deepcopy(d)) ,
+ d id: 140282055758152 , d[0] id: 10914496
+```
+<br><br><br>
+```python
+import copy
+
+def description(a,b,c,d):
+    print('a value:',a,': original(a)',
+          ',\n a id:',id(a),', a[0] id:',id(a[0]))
+    print('b value:',b,': simple(b = a)',
+          ',\n b id:',id(b),', b[0] id:',id(b[0]))
+    print('c value:',c,': shallow(c = copy.copy(a)) ',
+          ',\n c id:',id(c),', c[0] id:',id(c[0]))
+    print('d value:',d,': deep(d = copy.deepcopy(d))',
+          ',\n d id:',id(d),', d[0] id:',id(d[0]))
+    print()
+    
+a = [1]
+b = a
+c = copy.copy(a)
+d = copy.deepcopy(a)
+description(a,b,c,d)
+
+c = [100]
+description(a,b,c,d)
+```
+```
+a value: [1] : original(a) ,
+ a id: 140282054999432 , a[0] id: 10914496
+b value: [1] : simple(b = a) ,
+ b id: 140282054999432 , b[0] id: 10914496
+c value: [1] : shallow(c = copy.copy(a))  ,
+ c id: 140282057631304 , c[0] id: 10914496
+d value: [1] : deep(d = copy.deepcopy(d)) ,
+ d id: 140282057630472 , d[0] id: 10914496
+
+a value: [1] : original(a) ,
+ a id: 140282054999432 , a[0] id: 10914496
+b value: [1] : simple(b = a) ,
+ b id: 140282054999432 , b[0] id: 10914496
+c value: [100] : shallow(c = copy.copy(a))  ,
+ c id: 140282055758152 , c[0] id: 10917664
+d value: [1] : deep(d = copy.deepcopy(d)) ,
+ d id: 140282057630472 , d[0] id: 10914496
 ```
 <hr class='division3'>
 </details>
@@ -2061,10 +2327,89 @@ d value: [1] : deep(d = copy.deepcopy(d)) ,
 <summary class='jb-small' style="color:blue">deep</summary>
 <hr class='division3'>
 ```python
+import copy
 
+def description(a,b,c,d):
+    print('a value:',a,': original(a)',
+          ',\n a id:',id(a),', a[0] id:',id(a[0]))
+    print('b value:',b,': simple(b = a)',
+          ',\n b id:',id(b),', b[0] id:',id(b[0]))
+    print('c value:',c,': shallow(c = copy.copy(a)) ',
+          ',\n c id:',id(c),', c[0] id:',id(c[0]))
+    print('d value:',d,': deep(d = copy.deepcopy(d))',
+          ',\n d id:',id(d),', d[0] id:',id(d[0]))
+    print()
+    
+a = [1]
+b = a
+c = copy.copy(a)
+d = copy.deepcopy(a)
+description(a,b,c,d)
+
+d[0] = 100
+description(a,b,c,d)
 ```
 ```
+a value: [1] : original(a) ,
+ a id: 140282055758152 , a[0] id: 10914496
+b value: [1] : simple(b = a) ,
+ b id: 140282055758152 , b[0] id: 10914496
+c value: [1] : shallow(c = copy.copy(a))  ,
+ c id: 140282054946120 , c[0] id: 10914496
+d value: [1] : deep(d = copy.deepcopy(d)) ,
+ d id: 140282057631304 , d[0] id: 10914496
 
+a value: [1] : original(a) ,
+ a id: 140282055758152 , a[0] id: 10914496
+b value: [1] : simple(b = a) ,
+ b id: 140282055758152 , b[0] id: 10914496
+c value: [1] : shallow(c = copy.copy(a))  ,
+ c id: 140282054946120 , c[0] id: 10914496
+d value: [100] : deep(d = copy.deepcopy(d)) ,
+ d id: 140282057631304 , d[0] id: 10917664
+```
+<br><br><br>
+```python
+import copy
+
+def description(a,b,c,d):
+    print('a value:',a,': original(a)',
+          ',\n a id:',id(a),', a[0] id:',id(a[0]))
+    print('b value:',b,': simple(b = a)',
+          ',\n b id:',id(b),', b[0] id:',id(b[0]))
+    print('c value:',c,': shallow(c = copy.copy(a)) ',
+          ',\n c id:',id(c),', c[0] id:',id(c[0]))
+    print('d value:',d,': deep(d = copy.deepcopy(d))',
+          ',\n d id:',id(d),', d[0] id:',id(d[0]))
+    print()
+    
+a = [1]
+b = a
+c = copy.copy(a)
+d = copy.deepcopy(a)
+description(a,b,c,d)
+
+d = [100]
+description(a,b,c,d)
+```
+```
+a value: [1] : original(a) ,
+ a id: 140282055726216 , a[0] id: 10914496
+b value: [1] : simple(b = a) ,
+ b id: 140282055726216 , b[0] id: 10914496
+c value: [1] : shallow(c = copy.copy(a))  ,
+ c id: 140282055640840 , c[0] id: 10914496
+d value: [1] : deep(d = copy.deepcopy(d)) ,
+ d id: 140282055758152 , d[0] id: 10914496
+
+a value: [1] : original(a) ,
+ a id: 140282055726216 , a[0] id: 10914496
+b value: [1] : simple(b = a) ,
+ b id: 140282055726216 , b[0] id: 10914496
+c value: [1] : shallow(c = copy.copy(a))  ,
+ c id: 140282055640840 , c[0] id: 10914496
+d value: [100] : deep(d = copy.deepcopy(d)) ,
+ d id: 140282057631304 , d[0] id: 10917664
 ```
 <hr class='division3'>
 </details>
