@@ -41,6 +41,7 @@ List of posts to read before reading this article
 ```python
 from keras.preprocessing.image import ImageDataGenerator
 datagen = ImageDataGenerator(width_shift_range=0.9)
+#datagen = ImageDataGenerator(width_shift_range=[-200,200])
 ```
 ```python
 # example of vertical shift image augmentation
@@ -80,6 +81,7 @@ pyplot.show()
 ```python
 from keras.preprocessing.image import ImageDataGenerator
 datagen = ImageDataGenerator(height_shift_range=0.9)
+#datagen = ImageDataGenerator(height_shift_range=[-200,200])
 ```
 ```python
 # example of vertical shift image augmentation
