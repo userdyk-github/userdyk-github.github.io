@@ -3035,7 +3035,7 @@ d value: [2, [2, 4]] : deep(d = copy.deepcopy(d)) ,
 
 ---
 
-### ***Closure***
+### ***Closure : func of func***
 
 <br><br><br>
 
@@ -3286,7 +3286,7 @@ returned value of add is not mutiple of 3<br>
 
 ---
 
-### ***Iterator***
+### ***Iterator : next!***
 
 ```python
 class Counter:
@@ -3381,7 +3381,7 @@ next(a,10)
 
 ---
 
-### ***Generator***
+### ***Generator : yield!***
 
 #### Yield
 ```python
@@ -3606,7 +3606,7 @@ print(sys.getsizeof( (i for i in range(1000) if i % 2)),'   for generator, iter_
 
 ---
 
-### ***Coroutine***
+### ***Coroutine : send!***
 #### Main routine and Sub routine
 ```python
 def sub_add(a,b):
@@ -3624,6 +3624,50 @@ main_calc()
 3
 sub add func
 main calc func
+```
+<br><br><br>
+
+#### Coroutine(put signal)
+```python
+def number_coroutine():
+    while True:
+        x = (yield)
+        print(x)
+
+co = number_coroutine()
+next(co)
+
+co.send(1)
+co.send(2)
+co.send(3)
+```
+```
+1
+2
+3
+```
+
+<br><br><br>
+#### Coroutine(get signal)
+```python
+def sum_coroutine():
+    total = 0
+    while True:
+        x = (yield total)
+        total += x
+
+co = sum_coroutine()
+print(next(co))
+
+print(co.send(1))
+print(co.send(2))
+print(co.send(3))
+```
+```
+0
+1
+3
+6
 ```
 <br><br><br>
 <hr class="division2">
