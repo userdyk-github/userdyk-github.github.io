@@ -1,6 +1,6 @@
 ---
 layout : post
-title : AI01, Scaling image pixel data with keras
+title : AI01, Scaling image pixel data
 categories: [AI01]
 comments : true
 tags : [AI01]
