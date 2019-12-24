@@ -1943,29 +1943,22 @@ os.getcwd()
 ```python
 import copy
 
+def description(a,b,c,d):
+    print('a value:',a,': original(a)',
+          ',\n a id:',id(a))
+    print('b value:',b,': simple(b = a)',
+          ',\n b id:',id(b))
+    print('c value:',c,': shallow(c = copy.copy(a)) ',
+          ',\n c id:',id(c))
+    print('d value:',d,': deep(d = copy.deepcopy(d))',
+          ',\n d id:',id(d))
+    print()    
+
 a = 1
 b = a
 c = copy.copy(a)
 d = copy.deepcopy(a)
-print('a value:',a,': original(a)',
-      ',\n a id:',id(a))
-print('b value:',b,': simple(b = a)',
-      ',\n b id:',id(b))
-print('c value:',c,': shallow(c = copy.copy(a)) ',
-      ',\n c id:',id(c))
-print('d value:',d,': deep(d = copy.deepcopy(d))',
-      ',\n d id:',id(d))
-print()
-
-b = 999
-print('a value:',a,': original(a)',
-      ',\n a id:',id(a))
-print('b value:',b,': simple(b = a)',
-      ',\n b id:',id(b))
-print('c value:',c,': shallow(c = copy.copy(a)) ',
-      ',\n c id:',id(c))
-print('d value:',d,': deep(d = copy.deepcopy(d))',
-      ',\n d id:',id(d))
+description(a,b,c,d)
 ```
 ```
 a value: 1 : original(a) ,
@@ -1976,43 +1969,61 @@ c value: 1 : shallow(c = copy.copy(a))  ,
  c id: 10914496
 d value: 1 : deep(d = copy.deepcopy(d)) ,
  d id: 10914496
-
-a value: 1 : original(a) ,
- a id: 10914496
-b value: 999 : simple(b = a) ,
- b id: 140282049484528
-c value: 1 : shallow(c = copy.copy(a))  ,
- c id: 10914496
-d value: 1 : deep(d = copy.deepcopy(d)) ,
- d id: 10914496
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">simple</summary>
+<hr class='division3'>
+```python
+
+```
+```
+
+```
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">shallow</summary>
+<hr class='division3'>
+```python
+
+```
+```
+
+```
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">deep</summary>
+<hr class='division3'>
+```python
+
+```
+```
+
+```
+<hr class='division3'>
+</details><br>
+
 <span class='frame3'>mutable</span>
 ```python
 import copy
 
+def description(a,b,c,d):
+    print('a value:',a,': original(a)',
+          ',\n a id:',id(a),', a[0] id:',id(a[0]))
+    print('b value:',b,': simple(b = a)',
+          ',\n b id:',id(b),', b[0] id:',id(b[0]))
+    print('c value:',c,': shallow(c = copy.copy(a)) ',
+          ',\n c id:',id(c),', c[0] id:',id(c[0]))
+    print('d value:',d,': deep(d = copy.deepcopy(d))',
+          ',\n d id:',id(d),', d[0] id:',id(d[0]))
+    print()
+    
 a = [1]
 b = a
 c = copy.copy(a)
 d = copy.deepcopy(a)
-print('a value:',a,': original(a)',
-      ',\n a id:',id(a),', a[0] id:',id(a[0]))
-print('b value:',b,': simple(b = a)',
-      ',\n b id:',id(b),', b[0] id:',id(b[0]))
-print('c value:',c,': shallow(c = copy.copy(a)) ',
-      ',\n c id:',id(c),', c[0] id:',id(c[0]))
-print('d value:',d,': deep(d = copy.deepcopy(d))',
-      ',\n d id:',id(d),', d[0] id:',id(d[0]))
-print()
-
-b[0] = 2
-print('a value:',a,': original(a)',
-      ',\n a id:',id(a),', a[0] id:',id(a[0]))
-print('b value:',b,': simple(b = a)',
-      ',\n b id:',id(b),', b[0] id:',id(b[0]))
-print('c value:',c,': shallow(c = copy.copy(a)) ',
-      ',\n c id:',id(c),', c[0] id:',id(c[0]))
-print('d value:',d,': deep(d = copy.deepcopy(d))',
-      ',\n d id:',id(d),', d[0] id:',id(d[0]))
+description(a,b,c,d)
 ```
 ```
 a value: [1] : original(a) ,
@@ -2023,16 +2034,40 @@ c value: [1] : shallow(c = copy.copy(a))  ,
  c id: 140282056137608 , c[0] id: 10914496
 d value: [1] : deep(d = copy.deepcopy(d)) ,
  d id: 140282055629320 , d[0] id: 10914496
-
-a value: [2] : original(a) ,
- a id: 140282058829128 , a[0] id: 10914528
-b value: [2] : simple(b = a) ,
- b id: 140282058829128 , b[0] id: 10914528
-c value: [1] : shallow(c = copy.copy(a))  ,
- c id: 140282056137608 , c[0] id: 10914496
-d value: [1] : deep(d = copy.deepcopy(d)) ,
- d id: 140282055629320 , d[0] id: 10914496
  ```
+ <details markdown="1">
+<summary class='jb-small' style="color:blue">simple</summary>
+<hr class='division3'>
+```python
+
+```
+```
+
+```
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">shallow</summary>
+<hr class='division3'>
+```python
+
+```
+```
+
+```
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">deep</summary>
+<hr class='division3'>
+```python
+
+```
+```
+
+```
+<hr class='division3'>
+</details>
 <br><br><br>
 
 #### simple copy
