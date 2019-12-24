@@ -3035,6 +3035,12 @@ d value: [2, [2, 4]] : deep(d = copy.deepcopy(d)) ,
 
 ---
 
+### ***Closure***
+
+<br><br><br>
+
+---
+
 ### ***Decorator***
 #### Function Decorator
 ```python
@@ -3601,7 +3607,24 @@ print(sys.getsizeof( (i for i in range(1000) if i % 2)),'   for generator, iter_
 ---
 
 ### ***Coroutine***
+#### Main routine and Sub routine
+```python
+def add(a,b):
+    c = a + b
+    print(c)
+    print('add func')
 
+def calc():
+    add(1,2)
+    print('calc func')
+
+calc()
+```
+```
+3
+add func
+calc func
+```
 <br><br><br>
 <hr class="division2">
 
