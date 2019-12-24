@@ -755,7 +755,9 @@ CLASS.func()
 <br><br><br>
 
 #### magic method
-<a href="https://corikachu.github.io/articles/python/python-magic-method" target="_blank">URL</a><br>
+<a href="https://corikachu.github.io/articles/python/python-magic-method" target="_blank">corikachu URL</a><br>
+<a href="http://schoolofweb.net/blog/posts/%ED%8C%8C%EC%9D%B4%EC%8D%AC-oop-part-6-%EB%A7%A4%EC%A7%81-%EB%A9%94%EC%86%8C%EB%93%9C-magic-method/" target="_blank">schoolofweb URL</a><br>
+
 ```python
 import math
 
