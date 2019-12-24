@@ -21,6 +21,13 @@ List of posts to read before reading this article
 
 <hr class="division1">
 ## **numpy**
+### ***Sample image***
+[boat.jpg][1]
+<img width="640" alt="boat" src="https://user-images.githubusercontent.com/52376448/71426209-b8547680-26e9-11ea-9f17-8088e89db405.png">
+
+
+---
+
 ### ***Normalize Pixel Values***
 
 `STEP 1`
@@ -1613,3 +1620,5 @@ Reference
 <hr class='division3'>
 <hr class='division3'>
 </details>
+
+[1]:{{ site.url }}/download/AI01/boat.jpg
