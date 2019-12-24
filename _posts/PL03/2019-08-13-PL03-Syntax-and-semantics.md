@@ -2043,13 +2043,210 @@ d value: [1] : deep(d = copy.deepcopy(d)) ,
 <br><br><br>
 
 #### simple copy
+```python
+import copy
+
+a = [1, [2]]
+b = a
+c = copy.copy(a)
+d = copy.deepcopy(a)
+print('a value:',a,': original(a)',
+      ',\n a id:',id(a),', a[0] id:',id(a[0]),', a[1] id:',id(a[1]))
+print('b value:',b,': simple(b = a)',
+      ',\n b id:',id(b),', b[0] id:',id(b[0]),', b[1] id:',id(b[1]))
+print('c value:',c,': shallow(c = copy.copy(a)) ',
+      ',\n c id:',id(c),', c[0] id:',id(c[0]),', c[1] id:',id(c[1]))
+print('d value:',d,': deep(d = copy.deepcopy(d))',
+      ',\n d id:',id(d),', d[0] id:',id(d[0]),', d[1] id:',id(d[1]))
+print()
+
+b[0] = 2
+print('a value:',a,': original(a)',
+      ',\n a id:',id(a),', a[0] id:',id(a[0]),', a[1] id:',id(a[1]))
+print('b value:',b,': simple(b = a)',
+      ',\n b id:',id(b),', b[0] id:',id(b[0]),', b[1] id:',id(b[1]))
+print('c value:',c,': shallow(c = copy.copy(a)) ',
+      ',\n c id:',id(c),', c[0] id:',id(c[0]),', c[1] id:',id(c[1]))
+print('d value:',d,': deep(d = copy.deepcopy(d))',
+      ',\n d id:',id(d),', d[0] id:',id(d[0]),', d[1] id:',id(d[1]))
+print()
+
+b[1] = [3]
+print('a value:',a,': original(a)',
+      ',\n a id:',id(a),', a[0] id:',id(a[0]),', a[1] id:',id(a[1]))
+print('b value:',b,': simple(b = a)',
+      ',\n b id:',id(b),', b[0] id:',id(b[0]),', b[1] id:',id(b[1]))
+print('c value:',c,': shallow(c = copy.copy(a)) ',
+      ',\n c id:',id(c),', c[0] id:',id(c[0]),', c[1] id:',id(c[1]))
+print('d value:',d,': deep(d = copy.deepcopy(d))',
+      ',\n d id:',id(d),', d[0] id:',id(d[0]),', d[1] id:',id(d[1]))
+```
+```
+a value: [1, [2]] : original(a) ,
+ a id: 140282049351496 , a[0] id: 10914496 , a[1] id: 140282049578824
+b value: [1, [2]] : simple(b = a) ,
+ b id: 140282049351496 , b[0] id: 10914496 , b[1] id: 140282049578824
+c value: [1, [2]] : shallow(c = copy.copy(a))  ,
+ c id: 140282049351560 , c[0] id: 10914496 , c[1] id: 140282049578824
+d value: [1, [2]] : deep(d = copy.deepcopy(d)) ,
+ d id: 140282057881608 , d[0] id: 10914496 , d[1] id: 140282049410312
+
+a value: [2, [2]] : original(a) ,
+ a id: 140282049351496 , a[0] id: 10914528 , a[1] id: 140282049578824
+b value: [2, [2]] : simple(b = a) ,
+ b id: 140282049351496 , b[0] id: 10914528 , b[1] id: 140282049578824
+c value: [1, [2]] : shallow(c = copy.copy(a))  ,
+ c id: 140282049351560 , c[0] id: 10914496 , c[1] id: 140282049578824
+d value: [1, [2]] : deep(d = copy.deepcopy(d)) ,
+ d id: 140282057881608 , d[0] id: 10914496 , d[1] id: 140282049410312
+
+a value: [2, [3]] : original(a) ,
+ a id: 140282049351496 , a[0] id: 10914528 , a[1] id: 140282060263624
+b value: [2, [3]] : simple(b = a) ,
+ b id: 140282049351496 , b[0] id: 10914528 , b[1] id: 140282060263624
+c value: [1, [2]] : shallow(c = copy.copy(a))  ,
+ c id: 140282049351560 , c[0] id: 10914496 , c[1] id: 140282049578824
+d value: [1, [2]] : deep(d = copy.deepcopy(d)) ,
+ d id: 140282057881608 , d[0] id: 10914496 , d[1] id: 140282049410312
+```
 <br><br><br>
 
 #### Sallow copy
+```python
+import copy
+
+a = [1, [2]]
+b = a
+c = copy.copy(a)
+d = copy.deepcopy(a)
+print('a value:',a,': original(a)',
+      ',\n a id:',id(a),', a[0] id:',id(a[0]),', a[1] id:',id(a[1]))
+print('b value:',b,': simple(b = a)',
+      ',\n b id:',id(b),', b[0] id:',id(b[0]),', b[1] id:',id(b[1]))
+print('c value:',c,': shallow(c = copy.copy(a)) ',
+      ',\n c id:',id(c),', c[0] id:',id(c[0]),', c[1] id:',id(c[1]))
+print('d value:',d,': deep(d = copy.deepcopy(d))',
+      ',\n d id:',id(d),', d[0] id:',id(d[0]),', d[1] id:',id(d[1]))
+print()
+
+c[0] = 2
+print('a value:',a,': original(a)',
+      ',\n a id:',id(a),', a[0] id:',id(a[0]),', a[1] id:',id(a[1]))
+print('b value:',b,': simple(b = a)',
+      ',\n b id:',id(b),', b[0] id:',id(b[0]),', b[1] id:',id(b[1]))
+print('c value:',c,': shallow(c = copy.copy(a)) ',
+      ',\n c id:',id(c),', c[0] id:',id(c[0]),', c[1] id:',id(c[1]))
+print('d value:',d,': deep(d = copy.deepcopy(d))',
+      ',\n d id:',id(d),', d[0] id:',id(d[0]),', d[1] id:',id(d[1]))
+print()
+
+c[1] = [3]
+print('a value:',a,': original(a)',
+      ',\n a id:',id(a),', a[0] id:',id(a[0]),', a[1] id:',id(a[1]))
+print('b value:',b,': simple(b = a)',
+      ',\n b id:',id(b),', b[0] id:',id(b[0]),', b[1] id:',id(b[1]))
+print('c value:',c,': shallow(c = copy.copy(a)) ',
+      ',\n c id:',id(c),', c[0] id:',id(c[0]),', c[1] id:',id(c[1]))
+print('d value:',d,': deep(d = copy.deepcopy(d))',
+      ',\n d id:',id(d),', d[0] id:',id(d[0]),', d[1] id:',id(d[1]))
+```
+```
+a value: [1, [2]] : original(a) ,
+ a id: 140282054999560 , a[0] id: 10914496 , a[1] id: 140282054999752
+b value: [1, [2]] : simple(b = a) ,
+ b id: 140282054999560 , b[0] id: 10914496 , b[1] id: 140282054999752
+c value: [1, [2]] : shallow(c = copy.copy(a))  ,
+ c id: 140282054848712 , c[0] id: 10914496 , c[1] id: 140282054999752
+d value: [1, [2]] : deep(d = copy.deepcopy(d)) ,
+ d id: 140282054999688 , d[0] id: 10914496 , d[1] id: 140282054848776
+
+a value: [1, [2]] : original(a) ,
+ a id: 140282054999560 , a[0] id: 10914496 , a[1] id: 140282054999752
+b value: [1, [2]] : simple(b = a) ,
+ b id: 140282054999560 , b[0] id: 10914496 , b[1] id: 140282054999752
+c value: [2, [2]] : shallow(c = copy.copy(a))  ,
+ c id: 140282054848712 , c[0] id: 10914528 , c[1] id: 140282054999752
+d value: [1, [2]] : deep(d = copy.deepcopy(d)) ,
+ d id: 140282054999688 , d[0] id: 10914496 , d[1] id: 140282054848776
+
+a value: [1, [2]] : original(a) ,
+ a id: 140282054999560 , a[0] id: 10914496 , a[1] id: 140282054999752
+b value: [1, [2]] : simple(b = a) ,
+ b id: 140282054999560 , b[0] id: 10914496 , b[1] id: 140282054999752
+c value: [2, [3]] : shallow(c = copy.copy(a))  ,
+ c id: 140282054848712 , c[0] id: 10914528 , c[1] id: 140282054848648
+d value: [1, [2]] : deep(d = copy.deepcopy(d)) ,
+ d id: 140282054999688 , d[0] id: 10914496 , d[1] id: 140282054848776
+```
 <br><br><br>
 
 #### deep copy
+```python
+import copy
 
+a = [1, [2]]
+b = a
+c = copy.copy(a)
+d = copy.deepcopy(a)
+print('a value:',a,': original(a)',
+      ',\n a id:',id(a),', a[0] id:',id(a[0]),', a[1] id:',id(a[1]))
+print('b value:',b,': simple(b = a)',
+      ',\n b id:',id(b),', b[0] id:',id(b[0]),', b[1] id:',id(b[1]))
+print('c value:',c,': shallow(c = copy.copy(a)) ',
+      ',\n c id:',id(c),', c[0] id:',id(c[0]),', c[1] id:',id(c[1]))
+print('d value:',d,': deep(d = copy.deepcopy(d))',
+      ',\n d id:',id(d),', d[0] id:',id(d[0]),', d[1] id:',id(d[1]))
+print()
+
+d[0] = 2
+print('a value:',a,': original(a)',
+      ',\n a id:',id(a),', a[0] id:',id(a[0]),', a[1] id:',id(a[1]))
+print('b value:',b,': simple(b = a)',
+      ',\n b id:',id(b),', b[0] id:',id(b[0]),', b[1] id:',id(b[1]))
+print('c value:',c,': shallow(c = copy.copy(a)) ',
+      ',\n c id:',id(c),', c[0] id:',id(c[0]),', c[1] id:',id(c[1]))
+print('d value:',d,': deep(d = copy.deepcopy(d))',
+      ',\n d id:',id(d),', d[0] id:',id(d[0]),', d[1] id:',id(d[1]))
+print()
+
+d[1] = [3]
+print('a value:',a,': original(a)',
+      ',\n a id:',id(a),', a[0] id:',id(a[0]),', a[1] id:',id(a[1]))
+print('b value:',b,': simple(b = a)',
+      ',\n b id:',id(b),', b[0] id:',id(b[0]),', b[1] id:',id(b[1]))
+print('c value:',c,': shallow(c = copy.copy(a)) ',
+      ',\n c id:',id(c),', c[0] id:',id(c[0]),', c[1] id:',id(c[1]))
+print('d value:',d,': deep(d = copy.deepcopy(d))',
+      ',\n d id:',id(d),', d[0] id:',id(d[0]),', d[1] id:',id(d[1]))
+```
+```
+a value: [1, [2]] : original(a) ,
+ a id: 140282055725768 , a[0] id: 10914496 , a[1] id: 140282055726920
+b value: [1, [2]] : simple(b = a) ,
+ b id: 140282055725768 , b[0] id: 10914496 , b[1] id: 140282055726920
+c value: [1, [2]] : shallow(c = copy.copy(a))  ,
+ c id: 140282055725640 , c[0] id: 10914496 , c[1] id: 140282055726920
+d value: [1, [2]] : deep(d = copy.deepcopy(d)) ,
+ d id: 140282054999560 , d[0] id: 10914496 , d[1] id: 140282054848648
+
+a value: [1, [2]] : original(a) ,
+ a id: 140282055725768 , a[0] id: 10914496 , a[1] id: 140282055726920
+b value: [1, [2]] : simple(b = a) ,
+ b id: 140282055725768 , b[0] id: 10914496 , b[1] id: 140282055726920
+c value: [1, [2]] : shallow(c = copy.copy(a))  ,
+ c id: 140282055725640 , c[0] id: 10914496 , c[1] id: 140282055726920
+d value: [2, [2]] : deep(d = copy.deepcopy(d)) ,
+ d id: 140282054999560 , d[0] id: 10914528 , d[1] id: 140282054848648
+
+a value: [1, [2]] : original(a) ,
+ a id: 140282055725768 , a[0] id: 10914496 , a[1] id: 140282055726920
+b value: [1, [2]] : simple(b = a) ,
+ b id: 140282055725768 , b[0] id: 10914496 , b[1] id: 140282055726920
+c value: [1, [2]] : shallow(c = copy.copy(a))  ,
+ c id: 140282055725640 , c[0] id: 10914496 , c[1] id: 140282055726920
+d value: [2, [3]] : deep(d = copy.deepcopy(d)) ,
+ d id: 140282054999560 , d[0] id: 10914528 , d[1] id: 140282054999688
+```
 <br><br><br>
 
 ---
