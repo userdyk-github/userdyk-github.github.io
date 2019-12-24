@@ -20,8 +20,12 @@ List of posts to read before reading this article
 {:toc}
 
 <hr class="division1">
+## **numpy**
+<br><br><br>
+<hr class="division2">
 
-## **MNIST Handwritten Image Classiﬁcation Dataset**
+## **keras**
+### ***MNIST Handwritten Image Classiﬁcation Dataset***
 
 ```python
 # example of loading the MNIST dataset
@@ -76,7 +80,7 @@ io.imshow(train_images[0])
 <hr class="division2">
 
 
-## **ImageDataGenerator Class for Pixel Scaling**
+### ***ImageDataGenerator Class for Pixel Scaling***
 ```python
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 datagen = ImageDataGenerator(rescale=1.0/255.0)
@@ -201,7 +205,7 @@ test batch shape=(32, 28, 28, 1), min=0.000, max=255.000, mean=36.032, std=81.37
 <hr class="division2">
 
 
-## **How to Normalize Images With ImageDataGenerator**
+### ***How to Normalize Images With ImageDataGenerator***
 ```python
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 datagen = ImageDataGenerator(rescale=1.0/255.0)
@@ -324,8 +328,8 @@ test batch(all) shape=(10000, 28, 28, 1), min=0.000, max=1.000, mean=0.133, std=
 <hr class="division2">
 
 
-## **How to Center Images With ImageDataGenerator**
-### ***feature-wise centering***
+### ***How to Center Images With ImageDataGenerator***
+#### feature-wise centering
 ```python
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 datagen = ImageDataGenerator(featurewise_center=True)
@@ -444,7 +448,7 @@ test batch(all) shape=(10000, 28, 28, 1), min=-33.791, max=221.209, mean=-0.000,
 
 ---
 
-### ***sample-wise centering***
+#### sample-wise centering
 ```python
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 datagen = ImageDataGenerator(samplewise_center=True)
@@ -564,8 +568,8 @@ test batch(all) shape=(10000, 28, 28, 1), min=-83.435, max=247.832, mean=-0.000,
 <hr class="division2">
 
 
-## **How to Standardize Images With ImageDataGenerator**
-### ***feature-wise Standardization***
+### ***How to Standardize Images With ImageDataGenerator***
+#### feature-wise Standardization
 ```python
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 datagen = ImageDataGenerator(featurewise_center=True, featurewise_std_normalization=True)
@@ -684,7 +688,7 @@ test batch(all) shape=(10000, 28, 28, 1), min=-0.427, max=2.794, mean=-0.000, st
 
 ---
 
-### ***sample-wise Standardization***
+#### sample-wise Standardization
 ```python
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 datagen = ImageDataGenerator(samplewise_center=True, samplewise_std_normalization=True)
@@ -800,8 +804,11 @@ test batch(all) shape=(10000, 28, 28, 1), min=-0.732, max=7.578, mean=0.000, std
 </details>
 
 <br><br><br>
+<hr class="division2">
 
+## **pytorch**
 
+<br><br><br>
 <hr class="division1">
 
 List of posts followed by this article
