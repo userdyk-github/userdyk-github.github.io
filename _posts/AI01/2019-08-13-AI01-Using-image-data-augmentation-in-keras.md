@@ -127,6 +127,10 @@ pyplot.show()
 ## **Flip Augmentation**
 ### ***Horizontal flip***
 ```python
+from keras.preprocessing.image import ImageDataGenerator
+datagen = ImageDataGenerator(horizontal_flip=True)
+```
+```python
 # example of horizontal flip image augmentation
 from numpy import expand_dims
 from keras.preprocessing.image import load_img
@@ -164,6 +168,10 @@ pyplot.show()
 ---
 
 ### ***Vertical flip***
+```python
+from keras.preprocessing.image import ImageDataGenerator
+datagen = ImageDataGenerator(vertical_flip=True)
+```
 ```python
 # example of vertical flip image augmentation
 from numpy import expand_dims
