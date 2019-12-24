@@ -3738,6 +3738,37 @@ print(co.throw(RuntimeError,'exit through error'))
 exit through error
 190
 ```
+<br><br><br>
+#### get return
+```python
+def accumulate():
+    total = 0
+    while True:
+        x = (yield)
+        if x is None:
+            return total
+        total += x
+
+def sum_coroutine():
+    while True:
+        total = yield from accumulate()
+        print(total)
+
+co = sum_coroutine()
+next(co)
+
+for i in range(1,11):
+    co.send(i)
+co.send(True)
+
+for i in range(1,101):
+    co.send(i)
+co.send(None)
+```
+```
+5106
+```
+<br><br><br>
 <hr class="division2">
 
 ## **Python programming, how do I get started?**
