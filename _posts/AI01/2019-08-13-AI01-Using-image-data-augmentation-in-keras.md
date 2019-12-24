@@ -71,6 +71,7 @@ pyplot.show()
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![image](https://user-images.githubusercontent.com/52376448/71425606-4dec0800-26e2-11ea-9cb0-52ec3f7b9457.png)
 <hr class='division3'>
 </details>
 
