@@ -3035,6 +3035,41 @@ d value: [2, [2, 4]] : deep(d = copy.deepcopy(d)) ,
 ---
 
 ### ***Closure : func of func***
+#### globa vs nonlocal
+```python
+a = 3
+def calc():
+    a = 1
+    b = 5
+    total = 0
+    def mul_add(x):
+        global a
+        nonlocal total
+        total = total + a*x + b
+        print(total)
+    return mul_add
+
+c = calc()
+print(c(1))
+```
+```
+8
+```
+<br><br><br>
+
+#### lambda closure
+```python
+def calc():
+    a = 3
+    b = 5
+    return lambda x : a*x + b
+
+c = calc()
+print(c(1))
+```
+```
+8
+```
 <br><br><br>
 
 ---
