@@ -599,7 +599,7 @@ address 312321
 <a href="https://wikidocs.net/27" target="_blank">URL</a>
 
 
-### ***Class***
+### ***Class(1) : basic***
 
 #### Declare Class
 
@@ -741,8 +741,22 @@ print('Person has salary?:', hasattr(person, 'salary'))
 Person has age?: True
 Person has salary?: False
 ```
+
+<br><br><br>
+#### static method
+```python
+class CLASS:
+    @staticmethod
+    def func(*args, **kwargs):
+        pass
+
+CLASS.func()
+```
 <br><br><br>
 
+---
+
+### ***Class(2) : Inheritance***
 #### Class Inheritance and Inclusion
 <span class="frame3">Inheritance</span><br>
 ```python
