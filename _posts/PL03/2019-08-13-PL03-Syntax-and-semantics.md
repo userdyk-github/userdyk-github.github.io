@@ -3259,6 +3259,7 @@ returned value of add is not mutiple of 3<br>
 ---
 
 ### ***Iterator***
+
 ```python
 class Counter:
     def __init__(self, stop):
@@ -3303,6 +3304,50 @@ for i in Counter(3): print(i)
 0
 1
 2
+```
+<br><br><br>
+#### iter(iterable_object)
+```python
+a = iter(range(3))
+next(a)
+next(a)
+next(a)
+```
+```
+2
+```
+<br><br><br>
+#### iter(callable_object, sentinel)
+```python
+import random
+
+for i in iter(lambda : random.randint(0,5), 2):
+    print(i)
+```
+```
+3
+1
+4
+4
+3
+5
+3
+3
+1
+5
+4
+```
+<br><br><br>
+#### next(iterable_object, default_value)
+```python
+a = iter(range(3))
+next(a,10)
+next(a,10)
+next(a,10)
+next(a,10)
+```
+```
+10
 ```
 <br><br><br>
 
