@@ -3605,6 +3605,24 @@ print(sys.getsizeof( (i for i in range(1000) if i % 2)),'   for generator, iter_
 ---
 
 ### ***Coroutine : send!***
+#### Main routine and Sub routine
+```python
+def sub_add(a,b):
+    c = a + b
+    print(c)
+    print('sub add func')
+def main_calc():
+    sub_add(1,2)
+    print('main calc func')
+    
+main_calc()
+```
+```
+3
+sub add func
+main calc func
+```
+
 
 #### Coroutine(put signal)
 ```python
