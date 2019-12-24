@@ -3071,6 +3071,21 @@ print(c(1))
 8
 ```
 <br><br><br>
+#### decorator
+```python
+def trace(func):
+    def wrapper():
+        pass
+    return wrapper
+
+@trace
+def hello():
+    pass
+
+hello()
+```
+
+<br><br><br>
 
 ---
 
