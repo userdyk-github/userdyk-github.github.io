@@ -467,6 +467,10 @@ yhat = model.predict_generator(test_iterator, steps=24)
 </details>
 
 <br><br><br>
+<hr class="division2">
+
+## **pytorch**
+
 <hr class="division1">
 
 List of posts followed by this article
