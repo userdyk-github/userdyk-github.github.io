@@ -3518,7 +3518,7 @@ for i in three_generator():
 </p>
 
 <br><br><br>
-### ***generator expression***
+#### generator expression
 for list
 ```python
 import time
