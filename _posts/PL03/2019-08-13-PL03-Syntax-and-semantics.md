@@ -3463,6 +3463,25 @@ step = 4,  4
 
 5.008758068084717
 ```
+
+<span class="frame3">memory size</span>
+```python
+import sys
+
+# for list
+print(sys.getsizeof( [i for i in range(100) if i % 2]),'   for list, iter_num:100')  
+print(sys.getsizeof( [i for i in range(1000) if i % 2]),'   for list, iter_num:1000')
+
+# for generator
+print(sys.getsizeof( (i for i in range(100) if i % 2)),'   for generator, iter_num:100')
+print(sys.getsizeof( (i for i in range(1000) if i % 2)),'   for generator, iter_num:1000')
+```
+```
+528    for list, iter_num:100
+4272    for list, iter_num:1000
+88    for generator, iter_num:100
+88    for generator, iter_num:1000
+```
 <br><br><br>
 
 <hr class="division2">
