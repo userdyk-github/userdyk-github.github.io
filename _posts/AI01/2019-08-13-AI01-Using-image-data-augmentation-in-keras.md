@@ -209,7 +209,10 @@ pyplot.show()
 <hr class="division2">
 
 ## **Random Rotation Augmentation**
-
+```python
+from keras.preprocessing.image import ImageDataGenerator
+datagen = ImageDataGenerator(rotation_range=90)
+```
 ```python
 # example of random rotation image augmentation
 from numpy import expand_dims
