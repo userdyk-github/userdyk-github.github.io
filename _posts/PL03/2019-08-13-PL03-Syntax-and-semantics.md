@@ -3626,6 +3626,7 @@ main calc func
 <br><br><br>
 
 #### put signal
+<span class="frame3">(yield)</span>
 ```python
 def number_coroutine():
     while True:
@@ -3645,6 +3646,7 @@ co.send(3)
 
 <br><br><br>
 #### get signal
+<span class="frame3">(yield + variable)</span>
 ```python
 def sum_coroutine():
     total = 0
@@ -3666,6 +3668,7 @@ print(co.send(3))
 <br><br><br>
 
 #### exit
+<span class="frame3">close</span>
 ```python
 def number_coroutine():
     while True:
@@ -3687,6 +3690,7 @@ co.close()
 <br><br><br>
 
 #### error handling
+<span class="frame3">close</span>
 ```python
 def number_coroutine():
     try:
@@ -3710,6 +3714,30 @@ co.close()
 coroutine exit
 ```
 <br><br><br>
+<span class="frame3">throw</span>
+```python
+def sum_coroutine():
+    try:
+        total = 0
+        while True:
+            x = (yield)
+            total += x
+    except RuntimeError as e:
+        print(e)
+        yield total
+
+co = sum_coroutine()
+next(co)
+
+for i in range(20):
+    co.send(i)
+
+print(co.throw(RuntimeError,'exit through error'))
+```
+```
+exit through error
+190
+```
 <hr class="division2">
 
 ## **Python programming, how do I get started?**
