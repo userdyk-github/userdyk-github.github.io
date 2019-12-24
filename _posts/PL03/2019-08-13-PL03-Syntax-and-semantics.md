@@ -3759,7 +3759,7 @@ next(co)
 
 for i in range(1,11):
     co.send(i)
-co.send(True)
+co.send(None)
 
 for i in range(1,101):
     co.send(i)
