@@ -4250,14 +4250,15 @@ List of posts followed by this article
 ---
 
 Reference
-
+- <a href="https://www.fun-coding.org/daveblog.html" target="_blank">fun coding</a>
+- <a href="https://dojang.io/course/view.php?id=7" target="_blank">dojang</a>
+- <a href='https://wikidocs.net/book/1' target="_blank">Jump to Python</a>
 - <a href="https://deepwelloper.tistory.com/130" target="_blank">deepwelloper(python memory)</a>
 - <a href="https://docs.python.org/3/contents.html" target="_blank">python document</a>
 - <a href="https://www.youtube.com/playlist?list=PLa9dKeCAyr7iWPMclcDxbnlTjQ2vjdIDD" target="_blank">python lectures</a>
 - <a href='https://repl.it/languages/python' target="_blank">Implementation with python2 on web</a>
 - <a href='https://repl.it/languages/python3' target="_blank">Implementation with python3 on web</a>
 - <a href='https://github.com/TheAlgorithms/Python' target="_blank">TheAlgorithms</a>
-- <a href='https://wikidocs.net/book/1' target="_blank">Jump to Python</a>
 - <a href='https://suwoni-codelab.com/category/#/Python%20%EA%B8%B0%EB%B3%B8' target="_blank">suwoni codelab</a>
 
 ---
