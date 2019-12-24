@@ -3377,7 +3377,7 @@ next(a,10)
 
 ### ***Generator***
 
-#### Yeild
+#### Yield
 ```python
 # 'yield(co)' is different 'return(sub)'
 def number_generator():
@@ -3466,6 +3466,9 @@ for i in fruits:
 </p>
 
 <br><br><br>
+
+
+#### Yield from
 ```python
 def number_generator1():
     x = [1,2,3]
@@ -3595,6 +3598,11 @@ print(sys.getsizeof( (i for i in range(1000) if i % 2)),'   for generator, iter_
 ```
 <br><br><br>
 
+---
+
+### ***Coroutine***
+
+<br><br><br>
 <hr class="division2">
 
 ## **Python programming, how do I get started?**
