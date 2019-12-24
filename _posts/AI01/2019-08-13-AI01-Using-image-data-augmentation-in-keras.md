@@ -21,11 +21,9 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## **Sample Image**
+## **Sample Image : bird.jpg**
+![bird](https://user-images.githubusercontent.com/52376448/71425392-90601580-26df-11ea-923d-3ceb7efd0b70.jpg)
 
-```python
-
-```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
