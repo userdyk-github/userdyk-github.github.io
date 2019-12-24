@@ -22,7 +22,14 @@ List of posts to read before reading this article
 <hr class="division1">
 
 ## **How to Progressively Load Images**
+```python
+from keras.preprocessing.image import ImageDataGenerator
 
+datagen = ImageDataGenerator()
+train_iterator = datagen.flow_from_directory('data/train/', class_mode='binary', batch_size=64)
+val_iterator = datagen.flow_from_directory('data/validation/', class_mode='binary', batch_size=64)
+test_iterator = datagen.flow_from_directory('data/test/', class_mode='binary', batch_size=64)
+```
 Example of proposed directory structure for the image dataset.
 <div style="font-size: 70%;">
 - data/ <br>
@@ -40,14 +47,7 @@ Example of proposed directory structure for the image dataset.
 - data/validation/red/<br>
 - data/validation/blue/<br>
 </div>
-```python
-from keras.preprocessing.image import ImageDataGenerator
 
-datagen = ImageDataGenerator()
-train_iterator = datagen.flow_from_directory('data/train/', class_mode='binary', batch_size=64)
-val_iterator = datagen.flow_from_directory('data/validation/', class_mode='binary', batch_size=64)
-test_iterator = datagen.flow_from_directory('data/test/', class_mode='binary', batch_size=64)
-```
 ```python
 import keras
 from keras.preprocessing.image import ImageDataGenerator
