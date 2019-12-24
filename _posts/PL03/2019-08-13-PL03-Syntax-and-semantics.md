@@ -1944,7 +1944,6 @@ os.getcwd()
 |                |a|b=a|c=copy.copy(a)|d=copy.deepcopy(a)|
 |:--             |:-- |:-- |:-- |:-- |
 |origin          |1   |1   |1   |1   |
-|:--             |:-- |:-- |:-- |:-- |
 |simple(b=100)   |1   |100 |1   |1   |
 |shallow(b=100)  |1   |1   |100 |1   |
 |deep(b=100)     |1   |1   |1   |100 |
@@ -2125,12 +2124,17 @@ d value: 100 : deep(d = copy.deepcopy(d)) ,
 
 <span class='frame3'>mutable</span>
 
-|         |a|b=a|c=copy.copy(a)|d=copy.deepcopy(a)|
-|:--      |:-- |:-- |:-- |:-- |
-|origin   |1   |1   |1   |1   |
-|simple   |||||
-|shallow  |||||
-|deep     |||||
+|                   |a|b=a|c=copy.copy(a)|d=copy.deepcopy(a)|
+|:--                |:--   |:-- |:-- |:-- |
+|origin             |[1]   |[1]   |[1]   |[1]   |
+|simple(b[0]=100)   |[100] |[100] |[1]   |[1]   |
+|simple(b=[100])    |[1]   |[100] |[1]   |[1]   |
+|shallow(c[0]=100)  |[1]   |[1]   |[1] |[1]   |
+|shallow(c=[100])   |[1]   |[1]   |[1] |[1]   |
+|deep(d[0]=100)     |[1]   |[1]   |[1]   |[1] |
+|deep(d=[100])      |[1]   |[1]   |[1]   |[1] |
+
+
 
 ```python
 import copy
