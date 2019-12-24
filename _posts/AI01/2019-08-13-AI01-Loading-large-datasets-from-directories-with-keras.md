@@ -41,6 +41,14 @@ Example of proposed directory structure for the image dataset.
 - data/validation/blue/<br>
 </div>
 ```python
+from keras.preprocessing.image import ImageDataGenerator
+
+datagen = ImageDataGenerator()
+train_iterator = datagen.flow_from_directory('data/train/', class_mode='binary', batch_size=64)
+val_iterator = datagen.flow_from_directory('data/validation/', class_mode='binary', batch_size=64)
+test_iterator = datagen.flow_from_directory('data/test/', class_mode='binary', batch_size=64)
+```
+```python
 import keras
 from keras.preprocessing.image import ImageDataGenerator
 from keras.utils import plot_model 
