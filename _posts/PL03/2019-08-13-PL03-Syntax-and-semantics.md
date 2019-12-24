@@ -626,7 +626,6 @@ print(type(p2))
 <br><br><br>
 
 #### Access instance
-<span class="frame3">bound</span>
 ```python
 class Person:
    def lee(self, x):
@@ -635,10 +634,6 @@ class Person:
 m = Person()
 m.lee(10)              # instance name space = bound
 Person.lee(m, 10)      # class name sapce = unbound
-```
-<span class="frame3">unbound</span>
-```python
-
 ```
 <br><br><br>
 
