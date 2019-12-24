@@ -58,13 +58,13 @@ samples = expand_dims(data, 0)
 
 # create image data augmentation generator
 datagen = ImageDataGenerator(width_shift_range=0.9)
-it = datagen.flow(samples, batch_size=1)
+iterator = datagen.flow(samples, batch_size=1)
 
 # generate samples and plot
 fig , axes = pyplot.subplots(3,12,figsize=(20,3))
 for i in range(3):
     for j in range(12):
-        batch = it.next()
+        batch = iterator.next()
         image = batch[0].astype('uint8')
         axes[i,j].imshow(image)
 pyplot.show()
@@ -102,13 +102,13 @@ samples = expand_dims(data, 0)
 
 # create image data augmentation generator
 datagen = ImageDataGenerator(height_shift_range=0.9)
-it = datagen.flow(samples, batch_size=1)
+iterator = datagen.flow(samples, batch_size=1)
 
 # generate samples and plot
 fig , axes = pyplot.subplots(3,12,figsize=(20,3))
 for i in range(3):
     for j in range(12):
-        batch = it.next()
+        batch = iterator.next()
         image = batch[0].astype('uint8')
         axes[i,j].imshow(image)
 pyplot.show()
