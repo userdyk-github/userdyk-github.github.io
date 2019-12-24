@@ -3034,7 +3034,7 @@ d value: [2, [2, 4]] : deep(d = copy.deepcopy(d)) ,
 
 ---
 
-### ***Closure***
+### ***Closure : func of func***
 <br><br><br>
 
 ---
@@ -3284,7 +3284,7 @@ returned value of add is not mutiple of 3<br>
 
 ---
 
-### ***Iterator : next***
+### ***Iterator : next!***
 
 ```python
 class Counter:
