@@ -3404,7 +3404,66 @@ for i in three_generator():
 </p>
 
 <br><br><br>
+### ***generator expression***
+for list
+```python
+import time
 
+def sleep_func(x):
+    print("sleep...")
+    time.sleep(1)
+    return x
+
+start = time.time()
+l = [sleep_func(x) for x in range(5)]
+for j,i in enumerate(l):print('step = %d, '%j,i)
+end = time.time()
+end-start
+```
+```
+sleep...
+sleep...
+sleep...
+sleep...
+sleep...
+step = 0,  0
+step = 1,  1
+step = 2,  2
+step = 3,  3
+step = 4,  4
+
+5.009469032287598
+```
+for generator
+```python
+import time
+
+def sleep_func(x):
+    print("sleep...")
+    time.sleep(1)
+    return x
+
+start = time.time()
+g = (sleep_func(x) for x in range(5))
+for j,i in enumerate(g): print('step = %d, '%j,i)
+end = time.time()
+end-start
+```
+```
+sleep...
+step = 0,  0
+sleep...
+step = 1,  1
+sleep...
+step = 2,  2
+sleep...
+step = 3,  3
+sleep...
+step = 4,  4
+
+5.008758068084717
+```
+<br><br><br>
 
 <hr class="division2">
 
