@@ -2046,40 +2046,28 @@ d value: [1] : deep(d = copy.deepcopy(d)) ,
 ```python
 import copy
 
+def description(a,b,c,d):
+    print('a value:',a,': original(a)',
+          ',\n a id:',id(a),', a[0] id:',id(a[0]),', a[1] id:',id(a[1]))
+    print('b value:',b,': simple(b = a)',
+          ',\n b id:',id(b),', b[0] id:',id(b[0]),', b[1] id:',id(b[1]))
+    print('c value:',c,': shallow(c = copy.copy(a)) ',
+          ',\n c id:',id(c),', c[0] id:',id(c[0]),', c[1] id:',id(c[1]))
+    print('d value:',d,': deep(d = copy.deepcopy(d))',
+          ',\n d id:',id(d),', d[0] id:',id(d[0]),', d[1] id:',id(d[1]))
+    print()
+    
 a = [1, [2]]
 b = a
 c = copy.copy(a)
 d = copy.deepcopy(a)
-print('a value:',a,': original(a)',
-      ',\n a id:',id(a),', a[0] id:',id(a[0]),', a[1] id:',id(a[1]))
-print('b value:',b,': simple(b = a)',
-      ',\n b id:',id(b),', b[0] id:',id(b[0]),', b[1] id:',id(b[1]))
-print('c value:',c,': shallow(c = copy.copy(a)) ',
-      ',\n c id:',id(c),', c[0] id:',id(c[0]),', c[1] id:',id(c[1]))
-print('d value:',d,': deep(d = copy.deepcopy(d))',
-      ',\n d id:',id(d),', d[0] id:',id(d[0]),', d[1] id:',id(d[1]))
-print()
+description(a,b,c,d)
 
 b[0] = 2
-print('a value:',a,': original(a)',
-      ',\n a id:',id(a),', a[0] id:',id(a[0]),', a[1] id:',id(a[1]))
-print('b value:',b,': simple(b = a)',
-      ',\n b id:',id(b),', b[0] id:',id(b[0]),', b[1] id:',id(b[1]))
-print('c value:',c,': shallow(c = copy.copy(a)) ',
-      ',\n c id:',id(c),', c[0] id:',id(c[0]),', c[1] id:',id(c[1]))
-print('d value:',d,': deep(d = copy.deepcopy(d))',
-      ',\n d id:',id(d),', d[0] id:',id(d[0]),', d[1] id:',id(d[1]))
-print()
+description(a,b,c,d)
 
 b[1] = [3]
-print('a value:',a,': original(a)',
-      ',\n a id:',id(a),', a[0] id:',id(a[0]),', a[1] id:',id(a[1]))
-print('b value:',b,': simple(b = a)',
-      ',\n b id:',id(b),', b[0] id:',id(b[0]),', b[1] id:',id(b[1]))
-print('c value:',c,': shallow(c = copy.copy(a)) ',
-      ',\n c id:',id(c),', c[0] id:',id(c[0]),', c[1] id:',id(c[1]))
-print('d value:',d,': deep(d = copy.deepcopy(d))',
-      ',\n d id:',id(d),', d[0] id:',id(d[0]),', d[1] id:',id(d[1]))
+description(a,b,c,d)
 ```
 ```
 a value: [1, [2]] : original(a) ,
@@ -2115,40 +2103,28 @@ d value: [1, [2]] : deep(d = copy.deepcopy(d)) ,
 ```python
 import copy
 
+def description(a,b,c,d):
+    print('a value:',a,': original(a)',
+          ',\n a id:',id(a),', a[0] id:',id(a[0]),', a[1] id:',id(a[1]))
+    print('b value:',b,': simple(b = a)',
+          ',\n b id:',id(b),', b[0] id:',id(b[0]),', b[1] id:',id(b[1]))
+    print('c value:',c,': shallow(c = copy.copy(a)) ',
+          ',\n c id:',id(c),', c[0] id:',id(c[0]),', c[1] id:',id(c[1]))
+    print('d value:',d,': deep(d = copy.deepcopy(d))',
+          ',\n d id:',id(d),', d[0] id:',id(d[0]),', d[1] id:',id(d[1]))
+    print()    
+    
 a = [1, [2]]
 b = a
 c = copy.copy(a)
 d = copy.deepcopy(a)
-print('a value:',a,': original(a)',
-      ',\n a id:',id(a),', a[0] id:',id(a[0]),', a[1] id:',id(a[1]))
-print('b value:',b,': simple(b = a)',
-      ',\n b id:',id(b),', b[0] id:',id(b[0]),', b[1] id:',id(b[1]))
-print('c value:',c,': shallow(c = copy.copy(a)) ',
-      ',\n c id:',id(c),', c[0] id:',id(c[0]),', c[1] id:',id(c[1]))
-print('d value:',d,': deep(d = copy.deepcopy(d))',
-      ',\n d id:',id(d),', d[0] id:',id(d[0]),', d[1] id:',id(d[1]))
-print()
+description(a,b,c,d)
 
 c[0] = 2
-print('a value:',a,': original(a)',
-      ',\n a id:',id(a),', a[0] id:',id(a[0]),', a[1] id:',id(a[1]))
-print('b value:',b,': simple(b = a)',
-      ',\n b id:',id(b),', b[0] id:',id(b[0]),', b[1] id:',id(b[1]))
-print('c value:',c,': shallow(c = copy.copy(a)) ',
-      ',\n c id:',id(c),', c[0] id:',id(c[0]),', c[1] id:',id(c[1]))
-print('d value:',d,': deep(d = copy.deepcopy(d))',
-      ',\n d id:',id(d),', d[0] id:',id(d[0]),', d[1] id:',id(d[1]))
-print()
+description(a,b,c,d)
 
 c[1] = [3]
-print('a value:',a,': original(a)',
-      ',\n a id:',id(a),', a[0] id:',id(a[0]),', a[1] id:',id(a[1]))
-print('b value:',b,': simple(b = a)',
-      ',\n b id:',id(b),', b[0] id:',id(b[0]),', b[1] id:',id(b[1]))
-print('c value:',c,': shallow(c = copy.copy(a)) ',
-      ',\n c id:',id(c),', c[0] id:',id(c[0]),', c[1] id:',id(c[1]))
-print('d value:',d,': deep(d = copy.deepcopy(d))',
-      ',\n d id:',id(d),', d[0] id:',id(d[0]),', d[1] id:',id(d[1]))
+description(a,b,c,d)
 ```
 ```
 a value: [1, [2]] : original(a) ,
@@ -2184,40 +2160,28 @@ d value: [1, [2]] : deep(d = copy.deepcopy(d)) ,
 ```python
 import copy
 
+def description(a,b,c,d):
+    print('a value:',a,': original(a)',
+          ',\n a id:',id(a),', a[0] id:',id(a[0]),', a[1] id:',id(a[1]))
+    print('b value:',b,': simple(b = a)',
+          ',\n b id:',id(b),', b[0] id:',id(b[0]),', b[1] id:',id(b[1]))
+    print('c value:',c,': shallow(c = copy.copy(a)) ',
+          ',\n c id:',id(c),', c[0] id:',id(c[0]),', c[1] id:',id(c[1]))
+    print('d value:',d,': deep(d = copy.deepcopy(d))',
+          ',\n d id:',id(d),', d[0] id:',id(d[0]),', d[1] id:',id(d[1]))
+    print()    
+    
 a = [1, [2]]
 b = a
 c = copy.copy(a)
 d = copy.deepcopy(a)
-print('a value:',a,': original(a)',
-      ',\n a id:',id(a),', a[0] id:',id(a[0]),', a[1] id:',id(a[1]))
-print('b value:',b,': simple(b = a)',
-      ',\n b id:',id(b),', b[0] id:',id(b[0]),', b[1] id:',id(b[1]))
-print('c value:',c,': shallow(c = copy.copy(a)) ',
-      ',\n c id:',id(c),', c[0] id:',id(c[0]),', c[1] id:',id(c[1]))
-print('d value:',d,': deep(d = copy.deepcopy(d))',
-      ',\n d id:',id(d),', d[0] id:',id(d[0]),', d[1] id:',id(d[1]))
-print()
+description(a,b,c,d)
 
 d[0] = 2
-print('a value:',a,': original(a)',
-      ',\n a id:',id(a),', a[0] id:',id(a[0]),', a[1] id:',id(a[1]))
-print('b value:',b,': simple(b = a)',
-      ',\n b id:',id(b),', b[0] id:',id(b[0]),', b[1] id:',id(b[1]))
-print('c value:',c,': shallow(c = copy.copy(a)) ',
-      ',\n c id:',id(c),', c[0] id:',id(c[0]),', c[1] id:',id(c[1]))
-print('d value:',d,': deep(d = copy.deepcopy(d))',
-      ',\n d id:',id(d),', d[0] id:',id(d[0]),', d[1] id:',id(d[1]))
-print()
+description(a,b,c,d)
 
 d[1] = [3]
-print('a value:',a,': original(a)',
-      ',\n a id:',id(a),', a[0] id:',id(a[0]),', a[1] id:',id(a[1]))
-print('b value:',b,': simple(b = a)',
-      ',\n b id:',id(b),', b[0] id:',id(b[0]),', b[1] id:',id(b[1]))
-print('c value:',c,': shallow(c = copy.copy(a)) ',
-      ',\n c id:',id(c),', c[0] id:',id(c[0]),', c[1] id:',id(c[1]))
-print('d value:',d,': deep(d = copy.deepcopy(d))',
-      ',\n d id:',id(d),', d[0] id:',id(d[0]),', d[1] id:',id(d[1]))
+description(a,b,c,d)
 ```
 ```
 a value: [1, [2]] : original(a) ,
