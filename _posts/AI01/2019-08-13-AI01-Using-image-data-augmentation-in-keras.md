@@ -22,7 +22,9 @@ List of posts to read before reading this article
 <hr class="division1">
 
 ## **Sample Image : bird.jpg**
+[bird.jpg][1]
 ![bird](https://user-images.githubusercontent.com/52376448/71425392-90601580-26df-11ea-923d-3ceb7efd0b70.jpg)
+
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -165,3 +167,6 @@ Reference
 <hr class='division3'>
 <hr class='division3'>
 </details>
+
+[1]:{{ site.url }}/download/AI01/bird.jpg
+
