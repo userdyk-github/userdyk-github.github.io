@@ -16,7 +16,7 @@ title: STUDY
 > <a href='https://userdyk-github.github.io/ai01/AI01-Loading-and-manipulating-images.html'>Loading and manipulating images</a><br>
 > <a href='https://userdyk-github.github.io/ai01/AI01-Manually-scaling-image-pixel-data.html'>Manually scaling image pixel data</a><br>
 > <a href='https://userdyk-github.github.io/ai01/AI01-Loading-and-manipulating-images-with-keras.html'>Loading and manipulating images with keras</a><br>
-> <a href='https://userdyk-github.github.io/ai01/AI01-Scaling-image-pixel-data-with-keras.html'>Scaling image pixel data with keras</a><br>
+> <a href='https://userdyk-github.github.io/ai01/AI01-Scaling-image-pixel-data.html'>Scaling image pixel data</a><br>
 > <a href='https://userdyk-github.github.io/ai01/AI01-Loading-large-datasets-from-directories-with-keras.html'>Loading large datasets from directories with keras</a><br>
 > <a href='https://userdyk-github.github.io/ai01/AI01-Using-image-data-augmentation-in-keras.html'>Using image data augmentation in keras</a><br>
 
