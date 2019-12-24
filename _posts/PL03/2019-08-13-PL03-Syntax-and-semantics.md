@@ -754,6 +754,54 @@ CLASS.func()
 ```
 <br><br><br>
 
+#### magic method
+<span class="frame3">__init(self)__</span>
+```python
+
+```
+```
+
+```
+<span class="frame3">__del(self)__</span>
+```python
+
+```
+```
+
+```
+<span class="frame3">__repr(self)__</span>
+```python
+
+```
+```
+
+```
+<span class="frame3">__(self)__</span>
+```python
+
+```
+```
+
+```
+
+<span class="frame3">__(self)__</span>
+```python
+
+```
+```
+
+```
+
+<span class="frame3">__(self)__</span>
+```python
+
+```
+```
+
+```
+
+<br><br><br>
+
 ---
 
 ### ***Class(2) : Inheritance***
