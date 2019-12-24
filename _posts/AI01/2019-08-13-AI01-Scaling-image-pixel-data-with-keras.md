@@ -77,6 +77,10 @@ io.imshow(train_images[0])
 
 
 ## **ImageDataGenerator Class for Pixel Scaling**
+```python
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+datagen = ImageDataGenerator(rescale=1.0/255.0)
+```
 
 ```python
 # create data generator
@@ -200,6 +204,10 @@ test batch shape=(32, 28, 28, 1), min=0.000, max=255.000, mean=36.032, std=81.37
 ## **How to Normalize Images With ImageDataGenerator**
 ```python
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
+datagen = ImageDataGenerator(rescale=1.0/255.0)
+```
+```python
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.datasets import mnist
 from sklearn.model_selection import train_test_split 
 
@@ -320,6 +328,10 @@ test batch(all) shape=(10000, 28, 28, 1), min=0.000, max=1.000, mean=0.133, std=
 ### ***feature-wise centering***
 ```python
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
+datagen = ImageDataGenerator(featurewise_center=True)
+```
+```python
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.datasets import mnist
 from sklearn.model_selection import train_test_split 
 
@@ -433,6 +445,10 @@ test batch(all) shape=(10000, 28, 28, 1), min=-33.791, max=221.209, mean=-0.000,
 ---
 
 ### ***sample-wise centering***
+```python
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+datagen = ImageDataGenerator(samplewise_center=True)
+```
 ```python
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.datasets import mnist
@@ -552,6 +568,10 @@ test batch(all) shape=(10000, 28, 28, 1), min=-83.435, max=247.832, mean=-0.000,
 ### ***feature-wise Standardization***
 ```python
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
+datagen = ImageDataGenerator(featurewise_center=True, featurewise_std_normalization=True)
+```
+```python
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.datasets import mnist
 from sklearn.model_selection import train_test_split 
 
@@ -665,6 +685,10 @@ test batch(all) shape=(10000, 28, 28, 1), min=-0.427, max=2.794, mean=-0.000, st
 ---
 
 ### ***sample-wise Standardization***
+```python
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+datagen = ImageDataGenerator(samplewise_center=True, samplewise_std_normalization=True)
+```
 ```python
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.datasets import mnist
