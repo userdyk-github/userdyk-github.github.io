@@ -5,7 +5,7 @@ categories: [AI01]
 comments : true
 tags : [AI01]
 ---
-[Back to the previous page](https://userdyk-github.github.io/Study.html) <br>
+[Back to the previous page](https://userdyk-github.github.io/Study.html) ｜<a href="https://github.com/userdyk-github/userdyk-github.github.io/blob/master/_posts/AI01/2019-08-13-AI01-Using-image-data-augmentation-in-keras.md" target="_blank">page management</a><br>
 List of posts to read before reading this article
 - <a href='https://userdyk-github.github.io/pl03/PL03-Libraries.html' target="_blank">Python Libraries</a>
 - <a href='https://userdyk-github.github.io/'>post2</a>
@@ -36,8 +36,8 @@ List of posts to read before reading this article
 
 <hr class="division2">
 
-## **Image Augmentation With ImageDataGenerator**
-
+## **Shift Augmentation**
+### ***Horizontal shift***
 ```python
 
 ```
@@ -48,13 +48,32 @@ List of posts to read before reading this article
 </details>
 
 <br><br><br>
-
-<hr class="division2">
-
-## **Horizontal and Vertical Shift Augmentation**
-
+### ***Vertical shift***
 ```python
+# example of vertical shift image augmentation
+from numpy import expand_dims
+from keras.preprocessing.image import load_img
+from keras.preprocessing.image import img_to_array
+from keras.preprocessing.image import ImageDataGenerator
+from matplotlib import pyplot
 
+# load the image
+img = load_img('bird.jpg')
+data = img_to_array(img)
+samples = expand_dims(data, 0)
+
+# create image data augmentation generator
+datagen = ImageDataGenerator(height_shift_range=0.9)
+it = datagen.flow(samples, batch_size=1)
+
+# generate samples and plot
+fig , axes = pyplot.subplots(3,12,figsize=(20,3))
+for i in range(3):
+    for j in range(12):
+        batch = it.next()
+        image = batch[0].astype('uint8')
+        axes[i,j].imshow(image)
+pyplot.show()
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
@@ -63,6 +82,8 @@ List of posts to read before reading this article
 </details>
 
 <br><br><br>
+
+---
 
 <hr class="division2">
 
