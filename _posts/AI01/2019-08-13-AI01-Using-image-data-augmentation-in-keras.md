@@ -251,7 +251,10 @@ pyplot.show()
 <hr class="division2">
 
 ## **Random Brightness Augmentation**
-
+```python
+from keras.preprocessing.image import ImageDataGenerator
+datagen = ImageDataGenerator(brightness_range=[0.2,1.0])
+```
 ```python
 # example of brighting image augmentation
 from numpy import expand_dims
@@ -291,13 +294,40 @@ pyplot.show()
 <hr class="division2">
 
 ## **Random Zoom Augmentation**
-
 ```python
+from keras.preprocessing.image import ImageDataGenerator
+datagen = ImageDataGenerator(zoom_range=[0.5,1.0])
+```
+```python
+# example of zoom image augmentation
+from numpy import expand_dims
+from keras.preprocessing.image import load_img
+from keras.preprocessing.image import img_to_array
+from keras.preprocessing.image import ImageDataGenerator
+from matplotlib import pyplot
 
+# load the image
+img = load_img('bird.jpg')
+data = img_to_array(img)
+samples = expand_dims(data, 0)
+
+# create image data augmentation generator
+datagen = ImageDataGenerator(zoom_range=[0.5,1.0])
+iterator = datagen.flow(samples, batch_size=1)
+
+# generate samples and plot
+fig , axes = pyplot.subplots(3,3,figsize=(9,9))
+for i in range(3):
+    for j in range(3):
+        batch = iterator.next()
+        image = batch[0].astype('uint8')
+        axes[i,j].imshow(image)
+pyplot.show()
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
+![image](https://user-images.githubusercontent.com/52376448/71425883-893c0600-26e5-11ea-82fa-db53c5789239.png)
 <hr class='division3'>
 </details>
 
