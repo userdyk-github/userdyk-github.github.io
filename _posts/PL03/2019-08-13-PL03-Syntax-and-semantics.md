@@ -5,7 +5,7 @@ categories: [PL03]
 comments : true
 tags : [PL03]
 ---
-[Back to the previous page](https://userdyk-github.github.io/Study.html) ｜<a href="https://github.com/userdyk-github/userdyk-github.github.io/blob/master/_posts/PL03/2019-08-13-PL03-Syntax-and-semantics.md" target="_blank">page management</a>｜ <a href="https://userdyk-github.github.io/pl03/PL03-Contents.html">Contents</a>｜ <a href="https://www.youtube.com/playlist?list=PLa9dKeCAyr7iWPMclcDxbnlTjQ2vjdIDD" target="_blank">Lecture</a><br>
+[Back to the previous page](https://userdyk-github.github.io/Study.html) ｜<a href="https://github.com/userdyk-github/userdyk-github.github.io/blob/master/_posts/PL03/2019-08-13-PL03-Syntax-and-semantics.md" target="_blank">page management</a>｜ <a href="https://userdyk-github.github.io/pl03/PL03-Contents.html">Contents</a> <br>
 List of posts to read before reading this article
 - <a href='https://userdyk-github.github.io/'>post1</a>
 - <a href='https://userdyk-github.github.io/'>post2</a>
@@ -3035,12 +3035,6 @@ d value: [2, [2, 4]] : deep(d = copy.deepcopy(d)) ,
 
 ---
 
-### ***Closure : func of func***
-
-<br><br><br>
-
----
-
 ### ***Decorator***
 #### Function Decorator
 ```python
@@ -3286,7 +3280,7 @@ returned value of add is not mutiple of 3<br>
 
 ---
 
-### ***Iterator : next!***
+### ***Iterator***
 
 ```python
 class Counter:
@@ -3381,7 +3375,7 @@ next(a,10)
 
 ---
 
-### ***Generator : yield!***
+### ***Generator***
 
 #### Yield
 ```python
@@ -3606,69 +3600,8 @@ print(sys.getsizeof( (i for i in range(1000) if i % 2)),'   for generator, iter_
 
 ---
 
-### ***Coroutine : send!***
-#### Main routine and Sub routine
-```python
-def sub_add(a,b):
-    c = a + b
-    print(c)
-    print('sub add func')
+### ***Coroutine***
 
-def main_calc():
-    sub_add(1,2)
-    print('main calc func')
-
-main_calc()
-```
-```
-3
-sub add func
-main calc func
-```
-<br><br><br>
-
-#### Coroutine(put signal)
-```python
-def number_coroutine():
-    while True:
-        x = (yield)
-        print(x)
-
-co = number_coroutine()
-next(co)
-
-co.send(1)
-co.send(2)
-co.send(3)
-```
-```
-1
-2
-3
-```
-
-<br><br><br>
-#### Coroutine(get signal)
-```python
-def sum_coroutine():
-    total = 0
-    while True:
-        x = (yield total)
-        total += x
-
-co = sum_coroutine()
-print(next(co))
-
-print(co.send(1))
-print(co.send(2))
-print(co.send(3))
-```
-```
-0
-1
-3
-6
-```
 <br><br><br>
 <hr class="division2">
 
