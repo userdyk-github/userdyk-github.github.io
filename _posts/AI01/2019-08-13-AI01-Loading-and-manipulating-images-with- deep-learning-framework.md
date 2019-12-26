@@ -597,8 +597,14 @@ yhat = model.predict_generator(test_generator, steps=24)
 <br><br><br>
 <hr class="division2">
 
+## **tensorflow**
+
+<br><br><br>
+<hr class="division2">
+
 ## **pytorch**
 
+<br><br><br>
 <hr class="division1">
 
 List of posts followed by this article
