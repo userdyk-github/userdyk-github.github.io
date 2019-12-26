@@ -514,8 +514,8 @@ def get_class_name(path):
 
 '''data preprocessing'''
 # path
-train_paths = glob(r'..\cifar\train\*.png')
-test_paths = glob(r'..\cifar\test\*.png')
+train_paths = glob('cifar/train/*.png')
+test_paths = glob('cifar/test/*.png')
 
 # class name
 train_classes_name = [get_class_name(path) for path in train_paths]
