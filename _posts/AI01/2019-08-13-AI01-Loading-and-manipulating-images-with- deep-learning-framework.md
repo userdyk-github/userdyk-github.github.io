@@ -394,6 +394,7 @@ img.show()
 
 
 ### ***How to Progressively Load Images***
+#### flow_from_directory
 ```python
 from keras.preprocessing.image import ImageDataGenerator
 
@@ -466,6 +467,10 @@ yhat = model.predict_generator(test_iterator, steps=24)
 <hr class='division3'>
 </details>
 
+<br><br><br>
+#### flow_from_dataframe
+```python
+```
 <br><br><br>
 <hr class="division2">
 
