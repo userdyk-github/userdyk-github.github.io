@@ -403,6 +403,13 @@ train_iterator = datagen.flow_from_directory('data/train/', class_mode='binary',
 val_iterator = datagen.flow_from_directory('data/validation/', class_mode='binary', batch_size=64)
 test_iterator = datagen.flow_from_directory('data/test/', class_mode='binary', batch_size=64)
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
+<br><br><br>
 Example of proposed directory structure for the image dataset.
 <div style="font-size: 70%;">
 - data/ <br>
@@ -470,6 +477,24 @@ yhat = model.predict_generator(test_iterator, steps=24)
 <br><br><br>
 #### flow_from_dataframe
 ```python
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
+Example of proposed directory structure for the image dataset.
+<div style="font-size: 70%;">
+- data/ <br>
+- data/train/<br>
+- data/test/ <br>
+- data/validation/ <br>
+</div>
+
+```python
+
 ```
 <br><br><br>
 <hr class="division2">
