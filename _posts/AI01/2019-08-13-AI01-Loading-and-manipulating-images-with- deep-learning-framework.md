@@ -494,7 +494,97 @@ Example of proposed directory structure for the image dataset.
 </div>
 
 ```python
+from glob import glob
+import os
+import numpy as np
+import pandas as pd
 
+import tensorflow as tf
+from tensorflow.keras import layers
+from tensorflow.keras import datasets 
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+
+
+def get_class_name(path):
+    image_name = os.path.basename(path)
+    image_name = image_name.split('_')[-1]
+    image_name = image_name.replace('.png','')
+    return image_name
+
+
+'''data preprocessing'''
+# path
+train_paths = glob(r'..\cifar\train\*.png')
+test_paths = glob(r'..\cifar\test\*.png')
+
+# class name
+train_classes_name = [get_class_name(path) for path in train_paths]
+test_classes_name = [get_class_name(path) for path in test_paths]
+
+# dataframe : 'path' + 'class name'
+train_df = pd.DataFrame({'path':train_paths, 'class':train_classes_name})
+test_df = pd.DataFrame({'path':test_paths, 'class':test_classes_name})
+
+# save .csv(format)
+train_df.iloc[:40000,:].to_csv('train_dataset.csv', index=False)
+train_df.iloc[40000:50000,:].to_csv('val_dataset.csv', index=False)
+test_df.to_csv('test_dataset.csv', index=False)
+
+# load .csv(format)
+train_df = pd.read_csv('train_dataset.csv')
+val_df = pd.read_csv('val_dataset.csv')
+test_df = pd.read_csv('test_dataset.csv')
+
+
+# generator
+train_datagen = ImageDataGenerator(rescale=1./255, width_shift_range=0.3, zoom_range=0.2, horizontal_flip=True)
+val_datagen = ImageDataGenerator(rescale=1./255)
+test_datagen = ImageDataGenerator(rescale=1./255)
+
+train_generator = train_datagen.flow_from_dataframe(train_df, x_col='path', y_col='class', target_size=(32,32,3)[:2], batch_size=32)
+val_generator = val_datagen.flow_from_dataframe(val_df, x_col='path', y_col='class', target_size=(32,32,3)[:2], batch_size=32)
+test_generator = test_datagen.flow_from_dataframe(test_df, x_col='path', y_col='class', target_size=(32,32,3)[:2], batch_size=32)
+
+
+
+'''model design'''
+inputs = layers.Input((32,32,3))
+net = layers.Conv2D(32, (3, 3), padding='SAME')(inputs)
+net = layers.Activation('relu')(net)
+net = layers.Conv2D(32, (3, 3), padding='SAME')(net)
+net = layers.Activation('relu')(net)
+net = layers.MaxPooling2D(pool_size=(2, 2))(net)
+net = layers.Dropout(0.7)(net)
+
+net = layers.Conv2D(64, (3, 3), padding='SAME')(net)
+net = layers.Activation('relu')(net)
+net = layers.Conv2D(64, (3, 3), padding='SAME')(net)
+net = layers.Activation('relu')(net)
+net = layers.MaxPooling2D(pool_size=(2, 2))(net)
+net = layers.Dropout(0.7)(net)
+
+net = layers.Flatten()(net)
+net = layers.Dense(512)(net)
+net = layers.Activation('relu')(net)
+net = layers.Dropout(0.7)(net)
+net = layers.Dense(10)(net)
+net = layers.Activation('softmax')(net)
+
+model = tf.keras.Model(inputs=inputs, outputs=net, name='Basic_CNN')
+model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=0.001),  # Optimization
+              loss='categorical_crossentropy',  # Loss Function 
+              metrics=['accuracy'])  # Metrics / Accuracy
+model.fit_generator(
+        train_generator,
+        steps_per_epoch=len(train_generator),
+        epochs=10,
+        validation_data=val_generator,
+        validation_steps=len(val_generator))
+
+
+"""evaluation"""
+loss = model.evaluate_generator(test_generator, steps=24)
+yhat = model.predict_generator(test_generator, steps=24)
 ```
 <br><br><br>
 <hr class="division2">
