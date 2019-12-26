@@ -535,7 +535,6 @@ train_df = pd.read_csv('train_dataset.csv')
 val_df = pd.read_csv('val_dataset.csv')
 test_df = pd.read_csv('test_dataset.csv')
 
-
 # generator
 train_datagen = ImageDataGenerator(rescale=1./255, width_shift_range=0.3, zoom_range=0.2, horizontal_flip=True)
 val_datagen = ImageDataGenerator(rescale=1./255)
