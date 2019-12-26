@@ -477,6 +477,15 @@ yhat = model.predict_generator(test_iterator, steps=24)
 <br><br><br>
 #### flow_from_dataframe
 ```python
+from keras.preprocessing.image import ImageDataGenerator
+
+train_datagen = ImageDataGenerator(rescale=1./255, width_shift_range=0.3, zoom_range=0.2, horizontal_flip=True)
+val_datagen = ImageDataGenerator(rescale=1./255)
+test_datagen = ImageDataGenerator(rescale=1./255)
+
+train_generator = train_datagen.flow_from_dataframe(train_df, x_col='path', y_col='class', target_size=(32,32,3)[:2], batch_size=32)
+val_generator = val_datagen.flow_from_dataframe(val_df, x_col='path', y_col='class', target_size=(32,32,3)[:2], batch_size=32)
+test_generator = test_datagen.flow_from_dataframe(test_df, x_col='path', y_col='class', target_size=(32,32,3)[:2], batch_size=32)
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
