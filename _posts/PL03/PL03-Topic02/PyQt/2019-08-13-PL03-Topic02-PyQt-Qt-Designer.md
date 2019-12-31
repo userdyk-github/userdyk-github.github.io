@@ -5,7 +5,7 @@ categories: [PL03-Topic02]
 comments : true
 tags : [PL03-Topic02]
 ---
-[Back to the previous page](https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-PyQt.html) <br>
+[Back to the previous page](https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-PyQt.html) ｜<a href="https://github.com/userdyk-github/userdyk-github.github.io/blob/master/_posts/PL03/PL03-Topic02/PyQt/2019-08-13-PL03-Topic02-PyQt-Qt-Designer.md" target="_blank">page management</a><br>
 List of posts to read before reading this article
 - <a href='https://userdyk-github.github.io/'>post1</a>
 - <a href='https://userdyk-github.github.io/'>post2</a>
