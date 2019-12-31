@@ -50,7 +50,22 @@ app.exec()
 <br><br><br>
 ### ***advanced form***
 ```python
+import sys
+from PyQt5.QtWidgets import *
+from PyQt5 import uic
 
+
+form_class = uic.loadUiType(r"S:\work:PyQT Tutorial\1. Hello PyQT\hello_pyqt.ui")[0]
+
+class WindowClass(QMainWindow, form_class):
+    def __init__(self):
+        super().__init__()
+        self.setupUi(self)
+
+app = QApplication(sys.argv)
+mainWindow = WindowClass()
+mainWindow.show()
+app.exec_()
 ```
 <br><br><br>
 <hr class="division2">
