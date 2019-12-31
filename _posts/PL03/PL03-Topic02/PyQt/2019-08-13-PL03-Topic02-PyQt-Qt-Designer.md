@@ -21,8 +21,8 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## Execute the ui-file by python
-
+## **Execute the ui-file by python**
+### ***basic form***
 ```python
 from PyQt5 import QtWidgets, uic
 
@@ -48,7 +48,11 @@ app.exec()
 </details>
 
 <br><br><br>
+### ***advanced form***
+```python
 
+```
+<br><br><br>
 <hr class="division2">
 
 ## Convert(1)
@@ -118,7 +122,7 @@ app.exec()
 
 <hr class="division2">
 
-## Building .exe file
+## **Building .exe file**
 
 ```
 pyuic5 -x main.ui -o main.py
