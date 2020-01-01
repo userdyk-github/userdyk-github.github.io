@@ -97,9 +97,24 @@ app.exec_()
 ---
 
 ### ***(2) Layout***
+![image](https://user-images.githubusercontent.com/52376448/71642292-75e3f880-2cec-11ea-8aac-a4f9e588a483.png)
 `Code`
 ```python
+import sys
+from PyQt5.QtWidgets import *
+from PyQt5 import uic
 
+form_class = uic.loadUiType("notepad.ui")[0]
+
+class WindowClass(QMainWindow, form_class):
+    def __init__(self):
+        super().__init__()
+        self.setupUi(self)
+
+app = QApplication(sys.argv)
+mainWindow = WindowClass()
+mainWindow.show()
+app.exec_()
 ```
 
 <br><br><br>
