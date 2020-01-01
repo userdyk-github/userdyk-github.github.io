@@ -71,7 +71,7 @@ app.exec_()
 
 ## **Notepad**
 ### ***(1) Hello***
-![image](https://user-images.githubusercontent.com/52376448/71642239-952e5600-2ceb-11ea-80bf-3fd7af92b5c1.png)
+![image](https://user-images.githubusercontent.com/52376448/71642282-4d5bfe80-2cec-11ea-8a3e-a05940b1678d.png)
 
 `Code`
 ```python
