@@ -80,7 +80,7 @@ app.exec_()
 
 ---
 
-### ***(1) Layout***
+### ***(2) Layout***
 `Code`
 ```python
 
@@ -90,7 +90,7 @@ app.exec_()
 
 ---
 
-### ***Menubar***
+### ***(3) Menubar***
 `Code`
 ```python
 
@@ -100,7 +100,7 @@ app.exec_()
 
 ---
 
-### ***Open/Save***
+### ***(4) Open/Save***
 `Code`
 ```python
 
@@ -110,7 +110,7 @@ app.exec_()
 
 ---
 
-### ***SaveAs***
+### ***(5) SaveAs***
 `Code`
 ```python
 
@@ -120,7 +120,7 @@ app.exec_()
 
 ---
 
-### ***CloseEvent***
+### ***(6) CloseEvent***
 `Code`
 ```python
 
@@ -130,7 +130,7 @@ app.exec_()
 
 ---
 
-### ***MessageBox***
+### ***(7) MessageBox***
 `Code`
 ```python
 
@@ -140,7 +140,7 @@ app.exec_()
 
 ---
 
-### ***PlainTextEdit***
+### ***(8) PlainTextEdit***
 `Code`
 ```python
 
@@ -150,7 +150,7 @@ app.exec_()
 
 ---
 
-### ***Find***
+### ***(9) Find***
 `Code`
 ```python
 
@@ -160,7 +160,7 @@ app.exec_()
 
 ---
 
-### ***KeyboardEvent***
+### ***(10) KeyboardEvent***
 `Code`
 ```python
 
@@ -170,7 +170,7 @@ app.exec_()
 
 ---
 
-### ***SetCursor***
+### ***(11) SetCursor***
 `Code`
 ```python
 
@@ -180,7 +180,7 @@ app.exec_()
 
 ---
 
-### ***FindText***
+### ***(12) FindText***
 `Code`
 ```python
 
@@ -190,7 +190,7 @@ app.exec_()
 
 ---
 
-### ***IgnoreFlag***
+### ***(13) IgnoreFlag***
 `Code`
 ```python
 
@@ -200,7 +200,7 @@ app.exec_()
 
 ---
 
-### ***Radiobutton***
+### ***(14) Radiobutton***
 `Code`
 ```python
 
@@ -210,7 +210,7 @@ app.exec_()
 
 ---
 
-### ***SearchDirection***
+### ***(15) SearchDirection***
 `Code`
 ```python
 
@@ -220,7 +220,7 @@ app.exec_()
 
 ---
 
-### ***reverseSearchDirection***
+### ***(16) reverseSearchDirection***
 `Code`
 ```python
 
