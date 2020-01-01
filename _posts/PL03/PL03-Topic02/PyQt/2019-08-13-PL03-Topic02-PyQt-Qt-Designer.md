@@ -70,6 +70,78 @@ app.exec_()
 <hr class="division2">
 
 ## **Notepad**
+### ***Layout***
+<br><br><br>
+
+---
+
+### ***Menubar***
+<br><br><br>
+
+---
+
+### ***Open/Save***
+<br><br><br>
+
+---
+
+### ***SaveAs***
+<br><br><br>
+
+---
+
+### ***CloseEvent***
+<br><br><br>
+
+---
+
+### ***MessageBox***
+<br><br><br>
+
+---
+
+### ***PlainTextEdit***
+<br><br><br>
+
+---
+
+### ***Find***
+<br><br><br>
+
+---
+
+### ***KeyboardEvent***
+<br><br><br>
+
+---
+
+### ***SetCursor***
+<br><br><br>
+
+---
+
+### ***FindText***
+<br><br><br>
+
+---
+
+### ***IgnoreFlag***
+<br><br><br>
+
+---
+
+### ***Radiobutton***
+<br><br><br>
+
+---
+
+### ***SearchDirection***
+<br><br><br>
+
+---
+
+### ***reverseSearchDirection***
+
 <br><br><br>
 <hr class="division2">
 
