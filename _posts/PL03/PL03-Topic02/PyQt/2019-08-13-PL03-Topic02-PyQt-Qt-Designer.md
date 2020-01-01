@@ -69,6 +69,14 @@ app.exec_()
 <br><br><br>
 <hr class="division2">
 
+## **Notepad**
+<br><br><br>
+<hr class="division2">
+
+## **Calculator**
+<br><br><br>
+<hr class="division2">
+
 ## Convert(1)
 
 `ui file`
