@@ -122,9 +122,34 @@ app.exec_()
 ---
 
 ### ***(3) Menubar***
+![image](https://user-images.githubusercontent.com/52376448/71642306-b3e11c80-2cec-11ea-964f-bdab4e00a35b.png)
+
 `Code`
 ```python
+import sys
+from PyQt5.QtWidgets import *
+from PyQt5 import uic
 
+form_class = uic.loadUiType("notepad.ui")[0]
+
+class WindowClass(QMainWindow, form_class):
+    def __init__(self):
+        super().__init__()
+        self.setupUi(self)
+
+        self.action_open.triggered.connect(self.openFunction)
+        self.action_save.triggered.connect(self.saveFunction)
+
+    def openFunction(self):
+        print("open!!")
+
+    def saveFunction(self):
+        print("save!!")
+
+app = QApplication(sys.argv)
+mainWindow = WindowClass()
+mainWindow.show()
+app.exec_()
 ```
 
 <br><br><br>
