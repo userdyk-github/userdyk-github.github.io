@@ -70,7 +70,17 @@ app.exec_()
 <hr class="division2">
 
 ## **Notepad**
-### ***Layout***
+### ***(1) Hello***
+`Code`
+```python
+
+```
+
+<br><br><br>
+
+---
+
+### ***(1) Layout***
 `Code`
 ```python
 
