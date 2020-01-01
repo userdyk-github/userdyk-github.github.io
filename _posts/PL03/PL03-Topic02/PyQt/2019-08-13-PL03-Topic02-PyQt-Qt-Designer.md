@@ -71,76 +71,150 @@ app.exec_()
 
 ## **Notepad**
 ### ***Layout***
+`Code`
+```python
+
+```
+
 <br><br><br>
 
 ---
 
 ### ***Menubar***
+`Code`
+```python
+
+```
+
 <br><br><br>
 
 ---
 
 ### ***Open/Save***
+`Code`
+```python
+
+```
+
 <br><br><br>
 
 ---
 
 ### ***SaveAs***
+`Code`
+```python
+
+```
+
 <br><br><br>
 
 ---
 
 ### ***CloseEvent***
+`Code`
+```python
+
+```
+
 <br><br><br>
 
 ---
 
 ### ***MessageBox***
+`Code`
+```python
+
+```
+
 <br><br><br>
 
 ---
 
 ### ***PlainTextEdit***
+`Code`
+```python
+
+```
+
 <br><br><br>
 
 ---
 
 ### ***Find***
+`Code`
+```python
+
+```
+
 <br><br><br>
 
 ---
 
 ### ***KeyboardEvent***
+`Code`
+```python
+
+```
+
 <br><br><br>
 
 ---
 
 ### ***SetCursor***
+`Code`
+```python
+
+```
+
 <br><br><br>
 
 ---
 
 ### ***FindText***
+`Code`
+```python
+
+```
+
 <br><br><br>
 
 ---
 
 ### ***IgnoreFlag***
+`Code`
+```python
+
+```
+
 <br><br><br>
 
 ---
 
 ### ***Radiobutton***
+`Code`
+```python
+
+```
+
 <br><br><br>
 
 ---
 
 ### ***SearchDirection***
+`Code`
+```python
+
+```
+
 <br><br><br>
 
 ---
 
 ### ***reverseSearchDirection***
+`Code`
+```python
+
+```
 
 <br><br><br>
 <hr class="division2">
