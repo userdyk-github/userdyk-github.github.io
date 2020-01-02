@@ -192,6 +192,7 @@ app.exec_()
 ---
 
 ### ***(4) Open/SaveAs***
+![image](https://user-images.githubusercontent.com/52376448/71668207-4e079a00-2dab-11ea-92da-afe0b79d5292.png)
 ![image](https://user-images.githubusercontent.com/52376448/71642342-323dbe80-2ced-11ea-9b8f-d88ad7766aa0.png)
 
 `Code`
@@ -247,6 +248,8 @@ app.exec_()
 ---
 
 ### ***(5) Open/SaveAs/Save***
+![image](https://user-images.githubusercontent.com/52376448/71668153-21ec1900-2dab-11ea-9837-e35e1de03bb8.png)
+
 `Code`
 ```python
 import sys
