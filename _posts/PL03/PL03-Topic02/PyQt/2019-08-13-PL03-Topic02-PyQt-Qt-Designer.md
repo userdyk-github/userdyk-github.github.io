@@ -67,7 +67,6 @@ from PyQt5.QtWidgets import *
 from PyQt5 import uic
 
 form_class = uic.loadUiType("test.ui")[0]
-
 class WindowClass(QMainWindow, form_class):
     def __init__(self):
         super().__init__()
@@ -92,7 +91,6 @@ from PyQt5.QtWidgets import *
 from PyQt5 import uic
 
 form_class = uic.loadUiType("notepad.ui")[0]
-
 class WindowClass(QMainWindow, form_class):
     def __init__(self):
         super().__init__()
@@ -117,7 +115,6 @@ from PyQt5.QtWidgets import *
 from PyQt5 import uic
 
 form_class = uic.loadUiType("notepad.ui")[0]
-
 class WindowClass(QMainWindow, form_class):
     def __init__(self):
         super().__init__()
@@ -143,7 +140,6 @@ from PyQt5.QtWidgets import *
 from PyQt5 import uic
 
 form_class = uic.loadUiType("notepad.ui")[0]
-
 class WindowClass(QMainWindow, form_class):
     def __init__(self):
         super().__init__()
@@ -184,7 +180,6 @@ from PyQt5.QtWidgets import *
 from PyQt5 import uic
 
 form_class = uic.loadUiType("notepad.ui")[0]
-
 class WindowClass(QMainWindow, form_class):
     def __init__(self):
         super().__init__()
@@ -225,7 +220,67 @@ app.exec_()
 ### ***(5) SaveAs***
 `Code`
 ```python
+import sys
+from PyQt5.QtWidgets import *
+from PyQt5 import uic
 
+form_class = uic.loadUiType("notepad.ui")[0]
+class WindowClass(QMainWindow, form_class):
+    def __init__(self):
+        super().__init__()
+        self.setupUi(self)
+
+        self.action_open.triggered.connect(self.openFunction)
+        self.action_save.triggered.connect(self.saveFunction)
+        self.action_saveas.triggered.connect(self.saveAsFunction)
+
+        self.opened = False
+        self.opened_file_path = ''
+
+
+    def save_file(self, fname):
+        data = self.plainTextEdit.toPlainText()
+
+        with open(fname, 'w', encoding='UTF8') as f:
+            f.write(data)
+
+        self.opened = True
+        self.opened_file_path = fname
+
+        print("save {}!!".format(fname))
+
+
+    def open_file(self, fname):
+        with open(fname, encoding='UTF8') as f:
+            data = f.read()
+        self.plainTextEdit.setPlainText(data)
+
+        self.opened = True
+        self.opened_file_path = fname
+
+        print("open {}!!".format(fname))
+
+    def openFunction(self):
+
+        fname = QFileDialog.getOpenFileName(self)
+        if fname[0]:
+            self.open_file(fname[0])
+
+    def saveFunction(self):
+        if self.opened:
+            self.save_file(self.opened_file_path)
+        else:
+            self.saveAsFunction()
+
+    def saveAsFunction(self):
+        fname = QFileDialog.getSaveFileName(self)
+        if fname[0]:
+            self.save_file(fname[0])
+
+app = QApplication(sys.argv)
+mainWindow = WindowClass()
+mainWindow.show()
+app.exec_()
 ```
 
 <br><br><br>
@@ -235,7 +290,72 @@ app.exec_()
 ### ***(6) CloseEvent***
 `Code`
 ```python
+import sys
+from PyQt5.QtWidgets import *
+from PyQt5 import uic
 
+form_class = uic.loadUiType("notepad.ui")[0]
+class WindowClass(QMainWindow, form_class):
+    def __init__(self):
+        super().__init__()
+        self.setupUi(self)
+
+        self.action_open.triggered.connect(self.openFunction)
+        self.action_save.triggered.connect(self.saveFunction)
+        self.action_saveas.triggered.connect(self.saveAsFunction)
+        self.action_close.triggered.connect(self.close)
+
+        self.opened = False
+        self.opened_file_path = ''
+
+    def closeEvent(self, event):
+        print("close test")
+        event.ignore()
+
+
+    def save_file(self, fname):
+        data = self.plainTextEdit.toPlainText()
+
+        with open(fname, 'w', encoding='UTF8') as f:
+            f.write(data)
+
+        self.opened = True
+        self.opened_file_path = fname
+
+        print("save {}!!".format(fname))
+
+
+    def open_file(self, fname):
+        with open(fname, encoding='UTF8') as f:
+            data = f.read()
+        self.plainTextEdit.setPlainText(data)
+
+        self.opened = True
+        self.opened_file_path = fname
+
+        print("open {}!!".format(fname))
+
+    def openFunction(self):
+
+        fname = QFileDialog.getOpenFileName(self)
+        if fname[0]:
+            self.open_file(fname[0])
+
+    def saveFunction(self):
+        if self.opened:
+            self.save_file(self.opened_file_path)
+        else:
+            self.saveAsFunction()
+
+    def saveAsFunction(self):
+        fname = QFileDialog.getSaveFileName(self)
+        if fname[0]:
+            self.save_file(fname[0])
+
+app = QApplication(sys.argv)
+mainWindow = WindowClass()
+mainWindow.show()
+app.exec_()
 ```
 
 <br><br><br>
@@ -245,7 +365,107 @@ app.exec_()
 ### ***(7) MessageBox***
 `Code`
 ```python
+import sys
+from PyQt5.QtWidgets import *
+from PyQt5 import uic
 
+form_class = uic.loadUiType("notepad.ui")[0]
+class WindowClass(QMainWindow, form_class):
+    def __init__(self):
+        super().__init__()
+        self.setupUi(self)
+
+        self.action_open.triggered.connect(self.openFunction)
+        self.action_save.triggered.connect(self.saveFunction)
+        self.action_saveas.triggered.connect(self.saveAsFunction)
+        self.action_close.triggered.connect(self.close)
+
+        self.opened = False
+        self.opened_file_path = 'path'
+
+    def ischanged(self):
+        if not self.opened:
+            print('a')
+            if self.plainTextEdit.toPlainText().strip():
+                return True
+            return False
+
+        current_data = self.plainTextEdit.toPlainText()
+
+        with open(self.opened_file_path, encoding='UTF8') as f:
+            file_data = f.read()
+
+        if current_data == file_data:
+            return False
+        else:
+            return True
+
+    def save_changed_data(self):
+        msgBox = QMessageBox()
+        msgBox.setText("setText".format(self.opened_file_path))
+        msgBox.addButton('Yes', QMessageBox.YesRole) #0
+        msgBox.addButton('No', QMessageBox.NoRole) #1
+        msgBox.addButton('Reject', QMessageBox.RejectRole) #2
+        ret = msgBox.exec_()
+
+        if ret == 0:
+            self.saveFunction()
+        else:
+            return ret
+
+    def closeEvent(self, event):
+        if self.ischanged():
+            ret = self.save_changed_data()
+
+            if ret == 2:
+                event.ignore()
+
+
+    def save_file(self, fname):
+        data = self.plainTextEdit.toPlainText()
+
+        with open(fname, 'w', encoding='UTF8') as f:
+            f.write(data)
+
+        self.opened = True
+        self.opened_file_path = fname
+
+        print("save {}!!".format(fname))
+
+
+    def open_file(self, fname):
+        with open(fname, encoding='UTF8') as f:
+            data = f.read()
+        self.plainTextEdit.setPlainText(data)
+
+        self.opened = True
+        self.opened_file_path = fname
+
+        print("open {}!!".format(fname))
+
+    def openFunction(self):
+        if self.ischanged():
+            ret = self.save_changed_data()
+
+        fname = QFileDialog.getOpenFileName(self)
+        if fname[0]:
+            self.open_file(fname[0])
+
+    def saveFunction(self):
+        if self.opened:
+            self.save_file(self.opened_file_path)
+        else:
+            self.saveAsFunction()
+
+    def saveAsFunction(self):
+        fname = QFileDialog.getSaveFileName(self)
+        if fname[0]:
+            self.save_file(fname[0])
+
+app = QApplication(sys.argv)
+mainWindow = WindowClass()
+mainWindow.show()
+app.exec_()
 ```
 
 <br><br><br>
