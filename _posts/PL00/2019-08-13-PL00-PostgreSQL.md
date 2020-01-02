@@ -21,73 +21,24 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## **MySQL**
-
-### ***Installation***
-
-<a href="https://help.ubuntu.com/lts/serverguide/mysql.html" target="_blank">Installation guide</a>
-
-```bash
-$ sudo apt-get update
-$ sudo apt-get install mysql-server
-```
-<br><br><br>
-
----
-
-### ***Access server***
-
-```bash
-$ mysql --help
-```
-
-```bash
-$ mysql -uroot -p
-```
-
-```mysql
-mysql> SHOW DATABASES; 
-```
-
-```mysql
-mysql> USE [database name];
-```
-
-```mysql
-mysql> SHOW TABLES;
-```
-<br><br><br>
-
----
-
-### ***Create/Drop database***
-
-```mysql
-mysql> CREATE DATABASE ailever;
-```
-
-```mysql
-mysql> DROP DATABASE ailever;
-```
+## **SQL**
 
 <br><br><br>
 <hr class="division2">
 
----
-
-### ***Quit***
-
-```mysql
-mysql> quit;
-```
-
-
-## **Setup**
-
-<hr class="division2">
+## **Data Pre-processing**
 
 <br><br><br>
+<hr class="division2">
 
+## **DB Design & Modeling & Architecture**
+
+<br><br><br>
+<hr class="division2">
+
+## **Application**
+
+<br><br><br>
 <hr class="division1">
 
 List of posts followed by this article
