@@ -20,7 +20,12 @@ List of posts to read before reading this article
 {:toc}
 
 <hr class="division1">
+## **Installation**
 
+- <a href="https://www.postgresql.org/download/" target="_blank">postgresql</a>
+- <a href="https://dbeaver.io/download/" target="_blank">dbeaver</a>
+
+<br><br><br>
 ## **SQL(Structured Query Language)**
 
 <br><br><br>
