@@ -113,7 +113,19 @@ app.exec_()
 <br><br><br>
 #### advanced form with qtdesigner
 ```python
+import sys
+from PyQt5.QtWidgets import *
+from PyQt5 import uic
 
+class MainDialog(QDialog):
+    def __init__(self):
+        QDialog.__init__(self, None)
+        uic.loadUi('dialog.ui', self)
+
+app = QApplication(sys.argv)
+mainDialog = QDialog()
+mainDialog.show()
+app.exec_()
 ```
 <br><br><br>
 <hr class="division2">
