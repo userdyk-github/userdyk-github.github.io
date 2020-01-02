@@ -374,6 +374,8 @@ Mass Point</a><br>
 
 > <a href='https://userdyk-github.github.io/pl00/PL00-PostgreSQL.html'>PostgreSQL</a><br>
 > <a href='https://userdyk-github.github.io/pl00/PL00-MySQL.html'>MySQL</a><br>
+> <a href='https://userdyk-github.github.io/pl00/PL00-Oracle.html'>Oracle</a><br>
+> <a href='https://userdyk-github.github.io/pl00/PL00-Microsoft-SQL-Server.html'>Microsoft SQL Server</a><br>
 > <a href='https://userdyk-github.github.io/pl00/PL00-Hadoop.html'>Hadoop</a><br>
 
 ### _Cloud Computing_
