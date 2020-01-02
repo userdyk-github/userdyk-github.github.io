@@ -316,6 +316,8 @@ app.exec_()
 ---
 
 ### ***(6) CloseEvent with MessageBox***
+![image](https://user-images.githubusercontent.com/52376448/71667811-fddc0800-2da9-11ea-83ca-c5cbb1b370f6.png)
+
 `Code`
 ```python
 import sys
