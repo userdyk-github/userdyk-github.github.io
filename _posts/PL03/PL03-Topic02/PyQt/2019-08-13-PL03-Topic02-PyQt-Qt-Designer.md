@@ -22,14 +22,25 @@ List of posts to read before reading this article
 <hr class="division1">
 
 ## **Execute the ui-file by python**
-### ***basic form***
+### ***basic form without qtdesigner***
 ```python
-from PyQt5 import QtWidgets, uic
+from PyQt5.QtWidgets import QApplication, QDialog
 
-app = QtWidgets.QApplication([])
-dlg = uic.loadUi("test.ui")
+app = QApplication()
+mainDialog = QDialog()
+mainDialog.show()
+app.exec_()
+```
 
-dlg.show()
+<br><br><br>
+### ***basic form with qtdesigner***
+```python
+from PyQt5.QtWidgets import QApplication
+from PyQt5 import uic
+
+app = QApplication([])
+mainDialog = uic.loadUi("test.ui")
+mainDialog.show()
 app.exec()
 ```
 
@@ -38,17 +49,17 @@ app.exec()
 <hr class='division3'>
 ![그림1](https://user-images.githubusercontent.com/52376448/64966645-22cf6c80-d8da-11e9-910d-740977ac18ad.png)
 <div class='jb-medium'>when there exist the ui-file in parent folder,</div>
-`dlg = uic.loadUi("../test.ui")`<br>
+`mainDialog = uic.loadUi("../test.ui")`<br>
 <div class='jb-medium'>when there exist the ui-file in same folder,</div>
-`dlg = uic.loadUi("test.ui")`<br>
+`mainDialog = uic.loadUi("test.ui")`<br>
 <div class='jb-medium'>when there exist the ui-file in sub-folder,</div>
-`dlg = uic.loadUi("sub-folder/test.ui")`<br>
+`mainDialog = uic.loadUi("sub-folder/test.ui")`<br>
 
 <hr class='division3'>
 </details>
 
 <br><br><br>
-### ***advanced form***
+### ***advanced form with qtdesigner***
 ```python
 import sys
 from PyQt5.QtWidgets import *
