@@ -94,7 +94,7 @@ app.exec_()
 ---
 
 ### ***Buttons***
-<a href="" target="_blank"></a> ｜<a href="" target="_blank"></a> ｜
+<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QPushButton.html" target="_blank">QPushButton</a> ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QToolButton.html" target="_blank">QToolButton</a> ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QRadioButton.html" target="_blank">QRadioButton</a> ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QCheckBox.html" target="_blank">QCheckBox</a> ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QCommandLinkButton.html" target="_blank">QCommandLinkButton</a> ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QDialogButtonBox.html" target="_blank">QDialogButtonBox</a> ｜
 <br><br><br>
 
 ---
