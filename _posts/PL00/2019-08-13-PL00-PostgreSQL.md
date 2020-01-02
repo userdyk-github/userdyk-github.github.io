@@ -21,7 +21,7 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## **SQL**
+## **SQL(Structured Query Language)**
 
 <br><br><br>
 <hr class="division2">
