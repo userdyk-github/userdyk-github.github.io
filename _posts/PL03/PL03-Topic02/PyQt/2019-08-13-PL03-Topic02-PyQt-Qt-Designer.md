@@ -124,7 +124,7 @@ app.exec_()
 ---
 
 ### ***Display widgets***
-｜<a href="" target="_blank"></a>｜<a href="" target="_blank"></a>｜
+｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QLabel.html" target="_blank">QLabel</a>｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QTextBrowser.html" target="_blank">QTextBrowser</a>｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QGraphicsView.html" target="_blank">QGraphicsView</a>｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QCalendarWidget.html" target="_blank">QCalendarWidget</a>｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QLCDNumber.html" target="_blank">QLCDNumber</a>｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QProgressBar.html" target="_blank">QProgressBar</a>｜<a href="https://doc.qt.io/qtforpython/PySide2/QtCore/QLine.html" target="_blank">QLine</a>｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QOpenGLWidget.html" target="_blank">QOpenGLWidget</a>｜<a href="https://doc.qt.io/qtforpython/PySide2/QtQuickWidgets/QQuickWidget.html" target="_blank">QQuickWidget</a>｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWebEngineWidgets/QWebEngineView.html" target="_blank">QWebEngineView</a>｜
 <br><br><br>
 
 
