@@ -1,11 +1,11 @@
 ---
 layout : post
-title : PL00, DataBase
+title : PL00, PostgreSQL
 categories: [PL00]
 comments : true
 tags : [PL00]
 ---
-[Back to the previous page](https://userdyk-github.github.io/Study.html) ｜<a href="https://github.com/userdyk-github/userdyk-github.github.io/blob/master/_posts/PL00/2019-08-13-PL00-DataBase.md" target="_blank">page management</a> ｜<a href="https://db-engines.com/en/ranking" target="_blank">DB-Engines Ranking</a><br>
+[Back to the previous page](https://userdyk-github.github.io/Study.html) ｜<a href="https://github.com/userdyk-github/userdyk-github.github.io/blob/master/_posts/PL00/2019-08-13-PL00-PostgreSQL.md" target="_blank">page management</a> ｜<a href="https://db-engines.com/en/ranking" target="_blank">DB-Engines Ranking</a><br>
 List of posts to read before reading this article
 - <a href='https://userdyk-github.github.io/'>post1</a>
 - <a href='https://userdyk-github.github.io/'>post2</a>
