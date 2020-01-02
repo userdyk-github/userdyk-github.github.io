@@ -241,7 +241,7 @@ app.exec_()
 
 ---
 
-### ***(5) SaveAs***
+### ***(5) Save***
 `Code`
 ```python
 import sys
@@ -256,50 +256,42 @@ class WindowClass(QMainWindow, form_class):
 
         self.action_open.triggered.connect(self.openFunction)
         self.action_save.triggered.connect(self.saveFunction)
-        self.action_saveas.triggered.connect(self.saveAsFunction)
+        self.action_saveas.triggered.connect(self.saveasFunction)
 
         self.opened = False
         self.opened_file_path = ''
 
-
-    def save_file(self, fname):
-        data = self.plainTextEdit.toPlainText()
-
-        with open(fname, 'w', encoding='UTF8') as f:
-            f.write(data)
-
-        self.opened = True
-        self.opened_file_path = fname
-
-        print("save {}!!".format(fname))
-
-
-    def open_file(self, fname):
-        with open(fname, encoding='UTF8') as f:
-            data = f.read()
-        self.plainTextEdit.setPlainText(data)
-
-        self.opened = True
-        self.opened_file_path = fname
-
-        print("open {}!!".format(fname))
-
     def openFunction(self):
-
         fname = QFileDialog.getOpenFileName(self)
         if fname[0]:
             self.open_file(fname[0])
-
-    def saveFunction(self):
-        if self.opened:
-            self.save_file(self.opened_file_path)
-        else:
-            self.saveAsFunction()
-
-    def saveAsFunction(self):
+            with open(fname, encoding='UTF8') as f:
+                data = f.read()
+            self.plainTextEdit.setPlainText(data)
+            self.opened = True
+            self.opened_file_path = fname
+            print("open, {}".format(fname))
+     
+    def saveasFunction(self):
         fname = QFileDialog.getSaveFileName(self)
         if fname[0]:
-            self.save_file(fname[0])
+            data = self.plainTextEdit.toPlainText()
+            with open(fname, 'w', encoding='UTF8') as f:
+                f.write(data)
+            self.opened = True
+            self.opened_file_path = fname
+            print("save, {}".format(fname))     
+     
+    def saveFunction(self):
+        if self.opened:
+            data = self.plainTextEdit.toPlainText()
+            with open(fname, 'w', encoding='UTF8') as f:
+                f.write(data)
+            self.opened = True
+            self.opened_file_path = fname
+            print("save, {}".format(fname))
+        else:
+            self.saveasFunction()
 
 app = QApplication(sys.argv)
 mainWindow = WindowClass()
