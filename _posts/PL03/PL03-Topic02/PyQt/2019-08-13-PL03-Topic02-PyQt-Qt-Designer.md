@@ -170,7 +170,7 @@ app.exec_()
 
 ---
 
-### ***(4) Open/Save***
+### ***(4) Open/SaveAs***
 ![image](https://user-images.githubusercontent.com/52376448/71642342-323dbe80-2ced-11ea-9b8f-d88ad7766aa0.png)
 
 `Code`
@@ -186,7 +186,7 @@ class WindowClass(QMainWindow, form_class):
         self.setupUi(self)
 
         self.action_open.triggered.connect(self.openFunction)
-        self.action_save.triggered.connect(self.saveFunction)
+        self.action_saveas.triggered.connect(self.saveasFunction)
 
     def openFunction(self):
         fname = QFileDialog.getOpenFileName(self)
@@ -197,7 +197,7 @@ class WindowClass(QMainWindow, form_class):
 
             print("open {}!!".format(fname[0]))
 
-    def saveFunction(self):
+    def saveasFunction(self):
         fname = QFileDialog.getSaveFileName(self)
         if fname[0]:
             data = self.plainTextEdit.toPlainText()
