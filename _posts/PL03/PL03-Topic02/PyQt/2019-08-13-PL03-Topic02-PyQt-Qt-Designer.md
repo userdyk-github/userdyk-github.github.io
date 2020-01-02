@@ -194,18 +194,15 @@ class WindowClass(QMainWindow, form_class):
             with open(fname[0], encoding='UTF8') as f:
                 data = f.read()
             self.plainTextEdit.setPlainText(data)
-
-            print("open {}!!".format(fname[0]))
+            print("open, {}".format(fname[0]))
 
     def saveasFunction(self):
         fname = QFileDialog.getSaveFileName(self)
         if fname[0]:
             data = self.plainTextEdit.toPlainText()
-
             with open(fname[0], 'w', encoding='UTF8') as f:
                 f.write(data)
-
-            print("save {}!!".format(fname[0]))
+            print("save, {}".format(fname[0]))
 
 app = QApplication(sys.argv)
 mainWindow = WindowClass()
