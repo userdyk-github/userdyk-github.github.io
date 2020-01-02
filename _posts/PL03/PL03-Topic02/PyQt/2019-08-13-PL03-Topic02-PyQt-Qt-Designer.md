@@ -80,6 +80,49 @@ app.exec_()
 <br><br><br>
 <hr class="division2">
 
+## **qt-designer API**
+### ***Layouts***
+<br><br><br>
+
+---
+
+### ***Spacers***
+<br><br><br>
+
+---
+
+### ***Buttons***
+<br><br><br>
+
+---
+
+### ***item views(model-based)***
+<br><br><br>
+
+---
+
+### ***item widgets(item-based)***
+<br><br><br>
+
+---
+
+### ***containers***
+<br><br><br>
+
+---
+
+### ***Input widgets***
+<br><br><br>
+
+---
+
+### ***Display widgets***
+<br><br><br>
+
+
+<hr class="division2">
+
+
 ## **Notepad**
 ### ***(1) Hello***
 ![image](https://user-images.githubusercontent.com/52376448/71642282-4d5bfe80-2cec-11ea-8a3e-a05940b1678d.png)
