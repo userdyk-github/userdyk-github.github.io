@@ -119,7 +119,7 @@ from PyQt5 import uic
 
 class MainDialog(QDialog):
     def __init__(self):
-        QDialog.__init__(self, None)
+        super().__init__()
         uic.loadUi('dialog.ui', self)
 
 app = QApplication(sys.argv)
