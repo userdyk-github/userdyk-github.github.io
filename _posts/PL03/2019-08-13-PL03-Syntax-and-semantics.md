@@ -3208,7 +3208,7 @@ d value: [2, [2, 4]] : deep(d = copy.deepcopy(d)) ,
 ---
 
 ### ***Closure : func of func***
-#### globa vs nonlocal
+#### global vs nonlocal
 ```python
 a = 3
 def calc():
