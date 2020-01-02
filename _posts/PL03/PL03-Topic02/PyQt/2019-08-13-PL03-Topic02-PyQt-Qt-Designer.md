@@ -333,7 +333,7 @@ class WindowClass(QMainWindow, form_class):
         self.action_open.triggered.connect(self.openFunction)
         self.action_save.triggered.connect(self.saveFunction)
         self.action_saveas.triggered.connect(self.saveasFunction)
-        self.action_close.triggered.connect(self.closeEvent)  # self.close is called with self.closeEvent
+        self.action_close.triggered.connect(self.close)  # self.close is called with self.closeEvent
 
         self.opened = False
         self.opened_file_path = ''
