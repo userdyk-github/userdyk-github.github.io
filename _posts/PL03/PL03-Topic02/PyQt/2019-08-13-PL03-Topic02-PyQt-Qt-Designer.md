@@ -24,9 +24,10 @@ List of posts to read before reading this article
 ## **Execute the ui-file by python**
 ### ***basic form without qtdesigner***
 ```python
+import sys
 from PyQt5.QtWidgets import QApplication, QDialog
 
-app = QApplication()
+app = QApplication(sys.argv)
 mainDialog = QDialog()
 mainDialog.show()
 app.exec_()
