@@ -411,90 +411,79 @@ class WindowClass(QMainWindow, form_class):
 
         self.action_open.triggered.connect(self.openFunction)
         self.action_save.triggered.connect(self.saveFunction)
-        self.action_saveas.triggered.connect(self.saveAsFunction)
-        self.action_close.triggered.connect(self.close)
+        self.action_saveas.triggered.connect(self.saveasFunction)
+        self.action_close.triggered.connect(self.closeEvent)  # self.close is called with self.closeEvent
 
         self.opened = False
-        self.opened_file_path = 'path'
-
-    def ischanged(self):
-        if not self.opened:
-            print('a')
-            if self.plainTextEdit.toPlainText().strip():
-                return True
-            return False
-
-        current_data = self.plainTextEdit.toPlainText()
-
-        with open(self.opened_file_path, encoding='UTF8') as f:
-            file_data = f.read()
-
-        if current_data == file_data:
-            return False
-        else:
-            return True
-
-    def save_changed_data(self):
-        msgBox = QMessageBox()
-        msgBox.setText("setText".format(self.opened_file_path))
-        msgBox.addButton('Yes', QMessageBox.YesRole) #0
-        msgBox.addButton('No', QMessageBox.NoRole) #1
-        msgBox.addButton('Reject', QMessageBox.RejectRole) #2
-        ret = msgBox.exec_()
-
-        if ret == 0:
-            self.saveFunction()
-        else:
-            return ret
-
-    def closeEvent(self, event):
-        if self.ischanged():
-            ret = self.save_changed_data()
-
-            if ret == 2:
-                event.ignore()
-
-
-    def save_file(self, fname):
-        data = self.plainTextEdit.toPlainText()
-
-        with open(fname, 'w', encoding='UTF8') as f:
-            f.write(data)
-
-        self.opened = True
-        self.opened_file_path = fname
-
-        print("save {}!!".format(fname))
-
-
-    def open_file(self, fname):
-        with open(fname, encoding='UTF8') as f:
-            data = f.read()
-        self.plainTextEdit.setPlainText(data)
-
-        self.opened = True
-        self.opened_file_path = fname
-
-        print("open {}!!".format(fname))
+        self.opened_file_path = ''
 
     def openFunction(self):
-        if self.ischanged():
-            ret = self.save_changed_data()
-
         fname = QFileDialog.getOpenFileName(self)
         if fname[0]:
-            self.open_file(fname[0])
+            with open(fname[0], encoding='UTF8') as f:
+                data = f.read()
+            self.plainTextEdit.setPlainText(data)
+            self.opened = True
+            self.opened_file_path = fname
+            print("open, {}".format(fname))
+
+    def saveasFunction(self):
+        fname = QFileDialog.getSaveFileName(self)
+        if fname[0]:
+            data = self.plainTextEdit.toPlainText()
+            with open(fname[0], 'w', encoding='UTF8') as f:
+                f.write(data)
+            self.opened = True
+            self.opened_file_path = fname
+            print("saveas, {}".format(fname))
 
     def saveFunction(self):
         if self.opened:
-            self.save_file(self.opened_file_path)
+            fname = self.opened_file_path
+            data = self.plainTextEdit.toPlainText()
+            with open(fname[0], 'w', encoding='UTF8') as f:
+                f.write(data)
+            self.opened = True
+            self.opened_file_path = fname
+            print("save, {}".format(fname))
         else:
-            self.saveAsFunction()
+            self.saveasFunction()
 
-    def saveAsFunction(self):
-        fname = QFileDialog.getSaveFileName(self)
-        if fname[0]:
-            self.save_file(fname[0])
+    def closeEvent(self, event):
+        current_data = ''
+        def ischanged():
+            nonlocal current_data
+            if not self.opened:
+                print('This file was not loaded')
+                if self.plainTextEdit.toPlainText().strip():
+                    return True
+                return False
+
+            current_data = self.plainTextEdit.toPlainText()
+            with open(self.opened_file_path[0], encoding='UTF8') as f:
+                file_data = f.read()
+            if current_data == file_data:
+                return False
+            else:
+                return True
+
+        def save_changed_data():
+            msgBox = QMessageBox()
+            msgBox.setText('Do you want to changes to {}'.format(self.opened_file_path))
+            msgBox.addButton('Save(S)', QMessageBox.YesRole) #0
+            msgBox.addButton('Don\'t Save(N)', QMessageBox.NoRole) #1
+            msgBox.addButton('Cancel', QMessageBox.RejectRole) #2
+            ret = msgBox.exec_()
+            if ret == 0:
+                self.saveFunction()
+                event.ignore()
+            else:
+                return ret
+
+        if ischanged():
+            ret = save_changed_data()
+            if ret == 2:
+                event.ignore()
 
 app = QApplication(sys.argv)
 mainWindow = WindowClass()
