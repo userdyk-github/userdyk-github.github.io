@@ -80,7 +80,7 @@ app.exec_()
 <br><br><br>
 <hr class="division2">
 
-## **qt-designer API**
+## **Qt-designer API**
 ### ***Layouts***
 ｜<a href="" target="_blank"></a>｜<a href="" target="_blank"></a>｜
 <br><br><br>
