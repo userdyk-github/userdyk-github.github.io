@@ -132,49 +132,49 @@ app.exec_()
 
 ## **Qt-designer API**
 ### ***Layouts***
-<a href="" target="_blank"></a> ｜<a href="" target="_blank"></a> ｜
+<a href="" target="_blank"></a>(<a href="" target="_blank">m</a>) ｜<a href="" target="_blank"></a>(<a href="" target="_blank">m</a>) ｜
 <br><br><br>
 
 ---
 
 ### ***Spacers***
-<a href="" target="_blank"></a> ｜<a href="" target="_blank"></a> ｜
+<a href="" target="_blank"></a>(<a href="" target="_blank">m</a>) ｜<a href="" target="_blank"></a>(<a href="" target="_blank">m</a>) ｜
 <br><br><br>
 
 ---
 
 ### ***Buttons***
-<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QPushButton.html" target="_blank">QPushButton</a> ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QToolButton.html" target="_blank">QToolButton</a> ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QRadioButton.html" target="_blank">QRadioButton</a> ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QCheckBox.html" target="_blank">QCheckBox</a> ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QCommandLinkButton.html" target="_blank">QCommandLinkButton</a> ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QDialogButtonBox.html" target="_blank">QDialogButtonBox</a> ｜
+<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QPushButton.html" target="_blank">QPushButton</a>(<a href="" target="_blank">m</a>) ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QToolButton.html" target="_blank">QToolButton</a>(<a href="" target="_blank">m</a>) ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QRadioButton.html" target="_blank">QRadioButton</a>(<a href="" target="_blank">m</a>) ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QCheckBox.html" target="_blank">QCheckBox</a>(<a href="" target="_blank">m</a>) ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QCommandLinkButton.html" target="_blank">QCommandLinkButton</a>(<a href="" target="_blank">m</a>) ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QDialogButtonBox.html" target="_blank">QDialogButtonBox</a>(<a href="" target="_blank">m</a>) ｜
 <br><br><br>
 
 ---
 
 ### ***item views(model-based)***
-<a href="" target="_blank"></a> ｜<a href="" target="_blank"></a> ｜
+<a href="" target="_blank"></a>(<a href="" target="_blank">m</a>) ｜<a href="" target="_blank"></a>(<a href="" target="_blank">m</a>) ｜
 <br><br><br>
 
 ---
 
 ### ***item widgets(item-based)***
-<a href="" target="_blank"></a> ｜<a href="" target="_blank"></a> ｜
+<a href="" target="_blank"></a>(<a href="" target="_blank">m</a>) ｜<a href="" target="_blank"></a>(<a href="" target="_blank">m</a>) ｜
 <br><br><br>
 
 ---
 
 ### ***containers***
-<a href="" target="_blank"></a> ｜<a href="" target="_blank"></a> ｜
+<a href="" target="_blank"></a>(<a href="" target="_blank">m</a>) ｜<a href="" target="_blank"></a>(<a href="" target="_blank">m</a>) ｜
 <br><br><br>
 
 ---
 
 ### ***Input widgets***
-<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QComboBox.html" target="_blank">QComboBox</a> ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QFontComboBox.html" target="_blank">QFontComboBox</a> ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QLineEdit.html" target="_blank">QLineEdit</a> ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QTextEdit.html" target="_blank">QTextEdit</a> ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QPlainTextEdit.html" target="_blank">QPlainTextEdit</a> ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QSpinBox.html" target="_blank">QSpinBox</a> ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QDoubleSpinBox.html" target="_blank">QDoubleSpinBox</a> ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QTimeEdit.html" target="_blank">QTimeEdit</a> ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QDateEdit.html" target="_blank">QDateEdit</a> ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QDateTimeEdit.html" target="_blank">QDateTimeEdit</a> ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QDial.html" target="_blank">QDial</a> ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QAbstractScrollArea.html" target="_blank">QAbstractScrollArea</a> ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QScrollBar.html" target="_blank">QScrollBar</a> ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QAbstractSlider.html" target="_blank">QAbstractSlider</a> ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QSlider.html" target="_blank">QSlider</a> ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QKeySequenceEdit.html" target="_blank">QKeySequenceEdit</a> ｜
+<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QComboBox.html" target="_blank">QComboBox</a>(<a href="" target="_blank">m</a>) ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QFontComboBox.html" target="_blank">QFontComboBox</a>(<a href="" target="_blank">m</a>) ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QLineEdit.html" target="_blank">QLineEdit</a>(<a href="" target="_blank">m</a>) ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QTextEdit.html" target="_blank">QTextEdit</a>(<a href="" target="_blank">m</a>) ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QPlainTextEdit.html" target="_blank">QPlainTextEdit</a>(<a href="" target="_blank">m</a>) ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QSpinBox.html" target="_blank">QSpinBox</a>(<a href="" target="_blank">m</a>) ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QDoubleSpinBox.html" target="_blank">QDoubleSpinBox</a>(<a href="" target="_blank">m</a>) ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QTimeEdit.html" target="_blank">QTimeEdit</a>(<a href="" target="_blank">m</a>) ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QDateEdit.html" target="_blank">QDateEdit</a>(<a href="" target="_blank">m</a>) ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QDateTimeEdit.html" target="_blank">QDateTimeEdit</a>(<a href="" target="_blank">m</a>) ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QDial.html" target="_blank">QDial</a>(<a href="" target="_blank">m</a>) ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QAbstractScrollArea.html" target="_blank">QAbstractScrollArea</a>(<a href="" target="_blank">m</a>) ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QScrollBar.html" target="_blank">QScrollBar</a>(<a href="" target="_blank">m</a>) ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QAbstractSlider.html" target="_blank">QAbstractSlider</a>(<a href="" target="_blank">m</a>) ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QSlider.html" target="_blank">QSlider</a>(<a href="" target="_blank">m</a>) ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QKeySequenceEdit.html" target="_blank">QKeySequenceEdit</a>(<a href="" target="_blank">m</a>) ｜
 <br><br><br>
 
 ---
 
 ### ***Display widgets***
-<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QLabel.html" target="_blank">QLabel</a> ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QTextBrowser.html" target="_blank">QTextBrowser</a> ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QGraphicsView.html" target="_blank">QGraphicsView</a> ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QCalendarWidget.html" target="_blank">QCalendarWidget</a> ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QLCDNumber.html" target="_blank">QLCDNumber</a> ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QProgressBar.html" target="_blank">QProgressBar</a> ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtCore/QLine.html" target="_blank">QLine</a> ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QOpenGLWidget.html" target="_blank">QOpenGLWidget</a> ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtQuickWidgets/QQuickWidget.html" target="_blank">QQuickWidget</a> ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWebEngineWidgets/QWebEngineView.html" target="_blank">QWebEngineView</a>｜
+<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QLabel.html" target="_blank">QLabel</a>(<a href="" target="_blank">m</a>) ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QTextBrowser.html" target="_blank">QTextBrowser</a>(<a href="" target="_blank">m</a>) ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QGraphicsView.html" target="_blank">QGraphicsView</a>(<a href="" target="_blank">m</a>) ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QCalendarWidget.html" target="_blank">QCalendarWidget</a>(<a href="" target="_blank">m</a>) ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QLCDNumber.html" target="_blank">QLCDNumber</a>(<a href="" target="_blank">m</a>) ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QProgressBar.html" target="_blank">QProgressBar</a>(<a href="" target="_blank">m</a>) ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtCore/QLine.html" target="_blank">QLine</a>(<a href="" target="_blank">m</a>) ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QOpenGLWidget.html" target="_blank">QOpenGLWidget</a>(<a href="" target="_blank">m</a>) ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtQuickWidgets/QQuickWidget.html" target="_blank">QQuickWidget</a>(<a href="" target="_blank">m</a>) ｜<a href="https://doc.qt.io/qtforpython/PySide2/QtWebEngineWidgets/QWebEngineView.html" target="_blank">QWebEngineView</a>(<a href="" target="_blank">m</a>)｜
 <br><br><br>
 
 
