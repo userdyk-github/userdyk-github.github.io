@@ -687,6 +687,37 @@ app.exec_()
 ---
 
 ### ***(4) with Matplotlib***
+![image](https://user-images.githubusercontent.com/52376448/71679111-2411a000-2dca-11ea-8ecd-303fa1111e56.png)
+
+```python
+import sys
+from PyQt5.QtWidgets import *
+from PyQt5 import uic
+
+import matplotlib.pyplot as plt
+from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
+
+class MainDialog(QDialog):
+    def __init__(self):
+        super().__init__()
+
+        fig = plt.figure()
+        ax = fig.add_subplot(111)
+        ax.plot([1,2,3,4],[3,2,4,1])
+
+        canvas = FigureCanvas(fig)
+        canvas.draw()
+
+        lay = QHBoxLayout()
+        self.setLayout(lay)
+        lay.addWidget(canvas)
+        canvas.show()
+
+app = QApplication(sys.argv)
+mainDialog = MainDialog()
+mainDialog.show()
+app.exec_()
+```
 <br><br><br>
 
 
