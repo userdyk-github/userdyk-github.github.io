@@ -78,8 +78,8 @@ class WindowClass(QMainWindow, form_class):
         self.setupUi(self)
 
 app = QApplication(sys.argv)
-mainWindow = WindowClass()
-mainWindow.show()
+mainwindow = WindowClass()
+mainwindow.show()
 app.exec_()
 ```
 <br><br><br>
@@ -91,8 +91,8 @@ import sys
 from PyQt5.QtWidgets import QApplication, QDialog
 
 app = QApplication(sys.argv)
-mainDialog = QDialog()
-mainDialog.show()
+maindialog = QDialog()
+maindialog.show()
 app.exec_()
 ```
 
@@ -105,9 +105,9 @@ from PyQt5.QtWidgets import QApplication, QDialog
 from PyQt5 import uic
 
 app = QApplication(sys.argv)
-mainDialog = QDialog()
-uic.loadUi('dialog.ui',mainDialog)
-mainDialog.show()
+maindialog = QDialog()
+uic.loadUi('dialog.ui',maindialog)
+maindialog.show()
 app.exec_()
 ```
 <br><br><br>
@@ -123,8 +123,8 @@ class MainDialog(QDialog):
         uic.loadUi('dialog.ui', self)
 
 app = QApplication(sys.argv)
-mainDialog = QDialog()
-mainDialog.show()
+maindialog = MainDialog()
+maindialog.show()
 app.exec_()
 ```
 <br><br><br>
