@@ -23,7 +23,7 @@ List of posts to read before reading this article
 
 ## **Installation**
 
-- <a href="https://www.postgresql.org/download/" target="_blank">postgresql</a> or <a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads" target="_blank">postgresql</a>
+- <a href="https://www.postgresql.org/download/" target="_blank">postgresql 1</a> or <a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads" target="_blank">postgresql 2</a>
 - <a href="https://dbeaver.io/download/" target="_blank">dbeaver</a>
 
 <br><br><br>
