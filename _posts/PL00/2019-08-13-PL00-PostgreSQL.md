@@ -20,6 +20,7 @@ List of posts to read before reading this article
 {:toc}
 
 <hr class="division1">
+
 ## **Installation**
 
 - <a href="https://www.postgresql.org/download/" target="_blank">postgresql</a>
