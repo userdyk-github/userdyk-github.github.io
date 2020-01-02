@@ -27,11 +27,43 @@ List of posts to read before reading this article
 <hr class="division2">
 
 ## **Data Pre-processing**
+### ***ER Model***
+
+<br><br><br>
+
+---
+
+### ***Example : Movie Lens***
 
 <br><br><br>
 <hr class="division2">
 
 ## **DB Design & Modeling & Architecture**
+### ***Enterprise Data***
+
+<br><br><br>
+
+---
+
+### ***Information Architecture***
+
+<br><br><br>
+
+---
+
+### ***Interaction Architecture***
+
+<br><br><br>
+
+---
+
+### ***Data Architecture***
+
+<br><br><br>
+
+---
+
+### ***Data Modeling***
 
 <br><br><br>
 <hr class="division2">
