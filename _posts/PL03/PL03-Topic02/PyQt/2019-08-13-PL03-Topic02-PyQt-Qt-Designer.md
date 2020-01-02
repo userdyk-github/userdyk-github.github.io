@@ -161,10 +161,10 @@ class WindowClass(QMainWindow, form_class):
         self.action_save.triggered.connect(self.saveFunction)
 
     def openFunction(self):
-        print("open!!")
+        print("open")
 
     def saveFunction(self):
-        print("save!!")
+        print("save")
 
 app = QApplication(sys.argv)
 mainWindow = WindowClass()
