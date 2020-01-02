@@ -36,13 +36,15 @@ app.exec_()
 ```
 
 <br><br><br>
-### ***basic form with qtdesigner***
+
+### ***load MainWindow from qtdesigner***
+#### basic form with qtdesigner
 ```python
 from PyQt5.QtWidgets import QApplication
 from PyQt5 import uic
 
 app = QApplication([])
-mainDialog = uic.loadUi("test.ui")
+mainDialog = uic.loadUi("mainwindow.ui")
 mainDialog.show()
 app.exec()
 ```
@@ -62,13 +64,13 @@ app.exec()
 </details>
 
 <br><br><br>
-### ***advanced form with qtdesigner***
+#### advanced form with qtdesigner
 ```python
 import sys
 from PyQt5.QtWidgets import *
 from PyQt5 import uic
 
-form_class = uic.loadUiType("test.ui")[0]
+form_class = uic.loadUiType("mainwindow.ui")[0]
 class WindowClass(QMainWindow, form_class):
     def __init__(self):
         super().__init__()
@@ -77,6 +79,20 @@ class WindowClass(QMainWindow, form_class):
 app = QApplication(sys.argv)
 mainWindow = WindowClass()
 mainWindow.show()
+app.exec_()
+```
+<br><br><br>
+
+### ***load Dialog from qtdesigner***
+```python
+import sys
+from PyQt5.QtWidgets import QApplication, QDialog
+from PyQt5 import uic
+
+app = QApplication(sys.argv)
+mainDialog = QDialog()
+uic.loadUi('dialog.ui',mainDialog)
+mainDialog.show()
 app.exec_()
 ```
 <br><br><br>
