@@ -236,7 +236,12 @@ app.exec_()
 - <a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QPlainTextEdit.html?highlight=qplaintextedit" target="_blank">plainTextEdit</a>
 <hr class='division3'>
 </details>
-
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+![image](https://user-images.githubusercontent.com/52376448/71659937-b5622180-2d8c-11ea-848f-e5b64c0bb258.png)
+<hr class='division3'>
+</details>
 <br><br><br>
 
 ---
