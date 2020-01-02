@@ -82,37 +82,37 @@ app.exec_()
 
 ## **Qt-designer API**
 ### ***Layouts***
-｜<a href="" target="_blank"></a>｜<a href="" target="_blank"></a>｜
+<a href="" target="_blank"></a>｜<a href="" target="_blank"></a>｜
 <br><br><br>
 
 ---
 
 ### ***Spacers***
-｜<a href="" target="_blank"></a>｜<a href="" target="_blank"></a>｜
+<a href="" target="_blank"></a>｜<a href="" target="_blank"></a>｜
 <br><br><br>
 
 ---
 
 ### ***Buttons***
-｜<a href="" target="_blank"></a>｜<a href="" target="_blank"></a>｜
+<a href="" target="_blank"></a>｜<a href="" target="_blank"></a>｜
 <br><br><br>
 
 ---
 
 ### ***item views(model-based)***
-｜<a href="" target="_blank"></a>｜<a href="" target="_blank"></a>｜
+<a href="" target="_blank"></a>｜<a href="" target="_blank"></a>｜
 <br><br><br>
 
 ---
 
 ### ***item widgets(item-based)***
-｜<a href="" target="_blank"></a>｜<a href="" target="_blank"></a>｜
+<a href="" target="_blank"></a>｜<a href="" target="_blank"></a>｜
 <br><br><br>
 
 ---
 
 ### ***containers***
-｜<a href="" target="_blank"></a>｜<a href="" target="_blank"></a>｜
+<a href="" target="_blank"></a>｜<a href="" target="_blank"></a>｜
 <br><br><br>
 
 ---
