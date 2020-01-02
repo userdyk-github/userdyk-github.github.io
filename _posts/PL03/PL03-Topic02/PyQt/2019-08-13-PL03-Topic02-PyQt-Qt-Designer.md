@@ -174,7 +174,9 @@ app.exec_()
 <details markdown="1">
 <summary class='jb-small' style="color:blue">API</summary>
 <hr class='division3'>
-- <a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QAction.html?highlight=qaction" target="_blank">QAction</a>
+
+- <a href="https://doc.qt.io/qtforpython/PySide2/QtCore/Signal.html" target="_blank">QtCore/Signal</a>
+- <a href="https://doc.qt.io/qtforpython/PySide2/QtWidgets/QAction.html" target="_blank">QtWidgets/QAction</a>
 <hr class='division3'>
 </details>
 
