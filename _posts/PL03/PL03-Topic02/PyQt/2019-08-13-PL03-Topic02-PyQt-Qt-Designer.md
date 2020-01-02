@@ -101,6 +101,12 @@ mainWindow = WindowClass()
 mainWindow.show()
 app.exec_()
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">API</summary>
+<hr class='division3'>
+- <a href="" target="_blank"></a>
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
@@ -125,6 +131,12 @@ mainWindow = WindowClass()
 mainWindow.show()
 app.exec_()
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">API</summary>
+<hr class='division3'>
+- <a href="" target="_blank"></a>
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
@@ -159,6 +171,13 @@ mainWindow = WindowClass()
 mainWindow.show()
 app.exec_()
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">API</summary>
+<hr class='division3'>
+- <a href="" target="_blank"></a>
+<hr class='division3'>
+</details>
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
 <hr class='division3'>
@@ -209,6 +228,12 @@ mainWindow = WindowClass()
 mainWindow.show()
 app.exec_()
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">API</summary>
+<hr class='division3'>
+- <a href="" target="_blank"></a>
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
@@ -279,6 +304,12 @@ mainWindow = WindowClass()
 mainWindow.show()
 app.exec_()
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">API</summary>
+<hr class='division3'>
+- <a href="" target="_blank"></a>
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
@@ -354,6 +385,12 @@ mainWindow = WindowClass()
 mainWindow.show()
 app.exec_()
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">API</summary>
+<hr class='division3'>
+- <a href="" target="_blank"></a>
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
@@ -464,6 +501,12 @@ mainWindow = WindowClass()
 mainWindow.show()
 app.exec_()
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">API</summary>
+<hr class='division3'>
+- <a href="" target="_blank"></a>
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
@@ -474,6 +517,12 @@ app.exec_()
 ```python
 
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">API</summary>
+<hr class='division3'>
+- <a href="" target="_blank"></a>
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
@@ -484,6 +533,12 @@ app.exec_()
 ```python
 
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">API</summary>
+<hr class='division3'>
+- <a href="" target="_blank"></a>
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
@@ -494,6 +549,12 @@ app.exec_()
 ```python
 
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">API</summary>
+<hr class='division3'>
+- <a href="" target="_blank"></a>
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
@@ -504,6 +565,12 @@ app.exec_()
 ```python
 
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">API</summary>
+<hr class='division3'>
+- <a href="" target="_blank"></a>
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
@@ -514,6 +581,12 @@ app.exec_()
 ```python
 
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">API</summary>
+<hr class='division3'>
+- <a href="" target="_blank"></a>
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
@@ -524,6 +597,12 @@ app.exec_()
 ```python
 
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">API</summary>
+<hr class='division3'>
+- <a href="" target="_blank"></a>
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
@@ -534,6 +613,12 @@ app.exec_()
 ```python
 
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">API</summary>
+<hr class='division3'>
+- <a href="" target="_blank"></a>
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
@@ -544,6 +629,12 @@ app.exec_()
 ```python
 
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">API</summary>
+<hr class='division3'>
+- <a href="" target="_blank"></a>
+<hr class='division3'>
+</details>
 
 <br><br><br>
 
@@ -554,6 +645,12 @@ app.exec_()
 ```python
 
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">API</summary>
+<hr class='division3'>
+- <a href="" target="_blank"></a>
+<hr class='division3'>
+</details>
 
 <br><br><br>
 <hr class="division2">
@@ -667,4 +764,10 @@ Reference
 <hr class='division3'>
 </details>
 
+<details markdown="1">
+<summary class='jb-small' style="color:blue">API</summary>
+<hr class='division3'>
+- <a href="" target="_blank"></a>
+<hr class='division3'>
+</details>
 
