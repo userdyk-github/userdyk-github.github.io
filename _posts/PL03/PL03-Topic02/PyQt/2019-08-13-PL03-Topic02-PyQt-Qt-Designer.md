@@ -163,7 +163,13 @@ mainWindow = WindowClass()
 mainWindow.show()
 app.exec_()
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+![image](https://user-images.githubusercontent.com/52376448/71648735-824b6e00-2d4b-11ea-8dbb-357781466bd8.png)
 
+<hr class='division3'>
+</details>
 <br><br><br>
 
 ---
@@ -437,6 +443,11 @@ Reference
 ---
 
 
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
 
+<hr class='division3'>
+</details>
 
 
