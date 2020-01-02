@@ -669,7 +669,25 @@ app.exec_()
 <hr class="division2">
 
 ## **Calculator**
+### ***(1) One-button signal***
 <br><br><br>
+
+---
+
+### ***(2) Many-button signal***
+<br><br><br>
+
+---
+
+### ***(3) Arithmetic operation***
+<br><br><br>
+
+---
+
+### ***(4) with Matplotlib***
+<br><br><br>
+
+
 <hr class="division2">
 
 ### Convert(1)
