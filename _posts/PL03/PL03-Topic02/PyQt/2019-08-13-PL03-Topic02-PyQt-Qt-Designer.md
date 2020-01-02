@@ -22,6 +22,8 @@ List of posts to read before reading this article
 <hr class="division1">
 
 ## **Execute the ui-file by python**
+<b>ctrl + r</b> : form-preview on Qt-designer
+
 ### ***basic form without qtdesigner***
 ```python
 import sys
