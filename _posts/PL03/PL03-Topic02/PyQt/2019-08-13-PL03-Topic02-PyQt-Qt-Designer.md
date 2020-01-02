@@ -24,28 +24,29 @@ List of posts to read before reading this article
 ## **Execute the ui-file by python**
 <b>ctrl + r</b> : form-preview on Qt-designer
 
-### ***basic form without qtdesigner***
+### ***load MainWindow from qtdesigner***
+#### basic form without qtdesigner
 ```python
 import sys
-from PyQt5.QtWidgets import QApplication, QDialog
+from PyQt5.QtWidgets import QApplication, QMainWindow
 
 app = QApplication(sys.argv)
-mainDialog = QDialog()
-mainDialog.show()
+mainwindow = QMainWindow()
+mainwindow.show()
 app.exec_()
 ```
-
 <br><br><br>
 
-### ***load MainWindow from qtdesigner***
 #### basic form with qtdesigner
 ```python
-from PyQt5.QtWidgets import QApplication
+import sys
+from PyQt5.QtWidgets import QApplication, QMainWindow
 from PyQt5 import uic
 
-app = QApplication([])
-mainDialog = uic.loadUi("mainwindow.ui")
-mainDialog.show()
+app = QApplication(sys.argv)
+mainwindow = QMainWindow()
+mainwindow = uic.loadUi("mainwindow.ui")
+mainwindow.show()
 app.exec()
 ```
 
@@ -54,11 +55,11 @@ app.exec()
 <hr class='division3'>
 ![그림1](https://user-images.githubusercontent.com/52376448/64966645-22cf6c80-d8da-11e9-910d-740977ac18ad.png)
 <div class='jb-medium'>when there exist the ui-file in parent folder,</div>
-`mainDialog = uic.loadUi("../test.ui")`<br>
+`mainwindow = uic.loadUi("../test.ui")`<br>
 <div class='jb-medium'>when there exist the ui-file in same folder,</div>
-`mainDialog = uic.loadUi("test.ui")`<br>
+`mainwindow = uic.loadUi("test.ui")`<br>
 <div class='jb-medium'>when there exist the ui-file in sub-folder,</div>
-`mainDialog = uic.loadUi("sub-folder/test.ui")`<br>
+`mainwindow = uic.loadUi("sub-folder/test.ui")`<br>
 
 <hr class='division3'>
 </details>
@@ -84,6 +85,20 @@ app.exec_()
 <br><br><br>
 
 ### ***load Dialog from qtdesigner***
+#### basic form without qtdesigner
+```python
+import sys
+from PyQt5.QtWidgets import QApplication, QDialog
+
+app = QApplication(sys.argv)
+mainDialog = QDialog()
+mainDialog.show()
+app.exec_()
+```
+
+<br><br><br>
+
+#### basic form with qtdesigner
 ```python
 import sys
 from PyQt5.QtWidgets import QApplication, QDialog
@@ -94,6 +109,11 @@ mainDialog = QDialog()
 uic.loadUi('dialog.ui',mainDialog)
 mainDialog.show()
 app.exec_()
+```
+<br><br><br>
+#### advanced form with qtdesigner
+```python
+
 ```
 <br><br><br>
 <hr class="division2">
