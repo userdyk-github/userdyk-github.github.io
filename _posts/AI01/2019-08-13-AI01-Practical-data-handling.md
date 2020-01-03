@@ -35,12 +35,21 @@ plt.figsave('output_image.jpg')         # save image
 <br><br><br>
 <hr class="division2">
 
+## **Table**
+```python
+import pandas as pd
+
+df = pd.read_csv('input_table.csv')
+df.to_excel('output_table.xlsx')
+```
+<br><br><br>
+<hr class="division2">
+
+
 ## **txt**
 <br><br><br>
 <hr class="division2">
-## **csv**
-<br><br><br>
-<hr class="division2">
+
 ## **xlsx**
 <br><br><br>
 
