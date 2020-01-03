@@ -58,6 +58,9 @@ with open('output.txt','w') as f:      # save text
 ## **From WEB**
 <ins>Developer tools</ins><br>
 <p>F12 : Elements(Inspector, Ctrl + Shift + c), Networks</p>
+<p>/robots.txt</p>
+
+![image](https://user-images.githubusercontent.com/52376448/71744017-5ba34980-2ea9-11ea-90fc-40deb5d05e50.png)
 
 <br><br><br>
 
