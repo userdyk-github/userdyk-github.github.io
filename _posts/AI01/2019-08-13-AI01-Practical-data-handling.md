@@ -49,7 +49,16 @@ df.to_excel('output_table.xlsx')       # save table
 <hr class="division2">
 
 
-## **txt**
+## **Text**
+```python
+with open('input_text.txt','r') as f:  # load text
+    text = f.read()
+```
+```python
+print(text)                            # show text
+with open('output.txt','w') as f:      # save text
+    f.write(text)
+```
 <br><br><br>
 <hr class="division2">
 
