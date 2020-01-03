@@ -104,11 +104,14 @@ tags : [PL03]
 
 ## **Web Application**
 
+- <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-requests.html'>requests</a>
+  - <a href='https://requests.kennethreitz.org//en/v1.1.0/api/' target="_blank"><span class='jb-small'>https://requests.kennethreitz.org//en/v1.1.0/api/</span></a>
+  
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-BeautifulSoup.html'>BeautifulSoup</a> ｜ <a href='' target="_blank">Cheat Sheet</a>
   - <a href='https://www.crummy.com/software/BeautifulSoup/bs4/doc/#' target="_blank"><span class='jb-small'>https://www.crummy.com/software/BeautifulSoup/bs4/doc/#</span></a>
   
-- <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-requests.html'>requests</a>
-  - <a href='https://requests.kennethreitz.org//en/v1.1.0/api/' target="_blank"><span class='jb-small'>https://requests.kennethreitz.org//en/v1.1.0/api/</span></a>
+- <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-Selenium.html'>Selenium</a>
+  - <a href='https://selenium.dev/documentation/en/' target="_blank"><span class='jb-small'>https://selenium.dev/documentation/en/</span></a>
 
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-gspread.html'>gspread</a>
   - <a href='https://gspread.readthedocs.io/en/latest/' target="_blank"><span class='jb-small'>https://gspread.readthedocs.io/en/latest/</span></a>
