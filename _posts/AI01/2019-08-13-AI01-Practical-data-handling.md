@@ -20,7 +20,8 @@ List of posts to read before reading this article
 {:toc}
 
 <hr class="division1">
-## **Image**
+## **File I/O**
+### ***Image***
 ```python
 import matplotlib.pyplot as plt
 from matplotlib import image
@@ -30,9 +31,10 @@ plt.imshow(img)
 plt.figsave('output_image.jpg')         # save image
 ```
 <br><br><br>
-<hr class="division2">
 
-## **Table**
+---
+
+### ***Table***
 ```python
 import pandas as pd
 
@@ -40,16 +42,24 @@ df = pd.read_csv('input_table.csv')    # load table
 df.to_excel('output_table.xlsx')       # save table
 ```
 <br><br><br>
-<hr class="division2">
 
+---
 
-## **Text**
+### ***Text***
 ```python
 with open('input_text.txt','r') as f:  # load text
     text = f.read()
 with open('output.txt','w') as f:      # save text
     f.write(text)
 ```
+<br><br><br>
+<hr class="division2">
+
+## **From WEB**
+<br><br><br>
+<hr class="division2">
+
+## **From DB**
 <br><br><br>
 <hr class="division2">
 
