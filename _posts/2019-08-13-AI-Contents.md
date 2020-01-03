@@ -11,7 +11,7 @@ tags : [AI]
 ### _General dataset_
 
 > <a href='https://userdyk-github.github.io/ai01/AI01-Datasets-for-research.html'>Datasets for research</a><br>
-> <a href='https://userdyk-github.github.io/ai01/AI01-Manipulating-common-files.html'>Manipulating common files</a><br>
+> <a href='https://userdyk-github.github.io/ai01/AI01-Practical-data-handling.html'>Practical data handling</a><br>
 
 ### _Image dataset_
 
