@@ -20,7 +20,18 @@ List of posts to read before reading this article
 {:toc}
 
 <hr class="division1">
-## **File input/output**
+## **Image**
+```python
+import matplotlib.pyplot as plt
+from matplotlib import image
+
+img = image.imread('input_image.jpg')
+plt.imshow(img)
+```
+```
+plt.show()
+plt.figsave('output_image.jpg')
+```
 <br><br><br>
 <hr class="division2">
 
