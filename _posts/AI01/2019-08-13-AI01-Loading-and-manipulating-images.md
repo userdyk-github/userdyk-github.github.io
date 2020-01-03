@@ -251,6 +251,10 @@ plt.imshow(img)
 plt.figsave('output_image.jpg')
 ```
 
+<br><br><br>
+
+---
+
 ### ***Saving image with keras***
 
 ```python
