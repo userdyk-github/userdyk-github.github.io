@@ -56,7 +56,7 @@ with open('output.txt','w') as f:      # save text
 <hr class="division2">
 
 ## **From WEB**
-<span class="frame2">Developer tools</span><br>
+<ins>Developer tools</ins><br>
 <p>F12 : Elements(Inspector, Ctrl + Shift + c), Networks</p>
 
 <br><br><br>
