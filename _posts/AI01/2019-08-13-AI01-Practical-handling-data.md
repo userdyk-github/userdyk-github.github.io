@@ -1,6 +1,6 @@
 ---
 layout : post
-title : AI01, Manipulating common files
+title : AI01, Practical handling data
 categories: [AI01]
 comments : true
 tags : [AI01]
