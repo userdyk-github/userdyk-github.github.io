@@ -62,7 +62,7 @@ print(resp.text)
 import requests
 
 url = 'https://www.kangcom.com/member/member_check.asp'
-data = {'id':'userdyk','pwd':'pwd1'}
+data = {'id':'ailever','pwd':'password'}
 
 resp = requests.post(url, data=data)
 print(resp.text)
