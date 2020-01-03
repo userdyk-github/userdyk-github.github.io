@@ -25,12 +25,12 @@ List of posts to read before reading this article
 import matplotlib.pyplot as plt
 from matplotlib import image
 
-img = image.imread('input_image.jpg')
+img = image.imread('input_image.jpg')   # load image
 plt.imshow(img)
 ```
 ```
-plt.show()
-plt.figsave('output_image.jpg')
+plt.show()                              # show image
+plt.figsave('output_image.jpg')         # save image
 ```
 <br><br><br>
 <hr class="division2">
