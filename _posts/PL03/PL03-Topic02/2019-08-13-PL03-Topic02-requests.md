@@ -44,12 +44,31 @@ pip install requests
 
 <hr class="division2">
 
-## title1
+## **get**
+```python
+import requests
 
+url = 'https://song-eunho.tistory.com/'
+
+resp = requests.get(url)
+print(resp.text)
+```
+
+<br><br><br>
 <hr class="division2">
 
-## title2
+## **post**
+```python
+import requests
 
+url = 'https://www.kangcom.com/member/member_check.asp'
+data = {'id':'userdyk','pwd':'pwd1'}
+
+resp = requests.post(url, data=data)
+print(resp.text)
+```
+
+<br><br><br>
 <hr class="division2">
 
 ## title3
