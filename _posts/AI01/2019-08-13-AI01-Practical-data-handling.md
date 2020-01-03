@@ -1,6 +1,6 @@
 ---
 layout : post
-title : AI01, Practical handling data
+title : AI01, Practical data handling
 categories: [AI01]
 comments : true
 tags : [AI01]
