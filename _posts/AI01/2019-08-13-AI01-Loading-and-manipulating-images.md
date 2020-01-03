@@ -241,6 +241,15 @@ for filename in listdir('images'):
 <hr class="division2">
 
 ## **How to Save Images to File**
+### ***Saving image with matplotlib***
+```python
+import matplotlib.pyplot as plt
+from matplotlib import image
+
+img = image.imread('input_image.jpg')
+plt.imshow(img)
+plt.figsave('output_image.jpg')
+```
 
 ### ***Saving image with keras***
 
