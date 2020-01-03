@@ -27,9 +27,6 @@ from matplotlib import image
 
 img = image.imread('input_image.jpg')   # load image
 plt.imshow(img)
-```
-```
-plt.show()                              # show image
 plt.figsave('output_image.jpg')         # save image
 ```
 <br><br><br>
@@ -40,9 +37,6 @@ plt.figsave('output_image.jpg')         # save image
 import pandas as pd
 
 df = pd.read_csv('input_table.csv')    # load table
-```
-```python
-print(df)                              # show table
 df.to_excel('output_table.xlsx')       # save table
 ```
 <br><br><br>
@@ -53,9 +47,6 @@ df.to_excel('output_table.xlsx')       # save table
 ```python
 with open('input_text.txt','r') as f:  # load text
     text = f.read()
-```
-```python
-print(text)                            # show text
 with open('output.txt','w') as f:      # save text
     f.write(text)
 ```
@@ -63,6 +54,18 @@ with open('output.txt','w') as f:      # save text
 <hr class="division2">
 
 ## **h5**
+```python
+import h5py
+import numpy as np
+
+f = h5py.File('input_big_data.h5','r')    # load big_data
+for i in f.keys():                        
+    info = f.get(i)                       # show information about big_data
+    print(info)                           
+    
+    data = np.array(info)                 # show big_data
+    print(data)
+```
 <br><br><br>
 
 <hr class="division2">
