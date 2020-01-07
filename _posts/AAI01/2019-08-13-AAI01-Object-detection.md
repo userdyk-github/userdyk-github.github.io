@@ -21,16 +21,78 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
+## **RCNN**
+### ***Concept***
+<br><br><br>
 
+---
+
+### ***Implementation***
+```python
+```
+<br><br><br>
 <hr class="division2">
 
-## title2
+## **Fast RCNN**
+### ***Concept***
+<br><br><br>
 
+---
+
+### ***Implementation***
+```python
+```
+<br><br><br>
 <hr class="division2">
 
-## title3
+## **Faster RCNN**
+### ***Concept***
+<br><br><br>
 
+---
+
+### ***Implementation***
+```python
+```
+<br><br><br>
+<hr class="division2">
+
+## **YOLO**
+### ***Concept***
+<br><br><br>
+
+---
+
+### ***Implementation v1***
+```python
+```
+<br><br><br>
+
+---
+
+### ***Implementation v2***
+```python
+```
+<br><br><br>
+
+---
+
+### ***Implementation 9000***
+```python
+```
+<br><br><br>
+<hr class="division2">
+
+## **SSD**
+### ***Concept***
+<br><br><br>
+
+---
+
+### ***Implementation***
+```python
+```
+<br><br><br>
 <hr class="division1">
 
 List of posts followed by this article
