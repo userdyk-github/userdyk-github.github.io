@@ -21,15 +21,71 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
+## **Fully Convolutional Network**
+### ***Concept***
+<br><br><br>
+
+---
+
+### ***Implementation***
+```python
+```
+<br><br><br>
 
 <hr class="division2">
 
-## title2
+## **Convolutional and Deconvolutional Network**
+### ***Concept***
+<br><br><br>
+
+---
+
+### ***Implementation***
+```python
+```
+<br><br><br>
 
 <hr class="division2">
 
-## title3
+## **U-Net**
+### ***Concept***
+<br><br><br>
+
+---
+
+### ***Implementation***
+```python
+```
+<br><br><br>
+
+<hr class="division2">
+
+
+## **Mask RCNN**
+### ***Concept***
+<br><br><br>
+
+---
+
+### ***Implementation***
+```python
+```
+<br><br><br>
+
+<hr class="division2">
+
+
+
+## **Deep Lab**
+### ***Concept***
+<br><br><br>
+
+---
+
+### ***Implementation***
+```python
+```
+<br><br><br>
 
 <hr class="division1">
 
