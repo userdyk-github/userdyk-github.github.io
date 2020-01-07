@@ -1,6 +1,6 @@
 ---
 layout : post
-title : AAI01
+title : AAI01, Object detection
 categories: [AAI01]
 comments : true
 tags : [AAI01]
