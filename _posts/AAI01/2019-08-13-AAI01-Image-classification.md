@@ -21,16 +21,164 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
+## **LeNet**
+### ***Concept***
+```python
+```
+<br><br><br>
 
+---
+
+### ***Implementation***
+```python
+```
+<br><br><br>
 <hr class="division2">
 
-## title2
 
+
+## **AlexNet**
+### ***Concept***
+```python
+```
+<br><br><br>
+
+---
+
+### ***Implementation***
+```python
+```
+<br><br><br>
 <hr class="division2">
 
-## title3
 
+
+## **ZFNet**
+### ***Concept***
+```python
+```
+<br><br><br>
+
+
+---
+
+### ***Implementation***
+```python
+```
+<br><br><br>
+<hr class="division2">
+
+
+
+## **Inception**
+### ***Concept***
+```python
+```
+<br><br><br>
+
+
+---
+
+### ***Implementation - v1***
+```python
+```
+<br><br><br>
+
+
+---
+
+### ***Implementation - v2***
+```python
+```
+<br><br><br>
+
+---
+
+### ***Implementation - v3***
+```python
+```
+<br><br><br>
+<hr class="division2">
+
+
+## **VGGNet**
+### ***Concept***
+```python
+```
+<br><br><br>
+
+
+---
+
+### ***Implementation***
+```python
+```
+<br><br><br>
+<hr class="division2">
+
+
+## **ResNet**
+### ***Concept***
+```python
+```
+<br><br><br>
+
+
+---
+
+### ***Implementation***
+```python
+```
+<br><br><br>
+<hr class="division2">
+
+## **MobileNet**
+### ***Concept***
+```python
+```
+<br><br><br>
+
+
+---
+
+### ***Implementation***
+```python
+```
+<br><br><br>
+<hr class="division2">
+
+
+
+## **Squeezenet**
+### ***Concept***
+```python
+```
+<br><br><br>
+
+
+---
+
+### ***Implementation***
+```python
+```
+<br><br><br>
+<hr class="division2">
+
+
+
+## **DenseNet**
+### ***Concept***
+```python
+```
+<br><br><br>
+
+
+---
+
+### ***Implementation***
+```python
+```
+<br><br><br>
 <hr class="division1">
 
 List of posts followed by this article
