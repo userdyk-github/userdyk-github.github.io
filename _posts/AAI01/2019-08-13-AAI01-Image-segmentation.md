@@ -1,6 +1,6 @@
 ---
 layout : post
-title : AAI01
+title : AAI01, Image segmentation
 categories: [AAI01]
 comments : true
 tags : [AAI01]
