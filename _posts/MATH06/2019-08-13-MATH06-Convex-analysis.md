@@ -42,7 +42,7 @@ List of posts followed by this article
 
 Reference
 - <a href='https://wikidocs.net/book/1896' target="_blank">Convex Optimization For All</a>
-- <a href='https://userdyk-github.github.io/'>post3</a>
+- <a href='https://en.wikipedia.org/wiki/Matrix_calculus'>Matrix calculus</a>
 
 ---
 
