@@ -63,7 +63,23 @@ with open('output.txt','w') as f:      # save text
 ![image](https://user-images.githubusercontent.com/52376448/71744017-5ba34980-2ea9-11ea-90fc-40deb5d05e50.png)
 
 <br><br><br>
+### ***Scraping***
+```python
+import urllib.request as req
 
+# from : file url
+img_url = 'https://user-images.githubusercontent.com/52376448/69004181-481c3d80-0952-11ea-98b4-823969ceb0c3.png'
+html_url = 'https://www.google.com/'
+
+# to : path
+img_save_path = r'S:\workspace\2020-01-19\car.jpg'
+html_save_path = r' S:\workspace\2020-01-19\index.html'
+
+
+img_file, img_header = req.urlretrieve(img_url,img_save_path); print(img_header)
+html_file, html_header = req.urlretrieve(html_url, html_save_path); print(html_header)
+```
+<br><br><br>
 
 <hr class="division2">
 
