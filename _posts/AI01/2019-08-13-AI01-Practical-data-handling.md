@@ -64,6 +64,7 @@ with open('output.txt','w') as f:      # save text
 
 <br><br><br>
 ### ***Scraping***
+#### urlretrieve : from urllib.request
 ```python
 import urllib.request as req
 
