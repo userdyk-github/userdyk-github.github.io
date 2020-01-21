@@ -397,6 +397,15 @@ Mass Point</a><br>
 > <a href='https://userdyk-github.github.io/pl00/PL00-Jenkins.html'>Jenkins</a><br>
 
 
+
+### _Microsoft_
+
+> <a href='https://userdyk-github.github.io/pl00/PL00-MS-Excel.html'>MS Excel</a><br>
+> <a href='https://userdyk-github.github.io/pl00/PL00-MS-Word.html'>MS Word</a><br>
+> <a href='https://userdyk-github.github.io/pl00/PL00-MS-PowerPoint.html'>MS PowerPoint</a><br>
+
+
+
 ---
 
 ## _PL01 : C_
