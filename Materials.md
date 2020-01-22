@@ -117,6 +117,7 @@ title: MATERIALS
 
 - <a href="https://insights.stackoverflow.com/" target="_blank">stackoverflow insights</a>
 - <a href="https://db-engines.com/en/ranking" target="_blank">db-engines ranking</a>
+- <a href="https://www.ipify.org/" target="_blank">ipify</a>
 - <a href="https://repl.it/" target="_blank">Implementation with programming language on web</a>
 - <a href="http://www.gnu.org/home.en.html" target="_blank">gnu</a>
 - <a href="https://www.techonthenet.com/index.php" target="_blank">tech on the net</a>
