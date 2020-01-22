@@ -158,6 +158,14 @@ for i, url in enumerate(target_url):
 <span class="frame3">get(from requests)</span><br>
 
 <br><br><br>
+#### from Beautiful Soup
+
+<br><br><br>
+
+#### from Selenium
+
+<br><br><br>
+
 
 ---
 
