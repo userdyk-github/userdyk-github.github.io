@@ -65,6 +65,11 @@ with open('output.txt','w') as f:      # save text
 <br><br><br>
 ### ***Scraping***
 #### from urllib
+<span class="frame3">installation</span><br>
+```dos
+
+```
+<br><br><br>
 <span class="frame3">urlretrieve(from urllib.request) : download file</span><br>
 
 ```python
@@ -155,14 +160,30 @@ for i, url in enumerate(target_url):
 </details>
 <br><br><br>
 #### from requests
+<span class="frame3">installation</span><br>
+```dos
+
+```
+<br><br><br>
+
 <span class="frame3">get(from requests)</span><br>
 
 <br><br><br>
 #### from Beautiful Soup
+<span class="frame3">installation</span><br>
+```dos
+
+```
+<br><br><br>
 
 <br><br><br>
 
 #### from Selenium
+<span class="frame3">installation</span><br>
+```dos
+
+```
+<br><br><br>
 
 <br><br><br>
 
@@ -186,6 +207,12 @@ for i, url in enumerate(target_url):
 ---
 
 ### ***Scrapy***
+<span class="frame3">installation</span><br>
+```dos
+pip install scrapy
+pip install pypiwin32
+```
+<br><br><br>
 
 <br><br><br>
 <hr class="division2">
