@@ -69,11 +69,11 @@ with open('output.txt','w') as f:      # save text
 import urllib.request as req
 
 # from : file url
-img_url = 'http://post.phinf.naver.net/20160621_169/1466482468068lmSHj_JPEG/If7GeIbOPZuYwI-GI3xU7ENRrlfI.jpg'
+img_url = 'https://user-images.githubusercontent.com/52376448/69004181-481c3d80-0952-11ea-98b4-823969ceb0c3.png'
 html_url = 'https://www.google.com/'
 
 # to : path
-img_save_path = r'S:\workspace\2020-01-19\cat.jpg'
+img_save_path = r'S:\workspace\2020-01-19\winscp.jpg'
 html_save_path = r' S:\workspace\2020-01-19\index.html'
 
 # download file
@@ -94,11 +94,11 @@ import urllib.request as req
 from urllib.error import URLError, HTTPError
 
 # from : file url
-target_url = ["http://post.phinf.naver.net/20160621_169/1466482468068lmSHj_JPEG/If7GeIbOPZuYwI-GI3xU7ENRrlfI.jpg",
+target_url = ["https://user-images.githubusercontent.com/52376448/69004181-481c3d80-0952-11ea-98b4-823969ceb0c3.png",
               "https://google.com"]
 
 # to : path
-path_list = [r"S:\workspace\2020-01-22\car.jpg",
+path_list = [r"S:\workspace\2020-01-22\winscp.jpg",
              r"S:\workspace\2020-01-22\index.html"]
 
 # save file as an object on python
@@ -120,11 +120,11 @@ import urllib.request as req
 from urllib.error import URLError, HTTPError
 
 # from : file url
-target_url = ["http://post.phinf.naver.net/20160621_169/1466482468068lmSHj_JPEG/If7GeIbOPZuYwI-GI3xU7ENRrlfI.jpg",
+target_url = ["https://user-images.githubusercontent.com/52376448/69004181-481c3d80-0952-11ea-98b4-823969ceb0c3.png",
               "https://google.com"]
 
 # to : path
-path_list = [r"S:\workspace\2020-01-22\car.jpg",
+path_list = [r"S:\workspace\2020-01-22\winscp.jpg",
              r"S:\workspace\2020-01-22\index.html"]
 
 # download file
