@@ -91,26 +91,22 @@ html_file, html_header = req.urlretrieve(html_url, html_save_path); print(html_h
 #### urlopen : from urllib.request
 ```python
 import urllib.request as req
-from urllib.error import URLError, HTTPError
 
 # from : file url
-target_url = ["https://user-images.githubusercontent.com/52376448/69004181-481c3d80-0952-11ea-98b4-823969ceb0c3.png",
-              "https://google.com"]
-
 # to : path
-path_list = [r"S:\workspace\2020-01-22\winscp.jpg",
-             r"S:\workspace\2020-01-22\index.html"]
+file_url = "https://user-images.githubusercontent.com/52376448/69004181-481c3d80-0952-11ea-98b4-823969ceb0c3.png"
+save_path = r"S:\workspace\2020-01-22\winscp.jpg"
+
 
 # save file as an object on python
-for i, url in enumerate(target_url):
-    response = req.urlopen(url)
-    contents = response.read()
-    print('Header Info-{} : {}'.format(i, response.info()))
-    print('HTTP Status Code : {}'.format(response.getcode()))
-    
-    # download file
-    with open(path_list[i], 'wb') as c:
-        c.write(contents)
+response = req.rulopen(file_url)
+header_info = response.info()
+http_status_code = response.getcode()
+
+# download file
+contents = respense.read()
+with open(save_path, 'wb') as c:
+    c.write(contents)
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">handling error</summary>
