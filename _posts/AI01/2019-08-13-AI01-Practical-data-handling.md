@@ -82,6 +82,41 @@ html_file, html_header = req.urlretrieve(html_url, html_save_path); print(html_h
 ```
 <br><br><br>
 
+#### urlopen : from urllib.request
+```python
+import urllib.request as req
+from urllib.error import URLError, HTTPError
+
+path_list = [r"S:\workspace\2020-01-19\car.jpg",
+             r"S:\workspace\2020-01-19\index.html"]
+target_url = ["http://post.phinf.naver.net/20160621_169/1466482468068lmSHj_JPEG/If7GeIbOPZuYwI-GI3xU7ENRrlfI.jpg",
+              "http://google.com"]
+
+for i, url in enumerate(target_url):
+    try:
+        response = req.urlopen(url)
+        contents = response.read()
+        print('---------------------------------------------------')
+        
+        print('Header Info-{} : {}'.format(i, response.info()))
+        print('HTTP Status Code : {}'.format(response.getcode()))
+        print('---------------------------------------------------')
+
+        with open(path_list[i], 'wb') as c:
+            c.write(contents)
+
+    except HTTPError as e:
+        print("Download failed.")
+        print('HTTPError Code : ', e.code)
+
+    except URLError as e:
+        print("Download failed.")
+        print('URL Error Reason : ', e.reason)
+
+    else:
+        print()
+        print("Download Succeed.")
+```
 <hr class="division2">
 
 ## **From DB**
