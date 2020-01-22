@@ -99,12 +99,12 @@ save_path = r"S:\workspace\2020-01-22\winscp.jpg"
 
 
 # save file as an object on python
-response = req.rulopen(file_url)
+response = req.urlopen(file_url)
 header_info = response.info()
 http_status_code = response.getcode()
 
 # download file
-contents = respense.read()
+contents = response.read()
 with open(save_path, 'wb') as c:
     c.write(contents)
 ```
