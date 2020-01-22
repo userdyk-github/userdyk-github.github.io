@@ -152,6 +152,8 @@ for i, url in enumerate(target_url):
 <hr class='division3'>
 </details>
 
+
+<br><br><br>
 <hr class="division2">
 
 ## **From DB**
