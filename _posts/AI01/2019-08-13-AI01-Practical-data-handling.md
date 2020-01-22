@@ -69,14 +69,14 @@ with open('output.txt','w') as f:      # save text
 import urllib.request as req
 
 # from : file url
-img_url = 'https://user-images.githubusercontent.com/52376448/69004181-481c3d80-0952-11ea-98b4-823969ceb0c3.png'
+img_url = 'http://post.phinf.naver.net/20160621_169/1466482468068lmSHj_JPEG/If7GeIbOPZuYwI-GI3xU7ENRrlfI.jpg'
 html_url = 'https://www.google.com/'
 
 # to : path
-img_save_path = r'S:\workspace\2020-01-19\car.jpg'
+img_save_path = r'S:\workspace\2020-01-19\cat.jpg'
 html_save_path = r' S:\workspace\2020-01-19\index.html'
 
-
+# download file
 img_file, img_header = req.urlretrieve(img_url,img_save_path); print(img_header)
 html_file, html_header = req.urlretrieve(html_url, html_save_path); print(html_header)
 ```
@@ -87,21 +87,24 @@ html_file, html_header = req.urlretrieve(html_url, html_save_path); print(html_h
 import urllib.request as req
 from urllib.error import URLError, HTTPError
 
-path_list = [r"S:\workspace\2020-01-19\car.jpg",
-             r"S:\workspace\2020-01-19\index.html"]
+# from : file url
 target_url = ["http://post.phinf.naver.net/20160621_169/1466482468068lmSHj_JPEG/If7GeIbOPZuYwI-GI3xU7ENRrlfI.jpg",
-              "http://google.com"]
+              "https://google.com"]
 
+# to : path
+path_list = [r"S:\workspace\2020-01-22\car.jpg",
+             r"S:\workspace\2020-01-22\index.html"]
+
+# download file
 for i, url in enumerate(target_url):
     try:
         response = req.urlopen(url)
         contents = response.read()
         print('---------------------------------------------------')
-        
         print('Header Info-{} : {}'.format(i, response.info()))
         print('HTTP Status Code : {}'.format(response.getcode()))
         print('---------------------------------------------------')
-
+        
         with open(path_list[i], 'wb') as c:
             c.write(contents)
 
