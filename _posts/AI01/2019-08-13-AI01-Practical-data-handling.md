@@ -157,7 +157,17 @@ for i, url in enumerate(target_url):
 #### from requests
 <span class="frame3">get(from requests)</span><br>
 
+<br><br><br>
 
+---
+
+### ***Example for scraping***
+#### EX1, encar
+<a href="http://www.encar.com/index.do" target="_blank">encar</a><br>
+
+<br><br><br>
+#### EX2, mois
+<a href="https://www.mois.go.kr/frt/sub/a08/rss/screen.do" target="_blank">mois</a><br>
 
 <br><br><br>
 <hr class="division2">
