@@ -182,6 +182,12 @@ for i, url in enumerate(target_url):
 <a href="https://finance.daum.net/" target="_blank">daum finance</a><br>
 
 <br><br><br>
+
+---
+
+### ***Scrapy***
+
+<br><br><br>
 <hr class="division2">
 
 ## **From DB**
