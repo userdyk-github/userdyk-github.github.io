@@ -80,9 +80,41 @@ html_save_path = r' S:\workspace\2020-01-19\index.html'
 img_file, img_header = req.urlretrieve(img_url,img_save_path); print(img_header)
 html_file, html_header = req.urlretrieve(html_url, html_save_path); print(html_header)
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">handling error</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 #### urlopen : from urllib.request
+```python
+import urllib.request as req
+from urllib.error import URLError, HTTPError
+
+# from : file url
+target_url = ["http://post.phinf.naver.net/20160621_169/1466482468068lmSHj_JPEG/If7GeIbOPZuYwI-GI3xU7ENRrlfI.jpg",
+              "https://google.com"]
+
+# to : path
+path_list = [r"S:\workspace\2020-01-22\car.jpg",
+             r"S:\workspace\2020-01-22\index.html"]
+
+# save file as an object on python
+for i, url in enumerate(target_url):
+    response = req.urlopen(url)
+    contents = response.read()
+    print('Header Info-{} : {}'.format(i, response.info()))
+    print('HTTP Status Code : {}'.format(response.getcode()))
+    
+    # download file
+    with open(path_list[i], 'wb') as c:
+        c.write(contents)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">handling error</summary>
+<hr class='division3'>
 ```python
 import urllib.request as req
 from urllib.error import URLError, HTTPError
@@ -120,6 +152,10 @@ for i, url in enumerate(target_url):
         print()
         print("Download Succeed.")
 ```
+
+<hr class='division3'>
+</details>
+
 <hr class="division2">
 
 ## **From DB**
@@ -161,7 +197,7 @@ Reference
 ---
 
 <details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<summary class='jb-small' style="color:blue">handling error</summary>
 <hr class='division3'>
 <hr class='division3'>
 </details>
