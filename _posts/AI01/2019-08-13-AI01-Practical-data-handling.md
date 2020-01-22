@@ -64,7 +64,9 @@ with open('output.txt','w') as f:      # save text
 
 <br><br><br>
 ### ***Scraping***
-#### urlretrieve(from urllib.request) : download file
+#### from urllib
+<span class="frame3">urlretrieve(from urllib.request) : download file</span><br>
+
 ```python
 import urllib.request as req
 
@@ -88,7 +90,7 @@ html_file, html_header = req.urlretrieve(html_url, html_save_path); print(html_h
 
 <br><br><br>
 
-#### urlopen(from urllib.request) : save file as an object on python
+<span class="frame3">urlopen(from urllib.request) : save file as an object on python</span><br>
 ```python
 import urllib.request as req
 
@@ -152,7 +154,10 @@ for i, url in enumerate(target_url):
 <hr class='division3'>
 </details>
 <br><br><br>
-### requests(import requests)
+#### from requests
+<span class="frame3">get(from requests)</span><br>
+
+
 
 <br><br><br>
 <hr class="division2">
