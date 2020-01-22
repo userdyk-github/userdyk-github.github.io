@@ -170,6 +170,10 @@ for i, url in enumerate(target_url):
 <a href="https://www.mois.go.kr/frt/sub/a08/rss/screen.do" target="_blank">mois</a><br>
 
 <br><br><br>
+#### EX3, daum finance
+<a href="https://finance.daum.net/" target="_blank">daum finance</a><br>
+
+<br><br><br>
 <hr class="division2">
 
 ## **From DB**
