@@ -5,7 +5,7 @@ categories: [LAN02]
 comments : true
 tags : [LAN02]
 ---
-[Back to the previous page](https://userdyk-github.github.io/Study.html) <br>
+[Back to the previous page](https://userdyk-github.github.io/Study.html) ｜ <a href="https://github.com/userdyk-github/userdyk-github.github.io/blob/master/_posts/LAN02/2019-08-13-LAN02-Conversation.md" target="_blank">page management</a><br>
 List of posts to read before reading this article
 - <a href='https://userdyk-github.github.io/'>post1</a>
 - <a href='https://userdyk-github.github.io/'>post2</a>
