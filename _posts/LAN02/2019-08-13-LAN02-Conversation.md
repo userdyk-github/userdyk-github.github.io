@@ -21,16 +21,54 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
+## **WORK & SCHOOL**
 
+<br><br><br>
 <hr class="division2">
 
-## title2
+## **COMPUTER & NETWORKING**
 
+<br><br><br>
 <hr class="division2">
 
-## title3
+## **SOCIAL LIFE WITH OTHERS**
 
+<br><br><br>
+<hr class="division2">
+
+## **EVERYDAY LIFE ACTIVITIES**
+
+<br><br><br>
+<hr class="division2">
+
+## **INFORMATION & UNDERSTANDING**
+
+<br><br><br>
+<hr class="division2">
+
+## **THOUGHTS & ATTITUDE**
+
+<br><br><br>
+<hr class="division2">
+
+## **EMOTIONS & SITUATIONS**
+
+<br><br><br>
+<hr class="division2">
+
+## **VARIOUS ACTIONS**
+
+<br><br><br>
+<hr class="division2">
+
+## **TIME, PLACE & etc**
+
+<br><br><br>
+<hr class="division2">
+
+## **APPENDIC**
+
+<br><br><br>
 <hr class="division1">
 
 List of posts followed by this article
