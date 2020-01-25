@@ -225,6 +225,34 @@ tensorboard = tf.keras.callbacks.TensorBoard(
 <br><br><br>
 <hr class="division2">
 ## **Numpy**
+
+### ***Regression***
+#### Simple Linear regression
+```python
+
+```
+<br><br><br>
+#### Multi-variable regression
+```python
+
+```
+
+<br><br><br>
+#### Logistic regression
+```python
+
+```
+
+<br><br><br>
+#### Soft-max regression
+```python
+
+```
+
+<br><br><br>
+
+---
+
 ### ***FCN***
 #### FCN through numerical method
 ```python
@@ -490,6 +518,34 @@ print('{} seconds elapsed.'.format(time.time() - t))
 <hr class="division2">
 
 ## **Tensorflow**
+
+### ***Regression***
+#### Simple Linear regression
+```python
+
+```
+<br><br><br>
+#### Multi-variable regression
+```python
+
+```
+
+<br><br><br>
+#### Logistic regression
+```python
+
+```
+
+<br><br><br>
+#### Soft-max regression
+```python
+
+```
+
+<br><br><br>
+
+---
+
 ### ***Perceptron***
 #### OR
 ```python
@@ -1407,6 +1463,34 @@ model.fit(train_ds, validation_data=test_ds, epochs=EPOCHS)
 
 
 ## **Pytorch**
+
+### ***Regression***
+#### Simple Linear regression
+```python
+
+```
+<br><br><br>
+#### Multi-variable regression
+```python
+
+```
+
+<br><br><br>
+#### Logistic regression
+```python
+
+```
+
+<br><br><br>
+#### Soft-max regression
+```python
+
+```
+
+<br><br><br>
+
+---
+
 ### ***FCN***
 ```python
 import torch
