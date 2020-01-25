@@ -527,6 +527,7 @@ print('{} seconds elapsed.'.format(time.time() - t))
 import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
+#tf.enable_eager_execution()
 
 # Data
 x_data = [1, 2, 3, 4, 5]
