@@ -232,7 +232,7 @@ tensorboard = tf.keras.callbacks.TensorBoard(
 import numpy as np
 import matplotlib.pyplot as plt
 
-def cost_func(W, X, Y):
+def cost(W, X, Y):
     c = 0
     for i in range(len(X)):
         c += (W * X[i] - Y[i]) ** 2
@@ -252,7 +252,7 @@ W = 2.5
 # gradient descent
 for _ in range(len(X)):
     plt.plot(X, W*X + b)
-    curr_cost = cost_func(W, X, Y)
+    curr_cost = cost(W, X, Y)
     W = W - np.multiply(alpha, gradient(W,X,Y))
     
 plt.plot(X,Y, 'o')
