@@ -231,6 +231,8 @@ tensorboard = tf.keras.callbacks.TensorBoard(
 ```python
 
 ```
+
+
 <br><br><br>
 #### Multi-variable regression
 ```python
@@ -522,8 +524,41 @@ print('{} seconds elapsed.'.format(time.time() - t))
 ### ***Regression***
 #### Simple Linear regression
 ```python
+import tensorflow as tf
+import numpy as np
+import matplotlib.pyplot as plt
 
+# Data
+x_data = [1, 2, 3, 4, 5]
+y_data = [1, 2, 3, 4, 5]
+
+# W, b initialize
+W = tf.Variable(2.9)
+b = tf.Variable(0.5)
+
+# W, b update
+for i in range(100):
+    # Gradient descent
+    with tf.GradientTape() as tape:
+        hypothesis = W * x_data + b
+        cost = tf.reduce_mean(tf.square(hypothesis - y_data))
+    W_grad, b_grad = tape.gradient(cost, [W, b])
+    W.assign_sub(learning_rate * W_grad)
+    b.assign_sub(learning_rate * b_grad)
+    
+    # Visualize results
+    if i % 10 == 0:
+        print("{:5}|{:10.4f}|{:10.4f}|{:10.6f}".format(i, W.numpy(), b.numpy(), cost))
+        plt.plot(x_data, W*x_data + b, label="%f"%W.numpy())
+
+
+plt.plot(x_data, y_data, 'x')
+plt.legend()
+plt.grid(True)
+plt.show()
 ```
+![image](https://user-images.githubusercontent.com/52376448/73115431-1f737e00-3f69-11ea-8619-2075e9335c7a.png)
+
 <br><br><br>
 #### Multi-variable regression
 ```python
