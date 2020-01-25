@@ -229,8 +229,37 @@ tensorboard = tf.keras.callbacks.TensorBoard(
 ### ***Regression***
 #### Simple Linear regression
 ```python
+import numpy as np
+import matplotlib.pyplot as plt
 
+def cost_func(W, X, Y):
+    c = 0
+    for i in range(len(X)):
+        c += (W * X[i] - Y[i]) ** 2
+    return c / len(X)
+
+def gradient(W, X, Y):
+    return np.sum(np.multiply(np.multiply(W, X) - Y, X))
+
+# data
+X = np.array([1, 2, 3, 4, 5])
+Y = np.array([1, 2, 3, 5, 5])
+
+# parameters
+alpha = 0.01
+W = 2.5
+
+# gradient descent
+for _ in range(len(X)):
+    plt.plot(X, W*X + b)
+    curr_cost = cost_func(W, X, Y)
+    W = W - np.multiply(alpha, gradient(W,X,Y))
+    
+plt.plot(X,Y, 'o')
+plt.grid(True)
+plt.show()
 ```
+![image](https://user-images.githubusercontent.com/52376448/73115843-96ac1080-3f6f-11ea-9e12-dccb054ddbe6.png)
 
 
 <br><br><br>
