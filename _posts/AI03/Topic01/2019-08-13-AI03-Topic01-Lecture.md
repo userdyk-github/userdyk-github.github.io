@@ -85,12 +85,20 @@ List of posts to read before reading this article
 <br><br><br>
 <hr class="division2">
 
-## **Note 08**
+## **Note 08, Monte carlo**
 [Note 8][8], [ipynb][]
 <br><br><br>
+
+### ***Circular area***
+<br><br><br>
+
+### ***Numerical integral***
+<br><br><br>
+
+### ***Matropolis algorithm and Ising model***
 <hr class="division2">
 
-## **Note 09**
+## **Note 09, Training**
 [Note 9][9], [ipynb][]
 <br><br><br>
 <hr class="division2">
