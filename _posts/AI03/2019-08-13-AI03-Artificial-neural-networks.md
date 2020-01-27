@@ -232,16 +232,16 @@ tensorboard = tf.keras.callbacks.TensorBoard(
 import numpy as np
 import matplotlib.pyplot as plt
 
-def cost(W, X, Y):
+def cost():
     c = 0
-    for i in range(len(X)):
+    for i in range(len(X)) :
         c += (W * X[i] - Y[i]) ** 2
     return c / len(X)
 
-def gradient_W(W, X, Y):
+def gradient_W():
     return np.sum(np.multiply(np.multiply(W, X) + b - Y, X))
 
-def gradient_b(b, X, Y):
+def gradient_b():
     return np.sum(np.multiply(np.multiply(W, X) + b - Y, 1))
 
 # data
@@ -251,16 +251,23 @@ Y = np.array([1, 2, 3, 4, 5])
 # parameters
 alpha = 0.01; beta = 0.1;
 W = 2.5; b = 1;
+fig, axes = plt.subplots(1,2,figsize=(15,5))
 
 # gradient descent
-for _ in range(len(X)):
-    plt.plot(X, W*X + b)
-    curr_cost = cost(W, X, Y)
-    W = W - np.multiply(alpha, gradient_W(W,X,Y)); print('W = ', W)
-    b = b - np.multiply(beta, gradient_b(b,X,Y)); print('b = ', b)
-
-plt.plot(X,Y, 'o')
-plt.grid(True)
+curr_cost = []; step = [];
+for i in range(len(X)):
+    # update
+    W = W - np.multiply(alpha, gradient_W()); print('W = ', W)
+    b = b - np.multiply(beta, gradient_b()); print('b = ', b)
+    
+    # visualization
+    curr_cost.append(cost())
+    step.append(i+1)
+    axes[1].plot(X, W*X + b)
+axes[0].plot(step, curr_cost)    
+axes[1].plot(X,Y, 'o')
+axes[0].grid(True)
+axes[1].grid(True)
 plt.show()
 ```
 ![image](https://user-images.githubusercontent.com/52376448/73115843-96ac1080-3f6f-11ea-9e12-dccb054ddbe6.png)
