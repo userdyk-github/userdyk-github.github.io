@@ -270,7 +270,7 @@ axes[0].grid(True)
 axes[1].grid(True)
 plt.show()
 ```
-![image](https://user-images.githubusercontent.com/52376448/73115843-96ac1080-3f6f-11ea-9e12-dccb054ddbe6.png)
+![image](https://user-images.githubusercontent.com/52376448/73160858-7924a580-412d-11ea-8c35-722f781481d4.png)
 
 
 <br><br><br>
