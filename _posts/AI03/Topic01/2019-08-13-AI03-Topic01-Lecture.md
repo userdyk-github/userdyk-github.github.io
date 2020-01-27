@@ -98,18 +98,24 @@ List of posts to read before reading this article
 ### ***Matropolis algorithm and Ising model***
 <hr class="division2">
 
-## **Note 09, Training**
+## **Note 09, Training nueral net**
 [Note 9][9], [ipynb][]
 <br><br><br>
 <hr class="division2">
 
-## **Note 10**
+## **Note 10, Application(1)**
 [Note 10][10], [ipynb][]
 <br><br><br>
+### ***MNIST hand-written digit numbers***
+<br><br><br>
+
 <hr class="division2">
 
-## **Note 11**
+## **Note 11, Application(2)**
 [Note 11][11], [ipynb][]
+<br><br><br>
+
+### ***Voronoi cell, magnitude of earthquake***
 <br><br><br>
 
 <hr class="division1">
