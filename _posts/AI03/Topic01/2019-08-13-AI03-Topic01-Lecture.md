@@ -31,17 +31,29 @@ List of posts to read before reading this article
 <br><br><br>
 <hr class="division2">
 
-## **Note 03, Parabolic trajectory & The average annual temperature of Seoul**
+## **Note 03, Trajectory**
 [Note 3][3], [ipynb][]
 <br><br><br>
-<hr class="division2">
+### ***Parabolic trajectory***
+<br><br><br>
 
-## **Note 04**
-[Note 4][4], [ipynb][]
+### ***The average annual temperature of Seoul***
 <br><br><br>
 <hr class="division2">
 
-## **Note 05**
+## **Note 04, Approximate value**
+[Note 4][4], [ipynb][]
+<br><br><br>
+
+### ***Circular constant***
+<br><br><br>
+
+### ***Riemann-zeta function***
+<br><br><br>
+
+<hr class="division2">
+
+## **Note 05, **
 [Note 5][5], [ipynb][]
 <br><br><br>
 <hr class="division2">
