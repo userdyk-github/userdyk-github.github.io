@@ -602,6 +602,8 @@ axes[0].grid(True)
 axes[1].grid(True)
 plt.show()
 ```
+![image](https://user-images.githubusercontent.com/52376448/73218855-22a37f80-419e-11ea-8949-2c8a6eb94ff8.png)
+
 ```python
 import tensorflow as tf
 import numpy as np
