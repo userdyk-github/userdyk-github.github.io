@@ -21,17 +21,17 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## **Note 01**
+## **Note 01, Installation of python**
 [Note 1][1], [ipynb][]
 <br><br><br>
 <hr class="division2">
 
-## **Note 02**
+## **Note 02, Introduction to python**
 [Note 2][2], [ipynb][]
 <br><br><br>
 <hr class="division2">
 
-## **Note 03**
+## **Note 03,  & The average annual temperature of Seoul**
 [Note 3][3], [ipynb][]
 <br><br><br>
 <hr class="division2">
