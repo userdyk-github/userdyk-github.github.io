@@ -260,7 +260,7 @@ for i in range(len(X)):
     W = W - np.multiply(alpha, gradient_W()); print('W = ', W)
     b = b - np.multiply(beta, gradient_b()); print('b = ', b)
     
-    # visualization
+    # visualize results
     curr_cost.append(cost())
     step.append(i+1)
     axes[1].plot(X, W*X + b)
@@ -564,7 +564,43 @@ print('{} seconds elapsed.'.format(time.time() - t))
 ### ***Regression***
 #### Simple Linear regression
 ```python
+import tensorflow as tf
+import numpy as np
+import matplotlib.pyplot as plt
 
+def cost():
+    return tf.reduce_mean(tf.square(W * X + b - Y))
+
+def gradient_W():
+    return tf.reduce_mean(tf.multiply(tf.multiply(W, X) + b - Y, X))
+
+def gradient_b():
+    return tf.reduce_mean(tf.multiply(tf.multiply(W, X) + b - Y, X))
+
+# data
+X = [1., 2., 3., 4., 5.]
+Y = [1., 3., 5., 7., 9.]
+
+# parameters
+W = tf.Variable([5.0]); b = tf.Variable([1.0]);
+alpha = 0.05; beta = 0.05;
+fig, axes = plt.subplots(1,2, figsize=(10,5))
+
+# gradient descent
+curr_cost = []; step = [];
+for i in range(len(X)):
+    curr_grad = W - tf.multiply(alpha, gradient_W()); W.assign(curr_grad); print('W = ', W.numpy())
+    curr_grad = b - tf.multiply(beta, gradient_b()); b.assign(curr_grad); print('b = ', b.numpy())
+    
+    # visualize results
+    step.append(i+1)
+    curr_cost.append(cost())
+    axes[1].plot(X, W*X + b)
+axes[0].plot(step, curr_cost, marker='o', ls='-')
+axes[1].plot(X, Y, 'x')
+axes[0].grid(True)
+axes[1].grid(True)
+plt.show()
 ```
 ```python
 import tensorflow as tf
