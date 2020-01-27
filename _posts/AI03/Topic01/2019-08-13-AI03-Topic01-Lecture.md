@@ -5,7 +5,7 @@ categories: [AI03-Topic01]
 comments : true
 tags : [AI03-Topic01]
 ---
-[Back to the previous page](https://userdyk-github.github.io/ai03/AI03-Fundamental-of-deep-learning.html) <br>
+[Back to the previous page](https://userdyk-github.github.io/ai03/AI03-Fundamental-of-deep-learning.html) ｜<a href="https://github.com/userdyk-github/userdyk-github.github.io/blob/master/_posts/AI03/Topic01/2019-08-13-AI03-Topic01-Lecture.md" target="_blank">page management</a><br>
 List of posts to read before reading this article
 - <a href='https://userdyk-github.github.io/pl03/PL03-Libraries.html' target="_blank">Python Libraries</a>
 - <a href='https://userdyk-github.github.io/'>post2</a>
