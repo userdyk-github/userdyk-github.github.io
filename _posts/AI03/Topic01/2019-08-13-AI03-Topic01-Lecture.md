@@ -53,18 +53,35 @@ List of posts to read before reading this article
 
 <hr class="division2">
 
-## **Note 05, **
+## **Note 05, Numerical method, Diffrential equation**
 [Note 5][5], [ipynb][]
 <br><br><br>
+
+### ***Parabolic motion with air resistance***
+<br><br><br>
+
+### ***MERS***
+<br><br><br>
+
 <hr class="division2">
 
-## **Note 06**
+## **Note 06, Curve fitting**
 [Note 6][6], [ipynb][]
 <br><br><br>
+
+### ***Hubble constant***
+<br><br><br>
+
 <hr class="division2">
 
-## **Note 07**
+## **Note 07, Perceptron**
 [Note 7][7], [ipynb][]
+<br><br><br>
+
+### ***AND***
+<br><br><br>
+
+### ***XOR***
 <br><br><br>
 <hr class="division2">
 
