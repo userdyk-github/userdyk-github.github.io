@@ -31,7 +31,7 @@ List of posts to read before reading this article
 <br><br><br>
 <hr class="division2">
 
-## **Note 03,  & The average annual temperature of Seoul**
+## **Note 03, Parabolic trajectory & The average annual temperature of Seoul**
 [Note 3][3], [ipynb][]
 <br><br><br>
 <hr class="division2">
