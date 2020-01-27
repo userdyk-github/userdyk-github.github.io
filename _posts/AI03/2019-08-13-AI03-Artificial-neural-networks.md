@@ -238,23 +238,27 @@ def cost(W, X, Y):
         c += (W * X[i] - Y[i]) ** 2
     return c / len(X)
 
-def gradient(W, X, Y):
-    return np.sum(np.multiply(np.multiply(W, X) - Y, X))
+def gradient_W(W, X, Y):
+    return np.sum(np.multiply(np.multiply(W, X) + b - Y, X))
+
+def gradient_b(b, X, Y):
+    return np.sum(np.multiply(np.multiply(W, X) + b - Y, 1))
 
 # data
 X = np.array([1, 2, 3, 4, 5])
-Y = np.array([1, 2, 3, 5, 5])
+Y = np.array([1, 2, 3, 4, 5])
 
 # parameters
-alpha = 0.01
-W = 2.5
+alpha = 0.01; beta = 0.1;
+W = 2.5; b = 1;
 
 # gradient descent
-for _ in range(len(X)):
+for _ in range(50*len(X)):
     plt.plot(X, W*X + b)
     curr_cost = cost(W, X, Y)
-    W = W - np.multiply(alpha, gradient(W,X,Y))
-    
+    W = W - np.multiply(alpha, gradient_W(W,X,Y)); print('W = ', W)
+    b = b - np.multiply(beta, gradient_b(b,X,Y)); print('b = ', b)
+
 plt.plot(X,Y, 'o')
 plt.grid(True)
 plt.show()
