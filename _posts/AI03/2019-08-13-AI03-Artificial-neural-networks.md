@@ -253,7 +253,7 @@ alpha = 0.01; beta = 0.1;
 W = 2.5; b = 1;
 
 # gradient descent
-for _ in range(50*len(X)):
+for _ in range(len(X)):
     plt.plot(X, W*X + b)
     curr_cost = cost(W, X, Y)
     W = W - np.multiply(alpha, gradient_W(W,X,Y)); print('W = ', W)
