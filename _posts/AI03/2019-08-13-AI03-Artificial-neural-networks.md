@@ -254,8 +254,9 @@ alpha = 0.01; beta = 0.1;
 fig, axes = plt.subplots(1,2,figsize=(15,5))
 
 # gradient descent
+epochs = 5;
 curr_cost = []; step = [];
-for i in range(len(X)):
+for i in range(epochs):
     # update
     W = W - np.multiply(alpha, gradient_W()); print('W = ', W)
     b = b - np.multiply(beta, gradient_b()); print('b = ', b)
@@ -586,8 +587,9 @@ alpha = 0.05; beta = 0.05;
 fig, axes = plt.subplots(1,2, figsize=(10,5))
 
 # gradient descent
+epochs = 5
 curr_cost = []; step = [];
-for i in range(len(X)):
+for i in range(epochs):
     curr_grad = W - tf.multiply(alpha, gradient_W()); W.assign(curr_grad); print('W = ', W.numpy())
     curr_grad = b - tf.multiply(beta, gradient_b()); b.assign(curr_grad); print('b = ', b.numpy())
     
@@ -619,8 +621,9 @@ alpha = 0.03; beta = 0.03;
 fig, axes = plt.subplots(1,2, figsize=(10,5))
 
 # gradient descent
+epochs = 5
 curr_cost = []; step = [];
-for i in range(len(X)):
+for i in range(epochs):
     with tf.GradientTape() as tape:
         hypothesis = W * X + b
         cost = tf.reduce_mean(tf.square(hypothesis - Y))
@@ -658,8 +661,9 @@ alpha1 = tf.Variable(0.03); alpha2 = tf.Variable(0.03); beta = tf.Variable(0.03)
 fig, axes = plt.subplots(1,3,figsize=(15,5))
 
 # gradient descent
+epochs = 5
 curr_cost = []; step = [];
-for i in range(len(Y)):
+for i in range(epochs):
     with tf.GradientTape() as tape:
         hypothesis = W1*X1 + W2*X2 + b
         cost = tf.reduce_mean(tf.square(hypothesis - Y))
@@ -698,8 +702,9 @@ learning_rate = tf.Variable(0.05)
 fig, axes = plt.subplots(1, 3, figsize=(15,5))
 
 # gradient descent
+epochs = 5
 curr_cost = []; step = [];
-for i in range(len(Y)):
+for i in range(epochs):
     with tf.GradientTape() as tape:
         hypothesis = tf.matmul(W, X) + b # (1, 2) * (2, 5) = (1, 5)
         cost = tf.reduce_mean(tf.square(hypothesis - Y))
@@ -739,9 +744,10 @@ learning_rate = tf.Variable(0.05)
 fig, axes = plt.subplots(1, 3, figsize=(15,5))
 
 # gradient descent
+epochs = 5
 curr_cost = []; step = [];
 optimizer = tf.keras.optimizers.SGD(learning_rate)
-for i in range(len(Y)):
+for i in range(epochs):
     with tf.GradientTape() as tape:
         hypothesis = tf.matmul(W, X) + b # (1, 2) * (2, 5) = (1, 5)
         cost = tf.reduce_mean(tf.square(hypothesis - Y))
@@ -781,8 +787,9 @@ learning_rate = tf.Variable(0.05)
 fig, axes = plt.subplots(1, 3, figsize=(15,5))
 
 # gradient descent
+epochs = 5
 curr_cost = []; step = [];
-for i in range(len(Y)):
+for i in range(epochs):
     with tf.GradientTape() as tape:
         hypothesis = tf.matmul(W, X)   # (1, 3) * (3, 5) = (1, 5)
         cost = tf.reduce_mean(tf.square(hypothesis - Y))
@@ -822,9 +829,10 @@ learning_rate = tf.Variable(0.05)
 fig, axes = plt.subplots(1, 3, figsize=(15,5))
 
 # gradient descent
+epochs = 5
 curr_cost = []; step = [];
 optimizer = tf.keras.optimizers.SGD(learning_rate)
-for i in range(len(Y)):
+for i in range(epochs):
     with tf.GradientTape() as tape:
         hypothesis = tf.matmul(W, X)   # (1, 3) * (3, 5) = (1, 5)
         cost = tf.reduce_mean(tf.square(hypothesis - Y))
