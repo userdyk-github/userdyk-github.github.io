@@ -611,32 +611,32 @@ import matplotlib.pyplot as plt
 #tf.enable_eager_execution()
 
 # Data
-x_data = [1, 2, 3, 4, 5]
-y_data = [1, 2, 3, 4, 5]
+X = [1, 2, 3, 4, 5]
+Y = [1, 2, 3, 4, 5]
 
-# W, b initialize
-W = tf.Variable(2.9)
-b = tf.Variable(0.5)
+# parameters
+W = tf.Variable(2.9); b = tf.Variable(0.5);
+alpha = 0.03; beta = 0.03;
+fig, axes = plt.subplots(1,2, figsize=(10,5))
 
-# W, b update
-for i in range(100):
-    # Gradient descent
+# Gradient descent
+curr_cost = []; step = [];
+for i in range(len(X)):
     with tf.GradientTape() as tape:
-        hypothesis = W * x_data + b
-        cost = tf.reduce_mean(tf.square(hypothesis - y_data))
+        hypothesis = W * X + b
+        cost = tf.reduce_mean(tf.square(hypothesis - Y))
     W_grad, b_grad = tape.gradient(cost, [W, b])
-    W.assign_sub(learning_rate * W_grad)
-    b.assign_sub(learning_rate * b_grad)
-    
+    W.assign_sub(alpha * W_grad); print('W = ', W.numpy())
+    b.assign_sub(beta * b_grad); print('b = ', b.numpy())
+
     # Visualize results
-    if i % 10 == 0:
-        print("{:5}|{:10.4f}|{:10.4f}|{:10.6f}".format(i, W.numpy(), b.numpy(), cost))
-        plt.plot(x_data, W*x_data + b, label="%f"%W.numpy())
-
-
-plt.plot(x_data, y_data, 'x')
-plt.legend()
-plt.grid(True)
+    curr_cost.append(cost)
+    step.append(i+1)
+    axes[1].plot(X, W*X + b)
+axes[0].plot(step, curr_cost, marker='o', ls='-')
+axes[1].plot(X, Y, 'x')
+axes[0].grid(True)
+axes[1].grid(True)
 plt.show()
 ```
 ![image](https://user-images.githubusercontent.com/52376448/73115431-1f737e00-3f69-11ea-8619-2075e9335c7a.png)
