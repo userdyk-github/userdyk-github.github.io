@@ -4,6 +4,33 @@ layout: page
 title: STUDY
 ---
 
+## _FI01 : Information technology_
+
+> <a href='https://userdyk-github.github.io/fi01/FI01-Financial-data-collection.html'>Financial data collection</a><br>
+> <a href='https://userdyk-github.github.io/fi01/FI01-Task-automation.html'>Task automation</a><br>
+
+
+---
+
+## _FI02 : Finance as quant_
+
+> <a href='https://userdyk-github.github.io/fi02/FI02-.html'></a><br>
+> <a href='https://userdyk-github.github.io/fi02/FI02-.html'></a><br>
+
+---
+
+## _FI03 : With artificial intelligence_
+
+> <a href='https://userdyk-github.github.io/fi03/FI03-.html'></a><br>
+> <a href='https://userdyk-github.github.io/fi03/FI03-.html'></a><br>
+
+
+<br>
+
+<hr class='division4'>
+
+<br>
+
 ## _AI01 : Data preprocessing_
 
 ### _General dataset_
