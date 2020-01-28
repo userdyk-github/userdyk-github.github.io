@@ -642,7 +642,9 @@ plt.show()
 ![image](https://user-images.githubusercontent.com/52376448/73225270-710d4a00-41af-11ea-8e62-6682bcca5f1c.png)
 
 <br><br><br>
+
 #### Multi-variable regression
+<span class="frame3">without vectorization</span><br>
 ```python
 import tensorflow as tf
 import matplotlib.pyplot as plt
@@ -681,7 +683,10 @@ axes[2].grid(True)
 plt.show()    
 ```
 ![image](https://user-images.githubusercontent.com/52376448/73228320-98691480-41b9-11ea-8db7-770453b0782c.png)
+<span class="frame3">with vectorization</span><br>
+```python
 
+```
 <br><br><br>
 #### Logistic regression
 ```python
