@@ -565,7 +565,6 @@ print('{} seconds elapsed.'.format(time.time() - t))
 #### Simple Linear regression
 ```python
 import tensorflow as tf
-import numpy as np
 import matplotlib.pyplot as plt
 
 def cost():
@@ -606,7 +605,6 @@ plt.show()
 
 ```python
 import tensorflow as tf
-import numpy as np
 import matplotlib.pyplot as plt
 #tf.enable_eager_execution()
 
