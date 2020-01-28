@@ -249,8 +249,8 @@ X = np.array([1, 2, 3, 4, 5])
 Y = np.array([1, 2, 3, 4, 5])
 
 # parameters
-alpha = 0.01; beta = 0.1;
 W = 2.5; b = 1;
+alpha = 0.01; beta = 0.1;
 fig, axes = plt.subplots(1,2,figsize=(15,5))
 
 # gradient descent
