@@ -642,8 +642,43 @@ plt.show()
 <br><br><br>
 #### Multi-variable regression
 ```python
+import tensorflow as tf
+import matplotlib.pyplot as plt
 
+# data
+X1 = [1, 0, 3, 0, 5]; X2 = [0, 2, 0, 4, 0]
+Y  = [1, 2, 3, 4, 5]
+
+# parameters
+W1 = tf.Variable([1.0]); W2 = tf.Variable([1.0]); b = tf.Variable([1.0]);
+alpha1 = tf.Variable(0.03); alpha2 = tf.Variable(0.03); beta = tf.Variable(0.03);
+fig, axes = plt.subplots(1,3,figsize=(15,5))
+
+# gradient descent
+curr_cost = []; step = [];
+for i in range(len(Y)):
+    with tf.GradientTape() as tape:
+        hypothesis = W1*X1 + W2*X2 + b
+        cost = tf.reduce_mean(tf.square(hypothesis - Y))
+    W1_grad, W2_grad, b_grad = tape.gradient(cost, [W1, W2, b])
+    W1.assign_sub(alpha1 * W1_grad); print('W1 = ', W1.numpy())
+    W2.assign_sub(alpha2 * W2_grad); print('W2 = ', W2.numpy())
+    b.assign_sub(beta * b_grad); print('b = ', b.numpy())
+    
+    # visualize results
+    curr_cost.append(cost)
+    step.append(i+1)
+    axes[1].plot(X1, W1*X1 + W2*X2 + b)
+    axes[2].plot(X2, W1*X1 + W2*X2 + b)
+axes[0].plot(step, curr_cost, marker='o', ls='-')
+axes[1].plot(X1, Y, 'x')
+axes[2].plot(X2, Y, 'x')
+axes[0].grid(True)
+axes[1].grid(True)
+axes[2].grid(True)
+plt.show()    
 ```
+![image](https://user-images.githubusercontent.com/52376448/73228320-98691480-41b9-11ea-8db7-770453b0782c.png)
 
 <br><br><br>
 #### Logistic regression
