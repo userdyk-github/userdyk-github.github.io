@@ -639,7 +639,7 @@ axes[0].grid(True)
 axes[1].grid(True)
 plt.show()
 ```
-![image](https://user-images.githubusercontent.com/52376448/73115431-1f737e00-3f69-11ea-8619-2075e9335c7a.png)
+![image](https://user-images.githubusercontent.com/52376448/73225270-710d4a00-41af-11ea-8e62-6682bcca5f1c.png)
 
 <br><br><br>
 #### Multi-variable regression
