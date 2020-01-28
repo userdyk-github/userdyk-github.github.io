@@ -563,6 +563,7 @@ print('{} seconds elapsed.'.format(time.time() - t))
 
 ### ***Regression***
 #### Simple Linear regression
+<span class="frame3">without GradientTape</span><br>
 ```python
 import tensorflow as tf
 import matplotlib.pyplot as plt
@@ -603,6 +604,7 @@ plt.show()
 ```
 ![image](https://user-images.githubusercontent.com/52376448/73218855-22a37f80-419e-11ea-8949-2c8a6eb94ff8.png)
 
+<span class="frame3">with GradientTape</span><br>
 ```python
 import tensorflow as tf
 import matplotlib.pyplot as plt
