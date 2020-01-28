@@ -723,6 +723,47 @@ plt.show()
 ```
 ![image](https://user-images.githubusercontent.com/52376448/73231221-285f8c00-41c3-11ea-9373-45eda45ded77.png)
 
+<span class="frame3">with GradientTape, vectorization, optimizer</span><br>
+```python
+import tensorflow as tf
+import matplotlib.pyplot as plt
+
+# data
+X = [[1., 0., 3., 0., 5.],
+     [0., 2., 0., 4., 0.]]
+Y  = [1, 2, 3, 4, 5]
+
+# parameters
+W = tf.Variable([[1.0, 1.0]]); b = tf.Variable([1.0]);
+learning_rate = tf.Variable(0.05)
+fig, axes = plt.subplots(1, 3, figsize=(15,5))
+
+# gradient descent
+curr_cost = []; step = [];
+optimizer = tf.keras.optimizers.SGD(learning_rate)
+for i in range(len(Y)):
+    with tf.GradientTape() as tape:
+        hypothesis = tf.matmul(W, X) + b # (1, 2) * (2, 5) = (1, 5)
+        cost = tf.reduce_mean(tf.square(hypothesis - Y))
+
+        W_grad, b_grad = tape.gradient(cost, [W, b])
+        optimizer.apply_gradients(grads_and_vars=zip([W_grad, b_grad],[W, b])); print('W = ', W.numpy(),'b = ',b.numpy())
+        
+    # visualize results
+    curr_cost.append(cost)
+    step.append(i+1)
+    axes[1].plot(X[0], W[0][0]*X[0] + W[0][1]*X[1] + b)
+    axes[2].plot(X[1], W[0][0]*X[0] + W[0][1]*X[1] + b)
+axes[0].plot(step, curr_cost, marker='o', ls='-')
+axes[1].plot(X[0], Y, 'x')
+axes[2].plot(X[1], Y, 'x')
+axes[0].grid(True)
+axes[1].grid(True)
+axes[2].grid(True)
+plt.show()
+```
+![image](https://user-images.githubusercontent.com/52376448/73234429-68c40780-41cd-11ea-862e-27697e67da64.png)
+
 <span class="frame3">with GradientTape, vectorization, implicit bias</span><br>
 ```python
 import tensorflow as tf
