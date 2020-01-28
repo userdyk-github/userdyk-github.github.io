@@ -610,7 +610,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 #tf.enable_eager_execution()
 
-# Data
+# data
 X = [1, 2, 3, 4, 5]
 Y = [1, 2, 3, 4, 5]
 
@@ -619,7 +619,7 @@ W = tf.Variable(2.9); b = tf.Variable(0.5);
 alpha = 0.03; beta = 0.03;
 fig, axes = plt.subplots(1,2, figsize=(10,5))
 
-# Gradient descent
+# gradient descent
 curr_cost = []; step = [];
 for i in range(len(X)):
     with tf.GradientTape() as tape:
@@ -629,7 +629,7 @@ for i in range(len(X)):
     W.assign_sub(alpha * W_grad); print('W = ', W.numpy())
     b.assign_sub(beta * b_grad); print('b = ', b.numpy())
 
-    # Visualize results
+    # visualize results
     curr_cost.append(cost)
     step.append(i+1)
     axes[1].plot(X, W*X + b)
