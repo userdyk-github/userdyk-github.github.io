@@ -704,9 +704,9 @@ for i in range(len(Y)):
         hypothesis = tf.matmul(W, X) + b # (1, 2) * (2, 5) = (1, 5)
         cost = tf.reduce_mean(tf.square(hypothesis - Y))
 
-        W_grad, b_grad = tape.gradient(cost, [W, b])
-        W.assign_sub(learning_rate * W_grad); print(W.numpy())
-        b.assign_sub(learning_rate * b_grad); print(b.numpy())
+    W_grad, b_grad = tape.gradient(cost, [W, b])
+    W.assign_sub(learning_rate * W_grad); print(W.numpy())
+    b.assign_sub(learning_rate * b_grad); print(b.numpy())
         
     # visualize results
     curr_cost.append(cost)
@@ -746,8 +746,8 @@ for i in range(len(Y)):
         hypothesis = tf.matmul(W, X) + b # (1, 2) * (2, 5) = (1, 5)
         cost = tf.reduce_mean(tf.square(hypothesis - Y))
 
-        W_grad, b_grad = tape.gradient(cost, [W, b])
-        optimizer.apply_gradients(grads_and_vars=zip([W_grad, b_grad],[W, b])); print('W = ', W.numpy(),'b = ',b.numpy())
+    W_grad, b_grad = tape.gradient(cost, [W, b])
+    optimizer.apply_gradients(grads_and_vars=zip([W_grad, b_grad],[W, b])); print('W = ', W.numpy(),'b = ',b.numpy())
         
     # visualize results
     curr_cost.append(cost)
@@ -787,8 +787,8 @@ for i in range(len(Y)):
         hypothesis = tf.matmul(W, X)   # (1, 3) * (3, 5) = (1, 5)
         cost = tf.reduce_mean(tf.square(hypothesis - Y))
 
-        W_grad = tape.gradient(cost, [W])
-        W.assign_sub(learning_rate * W_grad[0]);print(W.numpy())
+    W_grad = tape.gradient(cost, [W])
+    W.assign_sub(learning_rate * W_grad[0]);print(W.numpy())
         
     # visualize results
     curr_cost.append(cost)
@@ -829,8 +829,8 @@ for i in range(len(Y)):
         hypothesis = tf.matmul(W, X)   # (1, 3) * (3, 5) = (1, 5)
         cost = tf.reduce_mean(tf.square(hypothesis - Y))
 
-        W_grad = tape.gradient(cost, [W])
-        optimizer.apply_gradients(grads_and_vars=zip(W_grad,[W])); print(W.numpy())
+    W_grad = tape.gradient(cost, [W])
+    optimizer.apply_gradients(grads_and_vars=zip(W_grad,[W])); print(W.numpy())
         
         
     # visualize results
