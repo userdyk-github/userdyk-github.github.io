@@ -563,7 +563,6 @@ print('{} seconds elapsed.'.format(time.time() - t))
 
 ### ***Regression***
 #### Simple Linear regression
-<span class="frame3">without GradientTape</span><br>
 ```python
 import tensorflow as tf
 import matplotlib.pyplot as plt
@@ -644,7 +643,7 @@ plt.show()
 <br><br><br>
 
 #### Multi-variable regression
-<span class="frame3">without vectorization</span><br>
+<span class="frame3">with GradientTape</span><br>
 ```python
 import tensorflow as tf
 import matplotlib.pyplot as plt
@@ -683,7 +682,7 @@ axes[2].grid(True)
 plt.show()    
 ```
 ![image](https://user-images.githubusercontent.com/52376448/73228320-98691480-41b9-11ea-8db7-770453b0782c.png)
-<span class="frame3">with vectorization</span><br>
+<span class="frame3">with GradientTape, vectorization</span><br>
 ```python
 import tensorflow as tf
 import matplotlib.pyplot as plt
@@ -724,7 +723,7 @@ plt.show()
 ```
 ![image](https://user-images.githubusercontent.com/52376448/73231221-285f8c00-41c3-11ea-9373-45eda45ded77.png)
 
-<span class="frame3">without explicit bias</span><br>
+<span class="frame3">with GradientTape, vectorization, implicit bias</span><br>
 ```python
 import tensorflow as tf
 import matplotlib.pyplot as plt
