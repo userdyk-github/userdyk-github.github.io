@@ -1927,6 +1927,11 @@ plt.show()
 
 <br><br><br>
 #### Multi-variable regression
+<span class="frame3">with optimizer</span><br>
+```python
+
+```
+<span class="frame3">with optimizer, vectorization(matrix)</span><br>
 ```python
 
 ```
