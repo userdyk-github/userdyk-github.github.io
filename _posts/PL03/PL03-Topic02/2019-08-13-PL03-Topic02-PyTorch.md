@@ -66,6 +66,45 @@ False
 ```python
 import torch
 
+x = torch.tensor([1])
+print(torch.is_tensor(x))
+print(torch.is_storage(x))
+```
+```
+True
+False
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">requires_grad</summary>
+<hr class='division3'>
+```python
+import torch
+
+x = torch.tensor([1])
+print(x.requires_grad)
+```
+```
+False
+```
+<br><br><br>
+```python
+import torch
+
+x = torch.tensor([1], dtype=torch.float, requires_grad=True)
+print(x.requires_grad)
+print(x.detach().requires_grad)
+```
+```
+True
+False
+```
+<hr class='division3'>
+</details>
+
+<br><br><br>
+```python
+import torch
+
 x = torch.randn(1,2,3,4,5)
 print(torch.is_tensor(x))
 print(torch.is_storage(x))
