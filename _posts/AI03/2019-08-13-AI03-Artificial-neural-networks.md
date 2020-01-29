@@ -1847,8 +1847,46 @@ model.fit(train_ds, validation_data=test_ds, epochs=EPOCHS)
 ### ***Regression***
 #### Simple Linear regression
 ```python
+import torch
+import matplotlib.pyplot as plt
 
+def cost():
+    return torch.mean((W*X + b - Y) ** 2)
+
+def W_grad():
+    return torch.sum((W*X + b - Y) * X)
+
+def b_grad():
+    return torch.sum((W*X + b - Y) * 1)
+
+# data
+X = torch.FloatTensor([[1], [2], [3]])
+Y = torch.FloatTensor([[1], [2], [3]])
+
+# parameters
+W = torch.zeros(1); b = torch.zeros(1);
+alpha = 0.1; beta = 0.1;
+fig, axes = plt.subplots(1,2, figsize=(10,5))
+
+# gradient descent
+epochs = 5
+curr_cost = []; step = [];
+for i in range(epochs):
+    W -= alpha * W_grad(); print('W =', W.item())
+    b -= beta * b_grad(); print('b =', b.item())
+    
+    # visualize results
+    step.append(i+1)
+    curr_cost.append(cost().item())
+    axes[1].plot(X, W*X + b)
+axes[0].plot(step, curr_cost, marker='o', ls='-')
+axes[1].plot(X, Y, 'x')
+axes[0].grid(True)
+axes[1].grid(True)
+plt.show()
 ```
+![image](https://user-images.githubusercontent.com/52376448/73321998-6625e880-4287-11ea-92fb-64415ece50b3.png)
+
 <br><br><br>
 #### Multi-variable regression
 ```python
