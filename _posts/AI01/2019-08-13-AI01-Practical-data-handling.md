@@ -162,11 +162,29 @@ for i, url in enumerate(target_url):
 #### from requests
 <span class="frame3">installation</span><br>
 ```dos
-
+pip install requests
+pip install lxml
+pip install cssselect
 ```
 <br><br><br>
 
 <span class="frame3">get(from requests)</span><br>
+```python
+import requests
+import lxml.html
+
+response = requests.get('https://www.naver.com/')
+root = lxml.html.fromstring(response.content)
+
+urls = []
+for i in root.cssselect('.api_list .api_item a.api_link'):
+    url = i.get('href')
+    urls.append(url)
+
+for i in urls:
+    print(i)
+```
+![image](https://user-images.githubusercontent.com/52376448/73355664-f4c45500-42db-11ea-887e-29fde730c5dc.png)
 
 <br><br><br>
 #### from Beautiful Soup
