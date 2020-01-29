@@ -50,7 +50,7 @@ $
 ## **Tensor & Tensor operations**
 
 ### ***Using Tensors***
-
+<a href="https://pytorch.org/docs/stable/tensors.html" target="_blank">torch.tensor api</a><br>
 ```python
 import torch
 
