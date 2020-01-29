@@ -145,6 +145,20 @@ print(z)
 [12 23 34 45 56 67]
 tensor([12, 23, 34, 45, 56, 67], dtype=torch.int32)
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```python
+import torch
+
+x = torch.tensor([1])
+print(x.numpy())
+```
+```
+[1]
+```
+<hr class='division3'>
+</details>
 
 <br><br><br>
 ```python
