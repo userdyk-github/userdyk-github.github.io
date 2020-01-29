@@ -571,10 +571,10 @@ import matplotlib.pyplot as plt
 def cost():
     return tf.reduce_mean(tf.square(W * X + b - Y))
 
-def gradient_W():
+def W_grad():
     return tf.reduce_mean(tf.multiply(tf.multiply(W, X) + b - Y, X))
 
-def gradient_b():
+def b_grad():
     return tf.reduce_mean(tf.multiply(tf.multiply(W, X) + b - Y, X))
 
 # data
@@ -590,8 +590,8 @@ fig, axes = plt.subplots(1,2, figsize=(10,5))
 epochs = 5
 curr_cost = []; step = [];
 for i in range(epochs):
-    curr_grad = W - tf.multiply(alpha, gradient_W()); W.assign(curr_grad); print('W = ', W.numpy())
-    curr_grad = b - tf.multiply(beta, gradient_b()); b.assign(curr_grad); print('b = ', b.numpy())
+    curr_grad = W - tf.multiply(alpha, W_grad()); W.assign(curr_grad); print('W = ', W.numpy())
+    curr_grad = b - tf.multiply(beta, b_grad()); b.assign(curr_grad); print('b = ', b.numpy())
     
     # visualize results
     step.append(i+1)
