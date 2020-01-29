@@ -1984,8 +1984,53 @@ plt.show()
 
 <span class="frame3">with optimizer, vectorization(matrix)</span><br>
 ```python
+import torch
+import torch.optim as optim
+import matplotlib.pyplot as plt
 
+# data
+X = torch.FloatTensor([[73, 80, 75],
+                       [93, 88, 93],
+                       [89, 91, 90],
+                       [96, 98, 100],
+                       [73, 66, 70]])
+Y = torch.FloatTensor([[152], [185], [180], [196], [142]])
+
+
+# parameters
+W = torch.zeros((3, 1), requires_grad=True); b = torch.zeros(1, requires_grad=True);
+lr=1e-5
+fig, axes = plt.subplots(2,2, figsize=(10,5))
+
+# gradient descent
+epochs = 5
+curr_cost = []; step = [];
+optimizer = optim.SGD([W, b], lr)
+for i in range(epochs):
+    hypothesis = X.matmul(W) + b # or .mm or @
+    cost = torch.mean((hypothesis - Y) ** 2)
+
+    optimizer.zero_grad()
+    cost.backward()
+    optimizer.step(); print('W =',W,'b =',b)
+    
+    # visualize results
+    step.append(i+1)
+    curr_cost.append(cost.item())
+    axes[0,1].plot(X[:,0], X.matmul(W.detach()) + b.detach())
+    axes[1,0].plot(X[:,1], X.matmul(W.detach()) + b.detach())
+    axes[1,1].plot(X[:,2], X.matmul(W.detach()) + b.detach())
+axes[0,0].plot(step, curr_cost, marker='o', ls='-')
+axes[0,1].plot(X[:,0], Y, 'x')
+axes[1,0].plot(X[:,1], Y, 'x')
+axes[1,1].plot(X[:,2], Y, 'x')
+axes[0,0].grid(True)
+axes[0,1].grid(True)
+axes[1,0].grid(True)
+axes[1,1].grid(True)
+plt.show()
 ```
+![image](https://user-images.githubusercontent.com/52376448/73334076-fe839380-42ae-11ea-9700-844723e9ece8.png)
 
 <br><br><br>
 #### Logistic regression
