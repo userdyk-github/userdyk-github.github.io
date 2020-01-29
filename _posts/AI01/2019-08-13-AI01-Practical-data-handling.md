@@ -189,6 +189,8 @@ pip install cssselect
 
 <span class="frame3">get(from requests)</span><br>
 <a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank">css_selectors</a><br>
+![image](https://user-images.githubusercontent.com/52376448/73358148-5804b600-42e1-11ea-9425-7153061e3a32.png)
+
 ```python
 import requests
 import lxml.html
