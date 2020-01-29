@@ -250,8 +250,7 @@ root.make_links_absolute(response.url)
 urls = {}
 for i in root.xpath('//ul[@class="api_list"]/li[@class="api_item"]/a[@class="api_link"]'):
     url = i.get('href')
-    name = i.xpath('./img')[0].get('alt')
-    urls[name] = url
+    name = i.xpath('./img')[0].get('alt'); urls[name] = url
 
 for name, url in urls.items():
     print(name, url)
