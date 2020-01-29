@@ -318,17 +318,18 @@ from urllib.request import urlopen
 from urllib.parse import urlparse
 
 # with urlopen
-response = urlopen("http://www.encar.com/")
-print('type : {}'.format(type(response)))
-print("geturl : {}".format(response.geturl()))
-print("status : {}".format(response.status))
-print("headers : {}".format(response.getheaders()))
-print("getcode : {}".format(response.getcode()))
-print("read : {}".format(response.read(1).decode('utf-8')))
+response_1 = urlopen("http://www.encar.com/")
+print('type : {}'.format(type(response_1)))
+print("geturl : {}".format(response_1.geturl()))
+print("status : {}".format(response_1.status))
+print("headers : {}".format(response_1.getheaders()))
+print("getcode : {}".format(response_1.getcode()))
+print("read : {}".format(response_1.read(1).decode('utf-8')))
 
 # with urlparse
-print('total parse : {}'.format(urlparse('http://www.encar.co.kr?test=test')))
-print('partial parse : {}'.format(urlparse('http://www.encar.co.kr?test=test').query))
+response_2 = urlparse('http://www.encar.co.kr?test=test')
+print('total parse : {}'.format(response_2))
+print('partial parse : {}'.format(response_2.query))
 ```
 ![image](https://user-images.githubusercontent.com/52376448/73404256-86f84780-4334-11ea-9812-ad6217c8b2b9.png)
 
