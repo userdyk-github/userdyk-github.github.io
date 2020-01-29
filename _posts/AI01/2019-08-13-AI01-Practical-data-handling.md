@@ -315,11 +315,15 @@ https://www.naver.com/
 <a href="http://www.encar.com/index.do" target="_blank">encar</a><br>
 
 <br><br><br>
-#### EX2, mois
+#### EX2, ipify
+<a href="https://www.ipify.org/" target="_blank">encar</a><br>
+
+<br><br><br>
+#### EX3, mois
 <a href="https://www.mois.go.kr/frt/sub/a08/rss/screen.do" target="_blank">mois</a><br>
 
 <br><br><br>
-#### EX3, daum finance
+#### EX4, daum finance
 <a href="https://finance.daum.net/" target="_blank">daum finance</a><br>
 
 <br><br><br>
