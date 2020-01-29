@@ -314,13 +314,11 @@ https://www.naver.com/
 #### EX1, encar
 <a href="http://www.encar.com/index.do" target="_blank">encar</a><br>
 ```python
-import urllib.request
+from urllib.request import urlopen
 from urllib.parse import urlparse
 
-url = "http://www.encar.com/"
-response = urllib.request.urlopen(url)
-
 # with urlopen
+response = urlopen("http://www.encar.com/")
 print('type : {}'.format(type(response)))
 print("geturl : {}".format(response.geturl()))
 print("status : {}".format(response.status))
@@ -338,7 +336,9 @@ print('partial parse : {}'.format(urlparse('http://www.encar.co.kr?test=test').q
 <br><br><br>
 #### EX2, ipify
 <a href="https://www.ipify.org/" target="_blank">ipify</a><br>
+```python
 
+```
 <br><br><br>
 #### EX3, mois
 <a href="https://www.mois.go.kr/frt/sub/a08/rss/screen.do" target="_blank">mois</a><br>
