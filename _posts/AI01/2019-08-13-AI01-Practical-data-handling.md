@@ -184,6 +184,7 @@ for i in root.cssselect('.api_list .api_item a.api_link'):
 for i in urls:
     print(i)
 ```
+![image](https://user-images.githubusercontent.com/52376448/73355748-2b01d480-42dc-11ea-9e50-c97222a8a7cd.png)
 ![image](https://user-images.githubusercontent.com/52376448/73355664-f4c45500-42db-11ea-887e-29fde730c5dc.png)
 
 <br><br><br>
