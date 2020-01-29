@@ -313,10 +313,31 @@ https://www.naver.com/
 ### ***Example for scraping***
 #### EX1, encar
 <a href="http://www.encar.com/index.do" target="_blank">encar</a><br>
+```python
+import urllib.request
+from urllib.parse import urlparse
+
+url = "http://www.encar.com/"
+response = urllib.request.urlopen(url)
+
+# with urlopen
+print('type : {}'.format(type(response)))
+print("geturl : {}".format(response.geturl()))
+print("status : {}".format(response.status))
+print("headers : {}".format(response.getheaders()))
+print("getcode : {}".format(response.getcode()))
+print("read : {}".format(response.read(1).decode('utf-8')))
+
+# with urlparse
+print('total parse : {}'.format(urlparse('http://www.encar.co.kr?test=test')))
+print('partial parse : {}'.format(urlparse('http://www.encar.co.kr?test=test').query))
+```
+![image](https://user-images.githubusercontent.com/52376448/73404256-86f84780-4334-11ea-9812-ad6217c8b2b9.png)
+
 
 <br><br><br>
 #### EX2, ipify
-<a href="https://www.ipify.org/" target="_blank">encar</a><br>
+<a href="https://www.ipify.org/" target="_blank">ipify</a><br>
 
 <br><br><br>
 #### EX3, mois
