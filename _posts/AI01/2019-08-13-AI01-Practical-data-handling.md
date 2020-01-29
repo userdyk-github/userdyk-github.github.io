@@ -191,6 +191,8 @@ pip install cssselect
 <a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank">css_selectors</a><br>
 ![image](https://user-images.githubusercontent.com/52376448/73358148-5804b600-42e1-11ea-9425-7153061e3a32.png)
 
+<span class="frame3_1">with cssselect</span><br>
+
 ```python
 import requests
 import lxml.html
@@ -234,7 +236,10 @@ b'<!doctype html>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<html lang="ko">\n<head>\n<me
 ```
 <hr class='division3'>
 </details>
+<span class="frame3_1">with session, xpath</span><br>
+```python
 
+```
 <br><br><br>
 #### from Beautiful Soup
 <span class="frame3">installation</span><br>
