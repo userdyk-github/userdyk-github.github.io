@@ -1890,7 +1890,6 @@ plt.show()
 ```python
 import torch
 import torch.optim as optim
-import numpy as np
 import matplotlib.pyplot as plt
 
 # data
