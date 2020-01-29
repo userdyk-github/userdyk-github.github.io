@@ -2034,10 +2034,51 @@ plt.show()
 
 <br><br><br>
 #### Logistic regression
+<span class="frame3">with optimizer, vectorization(matrix)</span><br>
 ```python
+import torch
+import torch.optim as optim
+import matplotlib.pyplot as plt
 
+# data
+X = torch.FloatTensor([[1, 2], [2, 3], [3, 1], [4, 3], [5, 3], [6, 2]])
+Y = torch.FloatTensor([[0], [0], [0], [1], [1], [1]])
+
+# parameters
+W = torch.zeros((2, 1), requires_grad=True); b = torch.zeros(1, requires_grad=True);
+lr=1
+fig, axes = plt.subplots(1,3, figsize=(10,5))
+
+# gradient descent
+epochs = 10
+curr_cost = []; step = [];
+optimizer = optim.SGD([W, b], lr)
+for i in range(epochs):
+    hypothesis = torch.sigmoid(X.matmul(W) + b) # or .mm or @
+    cost = -(Y * torch.log(hypothesis) + 
+             (1 - Y) * torch.log(1 - hypothesis)).mean()
+
+    optimizer.zero_grad()
+    cost.backward()
+    optimizer.step(); print('W =',W, 'b =',b)
+    
+    # visualize results
+    step.append(i+1)
+    curr_cost.append(cost.item())
+    axes[1].plot(X[:,0], torch.sigmoid(X.matmul(W.detach()) + b.detach()))
+    axes[2].plot(X[:,1], torch.sigmoid(X.matmul(W.detach()) + b.detach()))    
+axes[0].plot(step, curr_cost, marker='o', ls='-')
+axes[1].plot(X[:,0], Y, 'x')
+axes[2].plot(X[:,1], Y, 'x')
+axes[0].grid(True)
+axes[1].grid(True)
+axes[2].grid(True)
+plt.show()
 ```
+![image](https://user-images.githubusercontent.com/52376448/73335401-9afb6500-42b2-11ea-8082-ea0c15a08244.png)
 
+```python
+```
 <br><br><br>
 #### Soft-max regression
 ```python
