@@ -561,13 +561,8 @@ print('{} seconds elapsed.'.format(time.time() - t))
 <hr class="division2">
 
 ## **Tensorflow**
-<div class="frame1">
-with tf.GradientTape() as tape:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    hypothesis = tf.matmul(W, X)   # (1, 3) * (3, 5) = (1, 5)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    cost = tf.reduce_mean(tf.square(hypothesis - Y))<br>
-W_grad = tape.gradient(cost, [W])<br>
-optimizer.apply_gradients(grads_and_vars=zip(W_grad,[W])); print(W.numpy())
-</div>
+![image](https://user-images.githubusercontent.com/52376448/73329346-ba899200-42a0-11ea-99e1-ffa45255e0f1.png)
+
 <br><br><br>
 ### ***Regression***
 #### Simple Linear regression
@@ -1850,14 +1845,8 @@ model.fit(train_ds, validation_data=test_ds, epochs=EPOCHS)
 
 
 ## **Pytorch**
-<div class="frame1">
-hypothesis = W*X + b<br>
-cost = torch.mean((hypothesis - Y) ** 2)<br><br>
-    
-optimizer.zero_grad()<br>
-cost.backward()<br>
-optimizer.step(); print('W =', W.item(), 'b =', b.item())
-</div>
+![image](https://user-images.githubusercontent.com/52376448/73329381-dbea7e00-42a0-11ea-805c-dae390e2cffb.png)
+
 <br><br><br>
 
 ### ***Regression***
