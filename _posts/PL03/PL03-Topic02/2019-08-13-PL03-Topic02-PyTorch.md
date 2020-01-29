@@ -92,10 +92,20 @@ import torch
 
 x = torch.tensor([1], dtype=torch.float, requires_grad=True)
 print(x.requires_grad)
-print(x.detach().requires_grad)
+
+print(x.detach().requires_grad)  # not in-place
+print(x.requires_grad)
+
+print(x.detach_().requires_grad) # in-place
+print(x.requires_grad)
 ```
 ```
 True
+
+False
+True
+
+False
 False
 ```
 <hr class='division3'>
@@ -146,7 +156,7 @@ print(z)
 tensor([12, 23, 34, 45, 56, 67], dtype=torch.int32)
 ```
 <details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<summary class='jb-small' style="color:blue">to numpy</summary>
 <hr class='division3'>
 ```python
 import torch
