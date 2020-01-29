@@ -1888,8 +1888,43 @@ plt.show()
 ![image](https://user-images.githubusercontent.com/52376448/73321998-6625e880-4287-11ea-92fb-64415ece50b3.png)
 <span class="frame3">with optimizer</span><br>
 ```python
+import torch
+import torch.optim as optim
+import numpy as np
+import matplotlib.pyplot as plt
 
+# data
+X = torch.FloatTensor([[1], [2], [3]])
+Y = torch.FloatTensor([[1], [2], [3]])
+
+# parameters
+W = torch.zeros(1, requires_grad=True); b = torch.zeros(1, requires_grad=True);
+lr = 0.1;
+fig, axes = plt.subplots(1,2, figsize=(10,5))
+
+# gradient descent
+epochs = 5
+curr_cost = []; step = [];
+optimizer = optim.SGD([W, b], lr)
+for i in range(epochs):
+    hypothesis = W*X + b
+    cost = torch.mean((hypothesis - Y) ** 2)
+    
+    optimizer.zero_grad()
+    cost.backward()
+    optimizer.step(); print('W =', W.item(), 'b =', b.item())
+    
+    # visualize results
+    step.append(i+1)
+    curr_cost.append(cost.item())
+    axes[1].plot(X, W.detach()*X + b.detach())
+axes[0].plot(step, curr_cost, marker='o', ls='-')
+axes[1].plot(X, Y, 'x')
+axes[0].grid(True)
+axes[1].grid(True)
+plt.show()
 ```
+![image](https://user-images.githubusercontent.com/52376448/73327292-a9d51e00-4298-11ea-9af2-009fc03dc06b.png)
 
 <br><br><br>
 #### Multi-variable regression
