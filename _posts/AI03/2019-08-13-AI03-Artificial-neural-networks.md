@@ -859,8 +859,62 @@ plt.show()
 <br><br><br>
 #### Logistic regression
 ```python
+import tensorflow as tf
+import matplotlib.pyplot as plt
 
+# data
+x_train = tf.constant([[1., 2.],
+                       [2., 3.],
+                       [3., 1.],
+                       [4., 3.],
+                       [5., 3.],
+                       [6., 2.]])
+y_train = tf.constant([[0.],
+                       [0.],
+                       [0.],
+                       [1.],
+                       [1.],
+                       [1.]])
+x_test = tf.constant([[5.,2.]])
+y_test = tf.constant([[1.]])
+dataset = tf.data.Dataset.from_tensor_slices((x_train, y_train)).batch(len(x_train))#.repeat()
+
+# parameters
+W = tf.Variable(tf.zeros([2,1])); b = tf.Variable(tf.zeros([1]));
+learning_rate = 0.001
+fig, axes = plt.subplots(1,3,figsize=(15,5))
+
+# gradient descent
+epochs = 1000
+curr_cost = []; step = [];
+optimizer = tf.keras.optimizers.SGD(learning_rate)
+for i in range(epochs):
+    for features, labels  in iter(dataset):
+        with tf.GradientTape() as tape:
+            hypothesis = tf.divide(1., 1. + tf.exp(tf.matmul(features, W) + b))
+            cost = -tf.reduce_mean(labels * tf.math.log(hypothesis) + (1 - labels) * tf.math.log(1 - hypothesis))
+        grads = tape.gradient(cost, [W,b])
+        optimizer.apply_gradients(grads_and_vars=zip(grads,[W,b])); print(W.numpy(), b.numpy())
+
+        # visualize results
+        curr_cost.append(cost)
+        step.append(i+1)
+        axes[1].plot(features[:,0], tf.divide(1., 1. + tf.exp(tf.matmul(features,W) + b)))
+        axes[2].plot(features[:,1], tf.divide(1., 1. + tf.exp(tf.matmul(features,W) + b)))
+axes[0].plot(step, curr_cost, marker='o', ls='-')
+axes[1].plot(x_train[:,0], y_train, 'x')
+axes[2].plot(x_train[:,1], y_train, 'x')
+axes[0].grid(True)
+axes[1].grid(True)
+axes[2].grid(True)
+plt.show()
+
+hypothesis = tf.divide(1., 1. + tf.exp(tf.matmul(x_test, W) + b))
+predicted = tf.cast(hypothesis > 0.5, dtype=tf.float32)
+accuracy = tf.reduce_mean(tf.cast(tf.equal(predicted, y_test), dtype=tf.int32))
+print(predicted)
 ```
+![image](https://user-images.githubusercontent.com/52376448/73317806-b8acd800-427a-11ea-8356-322562b04944.png)
 
 <br><br><br>
 #### Soft-max regression
