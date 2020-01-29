@@ -88,14 +88,21 @@ img_file, img_header = req.urlretrieve(img_url,img_save_path); print(img_header)
 html_file, html_header = req.urlretrieve(html_url, html_save_path); print(html_header)
 ```
 <details markdown="1">
-<summary class='jb-small' style="color:blue">handling error</summary>
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-<hr class='division3'>
-</details>
 ![image](https://user-images.githubusercontent.com/52376448/73355888-73b98d80-42dc-11ea-854e-6298cbb3278d.png)
 ![image](https://user-images.githubusercontent.com/52376448/73355985-a499c280-42dc-11ea-8e96-77cda40d9bf1.png)
 ![image](https://user-images.githubusercontent.com/52376448/73356313-694bc380-42dd-11ea-939a-f4843ac5e67c.png)
 ![image](https://user-images.githubusercontent.com/52376448/73356056-ce52e980-42dc-11ea-8650-727d767c4553.png)
+<hr class='division3'>
+</details>
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">handling error</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
 
 <br><br><br>
 
@@ -119,8 +126,13 @@ contents = response.read()
 with open(save_path, 'wb') as c:
     c.write(contents)
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
 ![image](https://user-images.githubusercontent.com/52376448/73355888-73b98d80-42dc-11ea-854e-6298cbb3278d.png)
 ![image](https://user-images.githubusercontent.com/52376448/73355985-a499c280-42dc-11ea-8e96-77cda40d9bf1.png)
+<hr class='division3'>
+</details>
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">handling error</summary>
@@ -191,8 +203,14 @@ for i in root.cssselect('.api_list .api_item a.api_link'):
 for i in urls:
     print(i)
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
 ![image](https://user-images.githubusercontent.com/52376448/73355748-2b01d480-42dc-11ea-9e50-c97222a8a7cd.png)
 ![image](https://user-images.githubusercontent.com/52376448/73355664-f4c45500-42db-11ea-887e-29fde730c5dc.png)
+<hr class='division3'>
+</details>
+
 
 <br><br><br>
 #### from Beautiful Soup
