@@ -561,7 +561,9 @@ print('{} seconds elapsed.'.format(time.time() - t))
 <hr class="division2">
 
 ## **Tensorflow**
+<div class="frame1">
 
+</div>
 ### ***Regression***
 #### Simple Linear regression
 ```python
@@ -1843,6 +1845,9 @@ model.fit(train_ds, validation_data=test_ds, epochs=EPOCHS)
 
 
 ## **Pytorch**
+<div class="frame1">
+
+</div>
 
 ### ***Regression***
 #### Simple Linear regression
