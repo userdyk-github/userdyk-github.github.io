@@ -1934,8 +1934,54 @@ plt.show()
 #### Multi-variable regression
 <span class="frame3">with optimizer</span><br>
 ```python
+import torch
+import torch.optim as optim
+import matplotlib.pyplot as plt
 
+# data
+X1 = torch.FloatTensor([[73], [93], [89], [96], [73]])
+X2 = torch.FloatTensor([[80], [88], [91], [98], [66]])
+X3 = torch.FloatTensor([[75], [93], [90], [100], [70]])
+Y = torch.FloatTensor([[152], [185], [180], [196], [142]])
+
+# parameters
+W1 = torch.zeros(1, requires_grad=True)
+W2 = torch.zeros(1, requires_grad=True)
+W3 = torch.zeros(1, requires_grad=True)
+b = torch.zeros(1, requires_grad=True)
+lr=1e-5
+fig, axes = plt.subplots(2,2, figsize=(10,5))
+
+# gradient descent
+epochs = 5
+curr_cost = []; step = [];
+optimizer = optim.SGD([W1, W2, W3, b], lr)
+for i in range(epochs):
+    hypothesis = X1*W1 + X2*W2 + X3*W3 + b
+    cost = torch.mean((hypothesis - Y) ** 2)
+
+    optimizer.zero_grad()
+    cost.backward()
+    optimizer.step(); print('W1 =',W1.item(),'W2 =',W2.item(),'W3 =',W3.item(),'b =',b.item())
+    
+    # visualize results
+    step.append(i+1)
+    curr_cost.append(cost.item())
+    axes[0,1].plot(X1, W1.detach()*X1 + W2.detach()*X2 + W3.detach()*X3 + b.detach())
+    axes[1,0].plot(X2, W1.detach()*X1 + W2.detach()*X2 + W3.detach()*X3 + b.detach())
+    axes[1,1].plot(X3, W1.detach()*X1 + W2.detach()*X2 + W3.detach()*X3 + b.detach())
+axes[0,0].plot(step, curr_cost, marker='o', ls='-')
+axes[0,1].plot(X1, Y, 'x')
+axes[1,0].plot(X2, Y, 'x')
+axes[1,1].plot(X3, Y, 'x')
+axes[0,0].grid(True)
+axes[0,1].grid(True)
+axes[1,0].grid(True)
+axes[1,1].grid(True)
+plt.show()
 ```
+![image](https://user-images.githubusercontent.com/52376448/73331225-7dc09980-42a6-11ea-8df3-97c32f25161b.png)
+
 <span class="frame3">with optimizer, vectorization(matrix)</span><br>
 ```python
 
