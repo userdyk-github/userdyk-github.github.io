@@ -1886,6 +1886,7 @@ axes[1].grid(True)
 plt.show()
 ```
 ![image](https://user-images.githubusercontent.com/52376448/73321998-6625e880-4287-11ea-92fb-64415ece50b3.png)
+<span class="frame3">with optimizer</span><br>
 ```python
 
 ```
