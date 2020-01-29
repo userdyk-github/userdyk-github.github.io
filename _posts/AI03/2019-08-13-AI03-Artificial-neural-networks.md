@@ -562,7 +562,11 @@ print('{} seconds elapsed.'.format(time.time() - t))
 
 ## **Tensorflow**
 <div class="frame1">
-
+with tf.GradientTape() as tape:
+    hypothesis = tf.matmul(W, X)   # (1, 3) * (3, 5) = (1, 5)
+    cost = tf.reduce_mean(tf.square(hypothesis - Y))
+W_grad = tape.gradient(cost, [W])
+optimizer.apply_gradients(grads_and_vars=zip(W_grad,[W])); print(W.numpy())
 </div>
 <br><br><br>
 ### ***Regression***
