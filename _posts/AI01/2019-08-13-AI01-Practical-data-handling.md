@@ -343,7 +343,7 @@ from urllib.parse import urlparse
 
 # request
 API = "https://api.ipify.org"            # some request url
-values = {'format': 'json'}
+values = {'format': 'json'}              # It is also possible to use text, jsonp instead of json 
 params = urllib.parse.urlencode(values)  # get parameter by encoding
 url = API + "?" + params                 # request url
 
