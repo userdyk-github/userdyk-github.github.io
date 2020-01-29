@@ -238,8 +238,32 @@ b'<!doctype html>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<html lang="ko">\n<head>\n<me
 </details>
 <span class="frame3_1">with session, xpath</span><br>
 ```python
+import requests
+import lxml.html
 
+session = requests.Session()
+response = session.get('https://www.naver.com/')
+root = lxml.html.fromstring(response.content)
+root.make_links_absolute(response.url)
+
+urls = {}
+for i in root.xpath('//ul[@class="api_list"]/li[@class="api_item"]/a[@class="api_link"]'):
+    url = i.get('href')
+    name = i.xpath('./img')[0].get('alt')
+    urls[name] = url
+
+for name, url in urls.items():
+    print(name, url)
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![image](https://user-images.githubusercontent.com/52376448/73355748-2b01d480-42dc-11ea-9e50-c97222a8a7cd.png)
+![image](https://user-images.githubusercontent.com/52376448/73367823-678cfa80-42f3-11ea-99fd-bcd6b210c52a.png)
+<hr class='division3'>
+</details>
+
+
 <br><br><br>
 #### from Beautiful Soup
 <span class="frame3">installation</span><br>
