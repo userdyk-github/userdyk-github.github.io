@@ -352,6 +352,13 @@ data = urllib.request.urlopen(url).read() # read response data
 text = data.decode("utf-8")               # decode read data
 print('response : {}'.format(text))
 ```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+
 ![image](https://user-images.githubusercontent.com/52376448/73407480-97acbb80-433c-11ea-8d09-2530154613e7.png)
 
 <br><br><br>
