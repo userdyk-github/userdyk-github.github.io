@@ -338,8 +338,22 @@ print('partial parse : {}'.format(response_2.query))
 #### EX2, ipify
 <a href="https://www.ipify.org/" target="_blank">ipify</a><br>
 ```python
+import urllib.request
+from urllib.parse import urlparse
 
+# request
+API = "https://api.ipify.org"            # some request url
+values = {'format': 'json'}
+params = urllib.parse.urlencode(values)  # get parameter by encoding
+url = API + "?" + params                 # request url
+
+# response
+data = urllib.request.urlopen(url).read() # read response data
+text = data.decode("utf-8")               # decode read data
+print('response : {}'.format(text))
 ```
+![image](https://user-images.githubusercontent.com/52376448/73407480-97acbb80-433c-11ea-8d09-2530154613e7.png)
+
 <br><br><br>
 #### EX3, mois
 <a href="https://www.mois.go.kr/frt/sub/a08/rss/screen.do" target="_blank">mois</a><br>
