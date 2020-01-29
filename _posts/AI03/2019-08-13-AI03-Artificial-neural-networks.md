@@ -1851,7 +1851,12 @@ model.fit(train_ds, validation_data=test_ds, epochs=EPOCHS)
 
 ## **Pytorch**
 <div class="frame1">
-
+hypothesis = W*X + b<br>
+cost = torch.mean((hypothesis - Y) ** 2)<br><br>
+    
+optimizer.zero_grad()<br>
+cost.backward()<br>
+optimizer.step(); print('W =', W.item(), 'b =', b.item())
 </div>
 <br><br><br>
 
