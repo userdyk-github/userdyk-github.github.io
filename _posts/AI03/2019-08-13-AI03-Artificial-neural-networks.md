@@ -564,6 +564,7 @@ print('{} seconds elapsed.'.format(time.time() - t))
 <div class="frame1">
 
 </div>
+<br><br><br>
 ### ***Regression***
 #### Simple Linear regression
 ```python
@@ -1848,6 +1849,7 @@ model.fit(train_ds, validation_data=test_ds, epochs=EPOCHS)
 <div class="frame1">
 
 </div>
+<br><br><br>
 
 ### ***Regression***
 #### Simple Linear regression
