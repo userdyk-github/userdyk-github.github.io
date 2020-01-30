@@ -428,7 +428,7 @@ headers = {'User-Agent' : ua.ie,
 url = "https://finance.daum.net/api/search/ranks?limit=10"
 
 res = req.urlopen(req.Request(url, headers=headers)).read().decode('utf-8')
-rank_json = json.loads(res)['data']
+rank_json = json.loads(res)['data']   # str -> json
 
 for elm in rank_json:
     print('rank : {}, trade price : {}, name : {}'.format(elm['rank'], elm['tradePrice'], elm['name']), )
