@@ -356,6 +356,14 @@ print('response : {}'.format(text))
 <details markdown="1">
 <summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
 <hr class='division3'>
+```python
+values = {'format': 'json'}              # It is also possible to use text, jsonp instead of json 
+params = urllib.parse.urlencode(values)  # get parameter by encoding
+print(params)
+```
+```
+format=json
+```
 <hr class='division3'>
 </details>
 
