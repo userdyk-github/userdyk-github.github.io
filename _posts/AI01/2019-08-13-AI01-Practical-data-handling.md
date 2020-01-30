@@ -433,6 +433,29 @@ rank_json = json.loads(res)['data']
 for elm in rank_json:
     print('rank : {}, trade price : {}, name : {}'.format(elm['rank'], elm['tradePrice'], elm['name']), )
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+```python
+from fake_useragent import UserAgent
+
+ua = UserAgent()
+print(ua.ie)
+print(ua.msie)
+print(ua.chrome)
+print(ua.safari)
+print(ua.random)
+```
+```
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; InfoPath.3; .NET4.0C; .NET4.0E; .NET CLR 3.5.30729; .NET CLR 3.0.30729; MS-RTC LM 8)
+Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; InfoPath.3; .NET4.0C; .NET4.0E; .NET CLR 3.5.30729; .NET CLR 3.0.30729; MS-RTC LM 8)
+Mozilla/5.0 (X11; CrOS i686 3912.101.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.116 Safari/537.36
+Mozilla/5.0 (Windows; U; Windows NT 6.1; zh-HK) AppleWebKit/533.18.1 (KHTML, like Gecko) Version/5.0.2 Safari/533.18.5
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1664.3 Safari/537.36
+```
+<hr class='division3'>
+</details>
+
 ![image](https://user-images.githubusercontent.com/52376448/73422799-6f898080-436d-11ea-8602-380b23cf5fe5.png)
 
 <br><br><br>
