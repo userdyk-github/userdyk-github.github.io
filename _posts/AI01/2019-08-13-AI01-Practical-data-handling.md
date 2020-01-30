@@ -381,6 +381,28 @@ for i in params:
     contents = res_data.decode("utf-8")
     print(contents)
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+```python
+for i in params:
+    print(i)
+    param = urllib.parse.urlencode(i)
+    print(param)
+```
+```
+{'ctxCd': 1001}
+ctxCd=1001
+{'ctxCd': 1012}
+ctxCd=1012
+{'ctxCd': 1013}
+ctxCd=1013
+{'ctxCd': 1014}
+ctxCd=1014
+```
+<hr class='division3'>
+</details>
+
 ![image](https://user-images.githubusercontent.com/52376448/73420146-dfdfd400-4364-11ea-8127-342872cb0387.png)
 
 <br><br><br>
