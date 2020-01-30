@@ -22,6 +22,7 @@ List of posts to read before reading this article
 <hr class="division1">
 
 ## **LeNet**
+<a href="" target="_blank">URL</a><br>
 ### ***Concept***
 ```python
 ```
@@ -38,6 +39,8 @@ List of posts to read before reading this article
 
 
 ## **AlexNet**
+<a href="" target="_blank">URL</a><br>
+
 ### ***Concept***
 ```python
 ```
@@ -54,6 +57,8 @@ List of posts to read before reading this article
 
 
 ## **ZFNet**
+<a href="" target="_blank">URL</a><br>
+
 ### ***Concept***
 ```python
 ```
@@ -71,6 +76,10 @@ List of posts to read before reading this article
 
 
 ## **Inception**
+<a href="" target="_blank">URL</a><br>
+<a href="" target="_blank">URL</a><br>
+<a href="" target="_blank">URL</a><br>
+
 ### ***Concept***
 ```python
 ```
@@ -102,6 +111,8 @@ List of posts to read before reading this article
 
 
 ## **VGGNet**
+<a href="" target="_blank">URL</a><br>
+
 ### ***Concept***
 ```python
 ```
@@ -118,6 +129,8 @@ List of posts to read before reading this article
 
 
 ## **ResNet**
+<a href="" target="_blank">URL</a><br>
+
 ### ***Concept***
 ```python
 ```
@@ -133,6 +146,8 @@ List of posts to read before reading this article
 <hr class="division2">
 
 ## **MobileNet**
+<a href="" target="_blank">URL</a><br>
+
 ### ***Concept***
 ```python
 ```
@@ -150,6 +165,8 @@ List of posts to read before reading this article
 
 
 ## **Squeezenet**
+<a href="" target="_blank">URL</a><br>
+
 ### ***Concept***
 ```python
 ```
@@ -167,6 +184,8 @@ List of posts to read before reading this article
 
 
 ## **DenseNet**
+<a href="" target="_blank">URL</a><br>
+
 ### ***Concept***
 ```python
 ```
