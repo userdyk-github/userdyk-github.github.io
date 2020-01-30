@@ -67,7 +67,7 @@ with open('output.txt','w') as f:      # save text
 #### from urllib
 <span class="frame3">installation</span><br>
 ```dos
-pip install urllib
+pip install urllib3
 pip install fake-useragent
 ```
 <br><br><br>
