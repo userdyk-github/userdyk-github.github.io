@@ -364,6 +364,24 @@ print('response : {}'.format(text))
 <br><br><br>
 #### EX3, mois
 <a href="https://www.mois.go.kr/frt/sub/a08/rss/screen.do" target="_blank">mois</a><br>
+```python
+import urllib.request
+import urllib.parse
+
+API = "http://www.mois.go.kr/gpms/view/jsp/rss/rss.jsp"
+
+params = []
+for num in [1001, 1012, 1013, 1014]:
+    params.append(dict(ctxCd=num))
+
+for i in params:
+    param = urllib.parse.urlencode(i)
+    url = API + "?" + param
+    res_data = urllib.request.urlopen(url).read()
+    contents = res_data.decode("utf-8")
+    print(contents)
+```
+![image](https://user-images.githubusercontent.com/52376448/73420146-dfdfd400-4364-11ea-8127-342872cb0387.png)
 
 <br><br><br>
 #### EX4, daum finance
