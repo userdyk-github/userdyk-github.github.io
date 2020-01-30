@@ -65,6 +65,7 @@ with open('output.txt','w') as f:      # save text
 <br><br><br>
 ### ***Scraping***
 #### from urllib
+<a href="https://docs.python.org/3/library/urllib.html" target="_blank">API</a><br>
 <span class="frame3">installation</span><br>
 ```dos
 pip install urllib3
@@ -180,6 +181,8 @@ for i, url in enumerate(target_url):
 </details>
 <br><br><br>
 #### from requests
+<a href="https://requests.readthedocs.io/en/master/api/" target="_blank">API</a><br>
+
 <span class="frame3">installation</span><br>
 ```dos
 pip install requests
@@ -291,6 +294,8 @@ https://www.naver.com/
 
 <br><br><br>
 #### from Beautiful Soup
+<a href="" target="_blank">API</a><br>
+
 <span class="frame3">installation</span><br>
 ```dos
 
@@ -300,6 +305,8 @@ https://www.naver.com/
 <br><br><br>
 
 #### from Selenium
+<a href="" target="_blank">API</a><br>
+
 <span class="frame3">installation</span><br>
 ```dos
 
