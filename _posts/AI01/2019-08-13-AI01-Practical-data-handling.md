@@ -417,6 +417,23 @@ ctxCd=1014
 <br><br><br>
 #### EX4, daum finance
 <a href="https://finance.daum.net/" target="_blank">daum finance</a><br>
+```python
+import json
+import urllib.request as req
+from fake_useragent import UserAgent
+
+ua = UserAgent()
+headers = {'User-Agent' : ua.ie,
+           'referer' : 'https://finance.daum.net/'}
+url = "https://finance.daum.net/api/search/ranks?limit=10"
+
+res = req.urlopen(req.Request(url, headers=headers)).read().decode('utf-8')
+rank_json = json.loads(res)['data']
+
+for elm in rank_json:
+    print('rank : {}, trade price : {}, name : {}'.format(elm['rank'], elm['tradePrice'], elm['name']), )
+```
+![image](https://user-images.githubusercontent.com/52376448/73422799-6f898080-436d-11ea-8602-380b23cf5fe5.png)
 
 <br><br><br>
 
