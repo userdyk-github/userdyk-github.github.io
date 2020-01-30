@@ -453,6 +453,13 @@ Mozilla/5.0 (X11; CrOS i686 3912.101.0) AppleWebKit/537.36 (KHTML, like Gecko) C
 Mozilla/5.0 (Windows; U; Windows NT 6.1; zh-HK) AppleWebKit/533.18.1 (KHTML, like Gecko) Version/5.0.2 Safari/533.18.5
 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1664.3 Safari/537.36
 ```
+<br><br><br>
+```python
+res = req.urlopen(req.Request(url, headers=headers)).read().decode('utf-8')
+```
+```
+{"data":[{"rank":1,"rankChange":0,"symbolCode":"A005930","code":"KR7005930003","name":"삼성전자","tradePrice":57100,"change":"FALL","changePrice":2000,"changeRate":0.0338409475,"chartSlideImage":null,"isNew":false},{"rank":2,"rankChange":2,"symbolCode":"A308170","code":"KR7308170000","name":"센트랄모텍","tradePrice":42450,"change":"RISE","changePrice":5750,"changeRate":0.1566757493,"chartSlideImage":null,"isNew":false},{"rank":3,"rankChange":5,"symbolCode":"A068270","code":"KR7068270008","name":"셀트리온","tradePrice":166500,"change":"FALL","changePrice":4500,"changeRate":0.0263157895,"chartSlideImage":null,"isNew":false},{"rank":4,"rankChange":-1,"symbolCode":"A226440","code":"KR7226440006","name":"한송네오텍","tradePrice":1930,"change":"RISE","changePrice":270,"changeRate":0.1626506024,"chartSlideImage":null,"isNew":false},{"rank":5,"rankChange":0,"symbolCode":"A028300","code":"KR7028300002","name":"에이치엘비","tradePrice":96300,"change":"FALL","changePrice":3500,"changeRate":0.0350701403,"chartSlideImage":null,"isNew":false},{"rank":6,"rankChange":-4,"symbolCode":"A215600","code":"KR7215600008","name":"신라젠","tradePrice":13750,"change":"FALL","changePrice":850,"changeRate":0.0582191781,"chartSlideImage":null,"isNew":false},{"rank":7,"rankChange":0,"symbolCode":"A011000","code":"KR7011000007","name":"진원생명과학","tradePrice":5590,"change":"RISE","changePrice":240,"changeRate":0.0448598131,"chartSlideImage":null,"isNew":true},{"rank":8,"rankChange":-1,"symbolCode":"A091990","code":"KR7091990002","name":"셀트리온헬스케어","tradePrice":55600,"change":"FALL","changePrice":500,"changeRate":0.008912656,"chartSlideImage":null,"isNew":false},{"rank":9,"rankChange":0,"symbolCode":"A045060","code":"KR7045060001","name":"오공","tradePrice":7920,"change":"RISE","changePrice":230,"changeRate":0.0299089727,"chartSlideImage":null,"isNew":false},{"rank":10,"rankChange":-4,"symbolCode":"A036540","code":"KR7036540003","name":"SFA반도체","tradePrice":6190,"change":"RISE","changePrice":340,"changeRate":0.0581196581,"chartSlideImage":null,"isNew":false}]}
+```
 <hr class='division3'>
 </details>
 
