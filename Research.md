@@ -25,13 +25,13 @@ title: RESEARCH
 
 ## _Projects_
 
-- [Developing a non-visual communication interface for exhibitions of visual arts for the visually impaired and studying the parties' perspectives on expanding the rights of enjoyment of culture](https://userdyk-github.github.io/research/PROJECT01.html)<br>
+- [Developing a non-visual communication interface for exhibitions of visual arts for the visually impaired and studying the parties' perspectives on expanding the rights of enjoyment of culture](https://userdyk-github.github.io/research/PROJECT01.html)
 - [Energy prediction of electrons on graphene by deep neural net](https://userdyk-github.github.io/research/PROJECT02.html)
-- [Defect detection of clothing fabrics]
-- [Analyzing KakaoTalk conversations]
-- [New York Taxi Demand Forecast]
-- [Analyzing shopping mall order data]
-- [Analyzing advertisement data]
+- [Defect detection of clothing fabrics](https://userdyk-github.github.io/research/PROJECT03.html)
+- [Analyzing KakaoTalk conversations](https://userdyk-github.github.io/research/PROJECT04.html)
+- [New York Taxi Demand Forecast](https://userdyk-github.github.io/research/PROJECT05.html)
+- [Analyzing shopping mall order data](https://userdyk-github.github.io/research/PROJECT06.html)
+- [Analyzing advertisement data](https://userdyk-github.github.io/research/PROJECT07.html)
 
 <br><br><br>
 
