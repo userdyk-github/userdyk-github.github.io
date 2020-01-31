@@ -42,7 +42,7 @@ List of posts to read before reading this article
 
 ## **AlexNet**
 <a href="" target="_blank">URL</a><br>
-
+[ImageNet Classification with Deep Convolutional Neural Networks][2]
 ### ***Concept***
 ```python
 ```
@@ -216,7 +216,8 @@ Reference
 
 ---
 
-[1]:{{ site.url }}/download/AI01/Lecun98.pdf
+[1]:{{ site.url }}/download/AAI01/lenet5.pdf
+[1]:{{ site.url }}/download/AAI01/alexnet.pdf
 
 
 <details markdown="1">
