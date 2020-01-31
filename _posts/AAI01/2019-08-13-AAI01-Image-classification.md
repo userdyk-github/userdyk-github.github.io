@@ -23,6 +23,8 @@ List of posts to read before reading this article
 
 ## **LeNet**
 <a href="https://ieeexplore.ieee.org/document/726791" target="_blank">URL</a><br>
+[pdf download][1]
+
 ### ***Concept***
 ```python
 ```
@@ -213,6 +215,9 @@ Reference
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
+
+[1]:{{ site.url }}/download/AI01/Lecun98.pdf
+
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
