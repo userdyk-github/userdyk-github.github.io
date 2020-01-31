@@ -60,7 +60,8 @@ List of posts to read before reading this article
 
 
 ## **ZFNet**
-<a href="" target="_blank">URL</a><br>
+<a href="https://arxiv.org/abs/1311.2901" target="_blank">URL</a><br>
+[Visualizing and Understanding Convolutional Networks][3]
 
 ### ***Concept***
 ```python
@@ -219,6 +220,7 @@ Reference
 
 [1]:{{ site.url }}/download/AAI01/lenet5.pdf
 [2]:{{ site.url }}/download/AAI01/alexnet.pdf
+[3]:{{ site.url }}/download/AAI01/zfnet.pdf
 
 
 <details markdown="1">
