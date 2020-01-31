@@ -134,10 +134,12 @@ title: MATERIALS
 
 # REFERENCES 02 - private web site
 
-- <a href="https://bskyvision.com/" target="_blank">bskyvision</a>
-- <a href="https://dojang.io/course/index.php?categoryid=1" target="_blank">dojang</a>
-- <a href="https://www.fun-coding.org/daveblog.html" target="_blank">fun coding</a>
-- <a href="https://freshrimpsushi.tistory.com/" target="_blank">freshrimpsushi</a>
+<a href="https://bskyvision.com/" target="_blank">bskyvision</a>, 
+<a href="https://dojang.io/course/index.php?categoryid=1" target="_blank">dojang</a>, 
+<a href="https://www.fun-coding.org/daveblog.html" target="_blank">fun coding</a>, 
+<a href="https://freshrimpsushi.tistory.com/" target="_blank">freshrimpsushi</a>, 
+<a href="https://eungbean.github.io/index.html" target="_blank">eungbean</a>, 
+
 
 
 <br>
@@ -148,11 +150,11 @@ title: MATERIALS
 
 # REFERENCES 03 - youtube
 
-- <a href="https://www.youtube.com/user/egoing2/playlists" target="_blank">생활코딩</a>
-- <a href="https://www.youtube.com/channel/UChflhu32f5EUHlY7_SetNWw/playlists" target="_blank">동빈나</a>
-- <a href="https://www.youtube.com/channel/UCei9IGoBLCRShZaBb_RN_IA/playlists" target="_blank">시니어코딩IndiFlex</a>
-- <a href="https://www.youtube.com/channel/UCLR3sD0KB_dWpvcsrLP0aUg/playlists" target="_blank">todaycode오늘코드</a>
-- <a href="https://www.youtube.com/channel/UCVrs4KiLQz_gvVWWK1pKR1g/playlists" target="_blank">HSM - edu 통계</a>
+<a href="https://www.youtube.com/user/egoing2/playlists" target="_blank">생활코딩</a>, 
+<a href="https://www.youtube.com/channel/UChflhu32f5EUHlY7_SetNWw/playlists" target="_blank">동빈나</a>, 
+<a href="https://www.youtube.com/channel/UCei9IGoBLCRShZaBb_RN_IA/playlists" target="_blank">시니어코딩IndiFlex</a>, 
+<a href="https://www.youtube.com/channel/UCLR3sD0KB_dWpvcsrLP0aUg/playlists" target="_blank">todaycode오늘코드</a>, 
+<a href="https://www.youtube.com/channel/UCVrs4KiLQz_gvVWWK1pKR1g/playlists" target="_blank">HSM - edu 통계</a>, 
 
 
 
