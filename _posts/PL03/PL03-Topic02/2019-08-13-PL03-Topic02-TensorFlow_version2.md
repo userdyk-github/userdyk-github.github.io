@@ -5,7 +5,7 @@ categories: [PL03-Topic02]
 comments : true
 tags : [PL03-Topic02]
 ---
-[Back to the previous page](https://userdyk-github.github.io/pl03/PL03-Libraries.html) <br>
+[Back to the previous page](https://userdyk-github.github.io/pl03/PL03-Libraries.html) ｜<a href="https://github.com/userdyk-github/userdyk-github.github.io/blob/master/_posts/PL03/PL03-Topic02/2019-08-13-PL03-Topic02-TensorFlow_version2.md" target="_blank">page management</a><br>
 List of posts to read before reading this article
 - <a href='https://userdyk-github.github.io/'>post1</a>
 - <a href='https://userdyk-github.github.io/'>post2</a>
@@ -48,7 +48,7 @@ print(tf.__version__)
 ## **Tensor operation**
 
 ### ***Create Tensor***
-
+<a href="https://www.tensorflow.org/api_docs/python/tf/dtypes/DType" target="_blank">tf.dtype</a><br>
 ```
 >>> import numpy as np
 >>> import tensorflow as tf
@@ -468,8 +468,8 @@ List of posts followed by this article
 
 Reference
 - Santanu Pattanayak, Pro Deep Learning with TensorFlow, 2017
+- <a href='https://www.tensorflow.org/api_docs/python/tf'>tensorflow API</a>
 - <a href='https://tensorflowkorea.gitbooks.io/tensorflow-kr/' target="_blank">tensorflow-kr</a>
-- <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
 
