@@ -259,6 +259,8 @@ $ systemctl –-user
 <span class="frame3">all user name currently accessed on linux</span>
 ```bash
 $ who
+$ users
+$ last
 ```
 <br><br><br>
 
