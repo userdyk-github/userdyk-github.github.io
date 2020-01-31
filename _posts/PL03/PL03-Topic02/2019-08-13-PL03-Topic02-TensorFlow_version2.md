@@ -48,7 +48,7 @@ print(tf.__version__)
 ## **Tensor operation**
 
 ### ***Create Tensor***
-<a href="https://www.tensorflow.org/api_docs/python/tf/dtypes/DType" target="_blank">tf.dtype</a><br>
+<a href="https://www.tensorflow.org/api_docs/python/tf/dtypes/DType" target="_blank">tf.dtypes</a><br>
 ```
 >>> import numpy as np
 >>> import tensorflow as tf
