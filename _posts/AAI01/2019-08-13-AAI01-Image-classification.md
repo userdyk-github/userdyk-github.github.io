@@ -218,7 +218,7 @@ Reference
 ---
 
 [1]:{{ site.url }}/download/AAI01/lenet5.pdf
-[1]:{{ site.url }}/download/AAI01/alexnet.pdf
+[2]:{{ site.url }}/download/AAI01/alexnet.pdf
 
 
 <details markdown="1">
