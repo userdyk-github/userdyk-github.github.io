@@ -23,7 +23,7 @@ List of posts to read before reading this article
 
 ## **LeNet**
 <a href="https://ieeexplore.ieee.org/document/726791" target="_blank">URL</a><br>
-[pdf download][1]
+[Gradient-based learning applied to document recognition][1]
 
 ### ***Concept***
 ```python
