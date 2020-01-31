@@ -22,7 +22,7 @@ List of posts to read before reading this article
 <hr class="division1">
 
 ## **LeNet**
-<a href="https://ieeexplore.ieee.org/document/726791" target="_blank">URL</a><br>
+<a href="https://ieeexplore.ieee.org/document/726791" target="_blank">LeNet URL</a><br>
 [Gradient-based learning applied to document recognition][1]
 
 ### ***Concept***
@@ -41,7 +41,7 @@ List of posts to read before reading this article
 
 
 ## **AlexNet**
-<a href="http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networ" target="_blank">URL</a><br>
+<a href="http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networ" target="_blank">AlexNet URL</a><br>
 [ImageNet Classification with Deep Convolutional Neural Networks][2]
 
 ### ***Concept***
@@ -60,7 +60,7 @@ List of posts to read before reading this article
 
 
 ## **ZFNet**
-<a href="https://arxiv.org/abs/1311.2901" target="_blank">URL</a><br>
+<a href="https://arxiv.org/abs/1311.2901" target="_blank">ZFNet URL</a><br>
 [Visualizing and Understanding Convolutional Networks][3]
 
 ### ***Concept***
@@ -80,9 +80,9 @@ List of posts to read before reading this article
 
 
 ## **Inception**
-<a href="" target="_blank">URL</a><br>
-<a href="" target="_blank">URL</a><br>
-<a href="" target="_blank">URL</a><br>
+<a href="" target="_blank">Inception-v1 URL</a><br>
+<a href="" target="_blank">Inception-v2 URL</a><br>
+<a href="" target="_blank">Inception-v3 URL</a><br>
 
 ### ***Concept***
 ```python
@@ -115,7 +115,7 @@ List of posts to read before reading this article
 
 
 ## **VGGNet**
-<a href="" target="_blank">URL</a><br>
+<a href="" target="_blank">VGGNet URL</a><br>
 
 ### ***Concept***
 ```python
@@ -133,7 +133,7 @@ List of posts to read before reading this article
 
 
 ## **ResNet**
-<a href="" target="_blank">URL</a><br>
+<a href="" target="_blank">ResNet URL</a><br>
 
 ### ***Concept***
 ```python
@@ -150,7 +150,7 @@ List of posts to read before reading this article
 <hr class="division2">
 
 ## **MobileNet**
-<a href="" target="_blank">URL</a><br>
+<a href="" target="_blank">MobileNet URL</a><br>
 
 ### ***Concept***
 ```python
@@ -169,7 +169,7 @@ List of posts to read before reading this article
 
 
 ## **Squeezenet**
-<a href="" target="_blank">URL</a><br>
+<a href="" target="_blank">Squeezenet URL</a><br>
 
 ### ***Concept***
 ```python
@@ -188,7 +188,7 @@ List of posts to read before reading this article
 
 
 ## **DenseNet**
-<a href="" target="_blank">URL</a><br>
+<a href="" target="_blank">DenseNet URL</a><br>
 
 ### ***Concept***
 ```python
