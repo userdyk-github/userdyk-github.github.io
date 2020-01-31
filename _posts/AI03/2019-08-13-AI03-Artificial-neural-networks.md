@@ -238,10 +238,10 @@ def cost():
         c += (W * X[i] - Y[i]) ** 2
     return c / len(X)
 
-def gradient_W():
+def W_grad():
     return np.sum(np.multiply(np.multiply(W, X) + b - Y, X))
 
-def gradient_b():
+def b_grad():
     return np.sum(np.multiply(np.multiply(W, X) + b - Y, 1))
 
 # data
@@ -258,8 +258,8 @@ epochs = 5;
 curr_cost = []; step = [];
 for i in range(epochs):
     # update
-    W = W - np.multiply(alpha, gradient_W()); print('W = ', W)
-    b = b - np.multiply(beta, gradient_b()); print('b = ', b)
+    W = W - np.multiply(alpha, W_grad()); print('W = ', W)
+    b = b - np.multiply(beta, b_grad()); print('b = ', b)
     
     # visualize results
     curr_cost.append(cost())
