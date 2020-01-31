@@ -41,7 +41,7 @@ List of posts to read before reading this article
 
 
 ## **AlexNet**
-<a href="" target="_blank">URL</a><br>
+<a href="http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networ" target="_blank">URL</a><br>
 [ImageNet Classification with Deep Convolutional Neural Networks][2]
 
 ### ***Concept***
