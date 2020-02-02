@@ -24,7 +24,8 @@ List of posts to read before reading this article
 ## **Installation**
 ### ***For linux***
 ```bash
-$ pip install networkx
+$ apt update
+$ apt install python3-networkx
 ```
 <br><br><br>
 
