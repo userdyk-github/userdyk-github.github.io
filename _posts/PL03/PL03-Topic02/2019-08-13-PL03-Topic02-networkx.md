@@ -24,13 +24,13 @@ List of posts to read before reading this article
 ## **Installation**
 ### ***For linux***
 ```bash
-$ 
+$ pip install networkx
 ```
 <br><br><br>
 
 ### ***For windows***
 ```dos
-
+pip install networkx
 ```
 <br><br><br>
 
