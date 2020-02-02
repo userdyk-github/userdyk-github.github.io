@@ -20,12 +20,12 @@ Sungkyunkwan University(SKKU), Suwon, 440-746, Korea <br>
 
 <!--Mobile : +82-10-7327-0678 <br> -->
 Email(sending&reception) : userdyk@gmail.com <br>
-Email(sending only) : userdyk@naver.com <br>
 
 <hr>
 
 ### GitHub | [URL](https://github.com/userdyk-github/)
 ### LinkedIn | [URL](https://www.linkedin.com/in/userdyk/)
+### Fackbook | [URL](https://www.facebook.com/userdyk)
 ### Twitter | [URL](https://twitter.com/DongmyeongL)
 ### ResearchGate | [URL](https://www.researchgate.net/profile/Dongmyeong_Lee2)
 ### Google Scholar | [URL]()
