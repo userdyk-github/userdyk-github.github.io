@@ -789,11 +789,11 @@ app.exec()
 <hr class="division2">
 
 ## **Building .exe file**
-
-```
+```dos
 pyuic5 -x main.ui -o main.py
 ```
-```
+```dos
+pip install pyinstaller
 pyinstaller main.py
 ```
 
