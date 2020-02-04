@@ -2094,6 +2094,24 @@ os.getcwd()
 ```
 'C:\WINDOWS'
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">another way</summary>
+<hr class='division3'>
+```python
+import os
+
+current_path = os.path.abspath(os.path.dirname(__file__))
+print(__file__)
+print(current_path)
+```
+```
+1341.py
+s:\workspace\2020-02-04
+```
+<hr class='division3'>
+</details>
+
+
 <br>
 #### shutil
 ```python
