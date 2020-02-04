@@ -382,6 +382,16 @@ df.to_excel(filepath, index=False)      # pip install OpenPyXL
 <hr class="division2">
 
 ## **How to Convert Color Space**
+### ***RGB to grayscale and Vice Versa***
+```python
+from PIL import Image
+
+img = Image.open('input_image.jpg').convert('LA')
+img.show()
+```
+<br><br><br>
+
+---
 
 ### ***RGB to HSV and Vice Versa***
 
