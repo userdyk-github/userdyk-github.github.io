@@ -192,6 +192,42 @@ pip install cssselect
 <br><br><br>
 
 <span class="frame3">get(from requests)</span><br>
+```python
+import requests
+
+response = requests.get("https://www.naver.com")
+
+print(response.text)
+print(response.content)
+print(response.status_code)
+print(response.url)
+print(response.ok)
+```
+![image](https://user-images.githubusercontent.com/52376448/73748172-3d788400-479c-11ea-97eb-ffed90c859d0.png)
+![image](https://user-images.githubusercontent.com/52376448/73748089-1b7f0180-479c-11ea-8c3f-ca1a72d5a144.png)
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">with session</summary>
+<hr class='division3'>
+```python
+import requests
+
+session = requests.Session()
+response = session.get("https://www.naver.com")
+
+print(response.text)
+print(response.content)
+print(response.status_code)
+print(response.url)
+print(response.ok)
+
+session.close()
+```
+<hr class='division3'>
+</details>
+<br><br><br>
+
+
 <a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank">css_selectors</a><br>
 ![image](https://user-images.githubusercontent.com/52376448/73358148-5804b600-42e1-11ea-9425-7153061e3a32.png)
 
