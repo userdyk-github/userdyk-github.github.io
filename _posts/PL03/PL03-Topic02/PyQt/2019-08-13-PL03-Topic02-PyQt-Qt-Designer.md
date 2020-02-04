@@ -27,6 +27,9 @@ List of posts to read before reading this article
 ```dos
 $ pip install pyqt5-tools
 ```
+<div>
+path = C:\Users\%USERNAME%\AppData\Local\Programs\Python\Python37\Lib\site-packages\pyqt5_tools\designer.exe
+</div>
 <br><br><br>
 
 <hr class="division2">
