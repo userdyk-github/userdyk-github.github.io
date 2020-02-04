@@ -21,6 +21,17 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
+## **Installation**
+
+### ***For windows***
+```dos
+$ pip install pyqt5-tools
+```
+<br><br><br>
+
+<hr class="division2">
+
+
 ## **Execute the ui-file by python**
 <b>ctrl + r</b> : form-preview on Qt-designer
 
