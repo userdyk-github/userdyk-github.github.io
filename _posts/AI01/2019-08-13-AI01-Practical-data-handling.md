@@ -205,7 +205,7 @@ print(response.ok)            # ok
 print(response.encoding)      # encoding
 ```
 ![image](https://user-images.githubusercontent.com/52376448/73748172-3d788400-479c-11ea-97eb-ffed90c859d0.png)
-![image](https://user-images.githubusercontent.com/52376448/73750853-43bd2f00-47a1-11ea-9a5b-c8566e441bf3.png)
+![image](https://user-images.githubusercontent.com/52376448/73752362-305f9300-47a4-11ea-8712-e5f5bc0da9c8.png)
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">with cookies, headers</summary>
