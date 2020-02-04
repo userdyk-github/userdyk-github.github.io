@@ -197,12 +197,12 @@ import requests
 
 response = requests.get("https://www.naver.com")
 
-print(response.text)
-print(response.content)
-print(response.status_code)
-print(response.url)
-print(response.ok)
-print(response.encoding)
+print(response.text)          # response data
+print(response.content)       # response binary data
+print(response.status_code)   # status code
+print(response.url)           # url
+print(response.ok)            # ok
+print(response.encoding)      # encoding
 ```
 ![image](https://user-images.githubusercontent.com/52376448/73748172-3d788400-479c-11ea-97eb-ffed90c859d0.png)
 ![image](https://user-images.githubusercontent.com/52376448/73750853-43bd2f00-47a1-11ea-9a5b-c8566e441bf3.png)
