@@ -199,6 +199,7 @@ response = requests.get("https://www.naver.com")
 
 print(response.text)          # response data
 print(response.content)       # response binary data
+print(response.headers)       # header
 print(response.status_code)   # status code
 print(response.url)           # url
 print(response.ok)            # ok
