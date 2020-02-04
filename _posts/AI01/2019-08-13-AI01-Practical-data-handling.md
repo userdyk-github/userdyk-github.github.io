@@ -207,6 +207,22 @@ print(response.ok)
 ![image](https://user-images.githubusercontent.com/52376448/73748089-1b7f0180-479c-11ea-8c3f-ca1a72d5a144.png)
 
 <details markdown="1">
+<summary class='jb-small' style="color:blue">with cookies, headers</summary>
+<hr class='division3'>
+```python
+import requests
+
+response1 = requests.get("https://httpbin.org/cookies", cookies={'name':'kim'})
+response2 = requests.get("https://httpbin.org", headers={'user-agent':'nice-man_1.0.0_win10_ram16_home_chrome'})
+
+print(response1, response1.text)
+print(response2, response2.text)
+```
+
+<hr class='division3'>
+</details>
+
+<details markdown="1">
 <summary class='jb-small' style="color:blue">with session</summary>
 <hr class='division3'>
 ```python
