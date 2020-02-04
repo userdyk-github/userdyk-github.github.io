@@ -359,8 +359,21 @@ s
 ```
 <span class="jb-medium">{1, 3}</span>
 <hr class='division3'>
-</details>
+</details><br>
 
+```python
+s = {1,2,3}
+q = {3,4,5}
+
+print(s & q)  # {3}, s.intersection(q) 
+print(s | q)  # {1,2,3,4,5}, s.union(q)
+print(s - q)  # {1,2}, s.difference(q)
+```
+<div class="jb-medium">  
+     {3} <br>
+     {1,2,3,4,5} <br>
+     {1,2}
+</div>
 <br><br><br>
 
 ---
