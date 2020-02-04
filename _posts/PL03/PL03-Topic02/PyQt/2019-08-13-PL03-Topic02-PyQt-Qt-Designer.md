@@ -796,6 +796,8 @@ pyuic5 -x main.ui -o main.py
 pip install pyinstaller
 pyinstaller main.py
 ```
+<div>After executing pyinstaller, 'build', 'dist' folder is created. For finding .exe file, you sould <b>enter 'dist' folder</b>.</div>
+
 
 <br><br><br>
 
