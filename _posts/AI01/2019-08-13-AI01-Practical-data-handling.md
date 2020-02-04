@@ -223,6 +223,21 @@ print(response.ok)
 
 session.close()
 ```
+
+or
+
+```python
+import requests
+
+with requests.Session() as session:
+    response = session.get("https://www.naver.com")
+    
+    print(response.text)
+    print(response.content)
+    print(response.status_code)
+    print(response.url)
+    print(response.ok)
+```
 <hr class='division3'>
 </details>
 <br><br><br>
