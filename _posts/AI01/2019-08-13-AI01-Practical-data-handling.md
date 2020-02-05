@@ -226,6 +226,23 @@ print(response.encoding)      # encoding
 ```
 ![image](https://user-images.githubusercontent.com/52376448/73748172-3d788400-479c-11ea-97eb-ffed90c859d0.png)
 ![image](https://user-images.githubusercontent.com/52376448/73752362-305f9300-47a4-11ea-8712-e5f5bc0da9c8.png)
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT, response.text</summary>
+<hr class='division3'>
+It can be used response.iter_lines instead of method 'response.text'.
+```python
+import requests
+
+response = requests.get("https://www.naver.com")
+
+#if response.encoding is None: response.encoding = 'UTF-8'
+for line in response.iter_lines(decode_unicode=True):
+    print(line)    
+```
+![image](https://user-images.githubusercontent.com/52376448/73893743-d7841d80-48bd-11ea-931f-b5bc667e4248.png)
+
+<hr class='division3'>
+</details>
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">with cookies, headers</summary>
