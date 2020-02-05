@@ -72,8 +72,8 @@ pip install urllib3
 pip install fake-useragent
 ```
 <br><br><br>
-<span class="frame3">urlretrieve(from urllib.request) : download file</span><br>
-
+<span class="frame3">urlretrieve(from urllib.request)</span><br>
+<u>download file</u>
 ```python
 import urllib.request as req
 
@@ -109,7 +109,7 @@ html_file, html_header = req.urlretrieve(html_url, html_save_path); print(html_h
 <br><br><br>
 
 
-<span class="frame3">urlopen(from urllib.request) : </span><br>
+<span class="frame3">urlopen(from urllib.request)</span><br>
 <u>response</u>
 ```python
 from urllib.request import urlopen
