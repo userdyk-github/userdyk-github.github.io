@@ -121,6 +121,7 @@ title: MATERIALS
 <a href="https://cloud.google.com/" target="_blank">google cloud platform</a>, 
 <a href="https://aws.amazon.com/" target="_blank">amazon web services</a>, 
 <a href="https://azure.microsoft.com/en-us/" target="_blank">microsoft azure</a>, 
+<a href="https://www.ncloud.com/" target="_blank">naver cloud platform</a>, 
 <a href="https://insights.stackoverflow.com/" target="_blank">stackoverflow insights</a>, 
 <a href="https://db-engines.com/en/ranking" target="_blank">db-engines ranking</a>, 
 <a href="https://www.ipify.org/" target="_blank">ipify</a>, 
