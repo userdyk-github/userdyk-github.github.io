@@ -210,7 +210,7 @@ pip install cssselect
 ```
 <br><br><br>
 
-<span class="frame3">get(from requests)</span><br>
+<span class="frame3">Request methods : GET</span><br>
 ```python
 import requests
 
