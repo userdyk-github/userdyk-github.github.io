@@ -130,7 +130,7 @@ print('contents decode: {}'.format(response.read(10).decode('utf-8')))    # resp
 
 <u>save file as an object on python</u>
 ```python
-import urllib.request as req
+from urllib.request import urlopen
 
 # from : file url
 # to : path
@@ -138,7 +138,7 @@ file_url = "https://user-images.githubusercontent.com/52376448/69004181-481c3d80
 save_path = r"S:\workspace\2020-01-22\winscp.jpg"
 
 # save file as an object on python
-response = req.urlopen(file_url)
+response = urlopen(file_url)
 header_info = response.info()
 http_status_code = response.getcode()
 
