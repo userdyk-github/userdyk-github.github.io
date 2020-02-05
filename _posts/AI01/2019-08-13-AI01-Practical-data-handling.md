@@ -108,7 +108,27 @@ html_file, html_header = req.urlretrieve(html_url, html_save_path); print(html_h
 
 <br><br><br>
 
-<span class="frame3">urlopen(from urllib.request) : save file as an object on python</span><br>
+
+<span class="frame3">urlopen(from urllib.request) : </span><br>
+<u>info</u>
+```python
+from urllib.request import urlopen
+
+file_url = "https://user-images.githubusercontent.com/52376448/69004181-481c3d80-0952-11ea-98b4-823969ceb0c3.png"
+response = urlopen(file_url)
+
+print('header_info : {}'.format(response.info()))
+print('http_status_code : {}'.format(response.getcode()))
+print('geturl : {}'.format(response.geturl()))
+print('status : {}'.format(response.status))
+print('headers : {}'.format(response.getheaders()))
+print('contents : {}'.format(response.read(10)))
+print('contents decode: {}'.format(response.read(10).decode('utf-8')))
+```
+![image](https://user-images.githubusercontent.com/52376448/73856204-70904580-4878-11ea-92d2-647fd336b7c4.png)
+<br><br><br>
+
+<u>save file as an object on python</u>
 ```python
 import urllib.request as req
 
@@ -116,7 +136,6 @@ import urllib.request as req
 # to : path
 file_url = "https://user-images.githubusercontent.com/52376448/69004181-481c3d80-0952-11ea-98b4-823969ceb0c3.png"
 save_path = r"S:\workspace\2020-01-22\winscp.jpg"
-
 
 # save file as an object on python
 response = req.urlopen(file_url)
