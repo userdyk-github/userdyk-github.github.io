@@ -75,7 +75,7 @@ pip install fake-useragent
 <span class="frame3">urlretrieve(from urllib.request)</span><br>
 <u>download file</u>
 ```python
-import urllib.request as req
+from urllib.request import urlretrieve
 
 # from : file url
 img_url = 'https://user-images.githubusercontent.com/52376448/69004181-481c3d80-0952-11ea-98b4-823969ceb0c3.png'
@@ -83,11 +83,11 @@ html_url = 'https://www.google.com/'
 
 # to : path
 img_save_path = r'S:\workspace\2020-01-19\winscp.jpg'
-html_save_path = r' S:\workspace\2020-01-19\index.html'
+html_save_path = r'S:\workspace\2020-01-19\index.html'
 
 # download file
-img_file, img_header = req.urlretrieve(img_url,img_save_path); print(img_header)
-html_file, html_header = req.urlretrieve(html_url, html_save_path); print(html_header)
+img_file, img_header = urlretrieve(img_url,img_save_path); print(img_header)
+html_file, html_header = urlretrieve(html_url, html_save_path); print(html_header)
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
