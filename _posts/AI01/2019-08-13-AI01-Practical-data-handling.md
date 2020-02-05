@@ -73,7 +73,7 @@ pip install fake-useragent
 ```
 <br><br><br>
 <span class="frame3">urlretrieve(from urllib.request)</span><br>
-<u>download file</u>
+<span class="frame3_1">download file</span>
 ```python
 from urllib.request import urlretrieve
 
@@ -110,7 +110,7 @@ html_file, html_header = urlretrieve(html_url, html_save_path); print(html_heade
 
 
 <span class="frame3">urlopen(from urllib.request)</span><br>
-<u>response</u>
+<span class="frame3_1">response</span>
 ```python
 from urllib.request import urlopen
 
@@ -128,7 +128,7 @@ print('contents decode: {}'.format(response.read(10).decode('utf-8')))    # resp
 ![image](https://user-images.githubusercontent.com/52376448/73856204-70904580-4878-11ea-92d2-647fd336b7c4.png)
 <br><br><br>
 
-<u>save file as an object on python</u>
+<span class="frame3_1">save file as an object on python</span>
 ```python
 from urllib.request import urlopen
 
