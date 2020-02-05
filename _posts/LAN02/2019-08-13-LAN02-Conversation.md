@@ -21,6 +21,19 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
+## **TODAY's Expression**
+
+- 
+- 
+- 
+- 
+- 
+
+
+<br><br><br>
+<hr class="division2">
+
+
 ## **WORK & SCHOOL**
 
 <br><br><br>
