@@ -110,7 +110,7 @@ html_file, html_header = req.urlretrieve(html_url, html_save_path); print(html_h
 
 
 <span class="frame3">urlopen(from urllib.request) : </span><br>
-<u>info</u>
+<u>response</u>
 ```python
 from urllib.request import urlopen
 
