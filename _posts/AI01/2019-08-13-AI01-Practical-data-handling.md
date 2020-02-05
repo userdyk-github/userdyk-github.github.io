@@ -122,8 +122,8 @@ print('http_status_code : {}'.format(response.getcode()))
 print('geturl : {}'.format(response.geturl()))
 print('status : {}'.format(response.status))
 print('headers : {}'.format(response.getheaders()))
-print('contents : {}'.format(response.read(10)))                          # response.content in module 'requests'
-print('contents decode: {}'.format(response.read(10).decode('utf-8')))    # response.text in module 'requests'
+print('contents : {}'.format(response.read(10)))                          # response binary data, response.content in module 'requests'
+print('contents decode: {}'.format(response.read(10).decode('utf-8')))    # response data, response.text in module 'requests'
 ```
 ![image](https://user-images.githubusercontent.com/52376448/73856204-70904580-4878-11ea-92d2-647fd336b7c4.png)
 <br><br><br>
