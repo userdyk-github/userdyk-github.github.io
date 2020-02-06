@@ -609,7 +609,6 @@ print(soup.prettify())
 ```python
 from bs4 import BeautifulSoup
 
-
 HTML = """
 <html>
 <head>
@@ -636,8 +635,14 @@ p = soup.html.body.p; print('p', p)       # p tag
 ```
 ```html
 h1 <h1>this is h1 area</h1>
-p1 <p class="title"><b>The Dormouse's story</b></p>
+p <p class="title"><b>The Dormouse's story</b></p>
 ```
+<br><br><br>
+
+```python
+
+```
+<br><br><br>
 <span class="frame3">FIND</span><br>
 
 <br><br><br>
