@@ -330,13 +330,11 @@ import lxml.html
 response = requests.get('https://www.naver.com/')
 root = lxml.html.fromstring(response.content)
 
-urls = []
 for i in root.cssselect('.api_list .api_item a.api_link'):
     url = i.get('href')
-    urls.append(url)
-
-for i in urls:
-    print(i)
+    name = i.cssselect('.api_logo')[0].get('alt');
+    
+    print(name, url)
 ```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
