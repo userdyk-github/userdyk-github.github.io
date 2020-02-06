@@ -64,7 +64,7 @@ with open('output.txt','w') as f:      # save text
 
 <br><br><br>
 ### ***Scraping***
-#### from urllib
+#### urllib
 <a href="https://docs.python.org/3/library/urllib.html" target="_blank">API</a><br>
 <span class="frame3">installation</span><br>
 ```bash
@@ -199,7 +199,7 @@ for i, url in enumerate(target_url):
 <hr class='division3'>
 </details>
 <br><br><br>
-#### from requests
+#### requests
 <a href="https://requests.readthedocs.io/en/master/api/" target="_blank">API</a><br>
 
 <span class="frame3">installation</span><br>
@@ -533,7 +533,7 @@ print(response.text)
 
 
 
-#### from Beautiful Soup
+#### BeautifulSoup
 <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/" target="_blank">API</a><br>
 
 <span class="frame3">installation</span><br>
@@ -642,7 +642,6 @@ p = soup.html.body.p; print(p, p.string)         # p tag
 ```python
 from bs4 import BeautifulSoup
 
-
 HTML = """
 <html>
 <head>
@@ -691,7 +690,7 @@ p4 None
 
 
 
-#### from Selenium
+#### Selenium
 <a href="" target="_blank">API</a><br>
 
 <span class="frame3">installation</span><br>
