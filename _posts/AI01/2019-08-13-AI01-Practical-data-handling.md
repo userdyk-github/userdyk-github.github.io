@@ -481,8 +481,54 @@ https://www.naver.com/
 <span class="frame3">Another request methods : POST, DELETE, PUT:UPDATE, REPLACE (FETCH : UPDATE, MODIFY)</span><br>
 ![image](https://user-images.githubusercontent.com/52376448/73895901-86c3f300-48c4-11ea-8708-52e2e1e41554.png)
 
+```python
+import requests
+
+response = requests.post('http://httpbin.org/post', data={'kim':'stellar'})
+print(response.text)
+print(response.headers)
+```
+![image](https://user-images.githubusercontent.com/52376448/73903791-4f157500-48dd-11ea-970d-4d06be581235.png)
+```python
+import requests
+
+payload1 = {'name': 'kim', 'pay': 'true'}
+payload2 = (('name', 'park'), ('pay', 'false'))
+
+response1 = requests.post('http://httpbin.org/post', data=payload1)
+response2 = requests.post('http://httpbin.org/post', data=payload2)
+
+print(response1.text)
+print(response2.text)
+```
+![image](https://user-images.githubusercontent.com/52376448/73903936-c4814580-48dd-11ea-9e0e-ca14de004283.png)
 <br><br><br>
 
+```python
+import requests
+
+response = requests.put('http://httpbin.org/put', data={'data': '{"name": "Kim", "grade": "A"}'})
+print(response.text)
+```
+![image](https://user-images.githubusercontent.com/52376448/73904080-42455100-48de-11ea-9a05-df1d5995cc7f.png)
+
+<br><br><br>
+```python
+import requests
+
+response = requests.delete('http://httpbin.org/delete')
+print(response.text)
+```
+![image](https://user-images.githubusercontent.com/52376448/73904159-89cbdd00-48de-11ea-8ee5-5b5b0a0012c9.png)
+```python
+import requests
+
+response = requests.delete('https://jsonplaceholder.typicode.com/posts/1')
+print(response.text)
+```
+![image](https://user-images.githubusercontent.com/52376448/73904233-b54ec780-48de-11ea-9bd0-b0602e5a9f33.png)
+
+<br><br><br>
 
 
 #### from Beautiful Soup
