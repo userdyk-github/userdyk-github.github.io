@@ -244,11 +244,9 @@ print(a.pop(1), a)
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 ```
-a = {1:'korea',2:'USA',3:'china'}
-
-print(a.get(1), a)
-print(a[1], a)
-print(a.pop(1), a)
+korea {1: 'korea', 2: 'USA', 3: 'china'}
+korea {1: 'korea', 2: 'USA', 3: 'china'}
+korea {2: 'USA', 3: 'china'}
 ```
 <hr class='division3'>
 </details>
