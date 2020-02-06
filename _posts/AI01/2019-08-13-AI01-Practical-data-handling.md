@@ -534,14 +534,14 @@ print(response.text)
 
 
 #### from Beautiful Soup
-<a href="" target="_blank">API</a><br>
+<a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/" target="_blank">API</a><br>
 
 <span class="frame3">installation</span><br>
 ```bash
 $ pip install beautifulsoup4
 ```
 <br><br><br>
-<span></span><br>
+<span class="frame3">Basic</span><br>
 ```python
 from bs4 import BeautifulSoup
 
@@ -604,6 +604,14 @@ print(soup.prettify())
  </body>
 </html>
 ```
+
+<br><br><br>
+
+
+<span class="frame3">FIND</span><br>
+
+<br><br><br>
+<span class="frame3">SELECT</span><br>
 
 <br><br><br>
 
