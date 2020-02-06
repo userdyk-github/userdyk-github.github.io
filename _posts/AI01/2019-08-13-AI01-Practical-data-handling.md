@@ -298,11 +298,30 @@ with requests.Session() as session:
 </details>
 <br><br><br>
 
+<span class="frame3_1">with json</span><br>
+```python
+import json
+import requests
+
+response = requests.get('http://httpbin.org/stream/100', stream=True)
+
+#if response.encoding is None: response.encoding = 'UTF-8'
+for line in response.iter_lines(decode_unicode=True):
+    b = json.loads(line); print(b)    # type(line) = str, type(b) = dict
+
+    for k, v in b.items():
+        print("Key: {}, Values: {}".format(k, v))
+```
+![image](https://user-images.githubusercontent.com/52376448/73894220-1ff00b00-48bf-11ea-91c6-37933bde6741.png)
+
+<br><br><br>
+
+<span class="frame3_1">with lxml</span><br>
+<span class="frame3_2">with cssselect</span><br>
 
 <a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank">css_selectors</a><br>
 ![image](https://user-images.githubusercontent.com/52376448/73358148-5804b600-42e1-11ea-9425-7153061e3a32.png)
 
-<span class="frame3_1">with cssselect</span><br>
 
 ```python
 import requests
@@ -348,7 +367,7 @@ b'<!doctype html>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<html lang="ko">\n<head>\n<me
 <hr class='division3'>
 </details>
 <br>
-<span class="frame3_1">with session, xpath</span><br>
+<span class="frame3_2">with xpath</span><br>
 ```python
 import requests
 import lxml.html
