@@ -296,6 +296,21 @@ print(list(a.items()))
 ```
 <hr class='division3'>
 </details>
+<br><br><br>
+
+#### iteration
+```python
+dict = {}
+dict['name'] = 'ailever'
+dict['age'] = 19
+
+for i, j in dict.items():
+     print(i, j)
+```
+```
+name ailever
+age 19    
+```
 
 
 <br><br><br>
