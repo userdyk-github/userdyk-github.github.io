@@ -567,7 +567,7 @@ HTML = """
 soup = BeautifulSoup(HTML, 'html.parser')
 print(soup.prettify())
 ```
-```
+```html
 <html>
  <head>
   <title>
@@ -606,8 +606,38 @@ print(soup.prettify())
 ```
 
 <br><br><br>
+```python
+from bs4 import BeautifulSoup
 
 
+HTML = """
+<html>
+<head>
+<title>The Dormouse's story</title>
+</head>
+<body>
+<h1>this is h1 area</h1>
+<h2>this is h2 area</h2>
+<p class="title"><b>The Dormouse's story</b></p>
+<p class="story">Once upon a time there were three little sisters
+<a href="http://example.com/elsie" class="sister" id="link1">Elsie</a>
+<a href="http://example.com/lacie" class="sister" id="link2">Lacie</a>
+<a data-io="link3" href="http://example.com/tillie" class="sister" id="link3">Tillie</a>
+</p>
+<p class="story">story...</p>
+</body>
+</html>
+"""
+
+soup = BeautifulSoup(HTML, 'html.parser')
+
+h1 = soup.html.body.h1; print('h1', h1)   # h1 tag
+p = soup.html.body.p; print('p', p)       # p tag
+```
+```html
+h1 <h1>this is h1 area</h1>
+p1 <p class="title"><b>The Dormouse's story</b></p>
+```
 <span class="frame3">FIND</span><br>
 
 <br><br><br>
