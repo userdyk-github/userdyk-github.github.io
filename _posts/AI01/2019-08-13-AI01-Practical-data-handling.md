@@ -635,7 +635,7 @@ p = soup.html.body.p; print(p, p.string)         # p tag
 ```
 ```html
 <h1>this is h1 area</h1>, this is h1 area
-<p class="title"><b>The Dormouse's story</b></p>, <b>The Dormouse's story</b>
+<p class="title"><b>The Dormouse's story</b></p>, The Dormouse's story
 ```
 <br><br><br>
 
