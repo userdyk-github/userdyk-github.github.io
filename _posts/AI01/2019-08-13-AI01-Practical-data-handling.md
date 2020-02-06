@@ -640,7 +640,44 @@ p <p class="title"><b>The Dormouse's story</b></p>
 <br><br><br>
 
 ```python
+from bs4 import BeautifulSoup
 
+
+HTML = """
+<html>
+<head>
+<title>The Dormouse's story</title>
+</head>
+<body>
+<h1>this is h1 area</h1>
+<h2>this is h2 area</h2>
+<p class="title"><b>The Dormouse's story</b></p>
+<p class="story">Once upon a time there were three little sisters
+<a href="http://example.com/elsie" class="sister" id="link1">Elsie</a>
+<a href="http://example.com/lacie" class="sister" id="link2">Lacie</a>
+<a data-io="link3" href="http://example.com/tillie" class="sister" id="link3">Tillie</a>
+</p>
+<p class="story">story...</p>
+</body>
+</html>
+"""
+
+soup = BeautifulSoup(HTML, 'html.parser')
+
+p = soup.html.body.p; print('p', p)
+p2 = p.next_sibling.next_sibling; print('p2', p2)
+p3 = p.next_sibling.next_sibling.next_sibling.next_sibling; print('p3', p3)
+p4 = p.next_sibling.next_sibling.next_sibling.next_sibling.next_sibling.next_sibling; print('p4', p4)
+```
+```
+p <p class="title"><b>The Dormouse's story</b></p>
+p2 <p class="story">Once upon a time there were three little sisters
+<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>
+<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>
+<a class="sister" data-io="link3" href="http://example.com/tillie" id="link3">Tillie</a>
+</p>
+p3 <p class="story">story...</p>
+p4 None
 ```
 <br><br><br>
 <span class="frame3">FIND</span><br>
