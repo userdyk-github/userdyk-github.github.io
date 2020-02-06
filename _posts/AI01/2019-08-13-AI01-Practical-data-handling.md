@@ -259,7 +259,7 @@ print(response2, response2.text)
 ![image](https://user-images.githubusercontent.com/52376448/73901842-47eb6880-48d7-11ea-9722-b6a0ea858e72.png)
 
 <details markdown="1">
-<summary class='jb-small' style="color:blue">another way with cookies</summary>
+<summary class='jb-small' style="color:red">another way with cookies</summary>
 <hr class='division3_1'>
 ```python
 import requests
