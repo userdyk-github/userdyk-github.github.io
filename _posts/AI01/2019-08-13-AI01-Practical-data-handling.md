@@ -256,6 +256,36 @@ response2 = requests.get("https://httpbin.org", headers={'user-agent':'nice-man_
 print(response1, response1.text)
 print(response2, response2.text)
 ```
+![image](https://user-images.githubusercontent.com/52376448/73901842-47eb6880-48d7-11ea-9722-b6a0ea858e72.png)
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">another way with cookies</summary>
+<hr class='division3_1'>
+```python
+import requests
+
+response = requests.get('https://httpbin.org/cookies')
+print(response.text)
+
+jar = requests.cookies.RequestsCookieJar()
+jar.set('name', 'niceman', domain='httpbin.org', path='/cookies')
+response = requests.get('http://httpbin.org/cookies', cookies=jar)
+print(response.text)
+```
+```
+{
+  "cookies": {}
+}
+
+{
+  "cookies": {
+    "name": "niceman"
+  }
+}
+```
+
+<hr class='division3_1'>
+</details>
 
 <hr class='division3'>
 </details>
