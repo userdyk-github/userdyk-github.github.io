@@ -531,6 +531,8 @@ print(response.text)
 <br><br><br>
 
 
+
+
 #### from Beautiful Soup
 <a href="" target="_blank">API</a><br>
 
@@ -539,8 +541,75 @@ print(response.text)
 $ pip install beautifulsoup4
 ```
 <br><br><br>
+<span></span><br>
+```python
+from bs4 import BeautifulSoup
+
+HTML = """
+<html>
+<head>
+<title>The Dormouse's story</title>
+</head>
+<body>
+<h1>this is h1 area</h1>
+<h2>this is h2 area</h2>
+<p class="title"><b>The Dormouse's story</b></p>
+<p class="story">Once upon a time there were three little sisters
+<a href="http://example.com/elsie" class="sister" id="link1">Elsie</a>
+<a href="http://example.com/lacie" class="sister" id="link2">Lacie</a>
+<a data-io="link3" href="http://example.com/tillie" class="sister" id="link3">Tillie</a>
+</p>
+<p class="story">story...</p>
+</body>
+</html>
+"""
+
+soup = BeautifulSoup(HTML, 'html.parser')
+print(soup.prettify())
+```
+```
+<html>
+ <head>
+  <title>
+   The Dormouse's story
+  </title>
+ </head>
+ <body>
+  <h1>
+   this is h1 area
+  </h1>
+  <h2>
+   this is h2 area
+  </h2>
+  <p class="title">
+   <b>
+    The Dormouse's story
+   </b>
+  </p>
+  <p class="story">
+   Once upon a time there were three little sisters
+   <a class="sister" href="http://example.com/elsie" id="link1">
+    Elsie
+   </a>
+   <a class="sister" href="http://example.com/lacie" id="link2">
+    Lacie
+   </a>
+   <a class="sister" data-io="link3" href="http://example.com/tillie" id="link3">
+    Tillie
+   </a>
+  </p>
+  <p class="story">
+   story...
+  </p>
+ </body>
+</html>
+```
 
 <br><br><br>
+
+
+
+
 
 #### from Selenium
 <a href="" target="_blank">API</a><br>
