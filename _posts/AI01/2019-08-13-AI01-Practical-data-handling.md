@@ -427,9 +427,15 @@ https://www.naver.com/
 ```
 <hr class='division3'>
 </details>
+<br><br><br>
 
+<span class="frame3">Another request methods : POST, DELETE, PUT:UPDATE, REPLACE (FETCH : UPDATE, MODIFY)</span><br>
+![image](https://user-images.githubusercontent.com/52376448/73895901-86c3f300-48c4-11ea-8708-52e2e1e41554.png)
 
 <br><br><br>
+
+
+
 #### from Beautiful Soup
 <a href="" target="_blank">API</a><br>
 
