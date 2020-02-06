@@ -301,6 +301,20 @@ with requests.Session() as session:
 <span class="frame3_1">with json</span><br>
 ```python
 import requests
+
+response = requests.get('https://jsonplaceholder.typicode.com/posts/1')
+
+print('.headers : \n',response.headers)
+print('.text : \n',response.text)
+print('.json() : \n', response.json())
+print('.json().keys() : \n', response.json().keys())
+print('.json().values() : \n',response.json().values())
+```
+![image](https://user-images.githubusercontent.com/52376448/73895656-a575ba00-48c3-11ea-962f-8d0c83b30096.png)
+<br><br><br>
+
+```python
+import requests
 import json
 
 response = requests.get('http://httpbin.org/stream/100', stream=True)
