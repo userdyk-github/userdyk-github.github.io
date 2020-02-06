@@ -245,6 +245,44 @@ for line in response.iter_lines(decode_unicode=True):
 </details>
 
 <details markdown="1">
+<summary class='jb-small' style="color:blue">with session</summary>
+<hr class='division3'>
+```python
+import requests
+
+session = requests.Session()
+response = session.get("https://www.naver.com")
+
+print(response.text)
+print(response.content)
+print(response.status_code)
+print(response.url)
+print(response.ok)
+print(response.encoding)
+
+session.close()
+```
+
+or
+
+```python
+import requests
+
+with requests.Session() as session:
+    response = session.get("https://www.naver.com")
+    
+    print(response.text)
+    print(response.content)
+    print(response.status_code)
+    print(response.url)
+    print(response.ok)
+    print(response.encoding)
+```
+<hr class='division3'>
+</details>
+
+
+<details markdown="1">
 <summary class='jb-small' style="color:blue">with cookies, headers</summary>
 <hr class='division3'>
 ```python
@@ -291,42 +329,25 @@ print(response.text)
 </details>
 
 <details markdown="1">
-<summary class='jb-small' style="color:blue">with session</summary>
+<summary class='jb-small' style="color:blue">with timeout</summary>
 <hr class='division3'>
 ```python
 import requests
 
-session = requests.Session()
-response = session.get("https://www.naver.com")
-
+response = requests.get('https://github.com', timeout=10)
 print(response.text)
-print(response.content)
-print(response.status_code)
-print(response.url)
-print(response.ok)
-print(response.encoding)
-
-session.close()
 ```
+![image](https://user-images.githubusercontent.com/52376448/73903536-b979e580-48dc-11ea-87e6-e8fd4da0ef16.png)
 
-or
-
-```python
-import requests
-
-with requests.Session() as session:
-    response = session.get("https://www.naver.com")
-    
-    print(response.text)
-    print(response.content)
-    print(response.status_code)
-    print(response.url)
-    print(response.ok)
-    print(response.encoding)
-```
 <hr class='division3'>
 </details>
+
+
 <br><br><br>
+
+
+
+
 
 <span class="frame3_1">with json</span><br>
 ```python
