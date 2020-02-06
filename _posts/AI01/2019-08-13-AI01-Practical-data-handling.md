@@ -372,8 +372,7 @@ b'<!doctype html>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<html lang="ko">\n<head>\n<me
 import requests
 import lxml.html
 
-session = requests.Session()
-response = session.get('https://www.naver.com/')
+response = requests.get('https://www.naver.com/')
 root = lxml.html.fromstring(response.content)
 root.make_links_absolute(response.url)
 
