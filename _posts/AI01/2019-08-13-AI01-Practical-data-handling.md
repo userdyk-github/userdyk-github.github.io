@@ -679,6 +679,67 @@ p3 <p class="story">story...</p>
 p4 None
 ```
 <br><br><br>
+```python
+from bs4 import BeautifulSoup
+
+HTML = """
+<html>
+<head>
+<title>The Dormouse's story</title>
+</head>
+<body>
+<h1>this is h1 area</h1>
+<h2>this is h2 area</h2>
+<p class="title"><b>The Dormouse's story</b></p>
+<p class="story">Once upon a time there were three little sisters
+<a href="http://example.com/elsie" class="sister" id="link1">Elsie</a>
+<a href="http://example.com/lacie" class="sister" id="link2">Lacie</a>
+<a data-io="link3" href="http://example.com/tillie" class="sister" id="link3">Tillie</a>
+</p>
+<p class="story">story...</p>
+</body>
+</html>
+"""
+
+soup = BeautifulSoup(HTML, 'html.parser')
+
+p = soup.html.body.p
+p2 = p.next_sibling.next_sibling
+
+print(list(p2.next_elements))
+for i in p2.next_elements:
+    print(i)
+```
+```
+['Once upon a time there were three little sisters\n', <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>, 'Elsie', '\n', <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>, 'Lacie', '\n', <a class="sister" data-io="link3" href="http://example.com/tillie" id="link3">Tillie</a>, 'Tillie', '\n', '\n', <p class="story">story...</p>, 'story...', '\n', '\n', '\n']
+Once upon a time there were three little sisters
+
+<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>
+Elsie
+
+
+<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>
+Lacie
+
+
+<a class="sister" data-io="link3" href="http://example.com/tillie" id="link3">Tillie</a>
+Tillie
+
+
+
+
+<p class="story">story...</p>
+story...
+
+
+
+
+
+
+
+```
+<br><br><br>
+
 <span class="frame3">FIND</span><br>
 
 <br><br><br>
