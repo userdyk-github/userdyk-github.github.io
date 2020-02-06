@@ -300,8 +300,8 @@ with requests.Session() as session:
 
 <span class="frame3_1">with json</span><br>
 ```python
-import json
 import requests
+import json
 
 response = requests.get('http://httpbin.org/stream/100', stream=True)
 
