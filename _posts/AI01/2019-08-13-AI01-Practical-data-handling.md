@@ -67,9 +67,9 @@ with open('output.txt','w') as f:      # save text
 #### from urllib
 <a href="https://docs.python.org/3/library/urllib.html" target="_blank">API</a><br>
 <span class="frame3">installation</span><br>
-```dos
-pip install urllib3
-pip install fake-useragent
+```bash
+$ pip install urllib3
+$ pip install fake-useragent
 ```
 <br><br><br>
 <span class="frame3">urlretrieve(from urllib.request)</span><br>
@@ -203,10 +203,10 @@ for i, url in enumerate(target_url):
 <a href="https://requests.readthedocs.io/en/master/api/" target="_blank">API</a><br>
 
 <span class="frame3">installation</span><br>
-```dos
-pip install requests
-pip install lxml
-pip install cssselect
+```bash
+$ pip install requests
+$ pip install lxml
+$ pip install cssselect
 ```
 <br><br><br>
 
@@ -438,8 +438,8 @@ https://www.naver.com/
 <a href="" target="_blank">API</a><br>
 
 <span class="frame3">installation</span><br>
-```dos
-
+```bash
+$ pip install beautifulsoup4
 ```
 <br><br><br>
 
@@ -449,8 +449,8 @@ https://www.naver.com/
 <a href="" target="_blank">API</a><br>
 
 <span class="frame3">installation</span><br>
-```dos
-
+```bash
+$ 
 ```
 <br><br><br>
 
