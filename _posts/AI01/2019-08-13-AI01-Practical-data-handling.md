@@ -1035,16 +1035,56 @@ print(select_classstory)
 ```bash
 $ pip install selenium
 ```
+
+<span class="frame3">web driver/<span><br>
 web drivers([chrome][1], [firefox][2], [phantomjs][3]) official download links
 
 - <a href="https://sites.google.com/a/chromium.org/chromedriver/downloads" target="_blank">chrome driver</a><br>
 - <a href="https://github.com/mozilla/geckodriver/releases">firefox driver</a>
 - <a href="https://phantomjs.org/download.html">phantomjs driver</a>
 
-<br><br><br>
+![image](https://user-images.githubusercontent.com/52376448/74072863-9d488680-4a4b-11ea-816a-42d0dea0a549.png)
+```python
+from selenium import webdriver
+
+browser = webdriver.Chrome('webdriver/chromedriver.exe')   # caution : path
+browser.implicitly_wait(5)
+browser.set_window_size(1920, 1280)
+browser.get('https://www.naver.com')
+
+print(browser.page_source)
+print(browser.session_id)
+print(browser.title)
+print(browser.current_url)
+print(browser.get_cookies())
+```
+```
+...
+...
+...
+
+                if (window.addEventListener) {
+                        window.addEventListener("load", function() { loadJS(); }, true);
+                } else if (window.attachEvent) {
+                        window.attachEvent("onload", loadJS);
+                } else {
+                        window.onload = loadJS;
+                }
+
+        </script>
+
+
+</body></html>
+aa015a79b7acddf96892e138b1e75e31
+NAVER
+https://www.naver.com/
+[{'domain': '.naver.com', 'expiry': 1612652898, 'httpOnly': False, 'name': 'NRTK', 'path': '/', 'secure': False, 'value': 'ag#all_gr#1_ma#-2_si#0_en#0_sp#0'}, {'domain': '.naver.com', 'expiry': 2524640401.665735, 'httpOnly': False, 'name': 'NNB', 'path': '/', 'secure': True, 'value': 'EFLEUDPB5U6V4'}, {'domain': 'www.naver.com', 'expiry': 1581203297.710821, 'httpOnly': True, 'name': 'PM_CK_loc', 'path': '/', 'secure': False, 'value': 'd2d101bc3885853d3f553a325db5c09b55091e808f79a0dfdb0fb274ee3cfd30'}]
+```
 
 <br><br><br>
 
+
+<br><br><br>
 
 ---
 
