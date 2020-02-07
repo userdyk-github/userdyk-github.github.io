@@ -938,7 +938,7 @@ List of posts followed by this article
 
 Reference
 - Pradeepta Mishra, PyTorch Recipes, 2019
-- <a href='https://userdyk-github.github.io/'>post2</a>
+- <a href='https://wikidocs.net/book/2788' target="_blank">wikidocs, pytorch</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
