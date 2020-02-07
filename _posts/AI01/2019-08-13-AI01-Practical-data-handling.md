@@ -668,7 +668,7 @@ p2 = p.next_sibling.next_sibling; print('p2', p2)
 p3 = p.next_sibling.next_sibling.next_sibling.next_sibling; print('p3', p3)
 p4 = p.next_sibling.next_sibling.next_sibling.next_sibling.next_sibling.next_sibling; print('p4', p4)
 ```
-```
+```html
 p <p class="title"><b>The Dormouse's story</b></p>
 p2 <p class="story">Once upon a time there were three little sisters
 <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>
@@ -710,7 +710,7 @@ print(list(p2.next_elements))
 for i in p2.next_elements:
     print(i)
 ```
-```
+```html
 ['Once upon a time there were three little sisters\n', <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>, 'Elsie', '\n', <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>, 'Lacie', '\n', <a class="sister" data-io="link3" href="http://example.com/tillie" id="link3">Tillie</a>, 'Tillie', '\n', '\n', <p class="story">story...</p>, 'story...', '\n', '\n', '\n']
 Once upon a time there were three little sisters
 
@@ -772,7 +772,7 @@ print(tag_a)
 for i in tag_a:
     print(i.text, i.string)
 ```
-```
+```html
 [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>, <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>, <a class="sister" data-io="link3" href="http://example.com/tillie" id="link3">Tillie</a>]
 Elsie Elsie
 Lacie Lacie
@@ -810,7 +810,7 @@ print(tag_a)
 for i in tag_a:
     print(i.text, i.string)
 ```
-```
+```html
 [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>]
 Elsie Elsie
 ```
@@ -845,7 +845,7 @@ print(tag_a)
 for i in tag_a:
     print(i.text, i.string)
 ```
-```
+```html
 [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>, <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>]
 Elsie Elsie
 Lacie Lacie
@@ -881,7 +881,7 @@ tag_a = soup.find("a")   # the first tag that was found
 print(tag_a)
 print(tag_a.text, tag_a.string)
 ```
-```
+```html
 <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>
 Elsie Elsie
 ```
@@ -914,7 +914,7 @@ tag_a = soup.find("a", {"class": "sister", "data-io": "link3"})    # multiple co
 print(tag_a)
 print(tag_a.text, tag_a.string)
 ```
-```
+```html
 <a class="sister" data-io="link3" href="http://example.com/tillie" id="link3">Tillie</a>
 Tillie Tillie
 ```
@@ -924,7 +924,43 @@ Tillie Tillie
 
 <span class="frame3">SELECT</span><br>
 <span class="frame3_1">select_one</span><br>
+```python
+from bs4 import BeautifulSoup
 
+HTML = """
+<html>
+<head>
+<title>The Dormouse's story</title>
+</head>
+<body>
+<h1>this is h1 area</h1>
+<h2>this is h2 area</h2>
+<p class="title"><b>The Dormouse's story</b></p>
+<p class="story">Once upon a time there were three little sisters
+<a href="http://example.com/elsie" class="sister" id="link1">Elsie</a>
+<a href="http://example.com/lacie" class="sister" id="link2">Lacie</a>
+<a data-io="link3" href="http://example.com/tillie" class="sister" id="link3">Tillie</a>
+</p>
+<p class="story">story...</p>
+</body>
+</html>
+"""
+
+soup = BeautifulSoup(HTML, 'html.parser')
+
+select_b = soup.select_one("p.title > b")
+select_idlink1 = soup.select_one("a#link1")
+select_valuelink3 = soup.select_one("a[data-io='link3']")
+
+print(select_b, select_b.string)
+print(select_idlink1, select_idlink1.string)
+print(select_valuelink3, select_valuelink3.string)
+```
+```html
+<b>The Dormouse's story</b> The Dormouse's story
+<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a> Elsie
+<a class="sister" data-io="link3" href="http://example.com/tillie" id="link3">Tillie</a> Tillie
+```
 <br><br><br>
 
 <span class="frame3_1">select</span><br>
