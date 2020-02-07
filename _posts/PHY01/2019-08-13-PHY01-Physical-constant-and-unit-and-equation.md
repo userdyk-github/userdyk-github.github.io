@@ -4,6 +4,7 @@ title : PHY01, Physical constant and unit and equation
 categories: [PHY01]
 comments : true
 tags : [PHY01]
+use_math: true
 ---
 [Back to the previous page](https://userdyk-github.github.io/Study.html) <br>
 List of posts to read before reading this article
