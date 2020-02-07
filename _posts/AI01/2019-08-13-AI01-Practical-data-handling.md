@@ -1035,7 +1035,8 @@ print(select_classstory)
 ```bash
 $ pip install selenium
 ```
-<a href="https://sites.google.com/a/chromium.org/chromedriver/downloads" target="_blank">chrome driver</a><br>
+web drivers([chrome][1], [firefox][2], [phantomjs][3])
+- <a href="https://sites.google.com/a/chromium.org/chromedriver/downloads" target="_blank">chrome driver</a><br>
 <br><br><br>
 
 <br><br><br>
@@ -1403,6 +1404,10 @@ Reference
 - <a href='https://httpbin.org/' target="_blank">httpbin</a>
 
 ---
+
+[1]:{{ site.url }}/download/AI01/chromedriver.exe
+[2]:{{ site.url }}/download/AI01/geckodriver.exe
+[3]:{{ site.url }}/download/AI01/phantomjs.exe
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">handling error</summary>
