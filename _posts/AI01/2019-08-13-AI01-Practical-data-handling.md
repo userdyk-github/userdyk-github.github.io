@@ -766,10 +766,10 @@ HTML = """
 
 soup = BeautifulSoup(HTML, 'html.parser')
 
-links = soup.find_all("a", class_='sister')
-print(links)
+tag_a = soup.find_all("a", class_='sister')
+print(tag_a)
 
-for i in links:
+for i in tag_a:
     print(i.text, i.string)
 ```
 ```
@@ -804,10 +804,10 @@ HTML = """
 
 soup = BeautifulSoup(HTML, 'html.parser')
 
-links = soup.find_all("a", string=["Elsie","Tillie"], id="link1")
-print(links)
+tag_a = soup.find_all("a", string=["Elsie","Tillie"], id="link1")
+print(tag_a)
 
-for i in links:
+for i in tag_a:
     print(i.text, i.string)
 ```
 ```
@@ -839,10 +839,10 @@ HTML = """
 
 soup = BeautifulSoup(HTML, 'html.parser')
 
-links = soup.find_all("a", limit=2)
-print(links)
+tag_a = soup.find_all("a", limit=2)
+print(tag_a)
 
-for i in links:
+for i in tag_a:
     print(i.text, i.string)
 ```
 ```
