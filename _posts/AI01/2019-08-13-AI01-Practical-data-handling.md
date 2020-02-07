@@ -1033,7 +1033,7 @@ print(select_classstory)
 
 <span class="frame3">installation</span><br>
 ```bash
-$ 
+$ pip install selenium
 ```
 <br><br><br>
 
