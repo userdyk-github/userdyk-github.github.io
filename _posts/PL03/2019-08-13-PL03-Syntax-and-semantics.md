@@ -495,6 +495,8 @@ for i in range(10) : print(i)
 ### ***try/except***
 <a herf="https://python.bakyeono.net/chapter-9-4.html#946-assert-%EB%AC%B8-%EB%8B%A8%EC%96%B8%ED%95%98%EA%B8%B0" target="_blank">URL</a>
 ![img-9-4](https://user-images.githubusercontent.com/52376448/71385391-b5df1780-262a-11ea-9b0e-33de023b4a59.png)
+![image](https://user-images.githubusercontent.com/52376448/74032311-02be5800-49f7-11ea-80f6-7f367bf8b1f6.png)
+
 ```python
 try:
     raise ZeroDivisionError()
