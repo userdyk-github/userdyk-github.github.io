@@ -1038,7 +1038,7 @@ $ pip install selenium
 
 <br><br><br>
 
-<span class="frame3">web driver</span><br>
+<span class="frame3">access web(with web driver)</span><br>
 web drivers([chrome][1], [firefox][2], [phantomjs][3]) official download links
 
 - <a href="https://sites.google.com/a/chromium.org/chromedriver/downloads" target="_blank">chrome driver</a><br>
@@ -1053,7 +1053,14 @@ browser = webdriver.Chrome('webdriver/chromedriver.exe')   # caution : path
 browser.implicitly_wait(5)
 browser.set_window_size(1920, 1280)
 browser.get('https://www.naver.com')
+browser.quit()
+```
+![image](https://user-images.githubusercontent.com/52376448/74072957-f7e1e280-4a4b-11ea-906e-23e3f5488764.png)
 
+<details markdown="1">
+<summary class='jb-small' style="color:blue">web driver method</summary>
+<hr class='division3'>
+```python
 print(browser.page_source)
 print(browser.session_id)
 print(browser.title)
@@ -1092,7 +1099,10 @@ NAVER
 https://www.naver.com/
 [{'domain': '.naver.com', 'expiry': 1612652898, 'httpOnly': False, 'name': 'NRTK', 'path': '/', 'secure': False, 'value': 'ag#all_gr#1_ma#-2_si#0_en#0_sp#0'}, {'domain': '.naver.com', 'expiry': 2524640401.665735, 'httpOnly': False, 'name': 'NNB', 'path': '/', 'secure': True, 'value': 'EFLEUDPB5U6V4'}, {'domain': 'www.naver.com', 'expiry': 1581203297.710821, 'httpOnly': True, 'name': 'PM_CK_loc', 'path': '/', 'secure': False, 'value': 'd2d101bc3885853d3f553a325db5c09b55091e808f79a0dfdb0fb274ee3cfd30'}]
 ```
-![image](https://user-images.githubusercontent.com/52376448/74072957-f7e1e280-4a4b-11ea-906e-23e3f5488764.png)
+
+<hr class='division3'>
+</details>
+
 
 
 
