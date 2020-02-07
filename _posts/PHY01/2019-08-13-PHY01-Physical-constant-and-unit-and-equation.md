@@ -25,7 +25,7 @@ List of posts to read before reading this article
 
 | Quantity | Symbol | Value |
 |:---------|:-------|:------|
-| Atomic mass unit | $ u $| <span class='jb-x-small'>$$1.66053886(28)\times 10^{ -27 }\ kg $$<br> $$931.494043(80)\ MeV/c^{ 2 } $$ </span>|
+| Atomic mass unit | $$ u $$| <span class='jb-x-small'>$$1.66053886(28)\times 10^{ -27 }\ kg $$<br> $$931.494043(80)\ MeV/c^{ 2 } $$ </span>|
 | Avogadro’s number | $$ N_{ A }  $$| <span class='jb-x-small'>$$6.0221415(10)\times 10^{ 23 }\ particles/mol $$</span> |
 | Bohr magneton|$$\mu _{ B }=\frac { e\hbar  }{ 2m_{ e } } $$|<span class='jb-x-small'>$$9.27400949(80)\times 10^{ -24 }\ J/T $$ </span>|
 | Bohr radius | $$  a_{ 0 }=\frac { \hbar ^{ 2 } }{ m_{ e }e^{ 2 }k_{ e } } $$| <span class='jb-x-small'>$$5.291772108(18)\times 10^{ -11 }\ m $$</span>|
