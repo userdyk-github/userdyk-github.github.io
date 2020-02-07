@@ -741,9 +741,130 @@ story...
 <br><br><br>
 
 <span class="frame3">FIND</span><br>
+<span class="frame3_1">find_all</span><br>
+```python
+from bs4 import BeautifulSoup
+
+HTML = """
+<html>
+<head>
+<title>The Dormouse's story</title>
+</head>
+<body>
+<h1>this is h1 area</h1>
+<h2>this is h2 area</h2>
+<p class="title"><b>The Dormouse's story</b></p>
+<p class="story">Once upon a time there were three little sisters
+<a href="http://example.com/elsie" class="sister" id="link1">Elsie</a>
+<a href="http://example.com/lacie" class="sister" id="link2">Lacie</a>
+<a data-io="link3" href="http://example.com/tillie" class="sister" id="link3">Tillie</a>
+</p>
+<p class="story">story...</p>
+</body>
+</html>
+"""
+
+soup = BeautifulSoup(HTML, 'html.parser')
+
+links = soup.find_all("a", class_='sister')
+print(links)
+
+for i in links:
+    print(i.text, i.string)
+```
+```
+[<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>, <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>, <a class="sister" data-io="link3" href="http://example.com/tillie" id="link3">Tillie</a>]
+Elsie Elsie
+Lacie Lacie
+Tillie Tillie
+```
+<br><br><br>
+
+```python
+from bs4 import BeautifulSoup
+
+HTML = """
+<html>
+<head>
+<title>The Dormouse's story</title>
+</head>
+<body>
+<h1>this is h1 area</h1>
+<h2>this is h2 area</h2>
+<p class="title"><b>The Dormouse's story</b></p>
+<p class="story">Once upon a time there were three little sisters
+<a href="http://example.com/elsie" class="sister" id="link1">Elsie</a>
+<a href="http://example.com/lacie" class="sister" id="link2">Lacie</a>
+<a data-io="link3" href="http://example.com/tillie" class="sister" id="link3">Tillie</a>
+</p>
+<p class="story">story...</p>
+</body>
+</html>
+"""
+
+soup = BeautifulSoup(HTML, 'html.parser')
+
+links = soup.find_all("a", string=["Elsie","Tillie"], id="link1")
+print(links)
+
+for i in links:
+    print(i.text, i.string)
+```
+```
+[<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>]
+Elsie Elsie
+```
+<br><br><br>
+```python
+from bs4 import BeautifulSoup
+
+HTML = """
+<html>
+<head>
+<title>The Dormouse's story</title>
+</head>
+<body>
+<h1>this is h1 area</h1>
+<h2>this is h2 area</h2>
+<p class="title"><b>The Dormouse's story</b></p>
+<p class="story">Once upon a time there were three little sisters
+<a href="http://example.com/elsie" class="sister" id="link1">Elsie</a>
+<a href="http://example.com/lacie" class="sister" id="link2">Lacie</a>
+<a data-io="link3" href="http://example.com/tillie" class="sister" id="link3">Tillie</a>
+</p>
+<p class="story">story...</p>
+</body>
+</html>
+"""
+
+soup = BeautifulSoup(HTML, 'html.parser')
+
+links = soup.find_all("a", limit=2)
+print(links)
+
+for i in links:
+    print(i.text, i.string)
+```
+```
+[<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>, <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>]
+Elsie Elsie
+Lacie Lacie
+```
+<br><br><br>
+
+<span class="frame3_1">find</span><br>
+
 
 <br><br><br>
+
+
+
 <span class="frame3">SELECT</span><br>
+<span class="frame3_1">select_one</span><br>
+
+<br><br><br>
+
+<span class="frame3_1">select</span><br>
 
 <br><br><br>
 
