@@ -1035,8 +1035,12 @@ print(select_classstory)
 ```bash
 $ pip install selenium
 ```
-web drivers([chrome][1], [firefox][2], [phantomjs][3])
+web drivers([chrome][1], [firefox][2], [phantomjs][3]) official download links
+
 - <a href="https://sites.google.com/a/chromium.org/chromedriver/downloads" target="_blank">chrome driver</a><br>
+- <a href="https://github.com/mozilla/geckodriver/releases">firefox driver</a>
+- <a href="https://phantomjs.org/download.html">phantomjs driver</a>
+
 <br><br><br>
 
 <br><br><br>
