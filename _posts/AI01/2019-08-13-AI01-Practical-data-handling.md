@@ -1294,6 +1294,10 @@ download succeeded!
 
 <br><br><br>
 #### EX6, danawa log-in
+![image](https://user-images.githubusercontent.com/52376448/74026891-786ff700-49ea-11ea-873e-3770696329b1.png)
+![image](https://user-images.githubusercontent.com/52376448/74027362-52972200-49eb-11ea-8f70-7d7809e09487.png)
+![image](https://user-images.githubusercontent.com/52376448/74027597-d94bff00-49eb-11ea-8774-f4fa68f5bc89.png)
+
 ```python
 import requests
 from fake_useragent import UserAgent
