@@ -1036,6 +1036,7 @@ print(select_classstory)
 $ pip install selenium
 ```
 
+<br><br><br>
 <span class="frame3">web driver/<span><br>
 web drivers([chrome][1], [firefox][2], [phantomjs][3]) official download links
 
@@ -1059,6 +1060,16 @@ print(browser.current_url)
 print(browser.get_cookies())
 ```
 ```
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="ko"><head>
+<meta charset="utf-8" />
+<meta name="Referrer" content="origin" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=1100" />
+<meta name="apple-mobile-web-app-title" content="NAVER" />
+<meta name="robots" content="index,nofollow" />
+<meta name="description" content="네이버 메인에서 다양한 정보와 유용한 컨텐츠를 만나 보세요" />
 ...
 ...
 ...
@@ -1082,7 +1093,6 @@ https://www.naver.com/
 ```
 ![image](https://user-images.githubusercontent.com/52376448/74072957-f7e1e280-4a4b-11ea-906e-23e3f5488764.png)
 
-<br><br><br>
 
 
 <br><br><br>
