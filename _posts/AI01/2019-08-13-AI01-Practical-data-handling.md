@@ -877,7 +877,7 @@ HTML = """
 
 soup = BeautifulSoup(HTML, 'html.parser')
 
-tag_a = soup.find("a")
+tag_a = soup.find("a")   # the first tag that was found
 print(tag_a)
 print(tag_a.text, tag_a.string)
 ```
