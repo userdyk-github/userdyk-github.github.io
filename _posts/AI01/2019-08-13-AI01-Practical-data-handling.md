@@ -964,7 +964,47 @@ print(select_valuelink3, select_valuelink3.string)
 <br><br><br>
 
 <span class="frame3_1">select</span><br>
+```python
+from bs4 import BeautifulSoup
 
+HTML = """
+<html>
+<head>
+<title>The Dormouse's story</title>
+</head>
+<body>
+<h1>this is h1 area</h1>
+<h2>this is h2 area</h2>
+<p class="title"><b>The Dormouse's story</b></p>
+<p class="story">Once upon a time there were three little sisters
+<a href="http://example.com/elsie" class="sister" id="link1">Elsie</a>
+<a href="http://example.com/lacie" class="sister" id="link2">Lacie</a>
+<a data-io="link3" href="http://example.com/tillie" class="sister" id="link3">Tillie</a>
+</p>
+<p class="story">story...</p>
+</body>
+</html>
+"""
+
+soup = BeautifulSoup(HTML, 'html.parser')
+
+select_a = soup.select("p.story > a")
+select_a2 = soup.select("p.story > a:nth-of-type(2)")
+select_classstory = soup.select("p.story")
+
+print(select_a)
+print(select_a2)
+print(select_classstory)
+```
+```html
+[<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>, <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>, <a class="sister" data-io="link3" href="http://example.com/tillie" id="link3">Tillie</a>]
+[<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>]
+[<p class="story">Once upon a time there were three little sisters
+<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>
+<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>
+<a class="sister" data-io="link3" href="http://example.com/tillie" id="link3">Tillie</a>
+</p>, <p class="story">story...</p>]
+```
 <br><br><br>
 
 
