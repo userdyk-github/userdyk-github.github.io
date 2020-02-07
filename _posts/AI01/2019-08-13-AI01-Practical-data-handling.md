@@ -1293,11 +1293,55 @@ download succeeded!
 ```
 
 <br><br><br>
-#### EX6, danawa log in
+#### EX6, danawa log-in
 ```python
+import requests
+from fake_useragent import UserAgent
+from bs4 import BeautifulSoup
 
+# /login/form-data on developer tools
+login_info = {
+    'redirectUrl': 'http://www.danawa.com/',
+    'loginMemberType': 'general',
+    'id': 'userdyk',
+    'password': 'amu1660538!'
+}
+
+# request headers on developer tools
+request_headers = {
+    'User-Agent': UserAgent().chrome,
+    'Referer': 'https://auth.danawa.com/login?url=http%3A%2F%2Fcws.danawa.com%2Fpoint%2Findex.php'
+}
+
+
+with requests.session() as s:
+    # Request(try log-in)
+    response = s.post('https://auth.danawa.com/login', login_info, headers=request_headers)
+    
+    # if log-in fail
+    if response.status_code != 200:
+        raise Exception('Login failed.')
+
+    # move page with session info after log-in
+    response = s.get('https://buyer.danawa.com/order/Order/orderList', headers=request_headers)
+
+    # EUC-KR (if korean is not work)
+    # response.encoding = 'euc-kr'
+
+    # bs4 initializer
+    soup = BeautifulSoup(response.text, "html.parser")
+
+    # check whether log-in is sucessful
+    check_name = soup.find('p', class_="user")
+    
+    if check_name is None:
+        raise Exception('Login failed. Wrong Password.')
+    else:
+        print('log-in is successful')
 ```
-
+```
+log-in is successful
+```
 <br><br><br>
 <hr class="division2">
 
