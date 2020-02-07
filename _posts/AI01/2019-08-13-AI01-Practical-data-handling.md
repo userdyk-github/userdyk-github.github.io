@@ -1303,8 +1303,8 @@ from bs4 import BeautifulSoup
 login_info = {
     'redirectUrl': 'http://www.danawa.com/',
     'loginMemberType': 'general',
-    'id': 'userdyk',
-    'password': 'amu1660538!'
+    'id': '',
+    'password': ''
 }
 
 # request headers on developer tools
