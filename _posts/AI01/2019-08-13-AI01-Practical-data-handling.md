@@ -22,13 +22,30 @@ List of posts to read before reading this article
 <hr class="division1">
 ## **File I/O**
 ### ***Image***
+`jpg`
+```bash
+$ pip install matplotlib
+```
 ```python
 import matplotlib.pyplot as plt
 from matplotlib import image
 
 img = image.imread('input_image.jpg')   # load image
-plt.imshow(img)
+plt.imshow(img); plt.show()
 plt.figsave('output_image.jpg')         # save image
+```
+`png`
+```bash
+$ pip install matplotlib
+$ pip install pillow
+```
+```python
+import matplotlib.pyplot as plt
+from matplotlib import image
+
+img = image.imread('input_image.png', 0)   # load image
+plt.imshow(img); plt.show()
+plt.figsave('output_image.png')            # save image
 ```
 <br><br><br>
 
