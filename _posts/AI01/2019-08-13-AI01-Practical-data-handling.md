@@ -1049,9 +1049,9 @@ web drivers([chrome][1], [firefox][2], [phantomjs][3]) official download links
 ```python
 from selenium import webdriver
 
-browser = webdriver.Chrome('webdriver/chromedriver.exe')   # caution : path
+browser = webdriver.Chrome('webdriver/chromedriver.exe')  # Driver path is important
 browser.implicitly_wait(5)
-browser.set_window_size(1920, 1280)
+browser.set_window_size(1920, 1280)            # maximize_window(), minimize_window()
 browser.get('https://www.naver.com')
 browser.quit()
 ```
@@ -1104,20 +1104,21 @@ https://www.naver.com/
 </details>
 
 <br><br><br>
-<span class="frame3">screen shot</span><br>
+<span class="frame3">search keyword & screen shot</span><br>
 ```python
 from selenium import webdriver
 
-browser = webdriver.Chrome('webdriver/chromedriver.exe')
+browser = webdriver.Chrome('webdriver/chromedriver.exe')   # Driver path is important
 browser.implicitly_wait(5)
-browser.set_window_size(1920, 1280)     # maximize_window(), minimize_window()
+browser.set_window_size(1920, 1280)            # maximize_window(), minimize_window()
 browser.get('https://www.daum.net')
 
-
+# search keyword
 element = browser.find_element_by_css_selector('div.inner_search > input.tf_keyword')
 element.send_keys('lion')          # search word(input keyword)
 element.submit()                   # form submit
 
+# screen shot
 browser.save_screenshot("website_ch1.png")             # saving way 1
 browser.get_screenshot_as_file("website_ch2.png")      # saving way 2
 browser.quit()
