@@ -4301,7 +4301,7 @@ re.search(r'[abc.^]aron','caron')
 <_sre.SRE_Match object; span=(0, 5), match='caron'>
 ```
 ```python
-re.search(r'[^abc]aron','#caron')
+re.search(r'[^abc]aron','#aron')
 ```
 ```
 <_sre.SRE_Match object; span=(0, 5), match='#aron'>
