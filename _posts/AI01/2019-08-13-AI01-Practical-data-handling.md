@@ -1196,8 +1196,101 @@ res = req.urlopen(req.Request(url, headers=headers)).read().decode('utf-8')
 
 #### EX5, naver image
 <a href="https://search.naver.com/search.naver?where=image&sm=tab_jum&query=%EC%9D%B4%EB%AF%B8%EC%A7%80" target="_blank"></a><br>
+```python
+import os
+import urllib.parse as rep
+import urllib.request as req
+from fake_useragent import UserAgent
+from bs4 import BeautifulSoup
+
+opener = req.build_opener()                            # Header info initializer
+opener.addheaders = [('User-agent', UserAgent().ie)]   # User-Agent info
+req.install_opener(opener)                             # Insert header info
+
+base = "https://search.naver.com/search.naver?where=image&sm=tab_jum&query="   # naver image search URL
+quote = rep.quote_plus("신소율")                                               # search word
+url = base + quote                                                             # combine basic URL + search word
+
+response = req.urlopen(url) # request
+
+# error handling(being reated to making folder)
+save_path = "image"  # image save folder at current path
+try:
+    if not (os.path.isdir(save_path)):         # check if existing folder is
+        os.makedirs(os.path.join(save_path))   # if not, make folder
+except OSError as e:
+        print("folder creation failed!")
+        print("folder name : {}".format(e.filename))
+        raise RuntimeError('System Exit!')
+else:
+    print('folder is created!')
 
 
+# bs4 initializer
+soup = BeautifulSoup(response, "html.parser")
+img_list = soup.select("div.img_area > a.thumb._thumb > img")
+
+# download, numbering images
+for i, img_list in enumerate(img_list, 1):
+    file_name = os.path.join(save_path, save_path + str(i) + '.png'); print('image name : {}'.format(file_name))
+    req.urlretrieve(img_list['data-source'], file_name)
+
+print("download succeeded!")
+```
+```
+folder is created!
+image name : image\image1.png
+image name : image\image2.png
+image name : image\image3.png
+image name : image\image4.png
+image name : image\image5.png
+image name : image\image6.png
+image name : image\image7.png
+image name : image\image8.png
+image name : image\image9.png
+image name : image\image10.png
+image name : image\image11.png
+image name : image\image12.png
+image name : image\image13.png
+image name : image\image14.png
+image name : image\image15.png
+image name : image\image16.png
+image name : image\image17.png
+image name : image\image18.png
+image name : image\image19.png
+image name : image\image20.png
+image name : image\image21.png
+image name : image\image22.png
+image name : image\image23.png
+image name : image\image24.png
+image name : image\image25.png
+image name : image\image26.png
+image name : image\image27.png
+image name : image\image28.png
+image name : image\image29.png
+image name : image\image30.png
+image name : image\image31.png
+image name : image\image32.png
+image name : image\image33.png
+image name : image\image34.png
+image name : image\image35.png
+image name : image\image36.png
+image name : image\image37.png
+image name : image\image38.png
+image name : image\image39.png
+image name : image\image40.png
+image name : image\image41.png
+image name : image\image42.png
+image name : image\image43.png
+image name : image\image44.png
+image name : image\image45.png
+image name : image\image46.png
+image name : image\image47.png
+image name : image\image48.png
+image name : image\image49.png
+image name : image\image50.png
+download succeeded!
+```
 
 <br><br><br>
 
