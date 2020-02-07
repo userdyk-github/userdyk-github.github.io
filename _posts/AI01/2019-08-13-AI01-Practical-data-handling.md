@@ -1037,7 +1037,8 @@ $ pip install selenium
 ```
 
 <br><br><br>
-<span class="frame3">web driver/<span><br>
+
+<span class="frame3">web driver</span><br>
 web drivers([chrome][1], [firefox][2], [phantomjs][3]) official download links
 
 - <a href="https://sites.google.com/a/chromium.org/chromedriver/downloads" target="_blank">chrome driver</a><br>
