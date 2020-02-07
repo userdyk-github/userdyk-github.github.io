@@ -1194,7 +1194,7 @@ res = req.urlopen(req.Request(url, headers=headers)).read().decode('utf-8')
 
 <br><br><br>
 
-#### EX5, naver image
+#### EX5, naver image search
 <a href="https://search.naver.com/search.naver?where=image&sm=tab_jum&query=%EC%9D%B4%EB%AF%B8%EC%A7%80" target="_blank">naver image search</a><br>
 ```python
 import os
@@ -1293,8 +1293,12 @@ download succeeded!
 ```
 
 <br><br><br>
+#### EX6, danawa log in
+```python
 
+```
 
+<br><br><br>
 <hr class="division2">
 
 ## **From DB**
