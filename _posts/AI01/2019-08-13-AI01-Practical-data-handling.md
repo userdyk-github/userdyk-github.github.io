@@ -63,7 +63,7 @@ with open('output.txt','w') as f:      # save text
 ![image](https://user-images.githubusercontent.com/52376448/71744017-5ba34980-2ea9-11ea-90fc-40deb5d05e50.png)
 
 <br><br><br>
-### ***Scraping***
+### ***Scraping : basic***
 #### urllib
 <a href="https://docs.python.org/3/library/urllib.html" target="_blank">API</a><br>
 <span class="frame3">installation</span><br>
@@ -1025,6 +1025,19 @@ $
 
 ---
 
+### ***Scraping : advanced***
+<span class="frame3">installation</span><br>
+```dos
+pip install scrapy
+pip install pypiwin32
+```
+<br><br><br>
+
+<br><br><br>
+
+
+---
+
 ### ***Example for scraping***
 #### EX1, encar
 <a href="http://www.encar.com/index.do" target="_blank">encar</a><br>
@@ -1188,17 +1201,7 @@ res = req.urlopen(req.Request(url, headers=headers)).read().decode('utf-8')
 
 <br><br><br>
 
----
 
-### ***Scrapy***
-<span class="frame3">installation</span><br>
-```dos
-pip install scrapy
-pip install pypiwin32
-```
-<br><br><br>
-
-<br><br><br>
 <hr class="division2">
 
 ## **From DB**
