@@ -1080,6 +1080,7 @@ NAVER
 https://www.naver.com/
 [{'domain': '.naver.com', 'expiry': 1612652898, 'httpOnly': False, 'name': 'NRTK', 'path': '/', 'secure': False, 'value': 'ag#all_gr#1_ma#-2_si#0_en#0_sp#0'}, {'domain': '.naver.com', 'expiry': 2524640401.665735, 'httpOnly': False, 'name': 'NNB', 'path': '/', 'secure': True, 'value': 'EFLEUDPB5U6V4'}, {'domain': 'www.naver.com', 'expiry': 1581203297.710821, 'httpOnly': True, 'name': 'PM_CK_loc', 'path': '/', 'secure': False, 'value': 'd2d101bc3885853d3f553a325db5c09b55091e808f79a0dfdb0fb274ee3cfd30'}]
 ```
+![image](https://user-images.githubusercontent.com/52376448/74072957-f7e1e280-4a4b-11ea-906e-23e3f5488764.png)
 
 <br><br><br>
 
