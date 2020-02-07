@@ -468,7 +468,8 @@ List of posts followed by this article
 
 Reference
 - Santanu Pattanayak, Pro Deep Learning with TensorFlow, 2017
-- <a href='https://www.tensorflow.org/api_docs/python/tf'>tensorflow API</a>
+- <a href='https://www.tensorflow.org/api_docs/python/tf' target="_blank">tensorflow API</a>
+- <a href='https://wikidocs.net/book/2324' target="_blank">wikidocs, tensorflow</a>
 - <a href='https://tensorflowkorea.gitbooks.io/tensorflow-kr/' target="_blank">tensorflow-kr</a>
 
 ---
