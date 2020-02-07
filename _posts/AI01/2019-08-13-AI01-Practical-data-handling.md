@@ -1327,7 +1327,7 @@ with requests.session() as s:
         raise Exception('Login failed.')
 
     # move page with session info after log-in
-    response = s.get('https://buyer.danawa.com/order/Order/orderList', headers=request_headers)
+    response = s.get('http://www.danawa.com/member/myPage.php', headers=request_headers)
 
     # EUC-KR (if korean is not work)
     # response.encoding = 'euc-kr'
@@ -1336,7 +1336,7 @@ with requests.session() as s:
     soup = BeautifulSoup(response.text, "html.parser")
 
     # check whether log-in is sucessful
-    check_name = soup.find('p', class_="user")
+    check_name = soup.find('p', class_="p_id")
     
     if check_name is None:
         raise Exception('Login failed. Wrong Password.')
