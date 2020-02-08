@@ -1269,6 +1269,14 @@ browser.quit()
 <hr class='division3'>
 </details>
 
+<br><br><br>
+<span class="frame3">xlsxwriter</span><br>
+```bash
+$ pip install xlsxwriter
+```
+```python
+
+```
 
 <br><br><br>
 
