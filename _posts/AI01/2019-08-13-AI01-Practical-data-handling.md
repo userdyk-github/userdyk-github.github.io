@@ -1217,6 +1217,57 @@ browser.quit()
 ```
 <hr class='division3'>
 </details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Application(click page-number)</summary>
+<hr class='division3'>
+```python
+from selenium import webdriver
+import time
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.options import Options
+from bs4 import BeautifulSoup
+
+chrome_options = Options()
+chrome_options.add_argument("--headless")
+
+browser = webdriver.Chrome('./webdriver/chromedriver.exe', options=chrome_options)
+browser.implicitly_wait(5)
+browser.set_window_size(1920, 1280)  # maximize_window(), minimize_window()
+browser.get('http://prod.danawa.com/list/?cate=112758&15main_11_02')
+
+WebDriverWait(browser, 3).until(EC.presence_of_element_located((By.XPATH, '//*[@id="dlMaker_simple"]/dd/div[2]/button[1]'))).click()
+WebDriverWait(browser, 2).until(EC.presence_of_element_located((By.XPATH, '//*[@id="selectMaker_simple_priceCompare_A"]/li[14]/label'))).click()
+time.sleep(3)
+
+
+cur_page_num = 1; target_crawl_num = 5
+while cur_page_num <= target_crawl_num:
+    # bs4 initializer
+    soup = BeautifulSoup(browser.page_source, "html.parser")
+    
+    pro_list = soup.select('div.main_prodlist.main_prodlist_list > ul > li')
+    print('****** Current Page : {}'.format(cur_page_num), ' ******')
+    for v in pro_list:
+        if not v.find('div', class_='ad_header'):
+            # product name, image, price
+            print(v.select('p.prod_name > a')[0].text.strip())
+            print(v.select('a.thumb_link > img')[0]['src'])
+            print(v.select('p.price_sect > a')[0].text.strip())
+
+    cur_page_num += 1
+    if cur_page_num > target_crawl_num:
+        print('Crawling Succeed.')
+        break
+    
+    WebDriverWait(browser, 2).until(EC.presence_of_element_located((By.CSS_SELECTOR, 'div.number_wrap > a:nth-child({})'.format(cur_page_num)))).click()
+    time.sleep(4)
+
+browser.quit()
+```
+<hr class='division3'>
+</details>
 
 
 <br><br><br>
