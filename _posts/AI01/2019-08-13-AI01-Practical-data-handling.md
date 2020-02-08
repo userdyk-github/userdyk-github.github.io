@@ -1318,14 +1318,13 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
+workbook = xlsxwriter.Workbook("crawling_result.xlsx")
+worksheet = workbook.add_worksheet()
+
 chrome_options = Options()
 chrome_options.add_argument("--headless")
 
 browser = webdriver.Chrome('./webdriver/chromedriver.exe', options=chrome_options)
-
-workbook = xlsxwriter.Workbook("crawling_result.xlsx")
-worksheet = workbook.add_worksheet()
-
 browser.implicitly_wait(5)
 browser.set_window_size(1920, 1280)  # maximize_window(), minimize_window()
 browser.get('http://prod.danawa.com/list/?cate=112758&15main_11_02')
