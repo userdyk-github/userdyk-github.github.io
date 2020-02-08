@@ -1069,6 +1069,8 @@ browser.set_window_size(1920, 1280)            # maximize_window(), minimize_win
 browser.get('https://www.naver.com')
 browser.quit()
 ```
+result without option
+
 ![image](https://user-images.githubusercontent.com/52376448/74072957-f7e1e280-4a4b-11ea-906e-23e3f5488764.png)
 
 <details markdown="1">
