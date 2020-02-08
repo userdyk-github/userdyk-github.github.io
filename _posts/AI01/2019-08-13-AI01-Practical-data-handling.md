@@ -1176,13 +1176,13 @@ browser.quit()
 <br><br><br>
 <span class="frame3">Click(with Explicitly wait)</span><br>
 ```python
-from selenium import webdriver
 import time
+from bs4 import BeautifulSoup
+from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
-from bs4 import BeautifulSoup
 
 chrome_options = Options()
 chrome_options.add_argument("--headless")
@@ -1214,13 +1214,13 @@ browser.quit()
 <summary class='jb-small' style="color:blue">Click(with Implicitly wait)</summary>
 <hr class='division3'>
 ```python
-from selenium import webdriver
 import time
+from bs4 import BeautifulSoup
+from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
-from bs4 import BeautifulSoup
 
 chrome_options = Options()
 chrome_options.add_argument("--headless")
@@ -1253,13 +1253,13 @@ browser.quit()
 <summary class='jb-small' style="color:blue">Application(click page-number)</summary>
 <hr class='division3'>
 ```python
-from selenium import webdriver
 import time
+from bs4 import BeautifulSoup
+from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
-from bs4 import BeautifulSoup
 
 chrome_options = Options()
 chrome_options.add_argument("--headless")
