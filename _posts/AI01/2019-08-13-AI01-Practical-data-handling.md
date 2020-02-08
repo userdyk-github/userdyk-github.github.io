@@ -1198,7 +1198,7 @@ browser.implicitly_wait(5)
 browser.set_window_size(1920, 1280)  # maximize_window(), minimize_window()
 browser.get('http://prod.danawa.com/list/?cate=112758&15main_11_02')
 
-# Explicitly wait
+# Implicitly wait
 time.sleep(3); browser.find_element_by_xpath('//*[@id="dlMaker_simple"]/dd/div[2]/button[1]').click()
 time.sleep(2); browser.find_element_by_xpath('//*[@id="selectMaker_simple_priceCompare_A"]/li[14]/label').click()
 time.sleep(3)
