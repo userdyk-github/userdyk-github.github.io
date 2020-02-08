@@ -1246,7 +1246,6 @@ cur_page_num = 1; target_crawl_num = 5
 while cur_page_num <= target_crawl_num:
     # bs4 initializer
     soup = BeautifulSoup(browser.page_source, "html.parser")
-    
     pro_list = soup.select('div.main_prodlist.main_prodlist_list > ul > li')
     print('****** Current Page : {}'.format(cur_page_num), ' ******')
     for v in pro_list:
