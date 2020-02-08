@@ -1279,15 +1279,15 @@ while cur_page_num <= target_crawl_num:
     # bs4 initializer
     soup = BeautifulSoup(browser.page_source, "html.parser")
     pro_list = soup.select('div.main_prodlist.main_prodlist_list > ul > li')
-    print('****** Current Page : {}'.format(cur_page_num), ' ******')
+    
+    print('Current Page : {}'.format(cur_page_num))
     for v in pro_list:
         if not v.find('div', class_='ad_header'):
             # product name, image, price
             print(v.select('p.prod_name > a')[0].text.strip())
             print(v.select('a.thumb_link > img')[0]['src'])
             print(v.select('p.price_sect > a')[0].text.strip())
-
-    cur_page_num += 1
+    cur_page_num += 1   # next page
     if cur_page_num > target_crawl_num:
         print('Crawling Succeed.')
         break
@@ -1306,12 +1306,77 @@ browser.quit()
 $ pip install xlsxwriter
 ```
 ```python
+import urllib.request as req
+from io import BytesIO
+import xlsxwriter
 
+import time
+from bs4 import BeautifulSoup
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
+
+chrome_options = Options()
+chrome_options.add_argument("--headless")
+
+browser = webdriver.Chrome('./webdriver/chromedriver.exe', options=chrome_options)
+
+workbook = xlsxwriter.Workbook("crawling_result.xlsx")
+worksheet = workbook.add_worksheet()
+
+browser.implicitly_wait(5)
+browser.set_window_size(1920, 1280)  # maximize_window(), minimize_window()
+browser.get('http://prod.danawa.com/list/?cate=112758&15main_11_02')
+
+WebDriverWait(browser, 3).until(EC.presence_of_element_located((By.XPATH, '//*[@id="dlMaker_simple"]/dd/div[2]/button[1]'))).click()
+WebDriverWait(browser, 2).until(EC.presence_of_element_located((By.XPATH, '//*[@id="selectMaker_simple_priceCompare_A"]/li[14]/label'))).click()
+time.sleep(3)
+
+cur_page_num = 1; target_crawl_num = 5
+ins_cnt = 1  # excel row number
+
+while cur_page_num <= target_crawl_num:
+    # bs4 initializer
+    soup = BeautifulSoup(browser.page_source, "html.parser")
+    pro_list = soup.select('div.main_prodlist.main_prodlist_list > ul > li')
+    
+    print('Current Page : {}'.format(cur_page_num))
+    for v in pro_list:
+        if not v.find('div', class_='ad_header'):
+            # product name, price
+            prod_name = v.select('p.prod_name > a')[0].text.strip()
+            prod_price = v.select('p.price_sect > a')[0].text.strip()
+            # save excel(text)
+            worksheet.write('A%s' % ins_cnt, prod_name)
+            worksheet.write('B%s' % ins_cnt, prod_price)
+
+            """
+            # product image
+            img_data = BytesIO(req.urlopen(v.select('a.thumb_link > img')[0]['data-original']).read())
+            
+            # save excel(image)
+            worksheet.insert_image('C%s' % ins_cnt, prod_name, {'image_data': img_data})
+            """
+
+            ins_cnt += 1   # next row
+    cur_page_num += 1      # next page
+    if cur_page_num > target_crawl_num:
+        print('Crawling Succeed.')
+        break
+
+    WebDriverWait(browser, 2).until(EC.presence_of_element_located((By.CSS_SELECTOR, 'div.number_wrap > a:nth-child({})'.format(cur_page_num)))).click()
+    time.sleep(4)
+
+browser.quit()
+workbook.close()
 ```
 
 <br><br><br>
 
 ---
+
 
 ### ***Scraping : advanced***
 <span class="frame3">installation</span><br>
