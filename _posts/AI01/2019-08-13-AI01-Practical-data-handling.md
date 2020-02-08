@@ -1010,17 +1010,49 @@ select_a2 = soup.select("p.story > a:nth-of-type(2)")
 select_classstory = soup.select("p.story")
 
 print(select_a)
+print(select_a[0])
+print(select_a[1])
+print(select_a[2])
+print(select_a[0]['href'])
+print(select_a[1]['href'])
+print(select_a[2]['href'])
+print()
+
 print(select_a2)
+print(select_a2[0])
+print(select_a2[0]['id'])
+print()
+
 print(select_classstory)
+print(select_classstory[0])
+print(select_classstory[1])
+print(select_classstory[0]['class'])
 ```
 ```html
 [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>, <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>, <a class="sister" data-io="link3" href="http://example.com/tillie" id="link3">Tillie</a>]
+<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>
+<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>
+<a class="sister" data-io="link3" href="http://example.com/tillie" id="link3">Tillie</a>
+http://example.com/elsie
+http://example.com/lacie
+http://example.com/tillie
+
 [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>]
+<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>
+link2
+
 [<p class="story">Once upon a time there were three little sisters
 <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>
 <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>
 <a class="sister" data-io="link3" href="http://example.com/tillie" id="link3">Tillie</a>
 </p>, <p class="story">story...</p>]
+<p class="story">Once upon a time there were three little sisters
+<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>
+<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>
+<a class="sister" data-io="link3" href="http://example.com/tillie" id="link3">Tillie</a>
+</p>
+<p class="story">story...</p>
+['story']
 ```
 <br><br><br>
 
