@@ -1371,6 +1371,30 @@ while cur_page_num <= target_crawl_num:
 browser.quit()
 workbook.close()
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Making excel file</summary>
+<hr class='division3'>
+```python
+import urllib.request as req
+from io import BytesIO
+import xlsxwriter
+
+workbook = xlsxwriter.Workbook("excel.xlsx")
+worksheet = workbook.add_worksheet()
+
+img_data = BytesIO(req.urlopen('http://img.danawa.com/prod_img/500000/866/250/img/5250866_1.jpg?shrink=160:160&_v=20180713162212').read())
+
+worksheet.write('A1', 'prod_name')
+worksheet.write('B1', 'prod_price')
+worksheet.insert_image('C1', 'prod_name', {'image_data': img_data})
+
+workbook.close()
+```
+<hr class='division3'>
+</details>
+
+
+
 
 <br><br><br>
 
