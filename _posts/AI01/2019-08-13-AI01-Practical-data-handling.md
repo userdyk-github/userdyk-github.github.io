@@ -1031,14 +1031,14 @@ print(select_classstory)
 #### Selenium
 <a href="" target="_blank">API</a><br>
 
-<span class="frame3">installation</span><br>
+<span class="frame3">Installation</span><br>
 ```bash
 $ pip install selenium
 ```
 
 <br><br><br>
 
-<span class="frame3">access web(with web driver)</span><br>
+<span class="frame3">Access web(with web driver)</span><br>
 web drivers([chrome][1], [firefox][2], [phantomjs][3]) official download links
 
 - <a href="https://sites.google.com/a/chromium.org/chromedriver/downloads" target="_blank">chrome driver</a><br>
@@ -1120,7 +1120,7 @@ https://www.naver.com/
 </details>
 
 <br><br><br>
-<span class="frame3">search keyword & screen shot</span><br>
+<span class="frame3">Search keyword & screen shot</span><br>
 ```python
 from selenium import webdriver
 
@@ -1140,6 +1140,84 @@ browser.get_screenshot_as_file("website_ch2.png")      # saving way 2
 browser.quit()
 ```
 ![image](https://user-images.githubusercontent.com/52376448/74073622-5e680000-4a4e-11ea-8831-14fa25249fab.png)
+
+<br><br><br>
+<span class="frame3">Click(with Explicitly wait)</span><br>
+```python
+from selenium import webdriver
+import time
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.options import Options
+from bs4 import BeautifulSoup
+
+chrome_options = Options()
+chrome_options.add_argument("--headless")
+
+browser = webdriver.Chrome('./webdriver/chromedriver.exe', options=chrome_options)
+browser.implicitly_wait(5)
+browser.set_window_size(1920, 1280)  # maximize_window(), minimize_window()
+browser.get('http://prod.danawa.com/list/?cate=112758&15main_11_02')
+
+# Explicitly wait
+WebDriverWait(browser, 3).until(EC.presence_of_element_located((By.XPATH, '//*[@id="dlMaker_simple"]/dd/div[2]/button[1]'))).click()
+WebDriverWait(browser, 2).until(EC.presence_of_element_located((By.XPATH, '//*[@id="selectMaker_simple_priceCompare_A"]/li[14]/label'))).click()
+time.sleep(3)
+
+# bs4 initializer
+soup = BeautifulSoup(browser.page_source, "html.parser")
+pro_list = soup.select('div.main_prodlist.main_prodlist_list > ul > li')
+for v in pro_list:
+    if not v.find('div', class_='ad_header'):
+        # product name, image, price
+        print(v.select('p.prod_name > a')[0].text.strip())
+        print(v.select('a.thumb_link > img')[0]['src'])
+        print(v.select('p.price_sect > a')[0].text.strip())
+
+browser.quit()
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Click(with Implicitly wait)</summary>
+<hr class='division3'>
+```python
+from selenium import webdriver
+import time
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.options import Options
+from bs4 import BeautifulSoup
+
+chrome_options = Options()
+chrome_options.add_argument("--headless")
+
+browser = webdriver.Chrome('./webdriver/chromedriver.exe', options=chrome_options)
+browser.implicitly_wait(5)
+browser.set_window_size(1920, 1280)  # maximize_window(), minimize_window()
+browser.get('http://prod.danawa.com/list/?cate=112758&15main_11_02')
+
+# Explicitly wait
+time.sleep(3); browser.find_element_by_xpath('//*[@id="dlMaker_simple"]/dd/div[2]/button[1]').click()
+time.sleep(2); browser.find_element_by_xpath('//*[@id="selectMaker_simple_priceCompare_A"]/li[14]/label').click()
+time.sleep(3)
+
+# bs4 initializer
+soup = BeautifulSoup(browser.page_source, "html.parser")
+pro_list = soup.select('div.main_prodlist.main_prodlist_list > ul > li')
+for v in pro_list:
+    if not v.find('div', class_='ad_header'):
+        # product name, image, price
+        print(v.select('p.prod_name > a')[0].text.strip())
+        print(v.select('a.thumb_link > img')[0]['src'])
+        print(v.select('p.price_sect > a')[0].text.strip())
+
+browser.quit()
+```
+<hr class='division3'>
+</details>
+
 
 <br><br><br>
 
