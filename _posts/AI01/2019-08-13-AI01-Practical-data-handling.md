@@ -1046,10 +1046,24 @@ web drivers([chrome][1], [firefox][2], [phantomjs][3]) official download links
 - <a href="https://phantomjs.org/download.html">phantomjs driver</a>
 
 ![image](https://user-images.githubusercontent.com/52376448/74072863-9d488680-4a4b-11ea-816a-42d0dea0a549.png)
+`without option`
 ```python
 from selenium import webdriver
 
 browser = webdriver.Chrome('webdriver/chromedriver.exe')  # Driver path is important
+browser.implicitly_wait(5)
+browser.set_window_size(1920, 1280)            # maximize_window(), minimize_window()
+browser.get('https://www.naver.com')
+browser.quit()
+```
+`with option(headless)`
+```python
+from selenium import webdriver
+
+chrome_options = Options()
+chrome_options.add_argument("--headless")
+
+browser = webdriver.Chrome('webdriver/chromedriver.exe', options=chrome_options)  # Driver path is important
 browser.implicitly_wait(5)
 browser.set_window_size(1920, 1280)            # maximize_window(), minimize_window()
 browser.get('https://www.naver.com')
