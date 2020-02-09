@@ -72,7 +72,7 @@ with open('output.txt','w') as f:      # save text
 <br><br><br>
 <hr class="division2">
 
-## **From WEB**
+## **Load data from WEB**
 <ins>Developer tools</ins><br>
 <p>F12 : Elements(Inspector, Ctrl + Shift + c), Networks</p>
 <p>/robots.txt</p>
@@ -1819,7 +1819,7 @@ log-in is successful
 <br><br><br>
 <hr class="division2">
 
-## **To DB**
+## **Save data to DB**
 <br><br><br>
 <hr class="division2">
 
