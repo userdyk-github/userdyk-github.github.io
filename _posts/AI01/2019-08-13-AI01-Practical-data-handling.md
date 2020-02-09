@@ -1458,7 +1458,13 @@ $ scrapy runspider [spider_name].py
 
 
 #### Shell
-
+```bash
+$ scrapy shell
+$ scrapy shell [crawling_url]
+$ scrapy shell [crawling_url] --set="ROBOTSTXT_OBEY=False"
+```
+```python
+```
 <br><br><br>
 
 #### Spider
