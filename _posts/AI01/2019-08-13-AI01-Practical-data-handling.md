@@ -1819,7 +1819,7 @@ log-in is successful
 <br><br><br>
 <hr class="division2">
 
-## **From DB**
+## **To DB**
 <br><br><br>
 <hr class="division2">
 
