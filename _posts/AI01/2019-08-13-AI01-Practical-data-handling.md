@@ -1426,6 +1426,8 @@ $ scrapy startproject [project_name]
 $ cd [project_name]
 $ scrapy genspider [spider_name] [Crawling_URL]
 $ scrapy crawl [spider_name]
+$ cd [project_name]/spiders
+$ scrapy runspider [spider_name].py
 ```
 <br><br><br>
 
