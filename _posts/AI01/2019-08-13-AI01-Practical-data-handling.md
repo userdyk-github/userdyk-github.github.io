@@ -1432,6 +1432,30 @@ $ cd [project_name]/spiders
 $ scrapy runspider [spider_name].py
 ```
 <br><br><br>
+<span class="frame3">parse</span><br>
+![image](https://user-images.githubusercontent.com/52376448/74096308-93ed1600-4b40-11ea-98fd-e795c4d51c38.png)
+
+<span class="frame3_1">response.css</span><br>
+<span class="frame3_2">getall()</span><br>
+<br><br><br>
+<span class="frame3_2">get()</span><br>
+<br><br><br>
+<span class="frame3_2">extract()</span><br>
+<br><br><br>
+<span class="frame3_2">extract_first()</span><br>
+<br><br><br>
+
+
+<span class="frame3_1">response.xpath</span><br>
+<span class="frame3_2">getall()</span><br>
+<br><br><br>
+<span class="frame3_2">get()</span><br>
+<br><br><br>
+<span class="frame3_2">extract()</span><br>
+<br><br><br>
+<span class="frame3_2">extract_first()</span><br>
+<br><br><br>
+
 
 #### Shell
 
