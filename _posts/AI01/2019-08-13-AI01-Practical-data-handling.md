@@ -1401,12 +1401,16 @@ workbook.close()
 ---
 
 
-### ***Scraping : advanced(Scrapy)***
+### ***Scraping : advanced***
 <span class="frame3">installation</span><br>
 ```dos
 pip install scrapy
 pip install pypiwin32
 ```
+<br><br><br>
+
+#### Scrapy basic
+
 <br><br><br>
 
 #### Shell
