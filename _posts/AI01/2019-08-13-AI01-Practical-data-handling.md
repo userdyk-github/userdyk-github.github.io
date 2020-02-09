@@ -1424,6 +1424,7 @@ pip install pypiwin32
 $ scrapy startproject [project_name]
 $ cd [project_name]
 $ scrapy genspider [spider_name] [Crawling_URL]
+$ scrapy crawl [spider_name]
 ```
 <br><br><br>
 
