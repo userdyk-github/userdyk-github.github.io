@@ -144,7 +144,7 @@ title: MATERIALS
 
 <a href="https://bskyvision.com/" target="_blank">bskyvision</a>, 
 <a href="https://dojang.io/course/index.php?categoryid=1" target="_blank">dojang</a>, 
-<a href="https://www.fun-coding.org/daveblog.html" target="_blank">fun coding</a>, 
+<a href="https://www.fun-coding.org/index.html" target="_blank">fun coding</a>, 
 <a href="https://freshrimpsushi.tistory.com/" target="_blank">freshrimpsushi</a>, 
 <a href="https://eungbean.github.io/index.html" target="_blank">eungbean</a>, 
 
