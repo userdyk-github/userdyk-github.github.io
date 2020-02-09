@@ -1418,7 +1418,7 @@ pip install pypiwin32
 <br><br><br>
 
 #### Scrapy framework
-![image](https://user-images.githubusercontent.com/52376448/74096139-1c1dec00-4b3e-11ea-8abf-b748ecc39536.png)
+![image](https://user-images.githubusercontent.com/52376448/74096218-7d928a80-4b3f-11ea-99b6-5a18aa92c6a7.png)
 
 
 ```bash
