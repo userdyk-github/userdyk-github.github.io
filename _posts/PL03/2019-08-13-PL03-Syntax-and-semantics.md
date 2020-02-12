@@ -2095,7 +2095,8 @@ print(data)
 |method|description|
 |:--|:--|
 |os.chdir('path')|change directory|
-|os.getcwd()|get current working directory|
+|os.getcwd() <br> os.path.dirname(__file__)|get current working directory|
+
 |os.listdir('path')|list of files on directory|
 
 
