@@ -66,8 +66,8 @@ List of posts to read before reading this article
 |니 동포 왔다|your compatriot is here|
 |밖에 경찰 왔어|the police is outside|
 |진짜 돌겠네|This is driving me nuts|
-|||
-|||
+|어떡할래?|what's it going to be?|
+|이게 다야?|is that all?|
 |||
 
 
