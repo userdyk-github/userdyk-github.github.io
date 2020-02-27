@@ -150,7 +150,7 @@ data_queue.put((4,'4th data'))
 <br><br><br>
 <hr class="division2">
 
-## **Stack**
+### ***Stack***
 ```python
 class stack():
     def __init__(self):
@@ -172,6 +172,11 @@ s.pop()
 ```
 <br><br><br>
 
+### ***Linked List***
+
+<br><br><br>
+
+
 <hr class="division2">
 
 
@@ -181,11 +186,6 @@ s.pop()
 
 <hr class="division2">
 
-## **Linked List**
-
-<br><br><br>
-
-<hr class="division2">
 
 
 
