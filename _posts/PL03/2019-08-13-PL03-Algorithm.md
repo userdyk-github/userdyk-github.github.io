@@ -90,8 +90,6 @@ Q.dequeue()
 Q.dequeue()
 Q.dequeue()
 ```
-<hr class='division3'>
-</details>
 
 
 <details markdown="1">
@@ -120,7 +118,7 @@ It was dequeued and present state of queue is as follow
 It was dequeued and present state of queue is as follow
 ```
 <hr class='division3'>
-<details>
+</details>
 
 <br><br><br>
 
