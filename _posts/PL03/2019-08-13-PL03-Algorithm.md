@@ -90,6 +90,10 @@ Q.dequeue()
 Q.dequeue()
 Q.dequeue()
 ```
+<hr class='division3'>
+</details>
+
+
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
@@ -119,6 +123,7 @@ It was dequeued and present state of queue is as follow
 <details>
 
 <br><br><br>
+
 #### LIFO Queue
 ```python
 import queue
@@ -131,6 +136,7 @@ data_queue.put(3)
 data_queue.put(4)
 ```
 <br><br><br>
+
 #### Priority Queue
 .put((priority, data))
 ```python
