@@ -150,6 +150,13 @@ data_queue.put((4,'4th data'))
 <br><br><br>
 <hr class="division2">
 
+## **Stack**
+
+<br><br><br>
+
+<hr class="division2">
+
+
 ## **Recursion**
 
 <br><br><br>
@@ -162,11 +169,6 @@ data_queue.put((4,'4th data'))
 
 <hr class="division2">
 
-## **Stack**
-
-<br><br><br>
-
-<hr class="division2">
 
 
 
