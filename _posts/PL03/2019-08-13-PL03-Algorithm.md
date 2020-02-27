@@ -151,7 +151,25 @@ data_queue.put((4,'4th data'))
 <hr class="division2">
 
 ## **Stack**
+```python
+class stack():
+    def __init__(self):
+        self.stack_list = list()
 
+    def push(self, data):
+        return self.stack_list.append(data)
+
+    def pop(self):
+        data = self.stack_list[-1]
+        del self.stack_list[-1]
+        return data
+```
+```python
+s = stack()
+s.push(1)
+s.push(2)
+s.pop()
+```
 <br><br><br>
 
 <hr class="division2">
