@@ -173,9 +173,26 @@ s.pop()
 <br><br><br>
 
 ### ***Linked List***
+#### example
+```python
+```
 
 <br><br><br>
+#### function 1
+```python
+```
 
+<br><br><br>
+#### function 2
+```python
+```
+
+<br><br><br>
+#### Doubly linked list
+```python
+```
+
+<br><br><br>
 
 <hr class="division2">
 
