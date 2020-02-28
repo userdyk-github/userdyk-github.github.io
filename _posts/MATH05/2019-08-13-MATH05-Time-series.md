@@ -83,12 +83,6 @@ Freq: D, dtype: int32
 <summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
 <hr class='division3'>
 ```python
-import pandas as pd
-import numpy as np
-
-t_series01 = pd.date_range("2015-1-1", periods=31)
-T_series01 = pd.Series(np.arange(31), index=t_series01)
-
 # timestamp object
 print(T_series01.index[2])
 print(T_series01.index[2].year,
@@ -107,13 +101,22 @@ print(T_series01.index[2].to_pydatetime())
 # datetime object
 2015-01-03 00:00:00
 ```
-<br>
+<br><br><br>
+<span class="frame3">datetime object</span>
+```python
+import pandas as pd
+import numpy as np
+import datetime
 
-<hr class='division3'>
-</details><br>
-<details markdown="1">
-<summary class='jb-small' style="color:blue"></summary>
-<hr class='division3'>
+T_series = pd.Series(np.random.rand(2),
+                     index=[datetime.datetime(2015, 1, 1), datetime.datetime(2015, 2, 1)])
+print(T_series)
+```
+```
+2015-01-01    0.972084
+2015-02-01    0.301809
+dtype: float64
+```
 <hr class='division3'>
 </details><br>
 
