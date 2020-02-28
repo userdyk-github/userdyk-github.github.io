@@ -160,6 +160,45 @@ Freq: H, dtype: int32
 ```
 <hr class='division3'>
 </details>
+<br>
+
+```python
+import pandas as pd
+import numpy as np
+
+t_series03 = pd.PeriodIndex([pd.Period('2015-01'),
+                             pd.Period('2015-02'),
+                             pd.Period('2015-03')])
+T_series03 = pd.Series(np.random.rand(3), index=t_series03)
+print(T_series03)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+2015-01    0.075913
+2015-02    0.550537
+2015-03    0.971680
+Freq: M, dtype: float64
+```
+<hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+```python
+# PeriodIndex object
+print(ts2.to_period('M'))
+```
+```
+2015-01 0.683801
+2015-02 0.916209
+Freq: M, dtype: float64
+```
+<hr class='division3'>
+</details>
+
+<br>
 
 <br><br><br>
 <hr class="division2">
