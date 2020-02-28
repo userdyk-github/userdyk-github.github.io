@@ -166,9 +166,7 @@ Freq: H, dtype: int32
 import pandas as pd
 import numpy as np
 
-t_series03 = pd.PeriodIndex([pd.Period('2015-01'),
-                             pd.Period('2015-02'),
-                             pd.Period('2015-03')])
+t_series03 = pd.PeriodIndex([pd.Period('2015-01'), pd.Period('2015-02'), pd.Period('2015-03')])
 T_series03 = pd.Series(np.random.rand(3), index=t_series03)
 print(T_series03)
 ```
