@@ -22,7 +22,104 @@ List of posts to read before reading this article
 <hr class="division1">
 
 ## **pandas basic about time series**
+```python
+import pandas as pd
+import numpy as np
 
+t_series01 = pd.date_range("2015-1-1", periods=31)
+T_series01 = pd.Series(np.arange(31), index=t_series01)
+print(t_series01)
+print(T_series01)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+DatetimeIndex(['2015-01-01', '2015-01-02', '2015-01-03', '2015-01-04',
+               '2015-01-05', '2015-01-06', '2015-01-07', '2015-01-08',
+               '2015-01-09', '2015-01-10', '2015-01-11', '2015-01-12',
+               '2015-01-13', '2015-01-14', '2015-01-15', '2015-01-16',
+               '2015-01-17', '2015-01-18', '2015-01-19', '2015-01-20',
+               '2015-01-21', '2015-01-22', '2015-01-23', '2015-01-24',
+               '2015-01-25', '2015-01-26', '2015-01-27', '2015-01-28',
+               '2015-01-29', '2015-01-30', '2015-01-31'],
+              dtype='datetime64[ns]', freq='D')
+2015-01-01     0
+2015-01-02     1
+2015-01-03     2
+2015-01-04     3
+2015-01-05     4
+2015-01-06     5
+2015-01-07     6
+2015-01-08     7
+2015-01-09     8
+2015-01-10     9
+2015-01-11    10
+2015-01-12    11
+2015-01-13    12
+2015-01-14    13
+2015-01-15    14
+2015-01-16    15
+2015-01-17    16
+2015-01-18    17
+2015-01-19    18
+2015-01-20    19
+2015-01-21    20
+2015-01-22    21
+2015-01-23    22
+2015-01-24    23
+2015-01-25    24
+2015-01-26    25
+2015-01-27    26
+2015-01-28    27
+2015-01-29    28
+2015-01-30    29
+2015-01-31    30
+Freq: D, dtype: int32
+```
+<hr class='division3'>
+</details><br>
+
+```python
+import pandas as pd
+import numpy as np
+
+t_series02 = pd.date_range("2015-1-1 00:00", "2015-1-1 12:00", freq="H")
+T_series02 = pd.Series(np.arange(13), index=t_series02)
+print(t_series02)
+print(T_series02)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+DatetimeIndex(['2015-01-01 00:00:00', '2015-01-01 01:00:00',
+               '2015-01-01 02:00:00', '2015-01-01 03:00:00',
+               '2015-01-01 04:00:00', '2015-01-01 05:00:00',
+               '2015-01-01 06:00:00', '2015-01-01 07:00:00',
+               '2015-01-01 08:00:00', '2015-01-01 09:00:00',
+               '2015-01-01 10:00:00', '2015-01-01 11:00:00',
+               '2015-01-01 12:00:00'],
+              dtype='datetime64[ns]', freq='H')
+2015-01-01 00:00:00     0
+2015-01-01 01:00:00     1
+2015-01-01 02:00:00     2
+2015-01-01 03:00:00     3
+2015-01-01 04:00:00     4
+2015-01-01 05:00:00     5
+2015-01-01 06:00:00     6
+2015-01-01 07:00:00     7
+2015-01-01 08:00:00     8
+2015-01-01 09:00:00     9
+2015-01-01 10:00:00    10
+2015-01-01 11:00:00    11
+2015-01-01 12:00:00    12
+Freq: H, dtype: int32
+```
+<hr class='division3'>
+</details>
+
+<br><br><br>
 <hr class="division2">
 
 ## title2
@@ -49,11 +146,6 @@ Reference
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
-    <details markdown="1">
-    <summary class='jb-small' style="color:red">OUTPUT</summary>
-    <hr class='division3_1'>
-    <hr class='division3_1'>
-    </details>
 <hr class='division3'>
 </details>
 
