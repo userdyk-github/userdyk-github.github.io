@@ -78,7 +78,46 @@ DatetimeIndex(['2015-01-01', '2015-01-02', '2015-01-03', '2015-01-04',
 Freq: D, dtype: int32
 ```
 <hr class='division3'>
+</details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">SUPPLEMENT</summary>
+<hr class='division3'>
+```python
+import pandas as pd
+import numpy as np
+
+t_series01 = pd.date_range("2015-1-1", periods=31)
+T_series01 = pd.Series(np.arange(31), index=t_series01)
+
+# timestamp object
+print(T_series01.index[2])
+print(T_series01.index[2].year,
+      T_series01.index[2].month,
+      T_series01.index[2].day,
+      T_series01.index[2].nanosecond)
+
+# datetime object
+print(T_series01.index[2].to_pydatetime())
+```
+```
+# timestamp object
+2015-01-03 00:00:00
+2015 1 3 0
+
+# datetime object
+2015-01-03 00:00:00
+```
+<br>
+
+<hr class='division3'>
 </details><br>
+<details markdown="1">
+<summary class='jb-small' style="color:blue"></summary>
+<hr class='division3'>
+<hr class='division3'>
+</details><br>
+
+
 
 ```python
 import pandas as pd
