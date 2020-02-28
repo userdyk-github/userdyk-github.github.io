@@ -73,6 +73,8 @@ with open('output.txt','w') as f:      # save text
 <hr class="division2">
 
 ## **Load data from WEB**
+![image](https://user-images.githubusercontent.com/52376448/75564482-95e72c80-5a8f-11ea-9660-52d751aa6a13.png)
+
 <ins>Developer tools</ins><br>
 <p>F12 : Elements(Inspector, Ctrl + Shift + c), Networks</p>
 <p>/robots.txt</p>
