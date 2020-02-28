@@ -201,7 +201,10 @@ Freq: M, dtype: float64
 <br><br><br>
 <hr class="division2">
 
-## title2
+## **Example**
+[temperature_indoor_2014.tsv][1], [temperature_outdoor_2014.tsv][2] 
+
+
 
 <hr class="division2">
 
@@ -221,6 +224,9 @@ Reference
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
+
+[1]:{{ site.url }}/download/MATH05/temperature_indoor_2014.tsv
+[2]:{{ site.url }}/download/MATH05/temperature_outdoor_2014.tsv
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
