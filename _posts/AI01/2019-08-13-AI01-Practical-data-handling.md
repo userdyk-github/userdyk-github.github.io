@@ -415,6 +415,8 @@ response = requests.get('https://www.naver.com/')
 root = lxml.html.fromstring(response.content)
 
 for i in root.cssselect('.api_list .api_item a.api_link'):
+    # i.text_content(), i.get('attr')
+    
     url = i.get('href')
     name = i.cssselect('.api_logo')[0].get('alt');
     
