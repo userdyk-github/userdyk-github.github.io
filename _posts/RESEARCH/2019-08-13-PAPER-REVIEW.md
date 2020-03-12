@@ -5,7 +5,7 @@ categories: [RESEARCH]
 comments : true
 tags : [RESEARCH]
 ---
-[Back to the previous page](https://userdyk-github.github.io/Research.html) ｜<a href="https://github.com/userdyk-github/userdyk-github.github.io/blob/master/_posts/RESEARCH/2019-08-13-PAPER-REVIEW.md" target="_blank">page management</a> ｜[daily.pptx][1], [weekly.pptx][2]<br>
+[Back to the previous page](https://userdyk-github.github.io/Research.html) ｜<a href="https://github.com/userdyk-github/userdyk-github.github.io/blob/master/_posts/RESEARCH/2019-08-13-PAPER-REVIEW.md" target="_blank">page management</a> ｜<a href="https://github.com/userdyk-github/userdyk-github.github.io/tree/master/download/RESEARCH" target="_blank">upload</a>｜[daily.pptx][1], [weekly.pptx][2]<br>
 
 ---
 
@@ -17,7 +17,7 @@ tags : [RESEARCH]
 
 <hr class="division1">
 
-- <span class='jb-medium'>Image Captioning with Semantic Attention｜ <a href='https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/You_Image_Captioning_With_CVPR_2016_paper.pdf' target="_blank">PDF</a>｜[PPT][]</span>
+- <span class='jb-medium'>Image Captioning with Semantic Attention｜ <a href='https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/You_Image_Captioning_With_CVPR_2016_paper.pdf' target="_blank">PDF</a>｜[PPT][3]</span>
 - <span class='jb-medium'> title｜ <a href='' target="_blank">PDF</a>｜[PPT][]</span>
 - <span class='jb-medium'> title｜ <a href='' target="_blank">PDF</a>｜[PPT][]</span>
 - <span class='jb-medium'> title｜ <a href='' target="_blank">PDF</a>｜[PPT][]</span>
@@ -438,3 +438,4 @@ Overfitting｜ <a href='http://www.jmlr.org/papers/volume15/srivastava14a/srivas
 
 [1]:{{ site.url }}/download/RESEARCH/daily.pptx
 [2]:{{ site.url }}/download/RESEARCH/weekly.pptx
+[3]:{{ site.url }}/download/RESEARCH/Image Captioning with Semantic Attention.pptx
