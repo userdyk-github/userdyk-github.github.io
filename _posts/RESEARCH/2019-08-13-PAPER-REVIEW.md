@@ -5,7 +5,7 @@ categories: [RESEARCH]
 comments : true
 tags : [RESEARCH]
 ---
-[Back to the previous page](https://userdyk-github.github.io/Research.html) ｜<a href="https://github.com/userdyk-github/userdyk-github.github.io/blob/master/_posts/RESEARCH/2019-08-13-PAPER-REVIEW.md" target="_blank">page management</a><br>
+[Back to the previous page](https://userdyk-github.github.io/Research.html) ｜<a href="https://github.com/userdyk-github/userdyk-github.github.io/blob/master/_posts/RESEARCH/2019-08-13-PAPER-REVIEW.md" target="_blank">page management</a> ｜[daily][], [weekly][]<br>
 
 ---
 
@@ -425,3 +425,7 @@ Overfitting｜ <a href='http://www.jmlr.org/papers/volume15/srivastava14a/srivas
 
 <br><br><br>
 <hr class="division1">
+
+
+[1]:{{ site.url }}/download/RESEARCH/daily.pptx
+[2]:{{ site.url }}/download/RESEARCH/weekly.pptx
