@@ -70,6 +70,21 @@ with open('output.txt','w') as f:      # save text
     f.write(text)
 ```
 <br><br><br>
+
+### ***Sound***
+<a href="https://towardsdatascience.com/easy-text-to-speech-with-python-bfb34250036e" target="_blank">URL</a>
+```python
+from gtts import gTTS
+import os
+
+text = "Global warming is the long-term rise in the average temperature of the Earth's climate system"
+language = "en"
+
+speech = gTTS(text = text, lang = language, slow = False)
+speech.save("text.mp3")
+os.system("start text.mp3")
+```
+<br><br><br>
 <hr class="division2">
 
 ## **Load data from WEB**
