@@ -114,7 +114,7 @@ title: MATERIALS
 
 - <a href='https://www.youtube.com/playlist?list=PLbhbGI_ppZISMV4tAWHlytBqNq1-lb8bz' target="_blank">Machine learning theory 1</a>, <a href='https://www.youtube.com/playlist?list=PLbhbGI_ppZIRPeAjprW9u9A46IJlGFdLn' target="_blank">Machine learning theory 2</a>, <a href='https://www.youtube.com/playlist?list=PLRx0vPvlEmdAbnmLH9yh03cw9UQU_o7PO' target="_blank">Machine learning with tensorflow</a>, <a href='https://www.youtube.com/playlist?list=PLBXuLgInP-5m_vn9ycXHRl7hlsd1huqmS' target="_blank">Applied machine learning 1</a>, <a href='https://www.youtube.com/playlist?list=PLVNY1HnUlO241gILgQloWAs0xrrkqQfKe' target="_blank">Applied machine learning 2</a>, <a href='https://www.youtube.com/playlist?list=PL-xmlFOn6TULrmwkXjRCDAas0ixd_NtyK' target="_blank">Applied machine learning 3</a>
 
-### Deep learning
+### [Deep learning](https://pytorch.org/tutorials/)
 
 - <a href='https://www.youtube.com/playlist?list=PLIsZjwy2fs1-5czElfcOe16dGGGBQ6PUM' target="_blank">Simple concept of deep learning</a>, <a href='https://www.youtube.com/watch?v=-JWv0ed9R5g&list=PLsS-TVNjbU7clDOjpAZKud3uG8APHDq_M&index=2&t=0s' target="_blank">Deep learning with numpy</a>, <a href='https://www.youtube.com/playlist?list=PLlMkM4tgfjnLSOjrEJN31gZATbcj_MpUm' target="_blank">Deep learning</a>, <a href='https://www.youtube.com/playlist?list=PLQ28Nx3M4Jrguyuwg4xe9d9t2XE639e5C' target="_blank">Deep learning with tensorflow</a>, <a href='https://www.youtube.com/watch?v=7eldOrjQVi0&list=PLQ28Nx3M4JrhkqBVIXg-i5_CVVoS1UzAv' target="_blank">Deep learning with pytorch</a>, <a href='https://www.youtube.com/playlist?list=PLS8gIc2q83OjStGjdTF2LZtc0vefCAbnX' target="_blank">Deep learning including transfer learning</a>
 
