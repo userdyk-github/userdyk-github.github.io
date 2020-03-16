@@ -107,7 +107,7 @@ title: MATERIALS
 
 ## Artificial Intelligence
 
-### Machine learning
+### [Machine learning](https://scikit-learn.org/stable/user_guide.html)
 
 - <a href='https://www.youtube.com/playlist?list=PLbhbGI_ppZISMV4tAWHlytBqNq1-lb8bz' target="_blank">Machine learning theory 1</a>, <a href='https://www.youtube.com/playlist?list=PLbhbGI_ppZIRPeAjprW9u9A46IJlGFdLn' target="_blank">Machine learning theory 2</a>, <a href='https://www.youtube.com/playlist?list=PLRx0vPvlEmdAbnmLH9yh03cw9UQU_o7PO' target="_blank">Machine learning with tensorflow</a>, <a href='https://www.youtube.com/playlist?list=PLBXuLgInP-5m_vn9ycXHRl7hlsd1huqmS' target="_blank">Applied machine learning 1</a>, <a href='https://www.youtube.com/playlist?list=PLVNY1HnUlO241gILgQloWAs0xrrkqQfKe' target="_blank">Applied machine learning 2</a>, <a href='https://www.youtube.com/playlist?list=PL-xmlFOn6TULrmwkXjRCDAas0ixd_NtyK' target="_blank">Applied machine learning 3</a>
 
