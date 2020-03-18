@@ -54,9 +54,9 @@ List of posts followed by this article
 ---
 
 Reference
+- Generative Deep Learning
 - <a href='https://www.tensorflow.org/tutorials/' target="_blank">Tensorflow Tutorials</a>
 - <a href='https://pytorch.org/tutorials/' target="_blank">Pytorch Tutorials</a>
-- <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
 
