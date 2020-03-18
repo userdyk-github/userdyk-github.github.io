@@ -338,6 +338,11 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 ### ***Sampling Tensors***
 
 ```python
+import torch
+
+torch.manual_seed(1234)
+a = torch.randn(4,4)
+print(a)
 ```
 
 <details markdown="1">
@@ -345,6 +350,17 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
+
+```python
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
 
 ---
 
@@ -359,6 +375,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -373,6 +390,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -387,6 +405,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -401,6 +420,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -415,6 +435,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -429,6 +450,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 
 <hr class="division2">
@@ -445,6 +467,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -459,6 +482,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -473,6 +497,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -487,6 +512,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -501,6 +527,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -515,6 +542,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -529,6 +557,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -543,6 +572,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -557,6 +587,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -571,6 +602,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -585,6 +617,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -599,6 +632,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -613,6 +647,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -627,6 +662,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -641,6 +677,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -655,6 +692,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -669,6 +707,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -683,6 +722,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -701,6 +741,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -715,6 +756,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -729,6 +771,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -743,6 +786,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -761,6 +805,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -775,6 +820,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -789,6 +835,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -803,6 +850,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -817,6 +865,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -835,6 +884,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -849,6 +899,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -863,6 +914,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -877,6 +929,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -895,6 +948,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -909,6 +963,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
@@ -923,6 +978,7 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
