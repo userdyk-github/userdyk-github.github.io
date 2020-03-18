@@ -34,3 +34,13 @@ tags : [AAI]
 > <a href='https://userdyk-github.github.io/aai02/AAI02-.html'>Topic Modeling and Word Embeddings</a><br>
 > <a href='https://userdyk-github.github.io/aai02/AAI02-.html'>Text Generation, Machine Translation, and Other
 Recurrent Language Modeling Tasks</a><br>
+
+---
+
+## _AAI03 : Methodology_
+
+> <a href='https://userdyk-github.github.io/aai03/AAI03-Anomaly-detection.html'>Anomaly detection</a><br>
+> <a href='https://userdyk-github.github.io/aai03/AAI03-.html'></a><br>
+> <a href='https://userdyk-github.github.io/aai03/AAI03-.html'></a><br>
+
+
