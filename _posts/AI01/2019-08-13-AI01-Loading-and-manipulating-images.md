@@ -248,7 +248,7 @@ from matplotlib import image
 
 img = image.imread('input_image.jpg')
 plt.imshow(img)
-plt.figsave('output_image.jpg')
+plt.savefig('output_image.jpg')
 ```
 
 <br><br><br>
