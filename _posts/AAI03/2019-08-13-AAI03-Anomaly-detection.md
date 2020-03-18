@@ -41,7 +41,7 @@ List of posts followed by this article
 ---
 
 Reference
-- [post1](https://userdyk-github.github.io/)
+- Beginning Anomaly Detection Using Python-Based Deep Learning
 - <a href='https://userdyk-github.github.io/'>post2</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
