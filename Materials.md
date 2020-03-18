@@ -168,6 +168,7 @@ title: MATERIALS
 
 # REFERENCES 02 - private web site
 
+<a href="http://www.gisdeveloper.co.kr/" target="_blank">gisdeveloper</a>, 
 <a href="https://bskyvision.com/" target="_blank">bskyvision</a>, 
 <a href="https://dojang.io/course/index.php?categoryid=1" target="_blank">dojang</a>, 
 <a href="https://www.fun-coding.org/index.html" target="_blank">fun coding</a>, 
