@@ -54,7 +54,7 @@ List of posts followed by this article
 ---
 
 Reference
-- Generative Deep Learning
+- Generative Deep Learning ｜ <a href="https://github.com/davidADSP/GDL_code" target="_blank">github</a>
 - <a href='https://www.tensorflow.org/tutorials/' target="_blank">Tensorflow Tutorials</a>
 - <a href='https://pytorch.org/tutorials/' target="_blank">Pytorch Tutorials</a>
 
