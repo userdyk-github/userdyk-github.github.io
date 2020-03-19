@@ -284,7 +284,7 @@ array([0., 0., 0., 1., 0., 0., 0., 0., 0., 0.], dtype=float32)
 
 <hr class="division2">
 
-## **Basic Framework**
+## **Framework**
 
 ### ***Import and organize dataset***
 
