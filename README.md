@@ -1,9 +1,6 @@
-# Ed: A Jekyll Theme for Minimal Editions
+# Dongmyeong Lee
 
-[![Build Status](https://travis-ci.org/minicomp/ed.svg?branch=master)](https://travis-ci.org/minicomp/ed) [![Gem Version](https://badge.fury.io/rb/ed..svg)](https://badge.fury.io/rb/ed.)
-
-
-![Sample Ed screenshot](https://github.com/minicomp/ed/blob/master/assets/screenshot-home.png)
+![image](https://user-images.githubusercontent.com/52376448/77051279-65e7d500-6a0e-11ea-9db3-7a5b7610bad2.png)
 
 
 
