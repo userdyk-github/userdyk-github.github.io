@@ -34,6 +34,10 @@ title: RESEARCH
 - [Analyzing shopping mall order data](https://userdyk-github.github.io/research/PROJECT06.html)
 - [Analyzing advertisement data](https://userdyk-github.github.io/research/PROJECT07.html)
 
+---
+
+- project 1｜[github](https://github.com/ailever/project_01)
+
 <br><br><br>
 
 ---
