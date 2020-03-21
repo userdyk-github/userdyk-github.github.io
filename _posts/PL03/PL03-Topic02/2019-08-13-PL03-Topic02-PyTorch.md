@@ -354,6 +354,136 @@ tensor([[1., 5., 6.],
 ```
 <hr class='division3'>
 </details>
+<br>
+```python
+import torch
+
+a = torch.randn(4,4)
+indices = torch.LongTensor([0,2])
+
+result1 = torch.index_select(a, 0, indices)
+result2 = torch.index_select(a, 1, indices)
+print("a",a)
+print("dim=0(row[0:2]) \n", result1)
+print("dim=1(column[0:2]) \n", result2)
+```
+
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+a tensor([[-0.9946,  0.9729, -0.9979, -1.1015],
+        [-0.7123,  0.1369, -0.3352,  1.5771],
+        [ 1.2470,  0.5784, -0.1455,  1.5894],
+        [ 0.4785, -0.3342,  0.2051, -0.5731]])
+dim=0(row[0:2])
+ tensor([[-0.9946,  0.9729, -0.9979, -1.1015],
+        [ 1.2470,  0.5784, -0.1455,  1.5894]])
+dim=1(column[0:2])
+ tensor([[-0.9946, -0.9979],
+        [-0.7123, -0.3352],
+        [ 1.2470, -0.1455],
+        [ 0.4785,  0.2051]])
+```
+<hr class='division3'>
+</details>
+<br>
+```python
+import torch
+
+a = torch.tensor([10, 0, 2, 0, 0])
+non_zero = torch.nonzero(a)
+print(non_zero)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+tensor([[0],
+        [2]])
+```
+<hr class='division3'>
+</details>
+<br>
+```python
+import torch
+
+a = torch.tensor([11, 12, 13, 14, 15, 16, 17, 18, 19, 20])
+split_2 = torch.split(a,2)
+split_3 = torch.split(a,3)
+print(split_2)
+print(split_3)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+(tensor([11, 12]), tensor([13, 14]), tensor([15, 16]), tensor([17, 18]), tensor([19, 20]))
+(tensor([11, 12, 13]), tensor([14, 15, 16]), tensor([17, 18, 19]), tensor([20]))
+```
+<hr class='division3'>
+</details>
+<br><br><br>
+
+
+```python
+import torch
+
+a = torch.tensor([[-0.9946,  0.9729, -0.9979, -1.1015],
+                  [-0.7123,  0.1369, -0.3352,  1.5771],
+                  [ 1.2470,  0.5784, -0.1455,  1.5894],
+                  [ 0.4785, -0.3342,  0.2051, -0.5731]])
+
+print(a)
+print(a.t())
+print(a.transpose(1,0))
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+tensor([[-0.9946,  0.9729, -0.9979, -1.1015],
+        [-0.7123,  0.1369, -0.3352,  1.5771],
+        [ 1.2470,  0.5784, -0.1455,  1.5894],
+        [ 0.4785, -0.3342,  0.2051, -0.5731]])
+tensor([[-0.9946, -0.7123,  1.2470,  0.4785],
+        [ 0.9729,  0.1369,  0.5784, -0.3342],
+        [-0.9979, -0.3352, -0.1455,  0.2051],
+        [-1.1015,  1.5771,  1.5894, -0.5731]])
+tensor([[-0.9946, -0.7123,  1.2470,  0.4785],
+        [ 0.9729,  0.1369,  0.5784, -0.3342],
+        [-0.9979, -0.3352, -0.1455,  0.2051],
+        [-1.1015,  1.5771,  1.5894, -0.5731]])
+```
+<hr class='division3'>
+</details>
+<br><br><br>
+```python
+import torch
+
+a = torch.tensor([[-0.9946,  0.9729, -0.9979, -1.1015],
+                  [-0.7123,  0.1369, -0.3352,  1.5771],
+                  [ 1.2470,  0.5784, -0.1455,  1.5894],
+                  [ 0.4785, -0.3342,  0.2051, -0.5731]])
+
+print(a)
+print(torch.unbind(a,1))    # dim = 1 removing a column
+print(torch.unbind(a))      # dim = 0 removing a row
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+tensor([[-0.9946,  0.9729, -0.9979, -1.1015],
+        [-0.7123,  0.1369, -0.3352,  1.5771],
+        [ 1.2470,  0.5784, -0.1455,  1.5894],
+        [ 0.4785, -0.3342,  0.2051, -0.5731]])
+(tensor([-0.9946, -0.7123,  1.2470,  0.4785]), tensor([ 0.9729,  0.1369,  0.5784, -0.3342]), tensor([-0.9979, -0.3352, -0.1455,  0.2051]), tensor([-1.1015,  1.5771,  1.5894, -0.5731]))
+(tensor([-0.9946,  0.9729, -0.9979, -1.1015]), tensor([-0.7123,  0.1369, -0.3352,  1.5771]), tensor([ 1.2470,  0.5784, -0.1455,  1.5894]), tensor([ 0.4785, -0.3342,  0.2051, -0.5731]))
+```
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 ---
