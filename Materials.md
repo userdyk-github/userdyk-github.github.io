@@ -168,6 +168,8 @@ title: MATERIALS
 
 # REFERENCES 02 - private web site
 
+
+<a href="https://datascienceschool.net/" target="_blank">datascienceschool</a>, 
 <a href="http://www.gisdeveloper.co.kr/" target="_blank">gisdeveloper</a>, 
 <a href="https://bskyvision.com/" target="_blank">bskyvision</a>, 
 <a href="https://dojang.io/course/index.php?categoryid=1" target="_blank">dojang</a>, 
