@@ -329,6 +329,33 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 </details>
 <br><br><br>
 
+<a href="http://www.programmersought.com/article/81801261179/;jsessionid=848520548A8855A35D2F4B97F617EE2B" target="_blank">URL</a>
+```python
+import torch
+
+b = torch.Tensor([[1,2,3],[4,5,6]])
+print(b)
+
+index_1 = torch.LongTensor([[0,1],[2,0]])
+index_2 = torch.LongTensor([[0,1,1],[0,0,0]])
+print(torch.gather(b, dim=1, index=index_1))   # 'dim = 1' means axis-column
+print(torch.gather(b, dim=0, index=index_2))   # 'dim = 0' means axis-row
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+tensor([[1., 2., 3.],
+        [4., 5., 6.]])
+tensor([[1., 2.],
+        [6., 4.]])
+tensor([[1., 5., 6.],
+        [1., 2., 3.]])
+```
+<hr class='division3'>
+</details>
+<br><br><br>
+
 ---
 
 
