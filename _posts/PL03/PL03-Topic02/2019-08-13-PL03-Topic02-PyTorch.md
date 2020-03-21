@@ -636,12 +636,13 @@ tensor([[-0.1117, -0.4966,  0.1631, -0.8817],
 ```
 <br><br><br>
 
+#### uniform
 ```python
 import torch
 
 torch.manual_seed(1234)
-a = torch.Tensor(4,4).uniform_(0,1)
-print(a)
+a = torch.Tensor(4,4)
+print(a.uniform_(0,1))
 ```
 ```
 tensor([[0.0290, 0.4019, 0.2598, 0.3666],
@@ -649,11 +650,62 @@ tensor([[0.0290, 0.4019, 0.2598, 0.3666],
         [0.6738, 0.3315, 0.7837, 0.5631],
         [0.7749, 0.8208, 0.2793, 0.6817]])
 ```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-<hr class='division3'>
-</details>
+<br><br><br>
+
+#### bernoulli
+```python
+import torch
+
+torch.manual_seed(1234)
+a = torch.Tensor(4,4)
+b = torch.bernoulli(a.uniform_(0,1))
+
+print(b)
+```
+```
+tensor([[0., 0., 1., 0.],
+        [0., 1., 0., 0.],
+        [0., 0., 1., 1.],
+        [0., 1., 0., 1.]])
+```
+<br><br><br>
+
+#### multinomial
+```python
+import torch
+
+a = torch.Tensor([10,10,13,10,34,45,65,67,87,89,87,34])
+b1 = torch.multinomial(a,3)
+b2 = torch.multinomial(a,5, replacement=True)
+
+print(b1, b2)
+```
+```
+tensor([1, 6, 7]) tensor([7, 9, 9, 4, 8])
+```
+<br><br><br>
+
+#### normal
+```python
+import torch
+
+a1 = torch.normal(mean = torch.arange(1., 11.)
+                  ,std = torch.arange(1, 0, -0.1))
+a2 = torch.normal(mean = 0.5,
+                  std = torch.arange(1., 6.))
+a3 = torch.normal(mean = 0.5,
+                  std = torch.arange(0.2, 0.6))
+
+print(a1)
+print(a2)
+print(a3)
+```
+```
+tensor([-0.1867,  1.0083,  2.6983,  3.6359,  5.4243,  5.0426,  7.3969,  8.1270,
+         9.1576,  9.8825])
+tensor([0.4635, 3.9725, 0.6453, 3.5979, 5.8550])
+tensor([0.7702])
+```
 <br><br><br>
 
 ---
