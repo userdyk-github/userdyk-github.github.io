@@ -327,10 +327,51 @@ tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
 
+### ***GPU control***
+```python
+import torch
+ 
+#  Returns a bool indicating if CUDA is currently available.
+torch.cuda.is_available()
+#  True
+ 
+#  Returns the index of a currently selected device.
+torch.cuda.current_device()
+#  0
+ 
+#  Returns the number of GPUs available.
+torch.cuda.device_count()
+#  1
+ 
+#  Gets the name of a device.
+torch.cuda.get_device_name(0)
+#  'GeForce GTX 1060'
+ 
+#  Context-manager that changes the selected device.
+#  device (torch.device or int) – device index to select. 
+torch.cuda.device(0)
+```
+```python
+import torch
+ 
+# Default CUDA device
+cuda = torch.device('cuda')
+ 
+# allocates a tensor on default GPU
+a = torch.tensor([1., 2.], device=cuda)
+ 
+# transfers a tensor from 'C'PU to 'G'PU
+b = torch.tensor([1., 2.]).cuda()
+ 
+# Same with .cuda()
+b2 = torch.tensor([1., 2.]).to(device=cuda)
+```
+<br><br><br>
 <hr class="division2">
 
 ## **Probability Distributions**
