@@ -628,17 +628,27 @@ torch.manual_seed(1234)
 a = torch.randn(4,4)
 print(a)
 ```
-
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-<hr class='division3'>
-</details>
+```
+tensor([[-0.1117, -0.4966,  0.1631, -0.8817],
+        [ 0.0539,  0.6684, -0.0597, -0.4675],
+        [-0.2153,  0.8840, -0.7584, -0.3689],
+        [-0.3424, -1.4020,  0.3206, -1.0219]])
+```
 <br><br><br>
 
 ```python
-```
+import torch
 
+torch.manual_seed(1234)
+a = torch.Tensor(4,4).uniform_(0,1)
+print(a)
+```
+```
+tensor([[0.0290, 0.4019, 0.2598, 0.3666],
+        [0.0583, 0.7006, 0.0518, 0.4681],
+        [0.6738, 0.3315, 0.7837, 0.5631],
+        [0.7749, 0.8208, 0.2793, 0.6817]])
+```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
