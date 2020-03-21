@@ -714,8 +714,26 @@ tensor([0.7702])
 ### ***Variable Tensors***
 
 ```python
+from torch.autograd import Variable
+import torch
+
+a = torch.ones(2,2)
+
+print(Variable(a))
+print(Variable(a ,requires_grad=True))
+```
+```
+tensor([[1., 1.],
+        [1., 1.]])
+tensor([[1., 1.],
+        [1., 1.]], requires_grad=True)
 ```
 
+<br><br><br>
+
+```python
+
+```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
