@@ -123,117 +123,6 @@ print(x.numpy())
 </details>
 <br><br><br>
 
-#### gradient 
-
-<a href="https://towardsdatascience.com/pytorch-autograd-understanding-the-heart-of-pytorchs-magic-2686cd94ec95" target="_blank">URL</a>
-```python
-import torch
-
-x = torch.tensor([1])
-print(x.requires_grad)
-```
-```
-False
-```
-<br><br><br>
-```python
-import torch
-
-x = torch.tensor([1], dtype=torch.float, requires_grad=True)
-print(x.requires_grad)
-
-print(x.detach().requires_grad)  # not in-place
-print(x.requires_grad)
-
-print(x.detach_().requires_grad) # in-place
-print(x.requires_grad)
-```
-```
-True
-
-False
-True
-
-False
-False
-```
-<br><br><br>
-
-```python
-import torch
-
-# Creating the graph
-x = torch.tensor(1.0, requires_grad = True)
-y = torch.tensor(2.0)
-z = x * y
-
-# Displaying
-for i, name in zip([x, y, z], "xyz"):
-    print(f"{name}\n\
-    data: {i.data}\n\
-    requires_grad: {i.requires_grad}\n\
-    grad: {i.grad}\n\
-    grad_fn: {i.grad_fn}\n\
-    is_leaf: {i.is_leaf}\n")
-```
-```
-x
-    data: 1.0
-    requires_grad: True
-    grad: None
-    grad_fn: None
-    is_leaf: True
-
-y
-    data: 2.0
-    requires_grad: False
-    grad: None
-    grad_fn: None
-    is_leaf: True
-
-z
-    data: 2.0
-    requires_grad: True
-    grad: None
-    grad_fn: <MulBackward0 object at 0x7fcae8e33748>
-    is_leaf: False
-```
-<br><br><br>
-```python
-import torch
-
-# Creating the graph
-x = torch.tensor(1.0, requires_grad = True); print(x.requires_grad) # True
-y = x * 2;                                   print(y.requires_grad) # True
-
-# Check if tracking is enabled
-with torch.no_grad():      
-    y = x * 2
-    print(y.requires_grad) #False
-```
-```
-True
-True
-False
-```
-<br><br><br>
-```python
-import torch
-
-# Creating the graph
-x = torch.tensor(1.0, requires_grad = True)
-z = x ** 3
-
-#Computes the gradient
-z.backward();       print(x.grad.data) #Prints '3' which is dz/dx 
-```
-```
-tensor(3.)
-```
-
-<br><br><br>
-
-
 #### creating tensor
 <br><br><br>
 ```python
@@ -425,7 +314,7 @@ tensor([[0],
 </details>
 <br><br><br>
 
-#### Reshaping and resizeing
+#### reshaping and resizeing
 ```python
 import torch
 
@@ -655,6 +544,117 @@ sqrt
         [0.6917,    nan, 0.4529,    nan]])
 ```
 <br><br><br>
+
+#### gradient 
+
+<a href="https://towardsdatascience.com/pytorch-autograd-understanding-the-heart-of-pytorchs-magic-2686cd94ec95" target="_blank">URL</a>
+```python
+import torch
+
+x = torch.tensor([1])
+print(x.requires_grad)
+```
+```
+False
+```
+<br><br><br>
+```python
+import torch
+
+x = torch.tensor([1], dtype=torch.float, requires_grad=True)
+print(x.requires_grad)
+
+print(x.detach().requires_grad)  # not in-place
+print(x.requires_grad)
+
+print(x.detach_().requires_grad) # in-place
+print(x.requires_grad)
+```
+```
+True
+
+False
+True
+
+False
+False
+```
+<br><br><br>
+
+```python
+import torch
+
+# Creating the graph
+x = torch.tensor(1.0, requires_grad = True)
+y = torch.tensor(2.0)
+z = x * y
+
+# Displaying
+for i, name in zip([x, y, z], "xyz"):
+    print(f"{name}\n\
+    data: {i.data}\n\
+    requires_grad: {i.requires_grad}\n\
+    grad: {i.grad}\n\
+    grad_fn: {i.grad_fn}\n\
+    is_leaf: {i.is_leaf}\n")
+```
+```
+x
+    data: 1.0
+    requires_grad: True
+    grad: None
+    grad_fn: None
+    is_leaf: True
+
+y
+    data: 2.0
+    requires_grad: False
+    grad: None
+    grad_fn: None
+    is_leaf: True
+
+z
+    data: 2.0
+    requires_grad: True
+    grad: None
+    grad_fn: <MulBackward0 object at 0x7fcae8e33748>
+    is_leaf: False
+```
+<br><br><br>
+```python
+import torch
+
+# Creating the graph
+x = torch.tensor(1.0, requires_grad = True); print(x.requires_grad) # True
+y = x * 2;                                   print(y.requires_grad) # True
+
+# Check if tracking is enabled
+with torch.no_grad():      
+    y = x * 2
+    print(y.requires_grad) #False
+```
+```
+True
+True
+False
+```
+<br><br><br>
+```python
+import torch
+
+# Creating the graph
+x = torch.tensor(1.0, requires_grad = True)
+z = x ** 3
+
+#Computes the gradient
+z.backward();       print(x.grad.data) #Prints '3' which is dz/dx 
+```
+```
+tensor(3.)
+```
+
+<br><br><br>
+
 
 ---
 
