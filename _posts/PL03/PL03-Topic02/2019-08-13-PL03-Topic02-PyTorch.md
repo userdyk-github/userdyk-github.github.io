@@ -49,8 +49,9 @@ $
 
 ## **Tensor & Tensor operations**
 
-### ***Using Tensors***
+### ***Using Tensors : autograd***
 <a href="https://pytorch.org/docs/stable/tensors.html" target="_blank">torch.tensor api</a><br>
+#### tensor as data type 
 ```python
 import torch
 
@@ -74,9 +75,56 @@ print(torch.is_storage(x))
 True
 False
 ```
+<br><br><br>
+```python
+import torch
+
+x = torch.randn(1,2,3,4,5)
+print(torch.is_tensor(x))
+print(torch.is_storage(x))
+print(torch.numel(x))         #number of elements
+```
+```
+True
+False
+120
+```
+<br><br><br>
+```python
+import numpy as np
+import torch
+
+x = [12,23,34,45,56,67]
+y = np.array(x)
+z = torch.from_numpy(y)
+
+print(x)
+print(y)
+print(z)
+```
+```
+[12, 23, 34, 45, 56, 67]
+[12 23 34 45 56 67]
+tensor([12, 23, 34, 45, 56, 67], dtype=torch.int32)
+```
 <details markdown="1">
-<summary class='jb-small' style="color:blue">autograd</summary>
+<summary class='jb-small' style="color:blue">to numpy</summary>
 <hr class='division3'>
+```python
+import torch
+
+x = torch.tensor([1])
+print(x.numpy())
+```
+```
+[1]
+```
+<hr class='division3'>
+</details>
+<br><br><br>
+
+#### gradient 
+
 <a href="https://towardsdatascience.com/pytorch-autograd-understanding-the-heart-of-pytorchs-magic-2686cd94ec95" target="_blank">URL</a>
 ```python
 import torch
@@ -182,23 +230,11 @@ z.backward();       print(x.grad.data) #Prints '3' which is dz/dx
 ```
 tensor(3.)
 ```
-<hr class='division3'>
-</details>
 
 <br><br><br>
-```python
-import torch
 
-x = torch.randn(1,2,3,4,5)
-print(torch.is_tensor(x))
-print(torch.is_storage(x))
-print(torch.numel(x))         #number of elements
-```
-```
-True
-False
-120
-```
+
+#### creating tensor
 <br><br><br>
 ```python
 import torch
@@ -212,39 +248,26 @@ tensor([[1., 0., 0.],
         [0., 0., 1.]])
 ```
 <br><br><br>
+
 ```python
-import numpy as np
 import torch
 
-x = [12,23,34,45,56,67]
-y = np.array(x)
-z = torch.from_numpy(y)
+x = torch.zeros(4,5)
+y = torch.zeros(10)
 
 print(x)
 print(y)
-print(z)
 ```
 ```
-[12, 23, 34, 45, 56, 67]
-[12 23 34 45 56 67]
-tensor([12, 23, 34, 45, 56, 67], dtype=torch.int32)
+tensor([[0., 0., 0., 0., 0.],
+        [0., 0., 0., 0., 0.],
+        [0., 0., 0., 0., 0.],
+        [0., 0., 0., 0., 0.]])
+tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])
 ```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">to numpy</summary>
-<hr class='division3'>
-```python
-import torch
-
-x = torch.tensor([1])
-print(x.numpy())
-```
-```
-[1]
-```
-<hr class='division3'>
-</details>
-
 <br><br><br>
+
+
 ```python
 import torch
 
@@ -299,6 +322,8 @@ tensor([10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27,
         28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39])
 ```
 <br><br><br>
+
+#### indexing & slicing
 ```python
 import torch
 
@@ -323,86 +348,6 @@ tensor(14)
 tensor([3, 4, 4, 0])
 ```
 <br><br><br>
-```python
-import torch
-
-x = torch.zeros(4,5)
-y = torch.zeros(10)
-
-print(x)
-print(y)
-```
-```
-tensor([[0., 0., 0., 0., 0.],
-        [0., 0., 0., 0., 0.],
-        [0., 0., 0., 0., 0.],
-        [0., 0., 0., 0., 0.]])
-tensor([0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])
-```
-<br><br><br>
-```python
-import torch
-
-x = torch.randn(1,4)
-p = torch.cat((x,x))
-q = torch.cat((x,x),0)
-r = torch.cat((x,x,x), 1)
-
-
-print(x)
-print(p)
-print(q)
-print(r)
-```
-```
-tensor([[ 0.2394, -2.9119,  0.1089,  0.6426]])
-tensor([[ 0.2394, -2.9119,  0.1089,  0.6426],
-        [ 0.2394, -2.9119,  0.1089,  0.6426]])
-tensor([[ 0.2394, -2.9119,  0.1089,  0.6426],
-        [ 0.2394, -2.9119,  0.1089,  0.6426]])
-tensor([[ 0.2394, -2.9119,  0.1089,  0.6426,  0.2394, -2.9119,  0.1089,  0.6426,
-          0.2394, -2.9119,  0.1089,  0.6426]])
-```
-<br><br><br>
-```python
-import torch
-
-x = torch.randn(4,4)
-p = torch.chunk(x, 2)
-q = torch.chunk(x,2,0)
-r = torch.chunk(x,2,1)
-
-print(x)
-print(p)
-print(q)
-print(r)
-```
-```
-tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
-        [-1.3219, -0.2667,  0.1635,  1.2190],
-        [ 1.0349,  0.6819,  0.9239,  0.8569],
-        [-2.8974, -0.5763, -0.2475, -0.8700]])
-(tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
-        [-1.3219, -0.2667,  0.1635,  1.2190]]), tensor([[ 1.0349,  0.6819,  0.9239,  0.8569],
-        [-2.8974, -0.5763, -0.2475, -0.8700]]))
-(tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
-        [-1.3219, -0.2667,  0.1635,  1.2190]]), tensor([[ 1.0349,  0.6819,  0.9239,  0.8569],
-        [-2.8974, -0.5763, -0.2475, -0.8700]]))
-(tensor([[-0.7438, -0.2451],
-        [-1.3219, -0.2667],
-        [ 1.0349,  0.6819],
-        [-2.8974, -0.5763]]), tensor([[ 0.2383,  0.0779],
-        [ 0.1635,  1.2190],
-        [ 0.9239,  0.8569],
-        [-0.2475, -0.8700]]))
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-<hr class='division3'>
-</details>
-<br><br><br>
-
 <a href="http://www.programmersought.com/article/81801261179/;jsessionid=848520548A8855A35D2F4B97F617EE2B" target="_blank">URL</a>
 ```python
 import torch
@@ -478,7 +423,72 @@ tensor([[0],
 ```
 <hr class='division3'>
 </details>
-<br>
+<br><br><br>
+
+#### Reshaping and resizeing
+```python
+import torch
+
+x = torch.randn(1,4)
+p = torch.cat((x,x))
+q = torch.cat((x,x),0)
+r = torch.cat((x,x,x), 1)
+
+
+print(x)
+print(p)
+print(q)
+print(r)
+```
+```
+tensor([[ 0.2394, -2.9119,  0.1089,  0.6426]])
+tensor([[ 0.2394, -2.9119,  0.1089,  0.6426],
+        [ 0.2394, -2.9119,  0.1089,  0.6426]])
+tensor([[ 0.2394, -2.9119,  0.1089,  0.6426],
+        [ 0.2394, -2.9119,  0.1089,  0.6426]])
+tensor([[ 0.2394, -2.9119,  0.1089,  0.6426,  0.2394, -2.9119,  0.1089,  0.6426,
+          0.2394, -2.9119,  0.1089,  0.6426]])
+```
+<br><br><br>
+```python
+import torch
+
+x = torch.randn(4,4)
+p = torch.chunk(x, 2)
+q = torch.chunk(x,2,0)
+r = torch.chunk(x,2,1)
+
+print(x)
+print(p)
+print(q)
+print(r)
+```
+```
+tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
+        [-1.3219, -0.2667,  0.1635,  1.2190],
+        [ 1.0349,  0.6819,  0.9239,  0.8569],
+        [-2.8974, -0.5763, -0.2475, -0.8700]])
+(tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
+        [-1.3219, -0.2667,  0.1635,  1.2190]]), tensor([[ 1.0349,  0.6819,  0.9239,  0.8569],
+        [-2.8974, -0.5763, -0.2475, -0.8700]]))
+(tensor([[-0.7438, -0.2451,  0.2383,  0.0779],
+        [-1.3219, -0.2667,  0.1635,  1.2190]]), tensor([[ 1.0349,  0.6819,  0.9239,  0.8569],
+        [-2.8974, -0.5763, -0.2475, -0.8700]]))
+(tensor([[-0.7438, -0.2451],
+        [-1.3219, -0.2667],
+        [ 1.0349,  0.6819],
+        [-2.8974, -0.5763]]), tensor([[ 0.2383,  0.0779],
+        [ 0.1635,  1.2190],
+        [ 0.9239,  0.8569],
+        [-0.2475, -0.8700]]))
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+<hr class='division3'>
+</details>
+<br><br><br>
+
 ```python
 import torch
 
@@ -649,7 +659,7 @@ sqrt
 ---
 
 
-### ***GPU control***
+### ***GPU control : cuda***
 ```python
 import torch
  
