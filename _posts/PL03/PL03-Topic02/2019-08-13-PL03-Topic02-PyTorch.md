@@ -149,6 +149,24 @@ z
     grad_fn: <MulBackward0 object at 0x7fcae8e33748>
     is_leaf: False
 ```
+<br><br><br>
+```python
+import torch
+
+# Creating the graph
+x = torch.tensor(1.0, requires_grad = True); print(x.requires_grad) # True
+y = x * 2;                                   print(y.requires_grad) # True
+
+# Check if tracking is enabled
+with torch.no_grad():      
+    y = x * 2
+    print(y.requires_grad) #False
+```
+```
+True
+True
+False
+```
 <hr class='division3'>
 </details>
 
