@@ -51,7 +51,8 @@ $
 
 ### ***Using Tensors : autograd***
 <a href="https://pytorch.org/docs/stable/tensors.html" target="_blank">torch.tensor api</a><br>
-#### tensor as data type 
+
+#### tensor as data type
 ```python
 import torch
 
@@ -546,8 +547,9 @@ sqrt
 <br><br><br>
 
 #### gradient 
+<a href="https://towardsdatascience.com/pytorch-autograd-understanding-the-heart-of-pytorchs-magic-2686cd94ec95" target="_blank">URL</a>,
+<a href="https://stackoverflow.com/questions/43451125/pytorch-what-are-the-gradient-arguments" target="_blank">URL</a>
 
-<a href="https://towardsdatascience.com/pytorch-autograd-understanding-the-heart-of-pytorchs-magic-2686cd94ec95" target="_blank">URL</a>
 ```python
 import torch
 
