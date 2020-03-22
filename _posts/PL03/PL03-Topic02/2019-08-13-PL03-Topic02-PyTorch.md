@@ -75,8 +75,9 @@ True
 False
 ```
 <details markdown="1">
-<summary class='jb-small' style="color:blue">requires_grad</summary>
+<summary class='jb-small' style="color:blue">autograd</summary>
 <hr class='division3'>
+<a href="https://towardsdatascience.com/pytorch-autograd-understanding-the-heart-of-pytorchs-magic-2686cd94ec95" target="_blank">URL</a>
 ```python
 import torch
 
@@ -166,6 +167,20 @@ with torch.no_grad():
 True
 True
 False
+```
+<br><br><br>
+```python
+import torch
+
+# Creating the graph
+x = torch.tensor(1.0, requires_grad = True)
+z = x ** 3
+
+#Computes the gradient
+z.backward();       print(x.grad.data) #Prints '3' which is dz/dx 
+```
+```
+tensor(3.)
 ```
 <hr class='division3'>
 </details>
