@@ -108,6 +108,47 @@ True
 False
 False
 ```
+<br><br><br>
+
+```python
+import torch
+
+# Creating the graph
+x = torch.tensor(1.0, requires_grad = True)
+y = torch.tensor(2.0)
+z = x * y
+
+# Displaying
+for i, name in zip([x, y, z], "xyz"):
+    print(f"{name}\n\
+    data: {i.data}\n\
+    requires_grad: {i.requires_grad}\n\
+    grad: {i.grad}\n\
+    grad_fn: {i.grad_fn}\n\
+    is_leaf: {i.is_leaf}\n")
+```
+```
+x
+    data: 1.0
+    requires_grad: True
+    grad: None
+    grad_fn: None
+    is_leaf: True
+
+y
+    data: 2.0
+    requires_grad: False
+    grad: None
+    grad_fn: None
+    is_leaf: True
+
+z
+    data: 2.0
+    requires_grad: True
+    grad: None
+    grad_fn: <MulBackward0 object at 0x7fcae8e33748>
+    is_leaf: False
+```
 <hr class='division3'>
 </details>
 
