@@ -564,7 +564,7 @@ print('{} seconds elapsed.'.format(time.time() - t))
 
 ## **Tensorflow**
 
-- <a href="https://github.com/tensorflow/models/tree/master/research" target="_blank">URL</a>
+- <a href="https://github.com/tensorflow/models/tree/master/research" target="_blank">github</a>
 
 ![image](https://user-images.githubusercontent.com/52376448/73329346-ba899200-42a0-11ea-99e1-ffa45255e0f1.png)
 
