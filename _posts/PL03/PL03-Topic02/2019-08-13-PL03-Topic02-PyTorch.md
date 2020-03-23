@@ -982,8 +982,89 @@ tensor([0.2903, 0.3561, 2.4014, 0.5245])
 ### ***Gradient Computation***
 
 ```python
-```
+import torch
 
+def forward(x):
+    return x*w
+
+def loss(x,y):
+    y_pred = forward(x)
+    return (y_pred - y)*(y_pred - y)
+
+x_data = [11., 22., 33.]
+y_data = [21., 14., 64.]
+
+w = torch.tensor([1.], requires_grad=True)
+
+# training loop
+for epoch in range(10):
+    for x_val, y_val in zip(x_data, y_data):
+        l = loss(x_val, y_val)
+        l.backward();                         print("weight_grad : ", x_val,y_val,w.grad.data[0])
+        w.data = w.data - 0.001*w.grad.data;  w.grad.data.zero_(); print("progess : ", epoch, l.data[0])
+```
+```
+weight_grad :  11.0 21.0 tensor(-220.)
+progess :  0 tensor(100.)
+weight_grad :  22.0 14.0 tensor(564.9600)
+progess :  0 tensor(164.8656)
+weight_grad :  33.0 64.0 tensor(-2797.3230)
+progess :  0 tensor(1796.3765)
+weight_grad :  11.0 21.0 tensor(373.4719)
+progess :  1 tensor(288.1844)
+weight_grad :  22.0 14.0 tensor(2364.3669)
+progess :  1 tensor(2887.5159)
+weight_grad :  33.0 64.0 tensor(-2667.7661)
+progess :  1 tensor(1633.8330)
+weight_grad :  11.0 21.0 tensor(356.5143)
+progess :  2 tensor(262.6084)
+weight_grad :  22.0 14.0 tensor(2312.9514)
+progess :  2 tensor(2763.2976)
+weight_grad :  33.0 64.0 tensor(-2671.4675)
+progess :  2 tensor(1638.3698)
+weight_grad :  11.0 21.0 tensor(356.9987)
+progess :  3 tensor(263.3225)
+weight_grad :  22.0 14.0 tensor(2314.4204)
+progess :  3 tensor(2766.8088)
+weight_grad :  33.0 64.0 tensor(-2671.3621)
+progess :  3 tensor(1638.2404)
+weight_grad :  11.0 21.0 tensor(356.9850)
+progess :  4 tensor(263.3022)
+weight_grad :  22.0 14.0 tensor(2314.3782)
+progess :  4 tensor(2766.7078)
+weight_grad :  33.0 64.0 tensor(-2671.3647)
+progess :  4 tensor(1638.2438)
+weight_grad :  11.0 21.0 tensor(356.9853)
+progess :  5 tensor(263.3027)
+weight_grad :  22.0 14.0 tensor(2314.3794)
+progess :  5 tensor(2766.7109)
+weight_grad :  33.0 64.0 tensor(-2671.3647)
+progess :  5 tensor(1638.2438)
+weight_grad :  11.0 21.0 tensor(356.9853)
+progess :  6 tensor(263.3027)
+weight_grad :  22.0 14.0 tensor(2314.3794)
+progess :  6 tensor(2766.7109)
+weight_grad :  33.0 64.0 tensor(-2671.3647)
+progess :  6 tensor(1638.2438)
+weight_grad :  11.0 21.0 tensor(356.9853)
+progess :  7 tensor(263.3027)
+weight_grad :  22.0 14.0 tensor(2314.3794)
+progess :  7 tensor(2766.7109)
+weight_grad :  33.0 64.0 tensor(-2671.3647)
+progess :  7 tensor(1638.2438)
+weight_grad :  11.0 21.0 tensor(356.9853)
+progess :  8 tensor(263.3027)
+weight_grad :  22.0 14.0 tensor(2314.3794)
+progess :  8 tensor(2766.7109)
+weight_grad :  33.0 64.0 tensor(-2671.3647)
+progess :  8 tensor(1638.2438)
+weight_grad :  11.0 21.0 tensor(356.9853)
+progess :  9 tensor(263.3027)
+weight_grad :  22.0 14.0 tensor(2314.3794)
+progess :  9 tensor(2766.7109)
+weight_grad :  33.0 64.0 tensor(-2671.3647)
+progess :  9 tensor(1638.2438)
+```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
