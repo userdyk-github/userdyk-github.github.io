@@ -564,7 +564,8 @@ print('{} seconds elapsed.'.format(time.time() - t))
 
 ## **Tensorflow**
 
-- <a href="https://github.com/tensorflow/models/tree/master/research" target="_blank">github</a>
+- <a href="https://github.com/MorvanZhou/Tensorflow-Tutorial/tree/master/tutorial-contents" target="_blank">tutorials</a>
+- <a href="https://github.com/tensorflow/models/tree/master/research" target="_blank">research</a>
 
 ![image](https://user-images.githubusercontent.com/52376448/73329346-ba899200-42a0-11ea-99e1-ffa45255e0f1.png)
 
@@ -1852,7 +1853,7 @@ model.fit(train_ds, validation_data=test_ds, epochs=EPOCHS)
 
 ## **Pytorch**
 
-- <a href="https://github.com/yunjey/pytorch-tutorial" target="_blank">github</a>
+- <a href="https://github.com/yunjey/pytorch-tutorial" target="_blank">tutorial</a>
 
 ![image](https://user-images.githubusercontent.com/52376448/73329381-dbea7e00-42a0-11ea-805c-dae390e2cffb.png)
 
