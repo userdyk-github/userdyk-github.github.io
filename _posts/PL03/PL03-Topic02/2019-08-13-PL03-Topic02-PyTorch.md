@@ -843,15 +843,137 @@ tensor([[1., 1.],
 
 
 ### ***Basic Statistics***
-
+#### mean
 ```python
-```
+import torch
 
+torch.manual_seed(1234)
+x = torch.randn(4,6)
+
+print(x)
+print(torch.mean(x))
+print(torch.mean(x, dim=0))
+print(torch.mean(x, dim=1))
+```
+```
+tensor([[-0.1117, -0.4966,  0.1631, -0.8817,  0.0539,  0.6684],
+        [-0.0597, -0.4675,  0.6369, -0.7141, -1.0831, -0.5547],
+        [ 0.9717, -0.5150,  1.4255,  0.7987, -2.5273,  1.4778],
+        [-0.1696, -0.9919, -1.4569,  0.2563, -0.4030,  0.4195]])
+        
+tensor(-0.1484)
+tensor([ 0.1577, -0.6177,  0.1922, -0.1352, -0.9899,  0.5027])
+tensor([-0.1008, -0.3737,  0.2719, -0.3909])
+```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 <hr class='division3'>
 </details>
+<br><br><br>
+
+#### median
+```python
+import torch
+
+torch.manual_seed(1234)
+x = torch.randn(4,6)
+
+print(x)
+print(torch.median(x))
+print(torch.median(x, dim=0))
+print(torch.median(x, dim=1))
+```
+```
+tensor([[-0.1117, -0.4966,  0.1631, -0.8817,  0.0539,  0.6684],
+        [-0.0597, -0.4675,  0.6369, -0.7141, -1.0831, -0.5547],
+        [ 0.9717, -0.5150,  1.4255,  0.7987, -2.5273,  1.4778],
+        [-0.1696, -0.9919, -1.4569,  0.2563, -0.4030,  0.4195]])
+        
+tensor(-0.1696)
+torch.return_types.median(
+values=tensor([-0.1117, -0.5150,  0.1631, -0.7141, -1.0831,  0.4195]),
+indices=tensor([0, 2, 0, 1, 1, 3]))
+torch.return_types.median(
+values=tensor([-0.1117, -0.5547,  0.7987, -0.4030]),
+indices=tensor([0, 5, 3, 4]))
+```
+<br><br><br>
+
+#### mode
+```python
+import torch
+
+torch.manual_seed(1234)
+x = torch.randn(4,6)
+
+print(x)
+print(torch.mode(x))
+print(torch.mode(x, dim=0))
+print(torch.mode(x, dim=1))
+```
+```
+tensor([[-0.1117, -0.4966,  0.1631, -0.8817,  0.0539,  0.6684],
+        [-0.0597, -0.4675,  0.6369, -0.7141, -1.0831, -0.5547],
+        [ 0.9717, -0.5150,  1.4255,  0.7987, -2.5273,  1.4778],
+        [-0.1696, -0.9919, -1.4569,  0.2563, -0.4030,  0.4195]])
+        
+torch.return_types.mode(
+values=tensor([-0.8817, -1.0831, -2.5273, -1.4569]),
+indices=tensor([3, 4, 4, 2]))
+torch.return_types.mode(
+values=tensor([-0.1696, -0.9919, -1.4569, -0.8817, -2.5273, -0.5547]),
+indices=tensor([3, 3, 3, 0, 2, 1]))
+torch.return_types.mode(
+values=tensor([-0.8817, -1.0831, -2.5273, -1.4569]),
+indices=tensor([3, 4, 4, 2]))
+```
+<br><br><br>
+
+#### standard deviation
+```python
+import torch
+
+torch.manual_seed(1234)
+x = torch.randn(4,6)
+
+print(x)
+print(torch.std(x))
+print(torch.std(x, dim=0))
+print(torch.std(x, dim=1))
+```
+```
+tensor([[-0.1117, -0.4966,  0.1631, -0.8817,  0.0539,  0.6684],
+        [-0.0597, -0.4675,  0.6369, -0.7141, -1.0831, -0.5547],
+        [ 0.9717, -0.5150,  1.4255,  0.7987, -2.5273,  1.4778],
+        [-0.1696, -0.9919, -1.4569,  0.2563, -0.4030,  0.4195]])
+tensor(0.9230)
+tensor([0.5445, 0.2502, 1.2165, 0.7995, 1.1264, 0.8373])
+tensor([0.5388, 0.5968, 1.5497, 0.7242])
+```
+<br><br><br>
+
+#### variance
+```python
+import torch
+
+torch.manual_seed(1234)
+x = torch.randn(4,6)
+
+print(x)
+print(torch.var(x))
+print(torch.var(x, dim=0))
+print(torch.var(x, dim=1))
+```
+```
+tensor([[-0.1117, -0.4966,  0.1631, -0.8817,  0.0539,  0.6684],
+        [-0.0597, -0.4675,  0.6369, -0.7141, -1.0831, -0.5547],
+        [ 0.9717, -0.5150,  1.4255,  0.7987, -2.5273,  1.4778],
+        [-0.1696, -0.9919, -1.4569,  0.2563, -0.4030,  0.4195]])
+tensor(0.8519)
+tensor([0.2965, 0.0626, 1.4798, 0.6393, 1.2688, 0.7011])
+tensor([0.2903, 0.3561, 2.4014, 0.5245])
+```
 <br><br><br>
 
 ---
