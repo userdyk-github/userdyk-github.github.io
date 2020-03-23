@@ -1411,6 +1411,7 @@ for epoch in range(EPOCHS):
 ---
 
 ### ***GAN***
+<a href="https://github.com/eriklindernoren/Keras-GAN" target="_blank">github</a>
 #### Beginner mode
 ```python
 
@@ -2255,6 +2256,7 @@ for epoch in range(1, epochs + 1):
 ---
 
 ### ***GAN***
+<a href="https://github.com/eriklindernoren/PyTorch-GAN" target="_blank">github</a>
 
 <br><br><br>
 
