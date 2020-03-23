@@ -1090,23 +1090,8 @@ progess :  9 tensor(1638.2438)
 ---
 
 
-### ***Tensor Operations***
-
-```python
-```
-
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-<hr class='division3'>
-</details>
-<br><br><br>
-
----
-
-
 ### ***Distributions***
-
+<a href="https://pytorch.org/docs/stable/distributions.html" target="_blank">URL</a>
 ```python
 ```
 
