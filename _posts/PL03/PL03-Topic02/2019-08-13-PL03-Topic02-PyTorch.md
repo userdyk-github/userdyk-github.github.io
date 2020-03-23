@@ -553,12 +553,20 @@ sqrt
 ```python
 import torch
 
-x = torch.tensor([1])
+x = torch.tensor([1.])
 print(x.requires_grad)
 ```
 ```
 False
 ```
+```python
+import torch
+
+x = torch.tensor([1.])
+x.requires_grad_(True)
+print(x.requires_grad)
+```
+
 <br><br><br>
 ```python
 import torch
@@ -581,6 +589,10 @@ True
 False
 False
 ```
+
+
+
+
 <br><br><br>
 
 ```python
