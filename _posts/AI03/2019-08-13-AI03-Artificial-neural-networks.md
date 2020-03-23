@@ -1851,7 +1851,9 @@ model.fit(train_ds, validation_data=test_ds, epochs=EPOCHS)
 
 
 ## **Pytorch**
+
 - <a href="https://github.com/yunjey/pytorch-tutorial" target="_blank">github</a>
+
 ![image](https://user-images.githubusercontent.com/52376448/73329381-dbea7e00-42a0-11ea-805c-dae390e2cffb.png)
 
 <br><br><br>
