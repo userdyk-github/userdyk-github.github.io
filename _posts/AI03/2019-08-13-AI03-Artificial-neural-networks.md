@@ -9,7 +9,7 @@ tags : [AI03]
 List of posts to read before reading this article
 - <a href='https://userdyk-github.github.io/pl03/PL03-Libraries.html' target="_blank">Python Libraries</a>
 - <a href='https://www.asimovinstitute.org/neural-network-zoo/' target="_blank">neural network zoo</a>
-- <a href='https://userdyk-github.github.io/'>post3</a>
+- <a href='https://paperswithcode.com/sota' target="_blank">paper with code</a>
 
 ---
 
