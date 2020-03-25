@@ -31,8 +31,13 @@ $ python3 -m pip install konlpy                                            # Pyt
 ```
 <hr class="division2">
 
-## title2
+## **morpheme analysis**
+```python
+from konlpy.tag import Hannanum
 
+hannanum = Hannanum()
+hannanum.analyze((u'대한민국은 아름다운 나라이다.'))
+```
 <hr class="division2">
 
 ## title3
