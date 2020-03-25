@@ -95,7 +95,18 @@ print("pos :\n", pos)
 
 ### ***Okt : Twitter***
 ```python
+from konlpy.tag import Okt
 
+okt = Okt()
+morphs = okt.morphs((u'대한민국은 아름다운 나라이다.'))
+nouns = okt.nouns((u'대한민국은 아름다운 나라이다.'))
+pos = okt.pos((u'대한민국은 아름다운 나라이다.'))
+phrases = okt.phrases((u'대한민국은 아름다운 나라이다.'))
+
+print("morphs :\n", morphs)
+print("nouns :\n", nouns)
+print("pos :\n", pos)
+print("phrases :\n", phrases)
 ```
 <br><br><br>
 
