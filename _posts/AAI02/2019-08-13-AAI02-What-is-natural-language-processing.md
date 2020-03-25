@@ -32,7 +32,7 @@ $ python3 -m pip install konlpy                                            # Pyt
 <hr class="division2">
 
 ## **korean morpheme analysis**
-### ***Hannanum***
+### ***Hannanum : KAIST***
 ```python
 from konlpy.tag import Hannanum
 
@@ -51,9 +51,20 @@ print("pos :\n", pos)
 
 ---
 
-### ******
+### ***Kkma : SNU***
 ```python
+from konlpy.tag import Kkma
 
+kkma = Kkma()
+morphs = kkma.morphs((u'대한민국은 아름다운 나라이다.'))
+nouns = kkma.nouns((u'대한민국은 아름다운 나라이다.'))
+pos = kkma.pos((u'대한민국은 아름다운 나라이다.'))
+sentences = kkma.sentences((u'대한민국은 아름다운 나라이다.'))
+
+print("morphs :\n", morphs)
+print("nouns :\n", nouns)
+print("pos :\n", pos)
+print("sentences :\n", sentences)
 ```
 <br><br><br>
 
