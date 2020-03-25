@@ -36,7 +36,15 @@ $ python3 -m pip install konlpy                                            # Pyt
 from konlpy.tag import Hannanum
 
 hannanum = Hannanum()
-hannanum.analyze((u'대한민국은 아름다운 나라이다.'))
+analyze = hannanum.analyze((u'대한민국은 아름다운 나라이다.'))
+morphs = hannanum.morphs((u'대한민국은 아름다운 나라이다.'))
+nouns = hannanum.nouns((u'대한민국은 아름다운 나라이다.'))
+pos = hannanum.pos((u'대한민국은 아름다운 나라이다.'))
+
+print("analyze :\n", analyze)
+print("morphs :\n", morphs)
+print("nouns :\n", nouns)
+print("pos :\n", pos)
 ```
 <hr class="division2">
 
