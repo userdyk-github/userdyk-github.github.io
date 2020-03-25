@@ -31,7 +31,8 @@ $ python3 -m pip install konlpy                                            # Pyt
 ```
 <hr class="division2">
 
-## **morpheme analysis**
+## **korean morpheme analysis**
+### ***Hannanum***
 ```python
 from konlpy.tag import Hannanum
 
@@ -46,6 +47,28 @@ print("morphs :\n", morphs)
 print("nouns :\n", nouns)
 print("pos :\n", pos)
 ```
+<br><br><br>
+
+---
+
+### ******
+```python
+
+```
+<br><br><br>
+
+### ******
+```python
+
+```
+<br><br><br>
+
+### ******
+```python
+
+```
+<br><br><br>
+
 <hr class="division2">
 
 ## title3
