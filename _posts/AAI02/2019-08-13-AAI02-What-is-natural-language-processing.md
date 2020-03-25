@@ -68,13 +68,17 @@ print("sentences :\n", sentences)
 ```
 <br><br><br>
 
-### ******
+### ***Komoran : Shineware***
 ```python
 
 ```
 <br><br><br>
 
-### ******
+### ***Mecab : Eunjeon project***
+```bash
+$ sudo apt-get install curl git
+$ bash <(curl -s https://raw.githubusercontent.com/konlpy/konlpy/master/scripts/mecab.sh)
+```
 ```python
 
 ```
