@@ -21,8 +21,14 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
+## **konlpy installation**
 
+<a href="http://konlpy.org/ko/latest/install/" target="_blank">URL</a>
+```bash
+$ sudo apt-get install g++ openjdk-8-jdk python3-dev python3-pip curl      # Install Java 1.8 or up
+$ python3 -m pip install --upgrade pip
+$ python3 -m pip install konlpy                                            # Python 3.x
+```
 <hr class="division2">
 
 ## title2
