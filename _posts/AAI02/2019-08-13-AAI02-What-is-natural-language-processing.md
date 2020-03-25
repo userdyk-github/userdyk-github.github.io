@@ -80,6 +80,21 @@ $ sudo apt-get install curl git
 $ bash <(curl -s https://raw.githubusercontent.com/konlpy/konlpy/master/scripts/mecab.sh)
 ```
 ```python
+from konlpy.tag import Mecab
+
+mecab = Mecab()
+morphs = mecab.morphs((u'대한민국은 아름다운 나라이다.'))
+nouns = mecab.nouns((u'대한민국은 아름다운 나라이다.'))
+pos = mecab.pos((u'대한민국은 아름다운 나라이다.'))
+
+print("morphs :\n", morphs)
+print("nouns :\n", nouns)
+print("pos :\n", pos)
+```
+<br><br><br>
+
+### ***Okt : Twitter***
+```python
 
 ```
 <br><br><br>
