@@ -47,6 +47,35 @@ $
 
 <hr class="division2">
 
+## **Tutorials**
+### ***Dataset : loader***
+
+<br><br><br>
+
+---
+
+### ***Neural net : Custom layers***
+#### Sequential 
+
+<br><br><br>
+#### Module 
+
+<br><br><br>
+
+---
+
+### ***Optimization : Training***
+
+<br><br><br>
+
+---
+
+### ***Evaluation : Predicting***
+
+<br><br><br>
+<hr class="division2">
+
+
 ## **Tensor & Tensor operations**
 
 ### ***Using Tensors : autograd***
