@@ -55,10 +55,12 @@ $
 ---
 
 ### ***Neural net : Custom layers***
-#### Sequential 
+#### Sequential
+<a href="https://pytorch.org/docs/stable/nn.html#sequential" targe="_blank">URL</a>
 
 <br><br><br>
 #### Module 
+<a href="https://pytorch.org/docs/stable/nn.html#module" targe="_blank">URL</a>
 
 <br><br><br>
 
