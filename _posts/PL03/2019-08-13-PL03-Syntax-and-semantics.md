@@ -2075,6 +2075,19 @@ print(sys.path)
 ```
 
 <br>
+#### argparse
+```python
+import argparse
+
+parser = argparse.ArgumentParser(description="set your environment")
+parser.add_argument('--env1', required=False, help="env 1")
+parser.add_argument('--env2', required=False, help="env 2")
+args = parser.parse_args()
+
+print(args.env1)
+print(args.env2)
+```
+<br>
 
 #### pickle
 <span class="frame3">Save</span>
