@@ -16,7 +16,7 @@ title: RESEARCH
 ---
 
 - <a href='http://openresearch.ai/' target="_blank">http://openresearch.ai/</a>
-- <a href='https://ai-pool.com/' target="_blank">https://ai-pool.com/</a>
+- <a href='https://ai-pool.com/m?limit=96&page=1' target="_blank">https://ai-pool.com/</a>
 - <a href="https://paperswithcode.com/sota" target="_blank">https://paperswithcode.com/sota</a>
 - <a href="https://pytorch.org/hub/research-models" target="_blank">https://pytorch.org/hub/research-models</a>
 - <a href='https://en.wikipedia.org/wiki/Glossary_of_artificial_intelligence' target="_blank">Glossary of artificial intelligence</a><br>
