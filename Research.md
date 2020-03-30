@@ -6,17 +6,19 @@ title: RESEARCH
 - <a href='https://scholar.google.com/' target="_blank">https://scholar.google.com/</a>
 - <a href='https://www.researchgate.net/' target="_blank">https://www.researchgate.net/</a>
 - <a href='https://arxiv.org/' target="_blank">https://arxiv.org/</a>
-- <a href='http://openresearch.ai/' target="_blank">http://openresearch.ai/</a>
-- <a href='https://ai-pool.com/' target="_blank">https://ai-pool.com/</a>
-- <a href="https://paperswithcode.com/sota" target="_blank">https://paperswithcode.com/sota</a>
 - <a href="https://github.com/" target="_blank">https://github.com/</a>
-
----
-
 - <a href='https://scholar.google.com/citations?view_op=top_venues' target="_blank">Google Scholar Citations</a>
 - <a href='https://cmt3.research.microsoft.com/Conference/Recent' target="_blank">Recent Conference</a>
 - <a href='https://www.sharelatex.com/templates' target="_blank">Latex templates(Ctrl+Alt+b, tex)</a><br>
 - <a href='https://en.wikipedia.org/wiki/Help:Displaying_a_formula' target="_blank">Help:Displaying a formula</a><br>
+
+
+---
+
+- <a href='http://openresearch.ai/' target="_blank">http://openresearch.ai/</a>
+- <a href='https://ai-pool.com/' target="_blank">https://ai-pool.com/</a>
+- <a href="https://paperswithcode.com/sota" target="_blank">https://paperswithcode.com/sota</a>
+- <a href="https://pytorch.org/hub/research-models" target="_blank">https://pytorch.org/hub/research-models</a>
 - <a href='https://en.wikipedia.org/wiki/Glossary_of_artificial_intelligence' target="_blank">Glossary of artificial intelligence</a><br>
 
 
