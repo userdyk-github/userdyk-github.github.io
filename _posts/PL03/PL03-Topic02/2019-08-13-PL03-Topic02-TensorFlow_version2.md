@@ -54,14 +54,17 @@ print(tf.__version__)
 
 ### ***Neural net : Custom layers***
 #### Sequential 
-<a href="https://www.tensorflow.org/api_docs/python/tf/keras/Sequential" target="_blank">URL</a>
+<a href="https://www.tensorflow.org/api_docs/python/tf/keras/Sequential" target="_blank">URL1</a>,
+<a href="https://www.tensorflow.org/api_docs/python/tf/keras/layers/Layer" target="_blank">URL2</a>
 ```python
 
 ```
 <br><br><br>
 
 #### Module 
-<a href="https://www.tensorflow.org/api_docs/python/tf/keras/Model" target="_blank">URL</a>
+<a href="https://www.tensorflow.org/api_docs/python/tf/keras/Model" target="_blank">URL1</a>,
+<a href="https://www.tensorflow.org/api_docs/python/tf/keras/layers/Layer" target="_blank">URL2</a>
+
 ```python
 import tensorflow as tf
 mnist = tf.keras.datasets.mnist
