@@ -5,7 +5,7 @@ categories: [PL03]
 comments : true
 tags : [PL03]
 ---
-[Back to the previous page](https://userdyk-github.github.io/Study.html) ｜<a href="https://github.com/userdyk-github/userdyk-github.github.io/blob/master/_posts/PL03/2019-08-13-PL03-Syntax-and-semantics.md" target="_blank">page management</a>｜ <a href="https://userdyk-github.github.io/pl03/PL03-Contents.html">Contents</a> ｜<a href="https://docs.python.org/3.6/reference/index.html#reference-index" target="_blank">official python docs</a>｜<a href="https://www.youtube.com/playlist?list=PLa9dKeCAyr7iWPMclcDxbnlTjQ2vjdIDD" target="_blank">Lecture</a><br>
+[Back to the previous page](https://userdyk-github.github.io/Study.html) ｜<a href="https://github.com/userdyk-github/userdyk-github.github.io/blob/master/_posts/PL03/2019-08-13-PL03-Syntax-and-semantics.md" target="_blank">page management</a>｜ <a href="https://userdyk-github.github.io/pl03/PL03-Contents.html">Contents</a> ｜<a href="https://docs.python.org/3.6/reference/index.html#reference-index" target="_blank">official python docs</a>｜<a href="https://www.tutorialsteacher.com/python" target="_blank">python tutorials</a>｜<a href="https://www.youtube.com/playlist?list=PLa9dKeCAyr7iWPMclcDxbnlTjQ2vjdIDD" target="_blank">Lecture</a><br>
 List of posts to read before reading this article
 - <a href='https://userdyk-github.github.io/'>post1</a>
 - <a href='https://userdyk-github.github.io/'>post2</a>
