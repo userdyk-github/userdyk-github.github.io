@@ -2140,6 +2140,12 @@ plt.show()
 
 ---
 
+### ***Perceptron***
+#### XOR
+<br><br><br>
+
+---
+
 ### ***FCN***
 ```python
 import torch
