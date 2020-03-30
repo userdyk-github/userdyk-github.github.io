@@ -5,7 +5,7 @@ categories: [PL06]
 comments : true
 tags : [PL06]
 ---
-[Back to the previous page](https://userdyk-github.github.io/Study.html) <br>
+[Back to the previous page](https://userdyk-github.github.io/Study.html)｜<a href="https://github.com/userdyk-github/userdyk-github.github.io/blob/master/_posts/PL06/2019-08-13-PL06-Numerical-methods.md" target="_blank">page management</a> <br>
 List of posts to read before reading this article
 - <a href='https://userdyk-github.github.io/'>post3</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
@@ -23,6 +23,8 @@ List of posts to read before reading this article
 <hr class="division1">
 
 ## **Introduction**
+
+<a href="https://kr.mathworks.com/help/matlab/matlab_env/use-keyboard-shortcuts-to-navigate-matlab.html" target="_blank">Keyboard Short-cuts</a>
 
 |Region|Command|
 |:--|:--|
