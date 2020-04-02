@@ -207,6 +207,7 @@ title: RESEARCH
 
 - [https://www.tensorflow.org/tutorials](https://www.tensorflow.org/tutorials)
 - [https://github.com/tensorflow](https://github.com/tensorflow)
+- [https://github.com/tensorflow/models](https://github.com/tensorflow/models)
 
 <br><br><br>
 
