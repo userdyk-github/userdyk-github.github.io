@@ -158,6 +158,7 @@ $ kill -9 [PID_num]
 ```
 
 #### Allocate memory on GPU
+<a href="https://datamasters.co.kr/33" target="_blank">URL</a><br>
 <span class="frmae3">tensorflow : One GPU(default)</span>
 ```python
 import tensorflow as tf
