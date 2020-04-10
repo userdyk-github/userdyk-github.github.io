@@ -1753,6 +1753,31 @@ plt.show()
 ![다운로드 (7)](https://user-images.githubusercontent.com/52376448/64471622-c6a87200-d18e-11e9-90b0-bafe3d85d707.png)
 <hr class='division3'>
 </details>
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Interactive horizontalbar chart</summary>
+<hr class='division3'>
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+
+#print(plt.style.available)
+plt.style.use('seaborn-ticks')
+
+fig = plt.figure()
+ax = fig.add_subplot(1,1,1)
+
+for i in range(20):
+    ax.barh([0,1,2,3], abs(np.random.randn(4)))
+    ax.grid(True)
+    plt.ion()
+    plt.draw()
+    plt.pause(0.1)
+    ax.clear()
+```
+
+<hr class='division3'>
+</details>
+
 
 <br><br><br>
 
