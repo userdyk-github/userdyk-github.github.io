@@ -5028,6 +5028,11 @@ plt.show()
 <hr class="division2">
 
 ## **Animation**
+
+- [https://towardsdatascience.com/animations-with-matplotlib-d96375c5442c](https://towardsdatascience.com/animations-with-matplotlib-d96375c5442c)
+
+
+<br><br><br>
 ### ***on Console***
 ```python
 import numpy as np
