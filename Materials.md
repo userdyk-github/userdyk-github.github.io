@@ -131,6 +131,16 @@ title: MATERIALS
 
 - <a href='https://www.youtube.com/playlist?list=PLlMkM4tgfjnJhhd4wn5aj8fVTYJwIpWkS' target="_blank">Deep learning paper seminar</a>, <a href='https://www.youtube.com/playlist?list=PL0oFI08O71gKEXITQ7OG2SCCXkrtid7Fq' target="_blank">Talk for deep learning</a>, <a href='https://www.youtube.com/playlist?list=PLhGeMZBOfrVxy65faz3tsoixEJforU2e-' target="_blank">SK talk on seminar</a>, <a href='https://www.youtube.com/playlist?list=PLPZxAIaT7oTjX6FtwoOylYjiOTsb8HXje' target="_blank">Future for deep learning</a>
 
+<br>
+
+<hr class='division2'>
+
+<br>
+
+# Templates
+
+[daily][1]
+
 
 
 <br>
@@ -197,4 +207,6 @@ title: MATERIALS
 
 
 
+
+[1]:{{ site.url }}/download/daily.pptx
 
