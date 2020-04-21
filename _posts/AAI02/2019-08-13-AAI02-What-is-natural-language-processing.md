@@ -29,6 +29,8 @@ $ sudo apt-get install g++ openjdk-8-jdk python3-dev python3-pip curl      # Ins
 $ python3 -m pip install --upgrade pip
 $ python3 -m pip install konlpy                                            # Python 3.x
 ```
+
+<br><br><br>
 <hr class="division2">
 
 ## **korean morpheme analysis**
@@ -112,8 +114,88 @@ print("phrases :\n", phrases)
 
 <hr class="division2">
 
-## title3
+## **Text preprocessing**
+<br><br><br>
+<hr class="division2">
 
+
+## **Language model**
+<br><br><br>
+<hr class="division2">
+
+
+
+## **Count based word Representation**
+<br><br><br>
+<hr class="division2">
+
+
+
+## **Document Similarity**
+<br><br><br>
+<hr class="division2">
+
+
+
+## **Topic Modeling**
+<br><br><br>
+<hr class="division2">
+
+
+## **Machine Learning**
+<br><br><br>
+<hr class="division2">
+
+
+
+## **Deep Learning**
+<br><br><br>
+<hr class="division2">
+
+
+
+## **Recurrent Neural Network**
+<br><br><br>
+<hr class="division2">
+
+
+
+## **Word Embedding**
+<br><br><br>
+<hr class="division2">
+
+
+
+## **Text Classification**
+<br><br><br>
+<hr class="division2">
+
+
+
+## **Tagging Task**
+<br><br><br>
+<hr class="division2">
+
+
+
+## **Neural Machine Translation**
+<br><br><br>
+<hr class="division2">
+
+
+
+## **Attention Mechanism**
+<br><br><br>
+<hr class="division2">
+
+
+## **Transformer**
+<br><br><br>
+<hr class="division2">
+
+
+## **Convolution Neural Network**
+<br><br><br>
 <hr class="division1">
 
 List of posts followed by this article
