@@ -116,7 +116,9 @@ title: MATERIALS
 
 ### [Deep learning](https://pytorch.org/tutorials/)
 
-- <a href='https://www.youtube.com/playlist?list=PLIsZjwy2fs1-5czElfcOe16dGGGBQ6PUM' target="_blank">Simple concept of deep learning</a>, <a href='https://www.youtube.com/watch?v=-JWv0ed9R5g&list=PLsS-TVNjbU7clDOjpAZKud3uG8APHDq_M&index=2&t=0s' target="_blank">Deep learning with numpy</a>, <a href='https://www.youtube.com/playlist?list=PLlMkM4tgfjnLSOjrEJN31gZATbcj_MpUm' target="_blank">Deep learning</a>, <a href='https://www.youtube.com/playlist?list=PLQ28Nx3M4Jrguyuwg4xe9d9t2XE639e5C' target="_blank">Deep learning with tensorflow</a>, <a href='https://www.youtube.com/watch?v=7eldOrjQVi0&list=PLQ28Nx3M4JrhkqBVIXg-i5_CVVoS1UzAv' target="_blank">Deep learning with pytorch</a>, <a href='https://www.youtube.com/playlist?list=PLS8gIc2q83OjStGjdTF2LZtc0vefCAbnX' target="_blank">Deep learning including transfer learning</a>
+- <a href='https://www.youtube.com/playlist?list=PLIsZjwy2fs1-5czElfcOe16dGGGBQ6PUM' target="_blank">Simple concept of deep learning</a>, <a href='https://www.youtube.com/watch?v=-JWv0ed9R5g&list=PLsS-TVNjbU7clDOjpAZKud3uG8APHDq_M&index=2&t=0s' target="_blank">Deep learning with numpy</a>, <a href='https://www.youtube.com/playlist?list=PLlMkM4tgfjnLSOjrEJN31gZATbcj_MpUm' target="_blank">Deep learning</a>, <a href='https://www.youtube.com/playlist?list=PLQ28Nx3M4Jrguyuwg4xe9d9t2XE639e5C' target="_blank">Deep learning with tensorflow</a>, <a href='https://www.youtube.com/watch?v=7eldOrjQVi0&list=PLQ28Nx3M4JrhkqBVIXg-i5_CVVoS1UzAv' target="_blank">Deep learning with pytorch</a>, <a href='https://www.youtube.com/playlist?list=PLS8gIc2q83OjStGjdTF2LZtc0vefCAbnX' target="_blank">Deep learning including transfer learning</a>, <a href="https://www.edwith.org/deeplearningchoi/joinLectures/10979" target="_blank">edwith - Deep learning with papers</a>, <a href="https://www.edwith.org/bayesiandeeplearning/joinLectures/14426" target="_blank">edwith - Bayesian deep learning</a>, <a href="https://www.edwith.org/deepnlp/joinLectures/17363" target="_blank">edwith - Natural language processing</a>
+
+
 
 ### Data processing
 
