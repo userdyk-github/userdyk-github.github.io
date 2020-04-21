@@ -119,14 +119,16 @@ title: MATERIALS
 - <a href='https://www.youtube.com/playlist?list=PLIsZjwy2fs1-5czElfcOe16dGGGBQ6PUM' target="_blank">Simple concept of deep learning</a>, <a href='https://www.youtube.com/watch?v=-JWv0ed9R5g&list=PLsS-TVNjbU7clDOjpAZKud3uG8APHDq_M&index=2&t=0s' target="_blank">Deep learning with numpy</a>, <a href='https://www.youtube.com/playlist?list=PLlMkM4tgfjnLSOjrEJN31gZATbcj_MpUm' target="_blank">Deep learning</a>, <a href='https://www.youtube.com/playlist?list=PLQ28Nx3M4Jrguyuwg4xe9d9t2XE639e5C' target="_blank">Deep learning with tensorflow</a>, <a href='https://www.youtube.com/watch?v=7eldOrjQVi0&list=PLQ28Nx3M4JrhkqBVIXg-i5_CVVoS1UzAv' target="_blank">Deep learning with pytorch</a>, <a href='https://www.youtube.com/playlist?list=PLS8gIc2q83OjStGjdTF2LZtc0vefCAbnX' target="_blank">Deep learning including transfer learning</a>, <a href="https://www.edwith.org/deeplearningchoi/joinLectures/10979" target="_blank">edwith - Deep learning with papers</a>, <a href="https://www.edwith.org/bayesiandeeplearning/joinLectures/14426" target="_blank">edwith - Bayesian deep learning</a>
 
 
-### Applications
-
-- <a href='https://www.youtube.com/playlist?list=PLxmi9rDs4EYo65U39vp_Y_J7AJh43cCC_' target="_blank">Time series data processing</a>, <a href='https://www.youtube.com/playlist?list=PL1Kb3QTCLIVtyOuMgyVgT-OeW0PYXl3j5' target="_blank">Image processing</a>, <a href='https://www.youtube.com/playlist?list=PLVNY1HnUlO26qqZznHVWAqjS1fWw0zqnT' target="_blank">Nautral language processing</a>, <a href="https://www.edwith.org/deepnlp/joinLectures/17363" target="_blank">edwith - Natural language processing</a>
-
 ### Reingforcement learning
 
 - <a href='https://www.youtube.com/playlist?list=PLlMkM4tgfjnKsCWav-Z2F-MMFRx-2gMGG' target="_blank">Reinforcement learning 1</a>, <a href='https://www.youtube.com/playlist?list=PLXziV1DL41ognSWZBuRNigZWdezlisyic' target="_blank">Reinforment learning 2</a>, <a href='https://www.youtube.com/playlist?list=PLpRS2w0xWHTcTZyyX8LMmtbcMXpd3s4TU' target="_blank">Reinforment learning 3</a>, <a href='https://www.youtube.com/playlist?list=PLpRS2w0xWHTcxz2Oj8yVOKrJJBiPCpl-a' target="_blank">Deep reinforce learning</a>
 - <a href='https://www.youtube.com/playlist?list=PLCsGBQ3i2iIWOssGekIwgic0DxmDA9-ya' target="_blank">Autoencoder</a>
+
+
+### Applications
+
+- <a href='https://www.youtube.com/playlist?list=PLxmi9rDs4EYo65U39vp_Y_J7AJh43cCC_' target="_blank">Time series data processing</a>, <a href='https://www.youtube.com/playlist?list=PL1Kb3QTCLIVtyOuMgyVgT-OeW0PYXl3j5' target="_blank">Image processing</a>, <a href='https://www.youtube.com/playlist?list=PLVNY1HnUlO26qqZznHVWAqjS1fWw0zqnT' target="_blank">Nautral language processing</a>, <a href="https://www.edwith.org/deepnlp/joinLectures/17363" target="_blank">edwith - Natural language processing</a>
+
 
 ### Seminar
 
