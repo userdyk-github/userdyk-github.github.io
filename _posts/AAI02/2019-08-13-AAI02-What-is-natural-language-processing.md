@@ -125,6 +125,7 @@ List of posts followed by this article
 
 Reference
 - <a href='https://wikidocs.net/book/2155' target="_blank">딥 러닝을 이용한 자연어 처리 입문</a>
+- <a href="https://www.edwith.org/deepnlp/joinLectures/17363" target="_blank">NLP lecture</a>
 - Taweh Beysolow II, Applied Natural Language Processing with Python, 2018
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
