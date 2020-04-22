@@ -481,7 +481,7 @@ for n-gram,
 ---
 
 ### ***Neural Network Based Language Model***
-#### Neural Network Language Model, NNLM
+#### Feed Forward Neural Network Language Model, FFNNLM : Neural Probabilistic Language Model
 
 <br><br><br>
 
