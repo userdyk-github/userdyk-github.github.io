@@ -30,9 +30,6 @@ $ python3 -m pip install --upgrade pip
 $ python3 -m pip install konlpy                                            # Python 3.x
 ```
 
-<br><br><br>
-
-here, test
 
 <br><br><br>
 <hr class="division2">
@@ -119,9 +116,58 @@ print("phrases :\n", phrases)
 <hr class="division2">
 
 ## **Text preprocessing**
-<br><br><br>
-<hr class="division2">
+### ***Tokenization***
+`word_tokenize`
+```python
+from nltk.tokenize import word_tokenize  
 
+print(word_tokenize("Don't be fooled by the dark sounding name, Mr. Jone's Orphanage is as cheery as cheery goes for a pastry shop."))  
+```
+```
+['Do', "n't", 'be', 'fooled', 'by', 'the', 'dark', 'sounding', 'name', ',', 'Mr.', 'Jone', "'s", 'Orphanage', 'is', 'as', 'cheery', 'as', 'cheery', 'goes', 'for', 'a', 'pastry', 'shop', '.']  
+```
+<br>
+`WordPunctTokenizer`
+```python
+from nltk.tokenize import WordPunctTokenizer  
+
+print(WordPunctTokenizer().tokenize("Don't be fooled by the dark sounding name, Mr. Jone's Orphanage is as cheery as cheery goes for a pastry shop."))
+```
+```
+['Don', "'", 't', 'be', 'fooled', 'by', 'the', 'dark', 'sounding', 'name', ',', 'Mr', '.', 'Jone', "'", 's', 'Orphanage', 'is', 'as', 'cheery', 'as', 'cheery', 'goes', 'for', 'a', 'pastry', 'shop', '.']  
+```
+<br>
+`text_to_word_sequence`
+```python
+from tensorflow.keras.preprocessing.text import text_to_word_sequence
+
+print(text_to_word_sequence("Don't be fooled by the dark sounding name, Mr. Jone's Orphanage is as cheery as cheery goes for a pastry shop."))
+```
+```
+["don't", 'be', 'fooled', 'by', 'the', 'dark', 'sounding', 'name', 'mr', "jone's", 'orphanage', 'is', 'as', 'cheery', 'as', 'cheery', 'goes', 'for', 'a', 'pastry', 'shop']
+```
+<br><br><br>
+
+### ***Consideration***
+
+- Don't simply exclude <b>punctuation marks</b> or <b>special characters</b>.
+  - ex] Ph.D, AT&T, 123,456,789
+- In case of <b>abbreviations</b> and <b>spacing within words</b>
+  - ex] rock 'n' roll(abbreviation), New York(spacing within words)
+- Standard : Penn Treebank Tokenization
+
+`TreebankWordTokenizer`
+```python
+from nltk.tokenize import TreebankWordTokenizer
+
+tokenizer=TreebankWordTokenizer()
+text="Starting a home-based restaurant may be an ideal. it doesn't have a food chain or restaurant of their own."
+print(tokenizer.tokenize(text))
+```
+```
+['Starting', 'a', 'home-based', 'restaurant', 'may', 'be', 'an', 'ideal.', 'it', 'does', "n't", 'have', 'a', 'food', 'chain', 'or', 'restaurant', 'of', 'their', 'own', '.'] 
+```
+<hr class="division2">
 
 ## **Language model**
 <br><br><br>
