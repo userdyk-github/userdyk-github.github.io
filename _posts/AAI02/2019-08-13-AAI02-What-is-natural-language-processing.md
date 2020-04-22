@@ -428,7 +428,19 @@ was wondering anyone out there could enlighten this car.
 <br><br><br>
 <hr class="division2">
 
+
 ## **Language model**
+
+- Assign probabilities for word sequences
+  - Machine Translation
+  - Spell Correction
+  - Speech Recognition
+- Prediction of the next word from a given previous word
+  - P(W) = P(w_1,w_2,w_3,...,w_n)
+  - P(w_n｜w_1,...,w_n-1) = P(w_1,w_2,...,w_n)/P(w_1,w_2,w_3,...,w_n-1)
+
+<br><br><br>
+
 ### ***Statistical Language Model, SLM***
 ```python
 
