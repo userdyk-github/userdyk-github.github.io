@@ -227,7 +227,56 @@ print(kkma.nouns("열심히 코딩한 당신, 연휴에는 여행을 가봐요")
 ['코딩', '당신', '연휴', '여행']  <br>
 
 <br><br><br>
+
+### ***cleaning and normalization***
+
+- morphology
+  - stem
+  - affix
+
+<br><br><br>
+#### lemmatization
+
+`WordNetLemmatizer`
+```python
+from nltk.stem import WordNetLemmatizer
+
+n=WordNetLemmatizer()
+words=['policy', 'doing', 'organization', 'have', 'going', 'love', 'lives', 'fly', 'dies', 'watched', 'has', 'starting']
+print([n.lemmatize(w) for w in words])
+```
+['policy', 'doing', 'organization', 'have', 'going', 'love', 'life', 'fly', 'dy', 'watched', 'ha', 'starting'] <br><br>
+
+
+<br><br><br>
+
+#### stemming
+```python
+
+```
+<br><br><br>
+#### Removing Unnecessary Words(noise data)
+
+- Removing Rare words
+- Removing words with very a short length
+
+```python
+import re
+
+text = "I was wondering if anyone out there could enlighten me on this car."
+shortword = re.compile(r'\W*\b\w{1,2}\b')
+
+print(shortword.sub('', text))
+```
+was wondering anyone out there could enlighten this car.
+
+<br><br><br>
+#### Regular Expression
+```python
+```
+<br><br><br>
 <hr class="division2">
+
 
 ## **Language model**
 ```python
