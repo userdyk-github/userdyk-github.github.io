@@ -453,6 +453,9 @@ Cause sparsity problem.
 
 #### N-gram Language Model
 
+![image](https://user-images.githubusercontent.com/52376448/79959958-c2338e00-84bf-11ea-85a0-69a6c7aa255f.png)
+
+
 - Sparsity problem
 - Trade off (<b>sparsity</b> vs <b>accuracy</b>)
   - The higher the value of n, the stronger the sparsity problem and the accuracy.
