@@ -124,9 +124,7 @@ from nltk.tokenize import word_tokenize
 
 print(word_tokenize("Don't be fooled by the dark sounding name, Mr. Jone's Orphanage is as cheery as cheery goes for a pastry shop."))  
 ```
-```
 ['Do', "n't", 'be', 'fooled', 'by', 'the', 'dark', 'sounding', 'name', ',', 'Mr.', 'Jone', "'s", 'Orphanage', 'is', 'as', 'cheery', 'as', 'cheery', 'goes', 'for', 'a', 'pastry', 'shop', '.']  
-```
 <br>
 `WordPunctTokenizer`
 ```python
@@ -134,9 +132,8 @@ from nltk.tokenize import WordPunctTokenizer
 
 print(WordPunctTokenizer().tokenize("Don't be fooled by the dark sounding name, Mr. Jone's Orphanage is as cheery as cheery goes for a pastry shop."))
 ```
-```
 ['Don', "'", 't', 'be', 'fooled', 'by', 'the', 'dark', 'sounding', 'name', ',', 'Mr', '.', 'Jone', "'", 's', 'Orphanage', 'is', 'as', 'cheery', 'as', 'cheery', 'goes', 'for', 'a', 'pastry', 'shop', '.']  
-```
+
 <br>
 `text_to_word_sequence`
 ```python
@@ -144,9 +141,8 @@ from tensorflow.keras.preprocessing.text import text_to_word_sequence
 
 print(text_to_word_sequence("Don't be fooled by the dark sounding name, Mr. Jone's Orphanage is as cheery as cheery goes for a pastry shop."))
 ```
-```
 ["don't", 'be', 'fooled', 'by', 'the', 'dark', 'sounding', 'name', 'mr', "jone's", 'orphanage', 'is', 'as', 'cheery', 'as', 'cheery', 'goes', 'for', 'a', 'pastry', 'shop']
-```
+
 <br><br><br>
 
 <span class="frame3_1">Consideration</span>
@@ -165,10 +161,9 @@ tokenizer=TreebankWordTokenizer()
 text="Starting a home-based restaurant may be an ideal. it doesn't have a food chain or restaurant of their own."
 print(tokenizer.tokenize(text))
 ```
-```
 ['Starting', 'a', 'home-based', 'restaurant', 'may', 'be', 'an', 'ideal.', 'it', 'does', "n't", 'have', 'a', 'food', 'chain', 'or', 'restaurant', 'of', 'their', 'own', '.'] 
-```
 
+<br><br><br>
 <hr class="division2">
 
 ## **Language model**
