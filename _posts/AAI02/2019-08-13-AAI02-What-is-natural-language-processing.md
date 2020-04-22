@@ -227,6 +227,26 @@ print(kkma.nouns("열심히 코딩한 당신, 연휴에는 여행을 가봐요")
 ['코딩', '당신', '연휴', '여행']  <br>
 
 <br><br><br>
+#### Tokenization with regular expression
+```python
+import nltk
+from nltk.tokenize import RegexpTokenizer
+
+tokenizer=RegexpTokenizer("[\w]+")
+print(tokenizer.tokenize("Don't be fooled by the dark sounding name, Mr. Jone's Orphanage is as cheery as cheery goes for a pastry shop"))
+```
+['Don', 't', 'be', 'fooled', 'by', 'the', 'dark', 'sounding', 'name', 'Mr', 'Jone', 's', 'Orphanage', 'is', 'as', 'cheery', 'as', 'cheery', 'goes', 'for', 'a', 'pastry', 'shop'] <br>
+
+```python
+import nltk
+from nltk.tokenize import RegexpTokenizer
+
+tokenizer=RegexpTokenizer("[\s]+", gaps=True)
+print(tokenizer.tokenize("Don't be fooled by the dark sounding name, Mr. Jone's Orphanage is as cheery as cheery goes for a pastry shop"))
+```
+["Don't", 'be', 'fooled', 'by', 'the', 'dark', 'sounding', 'name,', 'Mr.', "Jone's", 'Orphanage', 'is', 'as', 'cheery', 'as', 'cheery', 'goes', 'for', 'a', 'pastry', 'shop'] <br>
+
+<br><br><br>
 
 ### ***cleaning and normalization***
 
