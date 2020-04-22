@@ -458,6 +458,20 @@ Cause sparsity problem.
   - The higher the value of n, the stronger the sparsity problem and the accuracy.
   - The lower the value of n, the weaker the sparsity problem and the accuracy.
 
+![image](https://user-images.githubusercontent.com/52376448/79956207-cc06c280-84ba-11ea-9e93-31406b685431.png)
+↓
+![image](https://user-images.githubusercontent.com/52376448/79959150-bd220f00-84be-11ea-95fc-aade43cfc0fc.png)
+
+<br><br><br>
+
+#### Evaluation: Perplexity
+
+- Evaluation
+  - extrinsic
+  - intrinsic : Perplexity
+
+![image](https://user-images.githubusercontent.com/52376448/79959035-9237bb00-84be-11ea-9d87-2b38e92d6deb.png)
+
 <br><br><br>
 
 ---
