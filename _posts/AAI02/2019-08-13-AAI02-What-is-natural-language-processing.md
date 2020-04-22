@@ -235,7 +235,7 @@ print(kkma.nouns("열심히 코딩한 당신, 연휴에는 여행을 가봐요")
   - affix
 
 <br><br><br>
-#### lemmatization
+#### Lemmatization : conservation of pos
 
 `WordNetLemmatizer`
 ```python
@@ -248,9 +248,21 @@ print([n.lemmatize(w) for w in words])
 ['policy', 'doing', 'organization', 'have', 'going', 'love', 'life', 'fly', 'dy', 'watched', 'ha', 'starting'] <br><br>
 
 <p class="jb-small">The above results present inappropriate words that do not have any meaning, such as <b>dy or ha</b>. This is because the lemmatizer must know the information about part or speech of the original word for accurate results.</p>
+```python
+from nltk.stem import WordNetLemmatizer
+
+n=WordNetLemmatizer()
+print(n.lemmatize('dies', 'v'))
+print(n.lemmatize('watched', 'v'))
+print(n.lemmatize('has', 'v'))
+```
+'die'<br>
+'watch'<br>
+'have'
+
 <br><br><br>
 
-#### stemming
+#### Stemming : non-conservation of pos
 ```python
 
 ```
