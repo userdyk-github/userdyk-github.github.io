@@ -336,7 +336,12 @@ print(result)
 ['Family', 'is', 'not', 'an', 'important', 'thing', '.', 'It', "'s", 'everything', '.']<br>
 ['Family', 'important', 'thing', '.', 'It', "'s", 'everything', '.']
 <br>
+<span class="frame3_1">List of Stopword about Kor</span>
 
+- [https://www.ranks.nl/stopwords/korean](https://www.ranks.nl/stopwords/korean)
+- [https://bab2min.tistory.com/544](https://bab2min.tistory.com/544)
+
+<br>
 <span class="frame3_1">Removing Stopword about Kor</span>
 ```python
 from nltk.corpus import stopwords 
