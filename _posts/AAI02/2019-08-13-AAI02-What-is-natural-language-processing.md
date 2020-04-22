@@ -494,11 +494,100 @@ for n-gram,
 ![image](https://user-images.githubusercontent.com/52376448/79962375-eba1e900-84c2-11ea-9b94-6ff5e3d45bf1.png)
 
 ### ***Local Representation***
-#### Count based word Representation
+#### Count based word Representation(1) : BoW 
+<span class="frame3">Bag of Words</span><br>
+```python
+from konlpy.tag import Okt
+import re  
+okt=Okt()  
+
+token=re.sub("(\.)","","정부가 발표하는 물가상승률과 소비자가 느끼는 물가상승률은 다르다.")  
+# 정규 표현식을 통해 온점을 제거하는 정제 작업입니다.  
+token=okt.morphs(token)  
+# OKT 형태소 분석기를 통해 토큰화 작업을 수행한 뒤에, token에다가 넣습니다.  
+
+word2index={}  
+bow=[]  
+for voca in token:  
+         if voca not in word2index.keys():  
+             word2index[voca]=len(word2index)  
+# token을 읽으면서, word2index에 없는 (not in) 단어는 새로 추가하고, 이미 있는 단어는 넘깁니다.   
+             bow.insert(len(word2index)-1,1)
+# BoW 전체에 전부 기본값 1을 넣어줍니다. 단어의 개수는 최소 1개 이상이기 때문입니다.  
+         else:
+            index=word2index.get(voca)
+# 재등장하는 단어의 인덱스를 받아옵니다.
+            bow[index]=bow[index]+1
+# 재등장한 단어는 해당하는 인덱스의 위치에 1을 더해줍니다. (단어의 개수를 세는 것입니다.)  
+print(word2index)
+print(bow)
+```
+('정부': 0, '가': 1, '발표': 2, '하는': 3, '물가상승률': 4, '과': 5, '소비자': 6, '느끼는': 7, '은': 8, '다르다': 9)  <br>
+[1, 2, 1, 1, 2, 1, 1, 1, 1, 1]  <br>
 <br><br><br>
 
-#### Document Similarity
+<span class="frame3">Create Bag of Words with CountVectorizer class</span><br>
+```python
+from sklearn.feature_extraction.text import CountVectorizer
+
+corpus = ['you know I want your love. because I love you.']
+vector = CountVectorizer()
+print(vector.fit_transform(corpus).toarray()) # 코퍼스로부터 각 단어의 빈도 수를 기록한다.
+print(vector.vocabulary_) # 각 단어의 인덱스가 어떻게 부여되었는지를 보여준다.
+```
+[[1 1 2 1 2 1]]<br>
+{'you': 4, 'know': 1, 'want': 3, 'your': 5, 'love': 2, 'because': 0}<br>
 <br><br><br>
+
+<span class="frame3">Remove stopwords in Bag of Words</span><br>
+<span class="frame3_1">Custom stopwords</span><br>
+```python
+from sklearn.feature_extraction.text import CountVectorizer
+
+text=["Family is not an important thing. It's everything."]
+vect = CountVectorizer(stop_words=["the", "a", "an", "is", "not"])
+
+print(vect.fit_transform(text).toarray()) 
+print(vect.vocabulary_)
+```
+[[1 1 1 1 1]]<br>
+{'family': 1, 'important': 2, 'thing': 4, 'it': 3, 'everything': 0}<br>
+<span class="frame3_1">CountVectorizer stopwords</span><br>
+```python
+from sklearn.feature_extraction.text import CountVectorizer
+
+text=["Family is not an important thing. It's everything."]
+vect = CountVectorizer(stop_words="english")
+
+print(vect.fit_transform(text).toarray())
+print(vect.vocabulary_)
+```
+[[1 1 1]]<br>
+{'family': 0, 'important': 1, 'thing': 2}<br>
+<span class="frame3_1">NLTK stopwords</span><br>
+```python
+from sklearn.feature_extraction.text import CountVectorizer
+from nltk.corpus import stopwords
+
+text=["Family is not an important thing. It's everything."]
+sw = stopwords.words("english")
+vect = CountVectorizer(stop_words =sw)
+print(vect.fit_transform(text).toarray()) 
+print(vect.vocabulary_)
+```
+[[1 1 1 1]]<br>
+{'family': 1, 'important': 2, 'thing': 3, 'everything': 0}<br>
+<br><br><br>
+#### Count based word Representation(2) : DTM
+<span class="frame3">Document-Term Matrix, DTM</span><br>
+
+<br><br><br>
+
+#### Count based word Representation(3) : TD-IDF
+<span class="frame3">Term Frequency-Inverse Document Frequency</span><br>
+
+<br><br><br>
+
 
 
 ---
@@ -515,13 +604,16 @@ for n-gram,
 
 <br><br><br>
 
-<hr class="division2">
+---
 
+### ***Document Similarity***
 
-
-## **Topic Modeling**
 <br><br><br>
+
 <hr class="division2">
+
+
+
 
 
 ## **Machine Learning**
