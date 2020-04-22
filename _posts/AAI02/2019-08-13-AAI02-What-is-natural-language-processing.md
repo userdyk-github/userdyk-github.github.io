@@ -490,15 +490,31 @@ for n-gram,
 <hr class="division2">
 
 
+## **Quantification : Word representation**
+![image](https://user-images.githubusercontent.com/52376448/79962375-eba1e900-84c2-11ea-9b94-6ff5e3d45bf1.png)
 
-## **Count based word Representation**
+### ***Local Representation***
+#### Count based word Representation
 <br><br><br>
-<hr class="division2">
 
-
-
-## **Document Similarity**
+#### Document Similarity
 <br><br><br>
+
+
+---
+
+
+### ***Continuous Representation***
+#### Topic modeling
+
+<br><br><br>
+
+---
+
+#### Word Embedding
+
+<br><br><br>
+
 <hr class="division2">
 
 
