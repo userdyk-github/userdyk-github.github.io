@@ -212,12 +212,21 @@ pos_tag(x)
 |CC|conjunction|
 |DT|article|
 
+<br><br><br>
 <span class="frame3">Korean</span>
 ```python
+from konlpy.tag import Kkma  
 
+kkma=Kkma()  
+print(kkma.morphs("열심히 코딩한 당신, 연휴에는 여행을 가봐요"))
+print(kkma.pos("열심히 코딩한 당신, 연휴에는 여행을 가봐요"))  
+print(kkma.nouns("열심히 코딩한 당신, 연휴에는 여행을 가봐요"))  
 ```
+['열심히', '코딩', '하', 'ㄴ', '당신', ',', '연휴', '에', '는', '여행', '을', '가보', '아요']  <br>
+[('열심히','MAG'), ('코딩', 'NNG'), ('하', 'XSV'), ('ㄴ', 'ETD'), ('당신', 'NP'), (',', 'SP'), ('연휴', 'NNG'), ('에', 'JKM'), ('는', 'JX'), ('여행', 'NNG'), ('을', 'JKO'), ('가보', 'VV'), ('아요', 'EFN')]  <br>
+['코딩', '당신', '연휴', '여행']  <br>
 
-
+<br><br><br>
 <hr class="division2">
 
 ## **Language model**
