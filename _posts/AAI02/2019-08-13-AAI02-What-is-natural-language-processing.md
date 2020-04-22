@@ -578,14 +578,126 @@ print(vect.vocabulary_)
 [[1 1 1 1]]<br>
 {'family': 1, 'important': 2, 'thing': 3, 'everything': 0}<br>
 <br><br><br>
+
 #### Count based word Representation(2) : DTM
 <span class="frame3">Document-Term Matrix, DTM</span><br>
+![image](https://user-images.githubusercontent.com/52376448/79975907-ae475680-84d6-11ea-8f6e-6bf83477376d.png)
+
+- Limitations : Sparse representation
 
 <br><br><br>
 
 #### Count based word Representation(3) : TD-IDF
 <span class="frame3">Term Frequency-Inverse Document Frequency</span><br>
+<span class="frame3_1">Implementation : pandas</span><br>
+```python
+import pandas as pd # 데이터프레임 사용을 위해
+from math import log # IDF 계산을 위해
 
+docs = [
+  '먹고 싶은 사과',
+  '먹고 싶은 바나나',
+  '길고 노란 바나나 바나나',
+  '저는 과일이 좋아요'
+] 
+vocab = list(set(w for doc in docs for w in doc.split()))
+vocab.sort()
+
+
+
+N = len(docs) # 총 문서의 수
+
+def tf(t, d):
+    return d.count(t)
+
+def idf(t):
+    df = 0
+    for doc in docs:
+        df += t in doc
+    return log(N/(df + 1))
+
+def tfidf(t, d):
+    return tf(t,d)* idf(t)
+    
+
+
+result = []
+for i in range(N): # 각 문서에 대해서 아래 명령을 수행
+    result.append([])
+    d = docs[i]
+    for j in range(len(vocab)):
+        t = vocab[j]        
+        result[-1].append(tf(t, d))
+
+tf_ = pd.DataFrame(result, columns = vocab)
+print(tf_)
+```
+![image](https://user-images.githubusercontent.com/52376448/79976981-7ccf8a80-84d8-11ea-947d-feaeeca628bd.png)
+```python
+result = []
+for j in range(len(vocab)):
+    t = vocab[j]
+    result.append(idf(t))
+
+idf_ = pd.DataFrame(result, index = vocab, columns = ["IDF"])
+print(idf_)
+```
+![image](https://user-images.githubusercontent.com/52376448/79977054-983a9580-84d8-11ea-8489-014bebdac7fe.png)
+```python
+result = []
+for i in range(N):
+    result.append([])
+    d = docs[i]
+    for j in range(len(vocab)):
+        t = vocab[j]
+
+        result[-1].append(tfidf(t,d))
+
+tfidf_ = pd.DataFrame(result, columns = vocab)
+print(tfidf_)
+```
+![image](https://user-images.githubusercontent.com/52376448/79977104-a983a200-84d8-11ea-8c86-b4a31f9a0c94.png)
+
+<span class="frame3_1">Implementation : scikit-learn</span><br>
+```python
+from sklearn.feature_extraction.text import CountVectorizer
+
+corpus = [
+    'you know I want your love',
+    'I like you',
+    'what should I do ',    
+]
+vector = CountVectorizer()
+
+print(vector.fit_transform(corpus).toarray()) # 코퍼스로부터 각 단어의 빈도 수를 기록한다.
+print(vector.vocabulary_) # 각 단어의 인덱스가 어떻게 부여되었는지를 보여준다.
+```
+[[0 1 0 1 0 1 0 1 1]<br>
+ [0 0 1 0 0 0 0 1 0]<br>
+ [1 0 0 0 1 0 1 0 0]]<br>
+{'you': 7, 'know': 1, 'want': 5, 'your': 8, 'love': 3, 'like': 2, 'what': 6, 'should': 4, 'do': 0}<br>
+```python
+from sklearn.feature_extraction.text import TfidfVectorizer
+
+corpus = [
+    'you know I want your love',
+    'I like you',
+    'what should I do ',    
+]
+tfidfv = TfidfVectorizer().fit(corpus)
+
+print(tfidfv.transform(corpus).toarray())
+print(tfidfv.vocabulary_)
+```
+[[0.         0.46735098 0.         0.46735098 0.         0.46735098 0.         0.35543247 0.46735098]<br>
+ [0.         0.         0.79596054 0.         0.         0.         0.         0.60534851 0.        ]<br>
+ [0.57735027 0.         0.         0.         0.57735027 0.         0.57735027 0.         0.        ]]<br>
+{'you': 7, 'know': 1, 'want': 5, 'your': 8, 'love': 3, 'like': 2, 'what': 6, 'should': 4, 'do': 0}<br>
+
+<span class="frame3_1">Implementation : keras</span><br>
+```python
+
+```
 <br><br><br>
 
 
