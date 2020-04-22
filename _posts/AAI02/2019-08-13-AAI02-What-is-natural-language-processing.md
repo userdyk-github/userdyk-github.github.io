@@ -117,6 +117,7 @@ print("phrases :\n", phrases)
 
 ## **Text preprocessing**
 ### ***Tokenization***
+#### Word Tokenization
 `word_tokenize`
 ```python
 from nltk.tokenize import word_tokenize  
@@ -148,7 +149,7 @@ print(text_to_word_sequence("Don't be fooled by the dark sounding name, Mr. Jone
 ```
 <br><br><br>
 
-### ***Consideration***
+<span class="frame3_1">Consideration</span>
 
 - Don't simply exclude <b>punctuation marks</b> or <b>special characters</b>.
   - ex] Ph.D, AT&T, 123,456,789
@@ -167,6 +168,7 @@ print(tokenizer.tokenize(text))
 ```
 ['Starting', 'a', 'home-based', 'restaurant', 'may', 'be', 'an', 'ideal.', 'it', 'does', "n't", 'have', 'a', 'food', 'chain', 'or', 'restaurant', 'of', 'their', 'own', '.'] 
 ```
+
 <hr class="division2">
 
 ## **Language model**
