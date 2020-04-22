@@ -481,6 +481,10 @@ for n-gram,
 ---
 
 ### ***Neural Network Based Language Model***
+#### Neural Network Language Model, NNLM
+
+<br><br><br>
+
 #### Recurrent Neural Network Language Model, RNNLM
 ```python
 
@@ -700,9 +704,6 @@ print(tfidfv.vocabulary_)
 ```
 <br><br><br>
 
-#### Document Similarity
-
-<br><br><br>
 
 ---
 
@@ -749,6 +750,9 @@ VT=VT[:2,:]
 
 ---
 
+### ***Document Similarity***
+
+<br><br><br>
 <hr class="division2">
 
 
