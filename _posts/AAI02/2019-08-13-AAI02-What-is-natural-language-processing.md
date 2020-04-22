@@ -462,7 +462,8 @@ Cause sparsity problem.
 
 ---
 
-### ***Recurrent Neural Network Language Model, RNNLM***
+### ***Neural Network Based Language Model***
+#### Recurrent Neural Network Language Model, RNNLM
 ```python
 
 ```
