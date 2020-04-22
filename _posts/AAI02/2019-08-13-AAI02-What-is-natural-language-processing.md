@@ -831,7 +831,7 @@ Reference
 - <a href="https://www.edwith.org/deepnlp/joinLectures/17363" target="_blank">NLP lecture(1)</a>
 - <a href="https://www.youtube.com/playlist?list=PLVNY1HnUlO26qqZznHVWAqjS1fWw0zqnT" target="_blank">NLP lecture(2)</a>
 - Taweh Beysolow II, Applied Natural Language Processing with Python, 2018
-- <a href='https://userdyk-github.github.io/'>post3</a>
+- <a href='https://wikidocs.net/book/2788'> PyTorch로 시작하는 딥 러닝 입문 </a>
 
 ---
 
