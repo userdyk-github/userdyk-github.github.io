@@ -416,10 +416,14 @@ was wondering anyone out there could enlighten this car.
 ---
 
 ### ***Encoding***
-#### step 1 : Integer encoding
+#### Integer encoding
 
 <br><br><br>
-#### step 2 : One-hot encoding
+#### One-hot encoding
+
+<br><br><br>
+
+#### Byte Pair encoding
 
 <br><br><br>
 <hr class="division2">
