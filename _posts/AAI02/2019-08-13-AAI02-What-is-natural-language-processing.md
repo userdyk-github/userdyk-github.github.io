@@ -194,7 +194,7 @@ from nltk.tag import pos_tag
 text="I am actively looking for Ph.D. students. and you are a Ph.D. student."
 x=word_tokenize(text)
 
-print(word_tokenize(text))
+print(x)
 pos_tag(x)
 ```
 ['I', 'am', 'actively', 'looking', 'for', 'Ph.D.', 'students', '.', 'and', 'you', 'are', 'a', 'Ph.D.', 'student', '.']<br>
