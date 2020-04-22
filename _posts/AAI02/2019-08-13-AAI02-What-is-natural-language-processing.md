@@ -71,11 +71,15 @@ print("sentences :\n", sentences)
 ```
 <br><br><br>
 
+---
+
 ### ***Komoran : Shineware***
 ```python
 
 ```
 <br><br><br>
+
+---
 
 ### ***Mecab : Eunjeon project***
 ```bash
@@ -95,6 +99,8 @@ print("nouns :\n", nouns)
 print("pos :\n", pos)
 ```
 <br><br><br>
+
+---
 
 ### ***Okt : Twitter***
 ```python
@@ -247,6 +253,8 @@ print(tokenizer.tokenize("Don't be fooled by the dark sounding name, Mr. Jone's 
 ["Don't", 'be', 'fooled', 'by', 'the', 'dark', 'sounding', 'name,', 'Mr.', "Jone's", 'Orphanage', 'is', 'as', 'cheery', 'as', 'cheery', 'goes', 'for', 'a', 'pastry', 'shop'] <br>
 
 <br><br><br>
+
+---
 
 ### ***cleaning and normalization***
 
@@ -405,12 +413,11 @@ was wondering anyone out there could enlighten this car.
 
 <br><br><br>
 
-#### Regular Expression
-```python
-```
-<br><br><br>
-<hr class="division2">
+---
 
+### ***Integer Encoding***
+
+<hr class="division2">
 
 ## **Language model**
 ```python
