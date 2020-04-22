@@ -468,7 +468,7 @@ for n-gram,
 
 <br><br><br>
 
-#### Evaluation: Perplexity
+#### Evaluation: Perplexity(Branching factor)
 
 - Evaluation
   - extrinsic
