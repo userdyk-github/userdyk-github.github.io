@@ -700,27 +700,54 @@ print(tfidfv.vocabulary_)
 ```
 <br><br><br>
 
+#### Document Similarity
 
+<br><br><br>
 
 ---
 
 
 ### ***Continuous Representation***
-#### Topic modeling
+#### Topic modeling(1) : LSA
+<span class="frame3">Singular Value Decomposition, SVD</span><br>
+```python
+import numpy as np
+
+A = np.array([[0,0,0,1,0,1,1,0,0],
+              [0,0,0,1,1,0,1,0,0],
+              [0,1,1,0,2,0,0,0,0],
+              [1,0,0,0,0,0,0,1,1]])
+              
+# Full SVD              
+U, s, VT = np.linalg.svd(A, full_matrices = True)  
+S = np.zeros(np.shape(A))         # 대각 행렬의 크기인 4 x 9의 임의의 행렬 생성
+S[:4, :4] = np.diag(s)            # 특이값을 대각행렬에 삽입
+
+# Truncated SVD
+S=S[:2,:2]
+U=U[:,:2]
+VT=VT[:2,:]
+```
+<br><br><br>
+
+<span class="frame3">Latent Semantic Analysis, LSA</span><br>
+```python
+
+```
+
+<br><br><br>
+#### Topic modeling(2) : LDA
+<span class="frame3">Latent Dirichlet Allocation, LDA</span><br>
+
 
 <br><br><br>
 
----
 
 #### Word Embedding
 
 <br><br><br>
 
 ---
-
-### ***Document Similarity***
-
-<br><br><br>
 
 <hr class="division2">
 
