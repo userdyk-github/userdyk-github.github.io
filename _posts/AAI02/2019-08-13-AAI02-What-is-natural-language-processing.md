@@ -263,9 +263,47 @@ print(n.lemmatize('has', 'v'))
 <br><br><br>
 
 #### Stemming : non-conservation of pos
+<span class="frame3">stemming through porter algorithm</span>
+`PorterStemmer`
 ```python
+from nltk.stem import PorterStemmer
 
+s=PorterStemmer()
+words=['policy', 'doing', 'organization', 'have', 'going', 'love', 'lives', 'fly', 'dies', 'watched', 'has', 'starting']
+print([s.stem(w) for w in words])
 ```
+['polici', 'do', 'organ', 'have', 'go', 'love', 'live', 'fli', 'die', 'watch', 'ha', 'start']
+<br>
+```python
+from nltk.stem import PorterStemmer
+from nltk.tokenize import word_tokenize
+
+s = PorterStemmer()
+text="This was not the map we found in Billy Bones's chest, but an accurate copy, complete in all things--names and heights and soundings--with the single exception of the red crosses and the written notes."
+words=word_tokenize(text)
+
+print(words)
+print([s.stem(w) for w in words])
+```
+['This', 'was', 'not', 'the', 'map', 'we', 'found', 'in', 'Billy', 'Bones', "'s", 'chest', ',', 'but', 'an', 'accurate', 'copy', ',', 'complete', 'in', 'all', 'things', '--', 'names', 'and', 'heights', 'and', 'soundings', '--', 'with', 'the', 'single', 'exception', 'of', 'the', 'red', 'crosses', 'and', 'the', 'written', 'notes', '.']<br>
+['thi', 'wa', 'not', 'the', 'map', 'we', 'found', 'in', 'billi', 'bone', "'s", 'chest', ',', 'but', 'an', 'accur', 'copi', ',', 'complet', 'in', 'all', 'thing', '--', 'name', 'and', 'height', 'and', 'sound', '--', 'with', 'the', 'singl', 'except', 'of', 'the', 'red', 'cross', 'and', 'the', 'written', 'note', '.']<br><br>
+
+<p class="jb-small">
+  The results of the above algorithm include words that are not in the dictionary.
+</p>
+
+<br><br><br>
+<span class="frame3">stemming through Lancaster Stemmer algorithm</span>
+`LancasterStemmer`
+```python
+from nltk.stem import LancasterStemmer
+
+l=LancasterStemmer()
+words=['policy', 'doing', 'organization', 'have', 'going', 'love', 'lives', 'fly', 'dies', 'watched', 'has', 'starting']
+print([l.stem(w) for w in words])
+```
+
+
 <br><br><br>
 #### Removing Unnecessary Words(noise data)
 
