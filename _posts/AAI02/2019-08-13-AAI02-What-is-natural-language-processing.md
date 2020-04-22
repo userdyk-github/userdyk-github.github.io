@@ -145,7 +145,7 @@ print(text_to_word_sequence("Don't be fooled by the dark sounding name, Mr. Jone
 
 <br><br><br>
 
-<span class="frame3_1">Consideration</span>
+<span class="frame3">Consideration</span>
 
 - Don't simply exclude <b>punctuation marks</b> or <b>special characters</b>.
   - ex] Ph.D, AT&T, 123,456,789
@@ -164,9 +164,54 @@ print(tokenizer.tokenize(text))
 ['Starting', 'a', 'home-based', 'restaurant', 'may', 'be', 'an', 'ideal.', 'it', 'does', "n't", 'have', 'a', 'food', 'chain', 'or', 'restaurant', 'of', 'their', 'own', '.'] 
 
 <br><br><br>
+
+#### Sentence Tokenization
+`sent_tokenize`
+```python
+from nltk.tokenize import sent_tokenize
+
+text="His barber kept his word. But keeping such a huge secret to himself was driving him crazy. Finally, the barber went up a mountain and almost to the edge of a cliff. He dug a hole in the midst of some reeds. He looked about, to mae sure no one was near."
+print(sent_tokenize(text))
+```
+['His barber kept his word.', 'But keeping such a huge secret to himself was driving him crazy.', 'Finally, the barber went up a mountain and almost to the edge of a cliff.', 'He dug a hole in the midst of some reeds.', 'He looked about, to mae sure no one was near.']
+<br>
+
+```python
+from nltk.tokenize import sent_tokenize
+
+text="I am actively looking for Ph.D. students. and you are a Ph.D student."
+print(sent_tokenize(text))
+```
+['I am actively looking for Ph.D. students.', 'and you are a Ph.D student.']
+<br><br><br>
+
+#### Part-of-speech tagging
+<span class="frame3">English</span>
+```python
+from nltk.tokenize import word_tokenize
+from nltk.tag import pos_tag
+
+text="I am actively looking for Ph.D. students. and you are a Ph.D. student."
+x=word_tokenize(text)
+
+print(word_tokenize(text))
+pos_tag(x)
+```
+['I', 'am', 'actively', 'looking', 'for', 'Ph.D.', 'students', '.', 'and', 'you', 'are', 'a', 'Ph.D.', 'student', '.']<br>
+[('I', 'PRP'), ('am', 'VBP'), ('actively', 'RB'), ('looking', 'VBG'), ('for', 'IN'), ('Ph.D.', 'NNP'), ('students', 'NNS'), ('.', '.'), ('and', 'CC'), ('you', 'PRP'), ('are', 'VBP'), ('a', 'DT'), ('Ph.D.', 'NNP'), ('student', 'NN'), ('.', '.')]
+
+<span class="frame3">Korean</span>
+```python
+
+```
+
+
 <hr class="division2">
 
 ## **Language model**
+```python
+
+```
 <br><br><br>
 <hr class="division2">
 
