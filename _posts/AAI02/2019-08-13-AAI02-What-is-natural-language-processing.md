@@ -416,9 +416,11 @@ was wondering anyone out there could enlighten this car.
 ---
 
 ### ***Encoding***
+
 #### Integer encoding
 
 <br><br><br>
+
 #### One-hot encoding
 
 <br><br><br>
@@ -435,16 +437,18 @@ was wondering anyone out there could enlighten this car.
   - Machine Translation
   - Spell Correction
   - Speech Recognition
-- Prediction of the next word from a given previous word
-  - P(W) = P(w_1,w_2,w_3,...,w_n)
-  - P(w_n｜w_1,...,w_n-1) = P(w_1,w_2,...,w_n)/P(w_1,w_2,w_3,...,w_n-1)
 
 <br><br><br>
 
 ### ***Statistical Language Model, SLM***
-```python
 
-```
+- Prediction of the next word from a given previous word
+  - P(W) = P(w_1,w_2,w_3,...,w_n)
+  - P(w_n｜w_1,...,w_n-1) = P(w_1,w_2,...,w_n)/P(w_1,w_2,w_3,...,w_n-1)
+
+![image](https://user-images.githubusercontent.com/52376448/79956207-cc06c280-84ba-11ea-9e93-31406b685431.png)
+
+Cause sparsity problem.
 <br><br><br>
 
 ---
