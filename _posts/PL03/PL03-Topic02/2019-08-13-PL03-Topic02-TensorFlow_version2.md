@@ -85,6 +85,9 @@ print(model.layers[0].get_weights()[1]) # bias on layer1
 print(model.layers[1].get_weights()[0]) # weight on layer2
 print(model.layers[1].get_weights()[1]) # bias on layer2
 ```
+
+- [.get_weights()](https://www.tensorflow.org/api_docs/python/tf/keras/layers/Layer?version=nightly#get_weights)
+- [.set_weights()](https://www.tensorflow.org/api_docs/python/tf/keras/layers/Layer?version=nightly#set_weights)
 <br><br><br>
 
 ---
