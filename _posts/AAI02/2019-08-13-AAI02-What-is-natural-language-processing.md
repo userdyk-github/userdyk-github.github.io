@@ -429,10 +429,20 @@ was wondering anyone out there could enlighten this car.
 <hr class="division2">
 
 ## **Language model**
+### ***Statistical Language Model, SLM***
 ```python
 
 ```
 <br><br><br>
+
+---
+
+### ***Recurrent Neural Network Language Model, RNNLM***
+```python
+
+```
+<br><br><br>
+
 <hr class="division2">
 
 
