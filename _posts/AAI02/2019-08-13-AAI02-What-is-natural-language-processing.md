@@ -200,6 +200,18 @@ pos_tag(x)
 ['I', 'am', 'actively', 'looking', 'for', 'Ph.D.', 'students', '.', 'and', 'you', 'are', 'a', 'Ph.D.', 'student', '.']<br>
 [('I', 'PRP'), ('am', 'VBP'), ('actively', 'RB'), ('looking', 'VBG'), ('for', 'IN'), ('Ph.D.', 'NNP'), ('students', 'NNS'), ('.', '.'), ('and', 'CC'), ('you', 'PRP'), ('are', 'VBP'), ('a', 'DT'), ('Ph.D.', 'NNP'), ('student', 'NN'), ('.', '.')]
 
+<a href="https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html" target="_blank">Reference</a>
+
+|PRP|personal pronouns|
+|VBP|verb|
+|RB|adverb|
+|VBG|present participle|
+|IN|preposition|
+|NNP|proper noun|
+|NNS|aggregate noun|
+|CC|conjunction|
+|DT|article|
+
 <span class="frame3">Korean</span>
 ```python
 
