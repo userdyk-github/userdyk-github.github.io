@@ -415,8 +415,13 @@ was wondering anyone out there could enlighten this car.
 
 ---
 
-### ***Integer Encoding***
+### ***Encoding***
+#### step 1 : Integer encoding
 
+<br><br><br>
+#### step 2 : One-hot encoding
+
+<br><br><br>
 <hr class="division2">
 
 ## **Language model**
