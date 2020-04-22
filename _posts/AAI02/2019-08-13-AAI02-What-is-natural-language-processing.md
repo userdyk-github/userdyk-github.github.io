@@ -151,7 +151,7 @@ print(text_to_word_sequence("Don't be fooled by the dark sounding name, Mr. Jone
 
 <br><br><br>
 
-<span class="frame3">Consideration</span>
+<span class="frame3">Consideration</span><br>
 
 - Don't simply exclude <b>punctuation marks</b> or <b>special characters</b>.
   - ex] Ph.D, AT&T, 123,456,789
@@ -192,7 +192,7 @@ print(sent_tokenize(text))
 <br><br><br>
 
 #### Part-of-speech tagging
-<span class="frame3">English</span>
+<span class="frame3">English</span><br>
 ```python
 from nltk.tokenize import word_tokenize
 from nltk.tag import pos_tag
@@ -219,7 +219,7 @@ pos_tag(x)
 |DT|article|
 
 <br><br><br>
-<span class="frame3">Korean</span>
+<span class="frame3">Korean</span><br>
 ```python
 from konlpy.tag import Kkma  
 
@@ -291,7 +291,7 @@ print(n.lemmatize('has', 'v'))
 <br><br><br>
 
 #### Stemming : non-conservation of pos
-<span class="frame3">stemming through porter algorithm</span>
+<span class="frame3">stemming through porter algorithm</span><br>
 `PorterStemmer`
 ```python
 from nltk.stem import PorterStemmer
@@ -321,7 +321,7 @@ print([s.stem(w) for w in words])
 </p>
 
 <br><br><br>
-<span class="frame3">stemming through Lancaster Stemmer algorithm</span>
+<span class="frame3">stemming through Lancaster Stemmer algorithm</span><br>
 `LancasterStemmer`
 ```python
 from nltk.stem import LancasterStemmer
@@ -335,15 +335,15 @@ print([l.stem(w) for w in words])
 <br><br><br>
 #### Removing Unnecessary Words(noise data)
 
-<span class="frame3">Stopword</span>
-<span class="frame3_1">List of Stopword about Eng</span>
+<span class="frame3">Stopword</span><br>
+<span class="frame3_1">List of Stopword about Eng</span><br>
 `stopwords`
 ```python
 from nltk.corpus import stopwords  
 stopwords.words('english')[:10]
 ```
 ['i', 'me', 'my', 'myself', 'we', 'our', 'ours', 'ourselves', 'you', 'your']  <br>
-<span class="frame3_1">Removing Stopword about Eng</span>
+<span class="frame3_1">Removing Stopword about Eng</span><br>
 ```python
 from nltk.corpus import stopwords 
 from nltk.tokenize import word_tokenize 
@@ -364,13 +364,13 @@ print(result)
 ['Family', 'is', 'not', 'an', 'important', 'thing', '.', 'It', "'s", 'everything', '.']<br>
 ['Family', 'important', 'thing', '.', 'It', "'s", 'everything', '.']
 <br>
-<span class="frame3_1">List of Stopword about Kor</span>
+<span class="frame3_1">List of Stopword about Kor</span><br>
 
 - [https://www.ranks.nl/stopwords/korean](https://www.ranks.nl/stopwords/korean)
 - [https://bab2min.tistory.com/544](https://bab2min.tistory.com/544)
 
 <br>
-<span class="frame3_1">Removing Stopword about Kor</span>
+<span class="frame3_1">Removing Stopword about Kor</span><br>
 ```python
 from nltk.corpus import stopwords 
 from nltk.tokenize import word_tokenize 
@@ -395,11 +395,11 @@ print(result)
 ['고기를', '구우려고', '안', '돼', '.', '고기라고', '다', '같은', '게', '.', '삼겹살을', '구울', '때는', '중요한', '게', '있지', '.']<br>
 <br><br><br>
 
-<span class="frame3">Rare words</span>
+<span class="frame3">Rare words</span><br>
 
 <br><br><br>
 
-<span class="frame3">words with very a short length</span>
+<span class="frame3">words with very a short length</span><br>
 
 ```python
 import re
