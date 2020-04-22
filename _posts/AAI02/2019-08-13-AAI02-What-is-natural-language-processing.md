@@ -761,29 +761,10 @@ VT=VT[:2,:]
 
 
 
-
-
-## **Machine Learning**
-<br><br><br>
-<hr class="division2">
-
-
-
-## **Deep Learning**
-<br><br><br>
-<hr class="division2">
-
-
-
 ## **Recurrent Neural Network**
 <br><br><br>
 <hr class="division2">
 
-
-
-## **Word Embedding**
-<br><br><br>
-<hr class="division2">
 
 
 
