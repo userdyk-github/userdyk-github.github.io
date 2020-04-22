@@ -86,6 +86,8 @@ for i,j in enumerate(model.modules()):
     if i==1:
         print(j.weight, j.bias)
 ```
+- [manually set weight](https://discuss.pytorch.org/t/how-to-manually-set-the-weights-in-a-two-layer-linear-model/45902)
+
 <br><br><br>
 
 ---
