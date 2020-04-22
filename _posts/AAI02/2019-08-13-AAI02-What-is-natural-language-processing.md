@@ -481,7 +481,11 @@ for n-gram,
 ---
 
 ### ***Neural Network Based Language Model***
+
 #### Feed Forward Neural Network Language Model, FFNNLM : Neural Probabilistic Language Model
+
+- Improvement : Solving sparsity problem
+- Limitation : Fixed-length input
 
 <br><br><br>
 
