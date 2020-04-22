@@ -247,7 +247,7 @@ print([n.lemmatize(w) for w in words])
 ```
 ['policy', 'doing', 'organization', 'have', 'going', 'love', 'life', 'fly', 'dy', 'watched', 'ha', 'starting'] <br><br>
 
-
+<p class="jb-small">The above results present inappropriate words that do not have any meaning, such as <b>dy or ha</b>. This is because the lemmatizer must know the information about part or speech of the original word for accurate results.</p>
 <br><br><br>
 
 #### stemming
