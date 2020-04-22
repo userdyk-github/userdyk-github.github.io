@@ -762,7 +762,18 @@ VT=VT[:2,:]
 
 
 ## **Recurrent Neural Network**
+### ***Word-level***
+```python
+
+```
 <br><br><br>
+
+### ***Character-level***
+```python
+
+```
+<br><br><br>
+
 <hr class="division2">
 
 
