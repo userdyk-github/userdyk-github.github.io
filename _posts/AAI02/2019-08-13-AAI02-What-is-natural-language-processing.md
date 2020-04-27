@@ -40,7 +40,10 @@ $ python3 -m pip install konlpy                                            # Pyt
 
 - Tokenize
 - Embedding
-
+  - Factorization based(Matrix decomposition)
+  - Prediction based
+  - Topic based
+  
 <br><br><br>
 
 ---
