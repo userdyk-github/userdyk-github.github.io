@@ -41,8 +41,11 @@ $ python3 -m pip install konlpy                                            # Pyt
 - Tokenize
 - Embedding
   - Factorization based(Matrix decomposition)
+    - GloVe, Swivel
   - Prediction based
+    - Word2Vec, FastText, BERT, ELMo, GPT
   - Topic based
+    - LDA
   
 <br><br><br>
 
