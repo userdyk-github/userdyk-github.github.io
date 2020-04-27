@@ -502,6 +502,14 @@ for n-gram,
 ![image](https://user-images.githubusercontent.com/52376448/79962375-eba1e900-84c2-11ea-9b94-6ff5e3d45bf1.png)
 
 ### ***Local Representation***
+
+- WDM, Word-Document Matrix
+- TF-IDF, Term Frequency-Inverse Document Frequency
+- WCM, Word-Context Matrix
+- PMIM, Point-wise Mutual Information Matrix
+
+<br><br><br>
+
 #### Count based word Representation(1) : BoW 
 <span class="frame3">Bag of Words</span><br>
 ```python
