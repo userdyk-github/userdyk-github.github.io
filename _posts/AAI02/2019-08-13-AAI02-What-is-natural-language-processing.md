@@ -34,6 +34,27 @@ $ python3 -m pip install konlpy                                            # Pyt
 <br><br><br>
 <hr class="division2">
 
+## **Introduction**
+
+### Upstream-task
+
+- Tokenize
+- Embedding
+
+<br><br><br>
+
+---
+
+### Downstream-task
+
+- Part of Speech tagging
+- Named Entity Recognition
+- Semantic Rule Labeling
+
+<br><br><br>
+<hr class="division2">
+
+
 ## **korean morpheme analysis**
 ### ***Hannanum : KAIST***
 ```python
