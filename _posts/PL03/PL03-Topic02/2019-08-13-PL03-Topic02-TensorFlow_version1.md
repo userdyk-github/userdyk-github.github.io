@@ -768,17 +768,11 @@ Actual images of the digits follow:
 
 <hr class="division2">
 
-
-
-## **Advanced Neural Networks**
-
-### ***Image Segmentation***
-
-#### Otsu’s Method
-
+## Example
+### XOR problem
 ```python
-```
 
+```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
@@ -786,90 +780,112 @@ Actual images of the digits follow:
 <hr class='division3'>
 </details>
 <br><br><br>
-
-#### Watershed Algorithm for Image Segmentation
-
-```python
-```
-
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-
-<hr class='division3'>
-</details>
-<br><br><br>
-
-#### Image Segmentation Using K-means Clustering
-
-```python
-```
-
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-
-<hr class='division3'>
-</details>
-<br><br><br>
-
-#### Semantic Segmentation in TensorFlow with Fully Connected Neural Networks
-
-```python
-```
-
-<details markdown="1">
-<summary class='jb-small' style="color:blue">OUTPUT</summary>
-<hr class='division3'>
-
-<hr class='division3'>
-</details>
-<br><br><br>
-
-
 
 ---
 
-### ***Image Classification and Localization Network***
 
+
+### Simple linear regression
 ```python
-```
 
+```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 
 <hr class='division3'>
 </details>
+<br><br><br>
 
 ---
 
-### ***Object Detection***
-
+### Multi-variate linear regression
 ```python
-```
 
+```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 
 <hr class='division3'>
 </details>
-
+<br><br><br>
 
 ---
 
-### ***TensorFlow Models’ Deployment in Production***
-
+### Logistic regression : binary class
 ```python
-```
 
+```
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
 <hr class='division3'>
 
 <hr class='division3'>
 </details>
+<br><br><br>
+
+---
+
+### Softmax regression : multi-class
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+
+### Neural network
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+### Convolutional neural network : Digit Recognition
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
+---
+
+### Recurrent neural network : Next-Word Prediction
+```python
+
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
+<br><br><br>
+
+
+
+
+
 
 
 
@@ -889,5 +905,11 @@ Reference
 
 ---
 
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+
+<hr class='division3'>
+</details>
 
 
