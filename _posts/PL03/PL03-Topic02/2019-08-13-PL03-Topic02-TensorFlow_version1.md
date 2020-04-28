@@ -768,8 +768,8 @@ Actual images of the digits follow:
 
 <hr class="division2">
 
-## Example
-### XOR problem
+## **Example**
+### ***XOR problem***
 ```python
 
 ```
@@ -785,7 +785,7 @@ Actual images of the digits follow:
 
 
 
-### Simple linear regression
+### ***Simple linear regression***
 ```python
 
 ```
@@ -799,7 +799,7 @@ Actual images of the digits follow:
 
 ---
 
-### Multi-variate linear regression
+### ***Multi-variate linear regression***
 ```python
 
 ```
@@ -813,7 +813,7 @@ Actual images of the digits follow:
 
 ---
 
-### Logistic regression : binary class
+### ***Logistic regression : binary class***
 ```python
 
 ```
@@ -827,7 +827,7 @@ Actual images of the digits follow:
 
 ---
 
-### Softmax regression : multi-class
+### ***Softmax regression : multi-class***
 ```python
 
 ```
@@ -842,7 +842,7 @@ Actual images of the digits follow:
 ---
 
 
-### Neural network
+### ***Neural network***
 ```python
 
 ```
@@ -856,7 +856,7 @@ Actual images of the digits follow:
 
 ---
 
-### Convolutional neural network : Digit Recognition
+### ***Convolutional neural network : Digit Recognition***
 ```python
 
 ```
@@ -870,7 +870,7 @@ Actual images of the digits follow:
 
 ---
 
-### Recurrent neural network : Next-Word Prediction
+### ***Recurrent neural network : Next-Word Prediction***
 ```python
 
 ```
