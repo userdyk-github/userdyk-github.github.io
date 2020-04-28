@@ -40,6 +40,18 @@ import tensorflow as tf
 
 print(tf.__version__)
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">How to use 1.x version on 2.x version</summary>
+<hr class='division3'>
+```python
+import tensorflow.compat.v1 as tf
+
+tf.disable_v2_behavior()
+```
+<hr class='division3'>
+</details>
+
+
 <br><br><br>
 
 
