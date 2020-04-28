@@ -55,8 +55,8 @@ List of posts followed by this article
 
 Reference
 - Generative Deep Learning ｜ <a href="https://github.com/davidADSP/GDL_code" target="_blank">github</a>
-- <a href='https://www.tensorflow.org/tutorials/' target="_blank">Tensorflow Tutorials</a>
-- <a href='https://pytorch.org/tutorials/' target="_blank">Pytorch Tutorials</a>
+- <a href="https://github.com/eriklindernoren/Keras-GAN" target="_blank">github : keras, keras-GAN </a>
+- <a href="https://github.com/eriklindernoren/PyTorch-GAN/tree/master/implementations" target="_blank">github : PyTorch-GAN</a>
 
 ---
 
