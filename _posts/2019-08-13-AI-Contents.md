@@ -36,6 +36,7 @@ tags : [AI]
 > <a href='https://userdyk-github.github.io/ai02/AI02-.html'>Naive-Bayes classifier</a><br>
 > <a href='https://userdyk-github.github.io/ai02/AI02-.html'>Hidden markov model</a><br>
 > <a href='https://userdyk-github.github.io/ai02/AI02-.html'>Ensemble learning</a><br>
+> <a href='https://userdyk-github.github.io/ai02/AI02-Metrics.html' target='_blank'>Metrics</a>
 
 
 
