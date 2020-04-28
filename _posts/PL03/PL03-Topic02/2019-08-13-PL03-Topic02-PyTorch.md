@@ -1689,8 +1689,8 @@ progess :  9 tensor(1638.2438)
 
 <hr class='diviision2'>
 
-## Example
-### XOR problem
+## **Example**
+### ***XOR problem***
 ```python
 
 ```
@@ -1706,7 +1706,7 @@ progess :  9 tensor(1638.2438)
 
 
 
-### Simple linear regression
+### ***Simple linear regression***
 ```python
 
 ```
@@ -1720,7 +1720,7 @@ progess :  9 tensor(1638.2438)
 
 ---
 
-### Multi-variate linear regression
+### ***Multi-variate linear regression***
 ```python
 
 ```
@@ -1734,7 +1734,7 @@ progess :  9 tensor(1638.2438)
 
 ---
 
-### Logistic regression : binary class
+### ***Logistic regression : binary class***
 ```python
 
 ```
@@ -1748,7 +1748,7 @@ progess :  9 tensor(1638.2438)
 
 ---
 
-### Softmax regression : multi-class
+### ***Softmax regression : multi-class***
 ```python
 
 ```
@@ -1763,7 +1763,7 @@ progess :  9 tensor(1638.2438)
 ---
 
 
-### Neural network
+### ***Neural network***
 ```python
 
 ```
@@ -1777,7 +1777,7 @@ progess :  9 tensor(1638.2438)
 
 ---
 
-### Convolutional neural network : Digit Recognition
+### ***Convolutional neural network : Digit Recognition***
 ```python
 
 ```
@@ -1791,7 +1791,7 @@ progess :  9 tensor(1638.2438)
 
 ---
 
-### Recurrent neural network : Next-Word Prediction
+### ***Recurrent neural network : Next-Word Prediction***
 ```python
 
 ```
@@ -1802,6 +1802,8 @@ progess :  9 tensor(1638.2438)
 <hr class='division3'>
 </details>
 <br><br><br>
+
+
 
 
 <hr class="division1">
