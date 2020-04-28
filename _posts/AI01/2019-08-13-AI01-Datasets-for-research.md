@@ -20,7 +20,7 @@ tags : [AI01]
 
 
 ## **From sklearn**
-
+<a href="https://scikit-learn.org/stable/modules/classes.html#module-sklearn.datasets" target="_blank">scikit-learn datasets</a>
 ```python
 from sklearn.datasets import load_diabetes
 loaded_dataset = load_diabetes()
