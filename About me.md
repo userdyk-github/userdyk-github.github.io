@@ -24,7 +24,7 @@ Email(sending&reception) : userdyk@gmail.com <br>
 <hr>
 
 ### GitHub | [URL](https://github.com/userdyk-github/)
-  - [numerical-method](https://github.com/ailever/deep-learning)
+  - [numerical-method](https://github.com/ailever/numerical-method)
   - [deep-learning](https://github.com/ailever/deep-learning)
   
 ### LinkedIn | [URL](https://www.linkedin.com/in/userdyk/)
