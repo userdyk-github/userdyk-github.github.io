@@ -1818,8 +1818,8 @@ List of posts followed by this article
 Reference
 - Pradeepta Mishra, PyTorch Recipes, 2019
 - <a href='https://wikidocs.net/book/2788' target="_blank">wikidocs, pytorch</a>
-- <a href='https://www.youtube.com/watch?v=7eldOrjQVi0&list=PLQ28Nx3M4JrhkqBVIXg-i5_CVVoS1UzAv' target="_blank">youtube</a>
-- <a href='https://github.com/deeplearningzerotoall/PyTorch' target="_blank">github</a>
+- <a href="https://github.com/deeplearningzerotoall/PyTorch" target="_blank">github : zerotoall, pytorch</a>
+- <a href='https://www.youtube.com/watch?v=7eldOrjQVi0&list=PLQ28Nx3M4JrhkqBVIXg-i5_CVVoS1UzAv' target="_blank">lecture : zerotoall, pytorch</a>
 - <a href="http://www.gisdeveloper.co.kr/?p=8392">PyTorch의 Tensor 연산 퀵 레퍼런스</a>
 - <a href="https://nn.readthedocs.io/en/rtd/index.html">nn readthedocs</a>
 
