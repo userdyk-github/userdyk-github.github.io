@@ -514,8 +514,8 @@ for epoch in range(EPOCHS):
 <br><br><br>
 <hr class="division2">
 
-## Example
-### XOR problem
+## **Example**
+### ***XOR problem***
 ```python
 
 ```
@@ -531,7 +531,7 @@ for epoch in range(EPOCHS):
 
 
 
-### Simple linear regression
+### ***Simple linear regression***
 ```python
 
 ```
@@ -545,7 +545,7 @@ for epoch in range(EPOCHS):
 
 ---
 
-### Multi-variate linear regression
+### ***Multi-variate linear regression***
 ```python
 
 ```
@@ -559,7 +559,7 @@ for epoch in range(EPOCHS):
 
 ---
 
-### Logistic regression : binary class
+### ***Logistic regression : binary class***
 ```python
 
 ```
@@ -573,7 +573,7 @@ for epoch in range(EPOCHS):
 
 ---
 
-### Softmax regression : multi-class
+### ***Softmax regression : multi-class***
 ```python
 
 ```
@@ -588,7 +588,7 @@ for epoch in range(EPOCHS):
 ---
 
 
-### Neural network
+### ***Neural network***
 ```python
 
 ```
@@ -602,7 +602,7 @@ for epoch in range(EPOCHS):
 
 ---
 
-### Convolutional neural network : Digit Recognition
+### ***Convolutional neural network : Digit Recognition***
 ```python
 
 ```
@@ -616,7 +616,7 @@ for epoch in range(EPOCHS):
 
 ---
 
-### Recurrent neural network : Next-Word Prediction
+### ***Recurrent neural network : Next-Word Prediction***
 ```python
 
 ```
@@ -627,6 +627,7 @@ for epoch in range(EPOCHS):
 <hr class='division3'>
 </details>
 <br><br><br>
+
 
 
 
