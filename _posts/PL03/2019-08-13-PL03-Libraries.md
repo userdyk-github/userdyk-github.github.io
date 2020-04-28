@@ -55,9 +55,9 @@ tags : [PL03]
 
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-scikit-learn.html'>scikit-learn</a> ｜ <a href='https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Scikit_Learn_Cheat_Sheet_Python.pdf' target="_blank">Cheat Sheet</a>
   - <a href='https://scikit-learn.org/stable/modules/classes.html' target="_blank"><span class='jb-small'>https://scikit-learn.org/stable/modules/classes.html</span></a>
-  - <a href="https://scikit-learn.org/stable/user_guide.html" target="_blank">https://scikit-learn.org/stable/user_guide.html</a>
-  - <a href='https://scikit-learn.org/stable/auto_examples/index.html' target="_blank">https://scikit-learn.org/stable/auto_examples/index.html</a>
-  - <a href='https://github.com/scikit-learn/scikit-learn' target="_blank"><span class='jb-small'>https://github.com/scikit-learn/scikit-learn</span></a>
+  - <a href="https://scikit-learn.org/stable/user_guide.html" target="_blank"><span class='jb-small'>https://scikit-learn.org/stable/user_guide.html</span></a>
+  - <a href='https://scikit-learn.org/stable/auto_examples/index.html' target="_blank"><span class='jb-small'>https://scikit-learn.org/stable/auto_examples/index.html</span></a>
+  - <a href='https://github.com/scikit-learn/scikit-learn' target="_blank"><span class='jb-small'><span class='jb-small'>https://github.com/scikit-learn/scikit-learn</span></a>
 
 
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-Pandas.html'>Pandas</a> ｜ <a href='https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf' target="_blank">Cheat Sheet</a>
