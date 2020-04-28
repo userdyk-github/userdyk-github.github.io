@@ -69,8 +69,8 @@ List of posts followed by this article
 ---
 
 Reference
+- <a href='https://scikit-learn.org/stable/user_guide.html' target="_blank">scikit-learn user_guide</a>
 - <a href="https://scikit-learn.org/stable/modules/classes.html" target="_blank">scikit-learn API</a>
-- <a href='https://userdyk-github.github.io/'>post2</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
