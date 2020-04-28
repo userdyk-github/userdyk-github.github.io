@@ -900,7 +900,7 @@ List of posts followed by this article
 
 Reference
 - Santanu Pattanayak, Pro Deep Learning with TensorFlow, 2017
-- <a href="https://github.com/deeplearningzerotoall/TensorFlow" target="_blank">git : zerotoall, tensorflow</a>
+- <a href="https://github.com/deeplearningzerotoall/TensorFlow" target="_blank">github : zerotoall, tensorflow</a>
 - <a href="https://www.youtube.com/playlist?list=PLlMkM4tgfjnLSOjrEJN31gZATbcj_MpUm" target="_blank">lecture : zerotoall, tensorflow</a>
 - <a href='https://tensorflowkorea.gitbooks.io/tensorflow-kr/' target="_blank">tensorflow-kr</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
