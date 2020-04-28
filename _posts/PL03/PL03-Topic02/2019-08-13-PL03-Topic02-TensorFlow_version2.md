@@ -641,7 +641,7 @@ List of posts followed by this article
 ---
 
 Reference
-- <a href="https://github.com/deeplearningzerotoall/TensorFlow/tree/master/tf_2.x" target="_blank">git : zerotoall, tensorflow</a>
+- <a href="https://github.com/deeplearningzerotoall/TensorFlow/tree/master/tf_2.x" target="_blank">github : zerotoall, tensorflow</a>
 - <a href="https://www.youtube.com/playlist?list=PLQ28Nx3M4Jrguyuwg4xe9d9t2XE639e5C" target="_blank">lecture : zerotoall, tensorflow</a>
 - <a href='https://www.tensorflow.org/api_docs/python/tf' target="_blank">tensorflow API</a>
 - <a href="https://datascienceschool.net/view-notebook/661128713b654edc928ecb455a826b1d/" target="_blank">datascienceschool</a>
