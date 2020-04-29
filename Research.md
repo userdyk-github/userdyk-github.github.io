@@ -7,6 +7,7 @@ title: RESEARCH
 - <a href='https://scholar.google.com/' target="_blank">google scholar</a>
 - <a href='https://www.researchgate.net/' target="_blank">researchgate</a>
 - <a href='https://arxiv.org/' target="_blank">arxiv</a>
+- <a href="https://www.semanticscholar.org/" target="_blank">semanticscholar</a>
 - <a href='https://www.quora.com/' target="_blank">quora</a>
 - <a href='https://www.reddit.com/' target="_blank">reddit</a>
 - <a href="https://www.slideshare.net/" target="_blank">slide share</a>
