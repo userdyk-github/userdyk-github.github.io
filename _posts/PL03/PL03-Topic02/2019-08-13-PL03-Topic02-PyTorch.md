@@ -1828,7 +1828,7 @@ Reference
 - [https://github.com/pytorch/tutorials](https://github.com/pytorch/tutorials)
 - [https://github.com/pytorch/examples](https://github.com/pytorch/examples)
 - [https://github.com/yunjey/pytorch-tutorial](https://github.com/yunjey/pytorch-tutorial)
-
+- [https://github.com/GunhoChoi/PyTorch-FastCampus](https://github.com/GunhoChoi/PyTorch-FastCampus)
 
 ---
 
