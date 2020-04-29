@@ -4,7 +4,7 @@ title: RESEARCH
 ---
 
 ## Search Engine
-
+<div class="jb-medium">
 <a href='https://www.google.com/' target="_blank">google</a>｜
 <a href='https://scholar.google.com/' target="_blank">google scholar</a>｜
 <a href='https://www.researchgate.net/' target="_blank">researchgate</a>｜
@@ -19,7 +19,7 @@ title: RESEARCH
 <a href="https://www.overleaf.com/latex/templates" target="_blank">overleaf</a>｜
 <a href='https://www.sharelatex.com/templates' target="_blank">Latex templates(Ctrl+Alt+b, tex)</a><br>｜
 <a href='https://en.wikipedia.org/wiki/Help:Displaying_a_formula' target="_blank">Help:Displaying a formula</a><br>｜
-
+</div>
 
 ---
 
