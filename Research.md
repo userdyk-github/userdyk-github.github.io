@@ -18,7 +18,7 @@ title: RESEARCH
 <a href='https://cmt3.research.microsoft.com/Conference/Recent' target="_blank">Recent Conference</a>｜
 <a href="https://www.overleaf.com/latex/templates" target="_blank">overleaf</a>｜
 <a href='https://www.sharelatex.com/templates' target="_blank">Latex templates(Ctrl+Alt+b, tex)</a><br>｜
-<a href='https://en.wikipedia.org/wiki/Help:Displaying_a_formula' target="_blank">Help:Displaying a formula</a><br>｜
+<a href='https://en.wikipedia.org/wiki/Help:Displaying_a_formula' target="_blank">Help:Displaying a formula</a>｜
 </div>
 
 ---
