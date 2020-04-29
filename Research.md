@@ -9,6 +9,7 @@ title: RESEARCH
 - <a href='https://arxiv.org/' target="_blank">arxiv</a>
 - <a href='https://www.quora.com/' target="_blank">quora</a>
 - <a href='https://www.reddit.com/' target="_blank">reddit</a>
+- <a href="https://www.slideshare.net/" target="_blank">slide share</a>
 - <a href="https://github.com/" target="_blank">github</a>
 - <a href='https://scholar.google.com/citations?view_op=top_venues' target="_blank">Google Scholar Citations</a>
 - <a href='https://cmt3.research.microsoft.com/Conference/Recent' target="_blank">Recent Conference</a>
