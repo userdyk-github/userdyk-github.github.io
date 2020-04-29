@@ -24,6 +24,7 @@ title: RESEARCH
 - <a href="https://distill.pub/" target="_blank">https://distill.pub/</a>
 - <a href='https://ai-pool.com/m?limit=96&page=1' target="_blank">https://ai-pool.com/</a>
 - <a href="https://pathmind.com/wiki/index" target="_blank">https://pathmind.com/wiki/index</a>
+- <a href="https://www.groundai.com/" target="_blank">https://www.groundai.com/</a>
 - <a href="https://towardsdatascience.com/" target="_blank">https://towardsdatascience.com/</a>
 - <a href="https://paperswithcode.com/sota" target="_blank">https://paperswithcode.com/sota</a>
 - <a href="https://pytorch.org/hub/research-models" target="_blank">https://pytorch.org/hub/research-models</a>
