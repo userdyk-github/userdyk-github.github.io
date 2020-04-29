@@ -3,20 +3,22 @@ layout: page
 title: RESEARCH
 ---
 
-- <a href='https://www.google.com/' target="_blank">google</a>
-- <a href='https://scholar.google.com/' target="_blank">google scholar</a>
-- <a href='https://www.researchgate.net/' target="_blank">researchgate</a>
-- <a href='https://arxiv.org/' target="_blank">arxiv</a>
-- <a href="https://www.semanticscholar.org/" target="_blank">semanticscholar</a>
-- <a href='https://www.quora.com/' target="_blank">quora</a>
-- <a href='https://www.reddit.com/' target="_blank">reddit</a>
-- <a href="https://www.slideshare.net/" target="_blank">slide share</a>
-- <a href="https://github.com/" target="_blank">github</a>
-- <a href='https://scholar.google.com/citations?view_op=top_venues' target="_blank">Google Scholar Citations</a>
-- <a href='https://cmt3.research.microsoft.com/Conference/Recent' target="_blank">Recent Conference</a>
-- <a href="https://www.overleaf.com/latex/templates" target="_blank">overleaf</a>
-- <a href='https://www.sharelatex.com/templates' target="_blank">Latex templates(Ctrl+Alt+b, tex)</a><br>
-- <a href='https://en.wikipedia.org/wiki/Help:Displaying_a_formula' target="_blank">Help:Displaying a formula</a><br>
+## Search Engine
+
+<a href='https://www.google.com/' target="_blank">google</a>｜
+<a href='https://scholar.google.com/' target="_blank">google scholar</a>｜
+<a href='https://www.researchgate.net/' target="_blank">researchgate</a>｜
+<a href='https://arxiv.org/' target="_blank">arxiv</a>｜
+<a href="https://www.semanticscholar.org/" target="_blank">semantic scholar</a>｜
+<a href='https://www.quora.com/' target="_blank">quora</a>｜
+<a href='https://www.reddit.com/' target="_blank">reddit</a>｜
+<a href="https://www.slideshare.net/" target="_blank">slide share</a>｜
+<a href="https://github.com/" target="_blank">github</a>｜
+<a href='https://scholar.google.com/citations?view_op=top_venues' target="_blank">Google Scholar Citations</a>｜
+<a href='https://cmt3.research.microsoft.com/Conference/Recent' target="_blank">Recent Conference</a>｜
+<a href="https://www.overleaf.com/latex/templates" target="_blank">overleaf</a>｜
+<a href='https://www.sharelatex.com/templates' target="_blank">Latex templates(Ctrl+Alt+b, tex)</a><br>｜
+<a href='https://en.wikipedia.org/wiki/Help:Displaying_a_formula' target="_blank">Help:Displaying a formula</a><br>｜
 
 
 ---
