@@ -647,6 +647,12 @@ Reference
 - <a href="https://datascienceschool.net/view-notebook/661128713b654edc928ecb455a826b1d/" target="_blank">datascienceschool</a>
 - <a href='https://wikidocs.net/book/2324' target="_blank">wikidocs, tensorflow</a>
 - <a href='https://tensorflowkorea.gitbooks.io/tensorflow-kr/' target="_blank">tensorflow-kr</a>
+- [https://www.tensorflow.org/tutorials](https://www.tensorflow.org/tutorials)
+- [https://github.com/tensorflow](https://github.com/tensorflow)
+- [https://github.com/tensorflow/examples](https://github.com/tensorflow/examples)
+- [https://github.com/tensorflow/models](https://github.com/tensorflow/models)
+- [https://github.com/tensorflow/docs/tree/master/site/en/tutorials](https://github.com/tensorflow/docs/tree/master/site/en/tutorials)
+- [https://github.com/aymericdamien/TensorFlow-Examples](https://github.com/aymericdamien/TensorFlow-Examples)
 
 ---
 
