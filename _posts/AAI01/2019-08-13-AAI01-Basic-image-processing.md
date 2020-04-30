@@ -253,9 +253,9 @@ io.imshow(image)
 <hr class="division1">
 
 List of posts followed by this article
-- [post1](https://userdyk-github.github.io/)
-- <a href='https://userdyk-github.github.io/'>post2</a>
-- <a href='https://userdyk-github.github.io/'>post3</a>
+- <a href="https://www.youtube.com/playlist?list=PLwfJJiO20qkDue05S5MNhgYNnClMVlagN" target="_blank">lecture 1</a>
+- <a href='https://www.youtube.com/playlist?list=PLRx0vPvlEmdBx9X5xSgcEk4CEbzEiws8C' target="_blanl">lecture 2</a>
+- <a href='https://www.youtube.com/playlist?list=PL-xmlFOn6TUKlxlh3PIuAzHkJakFlcDvY' target="_blank">lecture 3</a>
 
 ---
 
