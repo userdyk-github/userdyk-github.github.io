@@ -217,6 +217,5 @@ title: MATERIALS
 
 
 
-
 [1]:{{ site.url }}/download/daily.pptx
 
