@@ -187,17 +187,17 @@ title: MATERIALS
 # REFERENCES 02 - private web site
 
 
-<a href="https://datascienceschool.net/" target="_blank">datascienceschool</a>, 
-<a href="http://www.gisdeveloper.co.kr/" target="_blank">gisdeveloper</a>, 
-<a href="https://bskyvision.com/" target="_blank">bskyvision</a>, 
-<a href="https://dojang.io/course/index.php?categoryid=1" target="_blank">dojang</a>, 
-<a href="https://www.fun-coding.org/index.html" target="_blank">fun coding</a>, 
-<a href="https://freshrimpsushi.tistory.com/" target="_blank">freshrimpsushi</a>, 
+<a href="https://datascienceschool.net/" target="_blank">datascienceschool[DL,STAT]</a>, 
+<a href="http://www.gisdeveloper.co.kr/" target="_blank">gisdeveloper[DL,CV]</a>, 
+<a href="https://bskyvision.com/" target="_blank">bskyvision[CV]</a>, 
+<a href="https://dojang.io/course/index.php?categoryid=1" target="_blank">dojang[PL]</a>, 
+<a href="https://www.fun-coding.org/index.html" target="_blank">fun coding[PL]</a>, 
+<a href="https://freshrimpsushi.tistory.com/" target="_blank">freshrimpsushi[MATH,STAT,PHY]</a>, 
 <a href="https://eungbean.github.io/index.html" target="_blank">eungbean</a>, 
-<a href="http://research.sualab.com/" target="_blank">sualab</a>,
+<a href="http://research.sualab.com/" target="_blank">sualab[DL,CV]</a>,
 <a href="https://bab2min.tistory.com/category/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/NLP?page=1" target="_blank">bab2min[NLP]</a>,
-<a href="https://ratsgo.github.io/blog/categories/" target="_blank">ratsgo</a>,
-<a href="https://losskatsu.github.io/categories/list#" target="_blank">losskatsu</a>,
+<a href="https://ratsgo.github.io/blog/categories/" target="_blank">ratsgo[ML,NLP,STAT]</a>,
+<a href="https://losskatsu.github.io/categories/list#" target="_blank">losskatsu[ML,STAT]</a>,
 <a href="http://sanghyukchun.github.io/57/" target="_blank">sanghyukchun[ML]</a>,
 
 <br>
