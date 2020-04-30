@@ -195,10 +195,10 @@ title: MATERIALS
 <a href="https://freshrimpsushi.tistory.com/" target="_blank">freshrimpsushi</a>, 
 <a href="https://eungbean.github.io/index.html" target="_blank">eungbean</a>, 
 <a href="http://research.sualab.com/" target="_blank">sualab</a>,
-<a href="https://bab2min.tistory.com/category/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/NLP?page=1" target="_blank">bab2min｜NLP</a>,
+<a href="https://bab2min.tistory.com/category/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/NLP?page=1" target="_blank">bab2min[NLP]</a>,
 <a href="https://ratsgo.github.io/blog/categories/" target="_blank">ratsgo</a>,
 <a href="https://losskatsu.github.io/categories/list#" target="_blank">losskatsu</a>,
-<a href="http://sanghyukchun.github.io/57/" target="_blank">sanghyukchun</a>,
+<a href="http://sanghyukchun.github.io/57/" target="_blank">sanghyukchun[ML]</a>,
 
 <br>
 
