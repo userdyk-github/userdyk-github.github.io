@@ -833,6 +833,7 @@ VT=VT[:2,:]
 
 
 ## **Attention Mechanism**
+<a href="https://medium.com/platfarm/%EC%96%B4%ED%85%90%EC%85%98-%EB%A9%94%EC%BB%A4%EB%8B%88%EC%A6%98%EA%B3%BC-transfomer-self-attention-842498fd3225" target="_blank">attention explanation URL</a>
 <br><br><br>
 <hr class="division2">
 
