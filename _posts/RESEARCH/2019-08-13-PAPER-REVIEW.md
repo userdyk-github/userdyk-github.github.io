@@ -27,7 +27,7 @@ tags : [RESEARCH]
 - <span class='jb-medium'> title｜ <a href='' target="_blank">PDF</a>｜[PPT][]</span>
 
 
-## **Deep learning**
+## **Deep learning methodology**
 
 - <span class='jb-medium'>A fast learning algorithm for deep belief nets｜ <a href='https://www.cs.toronto.edu/~hinton/absps/fastnc.pdf.' target="_blank">PDF</a></span>
 - <span class='jb-medium'><strong>Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift</strong>｜ <a href='https://arxiv.org/abs/1502.03167' target="_blank">PDF</a></span>
@@ -281,7 +281,7 @@ Overfitting｜ <a href='http://www.jmlr.org/papers/volume15/srivastava14a/srivas
 
 <hr class="division4">
 
-## **Computer Vision**
+## **Application**
 
 - <span class='jb-medium'>ImageNet Large Scale Visual Recognition Challenge, 2015. ｜ <a href='https://arxiv.org/abs/1409.0575'  target="_blank">PDF</a> </span>
 - <span class='jb-medium'>ImageNet Classification with Deep Convolutional Neural Networks, 2012. ｜ <a href='https://dl.acm.org/citation.cfm?id=3065386' target="_blank">PDF</a> ｜ <a href='https://github.com/Abhisek-/AlexNet' target="_blank">Github</a> ｜ <a href='https://userdyk-github.github.io/research/PAPER-REVIEW-0002.html'>Review</a></span>
