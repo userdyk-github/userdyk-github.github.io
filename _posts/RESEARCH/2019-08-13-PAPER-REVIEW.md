@@ -22,16 +22,18 @@ tags : [RESEARCH]
 <hr class="division1">
 
 - <span class='jb-medium'>Image Captioning with Semantic Attention｜ <a href='https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/You_Image_Captioning_With_CVPR_2016_paper.pdf' target="_blank">PDF</a>｜[PPT][3]</span>
-- <span class='jb-medium'> title｜ <a href='' target="_blank">PDF</a>｜[PPT][]</span>
-- <span class='jb-medium'> title｜ <a href='' target="_blank">PDF</a>｜[PPT][]</span>
-- <span class='jb-medium'> title｜ <a href='' target="_blank">PDF</a>｜[PPT][]</span>
-- <span class='jb-medium'> title｜ <a href='' target="_blank">PDF</a>｜[PPT][]</span>
-- <span class='jb-medium'> title｜ <a href='' target="_blank">PDF</a>｜[PPT][]</span>
-- <span class='jb-medium'> title｜ <a href='' target="_blank">PDF</a>｜[PPT][]</span>
-- <span class='jb-medium'> title｜ <a href='' target="_blank">PDF</a>｜[PPT][]</span>
 
 
 ## **Deep learning methodology**
+- <span class='jb-medium'> title｜ <a href='' target="_blank">PDF</a>｜[PPT][]</span>
+- <span class='jb-medium'> title｜ <a href='' target="_blank">PDF</a>｜[PPT][]</span>
+- <span class='jb-medium'> title｜ <a href='' target="_blank">PDF</a>｜[PPT][]</span>
+- <span class='jb-medium'> title｜ <a href='' target="_blank">PDF</a>｜[PPT][]</span>
+- <span class='jb-medium'> title｜ <a href='' target="_blank">PDF</a>｜[PPT][]</span>
+- <span class='jb-medium'> title｜ <a href='' target="_blank">PDF</a>｜[PPT][]</span>
+- <span class='jb-medium'> title｜ <a href='' target="_blank">PDF</a>｜[PPT][]</span>
+
+## **Image capioning**
 
 
 
