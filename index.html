@@ -229,6 +229,34 @@ title: "Dongmyeong Lee"
 <hr class="division4_1">
 <b>Comand Line Interface</b>
 <div style="font-size:60%;">
+  <pre>
+    @ECHO OFF
+
+    doskey gitlog = git log --all --graph --oneline
+    doskey workd = mkdir %date%
+    doskey workt = type NUL > %time%.py
+
+    doskey ls = dir
+    doskey cat = type $1
+
+
+    doskey grep = find $1 $2
+    doskey mv = ren $
+    doskey rm = del $
+
+
+    ::doskey = c:\Users\userd\batch_file\dyk_.bat 
+    doskey dyk_cd = c:\Users\userd\batch_file\dyk_cd.bat
+    doskey dyk_paper = c:\Users\userd\batch_file\dky_paper.bat
+
+
+    ::doskey  = start firefox  
+    ::doskey = c:\Users\userd\batch_file\fdyk_.bat 
+    doskey fdyk_autorun = start firefox https://github.com/userdyk-github/userdyk-github.github.io/edit/master/_posts/PL00/2019-08-13-PL00-Windows.md
+    doskey fdyk_paper = c:\Users\userd\batch_file\fdyk_paper.bat 
+
+    @echo activate customized command.
+  </pre>
 </div>
 <hr class="division4_1">
 
