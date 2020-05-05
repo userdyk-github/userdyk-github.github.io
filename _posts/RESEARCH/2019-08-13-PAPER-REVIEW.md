@@ -31,6 +31,12 @@ tags : [RESEARCH]
 
 <br><br><br>
 ## **Image capioning**
+- <span class='jb-medium'> title｜ <a href='' target="_blank">PDF</a>｜[PPT][]</span>
+- <span class='jb-medium'> title｜ <a href='' target="_blank">PDF</a>｜[PPT][]</span>
+- <span class='jb-medium'> title｜ <a href='' target="_blank">PDF</a>｜[PPT][]</span>
+- <span class='jb-medium'> title｜ <a href='' target="_blank">PDF</a>｜[PPT][]</span>
+- <span class='jb-medium'> title｜ <a href='' target="_blank">PDF</a>｜[PPT][]</span>
+- <span class='jb-medium'> title｜ <a href='' target="_blank">PDF</a>｜[PPT][]</span>
 
 
 
