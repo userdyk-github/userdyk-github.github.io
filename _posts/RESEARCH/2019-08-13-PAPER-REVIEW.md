@@ -21,7 +21,7 @@ tags : [RESEARCH]
 
 
 ## **Deep learning methodology**
-- <span class='jb-medium'> <a href='' target="_blank">review</a>｜ <a href='' target="_blank">PDF</a>｜[PPT][]</span>
+- <span class='jb-medium'> <a href='' target="_blank">title</a>｜ <a href='' target="_blank">PDF</a>｜[PPT][]</span>
 
 <br><br><br>
 ## **Image capioning**
