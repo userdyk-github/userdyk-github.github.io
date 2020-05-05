@@ -8,8 +8,8 @@ for /l %%i in (1,1,9) do (
 	git add .
 	git commit -m "create file"
 	git push
-	start firefox https://github.com/userdyk-github/userdyk-github.github.io/blob/master/_posts/RESEARCH/2019-08-13-PAPER-REVIEW-000%%i.md
-       	start firefox https://github.com/userdyk-github/userdyk-github.github.io/blob/master/_posts/RESEARCH/2019-08-13-PAPER-REVIEW.md 
+	start firefox https://github.com/userdyk-github/userdyk-github.github.io/edit/master/_posts/RESEARCH/2019-08-13-PAPER-REVIEW-000%%i.md
+      	start firefox https://github.com/userdyk-github/userdyk-github.github.io/edit/master/_posts/RESEARCH/2019-08-13-PAPER-REVIEW.md 
 	goto :eof
    )
 )
@@ -22,8 +22,8 @@ for /l %%j in (10,1,99) do (
 	git add .
 	git commit -m "create file"
 	git push
-	start firefox https://github.com/userdyk-github/userdyk-github.github.io/blob/master/_posts/RESEARCH/2019-08-13-PAPER-REVIEW-00%%j.md
-       	start firefox https://github.com/userdyk-github/userdyk-github.github.io/blob/master/_posts/RESEARCH/2019-08-13-PAPER-REVIEW.md 
+	start firefox https://github.com/userdyk-github/userdyk-github.github.io/edit/master/_posts/RESEARCH/2019-08-13-PAPER-REVIEW-000%%i.md
+      	start firefox https://github.com/userdyk-github/userdyk-github.github.io/edit/master/_posts/RESEARCH/2019-08-13-PAPER-REVIEW.md 
          goto :eof
    )
 )
@@ -37,8 +37,8 @@ for /l %%k in (100,1,999) do (
 	git add .
 	git commit -m "create file"
 	git push
-	start firefox https://github.com/userdyk-github/userdyk-github.github.io/blob/master/_posts/RESEARCH/2019-08-13-PAPER-REVIEW-0%%k.md
-       	start firefox https://github.com/userdyk-github/userdyk-github.github.io/blob/master/_posts/RESEARCH/2019-08-13-PAPER-REVIEW.md 
+	start firefox https://github.com/userdyk-github/userdyk-github.github.io/edit/master/_posts/RESEARCH/2019-08-13-PAPER-REVIEW-000%%i.md
+      	start firefox https://github.com/userdyk-github/userdyk-github.github.io/edit/master/_posts/RESEARCH/2019-08-13-PAPER-REVIEW.md 
          goto :eof
    )
 )
@@ -51,8 +51,8 @@ for /l %%l in (1000,1,9999) do (
 	git add .
 	git commit -m "create file"
 	git push
-	start firefox https://github.com/userdyk-github/userdyk-github.github.io/blob/master/_posts/RESEARCH/2019-08-13-PAPER-REVIEW-%%l.md
-       	start firefox https://github.com/userdyk-github/userdyk-github.github.io/blob/master/_posts/RESEARCH/2019-08-13-PAPER-REVIEW.md 
+	start firefox https://github.com/userdyk-github/userdyk-github.github.io/edit/master/_posts/RESEARCH/2019-08-13-PAPER-REVIEW-000%%i.md
+      	start firefox https://github.com/userdyk-github/userdyk-github.github.io/edit/master/_posts/RESEARCH/2019-08-13-PAPER-REVIEW.md 
          goto :eof
    )
 )
