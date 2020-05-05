@@ -9,10 +9,6 @@ tags : [RESEARCH]
 
 ---
 
-[1]:{{ site.url }}/download/RESEARCH/daily.pptx
-[2]:{{ site.url }}/download/RESEARCH/weekly.pptx
-[3]:{{ site.url }}/download/RESEARCH/Image Captioning with Semantic Attention.pptx
-
 ## Contents
 {:.no_toc}
 
@@ -33,7 +29,15 @@ tags : [RESEARCH]
 - <span class='jb-medium'> title｜ <a href='' target="_blank">PDF</a>｜[PPT][]</span>
 - <span class='jb-medium'> title｜ <a href='' target="_blank">PDF</a>｜[PPT][]</span>
 
+<br><br><br>
 ## **Image capioning**
 
 
+
+<br><br><br>
+<hr class="division1">
+
+[1]:{{ site.url }}/download/RESEARCH/daily.pptx
+[2]:{{ site.url }}/download/RESEARCH/weekly.pptx
+[3]:{{ site.url }}/download/RESEARCH/Image Captioning with Semantic Attention.pptx
 
