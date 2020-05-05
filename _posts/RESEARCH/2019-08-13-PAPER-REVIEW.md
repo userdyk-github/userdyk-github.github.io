@@ -33,6 +33,5 @@ tags : [RESEARCH]
 
 ## **Deep learning methodology**
 
-<hr class="division1">
 
 
