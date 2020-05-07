@@ -25,6 +25,7 @@ tags : [RESEARCH]
 
 <br><br><br>
 ## **Image capioning**
+- <span class='jb-medium'> <a href='https://userdyk-github.github.io/research/PAPER-REVIEW-0003.html' target="_blank">Attention on Attention for Image Captioning</a>｜ <a href='https://arxiv.org/pdf/1908.06954.pdf' target="_blank">PDF</a>｜[PPT][]</span>
 
 
 
