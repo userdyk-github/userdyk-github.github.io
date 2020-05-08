@@ -7,6 +7,7 @@ title: RESEARCH
 <div class="jb-medium">
 <a href='https://www.google.com/' target="_blank">google</a>｜
 <a href='https://scholar.google.com/' target="_blank">google scholar</a>｜
+<a href='https://openreview.net/' target="_blank">open review</a>｜
 <a href='https://www.researchgate.net/' target="_blank">researchgate</a>｜
 <a href='https://arxiv.org/' target="_blank">arxiv</a>｜
 <a href="https://www.semanticscholar.org/" target="_blank">semantic scholar</a>｜
