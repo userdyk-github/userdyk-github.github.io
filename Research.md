@@ -224,7 +224,7 @@ title: RESEARCH
 - [https://github.com/tensorflow/models](https://github.com/tensorflow/models)
 - [https://github.com/tensorflow/docs/tree/master/site/en/tutorials](https://github.com/tensorflow/docs/tree/master/site/en/tutorials)
 - [https://github.com/aymericdamien/TensorFlow-Examples](https://github.com/aymericdamien/TensorFlow-Examples)
-
+- [https://github.com/eriklindernoren/Keras-GAN](https://github.com/eriklindernoren/Keras-GAN)
 
 
 <br><br><br>
@@ -238,3 +238,4 @@ title: RESEARCH
 - [https://github.com/pytorch/tutorials](https://github.com/pytorch/tutorials)
 - [https://github.com/pytorch/examples](https://github.com/pytorch/examples)
 - [https://github.com/yunjey/pytorch-tutorial](https://github.com/yunjey/pytorch-tutorial)
+- [https://github.com/eriklindernoren/PyTorch-GAN](https://github.com/eriklindernoren/PyTorch-GAN)
