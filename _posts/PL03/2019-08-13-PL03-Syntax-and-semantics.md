@@ -1294,7 +1294,7 @@ print(a is b)
 ---
 
 ### ***Module***
-
+<a href="https://wikidocs.net/21132" target="_blank">module import</a>
 #### import
 `parent path`
 ```python
