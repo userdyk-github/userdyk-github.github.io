@@ -46,7 +46,8 @@ $ grep "cpu cores" /proc/cpuinfo | tail -1
 ### GPU
 #### GPU Resource info
 [GPU Monitoring tools URL](https://eungbean.github.io/2018/08/23/gpu-monitoring-tool-ubuntu/) <br>
-[GPU Memory control](https://medium.com/daangn/pytorch-multi-gpu-%ED%95%99%EC%8A%B5-%EC%A0%9C%EB%8C%80%EB%A1%9C-%ED%95%98%EA%B8%B0-27270617936b)
+[GPU Memory control(1)](https://medium.com/daangn/pytorch-multi-gpu-%ED%95%99%EC%8A%B5-%EC%A0%9C%EB%8C%80%EB%A1%9C-%ED%95%98%EA%B8%B0-27270617936b)
+[GPU Memory control(2)](https://dongjinlee.tistory.com/entry/%EC%84%A0%ED%83%9D%ED%95%9C-GPU%EC%97%90%EB%A7%8C-%EB%A9%94%EB%AA%A8%EB%A6%AC-%ED%95%A0%EB%8B%B9%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95)
 ```bash
 $ nvidia-smi
 $ watch -n 1 -d nvidia-smi
