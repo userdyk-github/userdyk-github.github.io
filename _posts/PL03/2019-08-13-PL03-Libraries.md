@@ -101,10 +101,28 @@ tags : [PL03]
   - <a href='https://networkx.github.io/' target="_blank"><span class='jb-small'>https://networkx.github.io/</span></a>
 
 
+
+
+<hr class="division2">
+
+## **Image processing**
+
+- <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-pyrealsense2.html'>pyrealsense2</a>
+  - <a href='https://intelrealsense.github.io/librealsense/python_docs/_generated/pyrealsense2.html#module-pyrealsense2' target="_blank"><span class='jb-small'>https://intelrealsense.github.io/librealsense/python_docs/_generated/pyrealsense2.html#module-pyrealsense2</span></a>
+
+
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-OpenCV.html'>OpenCV</a>
   - <a href='https://opencv.org/' target="_blank"><span class='jb-small'>https://opencv.org/</span></a>
   - <a href='https://github.com/opencv/opencv' target="_blank"><span class='jb-small'>https://github.com/opencv/opencv</span></a>
 
+
+<hr class="division2">
+
+## **Natural Laguage processing**
+
+- <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-Transformers.html'>Transformers</a>
+  - <a href='https://huggingface.co/transformers/index.html' target="_blank"><span class='jb-small'>https://huggingface.co/transformers/index.html</span></a>
+  - <a href='https://github.com/huggingface/transformers' target="_blank"><span class='jb-small'>https://github.com/huggingface/transformers</span></a>
 
 
 <hr class="division2">
@@ -136,11 +154,6 @@ tags : [PL03]
 
 
 <hr class="division2">
-
-## **Additionals**
-
-- <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-pyrealsense2.html'>pyrealsense2</a>
-  - <a href='https://intelrealsense.github.io/librealsense/python_docs/_generated/pyrealsense2.html#module-pyrealsense2' target="_blank"><span class='jb-small'>https://intelrealsense.github.io/librealsense/python_docs/_generated/pyrealsense2.html#module-pyrealsense2</span></a>
 
 
 <br><br><br>
