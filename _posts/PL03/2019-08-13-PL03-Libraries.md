@@ -5,7 +5,7 @@ categories: [PL03]
 comments : false
 tags : [PL03]
 ---
-[Back to the previous page](https://userdyk-github.github.io/Study.html) ｜ <a href="https://userdyk-github.github.io/pl03/PL03-Contents.html">Python</a> ｜<a href="https://pypi.org/" target="_blank">PYPI</a><br>
+[Back to the previous page](https://userdyk-github.github.io/Study.html) ｜<a href="https://github.com/userdyk-github/userdyk-github.github.io/blob/master/_posts/PL03/2019-08-13-PL03-Libraries.md" target="_blank">page management</a>｜ <a href="https://userdyk-github.github.io/pl03/PL03-Contents.html">Python</a> ｜<a href="https://pypi.org/" target="_blank">PYPI</a><br>
 
 ---
 
