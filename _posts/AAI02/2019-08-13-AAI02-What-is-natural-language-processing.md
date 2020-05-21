@@ -856,6 +856,7 @@ List of posts followed by this article
 
 Reference
 - <a href="https://torchtext.readthedocs.io/en/latest/index.html" target="_blank">torchtext</a>
+- <a href="https://radimrehurek.com/gensim/auto_examples/index.html" target="_blank">gensim</a>
 - <a href='https://wikidocs.net/book/2155' target="_blank">딥 러닝을 이용한 자연어 처리 입문</a>
 - <a href="https://wikidocs.net/book/2159" target="_blank"> 딥 러닝을 이용한 자연어 처리 심화</a>
 - <a href="https://www.edwith.org/deepnlp/joinLectures/17363" target="_blank">NLP lecture(1)</a>
