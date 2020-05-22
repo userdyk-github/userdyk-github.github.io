@@ -918,6 +918,8 @@ Reference
 - <a href="https://www.youtube.com/playlist?list=PLVNY1HnUlO26qqZznHVWAqjS1fWw0zqnT" target="_blank">LEC] NLP minsuk heo</a>
 - <a href="https://www.youtube.com/playlist?list=PLetSlH8YjIfVzHuSXtG4jAC2zbEAErXWm" target="_blank">LEC] NLP korea univ</a>
 
+- <a href="https://books.google.com/ngrams" target="_blank">APP] google book ngram</a>
+
 - Taweh Beysolow II, Applied Natural Language Processing with Python, 2018
 - <a href="http://jalammar.github.io/" target="_blank">jalammar</a>
 - <a href="http://exobrain.kr/" target="_blank">Exobrain</a>
