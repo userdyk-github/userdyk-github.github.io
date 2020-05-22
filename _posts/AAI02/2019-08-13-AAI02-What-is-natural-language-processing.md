@@ -55,7 +55,9 @@ $ python3 -m pip install konlpy                                            # Pyt
 ---
 
 ### ***Research trend***
-Rule-based approach(dedeuctive reasoning, determinstic) > Statistical approach(Inductive reasoning, stochastic) > Machine learning approach(Inductive reasoning, stochastic)
+- Rule-based approach(dedeuctive reasoning, determinstic)
+- Statistical approach(Inductive reasoning, stochastic)
+- Machine learning approach(Inductive reasoning, stochastic)
 <br><br><br>
 
 ---
