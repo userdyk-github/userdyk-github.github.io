@@ -20,8 +20,9 @@ List of posts to read before reading this article
 {:toc}
 
 <hr class="division1">
+## **korean morpheme analysis**
 
-## **konlpy installation**
+## ***konlpy installation***
 
 <a href="http://konlpy.org/ko/latest/install/" target="_blank">URL</a>
 ```bash
@@ -29,69 +30,8 @@ $ sudo apt-get install g++ openjdk-8-jdk python3-dev python3-pip curl      # Ins
 $ python3 -m pip install --upgrade pip
 $ python3 -m pip install konlpy                                            # Python 3.x
 ```
-
-
-<br><br><br>
-<hr class="division2">
-
-## **Introduction**
-
-<b>Keywords</b> : Unsupervised machine translation, Pretrained language model, common sense inference datasets, Meta-learning, Robust unsupervised methods, Understanding representations, Clever auxiliary tasks, Combining semi-supervised learning with transfet learning, QA and reasoning with large documents, Inductive bias
-
-<br><br><br>
-### ***NLP Categorization***
-
-- Phonology : Linguistics sounds
-  - Speech to Text(STT)
-- Morphology : Meaningful components of words
-  - Lexical analysis
-- Syntax : Structural relationships between words
-  - Syntax analysis
-- Semantics : Meaning
-  - Semantic analysis
-- Pragmatics : How language is used to complish goals
-  - Pragmatic analysis
-- Discourse : Larger lingustic units
-
-
 <br><br><br>
 
----
-
-### ***NLP Research trend***
-- Rule-based approach(dedeuctive reasoning, determinstic)
-- Statistical approach(Inductive reasoning, stochastic)
-- Machine learning approach(Inductive reasoning, stochastic) : <b>end to end multi-task learning</b>
-<br><br><br>
-
----
-
-### ***Upstream-task***
-
-- Tokenize
-- Embedding
-  - Factorization based(Matrix decomposition)
-    - GloVe, Swivel
-  - Prediction based
-    - Word2Vec, FastText, BERT, ELMo, GPT
-  - Topic based
-    - LDA
-  
-<br><br><br>
-
----
-
-### ***Downstream-task***
-
-- Part of Speech tagging
-- Named Entity Recognition
-- Semantic Rule Labeling
-
-<br><br><br>
-<hr class="division2">
-
-
-## **korean morpheme analysis**
 ### ***Hannanum : KAIST***
 ```python
 from konlpy.tag import Hannanum
@@ -177,6 +117,65 @@ print("phrases :\n", phrases)
 <br><br><br>
 
 <hr class="division2">
+
+
+## **Introduction**
+
+<b>Keywords</b> : Unsupervised machine translation, Pretrained language model, common sense inference datasets, Meta-learning, Robust unsupervised methods, Understanding representations, Clever auxiliary tasks, Combining semi-supervised learning with transfet learning, QA and reasoning with large documents, Inductive bias
+
+<br><br><br>
+### ***NLP Categorization***
+
+- Phonology : Linguistics sounds
+  - Speech to Text(STT)
+- Morphology : Meaningful components of words
+  - Lexical analysis
+- Syntax : Structural relationships between words
+  - Syntax analysis
+- Semantics : Meaning
+  - Semantic analysis
+- Pragmatics : How language is used to complish goals
+  - Pragmatic analysis
+- Discourse : Larger lingustic units
+
+
+<br><br><br>
+
+---
+
+### ***NLP Research trend***
+- Rule-based approach(dedeuctive reasoning, determinstic)
+- Statistical approach(Inductive reasoning, stochastic)
+- Machine learning approach(Inductive reasoning, stochastic) : <b>end to end multi-task learning</b>
+<br><br><br>
+
+---
+
+### ***Upstream-task***
+
+- Tokenize
+- Embedding
+  - Factorization based(Matrix decomposition)
+    - GloVe, Swivel
+  - Prediction based
+    - Word2Vec, FastText, BERT, ELMo, GPT
+  - Topic based
+    - LDA
+  
+<br><br><br>
+
+---
+
+### ***Downstream-task***
+
+- Part of Speech tagging
+- Named Entity Recognition
+- Semantic Rule Labeling
+
+<br><br><br>
+<hr class="division2">
+
+
 
 ## **Text preprocessing**
 ### ***Tokenization***
