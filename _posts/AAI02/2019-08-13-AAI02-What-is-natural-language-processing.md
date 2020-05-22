@@ -54,7 +54,7 @@ $ python3 -m pip install konlpy                                            # Pyt
 
 ---
 
-### ***Research trend***
+### ***NLP Research trend***
 - Rule-based approach(dedeuctive reasoning, determinstic)
 - Statistical approach(Inductive reasoning, stochastic)
 - Machine learning approach(Inductive reasoning, stochastic) : <b>end to end multi-task learning</b>
@@ -62,7 +62,7 @@ $ python3 -m pip install konlpy                                            # Pyt
 
 ---
 
-### Upstream-task
+### ***Upstream-task***
 
 - Tokenize
 - Embedding
@@ -77,7 +77,7 @@ $ python3 -m pip install konlpy                                            # Pyt
 
 ---
 
-### Downstream-task
+### ***Downstream-task***
 
 - Part of Speech tagging
 - Named Entity Recognition
