@@ -28,11 +28,17 @@ tags : [RESEARCH]
 - <span class='jb-medium'> <a href='' target="_blank">title</a>｜ <a href='' target="_blank">PDF</a>｜<a href="" target="_blank">Github</a>｜[PPT][]</span>
 
 <br><br><br>
+
+---
+
 ## **Computer Vision**
 - <span class='jb-medium'> <a href='' target="_blank">title</a>｜ <a href='' target="_blank">PDF</a>｜<a href="" target="_blank">Github</a>｜[PPT][]</span>
 
 
 <br><br><br>
+
+---
+
 ## **Natural Language Processing**
 - <span class='jb-medium'> <a href='' target="_blank">title</a>｜ <a href='' target="_blank">PDF</a>｜<a href="" target="_blank">Github</a>｜[PPT][]</span>
 - <span class='jb-medium'> <a href='' target="_blank">title</a>｜ <a href='' target="_blank">PDF</a>｜<a href="" target="_blank">Github</a>｜[PPT][]</span>
@@ -41,6 +47,9 @@ tags : [RESEARCH]
 
 
 <br><br><br>
+
+---
+
 ## **Image Capioning**
 
 - <span class='jb-medium'> <a href='https://userdyk-github.github.io/research/PAPER-REVIEW-0003.html' target="_blank">Attention on Attention for Image Captioning</a>｜ <a href='https://arxiv.org/pdf/1908.06954.pdf' target="_blank">PDF</a>｜<a href="https://github.com/husthuaan/AoANet" target="_blank">Github</a>｜[PPT][]</span>
