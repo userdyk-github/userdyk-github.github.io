@@ -35,6 +35,10 @@ $ python3 -m pip install konlpy                                            # Pyt
 <hr class="division2">
 
 ## **Introduction**
+
+Keywords : Unsupervised machine translation, Pretrained language model, common sense inference datasets, Meta-learning, Robust unsupervised methods, Understanding representations, Clever auxiliary tasks, Combining semi-supervised learning with transfet learning, QA and reasoning with large documents, Inductive bias
+
+<br><br><br>
 ### ***NLP Categorization***
 
 - Phonology : Linguistics sounds
