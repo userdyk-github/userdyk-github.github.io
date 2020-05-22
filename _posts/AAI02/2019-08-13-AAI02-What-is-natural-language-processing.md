@@ -38,6 +38,7 @@ $ python3 -m pip install konlpy                                            # Pyt
 ### ***NLP Categorization***
 
 - Phonology : Linguistics sounds
+  - Speech to Text(STT)
 - Morphology : Meaningful components of words
 - Syntax : Structural relationships between words
 - Semantics : Meaning
