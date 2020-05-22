@@ -17,9 +17,6 @@ tags : [RESEARCH]
 
 <hr class="division1">
 
-- <span class='jb-medium'> <a href='' target="_blank">title</a>｜ <a href='' target="_blank">PDF</a>｜<a href="" target="_blank">Github</a>｜[PPT][]</span>
-
-
 ## **Deep Learning Methodology**
 - <span class='jb-medium'> <a href='' target="_blank">Finding Structure in Time(vanilla RNN), 1990</a>｜ <a href='https://crl.ucsd.edu/~elman/Papers/fsit.pdf' target="_blank">PDF</a>｜<a href="" target="_blank">Github</a>｜[PPT][]</span>
 - <span class='jb-medium'> <a href='' target="_blank">Long Short-Term Memory(LSTM)</a>｜ <a href='https://www.bioinf.jku.at/publications/older/2604.pdf' target="_blank">PDF</a>｜<a href="" target="_blank">Github</a>｜[PPT][]</span>
