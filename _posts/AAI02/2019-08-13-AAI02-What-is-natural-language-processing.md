@@ -903,6 +903,7 @@ Reference
 
 - Taweh Beysolow II, Applied Natural Language Processing with Python, 2018
 - <a href="http://jalammar.github.io/" target="_blank">jalammar</a>
+- <a href="http://exobrain.kr/" target="_blank">Exobrain</a>
 
 ---
 
