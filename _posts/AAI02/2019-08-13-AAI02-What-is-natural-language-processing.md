@@ -505,6 +505,7 @@ was wondering anyone out there could enlighten this car.
 <hr class="division2">
 
 ## **Language model**
+A language model is a criterion for determining whether a sentence is natural.
 
 - Assign probabilities for word sequences
   - Machine Translation
