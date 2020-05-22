@@ -499,6 +499,10 @@ was wondering anyone out there could enlighten this car.
 <br><br><br>
 <hr class="division2">
 
+## **Text preprocessing(2) : Syntax analysis **
+
+<br><br><br>
+<hr class="division2">
 
 ## **Language model**
 
