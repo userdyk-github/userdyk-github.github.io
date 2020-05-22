@@ -5,7 +5,7 @@ categories: [AAI01]
 comments : true
 tags : [AAI01]
 ---
-[Back to the previous page](https://userdyk-github.github.io/Study.html) ｜<a href="https://github.com/userdyk-github/userdyk-github.github.io/blob/master/_posts/AAI01/2019-08-13-AAI01-Basic-image-processing.md" target="_blank">page management</a><br>
+[Back to the previous page](https://userdyk-github.github.io/Study.html) ｜<a href="https://github.com/userdyk-github/userdyk-github.github.io/blob/master/_posts/AAI01/2019-08-13-AAI01-Basic-image-processing.md" target="_blank">page management</a>｜<a href="https://userdyk-github.github.io/research/PAPER-REVIEW.html#computer-vision" target="_blank">paper review</a><br>
 List of posts to read before reading this article
 - <a href='https://userdyk-github.github.io/'>post1</a>
 - <a href='https://userdyk-github.github.io/'>post2</a>
