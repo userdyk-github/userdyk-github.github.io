@@ -40,9 +40,13 @@ $ python3 -m pip install konlpy                                            # Pyt
 - Phonology : Linguistics sounds
   - Speech to Text(STT)
 - Morphology : Meaningful components of words
+  - Lexical analysis
 - Syntax : Structural relationships between words
+  - Syntax analysis
 - Semantics : Meaning
-- Pragmatics : How language is used to oomplish goals
+  - Semantic analysis
+- Pragmatics : How language is used to complish goals
+  - Pragmatic analysis
 - Discourse : Larger lingustic units
 
 
