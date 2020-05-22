@@ -54,6 +54,12 @@ $ python3 -m pip install konlpy                                            # Pyt
 
 ---
 
+### ***Research trend***
+Rule-based approach(dedeuctive reasoning) > Statistical approach(Inductive reasoning) > Machine learning approach(Inductive reasoning)
+<br><br><br>
+
+---
+
 ### Upstream-task
 
 - Tokenize
