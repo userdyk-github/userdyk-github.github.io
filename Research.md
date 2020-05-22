@@ -122,7 +122,7 @@ title: RESEARCH
 > <a href='' target="_blank"></a>
 
 > OPENAI
->> <a href='https://openai.com/progress/' target="_blank">research</a>|<a href='https://openai.com/jobs/' target="_blank">careers</a>|<br>
+>> <a href='https://openai.com/progress/' target="_blank">research</a>|<a href="https://openai.com/blog/" target="_blank">blog</a>|<a href='https://openai.com/jobs/' target="_blank">careers</a>|<br>
 > <a href='' target="_blank"></a>
 
 > GOOGLE
