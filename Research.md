@@ -37,7 +37,6 @@ title: RESEARCH
 
 
 
-
 <hr class="division1">
 
 
@@ -151,7 +150,7 @@ title: RESEARCH
 > <a href='' target="_blank"></a>
 
 > NVIDIA 
->> <a href='https://www.nvidia.com/en-us/research/' target="_blank">research</a>|<a href='https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite' target="_blank">careers</a>|<br>
+>> <a href='https://www.nvidia.com/en-us/research/' target="_blank">research</a>|<a href="https://blogs.nvidia.com/blog/category/deep-learning/" target="_blank">blog</a>|<a href='https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite' target="_blank">careers</a>|<br>
 > <a href='' target="_blank"></a>
 
 > CANON 
