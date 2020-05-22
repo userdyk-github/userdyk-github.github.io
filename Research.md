@@ -142,7 +142,7 @@ title: RESEARCH
 > <a href='' target="_blank"></a>
 
 > INTEL
->> <a href='https://www.intel.ai/research/#gs.1x6fho' target="_blank">research</a>|<a href='https://jobs.intel.com/page/show/artificial-intelligence-jobs' target="_blank">careers</a>|<br>
+>> <a href='https://www.intel.ai/research/#gs.1x6fho' target="_blank">research</a>|<a href="https://www.intel.com/content/www/us/en/artificial-intelligence/blog.html" target="_blank">blog</a>|<a href='https://jobs.intel.com/page/show/artificial-intelligence-jobs' target="_blank">careers</a>|<br>
 > <a href='' target="_blank"></a>
 
 > PHILIPS 
