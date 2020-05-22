@@ -35,6 +35,19 @@ $ python3 -m pip install konlpy                                            # Pyt
 <hr class="division2">
 
 ## **Introduction**
+### ***NLP Categorization***
+
+- Phonology : Linguistics sounds
+- Morphology : Meaningful components of words
+- Syntax : Structural relationships between words
+- Semantics : Meaning
+- Pragmatics : How language is used to oomplish goals
+- Discourse : Larger lingustic units
+
+
+<br><br><br>
+
+---
 
 ### Upstream-task
 
