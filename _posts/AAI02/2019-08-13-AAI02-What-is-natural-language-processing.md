@@ -855,18 +855,21 @@ List of posts followed by this article
 ---
 
 Reference
-- <a href="https://torchtext.readthedocs.io/en/latest/index.html" target="_blank">torchtext</a>
-- <a href="https://www.nltk.org/py-modindex.html" target="_blank">nltk api</a>
-- <a href="https://textblob.readthedocs.io/en/dev/api_reference.html" target="_blank">textblob api</a>
-- <a href="https://stanfordnlp.github.io/stanfordnlp/pipeline.html" target="_blank">standfordnlp api</a>
-- <a href="https://polyglot.readthedocs.io/en/latest/index.html" target="_blank">polyglot api</a>
-- <a href="https://radimrehurek.com/gensim/apiref.html" target="_blank">gensim api</a>
-- <a href='https://wikidocs.net/book/2155' target="_blank">딥 러닝을 이용한 자연어 처리 입문</a>
-- <a href="https://wikidocs.net/book/2159" target="_blank"> 딥 러닝을 이용한 자연어 처리 심화</a>
-- <a href="https://www.edwith.org/deepnlp/joinLectures/17363" target="_blank">NLP lecture(1)</a>
-- <a href="https://www.youtube.com/playlist?list=PLVNY1HnUlO26qqZznHVWAqjS1fWw0zqnT" target="_blank">NLP lecture(2)</a>
+- <a href="https://torchtext.readthedocs.io/en/latest/index.html" target="_blank">API] torchtext</a>
+- <a href="https://www.nltk.org/py-modindex.html" target="_blank">API] nltk</a>
+- <a href="https://textblob.readthedocs.io/en/dev/api_reference.html" target="_blank">API] textblob</a>
+- <a href="https://stanfordnlp.github.io/stanfordnlp/pipeline.html" target="_blank">API] standfordnlp</a>
+- <a href="https://polyglot.readthedocs.io/en/latest/index.html" target="_blank">API] polyglot</a>
+- <a href="https://radimrehurek.com/gensim/apiref.html" target="_blank">API] gensim</a>
+
+- <a href='https://wikidocs.net/book/2155' target="_blank">TEXT] 딥 러닝을 이용한 자연어 처리 입문</a>
+- <a href="https://wikidocs.net/book/2159" target="_blank">TEXT] 딥 러닝을 이용한 자연어 처리 심화</a>
+- <a href='https://wikidocs.net/book/2788'>TEXT] PyTorch로 시작하는 딥 러닝 입문 </a>
+
+- <a href="https://www.edwith.org/deepnlp/joinLectures/17363" target="_blank">LEC] NLP lecture(1)</a>
+- <a href="https://www.youtube.com/playlist?list=PLVNY1HnUlO26qqZznHVWAqjS1fWw0zqnT" target="_blank">LEC] NLP lecture(2)</a>
+
 - Taweh Beysolow II, Applied Natural Language Processing with Python, 2018
-- <a href='https://wikidocs.net/book/2788'> PyTorch로 시작하는 딥 러닝 입문 </a>
 - <a href="http://jalammar.github.io/" target="_blank">jalammar</a>
 
 ---
