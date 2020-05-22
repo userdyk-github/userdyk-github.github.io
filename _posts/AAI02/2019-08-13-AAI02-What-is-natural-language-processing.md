@@ -865,9 +865,11 @@ Reference
 - <a href='https://wikidocs.net/book/2155' target="_blank">TEXT] 딥 러닝을 이용한 자연어 처리 입문</a>
 - <a href="https://wikidocs.net/book/2159" target="_blank">TEXT] 딥 러닝을 이용한 자연어 처리 심화</a>
 - <a href='https://wikidocs.net/book/2788'>TEXT] PyTorch로 시작하는 딥 러닝 입문 </a>
+- <a href="https://github.com/pilsung-kang/text-analytics" target="_blank">TEXT] pilsung-kang</a>
 
-- <a href="https://www.edwith.org/deepnlp/joinLectures/17363" target="_blank">LEC] NLP lecture(1)</a>
-- <a href="https://www.youtube.com/playlist?list=PLVNY1HnUlO26qqZznHVWAqjS1fWw0zqnT" target="_blank">LEC] NLP lecture(2)</a>
+- <a href="https://www.edwith.org/deepnlp/joinLectures/17363" target="_blank">LEC] NLP edwith</a>
+- <a href="https://www.youtube.com/playlist?list=PLVNY1HnUlO26qqZznHVWAqjS1fWw0zqnT" target="_blank">LEC] NLP minsuk heo</a>
+- <a href="https://www.youtube.com/playlist?list=PLetSlH8YjIfVzHuSXtG4jAC2zbEAErXWm" target="_blank">LEC] NLP korea univ</a>
 
 - Taweh Beysolow II, Applied Natural Language Processing with Python, 2018
 - <a href="http://jalammar.github.io/" target="_blank">jalammar</a>
