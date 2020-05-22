@@ -291,9 +291,16 @@ print(kkma.nouns("열심히 코딩한 당신, 연휴에는 여행을 가봐요")
 <br><br><br>
 #### Named entity recognition
 
+<br><br><br>
 
+#### Co-reference
 
 <br><br><br>
+
+#### Basic dependencies
+
+<br><br><br>
+
 
 #### Tokenization with regular expression
 ```python
