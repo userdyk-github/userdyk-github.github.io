@@ -127,7 +127,7 @@ title: MATERIALS
 
 ### Applications
 
-- <a href='https://www.youtube.com/playlist?list=PLxmi9rDs4EYo65U39vp_Y_J7AJh43cCC_' target="_blank">Time series data processing</a>, <a href='https://www.youtube.com/playlist?list=PL1Kb3QTCLIVtyOuMgyVgT-OeW0PYXl3j5' target="_blank">Image processing</a>, <a href='https://www.youtube.com/playlist?list=PLVNY1HnUlO26qqZznHVWAqjS1fWw0zqnT' target="_blank">Nautral language processing</a>, <a href="https://www.edwith.org/deepnlp/joinLectures/17363" target="_blank">edwith - Natural language processing</a>
+- <a href='https://www.youtube.com/playlist?list=PLxmi9rDs4EYo65U39vp_Y_J7AJh43cCC_' target="_blank">Time series data processing</a>, <a href='https://www.youtube.com/playlist?list=PL1Kb3QTCLIVtyOuMgyVgT-OeW0PYXl3j5' target="_blank">Image processing</a>, <a href='https://www.youtube.com/playlist?list=PLVNY1HnUlO26qqZznHVWAqjS1fWw0zqnT' target="_blank">Nautral language processing</a>, <a href="https://www.edwith.org/deepnlp/joinLectures/17363" target="_blank">edwith - Natural language processing</a>, <a href="https://www.youtube.com/channel/UCPq01cgCcEwhXl7BvcwIQyg" target="_blank">korea - Natural language processing</a>
 
 
 ### Seminar
