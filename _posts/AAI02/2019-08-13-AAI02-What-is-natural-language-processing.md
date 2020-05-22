@@ -289,6 +289,12 @@ print(kkma.nouns("열심히 코딩한 당신, 연휴에는 여행을 가봐요")
 ['코딩', '당신', '연휴', '여행']  <br>
 
 <br><br><br>
+#### Named entity recognition
+
+
+
+<br><br><br>
+
 #### Tokenization with regular expression
 ```python
 import nltk
