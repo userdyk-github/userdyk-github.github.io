@@ -118,7 +118,7 @@ title: RESEARCH
 
 
 > DEEPMIND 
->> <a href='https://deepmind.com/research' target="_blank">research</a>|<a href="https://deepmind.com/blog" target="_blank">blog</a>｜<a href='https://deepmind.com/careers/jobs' target="_blank">careers</a>|<br> 
+>> <a href='https://deepmind.com/research' target="_blank">research</a>|<a href="https://deepmind.com/blog" target="_blank">blog</a>|<a href='https://deepmind.com/careers/jobs' target="_blank">careers</a>|<br> 
 > <a href='' target="_blank"></a>
 
 > OPENAI
