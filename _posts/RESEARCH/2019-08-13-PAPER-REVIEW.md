@@ -31,7 +31,7 @@ tags : [RESEARCH]
 ---
 
 ## **Computer Vision**
-[paperwithcode](https://paperswithcode.com/area/computer-vision)
+[CV](https://userdyk-github.github.io/aai01/AAI01-Basic-image-processing.html)｜[paperwithcode](https://paperswithcode.com/area/computer-vision)
 
 - <span class='jb-medium'> <a href='' target="_blank">title</a>｜ <a href='' target="_blank">PDF</a>｜<a href="" target="_blank">Github</a>｜[PPT][]</span>
 
@@ -41,7 +41,7 @@ tags : [RESEARCH]
 ---
 
 ## **Natural Language Processing**
-[paperwithcode](https://paperswithcode.com/area/natural-language-processing)
+[NLP](https://userdyk-github.github.io/aai02/AAI02-What-is-natural-language-processing.html)｜[paperwithcode](https://paperswithcode.com/area/natural-language-processing)
 
 - <span class='jb-medium'> <a href='' target="_blank">title</a>｜ <a href='' target="_blank">PDF</a>｜<a href="" target="_blank">Github</a>｜[PPT][]</span>
 - <span class='jb-medium'> <a href='' target="_blank">title</a>｜ <a href='' target="_blank">PDF</a>｜<a href="" target="_blank">Github</a>｜[PPT][]</span>
