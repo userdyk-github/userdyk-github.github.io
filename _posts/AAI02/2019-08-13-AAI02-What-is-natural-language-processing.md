@@ -325,7 +325,7 @@ print(tokenizer.tokenize("Don't be fooled by the dark sounding name, Mr. Jone's 
 
 ---
 
-### ***Cleaning and normalization***
+### ***Cleaning and normalization : Morphological analysis***
 
 - morphology
   - stem
