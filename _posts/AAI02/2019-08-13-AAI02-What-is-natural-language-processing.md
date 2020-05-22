@@ -177,7 +177,7 @@ print("phrases :\n", phrases)
 
 
 
-## **Text preprocessing**
+## **Text preprocessing(1) : Lexical analysis**
 ### ***Tokenization***
 #### Word Tokenization
 `word_tokenize`
