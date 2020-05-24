@@ -20,6 +20,16 @@ List of posts to read before reading this article
 {:toc}
 
 <hr class="division1">
+## **Datasets**
+### MNIST
+```
+https://github.com/myleott/mnist_png
+```
+
+<br><br><br>
+<hr class="division2">
+
+
 ## **File I/O**
 ### ***Image***
 `jpg`
