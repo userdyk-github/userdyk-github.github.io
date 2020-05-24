@@ -101,6 +101,9 @@ tags : [PL03]
   - <a href='https://networkx.github.io/' target="_blank"><span class='jb-small'>https://networkx.github.io/</span></a>
 
 
+- <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-mlxtend.html'>mlxtend</a> ｜ <a href='' target="_blank">Cheat Sheet</a>
+  - <a href='http://rasbt.github.io/mlxtend/' target="_blank"><span class='jb-small'>http://rasbt.github.io/mlxtend/</span></a>
+
 
 
 <hr class="division2">
