@@ -896,6 +896,7 @@ $ kill -9 1894
 <hr class="division2">
 
 ## **Shell script**
+<a href="https://ryanstutorials.net/bash-scripting-tutorial/" target="_blank">Bash Scripting Tutorial</a>
 ### ***.sh file***
 
 #### Basic
