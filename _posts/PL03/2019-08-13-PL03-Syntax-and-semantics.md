@@ -4567,6 +4567,35 @@ test@gmail.com
 ### ***Into a world of powerful regular expression***
 
 <br><br><br>
+<hr class="division2">
+
+## **Debugging**
+
+### ***unittest***
+`workspace`
+```python
+class Calculator:
+    def add(self, a, b):
+        return a + b
+
+    def multiply(self, a, b):
+        return a * b
+```
+`unittest`
+```python
+from unittest import TestCase
+from workspace import Calculator
+
+class TestCalculator(TestCase):
+    def test_add(self):
+        self.calculator = Calculator()
+        self.assertEqual(self.calculator.add(3, 4), 7)
+
+    def test_multiply(self):
+        self.fail()
+```
+
+<br><br><br>
 <hr class="division1">
 
 List of posts followed by this article
