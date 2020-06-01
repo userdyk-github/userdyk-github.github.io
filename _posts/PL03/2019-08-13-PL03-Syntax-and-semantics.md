@@ -4578,21 +4578,24 @@ class Calculator:
     def add(self, a, b):
         return a + b
 
-    def multiply(self, a, b):
+    def mul(self, a, b):
         return a * b
 ```
 `unittest`
 ```python
-from unittest import TestCase
+import unittest, time
 from workspace import Calculator
 
-class TestCalculator(TestCase):
-    def test_add(self):
+class test_class(unittest.TestCase):
+    def test_module_add(self):
         self.calculator = Calculator()
         self.assertEqual(self.calculator.add(3, 4), 7)
 
-    def test_multiply(self):
+    def test_module_mul(self):
+        time.sleep(1)
         self.fail()
+        
+unittest.main()
 ```
 
 <br><br><br>
