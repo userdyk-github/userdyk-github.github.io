@@ -4580,11 +4580,14 @@ class Calculator:
 
     def mul(self, a, b):
         return a * b
+
+def Matmul(a, b):
+    return a * b
 ```
 `unittest`
 ```python
 import unittest, time
-from workspace import Calculator
+from workspace import Calculator, Matmul
 
 class test_class(unittest.TestCase):
     def test_module_add(self):
@@ -4594,7 +4597,12 @@ class test_class(unittest.TestCase):
     def test_module_mul(self):
         time.sleep(1)
         self.fail()
-        
+
+class test_function(unittest.TestCase):
+    def test_module_matmul(self):
+        time.sleep(1)
+        self.assertEqual(Matmul(3,5), 15)
+
 unittest.main()
 ```
 
