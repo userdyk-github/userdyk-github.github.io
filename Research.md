@@ -33,6 +33,7 @@ title: RESEARCH
 - <a href="https://www.groundai.com/" target="_blank">https://www.groundai.com/</a>
 - <a href="https://towardsdatascience.com/" target="_blank">https://towardsdatascience.com/</a>
 - <a href="https://paperswithcode.com/sota" target="_blank">https://paperswithcode.com/sota</a>
+- <a href="https://teachablemachine.withgoogle.com/" target="_blank">https://teachablemachine.withgoogle.com/</a>
 - <a href="https://pytorch.org/hub/research-models" target="_blank">https://pytorch.org/hub/research-models</a>
 - <a href='https://en.wikipedia.org/wiki/Glossary_of_artificial_intelligence' target="_blank">Glossary of artificial intelligence</a><br>
 
