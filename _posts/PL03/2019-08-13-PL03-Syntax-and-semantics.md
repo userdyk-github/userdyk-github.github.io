@@ -1784,6 +1784,7 @@ oct(12345)
 <br>
 
 <span class="frame3">open</span><br>
+<a href="https://securityspecialist.tistory.com/90" target="_blank">r, b, a, +</a>
 
 |mode|description|method|
 |:-|:-|:-|
@@ -1791,6 +1792,8 @@ oct(12345)
 |r|read|seek,read,readline,readlines|
 |a|append||
 |b|binary||
+|+|overwrite a part of doc||
+
 
 ```python
 f = open("binary_file", "rb")
