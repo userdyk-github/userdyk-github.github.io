@@ -4623,6 +4623,7 @@ List of posts followed by this article
 ---
 
 Reference
+- <a href="https://www.sololearn.com/Course/Python/" target="_blank">sololearn - python</a>
 - <a href="https://www.fun-coding.org/daveblog.html" target="_blank">fun coding</a>
 - <a href="https://dojang.io/course/view.php?id=7" target="_blank">dojang</a>
 - <a href='https://wikidocs.net/book/1' target="_blank">Jump to Python</a>
