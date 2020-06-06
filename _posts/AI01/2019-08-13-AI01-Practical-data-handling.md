@@ -30,6 +30,12 @@ List of posts to read before reading this article
 
 
 ## **File I/O**
+### ***json***
+
+<br><br><br>
+
+---
+
 ### ***Image***
 `jpg`
 ```bash
