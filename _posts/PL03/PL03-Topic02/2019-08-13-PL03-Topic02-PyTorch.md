@@ -1824,6 +1824,7 @@ Reference
 - <a href="https://pytorch.org/tutorials/" target="_blank">pytorch official tutorials</a>
 - <a href="http://www.gisdeveloper.co.kr/?p=8392">PyTorch의 Tensor 연산 퀵 레퍼런스</a>
 - <a href="https://nn.readthedocs.io/en/rtd/index.html">nn readthedocs</a>
+- <a href="https://teamdable.github.io/techblog/PyTorch-Autograd" target="_blank">autograd</a>
 
 - [https://github.com/pytorch](https://github.com/pytorch)
 - [https://github.com/pytorch/tutorials](https://github.com/pytorch/tutorials)
