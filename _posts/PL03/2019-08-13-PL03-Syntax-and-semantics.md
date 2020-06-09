@@ -2110,6 +2110,24 @@ args = parser.parse_args()
 print(args.env1)
 print(args.env2)
 ```
+```python
+import argparse
+
+def option():
+    parser = argparse.ArgumentParser(description="set your environment")   
+    parser.add_argument('--env1', type=str, required=False, help="env 1")
+    parser.add_argument('--env2', type=str, required=False, help="env 2")
+    args = parser.parse_args()
+    return args
+
+def main(opt):
+    print(args.env1)
+    print(args.env2)
+
+if __name__ == "__main__":
+    opt = option()
+    main(opt)
+```
 <br>
 
 #### pickle
