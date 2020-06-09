@@ -2121,8 +2121,8 @@ def option():
     return args
 
 def main(opt):
-    print(args.env1)
-    print(args.env2)
+    print(opt.env1)
+    print(opt.env2)
 
 if __name__ == "__main__":
     opt = option()
