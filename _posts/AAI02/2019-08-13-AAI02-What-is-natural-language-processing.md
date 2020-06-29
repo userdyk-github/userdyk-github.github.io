@@ -902,6 +902,7 @@ List of posts followed by this article
 ---
 
 Reference
+- <a href="https://pytorchnlp.readthedocs.io/en/latest/index.html" target="_blank">torchnlp</a>
 - <a href="https://torchtext.readthedocs.io/en/latest/index.html" target="_blank">API] torchtext</a>
 - <a href="https://www.nltk.org/py-modindex.html" target="_blank">API] nltk</a>
 - <a href="https://textblob.readthedocs.io/en/dev/api_reference.html" target="_blank">API] textblob</a>
