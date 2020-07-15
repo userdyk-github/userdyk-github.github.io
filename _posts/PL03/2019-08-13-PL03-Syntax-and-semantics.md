@@ -3676,6 +3676,7 @@ returned value of add is not mutiple of 3<br>
 ---
 
 ### ***Iterator : next!***
+![image](https://user-images.githubusercontent.com/52376448/87608461-f4f5c700-c73a-11ea-9cdc-5138af4a0d41.png)
 
 ```python
 class Counter:
