@@ -1293,6 +1293,31 @@ print(a is b)
 
 ---
 
+### ***Object***
+#### attribute
+```python
+class A:
+    pass
+
+a = A()
+
+None;                     print(f'* a', vars(a))
+setattr(a, 'x', 1);       print(f'* setattr : ', vars(a))
+hasattr(a, 'x');          print(f'* hasattr : {hasattr(a, "x")}')
+getattr(a, 'x');          print(f'* getattr : {getattr(a, "x")}')
+delattr(a, 'x');          print(f'* delattr : ', vars(a))                       
+```
+```
+* a {}
+* setattr :  {'x': 1}
+* hasattr : True
+* getattr : 1
+* delattr :  {}
+```
+<br><br><br>
+
+---
+
 ### ***Module***
 <a href="https://wikidocs.net/21132" target="_blank">module import</a>
 #### import
