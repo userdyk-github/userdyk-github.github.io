@@ -9,6 +9,7 @@ tags : [PL]
 ## _PL00_ : Computer Engineering
 ### _Computer Architecture_
 > <a href='https://userdyk-github.github.io/pl00/PL00-Computer-architecture.html'>Computer architecture</a><br>
+> <a href='https://userdyk-github.github.io/pl00/PL00-Parallel-computing.html'>Parallel computing</a>
 
 ### _Operating System_
 
