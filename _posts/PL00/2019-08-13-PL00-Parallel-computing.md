@@ -1,6 +1,6 @@
 ---
 layout : post
-title : PL00, CUDA Programming
+title : PL00, Parallel computing
 categories: [PL00]
 comments : true
 tags : [PL00]
