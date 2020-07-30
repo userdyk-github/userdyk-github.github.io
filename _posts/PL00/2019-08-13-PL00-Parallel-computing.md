@@ -34,7 +34,7 @@ List of posts to read before reading this article
 <hr class="division1">
 
 List of posts followed by this article
-- [post1](https://userdyk-github.github.io/)
+- Jaegeun Han, Bharatkumar Sharma - Learn CUDA Programming_ A beginner's guide to GPU programming and parallel computing with CUDA 10.x and C_C++-Packt Publishing (2019)
 - <a href='https://userdyk-github.github.io/'>post2</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
