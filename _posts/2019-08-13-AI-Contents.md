@@ -45,7 +45,6 @@ tags : [AI]
 
 ## _AI03 : Deep learning_
 
-> <a href='https://userdyk-github.github.io/ai03/AI03-Cuda-programming.html'>Cuda programming</a><br>
 > <a href='https://userdyk-github.github.io/ai03/AI03-Fundamental-of-deep-learning.html'>Fundamental of deep learning</a><br>
 > <a href='https://userdyk-github.github.io/ai03/AI03-Artificial-neural-networks.html'>Artificial neural networks</a><br>
 > <a href='https://userdyk-github.github.io/ai03/AI03-Convolutional-neural-networks.html'>Convolutional neural networks</a><br>
