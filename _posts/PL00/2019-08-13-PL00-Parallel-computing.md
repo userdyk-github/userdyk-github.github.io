@@ -142,8 +142,64 @@ List of posts to read before reading this article
 
 
 ## **CUDA Thread Programming**
+### ***CUDA threads, blocks, and the GPU***
+![image](https://user-images.githubusercontent.com/52376448/89061918-88b4cd80-d3a0-11ea-804f-771d55f69e4f.png)
+![image](https://user-images.githubusercontent.com/52376448/89061930-8d798180-d3a0-11ea-8615-1fe85149c7b2.png)
+![image](https://user-images.githubusercontent.com/52376448/89061943-92d6cc00-d3a0-11ea-8aeb-b780e5cc1214.png)
 
 <br><br><br>
+
+---
+
+### ***Understanding parallel reduction***
+![image](https://user-images.githubusercontent.com/52376448/89062028-b4d04e80-d3a0-11ea-800f-2d688763ad6e.png)
+
+<br><br><br>
+
+---
+
+### ***Naive parallel reduction using global memory***
+![image](https://user-images.githubusercontent.com/52376448/89062087-c9ace200-d3a0-11ea-848e-14c2eb52e3fe.png)
+
+<br><br><br>
+
+---
+
+### ***Reducing kernels using shared memory***
+![image](https://user-images.githubusercontent.com/52376448/89062130-dc271b80-d3a0-11ea-9357-e76aeedc9769.png)
+
+<br><br><br>
+
+---
+
+### ***Minimizing the CUDA warp divergence effect***
+![image](https://user-images.githubusercontent.com/52376448/89062181-f660f980-d3a0-11ea-9481-5aa3c014d70e.png)
+
+<br><br><br>
+
+---
+
+### ***Interleaved addressing***
+![image](https://user-images.githubusercontent.com/52376448/89062223-0bd62380-d3a1-11ea-8e7d-88a8e86055d3.png)
+
+<br><br><br>
+
+---
+
+### ***Sequential addressing***
+![image](https://user-images.githubusercontent.com/52376448/89062273-1c869980-d3a1-11ea-94c4-608488719dc9.png)
+
+<br><br><br>
+
+---
+
+### ***The Roofline model***
+![image](https://user-images.githubusercontent.com/52376448/89062327-345e1d80-d3a1-11ea-9fa0-0f79a3025483.png)
+
+<br><br><br>
+
+---
+
 <hr class="division2">
 
 ## **Kernel Execution Model and Optimization Strategies**
