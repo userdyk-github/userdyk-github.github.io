@@ -59,6 +59,17 @@ List of posts to read before reading this article
 <hr class="division2">
 
 ## **Programming with Libraries and Other Languages**
+### ***Linear algebra operation using cuBLAS***
+
+|level in cuBLAS|operation|
+|:--|:--|
+|level 1|vector-vector|
+|level 2|matrix-vector|
+|level 3|matrix-matrix|
+
+<br><br><br>
+
+---
 
 <br><br><br>
 <hr class="division2">
