@@ -73,6 +73,19 @@ List of posts to read before reading this article
 ![image](https://user-images.githubusercontent.com/52376448/89059873-f3fca080-d39c-11ea-9609-d91d803c4547.png)
 
 <br><br><br>
+
+### ***Coalesced versus uncoalesced global memory access***
+![image](https://user-images.githubusercontent.com/52376448/89060424-fc091000-d39d-11ea-841a-d0cf6e043e8a.png)
+![image](https://user-images.githubusercontent.com/52376448/89060458-088d6880-d39e-11ea-974f-8889c31e8cdf.png)
+![image](https://user-images.githubusercontent.com/52376448/89060529-235fdd00-d39e-11ea-89d6-8b4ae5cc40ea.png)
+![image](https://user-images.githubusercontent.com/52376448/89060565-31adf900-d39e-11ea-9416-86b442875c4f.png)
+![image](https://user-images.githubusercontent.com/52376448/89060621-4b4f4080-d39e-11ea-8c7d-8787a0dfcbf3.png)
+![image](https://user-images.githubusercontent.com/52376448/89060657-5904c600-d39e-11ea-969c-08b597ad0cbc.png)
+
+<br><br><br>
+
+---
+
 <hr class="division2">
 
 ## **CUDA Thread Programming**
