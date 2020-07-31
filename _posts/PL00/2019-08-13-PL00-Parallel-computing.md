@@ -246,8 +246,114 @@ List of posts to read before reading this article
 <hr class="division2">
 
 ## **Kernel Execution Model and Optimization Strategies**
+### ***Kernel execution with CUDA streams***
+#### The usage of CUDA streams
+![image](https://user-images.githubusercontent.com/52376448/89064317-bef44c00-d3a4-11ea-8417-cfe20775fee5.png)
+![image](https://user-images.githubusercontent.com/52376448/89064381-ddf2de00-d3a4-11ea-91a3-ed6c1c1d2f0a.png)
 
 <br><br><br>
+
+#### Stream-level synchronization
+![image](https://user-images.githubusercontent.com/52376448/89064430-f19e4480-d3a4-11ea-8ff8-61f5fd3612ef.png)
+
+<br><br><br>
+
+#### Working with the default stream
+![image](https://user-images.githubusercontent.com/52376448/89064465-04b11480-d3a5-11ea-80f8-8f4c1b2d2f00.png)
+
+<br><br><br>
+
+---
+
+### ***Pipelining the GPU execution***
+#### Concept of GPU pipelining
+![image](https://user-images.githubusercontent.com/52376448/89064532-1f838900-d3a5-11ea-9531-07e84071b539.png)
+![image](https://user-images.githubusercontent.com/52376448/89064545-24483d00-d3a5-11ea-91cd-07efc3ef1208.png)
+![image](https://user-images.githubusercontent.com/52376448/89064562-2a3e1e00-d3a5-11ea-937c-2bdd1f0eae98.png)
+
+
+<br><br><br>
+
+#### Building a pipelining execution
+![image](https://user-images.githubusercontent.com/52376448/89064623-48a41980-d3a5-11ea-8784-568a4844dea9.png)
+![image](https://user-images.githubusercontent.com/52376448/89064654-58bbf900-d3a5-11ea-9e89-a923a56f3b51.png)
+
+<br><br><br>
+
+---
+
+### ***The CUDA callback function***
+![image](https://user-images.githubusercontent.com/52376448/89064703-712c1380-d3a5-11ea-9282-8c4c40d129e6.png)
+
+<br><br><br>
+
+---
+
+### ***CUDA streams with priority***
+#### Stream execution with priorities
+![image](https://user-images.githubusercontent.com/52376448/89064781-9587f000-d3a5-11ea-9797-dbd0d8219807.png)
+
+<br><br><br>
+
+---
+
+### ***Kernel execution time estimation using CUDA events***
+#### Using CUDA events
+![image](https://user-images.githubusercontent.com/52376448/89064901-c405cb00-d3a5-11ea-8f44-da7a77a72d12.png)
+
+<br><br><br>
+
+---
+
+### ***CUDA dynamic parallelism***
+#### Usage of dynamic parallelism
+![image](https://user-images.githubusercontent.com/52376448/89064999-eef01f00-d3a5-11ea-9602-7b9626422dd8.png)
+
+<br><br><br>
+
+---
+
+### ***Grid-level cooperative groups***
+#### Understanding grid-level cooperative groups
+![image](https://user-images.githubusercontent.com/52376448/89065062-0a5b2a00-d3a6-11ea-8a23-e1ee33f23003.png)
+
+<br><br><br>
+
+---
+
+### ***CUDA kernel calls with OpenMP***
+#### CUDA kernel calls with OpenMP
+![image](https://user-images.githubusercontent.com/52376448/89065215-3d9db900-d3a6-11ea-987c-6543001e6345.png)
+
+<br><br><br>
+
+---
+
+### ***Multi-Process Service***
+![image](https://user-images.githubusercontent.com/52376448/89065273-51491f80-d3a6-11ea-853c-226911c2ff83.png)
+
+<br><br><br>
+
+#### Enabling MPS
+![image](https://user-images.githubusercontent.com/52376448/89065319-64f48600-d3a6-11ea-811a-624e89497f0d.png)
+
+<br><br><br>
+
+#### Profiling an MPI application and understanding MPS operation
+![image](https://user-images.githubusercontent.com/52376448/89065383-82c1eb00-d3a6-11ea-900e-5434085274c2.png)
+![image](https://user-images.githubusercontent.com/52376448/89065394-87869f00-d3a6-11ea-9a50-92664f7fb140.png)
+![image](https://user-images.githubusercontent.com/52376448/89065407-8f464380-d3a6-11ea-971f-ac4ecdc08785.png)
+
+<br><br><br>
+
+---
+
+### ***Kernel execution overhead comparison***
+#### Comparison of three executions
+![image](https://user-images.githubusercontent.com/52376448/89065470-bac92e00-d3a6-11ea-9fe8-035779bfe182.png)
+
+<br><br><br>
+
 <hr class="division2">
 
 ## **CUDA Application Profiling and Debugging**
