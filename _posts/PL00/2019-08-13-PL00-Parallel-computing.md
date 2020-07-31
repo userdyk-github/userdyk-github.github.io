@@ -362,8 +362,68 @@ List of posts to read before reading this article
 <hr class="division2">
 
 ## **Scalable Multi-GPU Programming**
+### ***Solving a linear equation using Gaussian elimination***
+#### Single GPU hotspot analysis of Gaussian elimination
+![image](https://user-images.githubusercontent.com/52376448/89065705-23b0a600-d3a7-11ea-84a1-f4555ea18381.png)
 
 <br><br><br>
+
+---
+
+### ***GPUDirect peer to peer***
+![image](https://user-images.githubusercontent.com/52376448/89065748-3aef9380-d3a7-11ea-960c-cd59ba0f8407.png)
+![image](https://user-images.githubusercontent.com/52376448/89065774-4347ce80-d3a7-11ea-91ee-30429673df96.png)
+![image](https://user-images.githubusercontent.com/52376448/89065788-480c8280-d3a7-11ea-990a-4c60fcdedca8.png)
+![image](https://user-images.githubusercontent.com/52376448/89065811-4e9afa00-d3a7-11ea-9671-6af0832f6022.png)
+
+<br><br><br>
+
+#### Single node – multi-GPU Gaussian elimination
+![image](https://user-images.githubusercontent.com/52376448/89065851-66727e00-d3a7-11ea-9a92-7f87afb780ed.png)
+
+<br><br><br>
+
+---
+
+### ***GPUDirect RDMA***
+![image](https://user-images.githubusercontent.com/52376448/89065917-7ee29880-d3a7-11ea-9799-ec43c2e86c05.png)
+![image](https://user-images.githubusercontent.com/52376448/89065926-843fe300-d3a7-11ea-840f-095dfe9dc65b.png)
+
+<br><br><br>
+
+#### CUDA-aware MPI
+![image](https://user-images.githubusercontent.com/52376448/89065983-9de12a80-d3a7-11ea-9322-99119bd2072f.png)
+
+<br><br><br>
+
+#### Multinode – multi-GPU Gaussian elimination
+![image](https://user-images.githubusercontent.com/52376448/89066052-c0734380-d3a7-11ea-9aa5-86b4f5218b5e.png)
+
+<br><br><br>
+
+---
+
+### ***CUDA streams***
+#### Application 1 – using multiple streams to overlap data transfers with kernel execution
+![image](https://user-images.githubusercontent.com/52376448/89066154-ec8ec480-d3a7-11ea-8efc-1bc2174e84ee.png)
+![image](https://user-images.githubusercontent.com/52376448/89066163-f284a580-d3a7-11ea-8525-080a8dd00968.png)
+
+<br><br><br>
+
+#### Application 2 – using multiple streams to run kernels on multiple devices
+![image](https://user-images.githubusercontent.com/52376448/89066200-05977580-d3a8-11ea-911a-d90594826c3a.png)
+
+<br><br><br>
+
+---
+
+### ***Additional tricks***
+#### Collective communication acceleration using NCCL
+![image](https://user-images.githubusercontent.com/52376448/89066291-2cee4280-d3a8-11ea-9c35-f299a8b6ca34.png)
+![image](https://user-images.githubusercontent.com/52376448/89066320-3aa3c800-d3a8-11ea-98f7-550f15d9b116.png)
+
+<br><br><br>
+
 <hr class="division2">
 
 ## **Parallel Programming Patterns in CUDA**
