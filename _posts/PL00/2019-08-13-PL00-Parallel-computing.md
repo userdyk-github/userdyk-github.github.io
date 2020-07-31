@@ -21,13 +21,54 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## **title1**
+## **Introduction to CUDA Programming**
 
 <br><br><br>
 
 <hr class="division2">
 
-## **title2**
+
+## **CUDA Memory Management**
+
+<br><br><br>
+<hr class="division2">
+
+## **CUDA Thread Programming**
+
+<br><br><br>
+<hr class="division2">
+
+## **Kernel Execution Model and Optimization Strategies**
+
+<br><br><br>
+<hr class="division2">
+
+## **CUDA Application Profiling and Debugging**
+
+<br><br><br>
+<hr class="division2">
+
+## **Scalable Multi-GPU Programming**
+
+<br><br><br>
+<hr class="division2">
+
+## **Parallel Programming Patterns in CUDA**
+
+<br><br><br>
+<hr class="division2">
+
+## **Programming with Libraries and Other Languages**
+
+<br><br><br>
+<hr class="division2">
+
+## **GPU Programming Using OpenACC**
+
+<br><br><br>
+<hr class="division2">
+
+## **Deep Learning Acceleration with CUDA**
 
 <br><br><br>
 
