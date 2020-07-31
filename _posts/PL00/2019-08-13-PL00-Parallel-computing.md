@@ -52,6 +52,16 @@ List of posts to read before reading this article
 
 ---
 
+### ***GPU architecture***
+![image](https://user-images.githubusercontent.com/52376448/89059253-d24ee980-d39b-11ea-81c8-6a482bac163f.png)
+
+|software|hardware|
+|:--|:--|
+|CUDA thread|CUDA Core/SIMD code|
+|CUDA block|Streaming multiprocessor|
+|GRID/kernel|GPU device|
+
+---
 
 <br><br><br>
 
