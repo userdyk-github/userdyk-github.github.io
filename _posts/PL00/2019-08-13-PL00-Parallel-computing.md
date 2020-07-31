@@ -526,6 +526,34 @@ List of posts to read before reading this article
 <hr class="division2">
 
 ## **GPU Programming Using OpenACC**
+### ***OpenACC directives***
+#### Parallel and loop directives
+![image](https://user-images.githubusercontent.com/52376448/89068844-0979c680-d3ad-11ea-89f7-7726c5d5d16b.png)
+![image](https://user-images.githubusercontent.com/52376448/89068878-11d20180-d3ad-11ea-8356-676188a41c46.png)
+
+<br><br><br>
+#### Data directive
+![image](https://user-images.githubusercontent.com/52376448/89068922-244c3b00-d3ad-11ea-8c67-c774550a0507.png)
+![image](https://user-images.githubusercontent.com/52376448/89068949-2f9f6680-d3ad-11ea-955a-5d8b8e2e0bcf.png)
+
+<br><br><br>
+
+---
+
+### ***Asynchronous programming in OpenACC***
+![image](https://user-images.githubusercontent.com/52376448/89069022-4fcf2580-d3ad-11ea-8bed-c7cd6221e648.png)
+
+<br><br><br>
+#### Applying the unstructured data and async directives to merge image code
+![image](https://user-images.githubusercontent.com/52376448/89069071-66757c80-d3ad-11ea-86ea-9d972854d0c2.png)
+
+<br><br><br>
+
+---
+
+### ***Additional important directives and clauses***
+#### Gang/vector/worker
+![image](https://user-images.githubusercontent.com/52376448/89069157-96bd1b00-d3ad-11ea-982c-822e5bee52f6.png)
 
 <br><br><br>
 <hr class="division2">
