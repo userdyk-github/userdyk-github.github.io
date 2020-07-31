@@ -427,8 +427,86 @@ List of posts to read before reading this article
 <hr class="division2">
 
 ## **Parallel Programming Patterns in CUDA**
+### ***Matrix multiplication optimization***
+![image](https://user-images.githubusercontent.com/52376448/89066427-66bf4900-d3a8-11ea-9651-b17107d5196e.png)
+![image](https://user-images.githubusercontent.com/52376448/89066453-72127480-d3a8-11ea-9529-471c500798b7.png)
 
 <br><br><br>
+#### Performance analysis of the tiling approach
+![image](https://user-images.githubusercontent.com/52376448/89066494-87879e80-d3a8-11ea-8eda-96da95d0a774.png)
+
+<br><br><br>
+
+---
+
+### ***Convolution***
+#### Convolution operation in CUDA
+![image](https://user-images.githubusercontent.com/52376448/89066549-a0904f80-d3a8-11ea-8fa4-9a22b2292278.png)
+
+<br><br><br>
+#### Optimization strategy
+![image](https://user-images.githubusercontent.com/52376448/89066601-b867d380-d3a8-11ea-8456-f805b2ff9886.png)
+![image](https://user-images.githubusercontent.com/52376448/89066618-bd2c8780-d3a8-11ea-9632-d439adbbe417.png)
+
+<br><br><br>
+
+---
+
+### ***Prefix sum (scan)***
+![image](https://user-images.githubusercontent.com/52376448/89066695-dd5c4680-d3a8-11ea-92f6-bf00336c5206.png)
+![image](https://user-images.githubusercontent.com/52376448/89066769-f49b3400-d3a8-11ea-8e20-fd6be4ec157a.png)
+
+<br><br><br>
+
+#### Building a global size scan
+![image](https://user-images.githubusercontent.com/52376448/89066823-14caf300-d3a9-11ea-86b2-ac282e3ccf72.png)
+
+<br><br><br>
+
+---
+
+### ***Compact and split***
+![image](https://user-images.githubusercontent.com/52376448/89066881-31672b00-d3a9-11ea-8555-3f979dfcd443.png)
+![image](https://user-images.githubusercontent.com/52376448/89066894-36c47580-d3a9-11ea-81b4-b6dba278dcb9.png)
+![image](https://user-images.githubusercontent.com/52376448/89066905-3c21c000-d3a9-11ea-9218-568d4c3bcdbd.png)
+![image](https://user-images.githubusercontent.com/52376448/89066917-404ddd80-d3a9-11ea-97ab-f38bb023f2c9.png)
+
+<br><br><br>
+
+---
+
+### ***N-body***
+#### Implementing an N-body simulation on GPU
+![image](https://user-images.githubusercontent.com/52376448/89066991-64a9ba00-d3a9-11ea-97ca-c17f14449458.png)
+
+<br><br><br>
+
+---
+
+### ***Histogram calculation***
+#### Understanding a parallel histogram
+![image](https://user-images.githubusercontent.com/52376448/89067082-8d31b400-d3a9-11ea-931e-6966ffe93c6f.png)
+
+<br><br><br>
+
+---
+
+### ***Quicksort and CUDA dynamic parallelism***
+#### Quicksort in CUDA using dynamic parallelism
+![image](https://user-images.githubusercontent.com/52376448/89067157-b6524480-d3a9-11ea-9100-0ace77434e94.png)
+![image](https://user-images.githubusercontent.com/52376448/89067172-bbaf8f00-d3a9-11ea-9b2a-40749d7b8949.png)
+
+<br><br><br>
+
+---
+
+### ***Radix sort***
+
+<br><br><br>
+
+---
+
+
 <hr class="division2">
 
 ## **Programming with Libraries and Other Languages**
