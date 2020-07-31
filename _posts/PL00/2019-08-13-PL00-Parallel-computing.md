@@ -69,6 +69,8 @@ List of posts to read before reading this article
 
 
 ## **CUDA Memory Management**
+![image](https://user-images.githubusercontent.com/52376448/89059845-e5ae8480-d39c-11ea-8892-6b264eb2f919.png)
+![image](https://user-images.githubusercontent.com/52376448/89059873-f3fca080-d39c-11ea-9609-d91d803c4547.png)
 
 <br><br><br>
 <hr class="division2">
