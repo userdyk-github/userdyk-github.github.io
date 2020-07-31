@@ -74,7 +74,8 @@ List of posts to read before reading this article
 
 <br><br><br>
 
-### ***Coalesced versus uncoalesced global memory access***
+### ***Global memory/device memory***
+#### Coalesced versus uncoalesced global memory access
 ![image](https://user-images.githubusercontent.com/52376448/89060424-fc091000-d39d-11ea-841a-d0cf6e043e8a.png)
 ![image](https://user-images.githubusercontent.com/52376448/89060458-088d6880-d39e-11ea-974f-8889c31e8cdf.png)
 ![image](https://user-images.githubusercontent.com/52376448/89060529-235fdd00-d39e-11ea-89d6-8b4ae5cc40ea.png)
@@ -86,7 +87,8 @@ List of posts to read before reading this article
 
 ---
 
-### ***Bank conflicts and its effect on shared memory***
+### ***Shared memory***
+#### Bank conflicts and its effect on shared memory
 ![image](https://user-images.githubusercontent.com/52376448/89060759-82bded00-d39e-11ea-834c-8197347def41.png)
 ![image](https://user-images.githubusercontent.com/52376448/89060780-8b162800-d39e-11ea-9d51-d8ec8cc9c503.png)
 ![image](https://user-images.githubusercontent.com/52376448/89060791-90737280-d39e-11ea-87a5-69da8922e23d.png)
@@ -156,16 +158,15 @@ List of posts to read before reading this article
 
 <br><br><br>
 
----
 
-### ***Naive parallel reduction using global memory***
+#### Naive parallel reduction using global memory
 ![image](https://user-images.githubusercontent.com/52376448/89062087-c9ace200-d3a0-11ea-848e-14c2eb52e3fe.png)
 
 <br><br><br>
 
 ---
 
-### ***Reducing kernels using shared memory***
+#### Reducing kernels using shared memory
 ![image](https://user-images.githubusercontent.com/52376448/89062130-dc271b80-d3a0-11ea-9357-e76aeedc9769.png)
 
 <br><br><br>
@@ -177,24 +178,66 @@ List of posts to read before reading this article
 
 <br><br><br>
 
----
+#### Determining divergence as a performance bottleneck
 
-### ***Interleaved addressing***
+<span class="frame3">Interleaved addressing</span><br>
 ![image](https://user-images.githubusercontent.com/52376448/89062223-0bd62380-d3a1-11ea-8e7d-88a8e86055d3.png)
 
-<br><br><br>
 
----
-
-### ***Sequential addressing***
+<span class="frame3">Sequential addressing</span><br>
 ![image](https://user-images.githubusercontent.com/52376448/89062273-1c869980-d3a1-11ea-94c4-608488719dc9.png)
 
 <br><br><br>
 
 ---
 
-### ***The Roofline model***
+### ***Performance modeling and balancing the limiter***
+#### The Roofline model
 ![image](https://user-images.githubusercontent.com/52376448/89062327-345e1d80-d3a1-11ea-9fa0-0f79a3025483.png)
+
+<br><br><br>
+
+---
+
+### ***Warp-level primitive programming***
+![image](https://user-images.githubusercontent.com/52376448/89062490-869f3e80-d3a1-11ea-96cb-48d580456bfb.png)
+![image](https://user-images.githubusercontent.com/52376448/89062536-961e8780-d3a1-11ea-88a7-5cbdec6f528e.png)
+![image](https://user-images.githubusercontent.com/52376448/89062557-9f0f5900-d3a1-11ea-97c7-92066e08261d.png)
+
+<br><br><br>
+
+#### Parallel reduction with warp primitives
+![image](https://user-images.githubusercontent.com/52376448/89062592-b3ebec80-d3a1-11ea-9e67-4ccd7b5184a0.png)
+![image](https://user-images.githubusercontent.com/52376448/89062605-b9493700-d3a1-11ea-8ef1-8c0dc410d0e9.png)
+
+<br><br><br>
+
+---
+
+### ***Cooperative Groups for flexible thread handling***
+#### Cooperative Groups in a CUDA thread block
+![image](https://user-images.githubusercontent.com/52376448/89062659-d120bb00-d3a1-11ea-889b-158bb6620752.png)
+
+<br><br><br>
+
+#### Benefits of Cooperative Groups
+<span class="frame3">Modularity</span><br>
+![image](https://user-images.githubusercontent.com/52376448/89062707-e72e7b80-d3a1-11ea-87f1-a63b465c6be3.png)
+
+<br><br><br>
+
+---
+
+### ***Atomic operations***
+![image](https://user-images.githubusercontent.com/52376448/89062760-fca3a580-d3a1-11ea-8b7b-b9b9cc44fc11.png)
+
+<br><br><br>
+
+---
+
+### ***Low/mixed precision operations***
+#### Dot product operations and accumulation for 8-bit integers and 16-bit data (DP4A and DP2A)
+![image](https://user-images.githubusercontent.com/52376448/89062823-147b2980-d3a2-11ea-8107-046584bb2dd5.png)
 
 <br><br><br>
 
