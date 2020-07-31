@@ -22,6 +22,27 @@ List of posts to read before reading this article
 <hr class="division1">
 
 ## **Introduction to CUDA Programming**
+### ***The history of high-performance computing***
+![image](https://user-images.githubusercontent.com/52376448/89057382-7f276780-d398-11ea-97e9-a0f3a974b3e0.png)
+
+<br><br><br>
+
+---
+
+### ***Heterogeneous computing***
+![image](https://user-images.githubusercontent.com/52376448/89057506-b6961400-d398-11ea-8f53-253e6c0a3d79.png)
+
+<br><br><br>
+
+---
+
+### ***Low latency versus higher throughput***
+![image](https://user-images.githubusercontent.com/52376448/89057597-e9d8a300-d398-11ea-9751-00e51dc36e63.png)
+
+<br><br><br>
+
+---
+
 
 <br><br><br>
 
