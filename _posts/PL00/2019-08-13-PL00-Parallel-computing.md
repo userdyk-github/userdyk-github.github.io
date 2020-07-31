@@ -96,7 +96,50 @@ List of posts to read before reading this article
 
 ---
 
+### ***Read-only data/cache***
+![image](https://user-images.githubusercontent.com/52376448/89060887-be58b700-d39e-11ea-8b4c-cfdf214fa543.png)
+
+<br><br><br>
+
+---
+
+### ***Registers in GPU***
+![image](https://user-images.githubusercontent.com/52376448/89060957-dcbeb280-d39e-11ea-930a-588f93142f20.png)
+
+<br><br><br>
+
+---
+
+### ***Pinned memory***
+
+<br><br><br>
+
+---
+
+### ***Unified memory***
+![image](https://user-images.githubusercontent.com/52376448/89061088-0d9ee780-d39f-11ea-9426-9baf54d099f4.png)
+
+<br><br><br>
+
+#### Understanding unified memory page allocation and transfer
+1. First, we need to allocate new pages on the GPU and CPU (first-touch basis). If the page is not present and mapped to another, a device page table page fault occurs. When *x, which resides in page 2, is accessed in the GPU that is currently mapped to CPU memory, it gets a page fault. Take a look at the following diagram:
+![image](https://user-images.githubusercontent.com/52376448/89061228-52c31980-d39f-11ea-90ba-695b5550fa2a.png)
+
+2. In the next step, the old page on the CPU is unmapped, as shown in the following diagram:
+![image](https://user-images.githubusercontent.com/52376448/89061244-58b8fa80-d39f-11ea-92ac-90fe4eb75ef4.png)
+
+3. Next, the data is copied from the CPU to the GPU, as shown in the following diagram:
+![image](https://user-images.githubusercontent.com/52376448/89061257-5e164500-d39f-11ea-898b-2c3ff1ca0bb3.png)
+
+4. Finally, the new pages are mapped on the GPU, while the old pages are freed on the CPU, as shown in the following diagram:
+![image](https://user-images.githubusercontent.com/52376448/89061269-640c2600-d39f-11ea-9e70-7ddd06462847.png)
+
+<br><br><br>
+
+---
+
 <hr class="division2">
+
 
 ## **CUDA Thread Programming**
 
