@@ -57,9 +57,9 @@ List of posts to read before reading this article
 
 |software|hardware|
 |:--|:--|
-|CUDA thread|CUDA Core/SIMD code|
-|CUDA block|Streaming multiprocessor|
-|GRID/kernel|GPU device|
+|CUDA Core/SIMD code|CUDA thread|
+|Streaming multiprocessor|CUDA block|
+|GPU device|GRID/kernel|
 
 ---
 
