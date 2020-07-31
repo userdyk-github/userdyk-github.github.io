@@ -86,6 +86,16 @@ List of posts to read before reading this article
 
 ---
 
+### ***Bank conflicts and its effect on shared memory***
+![image](https://user-images.githubusercontent.com/52376448/89060759-82bded00-d39e-11ea-834c-8197347def41.png)
+![image](https://user-images.githubusercontent.com/52376448/89060780-8b162800-d39e-11ea-9d51-d8ec8cc9c503.png)
+![image](https://user-images.githubusercontent.com/52376448/89060791-90737280-d39e-11ea-87a5-69da8922e23d.png)
+![image](https://user-images.githubusercontent.com/52376448/89060814-9bc69e00-d39e-11ea-8807-f3553ca24460.png)
+
+<br><br><br>
+
+---
+
 <hr class="division2">
 
 ## **CUDA Thread Programming**
