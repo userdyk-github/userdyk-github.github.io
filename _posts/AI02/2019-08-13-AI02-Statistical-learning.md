@@ -21,8 +21,9 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
-
+## **Regularization**
+### ***Label smoothing***
+<a href="https://leimao.github.io/blog/Label-Smoothing/" target="_blank">label smoothing</a>
 <hr class="division2">
 
 ## title2
