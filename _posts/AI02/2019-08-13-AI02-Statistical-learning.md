@@ -21,6 +21,11 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
+## **Loss**
+<a href="https://gist.github.com/yang-zhang/c94304dbc7f1f9be3333742b7e8249a7#file-pytorch-losses-in-plain-python-ipynb" target="_blank">loss</a>
+<br><br><br>
+<hr class="division2">
+
 ## **Regularization**
 ### ***Label smoothing***
 <a href="https://leimao.github.io/blog/Label-Smoothing/" target="_blank">label smoothing</a>
