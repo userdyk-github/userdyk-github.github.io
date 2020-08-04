@@ -26,6 +26,7 @@ tags : [AI]
 ## _AI02 : Machine learning_
 
 > <a href='https://userdyk-github.github.io/ai02/AI02-Dimensionality-reduction.html'>Dimensionality reduction</a><br>
+> <a href='https://userdyk-github.github.io/ai02/AI02-Statistical-learning.html'>Statistical learning</a>
 > <a href='https://userdyk-github.github.io/ai02/AI02-Performance-evaluation.html'>Performance evaluation</a><br>
 > <a href='https://userdyk-github.github.io/ai02/AI02-Regression.html'>Regression</a><br>
 > <a href='https://userdyk-github.github.io/ai02/AI02-Classification.html'>Classification</a><br>
