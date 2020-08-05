@@ -261,8 +261,7 @@ List of posts followed by this article
 
 Reference
 - <a href="https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_tutorials.html" target="_blank">opencv</a>
-- [post1](https://userdyk-github.github.io/)
-- <a href='https://userdyk-github.github.io/'>post2</a>
+- <a href='https://github.com/open-mmlab/mmdetection'>mmdetection</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
