@@ -902,8 +902,10 @@ List of posts followed by this article
 ---
 
 Reference
+- <a href="https://pytorch.org/docs/stable/nn.html" target="_blank">pytorch</a>
 - <a href="https://pytorchnlp.readthedocs.io/en/latest/index.html" target="_blank">torchnlp</a>
 - <a href="https://torchtext.readthedocs.io/en/latest/index.html" target="_blank">API] torchtext</a>
+- <a href="https://huggingface.co/transformers/" target="_blank">transformer</a>
 - <a href="https://www.nltk.org/py-modindex.html" target="_blank">API] nltk</a>
 - <a href="https://textblob.readthedocs.io/en/dev/api_reference.html" target="_blank">API] textblob</a>
 - <a href="https://stanfordnlp.github.io/stanfordnlp/pipeline.html" target="_blank">API] standfordnlp</a>
