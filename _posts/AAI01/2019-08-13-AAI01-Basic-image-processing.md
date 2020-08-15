@@ -263,6 +263,7 @@ Reference
 - <a href="https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_tutorials.html" target="_blank">opencv</a>
 - <a href='https://github.com/open-mmlab/mmdetection'>mmdetection</a>
 - <a href="https://m.blog.naver.com/destiny9720/221409956811">affine space</a>
+- <a href="https://people.cs.clemson.edu/~dhouse/courses/401/notes/affines-matrices.pdf">affine transform(clemson.edu)</a>
 - <a href='https://darkpgmr.tistory.com/79'>affine transform 1</a>
 - <a href="https://m.blog.naver.com/PostView.nhn?blogId=jang_hwan_im&logNo=221289668071&proxyReferer=https:%2F%2Fwww.google.com%2F">affine transform 2</a>
 
