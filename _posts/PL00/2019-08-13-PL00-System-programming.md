@@ -187,6 +187,7 @@ $ tar -xvf [file_name.tar]             # unzip .tar
 $ tar -zxvf [file_name.tar.gz]         # unzip .tar.gz
 $ gzip [file_name]                     # file_name to file_name.gz
 $ gzip -d [file_name].gz               # file_name.gz to file_name
+$ zip -r [folder_name].zip folder_a    # zip folder_a folder_name.zip
 $ unzip [file_name].zip
 $ unzip [file_name].zip [path]
 ```
