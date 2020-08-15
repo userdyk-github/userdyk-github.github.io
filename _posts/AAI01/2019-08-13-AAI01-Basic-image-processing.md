@@ -262,6 +262,7 @@ List of posts followed by this article
 Reference
 - <a href="https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_tutorials.html" target="_blank">opencv</a>
 - <a href='https://github.com/open-mmlab/mmdetection'>mmdetection</a>
-- <a href='https://userdyk-github.github.io/'>post3</a>
+- <a href='https://darkpgmr.tistory.com/79'>affine transform 1</a>
+- <a href="https://m.blog.naver.com/PostView.nhn?blogId=jang_hwan_im&logNo=221289668071&proxyReferer=https:%2F%2Fwww.google.com%2F">affine transform 2</a>
 
 ---
