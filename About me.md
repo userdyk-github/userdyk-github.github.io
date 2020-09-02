@@ -13,13 +13,11 @@ title: ABOUT ME
 
 <b>Dongmyeong Lee</b> <br>
 
-Ms candiate, <br> 
-<i>Human ICT Convergence</i>, <br>
+Ms candiate(<i>Human ICT Convergence</i>), <br>
 College of Information and Communication Engineering(CICE), <br>
 Sungkyunkwan University(SKKU), Suwon, 440-746, Korea <br>
 
-Bachelor of science, <br>
-<i>Physics</i>, <br>
+Bachelor of science(<i>Physics</i>), <br>
 College of Science(CS), <br>
 Sungkyunkwan University(SKKU), Suwon, 440-746, Korea <br>
 
