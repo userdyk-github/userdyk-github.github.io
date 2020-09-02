@@ -5,7 +5,7 @@ categories: [PL01]
 comments : true
 tags : [PL01]
 ---
-[Back to the previous page](https://userdyk-github.github.io/Study.html) <br>
+[Back to the previous page](https://userdyk-github.github.io/Programming.html) <br>
 List of posts to read before reading this article
 - <a href='https://userdyk-github.github.io/'>post1</a>
 - <a href='https://userdyk-github.github.io/'>post2</a>
