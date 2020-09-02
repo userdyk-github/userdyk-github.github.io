@@ -11,10 +11,10 @@ baseurl:             ''
 author:
   name:              Dongmyeong Lee
   url:               https://userdyk-github.github.io
-  email:             userdyk@gmail.com
+  email:             dongmyeong.6626070@gmail.com
 
 # Color scheme. Options: red, orange, magenta, cyan, blue, brown
-color-scheme:
+color-scheme: red
 
 # Permalinks
 permalink: none
