@@ -1,7 +1,7 @@
 ---
 
 layout: page
-title: SCIENCE
+title: ACADEMY
 ---
 
 ## _FI01 : Information technology_
