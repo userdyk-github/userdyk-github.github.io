@@ -23,18 +23,17 @@ Email(sending&reception) : dongmyeong.6626070@gmail.com <br>
 
 <hr>
 
-### GitHub | [URL](https://github.com/userdyk-github/)
+### [GitHub](https://github.com/userdyk-github/)
   - [programming-language](https://github.com/ailever/programming-language)
   - [numerical-method](https://github.com/ailever/numerical-method)
   - [statistics](https://github.com/ailever/statistics)
   - [deep-learning](https://github.com/ailever/deep-learning)
   - [applications](https://github.com/ailever/applications)
   
-### LinkedIn | [URL](https://www.linkedin.com/in/userdyk/)
-### Fackbook | [URL](https://www.facebook.com/userdyk)
-### Twitter | [URL](https://twitter.com/DongmyeongL)
-### ResearchGate | [URL](https://www.researchgate.net/profile/Dongmyeong_Lee2)
-### Google Scholar | [URL]()
-### Resume | 
+###  | [LinkedIn](https://www.linkedin.com/in/userdyk/)|
+###  | [Fackbook](https://www.facebook.com/userdyk)
+###  | [Twitter](https://twitter.com/DongmyeongL)
+###  | [ResearchGate](https://www.researchgate.net/profile/Dongmyeong_Lee2)
+
 
 <hr>
