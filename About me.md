@@ -19,7 +19,7 @@ Sungkyunkwan University(SKKU), Suwon, 440-746, Korea <br>
 
 
 <!--Mobile : +82-10-7327-0678 <br> -->
-Email(sending&reception) : userdyk@gmail.com <br>
+Email(sending&reception) : dongmyeong.6626070@gmail.com <br>
 
 <hr>
 
