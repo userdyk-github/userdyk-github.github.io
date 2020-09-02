@@ -7,8 +7,8 @@ title: ABOUT ME
 [LinkedIn](https://www.linkedin.com/in/dongmyeong/)|
 [Fackbook](https://www.facebook.com/dongmyeong.6626070/)|
 [Twitter](https://twitter.com/DongmyeongL)|
-[ResearchGate](https://www.researchgate.net/profile/Dongmyeong_Lee2)
-
+[ResearchGate](https://www.researchgate.net/profile/Dongmyeong_Lee2)|
+[Ailever](https://ailever.github.io/)
 
 ![userdyk](https://user-images.githubusercontent.com/52376448/62934273-15b4ee80-bdff-11e9-9f58-3783696280df.jpg)
 
@@ -30,7 +30,7 @@ Email(sending&reception) : dongmyeong.6626070@gmail.com <br>
 <hr>
 
 ### [GitHub](https://github.com/userdyk-github/)
-  - [ailever](https://ailever.github.io/)
+  - [ailever](https://github.com/ailever/ailever)
   - [programming-language](https://github.com/ailever/programming-language)
   - [numerical-method](https://github.com/ailever/numerical-method)
   - [statistics](https://github.com/ailever/statistics)
