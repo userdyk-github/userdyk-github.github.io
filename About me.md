@@ -5,7 +5,7 @@ title: ABOUT ME
 
 [GitHub](https://github.com/userdyk-github/)|
 [LinkedIn](https://www.linkedin.com/in/userdyk/)|
-[Fackbook](https://www.facebook.com/userdyk)|
+[Fackbook](https://www.facebook.com/dongmyeong.6626070/)|
 [Twitter](https://twitter.com/DongmyeongL)|
 [ResearchGate](https://www.researchgate.net/profile/Dongmyeong_Lee2)
 
