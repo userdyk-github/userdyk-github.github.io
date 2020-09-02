@@ -3,8 +3,10 @@ layout: page
 title: PROGRAMMING
 ---
 
+## Computer Engineering
 
 ### _Computer Architecture_
+
 > <a href='https://userdyk-github.github.io/pl00/PL00-Computer-architecture.html'>Computer architecture</a><br>
 > <a href='https://userdyk-github.github.io/pl00/PL00-Parallel-computing.html'>Parallel computing</a>
 
@@ -57,19 +59,19 @@ title: PROGRAMMING
 > <a href='https://userdyk-github.github.io/pl00/PL00-MS-PowerPoint.html'>MS PowerPoint</a><br>
 
 
-
 ---
 
-## _PL01 : C_
+
+## Programming Languages
+### _PL01 : C_
 
 > <a href='https://userdyk-github.github.io/pl01/PL01-Syntax.html'>Syntax</a><br>
 > <a href='https://userdyk-github.github.io/pl01/PL01-Libraries.html'>Libraries</a><br>
 > <a href='https://userdyk-github.github.io/pl01/PL01-Algorithm.html'>Algorithm</a><br>
 > <a href='https://userdyk-github.github.io/pl01/PL01-Numerical-methods.html'>Numerical methods</a><br>
 
----
 
-## _PL02 : Java_
+### _PL02 : Java_
 
 > <a href='https://userdyk-github.github.io/pl02/PL02-Syntax.html'>Syntax</a><br>
 > <a href='https://userdyk-github.github.io/pl02/PL02-Class-libraries.html'>Class libraries</a><br>
@@ -77,7 +79,7 @@ title: PROGRAMMING
 
 ---
 
-## _PL03 : Python_
+### _PL03 : Python_
 
 > <a href='https://userdyk-github.github.io/pl03/PL03-Syntax-and-semantics.html'>Syntax and semantics</a><br>
 > <a href='https://userdyk-github.github.io/pl03/PL03-Libraries.html'>Libraries</a><br>
@@ -86,7 +88,7 @@ title: PROGRAMMING
 
 ---
 
-## _PL04 : C++_
+### _PL04 : C++_
 
 > <a href='https://userdyk-github.github.io/pl04/PL04-Syntax.html'>Syntax</a><br>
 > <a href='https://userdyk-github.github.io/pl04/PL04-Standard-library.html'>Standard library</a><br>
@@ -94,28 +96,28 @@ title: PROGRAMMING
 
 ---
 
-## _PL05 : Mathematica_
+### _PL05 : Mathematica_
 
 > <a href='https://userdyk-github.github.io/pl05/PL05-Syntax.html'>Syntax</a><br>
 > <a href='https://userdyk-github.github.io/pl05/PL05-Applications.html'>Applications</a><br>
 
 ---
 
-## _PL06 : MATLAB_
+### _PL06 : MATLAB_
 
 > <a href='https://userdyk-github.github.io/pl06/PL06-Numerical-methods.html'>Numerical methods</a><br>
 > <a href='https://userdyk-github.github.io/pl06/PL06-Toolboxes.html'>Toolboxes</a><br>
 
 ---
 
-## _PL07 : R_
+### _PL07 : R_
 
 > <a href='https://userdyk-github.github.io/pl07/PL07-Syntax.html'>Syntax</a><br>
 > <a href='https://userdyk-github.github.io/pl07/PL07-Packages.html'>Packages</a><br>
 
 ---
 
-## _PL08 : Gnuplot_
+### _PL08 : Gnuplot_
 
 > <a href='https://userdyk-github.github.io/pl08/PL08-Syntax.html'>Syntax</a><br>
 > <a href='https://userdyk-github.github.io/pl08/PL08-Applications.html'>Applications</a><br>
@@ -123,7 +125,7 @@ title: PROGRAMMING
 
 ---
 
-## _PL09 : C sharp_
+### _PL09 : C sharp_
 
 > <a href='https://userdyk-github.github.io/pl09/PL09-Syntax.html'>Syntax</a><br>
 > <a href='https://userdyk-github.github.io/pl09/PL09-Libraries.html'>Libraries</a><br>
