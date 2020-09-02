@@ -30,10 +30,11 @@ Email(sending&reception) : dongmyeong.6626070@gmail.com <br>
   - [deep-learning](https://github.com/ailever/deep-learning)
   - [applications](https://github.com/ailever/applications)
   
-###  | [LinkedIn](https://www.linkedin.com/in/userdyk/)|
-###  | [Fackbook](https://www.facebook.com/userdyk)
-###  | [Twitter](https://twitter.com/DongmyeongL)
-###  | [ResearchGate](https://www.researchgate.net/profile/Dongmyeong_Lee2)
+[LinkedIn](https://www.linkedin.com/in/userdyk/)|
+[Fackbook](https://www.facebook.com/userdyk)|
+[Twitter](https://twitter.com/DongmyeongL)|
+[ResearchGate](https://www.researchgate.net/profile/Dongmyeong_Lee2)
+
 
 
 <hr>
