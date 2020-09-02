@@ -26,6 +26,7 @@ Email(sending&reception) : dongmyeong.6626070@gmail.com <br>
 ### GitHub | [URL](https://github.com/userdyk-github/)
   - [programming-language](https://github.com/ailever/programming-language)
   - [numerical-method](https://github.com/ailever/numerical-method)
+  - [statistics](https://github.com/ailever/statistics)
   - [deep-learning](https://github.com/ailever/deep-learning)
   - [applications](https://github.com/ailever/applications)
   
