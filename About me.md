@@ -5,7 +5,7 @@ title: ABOUT ME
 
 ![userdyk](https://user-images.githubusercontent.com/52376448/62934273-15b4ee80-bdff-11e9-9f58-3783696280df.jpg)
 
-Dongmyeong Lee <br>
+<b>Dongmyeong Lee</b> <br>
 
 Ms candiate, <br> 
 Human ICT Convergence, <br>
