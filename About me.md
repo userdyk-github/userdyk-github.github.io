@@ -21,6 +21,12 @@ Sungkyunkwan University(SKKU), Suwon, 440-746, Korea <br>
 <!--Mobile : +82-10-7327-0678 <br> -->
 Email(sending&reception) : dongmyeong.6626070@gmail.com <br>
 
+  
+[LinkedIn](https://www.linkedin.com/in/userdyk/)|
+[Fackbook](https://www.facebook.com/userdyk)|
+[Twitter](https://twitter.com/DongmyeongL)|
+[ResearchGate](https://www.researchgate.net/profile/Dongmyeong_Lee2)
+
 <hr>
 
 ### [GitHub](https://github.com/userdyk-github/)
@@ -29,12 +35,4 @@ Email(sending&reception) : dongmyeong.6626070@gmail.com <br>
   - [statistics](https://github.com/ailever/statistics)
   - [deep-learning](https://github.com/ailever/deep-learning)
   - [applications](https://github.com/ailever/applications)
-  
-[LinkedIn](https://www.linkedin.com/in/userdyk/)|
-[Fackbook](https://www.facebook.com/userdyk)|
-[Twitter](https://twitter.com/DongmyeongL)|
-[ResearchGate](https://www.researchgate.net/profile/Dongmyeong_Lee2)
 
-
-
-<hr>
