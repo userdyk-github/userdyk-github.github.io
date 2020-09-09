@@ -34,6 +34,12 @@ path = C:\Users\%USERNAME%\AppData\Local\Programs\Python\Python37\Lib\site-packa
 
 <hr class="division2">
 
+## **Convert ui-file to py-file**
+```bash
+pyuic5 [file.ui] -o [file.py]
+```
+<br><br><br>
+<hr class="division1">
 
 ## **Execute the ui-file by python**
 <b>ctrl + r</b> : form-preview on Qt-designer
