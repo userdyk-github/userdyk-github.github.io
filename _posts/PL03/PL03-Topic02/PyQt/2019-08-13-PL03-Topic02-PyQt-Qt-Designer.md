@@ -39,6 +39,7 @@ path = C:\Users\%USERNAME%\AppData\Local\Programs\Python\Python37\Lib\site-packa
 ```bash
 $ pyuic5 [ui_file.ui] -o [python_file.py]
 ```
+`main.py`
 ```python
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QApplication, QMainWindow
@@ -58,6 +59,9 @@ def main():
 
 if __name__ == '__main__':
     main()
+```
+```bash
+$ pyinstaller main.py 
 ```
 <br><br><br>
 <hr class="division1">
