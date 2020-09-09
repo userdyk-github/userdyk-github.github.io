@@ -35,8 +35,29 @@ path = C:\Users\%USERNAME%\AppData\Local\Programs\Python\Python37\Lib\site-packa
 <hr class="division2">
 
 ## **Convert ui-file to py-file**
+<a href="https://pythonbasics.org/qt-designer-python/" target="_blank">tutorial</a>
 ```bash
-pyuic5 [file.ui] -o [file.py]
+$ pyuic5 [ui_file.ui] -o [python_file.py]
+```
+```python
+from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtWidgets import QApplication, QMainWindow
+import sys
+import python_file
+
+class MyApp(QMainWindow, python_file.Ui_MainWindow):
+    def __init__(self, parent=None):
+        super(MyApp, self).__init__(parent)
+        self.setupUi(self)
+
+def main():
+    app = QApplication(sys.argv)
+    form = MyApp()
+    form.show()
+    app.exec_()
+
+if __name__ == '__main__':
+    main()
 ```
 <br><br><br>
 <hr class="division1">
