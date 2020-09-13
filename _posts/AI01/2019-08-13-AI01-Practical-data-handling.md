@@ -21,6 +21,7 @@ List of posts to read before reading this article
 
 <hr class="division1">
 ## **Datasets**
+<a href="https://github.com/jbrownlee/Datasets" target="_blank">datasets</a><br>
 ### MNIST
 <a href="https://github.com/myleott/mnist_png" target="_blank">https://github.com/myleott/mnist_png</a>
 
