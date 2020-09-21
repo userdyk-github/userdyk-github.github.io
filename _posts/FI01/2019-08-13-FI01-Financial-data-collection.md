@@ -23,6 +23,7 @@ List of posts to read before reading this article
 
 ## **Stock Information**
 - <a href="https://www.google.com/finance" target="_blank">google finance</a>
+  - <a href="https://github.com/google/gdata-python-client" target="_blank">gdata</a>
   - <a href="https://towardsdatascience.com/best-5-free-stock-market-apis-in-2019-ad91dddec984" target="_blank">manual</a>
 - <a href="https://github.com/ranaroussi/yfinance">yfinance</a>
   - <a href="https://towardsdatascience.com/best-5-free-stock-market-apis-in-2019-ad91dddec984" target="_blank">manual</a>
