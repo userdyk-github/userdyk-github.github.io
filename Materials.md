@@ -55,7 +55,6 @@ title: MATERIALS
 
 
   ｜<b>official web site</b>｜
-
   <a href="https://developers.naver.com/main/" target="_blank">naver developer</a>, 
   <a href="https://developers.kakao.com/" target="_blank">kakao developer</a>, 
   <a href="https://developers.google.com/" target="_blank">google developer</a>, 
@@ -78,7 +77,6 @@ title: MATERIALS
   <a href="https://www.edwith.org/" target="_blank">edwith</a>,
 
   ｜<b>private web site</b>｜
-
   <a href="http://hepth.hanyang.ac.kr/~sjs/index.html" target="_blank">sjs[PHY]</a>
   <a href="https://datascienceschool.net/" target="_blank">datascienceschool[DL,STAT]</a>, 
   <a href="http://www.gisdeveloper.co.kr/" target="_blank">gisdeveloper[DL,CV]</a>, 
@@ -95,7 +93,6 @@ title: MATERIALS
 
 
   ｜<b>youtube</b>｜
-
   <a href="https://www.youtube.com/user/egoing2/playlists" target="_blank">생활코딩</a>, 
   <a href="https://www.youtube.com/channel/UChflhu32f5EUHlY7_SetNWw/playlists" target="_blank">동빈나</a>, 
   <a href="https://www.youtube.com/channel/UCei9IGoBLCRShZaBb_RN_IA/playlists" target="_blank">시니어코딩IndiFlex</a>, 
