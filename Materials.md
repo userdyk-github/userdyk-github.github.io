@@ -3,17 +3,12 @@ layout: page
 title: MATERIALS
 ---
 
-![image](https://user-images.githubusercontent.com/52376448/74589990-b229a900-504d-11ea-844c-47c3931efd7e.png)
-
 # Constitutional ogranization
 ## Government ｜ <a href="https://www1.president.go.kr/about/government-organization" target="_blank">URL</a>
 
 - <a href='https://www1.president.go.kr/about/organization' target="_blank">청와대</a>, <a href='http://www.pss.go.kr/site/homepage/menu/viewMenu?menuid=001006007' target="_blank">대통령 경호처</a>,  <a href='https://www.nis.go.kr:4016/main.do' target="_blank">국가 정보원</a>, <a href='http://www.bai.go.kr/bai/html/intro/organ/organizationchart.do?mdex=bai83' target="_blank">감사원</a>, <a href='https://kcc.go.kr/user/organoHR.do?page=A04060100&dc=K06050100' target="_blank">방송통신위원회</a>, <a href='https://www.humanrights.go.kr/site/organ/index?menuid=001005001007' target="_blank">국가인권위원회</a>
 - <a href='http://www.opm.go.kr/opm/office/group01.do' target="_blank">국무조정실</a>, <a href='http://www.opm.go.kr/opm/office/group02.do' target="_blank">국무총리비서실</a>, <a href='https://www.mpva.go.kr/mpva/main.do' target="_blank">국가보훈처</a>, <a href='http://www.mpm.go.kr/mpm/about/aboutorg/orgchart/' target="_blank">인사혁신처</a>, <a href='https://www.moleg.go.kr/menu.es?mid=a10705010000' target="_blank">법제처</a>, <a href='https://www.mfds.go.kr/wpge/m_270/de010705l0001.do' target="_blank">식품의약품안전처</a>, <a href='http://www.ftc.go.kr/www/contents.do?key=348' target="_blank">공정거래위원회</a>, <a href='http://www.fsc.go.kr/about/org_list.jsp?menu=7140200' target="_blank">금융위원회</a>, <a href='http://www.acrc.go.kr/acrc/introorgan/H_OrgGuide.do?command=move&menuId=050605' target="_blank">국민권익위원회</a>, <a href='https://www.nssc.go.kr/ko/cms/FR_CON/index.do?MENU_ID=110' target="_blank">원자력안전위원회</a>
 - <a href='http://www.moef.go.kr/mi/orgnzt/org.do;jsessionid=drxQZO-70JMhD9NJR9GOKf2g.node30?bbsId=MOSFBBS_000000000097&menuNo=9040100' target="_blank">기획재정부</a>, <a href='https://www.moe.go.kr/sub/info.do?page=0604&m=0604&s=moe' target="_blank">교육부</a>, <a href='https://www.msit.go.kr/web/msipContents/contents.do?mId=MTAzOA==' target="_blank">과학기술정보통신부</a>, <a href='http://www.mofa.go.kr/www/pgm/m_4276/uss/org/orgcht.do?type=list' target="_blank">외교부</a>, <a href='https://www.unikorea.go.kr/unikorea/about/organization/headquarters/' target="_blank">통일부</a>, <a href='http://www.moj.go.kr/moj/265/subview.do' target="_blank">법무부</a>, <a href='http://www.mnd.go.kr/cop/dept/deptInfo2.do?siteId=mnd&id=mnd_060501000000' target="_blank">국방부</a>, <a href='https://www.mois.go.kr/frt/sub/a07/orgranFunction/screen.do' target="_blank">행정안전부</a>, <a href='https://www.mcst.go.kr/kor/s_about/organ/main/mainOrgan.jsp' target="_blank">문화체육관광부</a>, <a href='http://www.mafra.go.kr/mafra/437/subview.do' target="_blank">농림축산식품부</a>, <a href='http://www.motie.go.kr/motie/mi/on/headquarters/organizationUser/headquartersView.do' target="_blank">산업통산자원부</a>, <a href='http://www.mohw.go.kr/react/sg/ssg0101mn.jsp?PAR_MENU_ID=05&MENU_ID=050201' target="_blank">보건복지부</a>, <a href='http://me.go.kr/home/web/index.do?menuId=10427' target="_blank">환경부</a>, <a href='http://www.moel.go.kr/agency/org/ministry/list.do' target="_blank">고용노동부</a>, <a href='http://www.mogef.go.kr/mi/osg/mi_osg_s001.do' target="_blank">여성가족부</a>, <a href='http://www.molit.go.kr/USR/WPGE0201/m_212/DTL.jsp' target="_blank">국토교통부</a>, <a href='http://www.mof.go.kr/content/view.do?menuKey=630&contentKey=6' target="_blank">해양수산부</a>, <a href='https://www.mss.go.kr/site/smba/ex/organchart/organchart_office_org.do' target="_blank">중소벤처기업부</a>
-
-
-
 
 
 ## National assembly
@@ -28,11 +23,6 @@ title: MATERIALS
 <br>
 
 
-![201504101627657_7AQ6330C](https://user-images.githubusercontent.com/52376448/64490143-18d3bb00-d295-11e9-9ada-3333b6ca079e.jpg)
-
-# LECTURES
-
-## Physics
 
 ### General physics
 
@@ -186,7 +176,7 @@ title: MATERIALS
 
 # REFERENCES 02 - private web site
 
-
+<a href="http://hepth.hanyang.ac.kr/~sjs/index.html" target="_blank">sjs[PHY]</a>
 <a href="https://datascienceschool.net/" target="_blank">datascienceschool[DL,STAT]</a>, 
 <a href="http://www.gisdeveloper.co.kr/" target="_blank">gisdeveloper[DL,CV]</a>, 
 <a href="https://bskyvision.com/" target="_blank">bskyvision[CV]</a>, 
