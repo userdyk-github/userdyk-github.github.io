@@ -121,7 +121,7 @@ title: MATERIALS
 
   ｜<b>Statistics</b>｜
 
-  ｜<b>Machine learning</b>
+  ｜<b>Machine learning</b>｜
   <a href='https://www.youtube.com/playlist?list=PLbhbGI_ppZISMV4tAWHlytBqNq1-lb8bz' target="_blank">Machine learning theory 1</a>,
   <a href='https://www.youtube.com/playlist?list=PLbhbGI_ppZIRPeAjprW9u9A46IJlGFdLn' target="_blank">Machine learning theory 2</a>,
   <a href='https://www.youtube.com/playlist?list=PLRx0vPvlEmdAbnmLH9yh03cw9UQU_o7PO' target="_blank">Machine learning with tensorflow</a>,
