@@ -3,6 +3,8 @@ layout: page
 title: MATERIALS
 ---
 
+<div style="font-size:70%;">
+
 **Government** ｜ <a href="https://www1.president.go.kr/about/government-organization" target="_blank">URL</a>
 
 - <a href='https://www1.president.go.kr/about/organization' target="_blank">청와대</a>, <a href='http://www.pss.go.kr/site/homepage/menu/viewMenu?menuid=001006007' target="_blank">대통령 경호처</a>,  <a href='https://www.nis.go.kr:4016/main.do' target="_blank">국가 정보원</a>, <a href='http://www.bai.go.kr/bai/html/intro/organ/organizationchart.do?mdex=bai83' target="_blank">감사원</a>, <a href='https://kcc.go.kr/user/organoHR.do?page=A04060100&dc=K06050100' target="_blank">방송통신위원회</a>, <a href='https://www.humanrights.go.kr/site/organ/index?menuid=001005001007' target="_blank">국가인권위원회</a>
@@ -127,6 +129,8 @@ title: MATERIALS
 
 # REFERENCE 04 - github
 <a href="https://github.com/cheonbi?tab=repositories" target="_blank">time series</a>
+
+</div>
 
 
 [1]:{{ site.url }}/download/daily.pptx
