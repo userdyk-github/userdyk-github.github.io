@@ -215,7 +215,7 @@ title: MATERIALS
 <a href="https://www.youtube.com/channel/UCVrs4KiLQz_gvVWWK1pKR1g/playlists" target="_blank">HSM - edu 통계</a>, 
 
 # REFERENCE 04 - github
-<a href="https://github.com/cheonbi?tab=repositories" target="_blank">time seris</a>
+<a href="https://github.com/cheonbi?tab=repositories" target="_blank">time series</a>
 
 
 [1]:{{ site.url }}/download/daily.pptx
