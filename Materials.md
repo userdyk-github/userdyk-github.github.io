@@ -24,7 +24,7 @@ title: MATERIALS
 
   ｜<b>Classical mechanics</b>｜
   <a href='https://www.youtube.com/playlist?list=PL64B5F3F1CE0810A7&feature=plcp' target="_blank">Classical mechanics 1</a>,
-  ｜<a href='https://www.youtube.com/playlist?list=PL4D242F3BA8DD1153&feature=plcp' target="_blank">Classical mechanics 2</a>
+  <a href='https://www.youtube.com/playlist?list=PL4D242F3BA8DD1153&feature=plcp' target="_blank">Classical mechanics 2</a>
 
   ｜<b>Electromagnetism</b>｜
   <a href='https://www.youtube.com/playlist?list=PLSN_PltQeOygYMgaiszAPg-_W783IDYqc' target="_blank">Electromagnetism 1</a>,
