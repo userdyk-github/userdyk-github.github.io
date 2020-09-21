@@ -187,7 +187,7 @@ title: MATERIALS
   <a href="https://www.edwith.org/" target="_blank">edwith</a>,
 
   ｜<b>private web site</b>｜
-  <a href="http://hepth.hanyang.ac.kr/~sjs/index.html" target="_blank">sjs[PHY]</a>
+  <a href="http://hepth.hanyang.ac.kr/~sjs/index.html" target="_blank">sjs[PHY]</a>,
   <a href="https://datascienceschool.net/" target="_blank">datascienceschool[DL,STAT]</a>,
   <a href="http://www.gisdeveloper.co.kr/" target="_blank">gisdeveloper[DL,CV]</a>,
   <a href="https://bskyvision.com/" target="_blank">bskyvision[CV]</a>,
