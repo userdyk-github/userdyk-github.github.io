@@ -214,7 +214,8 @@ title: MATERIALS
 <a href="https://www.youtube.com/channel/UCLR3sD0KB_dWpvcsrLP0aUg/playlists" target="_blank">todaycode오늘코드</a>, 
 <a href="https://www.youtube.com/channel/UCVrs4KiLQz_gvVWWK1pKR1g/playlists" target="_blank">HSM - edu 통계</a>, 
 
-
+# REFERENCE 04 - github
+<a href="https://github.com/cheonbi?tab=repositories" target="_blank">time seris</a>
 
 
 [1]:{{ site.url }}/download/daily.pptx
