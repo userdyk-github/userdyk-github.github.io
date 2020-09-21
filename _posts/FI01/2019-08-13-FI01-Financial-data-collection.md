@@ -21,7 +21,8 @@ List of posts to read before reading this article
 
 <hr class="division1">
 
-## title1
+## **Stock Information**
+- <a href="https://www.google.com/finance" target="_blank">google finance</a>
 
 <hr class="division2">
 
