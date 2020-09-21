@@ -3,7 +3,6 @@ layout: page
 title: MATERIALS
 ---
 
-# Constitutional ogranization
 ## Government ｜ <a href="https://www1.president.go.kr/about/government-organization" target="_blank">URL</a>
 
 - <a href='https://www1.president.go.kr/about/organization' target="_blank">청와대</a>, <a href='http://www.pss.go.kr/site/homepage/menu/viewMenu?menuid=001006007' target="_blank">대통령 경호처</a>,  <a href='https://www.nis.go.kr:4016/main.do' target="_blank">국가 정보원</a>, <a href='http://www.bai.go.kr/bai/html/intro/organ/organizationchart.do?mdex=bai83' target="_blank">감사원</a>, <a href='https://kcc.go.kr/user/organoHR.do?page=A04060100&dc=K06050100' target="_blank">방송통신위원회</a>, <a href='https://www.humanrights.go.kr/site/organ/index?menuid=001005001007' target="_blank">국가인권위원회</a>
@@ -11,19 +10,8 @@ title: MATERIALS
 - <a href='http://www.moef.go.kr/mi/orgnzt/org.do;jsessionid=drxQZO-70JMhD9NJR9GOKf2g.node30?bbsId=MOSFBBS_000000000097&menuNo=9040100' target="_blank">기획재정부</a>, <a href='https://www.moe.go.kr/sub/info.do?page=0604&m=0604&s=moe' target="_blank">교육부</a>, <a href='https://www.msit.go.kr/web/msipContents/contents.do?mId=MTAzOA==' target="_blank">과학기술정보통신부</a>, <a href='http://www.mofa.go.kr/www/pgm/m_4276/uss/org/orgcht.do?type=list' target="_blank">외교부</a>, <a href='https://www.unikorea.go.kr/unikorea/about/organization/headquarters/' target="_blank">통일부</a>, <a href='http://www.moj.go.kr/moj/265/subview.do' target="_blank">법무부</a>, <a href='http://www.mnd.go.kr/cop/dept/deptInfo2.do?siteId=mnd&id=mnd_060501000000' target="_blank">국방부</a>, <a href='https://www.mois.go.kr/frt/sub/a07/orgranFunction/screen.do' target="_blank">행정안전부</a>, <a href='https://www.mcst.go.kr/kor/s_about/organ/main/mainOrgan.jsp' target="_blank">문화체육관광부</a>, <a href='http://www.mafra.go.kr/mafra/437/subview.do' target="_blank">농림축산식품부</a>, <a href='http://www.motie.go.kr/motie/mi/on/headquarters/organizationUser/headquartersView.do' target="_blank">산업통산자원부</a>, <a href='http://www.mohw.go.kr/react/sg/ssg0101mn.jsp?PAR_MENU_ID=05&MENU_ID=050201' target="_blank">보건복지부</a>, <a href='http://me.go.kr/home/web/index.do?menuId=10427' target="_blank">환경부</a>, <a href='http://www.moel.go.kr/agency/org/ministry/list.do' target="_blank">고용노동부</a>, <a href='http://www.mogef.go.kr/mi/osg/mi_osg_s001.do' target="_blank">여성가족부</a>, <a href='http://www.molit.go.kr/USR/WPGE0201/m_212/DTL.jsp' target="_blank">국토교통부</a>, <a href='http://www.mof.go.kr/content/view.do?menuKey=630&contentKey=6' target="_blank">해양수산부</a>, <a href='https://www.mss.go.kr/site/smba/ex/organchart/organchart_office_org.do' target="_blank">중소벤처기업부</a>
 
 
-## National assembly
-
 
 <br><br><br>
-
-<br>
-
-<hr class='division2'>
-
-<br>
-
-
-
 ### General physics
 
 - <a href='https://www.youtube.com/channel/UCmgRYMK5d65PbjN8qkjAUBA/playlists' target="_blank">Basics physics</a>, <a href='https://www.youtube.com/playlist?list=PL9A47564559299240&feature=plcp' target="_blank">Principle of physical phenomenon</a>
