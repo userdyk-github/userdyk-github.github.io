@@ -83,7 +83,7 @@ title: MATERIALS
   <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMAnWgUYiAW2cTzSBywFO75B' target="_blank">CSS1</a>,
   <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMDaVaBmkX0qfB45R_bYrV62' target="_blank">CSS2</a>,
   <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMBB348PWRN0fREzYcYgFybf' target="_blank">Java Script</a>,
-  <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMA9QQX5wqj6ThK7t2tsGxjm' target="_blank">Node.js<a>,
+  <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMA9QQX5wqj6ThK7t2tsGxjm' target="_blank">Node.js</a>,
   <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMAMMNByX8Bf1BkVrShBhj1I' target="_blank">PHP</a>,
   <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMDMxfZEpLbzHPZUEwObEaZq' target="_blank">Python</a>,
   <a href='https://www.youtube.com/playlist?list=PLuHgQVnccGMA4guyznDlykFJh28_R08Q-' target="_blank">OAuth</a>,
@@ -195,7 +195,7 @@ title: MATERIALS
   <a href="https://www.fun-coding.org/index.html" target="_blank">fun coding[PL]</a>,
   <a href="https://freshrimpsushi.tistory.com/" target="_blank">freshrimpsushi[MATH,STAT,PHY]</a>,
   <a href="https://eungbean.github.io/index.html" target="_blank">eungbean</a>,
-  <a href="http://research.sualab.com/" target="_blank">sualab[DL,CV]</a>,
+  <a href="http://research.sualab.com/" target="_blank">sualab[DL,CV]</a>
   <a href="https://bab2min.tistory.com/category/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/NLP?page=1" target="_blank">bab2min[NLP]</a>,
   <a href="https://ratsgo.github.io/blog/categories/" target="_blank">ratsgo[ML,NLP,STAT]</a>,
   <a href="https://losskatsu.github.io/categories/list#" target="_blank">losskatsu[ML,STAT]</a>,
