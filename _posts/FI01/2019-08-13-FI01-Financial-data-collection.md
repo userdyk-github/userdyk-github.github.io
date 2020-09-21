@@ -24,7 +24,9 @@ List of posts to read before reading this article
 ## **Stock Information**
 - <a href="https://www.google.com/finance" target="_blank">google finance</a>
   - <a href="https://developers.google.com/gdata/" target="_blank">gdata</a>
-    - <a href="https://developers.google.com/gdata/docs/directory" target="_blank">gdata api directory</a>
+    - <a href="https://developers.google.com/gdata/docs/directory" target="_blank">gdata api directory1</a>
+    - <a href="https://developers.google.com/gdata/jsdoc/2.2/google/gdata/" target="_blank">gdata api directory2</a>
+      -<a href="https://developers.google.com/gdata/jsdoc/2.2/google/gdata/finance/" target="_blank">finance</a>
     - <a href="https://github.com/google/gdata-python-client" target="_blank">github</a>
   - <a href="https://towardsdatascience.com/best-5-free-stock-market-apis-in-2019-ad91dddec984" target="_blank">manual</a>
 - <a href="https://github.com/ranaroussi/yfinance">yfinance</a>
