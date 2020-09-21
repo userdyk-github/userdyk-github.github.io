@@ -107,6 +107,3 @@ title: MATERIALS
 
 </div>
 
-
-[1]:{{ site.url }}/download/daily.pptx
-
