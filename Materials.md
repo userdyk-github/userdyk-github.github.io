@@ -54,7 +54,7 @@ title: MATERIALS
 
 
 
-# REFERENCES 01 - official web site
+｜<b>REFERENCES 01 - official web site</b>｜
 
 <a href="https://developers.naver.com/main/" target="_blank">naver developer</a>, 
 <a href="https://developers.kakao.com/" target="_blank">kakao developer</a>, 
@@ -77,7 +77,7 @@ title: MATERIALS
 <a href="http://www.kocw.net/home/index.do" target="_blank">kocw</a>, 
 <a href="https://www.edwith.org/" target="_blank">edwith</a>,
 
-# REFERENCES 02 - private web site
+｜<b>REFERENCES 02 - private web site</b>｜
 
 <a href="http://hepth.hanyang.ac.kr/~sjs/index.html" target="_blank">sjs[PHY]</a>
 <a href="https://datascienceschool.net/" target="_blank">datascienceschool[DL,STAT]</a>, 
@@ -94,7 +94,7 @@ title: MATERIALS
 <a href="http://sanghyukchun.github.io/57/" target="_blank">sanghyukchun[ML]</a>,
 
 
-# REFERENCES 03 - youtube
+｜<b>REFERENCES 03 - youtube</b>｜
 
 <a href="https://www.youtube.com/user/egoing2/playlists" target="_blank">생활코딩</a>, 
 <a href="https://www.youtube.com/channel/UChflhu32f5EUHlY7_SetNWw/playlists" target="_blank">동빈나</a>, 
@@ -102,7 +102,7 @@ title: MATERIALS
 <a href="https://www.youtube.com/channel/UCLR3sD0KB_dWpvcsrLP0aUg/playlists" target="_blank">todaycode오늘코드</a>, 
 <a href="https://www.youtube.com/channel/UCVrs4KiLQz_gvVWWK1pKR1g/playlists" target="_blank">HSM - edu 통계</a>, 
 
-# REFERENCE 04 - github
+｜<b>REFERENCE 04 - github</b>｜
 <a href="https://github.com/cheonbi?tab=repositories" target="_blank">time series</a>
 
 </div>
