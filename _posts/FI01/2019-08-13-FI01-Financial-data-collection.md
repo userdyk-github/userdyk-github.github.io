@@ -1,6 +1,6 @@
 ---
 layout : post
-title : FI01
+title : FI01, Financial data collection
 categories: [FI01]
 comments : true
 tags : [FI01]
