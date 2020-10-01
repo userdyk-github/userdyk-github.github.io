@@ -29,11 +29,14 @@ List of posts to read before reading this article
 ---
 
 ### ***Financial Position***
-- Equity = asset - debt
+- Equity = asset - liabilities
   - asset : Depreciation
     - current asset
     - non-current asset
-
+  - liabilities
+    - current liabilities
+    - non-current liabilities
+    
 <br><br><br>
 
 ---
