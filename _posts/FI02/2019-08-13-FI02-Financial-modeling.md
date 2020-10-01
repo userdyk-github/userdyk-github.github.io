@@ -32,7 +32,8 @@ List of posts to read before reading this article
 - Equity = asset - liabilities
   - asset : Depreciation
     - current asset
-      - quick assets
+      - quick asset
+      - inventory asset
     - non-current asset
   - liabilities
     - current liabilities
