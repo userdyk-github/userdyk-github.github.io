@@ -22,7 +22,7 @@ List of posts to read before reading this article
 <hr class="division1">
 
 ## **Financial Statements**
- - captical = asset - cost 
+ - capital = asset - cost 
 
 ### ***Accrual Basis***
 
