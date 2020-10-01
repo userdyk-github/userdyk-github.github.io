@@ -14,7 +14,7 @@ title: ACADEMY
 
 ## _FI02 : Finance as quant_
 
-> <a href='https://userdyk-github.github.io/fi02/FI02-.html'></a><br>
+> <a href='https://userdyk-github.github.io/fi02/FI02-Financial-modeling.html'>Financial modeling</a><br>
 > <a href='https://userdyk-github.github.io/fi02/FI02-.html'></a><br>
 
 ---
