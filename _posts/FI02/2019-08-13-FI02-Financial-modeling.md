@@ -33,7 +33,7 @@ List of posts to read before reading this article
 
 ### ***Cash Flow Statement***
 
-### ***Statement of Changes in Equity ***
+### ***Statement of Changes in Equity***
 
 <br><br><br>
 <hr class="division2">
