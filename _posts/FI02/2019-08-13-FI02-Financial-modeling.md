@@ -46,7 +46,7 @@ List of posts to read before reading this article
 
 ---
 
-### ***Income Statement***
+### ***Income Statement : accumulated income***
  - benefit : increasing equity
  - cost : decreasing equity
 
@@ -54,7 +54,7 @@ List of posts to read before reading this article
 
 ---
 
-### ***Cash Flow Statement***
+### ***Cash Flow Statement : ***
 
 <br><br><br>
 
