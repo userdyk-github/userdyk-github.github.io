@@ -22,10 +22,18 @@ List of posts to read before reading this article
 <hr class="division1">
 
 ## **Financial Statements**
- - capital = asset - cost 
+ - Equity = asset - cost 
   - aseet : Depreciation
 
 ### ***Accrual Basis***
+
+### ***Financial Position***
+
+### ***Income Statement***
+
+### ***Cash Flow Statement***
+
+### ***Statement of Changes in Equity ***
 
 <br><br><br>
 <hr class="division2">
