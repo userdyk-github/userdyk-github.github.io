@@ -35,6 +35,9 @@ List of posts to read before reading this article
       - quick asset
       - inventory asset
     - non-current asset
+      - investment assets
+      - tangible asset
+      - intangible asset
   - liabilities
     - current liabilities
     - non-current liabilities
