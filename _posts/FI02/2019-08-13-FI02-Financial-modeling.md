@@ -5,7 +5,7 @@ categories: [FI02]
 comments : true
 tags : [FI02]
 ---
-[Back to the previous page](https://userdyk-github.github.io/Study.html) <br>
+[Back to the previous page](https://userdyk-github.github.io/Study.html) ｜[page management](https://github.com/userdyk-github/userdyk-github.github.io/blob/master/_posts/FI02/2019-08-13-FI02-Financial-modeling.md)<br>
 List of posts to read before reading this article
 - <a href='https://userdyk-github.github.io/pl03/PL03-Libraries.html' target="_blank">Python Libraries</a>
 - <a href='https://userdyk-github.github.io/'>post2</a>
