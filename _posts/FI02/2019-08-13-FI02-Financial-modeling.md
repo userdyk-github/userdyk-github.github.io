@@ -22,16 +22,33 @@ List of posts to read before reading this article
 <hr class="division1">
 
 ## **Financial Statements**
+**Accrual Basis**
+
+<br><br><br>
+
+---
+
+### ***Financial Position***
  - Equity = asset - debt
   - aseet : Depreciation
 
-### ***Accrual Basis***
+<br><br><br>
 
-### ***Financial Position***
+---
 
 ### ***Income Statement***
+ - benefit : increasing equity
+ - cost : decreasing equity
+
+<br><br><br>
+
+---
 
 ### ***Cash Flow Statement***
+
+<br><br><br>
+
+---
 
 ### ***Statement of Changes in Equity***
 
