@@ -23,6 +23,7 @@ List of posts to read before reading this article
 
 ## **Financial Statements**
  - capital = asset - cost 
+  - aseet : Depreciation
 
 ### ***Accrual Basis***
 
