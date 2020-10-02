@@ -43,7 +43,7 @@ import pandas_datareader.data as web
 df = web.DataReader('005380', 'naver', start='2020-01-01', end='2020-06-30')
 df.tail()
 ```
-`finance-datareader` : <a href="https://github.com/financedata/financedatareader" target="_blank">API URL Github</a>
+`finance-datareader` : <a href="https://github.com/financedata/financedatareader" target="_blank">API URL Github</a>, <a href="https://github.com/FinanceData/FinanceDataReader/wiki/Users-Guide" target="_blank">github wiki userguide</a>
 ```bash
 $ pip install finance-datareader
 ```
