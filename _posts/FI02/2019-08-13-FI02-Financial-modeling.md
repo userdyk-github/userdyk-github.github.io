@@ -54,7 +54,7 @@ List of posts to read before reading this article
 
 ---
 
-### ***Cash Flow Statement : ***
+### ***Cash Flow Statement***
 
 <br><br><br>
 
