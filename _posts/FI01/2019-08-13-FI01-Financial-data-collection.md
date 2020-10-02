@@ -48,7 +48,12 @@ df.tail()
 $ pip install finance-datareader
 ```
 ```python
+import FinanceDataReader as fdr
+#df_krx = fdr.StockListing('KRX')
+#df_sp500 = fdr.StockListing('S&P500')
 
+df = fdr.DataReader('001250', '2018')
+df.head()
 ```
 <hr class="division2">
 
@@ -76,6 +81,8 @@ Reference
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
 ---
+
+
 
 <details markdown="1">
 <summary class='jb-small' style="color:blue">OUTPUT</summary>
