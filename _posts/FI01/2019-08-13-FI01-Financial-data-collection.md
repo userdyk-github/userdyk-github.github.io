@@ -38,13 +38,17 @@ List of posts to read before reading this article
 $ pip install pandas-datareader
 ```
 ```python
+import pandas_datareader.data as web
 
+df = web.DataReader('005380', 'naver', start='2020-01-01', end='2020-06-30')
+df.tail()
 ```
 `finance-datareader`
 ```bash
 $ pip install finance-datareader
 ```
 ```python
+
 ```
 <hr class="division2">
 
