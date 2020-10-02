@@ -69,6 +69,7 @@ List of posts followed by this article
 
 Reference
 - [miraeassetdaewoo](https://www.miraeassetdaewoo.com/)
+- [yahoo finance](https://finance.yahoo.com/)
 - [investopedia](https://www.investopedia.com/)
 - [investing](https://www.investing.com/)
 - <a href='https://userdyk-github.github.io/'>post2</a>
