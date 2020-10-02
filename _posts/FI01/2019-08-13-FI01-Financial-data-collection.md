@@ -33,7 +33,19 @@ List of posts to read before reading this article
 - <a href="https://github.com/ranaroussi/yfinance">yfinance</a>
   - <a href="https://towardsdatascience.com/best-5-free-stock-market-apis-in-2019-ad91dddec984" target="_blank">manual</a>
 
+`pandas-datareader`
+```bash
+$ pip install pandas-datareader
+```
+```python
 
+```
+`finance-datareader`
+```bash
+$ pip install finance-datareader
+```
+```python
+```
 <hr class="division2">
 
 ## title2
