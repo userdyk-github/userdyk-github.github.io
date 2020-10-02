@@ -68,7 +68,8 @@ List of posts followed by this article
 ---
 
 Reference
-- [post1](https://userdyk-github.github.io/)
+- [investopedia](https://www.investopedia.com/)
+- [investing](https://www.investing.com/)
 - <a href='https://userdyk-github.github.io/'>post2</a>
 - <a href='https://userdyk-github.github.io/'>post3</a>
 
