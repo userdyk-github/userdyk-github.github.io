@@ -33,7 +33,7 @@ List of posts to read before reading this article
 - <a href="https://github.com/ranaroussi/yfinance">yfinance</a>
   - <a href="https://towardsdatascience.com/best-5-free-stock-market-apis-in-2019-ad91dddec984" target="_blank">manual</a>
 
-`pandas-datareader`
+`pandas-datareader` : <a href="https://pandas-datareader.readthedocs.io/en/latest/" target="_blank">API URL</a>
 ```bash
 $ pip install pandas-datareader
 ```
@@ -43,7 +43,7 @@ import pandas_datareader.data as web
 df = web.DataReader('005380', 'naver', start='2020-01-01', end='2020-06-30')
 df.tail()
 ```
-`finance-datareader`
+`finance-datareader` : <a href="https://github.com/financedata/financedatareader" target="_blank">API URL Github</a>
 ```bash
 $ pip install finance-datareader
 ```
