@@ -1294,7 +1294,14 @@ sudo find . -type f -name '*.gz' -mtime +$DELDAY -exec bash -c "rm -f {}" \; 2> 
 
 ## **Linux Kernel**
 ### ***Microcomputer structure***
-    
+#### I/O Port addressing & access control  : /proc/ioports
+<span class="frame3">I/O port address assignment</span><br>
+```bash
+$ cat /proc/ioports
+```
+![image](https://user-images.githubusercontent.com/52376448/95680512-51229700-0c15-11eb-9176-bc24f12346ff.png)
+
+
 <br><br><br>
 
 ---
