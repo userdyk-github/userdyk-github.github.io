@@ -1299,7 +1299,10 @@ sudo find . -type f -name '*.gz' -mtime +$DELDAY -exec bash -c "rm -f {}" \; 2> 
 ```bash
 $ cat /proc/ioports
 ```
-![image](https://user-images.githubusercontent.com/52376448/95680512-51229700-0c15-11eb-9176-bc24f12346ff.png)
+![image](https://user-images.githubusercontent.com/52376448/95681064-c04dba80-0c18-11eb-9c00-ade65b5c2ca4.png)
+![image](https://user-images.githubusercontent.com/52376448/95681074-d0659a00-0c18-11eb-81c5-6df8d4cc94e4.png)
+![image](https://user-images.githubusercontent.com/52376448/95681088-e2473d00-0c18-11eb-962b-5b8e5b4a1432.png)
+
 
 
 <br><br><br>
@@ -1307,7 +1310,11 @@ $ cat /proc/ioports
 ---
 
 ### ***Kernel programming langugage and environment***
-    
+#### Object file format
+
+
+![image](https://user-images.githubusercontent.com/52376448/95681045-a57b4600-0c18-11eb-9a8e-a611358d460f.png)
+
 <br><br><br>
 
 ---
