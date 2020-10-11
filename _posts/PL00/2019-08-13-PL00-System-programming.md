@@ -1293,7 +1293,98 @@ sudo find . -type f -name '*.gz' -mtime +$DELDAY -exec bash -c "rm -f {}" \; 2> 
 ## **System programming**
 
 ## **Linux Kernel**
+### ***Microcomputer structure***
+    
+<br><br><br>
 
+---
+
+### ***Kernel programming langugage and environment***
+    
+<br><br><br>
+
+---
+
+### ***80X86 protection mode and its programming***
+    
+<br><br><br>
+
+---
+
+### ***Linux kernel architecture***
+    
+<br><br><br>
+
+---
+
+### ***Booting system***
+    
+<br><br><br>
+
+---
+
+### ***Initialization programming***
+    
+<br><br><br>
+
+---
+
+### ***Kernel code***
+    
+<br><br><br>
+
+---
+
+### ***Block device driver***
+    
+<br><br><br>
+
+---
+
+### ***Character device driver***
+    
+<br><br><br>
+
+---
+
+### ***Math coprocessor***
+    
+<br><br><br>
+
+---
+
+### ***File system***
+    
+<br><br><br>
+
+---
+
+### ***Memory management***
+    
+<br><br><br>
+
+---
+
+### ***Header files***
+    
+<br><br><br>
+
+---
+
+### ***Library files***
+    
+<br><br><br>
+
+---
+
+### ***Building kernel***
+    
+<br><br><br>
+
+---
+
+### ***Experimental environment setting and usage***
+    
 <br><br><br>
 
 <hr class="division2">
