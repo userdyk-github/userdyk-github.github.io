@@ -5425,6 +5425,7 @@ plt.show()
 ---
 
 ### ***rcParams***
+`~/Anaconda3/Lib/site-packages/matplotlib/mpl-data/fonts/ttffonts/ttf`
 ```python
 
 ```
