@@ -5450,22 +5450,35 @@ plt.show()
 ### ***rcParams***
 <span class="frame3">Copy .ttf files in this directory</span><br>
 `~/Anaconda3/.../site-packages/matplotlib/mpl-data/fonts/ttffonts/ttf`
+```bash
+$ cp ./*.ttf ~/Anaconda3/.../site-packages/matplotlib/mpl-data/fonts/ttffonts/ttf
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Suplementary : PATH</summary>
+<hr class='division3'>
 ```python
 import matplotlib as mpl
 print('* matplotlib rc : ', mpl.matplotlib_fname())
 ```
-```bash
-$ cp ./*.ttf ~/Anaconda3/.../site-packages/matplotlib/mpl-data/fonts/ttffonts/ttf
-```
+<hr class='division3'>
+</details>
+
+
 <span class="frame3">Delete cache files in matplotlib</span><br>
 `~/.cache`
-```python
-import matplotlib as mpl
-print('* matplotlib cache : ', mpl.get_cachedir())
-```
 ```bash
 $ rm -rf ~/.cache/matplotlib
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Suplementary : PATH</summary>
+<hr class='division3'>
+```python
+import matplotlib as mpl
+print('* matplotlib cache : ', mpl.get_cachedir())
+```     
+<hr class='division3'>
+</details>
+
 <span class="frame3">Set rcParams</span><br>
 ```python
 import matplotlib.pyplot as plt
