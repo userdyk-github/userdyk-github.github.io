@@ -5450,7 +5450,12 @@ plt.show()
 ### ***rcParams***
 `~/Anaconda3/Lib/site-packages/matplotlib/mpl-data/fonts/ttffonts/ttf`
 ```python
+import matplotlib.pyplot as plt
+import matplotlib.font_manager as fm
 
+font_path = './NanumBarunGothic.ttf'
+font_family = fm.FontProperties(fname=font_fname).get_name()
+plt.rcParams["font.family"] = font_family
 ```
 
 <br><br><br>
