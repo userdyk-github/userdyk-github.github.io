@@ -5485,10 +5485,22 @@ print('* matplotlib cache : ', mpl.get_cachedir())
 import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
 
+#print([f.name for f in fm.fontManager.ttflist])
+plt.rcParams["font.family"] = 'NanumBarunGothic.ttf'
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Or</summary>
+<hr class='division3'>
+```python
+import matplotlib.pyplot as plt
+import matplotlib.font_manager as fm
+
 font_path = './NanumBarunGothic.ttf'
 font_family = fm.FontProperties(fname=font_fname).get_name()
 plt.rcParams["font.family"] = font_family
 ```
+<hr class='division3'>
+</details>
 
 <br><br><br>
 <hr class="division1">
