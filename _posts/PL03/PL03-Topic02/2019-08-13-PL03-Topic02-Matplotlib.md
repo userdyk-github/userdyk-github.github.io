@@ -5404,7 +5404,30 @@ interact(f, colour=colours)
 <hr class="division2">
 
 ## **Korean font**
-<a href="https://financedata.github.io/posts/matplotlib-hangul-for-windows-anaconda.html" target="_blank">windows version</a>
+<a href="https://financedata.github.io/posts/matplotlib-hangul-for-windows-anaconda.html" target="_blank">windows version</a><br>
+`rcParam`
+```python
+import platform
+import sys
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+
+print('* OS :', platform.platform())
+print('* Python version : ', sys.version_info)
+print ('* matplotlib version : ', mpl.__version__)
+print ('* matplotlib setup : ', mpl.__file__)
+print ('* matplotlib config : ', mpl.get_configdir())
+print ('* matplotlib cache : ', mpl.get_cachedir())
+print ('* matplotlib rc : ', mpl.matplotlib_fname())
+print('  - figsize : ', plt.rcParams["figure.figsize"])
+print('  - grid : ', plt.rcParams["axes.grid"])
+print('  - labelsize : ', plt.rcParams['axes.labelsize'])
+print('  - ticksize_x : ', plt.rcParams['xtick.labelsize'])
+print('  - ticksize_y : ', plt.rcParams['ytick.labelsize'])
+print('  - fontsize : ', plt.rcParams['font.size'] )
+print('  - fontfamily : ', plt.rcParams['font.family'] )
+```
+<br><br><br>
 ### ***FontProperties***
 ```python
 import numpy as np
