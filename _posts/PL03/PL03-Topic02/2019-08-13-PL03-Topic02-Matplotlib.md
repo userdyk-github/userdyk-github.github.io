@@ -5462,7 +5462,7 @@ import matplotlib as mpl
 print('* matplotlib rc : ', mpl.matplotlib_fname())
 ```
 <hr class='division3'>
-</details>
+</details><br>
 
 
 <span class="frame3">Delete cache files in matplotlib</span><br>
@@ -5478,7 +5478,7 @@ import matplotlib as mpl
 print('* matplotlib cache : ', mpl.get_cachedir())
 ```     
 <hr class='division3'>
-</details>
+</details><br>
 
 <span class="frame3">Set rcParams</span><br>
 ```python
