@@ -5404,7 +5404,7 @@ interact(f, colour=colours)
 <hr class="division2">
 
 ## **Korean font**
-<a href="https://financedata.github.io/posts/matplotlib-hangul-for-windows-anaconda.html" target="_blank">windows version</a><br>
+<a href="https://financedata.github.io/posts/matplotlib-hangul-for-windows-anaconda.html" target="_blank">windows version</a>, <a href="https://hangeul.naver.com/2017/nanum" target="_blank">font download</a><br>
 `rcParam`
 ```python
 import platform
@@ -5448,6 +5448,7 @@ plt.show()
 ---
 
 ### ***rcParams***
+<a href="https://matplotlib.org/tutorials/introductory/customizing.html" target="_blank">matplotlib rcParams API</a><br>
 <span class="frame3">Copy .ttf files in this directory</span><br>
 `~/Anaconda3/.../site-packages/matplotlib/mpl-data/fonts/ttffonts/ttf`
 ```bash
