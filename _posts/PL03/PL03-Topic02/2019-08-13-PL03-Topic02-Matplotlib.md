@@ -5448,7 +5448,23 @@ plt.show()
 ---
 
 ### ***rcParams***
-`~/Anaconda3/Lib/site-packages/matplotlib/mpl-data/fonts/ttffonts/ttf`
+`~/Anaconda3/.../site-packages/matplotlib/mpl-data/fonts/ttffonts/ttf` : copy .ttf files in this directory
+```python
+import matplotlib as mpl
+print('* matplotlib rc : ', mpl.matplotlib_fname())
+```
+```bash
+$ cp ./*.ttf ~/Anaconda3/.../site-packages/matplotlib/mpl-data/fonts/ttffonts/ttf
+```
+`~/.cache` : delete cache files in matplotlib
+```python
+import matplotlib as mpl
+print('* matplotlib cache : ', mpl.get_cachedir())
+```
+```bash
+$ rm -rf ~/.cache/matplotlib
+```
+
 ```python
 import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
