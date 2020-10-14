@@ -5404,8 +5404,32 @@ interact(f, colour=colours)
 <hr class="division2">
 
 ## **Korean font**
+<a href="https://financedata.github.io/posts/matplotlib-hangul-for-windows-anaconda.html" target="_blank">windows version</a>
+### ***FontProperties***
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.font_manager as fm
 
+data = np.random.randint(-100, 100, 50).cumsum()
+font_path = 'C:/Windows/Fonts/EBS훈민정음R.ttf'
+fontprop = fm.FontProperties(fname=font_path, size=18)
 
+plt.ylabel('가격', fontproperties=fontprop)
+plt.title('가격변동 추이', fontproperties=fontprop)
+plt.plot(range(50), data, 'r')
+plt.show()
+```
+<br><br><br>
+
+---
+
+### ***rcParams***
+```python
+
+```
+
+<br><br><br>
 <hr class="division1">
 
 List of posts followed by this article
