@@ -5268,6 +5268,7 @@ for i in range(20):
 <br><br><br>
 
 ### ***ipywidgets***
+<a href="https://kapernikov.com/ipywidgets-with-matplotlib/" target="_blank">Examples</a><br>
 <span class="frame3">Installation on windows</span><br>
 ```dos
 pip install ipywidgets
