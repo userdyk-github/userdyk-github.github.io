@@ -5157,7 +5157,6 @@ HTML(ani.to_html5_video())
 <hr class="division2">
 
 ## **Interactive plot**
-
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -5268,7 +5267,7 @@ for i in range(20):
 <br><br><br>
 
 ### ***ipywidgets***
-<a href="https://kapernikov.com/ipywidgets-with-matplotlib/" target="_blank">Examples</a><br>
+<a href="https://ipywidgets.readthedocs.io/en/latest/index.html" target="_blank">official guide</a>, <a href="https://kapernikov.com/ipywidgets-with-matplotlib/" target="_blank">Examples</a><br>
 <span class="frame3">Installation on windows</span><br>
 ```dos
 pip install ipywidgets
