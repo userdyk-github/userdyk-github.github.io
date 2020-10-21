@@ -44,7 +44,19 @@ $
 <hr class="division2">
 
 ## title1
+```python
+import tkinter
 
+window = tkinter.Tk()
+window.title("Ailever")
+window.geometry("640x400+100+100")
+window.resizable(False, False)
+
+label = tkinter.Label(window, text="It's done!") 
+label.pack() 
+window.mainloop()
+```
+<br><br><br>
 <hr class="division2">
 
 ## title2
