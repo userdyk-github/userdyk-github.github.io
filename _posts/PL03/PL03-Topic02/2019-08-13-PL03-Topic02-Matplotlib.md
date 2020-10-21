@@ -5395,6 +5395,32 @@ interact(f, colour=colours)
 
 <hr class='division3'>
 </details>
+
+
+<br><br><br>
+
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from ipywidgets import interact
+
+@interact(x=(-10,10,1))
+def f(x):
+    _, axes = plt.subplots(2,1, figsize=(10,8))
+    axes[0].plot(np.arange(0,10), x*np.arange(0,10))
+    axes[1].plot(np.arange(0,10), np.arange(0,10)**abs(x))
+    axes[0].set_ylim([-20,20])
+    axes[1].set_ylim([-20,20])
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![image](https://user-images.githubusercontent.com/52376448/96673197-e86bb500-13a0-11eb-8883-e04e539a798c.png)
+
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 
