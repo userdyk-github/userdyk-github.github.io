@@ -2251,6 +2251,14 @@ s:\workspace\2020-02-04
 ```
 <br>
 
+#### ctypes
+```pytohn
+import ctypes
+
+ctypes.windll.user32.MessageBoxW(0, "It's done!", "Title", 1)
+```
+<br>
+
 #### calendar
 ```python
 ```
