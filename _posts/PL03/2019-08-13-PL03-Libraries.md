@@ -104,6 +104,8 @@ tags : [PL03]
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-mlxtend.html'>mlxtend</a> ｜ <a href='' target="_blank">Cheat Sheet</a>
   - <a href='http://rasbt.github.io/mlxtend/' target="_blank"><span class='jb-small'>http://rasbt.github.io/mlxtend/</span></a>
 
+- <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-visdom.html'>visdom</a>
+  - <a href='https://github.com/facebookresearch/visdom' target="_blank"><span class='jb-small'>https://github.com/facebookresearch/visdom</span></a>
 
 
 <hr class="division2">
