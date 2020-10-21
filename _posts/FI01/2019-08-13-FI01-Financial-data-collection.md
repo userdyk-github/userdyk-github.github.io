@@ -55,10 +55,41 @@ import FinanceDataReader as fdr
 df = fdr.DataReader('001250', '2018')
 df.head()
 ```
+<br><br><br>
 <hr class="division2">
 
-## title2
+## **Real time stock data from KRX**
+```python
+from urllib.request import urlopen
+from bs4 import BeautifulSoup
+import time
+import pandas as pd
 
+def get_sise(stock_code, try_cnt):
+    try:
+        url="http://asp1.krx.co.kr/servlet/krx.asp.XMLSiseEng?code={}".format(stock_code)
+        req=urlopen(url)
+        result=req.read()
+        xmlsoup=BeautifulSoup(result,"lxml-xml")
+        stock = xmlsoup.find("TBL_StockInfo")
+        stock_df=pd.DataFrame(stock.attrs, index=[0])
+        stock_df=stock_df.applymap(lambda x: x.replace(",",""))
+        print(stock_df, end='\n')
+        return stock_df
+
+    except HTTPError as e:
+        logging.warning(e)
+        if try_cnt>=3:
+            return None
+        else:
+            get_sise(stock_code,try_cnt=+1)
+
+stock_code=['005930']
+for s in stock_code:
+    temp=get_sise(s,1)
+    time.sleep(0.5)
+```
+<br><br><br>
 <hr class="division2">
 
 ## title3
