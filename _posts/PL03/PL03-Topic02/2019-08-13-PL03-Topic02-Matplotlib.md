@@ -338,6 +338,56 @@ plt.show()
 
 <br><br><br>
 
+#### Style sheet
+<a href="https://matplotlib.org/3.1.1/gallery/style_sheets/style_sheets_reference.html#sphx-glr-gallery-style-sheets-style-sheets-reference-py" target="_blank">URL</a>
+```python
+import matplotlib.pyplot as plt
+
+plt.style.use('ggplot')
+```
+```python
+print(plt.style.available)
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+```
+['Solarize_Light2',
+ '_classic_test_patch',
+ 'bmh',
+ 'classic',
+ 'dark_background',
+ 'fast',
+ 'fivethirtyeight',
+ 'ggplot',
+ 'grayscale',
+ 'seaborn',
+ 'seaborn-bright',
+ 'seaborn-colorblind',
+ 'seaborn-dark',
+ 'seaborn-dark-palette',
+ 'seaborn-darkgrid',
+ 'seaborn-deep',
+ 'seaborn-muted',
+ 'seaborn-notebook',
+ 'seaborn-paper',
+ 'seaborn-pastel',
+ 'seaborn-poster',
+ 'seaborn-talk',
+ 'seaborn-ticks',
+ 'seaborn-white',
+ 'seaborn-whitegrid',
+ 'tableau-colorblind10']
+```
+<hr class='division3'>
+</details>
+
+
+
+<br><br><br>
+
+---
+
 #### Adding a title
 
 ```python
