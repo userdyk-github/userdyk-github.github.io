@@ -5615,6 +5615,11 @@ $ cd basemap-1.2.2rel/geos-3.3.3
 $ export GEOS_DIR=/usr/local
 $ ./configure --prefix=$GEOS_DIR
 $ make; make install
+$ cd ../
+```
+`site-packages/basemap-1.2.2rel`
+```bash
+$ python setup.py install
 ```
 <br><br><br>
 <hr class="division1">
