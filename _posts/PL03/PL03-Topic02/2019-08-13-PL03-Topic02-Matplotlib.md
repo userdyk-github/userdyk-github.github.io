@@ -5598,6 +5598,25 @@ plt.rcParams["font.family"] = font_family
 </details>
 
 <br><br><br>
+
+## **Third partys**
+
+### ***basemap***
+
+`Installation` : <a href="https://github.com/matplotlib/basemap/releases/" target="_blank">download url</a>, <a href="https://matplotlib.org/basemap/users/installing.html#installation" target="_blank">download guide</a><br>
+`site-packages`
+```bash
+$ wget https://github.com/matplotlib/basemap/archive/v1.2.2rel.tar.gz
+$ tar -zxvf v1.2.2rel.tar.gz
+$ cd basemap-1.2.2rel/geos-3.3.3
+```
+`site-packages/basemap-1.2.2rel/geos-3.3.3`
+```bash
+$ export GEOS_DIR=/usr/local
+$ ./configure --prefix=$GEOS_DIR
+$ make; make install
+```
+<br><br><br>
 <hr class="division1">
 
 List of posts followed by this article
