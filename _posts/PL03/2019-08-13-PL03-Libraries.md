@@ -152,6 +152,7 @@ tags : [PL03]
 
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-dash.html'>dash</a>
   - <a href='https://plotly.com/dash/' target="_blank"><span class='jb-small'>https://plotly.com/dash/</span></a>
+  - <a href='https://dash.plotly.com/' target="_blank"><span class='jb-small'>https://dash.plotly.com/</span></a>
   - <a href='https://github.com/plotly/dash' target="_blank"><span class='jb-small'>https://github.com/plotly/dash</span></a>
 
 
