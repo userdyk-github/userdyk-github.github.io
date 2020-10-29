@@ -5602,6 +5602,10 @@ plt.rcParams["font.family"] = font_family
 ## **Third partys**
 
 ### ***basemap***
+<a href="https://basemaptutorial.readthedocs.io/en/latest/index.html" target="_blank">readthedocs</a>, <a href="https://matplotlib.org/basemap/users/index.html" target="_blank">official user guide</a><br>
+<br><br>
+
+`Installation`
 ```bash
 $ conda install basemap
 $ conda install basemap-data-hires
