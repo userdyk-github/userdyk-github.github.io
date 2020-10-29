@@ -5602,6 +5602,13 @@ plt.rcParams["font.family"] = font_family
 ## **Third partys**
 
 ### ***basemap***
+```bash
+$ conda install basemap
+$ conda install basemap-data-hires
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Source</summary>
+<hr class='division3'>
 
 `Installation` : <a href="https://github.com/matplotlib/basemap/releases/" target="_blank">download url</a>, <a href="https://matplotlib.org/basemap/users/installing.html#installation" target="_blank">download guide</a><br>
 `site-packages`
@@ -5621,6 +5628,12 @@ $ cd ../
 ```bash
 $ python setup.py install
 ```
+
+<hr class='division3'>
+</details>
+
+
+
 <br><br><br>
 <hr class="division1">
 
