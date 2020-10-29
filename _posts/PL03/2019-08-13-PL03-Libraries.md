@@ -147,9 +147,11 @@ tags : [PL03]
   - <a href='https://gspread.readthedocs.io/en/latest/' target="_blank"><span class='jb-small'>https://gspread.readthedocs.io/en/latest/</span></a>
 
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-plotly.html'>plotly</a>
+  - <a href='https://plotly.com/python/' target="_blank"><span class='jb-small'>https://plotly.com/python/</span></a>
   - <a href='https://github.com/plotly/plotly.py' target="_blank"><span class='jb-small'>https://github.com/plotly/plotly.py</span></a>
 
 - <a href='https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-dash.html'>dash</a>
+  - <a href='https://plotly.com/dash/' target="_blank"><span class='jb-small'>https://plotly.com/dash/</span></a>
   - <a href='https://github.com/plotly/dash' target="_blank"><span class='jb-small'>https://github.com/plotly/dash</span></a>
 
 
