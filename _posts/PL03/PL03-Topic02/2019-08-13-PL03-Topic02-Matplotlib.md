@@ -331,13 +331,6 @@ plt.show()
 
 ### ***First Steps***
 
----
-
-### ***Working with Annotations***
-<a href="https://matplotlib.org/3.1.1/tutorials/text/annotations.html" target="_blank" class="jb-medium">annotations API </a> ｜ <a href="https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-Matplotlib-Annotation.html" class="jb-medium">Annotation</a>
-
-<br><br><br>
-
 #### Style sheet
 <a href="https://matplotlib.org/3.1.1/gallery/style_sheets/style_sheets_reference.html#sphx-glr-gallery-style-sheets-style-sheets-reference-py" target="_blank">URL</a>
 ```python
@@ -386,7 +379,120 @@ print(plt.style.available)
 
 <br><br><br>
 
+
+
 ---
+
+
+### ***Korean font***
+<a href="https://financedata.github.io/posts/matplotlib-hangul-for-windows-anaconda.html" target="_blank">windows version</a>, <a href="https://hangeul.naver.com/2017/nanum" target="_blank">font download</a><br>
+`rcParam`
+```python
+import platform
+import sys
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+
+print('* OS :', platform.platform())
+print('* Python version : ', sys.version_info)
+print('* matplotlib version : ', mpl.__version__)
+print('* matplotlib setup : ', mpl.__file__)
+print('* matplotlib config : ', mpl.get_configdir())
+print('* matplotlib cache : ', mpl.get_cachedir())
+print('* matplotlib rc : ', mpl.matplotlib_fname())
+print('  - figsize : ', plt.rcParams["figure.figsize"])
+print('  - grid : ', plt.rcParams["axes.grid"])
+print('  - labelsize : ', plt.rcParams['axes.labelsize'])
+print('  - ticksize_x : ', plt.rcParams['xtick.labelsize'])
+print('  - ticksize_y : ', plt.rcParams['ytick.labelsize'])
+print('  - fontsize : ', plt.rcParams['font.size'] )
+print('  - fontfamily : ', plt.rcParams['font.family'] )
+```
+<br><br><br>
+#### FontProperties
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.font_manager as fm
+
+data = np.random.randint(-100, 100, 50).cumsum()
+font_path = 'C:/Windows/Fonts/EBS훈민정음R.ttf'
+fontprop = fm.FontProperties(fname=font_path, size=18)
+
+plt.ylabel('가격', fontproperties=fontprop)
+plt.title('가격변동 추이', fontproperties=fontprop)
+plt.plot(range(50), data, 'r')
+plt.show()
+```
+<br><br><br>
+
+---
+
+#### rcParams
+<a href="https://matplotlib.org/tutorials/introductory/customizing.html" target="_blank">matplotlib rcParams API</a><br>
+<span class="frame3">Copy .ttf files in this directory</span><br>
+`~/Anaconda3/.../site-packages/matplotlib/mpl-data/fonts/ttffonts/ttf`
+```bash
+$ cp ./*.ttf ~/Anaconda3/.../site-packages/matplotlib/mpl-data/fonts/ttffonts/ttf
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Suplementary : PATH</summary>
+<hr class='division3'>
+```python
+import matplotlib as mpl
+print('* matplotlib rc : ', mpl.matplotlib_fname())
+```
+<hr class='division3'>
+</details><br>
+
+
+<span class="frame3">Delete cache files in matplotlib</span><br>
+`~/.cache`
+```bash
+$ rm -rf ~/.cache/matplotlib
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Suplementary : PATH</summary>
+<hr class='division3'>
+```python
+import matplotlib as mpl
+print('* matplotlib cache : ', mpl.get_cachedir())
+```     
+<hr class='division3'>
+</details><br>
+
+<span class="frame3">Set rcParams</span><br>
+```python
+import matplotlib.pyplot as plt
+import matplotlib.font_manager as fm
+
+#print([f.name for f in fm.fontManager.ttflist])
+plt.rcParams["font.family"] = 'NanumBarunGothic.ttf'
+```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">Or</summary>
+<hr class='division3'>
+```python
+import matplotlib.pyplot as plt
+import matplotlib.font_manager as fm
+
+font_path = './NanumBarunGothic.ttf'
+font_family = fm.FontProperties(fname=font_fname).get_name()
+plt.rcParams["font.family"] = font_family
+```
+<hr class='division3'>
+</details>
+
+
+<br><br><br>
+
+---
+
+### ***Working with Annotations***
+<a href="https://matplotlib.org/3.1.1/tutorials/text/annotations.html" target="_blank" class="jb-medium">annotations API </a> ｜ <a href="https://userdyk-github.github.io/pl03-topic02/PL03-Topic02-Matplotlib-Annotation.html" class="jb-medium">Annotation</a>
+
+<br><br><br>
+
 
 #### Adding a title
 
@@ -5498,106 +5604,6 @@ def f(x):
 
 <hr class="division2">
 
-## **Korean font**
-<a href="https://financedata.github.io/posts/matplotlib-hangul-for-windows-anaconda.html" target="_blank">windows version</a>, <a href="https://hangeul.naver.com/2017/nanum" target="_blank">font download</a><br>
-`rcParam`
-```python
-import platform
-import sys
-import matplotlib as mpl
-import matplotlib.pyplot as plt
-
-print('* OS :', platform.platform())
-print('* Python version : ', sys.version_info)
-print('* matplotlib version : ', mpl.__version__)
-print('* matplotlib setup : ', mpl.__file__)
-print('* matplotlib config : ', mpl.get_configdir())
-print('* matplotlib cache : ', mpl.get_cachedir())
-print('* matplotlib rc : ', mpl.matplotlib_fname())
-print('  - figsize : ', plt.rcParams["figure.figsize"])
-print('  - grid : ', plt.rcParams["axes.grid"])
-print('  - labelsize : ', plt.rcParams['axes.labelsize'])
-print('  - ticksize_x : ', plt.rcParams['xtick.labelsize'])
-print('  - ticksize_y : ', plt.rcParams['ytick.labelsize'])
-print('  - fontsize : ', plt.rcParams['font.size'] )
-print('  - fontfamily : ', plt.rcParams['font.family'] )
-```
-<br><br><br>
-### ***FontProperties***
-```python
-import numpy as np
-import matplotlib.pyplot as plt
-import matplotlib.font_manager as fm
-
-data = np.random.randint(-100, 100, 50).cumsum()
-font_path = 'C:/Windows/Fonts/EBS훈민정음R.ttf'
-fontprop = fm.FontProperties(fname=font_path, size=18)
-
-plt.ylabel('가격', fontproperties=fontprop)
-plt.title('가격변동 추이', fontproperties=fontprop)
-plt.plot(range(50), data, 'r')
-plt.show()
-```
-<br><br><br>
-
----
-
-### ***rcParams***
-<a href="https://matplotlib.org/tutorials/introductory/customizing.html" target="_blank">matplotlib rcParams API</a><br>
-<span class="frame3">Copy .ttf files in this directory</span><br>
-`~/Anaconda3/.../site-packages/matplotlib/mpl-data/fonts/ttffonts/ttf`
-```bash
-$ cp ./*.ttf ~/Anaconda3/.../site-packages/matplotlib/mpl-data/fonts/ttffonts/ttf
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">Suplementary : PATH</summary>
-<hr class='division3'>
-```python
-import matplotlib as mpl
-print('* matplotlib rc : ', mpl.matplotlib_fname())
-```
-<hr class='division3'>
-</details><br>
-
-
-<span class="frame3">Delete cache files in matplotlib</span><br>
-`~/.cache`
-```bash
-$ rm -rf ~/.cache/matplotlib
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">Suplementary : PATH</summary>
-<hr class='division3'>
-```python
-import matplotlib as mpl
-print('* matplotlib cache : ', mpl.get_cachedir())
-```     
-<hr class='division3'>
-</details><br>
-
-<span class="frame3">Set rcParams</span><br>
-```python
-import matplotlib.pyplot as plt
-import matplotlib.font_manager as fm
-
-#print([f.name for f in fm.fontManager.ttflist])
-plt.rcParams["font.family"] = 'NanumBarunGothic.ttf'
-```
-<details markdown="1">
-<summary class='jb-small' style="color:blue">Or</summary>
-<hr class='division3'>
-```python
-import matplotlib.pyplot as plt
-import matplotlib.font_manager as fm
-
-font_path = './NanumBarunGothic.ttf'
-font_family = fm.FontProperties(fname=font_fname).get_name()
-plt.rcParams["font.family"] = font_family
-```
-<hr class='division3'>
-</details>
-
-<br><br><br>
 
 ## **Third partys**
 
