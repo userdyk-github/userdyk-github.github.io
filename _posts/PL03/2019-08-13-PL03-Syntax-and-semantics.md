@@ -4259,49 +4259,31 @@ co.send(None)
 <br><br><br>
 <hr class="division2">
 
-## **Python programming, how do I get started?**
+## **Collections**
+<a href="https://kimdoky.github.io/python/2019/11/25/python-collections/" target="_blank">Example</a>
 
-<a href="https://wikidocs.net/34" target="_blank">URL</a>
-
-### ******
-
+### ***ChainMap***
+```python
+```
 <br><br><br>
 
 ---
 
-### ******
-
+### ***Counter***
+```python
+```
 <br><br><br>
 
----
-
-### ******
-
+### ***deque***
+```python
+```
 <br><br><br>
 
----
-
-### ******
-
+### ***defaultdict***
+```python
+```
 <br><br><br>
 
----
-
-### ******
-
-<br><br><br>
-
----
-
-### ******
-
-<br><br><br>
-
----
-
-### ******
-
-<br><br><br>
 <hr class="division2">
 
 ## **Regular expression**
