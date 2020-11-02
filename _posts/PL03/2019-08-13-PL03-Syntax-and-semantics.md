@@ -4264,6 +4264,33 @@ co.send(None)
 
 ### ***ChainMap***
 ```python
+from collections import ChainMap, Counter
+
+Parent = {'music':'bach', 'art':'rembrandt'}
+Me = {'art':'van gogh', 'opera':'carmen'}
+
+# chainmap > chainmap
+cm = ChainMap(Me, Parent)
+chainmap_parent_generation = cm.parents
+chainmap_me_generation = cm
+chainmap_me_generation['me'] = 'ME'
+chainmap_me_generation['sibling1'] = 'SIBLING1'
+chainmap_me_generation['sibling2'] = 'SIBLING2'
+del chainmap_me_generation['sibling2']
+chainmap_child_generation = cm.new_child()
+
+# chainmap viewer
+chainmap_family_viewer = chainmap_child_generation.items()
+
+# chainmap > list
+chainmap_family_list = chainmap_child_generation.maps
+```
+```python
+# [common keys] : chainmap > list
+chainmapkey_family = list(chainmap_child_generation)
+
+# [items of the common keys] : chainmap > dict
+chainmapdict_family = dict(chainmap_child_generation)
 ```
 <br><br><br>
 
@@ -4274,16 +4301,22 @@ co.send(None)
 ```
 <br><br><br>
 
+---
+
 ### ***deque***
 ```python
 ```
 <br><br><br>
 
+---
+
+
 ### ***defaultdict***
 ```python
 ```
-<br><br><br>
 
+
+<br><br><br>
 <hr class="division2">
 
 ## **Regular expression**
