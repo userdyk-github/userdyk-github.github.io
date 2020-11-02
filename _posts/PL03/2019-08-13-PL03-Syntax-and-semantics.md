@@ -4264,13 +4264,13 @@ co.send(None)
 
 ### ***ChainMap***
 ```python
-from collections import ChainMap, Counter
+from collections import ChainMap
+from pprint import pprint
 
 # dict > chainmap
 Parent = {'music':'bach', 'art':'rembrandt'}
 Me = {'art':'van gogh', 'opera':'carmen'}
 cm = ChainMap(Me, Parent)
-
 
 # chainmap > chainmap
 chainmap_parent_generation = cm.parents
@@ -4287,6 +4287,18 @@ chainmap_family_viewer = chainmap_child_generation.items()
 # chainmap > list
 chainmap_family_list = chainmap_child_generation.maps
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![image](https://user-images.githubusercontent.com/52376448/97835679-10063a00-1d1e-11eb-918b-9f9c4ecb0e45.png)
+![image](https://user-images.githubusercontent.com/52376448/97835791-4e035e00-1d1e-11eb-83e9-230363844b29.png)
+![image](https://user-images.githubusercontent.com/52376448/97835835-64111e80-1d1e-11eb-8d01-ab02951c0f4d.png)
+![image](https://user-images.githubusercontent.com/52376448/97836134-f6192700-1d1e-11eb-9233-68505a7abd7d.png)
+
+<hr class='division3'>
+</details>
+
+
 ```python
 # [common keys] : chainmap > list
 chainmapkey_family = list(chainmap_child_generation)
