@@ -4322,7 +4322,27 @@ chainmapdict_family = dict(chainmap_child_generation)
 
 ### ***Counter***
 ```python
+from collections import Counter
+
+l = ['red', 'blue', 'red', 'green', 'blue', 'blue']
+cnt = Counter(l)
+
+# count
+cnt
+
+# elements
+sorted(cnt)
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![image](https://user-images.githubusercontent.com/52376448/97838315-4a260a80-1d23-11eb-85fb-ad7df8d2e28e.png)
+![image](https://user-images.githubusercontent.com/52376448/97838342-5611cc80-1d23-11eb-9391-16bdca2db216.png)
+
+<hr class='division3'>
+</details>
+
+
 <br><br><br>
 
 ---
