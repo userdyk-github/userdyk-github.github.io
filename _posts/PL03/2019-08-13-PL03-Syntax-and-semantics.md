@@ -4266,11 +4266,13 @@ co.send(None)
 ```python
 from collections import ChainMap, Counter
 
+# dict > chainmap
 Parent = {'music':'bach', 'art':'rembrandt'}
 Me = {'art':'van gogh', 'opera':'carmen'}
+cm = ChainMap(Me, Parent)
+
 
 # chainmap > chainmap
-cm = ChainMap(Me, Parent)
 chainmap_parent_generation = cm.parents
 chainmap_me_generation = cm
 chainmap_me_generation['me'] = 'ME'
