@@ -4306,6 +4306,16 @@ chainmapkey_family = list(chainmap_child_generation)
 # [items of the common keys] : chainmap > dict
 chainmapdict_family = dict(chainmap_child_generation)
 ```
+<details markdown="1">
+<summary class='jb-small' style="color:blue">OUTPUT</summary>
+<hr class='division3'>
+![image](https://user-images.githubusercontent.com/52376448/97836334-6c1d8e00-1d1f-11eb-822c-a9d1f489a5c3.png)
+![image](https://user-images.githubusercontent.com/52376448/97836367-835c7b80-1d1f-11eb-8800-e37ec15b8e6c.png)
+![image](https://user-images.githubusercontent.com/52376448/97836383-8f483d80-1d1f-11eb-9e57-7eb029a58c1b.png)
+
+<hr class='division3'>
+</details>
+
 <br><br><br>
 
 ---
