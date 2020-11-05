@@ -1886,6 +1886,7 @@ List of posts followed by this article
 ---
 
 Reference
+- <a href="https://github.com/jbrownlee/Datasets" target="_blank">machinelearning mastery datasets</a>
 - <a href='https://www.ipify.org/' target="_blank">ipify</a>
 - <a href='https://httpbin.org/' target="_blank">httpbin</a>
 
