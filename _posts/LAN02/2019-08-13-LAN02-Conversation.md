@@ -25,12 +25,11 @@ List of posts to read before reading this article
 
 ## **TODAY's Expression**
 
-- 
-- 
-- 
-- 
-- 
-
+- [Don't let things get out of hand.](https://www.youtube.com/watch?v=TS9qbKKBf_c)
+- []()
+- []()
+- []()
+- []()
 
 <br><br><br>
 <hr class="division2">
