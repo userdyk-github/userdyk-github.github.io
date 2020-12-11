@@ -52,7 +52,7 @@ List of posts to read before reading this article
 - Everything comes to plan
 - Give true purpose.
 - The notion offends me
-- I am anxious to regain my place
+- I **am anxious to** regain my place
 - She will always be mine.
 - My mind **is full of** thoughts of the arena.
 - How can you be certain.
