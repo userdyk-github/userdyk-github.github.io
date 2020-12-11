@@ -36,7 +36,7 @@ List of posts to read before reading this article
 - You are way off, pal.
 - I might have had feelings for her at one time, not anymore.
 - Where are you going with that disk.
-- If you press that button,  you are in very big trouble.
+- If you press that button,  you are **in very big trouble**.
 - Do you believe what a jerk ross was being?
 - he can get really competitive
 - I am not as bad as ross	
@@ -58,23 +58,23 @@ List of posts to read before reading this article
 - How can you be certain.
 - He has grown reckless
 - We want some action.
-- No arguments
+- **No arguments**
 - The match was overly brief
 - I will gather my men to aid in the search
 - Tell me what happen to her.
-- Other matters occupy his attention
+- Other matters occupy his attention.
 - I've pressed for audience all week.
 - I would not expect it
 - He gains great comfort in the act
 - I did not hear
-- I've preserved her chastity.
-- he has been my most trusted friend.
+- **I've preserved** her chastity.
+- He has been **my most trusted friend**.
 - what is he doing?
 - He has given a book to me.
 - What is this madness?
 - Everything is under the control.
 - They've lost mind.
-- You would kill *a defenseless man*?
+- You would kill **a defenseless man**?
 
 
 <hr class="division1">
