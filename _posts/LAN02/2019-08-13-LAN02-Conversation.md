@@ -54,7 +54,7 @@ List of posts to read before reading this article
 - The notion offends me
 - I am anxious to regain my place
 - She will always be mine.
-- My mind is full of thoughts of the arena.
+- My mind **is full of** thoughts of the arena.
 - How can you be certain.
 - He has grown reckless
 - We want some action.
