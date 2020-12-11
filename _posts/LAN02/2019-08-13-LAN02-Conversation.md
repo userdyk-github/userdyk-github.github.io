@@ -63,7 +63,7 @@ List of posts to read before reading this article
 - I will gather my men to aid in the search
 - Tell me what happen to her.
 - Other matters occupy his attention.
-- I've pressed for audience all week.
+- **I've pressed** for audience all week.
 - I would not expect it
 - He gains great comfort in the act
 - I did not hear
