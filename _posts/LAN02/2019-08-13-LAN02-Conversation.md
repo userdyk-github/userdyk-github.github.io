@@ -33,7 +33,7 @@ List of posts to read before reading this article
 
 - What is the deal with you and him?
 - Don't expect me to be a nice guy.		
-- you are way off, pal.
+- You are way off, pal.
 - I might have had feelings for her at one time, not anymore.
 - Where are you going with that disk.
 - If you press that button,  you are in very big trouble.
@@ -74,7 +74,7 @@ List of posts to read before reading this article
 - What is this madness?
 - Everything is under the control.
 - They've lost mind.
-- You would kill a defenseless man?
+- You would kill *a defenseless man*?
 
 
 <hr class="division1">
