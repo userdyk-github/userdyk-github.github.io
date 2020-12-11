@@ -31,6 +31,73 @@ List of posts to read before reading this article
 
 ## **Sentence**
 
+- He has been well trained.
+- You are **overly** kind
+- It is **all I desire**.
+- Your time **has come**
+- Because I possess **what he does not**.
+- Why now break tradition?
+- A minor disagreement
+- Your face suggests otherwise
+- We do **what must do** in this house.
+- I have done **a terrible thing**
+- He forced me to fight
+- I did not want it.
+- I taught you well.
+- In honor of **distinguished guest**, I present **my finest man** for you personal viewing.
+- Present yourself.
+- Forgive **unsightly countenance**
+- Our charge is met.
+- Never **come up upon** my back.
+- I require a moment
+- He requires answer.
+- Instruct him in the way of you
+- I make fair offer
+- He offers none
+- I long to return.
+- Did I not tell you?
+- Be thankful it was **not more costly**.
+- All that remains is to agree upon a price.
+- To gain his favor
+- **An unavoidable concession**.
+- I ask nothing.
+- Your son has **much to learn** in the way of diplomacy.
+- He accuses absent cause
+- **Do you recall** my associate?
+- Do as he commands.
+- I had forgotten the feeling.
+- He will see it.
+- I would exchange **stories of the passing years**
+- Do you **assume** mantle of doctore?
+- Why did you say?
+- We need **a prompt decision**
+- He is the paterfamilias
+- We are **of diverging temperament**
+- Your dispoistion towards business is **much more agressive** than your father
+- You surprise me
+- I have never seen such an impressive display.
+- There appears to be something missing.
+- He **has chosen** him as champion
+- The question begs careful consideration
+- It's been ages since I've seen a decent match.
+- Do you lay eyes?
+- Lesson one never drop your guard.
+- Drink and women are not my concern.
+- I could have been killed them absent an arms
+- As his proxy.
+- Everything has changed
+- I would have words with my wife.
+- Everything is for sale.
+- That is not for sale.
+- What's those worth?
+- I would make purchase.
+- Capua is elevated.
+- The man's voice **causes** skull to ache.
+- Is this not enough?
+- He was nothing
+- He deserved to die.
+- Your time is done
+
 - What is the deal with you and him?
 - Don't expect me to be a nice guy.		
 - You are way off, pal.
