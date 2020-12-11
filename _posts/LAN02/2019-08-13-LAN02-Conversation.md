@@ -83,7 +83,7 @@ List of posts to read before reading this article
 - Do you lay eyes?
 - Lesson one never drop your guard.
 - Drink and women are not my concern.
-- I could have been killed them absent an arms
+- I **could have killed** them absent an arms
 - As his proxy.
 - Everything has changed
 - I would have words with my wife.
@@ -99,21 +99,21 @@ List of posts to read before reading this article
 - Your time is done
 
 - What is the deal with you and him?
-- Don't expect me to be a nice guy.		
+- **Don't expect me** to be a nice guy.		
 - You are way off, pal.
-- I might have had feelings for her at one time, not anymore.
+- I **might have had feelings** for her at one time, not anymore.
 - Where are you going with that disk.
 - If you press that button,  you are **in very big trouble**.
 - Do you believe what a jerk ross was being?
 - he can get really competitive
-- I am not as bad as ross	
+- I am not as bad as ross
 - We could play some other game like, i don't know, pictionary?
-- You gals want to hand over your money now?
-- That way we don't have to go through the formality of actually playing.
-- We'll see who has the last laugh there monkey boy.
+- You gals want to **hand over** your money now?
+- That way we don't have to **go through the formality** of actually playing.
+- We'll see who has **the last laugh** there monkey boy.
 - I'll just have a tic-tac to hold me over.
 - We must look towards the future
-- It is a necessity that must be swallowed.
+- It is a necessity **that must be swallowed**.
 - My words carry no weight
 - They give no shit for me	
 - Everything comes to plan
