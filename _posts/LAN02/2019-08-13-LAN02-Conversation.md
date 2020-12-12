@@ -31,6 +31,19 @@ List of posts to read before reading this article
 
 ## **Sentence**
 
+- We are done.
+- Love is what binds us.
+- I am still not completely comfortable with this.
+- I want you to know I'm not enjoying this.
+- I was just getting my book.
+- Which one were you doing?
+- I'm hearing this for the first time.
+- He's picking flowers
+- Stop the car.
+- Watch it.
+- Deal with this
+- Hang on a second.
+
 - He has been well trained.
 - You are **overly** kind
 - It is **all I desire**.
