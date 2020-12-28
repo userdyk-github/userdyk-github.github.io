@@ -200,7 +200,7 @@ title: MATERIALS
   <a href="https://ratsgo.github.io/blog/categories/" target="_blank">ratsgo[ML,NLP,STAT]</a>,
   <a href="https://losskatsu.github.io/categories/list#" target="_blank">losskatsu[ML,STAT]</a>,
   <a href="http://sanghyukchun.github.io/57/" target="_blank">sanghyukchun[ML]</a>,
-
+  <a href="https://greeksharifa.github.io/" target="_blank">greeksharifa[ML, DL]</a>
 
   ｜<b>youtube</b>｜
   <a href="https://www.youtube.com/user/egoing2/playlists" target="_blank">생활코딩</a>,
