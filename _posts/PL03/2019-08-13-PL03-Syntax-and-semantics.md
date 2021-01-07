@@ -4734,6 +4734,7 @@ List of posts followed by this article
 ---
 
 Reference
+- <a href="https://niceman.tistory.com/138?category=940952" target="_blank">thread</a>
 - <a href="https://www.sololearn.com/Course/Python/" target="_blank">sololearn - python</a>
 - <a href="https://www.fun-coding.org/daveblog.html" target="_blank">fun coding</a>
 - <a href="https://dojang.io/course/view.php?id=7" target="_blank">dojang</a>
