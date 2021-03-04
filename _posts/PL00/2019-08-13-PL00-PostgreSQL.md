@@ -27,6 +27,15 @@ List of posts to read before reading this article
 - <a href="https://dbeaver.io/download/" target="_blank">dbeaver</a>
 
 <br><br><br>
+## pgAdmin4
+```python
+$ sudo apt-get install build-essential libssl-dev libffi-dev libgmp3-dev virtualenv libpq-dev python3-pip python3-dev
+$ wget https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v2.1/pip/pgadmin4-2.1-py2.py3-none-any.whl
+$ pip3 install pgadmin4-2.1-py2.py3-none-any.whl
+$ python3 /usr/local/lib/python{Version}/dist-packages/pgadmin4/pgAdmin4.py
+```
+
+<br><br><br>
 ## **SQL(Structured Query Language)**
 
 <br><br><br>
