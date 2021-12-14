@@ -731,6 +731,7 @@ Linux supports POSIX and ANSI C
 <hr class="division2">
 
 ## **Management of process**
+![image](https://user-images.githubusercontent.com/52376448/146054820-ceadc61c-604f-45e6-b601-88c796753e76.png)
 ![image](https://user-images.githubusercontent.com/52376448/69009159-14630700-0996-11ea-8024-72efeef49f4a.png)
 <br><br><br>
 
