@@ -4744,6 +4744,7 @@ Reference
 - <a href="https://www.youtube.com/playlist?list=PLa9dKeCAyr7iWPMclcDxbnlTjQ2vjdIDD" target="_blank">python lectures</a>
 - <a href='https://repl.it/languages/python' target="_blank">Implementation with python2 on web</a>
 - <a href='https://repl.it/languages/python3' target="_blank">Implementation with python3 on web</a>
+- <a href='https://www.scaler.com/topics/python/' target="_blank">Learn Python Programming</a>
 - <a href='https://github.com/TheAlgorithms/Python' target="_blank">TheAlgorithms</a>
 - <a href='https://suwoni-codelab.com/category/#/Python%20%EA%B8%B0%EB%B3%B8' target="_blank">suwoni codelab</a>
 
